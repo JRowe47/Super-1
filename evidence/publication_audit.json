@@ -1,0 +1,247 @@
+{
+  "audit_date": "2026-10-14",
+  "checkpoint_checks": [
+    {
+      "file": "3361-pair_energy-0.001.pt",
+      "matches": true,
+      "sha256": "e0060e1a221ca01d0dcd9fac822eef150004dbffd00f2ead94d9dbd603d85ff6"
+    },
+    {
+      "file": "checkpoints/pair_energy/3361-pair_energy-0.003.pt",
+      "matches": true,
+      "sha256": "22ef0d364244680c73ab1c942691f088d0351153576cf3ea1224a9dc92c3ecd4"
+    },
+    {
+      "file": "3361-geometric_overlapping-0.001.pt",
+      "matches": true,
+      "sha256": "4c280dda1f0f85dc74499d0f8e0d65a7942267c367db59dd713e6085a48a8129"
+    },
+    {
+      "file": "checkpoints/pair_energy/3361-geometric_overlapping-0.003.pt",
+      "matches": true,
+      "sha256": "1d186917c8c79283231fd5d7abce7990c1af67b59de8d0fb1b3a87222091f659"
+    },
+    {
+      "file": "3361-relative_phase_key-0.001.pt",
+      "matches": true,
+      "sha256": "3c62ac2e1cd6ba196135a52068c9012cf7ca3ad5ecc90fb85466b5f7c48a5ebf"
+    },
+    {
+      "file": "checkpoints/pair_energy/3361-relative_phase_key-0.003.pt",
+      "matches": true,
+      "sha256": "3e95ad08f2d63214647412207f558a14f31616be55e3dde1294ed12a87425fab"
+    },
+    {
+      "file": "checkpoints/pair_energy/3361-transformer-0.001.pt",
+      "matches": true,
+      "sha256": "effca61ad6f61cae25487eba5835af0cb90935b109e1f31096ad26e2100141df"
+    },
+    {
+      "file": "3361-transformer-0.003.pt",
+      "matches": true,
+      "sha256": "f6f5de9d83478bd0ecc91ec8e00c1757b3c40eef58dcc5c4201e6509e76a0ffe"
+    },
+    {
+      "file": "3407-pair_energy-0.001.pt",
+      "matches": true,
+      "sha256": "df264e7ad8e98d92eb6a5fc1d17ea57f0e2324008ae98b51d3557384a3d8708e"
+    },
+    {
+      "file": "checkpoints/pair_energy/3407-pair_energy-0.003.pt",
+      "matches": true,
+      "sha256": "762000e3cf237256a37f78a2e2818f61089e36d8bb550882adb759ce3266d16b"
+    },
+    {
+      "file": "3407-geometric_overlapping-0.001.pt",
+      "matches": true,
+      "sha256": "7f1c0819906201999ef2f9909f4c38fe410e72c8b5b20e2f29a18593c025b7c2"
+    },
+    {
+      "file": "checkpoints/pair_energy/3407-geometric_overlapping-0.003.pt",
+      "matches": true,
+      "sha256": "d95482ce0b36e4cae04c846947fd6857d587e75f0f5cf6867da85d0ed903cbe2"
+    },
+    {
+      "file": "3407-relative_phase_key-0.001.pt",
+      "matches": true,
+      "sha256": "d91a37bb2e3b57c5655e86d2409c39e4f78743f221f591683037561c921beb08"
+    },
+    {
+      "file": "checkpoints/pair_energy/3407-relative_phase_key-0.003.pt",
+      "matches": true,
+      "sha256": "2f00d1cc0bb3703efe509278dd5d94258ca439fe844efab3960813cd93249317"
+    },
+    {
+      "file": "checkpoints/pair_energy/3407-transformer-0.001.pt",
+      "matches": true,
+      "sha256": "5d36606af3cdacfd2522995c4787269c18880daf8c6fcb0a0399a2f3c43e799d"
+    },
+    {
+      "file": "3407-transformer-0.003.pt",
+      "matches": true,
+      "sha256": "875fcacd8532dc5ce21e652c28c087de9580767e2961de5718b381517708d30b"
+    },
+    {
+      "file": "3457-pair_energy-0.001.pt",
+      "matches": true,
+      "sha256": "d8be8fd14d94568eca49b95e64f269b9782ff8555aa828655ac02416531bbb9b"
+    },
+    {
+      "file": "checkpoints/pair_energy/3457-pair_energy-0.003.pt",
+      "matches": true,
+      "sha256": "4b8ff4b640142eedddc61571445bc596cf734e4e1f55920d8db224b1e8b6737a"
+    },
+    {
+      "file": "3457-geometric_overlapping-0.001.pt",
+      "matches": true,
+      "sha256": "bd0eef125fc868e613946387c173034c5582260450b8daea5b342783a3725aba"
+    },
+    {
+      "file": "checkpoints/pair_energy/3457-geometric_overlapping-0.003.pt",
+      "matches": true,
+      "sha256": "b561bc1ec8030879715be9983b45086e6b9c5b80bc58f2544f54cbb6d2a88c1d"
+    },
+    {
+      "file": "3457-relative_phase_key-0.001.pt",
+      "matches": true,
+      "sha256": "fa42df57baa3f3b319f6e659eea239099f2298e48e047c030e2938c85a13d488"
+    },
+    {
+      "file": "checkpoints/pair_energy/3457-relative_phase_key-0.003.pt",
+      "matches": true,
+      "sha256": "2152c1daceeedff36a1988be3b106f7a8ae3f556ba2dc2878458e2cb132a6370"
+    },
+    {
+      "file": "checkpoints/pair_energy/3457-transformer-0.001.pt",
+      "matches": true,
+      "sha256": "7f9feba50ed2e0895dd352762450a543de0b7b282dfc0ffc12f788c75c29b5de"
+    },
+    {
+      "file": "3457-transformer-0.003.pt",
+      "matches": true,
+      "sha256": "6ad25c7484aa1f695f21e4e614928609553c909dd912feb4ba6d730dcb5bedcc"
+    },
+    {
+      "file": "checkpoints/hierarchy/73-original-0.003-6000.pt",
+      "matches": true,
+      "sha256": "19324f8897762c9db70ecc0b6b19bb754edf74ffaac4ecdaa05b450c54fb9111"
+    },
+    {
+      "file": "checkpoints/hierarchy/73-local-0.003-6000.pt",
+      "matches": true,
+      "sha256": "d8165d76126a6ec4262b2189e0a41e02b5a654f5fefbcea873c915fc2e654ffe"
+    },
+    {
+      "file": "checkpoints/hierarchy/73-cross-0.003-6000.pt",
+      "matches": true,
+      "sha256": "967434e33ee702b8df7298cd9ecb1b337eeecbfe84fcba7ba6ac06882c643c23"
+    },
+    {
+      "file": "checkpoints/hierarchy/191-original-0.001-6000.pt",
+      "matches": true,
+      "sha256": "3efef051942c9cb0b6f8896bfdf384e18d5e44cbd1c4a7b201fecd3d926eea49"
+    },
+    {
+      "file": "checkpoints/hierarchy/191-local-0.003-6000.pt",
+      "matches": true,
+      "sha256": "0fac1101751cd095d677e41a76c306ca8d2539f974ddbb39eb1361a3a7857731"
+    },
+    {
+      "file": "checkpoints/hierarchy/191-cross-0.001-6000.pt",
+      "matches": true,
+      "sha256": "d6b58161fb3c8d36e8f3fd6feb820831b4213eee665bfc2ae73e38e5ecd900e2"
+    },
+    {
+      "file": "checkpoints/hierarchy/307-original-0.003-6000.pt",
+      "matches": true,
+      "sha256": "bbfc19ab63eac1b07accbea9bbc9b253b966d4ccf9581b5477287ff0825f6626"
+    },
+    {
+      "file": "checkpoints/hierarchy/307-local-0.003-6000.pt",
+      "matches": true,
+      "sha256": "b5e7beb1f4c33b66214cf570198a97968f9859174e7137077203e89eb835b990"
+    },
+    {
+      "file": "checkpoints/hierarchy/307-cross-0.001-6000.pt",
+      "matches": true,
+      "sha256": "187cad95a2040d73b651872c395159a75aa02d0dd8d788c09d444b81e7f50b57"
+    }
+  ],
+  "cloud_gpu_provisioned": false,
+  "historical_raw_receipts_available": false,
+  "new_evaluation": false,
+  "new_training": false,
+  "official_test_accessed": false,
+  "source_checks": [
+    {
+      "file": "src/pair_energy/phase_transition_language.py",
+      "matches": true,
+      "sha256": "9e79bff53701581864118b18a5fc35156af41afaeb44b2fc6e25916a8c41f9b4"
+    },
+    {
+      "file": "src/pair_energy/run_overlapping_phase.py",
+      "matches": true,
+      "sha256": "d4bbb48fde16dfd17cbb3158cc1a5df2b80ef5a707ae6bacbb0205813ea0b7d2"
+    },
+    {
+      "file": "src/pair_energy/noncommuting_phase_candidate.py",
+      "matches": true,
+      "sha256": "063584bd9d4746ade54669e4cb1a9b70f8cdb38fff586ce68db37564552d14b5"
+    },
+    {
+      "file": "src/pair_energy/run_pair_energy_phase.py",
+      "matches": true,
+      "sha256": "47a1699ebd051ec8e1ae1d8cca9b02493aa036aa93ea21229a8baa01b24f710c"
+    },
+    {
+      "file": "src/pair_energy/pair_energy_phase_candidate.py",
+      "matches": true,
+      "sha256": "61b8d710a0c647c8c45cbe8e5a4e06eea440fa37975d9f387e9402b5ea2efa9a"
+    },
+    {
+      "file": "src/pair_energy/relative_phase_key_candidate.py",
+      "matches": true,
+      "sha256": "709f99337190744261bed5b2d1b1d695091e5a30505c94818a8d7b23346ab20a"
+    },
+    {
+      "file": "src/pair_energy/confirm_nonexpansive_phase.py",
+      "matches": true,
+      "sha256": "1aded673b1275c08907b4b9b990a75cf9df291f91558359627493c2a9a3f7272"
+    },
+    {
+      "file": "src/hierarchy/regularized_language.py",
+      "matches": true,
+      "sha256": "032cc199c26775040d8b8f9a87cc3c991915e653e032175320f59c8d02e7f336"
+    },
+    {
+      "file": "src/hierarchy/regularized_rotation.py",
+      "matches": true,
+      "sha256": "e56b2e956a8370c1946267d1c41a2a47e49e18b78c83468dd7fe39a8b180c30d"
+    },
+    {
+      "file": "src/hierarchy/packed_rotation.py",
+      "matches": true,
+      "sha256": "24c3a4150e5824c9e0f8115e28d91d8d22eb0822a2a1a946e89c43b8e9f303bc"
+    },
+    {
+      "file": "src/hierarchy/cross_scale_rotation_canary.py",
+      "matches": true,
+      "sha256": "d36fad9866317d6ce8e1d683e39c9c9c431309a38ffd6943892cbf2cc98f19ba"
+    },
+    {
+      "file": "src/hierarchy/experiments/function_weight_wikitext2_benchmark/model_core.py",
+      "matches": true,
+      "sha256": "0e43040605679d73f2654c4d30afc1e29bbfadb46dbafc12cb4ff4f5bc24f61a"
+    },
+    {
+      "file": "src/hierarchy/experiments/function_weight_wt2_original_multiscale_decisive/models.py",
+      "matches": true,
+      "sha256": "3dbe4fa50a4e7e0a9f1d1dec72b8e209e66ae842cb164e00d93cb4fe56d854a8"
+    },
+    {
+      "file": "src/hierarchy/experiments/function_weight_wt2_original_transformer_port/model.py",
+      "matches": true,
+      "sha256": "3180772c6614b31d2152782d36aba4c3c6545f216fcca21df870975133393145"
+    }
+  ]
+}

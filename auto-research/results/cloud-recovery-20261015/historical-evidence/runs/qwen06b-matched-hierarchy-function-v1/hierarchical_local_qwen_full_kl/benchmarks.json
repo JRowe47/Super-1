@@ -1,0 +1,17 @@
+{
+  "architecture": "hierarchical_local_distribution",
+  "arm": "hierarchical_local_qwen_full_kl",
+  "limit": 1000,
+  "mean_score": 0.2772719298245614,
+  "metrics": {
+    "lambada": "greedy_exact_match",
+    "multiple_choice": "length_normalized_loglikelihood"
+  },
+  "scores": {
+    "arc_easy": 0.3350877192982456,
+    "hellaswag": 0.257,
+    "lambada": 0.0,
+    "piqa": 0.517
+  },
+  "stored_parameters": 119785617
+}

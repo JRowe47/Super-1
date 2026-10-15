@@ -1,0 +1,15 @@
+{
+  "status":"PASS_EXPORTED_RUNTIME_CPU_SMOKE",
+  "archive_sha256":"1363f48b4dff2752513c610effa9edcbb82bdafc61f2f3226f09a800c38f9ead",
+  "procedure":"Extract allowlisted archive into separate /tmp/runtime-restore on the Debian 12 recovery VM; execute extracted Python with explicit PYTHONHOME/PYTHONPATH and cleared environment; one CPU thread",
+  "python":"3.10.12",
+  "torch":"2.11.0+cu130",
+  "cuda_build":"13.0",
+  "prefix":"/tmp/runtime-restore/usr",
+  "torch_file":"/tmp/runtime-restore/home/rohanarun/funcweights/representation-venv/lib/python3.10/site-packages/torch/__init__.py",
+  "device":"cpu",
+  "sum_of_squares":5.0,
+  "training":false,
+  "dataset_read":false,
+  "limitations":["Relies on Debian 12 host system libraries","Not a complete independent container","No GPU, language-quality or performance validation","Does not prove the snapshot environment is unchanged since the historical run"]
+}

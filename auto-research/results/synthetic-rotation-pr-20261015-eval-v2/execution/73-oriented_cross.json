@@ -1,0 +1,40 @@
+{
+  "arm": "oriented_cross",
+  "checkpoint": "73-oriented_cross.pt",
+  "checkpoint_sha256": "0de46a85764b919bd19ddc507ab16a774ec584cf628afb72fffa7acabda60b78",
+  "confirmation": {
+    "ce_nats_per_target": 2.7267833948135376,
+    "logits_sha256": "38f4bd17f49dfc99972b02dab950352efb6f1cba47c858a201ce5ecc257dfdbd",
+    "targets": 1024
+  },
+  "duplicate_confirmation": {
+    "ce_nats_per_target": 2.7267833948135376,
+    "logits_sha256": "38f4bd17f49dfc99972b02dab950352efb6f1cba47c858a201ce5ecc257dfdbd",
+    "targets": 1024
+  },
+  "final_selection": {
+    "ce_nats_per_target": 2.648697644472122,
+    "logits_sha256": "036c48712ec42b7ec424d0c6d7e432c15c36668cdc40ef9ab47dde45ed7b1fd3",
+    "targets": 1024
+  },
+  "identity_and_streaming_exact": true,
+  "initial_selection": {
+    "ce_nats_per_target": 3.102145254611969,
+    "logits_sha256": "035b60e870d9cc6743155e663a488b9362f227968422af300d9aeb225aecbe17",
+    "targets": 1024
+  },
+  "learned_gain_l1": 0.29443639516830444,
+  "learned_phase_l1": 0.19251438975334167,
+  "matches_preserved_first_attempt_confirmation": true,
+  "nonzero_gain_gradient_l1": 0.06499195843935013,
+  "parameters": 8832,
+  "reset_window_confirmation": {
+    "ce_nats_per_target": 2.760635018348694,
+    "logits_sha256": "1263b20970c9b9d6a85ff9acb3b462909acc091efefa85c1a5495c000bad4d00",
+    "targets": 1024
+  },
+  "seed": 73,
+  "target_exposures": 10240,
+  "train_and_selection_cpu_seconds": 0.8930070000000001,
+  "updates": 80
+}

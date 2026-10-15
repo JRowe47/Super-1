@@ -1,0 +1,16 @@
+{
+  "purpose": "Frozen implementation details for the registered synthetic acceptance test, not training tuning",
+  "nanogpt_source": "artifacts/nanogpt-10m-20260815/package/source/official_nanogpt/third_party/nanogpt/model.py",
+  "geometry_source": "auto-research/results/workflow-canaries-20261015/conditioned_fast_rotation.py",
+  "geometry_queries": ["oriented_cross", "alignment_dot"],
+  "epsilon": 0.000001,
+  "nonzero_geometry_gain": 0.3,
+  "causal_split": 128,
+  "optimizer": {"lr": 0.001, "betas": [0.9, 0.999], "eps": 1e-8, "weight_decay": 0.01},
+  "nanogpt_config": {"n_layer": 1, "n_head": 2, "dropout": 0, "bias": false},
+  "execution_limit_seconds": 300,
+  "precision": "float64 CPU",
+  "tolerance_policy": "Use registered absolute 1e-9 and rtol=0; identity exact; never relax",
+  "nanogpt_streaming": "No step method exists; compare each growing-prefix last logit with full causal forward",
+  "applicability": "Identity is baseline-versus-wrapper parity; geometry gradients apply to wrappers; historical clocks apply to hierarchy arms"
+}

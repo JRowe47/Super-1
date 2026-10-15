@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="670" viewBox="0 0 1100 670"><rect width="1100" height="670" fill="#fbfcfe"/>
+<text x="40" y="44" font-family="Arial,sans-serif" font-size="26" fill="#16223a" text-anchor="start" font-weight="bold">Confirmed byte pilots: every seed and control</text>
+<text x="40" y="74" font-family="Arial,sans-serif" font-size="15" fill="#46546b" text-anchor="start" font-weight="normal">Completed saved FP32 duplicate evaluations | lower CE is better | distinct experiments</text>
+<text x="40" y="634" font-family="Arial,sans-serif" font-size="13" fill="#46546b" text-anchor="start" font-weight="normal">128-byte context, 3.072M byte exposures/trial; not FLOP/walltime matched or official word-level evaluation.</text>
+<text x="40" y="652" font-family="Arial,sans-serif" font-size="13" fill="#46546b" text-anchor="start" font-weight="normal">Lines connect seeds for readability, not training time. No novelty, measured speed, or SOTA claim.</text>
+<text x="70" y="120" font-family="Arial,sans-serif" font-size="17" fill="#16223a" text-anchor="start" font-weight="bold">Pair-energy versus local controls</text>
+<line x1="70" y1="550.0" x2="510" y2="550.0" stroke="#d9e1eb" stroke-width="1"/>
+<text x="62" y="554.0" font-family="Arial,sans-serif" font-size="12" fill="#64748b" text-anchor="end" font-weight="normal">1.55</text>
+<line x1="70" y1="497.49999999999994" x2="510" y2="497.49999999999994" stroke="#d9e1eb" stroke-width="1"/>
+<text x="62" y="501.49999999999994" font-family="Arial,sans-serif" font-size="12" fill="#64748b" text-anchor="end" font-weight="normal">1.60</text>
+<line x1="70" y1="444.9999999999999" x2="510" y2="444.9999999999999" stroke="#d9e1eb" stroke-width="1"/>
+<text x="62" y="448.9999999999999" font-family="Arial,sans-serif" font-size="12" fill="#64748b" text-anchor="end" font-weight="normal">1.65</text>
+<line x1="70" y1="392.4999999999999" x2="510" y2="392.4999999999999" stroke="#d9e1eb" stroke-width="1"/>
+<text x="62" y="396.4999999999999" font-family="Arial,sans-serif" font-size="12" fill="#64748b" text-anchor="end" font-weight="normal">1.70</text>
+<line x1="70" y1="340.0000000000001" x2="510" y2="340.0000000000001" stroke="#d9e1eb" stroke-width="1"/>
+<text x="62" y="344.0000000000001" font-family="Arial,sans-serif" font-size="12" fill="#64748b" text-anchor="end" font-weight="normal">1.75</text>
+<line x1="70" y1="287.5" x2="510" y2="287.5" stroke="#d9e1eb" stroke-width="1"/>
+<text x="62" y="291.5" font-family="Arial,sans-serif" font-size="12" fill="#64748b" text-anchor="end" font-weight="normal">1.80</text>
+<line x1="70" y1="235.0" x2="510" y2="235.0" stroke="#d9e1eb" stroke-width="1"/>
+<text x="62" y="239.0" font-family="Arial,sans-serif" font-size="12" fill="#64748b" text-anchor="end" font-weight="normal">1.85</text>
+<text x="70" y="218" font-family="Arial,sans-serif" font-size="12" fill="#16223a" text-anchor="start" font-weight="normal">Byte CE (nats/byte); axis starts at 1.55</text>
+<line x1="70" y1="146" x2="86" y2="146" stroke="#d66b35" stroke-width="4"/>
+<text x="93" y="151" font-family="Arial,sans-serif" font-size="12" fill="#16223a" text-anchor="start" font-weight="normal">transformer</text>
+<line x1="120.0" y1="349.28428046843584" x2="290.0" y2="367.3252513829399" stroke="#d66b35" stroke-width="2"/>
+<line x1="290.0" y1="367.3252513829399" x2="460.0" y2="347.94261483585143" stroke="#d66b35" stroke-width="2"/>
+<circle cx="120.0" cy="349.28428046843584" r="5" fill="#d66b35"/>
+<circle cx="290.0" cy="367.3252513829399" r="5" fill="#d66b35"/>
+<circle cx="460.0" cy="347.94261483585143" r="5" fill="#d66b35"/>
+<line x1="290" y1="146" x2="306" y2="146" stroke="#187c69" stroke-width="4"/>
+<text x="313" y="151" font-family="Arial,sans-serif" font-size="12" fill="#16223a" text-anchor="start" font-weight="normal">geometric_overlapping</text>
+<line x1="120.0" y1="483.06974109481365" x2="290.0" y2="485.1219880580903" stroke="#187c69" stroke-width="2"/>
+<line x1="290.0" y1="485.1219880580903" x2="460.0" y2="471.12237053758963" stroke="#187c69" stroke-width="2"/>
+<circle cx="120.0" cy="483.06974109481365" r="5" fill="#187c69"/>
+<circle cx="290.0" cy="485.1219880580903" r="5" fill="#187c69"/>
+<circle cx="460.0" cy="471.12237053758963" r="5" fill="#187c69"/>
+<line x1="70" y1="170" x2="86" y2="170" stroke="#336eb5" stroke-width="4"/>
+<text x="93" y="175" font-family="Arial,sans-serif" font-size="12" fill="#16223a" text-anchor="start" font-weight="normal">relative_phase_key</text>
+<line x1="120.0" y1="489.0197972690359" x2="290.0" y2="490.65230292432443" stroke="#336eb5" stroke-width="2"/>
+<line x1="290.0" y1="490.65230292432443" x2="460.0" y2="480.0960871752571" stroke="#336eb5" stroke-width="2"/>
+<circle cx="120.0" cy="489.0197972690359" r="5" fill="#336eb5"/>
+<circle cx="290.0" cy="490.65230292432443" r="5" fill="#336eb5"/>
+<circle cx="460.0" cy="480.0960871752571" r="5" fill="#336eb5"/>
+<line x1="290" y1="170" x2="306" y2="170" stroke="#8d59ab" stroke-width="4"/>
+<text x="313" y="175" font-family="Arial,sans-serif" font-size="12" fill="#16223a" text-anchor="start" font-weight="normal">pair_energy</text>
+<line x1="120.0" y1="510.62087087070245" x2="290.0" y2="499.5313853376053" stroke="#8d59ab" stroke-width="2"/>
+<line x1="290.0" y1="499.5313853376053" x2="460.0" y2="493.67425371618845" stroke="#8d59ab" stroke-width="2"/>
+<circle cx="120.0" cy="510.62087087070245" r="5" fill="#8d59ab"/>
+<circle cx="290.0" cy="499.5313853376053" r="5" fill="#8d59ab"/>
+<circle cx="460.0" cy="493.67425371618845" r="5" fill="#8d59ab"/>
+<text x="120.0" y="579" font-family="Arial,sans-serif" font-size="13" fill="#16223a" text-anchor="middle" font-weight="normal">3361</text>
+<text x="290.0" y="579" font-family="Arial,sans-serif" font-size="13" fill="#16223a" text-anchor="middle" font-weight="normal">3407</text>
+<text x="460.0" y="579" font-family="Arial,sans-serif" font-size="13" fill="#16223a" text-anchor="middle" font-weight="normal">3457</text>
+<text x="640" y="120" font-family="Arial,sans-serif" font-size="17" fill="#16223a" text-anchor="start" font-weight="bold">Cross-scale versus original hierarchy</text>
+<line x1="640" y1="550.0" x2="1060" y2="550.0" stroke="#d9e1eb" stroke-width="1"/>
+<text x="632" y="554.0" font-family="Arial,sans-serif" font-size="12" fill="#64748b" text-anchor="end" font-weight="normal">1.55</text>
+<line x1="640" y1="497.49999999999994" x2="1060" y2="497.49999999999994" stroke="#d9e1eb" stroke-width="1"/>
+<text x="632" y="501.49999999999994" font-family="Arial,sans-serif" font-size="12" fill="#64748b" text-anchor="end" font-weight="normal">1.60</text>
+<line x1="640" y1="444.9999999999999" x2="1060" y2="444.9999999999999" stroke="#d9e1eb" stroke-width="1"/>
+<text x="632" y="448.9999999999999" font-family="Arial,sans-serif" font-size="12" fill="#64748b" text-anchor="end" font-weight="normal">1.65</text>
+<line x1="640" y1="392.4999999999999" x2="1060" y2="392.4999999999999" stroke="#d9e1eb" stroke-width="1"/>
+<text x="632" y="396.4999999999999" font-family="Arial,sans-serif" font-size="12" fill="#64748b" text-anchor="end" font-weight="normal">1.70</text>
+<line x1="640" y1="340.0000000000001" x2="1060" y2="340.0000000000001" stroke="#d9e1eb" stroke-width="1"/>
+<text x="632" y="344.0000000000001" font-family="Arial,sans-serif" font-size="12" fill="#64748b" text-anchor="end" font-weight="normal">1.75</text>
+<line x1="640" y1="287.5" x2="1060" y2="287.5" stroke="#d9e1eb" stroke-width="1"/>
+<text x="632" y="291.5" font-family="Arial,sans-serif" font-size="12" fill="#64748b" text-anchor="end" font-weight="normal">1.80</text>
+<line x1="640" y1="235.0" x2="1060" y2="235.0" stroke="#d9e1eb" stroke-width="1"/>
+<text x="632" y="239.0" font-family="Arial,sans-serif" font-size="12" fill="#64748b" text-anchor="end" font-weight="normal">1.85</text>
+<text x="640" y="218" font-family="Arial,sans-serif" font-size="12" fill="#16223a" text-anchor="start" font-weight="normal">Byte CE (nats/byte); axis starts at 1.55</text>
+<line x1="640" y1="146" x2="656" y2="146" stroke="#d66b35" stroke-width="4"/>
+<text x="663" y="151" font-family="Arial,sans-serif" font-size="12" fill="#16223a" text-anchor="start" font-weight="normal">original</text>
+<line x1="690.0" y1="360.65343381837016" x2="850.0" y2="376.32450317963963" stroke="#d66b35" stroke-width="2"/>
+<line x1="850.0" y1="376.32450317963963" x2="1010.0" y2="294.79998728260404" stroke="#d66b35" stroke-width="2"/>
+<circle cx="690.0" cy="360.65343381837016" r="5" fill="#d66b35"/>
+<circle cx="850.0" cy="376.32450317963963" r="5" fill="#d66b35"/>
+<circle cx="1010.0" cy="294.79998728260404" r="5" fill="#d66b35"/>
+<line x1="860" y1="146" x2="876" y2="146" stroke="#187c69" stroke-width="4"/>
+<text x="883" y="151" font-family="Arial,sans-serif" font-size="12" fill="#16223a" text-anchor="start" font-weight="normal">local</text>
+<line x1="690.0" y1="366.84738282114273" x2="850.0" y2="358.3161448687316" stroke="#187c69" stroke-width="2"/>
+<line x1="850.0" y1="358.3161448687316" x2="1010.0" y2="310.8853880874814" stroke="#187c69" stroke-width="2"/>
+<circle cx="690.0" cy="366.84738282114273" r="5" fill="#187c69"/>
+<circle cx="850.0" cy="358.3161448687316" r="5" fill="#187c69"/>
+<circle cx="1010.0" cy="310.8853880874814" r="5" fill="#187c69"/>
+<line x1="640" y1="170" x2="656" y2="170" stroke="#336eb5" stroke-width="4"/>
+<text x="663" y="175" font-family="Arial,sans-serif" font-size="12" fill="#16223a" text-anchor="start" font-weight="normal">cross</text>
+<line x1="690.0" y1="377.1792248450221" x2="850.0" y2="376.79135115817195" stroke="#336eb5" stroke-width="2"/>
+<line x1="850.0" y1="376.79135115817195" x2="1010.0" y2="318.092946112156" stroke="#336eb5" stroke-width="2"/>
+<circle cx="690.0" cy="377.1792248450221" r="5" fill="#336eb5"/>
+<circle cx="850.0" cy="376.79135115817195" r="5" fill="#336eb5"/>
+<circle cx="1010.0" cy="318.092946112156" r="5" fill="#336eb5"/>
+<text x="690.0" y="579" font-family="Arial,sans-serif" font-size="13" fill="#16223a" text-anchor="middle" font-weight="normal">73</text>
+<text x="850.0" y="579" font-family="Arial,sans-serif" font-size="13" fill="#16223a" text-anchor="middle" font-weight="normal">191</text>
+<text x="1010.0" y="579" font-family="Arial,sans-serif" font-size="13" fill="#16223a" text-anchor="middle" font-weight="normal">307</text></svg>

@@ -1,0 +1,165 @@
+{
+  "benchmarks": {
+    "in_house_transformer_accuracy": [
+      0.3,
+      0.241,
+      0,
+      0.489
+    ],
+    "limit": 1000,
+    "local_fw_accuracy": [
+      0.339,
+      0.249,
+      0,
+      0.523
+    ],
+    "pure_hierarchy_accuracy": [
+      0.33,
+      0.257,
+      0,
+      0.534
+    ],
+    "reported_mean": [
+      0.258,
+      0.28,
+      0.278
+    ],
+    "tasks": [
+      "ARC-Easy",
+      "HellaSwag",
+      "LAMBADA",
+      "PIQA"
+    ]
+  },
+  "caveats": [
+    "One training seed; no confidence intervals.",
+    "Training at 512, evaluation up to 2048: positional/context extrapolation is confounded.",
+    "1K/2K fixed-evaluation samples are very small.",
+    "In-house CE rounded to two decimals: 512 reduction recomputes to 16.375%, while headline says 16.3%.",
+    "State ratios are analytic architecture accounting, not measured total RAM/VRAM or latency.",
+    "Historical raw model checkpoints/configs/evaluation receipts were not located in readable preserved directories.",
+    "The report's 1B-token run-in-progress statement is historical, not current status.",
+    "Byte-pilot CE, historical token CE, and official word perplexity must not be compared directly."
+  ],
+  "context_tokens": [
+    512,
+    1024,
+    2048
+  ],
+  "evidence_level": "historical_report_transcription_not_raw_checkpoint_reverification",
+  "fixed_eval_samples": {
+    "1024": {
+      "batches": 2,
+      "sequences_per_batch": 1
+    },
+    "2048": {
+      "batches": 2,
+      "sequences_per_batch": 1
+    },
+    "512": {
+      "batches": 16,
+      "sequences_per_batch": 2
+    }
+  },
+  "in_house": {
+    "hierarchy_ce": [
+      5.26,
+      5.07,
+      5.29
+    ],
+    "local_fw_ce": [
+      5.41,
+      5.2,
+      5.43
+    ],
+    "transformer_ce": [
+      6.29,
+      8.55,
+      10.65
+    ]
+  },
+  "nanogpt": {
+    "ce": [
+      5.126,
+      5.261,
+      5.988
+    ],
+    "hierarchy_ce": [
+      5.26,
+      5.07,
+      5.291
+    ],
+    "upstream_commit_reported": "3adf61e"
+  },
+  "objective_reported": "0.1 CE + 1.0 forward KL",
+  "parameters_reported": {
+    "hierarchy_rounded": 119690000,
+    "in_house_transformer": 119040000,
+    "nanogpt_rounded": 119690000
+  },
+  "seeds": 1,
+  "source": "evidence/historical/onepager.pdf",
+  "source_sha256": "c7828d65de2ec1952daab6a242237c3514fb798dc0566c17b3a790733d1bd842",
+  "state": {
+    "hierarchy_bytes": 5504,
+    "in_house_kv_bytes_rounded": [
+      7470000,
+      14940000,
+      29880000
+    ],
+    "kind": "analytic bf16 per-sequence persistent state, NOT total memory",
+    "nanogpt_kv_2048_mib_reported": 73.5,
+    "nanogpt_ratio_2048_reported": 14003
+  },
+  "teacher": "Qwen3-0.6B-Base",
+  "training_context_tokens": 512,
+  "training_snapshots": {
+    "hierarchy_ce": [
+      4.663,
+      4.901,
+      5.101,
+      4.99,
+      4.965,
+      4.921,
+      4.806
+    ],
+    "hierarchy_fw_ce": [
+      4.697,
+      4.924,
+      5.144,
+      5.009,
+      5.003,
+      4.902,
+      4.836
+    ],
+    "multiscale_fw_ce": [
+      4.668,
+      4.926,
+      5.091,
+      4.97,
+      4.998,
+      4.907,
+      4.817
+    ],
+    "tokens_m": [
+      10.57,
+      11.8,
+      12,
+      12.9,
+      14.75,
+      18.84,
+      20.85
+    ],
+    "transformer_ce": [
+      5.817,
+      6.024,
+      6.129,
+      5.798,
+      5.91,
+      5.733,
+      5.587
+    ]
+  },
+  "training_steps_reported": 4883,
+  "training_tokens_reported": 10000000
+}

@@ -1,0 +1,359 @@
+{
+  "date": "2026-10-15",
+  "release": "https://github.com/rohanarun/function-weights-research/releases/tag/replication-inputs-20261015",
+  "files": [
+    {
+      "asset": "train.bin.part-001",
+      "bytes": 1500000000,
+      "sha256": "75e19567e2703738c21e78f790f188a6e5f0ae87bd969ae0e270dfde6ceaf785",
+      "source": "/Volumes/SP AI 01_16/trin-data-storage-2026-08-24/training4-bootstrap-20260809/data/qwen3-06b-representation/train.bin",
+      "source_offset": 0,
+      "status": "uploaded_digest_verified",
+      "url": "https://github.com/rohanarun/function-weights-research/releases/download/replication-inputs-20261015/train.bin.part-001"
+    },
+    {
+      "asset": "train.bin.part-002",
+      "bytes": 1500000000,
+      "sha256": "418db2887065705841511b988f7880d106a07200bf151a0294257173af268dcb",
+      "source": "/Volumes/SP AI 01_16/trin-data-storage-2026-08-24/training4-bootstrap-20260809/data/qwen3-06b-representation/train.bin",
+      "source_offset": 1500000000,
+      "status": "uploaded_digest_verified",
+      "url": "https://github.com/rohanarun/function-weights-research/releases/download/replication-inputs-20261015/train.bin.part-002"
+    },
+    {
+      "asset": "train.bin.part-003",
+      "bytes": 1000000000,
+      "sha256": "11a779a8035b7423c008279179c1a6b0f74490c0c761ce2b9c0a3747631eb524",
+      "source": "/Volumes/SP AI 01_16/trin-data-storage-2026-08-24/training4-bootstrap-20260809/data/qwen3-06b-representation/train.bin",
+      "source_offset": 3000000000,
+      "status": "uploaded_digest_verified",
+      "url": "https://github.com/rohanarun/function-weights-research/releases/download/replication-inputs-20261015/train.bin.part-003"
+    },
+    {
+      "asset": "val.bin",
+      "bytes": 8000000,
+      "sha256": "8517985c4979dbc95c83137ee534e30e789e2275e4ba1ee1fd31e1f0d566e4d3",
+      "source": "/Volumes/SP AI 01_16/trin-data-storage-2026-08-24/training4-bootstrap-20260809/data/qwen3-06b-representation/val.bin",
+      "source_offset": 0,
+      "status": "uploaded_digest_verified",
+      "url": "https://github.com/rohanarun/function-weights-research/releases/download/replication-inputs-20261015/val.bin"
+    },
+    {
+      "asset": "qwen3-0.6b-base-model.safetensors",
+      "bytes": 1192135096,
+      "sha256": "cd2a512003e2f9f3cd3c32a9c3573f820bb28c940f73c57b1ddaa983d9223eba",
+      "source": "/Volumes/SP AI 01_16/trin-data-storage-2026-08-24/training4-bootstrap-20260809/hf/models--Qwen--Qwen3-0.6B-Base/snapshots/da87bfb608c14b7cf20ba1ce41287e8de496c0cd/model.safetensors",
+      "source_offset": 0,
+      "status": "uploaded_digest_verified",
+      "url": "https://github.com/rohanarun/function-weights-research/releases/download/replication-inputs-20261015/qwen3-0.6b-base-model.safetensors"
+    },
+    {
+      "asset": "qwen3-0.6b-tokenizer-and-config.zip",
+      "bytes": 3766066,
+      "sha256": "a5a5b4681cfa97e63005b58d5470844f19b60d00ee3b0e4503e850d60025e238",
+      "status": "uploaded_digest_verified",
+      "url": "https://github.com/rohanarun/function-weights-research/releases/download/replication-inputs-20261015/qwen3-0.6b-tokenizer-and-config.zip"
+    },
+    {
+      "asset": "pinned-benchmark-caches.zip",
+      "bytes": 63330075,
+      "sha256": "d546727f1c25baa3e08c24a1b7d4561bed6f3666f8f8fa56911f397fcac3de8e",
+      "status": "uploaded_digest_verified",
+      "url": "https://github.com/rohanarun/function-weights-research/releases/download/replication-inputs-20261015/pinned-benchmark-caches.zip"
+    }
+  ],
+  "archive_members": [
+    {
+      "asset": "qwen3-0.6b-tokenizer-and-config.zip",
+      "member": "config.json",
+      "bytes": 727,
+      "sha256": "504a6b58c4271583724e66584b6b7698aea18450209df6b2f7582df0e89cee59"
+    },
+    {
+      "asset": "qwen3-0.6b-tokenizer-and-config.zip",
+      "member": "generation_config.json",
+      "bytes": 138,
+      "sha256": "8c970692323e3ea0e9b8b0a4dca79388d31226e41f83c9fd6014804280ebf6e8"
+    },
+    {
+      "asset": "qwen3-0.6b-tokenizer-and-config.zip",
+      "member": "merges.txt",
+      "bytes": 1671853,
+      "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+    },
+    {
+      "asset": "qwen3-0.6b-tokenizer-and-config.zip",
+      "member": "tokenizer.json",
+      "bytes": 7031645,
+      "sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"
+    },
+    {
+      "asset": "qwen3-0.6b-tokenizer-and-config.zip",
+      "member": "tokenizer_config.json",
+      "bytes": 9678,
+      "sha256": "3c04ed3ca964ea2f6b2b5faf0dc4d31aec1cb1e8b4bcf63f402d295046b422b5"
+    },
+    {
+      "asset": "qwen3-0.6b-tokenizer-and-config.zip",
+      "member": "vocab.json",
+      "bytes": 2776833,
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    },
+    {
+      "asset": "pinned-benchmark-caches.zip",
+      "member": "EleutherAI___lambada_openai/en/0.0.0/900124bf3b8235c6daf21033af9948b3f07346c4/dataset_info.json",
+      "bytes": 644,
+      "sha256": "a388c2e8d9de6f49e3e899461a8ceab76ee21c788496213143bf050d662e838b"
+    },
+    {
+      "asset": "pinned-benchmark-caches.zip",
+      "member": "EleutherAI___lambada_openai/en/0.0.0/900124bf3b8235c6daf21033af9948b3f07346c4/lambada_openai-test.arrow",
+      "bytes": 1710736,
+      "sha256": "048a8a2bfcc3360404fb8f0f351c0c92c64200df9a894fd65cbf99bd25469ab0"
+    },
+    {
+      "asset": "pinned-benchmark-caches.zip",
+      "member": "Rowan___hellaswag/default/0.0.0/218ec52e09a7e7462a5400043bb9a69a41d06b76/dataset_info.json",
+      "bytes": 1649,
+      "sha256": "ad8876907b93176bcda467bfe8cb9ee2c20b3271d1dc015a1675b61836f2c712"
+    },
+    {
+      "asset": "pinned-benchmark-caches.zip",
+      "member": "Rowan___hellaswag/default/0.0.0/218ec52e09a7e7462a5400043bb9a69a41d06b76/hellaswag-test.arrow",
+      "bytes": 10802528,
+      "sha256": "ccfab73ded659df04451e5576ae8fece2750bbcc926b58698d8c29664c835b9c"
+    },
+    {
+      "asset": "pinned-benchmark-caches.zip",
+      "member": "Rowan___hellaswag/default/0.0.0/218ec52e09a7e7462a5400043bb9a69a41d06b76/hellaswag-train.arrow",
+      "bytes": 43268336,
+      "sha256": "92a7294a7a191f19a9eb02e5947a20a21d91f4d1aab62bdeff57b1f2d599a17e"
+    },
+    {
+      "asset": "pinned-benchmark-caches.zip",
+      "member": "Rowan___hellaswag/default/0.0.0/218ec52e09a7e7462a5400043bb9a69a41d06b76/hellaswag-validation.arrow",
+      "bytes": 11186424,
+      "sha256": "fdd100245fae28e387869527dd0b8af1a0a931f7cf364abaf6f3138de7f0d27b"
+    },
+    {
+      "asset": "pinned-benchmark-caches.zip",
+      "member": "allenai___ai2_arc/ARC-Easy/0.0.0/210d026faf9955653af8916fad021475a3f00453/ai2_arc-test.arrow",
+      "bytes": 660168,
+      "sha256": "8d1f615aaf6fd5256003a72e33b24394a8460806b59e11fe7e6586a9b6642f71"
+    },
+    {
+      "asset": "pinned-benchmark-caches.zip",
+      "member": "allenai___ai2_arc/ARC-Easy/0.0.0/210d026faf9955653af8916fad021475a3f00453/ai2_arc-train.arrow",
+      "bytes": 621640,
+      "sha256": "795028faeca17f3fab03d07f92e5993858e31e5a1295d4a45a7c707eb56b1484"
+    },
+    {
+      "asset": "pinned-benchmark-caches.zip",
+      "member": "allenai___ai2_arc/ARC-Easy/0.0.0/210d026faf9955653af8916fad021475a3f00453/ai2_arc-validation.arrow",
+      "bytes": 158848,
+      "sha256": "caa0a247e56619a9cf109290abd532ce41dd911fe86210772c256c95b52e8d69"
+    },
+    {
+      "asset": "pinned-benchmark-caches.zip",
+      "member": "allenai___ai2_arc/ARC-Easy/0.0.0/210d026faf9955653af8916fad021475a3f00453/dataset_info.json",
+      "bytes": 1425,
+      "sha256": "a593d1a7b6bf00a7342979b75d265b21b34cd8a3b5888f06114726b1e9a2366e"
+    },
+    {
+      "asset": "pinned-benchmark-caches.zip",
+      "member": "hub/datasets--EleutherAI--lambada_openai/.no_exist/900124bf3b8235c6daf21033af9948b3f07346c4/.huggingface.yaml",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "asset": "pinned-benchmark-caches.zip",
+      "member": "hub/datasets--EleutherAI--lambada_openai/.no_exist/900124bf3b8235c6daf21033af9948b3f07346c4/dataset_infos.json",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "asset": "pinned-benchmark-caches.zip",
+      "member": "hub/datasets--EleutherAI--lambada_openai/.no_exist/900124bf3b8235c6daf21033af9948b3f07346c4/lambada_openai.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "asset": "pinned-benchmark-caches.zip",
+      "member": "hub/datasets--EleutherAI--lambada_openai/snapshots/900124bf3b8235c6daf21033af9948b3f07346c4/README.md",
+      "bytes": 5474,
+      "sha256": "2a7f96fbf8fa6859e3d0dd1bb165611b57319b21b7ac442b6a1e1a53410f51f9"
+    },
+    {
+      "asset": "pinned-benchmark-caches.zip",
+      "member": "hub/datasets--EleutherAI--lambada_openai/snapshots/900124bf3b8235c6daf21033af9948b3f07346c4/en/test/en.parquet",
+      "bytes": 1157764,
+      "sha256": "99d8a9e54cda761c6340ddd4fa6feda7f846ffb0e716afa52968dea75495eea7"
+    },
+    {
+      "asset": "pinned-benchmark-caches.zip",
+      "member": "hub/datasets--Rowan--hellaswag/.no_exist/218ec52e09a7e7462a5400043bb9a69a41d06b76/.huggingface.yaml",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "asset": "pinned-benchmark-caches.zip",
+      "member": "hub/datasets--Rowan--hellaswag/.no_exist/218ec52e09a7e7462a5400043bb9a69a41d06b76/dataset_infos.json",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "asset": "pinned-benchmark-caches.zip",
+      "member": "hub/datasets--Rowan--hellaswag/.no_exist/218ec52e09a7e7462a5400043bb9a69a41d06b76/hellaswag.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "asset": "pinned-benchmark-caches.zip",
+      "member": "hub/datasets--Rowan--hellaswag/snapshots/218ec52e09a7e7462a5400043bb9a69a41d06b76/README.md",
+      "bytes": 7019,
+      "sha256": "cfe6e26e7e936a447a12f7eee50f2bffb0355c3b97459496d8c7296f65c5b353"
+    },
+    {
+      "asset": "pinned-benchmark-caches.zip",
+      "member": "hub/datasets--Rowan--hellaswag/snapshots/218ec52e09a7e7462a5400043bb9a69a41d06b76/data/test-00000-of-00001.parquet",
+      "bytes": 6112397,
+      "sha256": "e572fd5579bd1768b1985f47234f8bbe29247aca200a778b635bffc637714a41"
+    },
+    {
+      "asset": "pinned-benchmark-caches.zip",
+      "member": "hub/datasets--Rowan--hellaswag/snapshots/218ec52e09a7e7462a5400043bb9a69a41d06b76/data/train-00000-of-00001.parquet",
+      "bytes": 24365524,
+      "sha256": "cacb12587faa63d7f723a72d61d12bfa94b140446f5a6a0a2e1c6906ab88bf02"
+    },
+    {
+      "asset": "pinned-benchmark-caches.zip",
+      "member": "hub/datasets--Rowan--hellaswag/snapshots/218ec52e09a7e7462a5400043bb9a69a41d06b76/data/validation-00000-of-00001.parquet",
+      "bytes": 6315951,
+      "sha256": "899813071e1e95efafec90f856e1987d2150fa4d020fc005df6962c259f660cd"
+    },
+    {
+      "asset": "pinned-benchmark-caches.zip",
+      "member": "hub/datasets--allenai--ai2_arc/.no_exist/210d026faf9955653af8916fad021475a3f00453/.huggingface.yaml",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "asset": "pinned-benchmark-caches.zip",
+      "member": "hub/datasets--allenai--ai2_arc/.no_exist/210d026faf9955653af8916fad021475a3f00453/ai2_arc.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "asset": "pinned-benchmark-caches.zip",
+      "member": "hub/datasets--allenai--ai2_arc/.no_exist/210d026faf9955653af8916fad021475a3f00453/dataset_infos.json",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "asset": "pinned-benchmark-caches.zip",
+      "member": "hub/datasets--allenai--ai2_arc/snapshots/210d026faf9955653af8916fad021475a3f00453/ARC-Easy/test-00000-of-00001.parquet",
+      "bytes": 346257,
+      "sha256": "4160597d618ae851c7eb04e281574f3f654776216ac6b6641588d64527b47177"
+    },
+    {
+      "asset": "pinned-benchmark-caches.zip",
+      "member": "hub/datasets--allenai--ai2_arc/snapshots/210d026faf9955653af8916fad021475a3f00453/ARC-Easy/train-00000-of-00001.parquet",
+      "bytes": 330598,
+      "sha256": "b315db8a4be597dc7daa50a4e70d48dd7c990c32085629e6ccd8c926beaa80b5"
+    },
+    {
+      "asset": "pinned-benchmark-caches.zip",
+      "member": "hub/datasets--allenai--ai2_arc/snapshots/210d026faf9955653af8916fad021475a3f00453/ARC-Easy/validation-00000-of-00001.parquet",
+      "bytes": 86080,
+      "sha256": "ed890ff1e4cef7a7140d3a30dcea3ed2c9d467c6458f447ad9ef0176d8dcbb74"
+    },
+    {
+      "asset": "pinned-benchmark-caches.zip",
+      "member": "hub/datasets--allenai--ai2_arc/snapshots/210d026faf9955653af8916fad021475a3f00453/README.md",
+      "bytes": 9001,
+      "sha256": "4a293e352253d771604725c978adcea71ee6504e89ed40e1cb0024ecafa9b37e"
+    },
+    {
+      "asset": "pinned-benchmark-caches.zip",
+      "member": "hub/datasets--lighteval--piqa/.no_exist/41782e6bf0ef7de82a2ca8a9feb1dca042837fae/.huggingface.yaml",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "asset": "pinned-benchmark-caches.zip",
+      "member": "hub/datasets--lighteval--piqa/.no_exist/41782e6bf0ef7de82a2ca8a9feb1dca042837fae/dataset_infos.json",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "asset": "pinned-benchmark-caches.zip",
+      "member": "hub/datasets--lighteval--piqa/.no_exist/41782e6bf0ef7de82a2ca8a9feb1dca042837fae/piqa.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "asset": "pinned-benchmark-caches.zip",
+      "member": "hub/datasets--lighteval--piqa/snapshots/41782e6bf0ef7de82a2ca8a9feb1dca042837fae/README.md",
+      "bytes": 8624,
+      "sha256": "07f9d10c1560ebf11b2a3e7e0e054bc494a1a9fc36ec73f6fafebbd3d79d6530"
+    },
+    {
+      "asset": "pinned-benchmark-caches.zip",
+      "member": "hub/datasets--lighteval--piqa/snapshots/41782e6bf0ef7de82a2ca8a9feb1dca042837fae/plain_text/test-00000-of-00001.parquet",
+      "bytes": 496400,
+      "sha256": "c4163f2d61de107858651dc4ab2f58be80f53a2cc042b3bf62e7fc9b7f4733c0"
+    },
+    {
+      "asset": "pinned-benchmark-caches.zip",
+      "member": "hub/datasets--lighteval--piqa/snapshots/41782e6bf0ef7de82a2ca8a9feb1dca042837fae/plain_text/train-00000-of-00001.parquet",
+      "bytes": 2639194,
+      "sha256": "6778ad6705f3c6f365e92821c14291081831d4fb5578f4856956867c1715759f"
+    },
+    {
+      "asset": "pinned-benchmark-caches.zip",
+      "member": "hub/datasets--lighteval--piqa/snapshots/41782e6bf0ef7de82a2ca8a9feb1dca042837fae/plain_text/validation-00000-of-00001.parquet",
+      "bytes": 299786,
+      "sha256": "f040e39ea88b7361a1c821c7feb5c95567433e51cd385dba8bc39636af4c87cb"
+    },
+    {
+      "asset": "pinned-benchmark-caches.zip",
+      "member": "lighteval___piqa/plain_text/0.0.0/41782e6bf0ef7de82a2ca8a9feb1dca042837fae/dataset_info.json",
+      "bytes": 1304,
+      "sha256": "049bae3134e87a82550d02c64e19e83791c00cc652c7efb48f1bb9abcf4a7070"
+    },
+    {
+      "asset": "pinned-benchmark-caches.zip",
+      "member": "lighteval___piqa/plain_text/0.0.0/41782e6bf0ef7de82a2ca8a9feb1dca042837fae/piqa-test.arrow",
+      "bytes": 763560,
+      "sha256": "6794b0a1f28626db5797ef21928f672901636973e0546056caffe03509cb3a16"
+    },
+    {
+      "asset": "pinned-benchmark-caches.zip",
+      "member": "lighteval___piqa/plain_text/0.0.0/41782e6bf0ef7de82a2ca8a9feb1dca042837fae/piqa-train.arrow",
+      "bytes": 4110832,
+      "sha256": "e3048a459376b16ec8daaf9733090ce7425f12e134c08f2e3334077c56908785"
+    },
+    {
+      "asset": "pinned-benchmark-caches.zip",
+      "member": "lighteval___piqa/plain_text/0.0.0/41782e6bf0ef7de82a2ca8a9feb1dca042837fae/piqa-validation.arrow",
+      "bytes": 465608,
+      "sha256": "6e14731c78016adc6a5738d661111f5cb4c6bce461c454561eb66be4abc39222"
+    }
+  ],
+  "missing": [
+    "nanoGPT final checkpoint",
+    "three byte-exact deployed hierarchy sources",
+    "original runtime/container"
+  ],
+  "training_started": false,
+  "reconstructed_train": {
+    "filename": "train.bin",
+    "bytes": 4000000000,
+    "sha256": "834c82d2ea76e2f17aa43d15862f5ef444322c37d9b29d07fe803bb21ac163e4",
+    "ordered_parts": [
+      "train.bin.part-001",
+      "train.bin.part-002",
+      "train.bin.part-003"
+    ]
+  }
+}

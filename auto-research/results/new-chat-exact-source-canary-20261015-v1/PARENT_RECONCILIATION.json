@@ -1,0 +1,11 @@
+{
+  "parent_verified_preservation_files":25,
+  "verified_arm_seed_rows":12,
+  "all_recorded_checks_pass":true,
+  "source_hashes_verified_against_current_files":true,
+  "protocol_hash":"d873b2feeffda7847078f99735bc6cfff8049a885fdefe845091d184ce9d05f2",
+  "missing_path_reconciliation":{"reported_missing_working_tree_paths":129,"present_in_pinned_git_tree":129,"absent_from_git_tree":0,"cause":"Intentionally sparse checkout, not missing repository artifacts","verification_scope":"Git tree presence; not a full publication-manifest content audit"},
+  "original_child_receipts_unchanged":true,
+  "language_training_approved":false,
+  "language_quality_improvement_established":false
+}

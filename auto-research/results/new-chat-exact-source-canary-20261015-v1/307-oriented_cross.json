@@ -1,0 +1,87 @@
+{
+  "arm": "oriented_cross",
+  "checks": {
+    "all_historical_clock_levels_exercised": {
+      "calls": {
+        "document": 1,
+        "fast": 272,
+        "segment": 8
+      },
+      "expected": {
+        "document": 1,
+        "fast": 272,
+        "segment": 8
+      },
+      "pass": true
+    },
+    "causal_prefix": {
+      "pass": true
+    },
+    "equal_count_control": {
+      "pass": true
+    },
+    "exact_identity_initialization": {
+      "pass": true
+    },
+    "finite_loss_and_parameter_gradients": {
+      "pass": true
+    },
+    "forward_vs_step_streaming": {
+      "final_state_errors": {
+        "document": 0.0,
+        "fast": 0.0,
+        "segment": 0.0,
+        "segment_sum": 0.0,
+        "segment_tokens": 0,
+        "segments": 0
+      },
+      "hidden_max_abs": 0.0,
+      "logit_max_abs": 0.0,
+      "pass": true,
+      "relative_tolerance": 0,
+      "tolerance_abs": 1e-09
+    },
+    "nonzero_each_clock_gradients": {
+      "l1": {
+        "document": 0.10221796885197508,
+        "fast": 2.7590508118689008,
+        "segment": 1.2098952899778346
+      },
+      "pass": true
+    },
+    "nonzero_geometry_gain_gradients": {
+      "l1": 0.035753392092232994,
+      "pass": true
+    },
+    "optimizer_update": {
+      "pass": true,
+      "updated_parameters": [
+        "embedding.weight",
+        "final_norm.weight",
+        "final_norm.bias",
+        "fast_cell.phase",
+        "fast_cell.gain",
+        "fast_cell.native.weight_ih",
+        "fast_cell.native.weight_hh",
+        "fast_cell.native.bias_ih",
+        "fast_cell.native.bias_hh",
+        "segment_cell.weight_ih",
+        "segment_cell.weight_hh",
+        "segment_cell.bias_ih",
+        "segment_cell.bias_hh",
+        "document_cell.weight_ih",
+        "document_cell.weight_hh",
+        "document_cell.bias_ih",
+        "document_cell.bias_hh",
+        "combine.0.weight",
+        "combine.0.bias",
+        "combine.2.weight",
+        "combine.2.bias"
+      ]
+    }
+  },
+  "elapsed_seconds": 0.18044012500000006,
+  "parameters": 9600,
+  "seed": 307,
+  "synthetic_loss_not_quality_metric": 4.644054446984461
+}

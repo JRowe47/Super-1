@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "status": "DRAFT_NOT_AUTHORIZED",
+  "experiment_id": null,
+  "run_id": null,
+  "parent_run_ids": [],
+  "hypothesis": null,
+  "primary_comparator": null,
+  "primary_metric": null,
+  "minimum_useful_effect": null,
+  "success_rule": null,
+  "futility_rule": null,
+  "authorization": {
+    "approved": false,
+    "user_approval_reference": null,
+    "approved_resources": null,
+    "max_cost": null,
+    "max_walltime": null,
+    "local_cpu_budget": null
+  },
+  "design": {
+    "original_source_hashes": null,
+    "mechanism_equations": null,
+    "arms": null,
+    "control_rationale": null,
+    "seeds": null,
+    "seed_selection_method": null,
+    "learning_rate_trials_per_arm": null,
+    "parameter_counts": null,
+    "matching_track": null,
+    "compute_accounting": null
+  },
+  "data": {
+    "dataset_versions": null,
+    "tokenizer_sha256": null,
+    "train_sha256": null,
+    "selection_sha256": null,
+    "confirmation_sha256": null,
+    "split_boundaries": null,
+    "research_wide_region_reuse_audit": null,
+    "teacher_and_objective": null,
+    "official_test_access_permitted": false
+  },
+  "training": {
+    "updates": null,
+    "target_exposures_per_trial": null,
+    "tokens_per_update": null,
+    "microbatch": null,
+    "gradient_accumulation": null,
+    "bptt_length": null,
+    "accessible_history": null,
+    "state_carry_and_detach": null,
+    "document_reset_policy": null,
+    "optimizer_schedule": null,
+    "precision": null,
+    "checkpoint_selection_rule": null
+  },
+  "execution": {
+    "hardware": null,
+    "runtime_versions": null,
+    "resolved_writable_output": null,
+    "source_ownership_and_concurrent_writers": null,
+    "fidelity_tolerances": null,
+    "canary_matrix": null,
+    "cost_estimate": null
+  },
+  "evaluation": {
+    "primary_endpoint": null,
+    "confirmation_frozen_before_scoring": false,
+    "canonical_precision": "FP32",
+    "duplicate_policy": null,
+    "uncertainty_method": null,
+    "multiple_comparison_policy": null,
+    "no_test_tuning": true
+  },
+  "deployment": {
+    "weight_dtype": null,
+    "kv_or_state_dtype": null,
+    "quantization_metadata": null,
+    "batching": null,
+    "prefill_decode_protocol": null,
+    "warmup_and_synchronization": null,
+    "memory_components": null,
+    "latency_statistics": null
+  },
+  "evidence": {
+    "protocol_sha256": null,
+    "source_manifest": null,
+    "checkpoint_manifest": null,
+    "progress_path": null,
+    "terminal_receipt_path": null,
+    "preservation_policy": null,
+    "cleanup_receipt": null
+  },
+  "decision": {
+    "outcome": null,
+    "reason": null,
+    "next_experiment": null
+  }
+}

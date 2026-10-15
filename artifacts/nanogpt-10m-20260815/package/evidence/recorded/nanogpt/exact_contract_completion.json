@@ -1,0 +1,21 @@
+{
+  "checkpoint_path": "/home/rohanarun/funcweights-aug8-official-nanogpt-v1-runs/qwen06b-aug8-official-nanogpt-10m-20260815T110300Z-v1-attempt2/student_final.pt",
+  "checkpoint_sha256": "7de4e9d81b606ec6b0d7e9fbaf4dcdcb30aa55456e775a07371aaf65a6591241",
+  "identity": {
+    "architecture": "nanogpt",
+    "arm": "official_nanogpt_aug8_10m",
+    "steps": 4883,
+    "stored_parameters": 119685440,
+    "target_parameters": 120000000,
+    "tokens": 10000384,
+    "width": 448
+  },
+  "preflight": {
+    "path": "/home/rohanarun/funcweights-aug8-official-nanogpt-v1-runs/qwen06b-aug8-official-nanogpt-10m-20260815T110300Z-v1-attempt2/exact_contract_preflight.json",
+    "sha256": "c47e16bd22f409614555f73764334ee2ff9ad1d4ee46154d71d1fdf51b2e84c8"
+  },
+  "result_path": "/home/rohanarun/funcweights-aug8-official-nanogpt-v1-runs/qwen06b-aug8-official-nanogpt-10m-20260815T110300Z-v1-attempt2/result.json",
+  "result_sha256": "2120eac7d5f699d810425a8b793eccc0fd80674430751a2cc6d33361d81e3d44",
+  "schema": "official_nanogpt_aug8_exact_completion_v1",
+  "status": "PASS"
+}

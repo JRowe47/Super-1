@@ -1,0 +1,271 @@
+{
+  "hierarchy": {
+    "config": {
+      "arms": [
+        "original",
+        "local",
+        "cross"
+      ],
+      "batch": 4,
+      "confirmation_start": 900000,
+      "confirmation_targets": 32768,
+      "context": 128,
+      "learning_rates": [
+        0.001,
+        0.003
+      ],
+      "scales": 4,
+      "seeds": [
+        73,
+        191,
+        307
+      ],
+      "selection_every": 1000,
+      "selection_start": 0,
+      "selection_targets": 16384,
+      "updates": 6000,
+      "width": 64
+    },
+    "means": {
+      "cross": 1.7334718977411587,
+      "local": 1.7449051061024268,
+      "original": 1.7462609764188528
+    },
+    "paired": [
+      {
+        "ce": {
+          "cross": 1.7145912144333124,
+          "local": 1.7244310639798641,
+          "original": 1.7303300630301237
+        },
+        "passed": true,
+        "seed": 73
+      },
+      {
+        "ce": {
+          "cross": 1.7149606179445982,
+          "local": 1.73255605250597,
+          "original": 1.71540523506701
+        },
+        "passed": true,
+        "seed": 191
+      },
+      {
+        "ce": {
+          "cross": 1.7708638608455658,
+          "local": 1.7777282018214464,
+          "original": 1.7930476311594248
+        },
+        "passed": true,
+        "seed": 307
+      }
+    ],
+    "scope": "Original-hierarchy byte mechanism pilot, not matched FLOPs, word perplexity, globally pristine validation, novelty or SOTA. Confirmation target regions do not overlap selection. No official-test eligibility."
+  },
+  "pair_energy": {
+    "controls": {
+      "FLOPs_matched": false,
+      "LR_trials_per_arm_seed": 2,
+      "all_frozen_best_steps": [
+        6000,
+        6000,
+        6000,
+        6000,
+        6000,
+        6000,
+        6000,
+        6000,
+        6000,
+        6000,
+        6000,
+        6000
+      ],
+      "approximately_parameter_matched_controls": [
+        "geometric_overlapping",
+        "transformer"
+      ],
+      "arms": [
+        "pair_energy",
+        "geometric_overlapping",
+        "relative_phase_key",
+        "transformer"
+      ],
+      "context_bytes": 128,
+      "exact_parameter_matched_control": "relative_phase_key",
+      "inference_latency_measured": false,
+      "lrs": [
+        0.001,
+        0.003
+      ],
+      "parameters": {
+        "geometric_overlapping": 198400,
+        "pair_energy": 198656,
+        "relative_phase_key": 198656,
+        "transformer": 198729
+      },
+      "same_sampled_training_windows_per_seed": true,
+      "seeds": [
+        3361,
+        3407,
+        3457
+      ],
+      "state_reset_each_window": true,
+      "steps": 6000,
+      "target_byte_exposures_per_trial": 3072000,
+      "total_memory_measured": false,
+      "training_walltime_includes_validation": true,
+      "walltime_matched": false
+    },
+    "limitations": [
+      "One local byte-level task/scale/context, three seeds. No cross-task or larger-model replication yet.",
+      "Equal-count phase-key control is beaten, but a dedicated equal-sized query-shape nonlinear control is still needed to isolate energy from added flexibility.",
+      "Training CPU walltimes were unisolated and include validation; no FLOP efficiency or inference speed claim.",
+      "Reserved targets are held out for this preregistered run, not globally pristine across prior research.",
+      "Official word-level validation gate is not crossed by byte CE; official test remains ineligible and sealed.",
+      "Existing source migration remains incomplete: immutable source is read from SSD, with three hash-valid legacy Documents seal paths. No source edits or divergent checkout created.",
+      "Faster algebraically grouped analytic backward previously failed fixed LR0.003 optimizer fidelity, and is not used by this confirmation."
+    ],
+    "means": {
+      "geometric_overlapping": 1.6168844127966688,
+      "pair_energy": 1.596404282563652,
+      "relative_phase_key": 1.6103910516290103,
+      "transformer": 1.7358564613691343
+    },
+    "rows": [
+      {
+        "arm": "pair_energy",
+        "duplicate_drift": 0,
+        "seed": 3361,
+        "sha256": "22ef0d364244680c73ab1c942691f088d0351153576cf3ea1224a9dc92c3ecd4",
+        "validation": {
+          "bpc": 2.2902840508153828,
+          "ce": 1.587503932504093,
+          "scored_bytes": 65280
+        }
+      },
+      {
+        "arm": "geometric_overlapping",
+        "duplicate_drift": 0,
+        "seed": 3361,
+        "sha256": "1d186917c8c79283231fd5d7abce7990c1af67b59de8d0fb1b3a87222091f659",
+        "validation": {
+          "bpc": 2.3281391730044905,
+          "ce": 1.6137431037192251,
+          "scored_bytes": 65280
+        }
+      },
+      {
+        "arm": "relative_phase_key",
+        "duplicate_drift": 0,
+        "seed": 3361,
+        "sha256": "3e95ad08f2d63214647412207f558a14f31616be55e3dde1294ed12a87425fab",
+        "validation": {
+          "bpc": 2.3199638239230036,
+          "ce": 1.6080763835532992,
+          "scored_bytes": 65280
+        }
+      },
+      {
+        "arm": "transformer",
+        "duplicate_drift": 0,
+        "seed": 3361,
+        "sha256": "effca61ad6f61cae25487eba5835af0cb90935b109e1f31096ad26e2100141df",
+        "validation": {
+          "bpc": 2.5119597640413676,
+          "ce": 1.7411578281252993,
+          "scored_bytes": 65280
+        }
+      },
+      {
+        "arm": "pair_energy",
+        "duplicate_drift": 0,
+        "seed": 3407,
+        "sha256": "762000e3cf237256a37f78a2e2818f61089e36d8bb550882adb759ce3266d16b",
+        "validation": {
+          "bpc": 2.3055209515626296,
+          "ce": 1.5980653472975188,
+          "scored_bytes": 65280
+        }
+      },
+      {
+        "arm": "geometric_overlapping",
+        "duplicate_drift": 0,
+        "seed": 3407,
+        "sha256": "d95482ce0b36e4cae04c846947fd6857d587e75f0f5cf6867da85d0ed903cbe2",
+        "validation": {
+          "bpc": 2.3253193953696343,
+          "ce": 1.6117885828018188,
+          "scored_bytes": 65280
+        }
+      },
+      {
+        "arm": "relative_phase_key",
+        "duplicate_drift": 0,
+        "seed": 3407,
+        "sha256": "2f00d1cc0bb3703efe509278dd5d94258ca439fe844efab3960813cd93249317",
+        "validation": {
+          "bpc": 2.3177207688629005,
+          "ce": 1.6065216162625482,
+          "scored_bytes": 65280
+        }
+      },
+      {
+        "arm": "transformer",
+        "duplicate_drift": 0,
+        "seed": 3407,
+        "sha256": "5d36606af3cdacfd2522995c4787269c18880daf8c6fcb0a0399a2f3c43e799d",
+        "validation": {
+          "bpc": 2.487171555211675,
+          "ce": 1.7239759510638668,
+          "scored_bytes": 65280
+        }
+      },
+      {
+        "arm": "pair_energy",
+        "duplicate_drift": 0,
+        "seed": 3457,
+        "sha256": "4b8ff4b640142eedddc61571445bc596cf734e4e1f55920d8db224b1e8b6737a",
+        "validation": {
+          "bpc": 2.313568622747441,
+          "ce": 1.6036435678893444,
+          "scored_bytes": 65280
+        }
+      },
+      {
+        "arm": "geometric_overlapping",
+        "duplicate_drift": 0,
+        "seed": 3457,
+        "sha256": "b561bc1ec8030879715be9983b45086e6b9c5b80bc58f2544f54cbb6d2a88c1d",
+        "validation": {
+          "bpc": 2.3445548037231285,
+          "ce": 1.6251215518689623,
+          "scored_bytes": 65280
+        }
+      },
+      {
+        "arm": "relative_phase_key",
+        "duplicate_drift": 0,
+        "seed": 3457,
+        "sha256": "2152c1daceeedff36a1988be3b106f7a8ae3f556ba2dc2878458e2cb132a6370",
+        "validation": {
+          "bpc": 2.332224959445504,
+          "ce": 1.6165751550711838,
+          "scored_bytes": 65280
+        }
+      },
+      {
+        "arm": "transformer",
+        "duplicate_drift": 0,
+        "seed": 3457,
+        "sha256": "7f9feba50ed2e0895dd352762450a543de0b7b282dfc0ffc12f788c75c29b5de",
+        "validation": {
+          "bpc": 2.5138032062839013,
+          "ce": 1.7424356049182368,
+          "scored_bytes": 65280
+        }
+      }
+    ],
+    "scope": "198K-parameter, 128-byte-context local WikiText-2 byte pilot. Not original hierarchy, word-level perplexity, published SOTA, or established novelty."
+  },
+  "warning": "Separate experiments and confirmation regions; never pool their CE values as a direct cross-experiment ranking."
+}

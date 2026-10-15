@@ -1,0 +1,62 @@
+{
+  "architecture": "hierarchical_local_function_weights",
+  "arm": "hierarchical_local_function_qwen_full_kl",
+  "branching": false,
+  "budget_utilization": 0.995264075,
+  "embedding_initialization": "qwen_pca",
+  "embedding_projection": {
+    "method": "centered_teacher_embedding_covariance_eigendecomposition",
+    "preserve_global_norm": true,
+    "retained_variance": 0.7630695700645447,
+    "rows": 151936,
+    "scale": 1.201378583908081,
+    "student_dimensions": 664,
+    "teacher_dimensions": 1024
+  },
+  "metrics": {
+    "estimated_macs_per_token_at_1024": 112252849,
+    "estimated_macs_per_token_at_2048": 112252849,
+    "estimated_macs_per_token_at_512": 112252849,
+    "kl_t1": 2.5981681495904922,
+    "kl_t2": 3.851416602730751,
+    "kl_t4": 2.5466236919164658,
+    "long_context": {
+      "1024": {
+        "kl_t1": 2.68991482257843,
+        "student_ce": 5.1975274085998535,
+        "student_minus_teacher_ce": 2.5925352573394775,
+        "teacher_ce": 2.604992151260376,
+        "top1_agreement": 0.3125
+      },
+      "2048": {
+        "kl_t1": 2.47748863697052,
+        "student_ce": 5.434321641921997,
+        "student_minus_teacher_ce": 2.443830370903015,
+        "teacher_ce": 2.990491271018982,
+        "top1_agreement": 0.318359375
+      }
+    },
+    "peak_memory_bytes": 6560723968,
+    "rollout_ce": {
+      "128": 5.357828259468079,
+      "256": 5.364538908004761,
+      "512": 5.421557426452637,
+      "64": 5.487200319766998
+    },
+    "rollout_degradation": -0.06564289331436157,
+    "state_bytes_bf16_per_sequence_at_1024": 13504,
+    "state_bytes_bf16_per_sequence_at_2048": 13504,
+    "state_bytes_bf16_per_sequence_at_512": 13504,
+    "state_elements_per_sequence_at_512": 6752,
+    "student_ce": 5.407541960477829,
+    "student_minus_teacher_ce": 2.583721801638603,
+    "teacher_ce": 2.8238201588392258,
+    "tokens_per_second": 711.5344208495786,
+    "top1_agreement": 0.30670166015625
+  },
+  "steps": 4883,
+  "stored_parameters": 119431689,
+  "target_parameters": 120000000,
+  "tokens": 10000384,
+  "width": 664
+}

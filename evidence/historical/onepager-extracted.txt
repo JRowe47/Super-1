@@ -1,0 +1,189 @@
+RESEARCH BRIEF · GEOMETRIC SELF-ATTENTION · 10M-TOKEN MATCHED-PARAMETER STUDY
+Hierarchy beats the matched transformer: 16–50% lower cross-entropy,
+5,430× less state
+Equal-storage comparison at 10.00M trained tokens · 119.7M parameters each · distilled from Qwen3-0.6B-Base · trained at 512 tokens, evaluated at 512
+/ 1,024 / 2,048
+THESIS: A GEOMETRIC APPROACH TO SELF-ATTENTION
+Standard self-attention keeps a key/value cache that grows with context and a
+fixed set of stored weight matrices. We replace both. Function-weights (FW)
+represent weights as functions rather than stored matrices, so the effective weight
+at each position is computed from the geometry of the input instead of looked up.
+Hierarchy replaces the KV cache with a hierarchical recurrent state — a small set
+of tensors at multiple scales that summarize the sequence, so state is constant in
+context. Attention becomes geometry over a compact recurrent representation
+instead of a dot-product search over every past token.
+Function-weights
+Weights as functions, not
+matrices. Width-688 model; +FW
+variants (local, hierarchy,
+multiscale) match pure hierarchy
+within 0.04 CE at every
+checkpoint.
+Hierarchical recurrent state
+4 recurrent tensors × 688 × bf16
+= 5,504 bytes per sequence,
+independent of context. 114.1M
+MACs/token at any length; 7%
+fewer than the transformer at
+512, 15% at 2,048.
+16.3% → 50.3%
+LOWER FIXED CE, 512 → 2,048
+16.3% at 512 · 40.7% at 1,024 · 50.3%
+at 2,048
+5,430×
+LESS PERSISTENT STATE AT 2K
+5,504 B vs 29.88 MB; 1,357× at 512
++2.27 pt
+BENCHMARK MEAN (LIMIT
+1,000)
+0.280 vs 0.258; top-1 agreement 0.223
+→ 0.318
+7 / 7
+SYNCHRONIZED
+CHECKPOINTS WON
+All variants below transformer at every
+snapshot; mean gap 0.94 CE
+Transformer (equal storage, 119.04M)
+Pure hierarchy (119.69M)
+Local / Hierarchy + FW
+Multiscale + FW
+512 tokens
+1,024 tokens
+2,048 tokens
+0
+3
+6
+9
+12
+Fixed CE (lower is better)
+6.29
+8.55
+10.65
+5.26
+5.07
+5.29
+5.41
+5.20
+5.43
+−16.4%
+−40.7%
+−50.3%
+Fig 1. Fixed cross-entropy at 10.00M trained tokens. Green labels: pure-hierarchy reduction vs
+transformer. Transformer CE grows with context; hierarchy and Local + FW stay flat at 5.1–5.4.
+10
+12
+14
+16
+18
+20
+Trained tokens (M)
+4.5
+5.0
+5.5
+6.0
+6.5
+Training CE
+5.59
+4.81
+Transformer
+Pure hierarchy
+Hierarchy + FW
+Multiscale + FW
+Fig 2. Matched-token training CE, 7 synchronized snapshots (10.6M–20.9M
+tokens). All three hierarchy variants — with and without function-weights —
+track together, 0.75–1.15 CE below the transformer at every point.
+512
+1,024
+2,048
+Context (tokens)
+1 KB
+10 KB
+100 KB
+1 MB
+10 MB
+100 MB
+Persistent state / seq
+29.9 MB
+7.5 MB
+5,504 B, constant
+5,430×
+at 2,048
+Fig 3. Persistent per-sequence state (log scale).
+Transformer state grows linearly with context; hierarchy
+is fixed at 5,504 bytes. Analytic bf16 accounting from
+resolved configs.
+ARC-Easy HellaSwag
+PIQA
+Mean
+0.0
+0.2
+0.4
+0.6
+Accuracy (higher is better)
+.300
+.241
+.489
+.258
+.330
+.257
+.534
+.280
+.339
+.249
+.523
+.278
+Fig 4. Exact benchmark scores, limit 1,000. Hierarchy leads
+on ARC-Easy, HellaSwag, PIQA and mean; Local + FW leads
+ARC-Easy. LAMBADA is 0.000 for all models and omitted
+from the plot.
+EXTERNAL CHECK: OFFICIAL
+NANOGPT
+CONTEXT
+NANOGPT HIERARCHY
+Δ
+512
+5.126
+5.260
++2.5%
+1,024
+5.261
+5.070
+−3.6%
+2,048
+5.988
+5.291 −11.6%
+KV / state @2K
+73.5 MiB
+5.4 KiB 14,003×
+Same data, teacher, exposure, seeds and eval
+protocol; nanoGPT pinned to upstream commit
+3adf61e, 119.69M params (Δ 0.008%). The stronger
+external baseline confirms the long-context reversal
+and the state advantage.
+WHAT IS ESTABLISHED
+Controlled contract. Byte-identical data, same teacher and 0.1 CE + 1.0
+forward-KL objective, same 4,883-step / 10.0M-token exposure, same AdamW
+schedule and seeds; parameters matched to 0.5% (in-house) and 0.008%
+(nanoGPT). Artifacts SHA-256 hashed.
+Long-context reversal holds against both baselines. Hierarchy fixed CE
+barely moves from 512 → 2,048 (5.26 → 5.29) while both transformers degrade
+(in-house 6.29 → 10.65; nanoGPT 5.13 → 5.99).
+Function-weights preserve quality. All +FW variants sit within 0.04 CE of pure
+hierarchy at every checkpoint and within 0.15 at every fixed-eval context, and
+lead on ARC-Easy.
+Structurally cheaper. Constant 5,504-byte state; 114.1M MACs/token at any
+context vs 122.7–133.9M for the transformer.
+SCOPE AND NEXT STEPS
+Length-extrapolation confound. Both models trained at 512 and were
+evaluated at up to 2,048. nanoGPT uses learned absolute position
+embeddings, so part of its 1K/2K degradation is positional extrapolation; a
+baseline trained at 2,048 or using RoPE/ALiBi would isolate the architectural
+effect.
+Small long-context samples. 1,024 and 2,048 fixed evals use 2 batches × 1
+sequence (512 uses 16 × 2); one seed, no confidence intervals. Treat as strong
+directional evidence.
+FW fixed evaluation is complete for Local + FW; Hierarchy + FW and
+Multiscale + FW are queued for fixed eval.
+Scale-up. 1B-token confirmation run in progress.
+All CE values are held-out fixed evaluation unless labeled training CE. State figures are analytic bf16 per-sequence architecture accounting (excludes parameters, activations and allocator
+overhead). Benchmarks: exact, limit 1,000, one seed.

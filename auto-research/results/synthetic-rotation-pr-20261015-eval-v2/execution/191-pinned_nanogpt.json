@@ -1,0 +1,35 @@
+{
+  "arm": "pinned_nanogpt",
+  "checkpoint": "191-pinned_nanogpt.pt",
+  "checkpoint_sha256": "c12efb4bc0d4bce0ccf8eaf85fec28106a96f7afda401635930a495f55d2b44f",
+  "confirmation": {
+    "ce_nats_per_target": 2.7073390185832977,
+    "logits_sha256": "23d4ab1d181760533e54f93928d387c7645706046cb2ac98b4f819db87d08a17",
+    "targets": 1024
+  },
+  "duplicate_confirmation": {
+    "ce_nats_per_target": 2.7073390185832977,
+    "logits_sha256": "23d4ab1d181760533e54f93928d387c7645706046cb2ac98b4f819db87d08a17",
+    "targets": 1024
+  },
+  "final_selection": {
+    "ce_nats_per_target": 2.6879768073558807,
+    "logits_sha256": "7de3df59b513361e68c7c5c194c95be2f83b3677dc6e0a36e9dc23536a295987",
+    "targets": 1024
+  },
+  "initial_selection": {
+    "ce_nats_per_target": 2.7862895131111145,
+    "logits_sha256": "34a218fecdaa0faff3276af3abd05f76d92dccc09634526c05c1a7667eefd94a",
+    "targets": 1024
+  },
+  "parameters": 8136,
+  "reset_window_confirmation": {
+    "ce_nats_per_target": 2.7454586923122406,
+    "logits_sha256": "105a12508f555ed1882bff9c6987a5ee3c78f74068bd9aba90c69096a3f762c4",
+    "targets": 1024
+  },
+  "seed": 191,
+  "target_exposures": 10240,
+  "train_and_selection_cpu_seconds": 0.07112300000000005,
+  "updates": 80
+}

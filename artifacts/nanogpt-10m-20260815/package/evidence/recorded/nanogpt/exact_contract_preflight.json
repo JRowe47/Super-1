@@ -1,0 +1,60 @@
+{
+  "data": {
+    "train.bin": {
+      "bytes": 4000000000,
+      "device": 2049,
+      "inode": 4644996,
+      "mtime_ns": 1785882744000000000,
+      "path": "/home/rohanarun/funcweights-hierarchy-strong-preflight/data/qwen3-06b-representation/train.bin",
+      "sha256": "834c82d2ea76e2f17aa43d15862f5ef444322c37d9b29d07fe803bb21ac163e4"
+    },
+    "val.bin": {
+      "bytes": 8000000,
+      "device": 2049,
+      "inode": 4644997,
+      "mtime_ns": 1785881513000000000,
+      "path": "/home/rohanarun/funcweights-hierarchy-strong-preflight/data/qwen3-06b-representation/val.bin",
+      "sha256": "8517985c4979dbc95c83137ee534e30e789e2275e4ba1ee1fd31e1f0d566e4d3"
+    }
+  },
+  "process": {
+    "cuda_visible_devices": "0",
+    "local_rank": 0,
+    "rank": 0,
+    "world_size": 1
+  },
+  "runtime_root": "/home/rohanarun/funcweights-hierarchy-strong-preflight",
+  "schema": "official_nanogpt_aug8_exact_preflight_v1",
+  "static_contract": {
+    "bound_files": {
+      "representation_experiments/nanogpt_control.py": "1adfffbd843a55f00491b50cb46bc6c5d99041f54d9f48251ce3e79ad672a870",
+      "third_party/nanogpt/LICENSE": "a59ec5cdb1c1e447e5266a014b3e7ded511f8d6e5a08931e931c87490ff821fe",
+      "third_party/nanogpt/model.py": "7c01703240dbec5d554527dc666e35b3df8391d0b117fddc07afcf325a21d11c"
+    },
+    "config_path": "/home/rohanarun/aug8-official-nanogpt-comparator-20260815T110300Z-attempt3/aug8_official_nanogpt_comparator_20260815_v1/config/official_nanogpt_aug8_10m.json",
+    "config_sha256": "7c92fb90bee5ce12647aecd540bb1d4a015412ce1de4fa3ad3e27c47d2d11580",
+    "executed_tokens": 10000384,
+    "historical_config_sha256": "f47d8cabafa5f16ff32c1169fba2064bf8124907cfc99e7d8374212cc25c58fa",
+    "resolved_model": {
+      "heads": 7,
+      "layers": 21,
+      "stored_parameters": 119685440,
+      "target_match_parameters": 119694800,
+      "target_parameters": 120000000,
+      "width": 448
+    },
+    "status": "PASS_STATIC_CONTRACT",
+    "steps": 4883,
+    "upstream_commit": "3adf61e154c3fe3fca428ad6bc3818b27a3b8291"
+  },
+  "status": "PASS_RUNTIME_DATA",
+  "teacher_snapshot": {
+    "bytes": 1192135096,
+    "device": 2049,
+    "inode": 8298717,
+    "mtime_ns": 1786241253309391358,
+    "path": "/home/rohanarun/aug8-official-nanogpt-comparator-20260815T110300Z-attempt3/teacher_snapshot/da87bfb608c14b7cf20ba1ce41287e8de496c0cd",
+    "weights_path": "/home/rohanarun/aug8-official-nanogpt-comparator-20260815T110300Z-attempt3/teacher_snapshot/da87bfb608c14b7cf20ba1ce41287e8de496c0cd/model.safetensors",
+    "weights_sha256": "cd2a512003e2f9f3cd3c32a9c3573f820bb28c940f73c57b1ddaa983d9223eba"
+  }
+}

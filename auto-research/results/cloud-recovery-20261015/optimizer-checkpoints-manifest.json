@@ -1,0 +1,9 @@
+{
+  "scope": "Recovered historical resumable checkpoints, including optimizer state; not new training",
+  "parts": [
+    {"name":"local-hierarchy-resume.pt","bytes":1437462017,"sha256":"d2509ebbc389deddd9802b5cffc050a5ceb52e9f53b31e9de5101caf9abe60a7","remote_path":"/mnt/recovery-training2/home/rohanarun/funcweights-matched-hierarchy-v1/runs/qwen06b-matched-hierarchy-function-v1/hierarchical_local_qwen_full_kl/checkpoint.pt"},
+    {"name":"local-function-hierarchy-resume.pt","bytes":1433240905,"sha256":"7db2327afe42a0cdd8cbe5805a8e11d73382ec1cbb9569cd0b7552811fd346c7","remote_path":"/mnt/recovery-training2/home/rohanarun/funcweights-matched-hierarchy-v1/runs/qwen06b-matched-hierarchy-function-v1/hierarchical_local_function_qwen_full_kl/checkpoint.pt"},
+    {"name":"pure-hierarchy-resume.pt","bytes":1436361269,"sha256":"02be4d754809403f32b0187bd5066124b2cf01ccfe4cbb9f67bc5cf6b8278bab","remote_path":"/mnt/recovery-training2/home/rohanarun/funcweights-matched-hierarchy-v1/runs/qwen06b-matched-hierarchy-function-v1/hierarchical_qwen_full_kl/checkpoint.pt"},
+    {"name":"in-house-transformer-resume.pt","bytes":1428590653,"sha256":"f60c11aec5163c85403dc3495afe03b65de5684ca75cbaf1f405a32d391b66a4","remote_path":"/mnt/recovery-training2/home/rohanarun/funcweights-matched-hierarchy-v1/runs/qwen06b-matched-hierarchy-function-v1/transformer_qwen_full_kl/checkpoint.pt"}
+  ]
+}

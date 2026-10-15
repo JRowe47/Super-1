@@ -1,0 +1,145 @@
+{
+  "authorization": {
+    "approved": false,
+    "cloud_allowed": false,
+    "electricity_and_opportunity_cost": "not measured",
+    "official_test_allowed": false,
+    "proposed_local_cpu_hours_cap": 12,
+    "proposed_rental_spend_usd": 0
+  },
+  "cost": {
+    "envelope_method": "0.1805 * (512/272) * (256/64), conservatively scaling whole geometry-check time with both length and vocabulary; speculative, not a measured bound.",
+    "measured_anchor": "Synthetic double CPU 272-token whole mechanics row: stable native 0.0779-0.0811 seconds, geometry 0.1420-0.1804, nanoGPT prefix-check row 0.0827-0.1023. These include verification work and are not language throughput measurements.",
+    "prelaunch_requirement": "Authorize and measure 20 full-shape FP32 updates per arm plus selection/confirmation cost first; revise cost and obtain budget approval if above cap. No such profiling launched here.",
+    "proposed_cap_cpu_hours": 12,
+    "proposed_cash_rental_cost_usd": 0,
+    "rough_envelope_seconds_per_update": 1.36,
+    "storage": "Propose 100 MiB for this tiny pilot including data/manifests/checkpoints; verify actual bytes and free space first.",
+    "training_envelope_cpu_hours": 9.066666666666668,
+    "with_10_percent_eval_preservation_cpu_hours": 9.973333333333336
+  },
+  "data": {
+    "confirmation_sha256": null,
+    "encoding": "raw bytes 0..255; no learned tokenizer; no teacher",
+    "official_test_access": false,
+    "partition_rule": "Before execution freeze source digest, document IDs and disjoint train/selection/confirmation document manifests, auditing overlap with all historical data. Reserve at least 131072 target bytes each for selection and confirmation. Freeze exact packing/reset semantics before any scoring.",
+    "selection_sha256": null,
+    "source": "Proposed new licensed document corpus; exact source/version and availability unresolved; no corpus opened in this task",
+    "train_sha256": null,
+    "unresolved_nulls_block_launch": true
+  },
+  "design": {
+    "arms": [
+      "native exact historical hierarchy",
+      "oriented_cross wrapper",
+      "alignment_dot equal-count wrapper",
+      "pinned nanoGPT"
+    ],
+    "hierarchy": {
+      "document_segments": 8,
+      "parameters_each_wrapper": 12672,
+      "parameters_native": 12656,
+      "segment_length": 32,
+      "vocab_size": 256,
+      "width": 16
+    },
+    "learning_rates": [
+      0.001,
+      0.003
+    ],
+    "matching": "Geometry arms exactly equal count. nanoGPT approximately parameter-matched within 1 percent, not FLOP/walltime matched. This does not establish a frontier against strong modern positional baselines.",
+    "nanogpt": {
+      "analytical_parameters": 12732,
+      "bias": false,
+      "block_size": 512,
+      "count_status": "Analytical only; instantiate and verify before approval execution",
+      "dropout": 0,
+      "n_embd": 12,
+      "n_head": 2,
+      "n_layer": 2,
+      "parameter_difference_vs_wrapper_percent": 0.47348484848483974,
+      "vocab_size": 256
+    },
+    "new_backward_or_fusion": false,
+    "seeds": [
+      73,
+      191,
+      307
+    ],
+    "source_manifest": "SOURCE_MANIFEST.json",
+    "trials": 24
+  },
+  "evaluation": {
+    "confirmation": "Freeze selected config and checkpoint hashes for all 12 arm-seed pairs, then evaluate reserved confirmation twice in FP32; preserve every seed.",
+    "duplicate_tolerance_abs": 1e-07,
+    "duplicate_tolerance_rel": 0,
+    "primary_history": "512-byte episode with matching context availability, state reset between episodes",
+    "statistical_scope": "n=3 has low power; report all deltas and uncertainty. One primary contrast, other comparisons descriptive. No claim of independence across byte windows."
+  },
+  "futility_rule": "Stop on source/fidelity failure, nonfinite loss, incomplete data bindings, exhausted approved CPU budget, or any unpreservable run. Preserve failed arms; no automatic LR replacement or extra seeds.",
+  "hypothesis": "Conditioned oriented fast-state rotation reduces reserved byte CE relative to equal-count alignment-dot rotation, rather than merely benefiting from added trainable flexibility.",
+  "minimum_useful_effect": 0.01,
+  "one_b_planning": {
+    "BF16_weight_bytes_only": 1997547552,
+    "D_illustrative": 20000000000,
+    "N": 998773776,
+    "V": 151936,
+    "cost_formula": "USD per arm-seed = measured hours * current approved device-hour price + storage/data/evaluation/checkpoint overhead; no provider quote obtained because cloud access is prohibited. Three seeds and two arms multiply base hours by six, before tuning.",
+    "effective_TFLOPs_per_second_scenarios": [
+      50,
+      100,
+      200
+    ],
+    "hours_per_arm_seed_scenarios": [
+      665.849184,
+      332.924592,
+      166.462296
+    ],
+    "launch_blocks": [
+      "small pilot and intermediate-scale evidence",
+      "pinned strong positional and recurrent baselines",
+      "licensed data and exact hashes",
+      "measured recurrent/teacher compute and peak memory",
+      "actual provider quote and explicit user resource budget"
+    ],
+    "no_total_memory_claim": true,
+    "not_authorized": true,
+    "not_measured_recurrent_compute": true,
+    "rough_dense_proxy_flops": 119852853120000000000,
+    "width": 3696
+  },
+  "parent_run": "new-chat-exact-source-canary-20261015-v1",
+  "primary_comparator": "alignment_dot",
+  "primary_metric": "mean paired reserved byte cross-entropy difference: oriented minus alignment, nats per byte",
+  "proposal_id": "historical-oriented-vs-alignment-language-pilot-v1",
+  "status": "PREREGISTERED_DESIGN_PROPOSAL_NOT_AUTHORIZED_NOT_LAUNCHABLE",
+  "success_rule": "All three paired deltas negative, mean delta <= -0.01 nats/byte, paired t 95% CI upper endpoint below 0; also beat native on all paired seeds. Otherwise inconclusive or failed, never retune on confirmation.",
+  "training": {
+    "boundary_masks": "Bind corpus packing so each update contains exactly 512 valid targets; no cross-document targets. All arms use paired seed schedules.",
+    "bptt_chunk": 256,
+    "carry_ablation": "Unbounded carry and a separate reset-state ablation deferred; no free extra history in primary comparison.",
+    "episode_context": 512,
+    "hierarchy_state": "Adjacent 256-byte chunks within a 512-byte episode share state, detached at the midpoint. Reset at episode and true document/split boundaries; never across train/selection/confirmation.",
+    "microbatch": 1,
+    "nanoGPT_history": "Train and evaluate at 512, same inputs and target masks; no untrained-position extrapolation.",
+    "objective": "scratch byte CE, identical valid-target normalization",
+    "optimizer": {
+      "betas": [
+        0.9,
+        0.95
+      ],
+      "eps": 1e-08,
+      "gradient_clip": 1.0,
+      "name": "native torch AdamW",
+      "schedule": "cosine to 0.1 times initial LR",
+      "warmup_updates": 100,
+      "weight_decay": 0.1
+    },
+    "precision": "FP32",
+    "selection": "Evaluate updates 250,500,750,1000 on selection only; choose minimum CE across exactly two LRs and four checkpoints per arm/seed; earlier update then lower LR resolves ties.",
+    "target_exposures_per_trial": 512000,
+    "targets_per_update": 512,
+    "total_training_target_exposures": 12288000,
+    "updates_per_trial": 1000
+  }
+}

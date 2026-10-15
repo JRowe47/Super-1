@@ -1,0 +1,101 @@
+{
+  "budget": {
+    "frozen": 9,
+    "lrs_per_seed_arm": 2,
+    "target_word_exposures_per_trial": 6720000,
+    "trials": 18,
+    "updates_per_trial": 24000
+  },
+  "code_pins": {
+    "fixtures.py": {
+      "path": "/Volumes/SP AI 01_16/CodexWorkspaces/trin-research-evidence-20261002/word-energy-native-20261002-v1/fixtures.py",
+      "sha256": "b01c90861929bc6ef74e78d0b8124c6588f67efee3dbdfd2e58a94a9217d6731"
+    },
+    "runner.py": {
+      "path": "/Volumes/SP AI 01_16/CodexWorkspaces/trin-research-evidence-20261002/word-energy-native-20261002-v1/runner.py",
+      "sha256": "87fd0c4c2bbdb5a646adea20ce59fd7f5c1f5cad185223f7bf52f9dd362b0ee5"
+    },
+    "word_models.py": {
+      "path": "/Volumes/SP AI 01_16/CodexWorkspaces/trin-research-evidence-20261002/word-energy-native-20261002-v1/word_models.py",
+      "sha256": "c12f8d664dfc506376507815ef3eb94e232daf88baa9d524c10d5fe00a4e1103"
+    }
+  },
+  "config_path": "/Volumes/SP AI 01_16/CodexWorkspaces/trin-research-evidence-20261002/word-energy-native-20261002-v1/FULL_RUN_CONFIG.json",
+  "config_sha256": "419045f33d2d2013dd8adc2b00086fffd7799ee8f3129e6b742a77641f886a49",
+  "data_expected": {
+    "train": {
+      "path": "/Volumes/SP AI 01_16/w560-function-weight-wt2-word-sota-20260828/data/wikitext-2/train.txt",
+      "sha256": "71220dd7735e8715884cf57d21fa6306ebc3249c0979f51c1fb22314e0842298"
+    },
+    "valid": {
+      "path": "/Volumes/SP AI 01_16/w560-function-weight-wt2-word-sota-20260828/data/wikitext-2/valid.txt",
+      "sha256": "1bd7ccbea6740d1f3837c268e41cd6c983e2e1d2673843b3d2c641f412c640b7"
+    }
+  },
+  "experiment_id": "word-energy-native-20261002-v1",
+  "fresh_state_per_window_all_arms": true,
+  "horizon_policy": "Fixed equal horizon and full curves; no early stop, adaptive extension, or endpoint convergence claim.",
+  "limitations": [
+    "Root approved the fixed local 18-trial full run after complete source review, bounded native fixtures, configuration/authorization gate regressions, and full-batch synthetic CPU-cost preflight. No early stopping or automatic retuning.",
+    "18 proposed trials, 24000 updates and 6720000 word-target exposures per trial; not matched epochs to byte trials.",
+    "Fresh state at every window for every arm; optional recurrent carry API is not a context advantage in this trial.",
+    "Parameter matching only; no matched FLOP, walltime, throughput or inference-memory claim.",
+    "Not the original cross-scale hierarchy. Only the exact energy and odd-query transport laws are compared.",
+    "Historical word-level validation accessed the entire validation corpus; this is not a globally pristine confirmation region.",
+    "Selection targets 1 through 8960 and proposed confirmation targets 170001 through 198000 are disjoint within this experiment.",
+    "Window-reset subset CE is not official whole-corpus word PPL and cannot authorize the sealed official test.",
+    "No SOTA, established novelty or task-accuracy improvement claim follows from synthetic fixtures."
+  ],
+  "no_corpus_content_read_by_registration": true,
+  "primary_gate": "Complete all18 slots and selection-only freeze9; strict provenance/replay gate before reserved scoring; two exact FP32 confirmation duplicates; Energy<Shape every seed.",
+  "seed_draw": {
+    "path": "/Volumes/SP AI 01_16/CodexWorkspaces/trin-research-evidence-20261002/word-energy-native-20261002-v1/SEED_DRAW.json",
+    "sha256": "70b38dbaa050988bc4fa1496169b95b9bba98cf4580d0ba18737cd141e1ac4d3"
+  },
+  "seeds": [
+    "647713113",
+    "1852934521",
+    "230862299"
+  ],
+  "shape_driver": {
+    "path": "/Volumes/SP AI 01_16/CodexWorkspaces/trin-research-evidence-20261002/energy-vs-odd-query-20261002-v1/run_energy_shape.py",
+    "sha256": "580e0c82bae307d7e2952a75eeda5c6a0a8364a9b525b365ef44f3dffa50805a"
+  },
+  "shape_source_sha256": "cc64d66dfbe983a46b27c1bf9c45ed9538d1f86252aa4ada0b8e3cfaa7f4674d",
+  "source_pins": {
+    "capacity_sweep": {
+      "path": "/Volumes/SP AI 01_16/trin/experiments/disparity_constraints/capacity_sweep.py",
+      "sha256": "a8d6d092c9b21ae0b38cdb972a4054fb58d5bf11fcd9775c2f9e1e0850c4f97e"
+    },
+    "direct_distance": {
+      "path": "/Volumes/SP AI 01_16/trin/experiments/disparity_constraints/direct_distance.py",
+      "sha256": "c0b3bd153d213f9deffd8677b364ba5c2351f99bdec6fe94721672e5c7e9d25c"
+    },
+    "noncommuting_phase_candidate": {
+      "path": "/Volumes/SP AI 01_16/trin/experiments/disparity_constraints/noncommuting_phase_candidate.py",
+      "sha256": "063584bd9d4746ade54669e4cb1a9b70f8cdb38fff586ce68db37564552d14b5"
+    },
+    "pair_energy_phase_candidate": {
+      "path": "/Volumes/SP AI 01_16/trin/experiments/disparity_constraints/pair_energy_phase_candidate.py",
+      "sha256": "61b8d710a0c647c8c45cbe8e5a4e06eea440fa37975d9f387e9402b5ea2efa9a"
+    },
+    "phase_transition_language": {
+      "path": "/Volumes/SP AI 01_16/trin/experiments/disparity_constraints/phase_transition_language.py",
+      "sha256": "9e79bff53701581864118b18a5fc35156af41afaeb44b2fc6e25916a8c41f9b4"
+    },
+    "run": {
+      "path": "/Volumes/SP AI 01_16/trin/experiments/disparity_constraints/run.py",
+      "sha256": "6efab2fd890a1757ba9925084b84f89120ff94cd2e48b54802493c780d2a96d2"
+    }
+  },
+  "transformer_gate": "Energy<matched Transformer every seed; separate diagnostic/conjunction, not FLOP matching.",
+  "vocabulary_expected": {
+    "path": "/Volumes/SP AI 01_16/w560-function-weight-wt2-word-sota-20260828/data/wikitext-2/vocabulary-only-from-b2b8a237.pt",
+    "sha256": "e0bb220d269daef7a6c49a2900ec844c76390045cdd7e9df44c808f1989d4646",
+    "size": 33278,
+    "special_ids": {
+      "<eos>": 0,
+      "<unk>": 9
+    }
+  }
+}

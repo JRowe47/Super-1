@@ -1,0 +1,15 @@
+{
+  "schema": "reproduction_external_inputs_v1",
+  "data": {
+    "note": "The exact bytes define the corpus. The historical files were prepared with the Qwen3-1.7B tokenizer family and consumed under the qwen3-06b-representation path.",
+    "train.bin": {"bytes": 4000000000, "dtype": "uint32", "tokens": 1000000000, "sha256": "834c82d2ea76e2f17aa43d15862f5ef444322c37d9b29d07fe803bb21ac163e4"},
+    "val.bin": {"bytes": 8000000, "dtype": "uint32", "tokens": 2000000, "sha256": "8517985c4979dbc95c83137ee534e30e789e2275e4ba1ee1fd31e1f0d566e4d3"}
+  },
+  "teacher": {
+    "model": "Qwen/Qwen3-0.6B-Base",
+    "revision": "da87bfb608c14b7cf20ba1ce41287e8de496c0cd",
+    "model.safetensors": {"bytes": 1192135096, "sha256": "cd2a512003e2f9f3cd3c32a9c3573f820bb28c940f73c57b1ddaa983d9223eba"}
+  },
+  "included": false,
+  "reason_not_included": "The code archive remains small. The verifier accepts explicit external paths and checks every required byte before launch."
+}

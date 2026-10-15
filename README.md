@@ -1,0 +1,90 @@
+# Super-1
+
+Hierarchical recurrent memory and function-generated weights for compact sequence models.
+
+Super-1 explores carrying context in learned, multi-timescale state and generating transitions through structured functions. This repository contains model implementations, benchmark reports, checkpoints, training records, and a roadmap toward 1B parameters.
+
+## Benchmark highlights
+
+| Comparison | Result | Study |
+|---|---|---|
+| Hierarchy vs upstream nanoGPT at 2K | **11.64% lower cross-entropy**: 5.291 vs 5.988 | Approximately 120M parameters, 10M training tokens, one seed |
+| Hierarchy vs upstream nanoGPT at 1K | **3.63% lower cross-entropy**: 5.070 vs 5.261 | Same historical study |
+| Hierarchy vs in-house Transformer | **16–50% lower cross-entropy** across 512–2,048 context | Same historical study; rounded source values |
+| Persistent sequence state at 2K | **Approximately 14,000× smaller** than nanoGPT KV-cache accounting | 5,504 bytes vs 73.5 MiB; not total memory |
+| Pair-energy transitions vs local Transformer | **8.03% lower mean byte cross-entropy**: 1.596404 vs 1.735856 | Separate three-seed pilot |
+| Cross-scale rotation vs original hierarchy | **0.73% lower mean byte cross-entropy**: 1.733472 vs 1.746261 | Separate three-seed pilot |
+
+Cross-entropy is lower-is-better. These results compare the named baselines, not published SOTA. The historical models trained at 512 tokens; nanoGPT won at that context (5.126 vs 5.260). Its learned absolute-position extrapolation affects the longer-context comparison. The byte pilots are separate studies, not a pooled leaderboard.
+
+## Architecture
+
+The original hierarchy uses learned gates and cross-scale updates to maintain fast, segment, and document-level memory. Its recurrent state stays fixed-size as context grows. Function-generated transition experiments explore structured transformations, relative geometry, and rotations.
+
+The historical pure hierarchy, local-plus-function-weight arm, and later geometry pilots are separately identified in the evidence: they are not one identical trained architecture.
+
+## Context scaling
+
+![Cross-entropy across context lengths](graphs/historical_context.svg)
+
+| Context | In-house Transformer | Pure hierarchy | Local + function weights | Upstream nanoGPT |
+|---|---:|---:|---:|---:|
+| 512 | 6.29 | 5.26 | 5.41 | 5.126 |
+| 1,024 | 8.55 | 5.07 | 5.20 | 5.261 |
+| 2,048 | 10.65 | 5.29 | 5.43 | 5.988 |
+
+Approximately 119.7M parameters, a Qwen3-0.6B-Base teacher, 4,883 updates, and a shared distillation objective of 0.1 CE + 1.0 forward KL. The historical study uses one seed and limited evaluation batches. These are preserved report results, not a fresh benchmark replay.
+
+## Compact persistent state
+
+![Persistent sequence-state comparison](graphs/persistent_state.svg)
+
+Four recurrent tensors × width 688 × two BF16 bytes = **5,504 bytes per sequence**. At 2K, the reported ratios are approximately **5,430×** versus the in-house Transformer and **14,000×** versus nanoGPT's KV-cache accounting. This excludes weights, activations, workspaces, and allocator overhead; it does not measure total inference memory or speed.
+
+## Geometry experiments
+
+![Every seed in the byte-model pilots](graphs/confirmed_byte_pilots.svg)
+
+Both three-seed pilots above retain every seed and saved exact duplicate FP32 evaluations. FLOPs and wall time were not matched. See the [research catalog](auto-research/RESEARCH_CATALOG.md) for controls and protocols.
+
+Negative findings remain available too: the latest [synthetic rotation experiment](auto-research/reports/synthetic-rotation-pr-20261015-v1.md) did not meet its promotion threshold and was not promoted.
+
+## Reproduce and inspect
+
+```sh
+git clone https://github.com/rohanarun/Super-1.git
+cd Super-1
+python3 scripts/verify_evidence.py
+python3 scripts/render_charts.py
+```
+
+These commands verify checked-in evidence and regenerate charts; they do not train models or access an official test set.
+
+- [Historical nanoGPT comparison and frozen replication package](artifacts/nanogpt-10m-20260815/)
+- [Exact-source and full reproduction instructions](auto-research/results/cloud-recovery-20261015/REPRODUCTION_RECOVERY.md)
+- [Runtime setup instructions](auto-research/results/cloud-recovery-20261015/RUNTIME_REPLAY.md)
+- [Checkpoints, replication inputs, teacher, and runtime downloads](https://github.com/rohanarun/Super-1/releases)
+
+Historical receipts remain unchanged for traceability. Their original URLs identify the source archive; corresponding release assets are also copied to this repository.
+
+## Research toward 1B
+
+Read [auto-research.md](auto-research.md) for agent instructions and [the scaling roadmap](auto-research/SCALING_1B.md) for proposed experiments. Priorities include efficient recurrence, isolated geometry controls, matched-budget nanoGPT comparisons, multiple seeds, and measured quality–memory–latency tradeoffs.
+
+Protocols, results, logs, and all outcomes live in [auto-research/](auto-research/). Training and cloud spending require explicit approval; this publication starts no runs.
+
+## Repository layout
+
+| Path | Contents |
+|---|---|
+| `src/` | Model and experiment implementations |
+| `checkpoints/` | Selected small-model checkpoints |
+| `artifacts/` | Historical reports and replication packages |
+| `data/`, `evidence/` | Metrics, protocols, and hash-bound records |
+| `graphs/` | Benchmark figures and previews |
+| `auto-research/` | Instructions, run registry, source snapshots, and results |
+| `scripts/` | Evidence verification and chart generation |
+
+## License
+
+[MIT](LICENSE) for original code and documentation. Third-party material retains its original licenses and notices.

@@ -1,0 +1,366 @@
+{
+  "trials": [
+    {
+      "seed": 73,
+      "arm": "original",
+      "lr": 0.001,
+      "step": 6000,
+      "selection": {
+        "ce": 1.7741877026855946,
+        "targets": 16384,
+        "logit_sha256": "6439601246931c96aa28bbc69940bb58cbc70daf095ccfa87840a377d9bac656",
+        "target_interval": [
+          1,
+          16384
+        ]
+      },
+      "checkpoint": "/Volumes/SP AI 01_16/CodexWorkspaces/trin-research-evidence-20261002/original-hierarchy-reference-20261002-v1/regularized-language-run/73-original-0.001-6000.pt",
+      "checkpoint_sha256": "dd4af2028baa94d1f34c820aa8480b52289fde209bf95e5f7813a5cb109f99a5",
+      "completed_updates": 6000,
+      "train_target_exposures": 3072000
+    },
+    {
+      "seed": 73,
+      "arm": "original",
+      "lr": 0.003,
+      "step": 6000,
+      "selection": {
+        "ce": 1.7446864806115627,
+        "targets": 16384,
+        "logit_sha256": "10f75a2ca9e8a5bb90a8f5dff14696c343bf04ad0d6531da28650b3fc17cadf1",
+        "target_interval": [
+          1,
+          16384
+        ]
+      },
+      "checkpoint": "/Volumes/SP AI 01_16/CodexWorkspaces/trin-research-evidence-20261002/original-hierarchy-reference-20261002-v1/regularized-language-run/73-original-0.003-6000.pt",
+      "checkpoint_sha256": "19324f8897762c9db70ecc0b6b19bb754edf74ffaac4ecdaa05b450c54fb9111",
+      "completed_updates": 6000,
+      "train_target_exposures": 3072000
+    },
+    {
+      "seed": 73,
+      "arm": "local",
+      "lr": 0.001,
+      "step": 6000,
+      "selection": {
+        "ce": 1.7657909020781517,
+        "targets": 16384,
+        "logit_sha256": "eb61a4e96ee50ece7db8b29d8f877f2baeccbc39d337731da7b6133b23006064",
+        "target_interval": [
+          1,
+          16384
+        ]
+      },
+      "checkpoint": "/Volumes/SP AI 01_16/CodexWorkspaces/trin-research-evidence-20261002/original-hierarchy-reference-20261002-v1/regularized-language-run/73-local-0.001-6000.pt",
+      "checkpoint_sha256": "df9cc6f37bb90bc8448d6c7c8d63c03901e39d8403e48af352187ab71c807593",
+      "completed_updates": 6000,
+      "train_target_exposures": 3072000
+    },
+    {
+      "seed": 73,
+      "arm": "local",
+      "lr": 0.003,
+      "step": 6000,
+      "selection": {
+        "ce": 1.7577925249934196,
+        "targets": 16384,
+        "logit_sha256": "4aa91cdda5d8a843f6729ce776001fdc1f9bc974fb805346345ca955af961129",
+        "target_interval": [
+          1,
+          16384
+        ]
+      },
+      "checkpoint": "/Volumes/SP AI 01_16/CodexWorkspaces/trin-research-evidence-20261002/original-hierarchy-reference-20261002-v1/regularized-language-run/73-local-0.003-6000.pt",
+      "checkpoint_sha256": "d8165d76126a6ec4262b2189e0a41e02b5a654f5fefbcea873c915fc2e654ffe",
+      "completed_updates": 6000,
+      "train_target_exposures": 3072000
+    },
+    {
+      "seed": 73,
+      "arm": "cross",
+      "lr": 0.001,
+      "step": 6000,
+      "selection": {
+        "ce": 1.7729383185505867,
+        "targets": 16384,
+        "logit_sha256": "804cf462ab77b06130866d5da9b0dfda83ad9f2a3e79618966d1319c49316c5a",
+        "target_interval": [
+          1,
+          16384
+        ]
+      },
+      "checkpoint": "/Volumes/SP AI 01_16/CodexWorkspaces/trin-research-evidence-20261002/original-hierarchy-reference-20261002-v1/regularized-language-run/73-cross-0.001-6000.pt",
+      "checkpoint_sha256": "8504333123011645100608510f1f62f39f604d73dabfc47a2d8acc06c4ee4028",
+      "completed_updates": 6000,
+      "train_target_exposures": 3072000
+    },
+    {
+      "seed": 73,
+      "arm": "cross",
+      "lr": 0.003,
+      "step": 6000,
+      "selection": {
+        "ce": 1.7489671409130096,
+        "targets": 16384,
+        "logit_sha256": "9878e4e993afa76bd17dfd4203d27be0ef77c69f356c80015e95751bd188244e",
+        "target_interval": [
+          1,
+          16384
+        ]
+      },
+      "checkpoint": "/Volumes/SP AI 01_16/CodexWorkspaces/trin-research-evidence-20261002/original-hierarchy-reference-20261002-v1/regularized-language-run/73-cross-0.003-6000.pt",
+      "checkpoint_sha256": "967434e33ee702b8df7298cd9ecb1b337eeecbfe84fcba7ba6ac06882c643c23",
+      "completed_updates": 6000,
+      "train_target_exposures": 3072000
+    },
+    {
+      "seed": 191,
+      "arm": "original",
+      "lr": 0.001,
+      "step": 6000,
+      "selection": {
+        "ce": 1.7430056035518646,
+        "targets": 16384,
+        "logit_sha256": "fa35407e7fad64fc19e5af2dfbd069c0ffcc66b0c61517d1a33b6ef869f8b0c0",
+        "target_interval": [
+          1,
+          16384
+        ]
+      },
+      "checkpoint": "/Volumes/SP AI 01_16/CodexWorkspaces/trin-research-evidence-20261002/original-hierarchy-reference-20261002-v1/regularized-language-run/191-original-0.001-6000.pt",
+      "checkpoint_sha256": "3efef051942c9cb0b6f8896bfdf384e18d5e44cbd1c4a7b201fecd3d926eea49",
+      "completed_updates": 6000,
+      "train_target_exposures": 3072000
+    },
+    {
+      "seed": 191,
+      "arm": "original",
+      "lr": 0.003,
+      "step": 6000,
+      "selection": {
+        "ce": 1.7656144350767136,
+        "targets": 16384,
+        "logit_sha256": "7e51192fd00e808e3748a8643182126da63c5bc85e79459db0f50c6346cd1b24",
+        "target_interval": [
+          1,
+          16384
+        ]
+      },
+      "checkpoint": "/Volumes/SP AI 01_16/CodexWorkspaces/trin-research-evidence-20261002/original-hierarchy-reference-20261002-v1/regularized-language-run/191-original-0.003-6000.pt",
+      "checkpoint_sha256": "fd286097161703bebafbfee3f42e3be024d17c4b88cc51f5f80f6083a8d2be0b",
+      "completed_updates": 6000,
+      "train_target_exposures": 3072000
+    },
+    {
+      "seed": 191,
+      "arm": "local",
+      "lr": 0.001,
+      "step": 6000,
+      "selection": {
+        "ce": 1.744613140821457,
+        "targets": 16384,
+        "logit_sha256": "6358d9048634a7f9aac324ae4561399360b2434ee8dd12671992f0c78bf172c1",
+        "target_interval": [
+          1,
+          16384
+        ]
+      },
+      "checkpoint": "/Volumes/SP AI 01_16/CodexWorkspaces/trin-research-evidence-20261002/original-hierarchy-reference-20261002-v1/regularized-language-run/191-local-0.001-6000.pt",
+      "checkpoint_sha256": "5ba60fcdce2264f3efd308155e081f2a6d35587689380c80344556c9709f1c24",
+      "completed_updates": 6000,
+      "train_target_exposures": 3072000
+    },
+    {
+      "seed": 191,
+      "arm": "local",
+      "lr": 0.003,
+      "step": 6000,
+      "selection": {
+        "ce": 1.736121665686369,
+        "targets": 16384,
+        "logit_sha256": "85cb64d1197d87ce27a163fe710178e70220e90626d0ed908033793d66fd3804",
+        "target_interval": [
+          1,
+          16384
+        ]
+      },
+      "checkpoint": "/Volumes/SP AI 01_16/CodexWorkspaces/trin-research-evidence-20261002/original-hierarchy-reference-20261002-v1/regularized-language-run/191-local-0.003-6000.pt",
+      "checkpoint_sha256": "0fac1101751cd095d677e41a76c306ca8d2539f974ddbb39eb1361a3a7857731",
+      "completed_updates": 6000,
+      "train_target_exposures": 3072000
+    },
+    {
+      "seed": 191,
+      "arm": "cross",
+      "lr": 0.001,
+      "step": 6000,
+      "selection": {
+        "ce": 1.7427668496966362,
+        "targets": 16384,
+        "logit_sha256": "cfad5a5bc53feb9e2b395cf2759cfdb6b5a9e9b632d452e355acf6cb4792780e",
+        "target_interval": [
+          1,
+          16384
+        ]
+      },
+      "checkpoint": "/Volumes/SP AI 01_16/CodexWorkspaces/trin-research-evidence-20261002/original-hierarchy-reference-20261002-v1/regularized-language-run/191-cross-0.001-6000.pt",
+      "checkpoint_sha256": "d6b58161fb3c8d36e8f3fd6feb820831b4213eee665bfc2ae73e38e5ecd900e2",
+      "completed_updates": 6000,
+      "train_target_exposures": 3072000
+    },
+    {
+      "seed": 191,
+      "arm": "cross",
+      "lr": 0.003,
+      "step": 6000,
+      "selection": {
+        "ce": 1.7588119059801102,
+        "targets": 16384,
+        "logit_sha256": "c0b0efde342ec72469e9fdee9332c2ff569c2fbb931f5a3173bf89199b37617c",
+        "target_interval": [
+          1,
+          16384
+        ]
+      },
+      "checkpoint": "/Volumes/SP AI 01_16/CodexWorkspaces/trin-research-evidence-20261002/original-hierarchy-reference-20261002-v1/regularized-language-run/191-cross-0.003-6000.pt",
+      "checkpoint_sha256": "bd0214d7c73e3cf1bab8b3c17e7bae0a642c82489c9ded3ac83544e4e914cae0",
+      "completed_updates": 6000,
+      "train_target_exposures": 3072000
+    },
+    {
+      "seed": 307,
+      "arm": "original",
+      "lr": 0.001,
+      "step": 6000,
+      "selection": {
+        "ce": 1.7615032829344273,
+        "targets": 16384,
+        "logit_sha256": "d6ba951c96848457d08882fb23d926d06c338028105fc1ebc78051f599286626",
+        "target_interval": [
+          1,
+          16384
+        ]
+      },
+      "checkpoint": "/Volumes/SP AI 01_16/CodexWorkspaces/trin-research-evidence-20261002/original-hierarchy-reference-20261002-v1/regularized-language-run/307-original-0.001-6000.pt",
+      "checkpoint_sha256": "893ae5c3cd7e0287473b4f8230cfbef44974bc0fa653a80bbe496a7a7a44c181",
+      "completed_updates": 6000,
+      "train_target_exposures": 3072000
+    },
+    {
+      "seed": 307,
+      "arm": "original",
+      "lr": 0.003,
+      "step": 6000,
+      "selection": {
+        "ce": 1.761082649230957,
+        "targets": 16384,
+        "logit_sha256": "c30224f70049c02a889446477bd4da64605972c964fa4da9d9298c07fee809ef",
+        "target_interval": [
+          1,
+          16384
+        ]
+      },
+      "checkpoint": "/Volumes/SP AI 01_16/CodexWorkspaces/trin-research-evidence-20261002/original-hierarchy-reference-20261002-v1/regularized-language-run/307-original-0.003-6000.pt",
+      "checkpoint_sha256": "bbfc19ab63eac1b07accbea9bbc9b253b966d4ccf9581b5477287ff0825f6626",
+      "completed_updates": 6000,
+      "train_target_exposures": 3072000
+    },
+    {
+      "seed": 307,
+      "arm": "local",
+      "lr": 0.001,
+      "step": 6000,
+      "selection": {
+        "ce": 1.7613926567137241,
+        "targets": 16384,
+        "logit_sha256": "5b164101db70db1032f03886e84c48fec2668be0e3745f0a8ae7240a72a0eb06",
+        "target_interval": [
+          1,
+          16384
+        ]
+      },
+      "checkpoint": "/Volumes/SP AI 01_16/CodexWorkspaces/trin-research-evidence-20261002/original-hierarchy-reference-20261002-v1/regularized-language-run/307-local-0.001-6000.pt",
+      "checkpoint_sha256": "8715c747dc2df89428d41132088ce3511a25595429cc5221010efda975d2ce1f",
+      "completed_updates": 6000,
+      "train_target_exposures": 3072000
+    },
+    {
+      "seed": 307,
+      "arm": "local",
+      "lr": 0.003,
+      "step": 6000,
+      "selection": {
+        "ce": 1.7532760128378868,
+        "targets": 16384,
+        "logit_sha256": "b5035f73c6060305bd519f3bb9fad4f705a95785ad5d14ec4acb7afe8919ab2d",
+        "target_interval": [
+          1,
+          16384
+        ]
+      },
+      "checkpoint": "/Volumes/SP AI 01_16/CodexWorkspaces/trin-research-evidence-20261002/original-hierarchy-reference-20261002-v1/regularized-language-run/307-local-0.003-6000.pt",
+      "checkpoint_sha256": "b5e7beb1f4c33b66214cf570198a97968f9859174e7137077203e89eb835b990",
+      "completed_updates": 6000,
+      "train_target_exposures": 3072000
+    },
+    {
+      "seed": 307,
+      "arm": "cross",
+      "lr": 0.001,
+      "step": 6000,
+      "selection": {
+        "ce": 1.760794322937727,
+        "targets": 16384,
+        "logit_sha256": "5a0159365e29873ea92c3269fd342d295b4e40af36686a395bfa6f61a0b56e8e",
+        "target_interval": [
+          1,
+          16384
+        ]
+      },
+      "checkpoint": "/Volumes/SP AI 01_16/CodexWorkspaces/trin-research-evidence-20261002/original-hierarchy-reference-20261002-v1/regularized-language-run/307-cross-0.001-6000.pt",
+      "checkpoint_sha256": "187cad95a2040d73b651872c395159a75aa02d0dd8d788c09d444b81e7f50b57",
+      "completed_updates": 6000,
+      "train_target_exposures": 3072000
+    },
+    {
+      "seed": 307,
+      "arm": "cross",
+      "lr": 0.003,
+      "step": 6000,
+      "selection": {
+        "ce": 1.7662115395069122,
+        "targets": 16384,
+        "logit_sha256": "5f55e5c41480e5be793b9939fa4de7cb7e1304e965f1724dab3f6279390dc93d",
+        "target_interval": [
+          1,
+          16384
+        ]
+      },
+      "checkpoint": "/Volumes/SP AI 01_16/CodexWorkspaces/trin-research-evidence-20261002/original-hierarchy-reference-20261002-v1/regularized-language-run/307-cross-0.003-6000.pt",
+      "checkpoint_sha256": "740e8889fa31860b198f9288ed7eabf615adb6fbf0d0b499d7083851d253bac7",
+      "completed_updates": 6000,
+      "train_target_exposures": 3072000
+    }
+  ],
+  "streams": {
+    "73": [
+      5878282,
+      9229066,
+      9634198,
+      6686330
+    ],
+    "191": [
+      2438673,
+      3142903,
+      5637128,
+      6613050
+    ],
+    "307": [
+      4880785,
+      4254321,
+      5053336,
+      2864455
+    ]
+  }
+}

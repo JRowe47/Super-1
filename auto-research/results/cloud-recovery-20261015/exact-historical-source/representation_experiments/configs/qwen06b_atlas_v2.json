@@ -1,0 +1,76 @@
+{
+  "teacher": "Qwen/Qwen3-0.6B-Base",
+  "data": "data/qwen3-06b-representation",
+  "token_dtype": "uint32",
+  "atlas_v2": {
+    "groups": 4,
+    "heads": 8,
+    "charts": 32,
+    "basis": 4,
+    "topk_charts": 2,
+    "value_dim": 64,
+    "local_features": 16,
+    "local_windows": [32, 128],
+    "latent": 128,
+    "wavelet_scales": 6,
+    "depth_basis": 8,
+    "adapter_rank": 32
+  },
+  "training": {
+    "context": 512,
+    "batch_size": 1,
+    "max_tokens": 50000000,
+    "learning_rate": 0.0001,
+    "betas": [0.9, 0.95],
+    "weight_decay": 0.01,
+    "warmup_steps": 500,
+    "minimum_lr_ratio": 0.1,
+    "gradient_clip": 1.0,
+    "seed": 7301,
+    "logit_stride": 8,
+    "geometry_layers": [7, 14, 21, 28],
+    "future_horizons": [1, 4, 16],
+    "future_every": 4,
+    "future_stride": 32,
+    "intervention_every": 4,
+    "intervention_fraction": 0.125,
+    "intervention_stride": 16,
+    "bypass_alpha_start": 0.0,
+    "bypass_tokens": 2000000,
+    "loss_weights": {
+      "kl": 1.0,
+      "ce": 0.1,
+      "logit_nmse": 0.0,
+      "geometry": 0.2,
+      "attention_scale": 0.05,
+      "future": 0.1,
+      "counterfactual": 0.25,
+      "chart_balance": 0.01,
+      "mix_balance": 0.01
+    },
+    "log_every": 20,
+    "checkpoint_every": 500,
+    "device": 0
+  },
+  "milestones_tokens": [10000000, 50000000],
+  "gate": {
+    "max_ce_gap": 0.5
+  },
+  "final_goal": {
+    "max_ce_gap": 0.2,
+    "max_teacher_kl": 0.2,
+    "min_top1_agreement": 0.9
+  },
+  "evaluation": {
+    "contexts": [128, 256, 512, 1024],
+    "reference_context": 512,
+    "batches": 8,
+    "batch_size": 1,
+    "diagnostic_weights": {
+      "attention": 0.0,
+      "residual": 0.0,
+      "logits": 0.0,
+      "kl": 1.0
+    }
+  }
+}

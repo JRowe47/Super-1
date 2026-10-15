@@ -1,0 +1,16 @@
+{
+  "status": "NO_NEW_ORIGINALS_LOCATED",
+  "scope": "Additional targeted SSD filename and conventional container-storage checks; not exhaustive filesystem or disk-image search",
+  "ssd_roots": [
+    "recovery-cache",
+    "training",
+    "training 2",
+    "train",
+    "relocated-system-temp.SxHe2s6I",
+    "relocated-ipa-temp.JPXm5gBo",
+    "exports"
+  ],
+  "result": "No missing-source/checkpoint or original runtime candidate identified. Container-related matches were unrelated dependency source files. Conventional Docker/Colima/OrbStack/Podman paths and commands were not found by this check. UTM app container exists; its existence does not establish a historical training image.",
+  "training_started": false,
+  "cloud_resources_created": false
+}

@@ -1,0 +1,140 @@
+{
+  "cloud_resources_created": 0,
+  "dataset_content_read": false,
+  "device": "CPU",
+  "elapsed_seconds": 0.972929292,
+  "is_language_benchmark": false,
+  "is_parameter_matched_comparison": false,
+  "official_test_accessed": false,
+  "python": "3.9.6 (default, Aug 25 2026, 21:26:21) \n[Clang 21.0.0 (clang-2100.3.34.2)]",
+  "seeds": [
+    {
+      "checks": {
+        "cross_scale": {
+          "causality": true,
+          "finite_gradients": true,
+          "optimizer_updated": true,
+          "parameters": 22024,
+          "split_logit_max_abs": 0,
+          "split_state_max_abs": 0,
+          "synthetic_loss": 5.94310188293457
+        },
+        "identity_max_abs": 0,
+        "nanogpt": {
+          "finite_gradients": true,
+          "finite_loss": true,
+          "optimizer_updated": true,
+          "parameters": 33440
+        },
+        "original": {
+          "causality": true,
+          "finite_gradients": true,
+          "optimizer_updated": true,
+          "parameters": 22016,
+          "split_logit_max_abs": 0,
+          "split_state_max_abs": 0,
+          "synthetic_loss": 5.943100452423096
+        }
+      },
+      "seed": 73
+    },
+    {
+      "checks": {
+        "cross_scale": {
+          "causality": true,
+          "finite_gradients": true,
+          "optimizer_updated": true,
+          "parameters": 22024,
+          "split_logit_max_abs": 0,
+          "split_state_max_abs": 0,
+          "synthetic_loss": 5.677160739898682
+        },
+        "identity_max_abs": 0,
+        "nanogpt": {
+          "finite_gradients": true,
+          "finite_loss": true,
+          "optimizer_updated": true,
+          "parameters": 33440
+        },
+        "original": {
+          "causality": true,
+          "finite_gradients": true,
+          "optimizer_updated": true,
+          "parameters": 22016,
+          "split_logit_max_abs": 0,
+          "split_state_max_abs": 0,
+          "synthetic_loss": 5.677164554595947
+        }
+      },
+      "seed": 191
+    },
+    {
+      "checks": {
+        "cross_scale": {
+          "causality": true,
+          "finite_gradients": true,
+          "optimizer_updated": true,
+          "parameters": 22024,
+          "split_logit_max_abs": 0,
+          "split_state_max_abs": 0,
+          "synthetic_loss": 5.788572311401367
+        },
+        "identity_max_abs": 0,
+        "nanogpt": {
+          "finite_gradients": true,
+          "finite_loss": true,
+          "optimizer_updated": true,
+          "parameters": 33440
+        },
+        "original": {
+          "causality": true,
+          "finite_gradients": true,
+          "optimizer_updated": true,
+          "parameters": 22016,
+          "split_logit_max_abs": 0,
+          "split_state_max_abs": 0,
+          "synthetic_loss": 5.788565635681152
+        }
+      },
+      "seed": 307
+    }
+  ],
+  "source_hashes_checked": [
+    {
+      "path": "/Volumes/SP AI 01_16/CodexWorkspaces/trin-research-evidence-20261002/original-hierarchy-reference-20261002-v1/regularized_language.py",
+      "sha256": "032cc199c26775040d8b8f9a87cc3c991915e653e032175320f59c8d02e7f336"
+    },
+    {
+      "path": "/Volumes/SP AI 01_16/CodexWorkspaces/trin-research-evidence-20261002/original-hierarchy-reference-20261002-v1/regularized_rotation.py",
+      "sha256": "e56b2e956a8370c1946267d1c41a2a47e49e18b78c83468dd7fe39a8b180c30d"
+    },
+    {
+      "path": "/Volumes/SP AI 01_16/CodexWorkspaces/trin-research-evidence-20261002/original-hierarchy-reference-20261002-v1/packed_rotation.py",
+      "sha256": "24c3a4150e5824c9e0f8115e28d91d8d22eb0822a2a1a946e89c43b8e9f303bc"
+    },
+    {
+      "path": "/Volumes/SP AI 01_16/CodexWorkspaces/trin-research-evidence-20261002/original-hierarchy-reference-20261002-v1/cross_scale_rotation_canary.py",
+      "sha256": "d36fad9866317d6ce8e1d683e39c9c9c431309a38ffd6943892cbf2cc98f19ba"
+    },
+    {
+      "path": "/Volumes/SP AI 01_16/CodexWorkspaces/trin-research-evidence-20261002/original-hierarchy-reference-20261002-v1/experiments/function_weight_wikitext2_benchmark/model_core.py",
+      "sha256": "0e43040605679d73f2654c4d30afc1e29bbfadb46dbafc12cb4ff4f5bc24f61a"
+    },
+    {
+      "path": "/Volumes/SP AI 01_16/CodexWorkspaces/trin-research-evidence-20261002/original-hierarchy-reference-20261002-v1/experiments/function_weight_wt2_original_multiscale_decisive/models.py",
+      "sha256": "3dbe4fa50a4e7e0a9f1d1dec72b8e209e66ae842cb164e00d93cb4fe56d854a8"
+    },
+    {
+      "path": "/Volumes/SP AI 01_16/CodexWorkspaces/trin-research-evidence-20261002/original-hierarchy-reference-20261002-v1/experiments/function_weight_wt2_original_transformer_port/model.py",
+      "sha256": "3180772c6614b31d2152782d36aba4c3c6545f216fcca21df870975133393145"
+    },
+    {
+      "path": "/Volumes/SP AI 01_16/repro-packages/official-nanogpt-vs-proven-hierarchy-10m-20260815-v1r2-email-safe-attempt1/source/official_nanogpt/third_party/nanogpt/model.py",
+      "sha256": "7c01703240dbec5d554527dc666e35b3df8391d0b117fddc07afcf325a21d11c"
+    }
+  ],
+  "status": "PASS_SYNTHETIC_ACCEPTANCE_ONLY",
+  "synthetic_only": true,
+  "threads": 1,
+  "torch": "2.8.0"
+}

@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "arm_seed_rows": 12,
+  "training_updates": 960,
+  "targets_per_arm_seed": 10240,
+  "duplicate_rows_exact": 12,
+  "data_regenerated_exactly": true,
+  "all_selection_losses_decreased": true,
+  "paired_mean": -0.0018544991811116536,
+  "primary_gate_passed": false,
+  "experiment_cpu_seconds_total": 9.088996999999999,
+  "evidence_bytes_checked": 1799565
+}

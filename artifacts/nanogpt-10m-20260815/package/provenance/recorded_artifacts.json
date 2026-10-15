@@ -1,0 +1,20 @@
+{
+  "schema": "recorded_comparison_artifacts_v1",
+  "historical_hierarchy": {
+    "config": "f47d8cabafa5f16ff32c1169fba2064bf8124907cfc99e7d8374212cc25c58fa",
+    "result": "ffe3dea20685e88381eab65f02bba504e6870975a0ec06854de73718b88f769d",
+    "benchmark": "109f61c95d03dba065a31c4cbc683e7b96ebb52a507afab9cae8136e94188b43",
+    "final_checkpoint_not_included": "beb12f7a9fce10195c639365cc673200e04c97affa9557239b70edd28bd9c66f"
+  },
+  "official_nanogpt": {
+    "result": "2120eac7d5f699d810425a8b793eccc0fd80674430751a2cc6d33361d81e3d44",
+    "training_completion": "6e3c1eda103ff89e6ae687e800f2cbf3c0cb76dd3a25b12fb2bc68c0df9419a7",
+    "training_preflight": "c47e16bd22f409614555f73764334ee2ff9ad1d4ee46154d71d1fdf51b2e84c8",
+    "training_log": "867e64674ed291d3eb8e8594d316c68c19c830fc7a70206d9542680ddcce532c",
+    "resolved_config": "1788014935ce53838760696f96964b8ca35b89bb6fa8f6c1eff36381b78d22fa",
+    "benchmark": "1df9a3e0f410ffee5189e111137acd2755717a6a7c81cfb099e54c4cbb7f340e",
+    "benchmark_completion": "fc28be724d939e0f619d935d47b1ffc356a06e2c66b6530efd41523ca3042be6",
+    "final_model_not_included": "7de4e9d81b606ec6b0d7e9fbaf4dcdcb30aa55456e775a07371aaf65a6591241",
+    "optimizer_checkpoint_not_included": "22c67df3bef43d6b77f87d562c7ba57b1b638d95fd1dc0de0bb5c17139c2936c"
+  }
+}

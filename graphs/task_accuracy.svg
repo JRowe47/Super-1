@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620"><rect width="1100" height="620" fill="#fbfcfe"/>
+<text x="40" y="44" font-family="Arial,sans-serif" font-size="26" fill="#16223a" text-anchor="start" font-weight="bold">Reported task benchmarks: wins, and the zero-score task</text>
+<text x="40" y="74" font-family="Arial,sans-serif" font-size="15" fill="#46546b" text-anchor="start" font-weight="normal">10M-token study | one seed | limit 1,000 per task | higher is better</text>
+<text x="40" y="584" font-family="Arial,sans-serif" font-size="13" fill="#46546b" text-anchor="start" font-weight="normal">Historical report transcription; no confidence intervals. These are local checkpoint scores, NOT task SOTA.</text>
+<text x="40" y="602" font-family="Arial,sans-serif" font-size="13" fill="#46546b" text-anchor="start" font-weight="normal">LAMBADA is included at zero for every arm. Absolute accuracy changes are percentage points.</text>
+<rect x="55" y="99" width="15" height="12" fill="#d66b35"/>
+<text x="77" y="110" font-family="Arial,sans-serif" font-size="14" fill="#16223a" text-anchor="start" font-weight="normal">In-house Transformer</text>
+<rect x="313" y="99" width="15" height="12" fill="#187c69"/>
+<text x="335" y="110" font-family="Arial,sans-serif" font-size="14" fill="#16223a" text-anchor="start" font-weight="normal">Pure hierarchy</text>
+<rect x="571" y="99" width="15" height="12" fill="#336eb5"/>
+<text x="593" y="110" font-family="Arial,sans-serif" font-size="14" fill="#16223a" text-anchor="start" font-weight="normal">Local + function weights</text>
+<line x1="90" y1="510.0" x2="1045" y2="510.0" stroke="#d9e1eb" stroke-width="1"/>
+<text x="76" y="515.0" font-family="Arial,sans-serif" font-size="13" fill="#64748b" text-anchor="end" font-weight="normal">0</text>
+<line x1="90" y1="438.0" x2="1045" y2="438.0" stroke="#d9e1eb" stroke-width="1"/>
+<text x="76" y="443.0" font-family="Arial,sans-serif" font-size="13" fill="#64748b" text-anchor="end" font-weight="normal">0.12</text>
+<line x1="90" y1="366.0" x2="1045" y2="366.0" stroke="#d9e1eb" stroke-width="1"/>
+<text x="76" y="371.0" font-family="Arial,sans-serif" font-size="13" fill="#64748b" text-anchor="end" font-weight="normal">0.24</text>
+<line x1="90" y1="294.0" x2="1045" y2="294.0" stroke="#d9e1eb" stroke-width="1"/>
+<text x="76" y="299.0" font-family="Arial,sans-serif" font-size="13" fill="#64748b" text-anchor="end" font-weight="normal">0.36</text>
+<line x1="90" y1="222.0" x2="1045" y2="222.0" stroke="#d9e1eb" stroke-width="1"/>
+<text x="76" y="227.0" font-family="Arial,sans-serif" font-size="13" fill="#64748b" text-anchor="end" font-weight="normal">0.48</text>
+<line x1="90" y1="150.0" x2="1045" y2="150.0" stroke="#d9e1eb" stroke-width="1"/>
+<text x="76" y="155.0" font-family="Arial,sans-serif" font-size="13" fill="#64748b" text-anchor="end" font-weight="normal">0.6</text>
+<text x="45" y="137" font-family="Arial,sans-serif" font-size="14" fill="#16223a" text-anchor="start" font-weight="normal">Accuracy</text>
+<text x="209.375" y="540" font-family="Arial,sans-serif" font-size="15" fill="#16223a" text-anchor="middle" font-weight="normal">ARC-Easy</text>
+<text x="448.125" y="540" font-family="Arial,sans-serif" font-size="15" fill="#16223a" text-anchor="middle" font-weight="normal">HellaSwag</text>
+<text x="686.875" y="540" font-family="Arial,sans-serif" font-size="15" fill="#16223a" text-anchor="middle" font-weight="normal">LAMBADA</text>
+<text x="925.625" y="540" font-family="Arial,sans-serif" font-size="15" fill="#16223a" text-anchor="middle" font-weight="normal">PIQA</text>
+<rect x="106.87500000000001" y="330.0" width="63.666666666666664" height="180.0" rx="3" fill="#d66b35"/>
+<text x="138.70833333333334" y="321.0" font-family="Arial,sans-serif" font-size="13" fill="#16223a" text-anchor="middle" font-weight="normal">0.300</text>
+<rect x="345.62500000000006" y="365.4" width="63.666666666666664" height="144.60000000000002" rx="3" fill="#d66b35"/>
+<text x="377.45833333333337" y="356.4" font-family="Arial,sans-serif" font-size="13" fill="#16223a" text-anchor="middle" font-weight="normal">0.241</text>
+<rect x="584.375" y="510.0" width="63.666666666666664" height="0.0" rx="3" fill="#d66b35"/>
+<text x="616.2083333333334" y="501.0" font-family="Arial,sans-serif" font-size="13" fill="#16223a" text-anchor="middle" font-weight="normal">0.000</text>
+<rect x="823.125" y="216.59999999999997" width="63.666666666666664" height="293.40000000000003" rx="3" fill="#d66b35"/>
+<text x="854.9583333333334" y="207.59999999999997" font-family="Arial,sans-serif" font-size="13" fill="#16223a" text-anchor="middle" font-weight="normal">0.489</text>
+<rect x="177.54166666666666" y="312.0" width="63.666666666666664" height="198.0" rx="3" fill="#187c69"/>
+<text x="209.375" y="303.0" font-family="Arial,sans-serif" font-size="13" fill="#16223a" text-anchor="middle" font-weight="normal">0.330</text>
+<rect x="416.2916666666667" y="355.79999999999995" width="63.666666666666664" height="154.20000000000005" rx="3" fill="#187c69"/>
+<text x="448.125" y="346.79999999999995" font-family="Arial,sans-serif" font-size="13" fill="#16223a" text-anchor="middle" font-weight="normal">0.257</text>
+<rect x="655.0416666666666" y="510.0" width="63.666666666666664" height="0.0" rx="3" fill="#187c69"/>
+<text x="686.875" y="501.0" font-family="Arial,sans-serif" font-size="13" fill="#16223a" text-anchor="middle" font-weight="normal">0.000</text>
+<rect x="893.7916666666666" y="189.59999999999997" width="63.666666666666664" height="320.40000000000003" rx="3" fill="#187c69"/>
+<text x="925.625" y="180.59999999999997" font-family="Arial,sans-serif" font-size="13" fill="#16223a" text-anchor="middle" font-weight="normal">0.534</text>
+<rect x="248.2083333333333" y="306.59999999999997" width="63.666666666666664" height="203.40000000000003" rx="3" fill="#336eb5"/>
+<text x="280.04166666666663" y="297.59999999999997" font-family="Arial,sans-serif" font-size="13" fill="#16223a" text-anchor="middle" font-weight="normal">0.339</text>
+<rect x="486.9583333333333" y="360.6" width="63.666666666666664" height="149.39999999999998" rx="3" fill="#336eb5"/>
+<text x="518.7916666666666" y="351.6" font-family="Arial,sans-serif" font-size="13" fill="#16223a" text-anchor="middle" font-weight="normal">0.249</text>
+<rect x="725.7083333333333" y="510.0" width="63.666666666666664" height="0.0" rx="3" fill="#336eb5"/>
+<text x="757.5416666666666" y="501.0" font-family="Arial,sans-serif" font-size="13" fill="#16223a" text-anchor="middle" font-weight="normal">0.000</text>
+<rect x="964.4583333333333" y="196.2" width="63.666666666666664" height="313.8" rx="3" fill="#336eb5"/>
+<text x="996.2916666666666" y="187.2" font-family="Arial,sans-serif" font-size="13" fill="#16223a" text-anchor="middle" font-weight="normal">0.523</text></svg>

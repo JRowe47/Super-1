@@ -1,0 +1,62 @@
+{
+  "architecture": "transformer",
+  "arm": "transformer_qwen_full_kl",
+  "branching": false,
+  "budget_utilization": 0.9920128,
+  "embedding_initialization": "qwen_pca",
+  "embedding_projection": {
+    "method": "centered_teacher_embedding_covariance_eigendecomposition",
+    "preserve_global_norm": true,
+    "retained_variance": 0.7176116704940796,
+    "rows": 151936,
+    "scale": 1.238845705986023,
+    "student_dimensions": 608,
+    "teacher_dimensions": 1024
+  },
+  "metrics": {
+    "estimated_macs_per_token_at_1024": 126464000,
+    "estimated_macs_per_token_at_2048": 133935104,
+    "estimated_macs_per_token_at_512": 122728448,
+    "kl_t1": 3.4768941402435303,
+    "kl_t2": 5.01530060172081,
+    "kl_t4": 3.1774004250764847,
+    "long_context": {
+      "1024": {
+        "kl_t1": 6.048353672027588,
+        "student_ce": 8.550755977630615,
+        "student_minus_teacher_ce": 5.945763826370239,
+        "teacher_ce": 2.604992151260376,
+        "top1_agreement": 0.12646484375
+      },
+      "2048": {
+        "kl_t1": 7.698193788528442,
+        "student_ce": 10.647091388702393,
+        "student_minus_teacher_ce": 7.656600117683411,
+        "teacher_ce": 2.990491271018982,
+        "top1_agreement": 0.070068359375
+      }
+    },
+    "peak_memory_bytes": 6557195264,
+    "rollout_ce": {
+      "128": 6.265230655670166,
+      "256": 6.275340497493744,
+      "512": 6.272291392087936,
+      "64": 6.400263607501984
+    },
+    "rollout_degradation": -0.12797221541404724,
+    "state_bytes_bf16_per_sequence_at_1024": 14942208,
+    "state_bytes_bf16_per_sequence_at_2048": 29884416,
+    "state_bytes_bf16_per_sequence_at_512": 7471104,
+    "state_elements_per_sequence_at_512": 3735552,
+    "student_ce": 6.288167655467987,
+    "student_minus_teacher_ce": 3.4643474966287613,
+    "teacher_ce": 2.8238201588392258,
+    "tokens_per_second": 123780.67460666291,
+    "top1_agreement": 0.22271728515625
+  },
+  "steps": 4883,
+  "stored_parameters": 119041536,
+  "target_parameters": 120000000,
+  "tokens": 10000384,
+  "width": 608
+}

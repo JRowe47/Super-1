@@ -1,0 +1,10 @@
+{
+  "status": "PRESERVATION_AND_CLEANUP_VERIFIED",
+  "final_models": "5 uploaded and remote digests verified",
+  "runtime_archive": "All six parts plus manifest uploaded; remote sizes/digests verified",
+  "resume_checkpoints": "All five uploaded; remote sizes/digests verified",
+  "cleanup": "Zero temporary instances/disks; original disks/snapshots retained and original GPU instances stopped",
+  "originals_untouched": true,
+  "gpu_instances_started": false,
+  "training_started": false
+}

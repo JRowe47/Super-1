@@ -1,0 +1,439 @@
+{
+  "scope": "Recovered training2 Python environment, interpreter and stdlib; not a full OS/container or verified historical executable replay",
+  "excluded": [
+    "__pycache__",
+    "*.pyc",
+    "direct_url.json"
+  ],
+  "packages": [
+    {
+      "name": "accelerate",
+      "version": "1.14.0",
+      "metadata_sha256": "ed1c0dd9cca2d1449bbae7d641208431f5fccc7d5e06e20bec802c1d81340f6c"
+    },
+    {
+      "name": "aiohappyeyeballs",
+      "version": "2.7.1",
+      "metadata_sha256": "e68d1bf48aec9dcc2767343dedec25e12860085cba180e10bc3d3bdd031602ba"
+    },
+    {
+      "name": "aiohttp",
+      "version": "3.14.3",
+      "metadata_sha256": "287d4346fb85cdf58dae89ac33639bef485653990a19af9bcd7d39e47e54ea1b"
+    },
+    {
+      "name": "aiosignal",
+      "version": "1.4.0",
+      "metadata_sha256": "09247ef1da8bc696728d47130e702e4307f6f7d101d6c485bff9f3a71ce7008d"
+    },
+    {
+      "name": "annotated-doc",
+      "version": "0.0.5",
+      "metadata_sha256": "8c24d70c5d9153d22123353a906042fd7603df2d15c2196290b0f8a962558c46"
+    },
+    {
+      "name": "anyio",
+      "version": "4.14.2",
+      "metadata_sha256": "c5e6fc4dfd833319913b287be7a30d9935e9208c7ef917630621855aaac4d419"
+    },
+    {
+      "name": "async-timeout",
+      "version": "5.0.1",
+      "metadata_sha256": "4550cd1083d820124a3ec8d38490da2915f587bf7ee1061036e04b4973c8b54f"
+    },
+    {
+      "name": "attrs",
+      "version": "26.1.0",
+      "metadata_sha256": "4cd40e690f23bf37cbcad34efd6758e062df1df07c86833f7e3ce95bf1fa38cc"
+    },
+    {
+      "name": "certifi",
+      "version": "2026.7.22",
+      "metadata_sha256": "ef5af1638fbb23676ac3c5777dfcfc2cd9c348fe4172ed5ba3d277655b248090"
+    },
+    {
+      "name": "charset-normalizer",
+      "version": "3.4.9",
+      "metadata_sha256": "0dd3de17609b0db64bd1d4643c5bd0dd35b5eb3c5be77f8b17bc190f2f4a2ac0"
+    },
+    {
+      "name": "click",
+      "version": "8.4.2",
+      "metadata_sha256": "194c9dd81d567f9081f026c7e401060fbafa7bc147c8e0a58b3668b40a64c031"
+    },
+    {
+      "name": "cuda-bindings",
+      "version": "13.3.1",
+      "metadata_sha256": "0bfcbe77dade61b1cba9f201c0465f2353f5b50adf4e4f554bca35a35033166f"
+    },
+    {
+      "name": "cuda-pathfinder",
+      "version": "1.6.0",
+      "metadata_sha256": "0b224d8df48997cd2d336dbf9debc7a7afa000cc242e1555c5c90ac654cccb7f"
+    },
+    {
+      "name": "cuda-toolkit",
+      "version": "13.0.2",
+      "metadata_sha256": "711ac5eb7ce4c56f087d843816fc463c1dcd08443f8cc1e63aa916d3dc84abbf"
+    },
+    {
+      "name": "datasets",
+      "version": "5.0.1",
+      "metadata_sha256": "66ad795b9be09559d4bacbe66615bd2ee0cfe47a8140ab58cdb3122e457c57b5"
+    },
+    {
+      "name": "dill",
+      "version": "0.4.1",
+      "metadata_sha256": "040d6c84eddf29c8c14dc2aef214962a919803f557243824dd4f8aa3b49e3868"
+    },
+    {
+      "name": "exceptiongroup",
+      "version": "1.3.1",
+      "metadata_sha256": "81984a523a2f7a522ad12bea784a8bb85edec0805ebbd0fb4e350169a36dd802"
+    },
+    {
+      "name": "filelock",
+      "version": "3.32.2",
+      "metadata_sha256": "02c1fa9abf083b9bd5792cc1f300088bde118bbb3db9c9f7c19595cb4101d0ba"
+    },
+    {
+      "name": "frozenlist",
+      "version": "1.8.0",
+      "metadata_sha256": "946c22dc9f7e2c76f2d698f00a4306dbe49a820e2b3f1a0e22fe5286cbec35f1"
+    },
+    {
+      "name": "fsspec",
+      "version": "2026.6.0",
+      "metadata_sha256": "20c85c024a69a059237c3a7985d381a3745017ae1d634c554b0c5901dde81095"
+    },
+    {
+      "name": "h11",
+      "version": "0.16.0",
+      "metadata_sha256": "28f326098ac09fcba79b8f180f96087c841fe2456215cb7b872a9c7d5cd19d64"
+    },
+    {
+      "name": "hf-xet",
+      "version": "1.6.0",
+      "metadata_sha256": "becdd6ec73b515dc38c59501956134eb0b903bfed33ffcd99b252361acd926e9"
+    },
+    {
+      "name": "httpcore",
+      "version": "1.0.9",
+      "metadata_sha256": "fe2d4fda6199128978779e0cf27f3c045c531863fcdd987eacc74f3a18d41c21"
+    },
+    {
+      "name": "httpx",
+      "version": "0.28.1",
+      "metadata_sha256": "febb9b0f8f3e80d57c8199c304f35c4336e8581d1d18d7983c92766b82793b25"
+    },
+    {
+      "name": "huggingface_hub",
+      "version": "1.26.1",
+      "metadata_sha256": "bffb30169387448de414622252d6cca44bb4a901f59ef44fdd845f88da69add8"
+    },
+    {
+      "name": "idna",
+      "version": "3.18",
+      "metadata_sha256": "46dfe6e5ac462d0f680ecd9abcf66e829b6a2334824b4d9e3979b31135caf281"
+    },
+    {
+      "name": "Jinja2",
+      "version": "3.1.6",
+      "metadata_sha256": "68c5548fb67c4132a13898d9b31ec50c6bea2abdd915d921f214355c3a6499c8"
+    },
+    {
+      "name": "markdown-it-py",
+      "version": "4.2.0",
+      "metadata_sha256": "72c36ff516755443b1ecb61e17b2567a990230b49a504b0eb0c42d5f82448a9c"
+    },
+    {
+      "name": "MarkupSafe",
+      "version": "3.0.3",
+      "metadata_sha256": "12b4cc61a7fa288cf7667ee3f213786d9619db57fb33ff6f934afbcb5c12ec81"
+    },
+    {
+      "name": "mdurl",
+      "version": "0.1.2",
+      "metadata_sha256": "b53b29d48f499367053fda3c81e7ce27d2558380ebbf83e66023b02eb7ddd25d"
+    },
+    {
+      "name": "mpmath",
+      "version": "1.3.0",
+      "metadata_sha256": "44b66ea444b9c0d19ae94815d356bf047ae6b680c19268b5c265687cd6a81406"
+    },
+    {
+      "name": "multidict",
+      "version": "6.7.1",
+      "metadata_sha256": "4913fdaae936a309c29b89b98c2dbebd237203fb27ab9e68ae5e4ec17ba3024f"
+    },
+    {
+      "name": "multiprocess",
+      "version": "0.70.19",
+      "metadata_sha256": "24146d46d724ce041d187426babb43dc5a6a4cd5d1acad0d7fc0d12693376fa5"
+    },
+    {
+      "name": "networkx",
+      "version": "3.4.2",
+      "metadata_sha256": "2e5265dda876ef3c44fefa9e9553499bc564c89a16c95e38bdaf9babc556d1d7"
+    },
+    {
+      "name": "numpy",
+      "version": "2.2.6",
+      "metadata_sha256": "22d648f53848429464ca643b40d73b49a920d47876fc77c395d4dca4e834904a"
+    },
+    {
+      "name": "nvidia-cublas",
+      "version": "13.1.0.3",
+      "metadata_sha256": "561b0e547a2da463a0a6e4f7715fb4965c578627faa5790be12db26e5c7c9b03"
+    },
+    {
+      "name": "nvidia-cuda-cupti",
+      "version": "13.0.85",
+      "metadata_sha256": "ae42b56aa16feaa9994af204b6c82ac546fed7d67cf584cc10d1f2b7119b5eac"
+    },
+    {
+      "name": "nvidia-cuda-nvrtc",
+      "version": "13.0.88",
+      "metadata_sha256": "27505676fa8577b448021d935306228d06c6236b2bf5247c148425e5130ad4c8"
+    },
+    {
+      "name": "nvidia-cuda-runtime",
+      "version": "13.0.96",
+      "metadata_sha256": "30699e3ca76f6f41f5252e7a0fce2c2d303c465b86c1b022e03a2799bd15098b"
+    },
+    {
+      "name": "nvidia-cudnn-cu13",
+      "version": "9.19.0.56",
+      "metadata_sha256": "6f751e0e3c731f631a01dc06769d131fda17c702291ab1575f18da57745ae3b2"
+    },
+    {
+      "name": "nvidia-cufft",
+      "version": "12.0.0.61",
+      "metadata_sha256": "f519e642db9f4983f5e24d131a52972210b3222800a07e099d40926d18d183d8"
+    },
+    {
+      "name": "nvidia-cufile",
+      "version": "1.15.1.6",
+      "metadata_sha256": "35ef649dd5370d74512351b45aa9ddc81715ae8c806326c2c5ec61d80dc97aca"
+    },
+    {
+      "name": "nvidia-curand",
+      "version": "10.4.0.35",
+      "metadata_sha256": "0a7d6e8b87aa972f3f2bc454f12fee898e8ef5d1a09d92b418acd38e8582076d"
+    },
+    {
+      "name": "nvidia-cusolver",
+      "version": "12.0.4.66",
+      "metadata_sha256": "88d296b4407f82253bf358667db12776dcb521170c7ff5b8eff38eb272ff729f"
+    },
+    {
+      "name": "nvidia-cusparse",
+      "version": "12.6.3.3",
+      "metadata_sha256": "d7b8582e9cf38072a8bb9960822e89f41a64bc7f68995eec783304c828e9734e"
+    },
+    {
+      "name": "nvidia-cusparselt-cu13",
+      "version": "0.8.0",
+      "metadata_sha256": "72e9b5bb91a38047d99145a1a802ad947ff555431e3bf33751cb31a5fa91f6e2"
+    },
+    {
+      "name": "nvidia-nccl-cu13",
+      "version": "2.28.9",
+      "metadata_sha256": "9fbf54b4aa156fef26145838fc99abb2024046e98a2776efbf4f5bc6bd242cb0"
+    },
+    {
+      "name": "nvidia-nvjitlink",
+      "version": "13.0.88",
+      "metadata_sha256": "357d3afcf99126edd846988256b9b1a2b52b8693004cb9f117fa688890932d54"
+    },
+    {
+      "name": "nvidia-nvshmem-cu13",
+      "version": "3.4.5",
+      "metadata_sha256": "825ae32b105cfd50f7b375b9132e551f24dc32896c67c425349f6565d3b3fe46"
+    },
+    {
+      "name": "nvidia-nvtx",
+      "version": "13.0.85",
+      "metadata_sha256": "4777c4d7b040cdead515e13febe9da861052e4690bdfc2c67664b13aaf605be5"
+    },
+    {
+      "name": "packaging",
+      "version": "26.3",
+      "metadata_sha256": "70fdb89fc4d4a9a043bf7372b8972bcc883fddff34ab55e9cf80d73875384763"
+    },
+    {
+      "name": "pandas",
+      "version": "2.3.3",
+      "metadata_sha256": "40ee953dc7ca155840b639a1881ff84578075187fce0ac20eeda55a7fa0d9a90"
+    },
+    {
+      "name": "pip",
+      "version": "26.2.1",
+      "metadata_sha256": "3a561005822841f2c45f442f6c7a7505172c8c376c9fe274d876c8ac912968cb"
+    },
+    {
+      "name": "propcache",
+      "version": "0.5.2",
+      "metadata_sha256": "f534495cdd2f915af8e649783d95fddcb1a05a1ac181850f0c973c0a78f7bbae"
+    },
+    {
+      "name": "psutil",
+      "version": "7.2.2",
+      "metadata_sha256": "525f8ba78523cf7bc3759d62a105e7c57fd679ea702402b9449fb0746aa0217f"
+    },
+    {
+      "name": "pyarrow",
+      "version": "25.0.0",
+      "metadata_sha256": "ec5c33ae4ab245a331da32755edf8d2812bba1eb636c5d29f41f139d2fb90a17"
+    },
+    {
+      "name": "Pygments",
+      "version": "2.20.0",
+      "metadata_sha256": "e0528f51b30427fae94723662ba622f8d8db2a4d8d3f1365698d67a52450a845"
+    },
+    {
+      "name": "python-dateutil",
+      "version": "2.9.0.post0",
+      "metadata_sha256": "a9d436da322be808332f98d88325998e87cb693a678a9969feb4cfad729a6e93"
+    },
+    {
+      "name": "pytz",
+      "version": "2026.3.post1",
+      "metadata_sha256": "25ef8a562377a28d8c6bd8c5c9e80d761d0e22ac4a7bed24e512f589644ed33d"
+    },
+    {
+      "name": "PyYAML",
+      "version": "6.0.3",
+      "metadata_sha256": "03c3b415ed38d09faedc49360e930769b40c58f68585e6de00e2e4916a858d34"
+    },
+    {
+      "name": "regex",
+      "version": "2026.7.19",
+      "metadata_sha256": "fd895ec7522cd0bbab71ee4826442162f3f408a5f8d92e759f4ddf1be60dcf73"
+    },
+    {
+      "name": "requests",
+      "version": "2.34.2",
+      "metadata_sha256": "8c384ba3e979480faae2859d3c5e6c1276dd2c3616e322e124d52c8cfc556f27"
+    },
+    {
+      "name": "rich",
+      "version": "15.0.0",
+      "metadata_sha256": "fad34fc603fac4481bf81f8dd629492fc302c0ec31909c86644751512afb2e3b"
+    },
+    {
+      "name": "safetensors",
+      "version": "0.8.0",
+      "metadata_sha256": "645be7b8d55e91534f991d144dc9e279581ea8dbea1a8c5b0be14e529d01e345"
+    },
+    {
+      "name": "setuptools",
+      "version": "81.0.0",
+      "metadata_sha256": "e3ca2edbff500ebe5ba650aa6d8f10249fb4ceae266029b160ce7058ef40df15"
+    },
+    {
+      "name": "shellingham",
+      "version": "1.5.4",
+      "metadata_sha256": "183d80220a37493262795739dd357cc5bb3f49bd390cc9198d5180e5451a07fa"
+    },
+    {
+      "name": "six",
+      "version": "1.17.0",
+      "metadata_sha256": "562042078c2752549f6d8a7c86dbc5dd708088a7be6d80672ec7b07100b72468"
+    },
+    {
+      "name": "sympy",
+      "version": "1.14.0",
+      "metadata_sha256": "b756c2fbfd5be05ac5bdb0ebca61f55618f30f633ed92d88a5687429313a7595"
+    },
+    {
+      "name": "tokenizers",
+      "version": "0.22.2",
+      "metadata_sha256": "15a5ddaf489f592b77e0a934c0eeb46b51130a94064ca129232afdb0a3868efc"
+    },
+    {
+      "name": "torch",
+      "version": "2.11.0",
+      "metadata_sha256": "d65e0ab5a65ced0dce799a2f6f32bff57b3d3e9d050069f607ef71eb24dd9976"
+    },
+    {
+      "name": "tqdm",
+      "version": "4.70.0",
+      "metadata_sha256": "0d95b85b90428f8776afc4a92b17c5094f78ee98d150b3255acbcdf4e9d57941"
+    },
+    {
+      "name": "transformers",
+      "version": "5.12.1",
+      "metadata_sha256": "944617c29bd61ef723abff2384b541bcf122edeb1a2d42a26bf878912c077747"
+    },
+    {
+      "name": "triton",
+      "version": "3.6.0",
+      "metadata_sha256": "5c9071db9b057bec89cd6d7f76f61e5f28a5e8d3717ff6c85420cf8015ee0321"
+    },
+    {
+      "name": "typer",
+      "version": "0.27.1",
+      "metadata_sha256": "d71011dc4b250b9670d91fbae7882d707a9ef93b22a527d90992a962a5759601"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0",
+      "metadata_sha256": "b05084ca1d50879865178d9fff9fabeab61bdfb1f361bfbde95421ffc8f9be46"
+    },
+    {
+      "name": "tzdata",
+      "version": "2026.3",
+      "metadata_sha256": "511c019df477939fe7f4c38e32ad74a570c4ebb05b13fd2fffd0f0f2dbe6f7b1"
+    },
+    {
+      "name": "urllib3",
+      "version": "2.7.0",
+      "metadata_sha256": "66147856d30bbb6bed01c6ce3326d0f48d84ed5f286ac177633a1486b82eace5"
+    },
+    {
+      "name": "xxhash",
+      "version": "3.8.1",
+      "metadata_sha256": "094d7cef90a1a90124a7093cbf4cccfb9eb7336e16db01861be57ab01367076e"
+    },
+    {
+      "name": "yarl",
+      "version": "1.24.5",
+      "metadata_sha256": "0fd7b817553598246289189dfb95b425a15c9319d1bae355a38860419937e1c7"
+    }
+  ],
+  "archive_bytes": 2947168382,
+  "archive_sha256": "1363f48b4dff2752513c610effa9edcbb82bdafc61f2f3226f09a800c38f9ead",
+  "parts": [
+    {
+      "name": "hierarchy-runtime-recovered.tar.gz.part-001",
+      "bytes": 536870912,
+      "sha256": "d49764caf48e0419615ba70e5dd7b02545ff5bcd82f6355849b93682be17da60"
+    },
+    {
+      "name": "hierarchy-runtime-recovered.tar.gz.part-002",
+      "bytes": 536870912,
+      "sha256": "233348a43cb644718185dc0e45e605738b154c3090e48a520dfb1637b8185809"
+    },
+    {
+      "name": "hierarchy-runtime-recovered.tar.gz.part-003",
+      "bytes": 536870912,
+      "sha256": "1b1551b43c1793dfe3fd79d18311c8c05dd58b8834fba2824a4026c4a80753f1"
+    },
+    {
+      "name": "hierarchy-runtime-recovered.tar.gz.part-004",
+      "bytes": 536870912,
+      "sha256": "dc365237f19ecbd2d4eb187a1023487ba770d746c079740f5cd77c0eeece3b70"
+    },
+    {
+      "name": "hierarchy-runtime-recovered.tar.gz.part-005",
+      "bytes": 536870912,
+      "sha256": "78c141e3a385ecccf0c65925f0695500881cf98632eecc74c7935f61996e0f8f"
+    },
+    {
+      "name": "hierarchy-runtime-recovered.tar.gz.part-006",
+      "bytes": 262813822,
+      "sha256": "b55f753b25c9312187ffaaa3f62182655bfee2ff2c0eba926dfa9ae450343edb"
+    }
+  ]
+}

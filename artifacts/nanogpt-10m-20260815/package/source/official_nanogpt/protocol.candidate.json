@@ -1,0 +1,34 @@
+{
+  "schema": "official_nanogpt_aug8_comparator_protocol_candidate_v1",
+  "namespace": "aug8_official_nanogpt_comparator_20260815_v1",
+  "status": "CANDIDATE_NOT_FROZEN_NOT_AUTHORIZED",
+  "historical_study": "qwen06b_matched_hierarchy_function_v1",
+  "historical_config_sha256": "f47d8cabafa5f16ff32c1169fba2064bf8124907cfc99e7d8374212cc25c58fa",
+  "historical_candidate": {
+    "arm": "hierarchical_qwen_full_kl",
+    "stored_parameters": 119694800,
+    "result_sha256": "ffe3dea20685e88381eab65f02bba504e6870975a0ec06854de73718b88f769d"
+  },
+  "official_nanogpt": {
+    "upstream_commit": "3adf61e154c3fe3fca428ad6bc3818b27a3b8291",
+    "model_sha256": "7c01703240dbec5d554527dc666e35b3df8391d0b117fddc07afcf325a21d11c",
+    "license_sha256": "a59ec5cdb1c1e447e5266a014b3e7ded511f8d6e5a08931e931c87490ff821fe",
+    "adapter_sha256": "1adfffbd843a55f00491b50cb46bc6c5d99041f54d9f48251ce3e79ad672a870",
+    "resolved_geometry": "W448/L21/H7",
+    "stored_parameters": 119685440
+  },
+  "teacher_weights_sha256": "cd2a512003e2f9f3cd3c32a9c3573f820bb28c940f73c57b1ddaa983d9223eba",
+  "execution": {
+    "world_size": 1,
+    "visible_gpu_count": 1,
+    "optimizer": "AdamW",
+    "optimizer_steps": 4883,
+    "executed_tokens": 10000384,
+    "fixed_evaluation_contexts": [512, 1024, 2048],
+    "benchmark_limit": 1000,
+    "perturbation_solver": false,
+    "energy_telemetry": false,
+    "extra_objectives": false,
+    "remote_execution_authorized": false
+  }
+}

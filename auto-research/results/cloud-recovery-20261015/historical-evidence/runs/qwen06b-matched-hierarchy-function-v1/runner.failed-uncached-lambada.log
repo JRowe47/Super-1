@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/rohanarun/funcweights-matched-hierarchy-v1/representation_experiments/run_matched_hierarchy_single_gpu.py", line 80, in <module>
+    main()
+  File "/home/rohanarun/funcweights-matched-hierarchy-v1/representation_experiments/run_matched_hierarchy_single_gpu.py", line 65, in main
+    run_logged([
+  File "/home/rohanarun/funcweights-matched-hierarchy-v1/representation_experiments/run_matched_hierarchy_single_gpu.py", line 20, in run_logged
+    subprocess.run(
+  File "/usr/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/rohanarun/funcweights/representation-venv/bin/python', '-u', '/home/rohanarun/funcweights-matched-hierarchy-v1/representation_experiments/distribution_benchmarks.py', '--config', '/home/rohanarun/funcweights-matched-hierarchy-v1/representation_experiments/configs/qwen06b_matched_hierarchy_function_v1.json', '--arm', 'hierarchical_local_function_qwen_full_kl', '--checkpoint', '/home/rohanarun/funcweights-matched-hierarchy-v1/runs/qwen06b-matched-hierarchy-function-v1/hierarchical_local_function_qwen_full_kl/student_final.pt', '--limit', '1000', '--out', '/home/rohanarun/funcweights-matched-hierarchy-v1/runs/qwen06b-matched-hierarchy-function-v1/hierarchical_local_function_qwen_full_kl/benchmarks.json']' returned non-zero exit status 1.

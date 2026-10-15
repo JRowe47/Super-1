@@ -1,0 +1,132 @@
+{
+  "schema": "official_nanogpt_vs_proven_hierarchy_10m_repro_v1",
+  "package_name": "official-nanogpt-vs-proven-hierarchy-10m-20260815-v1r2-email-safe",
+  "created_utc": "2026-08-15T12:30:00Z",
+  "comparison": {
+    "hierarchy_arm": "hierarchical_qwen_full_kl",
+    "nanogpt_arm": "official_nanogpt_aug8_10m",
+    "contexts": [512, 1024, 2048]
+  },
+  "archives": {
+    "historical_hierarchy": {
+      "path": "vendor/hierarchy_results_code_package.zip",
+      "sha256": "29d2bb8ce1aacfb5d1f60db2e15fa6d5dbd21b0502a48c8333788b49589d3790",
+      "format": "zip",
+      "included": false,
+      "reason": "Original ZIP contains a historical PDF; expanded code and result JSON remain included and manifest-bound."
+    },
+    "official_nanogpt": {
+      "path": "vendor/aug8_official_nanogpt_comparator_20260815_v1.frozen.tar.gz",
+      "sha256": "29e38b9e7f6feaf15d8a58ce01615c528ffef381c4af8716f72374eccf12a02f",
+      "format": "tar.gz",
+      "freeze_manifest_sha256": "dc4e324d7f43ddf417c6641ce3c6ec856cbec69a6d1b83e93f2fe5b0690c833c",
+      "included": false,
+      "reason": "Nested archive omitted for email compatibility; the exact expanded source tree and its frozen manifest remain included and verified."
+    }
+  },
+  "execution_contract": {
+    "world_size": 1,
+    "visible_gpu_count": 1,
+    "steps": 4883,
+    "executed_tokens": 10000384,
+    "training_context": 512,
+    "batch_size": 4,
+    "training_seed": 12001,
+    "evaluation_seed": 14001,
+    "optimizer": "AdamW",
+    "learning_rate": 0.0003,
+    "warmup_steps": 500,
+    "minimum_lr_ratio": 0.1,
+    "betas": [0.9, 0.95],
+    "weight_decay": 0.1,
+    "gradient_clip": 1.0,
+    "ce_weight": 0.1,
+    "distribution_weight": 1.0
+  },
+  "fixed_evaluation": {
+    "512": {"batches": 16, "batch_size": 2},
+    "1024": {"batches": 2, "batch_size": 1},
+    "2048": {"batches": 2, "batch_size": 1}
+  },
+  "models": {
+    "hierarchy": {
+      "architecture": "hierarchical_distribution",
+      "width": 688,
+      "stored_parameters": 119694800,
+      "state_tensors": 4,
+      "state_bytes_per_element": 2
+    },
+    "nanogpt": {
+      "architecture": "nanogpt",
+      "width": 448,
+      "layers": 21,
+      "heads": 7,
+      "head_dimension": 64,
+      "stored_parameters": 119685440,
+      "upstream_commit": "3adf61e154c3fe3fca428ad6bc3818b27a3b8291"
+    }
+  },
+  "inputs": {
+    "data_directory_relative_to_runtime": "data/qwen3-06b-representation",
+    "train": {
+      "filename": "train.bin",
+      "bytes": 4000000000,
+      "dtype": "uint32",
+      "tokens": 1000000000,
+      "sha256": "834c82d2ea76e2f17aa43d15862f5ef444322c37d9b29d07fe803bb21ac163e4"
+    },
+    "validation": {
+      "filename": "val.bin",
+      "bytes": 8000000,
+      "dtype": "uint32",
+      "tokens": 2000000,
+      "sha256": "8517985c4979dbc95c83137ee534e30e789e2275e4ba1ee1fd31e1f0d566e4d3"
+    },
+    "teacher": {
+      "model": "Qwen/Qwen3-0.6B-Base",
+      "revision": "da87bfb608c14b7cf20ba1ce41287e8de496c0cd",
+      "weights_filename": "model.safetensors",
+      "weights_bytes": 1192135096,
+      "weights_sha256": "cd2a512003e2f9f3cd3c32a9c3573f820bb28c940f73c57b1ddaa983d9223eba"
+    }
+  },
+  "benchmark_datasets": {
+    "lambada": {"dataset": "EleutherAI/lambada_openai", "config": "en", "split": "test", "revision": "900124bf3b8235c6daf21033af9948b3f07346c4"},
+    "hellaswag": {"dataset": "Rowan/hellaswag", "config": null, "split": "validation", "revision": "218ec52e09a7e7462a5400043bb9a69a41d06b76"},
+    "arc_easy": {"dataset": "allenai/ai2_arc", "config": "ARC-Easy", "split": "validation", "revision": "210d026faf9955653af8916fad021475a3f00453"},
+    "piqa": {"dataset": "lighteval/piqa", "config": "plain_text", "split": "validation", "revision": "41782e6bf0ef7de82a2ca8a9feb1dca042837fae"}
+  },
+  "benchmark_limit_per_task": 1000,
+  "benchmark_task_order": [
+    {"key": "arc_easy", "label": "ARC-Easy"},
+    {"key": "hellaswag", "label": "HellaSwag"},
+    {"key": "lambada", "label": "LAMBADA"},
+    {"key": "piqa", "label": "PIQA"}
+  ],
+  "provenance": {
+    "historical_config_sha256": "f47d8cabafa5f16ff32c1169fba2064bf8124907cfc99e7d8374212cc25c58fa"
+  },
+  "paths": {
+    "historical_source": "source/historical_hierarchy",
+    "nanogpt_source": "source/official_nanogpt",
+    "historical_config": "configs/qwen06b_matched_hierarchy_function_v1.json",
+    "nanogpt_config": "configs/official_nanogpt_aug8_10m.json",
+    "recorded_hierarchy_result": "evidence/recorded/hierarchy/result.json",
+    "recorded_hierarchy_benchmark": "evidence/recorded/hierarchy/benchmarks.json",
+    "recorded_nanogpt_result": "evidence/recorded/nanogpt/result.json",
+    "recorded_nanogpt_benchmark": "evidence/recorded/nanogpt/benchmarks.json",
+    "recorded_nanogpt_training_log": "evidence/recorded/nanogpt/train.jsonl",
+    "reported_hierarchy_training_rows": "evidence/recorded/hierarchy/training_rows.json",
+    "report_metrics": "report/metrics.json"
+  },
+  "claim_boundaries": {
+    "historical_config_byte_exact": true,
+    "historical_source_identity": "registered_compatible_snapshot_not_byte_identical_deployed_core",
+    "official_nanogpt_source_identity": "frozen_exact",
+    "fresh_training_checkpoint_sha_expected_to_match": false,
+    "state_values_are_analytic": true,
+    "incremental_nanogpt_cache_measured": false,
+    "single_seed": true,
+    "pdf_in_code_archive": false
+  }
+}

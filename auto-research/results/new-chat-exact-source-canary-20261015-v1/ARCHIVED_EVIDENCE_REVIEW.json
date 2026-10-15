@@ -1,0 +1,102 @@
+{
+  "energy_vs_shape": {
+    "all_duplicate_drift_exact_zero": true,
+    "overall_local_advance_gate_passed": false,
+    "paired_primary_gate": [
+      {
+        "diagnostics": {
+          "energy_minus_geometric": -0.0046317147273644554,
+          "energy_minus_transformer": -0.13335615747115193,
+          "energy_strictly_below_geometric": true,
+          "energy_strictly_below_transformer": true
+        },
+        "energy_ce": 1.6235875611211739,
+        "energy_minus_shape": 0.002171619265687097,
+        "energy_strictly_below_shape": false,
+        "seed": "301892410",
+        "shape_ce": 1.6214159418554868
+      },
+      {
+        "diagnostics": {
+          "energy_minus_geometric": -0.010071980251985524,
+          "energy_minus_transformer": -0.11782400467816534,
+          "energy_strictly_below_geometric": true,
+          "energy_strictly_below_transformer": true
+        },
+        "energy_ce": 1.616414984067281,
+        "energy_minus_shape": -0.006665742163564747,
+        "energy_strictly_below_shape": true,
+        "seed": "371835893",
+        "shape_ce": 1.6230807262308458
+      },
+      {
+        "diagnostics": {
+          "energy_minus_geometric": -0.01753864335078803,
+          "energy_minus_transformer": -0.15204851720847334,
+          "energy_strictly_below_geometric": true,
+          "energy_strictly_below_transformer": true
+        },
+        "energy_ce": 1.6253303943895827,
+        "energy_minus_shape": -0.019681407891067648,
+        "energy_strictly_below_shape": true,
+        "seed": "1443639472",
+        "shape_ce": 1.6450118022806504
+      }
+    ]
+  },
+  "next_hypothesis": "Oriented fast-state rotation versus exactly equal-count alignment-dot query on the exact historical hierarchy; no energy extension and no analytic backward.",
+  "optimizer_failure": {
+    "first_step_coordinates": {
+      "drive.weight": {
+        "analytic_Adam_exp_avg": -1.7894788428840513e-10,
+        "analytic_Adam_exp_avg_sq": 3.2022344574042374e-21,
+        "analytic_after": 0.0398496575653553,
+        "analytic_postclip_gradient": -1.7894787873729001e-09,
+        "analytic_preclip_gradient": -1.7041122291061583e-08,
+        "first_step_real_arithmetic_adam_update_difference_prediction": -2.839432615464599e-06,
+        "gradient_delta": 1.3140599719463353e-11,
+        "index": [
+          244,
+          164
+        ],
+        "initial_parameter": 0.03939548134803772,
+        "native_Adam_exp_avg": -1.776338243164588e-10,
+        "native_Adam_exp_avg_sq": 3.1553775837599494e-21,
+        "native_after": 0.03984681889414787,
+        "native_postclip_gradient": -1.7763381876534368e-09,
+        "native_preclip_gradient": -1.6915985057153193e-08,
+        "normalized_delta": 2.0298020437421487,
+        "parameter_delta": -2.8386712074279785e-06
+      },
+      "embedding.weight": {
+        "analytic_Adam_exp_avg": -2.8361321624537084e-10,
+        "analytic_Adam_exp_avg_sq": 8.043646448133424e-21,
+        "analytic_after": 0.14686106145381927,
+        "analytic_postclip_gradient": -2.8361322179648596e-09,
+        "analytic_preclip_gradient": -2.7008354663848877e-08,
+        "first_step_real_arithmetic_adam_update_difference_prediction": 1.3279116284466903e-05,
+        "gradient_delta": -7.334843843409544e-11,
+        "index": [
+          104,
+          95
+        ],
+        "initial_parameter": 0.14620259404182434,
+        "native_Adam_exp_avg": -2.9094807119101063e-10,
+        "native_Adam_exp_avg_sq": 8.465078006564285e-21,
+        "native_after": 0.146874338388443,
+        "native_postclip_gradient": -2.909480656398955e-09,
+        "native_preclip_gradient": -2.7706846594810486e-08,
+        "normalized_delta": 5.378302493527113,
+        "parameter_delta": 1.3276934623718262e-05
+      }
+    },
+    "status": "STRICT_OPTIMIZER_TRAJECTORY_FIDELITY_FAILURE_AT_LR_0_003",
+    "strict_failures": 49
+  },
+  "scope": "Read saved receipt JSON only; no dataset/checkpoint loads or re-evaluation",
+  "sources": {
+    "/Volumes/SP AI 01_16/CodexWorkspaces/trin-research-evidence-20261002/ANALYTIC_OPTIMIZER_TRAJECTORY_CANARY_20261002.json": "0784dc847448cc7c52454810aa5da8ba4a80c024f0d553d8ffef89ec86001d9e",
+    "/Volumes/SP AI 01_16/CodexWorkspaces/trin-research-evidence-20261002/ROOT_ADAMW_FIDELITY_FAILURE_20261002.json": "02a48779a6ee2b8bb6637448a95a22d75a936ee1b7c7447152839699bf85333c",
+    "/Volumes/SP AI 01_16/CodexWorkspaces/trin-research-evidence-20261002/energy-vs-odd-query-20261002-v1/run/CONFIRMATION_COMPLETION.json": "9745c1907385000d4bd4b0d7181996926eb0c4986e545fb57b95146aa0f93075"
+  }
+}

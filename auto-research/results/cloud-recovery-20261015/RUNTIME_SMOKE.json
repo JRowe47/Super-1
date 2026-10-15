@@ -1,0 +1,12 @@
+{
+  "status": "PASS_RECOVERED_RUNTIME_CPU_SMOKE",
+  "source": "training2 October 15 snapshot, mounted read-only",
+  "execution": "Original unprivileged UID 1001/GID 1002 in isolated mount namespace and chroot; original Python environment; one CPU thread",
+  "first_attempt": {"status":"FAILED_HARNESS_TEMP_DIRECTORY","reason":"Read-only root had no writable temporary directory for dill/tempfile"},
+  "corrected_attempt": {"status":"PASS","change":"Ephemeral 256 MiB tmpfs mounted at /tmp in an isolated mount namespace; original files unchanged","python":"3.10.12","torch":"2.11.0+cu130","cuda_build":"13.0","device":"cpu","sum_of_squares":5.0},
+  "warning":"cpuinfo could not read /proc/cpuinfo in the isolated chroot; arithmetic check still passed",
+  "dataset_read":false,
+  "training_started":false,
+  "gpu_started":false,
+  "limitations":["Not a fresh historical benchmark evaluation","Not a GPU or performance test","Archive alone has not been tested as a portable container","Current snapshot environment has not been proven unchanged since the historical run"]
+}

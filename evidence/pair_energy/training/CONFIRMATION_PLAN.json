@@ -1,0 +1,13 @@
+{
+  "source_protocol_sha256": "0dbfc4bd497a5b7e9c7feed00c2fed2eb71661c12437158e507c8bb0275f3fc2",
+  "candidate_arm": "pair_energy",
+  "reserved_confirmation_start": 327808,
+  "reserved_confirmation_windows": 510,
+  "validation_sha256": "1bd7ccbea6740d1f3837c268e41cd6c983e2e1d2673843b3d2c641f412c640b7",
+  "precision": "FP32",
+  "duplicate_evaluations": 2,
+  "purpose": "Machine-readable binding of the existing sealed promotion_contract to the energy addition. No change to the training protocol or confirmation region.",
+  "created_before_reserved_evaluation": true,
+  "promotion_rule": "All 24 trials must finish; freeze all 12 by selection CE only; pair_energy must strictly beat each of the other three arms in every seed with zero duplicate drift.",
+  "official_test_read": false
+}

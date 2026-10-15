@@ -1,0 +1,175 @@
+{
+  "teacher": "Qwen/Qwen3-0.6B-Base",
+  "vocab_size": 151936,
+  "data": "data/qwen3-06b-representation",
+  "token_dtype": "uint32",
+  "arms": {
+    "positive_kernel": {
+      "features": 128
+    },
+    "fourier_local": {
+      "rank": 128,
+      "local_features": 64,
+      "local_window": 64,
+      "modes": 32
+    },
+    "wavelet_rbf": {
+      "latent": 128,
+      "charts": 64,
+      "wavelet_scales": 6
+    },
+    "atlas": {
+      "charts": 16,
+      "basis": 8,
+      "latent": 128,
+      "local_features": 64,
+      "local_window": 64,
+      "wavelet_scales": 6,
+      "depth_basis": 8
+    }
+  },
+  "training": {
+    "device": 0,
+    "context": 512,
+    "batch_size": 1,
+    "steps": 10000,
+    "learning_rate": 0.0002,
+    "warmup_steps": 200,
+    "minimum_lr_ratio": 0.1,
+    "betas": [0.9, 0.95],
+    "weight_decay": 0.01,
+    "gradient_clip": 1.0,
+    "seed": 1701,
+    "logit_stride": 8,
+    "loss_weights": {
+      "attention": 1.0,
+      "residual": 1.0,
+      "logits": 0.2,
+      "kl": 1.0
+    },
+    "log_every": 20,
+    "checkpoint_every": 500
+  },
+  "evaluation": {
+    "contexts": [128, 256, 512, 1024],
+    "batches": 8,
+    "batch_size": 1
+  },
+  "promotion_gates": {
+    "reference_context": 512,
+    "long_context": 1024,
+    "max_teacher_kl": 0.02,
+    "min_top1_agreement": 0.97,
+    "max_attention_nmse": 0.02,
+    "max_residual_nmse": 0.01,
+    "max_long_context_kl": 0.05,
+    "max_long_context_multiplier": 2.0
+  },
+  "atlas_fit": {
+    "device": 0,
+    "atoms": 4096,
+    "contexts": 2000000,
+    "context": 512,
+    "batch_size": 8,
+    "positions_per_sequence": 32,
+    "teacher_topk": 64,
+    "sketch_dimensions": 256,
+    "hash_seed": 2909,
+    "intervention_span_fraction": 0.125,
+    "rate_floor": 0.01,
+    "seed": 2917,
+    "log_every": 20,
+    "checkpoint_every": 100
+  },
+  "predictive_bake": {
+    "device": 0,
+    "sequences": 50000,
+    "context": 512,
+    "batch_size": 2,
+    "sequences_per_shard": 512,
+    "teacher_topk": 32,
+    "seed": 3929
+  },
+  "student_parameter_budget": 120000000,
+  "students": {
+    "transformer": {
+      "minimum_width": 256,
+      "maximum_width": 1024,
+      "width_step": 8,
+      "layers": 6,
+      "heads": 8,
+      "expansion": 4
+    },
+    "recurrent_logits": {
+      "minimum_width": 256,
+      "maximum_width": 1024,
+      "width_step": 8,
+      "layers": 8
+    },
+    "hierarchical_predictive": {
+      "minimum_width": 256,
+      "maximum_width": 1024,
+      "width_step": 8,
+      "atoms": 4096,
+      "segment_length": 32,
+      "document_segments": 8,
+      "future_horizons": [1, 4, 16]
+    },
+    "hierarchical_logit_control": {
+      "minimum_width": 256,
+      "maximum_width": 1024,
+      "width_step": 8,
+      "atoms": 4096,
+      "segment_length": 32,
+      "document_segments": 8,
+      "future_horizons": [1, 4, 16]
+    }
+  },
+  "objectives": {
+    "transformer": {
+      "ce": 1.0,
+      "sparse_teacher": 0.0
+    },
+    "recurrent_logits": {
+      "ce": 0.0,
+      "sparse_teacher": 1.0
+    },
+    "hierarchical_predictive": {
+      "ce": 1.0,
+      "sparse_teacher": 1.0,
+      "atom": 0.5,
+      "future": 0.5,
+      "intervention_atom": 0.25,
+      "causal": 0.25,
+      "causal_stride": 8
+    },
+    "hierarchical_logit_control": {
+      "ce": 1.0,
+      "sparse_teacher": 1.0
+    }
+  },
+  "student_training": {
+    "device": 0,
+    "context": 512,
+    "batch_size": 8,
+    "eval_batch_size": 2,
+    "steps": 6104,
+    "learning_rate": 0.0003,
+    "warmup_steps": 500,
+    "minimum_lr_ratio": 0.1,
+    "betas": [0.9, 0.95],
+    "weight_decay": 0.1,
+    "gradient_clip": 1.0,
+    "seed": 4933,
+    "log_every": 20,
+    "checkpoint_every": 500,
+    "eval_batches": 32
+  },
+  "predictive_promotion_gates": {
+    "minimum_ce_improvement": 0.01,
+    "minimum_future_probe_accuracy": 0.05,
+    "maximum_rollout_ce_degradation": 0.1,
+    "maximum_budget_utilization_spread": 0.03,
+    "minimum_benchmark_average_improvement": 0.0
+  }
+}

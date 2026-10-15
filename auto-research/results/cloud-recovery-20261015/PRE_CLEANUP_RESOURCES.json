@@ -1,0 +1,43 @@
+{
+  "name": "fw-recovery-cpu-20261015",
+  "machine_type": "https://www.googleapis.com/compute/v1/projects/local-passage-501917-g0/zones/us-central1-a/machineTypes/e2-standard-2",
+  "status_before_cleanup": "RUNNING",
+  "guest_accelerators": [],
+  "attachments": [
+    {
+      "name": "fw-recovery-cpu-20261015",
+      "mode": "READ_WRITE",
+      "boot": true,
+      "auto_delete": true,
+      "bytes_gib": "200"
+    },
+    {
+      "name": "fw-recovery-training4-20261015",
+      "mode": "READ_ONLY",
+      "boot": false,
+      "auto_delete": false,
+      "bytes_gib": "500"
+    },
+    {
+      "name": "fw-recovery-training-20261015",
+      "mode": "READ_ONLY",
+      "boot": false,
+      "auto_delete": false,
+      "bytes_gib": "500"
+    },
+    {
+      "name": "fw-recovery-training2-20261015",
+      "mode": "READ_ONLY",
+      "boot": false,
+      "auto_delete": false,
+      "bytes_gib": "500"
+    },
+    {
+      "name": "fw-recovery-training3-20261015",
+      "mode": "READ_ONLY",
+      "boot": false,
+      "auto_delete": false,
+      "bytes_gib": "500"
+    }
+  ]
+}

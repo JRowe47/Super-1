@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/home/rohanarun/funcweights-matched-hierarchy-v1/representation_experiments/distribution_benchmarks.py", line 83, in <module>
+    main()
+  File "/home/rohanarun/funcweights-matched-hierarchy-v1/representation_experiments/distribution_benchmarks.py", line 45, in main
+    tasks = load_tasks(args.limit)
+  File "/home/rohanarun/funcweights-matched-hierarchy-v1/representation_experiments/predictive_benchmarks.py", line 59, in load_tasks
+    lambada = take(load_dataset("EleutherAI/lambada_openai", "en", split="test"))
+  File "/home/rohanarun/funcweights/representation-venv/lib/python3.10/site-packages/datasets/load.py", line 1696, in load_dataset
+    builder_instance = load_dataset_builder(
+  File "/home/rohanarun/funcweights/representation-venv/lib/python3.10/site-packages/datasets/load.py", line 1323, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+  File "/home/rohanarun/funcweights/representation-venv/lib/python3.10/site-packages/datasets/load.py", line 1215, in dataset_module_factory
+    raise e1 from None
+  File "/home/rohanarun/funcweights/representation-venv/lib/python3.10/site-packages/datasets/load.py", line 1157, in dataset_module_factory
+    raise ConnectionError(f"Couldn't reach '{path}' on the Hub ({e.__class__.__name__})") from e
+ConnectionError: Couldn't reach 'EleutherAI/lambada_openai' on the Hub (OfflineModeIsEnabled)

@@ -1,0 +1,202 @@
+{
+  "status": "ALL_EXPECTED_RELEASE_ASSETS_VERIFIED",
+  "repository_private": true,
+  "releases": [
+    {
+      "tag": "recovered-120m-checkpoints-20261015",
+      "url": "https://github.com/rohanarun/function-weights-research/releases/tag/recovered-120m-checkpoints-20261015",
+      "verified_assets": [
+        {
+          "name": "in-house-transformer-final.pt",
+          "size": 476196379,
+          "digest": "sha256:0c082d456a5b535906cc36d2de39adf4aaa4c359a1f954998948be2c9c75d9c7",
+          "state": "uploaded",
+          "browser_download_url": "https://github.com/rohanarun/function-weights-research/releases/download/recovered-120m-checkpoints-20261015/in-house-transformer-final.pt"
+        },
+        {
+          "name": "local-hierarchy-final.pt",
+          "size": 479154689,
+          "digest": "sha256:1c401fb56d4709ae46c8b05c48d28844571efe521f24107d54e88cc175b04e55",
+          "state": "uploaded",
+          "browser_download_url": "https://github.com/rohanarun/function-weights-research/releases/download/recovered-120m-checkpoints-20261015/local-hierarchy-final.pt"
+        },
+        {
+          "name": "pure-hierarchy-final.pt",
+          "size": 478788043,
+          "digest": "sha256:beb12f7a9fce10195c639365cc673200e04c97affa9557239b70edd28bd9c66f",
+          "state": "uploaded",
+          "browser_download_url": "https://github.com/rohanarun/function-weights-research/releases/download/recovered-120m-checkpoints-20261015/pure-hierarchy-final.pt"
+        },
+        {
+          "name": "official-nanogpt-final.pt",
+          "size": 478844981,
+          "digest": "sha256:7de4e9d81b606ec6b0d7e9fbaf4dcdcb30aa55456e775a07371aaf65a6591241",
+          "state": "uploaded",
+          "browser_download_url": "https://github.com/rohanarun/function-weights-research/releases/download/recovered-120m-checkpoints-20261015/official-nanogpt-final.pt"
+        },
+        {
+          "name": "local-function-hierarchy-final.pt",
+          "size": 477752337,
+          "digest": "sha256:ce0fa75fe0f2c0c33836b05563fdd4e379fd42555877c98b8024192d5778fddf",
+          "state": "uploaded",
+          "browser_download_url": "https://github.com/rohanarun/function-weights-research/releases/download/recovered-120m-checkpoints-20261015/local-function-hierarchy-final.pt"
+        },
+        {
+          "name": "local-hierarchy-resume.pt",
+          "size": 1437462017,
+          "digest": "sha256:d2509ebbc389deddd9802b5cffc050a5ceb52e9f53b31e9de5101caf9abe60a7",
+          "state": "uploaded",
+          "browser_download_url": "https://github.com/rohanarun/function-weights-research/releases/download/recovered-120m-checkpoints-20261015/local-hierarchy-resume.pt"
+        },
+        {
+          "name": "local-function-hierarchy-resume.pt",
+          "size": 1433240905,
+          "digest": "sha256:7db2327afe42a0cdd8cbe5805a8e11d73382ec1cbb9569cd0b7552811fd346c7",
+          "state": "uploaded",
+          "browser_download_url": "https://github.com/rohanarun/function-weights-research/releases/download/recovered-120m-checkpoints-20261015/local-function-hierarchy-resume.pt"
+        },
+        {
+          "name": "pure-hierarchy-resume.pt",
+          "size": 1436361269,
+          "digest": "sha256:02be4d754809403f32b0187bd5066124b2cf01ccfe4cbb9f67bc5cf6b8278bab",
+          "state": "uploaded",
+          "browser_download_url": "https://github.com/rohanarun/function-weights-research/releases/download/recovered-120m-checkpoints-20261015/pure-hierarchy-resume.pt"
+        },
+        {
+          "name": "in-house-transformer-resume.pt",
+          "size": 1428590653,
+          "digest": "sha256:f60c11aec5163c85403dc3495afe03b65de5684ca75cbaf1f405a32d391b66a4",
+          "state": "uploaded",
+          "browser_download_url": "https://github.com/rohanarun/function-weights-research/releases/download/recovered-120m-checkpoints-20261015/in-house-transformer-resume.pt"
+        },
+        {
+          "name": "official-nanogpt-resume.pt",
+          "size": 1436542057,
+          "digest": "sha256:22c67df3bef43d6b77f87d562c7ba57b1b638d95fd1dc0de0bb5c17139c2936c",
+          "state": "uploaded",
+          "browser_download_url": "https://github.com/rohanarun/function-weights-research/releases/download/recovered-120m-checkpoints-20261015/official-nanogpt-resume.pt"
+        }
+      ]
+    },
+    {
+      "tag": "recovered-runtime-20261015",
+      "url": "https://github.com/rohanarun/function-weights-research/releases/tag/recovered-runtime-20261015",
+      "verified_assets": [
+        {
+          "name": "hierarchy-runtime-recovered.tar.gz.part-001",
+          "size": 536870912,
+          "digest": "sha256:d49764caf48e0419615ba70e5dd7b02545ff5bcd82f6355849b93682be17da60",
+          "state": "uploaded",
+          "browser_download_url": "https://github.com/rohanarun/function-weights-research/releases/download/recovered-runtime-20261015/hierarchy-runtime-recovered.tar.gz.part-001"
+        },
+        {
+          "name": "hierarchy-runtime-recovered.tar.gz.part-002",
+          "size": 536870912,
+          "digest": "sha256:233348a43cb644718185dc0e45e605738b154c3090e48a520dfb1637b8185809",
+          "state": "uploaded",
+          "browser_download_url": "https://github.com/rohanarun/function-weights-research/releases/download/recovered-runtime-20261015/hierarchy-runtime-recovered.tar.gz.part-002"
+        },
+        {
+          "name": "hierarchy-runtime-recovered.tar.gz.part-003",
+          "size": 536870912,
+          "digest": "sha256:1b1551b43c1793dfe3fd79d18311c8c05dd58b8834fba2824a4026c4a80753f1",
+          "state": "uploaded",
+          "browser_download_url": "https://github.com/rohanarun/function-weights-research/releases/download/recovered-runtime-20261015/hierarchy-runtime-recovered.tar.gz.part-003"
+        },
+        {
+          "name": "hierarchy-runtime-recovered.tar.gz.part-004",
+          "size": 536870912,
+          "digest": "sha256:dc365237f19ecbd2d4eb187a1023487ba770d746c079740f5cd77c0eeece3b70",
+          "state": "uploaded",
+          "browser_download_url": "https://github.com/rohanarun/function-weights-research/releases/download/recovered-runtime-20261015/hierarchy-runtime-recovered.tar.gz.part-004"
+        },
+        {
+          "name": "hierarchy-runtime-recovered.tar.gz.part-005",
+          "size": 536870912,
+          "digest": "sha256:78c141e3a385ecccf0c65925f0695500881cf98632eecc74c7935f61996e0f8f",
+          "state": "uploaded",
+          "browser_download_url": "https://github.com/rohanarun/function-weights-research/releases/download/recovered-runtime-20261015/hierarchy-runtime-recovered.tar.gz.part-005"
+        },
+        {
+          "name": "hierarchy-runtime-recovered.tar.gz.part-006",
+          "size": 262813822,
+          "digest": "sha256:b55f753b25c9312187ffaaa3f62182655bfee2ff2c0eba926dfa9ae450343edb",
+          "state": "uploaded",
+          "browser_download_url": "https://github.com/rohanarun/function-weights-research/releases/download/recovered-runtime-20261015/hierarchy-runtime-recovered.tar.gz.part-006"
+        },
+        {
+          "name": "hierarchy-runtime-manifest.json",
+          "size": 14093,
+          "digest": "sha256:eb5e360261a11c41c514fbf0180458110fca80a554ea25846b4e0741686f48dd",
+          "state": "uploaded",
+          "browser_download_url": "https://github.com/rohanarun/function-weights-research/releases/download/recovered-runtime-20261015/hierarchy-runtime-manifest.json"
+        }
+      ]
+    },
+    {
+      "tag": "replication-inputs-20261015",
+      "url": "https://github.com/rohanarun/function-weights-research/releases/tag/replication-inputs-20261015",
+      "verified_assets": [
+        {
+          "name": "train.bin.part-001",
+          "size": 1500000000,
+          "digest": "sha256:75e19567e2703738c21e78f790f188a6e5f0ae87bd969ae0e270dfde6ceaf785",
+          "state": "uploaded",
+          "browser_download_url": "https://github.com/rohanarun/function-weights-research/releases/download/replication-inputs-20261015/train.bin.part-001"
+        },
+        {
+          "name": "train.bin.part-002",
+          "size": 1500000000,
+          "digest": "sha256:418db2887065705841511b988f7880d106a07200bf151a0294257173af268dcb",
+          "state": "uploaded",
+          "browser_download_url": "https://github.com/rohanarun/function-weights-research/releases/download/replication-inputs-20261015/train.bin.part-002"
+        },
+        {
+          "name": "train.bin.part-003",
+          "size": 1000000000,
+          "digest": "sha256:11a779a8035b7423c008279179c1a6b0f74490c0c761ce2b9c0a3747631eb524",
+          "state": "uploaded",
+          "browser_download_url": "https://github.com/rohanarun/function-weights-research/releases/download/replication-inputs-20261015/train.bin.part-003"
+        },
+        {
+          "name": "val.bin",
+          "size": 8000000,
+          "digest": "sha256:8517985c4979dbc95c83137ee534e30e789e2275e4ba1ee1fd31e1f0d566e4d3",
+          "state": "uploaded",
+          "browser_download_url": "https://github.com/rohanarun/function-weights-research/releases/download/replication-inputs-20261015/val.bin"
+        },
+        {
+          "name": "qwen3-0.6b-base-model.safetensors",
+          "size": 1192135096,
+          "digest": "sha256:cd2a512003e2f9f3cd3c32a9c3573f820bb28c940f73c57b1ddaa983d9223eba",
+          "state": "uploaded",
+          "browser_download_url": "https://github.com/rohanarun/function-weights-research/releases/download/replication-inputs-20261015/qwen3-0.6b-base-model.safetensors"
+        },
+        {
+          "name": "qwen3-0.6b-tokenizer-and-config.zip",
+          "size": 3766066,
+          "digest": "sha256:a5a5b4681cfa97e63005b58d5470844f19b60d00ee3b0e4503e850d60025e238",
+          "state": "uploaded",
+          "browser_download_url": "https://github.com/rohanarun/function-weights-research/releases/download/replication-inputs-20261015/qwen3-0.6b-tokenizer-and-config.zip"
+        },
+        {
+          "name": "pinned-benchmark-caches.zip",
+          "size": 63330075,
+          "digest": "sha256:d546727f1c25baa3e08c24a1b7d4561bed6f3666f8f8fa56911f397fcac3de8e",
+          "state": "uploaded",
+          "browser_download_url": "https://github.com/rohanarun/function-weights-research/releases/download/replication-inputs-20261015/pinned-benchmark-caches.zip"
+        },
+        {
+          "name": "INPUT_MANIFEST.json",
+          "size": 16606,
+          "digest": "sha256:f171c8423233531c11cc9809e9915ea409b02f3b96bac8bb427bb33dd1751a07",
+          "state": "uploaded",
+          "browser_download_url": "https://github.com/rohanarun/function-weights-research/releases/download/replication-inputs-20261015/INPUT_MANIFEST.json"
+        }
+      ]
+    }
+  ],
+  "asset_count": 25,
+  "asset_bytes": 17777363648,
+  "scope": "Remote size/state/SHA-256 compared with frozen provenance and manifests; no model evaluation"
+}

@@ -1,0 +1,211 @@
+{
+  "architecture": "hierarchical_local_function_weights",
+  "arm": "hierarchical_local_function_qwen_full_kl",
+  "config": {
+    "arms": {
+      "hierarchical_local_function_qwen_full_kl": {
+        "architecture": "hierarchical_local_function_weights",
+        "branching": false,
+        "embedding_initialization": "qwen_pca"
+      },
+      "hierarchical_local_qwen_full_kl": {
+        "architecture": "hierarchical_local_distribution",
+        "branching": false,
+        "embedding_initialization": "qwen_pca"
+      },
+      "hierarchical_qwen_full_kl": {
+        "architecture": "hierarchical_distribution",
+        "branching": false,
+        "embedding_initialization": "qwen_pca"
+      },
+      "transformer_qwen_full_kl": {
+        "architecture": "transformer",
+        "branching": false,
+        "embedding_initialization": "qwen_pca"
+      }
+    },
+    "benchmark": {
+      "limit": 1000,
+      "log_every": 100
+    },
+    "data": "data/qwen3-06b-representation",
+    "embedding_projection": {
+      "chunk_size": 4096,
+      "preserve_global_norm": true
+    },
+    "evaluation": {
+      "batch_size": 2,
+      "batches": 16,
+      "branch_batches": 0,
+      "context": 512,
+      "long_context_batch_size": 1,
+      "long_context_batches": 2,
+      "long_contexts": [
+        1024,
+        2048
+      ],
+      "rollout_positions": [
+        64,
+        128,
+        256,
+        512
+      ],
+      "seed": 14001,
+      "temperatures": [
+        {
+          "value": 1.0,
+          "weight": 0.5
+        },
+        {
+          "value": 2.0,
+          "weight": 0.3
+        },
+        {
+          "value": 4.0,
+          "weight": 0.2
+        }
+      ]
+    },
+    "model_max_context": 2048,
+    "models": {
+      "hierarchical_distribution": {
+        "document_segments": 8,
+        "maximum_width": 1024,
+        "minimum_width": 256,
+        "segment_length": 32,
+        "width_step": 8
+      },
+      "hierarchical_local_distribution": {
+        "document_segments": 8,
+        "local_attention": {
+          "gate_bias": -1.5,
+          "heads": 4,
+          "width": 32,
+          "window": 64
+        },
+        "maximum_width": 1024,
+        "minimum_width": 256,
+        "segment_length": 32,
+        "width_step": 8
+      },
+      "hierarchical_local_function_weights": {
+        "document_segments": 8,
+        "function_weights": {
+          "basis": "open_uniform_cubic",
+          "controls": 6,
+          "rank": 32,
+          "virtual_depth": 24
+        },
+        "local_attention": {
+          "gate_bias": -1.5,
+          "heads": 4,
+          "width": 32,
+          "window": 64
+        },
+        "maximum_width": 1024,
+        "minimum_width": 256,
+        "segment_length": 32,
+        "width_step": 8
+      },
+      "transformer": {
+        "expansion": 4,
+        "heads": 8,
+        "layers": 6,
+        "maximum_width": 1024,
+        "minimum_width": 256,
+        "position_encoding": "sinusoidal",
+        "width_step": 8
+      }
+    },
+    "promotion_gates": {
+      "function_candidate": "hierarchical_local_function_qwen_full_kl",
+      "hierarchy_reference": "hierarchical_qwen_full_kl",
+      "local_reference": "hierarchical_local_qwen_full_kl",
+      "maximum_budget_utilization_spread": 0.03,
+      "maximum_inference_macs_ratio": 1.0,
+      "maximum_long_context_ce_degradation": 0.2,
+      "maximum_rollout_ce_degradation": 0.1,
+      "maximum_state_bytes_per_sequence": 16384,
+      "minimum_current_ce_improvement": 0.01,
+      "minimum_transformer_ce_improvement": 0.1,
+      "transformer_reference": "transformer_qwen_full_kl"
+    },
+    "safety": {
+      "minimum_free_gb": 20
+    },
+    "student_parameter_budget": 120000000,
+    "study": "qwen06b_matched_hierarchy_function_v1",
+    "teacher": "Qwen/Qwen3-0.6B-Base",
+    "token_dtype": "uint32",
+    "training": {
+      "batch_size": 4,
+      "betas": [
+        0.9,
+        0.95
+      ],
+      "branching": {
+        "candidates": [
+          {
+            "kind": "teacher_top1"
+          },
+          {
+            "kind": "teacher_sample",
+            "temperature": 1.0
+          },
+          {
+            "kind": "teacher_rank",
+            "rank": 32
+          },
+          {
+            "kind": "student_sample",
+            "temperature": 1.0
+          }
+        ],
+        "every": 4,
+        "maximum_prefix": 448,
+        "minimum_prefix": 64,
+        "rollout_steps": 2,
+        "weight": 0.0
+      },
+      "ce_weight": 0.1,
+      "checkpoint_every": 500,
+      "context": 512,
+      "distribution_weight": 1.0,
+      "gradient_clip": 1.0,
+      "learning_rate": 0.0003,
+      "log_every": 20,
+      "max_tokens": 10000000,
+      "minimum_lr_ratio": 0.1,
+      "seed": 12001,
+      "temperatures": [
+        {
+          "value": 1.0,
+          "weight": 0.5
+        },
+        {
+          "value": 2.0,
+          "weight": 0.3
+        },
+        {
+          "value": 4.0,
+          "weight": 0.2
+        }
+      ],
+      "vocab_chunk_size": 8192,
+      "warmup_steps": 500,
+      "weight_decay": 0.1
+    },
+    "vocab_size": 151936
+  },
+  "embedding_projection": {
+    "method": "centered_teacher_embedding_covariance_eigendecomposition",
+    "preserve_global_norm": true,
+    "retained_variance": 0.7630695700645447,
+    "rows": 151936,
+    "scale": 1.201378583908081,
+    "student_dimensions": 664,
+    "teacher_dimensions": 1024
+  },
+  "stored_parameters": 119431689,
+  "width": 664
+}

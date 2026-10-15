@@ -1,0 +1,58 @@
+{
+  "status": "ALL_RUNTIME_ASSETS_REMOTE_DIGEST_VERIFIED",
+  "release": "https://github.com/rohanarun/function-weights-research/releases/tag/recovered-runtime-20261015",
+  "archive_sha256": "1363f48b4dff2752513c610effa9edcbb82bdafc61f2f3226f09a800c38f9ead",
+  "archive_bytes": 2947168382,
+  "parts": [
+    {
+      "name": "hierarchy-runtime-manifest.json",
+      "size": 14093,
+      "digest": "sha256:eb5e360261a11c41c514fbf0180458110fca80a554ea25846b4e0741686f48dd",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/rohanarun/function-weights-research/releases/download/recovered-runtime-20261015/hierarchy-runtime-manifest.json"
+    },
+    {
+      "name": "hierarchy-runtime-recovered.tar.gz.part-001",
+      "size": 536870912,
+      "digest": "sha256:d49764caf48e0419615ba70e5dd7b02545ff5bcd82f6355849b93682be17da60",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/rohanarun/function-weights-research/releases/download/recovered-runtime-20261015/hierarchy-runtime-recovered.tar.gz.part-001"
+    },
+    {
+      "name": "hierarchy-runtime-recovered.tar.gz.part-002",
+      "size": 536870912,
+      "digest": "sha256:233348a43cb644718185dc0e45e605738b154c3090e48a520dfb1637b8185809",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/rohanarun/function-weights-research/releases/download/recovered-runtime-20261015/hierarchy-runtime-recovered.tar.gz.part-002"
+    },
+    {
+      "name": "hierarchy-runtime-recovered.tar.gz.part-003",
+      "size": 536870912,
+      "digest": "sha256:1b1551b43c1793dfe3fd79d18311c8c05dd58b8834fba2824a4026c4a80753f1",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/rohanarun/function-weights-research/releases/download/recovered-runtime-20261015/hierarchy-runtime-recovered.tar.gz.part-003"
+    },
+    {
+      "name": "hierarchy-runtime-recovered.tar.gz.part-004",
+      "size": 536870912,
+      "digest": "sha256:dc365237f19ecbd2d4eb187a1023487ba770d746c079740f5cd77c0eeece3b70",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/rohanarun/function-weights-research/releases/download/recovered-runtime-20261015/hierarchy-runtime-recovered.tar.gz.part-004"
+    },
+    {
+      "name": "hierarchy-runtime-recovered.tar.gz.part-005",
+      "size": 536870912,
+      "digest": "sha256:78c141e3a385ecccf0c65925f0695500881cf98632eecc74c7935f61996e0f8f",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/rohanarun/function-weights-research/releases/download/recovered-runtime-20261015/hierarchy-runtime-recovered.tar.gz.part-005"
+    },
+    {
+      "name": "hierarchy-runtime-recovered.tar.gz.part-006",
+      "size": 262813822,
+      "digest": "sha256:b55f753b25c9312187ffaaa3f62182655bfee2ff2c0eba926dfa9ae450343edb",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/rohanarun/function-weights-research/releases/download/recovered-runtime-20261015/hierarchy-runtime-recovered.tar.gz.part-006"
+    }
+  ],
+  "verification": "All six part sizes and digests plus the manifest size/digest match local frozen manifest."
+}

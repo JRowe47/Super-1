@@ -1,0 +1,27 @@
+{
+  "status": "PARTIAL_RECOVERY_WITH_ACCESS_LIMITS",
+  "date": "2026-10-15",
+  "mac_search_roots": [
+    "/Users/rohanarun",
+    "/Applications",
+    "/opt",
+    "/usr/local",
+    "/private/var/tmp"
+  ],
+  "target_filename_candidates": 110,
+  "inaccessible_entries": 546,
+  "downloads_archive_core_source_checks": 6,
+  "exact_missing_source_matches": 0,
+  "git_objects": {
+    "small_readable_blobs_checked": 6575,
+    "small_dataless_not_read": 13897,
+    "large_dataless_not_read": 417,
+    "large_readable_not_examined": 305
+  },
+  "unresolved": [
+    "nanoGPT final checkpoint",
+    "three deployed core sources",
+    "original runtime/container"
+  ],
+  "warning": "Searches were selective and several roots inaccessible/dataless. No exhaustive absence/deletion claim."
+}

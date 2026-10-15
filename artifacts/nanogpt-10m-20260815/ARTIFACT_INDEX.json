@@ -1,0 +1,126 @@
+{
+  "date": "2026-10-15",
+  "paper_sha256": "4f1d1f9177ac86c6cfe2f3cb7b26501984809d7bcd007f4533c2507cbbf4fca7",
+  "entries": [
+    {
+      "artifact": "Hierarchy config",
+      "status": "FOUND_HASH_VERIFIED_UPLOADED",
+      "path": "artifacts/nanogpt-10m-20260815/package/configs/qwen06b_matched_hierarchy_function_v1.json",
+      "sha256": "f47d8cabafa5f16ff32c1169fba2064bf8124907cfc99e7d8374212cc25c58fa"
+    },
+    {
+      "artifact": "Hierarchy result",
+      "status": "FOUND_HASH_VERIFIED_UPLOADED",
+      "path": "artifacts/nanogpt-10m-20260815/package/evidence/recorded/hierarchy/result.json",
+      "sha256": "ffe3dea20685e88381eab65f02bba504e6870975a0ec06854de73718b88f769d"
+    },
+    {
+      "artifact": "Hierarchy benchmark",
+      "status": "FOUND_HASH_VERIFIED_UPLOADED",
+      "path": "artifacts/nanogpt-10m-20260815/package/evidence/recorded/hierarchy/benchmarks.json",
+      "sha256": "109f61c95d03dba065a31c4cbc683e7b96ebb52a507afab9cae8136e94188b43"
+    },
+    {
+      "artifact": "nanoGPT frozen manifest",
+      "status": "FOUND_HASH_VERIFIED_UPLOADED",
+      "path": "artifacts/nanogpt-10m-20260815/package/source/official_nanogpt/freeze/manifest.v1.json",
+      "sha256": "dc4e324d7f43ddf417c6641ce3c6ec856cbec69a6d1b83e93f2fe5b0690c833c"
+    },
+    {
+      "artifact": "nanoGPT result",
+      "status": "FOUND_HASH_VERIFIED_UPLOADED",
+      "path": "artifacts/nanogpt-10m-20260815/package/evidence/recorded/nanogpt/result.json",
+      "sha256": "2120eac7d5f699d810425a8b793eccc0fd80674430751a2cc6d33361d81e3d44"
+    },
+    {
+      "artifact": "nanoGPT training completion",
+      "status": "FOUND_HASH_VERIFIED_UPLOADED",
+      "path": "artifacts/nanogpt-10m-20260815/package/evidence/recorded/nanogpt/exact_contract_completion.json",
+      "sha256": "6e3c1eda103ff89e6ae687e800f2cbf3c0cb76dd3a25b12fb2bc68c0df9419a7"
+    },
+    {
+      "artifact": "nanoGPT training log",
+      "status": "FOUND_HASH_VERIFIED_UPLOADED",
+      "path": "artifacts/nanogpt-10m-20260815/package/evidence/recorded/nanogpt/train.jsonl",
+      "sha256": "867e64674ed291d3eb8e8594d316c68c19c830fc7a70206d9542680ddcce532c"
+    },
+    {
+      "artifact": "nanoGPT benchmark",
+      "status": "FOUND_HASH_VERIFIED_UPLOADED",
+      "path": "artifacts/nanogpt-10m-20260815/package/evidence/recorded/nanogpt/benchmarks.json",
+      "sha256": "1df9a3e0f410ffee5189e111137acd2755717a6a7c81cfb099e54c4cbb7f340e"
+    },
+    {
+      "artifact": "nanoGPT benchmark completion",
+      "status": "FOUND_HASH_VERIFIED_UPLOADED",
+      "path": "artifacts/nanogpt-10m-20260815/package/evidence/recorded/nanogpt/exact_benchmark_completion.json",
+      "sha256": "fc28be724d939e0f619d935d47b1ffc356a06e2c66b6530efd41523ca3042be6"
+    },
+    {
+      "artifact": "Pinned nanoGPT model.py",
+      "status": "FOUND_HASH_VERIFIED_UPLOADED",
+      "path": "artifacts/nanogpt-10m-20260815/package/source/official_nanogpt/third_party/nanogpt/model.py",
+      "sha256": "7c01703240dbec5d554527dc666e35b3df8391d0b117fddc07afcf325a21d11c"
+    },
+    {
+      "artifact": "Source report",
+      "status": "FOUND_HASH_VERIFIED_UPLOADED",
+      "path": "artifacts/nanogpt-10m-20260815/package/report/source_report.md",
+      "sha256": "b26912fa75a3bccca3d1ac3b7110708b366c0b8c565d99c3161e1b5e4a88b3b9"
+    },
+    {
+      "artifact": "Upstream nanoGPT commit",
+      "status": "PINNED_SOURCE_UPLOADED",
+      "commit": "3adf61e154c3fe3fca428ad6bc3818b27a3b8291",
+      "path": "artifacts/nanogpt-10m-20260815/package/source/official_nanogpt/third_party/nanogpt/model.py"
+    },
+    {
+      "artifact": "Training data",
+      "status": "FOUND_HASH_VERIFIED_UPLOADED_PRIVATE_RELEASE",
+      "local_path": "/Volumes/SP AI 01_16/trin-data-storage-2026-08-24/training4-bootstrap-20260809/data/qwen3-06b-representation/train.bin",
+      "bytes": 4000000000,
+      "sha256": "834c82d2ea76e2f17aa43d15862f5ef444322c37d9b29d07fe803bb21ac163e4",
+      "uploaded": true,
+      "reason": "Now uploaded as private release assets; training corpus split into ordered hash-bound parts.",
+      "release": "https://github.com/rohanarun/function-weights-research/releases/tag/replication-inputs-20261015"
+    },
+    {
+      "artifact": "Validation data",
+      "status": "FOUND_HASH_VERIFIED_UPLOADED_PRIVATE_RELEASE",
+      "local_path": "/Volumes/SP AI 01_16/trin-data-storage-2026-08-24/training4-bootstrap-20260809/data/qwen3-06b-representation/val.bin",
+      "bytes": 8000000,
+      "sha256": "8517985c4979dbc95c83137ee534e30e789e2275e4ba1ee1fd31e1f0d566e4d3",
+      "uploaded": true,
+      "reason": "Now uploaded as private release assets; training corpus split into ordered hash-bound parts.",
+      "release": "https://github.com/rohanarun/function-weights-research/releases/tag/replication-inputs-20261015"
+    },
+    {
+      "artifact": "Teacher weights",
+      "status": "FOUND_HASH_VERIFIED_UPLOADED_PRIVATE_RELEASE",
+      "local_path": "/Volumes/SP AI 01_16/trin-data-storage-2026-08-24/training4-bootstrap-20260809/hf/models--Qwen--Qwen3-0.6B-Base/snapshots/da87bfb608c14b7cf20ba1ce41287e8de496c0cd/model.safetensors",
+      "bytes": 1192135096,
+      "sha256": "cd2a512003e2f9f3cd3c32a9c3573f820bb28c940f73c57b1ddaa983d9223eba",
+      "uploaded": true,
+      "reason": "Now uploaded as private release assets; training corpus split into ordered hash-bound parts.",
+      "release": "https://github.com/rohanarun/function-weights-research/releases/tag/replication-inputs-20261015"
+    },
+    {
+      "artifact": "Hierarchy checkpoint",
+      "status": "FOUND_HASH_VERIFIED_PRIVATE_RELEASE",
+      "sha256": "beb12f7a9fce10195c639365cc673200e04c97affa9557239b70edd28bd9c66f",
+      "uploaded": true,
+      "reason": "Recovered from hidden SSD staging; supersedes earlier missing status.",
+      "local_path": "/Volumes/SP AI 01_16/trin/.codex-staging/qwen06b-benchmark.k3YJBn/hierarchical_qwen_full_kl/student_final.pt",
+      "release": "https://github.com/rohanarun/function-weights-research/releases/tag/recovered-120m-checkpoints-20261015"
+    },
+    {
+      "artifact": "nanoGPT final model",
+      "status": "NOT_LOCATED_LOCALLY",
+      "sha256": "7de4e9d81b606ec6b0d7e9fbaf4dcdcb30aa55456e775a07371aaf65a6591241",
+      "uploaded": false,
+      "reason": "Excluded from original lightweight package; historical remote preservation not currently verified."
+    }
+  ],
+  "official_test_accessed": false,
+  "new_training": false
+}

@@ -1,0 +1,29 @@
+{
+  "schema": "comparison_source_identity_v1",
+  "historical_hierarchy": {
+    "identity_level": "compatible_snapshot_exact_config",
+    "config_sha256": "f47d8cabafa5f16ff32c1169fba2064bf8124907cfc99e7d8374212cc25c58fa",
+    "included_snapshot": {
+      "representation_experiments/common.py": "eed2cad9f3313b5c889bf72bc72aa78254466ff1e1b5548d363a26b42f7757dd",
+      "representation_experiments/predictive_models.py": "aace4bd0c7d7b3f6d71726af4f5ef16de8c889e1a16cd242a35bd80acd1a6023",
+      "representation_experiments/distribution_distillation.py": "1a386f5391e925875aceb87b711b5413565b45fedb742e8d138aae4fc7be1841",
+      "representation_experiments/distribution_benchmarks.py": "389e1efe3114d012918ddf0c75cee393dbde57127811cebf5722de66a9376942",
+      "representation_experiments/predictive_benchmarks.py": "72edbcf7238454e31f2f41a46b616bb67a7514da34389246f1e86daf2f501152",
+      "representation_experiments/run_matched_hierarchy_single_gpu.py": "d725b60ebe679889ad392499c75c4d2357fbe522e17498e38a73d83a4a612b62"
+    },
+    "recorded_deployed_core_hashes": {
+      "representation_experiments/common.py": "381c5950aa454fc2275c45755bafd4c3e0641802013c0bf7ce9276abf5415fe1",
+      "representation_experiments/predictive_models.py": "b73a7c07801f5672adb52c0cb16a3c772d62e50eebc0366491d497f76d13f73f",
+      "representation_experiments/distribution_distillation.py": "67eca0010183a15adef50c14f8c158120696200a6bd5a8d544be0c24a6901a82",
+      "representation_experiments/distribution_benchmarks.py": "d7dfd855155e8ae2d85e8e22eb7b7262297bf25d28dfc32931c572af8da6bc95"
+    }
+  },
+  "official_nanogpt": {
+    "identity_level": "frozen_exact",
+    "upstream_commit": "3adf61e154c3fe3fca428ad6bc3818b27a3b8291",
+    "vendored_model_sha256": "7c01703240dbec5d554527dc666e35b3df8391d0b117fddc07afcf325a21d11c",
+    "vendored_license_sha256": "a59ec5cdb1c1e447e5266a014b3e7ded511f8d6e5a08931e931c87490ff821fe",
+    "parameter_free_adapter_sha256": "1adfffbd843a55f00491b50cb46bc6c5d99041f54d9f48251ce3e79ad672a870",
+    "freeze_manifest_sha256": "dc4e324d7f43ddf417c6641ce3c6ec856cbec69a6d1b83e93f2fe5b0690c833c"
+  }
+}

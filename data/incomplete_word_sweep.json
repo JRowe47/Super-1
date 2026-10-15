@@ -1,0 +1,86 @@
+{
+  "completed_trials": 6,
+  "last_progress": {
+    "arm": "pair_energy",
+    "features": {
+      "energy_gain": {
+        "coefficient_max_abs": 0.9117917418479919,
+        "coefficient_rms": 0.28260570764541626,
+        "gradient_nonzero": 128,
+        "gradient_norm": 0.00425326731055975
+      },
+      "second_energy_gain": {
+        "coefficient_max_abs": 0.9271227121353149,
+        "coefficient_rms": 0.28565356135368347,
+        "gradient_nonzero": 128,
+        "gradient_norm": 0.0053057060576975346
+      }
+    },
+    "lr": 0.001,
+    "preclip_norm": 1.780700445175171,
+    "seed": "1852934521",
+    "step": 12500,
+    "target_exposures": 3500000,
+    "train_loss": 4.9268879890441895,
+    "trial_elapsed_seconds": 1863.4495018749985
+  },
+  "planned_trials": 18,
+  "rows": [
+    {
+      "arm": "pair_energy",
+      "checkpoint_sha256": "04e17920bf31d162efa0e399fe1110534d73dc5077326c906a23c7562839b144",
+      "completed_steps": 24000,
+      "lr": 0.001,
+      "parameters": 8652288,
+      "seed": "647713113",
+      "selection_ce": 5.040522186085582
+    },
+    {
+      "arm": "pair_energy",
+      "checkpoint_sha256": "cad3d7409ff3ba17d5d5375793159dd6aca0f6228533bbf6d5e85edbea848029",
+      "completed_steps": 24000,
+      "lr": 0.003,
+      "parameters": 8652288,
+      "seed": "647713113",
+      "selection_ce": 5.0207345224916935
+    },
+    {
+      "arm": "odd_query_shape",
+      "checkpoint_sha256": "22dbdfd163c7c8c18b69053deba502c45d60effc2f084ee9be6283680c0147c3",
+      "completed_steps": 24000,
+      "lr": 0.001,
+      "parameters": 8652288,
+      "seed": "647713113",
+      "selection_ce": 5.038305206224322
+    },
+    {
+      "arm": "odd_query_shape",
+      "checkpoint_sha256": "d97711e6bcd2d5f80bfee900efe16c149a9bba5e8488c04073843568d4c6ca43",
+      "completed_steps": 24000,
+      "lr": 0.003,
+      "parameters": 8652288,
+      "seed": "647713113",
+      "selection_ce": 5.022231563925743
+    },
+    {
+      "arm": "transformer",
+      "checkpoint_sha256": "d0f92708ba26f3be1cc4d08b83b66dcaf37eac9a63d751f6b68bf7cd1b288e66",
+      "completed_steps": 24000,
+      "lr": 0.001,
+      "parameters": 8652069,
+      "seed": "647713113",
+      "selection_ce": 4.94277311488986
+    },
+    {
+      "arm": "transformer",
+      "checkpoint_sha256": "5450611059dbbb56ae208f5178b60708a0474b835cb273192cfdb11df8fd9c1e",
+      "completed_steps": 24000,
+      "lr": 0.003,
+      "parameters": 8652069,
+      "seed": "647713113",
+      "selection_ce": 5.5134682804346085
+    }
+  ],
+  "scope": "Incomplete first-seed word-level selection results; NOT duplicate-confirmed; no terminal sweep receipt.",
+  "terminal_receipt_present": false
+}

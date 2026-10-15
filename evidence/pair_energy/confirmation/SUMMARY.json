@@ -1,0 +1,55 @@
+{
+  "groups": [
+    {
+      "arm": "pair_energy",
+      "ce": 1.596404282563652,
+      "bpc": 2.3031245417084842
+    },
+    {
+      "arm": "geometric_overlapping",
+      "ce": 1.6168844127966688,
+      "bpc": 2.3326711240324176
+    },
+    {
+      "arm": "relative_phase_key",
+      "ce": 1.6103910516290103,
+      "bpc": 2.323303184077136
+    },
+    {
+      "arm": "transformer",
+      "ce": 1.7358564613691343,
+      "bpc": 2.5043115085123144
+    }
+  ],
+  "pairs": [
+    {
+      "seed": 3361,
+      "candidate_minus_controls_ce": {
+        "geometric_overlapping": -0.026239171215132195,
+        "relative_phase_key": -0.020572451049206242,
+        "transformer": -0.15365389562120635
+      }
+    },
+    {
+      "seed": 3407,
+      "candidate_minus_controls_ce": {
+        "geometric_overlapping": -0.013723235504299991,
+        "relative_phase_key": -0.008456268965029379,
+        "transformer": -0.125910603766348
+      }
+    },
+    {
+      "seed": 3457,
+      "candidate_minus_controls_ce": {
+        "geometric_overlapping": -0.021477983979617976,
+        "relative_phase_key": -0.012931587181839399,
+        "transformer": -0.13879203702889242
+      }
+    }
+  ],
+  "duplicate_drift": 0,
+  "candidate_arm": "pair_energy",
+  "candidate_beats_all_controls_all_seeds": true,
+  "official_test_read": false,
+  "novelty_established": false
+}

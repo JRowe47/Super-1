@@ -1,0 +1,913 @@
+{
+  "cloud_accessed": false,
+  "cpu_seconds": 2.524425,
+  "dataset_content_read": false,
+  "failures": [],
+  "official_test_accessed": false,
+  "peak_process_rss_bytes_macos": 296845312,
+  "repair_attempts": 0,
+  "rows": [
+    {
+      "arm": "native",
+      "checks": {
+        "all_historical_clock_levels_exercised": {
+          "calls": {
+            "document": 1,
+            "fast": 272,
+            "segment": 8
+          },
+          "expected": {
+            "document": 1,
+            "fast": 272,
+            "segment": 8
+          },
+          "pass": true
+        },
+        "causal_prefix": {
+          "pass": true
+        },
+        "exact_identity_initialization": {
+          "pass": true
+        },
+        "finite_loss_and_parameter_gradients": {
+          "pass": true
+        },
+        "forward_vs_step_streaming": {
+          "final_state_errors": {
+            "document": 0.0,
+            "fast": 0.0,
+            "segment": 0.0,
+            "segment_sum": 0.0,
+            "segment_tokens": 0,
+            "segments": 0
+          },
+          "hidden_max_abs": 0.0,
+          "logit_max_abs": 0.0,
+          "pass": true,
+          "relative_tolerance": 0,
+          "tolerance_abs": 1e-09
+        },
+        "nonzero_each_clock_gradients": {
+          "l1": {
+            "document": 0.10773680567169822,
+            "fast": 1.8756112702005046,
+            "segment": 2.0231842305015815
+          },
+          "pass": true
+        },
+        "optimizer_update": {
+          "pass": true,
+          "updated_parameters": [
+            "embedding.weight",
+            "final_norm.weight",
+            "final_norm.bias",
+            "fast_cell.weight_ih",
+            "fast_cell.weight_hh",
+            "fast_cell.bias_ih",
+            "fast_cell.bias_hh",
+            "segment_cell.weight_ih",
+            "segment_cell.weight_hh",
+            "segment_cell.bias_ih",
+            "segment_cell.bias_hh",
+            "document_cell.weight_ih",
+            "document_cell.weight_hh",
+            "document_cell.bias_ih",
+            "document_cell.bias_hh",
+            "combine.0.weight",
+            "combine.0.bias",
+            "combine.2.weight",
+            "combine.2.bias"
+          ]
+        }
+      },
+      "elapsed_seconds": 0.7327875000000001,
+      "parameters": 9584,
+      "seed": 73,
+      "synthetic_loss_not_quality_metric": 4.538033267631902
+    },
+    {
+      "arm": "oriented_cross",
+      "checks": {
+        "all_historical_clock_levels_exercised": {
+          "calls": {
+            "document": 1,
+            "fast": 272,
+            "segment": 8
+          },
+          "expected": {
+            "document": 1,
+            "fast": 272,
+            "segment": 8
+          },
+          "pass": true
+        },
+        "causal_prefix": {
+          "pass": true
+        },
+        "equal_count_control": {
+          "pass": true
+        },
+        "exact_identity_initialization": {
+          "pass": true
+        },
+        "finite_loss_and_parameter_gradients": {
+          "pass": true
+        },
+        "forward_vs_step_streaming": {
+          "final_state_errors": {
+            "document": 0.0,
+            "fast": 0.0,
+            "segment": 0.0,
+            "segment_sum": 0.0,
+            "segment_tokens": 0,
+            "segments": 0
+          },
+          "hidden_max_abs": 0.0,
+          "logit_max_abs": 0.0,
+          "pass": true,
+          "relative_tolerance": 0,
+          "tolerance_abs": 1e-09
+        },
+        "nonzero_each_clock_gradients": {
+          "l1": {
+            "document": 0.10195595888396619,
+            "fast": 1.7573819352913949,
+            "segment": 1.9580153543212646
+          },
+          "pass": true
+        },
+        "nonzero_geometry_gain_gradients": {
+          "l1": 0.030747579857930158,
+          "pass": true
+        },
+        "optimizer_update": {
+          "pass": true,
+          "updated_parameters": [
+            "embedding.weight",
+            "final_norm.weight",
+            "final_norm.bias",
+            "fast_cell.phase",
+            "fast_cell.gain",
+            "fast_cell.native.weight_ih",
+            "fast_cell.native.weight_hh",
+            "fast_cell.native.bias_ih",
+            "fast_cell.native.bias_hh",
+            "segment_cell.weight_ih",
+            "segment_cell.weight_hh",
+            "segment_cell.bias_ih",
+            "segment_cell.bias_hh",
+            "document_cell.weight_ih",
+            "document_cell.weight_hh",
+            "document_cell.bias_ih",
+            "document_cell.bias_hh",
+            "combine.0.weight",
+            "combine.0.bias",
+            "combine.2.weight",
+            "combine.2.bias"
+          ]
+        }
+      },
+      "elapsed_seconds": 0.15317475000000003,
+      "parameters": 9600,
+      "seed": 73,
+      "synthetic_loss_not_quality_metric": 4.5425370079629275
+    },
+    {
+      "arm": "alignment_dot",
+      "checks": {
+        "all_historical_clock_levels_exercised": {
+          "calls": {
+            "document": 1,
+            "fast": 272,
+            "segment": 8
+          },
+          "expected": {
+            "document": 1,
+            "fast": 272,
+            "segment": 8
+          },
+          "pass": true
+        },
+        "causal_prefix": {
+          "pass": true
+        },
+        "equal_count_control": {
+          "pass": true
+        },
+        "exact_identity_initialization": {
+          "pass": true
+        },
+        "finite_loss_and_parameter_gradients": {
+          "pass": true
+        },
+        "forward_vs_step_streaming": {
+          "final_state_errors": {
+            "document": 0.0,
+            "fast": 0.0,
+            "segment": 0.0,
+            "segment_sum": 0.0,
+            "segment_tokens": 0,
+            "segments": 0
+          },
+          "hidden_max_abs": 0.0,
+          "logit_max_abs": 0.0,
+          "pass": true,
+          "relative_tolerance": 0,
+          "tolerance_abs": 1e-09
+        },
+        "nonzero_each_clock_gradients": {
+          "l1": {
+            "document": 0.12332267723620102,
+            "fast": 1.9298770617690661,
+            "segment": 1.9159963696607583
+          },
+          "pass": true
+        },
+        "nonzero_geometry_gain_gradients": {
+          "l1": 0.018882172743073977,
+          "pass": true
+        },
+        "optimizer_update": {
+          "pass": true,
+          "updated_parameters": [
+            "embedding.weight",
+            "final_norm.weight",
+            "final_norm.bias",
+            "fast_cell.phase",
+            "fast_cell.gain",
+            "fast_cell.native.weight_ih",
+            "fast_cell.native.weight_hh",
+            "fast_cell.native.bias_ih",
+            "fast_cell.native.bias_hh",
+            "segment_cell.weight_ih",
+            "segment_cell.weight_hh",
+            "segment_cell.bias_ih",
+            "segment_cell.bias_hh",
+            "document_cell.weight_ih",
+            "document_cell.weight_hh",
+            "document_cell.bias_ih",
+            "document_cell.bias_hh",
+            "combine.0.weight",
+            "combine.0.bias",
+            "combine.2.weight",
+            "combine.2.bias"
+          ]
+        }
+      },
+      "elapsed_seconds": 0.14733324999999997,
+      "parameters": 9600,
+      "seed": 73,
+      "synthetic_loss_not_quality_metric": 4.540263591126528
+    },
+    {
+      "arm": "pinned_nanogpt",
+      "checks": {
+        "causal_prefix": {
+          "pass": true
+        },
+        "finite_loss_and_parameter_gradients": {
+          "pass": true
+        },
+        "forward_vs_prefix_streaming": {
+          "logit_max_abs": 1.1102230246251565e-16,
+          "pass": true,
+          "relative_tolerance": 0,
+          "tolerance_abs": 1e-09
+        },
+        "optimizer_update": {
+          "pass": true,
+          "updated_parameters": [
+            "transformer.wte.weight",
+            "transformer.wpe.weight",
+            "transformer.h.0.ln_1.weight",
+            "transformer.h.0.attn.c_attn.weight",
+            "transformer.h.0.attn.c_proj.weight",
+            "transformer.h.0.ln_2.weight",
+            "transformer.h.0.mlp.c_fc.weight",
+            "transformer.h.0.mlp.c_proj.weight",
+            "transformer.ln_f.weight"
+          ]
+        }
+      },
+      "elapsed_seconds": 0.1022632920000004,
+      "not_applicable": [
+        "geometry identity/gain",
+        "historical clocks"
+      ],
+      "parameter_matched": false,
+      "parameters": 8496,
+      "seed": 73,
+      "streaming_definition": "Growing-prefix inference; pinned nanoGPT exposes no recurrent step/KV-cache API",
+      "synthetic_loss_not_quality_metric": 4.157163573223053
+    },
+    {
+      "arm": "native",
+      "checks": {
+        "all_historical_clock_levels_exercised": {
+          "calls": {
+            "document": 1,
+            "fast": 272,
+            "segment": 8
+          },
+          "expected": {
+            "document": 1,
+            "fast": 272,
+            "segment": 8
+          },
+          "pass": true
+        },
+        "causal_prefix": {
+          "pass": true
+        },
+        "exact_identity_initialization": {
+          "pass": true
+        },
+        "finite_loss_and_parameter_gradients": {
+          "pass": true
+        },
+        "forward_vs_step_streaming": {
+          "final_state_errors": {
+            "document": 0.0,
+            "fast": 0.0,
+            "segment": 0.0,
+            "segment_sum": 0.0,
+            "segment_tokens": 0,
+            "segments": 0
+          },
+          "hidden_max_abs": 0.0,
+          "logit_max_abs": 0.0,
+          "pass": true,
+          "relative_tolerance": 0,
+          "tolerance_abs": 1e-09
+        },
+        "nonzero_each_clock_gradients": {
+          "l1": {
+            "document": 0.19929357703912262,
+            "fast": 3.4245306793387793,
+            "segment": 1.8096420006068774
+          },
+          "pass": true
+        },
+        "optimizer_update": {
+          "pass": true,
+          "updated_parameters": [
+            "embedding.weight",
+            "final_norm.weight",
+            "final_norm.bias",
+            "fast_cell.weight_ih",
+            "fast_cell.weight_hh",
+            "fast_cell.bias_ih",
+            "fast_cell.bias_hh",
+            "segment_cell.weight_ih",
+            "segment_cell.weight_hh",
+            "segment_cell.bias_ih",
+            "segment_cell.bias_hh",
+            "document_cell.weight_ih",
+            "document_cell.weight_hh",
+            "document_cell.bias_ih",
+            "document_cell.bias_hh",
+            "combine.0.weight",
+            "combine.0.bias",
+            "combine.2.weight",
+            "combine.2.bias"
+          ]
+        }
+      },
+      "elapsed_seconds": 0.08109712499999988,
+      "parameters": 9584,
+      "seed": 191,
+      "synthetic_loss_not_quality_metric": 4.504718247443338
+    },
+    {
+      "arm": "oriented_cross",
+      "checks": {
+        "all_historical_clock_levels_exercised": {
+          "calls": {
+            "document": 1,
+            "fast": 272,
+            "segment": 8
+          },
+          "expected": {
+            "document": 1,
+            "fast": 272,
+            "segment": 8
+          },
+          "pass": true
+        },
+        "causal_prefix": {
+          "pass": true
+        },
+        "equal_count_control": {
+          "pass": true
+        },
+        "exact_identity_initialization": {
+          "pass": true
+        },
+        "finite_loss_and_parameter_gradients": {
+          "pass": true
+        },
+        "forward_vs_step_streaming": {
+          "final_state_errors": {
+            "document": 0.0,
+            "fast": 0.0,
+            "segment": 0.0,
+            "segment_sum": 0.0,
+            "segment_tokens": 0,
+            "segments": 0
+          },
+          "hidden_max_abs": 0.0,
+          "logit_max_abs": 0.0,
+          "pass": true,
+          "relative_tolerance": 0,
+          "tolerance_abs": 1e-09
+        },
+        "nonzero_each_clock_gradients": {
+          "l1": {
+            "document": 0.22553153955003252,
+            "fast": 3.4052366582762854,
+            "segment": 1.7555970417352174
+          },
+          "pass": true
+        },
+        "nonzero_geometry_gain_gradients": {
+          "l1": 0.046589724814923336,
+          "pass": true
+        },
+        "optimizer_update": {
+          "pass": true,
+          "updated_parameters": [
+            "embedding.weight",
+            "final_norm.weight",
+            "final_norm.bias",
+            "fast_cell.phase",
+            "fast_cell.gain",
+            "fast_cell.native.weight_ih",
+            "fast_cell.native.weight_hh",
+            "fast_cell.native.bias_ih",
+            "fast_cell.native.bias_hh",
+            "segment_cell.weight_ih",
+            "segment_cell.weight_hh",
+            "segment_cell.bias_ih",
+            "segment_cell.bias_hh",
+            "document_cell.weight_ih",
+            "document_cell.weight_hh",
+            "document_cell.bias_ih",
+            "document_cell.bias_hh",
+            "combine.0.weight",
+            "combine.0.bias",
+            "combine.2.weight",
+            "combine.2.bias"
+          ]
+        }
+      },
+      "elapsed_seconds": 0.14982195799999998,
+      "parameters": 9600,
+      "seed": 191,
+      "synthetic_loss_not_quality_metric": 4.515680057681281
+    },
+    {
+      "arm": "alignment_dot",
+      "checks": {
+        "all_historical_clock_levels_exercised": {
+          "calls": {
+            "document": 1,
+            "fast": 272,
+            "segment": 8
+          },
+          "expected": {
+            "document": 1,
+            "fast": 272,
+            "segment": 8
+          },
+          "pass": true
+        },
+        "causal_prefix": {
+          "pass": true
+        },
+        "equal_count_control": {
+          "pass": true
+        },
+        "exact_identity_initialization": {
+          "pass": true
+        },
+        "finite_loss_and_parameter_gradients": {
+          "pass": true
+        },
+        "forward_vs_step_streaming": {
+          "final_state_errors": {
+            "document": 0.0,
+            "fast": 0.0,
+            "segment": 0.0,
+            "segment_sum": 0.0,
+            "segment_tokens": 0,
+            "segments": 0
+          },
+          "hidden_max_abs": 0.0,
+          "logit_max_abs": 0.0,
+          "pass": true,
+          "relative_tolerance": 0,
+          "tolerance_abs": 1e-09
+        },
+        "nonzero_each_clock_gradients": {
+          "l1": {
+            "document": 0.23564654339372856,
+            "fast": 3.4314251821087662,
+            "segment": 1.8372153560894293
+          },
+          "pass": true
+        },
+        "nonzero_geometry_gain_gradients": {
+          "l1": 0.036709459998750124,
+          "pass": true
+        },
+        "optimizer_update": {
+          "pass": true,
+          "updated_parameters": [
+            "embedding.weight",
+            "final_norm.weight",
+            "final_norm.bias",
+            "fast_cell.phase",
+            "fast_cell.gain",
+            "fast_cell.native.weight_ih",
+            "fast_cell.native.weight_hh",
+            "fast_cell.native.bias_ih",
+            "fast_cell.native.bias_hh",
+            "segment_cell.weight_ih",
+            "segment_cell.weight_hh",
+            "segment_cell.bias_ih",
+            "segment_cell.bias_hh",
+            "document_cell.weight_ih",
+            "document_cell.weight_hh",
+            "document_cell.bias_ih",
+            "document_cell.bias_hh",
+            "combine.0.weight",
+            "combine.0.bias",
+            "combine.2.weight",
+            "combine.2.bias"
+          ]
+        }
+      },
+      "elapsed_seconds": 0.14239299999999977,
+      "parameters": 9600,
+      "seed": 191,
+      "synthetic_loss_not_quality_metric": 4.509272686898328
+    },
+    {
+      "arm": "pinned_nanogpt",
+      "checks": {
+        "causal_prefix": {
+          "pass": true
+        },
+        "finite_loss_and_parameter_gradients": {
+          "pass": true
+        },
+        "forward_vs_prefix_streaming": {
+          "logit_max_abs": 1.1102230246251565e-16,
+          "pass": true,
+          "relative_tolerance": 0,
+          "tolerance_abs": 1e-09
+        },
+        "optimizer_update": {
+          "pass": true,
+          "updated_parameters": [
+            "transformer.wte.weight",
+            "transformer.wpe.weight",
+            "transformer.h.0.ln_1.weight",
+            "transformer.h.0.attn.c_attn.weight",
+            "transformer.h.0.attn.c_proj.weight",
+            "transformer.h.0.ln_2.weight",
+            "transformer.h.0.mlp.c_fc.weight",
+            "transformer.h.0.mlp.c_proj.weight",
+            "transformer.ln_f.weight"
+          ]
+        }
+      },
+      "elapsed_seconds": 0.08534108299999987,
+      "not_applicable": [
+        "geometry identity/gain",
+        "historical clocks"
+      ],
+      "parameter_matched": false,
+      "parameters": 8496,
+      "seed": 191,
+      "streaming_definition": "Growing-prefix inference; pinned nanoGPT exposes no recurrent step/KV-cache API",
+      "synthetic_loss_not_quality_metric": 4.154798751812401
+    },
+    {
+      "arm": "native",
+      "checks": {
+        "all_historical_clock_levels_exercised": {
+          "calls": {
+            "document": 1,
+            "fast": 272,
+            "segment": 8
+          },
+          "expected": {
+            "document": 1,
+            "fast": 272,
+            "segment": 8
+          },
+          "pass": true
+        },
+        "causal_prefix": {
+          "pass": true
+        },
+        "exact_identity_initialization": {
+          "pass": true
+        },
+        "finite_loss_and_parameter_gradients": {
+          "pass": true
+        },
+        "forward_vs_step_streaming": {
+          "final_state_errors": {
+            "document": 0.0,
+            "fast": 0.0,
+            "segment": 0.0,
+            "segment_sum": 0.0,
+            "segment_tokens": 0,
+            "segments": 0
+          },
+          "hidden_max_abs": 0.0,
+          "logit_max_abs": 0.0,
+          "pass": true,
+          "relative_tolerance": 0,
+          "tolerance_abs": 1e-09
+        },
+        "nonzero_each_clock_gradients": {
+          "l1": {
+            "document": 0.1010239006949833,
+            "fast": 2.9703532863608455,
+            "segment": 1.3741630937735352
+          },
+          "pass": true
+        },
+        "optimizer_update": {
+          "pass": true,
+          "updated_parameters": [
+            "embedding.weight",
+            "final_norm.weight",
+            "final_norm.bias",
+            "fast_cell.weight_ih",
+            "fast_cell.weight_hh",
+            "fast_cell.bias_ih",
+            "fast_cell.bias_hh",
+            "segment_cell.weight_ih",
+            "segment_cell.weight_hh",
+            "segment_cell.bias_ih",
+            "segment_cell.bias_hh",
+            "document_cell.weight_ih",
+            "document_cell.weight_hh",
+            "document_cell.bias_ih",
+            "document_cell.bias_hh",
+            "combine.0.weight",
+            "combine.0.bias",
+            "combine.2.weight",
+            "combine.2.bias"
+          ]
+        }
+      },
+      "elapsed_seconds": 0.07785483299999996,
+      "parameters": 9584,
+      "seed": 307,
+      "synthetic_loss_not_quality_metric": 4.643046333734074
+    },
+    {
+      "arm": "oriented_cross",
+      "checks": {
+        "all_historical_clock_levels_exercised": {
+          "calls": {
+            "document": 1,
+            "fast": 272,
+            "segment": 8
+          },
+          "expected": {
+            "document": 1,
+            "fast": 272,
+            "segment": 8
+          },
+          "pass": true
+        },
+        "causal_prefix": {
+          "pass": true
+        },
+        "equal_count_control": {
+          "pass": true
+        },
+        "exact_identity_initialization": {
+          "pass": true
+        },
+        "finite_loss_and_parameter_gradients": {
+          "pass": true
+        },
+        "forward_vs_step_streaming": {
+          "final_state_errors": {
+            "document": 0.0,
+            "fast": 0.0,
+            "segment": 0.0,
+            "segment_sum": 0.0,
+            "segment_tokens": 0,
+            "segments": 0
+          },
+          "hidden_max_abs": 0.0,
+          "logit_max_abs": 0.0,
+          "pass": true,
+          "relative_tolerance": 0,
+          "tolerance_abs": 1e-09
+        },
+        "nonzero_each_clock_gradients": {
+          "l1": {
+            "document": 0.10221796885197508,
+            "fast": 2.7590508118689008,
+            "segment": 1.2098952899778346
+          },
+          "pass": true
+        },
+        "nonzero_geometry_gain_gradients": {
+          "l1": 0.035753392092232994,
+          "pass": true
+        },
+        "optimizer_update": {
+          "pass": true,
+          "updated_parameters": [
+            "embedding.weight",
+            "final_norm.weight",
+            "final_norm.bias",
+            "fast_cell.phase",
+            "fast_cell.gain",
+            "fast_cell.native.weight_ih",
+            "fast_cell.native.weight_hh",
+            "fast_cell.native.bias_ih",
+            "fast_cell.native.bias_hh",
+            "segment_cell.weight_ih",
+            "segment_cell.weight_hh",
+            "segment_cell.bias_ih",
+            "segment_cell.bias_hh",
+            "document_cell.weight_ih",
+            "document_cell.weight_hh",
+            "document_cell.bias_ih",
+            "document_cell.bias_hh",
+            "combine.0.weight",
+            "combine.0.bias",
+            "combine.2.weight",
+            "combine.2.bias"
+          ]
+        }
+      },
+      "elapsed_seconds": 0.18044012500000006,
+      "parameters": 9600,
+      "seed": 307,
+      "synthetic_loss_not_quality_metric": 4.644054446984461
+    },
+    {
+      "arm": "alignment_dot",
+      "checks": {
+        "all_historical_clock_levels_exercised": {
+          "calls": {
+            "document": 1,
+            "fast": 272,
+            "segment": 8
+          },
+          "expected": {
+            "document": 1,
+            "fast": 272,
+            "segment": 8
+          },
+          "pass": true
+        },
+        "causal_prefix": {
+          "pass": true
+        },
+        "equal_count_control": {
+          "pass": true
+        },
+        "exact_identity_initialization": {
+          "pass": true
+        },
+        "finite_loss_and_parameter_gradients": {
+          "pass": true
+        },
+        "forward_vs_step_streaming": {
+          "final_state_errors": {
+            "document": 0.0,
+            "fast": 0.0,
+            "segment": 0.0,
+            "segment_sum": 0.0,
+            "segment_tokens": 0,
+            "segments": 0
+          },
+          "hidden_max_abs": 0.0,
+          "logit_max_abs": 0.0,
+          "pass": true,
+          "relative_tolerance": 0,
+          "tolerance_abs": 1e-09
+        },
+        "nonzero_each_clock_gradients": {
+          "l1": {
+            "document": 0.11030770274538675,
+            "fast": 2.864931067626465,
+            "segment": 1.1125035107590546
+          },
+          "pass": true
+        },
+        "nonzero_geometry_gain_gradients": {
+          "l1": 0.031974492655792046,
+          "pass": true
+        },
+        "optimizer_update": {
+          "pass": true,
+          "updated_parameters": [
+            "embedding.weight",
+            "final_norm.weight",
+            "final_norm.bias",
+            "fast_cell.phase",
+            "fast_cell.gain",
+            "fast_cell.native.weight_ih",
+            "fast_cell.native.weight_hh",
+            "fast_cell.native.bias_ih",
+            "fast_cell.native.bias_hh",
+            "segment_cell.weight_ih",
+            "segment_cell.weight_hh",
+            "segment_cell.bias_ih",
+            "segment_cell.bias_hh",
+            "document_cell.weight_ih",
+            "document_cell.weight_hh",
+            "document_cell.bias_ih",
+            "document_cell.bias_hh",
+            "combine.0.weight",
+            "combine.0.bias",
+            "combine.2.weight",
+            "combine.2.bias"
+          ]
+        }
+      },
+      "elapsed_seconds": 0.1419843329999999,
+      "parameters": 9600,
+      "seed": 307,
+      "synthetic_loss_not_quality_metric": 4.638293626562951
+    },
+    {
+      "arm": "pinned_nanogpt",
+      "checks": {
+        "causal_prefix": {
+          "pass": true
+        },
+        "finite_loss_and_parameter_gradients": {
+          "pass": true
+        },
+        "forward_vs_prefix_streaming": {
+          "logit_max_abs": 1.6653345369377348e-16,
+          "pass": true,
+          "relative_tolerance": 0,
+          "tolerance_abs": 1e-09
+        },
+        "optimizer_update": {
+          "pass": true,
+          "updated_parameters": [
+            "transformer.wte.weight",
+            "transformer.wpe.weight",
+            "transformer.h.0.ln_1.weight",
+            "transformer.h.0.attn.c_attn.weight",
+            "transformer.h.0.attn.c_proj.weight",
+            "transformer.h.0.ln_2.weight",
+            "transformer.h.0.mlp.c_fc.weight",
+            "transformer.h.0.mlp.c_proj.weight",
+            "transformer.ln_f.weight"
+          ]
+        }
+      },
+      "elapsed_seconds": 0.0826993340000004,
+      "not_applicable": [
+        "geometry identity/gain",
+        "historical clocks"
+      ],
+      "parameter_matched": false,
+      "parameters": 8496,
+      "seed": 307,
+      "streaming_definition": "Growing-prefix inference; pinned nanoGPT exposes no recurrent step/KV-cache API",
+      "synthetic_loss_not_quality_metric": 4.17436575300646
+    }
+  ],
+  "runtime": {
+    "device": "cpu",
+    "dtype": "float64",
+    "executable": "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+    "interop_threads": 1,
+    "intraop_threads": 1,
+    "python": "3.9.6 (default, Aug 25 2026, 21:26:21) \n[Clang 21.0.0 (clang-2100.3.34.2)]",
+    "torch": "2.8.0",
+    "torch_path": "/Users/rohanarun/Library/Python/3.9/lib/python/site-packages/torch/__init__.py"
+  },
+  "scope": "SYNTHETIC_WORKFLOW_ACCEPTANCE_NOT_LANGUAGE_BENCHMARK",
+  "sources": {
+    "artifacts/nanogpt-10m-20260815/package/source/official_nanogpt/third_party/nanogpt/model.py": "7c01703240dbec5d554527dc666e35b3df8391d0b117fddc07afcf325a21d11c",
+    "auto-research/results/cloud-recovery-20261015/exact-historical-source/representation_experiments/common.py": "381c5950aa454fc2275c45755bafd4c3e0641802013c0bf7ce9276abf5415fe1",
+    "auto-research/results/cloud-recovery-20261015/exact-historical-source/representation_experiments/predictive_models.py": "b73a7c07801f5672adb52c0cb16a3c772d62e50eebc0366491d497f76d13f73f",
+    "auto-research/results/new-chat-exact-source-canary-20261015-v1/HARNESS_CONFIG.json": "7acaf292fc68b3b5f191c5a4185c32b0eab08d0c801e503693cdd927a88d9042",
+    "auto-research/results/new-chat-exact-source-canary-20261015-v1/PROTOCOL.json": "d873b2feeffda7847078f99735bc6cfff8049a885fdefe845091d184ce9d05f2",
+    "auto-research/results/new-chat-exact-source-canary-20261015-v1/run_canary.py": "1ca7f44e0f053a7429ee28198129c19bb646b8b8ae97159f68ba8e2230fb1c2c",
+    "auto-research/results/workflow-canaries-20261015/conditioned_fast_rotation.py": "409c41c09690cb8e991f008a866bae230bcbaaa54930a36cf45ab8da0ecd9df9"
+  },
+  "sources_unchanged": true,
+  "status": "PASS_SYNTHETIC_MECHANICS_ONLY",
+  "wall_seconds": 3.119914167
+}

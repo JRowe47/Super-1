@@ -1,0 +1,53 @@
+{
+  "run_id": "new-chat-exact-source-canary-20261015-v1",
+  "kind": "SYNTHETIC_WORKFLOW_ACCEPTANCE_NOT_LANGUAGE_BENCHMARK",
+  "authorization": "Existing user request to test auto-research.md in a new Codex chat, bounded synthetic scope only",
+  "model_source": "auto-research/results/cloud-recovery-20261015/exact-historical-source/representation_experiments",
+  "historical_model_sha256": "b73a7c07801f5672adb52c0cb16a3c772d62e50eebc0366491d497f76d13f73f",
+  "nanogpt_model_sha256": "7c01703240dbec5d554527dc666e35b3df8391d0b117fddc07afcf325a21d11c",
+  "seeds": [
+    73,
+    191,
+    307
+  ],
+  "vocab_size": 64,
+  "width": 16,
+  "batch_size": 1,
+  "sequence_length": 272,
+  "segment_length": 32,
+  "document_segments": 8,
+  "device": "CPU",
+  "threads": 1,
+  "arms": [
+    "native historical hierarchy",
+    "conditioned fast rotation oriented query",
+    "equal-count alignment-dot query",
+    "pinned nanoGPT workflow control"
+  ],
+  "nanoGPT_is_parameter_matched": false,
+  "checks": [
+    "exact identity initialization",
+    "causal prefix",
+    "forward versus step streaming",
+    "finite parameter gradients",
+    "optimizer update",
+    "nonzero geometry gain gradients",
+    "all historical clock levels exercised"
+  ],
+  "tolerance": {
+    "identity": "exact equality",
+    "double_cpu_streaming_abs": 1e-09
+  },
+  "primary_metric": "All declared mechanics checks pass on all seeds; otherwise report failed/inconclusive",
+  "dataset_policy": "Synthetic random tensors only; no corpus or official test access",
+  "cloud_policy": "No cloud access, provision, SSH, start, stop or cleanup. Parent owns recovery resources.",
+  "execution_budget": "At most five minutes CPU execution and at most three harness-only repair attempts; never alter original model to force passing",
+  "output_directory": "auto-research/results/new-chat-exact-source-canary-20261015-v1",
+  "prohibited_claims": [
+    "language quality improvement",
+    "SOTA",
+    "proven novelty",
+    "completed historical benchmark reproduction"
+  ],
+  "next_deliverable": "Costed preregistered language experiment proposal; do not launch it"
+}

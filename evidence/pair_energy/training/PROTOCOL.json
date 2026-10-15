@@ -1,0 +1,98 @@
+{
+  "config": {
+    "seeds": [
+      3361,
+      3407,
+      3457
+    ],
+    "lrs": [
+      0.001,
+      0.003
+    ],
+    "steps": 6000,
+    "batch": 4,
+    "context": 128,
+    "width": 256,
+    "validation_interval": 1000,
+    "validation_windows": 128,
+    "validation_start": 0,
+    "arms": [
+      "pair_energy",
+      "geometric_overlapping",
+      "relative_phase_key",
+      "transformer"
+    ],
+    "threads": 1,
+    "reserved_confirmation_start": 327808,
+    "reserved_confirmation_windows": 510,
+    "weight_decay": 0.01,
+    "gradient_clip": 1.0,
+    "window_seed_offset": 10000,
+    "canary_steps": 10,
+    "promotion_contract": "All 24 trials must finish. Freeze each seed/arm by selection CE with equal LR counts. Evaluate all 12 frozen checkpoints twice in FP32 on the declared reserved region. Advance the energy addition only if duplicate drift is zero and its reserved CE is strictly lower than both geometry controls and the Transformer in each seed. Preserve failures; no tuning on this confirmation region. Parameters/tokens, not FLOPs, are matched. No cloud or official test."
+  },
+  "checks": {
+    "overlapping_checks": {
+      "identity_extension_exact": true,
+      "noncommuting_banks": true,
+      "transport_norm_preserved": true,
+      "second_gain_gradient_nonzero": true,
+      "causal_prefix": true,
+      "parameters": 4720,
+      "trained": false,
+      "novelty_established": false
+    },
+    "pair_energy_checks": {
+      "zero_energy_gain_forward_exact": true,
+      "native_gradient_max_error": 0.0,
+      "both_energy_gradients_nonzero": true,
+      "relative_energy_distinguished": true,
+      "common_pair_rotation_invariance": true,
+      "transport_norm_preserved": true,
+      "causal_prefix_exact": true,
+      "zero_state_gradients_finite": true,
+      "trained": false,
+      "novelty_established": false,
+      "limitations": "No extra independent information or contraction guarantee. Not the original hierarchy. Performance requires a fresh registered comparison."
+    },
+    "phase_key_checks": {
+      "zero_key_forward_exact": true,
+      "native_gradient_max_error": 0.0,
+      "both_key_gradients_nonzero": true,
+      "aligned_antiparallel_distinguished": true,
+      "common_pair_rotation_invariance": true,
+      "transport_norm_preserved": true,
+      "zero_state_gradients_finite": true,
+      "causal_prefix_exact": true,
+      "novelty_established": false,
+      "trained": false,
+      "limitation": "State-dependent query can expand the Jacobian; norm preservation does not imply contraction. Not the original hierarchy."
+    },
+    "source_hashes": {
+      "/Users/rohanarun/Documents/trin/experiments/disparity_constraints/run_pair_energy_phase.py": "47a1699ebd051ec8e1ae1d8cca9b02493aa036aa93ea21229a8baa01b24f710c",
+      "/Users/rohanarun/Documents/trin/experiments/disparity_constraints/pair_energy_phase_candidate.py": "61b8d710a0c647c8c45cbe8e5a4e06eea440fa37975d9f387e9402b5ea2efa9a",
+      "/Users/rohanarun/Documents/trin/experiments/disparity_constraints/relative_phase_key_candidate.py": "709f99337190744261bed5b2d1b1d695091e5a30505c94818a8d7b23346ab20a"
+    },
+    "hypothesis": "Relative pair energy augments oriented geometric queries and improves reserved CE over both geometry controls in all three fresh seeds.",
+    "limitation": "No information-capacity, contraction, original-hierarchy, compute-efficiency, novelty or SOTA claim."
+  },
+  "parameters": {
+    "pair_energy": 198656,
+    "geometric_overlapping": 198400,
+    "relative_phase_key": 198656,
+    "transformer": 198729
+  },
+  "transformer_width": 134,
+  "transformer_ff_width": 275,
+  "source_sha256": "9e79bff53701581864118b18a5fc35156af41afaeb44b2fc6e25916a8c41f9b4",
+  "candidate_source_sha256": "063584bd9d4746ade54669e4cb1a9b70f8cdb38fff586ce68db37564552d14b5",
+  "runner_source_sha256": "d4bbb48fde16dfd17cbb3158cc1a5df2b80ef5a707ae6bacbb0205813ea0b7d2",
+  "data_sha256": {
+    "train": "71220dd7735e8715884cf57d21fa6306ebc3249c0979f51c1fb22314e0842298",
+    "valid": "1bd7ccbea6740d1f3837c268e41cd6c983e2e1d2673843b3d2c641f412c640b7"
+  },
+  "contract": "Fresh initialization, identical sampled train windows per seed, equal target-token exposure and LR tuning count; matched parameters, not matched FLOPs. Only train and valid read.",
+  "hypothesis": "Overlapping rotation planes permit cross-pair, order-sensitive transport. Fixed-overlapping control separates this from input-dependent geometry.",
+  "novelty_established": false,
+  "official_test_read": false
+}

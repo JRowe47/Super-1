@@ -1,0 +1,16 @@
+{"seed": 73, "arm": "native", "confirmation": {"ce_nats_per_target": 2.7275954484939575, "targets": 1024, "logits_sha256": "2b68013858def89367a2f53f930a74d335e8dd18c801bbb61f1b95a0612ab907"}}
+{"seed": 73, "arm": "oriented_cross", "confirmation": {"ce_nats_per_target": 2.7267833948135376, "targets": 1024, "logits_sha256": "38f4bd17f49dfc99972b02dab950352efb6f1cba47c858a201ce5ecc257dfdbd"}}
+{"seed": 73, "arm": "alignment_dot", "confirmation": {"ce_nats_per_target": 2.7282876670360565, "targets": 1024, "logits_sha256": "07bc8d2c12815f1c736c10092a9738766013948a18e88ff69931dd6cf99f4a72"}}
+number of parameters: 0.01M
+{"seed": 73, "arm": "pinned_nanogpt", "confirmation": {"ce_nats_per_target": 2.663441926240921, "targets": 1024, "logits_sha256": "c41b07f97fb2d350665040b836eedaba1ec39b775672c729420d8318ad0098cd"}}
+{"seed": 191, "arm": "native", "confirmation": {"ce_nats_per_target": 2.6872894763946533, "targets": 1024, "logits_sha256": "2bd3bd20ac969a62942c05a86533cacb7f85020c48c08670ab7ab123ca9f1c94"}}
+{"seed": 191, "arm": "oriented_cross", "confirmation": {"ce_nats_per_target": 2.687752276659012, "targets": 1024, "logits_sha256": "0e4de04a8fb66a50bd528ec6d6ac4a0097771e2962fb51bc324e4aa4c33b7bfa"}}
+{"seed": 191, "arm": "alignment_dot", "confirmation": {"ce_nats_per_target": 2.690792679786682, "targets": 1024, "logits_sha256": "aac0cb5e412d9886fa048bceeb511a11639b5592a2333cdcee98d8416bbb538e"}}
+number of parameters: 0.01M
+{"seed": 191, "arm": "pinned_nanogpt", "confirmation": {"ce_nats_per_target": 2.7073390185832977, "targets": 1024, "logits_sha256": "23d4ab1d181760533e54f93928d387c7645706046cb2ac98b4f819db87d08a17"}}
+{"seed": 307, "arm": "native", "confirmation": {"ce_nats_per_target": 2.756008893251419, "targets": 1024, "logits_sha256": "d3c402b9cd8fa7bcdcaa55d12f57b1a155985179a3962566c7ea8afb29f5e327"}}
+{"seed": 307, "arm": "oriented_cross", "confirmation": {"ce_nats_per_target": 2.75404155254364, "targets": 1024, "logits_sha256": "2051c9660bfbbd8c2d92ffa5974991dfde204921204bff3d9807bff03194cc83"}}
+{"seed": 307, "arm": "alignment_dot", "confirmation": {"ce_nats_per_target": 2.755060374736786, "targets": 1024, "logits_sha256": "9087635720b30c29959464fde736ac167ca408052110de753d46171549c210a9"}}
+number of parameters: 0.01M
+{"seed": 307, "arm": "pinned_nanogpt", "confirmation": {"ce_nats_per_target": 2.6812833547592163, "targets": 1024, "logits_sha256": "5cb004332994b75e63a4ac6f17ce320af4fca408e8aa4b2ea990da104c4df3c5"}}
+{"status": "COMPLETED_EVALUATION_RECOVERY_NO_RETRAINING", "cpu_seconds": 1.151001}

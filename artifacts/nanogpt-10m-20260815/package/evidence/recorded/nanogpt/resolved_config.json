@@ -1,0 +1,187 @@
+{
+  "architecture": "nanogpt",
+  "arm": "official_nanogpt_aug8_10m",
+  "config": {
+    "arms": {
+      "official_nanogpt_aug8_10m": {
+        "architecture": "nanogpt",
+        "branching": false,
+        "embedding_initialization": "qwen_pca"
+      }
+    },
+    "benchmark": {
+      "limit": 1000,
+      "log_every": 100
+    },
+    "data": "data/qwen3-06b-representation",
+    "data_identity": {
+      "train.bin": {
+        "bytes": 4000000000,
+        "sha256": "834c82d2ea76e2f17aa43d15862f5ef444322c37d9b29d07fe803bb21ac163e4"
+      },
+      "val.bin": {
+        "bytes": 8000000,
+        "sha256": "8517985c4979dbc95c83137ee534e30e789e2275e4ba1ee1fd31e1f0d566e4d3"
+      }
+    },
+    "embedding_projection": {
+      "chunk_size": 4096,
+      "preserve_global_norm": true
+    },
+    "evaluation": {
+      "batch_size": 2,
+      "batches": 16,
+      "branch_batches": 0,
+      "context": 512,
+      "long_context_batch_size": 1,
+      "long_context_batches": 2,
+      "long_contexts": [
+        1024,
+        2048
+      ],
+      "rollout_positions": [
+        64,
+        128,
+        256,
+        512
+      ],
+      "seed": 14001,
+      "temperatures": [
+        {
+          "value": 1.0,
+          "weight": 0.5
+        },
+        {
+          "value": 2.0,
+          "weight": 0.3
+        },
+        {
+          "value": 4.0,
+          "weight": 0.2
+        }
+      ]
+    },
+    "model_max_context": 2048,
+    "models": {
+      "nanogpt": {
+        "bias": true,
+        "dropout": 0.0,
+        "geometry_search": {
+          "head_dimension": 64,
+          "maximum_heads": 16,
+          "maximum_layers": 24,
+          "maximum_stored_parameters": 120000000,
+          "minimum_heads": 1,
+          "minimum_layers": 1,
+          "target_stored_parameters": 119694800,
+          "tie_break": [
+            "absolute_parameter_distance",
+            "larger_parameter_count",
+            "shallower_layer_count",
+            "smaller_head_count"
+          ]
+        },
+        "position_encoding": "learned_absolute_upstream_nanogpt",
+        "upstream_commit": "3adf61e154c3fe3fca428ad6bc3818b27a3b8291"
+      }
+    },
+    "required_world_size": 1,
+    "resolved_model_expectation": {
+      "heads": 7,
+      "layers": 21,
+      "stored_parameters": 119685440,
+      "target_match_parameters": 119694800,
+      "target_parameters": 120000000,
+      "width": 448
+    },
+    "safety": {
+      "minimum_free_gb": 20
+    },
+    "schema": "official_nanogpt_aug8_exact_comparator_v1",
+    "student_parameter_budget": 120000000,
+    "study": "qwen06b_aug8_official_nanogpt_10m_v1",
+    "teacher": "Qwen/Qwen3-0.6B-Base",
+    "teacher_identity": {
+      "model.safetensors": {
+        "sha256": "cd2a512003e2f9f3cd3c32a9c3573f820bb28c940f73c57b1ddaa983d9223eba"
+      }
+    },
+    "teacher_revision": "da87bfb608c14b7cf20ba1ce41287e8de496c0cd",
+    "token_dtype": "uint32",
+    "training": {
+      "batch_size": 4,
+      "betas": [
+        0.9,
+        0.95
+      ],
+      "branching": {
+        "candidates": [
+          {
+            "kind": "teacher_top1"
+          },
+          {
+            "kind": "teacher_sample",
+            "temperature": 1.0
+          },
+          {
+            "kind": "teacher_rank",
+            "rank": 32
+          },
+          {
+            "kind": "student_sample",
+            "temperature": 1.0
+          }
+        ],
+        "every": 4,
+        "maximum_prefix": 448,
+        "minimum_prefix": 64,
+        "rollout_steps": 2,
+        "weight": 0.0
+      },
+      "ce_weight": 0.1,
+      "checkpoint_every": 500,
+      "context": 512,
+      "distribution_weight": 1.0,
+      "expected_executed_tokens": 10000384,
+      "expected_steps": 4883,
+      "gradient_clip": 1.0,
+      "kl_implementation": "sequential",
+      "learning_rate": 0.0003,
+      "log_every": 20,
+      "max_tokens": 10000000,
+      "minimum_lr_ratio": 0.1,
+      "sampling": "restart_stable_random",
+      "seed": 12001,
+      "temperatures": [
+        {
+          "value": 1.0,
+          "weight": 0.5
+        },
+        {
+          "value": 2.0,
+          "weight": 0.3
+        },
+        {
+          "value": 4.0,
+          "weight": 0.2
+        }
+      ],
+      "vocab_chunk_size": 8192,
+      "warmup_steps": 500,
+      "weight_decay": 0.1
+    },
+    "vocab_size": 151936
+  },
+  "embedding_projection": {
+    "method": "centered_teacher_embedding_covariance_eigendecomposition",
+    "preserve_global_norm": true,
+    "retained_variance": 0.5771926045417786,
+    "rows": 151936,
+    "scale": 1.3813432455062866,
+    "student_dimensions": 448,
+    "teacher_dimensions": 1024
+  },
+  "stored_parameters": 119685440,
+  "width": 448,
+  "world_size": 1
+}

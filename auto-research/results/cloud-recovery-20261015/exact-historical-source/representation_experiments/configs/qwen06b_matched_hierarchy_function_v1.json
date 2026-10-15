@@ -1,0 +1,156 @@
+{
+  "study": "qwen06b_matched_hierarchy_function_v1",
+  "teacher": "Qwen/Qwen3-0.6B-Base",
+  "vocab_size": 151936,
+  "data": "data/qwen3-06b-representation",
+  "token_dtype": "uint32",
+  "student_parameter_budget": 120000000,
+  "model_max_context": 2048,
+  "arms": {
+    "transformer_qwen_full_kl": {
+      "architecture": "transformer",
+      "embedding_initialization": "qwen_pca",
+      "branching": false
+    },
+    "hierarchical_qwen_full_kl": {
+      "architecture": "hierarchical_distribution",
+      "embedding_initialization": "qwen_pca",
+      "branching": false
+    },
+    "hierarchical_local_qwen_full_kl": {
+      "architecture": "hierarchical_local_distribution",
+      "embedding_initialization": "qwen_pca",
+      "branching": false
+    },
+    "hierarchical_local_function_qwen_full_kl": {
+      "architecture": "hierarchical_local_function_weights",
+      "embedding_initialization": "qwen_pca",
+      "branching": false
+    }
+  },
+  "models": {
+    "transformer": {
+      "minimum_width": 256,
+      "maximum_width": 1024,
+      "width_step": 8,
+      "layers": 6,
+      "heads": 8,
+      "expansion": 4,
+      "position_encoding": "sinusoidal"
+    },
+    "hierarchical_distribution": {
+      "minimum_width": 256,
+      "maximum_width": 1024,
+      "width_step": 8,
+      "segment_length": 32,
+      "document_segments": 8
+    },
+    "hierarchical_local_distribution": {
+      "minimum_width": 256,
+      "maximum_width": 1024,
+      "width_step": 8,
+      "segment_length": 32,
+      "document_segments": 8,
+      "local_attention": {
+        "window": 64,
+        "width": 32,
+        "heads": 4,
+        "gate_bias": -1.5
+      }
+    },
+    "hierarchical_local_function_weights": {
+      "minimum_width": 256,
+      "maximum_width": 1024,
+      "width_step": 8,
+      "segment_length": 32,
+      "document_segments": 8,
+      "local_attention": {
+        "window": 64,
+        "width": 32,
+        "heads": 4,
+        "gate_bias": -1.5
+      },
+      "function_weights": {
+        "virtual_depth": 24,
+        "controls": 6,
+        "rank": 32,
+        "basis": "open_uniform_cubic"
+      }
+    }
+  },
+  "training": {
+    "context": 512,
+    "batch_size": 4,
+    "max_tokens": 10000000,
+    "learning_rate": 0.0003,
+    "warmup_steps": 500,
+    "minimum_lr_ratio": 0.1,
+    "betas": [0.9, 0.95],
+    "weight_decay": 0.1,
+    "gradient_clip": 1.0,
+    "seed": 12001,
+    "ce_weight": 0.1,
+    "distribution_weight": 1.0,
+    "temperatures": [
+      {"value": 1.0, "weight": 0.5},
+      {"value": 2.0, "weight": 0.3},
+      {"value": 4.0, "weight": 0.2}
+    ],
+    "vocab_chunk_size": 8192,
+    "log_every": 20,
+    "checkpoint_every": 500,
+    "branching": {
+      "every": 4,
+      "weight": 0.0,
+      "minimum_prefix": 64,
+      "maximum_prefix": 448,
+      "rollout_steps": 2,
+      "candidates": [
+        {"kind": "teacher_top1"},
+        {"kind": "teacher_sample", "temperature": 1.0},
+        {"kind": "teacher_rank", "rank": 32},
+        {"kind": "student_sample", "temperature": 1.0}
+      ]
+    }
+  },
+  "embedding_projection": {
+    "chunk_size": 4096,
+    "preserve_global_norm": true
+  },
+  "evaluation": {
+    "context": 512,
+    "batch_size": 2,
+    "batches": 16,
+    "branch_batches": 0,
+    "seed": 14001,
+    "rollout_positions": [64, 128, 256, 512],
+    "long_contexts": [1024, 2048],
+    "long_context_batch_size": 1,
+    "long_context_batches": 2,
+    "temperatures": [
+      {"value": 1.0, "weight": 0.5},
+      {"value": 2.0, "weight": 0.3},
+      {"value": 4.0, "weight": 0.2}
+    ]
+  },
+  "benchmark": {
+    "limit": 1000,
+    "log_every": 100
+  },
+  "promotion_gates": {
+    "transformer_reference": "transformer_qwen_full_kl",
+    "hierarchy_reference": "hierarchical_qwen_full_kl",
+    "local_reference": "hierarchical_local_qwen_full_kl",
+    "function_candidate": "hierarchical_local_function_qwen_full_kl",
+    "minimum_transformer_ce_improvement": 0.1,
+    "minimum_current_ce_improvement": 0.01,
+    "maximum_rollout_ce_degradation": 0.1,
+    "maximum_long_context_ce_degradation": 0.2,
+    "maximum_state_bytes_per_sequence": 16384,
+    "maximum_inference_macs_ratio": 1.0,
+    "maximum_budget_utilization_spread": 0.03
+  },
+  "safety": {
+    "minimum_free_gb": 20
+  }
+}

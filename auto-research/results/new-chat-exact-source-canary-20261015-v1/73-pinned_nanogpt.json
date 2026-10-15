@@ -1,0 +1,41 @@
+{
+  "arm": "pinned_nanogpt",
+  "checks": {
+    "causal_prefix": {
+      "pass": true
+    },
+    "finite_loss_and_parameter_gradients": {
+      "pass": true
+    },
+    "forward_vs_prefix_streaming": {
+      "logit_max_abs": 1.1102230246251565e-16,
+      "pass": true,
+      "relative_tolerance": 0,
+      "tolerance_abs": 1e-09
+    },
+    "optimizer_update": {
+      "pass": true,
+      "updated_parameters": [
+        "transformer.wte.weight",
+        "transformer.wpe.weight",
+        "transformer.h.0.ln_1.weight",
+        "transformer.h.0.attn.c_attn.weight",
+        "transformer.h.0.attn.c_proj.weight",
+        "transformer.h.0.ln_2.weight",
+        "transformer.h.0.mlp.c_fc.weight",
+        "transformer.h.0.mlp.c_proj.weight",
+        "transformer.ln_f.weight"
+      ]
+    }
+  },
+  "elapsed_seconds": 0.1022632920000004,
+  "not_applicable": [
+    "geometry identity/gain",
+    "historical clocks"
+  ],
+  "parameter_matched": false,
+  "parameters": 8496,
+  "seed": 73,
+  "streaming_definition": "Growing-prefix inference; pinned nanoGPT exposes no recurrent step/KV-cache API",
+  "synthetic_loss_not_quality_metric": 4.157163573223053
+}

@@ -1,0 +1,51 @@
+{
+  "report_date": "2026-08-15",
+  "steps": 4883,
+  "tokens": 10000384,
+  "parameters": {
+    "hierarchy": 119694800,
+    "nanogpt": 119685440
+  },
+  "fixed_eval": {
+    "contexts": [512, 1024, 2048],
+    "nanogpt_ce": [5.126457363367081, 5.261362314224243, 5.988184928894043],
+    "hierarchy_ce": [5.260253310203552, 5.070329427719116, 5.291337251663208],
+    "eval_shapes": ["16 batches x 2 sequences", "2 batches x 1 sequence", "2 batches x 1 sequence"]
+  },
+  "state": {
+    "hierarchy_bytes": [5504, 5504, 5504],
+    "nanogpt_bytes": [19267584, 38535168, 77070336],
+    "nanogpt_to_hierarchy_ratio": [3500.651162790698, 7001.302325581395, 14002.60465116279],
+    "hierarchy_percent_fewer": [99.971433886054, 99.985716943027, 99.992858471514]
+  },
+  "training_checkpoints": {
+    "steps": [3821, 4521, 4883],
+    "tokens": [7825408, 9259008, 10000384],
+    "nanogpt_ce": [4.975600242614746, 4.993795394897461, 5.317025184631348],
+    "hierarchy_ce": [4.985254764556885, 5.076863765716553, 5.426506996154785]
+  },
+  "benchmark": {
+    "tasks": ["ARC-Easy", "HellaSwag", "LAMBADA", "PIQA", "Mean"],
+    "nanogpt": [0.34035087719298246, 0.275, 0.0, 0.53, 0.28633771929824564],
+    "hierarchy": [0.3298245614035088, 0.257, 0.0, 0.534, 0.2802061403508772],
+    "limit_per_task": 1000
+  },
+  "provenance": {
+    "hierarchy_config_sha256": "f47d8cabafa5f16ff32c1169fba2064bf8124907cfc99e7d8374212cc25c58fa",
+    "hierarchy_result_sha256": "ffe3dea20685e88381eab65f02bba504e6870975a0ec06854de73718b88f769d",
+    "hierarchy_benchmark_sha256": "109f61c95d03dba065a31c4cbc683e7b96ebb52a507afab9cae8136e94188b43",
+    "hierarchy_checkpoint_sha256": "beb12f7a9fce10195c639365cc673200e04c97affa9557239b70edd28bd9c66f",
+    "nanogpt_manifest_sha256": "dc4e324d7f43ddf417c6641ce3c6ec856cbec69a6d1b83e93f2fe5b0690c833c",
+    "nanogpt_result_sha256": "2120eac7d5f699d810425a8b793eccc0fd80674430751a2cc6d33361d81e3d44",
+    "nanogpt_training_completion_sha256": "6e3c1eda103ff89e6ae687e800f2cbf3c0cb76dd3a25b12fb2bc68c0df9419a7",
+    "nanogpt_final_model_sha256": "7de4e9d81b606ec6b0d7e9fbaf4dcdcb30aa55456e775a07371aaf65a6591241",
+    "nanogpt_training_log_sha256": "867e64674ed291d3eb8e8594d316c68c19c830fc7a70206d9542680ddcce532c",
+    "nanogpt_benchmark_sha256": "1df9a3e0f410ffee5189e111137acd2755717a6a7c81cfb099e54c4cbb7f340e",
+    "nanogpt_benchmark_completion_sha256": "fc28be724d939e0f619d935d47b1ffc356a06e2c66b6530efd41523ca3042be6",
+    "nanogpt_upstream_commit": "3adf61e154c3fe3fca428ad6bc3818b27a3b8291",
+    "nanogpt_model_sha256": "7c01703240dbec5d554527dc666e35b3df8391d0b117fddc07afcf325a21d11c",
+    "train_data_sha256": "834c82d2ea76e2f17aa43d15862f5ef444322c37d9b29d07fe803bb21ac163e4",
+    "val_data_sha256": "8517985c4979dbc95c83137ee534e30e789e2275e4ba1ee1fd31e1f0d566e4d3",
+    "teacher_weights_sha256": "cd2a512003e2f9f3cd3c32a9c3573f820bb28c940f73c57b1ddaa983d9223eba"
+  }
+}

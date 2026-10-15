@@ -1,0 +1,12 @@
+{
+  "schema": "historical_hierarchy_reported_training_rows_v1",
+  "evidence_level": "immutable_transcript_values_original_train_log_not_packaged",
+  "arm": "hierarchical_qwen_full_kl",
+  "rows": [
+    {"step": 3821, "tokens": 7825408, "ce": 4.985254764556885},
+    {"step": 4521, "tokens": 9259008, "ce": 5.076863765716553},
+    {"step": 4883, "tokens": 10000384, "ce": 5.426506996154785}
+  ],
+  "use": "supporting training-curve chart only",
+  "excluded_from_primary_claim": true
+}

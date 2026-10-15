@@ -1,0 +1,1274 @@
+[
+  {
+    "seed": 3361,
+    "arm": "pair_energy",
+    "lr": 0.001,
+    "best_step": 6000,
+    "validation": {
+      "ce": 1.7520888186991215,
+      "bpc": 2.5277298499342247,
+      "scored_bytes": 16384
+    },
+    "history": [
+      {
+        "step": 1000,
+        "ce": 2.0778521448373795,
+        "bpc": 2.9977069850573836,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 2000,
+        "ce": 1.921772662550211,
+        "bpc": 2.7725318899771687,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 3000,
+        "ce": 1.8373447693884373,
+        "bpc": 2.6507281871999746,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 4000,
+        "ce": 1.790885180234909,
+        "bpc": 2.583701168326441,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 5000,
+        "ce": 1.768716398626566,
+        "bpc": 2.551718377037534,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 6000,
+        "ce": 1.7520888186991215,
+        "bpc": 2.5277298499342247,
+        "scored_bytes": 16384
+      }
+    ],
+    "checkpoint": "/Users/rohanarun/Documents/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1/3361-pair_energy-0.001.pt",
+    "sha256": "e0060e1a221ca01d0dcd9fac822eef150004dbffd00f2ead94d9dbd603d85ff6",
+    "parameters": 198656,
+    "training_seconds": 557.449955334
+  },
+  {
+    "seed": 3361,
+    "arm": "pair_energy",
+    "lr": 0.003,
+    "best_step": 6000,
+    "validation": {
+      "ce": 1.6512943245470524,
+      "bpc": 2.382314133072123,
+      "scored_bytes": 16384
+    },
+    "history": [
+      {
+        "step": 1000,
+        "ce": 1.9307597912847996,
+        "bpc": 2.7854975760343903,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 2000,
+        "ce": 1.8084530346095562,
+        "bpc": 2.6090462247118036,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 3000,
+        "ce": 1.739104151725769,
+        "bpc": 2.5089969352841743,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 4000,
+        "ce": 1.693948395550251,
+        "bpc": 2.4438509497821634,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 5000,
+        "ce": 1.672541044652462,
+        "bpc": 2.4129666708033533,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 6000,
+        "ce": 1.6512943245470524,
+        "bpc": 2.382314133072123,
+        "scored_bytes": 16384
+      }
+    ],
+    "checkpoint": "/Users/rohanarun/Documents/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1/3361-pair_energy-0.003.pt",
+    "sha256": "22ef0d364244680c73ab1c942691f088d0351153576cf3ea1224a9dc92c3ecd4",
+    "parameters": 198656,
+    "training_seconds": 553.6682746660001
+  },
+  {
+    "seed": 3361,
+    "arm": "geometric_overlapping",
+    "lr": 0.001,
+    "best_step": 6000,
+    "validation": {
+      "ce": 1.7640657611191273,
+      "bpc": 2.5450089253685797,
+      "scored_bytes": 16384
+    },
+    "history": [
+      {
+        "step": 1000,
+        "ce": 2.086632691323757,
+        "bpc": 3.0103746359295758,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 2000,
+        "ce": 1.9330840148031712,
+        "bpc": 2.7888507217782625,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 3000,
+        "ce": 1.8501509763300419,
+        "bpc": 2.6692036384472253,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 4000,
+        "ce": 1.8010012432932854,
+        "bpc": 2.5982955623340804,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 5000,
+        "ce": 1.7812567576766014,
+        "bpc": 2.569810290849987,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 6000,
+        "ce": 1.7640657611191273,
+        "bpc": 2.5450089253685797,
+        "scored_bytes": 16384
+      }
+    ],
+    "checkpoint": "/Users/rohanarun/Documents/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1/3361-geometric_overlapping-0.001.pt",
+    "sha256": "4c280dda1f0f85dc74499d0f8e0d65a7942267c367db59dd713e6085a48a8129",
+    "parameters": 198400,
+    "training_seconds": 503.1368325420001
+  },
+  {
+    "seed": 3361,
+    "arm": "geometric_overlapping",
+    "lr": 0.003,
+    "best_step": 6000,
+    "validation": {
+      "ce": 1.655215721577406,
+      "bpc": 2.3879715131211707,
+      "scored_bytes": 16384
+    },
+    "history": [
+      {
+        "step": 1000,
+        "ce": 1.9466159492731094,
+        "bpc": 2.808373176531677,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 2000,
+        "ce": 1.8182730972766876,
+        "bpc": 2.623213580422893,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 3000,
+        "ce": 1.7454955577850342,
+        "bpc": 2.518217785110184,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 4000,
+        "ce": 1.6962395012378693,
+        "bpc": 2.447156316595843,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 5000,
+        "ce": 1.6773767732083797,
+        "bpc": 2.419943152410061,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 6000,
+        "ce": 1.655215721577406,
+        "bpc": 2.3879715131211707,
+        "scored_bytes": 16384
+      }
+    ],
+    "checkpoint": "/Users/rohanarun/Documents/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1/3361-geometric_overlapping-0.003.pt",
+    "sha256": "1d186917c8c79283231fd5d7abce7990c1af67b59de8d0fb1b3a87222091f659",
+    "parameters": 198400,
+    "training_seconds": 511.0155002500003
+  },
+  {
+    "seed": 3361,
+    "arm": "relative_phase_key",
+    "lr": 0.001,
+    "best_step": 6000,
+    "validation": {
+      "ce": 1.7527235820889473,
+      "bpc": 2.5286456199288643,
+      "scored_bytes": 16384
+    },
+    "history": [
+      {
+        "step": 1000,
+        "ce": 2.0815225169062614,
+        "bpc": 3.003002212639377,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 2000,
+        "ce": 1.9251677207648754,
+        "bpc": 2.7774299236269946,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 3000,
+        "ce": 1.8372368849813938,
+        "bpc": 2.6505725429009437,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 4000,
+        "ce": 1.7887231707572937,
+        "bpc": 2.58058204797473,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 5000,
+        "ce": 1.768511287868023,
+        "bpc": 2.5514224647633506,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 6000,
+        "ce": 1.7527235820889473,
+        "bpc": 2.5286456199288643,
+        "scored_bytes": 16384
+      }
+    ],
+    "checkpoint": "/Users/rohanarun/Documents/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1/3361-relative_phase_key-0.001.pt",
+    "sha256": "3c62ac2e1cd6ba196135a52068c9012cf7ca3ad5ecc90fb85466b5f7c48a5ebf",
+    "parameters": 198656,
+    "training_seconds": 568.1300219170002
+  },
+  {
+    "seed": 3361,
+    "arm": "relative_phase_key",
+    "lr": 0.003,
+    "best_step": 6000,
+    "validation": {
+      "ce": 1.6688623763620853,
+      "bpc": 2.4076594743037516,
+      "scored_bytes": 16384
+    },
+    "history": [
+      {
+        "step": 1000,
+        "ce": 1.9393828064203262,
+        "bpc": 2.797937957207925,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 2000,
+        "ce": 1.8187051080167294,
+        "bpc": 2.623836840175162,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 3000,
+        "ce": 1.7534601837396622,
+        "bpc": 2.5297083114774614,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 4000,
+        "ce": 1.712667554616928,
+        "bpc": 2.47085698773727,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 5000,
+        "ce": 1.6916160248219967,
+        "bpc": 2.4404860500989964,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 6000,
+        "ce": 1.6688623763620853,
+        "bpc": 2.4076594743037516,
+        "scored_bytes": 16384
+      }
+    ],
+    "checkpoint": "/Users/rohanarun/Documents/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1/3361-relative_phase_key-0.003.pt",
+    "sha256": "3e95ad08f2d63214647412207f558a14f31616be55e3dde1294ed12a87425fab",
+    "parameters": 198656,
+    "training_seconds": 550.408068791
+  },
+  {
+    "seed": 3361,
+    "arm": "transformer",
+    "lr": 0.001,
+    "best_step": 6000,
+    "validation": {
+      "ce": 1.7958126813173294,
+      "bpc": 2.5908100497020237,
+      "scored_bytes": 16384
+    },
+    "history": [
+      {
+        "step": 1000,
+        "ce": 2.339159868657589,
+        "bpc": 3.3746943423587825,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 2000,
+        "ce": 2.0638844072818756,
+        "bpc": 2.9775557993536195,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 3000,
+        "ce": 1.9303438924252987,
+        "bpc": 2.784897560812277,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 4000,
+        "ce": 1.8563968539237976,
+        "bpc": 2.6782145350777364,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 5000,
+        "ce": 1.8196381442248821,
+        "bpc": 2.6251829268856337,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 6000,
+        "ce": 1.7958126813173294,
+        "bpc": 2.5908100497020237,
+        "scored_bytes": 16384
+      }
+    ],
+    "checkpoint": "/Users/rohanarun/Documents/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1/3361-transformer-0.001.pt",
+    "sha256": "effca61ad6f61cae25487eba5835af0cb90935b109e1f31096ad26e2100141df",
+    "parameters": 198729,
+    "training_seconds": 20.78135204099999
+  },
+  {
+    "seed": 3361,
+    "arm": "transformer",
+    "lr": 0.003,
+    "best_step": 6000,
+    "validation": {
+      "ce": 1.9154090620577335,
+      "bpc": 2.763351155104473,
+      "scored_bytes": 16384
+    },
+    "history": [
+      {
+        "step": 1000,
+        "ce": 2.4633278846740723,
+        "bpc": 3.5538309233027845,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 2000,
+        "ce": 2.372055619955063,
+        "bpc": 3.422152879621965,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 3000,
+        "ce": 2.1968042105436325,
+        "bpc": 3.169318540355293,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 4000,
+        "ce": 2.0365927815437317,
+        "bpc": 2.9381823062434016,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 5000,
+        "ce": 1.964314665645361,
+        "bpc": 2.8339070268720246,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 6000,
+        "ce": 1.9154090620577335,
+        "bpc": 2.763351155104473,
+        "scored_bytes": 16384
+      }
+    ],
+    "checkpoint": "/Users/rohanarun/Documents/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1/3361-transformer-0.003.pt",
+    "sha256": "f6f5de9d83478bd0ecc91ec8e00c1757b3c40eef58dcc5c4201e6509e76a0ffe",
+    "parameters": 198729,
+    "training_seconds": 20.89921008300007
+  },
+  {
+    "seed": 3407,
+    "arm": "pair_energy",
+    "lr": 0.001,
+    "best_step": 6000,
+    "validation": {
+      "ce": 1.768935240805149,
+      "bpc": 2.552034099563313,
+      "scored_bytes": 16384
+    },
+    "history": [
+      {
+        "step": 1000,
+        "ce": 2.083980955183506,
+        "bpc": 3.0065489893502892,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 2000,
+        "ce": 1.9244015701115131,
+        "bpc": 2.776324601878815,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 3000,
+        "ce": 1.8478163741528988,
+        "bpc": 2.6658355194638124,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 4000,
+        "ce": 1.8054370172321796,
+        "bpc": 2.6046950313982276,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 5000,
+        "ce": 1.782158736139536,
+        "bpc": 2.571111570705451,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 6000,
+        "ce": 1.768935240805149,
+        "bpc": 2.552034099563313,
+        "scored_bytes": 16384
+      }
+    ],
+    "checkpoint": "/Volumes/SP AI 01_16/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1/3407-pair_energy-0.001.pt",
+    "sha256": "df264e7ad8e98d92eb6a5fc1d17ea57f0e2324008ae98b51d3557384a3d8708e",
+    "parameters": 198656,
+    "training_seconds": 543.056171833
+  },
+  {
+    "seed": 3407,
+    "arm": "pair_energy",
+    "lr": 0.003,
+    "best_step": 6000,
+    "validation": {
+      "ce": 1.6517104655504227,
+      "bpc": 2.3829144976339958,
+      "scored_bytes": 16384
+    },
+    "history": [
+      {
+        "step": 1000,
+        "ce": 1.936364769935608,
+        "bpc": 2.7935838509382003,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 2000,
+        "ce": 1.8143252059817314,
+        "bpc": 2.6175179772296913,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 3000,
+        "ce": 1.741361290216446,
+        "bpc": 2.5122532977912737,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 4000,
+        "ce": 1.6973505690693855,
+        "bpc": 2.4487592486464624,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 5000,
+        "ce": 1.6684608906507492,
+        "bpc": 2.407080252859019,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 6000,
+        "ce": 1.6517104655504227,
+        "bpc": 2.3829144976339958,
+        "scored_bytes": 16384
+      }
+    ],
+    "checkpoint": "/Volumes/SP AI 01_16/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1/3407-pair_energy-0.003.pt",
+    "sha256": "762000e3cf237256a37f78a2e2818f61089e36d8bb550882adb759ce3266d16b",
+    "parameters": 198656,
+    "training_seconds": 587.6501820829999
+  },
+  {
+    "seed": 3407,
+    "arm": "geometric_overlapping",
+    "lr": 0.001,
+    "best_step": 6000,
+    "validation": {
+      "ce": 1.7806026935577393,
+      "bpc": 2.5688666757892813,
+      "scored_bytes": 16384
+    },
+    "history": [
+      {
+        "step": 1000,
+        "ce": 2.0933986604213715,
+        "bpc": 3.020135865993512,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 2000,
+        "ce": 1.9366506338119507,
+        "bpc": 2.793996265334969,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 3000,
+        "ce": 1.8584274649620056,
+        "bpc": 2.6811440875525334,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 4000,
+        "ce": 1.8160238452255726,
+        "bpc": 2.6199685956430403,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 5000,
+        "ce": 1.793225396424532,
+        "bpc": 2.5870773866178176,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 6000,
+        "ce": 1.7806026935577393,
+        "bpc": 2.5688666757892813,
+        "scored_bytes": 16384
+      }
+    ],
+    "checkpoint": "/Volumes/SP AI 01_16/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1/3407-geometric_overlapping-0.001.pt",
+    "sha256": "7f1c0819906201999ef2f9909f4c38fe410e72c8b5b20e2f29a18593c025b7c2",
+    "parameters": 198400,
+    "training_seconds": 545.667545084
+  },
+  {
+    "seed": 3407,
+    "arm": "geometric_overlapping",
+    "lr": 0.003,
+    "best_step": 6000,
+    "validation": {
+      "ce": 1.6630801633000374,
+      "bpc": 2.3993175041937715,
+      "scored_bytes": 16384
+    },
+    "history": [
+      {
+        "step": 1000,
+        "ce": 1.945272408425808,
+        "bpc": 2.8064348568140436,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 2000,
+        "ce": 1.8142372816801071,
+        "bpc": 2.617391129275764,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 3000,
+        "ce": 1.7482123486697674,
+        "bpc": 2.522137285846721,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 4000,
+        "ce": 1.7111895233392715,
+        "bpc": 2.4687246393427165,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 5000,
+        "ce": 1.6769485659897327,
+        "bpc": 2.419325379979246,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 6000,
+        "ce": 1.6630801633000374,
+        "bpc": 2.3993175041937715,
+        "scored_bytes": 16384
+      }
+    ],
+    "checkpoint": "/Volumes/SP AI 01_16/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1/3407-geometric_overlapping-0.003.pt",
+    "sha256": "d95482ce0b36e4cae04c846947fd6857d587e75f0f5cf6867da85d0ed903cbe2",
+    "parameters": 198400,
+    "training_seconds": 740.7197261659999
+  },
+  {
+    "seed": 3407,
+    "arm": "relative_phase_key",
+    "lr": 0.001,
+    "best_step": 6000,
+    "validation": {
+      "ce": 1.778278961777687,
+      "bpc": 2.5655142394738437,
+      "scored_bytes": 16384
+    },
+    "history": [
+      {
+        "step": 1000,
+        "ce": 2.0959438383579254,
+        "bpc": 3.023807781580758,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 2000,
+        "ce": 1.9372944943606853,
+        "bpc": 2.794925159755653,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 3000,
+        "ce": 1.858643777668476,
+        "bpc": 2.6814561608214396,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 4000,
+        "ce": 1.8132082223892212,
+        "bpc": 2.615906510540022,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 5000,
+        "ce": 1.791352741420269,
+        "bpc": 2.584375716529872,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 6000,
+        "ce": 1.778278961777687,
+        "bpc": 2.5655142394738437,
+        "scored_bytes": 16384
+      }
+    ],
+    "checkpoint": "/Volumes/SP AI 01_16/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1/3407-relative_phase_key-0.001.pt",
+    "sha256": "d91a37bb2e3b57c5655e86d2409c39e4f78743f221f591683037561c921beb08",
+    "parameters": 198656,
+    "training_seconds": 777.8833813749998
+  },
+  {
+    "seed": 3407,
+    "arm": "relative_phase_key",
+    "lr": 0.003,
+    "best_step": 6000,
+    "validation": {
+      "ce": 1.6735696345567703,
+      "bpc": 2.4144506123574074,
+      "scored_bytes": 16384
+    },
+    "history": [
+      {
+        "step": 1000,
+        "ce": 1.9432753212749958,
+        "bpc": 2.8035536690853435,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 2000,
+        "ce": 1.8255666606128216,
+        "bpc": 2.633735968078343,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 3000,
+        "ce": 1.757789772003889,
+        "bpc": 2.5359545869953526,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 4000,
+        "ce": 1.7163658626377583,
+        "bpc": 2.4761925183786015,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 5000,
+        "ce": 1.6876726672053337,
+        "bpc": 2.434796987620985,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 6000,
+        "ce": 1.6735696345567703,
+        "bpc": 2.4144506123574074,
+        "scored_bytes": 16384
+      }
+    ],
+    "checkpoint": "/Volumes/SP AI 01_16/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1/3407-relative_phase_key-0.003.pt",
+    "sha256": "2f00d1cc0bb3703efe509278dd5d94258ca439fe844efab3960813cd93249317",
+    "parameters": 198656,
+    "training_seconds": 759.295381333
+  },
+  {
+    "seed": 3407,
+    "arm": "transformer",
+    "lr": 0.001,
+    "best_step": 6000,
+    "validation": {
+      "ce": 1.778785977512598,
+      "bpc": 2.5662457085602526,
+      "scored_bytes": 16384
+    },
+    "history": [
+      {
+        "step": 1000,
+        "ce": 2.2209686785936356,
+        "bpc": 3.2041804985767524,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 2000,
+        "ce": 2.009688749909401,
+        "bpc": 2.899367993224633,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 3000,
+        "ce": 1.9058577343821526,
+        "bpc": 2.7495715020330067,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 4000,
+        "ce": 1.8395011872053146,
+        "bpc": 2.653839240490468,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 5000,
+        "ce": 1.8033085092902184,
+        "bpc": 2.601624243545867,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 6000,
+        "ce": 1.778785977512598,
+        "bpc": 2.5662457085602526,
+        "scored_bytes": 16384
+      }
+    ],
+    "checkpoint": "/Volumes/SP AI 01_16/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1/3407-transformer-0.001.pt",
+    "sha256": "5d36606af3cdacfd2522995c4787269c18880daf8c6fcb0a0399a2f3c43e799d",
+    "parameters": 198729,
+    "training_seconds": 28.389585291999992
+  },
+  {
+    "seed": 3407,
+    "arm": "transformer",
+    "lr": 0.003,
+    "best_step": 6000,
+    "validation": {
+      "ce": 1.9062537364661694,
+      "bpc": 2.7501428122757994,
+      "scored_bytes": 16384
+    },
+    "history": [
+      {
+        "step": 1000,
+        "ce": 2.4356154948472977,
+        "bpc": 3.513850395928515,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 2000,
+        "ce": 2.362045533955097,
+        "bpc": 3.4077113781909425,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 3000,
+        "ce": 2.196157433092594,
+        "bpc": 3.168385437734121,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 4000,
+        "ce": 2.031838681548834,
+        "bpc": 2.9313235897568726,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 5000,
+        "ce": 1.9464509971439838,
+        "bpc": 2.8081352009130036,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 6000,
+        "ce": 1.9062537364661694,
+        "bpc": 2.7501428122757994,
+        "scored_bytes": 16384
+      }
+    ],
+    "checkpoint": "/Volumes/SP AI 01_16/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1/3407-transformer-0.003.pt",
+    "sha256": "875fcacd8532dc5ce21e652c28c087de9580767e2961de5718b381517708d30b",
+    "parameters": 198729,
+    "training_seconds": 33.77976662500032
+  },
+  {
+    "seed": 3457,
+    "arm": "pair_energy",
+    "lr": 0.001,
+    "best_step": 6000,
+    "validation": {
+      "ce": 1.7677856422960758,
+      "bpc": 2.5503755794952596,
+      "scored_bytes": 16384
+    },
+    "history": [
+      {
+        "step": 1000,
+        "ce": 2.0636750422418118,
+        "bpc": 2.977253749448584,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 2000,
+        "ce": 1.924476284533739,
+        "bpc": 2.776432392005243,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 3000,
+        "ce": 1.8546575456857681,
+        "bpc": 2.675705243708154,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 4000,
+        "ce": 1.8015097603201866,
+        "bpc": 2.5990291973269986,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 5000,
+        "ce": 1.7797715701162815,
+        "bpc": 2.5676676181219236,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 6000,
+        "ce": 1.7677856422960758,
+        "bpc": 2.5503755794952596,
+        "scored_bytes": 16384
+      }
+    ],
+    "checkpoint": "/Volumes/SP AI 01_16/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1/3457-pair_energy-0.001.pt",
+    "sha256": "d8be8fd14d94568eca49b95e64f269b9782ff8555aa828655ac02416531bbb9b",
+    "parameters": 198656,
+    "training_seconds": 673.9924148750006
+  },
+  {
+    "seed": 3457,
+    "arm": "pair_energy",
+    "lr": 0.003,
+    "best_step": 6000,
+    "validation": {
+      "ce": 1.6485444940626621,
+      "bpc": 2.378346966269008,
+      "scored_bytes": 16384
+    },
+    "history": [
+      {
+        "step": 1000,
+        "ce": 1.924202173948288,
+        "bpc": 2.7760369340229576,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 2000,
+        "ce": 1.797964844852686,
+        "bpc": 2.5939149653616647,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 3000,
+        "ce": 1.7536009177565575,
+        "bpc": 2.5299113477457205,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 4000,
+        "ce": 1.693348340690136,
+        "bpc": 2.442985253611214,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 5000,
+        "ce": 1.6666135750710964,
+        "bpc": 2.404415139833297,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 6000,
+        "ce": 1.6485444940626621,
+        "bpc": 2.378346966269008,
+        "scored_bytes": 16384
+      }
+    ],
+    "checkpoint": "/Volumes/SP AI 01_16/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1/3457-pair_energy-0.003.pt",
+    "sha256": "4b8ff4b640142eedddc61571445bc596cf734e4e1f55920d8db224b1e8b6737a",
+    "parameters": 198656,
+    "training_seconds": 662.4327358749997
+  },
+  {
+    "seed": 3457,
+    "arm": "geometric_overlapping",
+    "lr": 0.001,
+    "best_step": 6000,
+    "validation": {
+      "ce": 1.7796691171824932,
+      "bpc": 2.5675198097824223,
+      "scored_bytes": 16384
+    },
+    "history": [
+      {
+        "step": 1000,
+        "ce": 2.069902367889881,
+        "bpc": 2.986237881279054,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 2000,
+        "ce": 1.9277314729988575,
+        "bpc": 2.7811286362610286,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 3000,
+        "ce": 1.867081355303526,
+        "bpc": 2.6936290122326416,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 4000,
+        "ce": 1.8144918978214264,
+        "bpc": 2.6177584627201758,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 5000,
+        "ce": 1.790273517370224,
+        "bpc": 2.582818725344864,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 6000,
+        "ce": 1.7796691171824932,
+        "bpc": 2.5675198097824223,
+        "scored_bytes": 16384
+      }
+    ],
+    "checkpoint": "/Volumes/SP AI 01_16/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1/3457-geometric_overlapping-0.001.pt",
+    "sha256": "bd0eef125fc868e613946387c173034c5582260450b8daea5b342783a3725aba",
+    "parameters": 198400,
+    "training_seconds": 533.9978536660001
+  },
+  {
+    "seed": 3457,
+    "arm": "geometric_overlapping",
+    "lr": 0.003,
+    "best_step": 6000,
+    "validation": {
+      "ce": 1.6613310687243938,
+      "bpc": 2.396794094123445,
+      "scored_bytes": 16384
+    },
+    "history": [
+      {
+        "step": 1000,
+        "ce": 1.9336316585540771,
+        "bpc": 2.7896408047018686,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 2000,
+        "ce": 1.8075759895145893,
+        "bpc": 2.607780916102659,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 3000,
+        "ce": 1.7639738470315933,
+        "bpc": 2.5448763213703067,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 4000,
+        "ce": 1.7127025537192822,
+        "bpc": 2.470907480768672,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 5000,
+        "ce": 1.6774020791053772,
+        "bpc": 2.4199796611021647,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 6000,
+        "ce": 1.6613310687243938,
+        "bpc": 2.396794094123445,
+        "scored_bytes": 16384
+      }
+    ],
+    "checkpoint": "/Volumes/SP AI 01_16/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1/3457-geometric_overlapping-0.003.pt",
+    "sha256": "b561bc1ec8030879715be9983b45086e6b9c5b80bc58f2544f54cbb6d2a88c1d",
+    "parameters": 198400,
+    "training_seconds": 556.6920097080001
+  },
+  {
+    "seed": 3457,
+    "arm": "relative_phase_key",
+    "lr": 0.001,
+    "best_step": 6000,
+    "validation": {
+      "ce": 1.7737332470715046,
+      "bpc": 2.5589561594099384,
+      "scored_bytes": 16384
+    },
+    "history": [
+      {
+        "step": 1000,
+        "ce": 2.0667086802423,
+        "bpc": 2.981630363947741,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 2000,
+        "ce": 1.9282859861850739,
+        "bpc": 2.78192862968489,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 3000,
+        "ce": 1.861205380409956,
+        "bpc": 2.6851517723933003,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 4000,
+        "ce": 1.807558823376894,
+        "bpc": 2.6077561506009346,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 5000,
+        "ce": 1.7847187407314777,
+        "bpc": 2.5748048766348988,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 6000,
+        "ce": 1.7737332470715046,
+        "bpc": 2.5589561594099384,
+        "scored_bytes": 16384
+      }
+    ],
+    "checkpoint": "/Volumes/SP AI 01_16/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1/3457-relative_phase_key-0.001.pt",
+    "sha256": "fa42df57baa3f3b319f6e659eea239099f2298e48e047c030e2938c85a13d488",
+    "parameters": 198656,
+    "training_seconds": 652.318687
+  },
+  {
+    "seed": 3457,
+    "arm": "relative_phase_key",
+    "lr": 0.003,
+    "best_step": 6000,
+    "validation": {
+      "ce": 1.6607383415102959,
+      "bpc": 2.3959389695110658,
+      "scored_bytes": 16384
+    },
+    "history": [
+      {
+        "step": 1000,
+        "ce": 1.9334106966853142,
+        "bpc": 2.7893220241095786,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 2000,
+        "ce": 1.8047773875296116,
+        "bpc": 2.6037433868975097,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 3000,
+        "ce": 1.759527761489153,
+        "bpc": 2.5384619758068596,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 4000,
+        "ce": 1.7108629830181599,
+        "bpc": 2.468253541240798,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 5000,
+        "ce": 1.6785277053713799,
+        "bpc": 2.421603596534021,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 6000,
+        "ce": 1.6607383415102959,
+        "bpc": 2.3959389695110658,
+        "scored_bytes": 16384
+      }
+    ],
+    "checkpoint": "/Volumes/SP AI 01_16/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1/3457-relative_phase_key-0.003.pt",
+    "sha256": "2152c1daceeedff36a1988be3b106f7a8ae3f556ba2dc2878458e2cb132a6370",
+    "parameters": 198656,
+    "training_seconds": 564.4754284170003
+  },
+  {
+    "seed": 3457,
+    "arm": "transformer",
+    "lr": 0.001,
+    "best_step": 6000,
+    "validation": {
+      "ce": 1.789652295410633,
+      "bpc": 2.5819224915044705,
+      "scored_bytes": 16384
+    },
+    "history": [
+      {
+        "step": 1000,
+        "ce": 2.2756435498595238,
+        "bpc": 3.2830596642132917,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 2000,
+        "ce": 2.0362341925501823,
+        "bpc": 2.937664971680691,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 3000,
+        "ce": 1.925927009433508,
+        "bpc": 2.7785253456238337,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 4000,
+        "ce": 1.8503955379128456,
+        "bpc": 2.6695564662299285,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 5000,
+        "ce": 1.8120981454849243,
+        "bpc": 2.614305008095188,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 6000,
+        "ce": 1.789652295410633,
+        "bpc": 2.5819224915044705,
+        "scored_bytes": 16384
+      }
+    ],
+    "checkpoint": "/Volumes/SP AI 01_16/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1/3457-transformer-0.001.pt",
+    "sha256": "7f9feba50ed2e0895dd352762450a543de0b7b282dfc0ffc12f788c75c29b5de",
+    "parameters": 198729,
+    "training_seconds": 19.55519012500008
+  },
+  {
+    "seed": 3457,
+    "arm": "transformer",
+    "lr": 0.003,
+    "best_step": 6000,
+    "validation": {
+      "ce": 1.8747309669852257,
+      "bpc": 2.7046650690705563,
+      "scored_bytes": 16384
+    },
+    "history": [
+      {
+        "step": 1000,
+        "ce": 2.422894813120365,
+        "bpc": 3.4954983314843426,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 2000,
+        "ce": 2.2586792707443237,
+        "bpc": 3.2585853828615363,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 3000,
+        "ce": 2.0713301301002502,
+        "bpc": 2.9882977067395227,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 4000,
+        "ce": 1.9703235626220703,
+        "bpc": 2.842576032741536,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 5000,
+        "ce": 1.913471881300211,
+        "bpc": 2.7605563940322897,
+        "scored_bytes": 16384
+      },
+      {
+        "step": 6000,
+        "ce": 1.8747309669852257,
+        "bpc": 2.7046650690705563,
+        "scored_bytes": 16384
+      }
+    ],
+    "checkpoint": "/Volumes/SP AI 01_16/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1/3457-transformer-0.003.pt",
+    "sha256": "6ad25c7484aa1f695f21e4e614928609553c909dd912feb4ba6d730dcb5bedcc",
+    "parameters": 198729,
+    "training_seconds": 19.577069375000065
+  }
+]

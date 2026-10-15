@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620"><rect width="1100" height="620" fill="#fbfcfe"/>
+<text x="40" y="44" font-family="Arial,sans-serif" font-size="26" fill="#16223a" text-anchor="start" font-weight="bold">10M-token study: context-length extrapolation</text>
+<text x="40" y="74" font-family="Arial,sans-serif" font-size="15" fill="#46546b" text-anchor="start" font-weight="normal">Historical report values | trained at 512 tokens | one seed | lower CE is better</text>
+<text x="40" y="584" font-family="Arial,sans-serif" font-size="13" fill="#46546b" text-anchor="start" font-weight="normal">Small 1K/2K samples; absolute-position extrapolation confounds architecture.</text>
+<text x="40" y="602" font-family="Arial,sans-serif" font-size="13" fill="#46546b" text-anchor="start" font-weight="normal">Report-backed, not raw checkpoint revalidation. CE is not accuracy; no SOTA claim.</text>
+<rect x="55" y="99" width="15" height="12" fill="#d66b35"/>
+<text x="77" y="110" font-family="Arial,sans-serif" font-size="14" fill="#16223a" text-anchor="start" font-weight="normal">In-house Transformer</text>
+<rect x="313" y="99" width="15" height="12" fill="#187c69"/>
+<text x="335" y="110" font-family="Arial,sans-serif" font-size="14" fill="#16223a" text-anchor="start" font-weight="normal">Pure hierarchy</text>
+<rect x="571" y="99" width="15" height="12" fill="#336eb5"/>
+<text x="593" y="110" font-family="Arial,sans-serif" font-size="14" fill="#16223a" text-anchor="start" font-weight="normal">Local + function weights</text>
+<rect x="829" y="99" width="15" height="12" fill="#8d59ab"/>
+<text x="851" y="110" font-family="Arial,sans-serif" font-size="14" fill="#16223a" text-anchor="start" font-weight="normal">Upstream nanoGPT control</text>
+<line x1="90" y1="510.0" x2="1045" y2="510.0" stroke="#d9e1eb" stroke-width="1"/>
+<text x="76" y="515.0" font-family="Arial,sans-serif" font-size="13" fill="#64748b" text-anchor="end" font-weight="normal">0</text>
+<line x1="90" y1="438.0" x2="1045" y2="438.0" stroke="#d9e1eb" stroke-width="1"/>
+<text x="76" y="443.0" font-family="Arial,sans-serif" font-size="13" fill="#64748b" text-anchor="end" font-weight="normal">2.4</text>
+<line x1="90" y1="366.0" x2="1045" y2="366.0" stroke="#d9e1eb" stroke-width="1"/>
+<text x="76" y="371.0" font-family="Arial,sans-serif" font-size="13" fill="#64748b" text-anchor="end" font-weight="normal">4.8</text>
+<line x1="90" y1="294.0" x2="1045" y2="294.0" stroke="#d9e1eb" stroke-width="1"/>
+<text x="76" y="299.0" font-family="Arial,sans-serif" font-size="13" fill="#64748b" text-anchor="end" font-weight="normal">7.2</text>
+<line x1="90" y1="222.0" x2="1045" y2="222.0" stroke="#d9e1eb" stroke-width="1"/>
+<text x="76" y="227.0" font-family="Arial,sans-serif" font-size="13" fill="#64748b" text-anchor="end" font-weight="normal">9.6</text>
+<line x1="90" y1="150.0" x2="1045" y2="150.0" stroke="#d9e1eb" stroke-width="1"/>
+<text x="76" y="155.0" font-family="Arial,sans-serif" font-size="13" fill="#64748b" text-anchor="end" font-weight="normal">12</text>
+<text x="45" y="137" font-family="Arial,sans-serif" font-size="14" fill="#16223a" text-anchor="start" font-weight="normal">Token CE</text>
+<text x="249.16666666666666" y="540" font-family="Arial,sans-serif" font-size="15" fill="#16223a" text-anchor="middle" font-weight="normal">512</text>
+<text x="567.5" y="540" font-family="Arial,sans-serif" font-size="15" fill="#16223a" text-anchor="middle" font-weight="normal">1024</text>
+<text x="885.8333333333333" y="540" font-family="Arial,sans-serif" font-size="15" fill="#16223a" text-anchor="middle" font-weight="normal">2048</text>
+<rect x="111.33333333333336" y="321.3" width="63.666666666666664" height="188.7" rx="3" fill="#d66b35"/>
+<text x="143.16666666666669" y="312.3" font-family="Arial,sans-serif" font-size="13" fill="#16223a" text-anchor="middle" font-weight="normal">6.290</text>
+<rect x="429.6666666666667" y="253.5" width="63.666666666666664" height="256.5" rx="3" fill="#d66b35"/>
+<text x="461.5" y="244.5" font-family="Arial,sans-serif" font-size="13" fill="#16223a" text-anchor="middle" font-weight="normal">8.550</text>
+<rect x="747.9999999999999" y="190.5" width="63.666666666666664" height="319.5" rx="3" fill="#d66b35"/>
+<text x="779.8333333333333" y="181.5" font-family="Arial,sans-serif" font-size="13" fill="#16223a" text-anchor="middle" font-weight="normal">10.650</text>
+<rect x="181.99999999999997" y="352.20000000000005" width="63.666666666666664" height="157.79999999999995" rx="3" fill="#187c69"/>
+<text x="213.83333333333331" y="343.20000000000005" font-family="Arial,sans-serif" font-size="13" fill="#16223a" text-anchor="middle" font-weight="normal">5.260</text>
+<rect x="500.3333333333333" y="357.9" width="63.666666666666664" height="152.10000000000002" rx="3" fill="#187c69"/>
+<text x="532.1666666666666" y="348.9" font-family="Arial,sans-serif" font-size="13" fill="#16223a" text-anchor="middle" font-weight="normal">5.070</text>
+<rect x="818.6666666666665" y="351.29999999999995" width="63.666666666666664" height="158.70000000000005" rx="3" fill="#187c69"/>
+<text x="850.4999999999999" y="342.29999999999995" font-family="Arial,sans-serif" font-size="13" fill="#16223a" text-anchor="middle" font-weight="normal">5.290</text>
+<rect x="252.66666666666666" y="347.7" width="63.666666666666664" height="162.3" rx="3" fill="#336eb5"/>
+<text x="284.5" y="338.7" font-family="Arial,sans-serif" font-size="13" fill="#16223a" text-anchor="middle" font-weight="normal">5.410</text>
+<rect x="571.0" y="354.0" width="63.666666666666664" height="156.0" rx="3" fill="#336eb5"/>
+<text x="602.8333333333334" y="345.0" font-family="Arial,sans-serif" font-size="13" fill="#16223a" text-anchor="middle" font-weight="normal">5.200</text>
+<rect x="889.3333333333333" y="347.1" width="63.666666666666664" height="162.89999999999998" rx="3" fill="#336eb5"/>
+<text x="921.1666666666666" y="338.1" font-family="Arial,sans-serif" font-size="13" fill="#16223a" text-anchor="middle" font-weight="normal">5.430</text>
+<rect x="323.3333333333333" y="356.22" width="63.666666666666664" height="153.77999999999997" rx="3" fill="#8d59ab"/>
+<text x="355.16666666666663" y="347.22" font-family="Arial,sans-serif" font-size="13" fill="#16223a" text-anchor="middle" font-weight="normal">5.126</text>
+<rect x="641.6666666666666" y="352.16999999999996" width="63.666666666666664" height="157.83000000000004" rx="3" fill="#8d59ab"/>
+<text x="673.5" y="343.16999999999996" font-family="Arial,sans-serif" font-size="13" fill="#16223a" text-anchor="middle" font-weight="normal">5.261</text>
+<rect x="959.9999999999999" y="330.36" width="63.666666666666664" height="179.64" rx="3" fill="#8d59ab"/>
+<text x="991.8333333333333" y="321.36" font-family="Arial,sans-serif" font-size="13" fill="#16223a" text-anchor="middle" font-weight="normal">5.988</text></svg>

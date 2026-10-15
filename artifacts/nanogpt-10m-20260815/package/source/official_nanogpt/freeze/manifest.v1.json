@@ -1,0 +1,33 @@
+{
+  "schema": "official_nanogpt_aug8_exact_comparator_freeze_manifest_v1",
+  "status": "FROZEN_AFTER_INDEPENDENT_PASS",
+  "package": "aug8_official_nanogpt_comparator_20260815_v1",
+  "active_file_count": 21,
+  "independent_pre_freeze_tests": {
+    "passed": 7,
+    "failed": 0
+  },
+  "files": {
+    ".candidate_namespace": {"bytes": 45, "sha256": "9f2d27edabe3f6b4dc963c4c95d1e6216a4b93d06e6ea1b74a1df76487fc3134"},
+    "README.md": {"bytes": 2586, "sha256": "760ee14652c02b6f89c0cc939d41d71f75deb857ef23f54bfe3fda079670633c"},
+    "bindings/qwen06b_matched_hierarchy_function_v1.json": {"bytes": 4228, "sha256": "f47d8cabafa5f16ff32c1169fba2064bf8124907cfc99e7d8374212cc25c58fa"},
+    "config/official_nanogpt_aug8_10m.json": {"bytes": 3546, "sha256": "7c92fb90bee5ce12647aecd540bb1d4a015412ce1de4fa3ad3e27c47d2d11580"},
+    "protocol.candidate.json": {"bytes": 1457, "sha256": "a96866488df1af8da86a2b1010be3ecedf465395f04c694fd90e14eb62abbcf9"},
+    "representation_experiments/__init__.py": {"bytes": 47, "sha256": "4e1dd5e4ca700c73f5d83010ad0e8969c1f10db9c15676f4da47d63b3c306542"},
+    "representation_experiments/common.py": {"bytes": 8022, "sha256": "eed2cad9f3313b5c889bf72bc72aa78254466ff1e1b5548d363a26b42f7757dd"},
+    "representation_experiments/contract.py": {"bytes": 10976, "sha256": "5736386fdbf336a7a43a91d39c002963c63d782a8b2a0eeb8c55c3c6ab24a4ed"},
+    "representation_experiments/distribution_benchmarks.py": {"bytes": 3442, "sha256": "1abc803ca06cf280a3bf2a026a89e8f526e85c59b1c7b0bcf7ce5bbdb614776e"},
+    "representation_experiments/distribution_distillation.py": {"bytes": 41734, "sha256": "1a93d3c6ed27a1e7d5618f451c9388ab4aa46724e28ef092419ec2daa6d70083"},
+    "representation_experiments/nanogpt_control.py": {"bytes": 6018, "sha256": "1adfffbd843a55f00491b50cb46bc6c5d99041f54d9f48251ce3e79ad672a870"},
+    "representation_experiments/predictive_benchmarks.py": {"bytes": 5427, "sha256": "72edbcf7238454e31f2f41a46b616bb67a7514da34389246f1e86daf2f501152"},
+    "representation_experiments/predictive_models.py": {"bytes": 4284, "sha256": "a11c2ad6292ebc504c4b5223f4331f0f58992333c9c51fa0bd9fcc1a9b5736dc"},
+    "representation_experiments/run_benchmark_exact.py": {"bytes": 4324, "sha256": "29e9c832b5f5fff64f38695585aa7f0169edbc7d478063ff01a8b05697590684"},
+    "representation_experiments/run_exact.py": {"bytes": 6015, "sha256": "6f6e24117689bd1b0be34135b6778c6aeb63e72f5565b70cb65f37164ee4ef01"},
+    "requirements.txt": {"bytes": 107, "sha256": "a705d41157985d9bd1e5b614787039ad1c107f2bb4d7ab8bf9ee53e1b3c48825"},
+    "tests/test_exact_comparator.py": {"bytes": 7022, "sha256": "c4a034c035889a718655ec32986a9a0d1d3e7c75bf9d4d21869962c95f60bd41"},
+    "third_party/__init__.py": {"bytes": 41, "sha256": "62b05aa707e2ec33435d5b57192d03acb8b73f128d995c8584fc378e983d8ed1"},
+    "third_party/nanogpt/LICENSE": {"bytes": 1072, "sha256": "a59ec5cdb1c1e447e5266a014b3e7ded511f8d6e5a08931e931c87490ff821fe"},
+    "third_party/nanogpt/__init__.py": {"bytes": 46, "sha256": "25a0e4072fc354527c647ee68c8efbe26beaa379bd7a6c55f30fb9914f9950f7"},
+    "third_party/nanogpt/model.py": {"bytes": 16345, "sha256": "7c01703240dbec5d554527dc666e35b3df8391d0b117fddc07afcf325a21d11c"}
+  }
+}

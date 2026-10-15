@@ -1,0 +1,60 @@
+Traceback (most recent call last):
+  File "/home/rohanarun/funcweights-matched-hierarchy-v1/representation_experiments/distribution_benchmarks.py", line 83, in <module>
+    main()
+  File "/home/rohanarun/funcweights-matched-hierarchy-v1/representation_experiments/distribution_benchmarks.py", line 45, in main
+    tasks = load_tasks(args.limit)
+  File "/home/rohanarun/funcweights-matched-hierarchy-v1/representation_experiments/predictive_benchmarks.py", line 59, in load_tasks
+    lambada = take(load_dataset("EleutherAI/lambada_openai", "en", split="test"))
+  File "/home/rohanarun/funcweights/representation-venv/lib/python3.10/site-packages/datasets/load.py", line 1696, in load_dataset
+    builder_instance = load_dataset_builder(
+  File "/home/rohanarun/funcweights/representation-venv/lib/python3.10/site-packages/datasets/load.py", line 1323, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+  File "/home/rohanarun/funcweights/representation-venv/lib/python3.10/site-packages/datasets/load.py", line 1215, in dataset_module_factory
+    raise e1 from None
+  File "/home/rohanarun/funcweights/representation-venv/lib/python3.10/site-packages/datasets/load.py", line 1157, in dataset_module_factory
+    raise ConnectionError(f"Couldn't reach '{path}' on the Hub ({e.__class__.__name__})") from e
+ConnectionError: Couldn't reach 'EleutherAI/lambada_openai' on the Hub (OfflineModeIsEnabled)
+Using the latest cached version of the dataset since EleutherAI/lambada_openai couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'en' at /home/rohanarun/.cache/huggingface/datasets/EleutherAI___lambada_openai/en/0.0.0/900124bf3b8235c6daf21033af9948b3f07346c4 (last modified on Sun Aug  9 00:55:14 2026).
+Using the latest cached version of the dataset since Rowan/hellaswag couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at /home/rohanarun/.cache/huggingface/datasets/Rowan___hellaswag/default/0.0.0/218ec52e09a7e7462a5400043bb9a69a41d06b76 (last modified on Sun Aug  9 00:55:17 2026).
+Using the latest cached version of the dataset since allenai/ai2_arc couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'ARC-Easy' at /home/rohanarun/.cache/huggingface/datasets/allenai___ai2_arc/ARC-Easy/0.0.0/210d026faf9955653af8916fad021475a3f00453 (last modified on Sun Aug  9 00:55:18 2026).
+Using the latest cached version of the dataset since lighteval/piqa couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'plain_text' at /home/rohanarun/.cache/huggingface/datasets/lighteval___piqa/plain_text/0.0.0/41782e6bf0ef7de82a2ca8a9feb1dca042837fae (last modified on Sun Aug  9 00:55:21 2026).
+{"task": "lambada", "items": 100, "accuracy": 0.0}
+{"task": "lambada", "items": 200, "accuracy": 0.0}
+{"task": "lambada", "items": 300, "accuracy": 0.0}
+{"task": "lambada", "items": 400, "accuracy": 0.0}
+{"task": "lambada", "items": 500, "accuracy": 0.0}
+{"task": "lambada", "items": 600, "accuracy": 0.0}
+{"task": "lambada", "items": 700, "accuracy": 0.0}
+{"task": "lambada", "items": 800, "accuracy": 0.0}
+{"task": "lambada", "items": 900, "accuracy": 0.0}
+{"task": "lambada", "items": 1000, "accuracy": 0.0}
+{"task": "hellaswag", "items": 100, "accuracy": 0.22}
+{"task": "hellaswag", "items": 200, "accuracy": 0.205}
+{"task": "hellaswag", "items": 300, "accuracy": 0.21666666666666667}
+{"task": "hellaswag", "items": 400, "accuracy": 0.2275}
+{"task": "hellaswag", "items": 500, "accuracy": 0.234}
+{"task": "hellaswag", "items": 600, "accuracy": 0.23166666666666666}
+{"task": "hellaswag", "items": 700, "accuracy": 0.2342857142857143}
+{"task": "hellaswag", "items": 800, "accuracy": 0.24125}
+{"task": "hellaswag", "items": 900, "accuracy": 0.24666666666666667}
+{"task": "hellaswag", "items": 1000, "accuracy": 0.249}
+{"task": "arc_easy", "items": 100, "accuracy": 0.27}
+{"task": "arc_easy", "items": 200, "accuracy": 0.295}
+{"task": "arc_easy", "items": 300, "accuracy": 0.30333333333333334}
+{"task": "arc_easy", "items": 400, "accuracy": 0.325}
+{"task": "arc_easy", "items": 500, "accuracy": 0.332}
+{"task": "piqa", "items": 100, "accuracy": 0.54}
+{"task": "piqa", "items": 200, "accuracy": 0.525}
+{"task": "piqa", "items": 300, "accuracy": 0.5166666666666667}
+{"task": "piqa", "items": 400, "accuracy": 0.5125}
+{"task": "piqa", "items": 500, "accuracy": 0.522}
+{"task": "piqa", "items": 600, "accuracy": 0.52}
+{"task": "piqa", "items": 700, "accuracy": 0.5185714285714286}
+{"task": "piqa", "items": 800, "accuracy": 0.51875}
+{"task": "piqa", "items": 900, "accuracy": 0.5188888888888888}
+{"task": "piqa", "items": 1000, "accuracy": 0.523}
+DONE {"arm": "hierarchical_local_function_qwen_full_kl", "architecture": "hierarchical_local_function_weights", "limit": 1000, "stored_parameters": 119431689, "scores": {"lambada": 0.0, "hellaswag": 0.249, "arc_easy": 0.3385964912280702, "piqa": 0.523}, "mean_score": 0.2776491228070176, "metrics": {"lambada": "greedy_exact_match", "multiple_choice": "length_normalized_loglikelihood"}}

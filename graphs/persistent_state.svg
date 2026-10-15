@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620"><rect width="1100" height="620" fill="#fbfcfe"/>
+<text x="40" y="44" font-family="Arial,sans-serif" font-size="26" fill="#16223a" text-anchor="start" font-weight="bold">Constant recurrent state versus growing KV state</text>
+<text x="40" y="74" font-family="Arial,sans-serif" font-size="15" fill="#46546b" text-anchor="start" font-weight="normal">Analytic bf16 bytes per sequence | log scale | historical configuration accounting</text>
+<text x="40" y="584" font-family="Arial,sans-serif" font-size="13" fill="#46546b" text-anchor="start" font-weight="normal">Excludes model parameters, activations, allocator overhead and latency; NOT total-memory savings.</text>
+<text x="40" y="602" font-family="Arial,sans-serif" font-size="13" fill="#46546b" text-anchor="start" font-weight="normal">In-house KV sizes rounded in source; nanoGPT 73.5 MiB at 2K is reported separately in the README.</text>
+<rect x="55" y="99" width="15" height="12" fill="#d66b35"/>
+<text x="77" y="110" font-family="Arial,sans-serif" font-size="14" fill="#16223a" text-anchor="start" font-weight="normal">In-house KV</text>
+<rect x="313" y="99" width="15" height="12" fill="#187c69"/>
+<text x="335" y="110" font-family="Arial,sans-serif" font-size="14" fill="#16223a" text-anchor="start" font-weight="normal">Hierarchy</text>
+<line x1="90" y1="510.0" x2="1045" y2="510.0" stroke="#d9e1eb" stroke-width="1"/>
+<text x="76" y="515.0" font-family="Arial,sans-serif" font-size="13" fill="#64748b" text-anchor="end" font-weight="normal">1000</text>
+<line x1="90" y1="438.0" x2="1045" y2="438.0" stroke="#d9e1eb" stroke-width="1"/>
+<text x="76" y="443.0" font-family="Arial,sans-serif" font-size="13" fill="#64748b" text-anchor="end" font-weight="normal">10000</text>
+<line x1="90" y1="366.0" x2="1045" y2="366.0" stroke="#d9e1eb" stroke-width="1"/>
+<text x="76" y="371.0" font-family="Arial,sans-serif" font-size="13" fill="#64748b" text-anchor="end" font-weight="normal">100000</text>
+<line x1="90" y1="294.0" x2="1045" y2="294.0" stroke="#d9e1eb" stroke-width="1"/>
+<text x="76" y="299.0" font-family="Arial,sans-serif" font-size="13" fill="#64748b" text-anchor="end" font-weight="normal">1e+06</text>
+<line x1="90" y1="222.0" x2="1045" y2="222.0" stroke="#d9e1eb" stroke-width="1"/>
+<text x="76" y="227.0" font-family="Arial,sans-serif" font-size="13" fill="#64748b" text-anchor="end" font-weight="normal">1e+07</text>
+<line x1="90" y1="150.0" x2="1045" y2="150.0" stroke="#d9e1eb" stroke-width="1"/>
+<text x="76" y="155.0" font-family="Arial,sans-serif" font-size="13" fill="#64748b" text-anchor="end" font-weight="normal">1e+08</text>
+<text x="45" y="137" font-family="Arial,sans-serif" font-size="14" fill="#16223a" text-anchor="start" font-weight="normal">Bytes (log10)</text>
+<text x="249.16666666666666" y="540" font-family="Arial,sans-serif" font-size="15" fill="#16223a" text-anchor="middle" font-weight="normal">512</text>
+<text x="567.5" y="540" font-family="Arial,sans-serif" font-size="15" fill="#16223a" text-anchor="middle" font-weight="normal">1024</text>
+<text x="885.8333333333333" y="540" font-family="Arial,sans-serif" font-size="15" fill="#16223a" text-anchor="middle" font-weight="normal">2048</text>
+<rect x="181.66666666666666" y="231.12091666929132" width="64" height="278.8790833307087" rx="3" fill="#d66b35"/>
+<text x="213.66666666666666" y="222.12091666929132" font-family="Arial,sans-serif" font-size="13" fill="#16223a" text-anchor="middle" font-weight="normal">7.47 MB</text>
+<rect x="500.0" y="209.4467569814846" width="64" height="300.5532430185154" rx="3" fill="#d66b35"/>
+<text x="532.0" y="200.4467569814846" font-family="Arial,sans-serif" font-size="13" fill="#16223a" text-anchor="middle" font-weight="normal">14.94 MB</text>
+<rect x="818.3333333333333" y="187.77259729367796" width="64" height="322.22740270632204" rx="3" fill="#d66b35"/>
+<text x="850.3333333333333" y="178.77259729367796" font-family="Arial,sans-serif" font-size="13" fill="#16223a" text-anchor="middle" font-weight="normal">29.88 MB</text>
+<rect x="252.66666666666663" y="456.6711533836232" width="64" height="53.32884661637678" rx="3" fill="#187c69"/>
+<text x="284.66666666666663" y="447.6711533836232" font-family="Arial,sans-serif" font-size="13" fill="#16223a" text-anchor="middle" font-weight="normal">5,504 B</text>
+<rect x="571.0" y="456.6711533836232" width="64" height="53.32884661637678" rx="3" fill="#187c69"/>
+<text x="603.0" y="447.6711533836232" font-family="Arial,sans-serif" font-size="13" fill="#16223a" text-anchor="middle" font-weight="normal">5,504 B</text>
+<rect x="889.3333333333333" y="456.6711533836232" width="64" height="53.32884661637678" rx="3" fill="#187c69"/>
+<text x="921.3333333333333" y="447.6711533836232" font-family="Arial,sans-serif" font-size="13" fill="#16223a" text-anchor="middle" font-weight="normal">5,504 B</text></svg>

@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-15",
+  "status": "PARTIAL_RECOVERY_NOT_EVERYTHING",
+  "local_hash_verified_checkpoints": {
+    "pure-hierarchy-final.pt": "beb12f7a9fce10195c639365cc673200e04c97affa9557239b70edd28bd9c66f",
+    "in-house-transformer-final.pt": "0c082d456a5b535906cc36d2de39adf4aaa4c359a1f954998948be2c9c75d9c7",
+    "local-hierarchy-final.pt": "1c401fb56d4709ae46c8b05c48d28844571efe521f24107d54e88cc175b04e55"
+  },
+  "release": "https://github.com/rohanarun/function-weights-research/releases/tag/recovered-120m-checkpoints-20261015",
+  "uploaded_verified_assets": [
+    {
+      "name": "in-house-transformer-final.pt",
+      "state": "uploaded",
+      "size": 476196379,
+      "digest": "sha256:0c082d456a5b535906cc36d2de39adf4aaa4c359a1f954998948be2c9c75d9c7",
+      "browser_download_url": "https://github.com/rohanarun/function-weights-research/releases/download/recovered-120m-checkpoints-20261015/in-house-transformer-final.pt"
+    },
+    {
+      "name": "local-hierarchy-final.pt",
+      "state": "uploaded",
+      "size": 479154689,
+      "digest": "sha256:1c401fb56d4709ae46c8b05c48d28844571efe521f24107d54e88cc175b04e55",
+      "browser_download_url": "https://github.com/rohanarun/function-weights-research/releases/download/recovered-120m-checkpoints-20261015/local-hierarchy-final.pt"
+    },
+    {
+      "name": "pure-hierarchy-final.pt",
+      "state": "uploaded",
+      "size": 478788043,
+      "digest": "sha256:beb12f7a9fce10195c639365cc673200e04c97affa9557239b70edd28bd9c66f",
+      "browser_download_url": "https://github.com/rohanarun/function-weights-research/releases/download/recovered-120m-checkpoints-20261015/pure-hierarchy-final.pt"
+    }
+  ],
+  "local_source_root": "/Volumes/SP AI 01_16/trin/.codex-staging/qwen06b-benchmark.k3YJBn",
+  "searches": {
+    "icloud_documents_indexed_files": 200663,
+    "icloud_relevant_source_name_candidates": 177,
+    "ssd_codexworkspaces_indexed_files": 1045647,
+    "historical_small_tar_archives_checked": 6,
+    "git_object_scan": "Interrupted after no output; not a completed Git-object audit",
+    "benchmark_caches": "Not located in searched iCloud Documents, local Hugging Face cache, SSD research roots; no fresh download",
+    "runtime": "Recorded environment metadata recovered; exact executable/container not recovered"
+  },
+  "unresolved": [
+    "nanoGPT final checkpoint SHA256 7de4e9d81b606ec6b0d7e9fbaf4dcdcb30aa55456e775a07371aaf65a6591241",
+    "three byte-exact deployed hierarchy source files",
+    "pinned offline benchmark caches",
+    "exact runtime/container"
+  ],
+  "training_started": false,
+  "official_test_accessed": false
+}

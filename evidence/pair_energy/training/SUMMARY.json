@@ -1,0 +1,18 @@
+[
+  {
+    "arm": "pair_energy",
+    "mean_selection_ce": 1.650516428053379
+  },
+  {
+    "arm": "geometric_overlapping",
+    "mean_selection_ce": 1.6598756512006123
+  },
+  {
+    "arm": "relative_phase_key",
+    "mean_selection_ce": 1.6677234508097172
+  },
+  {
+    "arm": "transformer",
+    "mean_selection_ce": 1.78808365141352
+  }
+]

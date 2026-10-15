@@ -1,0 +1,13 @@
+{
+  "status":"CLEANUP_VERIFIED",
+  "project":"local-passage-501917-g0",
+  "remaining_temporary_instances":[],
+  "remaining_temporary_disks":[],
+  "deleted_temporary_vm":"fw-recovery-cpu-20261015",
+  "deleted_temporary_disks":["fw-recovery-cpu-20261015","fw-recovery-training-20261015","fw-recovery-training2-20261015","fw-recovery-training3-20261015","fw-recovery-training4-20261015"],
+  "original_research_instances":{"training":"TERMINATED","training2":"TERMINATED","training3":"TERMINATED","training4":"TERMINATED","super":"TERMINATED"},
+  "original_disks_and_selected_snapshots_retained":true,
+  "gpu_instances_started":false,
+  "training_started":false,
+  "verification":"Live Compute Engine instance, disk and snapshot listings after deletion; originals retained. Only temporary recovery resources deleted."
+}

@@ -1,0 +1,28 @@
+{
+  "status": "PASS_NEW_GEOMETRY_SYNTHETIC_ONLY",
+  "seeds": [
+    73,
+    191,
+    307
+  ],
+  "arms": {
+    "baseline": 9584,
+    "oriented_cross": 9600,
+    "alignment_dot": 9600,
+    "nanoGPT_workflow_control": 8496
+  },
+  "checks": [
+    "identity exact",
+    "causal prefix",
+    "forward versus step streaming",
+    "finite gradients",
+    "optimizer update"
+  ],
+  "clock": {
+    "segment_length": 32,
+    "document_segments": 8,
+    "tokens": 272
+  },
+  "scope": "Synthetic CPU mechanics only. nanoGPT not parameter matched. No language-quality, SOTA, or novelty claim.",
+  "execution": "Parent chat, not requested separate chat."
+}

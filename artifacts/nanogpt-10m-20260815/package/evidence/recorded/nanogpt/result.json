@@ -1,0 +1,64 @@
+{
+  "architecture": "nanogpt",
+  "arm": "official_nanogpt_aug8_10m",
+  "branching": false,
+  "budget_utilization": 0.9973786666666666,
+  "embedding_initialization": "qwen_pca",
+  "embedding_projection": {
+    "method": "centered_teacher_embedding_covariance_eigendecomposition",
+    "preserve_global_norm": true,
+    "retained_variance": 0.5771926045417786,
+    "rows": 151936,
+    "scale": 1.3813432455062866,
+    "student_dimensions": 448,
+    "teacher_dimensions": 1024
+  },
+  "metrics": {
+    "estimated_macs_per_token_at_1024": 137912320,
+    "estimated_macs_per_token_at_2048": 157179904,
+    "estimated_macs_per_token_at_512": 128278528,
+    "kl_t1": 2.3154637068510056,
+    "kl_t2": 3.423085182905197,
+    "kl_t4": 2.2718473225831985,
+    "long_context": {
+      "1024": {
+        "kl_t1": 2.737845301628113,
+        "student_ce": 5.261362314224243,
+        "student_minus_teacher_ce": 2.656370162963867,
+        "teacher_ce": 2.604992151260376,
+        "top1_agreement": 0.29833984375
+      },
+      "2048": {
+        "kl_t1": 3.0390619039535522,
+        "student_ce": 5.988184928894043,
+        "student_minus_teacher_ce": 2.997693657875061,
+        "teacher_ce": 2.990491271018982,
+        "top1_agreement": 0.2431640625
+      }
+    },
+    "peak_memory_bytes": 6582920192,
+    "rollout_ce": {
+      "128": 5.076642990112305,
+      "256": 5.087552100419998,
+      "512": 5.132811993360519,
+      "64": 5.228664427995682
+    },
+    "rollout_degradation": -0.09585243463516235,
+    "state_bytes_bf16_per_sequence_at_1024": 38535168,
+    "state_bytes_bf16_per_sequence_at_2048": 77070336,
+    "state_bytes_bf16_per_sequence_at_512": 19267584,
+    "state_elements_per_sequence_at_512": 9633792,
+    "student_ce": 5.126457363367081,
+    "student_minus_teacher_ce": 2.302637204527855,
+    "teacher_ce": 2.8238201588392258,
+    "tokens_per_second": 67359.62552555937,
+    "top1_agreement": 0.3314208984375
+  },
+  "sampling": "restart_stable_random",
+  "steps": 4883,
+  "stored_parameters": 119685440,
+  "target_parameters": 120000000,
+  "tokens": 10000384,
+  "width": 448,
+  "world_size": 1
+}

@@ -1,0 +1,69 @@
+{
+  "checkpoint_keys": 19,
+  "checkpoint_sha256": "beb12f7a9fce10195c639365cc673200e04c97affa9557239b70edd28bd9c66f",
+  "dataset_content_read": false,
+  "device": "CPU",
+  "historical_parameters": 119694800,
+  "identity_level": "compatible_snapshot_exact_config",
+  "is_language_quality_result": false,
+  "not_byte_exact_deployed_source": true,
+  "official_test_accessed": false,
+  "seeds": [
+    {
+      "all_three_gru_scales_gradient_tested": true,
+      "causality": true,
+      "finite_gradients": true,
+      "forward_vs_step_max_abs": 8.881784197001252e-16,
+      "optimizer_updated": true,
+      "seed": 73,
+      "state_and_counters_match": true
+    },
+    {
+      "all_three_gru_scales_gradient_tested": true,
+      "causality": true,
+      "finite_gradients": true,
+      "forward_vs_step_max_abs": 6.661338147750939e-16,
+      "optimizer_updated": true,
+      "seed": 191,
+      "state_and_counters_match": true
+    },
+    {
+      "all_three_gru_scales_gradient_tested": true,
+      "causality": true,
+      "finite_gradients": true,
+      "forward_vs_step_max_abs": 8.881784197001252e-16,
+      "optimizer_updated": true,
+      "seed": 307,
+      "state_and_counters_match": true
+    }
+  ],
+  "source_hashes": [
+    {
+      "path": "representation_experiments/common.py",
+      "sha256": "eed2cad9f3313b5c889bf72bc72aa78254466ff1e1b5548d363a26b42f7757dd"
+    },
+    {
+      "path": "representation_experiments/predictive_models.py",
+      "sha256": "aace4bd0c7d7b3f6d71726af4f5ef16de8c889e1a16cd242a35bd80acd1a6023"
+    },
+    {
+      "path": "representation_experiments/distribution_distillation.py",
+      "sha256": "1a386f5391e925875aceb87b711b5413565b45fedb742e8d138aae4fc7be1841"
+    },
+    {
+      "path": "representation_experiments/distribution_benchmarks.py",
+      "sha256": "389e1efe3114d012918ddf0c75cee393dbde57127811cebf5722de66a9376942"
+    },
+    {
+      "path": "representation_experiments/predictive_benchmarks.py",
+      "sha256": "72edbcf7238454e31f2f41a46b616bb67a7514da34389246f1e86daf2f501152"
+    },
+    {
+      "path": "representation_experiments/run_matched_hierarchy_single_gpu.py",
+      "sha256": "d725b60ebe679889ad392499c75c4d2357fbe522e17498e38a73d83a4a612b62"
+    }
+  ],
+  "status": "PASS_SYNTHETIC_AND_CHECKPOINT_LAYOUT_ONLY",
+  "threads": 1,
+  "torch": "2.8.0"
+}

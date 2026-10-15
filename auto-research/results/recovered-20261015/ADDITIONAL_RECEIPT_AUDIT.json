@@ -1,0 +1,105 @@
+{
+  "receipt_sha256": "9745c1907385000d4bd4b0d7181996926eb0c4986e545fb57b95146aa0f93075",
+  "checks": [
+    {
+      "path": "/Volumes/SP AI 01_16/CodexWorkspaces/trin-research-evidence-20261002/energy-vs-odd-query-20261002-v1/run/CANDIDATES.json",
+      "expected": "8a1f55e7c1dd654d29a44777784485d3365c68ee19aa1497729af5202d36267a",
+      "matches": true
+    },
+    {
+      "path": "/Volumes/SP AI 01_16/CodexWorkspaces/trin-research-evidence-20261002/energy-vs-odd-query-20261002-v1/run/CONFIRMATION.json",
+      "expected": "273f435b2b9265e590aec3aad8b0cd038db32c7f48135b3aa33520ae62aa32f2",
+      "matches": true
+    },
+    {
+      "path": "/Volumes/SP AI 01_16/CodexWorkspaces/trin-research-evidence-20261002/energy-vs-odd-query-20261002-v1/run/DATA_RECEIPTS.json",
+      "expected": "fbe99894dd5d100693e6a6f13138965292e8c3cd94cc6b87b8631e5b950683b8",
+      "matches": true
+    },
+    {
+      "path": "/Volumes/SP AI 01_16/CodexWorkspaces/trin-research-evidence-20261002/energy-vs-odd-query-20261002-v1/run/FREEZE.json",
+      "expected": "0ba68ae11d08a61449c434187fdab2bc030611c77567211ac198b28305f6061a",
+      "matches": true
+    },
+    {
+      "path": "/Volumes/SP AI 01_16/CodexWorkspaces/trin-research-evidence-20261002/energy-vs-odd-query-20261002-v1/run/PROTOCOL.json",
+      "expected": "14e16493d1295535f17e54a9e870378361e08b70b19e44cd7325f7e3d928eb70",
+      "matches": true
+    },
+    {
+      "path": "/Volumes/SP AI 01_16/CodexWorkspaces/trin-research-evidence-20261002/energy-vs-odd-query-20261002-v1/run/SELECTED_VERIFICATION.json",
+      "expected": "8977d9de62ec417f5b497c1d7c36825ef1da03fda53a236cc498585d231372c4",
+      "matches": true
+    },
+    {
+      "path": "/Volumes/SP AI 01_16/CodexWorkspaces/trin-research-evidence-20261002/energy-vs-odd-query-20261002-v1/run/TRAINING_COMPLETION.json",
+      "expected": "b87e963e11ab5575b7c5fbb3cfe046df8dd185c26de6e56496c56cc4fbbe1f8f",
+      "matches": true
+    }
+  ],
+  "stored_duplicate_zero": true,
+  "stored_local_advance_gate": false,
+  "canonical_ranking": [
+    {
+      "arm": "odd_query_shape",
+      "ce": 1.6214159418554868,
+      "seed": "301892410"
+    },
+    {
+      "arm": "pair_energy",
+      "ce": 1.6235875611211739,
+      "seed": "301892410"
+    },
+    {
+      "arm": "geometric_overlapping",
+      "ce": 1.6282192758485383,
+      "seed": "301892410"
+    },
+    {
+      "arm": "transformer",
+      "ce": 1.7569437185923258,
+      "seed": "301892410"
+    },
+    {
+      "arm": "pair_energy",
+      "ce": 1.616414984067281,
+      "seed": "371835893"
+    },
+    {
+      "arm": "odd_query_shape",
+      "ce": 1.6230807262308458,
+      "seed": "371835893"
+    },
+    {
+      "arm": "geometric_overlapping",
+      "ce": 1.6264869643192665,
+      "seed": "371835893"
+    },
+    {
+      "arm": "transformer",
+      "ce": 1.7342389887454464,
+      "seed": "371835893"
+    },
+    {
+      "arm": "pair_energy",
+      "ce": 1.6253303943895827,
+      "seed": "1443639472"
+    },
+    {
+      "arm": "geometric_overlapping",
+      "ce": 1.6428690377403707,
+      "seed": "1443639472"
+    },
+    {
+      "arm": "odd_query_shape",
+      "ce": 1.6450118022806504,
+      "seed": "1443639472"
+    },
+    {
+      "arm": "transformer",
+      "ce": 1.777378911598056,
+      "seed": "1443639472"
+    }
+  ],
+  "scope": "Read-only saved receipt audit; no numerical re-evaluation; all checkpoint/data identity not freshly revalidated."
+}

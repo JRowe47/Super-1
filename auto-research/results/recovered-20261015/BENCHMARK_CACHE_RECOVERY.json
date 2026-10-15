@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-15",
+  "benchmark_caches": [
+    {
+      "path": "/Volumes/SP AI 01_16/hfw-w560-promotion-benchmarks-20260816-v1-attempt1/runtime/assets/huggingface-cache/Rowan___hellaswag/default/0.0.0/218ec52e09a7e7462a5400043bb9a69a41d06b76/hellaswag-validation.arrow",
+      "bytes": 11186424,
+      "sha256": "fdd100245fae28e387869527dd0b8af1a0a931f7cf364abaf6f3138de7f0d27b",
+      "revision": "218ec52e09a7e7462a5400043bb9a69a41d06b76",
+      "status": "readable_revision_bound_cache_found",
+      "historical_content_hash_comparison": "not_available"
+    },
+    {
+      "path": "/Volumes/SP AI 01_16/hfw-w560-promotion-benchmarks-20260816-v1-attempt1/runtime/assets/huggingface-cache/lighteval___piqa/plain_text/0.0.0/41782e6bf0ef7de82a2ca8a9feb1dca042837fae/piqa-validation.arrow",
+      "bytes": 465608,
+      "sha256": "6e14731c78016adc6a5738d661111f5cb4c6bce461c454561eb66be4abc39222",
+      "revision": "41782e6bf0ef7de82a2ca8a9feb1dca042837fae",
+      "status": "readable_revision_bound_cache_found",
+      "historical_content_hash_comparison": "not_available"
+    },
+    {
+      "path": "/Volumes/SP AI 01_16/hfw-w560-promotion-benchmarks-20260816-v1-attempt1/runtime/assets/huggingface-cache/EleutherAI___lambada_openai/en/0.0.0/900124bf3b8235c6daf21033af9948b3f07346c4/lambada_openai-test.arrow",
+      "bytes": 1710736,
+      "sha256": "048a8a2bfcc3360404fb8f0f351c0c92c64200df9a894fd65cbf99bd25469ab0",
+      "revision": "900124bf3b8235c6daf21033af9948b3f07346c4",
+      "status": "readable_revision_bound_cache_found",
+      "historical_content_hash_comparison": "not_available"
+    },
+    {
+      "path": "/Volumes/SP AI 01_16/hfw-w560-promotion-benchmarks-20260816-v1-attempt1/runtime/assets/huggingface-cache/allenai___ai2_arc/ARC-Easy/0.0.0/210d026faf9955653af8916fad021475a3f00453/ai2_arc-validation.arrow",
+      "bytes": 158848,
+      "sha256": "caa0a247e56619a9cf109290abd532ce41dd911fe86210772c256c95b52e8d69",
+      "revision": "210d026faf9955653af8916fad021475a3f00453",
+      "status": "readable_revision_bound_cache_found",
+      "historical_content_hash_comparison": "not_available"
+    }
+  ],
+  "icloud_search_completed": true,
+  "icloud_target_candidates": 225,
+  "readable_small_git_blobs_checked": 6575,
+  "large_or_dataless_objects_skipped": 14619,
+  "ssd_wide_search": "timed_out_partial_results_inspected",
+  "unresolved": [
+    "nanoGPT final checkpoint",
+    "three exact deployed core source files",
+    "original runtime/container"
+  ],
+  "runtime_followup": "An August-16 benchmark pydeps directory exists; not established as original August-8/15 executable environment.",
+  "new_evaluation": false
+}

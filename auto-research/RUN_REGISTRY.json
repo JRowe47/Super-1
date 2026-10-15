@@ -1,0 +1,86 @@
+{
+  "authorization_note": "Language training remains paused. User-authorized synthetic optimization completed with a preserved diagnostic failure and evaluation-only recovery. No future execution authorized.",
+  "created_date": "2026-10-14",
+  "evidence_recoveries": [
+    {
+      "catalog": "auto-research/RESEARCH_CATALOG.md",
+      "files_preserved": 887,
+      "id": "recovered-20261015",
+      "inventory": "auto-research/results/recovered-20261015/INVENTORY.json",
+      "missing_historical_checkpoints": true,
+      "new_evaluation": false,
+      "new_training": false,
+      "scope": "Located evidence snapshots, not every historical run; exclusions/read errors recorded.",
+      "status": "ARCHIVAL_RECOVERY_ONLY",
+      "superseded_by_current_recovery": "cloud-recovery-20261015"
+    },
+    {
+      "approval": "User explicitly approved temporary CPU-only recovery and cleanup in this thread on 2026-10-15.",
+      "id": "cloud-recovery-20261015",
+      "nanogpt_final_hash_matches_historical_receipt": true,
+      "new_benchmark_evaluation": false,
+      "new_training": false,
+      "original_source_core_hashes_matched": 4,
+      "receipt": "auto-research/results/cloud-recovery-20261015/RECOVERY.json",
+      "report": "auto-research/results/cloud-recovery-20261015/REPRODUCTION_RECOVERY.md",
+      "runtime_cpu_smoke": "PASS",
+      "runtime_export_cpu_smoke": "PASS",
+      "state": "auto-research/results/cloud-recovery-20261015/UPLOAD_STATE.json",
+      "status": "PRESERVATION_AND_CLEANUP_VERIFIED",
+      "temporary_cloud_resources_remaining": 0,
+      "verified_release_assets": 25
+    }
+  ],
+  "runs": [
+    {
+      "approval": "User-requested separate-chat synthetic self-test; not language-training or cloud authorization",
+      "arm_seed_rows": 12,
+      "kind": "synthetic acceptance",
+      "proposal": "auto-research/results/new-chat-exact-source-canary-20261015-v1/LANGUAGE_PROPOSAL.json",
+      "protocol": "auto-research/results/new-chat-exact-source-canary-20261015-v1/PROTOCOL.json",
+      "protocol_sha256": "d873b2feeffda7847078f99735bc6cfff8049a885fdefe845091d184ce9d05f2",
+      "repairs": 0,
+      "report": "auto-research/results/new-chat-exact-source-canary-20261015-v1/REPORT.md",
+      "run_id": "new-chat-exact-source-canary-20261015-v1",
+      "status": "PASS_SYNTHETIC_MECHANICS_ONLY",
+      "terminal": "auto-research/results/new-chat-exact-source-canary-20261015-v1/TERMINAL.json",
+      "thread_id": "01a141af-25dc-7fb3-bbc1-0919de0943f4"
+    },
+    {
+      "approval": "Current delegated human-requested experiment-to-PR acceptance task; auto-research.md Authorized experiment-to-PR workflow at d25da5777a2a49021588bd7ef5158e7aa400b2d5",
+      "arm_seed_rows": 12,
+      "continuation_run_id": "synthetic-rotation-pr-20261015-eval-v2",
+      "kind": "bounded synthetic optimization and PR acceptance",
+      "metrics": "auto-research/results/synthetic-rotation-pr-20261015-eval-v2/execution/RESULT.json",
+      "protocol": "auto-research/results/synthetic-rotation-pr-20261015-v1/PROTOCOL.json",
+      "protocol_sha256": "fd679f15252dff20501919bb4bfb164c97c31ac3c8775ff81d6f6f1eea2b48fc",
+      "report": "auto-research/reports/synthetic-rotation-pr-20261015-v1.md",
+      "run_id": "synthetic-rotation-pr-20261015-v1",
+      "source_manifest": "auto-research/results/synthetic-rotation-pr-20261015-v1/SOURCE_MANIFEST.json",
+      "status": "TRAINING_COMPLETED_EVALUATION_HARNESS_FAILED",
+      "terminal": "auto-research/results/synthetic-rotation-pr-20261015-v1/execution/TERMINAL.json",
+      "training_metrics": "auto-research/results/synthetic-rotation-pr-20261015-v1/execution/progress.jsonl",
+      "updates_per_arm": 80
+    },
+    {
+      "approval": "Same user-authorized bounded experiment-to-PR task, shared resource envelope; no retraining",
+      "arm_seed_rows": 12,
+      "decision": "NO_PROMOTION_INCONCLUSIVE_OR_NEGATIVE",
+      "kind": "evaluation-only recovery from frozen synthetic checkpoints",
+      "metrics": "auto-research/results/synthetic-rotation-pr-20261015-eval-v2/execution/RESULT.json",
+      "parent_run_ids": [
+        "synthetic-rotation-pr-20261015-v1"
+      ],
+      "protocol": "auto-research/results/synthetic-rotation-pr-20261015-eval-v2/PROTOCOL.json",
+      "protocol_sha256": "285fa3f05b16e11fd7f380397338276448ad97ed6f48ac82f9a6be9c09965cf0",
+      "report": "auto-research/reports/synthetic-rotation-pr-20261015-v1.md",
+      "run_id": "synthetic-rotation-pr-20261015-eval-v2",
+      "source_manifest": "auto-research/results/synthetic-rotation-pr-20261015-eval-v2/SOURCE_MANIFEST.json",
+      "status": "COMPLETED_EVALUATION_RECOVERY_NO_RETRAINING",
+      "terminal": "auto-research/results/synthetic-rotation-pr-20261015-eval-v2/execution/TERMINAL.json",
+      "training_updates": 0
+    }
+  ],
+  "schema_version": 1,
+  "status": "LANGUAGE_TRAINING_PAUSED_SYNTHETIC_EXPERIMENT_RECOVERED_NO_PROMOTION"
+}

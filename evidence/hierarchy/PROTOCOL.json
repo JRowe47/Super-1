@@ -1,0 +1,43 @@
+{
+  "config": {
+    "seeds": [
+      73,
+      191,
+      307
+    ],
+    "arms": [
+      "original",
+      "local",
+      "cross"
+    ],
+    "learning_rates": [
+      0.001,
+      0.003
+    ],
+    "width": 64,
+    "scales": 4,
+    "context": 128,
+    "batch": 4,
+    "updates": 6000,
+    "selection_every": 1000,
+    "selection_start": 0,
+    "selection_targets": 16384,
+    "confirmation_start": 900000,
+    "confirmation_targets": 32768
+  },
+  "source_hashes": {
+    "/Volumes/SP AI 01_16/CodexWorkspaces/trin-research-evidence-20261002/original-hierarchy-reference-20261002-v1/regularized_language.py": "032cc199c26775040d8b8f9a87cc3c991915e653e032175320f59c8d02e7f336",
+    "/Volumes/SP AI 01_16/CodexWorkspaces/trin-research-evidence-20261002/original-hierarchy-reference-20261002-v1/regularized_rotation.py": "e56b2e956a8370c1946267d1c41a2a47e49e18b78c83468dd7fe39a8b180c30d",
+    "/Volumes/SP AI 01_16/CodexWorkspaces/trin-research-evidence-20261002/original-hierarchy-reference-20261002-v1/packed_rotation.py": "24c3a4150e5824c9e0f8115e28d91d8d22eb0822a2a1a946e89c43b8e9f303bc",
+    "/Volumes/SP AI 01_16/CodexWorkspaces/trin-research-evidence-20261002/original-hierarchy-reference-20261002-v1/cross_scale_rotation_canary.py": "d36fad9866317d6ce8e1d683e39c9c9c431309a38ffd6943892cbf2cc98f19ba",
+    "/Volumes/SP AI 01_16/CodexWorkspaces/trin-research-evidence-20261002/original-hierarchy-reference-20261002-v1/experiments/function_weight_wikitext2_benchmark/model_core.py": "0e43040605679d73f2654c4d30afc1e29bbfadb46dbafc12cb4ff4f5bc24f61a",
+    "/Volumes/SP AI 01_16/CodexWorkspaces/trin-research-evidence-20261002/original-hierarchy-reference-20261002-v1/experiments/function_weight_wt2_original_multiscale_decisive/models.py": "3dbe4fa50a4e7e0a9f1d1dec72b8e209e66ae842cb164e00d93cb4fe56d854a8",
+    "/Volumes/SP AI 01_16/CodexWorkspaces/trin-research-evidence-20261002/original-hierarchy-reference-20261002-v1/experiments/function_weight_wt2_original_transformer_port/model.py": "3180772c6614b31d2152782d36aba4c3c6545f216fcca21df870975133393145"
+  },
+  "data_hashes": {
+    "train.txt": "71220dd7735e8715884cf57d21fa6306ebc3249c0979f51c1fb22314e0842298",
+    "valid.txt": "1bd7ccbea6740d1f3837c268e41cd6c983e2e1d2673843b3d2c641f412c640b7"
+  },
+  "scope": "Original-hierarchy byte mechanism pilot, not matched FLOPs, word perplexity, globally pristine validation, novelty or SOTA. Confirmation target regions do not overlap selection. No official-test eligibility.",
+  "official_test_reads": 0
+}

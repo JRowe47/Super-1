@@ -1,0 +1,16 @@
+{
+  "workflow": {
+    "chunk_id": "54e0ee",
+    "wall_time_seconds": 0.000006792,
+    "exit_code": 1,
+    "original_token_count": 52,
+    "output": "Traceback (most recent call last):\n  File \"<stdin>\", line 88, in <module>\n  File \"<stdin>\", line 48, in main\n  File \"<stdin>\", line 5, in require\nRuntimeError: Identity-centered geometry changed reference\n"
+  },
+  "historical": {
+    "chunk_id": "a31a7f",
+    "wall_time_seconds": 0.000012917,
+    "exit_code": 1,
+    "original_token_count": 49,
+    "output": "Traceback (most recent call last):\n  File \"<stdin>\", line 70, in <module>\n  File \"<stdin>\", line 66, in main\n  File \"<stdin>\", line 5, in require\nRuntimeError: Historical checkpoint key mismatch\n"
+  }
+}

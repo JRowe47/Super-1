@@ -1,0 +1,710 @@
+{
+  "status": "CONFIRMED_PROMISING_LOCAL_ENERGY_ADDITION_NOT_SOTA",
+  "finding_id": "pair-energy-phase-validation-20261002-v1",
+  "local_decision": "Advance relative pair-energy feature to fresh, stronger controls; do not replace official word-level source or integrate rejected analytic backend.",
+  "scope": "198K-parameter, 128-byte-context local WikiText-2 byte pilot. Not original hierarchy, word-level perplexity, published SOTA, or established novelty.",
+  "confirmation": {
+    "confirmation_readback_pass": true,
+    "means": {
+      "pair_energy": 1.596404282563652,
+      "geometric_overlapping": 1.6168844127966688,
+      "relative_phase_key": 1.6103910516290103,
+      "transformer": 1.7358564613691343
+    },
+    "reductions_percent": {
+      "geometric_overlapping": 1.2666415775258177,
+      "relative_phase_key": 0.8685324630442914,
+      "transformer": 8.033623857095373
+    },
+    "pairs": [
+      {
+        "seed": 3361,
+        "scores": {
+          "pair_energy": 1.587503932504093,
+          "geometric_overlapping": 1.6137431037192251,
+          "relative_phase_key": 1.6080763835532992,
+          "transformer": 1.7411578281252993
+        },
+        "energy_minus_controls": {
+          "geometric_overlapping": -0.026239171215132195,
+          "relative_phase_key": -0.020572451049206242,
+          "transformer": -0.15365389562120635
+        }
+      },
+      {
+        "seed": 3407,
+        "scores": {
+          "pair_energy": 1.5980653472975188,
+          "geometric_overlapping": 1.6117885828018188,
+          "relative_phase_key": 1.6065216162625482,
+          "transformer": 1.7239759510638668
+        },
+        "energy_minus_controls": {
+          "geometric_overlapping": -0.013723235504299991,
+          "relative_phase_key": -0.008456268965029379,
+          "transformer": -0.125910603766348
+        }
+      },
+      {
+        "seed": 3457,
+        "scores": {
+          "pair_energy": 1.6036435678893444,
+          "geometric_overlapping": 1.6251215518689623,
+          "relative_phase_key": 1.6165751550711838,
+          "transformer": 1.7424356049182368
+        },
+        "energy_minus_controls": {
+          "geometric_overlapping": -0.021477983979617976,
+          "relative_phase_key": -0.012931587181839399,
+          "transformer": -0.13879203702889242
+        }
+      }
+    ],
+    "selected_details": [
+      {
+        "seed": 3361,
+        "arm": "pair_energy",
+        "best_step": 6000,
+        "lr": 0.003,
+        "training_seconds": 553.6682746660001,
+        "parameters": 198656
+      },
+      {
+        "seed": 3361,
+        "arm": "geometric_overlapping",
+        "best_step": 6000,
+        "lr": 0.003,
+        "training_seconds": 511.0155002500003,
+        "parameters": 198400
+      },
+      {
+        "seed": 3361,
+        "arm": "relative_phase_key",
+        "best_step": 6000,
+        "lr": 0.003,
+        "training_seconds": 550.408068791,
+        "parameters": 198656
+      },
+      {
+        "seed": 3361,
+        "arm": "transformer",
+        "best_step": 6000,
+        "lr": 0.001,
+        "training_seconds": 20.78135204099999,
+        "parameters": 198729
+      },
+      {
+        "seed": 3407,
+        "arm": "pair_energy",
+        "best_step": 6000,
+        "lr": 0.003,
+        "training_seconds": 587.6501820829999,
+        "parameters": 198656
+      },
+      {
+        "seed": 3407,
+        "arm": "geometric_overlapping",
+        "best_step": 6000,
+        "lr": 0.003,
+        "training_seconds": 740.7197261659999,
+        "parameters": 198400
+      },
+      {
+        "seed": 3407,
+        "arm": "relative_phase_key",
+        "best_step": 6000,
+        "lr": 0.003,
+        "training_seconds": 759.295381333,
+        "parameters": 198656
+      },
+      {
+        "seed": 3407,
+        "arm": "transformer",
+        "best_step": 6000,
+        "lr": 0.001,
+        "training_seconds": 28.389585291999992,
+        "parameters": 198729
+      },
+      {
+        "seed": 3457,
+        "arm": "pair_energy",
+        "best_step": 6000,
+        "lr": 0.003,
+        "training_seconds": 662.4327358749997,
+        "parameters": 198656
+      },
+      {
+        "seed": 3457,
+        "arm": "geometric_overlapping",
+        "best_step": 6000,
+        "lr": 0.003,
+        "training_seconds": 556.6920097080001,
+        "parameters": 198400
+      },
+      {
+        "seed": 3457,
+        "arm": "relative_phase_key",
+        "best_step": 6000,
+        "lr": 0.003,
+        "training_seconds": 564.4754284170003,
+        "parameters": 198656
+      },
+      {
+        "seed": 3457,
+        "arm": "transformer",
+        "best_step": 6000,
+        "lr": 0.001,
+        "training_seconds": 19.55519012500008,
+        "parameters": 198729
+      }
+    ],
+    "confirmation_hashes": {
+      "PROTOCOL.json": "5dfc963df8ad9d5b534b0fb058ebca5f71a3c5a5e4075e0f477552de437de8d7",
+      "RESULT.json": "5fcb29ec7f66e4740363d93849779f943871205c07ccfe0d0b5a00e9214792c8",
+      "SUMMARY.json": "9428e6d56a6a76f41bdff682f45bf387c709ab6e7a049b8c2544cb2ceed2710a",
+      "COMPLETION.json": "f9a43319204867ca606ddb7c27eb23447779596d54bab4f7c9a8354baa6d43db"
+    },
+    "protocol_sha256_after": "0dbfc4bd497a5b7e9c7feed00c2fed2eb71661c12437158e507c8bb0275f3fc2",
+    "freeze_sha256_after": "7bf5bb517bef2ebf975231885572047eb5a15db8ddd1c279dd82cca561e5b798",
+    "official_test_opened": false
+  },
+  "independent_read_only_audit": "24-trial grid, all24 checkpoint hashes and six source seals,12 strict freezes, confirmation bindings, all12 result hashes and nine paired CE gaps verified independently. No second evaluation invocation.",
+  "scientific_controls": {
+    "seeds": [
+      3361,
+      3407,
+      3457
+    ],
+    "arms": [
+      "pair_energy",
+      "geometric_overlapping",
+      "relative_phase_key",
+      "transformer"
+    ],
+    "lrs": [
+      0.001,
+      0.003
+    ],
+    "steps": 6000,
+    "all_frozen_best_steps": [
+      6000,
+      6000,
+      6000,
+      6000,
+      6000,
+      6000,
+      6000,
+      6000,
+      6000,
+      6000,
+      6000,
+      6000
+    ],
+    "target_byte_exposures_per_trial": 3072000,
+    "context_bytes": 128,
+    "state_reset_each_window": true,
+    "parameters": {
+      "pair_energy": 198656,
+      "geometric_overlapping": 198400,
+      "relative_phase_key": 198656,
+      "transformer": 198729
+    },
+    "exact_parameter_matched_control": "relative_phase_key",
+    "approximately_parameter_matched_controls": [
+      "geometric_overlapping",
+      "transformer"
+    ],
+    "same_sampled_training_windows_per_seed": true,
+    "LR_trials_per_arm_seed": 2,
+    "FLOPs_matched": false,
+    "walltime_matched": false,
+    "training_walltime_includes_validation": true,
+    "inference_latency_measured": false,
+    "total_memory_measured": false
+  },
+  "evaluation_region": {
+    "target_indices_inclusive": [
+      327809,
+      393088
+    ],
+    "scored_bytes": 65280,
+    "selection_target_indices_inclusive": [
+      1,
+      16384
+    ],
+    "disjoint_from_current_run_selection": true,
+    "pre_registered_for_current_run": true,
+    "globally_never_seen_validation": false,
+    "official_test_read": false
+  },
+  "mechanism": {
+    "equation": "theta=a+g*tanh(cross/sqrt(Es*Eu+eps)+e*tanh(log(Es+eps)-log(Eu+eps)))",
+    "description": "A learned relative pair-energy contrast augments oriented state/drive queries in two overlapping rotation banks. Function-generated recurrent transport is applied without a dense recurrent matrix.",
+    "inference_model_has_other_dense_matrices": true,
+    "extra_energy_parameters_vs_geometry": 256,
+    "no_extra_independent_information_claim": true,
+    "no_full_state_jacobian_orthogonality_claim": true
+  },
+  "limitations": [
+    "One local byte-level task/scale/context, three seeds. No cross-task or larger-model replication yet.",
+    "Equal-count phase-key control is beaten, but a dedicated equal-sized query-shape nonlinear control is still needed to isolate energy from added flexibility.",
+    "Training CPU walltimes were unisolated and include validation; no FLOP efficiency or inference speed claim.",
+    "Reserved targets are held out for this preregistered run, not globally pristine across prior research.",
+    "Official word-level validation gate is not crossed by byte CE; official test remains ineligible and sealed.",
+    "Existing source migration remains incomplete: immutable source is read from SSD, with three hash-valid legacy Documents seal paths. No source edits or divergent checkout created.",
+    "Faster algebraically grouped analytic backward previously failed fixed LR0.003 optimizer fidelity, and is not used by this confirmation."
+  ],
+  "prior_art": {
+    "novelty_established": false,
+    "broad_antecedents": [
+      {
+        "name": "Rotational Unit of Memory",
+        "primary_url": "https://raw.githubusercontent.com/rdangovs/rotational-unit-of-memory/master/pytorch/rum_model.py",
+        "observed_overlap": "Input-plus-hidden-conditioned rotations and memory gating; broad state-conditioned rotation is not novel."
+      },
+      {
+        "name": "DizzyRNN",
+        "primary_url": "https://arxiv.org/html/1612.04035v1",
+        "observed_overlap": "Learned Givens rotations packed in disjoint pairs and composed; pairwise rotation parameterization is not novel."
+      }
+    ],
+    "specific_relative_energy_angle_law_status": "Exact equation not verified in inspected primary sources. Bounded search is not a novelty proof."
+  },
+  "training_protocol": {
+    "config": {
+      "seeds": [
+        3361,
+        3407,
+        3457
+      ],
+      "lrs": [
+        0.001,
+        0.003
+      ],
+      "steps": 6000,
+      "batch": 4,
+      "context": 128,
+      "width": 256,
+      "validation_interval": 1000,
+      "validation_windows": 128,
+      "validation_start": 0,
+      "arms": [
+        "pair_energy",
+        "geometric_overlapping",
+        "relative_phase_key",
+        "transformer"
+      ],
+      "threads": 1,
+      "reserved_confirmation_start": 327808,
+      "reserved_confirmation_windows": 510,
+      "weight_decay": 0.01,
+      "gradient_clip": 1,
+      "window_seed_offset": 10000,
+      "canary_steps": 10,
+      "promotion_contract": "All 24 trials must finish. Freeze each seed/arm by selection CE with equal LR counts. Evaluate all 12 frozen checkpoints twice in FP32 on the declared reserved region. Advance the energy addition only if duplicate drift is zero and its reserved CE is strictly lower than both geometry controls and the Transformer in each seed. Preserve failures; no tuning on this confirmation region. Parameters/tokens, not FLOPs, are matched. No cloud or official test."
+    },
+    "checks": {
+      "overlapping_checks": {
+        "identity_extension_exact": true,
+        "noncommuting_banks": true,
+        "transport_norm_preserved": true,
+        "second_gain_gradient_nonzero": true,
+        "causal_prefix": true,
+        "parameters": 4720,
+        "trained": false,
+        "novelty_established": false
+      },
+      "pair_energy_checks": {
+        "zero_energy_gain_forward_exact": true,
+        "native_gradient_max_error": 0,
+        "both_energy_gradients_nonzero": true,
+        "relative_energy_distinguished": true,
+        "common_pair_rotation_invariance": true,
+        "transport_norm_preserved": true,
+        "causal_prefix_exact": true,
+        "zero_state_gradients_finite": true,
+        "trained": false,
+        "novelty_established": false,
+        "limitations": "No extra independent information or contraction guarantee. Not the original hierarchy. Performance requires a fresh registered comparison."
+      },
+      "phase_key_checks": {
+        "zero_key_forward_exact": true,
+        "native_gradient_max_error": 0,
+        "both_key_gradients_nonzero": true,
+        "aligned_antiparallel_distinguished": true,
+        "common_pair_rotation_invariance": true,
+        "transport_norm_preserved": true,
+        "zero_state_gradients_finite": true,
+        "causal_prefix_exact": true,
+        "novelty_established": false,
+        "trained": false,
+        "limitation": "State-dependent query can expand the Jacobian; norm preservation does not imply contraction. Not the original hierarchy."
+      },
+      "source_hashes": {
+        "/Users/rohanarun/Documents/trin/experiments/disparity_constraints/run_pair_energy_phase.py": "47a1699ebd051ec8e1ae1d8cca9b02493aa036aa93ea21229a8baa01b24f710c",
+        "/Users/rohanarun/Documents/trin/experiments/disparity_constraints/pair_energy_phase_candidate.py": "61b8d710a0c647c8c45cbe8e5a4e06eea440fa37975d9f387e9402b5ea2efa9a",
+        "/Users/rohanarun/Documents/trin/experiments/disparity_constraints/relative_phase_key_candidate.py": "709f99337190744261bed5b2d1b1d695091e5a30505c94818a8d7b23346ab20a"
+      },
+      "hypothesis": "Relative pair energy augments oriented geometric queries and improves reserved CE over both geometry controls in all three fresh seeds.",
+      "limitation": "No information-capacity, contraction, original-hierarchy, compute-efficiency, novelty or SOTA claim."
+    },
+    "parameters": {
+      "pair_energy": 198656,
+      "geometric_overlapping": 198400,
+      "relative_phase_key": 198656,
+      "transformer": 198729
+    },
+    "transformer_width": 134,
+    "transformer_ff_width": 275,
+    "source_sha256": "9e79bff53701581864118b18a5fc35156af41afaeb44b2fc6e25916a8c41f9b4",
+    "candidate_source_sha256": "063584bd9d4746ade54669e4cb1a9b70f8cdb38fff586ce68db37564552d14b5",
+    "runner_source_sha256": "d4bbb48fde16dfd17cbb3158cc1a5df2b80ef5a707ae6bacbb0205813ea0b7d2",
+    "data_sha256": {
+      "train": "71220dd7735e8715884cf57d21fa6306ebc3249c0979f51c1fb22314e0842298",
+      "valid": "1bd7ccbea6740d1f3837c268e41cd6c983e2e1d2673843b3d2c641f412c640b7"
+    },
+    "contract": "Fresh initialization, identical sampled train windows per seed, equal target-token exposure and LR tuning count; matched parameters, not matched FLOPs. Only train and valid read.",
+    "hypothesis": "Overlapping rotation planes permit cross-pair, order-sensitive transport. Fixed-overlapping control separates this from input-dependent geometry.",
+    "novelty_established": false,
+    "official_test_read": false
+  },
+  "confirmed_checkpoint_rows": [
+    {
+      "seed": 3361,
+      "arm": "pair_energy",
+      "sha256": "22ef0d364244680c73ab1c942691f088d0351153576cf3ea1224a9dc92c3ecd4",
+      "validation": {
+        "ce": 1.587503932504093,
+        "bpc": 2.2902840508153828,
+        "scored_bytes": 65280
+      },
+      "duplicate_drift": 0
+    },
+    {
+      "seed": 3361,
+      "arm": "geometric_overlapping",
+      "sha256": "1d186917c8c79283231fd5d7abce7990c1af67b59de8d0fb1b3a87222091f659",
+      "validation": {
+        "ce": 1.6137431037192251,
+        "bpc": 2.3281391730044905,
+        "scored_bytes": 65280
+      },
+      "duplicate_drift": 0
+    },
+    {
+      "seed": 3361,
+      "arm": "relative_phase_key",
+      "sha256": "3e95ad08f2d63214647412207f558a14f31616be55e3dde1294ed12a87425fab",
+      "validation": {
+        "ce": 1.6080763835532992,
+        "bpc": 2.3199638239230036,
+        "scored_bytes": 65280
+      },
+      "duplicate_drift": 0
+    },
+    {
+      "seed": 3361,
+      "arm": "transformer",
+      "sha256": "effca61ad6f61cae25487eba5835af0cb90935b109e1f31096ad26e2100141df",
+      "validation": {
+        "ce": 1.7411578281252993,
+        "bpc": 2.5119597640413676,
+        "scored_bytes": 65280
+      },
+      "duplicate_drift": 0
+    },
+    {
+      "seed": 3407,
+      "arm": "pair_energy",
+      "sha256": "762000e3cf237256a37f78a2e2818f61089e36d8bb550882adb759ce3266d16b",
+      "validation": {
+        "ce": 1.5980653472975188,
+        "bpc": 2.3055209515626296,
+        "scored_bytes": 65280
+      },
+      "duplicate_drift": 0
+    },
+    {
+      "seed": 3407,
+      "arm": "geometric_overlapping",
+      "sha256": "d95482ce0b36e4cae04c846947fd6857d587e75f0f5cf6867da85d0ed903cbe2",
+      "validation": {
+        "ce": 1.6117885828018188,
+        "bpc": 2.3253193953696343,
+        "scored_bytes": 65280
+      },
+      "duplicate_drift": 0
+    },
+    {
+      "seed": 3407,
+      "arm": "relative_phase_key",
+      "sha256": "2f00d1cc0bb3703efe509278dd5d94258ca439fe844efab3960813cd93249317",
+      "validation": {
+        "ce": 1.6065216162625482,
+        "bpc": 2.3177207688629005,
+        "scored_bytes": 65280
+      },
+      "duplicate_drift": 0
+    },
+    {
+      "seed": 3407,
+      "arm": "transformer",
+      "sha256": "5d36606af3cdacfd2522995c4787269c18880daf8c6fcb0a0399a2f3c43e799d",
+      "validation": {
+        "ce": 1.7239759510638668,
+        "bpc": 2.487171555211675,
+        "scored_bytes": 65280
+      },
+      "duplicate_drift": 0
+    },
+    {
+      "seed": 3457,
+      "arm": "pair_energy",
+      "sha256": "4b8ff4b640142eedddc61571445bc596cf734e4e1f55920d8db224b1e8b6737a",
+      "validation": {
+        "ce": 1.6036435678893444,
+        "bpc": 2.313568622747441,
+        "scored_bytes": 65280
+      },
+      "duplicate_drift": 0
+    },
+    {
+      "seed": 3457,
+      "arm": "geometric_overlapping",
+      "sha256": "b561bc1ec8030879715be9983b45086e6b9c5b80bc58f2544f54cbb6d2a88c1d",
+      "validation": {
+        "ce": 1.6251215518689623,
+        "bpc": 2.3445548037231285,
+        "scored_bytes": 65280
+      },
+      "duplicate_drift": 0
+    },
+    {
+      "seed": 3457,
+      "arm": "relative_phase_key",
+      "sha256": "2152c1daceeedff36a1988be3b106f7a8ae3f556ba2dc2878458e2cb132a6370",
+      "validation": {
+        "ce": 1.6165751550711838,
+        "bpc": 2.332224959445504,
+        "scored_bytes": 65280
+      },
+      "duplicate_drift": 0
+    },
+    {
+      "seed": 3457,
+      "arm": "transformer",
+      "sha256": "7f9feba50ed2e0895dd352762450a543de0b7b282dfc0ffc12f788c75c29b5de",
+      "validation": {
+        "ce": 1.7424356049182368,
+        "bpc": 2.5138032062839013,
+        "scored_bytes": 65280
+      },
+      "duplicate_drift": 0
+    }
+  ],
+  "all24_checkpoint_hash_receipts": [
+    {
+      "seed": 3361,
+      "arm": "pair_energy",
+      "lr": 0.001,
+      "SSD_path": "/Volumes/SP AI 01_16/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1/3361-pair_energy-0.001.pt",
+      "sha256": "e0060e1a221ca01d0dcd9fac822eef150004dbffd00f2ead94d9dbd603d85ff6"
+    },
+    {
+      "seed": 3361,
+      "arm": "pair_energy",
+      "lr": 0.003,
+      "SSD_path": "/Volumes/SP AI 01_16/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1/3361-pair_energy-0.003.pt",
+      "sha256": "22ef0d364244680c73ab1c942691f088d0351153576cf3ea1224a9dc92c3ecd4"
+    },
+    {
+      "seed": 3361,
+      "arm": "geometric_overlapping",
+      "lr": 0.001,
+      "SSD_path": "/Volumes/SP AI 01_16/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1/3361-geometric_overlapping-0.001.pt",
+      "sha256": "4c280dda1f0f85dc74499d0f8e0d65a7942267c367db59dd713e6085a48a8129"
+    },
+    {
+      "seed": 3361,
+      "arm": "geometric_overlapping",
+      "lr": 0.003,
+      "SSD_path": "/Volumes/SP AI 01_16/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1/3361-geometric_overlapping-0.003.pt",
+      "sha256": "1d186917c8c79283231fd5d7abce7990c1af67b59de8d0fb1b3a87222091f659"
+    },
+    {
+      "seed": 3361,
+      "arm": "relative_phase_key",
+      "lr": 0.001,
+      "SSD_path": "/Volumes/SP AI 01_16/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1/3361-relative_phase_key-0.001.pt",
+      "sha256": "3c62ac2e1cd6ba196135a52068c9012cf7ca3ad5ecc90fb85466b5f7c48a5ebf"
+    },
+    {
+      "seed": 3361,
+      "arm": "relative_phase_key",
+      "lr": 0.003,
+      "SSD_path": "/Volumes/SP AI 01_16/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1/3361-relative_phase_key-0.003.pt",
+      "sha256": "3e95ad08f2d63214647412207f558a14f31616be55e3dde1294ed12a87425fab"
+    },
+    {
+      "seed": 3361,
+      "arm": "transformer",
+      "lr": 0.001,
+      "SSD_path": "/Volumes/SP AI 01_16/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1/3361-transformer-0.001.pt",
+      "sha256": "effca61ad6f61cae25487eba5835af0cb90935b109e1f31096ad26e2100141df"
+    },
+    {
+      "seed": 3361,
+      "arm": "transformer",
+      "lr": 0.003,
+      "SSD_path": "/Volumes/SP AI 01_16/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1/3361-transformer-0.003.pt",
+      "sha256": "f6f5de9d83478bd0ecc91ec8e00c1757b3c40eef58dcc5c4201e6509e76a0ffe"
+    },
+    {
+      "seed": 3407,
+      "arm": "pair_energy",
+      "lr": 0.001,
+      "SSD_path": "/Volumes/SP AI 01_16/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1/3407-pair_energy-0.001.pt",
+      "sha256": "df264e7ad8e98d92eb6a5fc1d17ea57f0e2324008ae98b51d3557384a3d8708e"
+    },
+    {
+      "seed": 3407,
+      "arm": "pair_energy",
+      "lr": 0.003,
+      "SSD_path": "/Volumes/SP AI 01_16/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1/3407-pair_energy-0.003.pt",
+      "sha256": "762000e3cf237256a37f78a2e2818f61089e36d8bb550882adb759ce3266d16b"
+    },
+    {
+      "seed": 3407,
+      "arm": "geometric_overlapping",
+      "lr": 0.001,
+      "SSD_path": "/Volumes/SP AI 01_16/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1/3407-geometric_overlapping-0.001.pt",
+      "sha256": "7f1c0819906201999ef2f9909f4c38fe410e72c8b5b20e2f29a18593c025b7c2"
+    },
+    {
+      "seed": 3407,
+      "arm": "geometric_overlapping",
+      "lr": 0.003,
+      "SSD_path": "/Volumes/SP AI 01_16/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1/3407-geometric_overlapping-0.003.pt",
+      "sha256": "d95482ce0b36e4cae04c846947fd6857d587e75f0f5cf6867da85d0ed903cbe2"
+    },
+    {
+      "seed": 3407,
+      "arm": "relative_phase_key",
+      "lr": 0.001,
+      "SSD_path": "/Volumes/SP AI 01_16/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1/3407-relative_phase_key-0.001.pt",
+      "sha256": "d91a37bb2e3b57c5655e86d2409c39e4f78743f221f591683037561c921beb08"
+    },
+    {
+      "seed": 3407,
+      "arm": "relative_phase_key",
+      "lr": 0.003,
+      "SSD_path": "/Volumes/SP AI 01_16/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1/3407-relative_phase_key-0.003.pt",
+      "sha256": "2f00d1cc0bb3703efe509278dd5d94258ca439fe844efab3960813cd93249317"
+    },
+    {
+      "seed": 3407,
+      "arm": "transformer",
+      "lr": 0.001,
+      "SSD_path": "/Volumes/SP AI 01_16/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1/3407-transformer-0.001.pt",
+      "sha256": "5d36606af3cdacfd2522995c4787269c18880daf8c6fcb0a0399a2f3c43e799d"
+    },
+    {
+      "seed": 3407,
+      "arm": "transformer",
+      "lr": 0.003,
+      "SSD_path": "/Volumes/SP AI 01_16/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1/3407-transformer-0.003.pt",
+      "sha256": "875fcacd8532dc5ce21e652c28c087de9580767e2961de5718b381517708d30b"
+    },
+    {
+      "seed": 3457,
+      "arm": "pair_energy",
+      "lr": 0.001,
+      "SSD_path": "/Volumes/SP AI 01_16/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1/3457-pair_energy-0.001.pt",
+      "sha256": "d8be8fd14d94568eca49b95e64f269b9782ff8555aa828655ac02416531bbb9b"
+    },
+    {
+      "seed": 3457,
+      "arm": "pair_energy",
+      "lr": 0.003,
+      "SSD_path": "/Volumes/SP AI 01_16/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1/3457-pair_energy-0.003.pt",
+      "sha256": "4b8ff4b640142eedddc61571445bc596cf734e4e1f55920d8db224b1e8b6737a"
+    },
+    {
+      "seed": 3457,
+      "arm": "geometric_overlapping",
+      "lr": 0.001,
+      "SSD_path": "/Volumes/SP AI 01_16/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1/3457-geometric_overlapping-0.001.pt",
+      "sha256": "bd0eef125fc868e613946387c173034c5582260450b8daea5b342783a3725aba"
+    },
+    {
+      "seed": 3457,
+      "arm": "geometric_overlapping",
+      "lr": 0.003,
+      "SSD_path": "/Volumes/SP AI 01_16/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1/3457-geometric_overlapping-0.003.pt",
+      "sha256": "b561bc1ec8030879715be9983b45086e6b9c5b80bc58f2544f54cbb6d2a88c1d"
+    },
+    {
+      "seed": 3457,
+      "arm": "relative_phase_key",
+      "lr": 0.001,
+      "SSD_path": "/Volumes/SP AI 01_16/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1/3457-relative_phase_key-0.001.pt",
+      "sha256": "fa42df57baa3f3b319f6e659eea239099f2298e48e047c030e2938c85a13d488"
+    },
+    {
+      "seed": 3457,
+      "arm": "relative_phase_key",
+      "lr": 0.003,
+      "SSD_path": "/Volumes/SP AI 01_16/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1/3457-relative_phase_key-0.003.pt",
+      "sha256": "2152c1daceeedff36a1988be3b106f7a8ae3f556ba2dc2878458e2cb132a6370"
+    },
+    {
+      "seed": 3457,
+      "arm": "transformer",
+      "lr": 0.001,
+      "SSD_path": "/Volumes/SP AI 01_16/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1/3457-transformer-0.001.pt",
+      "sha256": "7f9feba50ed2e0895dd352762450a543de0b7b282dfc0ffc12f788c75c29b5de"
+    },
+    {
+      "seed": 3457,
+      "arm": "transformer",
+      "lr": 0.003,
+      "SSD_path": "/Volumes/SP AI 01_16/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1/3457-transformer-0.003.pt",
+      "sha256": "6ad25c7484aa1f695f21e4e614928609553c909dd912feb4ba6d730dcb5bedcc"
+    }
+  ],
+  "source_receipts": {
+    "phase_transition_language.py": "9e79bff53701581864118b18a5fc35156af41afaeb44b2fc6e25916a8c41f9b4",
+    "run_overlapping_phase.py": "d4bbb48fde16dfd17cbb3158cc1a5df2b80ef5a707ae6bacbb0205813ea0b7d2",
+    "noncommuting_phase_candidate.py": "063584bd9d4746ade54669e4cb1a9b70f8cdb38fff586ce68db37564552d14b5",
+    "run_pair_energy_phase.py": "47a1699ebd051ec8e1ae1d8cca9b02493aa036aa93ea21229a8baa01b24f710c",
+    "pair_energy_phase_candidate.py": "61b8d710a0c647c8c45cbe8e5a4e06eea440fa37975d9f387e9402b5ea2efa9a",
+    "relative_phase_key_candidate.py": "709f99337190744261bed5b2d1b1d695091e5a30505c94818a8d7b23346ab20a",
+    "confirm_nonexpansive_phase.py": "1aded673b1275c08907b4b9b990a75cf9df291f91558359627493c2a9a3f7272"
+  },
+  "runtime": {
+    "python": "3.9.6 (default, Dec  2 2025, 07:27:58) \n[Clang 17.0.0 (clang-1700.6.3.2)]",
+    "torch": "2.8.0",
+    "platform": "macOS-26.1-arm64-arm-64bit",
+    "confirmation_threads": 1,
+    "device": "CPU"
+  },
+  "chart_receipt": {
+    "sha256": "def9e7f73140ce960d4ece27c8d8ce7804622d99bee495c843a77e21526d9d00",
+    "bytes": 410615,
+    "visually_inspected": true
+  },
+  "plot_source_sha256": "da5feba2287e26ffcce4e517a19763e47bc12b3fd941ef8f806493c6a73f8e84",
+  "reproduction": {
+    "source_dir": "/Volumes/SP AI 01_16/trin/experiments/disparity_constraints",
+    "training_evidence": "/Volumes/SP AI 01_16/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1",
+    "confirmation_output": "/Volumes/SP AI 01_16/CodexWorkspaces/trin-research-evidence-20261002/pair-energy-phase-validation-20261002-v1",
+    "confirmation_command": "PYTHONDONTWRITEBYTECODE=1 /usr/bin/python3 -B confirm_nonexpansive_phase.py --source /Volumes/SP AI 01_16/trin/experiments/disparity_constraints/pair-energy-phase-20261002-v1 --output <fresh-mounted-writable-CodexWorkspaces-path> --windows 510 --experiment-module run_pair_energy_phase --candidate-arm pair_energy",
+    "repeat_warning": "This confirmation is completed. Do not rerun to tune on these targets. Reproduction requires sealed source/checkpoints and identical hashed valid.txt, all included by reference; data/checkpoints are not embedded in the email archive.",
+    "plot_only_command": "PYTHONDONTWRITEBYTECODE=1 /usr/bin/python3 -B plot_pair_energy_confirmation.py --source <sealed-source-evidence-dir> --confirmation <completed-confirmation-dir> --output <fresh-SSD-chart.png>",
+    "plot_no_new_evaluation": true
+  },
+  "official_test_eligible": false,
+  "official_test_opened": false,
+  "cloud_resources_created": 0,
+  "goal_complete": false
+}
