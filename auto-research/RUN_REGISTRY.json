@@ -79,6 +79,15 @@
       "status": "COMPLETED_EVALUATION_RECOVERY_NO_RETRAINING",
       "terminal": "auto-research/results/synthetic-rotation-pr-20261015-eval-v2/execution/TERMINAL.json",
       "training_updates": 0
+    },
+    {
+      "approval": "Explicit delegated user request in this separate chat on 2026-10-16: bounded training, branch push and unmerged PR against rohanarun/Super-1 main; parent makes no Super-1 edits.",
+      "protocol": "auto-research/results/synthetic-rotation-radial-20261016-v1/PROTOCOL.json",
+      "protocol_sha256": "407b233af92db599efaf79db0a7148703fcc120f4840fe123ae9c93c2ed8982c",
+      "report": "auto-research/reports/synthetic-rotation-radial-20261016-v1.md",
+      "run_id": "synthetic-rotation-radial-20261016-v1",
+      "source_manifest": "auto-research/results/synthetic-rotation-radial-20261016-v1/SOURCE_MANIFEST.json",
+      "status": "PREREGISTERED_AUTHORIZED_SYNTHETIC"
     }
   ],
   "schema_version": 1,
