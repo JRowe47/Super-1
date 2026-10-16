@@ -212,6 +212,15 @@
         "native_b16_t4_lr008": 4.534899592399597,
         "mingru_linear_b16_t4_lr008": 4.382792189717293
       }
+    },
+    {
+      "run_id": "gru-context-capacity-20261016-v2",
+      "status": "REGISTERED_EXPLORATORY",
+      "approval": "User: Go ahead and continue; continuing explicit rapid CPU exploration and push-to-own-fork authorization. No GPU or paid provisioning.",
+      "protocol": "auto-research/results/gru-context-capacity-20261016-v2/PROTOCOL.json",
+      "protocol_sha256": "6ff0e454f8e1e8de485ca1a4b6a214e28e14b3a8312d1418ef59e2fd36c0c8ff",
+      "report": "auto-research/reports/gru-context-capacity-20261016-v2.md",
+      "recovery_of": "gru-context-capacity-20261016-v1"
     }
   ],
   "schema_version": 1,

@@ -1,0 +1,76 @@
+{
+  "checks": {
+    "linear_w160_c1024_s32": {
+      "parameters": 996320,
+      "finite_forward_backward_update": true
+    },
+    "linear_w160_c2048_s64": {
+      "parameters": 996320,
+      "finite_forward_backward_update": true,
+      "split_logits_max_error": 1.9073486328125e-06,
+      "split_state_max_error": 2.9802322387695312e-08
+    },
+    "linear_w160_c2048_s32": {
+      "parameters": 996320,
+      "finite_forward_backward_update": true,
+      "split_logits_max_error": 2.1457672119140625e-06,
+      "split_state_max_error": 4.470348358154297e-08
+    },
+    "nano_w108_c512_s32": {
+      "parameters": 1008072,
+      "finite_forward_backward_update": true,
+      "token_and_position_tables_have_zero_decay": true
+    },
+    "linear_w224_c512_s32": {
+      "parameters": 1767584,
+      "finite_forward_backward_update": true
+    },
+    "linear_w160_c512_s32": {
+      "parameters": 996320,
+      "finite_forward_backward_update": true
+    },
+    "native_w147_c2048_s32": {
+      "parameters": 995925,
+      "finite_forward_backward_update": true,
+      "split_logits_max_error": 2.384185791015625e-06,
+      "split_state_max_error": 1.1920928955078125e-07
+    },
+    "nano_w108_c2048_s32": {
+      "parameters": 1008072,
+      "finite_forward_backward_update": true,
+      "token_and_position_tables_have_zero_decay": true
+    },
+    "nano_w108_c1024_s32": {
+      "parameters": 1008072,
+      "finite_forward_backward_update": true,
+      "token_and_position_tables_have_zero_decay": true
+    },
+    "linear_w224_c2048_s32": {
+      "parameters": 1767584,
+      "finite_forward_backward_update": true,
+      "split_logits_max_error": 2.1457672119140625e-06,
+      "split_state_max_error": 8.940696716308594e-08
+    }
+  },
+  "identical_training_targets": true,
+  "identical_final_targets": true,
+  "canary_weights_discarded": true,
+  "runtime": {
+    "torch": "2.14.1+cpu",
+    "numpy": "2.3.5",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+    "threads": 4,
+    "interop": 1,
+    "affinity": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "device": "cpu",
+    "dtype": "float32",
+    "cpu_model": "AMD EPYC 9V74 80-Core Processor",
+    "cpu_quota": "800000 100000"
+  }
+}
