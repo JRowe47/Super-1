@@ -137,6 +137,23 @@
           "decision": "DOES_NOT_MEET_EXPLORATORY_RULE"
         }
       }
+    },
+    {
+      "run_id": "gru-equal-cpu-20261016-v1",
+      "status": "COMPLETED_EXPLORATORY",
+      "kind": "Independent equal-CPU diagnostic",
+      "protocol": "auto-research/results/gru-equal-cpu-20261016-v1/PROTOCOL.json",
+      "protocol_sha256": "8b83e5dc2ac61fe27ad64a57ffe9e655e0148dc04dae56710f845f72d822946d",
+      "source_manifest": "auto-research/results/gru-equal-cpu-20261016-v1/SOURCE_MANIFEST.json",
+      "metrics": "auto-research/results/gru-equal-cpu-20261016-v1/SUMMARY.json",
+      "report": "auto-research/reports/gru-equal-cpu-20261016-v1.md",
+      "terminal": "auto-research/results/gru-equal-cpu-20261016-v1/TERMINAL.json",
+      "fresh_protocol": "auto-research/results/gru-equal-cpu-20261016-v1/FRESH_PROTOCOL.json",
+      "fresh_protocol_sha256": "b1de64e4de63e43d5458866414f66d30c85d15ac7a5b5cee012390324782574d",
+      "native_ce": 4.8641151040792465,
+      "continued_linear_ce": 4.8564019203186035,
+      "fresh_linear_ce": 4.680991232395172,
+      "new_training_cpu_seconds": 392.8907770269988
     }
   ],
   "schema_version": 1,
