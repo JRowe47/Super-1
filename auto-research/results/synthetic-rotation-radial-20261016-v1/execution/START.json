@@ -1,0 +1,22 @@
+{
+  "argv": [
+    "/Volumes/SP AI 01_16/CodexWorkspaces/Super-1/auto-research/results/synthetic-rotation-radial-20261016-v1/run_experiment.py",
+    "--output",
+    "/Volumes/SP AI 01_16/CodexWorkspaces/Super-1/auto-research/results/synthetic-rotation-radial-20261016-v1/execution"
+  ],
+  "pid": 9300,
+  "preregistration_commit": "754aae8760321138fcf6b743d7117ffd16c7d851",
+  "protocol_sha256": "407b233af92db599efaf79db0a7148703fcc120f4840fe123ae9c93c2ed8982c",
+  "sources": {
+    "artifacts/nanogpt-10m-20260815/package/source/official_nanogpt/third_party/nanogpt/model.py": "7c01703240dbec5d554527dc666e35b3df8391d0b117fddc07afcf325a21d11c",
+    "auto-research/results/cloud-recovery-20261015/exact-historical-source/representation_experiments/common.py": "381c5950aa454fc2275c45755bafd4c3e0641802013c0bf7ce9276abf5415fe1",
+    "auto-research/results/cloud-recovery-20261015/exact-historical-source/representation_experiments/predictive_models.py": "b73a7c07801f5672adb52c0cb16a3c772d62e50eebc0366491d497f76d13f73f",
+    "auto-research/results/synthetic-rotation-radial-20261016-v1/DATA.json": "ee1c5e195352e40491280753441a8ee270b3ba193e412be2702f340a44a3c84f",
+    "auto-research/results/synthetic-rotation-radial-20261016-v1/PROTOCOL.json": "407b233af92db599efaf79db0a7148703fcc120f4840fe123ae9c93c2ed8982c",
+    "auto-research/results/synthetic-rotation-radial-20261016-v1/generate_data.py": "9dcb9c062fae3781f81e2363618e9d294caa1174084f7f91e8c467208769d5af",
+    "auto-research/results/synthetic-rotation-radial-20261016-v1/geometry.py": "6dd095a8b647b87fdd22b3281192e43221320823923b1a7b65523b63da056fbf",
+    "auto-research/results/synthetic-rotation-radial-20261016-v1/run_experiment.py": "488dc214203f2377084377ff856f9dd33622b17ae8c13e0e971301ccbd5d4009",
+    "auto-research/results/synthetic-rotation-radial-20261016-v1/verify_results.py": "783d85c1c11bde94f2eafa718370937dc3f5019fc0166346ff33d15ac06b352a"
+  },
+  "started_utc": "2026-10-16T14:51:48Z"
+}

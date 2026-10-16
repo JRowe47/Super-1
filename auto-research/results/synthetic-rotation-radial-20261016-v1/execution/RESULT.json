@@ -1,0 +1,44 @@
+{
+  "decision": "NO_PROMOTION_INCONCLUSIVE_OR_NEGATIVE",
+  "mean_rotation_minus_radial": 0.015268792708714804,
+  "paired": [
+    {
+      "ce": {
+        "native": 3.906930446624756,
+        "pinned_nanogpt": 2.0976099967956543,
+        "radial": 3.9092940986156464,
+        "rotation": 3.912286192178726
+      },
+      "rotation_minus_native": 0.005355745553970337,
+      "rotation_minus_radial": 0.002992093563079834,
+      "seed": 73
+    },
+    {
+      "ce": {
+        "native": 4.037421405315399,
+        "pinned_nanogpt": 2.1096948981285095,
+        "radial": 4.0405479073524475,
+        "rotation": 4.042921543121338
+      },
+      "rotation_minus_native": 0.005500137805938721,
+      "rotation_minus_radial": 0.002373635768890381,
+      "seed": 191
+    },
+    {
+      "ce": {
+        "native": 3.8791414499282837,
+        "pinned_nanogpt": 2.0980596244335175,
+        "radial": 3.871451884508133,
+        "rotation": 3.911892533302307
+      },
+      "rotation_minus_native": 0.03275108337402344,
+      "rotation_minus_radial": 0.040440648794174194,
+      "seed": 307
+    }
+  ],
+  "paired_t_95_interval": [
+    -0.03888953295533644,
+    0.06942711837276605
+  ],
+  "primary_gate_passed": false
+}

@@ -1,0 +1,46 @@
+{
+  "arm": "pinned_nanogpt",
+  "checkpoint": "191-pinned_nanogpt.pt",
+  "checkpoint_sha256": "99a405986b07437af3cd89e201a14037f75c212dab4932368b5b791152d406fc",
+  "confirmation": {
+    "all_targets": 1024,
+    "all_token_ce": 2.103268027305603,
+    "ce_nats_per_target": 2.1096948981285095,
+    "logits_sha256": "d9a40cc11e7cd425f011fa1f9041388efc33fe31125f02d0d90ca61a73bd7ca0",
+    "targets": 128
+  },
+  "duplicate_confirmation": {
+    "all_targets": 1024,
+    "all_token_ce": 2.103268027305603,
+    "ce_nats_per_target": 2.1096948981285095,
+    "logits_sha256": "d9a40cc11e7cd425f011fa1f9041388efc33fe31125f02d0d90ca61a73bd7ca0",
+    "targets": 128
+  },
+  "final_selection": {
+    "all_targets": 1024,
+    "all_token_ce": 2.102782279253006,
+    "ce_nats_per_target": 2.1028740108013153,
+    "logits_sha256": "d646f06b3e37b01cf4157116ea1c8b984e8f42cd375b5b5070f9e029318e6dde",
+    "targets": 128
+  },
+  "freeze_sha256_before_confirmation": "52fda4a0bccb234d31c4327cf900329e208523ff5be7a6125b22d066b72b6b61",
+  "initial_selection": {
+    "all_targets": 1024,
+    "all_token_ce": 2.7575541138648987,
+    "ce_nats_per_target": 2.821804642677307,
+    "logits_sha256": "6d35816ce8622fc2b0281e7340a4eac73e2c05b5e0f0f4b5a52fd35c0f873ae2",
+    "targets": 128
+  },
+  "parameters": 8136,
+  "reset_window_confirmation": {
+    "all_targets": 1024,
+    "all_token_ce": 2.1030851006507874,
+    "ce_nats_per_target": 2.108764410018921,
+    "logits_sha256": "1d552ddc3b15ad29421f6857bb0af02551e04307b601834fb9237fb5416a94a2",
+    "targets": 128
+  },
+  "seed": 191,
+  "target_exposures": 10240,
+  "train_and_selection_cpu_seconds": 0.06561400000000006,
+  "updates": 80
+}
