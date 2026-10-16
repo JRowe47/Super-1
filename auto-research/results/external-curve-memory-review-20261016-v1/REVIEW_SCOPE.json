@@ -1,0 +1,21 @@
+{
+  "authorization": "Current user supplied repository research instructions while continuing the existing explorer project; this review does not adopt historical run approvals.",
+  "corpus_or_checkpoint_downloaded": false,
+  "files": {
+    "external_evidence": "auto-research/results/external-curve-memory-review-20261016-v1/EXTERNAL_RESULTS.json",
+    "proposal": "auto-research/results/external-curve-memory-review-20261016-v1/NEXT_EXPERIMENT_DRAFT.json",
+    "report": "auto-research/reports/external-curve-memory-review-20261016-v1.md",
+    "source_receipt": "auto-research/results/external-curve-memory-review-20261016-v1/SOURCE_RECEIPT.json",
+    "terminal": "auto-research/results/external-curve-memory-review-20261016-v1/TERMINAL.json"
+  },
+  "hypothesis_tested": false,
+  "kind": "retrospective read-only source reconciliation and external-result import",
+  "official_test_accessed": false,
+  "prior_external_smoke": "selective_hybrid_v1 smoke check was completed before repository instructions were read; no optimizer training or language result in that pending pass.",
+  "registration_chronology": "Review recorded after inspection; no claim of experimental preregistration.",
+  "repository_model_evaluations": 0,
+  "repository_training_updates": 0,
+  "resources_provisioned": false,
+  "run_id": "external-curve-memory-review-20261016-v1",
+  "status": "COMPLETED_READ_ONLY_REVIEW_NO_MODEL_EXECUTION"
+}

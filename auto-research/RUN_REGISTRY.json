@@ -96,6 +96,21 @@
       "terminal": "auto-research/results/synthetic-rotation-radial-20261016-v1/execution/TERMINAL.json",
       "training_metrics": "auto-research/results/synthetic-rotation-radial-20261016-v1/execution/progress.jsonl",
       "updates_per_arm": 80
+    },
+    {
+      "approval": "Current user supplied repository research instructions while continuing the existing explorer project; this review does not adopt historical run approvals.",
+      "kind": "retrospective read-only source reconciliation and external-result import",
+      "metrics": "auto-research/results/external-curve-memory-review-20261016-v1/EXTERNAL_RESULTS.json",
+      "new_model_evaluation": false,
+      "new_training": false,
+      "protocol": "auto-research/results/external-curve-memory-review-20261016-v1/REVIEW_SCOPE.json",
+      "protocol_sha256": "c72d6b55111fa9e8506b8af2bf4cee95e2db37e0c7493104c6ed2f8e9e63adcc",
+      "registration_chronology": "Review recorded after inspection; no claim of experimental preregistration.",
+      "report": "auto-research/reports/external-curve-memory-review-20261016-v1.md",
+      "run_id": "external-curve-memory-review-20261016-v1",
+      "source_manifest": "auto-research/results/external-curve-memory-review-20261016-v1/SOURCE_RECEIPT.json",
+      "status": "COMPLETED_READ_ONLY_REVIEW_NO_MODEL_EXECUTION",
+      "terminal": "auto-research/results/external-curve-memory-review-20261016-v1/TERMINAL.json"
     }
   ],
   "schema_version": 1,
