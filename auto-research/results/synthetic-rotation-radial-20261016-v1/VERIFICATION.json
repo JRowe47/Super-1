@@ -1,0 +1,31 @@
+{
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "-B",
+        "/Volumes/SP AI 01_16/CodexWorkspaces/Super-1/auto-research/results/synthetic-rotation-radial-20261016-v1/verify_results.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"arm_seed_rows\": 12, \"decision\": \"NO_PROMOTION_INCONCLUSIVE_OR_NEGATIVE\", \"duplicate_confirmations_exact\": 12, \"regenerated_data_exact\": true, \"status\": \"PASS\", \"updates\": 960}\n",
+      "stderr": "",
+      "cpu_seconds": 0.045207,
+      "wall_seconds": 0.0522175
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "scripts/verify_evidence.py"
+      ],
+      "exit_code": 0,
+      "stdout": "PASS: 393 file hashes; 21 selected checkpoints; saved duplicate receipts and paired wins.\nHistorical 120M results remain report-backed, not raw checkpoint revalidated. No new evaluation.\n",
+      "stderr": "",
+      "cpu_seconds": 0.065797,
+      "wall_seconds": 0.164407458
+    }
+  ],
+  "all_passed": true,
+  "verification_cpu_seconds": 0.11100399999999999,
+  "note": "No model optimization or metric recomputation. Prior preliminary verifier also passed in approximately0.04 CPU seconds (time output)."
+}

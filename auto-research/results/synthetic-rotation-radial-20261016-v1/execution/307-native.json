@@ -1,0 +1,47 @@
+{
+  "arm": "native",
+  "checkpoint": "307-native.pt",
+  "checkpoint_sha256": "9d385726334b4a9051f8060f65a4380c3751c38318b140f0102669cde3c4c2bf",
+  "confirmation": {
+    "all_targets": 1024,
+    "all_token_ce": 2.443274199962616,
+    "ce_nats_per_target": 3.8791414499282837,
+    "logits_sha256": "f525a61efda9dd9e864635117c29e399be5270effe7c719a0137d8459a8618ca",
+    "targets": 128
+  },
+  "duplicate_confirmation": {
+    "all_targets": 1024,
+    "all_token_ce": 2.443274199962616,
+    "ce_nats_per_target": 3.8791414499282837,
+    "logits_sha256": "f525a61efda9dd9e864635117c29e399be5270effe7c719a0137d8459a8618ca",
+    "targets": 128
+  },
+  "final_selection": {
+    "all_targets": 1024,
+    "all_token_ce": 2.439150869846344,
+    "ce_nats_per_target": 3.883271187543869,
+    "logits_sha256": "c28a8fbeef885bd94a8435e271dced50cc1e204a67f836cdd4e2e64e41d0c3f5",
+    "targets": 128
+  },
+  "freeze_sha256_before_confirmation": "52fda4a0bccb234d31c4327cf900329e208523ff5be7a6125b22d066b72b6b61",
+  "identity_and_streaming_exact": true,
+  "initial_selection": {
+    "all_targets": 1024,
+    "all_token_ce": 3.052050083875656,
+    "ce_nats_per_target": 2.878403514623642,
+    "logits_sha256": "fdb35eee88979807f6136356850d787e1de6a778b9faadbaec7b3c6ca15d12fb",
+    "targets": 128
+  },
+  "parameters": 8816,
+  "reset_window_confirmation": {
+    "all_targets": 1024,
+    "all_token_ce": 2.443650543689728,
+    "ce_nats_per_target": 4.1593931913375854,
+    "logits_sha256": "7f1d2a492b32f3963697978488651c68b90f664549e402df60f869537cdb29e1",
+    "targets": 128
+  },
+  "seed": 307,
+  "target_exposures": 10240,
+  "train_and_selection_cpu_seconds": 0.4615720000000003,
+  "updates": 80
+}

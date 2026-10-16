@@ -1,0 +1,10 @@
+{
+  "artifact_file_count_excluding_this_receipt_and_root_manifest": 42,
+  "limit_bytes": 52428800,
+  "logical_bytes_excluding_this_receipt_and_root_manifest": 1789394,
+  "measured_scientific_cpu_seconds": 8.023956,
+  "note": "Measured supervised main execution, supervisor and two recorded verifier invocations; excludes interactive authoring/Git overhead and later final hash-only verifier. No additional training/evaluation.",
+  "preliminary_verifier_approx_cpu_seconds": 0.04,
+  "root_manifest_bytes_before_storage_entry": 60564,
+  "scope": "All fresh run files, log/PR body, report and entire updated registry; root manifest accounted separately. Git object storage is not research artifacts. No dataset/checkpoint outside this list was generated."
+}

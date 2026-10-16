@@ -1,5 +1,5 @@
 {
-  "authorization_note": "Language training remains paused. User-authorized synthetic optimization completed with a preserved diagnostic failure and evaluation-only recovery. No future execution authorized.",
+  "authorization_note": "Language training remains paused. Fresh user-authorized synthetic angular/radial optimization completed without recovery; no future execution authorized. Previous synthetic failure/recovery remains preserved.",
   "created_date": "2026-10-14",
   "evidence_recoveries": [
     {
@@ -82,14 +82,22 @@
     },
     {
       "approval": "Explicit delegated user request in this separate chat on 2026-10-16: bounded training, branch push and unmerged PR against rohanarun/Super-1 main; parent makes no Super-1 edits.",
+      "arm_seed_rows": 12,
+      "checkpoint_freeze": "auto-research/results/synthetic-rotation-radial-20261016-v1/execution/CHECKPOINT_FREEZE.json",
+      "decision": "NO_PROMOTION_INCONCLUSIVE_OR_NEGATIVE",
+      "metrics": "auto-research/results/synthetic-rotation-radial-20261016-v1/execution/RESULT.json",
+      "preregistration_commit": "754aae8760321138fcf6b743d7117ffd16c7d851",
       "protocol": "auto-research/results/synthetic-rotation-radial-20261016-v1/PROTOCOL.json",
       "protocol_sha256": "407b233af92db599efaf79db0a7148703fcc120f4840fe123ae9c93c2ed8982c",
       "report": "auto-research/reports/synthetic-rotation-radial-20261016-v1.md",
       "run_id": "synthetic-rotation-radial-20261016-v1",
       "source_manifest": "auto-research/results/synthetic-rotation-radial-20261016-v1/SOURCE_MANIFEST.json",
-      "status": "PREREGISTERED_AUTHORIZED_SYNTHETIC"
+      "status": "COMPLETED_SYNTHETIC_EXPERIMENT",
+      "terminal": "auto-research/results/synthetic-rotation-radial-20261016-v1/execution/TERMINAL.json",
+      "training_metrics": "auto-research/results/synthetic-rotation-radial-20261016-v1/execution/progress.jsonl",
+      "updates_per_arm": 80
     }
   ],
   "schema_version": 1,
-  "status": "LANGUAGE_TRAINING_PAUSED_SYNTHETIC_EXPERIMENT_RECOVERED_NO_PROMOTION"
+  "status": "LANGUAGE_TRAINING_PAUSED_SYNTHETIC_EXPERIMENTS_NO_PROMOTION"
 }
