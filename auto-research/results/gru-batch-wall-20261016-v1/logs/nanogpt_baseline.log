@@ -1,0 +1,7 @@
+number of parameters: 0.94M
+nanogpt_baseline {'step': 0, 'windows': 0, 'training_targets': 0, 'train_wall_seconds': 0.0, 'train_cpu_seconds': 0.0, 'validation_ce': 7.641003131866455, 'validation_top1': 0.001708984375}
+nanogpt_baseline {'step': 161, 'windows': 161, 'training_targets': 82432, 'train_wall_seconds': 15.069138210001256, 'train_cpu_seconds': 15.048142832000002, 'validation_ce': 6.61806583404541, 'validation_top1': 0.03466796875}
+nanogpt_baseline {'step': 324, 'windows': 324, 'training_targets': 165888, 'train_wall_seconds': 30.00550135200683, 'train_cpu_seconds': 29.990911039999993, 'validation_ce': 6.231257498264313, 'validation_top1': 0.042236328125}
+nanogpt_baseline {'step': 485, 'windows': 485, 'training_targets': 248320, 'train_wall_seconds': 45.04889046900098, 'train_cpu_seconds': 45.023791926, 'validation_ce': 6.080667078495026, 'validation_top1': 0.044677734375}
+nanogpt_baseline {'step': 646, 'windows': 646, 'training_targets': 330752, 'train_wall_seconds': 59.89476822801225, 'train_cpu_seconds': 59.86251600999999, 'validation_ce': 6.021986186504364, 'validation_top1': 0.04296875}
+COMPLETE nanogpt_baseline 646 59.89476822801225 5.958116844296455

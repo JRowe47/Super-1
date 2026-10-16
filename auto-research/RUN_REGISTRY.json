@@ -154,6 +154,25 @@
       "continued_linear_ce": 4.8564019203186035,
       "fresh_linear_ce": 4.680991232395172,
       "new_training_cpu_seconds": 392.8907770269988
+    },
+    {
+      "run_id": "gru-batch-wall-20261016-v1",
+      "status": "COMPLETE_EXPLORATORY",
+      "protocol": "auto-research/results/gru-batch-wall-20261016-v1/PROTOCOL.json",
+      "protocol_sha256": "317861655e4c4840ba1826f45c8184afd3f9588c3135021d780a16f2d0e19efc",
+      "metrics": "auto-research/results/gru-batch-wall-20261016-v1/SUMMARY.json",
+      "report": "auto-research/reports/gru-batch-wall-20261016-v1.md",
+      "publication_target": "JRowe47/Super-1 main only",
+      "selection_sha256": "500321736e84e1d51b7810814f68a13475549e861c966be0a109e397bfc12a6a",
+      "completed_runs": 6,
+      "summary": {
+        "mingru_linear_throughput": 5.392680451273918,
+        "native_throughput": 5.72637651860714,
+        "nanogpt_baseline": 5.958116844296455,
+        "nanogpt_throughput": 5.694121807813644,
+        "mingru_linear_baseline": 5.264742121100426,
+        "native_baseline": 5.5790126621723175
+      }
     }
   ],
   "schema_version": 1,
