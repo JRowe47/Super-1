@@ -1,0 +1,26 @@
+{
+  "native_b4_t2_lr004": {
+    "exit_code": 0,
+    "end_to_end_worker_wall_seconds": 186.880921037
+  },
+  "nanogpt_b4_t4_lr004": {
+    "exit_code": 0,
+    "end_to_end_worker_wall_seconds": 184.82627076800054
+  },
+  "mingru_linear_b4_t2_lr004": {
+    "exit_code": 0,
+    "end_to_end_worker_wall_seconds": 185.48178424199978
+  },
+  "nanogpt_b4_t4_lr002": {
+    "exit_code": 0,
+    "end_to_end_worker_wall_seconds": 184.82740143000046
+  },
+  "native_b16_t4_lr008": {
+    "exit_code": 0,
+    "end_to_end_worker_wall_seconds": 185.71402065800066
+  },
+  "mingru_linear_b16_t4_lr008": {
+    "exit_code": 0,
+    "end_to_end_worker_wall_seconds": 184.80973059200005
+  }
+}

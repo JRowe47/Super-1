@@ -193,6 +193,25 @@
         "b1_t1_lr002": 5.251619651913643,
         "b4_t2_lr004": 4.884254410862923
       }
+    },
+    {
+      "run_id": "gru-longer-wall-20261016-v1",
+      "status": "COMPLETE_EXPLORATORY",
+      "protocol": "auto-research/results/gru-longer-wall-20261016-v1/PROTOCOL.json",
+      "protocol_sha256": "1e8598d1e5aa29a1b87cb2280f8c75b09a2c9d6becbb09a6c8a8309231bda191",
+      "metrics": "auto-research/results/gru-longer-wall-20261016-v1/SUMMARY.json",
+      "report": "auto-research/reports/gru-longer-wall-20261016-v1.md",
+      "publication_target": "JRowe47/Super-1 main only",
+      "completed_runs": 6,
+      "failed_runs": 0,
+      "summary": {
+        "native_b4_t2_lr004": 4.541923701763153,
+        "nanogpt_b4_t4_lr004": 5.199139103293419,
+        "mingru_linear_b4_t2_lr004": 4.454563930630684,
+        "nanogpt_b4_t4_lr002": 4.8480289578437805,
+        "native_b16_t4_lr008": 4.534899592399597,
+        "mingru_linear_b16_t4_lr008": 4.382792189717293
+      }
     }
   ],
   "schema_version": 1,

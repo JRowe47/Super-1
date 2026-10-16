@@ -1,0 +1,143 @@
+{
+  "run_id": "mingru_linear_b4_t2_lr004",
+  "arm": "mingru_linear",
+  "batch": 4,
+  "threads": 2,
+  "peak_lr": 0.004,
+  "reference_step_wall_seconds": 0.09904784199898131,
+  "parameters": 996320,
+  "seed": 101604,
+  "updates": 1703,
+  "training_targets": 3487744,
+  "train_wall_seconds": 179.82254994503455,
+  "train_cpu_seconds": 359.20080000599967,
+  "final": {
+    "ce": 4.454563930630684,
+    "perplexity": 86.01863257459237,
+    "top1": 0.18475341796875,
+    "targets": 16384,
+    "window_ce": [
+      4.540700912475586,
+      4.696609020233154,
+      4.530018329620361,
+      4.388078689575195,
+      4.354922771453857,
+      4.350149631500244,
+      4.0780744552612305,
+      4.50160026550293,
+      4.332916259765625,
+      4.54764986038208,
+      4.38114595413208,
+      4.086270332336426,
+      4.331720352172852,
+      4.484329700469971,
+      4.588968276977539,
+      4.482687950134277,
+      4.112603664398193,
+      4.5107293128967285,
+      4.4802350997924805,
+      4.854023456573486,
+      4.550472736358643,
+      4.236783027648926,
+      5.0558929443359375,
+      4.414456367492676,
+      4.584591865539551,
+      4.198121547698975,
+      4.498551845550537,
+      4.593225479125977,
+      4.321407318115234,
+      4.58416223526001,
+      4.528147220611572,
+      4.346798896789551
+    ]
+  },
+  "monitor": [
+    {
+      "step": 0,
+      "windows": 0,
+      "training_targets": 0,
+      "train_wall_seconds": 0.0,
+      "train_cpu_seconds": 0.0,
+      "validation_ce": 8.058885991573334,
+      "validation_top1": 0.0
+    },
+    {
+      "step": 278,
+      "windows": 1112,
+      "training_targets": 569344,
+      "train_wall_seconds": 30.060764143023334,
+      "train_cpu_seconds": 59.94939380499999,
+      "validation_ce": 5.261980652809143,
+      "validation_top1": 0.10986328125
+    },
+    {
+      "step": 567,
+      "windows": 2268,
+      "training_targets": 1161216,
+      "train_wall_seconds": 60.08039392202045,
+      "train_cpu_seconds": 119.92370483500004,
+      "validation_ce": 4.922285735607147,
+      "validation_top1": 0.128173828125
+    },
+    {
+      "step": 849,
+      "windows": 3396,
+      "training_targets": 1738752,
+      "train_wall_seconds": 90.04951986801643,
+      "train_cpu_seconds": 179.7615773140001,
+      "validation_ce": 4.762557744979858,
+      "validation_top1": 0.135986328125
+    },
+    {
+      "step": 1131,
+      "windows": 4524,
+      "training_targets": 2316288,
+      "train_wall_seconds": 120.04530701200383,
+      "train_cpu_seconds": 239.78387674500007,
+      "validation_ce": 4.686002194881439,
+      "validation_top1": 0.152099609375
+    },
+    {
+      "step": 1419,
+      "windows": 5676,
+      "training_targets": 2906112,
+      "train_wall_seconds": 150.10917975102166,
+      "train_cpu_seconds": 299.82339867999997,
+      "validation_ce": 4.604016900062561,
+      "validation_top1": 0.166748046875
+    },
+    {
+      "step": 1703,
+      "windows": 6812,
+      "training_targets": 3487744,
+      "train_wall_seconds": 179.82254994503455,
+      "train_cpu_seconds": 359.20080000599967,
+      "validation_ce": 4.561842918395996,
+      "validation_top1": 0.1689453125
+    }
+  ],
+  "budget_unused_seconds": 0.17745005496544763,
+  "run_wall_seconds": 182.999127183999,
+  "run_cpu_seconds": 365.732703381,
+  "setup_wall_seconds": 1.7424528030005604,
+  "setup_cpu_seconds": 1.7450663549999998,
+  "checkpoint_sha256": "7cac7e02fd447ce37810f30ddbe6c80bd4a8fa3c4ecd2c07bcf5d19a78869ea8",
+  "protocol_sha256": "1e8598d1e5aa29a1b87cb2280f8c75b09a2c9d6becbb09a6c8a8309231bda191",
+  "runtime": {
+    "torch": "2.14.1+cpu",
+    "numpy": "2.5.4",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+    "threads": 2,
+    "interop": 1,
+    "affinity": [
+      0,
+      1
+    ],
+    "device": "cpu",
+    "dtype": "float32",
+    "cpu_model": "AMD EPYC 9V74 80-Core Processor",
+    "cpu_quota": "800000 100000"
+  },
+  "peak_rss_kib": 571628
+}

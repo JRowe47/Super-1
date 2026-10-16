@@ -1,0 +1,22 @@
+{
+  "runtime": {
+    "torch": "2.14.1+cpu",
+    "numpy": "2.5.4",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+    "threads": 4,
+    "interop": 1,
+    "affinity": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "device": "cpu",
+    "dtype": "float32",
+    "cpu_model": "AMD EPYC 9V74 80-Core Processor",
+    "cpu_quota": "800000 100000"
+  },
+  "protocol_sha256": "1e8598d1e5aa29a1b87cb2280f8c75b09a2c9d6becbb09a6c8a8309231bda191",
+  "started_utc": "2026-10-16T22:40:04Z"
+}
