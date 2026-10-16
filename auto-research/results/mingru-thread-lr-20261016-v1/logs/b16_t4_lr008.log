@@ -1,0 +1,6 @@
+b16_t4_lr008 {'step': 0, 'windows': 0, 'training_targets': 0, 'train_wall_seconds': 0.0, 'train_cpu_seconds': 0.0, 'validation_ce': 8.090981483459473, 'validation_top1': 0.0}
+b16_t4_lr008 {'step': 51, 'windows': 816, 'training_targets': 417792, 'train_wall_seconds': 15.07216264199451, 'train_cpu_seconds': 56.08258294200001, 'validation_ce': 5.818742752075195, 'validation_top1': 0.0595703125}
+b16_t4_lr008 {'step': 101, 'windows': 1616, 'training_targets': 827392, 'train_wall_seconds': 30.13276271799441, 'train_cpu_seconds': 111.98719316199997, 'validation_ce': 5.385508120059967, 'validation_top1': 0.0966796875}
+b16_t4_lr008 {'step': 150, 'windows': 2400, 'training_targets': 1228800, 'train_wall_seconds': 45.40918325599523, 'train_cpu_seconds': 168.6668500699999, 'validation_ce': 5.195109009742737, 'validation_top1': 0.11376953125}
+b16_t4_lr008 {'step': 193, 'windows': 3088, 'training_targets': 1581056, 'train_wall_seconds': 59.41132468799515, 'train_cpu_seconds': 220.35755175699987, 'validation_ce': 5.123944103717804, 'validation_top1': 0.112060546875}
+COMPLETE b16_t4_lr008 193 59.41132468799515 5.0710707157850266

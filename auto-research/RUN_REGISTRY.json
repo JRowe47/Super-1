@@ -173,6 +173,26 @@
         "mingru_linear_baseline": 5.264742121100426,
         "native_baseline": 5.5790126621723175
       }
+    },
+    {
+      "run_id": "mingru-thread-lr-20261016-v1",
+      "status": "COMPLETE_EXPLORATORY",
+      "protocol": "auto-research/results/mingru-thread-lr-20261016-v1/PROTOCOL.json",
+      "protocol_sha256": "84a8241d2105803068dfd87e686e9181a545c0ceffd042e6f2e36df88db157e2",
+      "metrics": "auto-research/results/mingru-thread-lr-20261016-v1/SUMMARY.json",
+      "report": "auto-research/reports/mingru-thread-lr-20261016-v1.md",
+      "publication_target": "JRowe47/Super-1 main only",
+      "completed_runs": 7,
+      "failed_runs": 0,
+      "summary": {
+        "b16_t4_lr002": 5.3867084085941315,
+        "b4_t2_lr002": 5.07429426908493,
+        "b1_t2_lr002": 5.189114928245544,
+        "b16_t4_lr008": 5.0710707157850266,
+        "b1_t4_lr002": 5.172636225819588,
+        "b1_t1_lr002": 5.251619651913643,
+        "b4_t2_lr004": 4.884254410862923
+      }
     }
   ],
   "schema_version": 1,
