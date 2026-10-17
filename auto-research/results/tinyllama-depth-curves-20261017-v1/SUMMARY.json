@@ -1,0 +1,162 @@
+{
+  "primary_gate_passed": false,
+  "diagnostic_gate_passed": true,
+  "restoring_first_vs_other_ce_advantage": 2.3665717393159866,
+  "other_restored_block": 7,
+  "weighted_structure": [
+    {
+      "kind": "pca",
+      "rank": 4,
+      "relative_squared_weight_error": 0.7932091721226513
+    },
+    {
+      "kind": "pca",
+      "rank": 8,
+      "relative_squared_weight_error": 0.5996880072504436
+    },
+    {
+      "kind": "pca",
+      "rank": 12,
+      "relative_squared_weight_error": 0.4166628700278048
+    },
+    {
+      "kind": "pca",
+      "rank": 16,
+      "relative_squared_weight_error": 0.24078550214211084
+    },
+    {
+      "kind": "pca",
+      "rank": 20,
+      "relative_squared_weight_error": 0.07595980903144771
+    },
+    {
+      "kind": "pca",
+      "rank": 22,
+      "relative_squared_weight_error": 0.0
+    },
+    {
+      "kind": "spline",
+      "rank": 4,
+      "relative_squared_weight_error": 0.8152688004433913
+    },
+    {
+      "kind": "spline",
+      "rank": 8,
+      "relative_squared_weight_error": 0.6327033335322743
+    },
+    {
+      "kind": "spline",
+      "rank": 12,
+      "relative_squared_weight_error": 0.45089366948452925
+    },
+    {
+      "kind": "spline",
+      "rank": 16,
+      "relative_squared_weight_error": 0.2696728934722661
+    },
+    {
+      "kind": "spline",
+      "rank": 20,
+      "relative_squared_weight_error": 0.08935367117080929
+    },
+    {
+      "kind": "spline",
+      "rank": 22,
+      "relative_squared_weight_error": 0.0
+    },
+    {
+      "kind": "cosine",
+      "rank": 4,
+      "relative_squared_weight_error": 0.8159451394932707
+    },
+    {
+      "kind": "cosine",
+      "rank": 8,
+      "relative_squared_weight_error": 0.6344228740999585
+    },
+    {
+      "kind": "cosine",
+      "rank": 12,
+      "relative_squared_weight_error": 0.45297595064131896
+    },
+    {
+      "kind": "cosine",
+      "rank": 16,
+      "relative_squared_weight_error": 0.2715718033688607
+    },
+    {
+      "kind": "cosine",
+      "rank": 20,
+      "relative_squared_weight_error": 0.09011086910149424
+    },
+    {
+      "kind": "cosine",
+      "rank": 22,
+      "relative_squared_weight_error": 6.5146073945565e-17
+    }
+  ],
+  "paired_window_changes": {
+    "teacher": {
+      "mean_ce_change": 0.0,
+      "window_se": 0.0
+    },
+    "spline22_roundtrip": {
+      "mean_ce_change": 0.0,
+      "window_se": 0.0
+    },
+    "spline20": {
+      "mean_ce_change": 0.5287763178348541,
+      "window_se": 0.029744787021185295
+    },
+    "spline8": {
+      "mean_ce_change": 8.079312279820442,
+      "window_se": 0.15395560386371898
+    },
+    "pca16": {
+      "mean_ce_change": 6.949536696076393,
+      "window_se": 0.17483591651748628
+    },
+    "pca20": {
+      "mean_ce_change": 4.193819507956505,
+      "window_se": 0.44976118162458184
+    },
+    "cosine8": {
+      "mean_ce_change": 8.920177415013313,
+      "window_se": 0.13871496548948867
+    },
+    "pca8": {
+      "mean_ce_change": 7.6675159484148026,
+      "window_se": 0.20119535471941716
+    },
+    "spline16": {
+      "mean_ce_change": 4.786607280373573,
+      "window_se": 0.14968521532889115
+    },
+    "pca20_replay": {
+      "mean_ce_change": 4.193819507956505,
+      "window_se": 0.44976118162458184
+    },
+    "pca20_restore_block7": {
+      "mean_ce_change": 3.2811425775289536,
+      "window_se": 0.4600504383179796
+    },
+    "pca20_restore_block0": {
+      "mean_ce_change": 0.9145708382129669,
+      "window_se": 0.06356234777352224
+    }
+  },
+  "original_parameters": 1100048384,
+  "original_ffn_parameters": 761266176,
+  "validation_targets_per_arm": 2048,
+  "training_updates": 0,
+  "primary_arms": 9,
+  "diagnostic_arms": 4,
+  "primary_protocol_sha256": "24e381cad78233a466584097b087866805a6737953c6527e2657bd3135aac82f",
+  "diagnostic_protocol_sha256": "111ed675ed3493003b116028afcdbc2843b343b36d9446828c09d0740250153b",
+  "reconstruction_ce_abs": 0.0,
+  "reconstruction_max_logit_abs": 0.0,
+  "source_manifest_verified": true,
+  "all_outcomes_complete": true,
+  "official_test_accessed": false,
+  "memory_note": "psutil reported a constant implausible 2,125,824 RSS bytes even for the loaded 1.1B model. Do not treat that field as a measured model footprint. ru_maxrss is retained as OS-reported process high-water mark, not compact deployment memory."
+}

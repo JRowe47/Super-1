@@ -1,0 +1,227 @@
+{
+  "schema_version": 1,
+  "status": "FROZEN_BEFORE_MEASUREMENT",
+  "experiment_id": "tinyllama-depth-curves-20261017-v1",
+  "run_id": "tinyllama-depth-curves-20261017-v1",
+  "parent_run_ids": [],
+  "hypothesis": "Corresponding pretrained FFN matrices have a small shared depth subspace, and a smooth depth curve retains it without recovery training.",
+  "primary_comparator": "Unchanged pretrained TinyLlama; centered PCA plus constant is the non-smooth matched-matrix-count control.",
+  "primary_metric": "Validation mean next-token cross-entropy in nats per TinyLlama token at 128-token reset context; secondary full-vocabulary forward KL and teacher top-1 agreement.",
+  "minimum_useful_effect": "At K=8, <=0.10 nats/token CE increase vs teacher and <=0.05 nats/token spline disadvantage vs PCA. These are exploratory continuation thresholds, not statistical confirmation.",
+  "success_rule": "Both K=8 thresholds must hold. Structure-only success cannot satisfy the functional gate.",
+  "futility_rule": "Stop on failed identity/finite checks, more than 30 minutes execution, or memory pressure. Retain every declared outcome; no selection by validation to omit failed arms.",
+  "authorization": {
+    "approved": true,
+    "user_approval_reference": "2026-10-16 America/Denver: \"go ahead with the experiments, lets explore\" following the proposed TinyLlama FFN-only depth-curve comparison; prior instruction directs PRs to JRowe47/Super-1.",
+    "approved_resources": "Bounded local CPU exploratory measurements using existing workspace; no paid compute, GPU, large training, or official test.",
+    "max_cost": "No paid services",
+    "max_walltime": "30 minutes for measurement, excluding download/setup/publication",
+    "local_cpu_budget": "4 threads, at most 120 aggregate CPU minutes"
+  },
+  "design": {
+    "original_source_hashes": {
+      "modeling_llama.py": "31bf660a663259134324bc65da4e155951dc89c5ca46471d2325a9938e859e26"
+    },
+    "mechanism_equations": "For each FFN tensor family X[L,P], Gram G=X X^T; fitted weights Xhat=Q Q^T X. PCA: constant + top K-1 eigenvectors of centered G. Spline: uniform clamped cubic B-spline column space, K controls. Cosine: first K DCT-II modes. Evaluate full pretrained model after replacing only FFN weights.",
+    "arms": [
+      {
+        "id": "teacher",
+        "kind": "original",
+        "rank": 22
+      },
+      {
+        "id": "spline22_roundtrip",
+        "kind": "spline",
+        "rank": 22
+      },
+      {
+        "id": "spline20",
+        "kind": "spline",
+        "rank": 20
+      },
+      {
+        "id": "spline8",
+        "kind": "spline",
+        "rank": 8
+      },
+      {
+        "id": "pca16",
+        "kind": "pca",
+        "rank": 16
+      },
+      {
+        "id": "pca20",
+        "kind": "pca",
+        "rank": 20
+      },
+      {
+        "id": "cosine8",
+        "kind": "cosine",
+        "rank": 8
+      },
+      {
+        "id": "pca8",
+        "kind": "pca",
+        "rank": 8
+      },
+      {
+        "id": "spline16",
+        "kind": "spline",
+        "rank": 16
+      }
+    ],
+    "structure_ranks": [
+      4,
+      8,
+      12,
+      16,
+      20,
+      22
+    ],
+    "families": [
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ],
+    "control_rationale": "Same K full dense matrices per tensor role; PCA coefficients unrestricted across layers, spline/cosine depth spaces fixed. Rank22 roundtrip validates implementation. 64 shuffled-depth controls assess natural-order structure without model retraining.",
+    "seeds": [
+      101701
+    ],
+    "seed_selection_method": "Fixed seed for arm order and depth permutations; one fixed pretrained checkpoint, no training seeds.",
+    "learning_rate_trials_per_arm": 0,
+    "parameter_counts": "Computed exactly from checkpoint shapes. K*3*5632*2048 basis scalars, plus PCA coefficient metadata and unchanged non-FFN parameters.",
+    "matching_track": "Full matrix basis storage count, not FLOP or quality matching; reconstruction is materialized for functional checks.",
+    "compute_accounting": "Per-stage and per-arm wall/process CPU time; maximum process RSS. These timings are not deployment-speed benchmarks."
+  },
+  "data": {
+    "dataset_versions": {
+      "model": "TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T",
+      "model_revision": "59f6f375b26bde864a6ca194a9a3044570490064",
+      "dataset": "Salesforce/wikitext",
+      "dataset_revision": "b08601e04326c79dfdd32d625aee71d232d685c3"
+    },
+    "tokenizer_sha256": "bcd04f0eadf90287bd26e1a183ac487d8a141b09b06aecb7725bbdd343640f2e",
+    "train_sha256": "e83889baabc497075506f91975be5fac0d45c5290b6b20582c8cd1e853d0c9f7",
+    "selection_sha256": "204929b7ff9d6184953f867dedb860e40aa69c078fc1e54b3baaa8fb28511c4c",
+    "confirmation_sha256": "Not applicable: exploratory validation only; no independent confirmation dataset",
+    "split_boundaries": {
+      "train": {
+        "full_token_count": 2848656,
+        "starts": [
+          0,
+          949509,
+          1899018,
+          2848527
+        ],
+        "windows": 4,
+        "inputs_per_window": 128,
+        "targets_per_window": 128,
+        "full_token_ids_sha256": "ebb78cc42438935c0a17d76a0c9ec977971b79b253f38ae7fc5193ee2e7c49ef",
+        "window_ids_sha256": "055a4d96534710b70f537513318c7964b9e491d9d72a65c2b3c78bc388ee3452"
+      },
+      "validation": {
+        "full_token_count": 297365,
+        "starts": [
+          0,
+          19815,
+          39631,
+          59447,
+          79262,
+          99078,
+          118894,
+          138710,
+          158525,
+          178341,
+          198157,
+          217973,
+          237788,
+          257604,
+          277420,
+          297236
+        ],
+        "windows": 16,
+        "inputs_per_window": 128,
+        "targets_per_window": 128,
+        "full_token_ids_sha256": "ed65bcb5e5f269813d4ceed4cddf54455bc397547f6fd65835ed7ab06aacffb5",
+        "window_ids_sha256": "e628995253e52dc338cfa7f7d8cb6e7ac316e15fddfce21262806550e8216fc7"
+      }
+    },
+    "research_wide_region_reuse_audit": "Official validation has been used in earlier project work; prior tokenizer and sample boundaries differ. Not an untouched confirmation set. Pretraining contamination not audited.",
+    "teacher_and_objective": "Public TinyLlama 1.1B 3T base checkpoint; no OpenAI model outputs used as training data; no gradient training in this pass.",
+    "official_test_access_permitted": false
+  },
+  "training": {
+    "updates": 0,
+    "target_exposures_per_trial": 0,
+    "tokens_per_update": "Not applicable",
+    "microbatch": "Not applicable",
+    "gradient_accumulation": "Not applicable",
+    "bptt_length": "Not applicable",
+    "accessible_history": "At most 128 current-window inputs",
+    "state_carry_and_detach": "KV cache disabled; reset each window",
+    "document_reset_policy": "Fixed windows on concatenated split lines; may cross article boundaries; no cross-window state",
+    "optimizer_schedule": "No optimizer; exact weight-space least squares",
+    "precision": "FP64 depth Gram/basis; FP32 reconstruction and model evaluation",
+    "checkpoint_selection_rule": "All declared arms, no best-checkpoint selection"
+  },
+  "execution": {
+    "hardware": {
+      "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+      "logical_cpus": 9,
+      "threads": 4,
+      "gpu_used": false
+    },
+    "runtime_versions": {
+      "torch": "2.14.1+cpu",
+      "transformers": "4.57.6",
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "safetensors": "0.8.0"
+    },
+    "resolved_writable_output": "/workspace/scratch/116fb21e498c/research/Super-1/auto-research/results/tinyllama-depth-curves-20261017-v1",
+    "source_ownership_and_concurrent_writers": "New isolated branch/run in current Linux workspace; prior macOS SSD instructions apply to the old host. Current user-authorized cloud workspace is used; no old run modified.",
+    "fidelity_tolerances": {
+      "projection_symmetry_idempotence": 1e-10,
+      "rank22_weight_relative_squared_error": 1e-12,
+      "roundtrip_max_logit_abs": 0.0002,
+      "roundtrip_ce_abs": 2e-06,
+      "duplicate_teacher_max_logit_abs": 1e-06
+    },
+    "canary_matrix": "Independent small-array projection/error algebra; full-rank fit identity; official HF teacher repeated; full model spline22 reconstruction against teacher.",
+    "cost_estimate": "4.4GB public checkpoint; 4 CPU threads; aim 10-25 minutes measurements, hard measurement deadline 30 minutes; no paid compute"
+  },
+  "evaluation": {
+    "primary_endpoint": "16 fixed validation windows x 128 targets = 2048 targets; all token positions scored",
+    "confirmation_frozen_before_scoring": false,
+    "canonical_precision": "FP32",
+    "duplicate_policy": "Teacher first window repeated; spline22 full-validation roundtrip; recompute derived aggregates from per-window values",
+    "uncertainty_method": "Descriptive per-window CE changes and standard error over 16 windows; no independence or population-level guarantee",
+    "multiple_comparison_policy": "All 9 arms published; K8 gate fixed in advance, no formal superiority significance claim",
+    "no_test_tuning": true,
+    "local_ffn_diagnostic": "Teacher-normalized FFN inputs and output captures for first training and first validation windows; relative squared FFN output error over all 22 layers. These are diagnostics, no fitting to validation activations."
+  },
+  "deployment": {
+    "weight_dtype": "FP32",
+    "kv_or_state_dtype": "Not measured; cache disabled",
+    "quantization_metadata": "None",
+    "batching": "1 x 128",
+    "prefill_decode_protocol": "Not measured: functional teacher-forced evaluation only",
+    "warmup_and_synchronization": "No deployment timing claim",
+    "memory_components": "Analytical compact basis storage counted; execution materializes all 22 layers and is not a compact inference runtime",
+    "latency_statistics": "Unmeasured"
+  },
+  "evidence": {
+    "protocol_sha256": "Stored in REGISTRATION.json to avoid self-reference",
+    "source_manifest": "SOURCES.json",
+    "checkpoint_manifest": "INPUTS.json",
+    "progress_path": "progress.jsonl",
+    "terminal_receipt_path": "TERMINAL.json",
+    "preservation_policy": "Commit source, protocols, small exact results and charts to user fork; external checkpoint/data remain recoverable from pinned revisions and SHA256. Transformed weights deterministically regenerate from input and saved small projectors.",
+    "cleanup_receipt": "TERMINAL.json; no cloud resources provisioned"
+  },
+  "decision": {
+    "outcome": "Pending measurement",
+    "reason": "Pending measurement",
+    "next_experiment": "Determined from this screen; no follow-up launch implied"
+  }
+}

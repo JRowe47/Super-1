@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "weighted_lstsq_max_abs": 2.220446049250313e-15,
+  "weighted_full_rank_identity_max_abs": 1.7763568394002505e-15,
+  "adapter_forward_max_abs": 6.661338147750939e-16,
+  "adapter_gradient_max_abs": 2.220446049250313e-16,
+  "adam_step_max_abs": 1.3877787807814457e-17,
+  "source_sha256": "de718dfb96e92c95f3c0a240bd316884fe17a7d9026721d536a71c858578b382",
+  "data": "Seeded synthetic arrays only; no model measurement"
+}

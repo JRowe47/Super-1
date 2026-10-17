@@ -1,0 +1,95 @@
+{
+  "weighted_structure": [
+    {
+      "kind": "pca",
+      "rank": 4,
+      "relative_squared_weight_error": 0.7932091721226513
+    },
+    {
+      "kind": "pca",
+      "rank": 8,
+      "relative_squared_weight_error": 0.5996880072504436
+    },
+    {
+      "kind": "pca",
+      "rank": 12,
+      "relative_squared_weight_error": 0.4166628700278048
+    },
+    {
+      "kind": "pca",
+      "rank": 16,
+      "relative_squared_weight_error": 0.24078550214211084
+    },
+    {
+      "kind": "pca",
+      "rank": 20,
+      "relative_squared_weight_error": 0.07595980903144771
+    },
+    {
+      "kind": "pca",
+      "rank": 22,
+      "relative_squared_weight_error": 0.0
+    },
+    {
+      "kind": "spline",
+      "rank": 4,
+      "relative_squared_weight_error": 0.8152688004433913
+    },
+    {
+      "kind": "spline",
+      "rank": 8,
+      "relative_squared_weight_error": 0.6327033335322743
+    },
+    {
+      "kind": "spline",
+      "rank": 12,
+      "relative_squared_weight_error": 0.45089366948452925
+    },
+    {
+      "kind": "spline",
+      "rank": 16,
+      "relative_squared_weight_error": 0.2696728934722661
+    },
+    {
+      "kind": "spline",
+      "rank": 20,
+      "relative_squared_weight_error": 0.08935367117080929
+    },
+    {
+      "kind": "spline",
+      "rank": 22,
+      "relative_squared_weight_error": 0.0
+    },
+    {
+      "kind": "cosine",
+      "rank": 4,
+      "relative_squared_weight_error": 0.8159451394932707
+    },
+    {
+      "kind": "cosine",
+      "rank": 8,
+      "relative_squared_weight_error": 0.6344228740999585
+    },
+    {
+      "kind": "cosine",
+      "rank": 12,
+      "relative_squared_weight_error": 0.45297595064131896
+    },
+    {
+      "kind": "cosine",
+      "rank": 16,
+      "relative_squared_weight_error": 0.2715718033688607
+    },
+    {
+      "kind": "cosine",
+      "rank": 20,
+      "relative_squared_weight_error": 0.09011086910149424
+    },
+    {
+      "kind": "cosine",
+      "rank": 22,
+      "relative_squared_weight_error": 6.5146073945565e-17
+    }
+  ],
+  "functional_sha256": "224f1854c81a62fcbc6a06a102518d55fbe1c814ddfc5e3b24938d22d676a1bd"
+}
