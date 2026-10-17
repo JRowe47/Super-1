@@ -1,0 +1,63 @@
+{
+  "model": "TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T",
+  "model_revision": "59f6f375b26bde864a6ca194a9a3044570490064",
+  "files": [
+    {
+      "path": "inputs/tinyllama/model/config.json",
+      "sha256": "7ef24df4204405995b8a3936355171b0d80f64fc3bc0ca5991158eaa5c75de50",
+      "bytes": 560,
+      "source_url": "https://huggingface.co/TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T/resolve/59f6f375b26bde864a6ca194a9a3044570490064/config.json"
+    },
+    {
+      "path": "inputs/tinyllama/model/generation_config.json",
+      "sha256": "eb2d264819d797a5ccbd6bb45430d9017d38a4e21c54ca8400851aa0a6f1e9c4",
+      "bytes": 129,
+      "source_url": "https://huggingface.co/TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T/resolve/59f6f375b26bde864a6ca194a9a3044570490064/generation_config.json"
+    },
+    {
+      "path": "inputs/tinyllama/model/special_tokens_map.json",
+      "sha256": "6fa06efa2785e450051989a6f8fb4416b10149ded485ddd3f127a40734f5cfd0",
+      "bytes": 414,
+      "source_url": "https://huggingface.co/TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T/resolve/59f6f375b26bde864a6ca194a9a3044570490064/special_tokens_map.json"
+    },
+    {
+      "path": "inputs/tinyllama/model/tokenizer_config.json",
+      "sha256": "f514e7c3008881b6ba7e6a0cdb44c71ce47dc335920dac143ae7bc788197e53a",
+      "bytes": 776,
+      "source_url": "https://huggingface.co/TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T/resolve/59f6f375b26bde864a6ca194a9a3044570490064/tokenizer_config.json"
+    },
+    {
+      "path": "inputs/tinyllama/model/tokenizer.json",
+      "sha256": "bcd04f0eadf90287bd26e1a183ac487d8a141b09b06aecb7725bbdd343640f2e",
+      "bytes": 1842767,
+      "source_url": "https://huggingface.co/TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T/resolve/59f6f375b26bde864a6ca194a9a3044570490064/tokenizer.json"
+    },
+    {
+      "path": "inputs/tinyllama/model/tokenizer.model",
+      "sha256": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347",
+      "bytes": 499723,
+      "source_url": "https://huggingface.co/TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T/resolve/59f6f375b26bde864a6ca194a9a3044570490064/tokenizer.model"
+    },
+    {
+      "path": "inputs/tinyllama/model/model.safetensors",
+      "sha256": "9dc1c1a8c6b29e153dea7aaf2ed6c4d242163489add0e7c14c23889745437be4",
+      "bytes": 4400216536,
+      "source_url": "https://huggingface.co/TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T/resolve/59f6f375b26bde864a6ca194a9a3044570490064/model.safetensors"
+    },
+    {
+      "path": "inputs/tinyllama/train.parquet",
+      "sha256": "e83889baabc497075506f91975be5fac0d45c5290b6b20582c8cd1e853d0c9f7",
+      "bytes": 6357543,
+      "source_url": "https://huggingface.co/datasets/Salesforce/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/wikitext-2-raw-v1/train-00000-of-00001.parquet"
+    },
+    {
+      "path": "inputs/tinyllama/validation.parquet",
+      "sha256": "204929b7ff9d6184953f867dedb860e40aa69c078fc1e54b3baaa8fb28511c4c",
+      "bytes": 657209,
+      "source_url": "https://huggingface.co/datasets/Salesforce/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/wikitext-2-raw-v1/validation-00000-of-00001.parquet"
+    }
+  ],
+  "official_test_accessed": false,
+  "dataset": "Salesforce/wikitext",
+  "dataset_revision": "b08601e04326c79dfdd32d625aee71d232d685c3"
+}

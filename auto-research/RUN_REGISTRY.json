@@ -96,6 +96,15 @@
       "terminal": "auto-research/results/synthetic-rotation-radial-20261016-v1/execution/TERMINAL.json",
       "training_metrics": "auto-research/results/synthetic-rotation-radial-20261016-v1/execution/progress.jsonl",
       "updates_per_arm": 80
+    },
+    {
+      "run_id": "tinyllama-depth-curves-20261017-v1",
+      "status": "FROZEN_BEFORE_MEASUREMENT",
+      "protocol": "auto-research/results/tinyllama-depth-curves-20261017-v1/PROTOCOL.json",
+      "protocol_sha256": "24e381cad78233a466584097b087866805a6737953c6527e2657bd3135aac82f",
+      "metrics": "auto-research/results/tinyllama-depth-curves-20261017-v1/FUNCTIONAL.json",
+      "report": "auto-research/reports/tinyllama-depth-curves-20261017-v1.md",
+      "publication_target": "JRowe47/Super-1 main only"
     }
   ],
   "schema_version": 1,
