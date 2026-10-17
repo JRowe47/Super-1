@@ -1,0 +1,25 @@
+{"event": "structure_family", "utc": "2026-10-17T01:17:20Z", "family": "gate_proj", "adjacent_cosine": 0.005500473729724868, "pca8_error": 0.586688862686163, "spline8_error": 0.6318397168242034}
+{"event": "structure_family", "utc": "2026-10-17T01:17:21Z", "family": "up_proj", "adjacent_cosine": -4.959271465483984e-05, "pca8_error": 0.6043509837026678, "spline8_error": 0.6313815270336691}
+{"event": "structure_family", "utc": "2026-10-17T01:17:22Z", "family": "down_proj", "adjacent_cosine": -0.00011636792012222438, "pca8_error": 0.6127758532537944, "spline8_error": 0.6352559253393114}
+{"event": "structure_complete", "utc": "2026-10-17T01:17:22Z", "wall_seconds": 3.038582637000218}
+{"event": "load_teacher", "utc": "2026-10-17T01:17:47Z"}
+{"event": "teacher_loaded", "utc": "2026-10-17T01:17:48Z", "parameters": 1100048384, "rss_bytes": 2125824}
+{"event": "arm_start", "utc": "2026-10-17T01:17:51Z", "arm": "teacher"}
+{"event": "arm_complete", "utc": "2026-10-17T01:18:15Z", "arm": "teacher", "ce": 2.727322205901146, "kl": 0.0, "agreement": 1.0, "local_val_error": 0.0, "wall_seconds": 24.45008877700093}
+{"event": "arm_start", "utc": "2026-10-17T01:18:15Z", "arm": "spline22_roundtrip"}
+{"event": "arm_complete", "utc": "2026-10-17T01:18:50Z", "arm": "spline22_roundtrip", "ce": 2.727322205901146, "kl": 0.0, "agreement": 1.0, "local_val_error": 0.0, "wall_seconds": 34.89414952699917}
+{"event": "arm_start", "utc": "2026-10-17T01:18:50Z", "arm": "spline20"}
+{"event": "arm_complete", "utc": "2026-10-17T01:19:17Z", "arm": "spline20", "ce": 3.256098523736, "kl": 0.4952179044485092, "agreement": 0.66259765625, "local_val_error": 0.1831812914408595, "wall_seconds": 26.69365478599866}
+{"event": "arm_start", "utc": "2026-10-17T01:19:17Z", "arm": "spline8"}
+{"event": "arm_complete", "utc": "2026-10-17T01:19:43Z", "arm": "spline8", "ce": 10.806634485721588, "kl": 8.107037156820297, "agreement": 0.0, "local_val_error": 0.8689318720605858, "wall_seconds": 26.06784325300032}
+{"event": "arm_start", "utc": "2026-10-17T01:19:43Z", "arm": "pca16"}
+{"event": "arm_complete", "utc": "2026-10-17T01:20:11Z", "arm": "pca16", "ce": 9.676858901977539, "kl": 6.877848356962204, "agreement": 0.0302734375, "local_val_error": 0.4622628683313403, "wall_seconds": 27.9148058640003}
+{"event": "arm_start", "utc": "2026-10-17T01:20:11Z", "arm": "pca20"}
+{"event": "arm_complete", "utc": "2026-10-17T01:20:39Z", "arm": "pca20", "ce": 6.921141713857651, "kl": 4.164324685931206, "agreement": 0.177734375, "local_val_error": 0.13638422119969906, "wall_seconds": 27.680475402999946}
+{"event": "arm_start", "utc": "2026-10-17T01:20:39Z", "arm": "cosine8"}
+{"event": "arm_complete", "utc": "2026-10-17T01:21:10Z", "arm": "cosine8", "ce": 11.64749962091446, "kl": 8.913061022758484, "agreement": 0.0, "local_val_error": 0.9069911984959327, "wall_seconds": 31.15700463900066}
+{"event": "arm_start", "utc": "2026-10-17T01:21:10Z", "arm": "pca8"}
+{"event": "arm_complete", "utc": "2026-10-17T01:21:40Z", "arm": "pca8", "ce": 10.394838154315948, "kl": 7.618309944868088, "agreement": 0.00341796875, "local_val_error": 0.7258426608722294, "wall_seconds": 29.930215573998794}
+{"event": "arm_start", "utc": "2026-10-17T01:21:40Z", "arm": "spline16"}
+{"event": "arm_complete", "utc": "2026-10-17T01:22:09Z", "arm": "spline16", "ce": 7.513929486274719, "kl": 4.735668241977692, "agreement": 0.10107421875, "local_val_error": 0.5041591771291493, "wall_seconds": 29.545709189998888}
+{"event": "functional_complete", "utc": "2026-10-17T01:22:09Z", "completed_arms": 9, "wall_seconds": 261.9245587410005}

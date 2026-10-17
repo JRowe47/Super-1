@@ -1,0 +1,67 @@
+{
+  "passed": true,
+  "independent_residual_checks": [
+    {
+      "kind": "pca",
+      "rank": 4,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "kind": "pca",
+      "rank": 8,
+      "absolute_error": 2.220446049250313e-16
+    },
+    {
+      "kind": "pca",
+      "rank": 20,
+      "absolute_error": 2.2898349882893854e-16
+    },
+    {
+      "kind": "pca",
+      "rank": 22,
+      "absolute_error": 1.1102230246251541e-16
+    },
+    {
+      "kind": "spline",
+      "rank": 4,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "kind": "spline",
+      "rank": 8,
+      "absolute_error": 2.220446049250313e-16
+    },
+    {
+      "kind": "spline",
+      "rank": 20,
+      "absolute_error": 1.942890293094024e-16
+    },
+    {
+      "kind": "spline",
+      "rank": 22,
+      "absolute_error": 1.2532457419606612e-31
+    },
+    {
+      "kind": "cosine",
+      "rank": 4,
+      "absolute_error": 2.220446049250313e-16
+    },
+    {
+      "kind": "cosine",
+      "rank": 8,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "kind": "cosine",
+      "rank": 20,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "kind": "cosine",
+      "rank": 22,
+      "absolute_error": 3.0252301508236154e-31
+    }
+  ],
+  "wall_seconds": 3.038455547000922,
+  "cpu_seconds": 3.036035036
+}

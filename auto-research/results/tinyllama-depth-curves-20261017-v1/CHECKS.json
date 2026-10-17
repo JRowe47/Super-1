@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "checks": [
+    "frozen protocol hashes",
+    "frozen measurement source hashes",
+    "parent bindings for diagnostic",
+    "all declared arms present in order",
+    "no primary failures",
+    "per-window aggregate and perplexity reconciliation",
+    "finite scores",
+    "full-rank reconstruction",
+    "fresh teacher and PCA20 replay"
+  ],
+  "primary_functional_sha256": "224f1854c81a62fcbc6a06a102518d55fbe1c814ddfc5e3b24938d22d676a1bd",
+  "diagnostic_results_sha256": "c8418fe6b09358dfbe9b5cfbc484cc20361e07ce0b973f66384868f8d1a973ea"
+}

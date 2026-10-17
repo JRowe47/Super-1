@@ -99,12 +99,23 @@
     },
     {
       "run_id": "tinyllama-depth-curves-20261017-v1",
-      "status": "FROZEN_BEFORE_MEASUREMENT",
+      "status": "COMPLETED_NEGATIVE",
       "protocol": "auto-research/results/tinyllama-depth-curves-20261017-v1/PROTOCOL.json",
       "protocol_sha256": "24e381cad78233a466584097b087866805a6737953c6527e2657bd3135aac82f",
       "metrics": "auto-research/results/tinyllama-depth-curves-20261017-v1/FUNCTIONAL.json",
       "report": "auto-research/reports/tinyllama-depth-curves-20261017-v1.md",
-      "publication_target": "JRowe47/Super-1 main only"
+      "publication_target": "JRowe47/Super-1 main only",
+      "decision": "K8 functional conversion gate failed; all outcomes retained"
+    },
+    {
+      "run_id": "tinyllama-depth-anchor-20261017-v1",
+      "status": "COMPLETED_DIAGNOSTIC",
+      "protocol": "auto-research/results/tinyllama-depth-anchor-20261017-v1/PROTOCOL.json",
+      "protocol_sha256": "111ed675ed3493003b116028afcdbc2843b343b36d9446828c09d0740250153b",
+      "metrics": "auto-research/results/tinyllama-depth-anchor-20261017-v1/RESULTS.json",
+      "report": "auto-research/reports/tinyllama-depth-anchor-20261017-v1.md",
+      "publication_target": "JRowe47/Super-1 main only",
+      "decision": "First-block restoration advantage 2.366572 nats/token; post-hoc, not confirmation"
     }
   ],
   "schema_version": 1,
