@@ -1,0 +1,260 @@
+{
+  "schema_version": 1,
+  "status": "FROZEN_BEFORE_MEASUREMENT",
+  "experiment_id": "tinyllama-depth-calibration-20261017-v2",
+  "run_id": "tinyllama-depth-calibration-20261017-v2",
+  "parent_run_ids": [
+    "tinyllama-depth-curves-20261017-v1",
+    "tinyllama-depth-anchor-20261017-v1",
+    "tinyllama-depth-calibration-20261017-v1"
+  ],
+  "hypothesis": "At fixed spline-control storage, fitting teacher FFN outputs recovers end-to-end behavior beyond weight-space or diagonal-input fitting, while retaining an exact first FFN.",
+  "primary_comparator": "Anchored K19 raw and diagonal-activation fits; output-calibrated K19 must improve on both. K15 is a declared stronger-compression secondary arm.",
+  "primary_metric": "Mean next-token CE on 16 fresh frozen validation windows (2048 targets), nats/token, 128-token reset context.",
+  "minimum_useful_effect": "Output-calibrated K19 CE improves by >=0.10 nats/token over BOTH K19 raw and activation fits, and finishes within 0.30 of the teacher.",
+  "success_rule": "All primary thresholds, complete arms, and fidelity checks pass. Exploratory continuation only, not confirmation.",
+  "futility_rule": "Abort on nonfinite loss, source/identity/merge fidelity failure, memory failure, or 1800 seconds measurement time. Preserve completed and failed outcomes; no validation-selected checkpoints or hyperparameter retries.",
+  "authorization": {
+    "approved": true,
+    "user_approval_reference": "User: \"Hey, awesome, go ahead with the next level\" after prior results and the proposed exact-first-FFN activation/output fitting; earlier explicit PRs to user fork only.",
+    "approved_resources": "Bounded local CPU calibration of low-rank control-bank updates; existing public inputs; no paid service, GPU, large-model pretraining, or official test.",
+    "max_cost": "No paid services",
+    "max_walltime": "30 minutes combined measurement including the failed v1; excluding source/setup/publication",
+    "local_cpu_budget": "4 threads, <=120 aggregate CPU minutes"
+  },
+  "design": {
+    "original_source_hashes": {
+      "experiment.py": "de718dfb96e92c95f3c0a240bd316884fe17a7d9026721d536a71c858578b382",
+      "modeling_llama.py": "31bf660a663259134324bc65da4e155951dc89c5ca46471d2325a9938e859e26",
+      "parent_inputs": "d698ea275b94d474ee9f84c26fad69b9fbe4dc3583c10723ad94a24186244a42",
+      "parent_functional": "224f1854c81a62fcbc6a06a102518d55fbe1c814ddfc5e3b24938d22d676a1bd",
+      "parent_anchor_results": "c8418fe6b09358dfbe9b5cfbc484cc20361e07ce0b973f66384868f8d1a973ea",
+      "failed_source": "8204fc71ac24b270b399a134691ab74c0e7e783df57e7f0937dc31b042002035",
+      "failed_terminal": "e144dc068fc2e2fad445f9bee988572cdfa30f012ee6357259f37f8233978fb4"
+    },
+    "mechanism_equations": "For blocks1..21 and each FFN family, Q is the orthonormalized clamped uniform cubic spline basis. Raw Xhat=QQ^T X. Activation: each input column c uses D_c=diag(E[x_lc^2]) floored at 1e-4 times that layer input mean; Xhat_c=Q(Q^T D_c Q)^-1 Q^T D_c X_c. Down uses ORIGINAL teacher gate/up intermediate second moments. Output: start from activation fit, add sum_k Q_lk*(2*A_fk*B_fk), rank8 per control; minimize normalized teacher FFN output MSE on teacher FFN inputs. Fold updates into the same K matrix controls after training.",
+    "arms": [
+      {
+        "id": "teacher",
+        "kind": "original",
+        "controls": 21
+      },
+      {
+        "id": "k19_raw",
+        "kind": "raw",
+        "controls": 19
+      },
+      {
+        "id": "k19_activation",
+        "kind": "activation",
+        "controls": 19
+      },
+      {
+        "id": "k19_output",
+        "kind": "output",
+        "controls": 19
+      },
+      {
+        "id": "k15_raw",
+        "kind": "raw",
+        "controls": 15
+      },
+      {
+        "id": "k15_activation",
+        "kind": "activation",
+        "controls": 15
+      },
+      {
+        "id": "k15_output",
+        "kind": "output",
+        "controls": 15
+      }
+    ],
+    "control_rationale": "One exact original FFN plus K full matrices per family, fixed spline geometry. All fitting variants at a K have identical final dense-control scalar counts. Raw and activation have zero optimizer updates; output calibration costs extra training. K19 totals20 FFN equivalents; K15 totals16.",
+    "seeds": [
+      101702
+    ],
+    "seed_selection_method": "One predeclared calibration/adapter seed; exploratory, no replication or seed selection.",
+    "learning_rate_trials_per_arm": 1,
+    "parameter_counts": "Counted from checkpoint and learned adapters; only K19/K15 output arms train. Adapters fold into existing banks and do not increase final control storage.",
+    "matching_track": "Final analytical dense-control parameter matching, not equal fitting compute, deployed memory, or latency.",
+    "compute_accounting": "Wall/process CPU per stage/arm and epoch. ru_maxrss retained as a runtime receipt, not compact-model memory."
+  },
+  "data": {
+    "dataset_versions": {
+      "model": "TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T",
+      "model_revision": "59f6f375b26bde864a6ca194a9a3044570490064",
+      "dataset": "Salesforce/wikitext",
+      "dataset_revision": "b08601e04326c79dfdd32d625aee71d232d685c3"
+    },
+    "tokenizer_sha256": "bcd04f0eadf90287bd26e1a183ac487d8a141b09b06aecb7725bbdd343640f2e",
+    "train_sha256": "e83889baabc497075506f91975be5fac0d45c5290b6b20582c8cd1e853d0c9f7",
+    "selection_sha256": "204929b7ff9d6184953f867dedb860e40aa69c078fc1e54b3baaa8fb28511c4c",
+    "confirmation_sha256": "None; no independent confirmation dataset",
+    "split_boundaries": {
+      "calibration": {
+        "starts": [
+          0,
+          406932,
+          813864,
+          1220797,
+          1627729,
+          2034662,
+          2441594,
+          2848527
+        ],
+        "windows": 8,
+        "targets_per_window": 128,
+        "ids_sha256": "103315a8141c20ea3223fe1caccf2d1e7a40405e264db0af4dd1d30e197e4007",
+        "full_split_token_ids_sha256": "ebb78cc42438935c0a17d76a0c9ec977971b79b253f38ae7fc5193ee2e7c49ef"
+      },
+      "fresh_validation": {
+        "starts": [
+          24344,
+          33229,
+          37143,
+          38350,
+          38493,
+          47671,
+          72999,
+          145224,
+          174669,
+          200803,
+          202289,
+          202949,
+          210516,
+          258329,
+          263278,
+          264208
+        ],
+        "windows": 16,
+        "targets_per_window": 128,
+        "ids_sha256": "71fc41767492719080d2f729677072860b1f1311adcffd34be94275f7db6beec",
+        "full_split_token_ids_sha256": "ed65bcb5e5f269813d4ceed4cddf54455bc397547f6fd65835ed7ab06aacffb5"
+      },
+      "reused_validation": {
+        "full_token_count": 297365,
+        "starts": [
+          0,
+          19815,
+          39631,
+          59447,
+          79262,
+          99078,
+          118894,
+          138710,
+          158525,
+          178341,
+          198157,
+          217973,
+          237788,
+          257604,
+          277420,
+          297236
+        ],
+        "windows": 16,
+        "inputs_per_window": 128,
+        "targets_per_window": 128,
+        "full_token_ids_sha256": "ed65bcb5e5f269813d4ceed4cddf54455bc397547f6fd65835ed7ab06aacffb5",
+        "window_ids_sha256": "e628995253e52dc338cfa7f7d8cb6e7ac316e15fddfce21262806550e8216fc7"
+      }
+    },
+    "research_wide_region_reuse_audit": "Prior outcomes observed before this design. Fresh validation positions are disjoint from prior 16 windows and frozen before this run, but drawn from the same previously used official validation split; not globally untouched confirmation. Reused windows reported separately.",
+    "teacher_and_objective": "Public pinned TinyLlama teacher only; no OpenAI outputs. Teacher-normalized FFN inputs and FFN outputs from 1024 training token positions. No validation activations used for fitting.",
+    "official_test_access_permitted": false
+  },
+  "training": {
+    "updates": 1344,
+    "target_exposures_per_trial": 86016,
+    "tokens_per_update": 64,
+    "microbatch": "64 cached teacher FFN token inputs for one non-anchor block",
+    "gradient_accumulation": 1,
+    "bptt_length": "Local FFN only; no backpropagation through attention or other blocks",
+    "accessible_history": "Teacher inputs generated at reset context <=128",
+    "state_carry_and_detach": "No cross-window state; cached detached teacher activations",
+    "document_reset_policy": "Nonempty lines joined by two newlines, fixed 129-token windows may cross article boundaries.",
+    "optimizer_schedule": {
+      "name": "AdamW",
+      "lr": 0.003,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "eps": 1e-08,
+      "weight_decay": 0,
+      "clip_grad_norm": 1.0,
+      "schedule": "Cosine from LR to 0.1*LR across all updates",
+      "epochs": 4,
+      "rank": 8,
+      "adapter_scale": 2.0,
+      "initialization": "A=zeros, B=Normal(0,1/sqrt(input_width)), same seed reset for each K",
+      "order": "Seeded token permutation each epoch; seeded layer permutation each 64-token minibatch; each layer sees every calibration position once per epoch."
+    },
+    "precision": "FP64 basis and input moments; FP32 model, adapters, optimizer, merge and evaluation",
+    "checkpoint_selection_rule": "Final epoch only; no early stopping or best-validation selection; no LR tuning"
+  },
+  "execution": {
+    "hardware": {
+      "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+      "logical_cpus": 9,
+      "threads": 4,
+      "gpu_used": false
+    },
+    "runtime_versions": {
+      "torch": "2.14.1+cpu",
+      "transformers": "4.57.6",
+      "numpy": "2.3.5",
+      "scipy": "1.17.0"
+    },
+    "resolved_writable_output": "/workspace/scratch/116fb21e498c/research/Super-1/auto-research/results/tinyllama-depth-calibration-20261017-v2",
+    "source_ownership_and_concurrent_writers": "New isolated run on existing user-fork branch in explicitly authorized Linux workspace; historical macOS mount restrictions do not describe this host.",
+    "fidelity_tolerances": {
+      "synthetic_math_abs": 1e-10,
+      "teacher_reused_ce_abs": 2e-06,
+      "anchor_sha256": "exact",
+      "merge_relative_squared_output_error": 1e-09,
+      "merged_curve_relative_squared_residual": 1e-10
+    },
+    "canary_matrix": "Independent weighted least squares, full-rank identity, factored-vs-dense adapter forward/input/parameter gradients and complete AdamW step; full-size anchor hashes, teacher replay, all-layer merge and depth-subspace checks.",
+    "cost_estimate": "Existing checkpoint/data; 4 CPU threads; <=30 minutes; rank8 updates only, no GPU."
+  },
+  "evaluation": {
+    "primary_endpoint": "2048 fresh validation targets; reused 2048 validation targets secondary; full-vocabulary teacher KL and top1 agreement.",
+    "confirmation_frozen_before_scoring": false,
+    "canonical_precision": "FP32",
+    "duplicate_policy": "Teacher reused-window CE must reproduce parent; repeat first fresh teacher window; compare premerge vs merged FFN outputs on 64 calibration inputs for every non-anchor layer.",
+    "uncertainty_method": "Paired per-window CE differences and descriptive standard errors; one training seed, 16 windows per region; no population or confirmation claim.",
+    "multiple_comparison_policy": "All seven arms retained; K19 primary and K15 secondary declared before measurement; no adaptive retuning.",
+    "no_test_tuning": true
+  },
+  "deployment": {
+    "weight_dtype": "FP32",
+    "kv_or_state_dtype": "Cache disabled",
+    "quantization_metadata": "None",
+    "batching": "1 x128 for end-to-end evaluation",
+    "prefill_decode_protocol": "Not a deployment benchmark",
+    "warmup_and_synchronization": "No inference-speed claim",
+    "memory_components": "Analytical control storage only. Model weights are materialized for evaluation. Extra train-time rank8 factors fold into existing controls.",
+    "latency_statistics": "Unmeasured"
+  },
+  "evidence": {
+    "protocol_sha256": "REGISTRATION.json",
+    "source_manifest": "PROTOCOL.json design.original_source_hashes",
+    "checkpoint_manifest": "CHECKPOINTS.json",
+    "progress_path": "progress.jsonl",
+    "terminal_receipt_path": "TERMINAL.json",
+    "preservation_policy": "Keep immutable source/protocol/metrics and exact FP32 adapter factors; deterministic original-weight projection plus saved factors reconstructs final weights. Public checkpoint/corpus remain at pinned sources with hashes; do not redistribute corpus text.",
+    "cleanup_receipt": "TERMINAL.json"
+  },
+  "decision": {
+    "outcome": "Pending",
+    "reason": "Pending measurements",
+    "next_experiment": "Decide from results; no automatic follow-up launch"
+  },
+  "recovery": {
+    "predecessor": "tinyllama-depth-calibration-20261017-v1",
+    "failure": "Logging event() kind argument collided with kind keyword after first raw projection; only teacher was scored; no optimizer updates occurred.",
+    "changes": "Rename logger positional argument only; preserve fitting/data/seed/optimizer/thresholds. Deduct failed-run time from shared budget.",
+    "predecessor_wall_seconds": 67.36738296299882
+  }
+}

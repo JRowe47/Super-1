@@ -1,0 +1,12 @@
+{
+  "checks": [
+    {
+      "kind": "teacher_duplicate",
+      "max_logit_abs": 0.0
+    },
+    {
+      "kind": "teacher_parent_replay",
+      "max_window_ce_abs": 0.0
+    }
+  ]
+}
