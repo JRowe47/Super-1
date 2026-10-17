@@ -1,0 +1,88 @@
+{
+  "status": "COMPLETE",
+  "hardware": "x86_64",
+  "torch": "2.14.1+cpu",
+  "threads": 1,
+  "mkldnn_enabled": true,
+  "scan": "Hillis-Steele, O(T log T) work",
+  "native_lstm": "torch.nn.LSTM CPU optimized backend",
+  "rows": [
+    {
+      "arm": "mingru64",
+      "operation": "training_step",
+      "batch": 32,
+      "length": 64,
+      "repetitions": 5,
+      "warmup": 3,
+      "cpu_ms_median": 6.555315,
+      "wall_ms_median": 6.55118,
+      "cpu_ms_p10": 6.3244198,
+      "cpu_ms_p90": 6.924393,
+      "cpu_ms_samples": [
+        6.218955,
+        6.482617,
+        7.038803,
+        6.555315,
+        6.752778
+      ]
+    },
+    {
+      "arm": "minlstm64",
+      "operation": "training_step",
+      "batch": 32,
+      "length": 64,
+      "repetitions": 5,
+      "warmup": 3,
+      "cpu_ms_median": 7.87893,
+      "wall_ms_median": 7.875144,
+      "cpu_ms_p10": 7.563111200000001,
+      "cpu_ms_p90": 8.278030600000001,
+      "cpu_ms_samples": [
+        7.891759,
+        7.87893,
+        7.609289,
+        7.532326,
+        8.535545
+      ]
+    },
+    {
+      "arm": "lstm32",
+      "operation": "training_step",
+      "batch": 32,
+      "length": 64,
+      "repetitions": 5,
+      "warmup": 3,
+      "cpu_ms_median": 3.396995,
+      "wall_ms_median": 3.394432,
+      "cpu_ms_p10": 3.3165592,
+      "cpu_ms_p90": 3.4174966,
+      "cpu_ms_samples": [
+        3.425857,
+        3.346489,
+        3.396995,
+        3.404956,
+        3.296606
+      ]
+    },
+    {
+      "arm": "lstm64",
+      "operation": "training_step",
+      "batch": 32,
+      "length": 64,
+      "repetitions": 5,
+      "warmup": 3,
+      "cpu_ms_median": 6.285974,
+      "wall_ms_median": 6.282884,
+      "cpu_ms_p10": 5.8462842,
+      "cpu_ms_p90": 6.8136762,
+      "cpu_ms_samples": [
+        6.586821,
+        6.964913,
+        6.285974,
+        5.834495,
+        5.863968
+      ]
+    }
+  ],
+  "unix": 1792277027.3684871
+}

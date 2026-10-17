@@ -1,0 +1,58 @@
+{
+  "mingru64": {
+    "retention256": 1.0,
+    "retention1024": 1.0,
+    "conflict256": 0.4270833333333333,
+    "exploratory_retention16384": 0.9983723958333334,
+    "mean_train_cpu_seconds": 25.380805434,
+    "step256_cpu_ms": 35.627547,
+    "parameters": 7968,
+    "recurrent_parameters": 4224,
+    "persistent_state_floats": 64,
+    "persistent_state_bytes_fp32": 256,
+    "recurrent_dense_macs_per_token": 4096,
+    "note": "State excludes weights, optimizer, activations and allocator. MACs exclude gates, scan and readout."
+  },
+  "minlstm64": {
+    "retention256": 1.0,
+    "retention1024": 1.0,
+    "conflict256": 0.4134114583333333,
+    "exploratory_retention16384": 1.0,
+    "mean_train_cpu_seconds": 27.644433597333332,
+    "step256_cpu_ms": 29.759422999999998,
+    "parameters": 10080,
+    "recurrent_parameters": 6336,
+    "persistent_state_floats": 64,
+    "persistent_state_bytes_fp32": 256,
+    "recurrent_dense_macs_per_token": 6144,
+    "note": "State excludes weights, optimizer, activations and allocator. MACs exclude gates, scan and readout."
+  },
+  "lstm32": {
+    "retention256": 0.9723307291666666,
+    "retention1024": 0.8414713541666666,
+    "conflict256": 0.4130859375,
+    "exploratory_retention16384": 0.736328125,
+    "mean_train_cpu_seconds": 16.238326438,
+    "step256_cpu_ms": 11.976195,
+    "parameters": 11168,
+    "recurrent_parameters": 8448,
+    "persistent_state_floats": 64,
+    "persistent_state_bytes_fp32": 256,
+    "recurrent_dense_macs_per_token": 8192,
+    "note": "State excludes weights, optimizer, activations and allocator. MACs exclude gates, scan and readout."
+  },
+  "lstm64": {
+    "retention256": 0.9739583333333334,
+    "retention1024": 0.8369140625,
+    "conflict256": 0.474609375,
+    "exploratory_retention16384": 0.697265625,
+    "mean_train_cpu_seconds": 23.063495999333337,
+    "step256_cpu_ms": 26.810934000000003,
+    "parameters": 28832,
+    "recurrent_parameters": 25088,
+    "persistent_state_floats": 128,
+    "persistent_state_bytes_fp32": 512,
+    "recurrent_dense_macs_per_token": 24576,
+    "note": "State excludes weights, optimizer, activations and allocator. MACs exclude gates, scan and readout."
+  }
+}

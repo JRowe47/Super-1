@@ -1,0 +1,52 @@
+{
+  "updates": 250,
+  "episodes": 8000,
+  "input_tokens": 342016,
+  "target_queries": 69020,
+  "stream_sha256": "19f42e40e071509bbd0fbffa72b81e2d834b7ca3030246d2b173658e31bc8c0a",
+  "mode_batches": {
+    "retention": 200,
+    "conflict": 28,
+    "reopen": 22
+  },
+  "train_cpu_seconds": 1.2714840929999998,
+  "model_cpu_seconds": 0.7816126529999972,
+  "train_wall_seconds": 1.2715569940010027,
+  "accounting": {
+    "parameters": 11168,
+    "recurrent_parameters": 8448,
+    "persistent_state_floats": 64,
+    "persistent_state_bytes_fp32": 256,
+    "recurrent_dense_macs_per_token": 8192,
+    "note": "State excludes weights, optimizer, activations and allocator. MACs exclude gates, scan and readout."
+  },
+  "last_loss": 1.4314578771591187,
+  "trace": [
+    {
+      "step": 100,
+      "loss": 1.834062933921814,
+      "gradient_norm": 0.6385307908058167,
+      "delay": 64,
+      "mode": "retention",
+      "train_cpu_seconds": 0.5450534839999999,
+      "model_cpu_seconds": 0.3416961020000002,
+      "train_wall_seconds": 0.5450624320001225,
+      "tokens": 139520,
+      "targets": 27983,
+      "lr": 0.0020768803503107124
+    },
+    {
+      "step": 200,
+      "loss": 1.4409809112548828,
+      "gradient_norm": 0.36599496006965637,
+      "delay": 16,
+      "mode": "retention",
+      "train_cpu_seconds": 1.0102239769999999,
+      "model_cpu_seconds": 0.6226588179999974,
+      "train_wall_seconds": 1.0102319779980462,
+      "tokens": 272640,
+      "targets": 55093,
+      "lr": 0.0005598328502568408
+    }
+  ]
+}

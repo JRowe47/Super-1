@@ -1,0 +1,29 @@
+{
+  "status": "COMPLETE",
+  "main_trials": 12,
+  "updates_per_trial": 3000,
+  "primary": {
+    "paired_gain_pp": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mean_gain_pp": 0.0,
+    "competence_guard_pass": true,
+    "success_rule_met": false,
+    "outcome": "NO_RETENTION_PROMOTION"
+  },
+  "checkpoint_replays": 12,
+  "protocol_sha256": "5bfcf3bcf8cf4b08d3608e8d3bea22430d563b8aa632e7e9ba707975f4a27512",
+  "unix": 1792277348.0254564,
+  "exploratory_evaluation": "COMPLETE_POST_MAIN_NO_RETRAINING",
+  "exploratory_model_delay_rows": 24,
+  "compute_benchmark": "COMPLETE_ISOLATED_ONE_THREAD",
+  "checkpoint_preservation": "SUCCESS",
+  "strict_fidelity": {
+    "equal_state_models_pass": true,
+    "supplemental_lstm64_original_optimizer_parity": "FAIL",
+    "audit": "STRICT_FIDELITY_AUDIT.json"
+  },
+  "public_publication": "EXPLICITLY_AUTHORIZED_BY_USER_2026-10-17"
+}
