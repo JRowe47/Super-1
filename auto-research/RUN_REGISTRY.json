@@ -116,6 +116,16 @@
       "report": "auto-research/reports/tinyllama-depth-anchor-20261017-v1.md",
       "publication_target": "JRowe47/Super-1 main only",
       "decision": "First-block restoration advantage 2.366572 nats/token; post-hoc, not confirmation"
+    },
+    {
+      "run_id": "tinyllama-depth-calibration-20261017-v1",
+      "status": "FROZEN_BEFORE_MEASUREMENT",
+      "protocol": "auto-research/results/tinyllama-depth-calibration-20261017-v1/PROTOCOL.json",
+      "protocol_sha256": "480b632d20398ae53888e780d15f5f5bfb52184f3a56941b2ed30e8fb5146150",
+      "metrics": "auto-research/results/tinyllama-depth-calibration-20261017-v1/RESULTS.json",
+      "report": "auto-research/reports/tinyllama-depth-calibration-20261017-v1.md",
+      "publication_target": "JRowe47/Super-1 main only",
+      "approval": "User: \"Hey, awesome, go ahead with the next level\" after prior results and the proposed exact-first-FFN activation/output fitting; earlier explicit PRs to user fork only."
     }
   ],
   "schema_version": 1,
