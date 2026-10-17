@@ -1,0 +1,530 @@
+{
+  "run_id": "gru-context-capacity-20261016-v2",
+  "status": "COMPLETE_EXPLORATORY",
+  "seed": 101605,
+  "train_wall_budget_seconds": 90.0,
+  "scored_targets_per_endpoint": 8192,
+  "rows": [
+    {
+      "run_id": "linear_w160_c512_s32",
+      "arm": "mingru_linear",
+      "width": 160,
+      "context": 512,
+      "segment_length": 32,
+      "parameters": 996320,
+      "batch": 16,
+      "peak_lr": 0.008,
+      "updates": 291,
+      "training_targets": 2383872,
+      "train_wall_seconds": 89.44638099299118,
+      "train_cpu_seconds": 329.8614901739999,
+      "peak_rss_kib": 851064,
+      "prefix_benefit_ce": null,
+      "persistent_state_fp32_bytes_per_sequence": 2560,
+      "label": "lin-minGRU w160 / 512",
+      "ce": 5.016995906829834,
+      "perplexity": 150.9571326582012,
+      "tokens_per_wall_second": 26651.408067440927,
+      "parameters_reached_at_training_length": 996320,
+      "monitor": [
+        {
+          "step": 0,
+          "training_targets": 0,
+          "train_wall_seconds": 0.0,
+          "train_cpu_seconds": 0.0,
+          "validation_ce": 8.11794662475586
+        },
+        {
+          "step": 93,
+          "training_targets": 761856,
+          "train_wall_seconds": 30.047351972982142,
+          "train_cpu_seconds": 109.95326975099997,
+          "validation_ce": 5.469387173652649
+        },
+        {
+          "step": 194,
+          "training_targets": 1589248,
+          "train_wall_seconds": 60.04467685499549,
+          "train_cpu_seconds": 221.48142692299996,
+          "validation_ce": 5.229365587234497
+        },
+        {
+          "step": 291,
+          "training_targets": 2383872,
+          "train_wall_seconds": 89.44638099299118,
+          "train_cpu_seconds": 329.8614901739999,
+          "validation_ce": 5.093558073043823
+        }
+      ]
+    },
+    {
+      "run_id": "linear_w160_c2048_s64",
+      "arm": "mingru_linear",
+      "width": 160,
+      "context": 2048,
+      "segment_length": 64,
+      "parameters": 996320,
+      "batch": 4,
+      "peak_lr": 0.008,
+      "updates": 247,
+      "training_targets": 2023424,
+      "train_wall_seconds": 89.15511620200778,
+      "train_cpu_seconds": 333.15742402300003,
+      "peak_rss_kib": 875632,
+      "prefix_benefit_ce": 0.00520750880241394,
+      "persistent_state_fp32_bytes_per_sequence": 2560,
+      "label": "lin-minGRU w160 / 2048 / chunk64",
+      "ce": 5.11082324385643,
+      "perplexity": 165.8067981309027,
+      "tokens_per_wall_second": 22695.545541271276,
+      "parameters_reached_at_training_length": 996320,
+      "monitor": [
+        {
+          "step": 0,
+          "training_targets": 0,
+          "train_wall_seconds": 0.0,
+          "train_cpu_seconds": 0.0,
+          "validation_ce": 8.126918077468872
+        },
+        {
+          "step": 85,
+          "training_targets": 696320,
+          "train_wall_seconds": 30.03577539899561,
+          "train_cpu_seconds": 112.28293600300005,
+          "validation_ce": 5.569266080856323
+        },
+        {
+          "step": 170,
+          "training_targets": 1392640,
+          "train_wall_seconds": 60.34281659699809,
+          "train_cpu_seconds": 225.79173986800006,
+          "validation_ce": 5.2731733322143555
+        },
+        {
+          "step": 247,
+          "training_targets": 2023424,
+          "train_wall_seconds": 89.15511620200778,
+          "train_cpu_seconds": 333.15742402300003,
+          "validation_ce": 5.178029894828796
+        }
+      ]
+    },
+    {
+      "run_id": "linear_w160_c1024_s32",
+      "arm": "mingru_linear",
+      "width": 160,
+      "context": 1024,
+      "segment_length": 32,
+      "parameters": 996320,
+      "batch": 8,
+      "peak_lr": 0.008,
+      "updates": 247,
+      "training_targets": 2023424,
+      "train_wall_seconds": 89.24716769799488,
+      "train_cpu_seconds": 331.8055238640002,
+      "peak_rss_kib": 855656,
+      "prefix_benefit_ce": 0.0044807493686676025,
+      "persistent_state_fp32_bytes_per_sequence": 2560,
+      "label": "lin-minGRU w160 / 1024",
+      "ce": 5.132834851741791,
+      "perplexity": 169.49693630184632,
+      "tokens_per_wall_second": 22672.136855335302,
+      "parameters_reached_at_training_length": 996320,
+      "monitor": [
+        {
+          "step": 0,
+          "training_targets": 0,
+          "train_wall_seconds": 0.0,
+          "train_cpu_seconds": 0.0,
+          "validation_ce": 8.126180171966553
+        },
+        {
+          "step": 85,
+          "training_targets": 696320,
+          "train_wall_seconds": 30.027389223989303,
+          "train_cpu_seconds": 112.20301183400001,
+          "validation_ce": 5.589050889015198
+        },
+        {
+          "step": 165,
+          "training_targets": 1351680,
+          "train_wall_seconds": 60.14978525898732,
+          "train_cpu_seconds": 223.37501257200006,
+          "validation_ce": 5.304353713989258
+        },
+        {
+          "step": 247,
+          "training_targets": 2023424,
+          "train_wall_seconds": 89.24716769799488,
+          "train_cpu_seconds": 331.8055238640002,
+          "validation_ce": 5.1932032108306885
+        }
+      ]
+    },
+    {
+      "run_id": "linear_w160_c2048_s32",
+      "arm": "mingru_linear",
+      "width": 160,
+      "context": 2048,
+      "segment_length": 32,
+      "parameters": 996320,
+      "batch": 4,
+      "peak_lr": 0.008,
+      "updates": 236,
+      "training_targets": 1933312,
+      "train_wall_seconds": 89.37718772300832,
+      "train_cpu_seconds": 336.02221313400025,
+      "peak_rss_kib": 851420,
+      "prefix_benefit_ce": 0.0061615705490112305,
+      "persistent_state_fp32_bytes_per_sequence": 2560,
+      "label": "lin-minGRU w160 / 2048",
+      "ce": 5.147467374801636,
+      "perplexity": 171.99533851713548,
+      "tokens_per_wall_second": 21630.93345464828,
+      "parameters_reached_at_training_length": 996320,
+      "monitor": [
+        {
+          "step": 0,
+          "training_targets": 0,
+          "train_wall_seconds": 0.0,
+          "train_cpu_seconds": 0.0,
+          "validation_ce": 8.125287771224976
+        },
+        {
+          "step": 78,
+          "training_targets": 638976,
+          "train_wall_seconds": 30.214270580003358,
+          "train_cpu_seconds": 113.56339710499999,
+          "validation_ce": 5.661757588386536
+        },
+        {
+          "step": 157,
+          "training_targets": 1286144,
+          "train_wall_seconds": 60.02975971100386,
+          "train_cpu_seconds": 225.927403506,
+          "validation_ce": 5.365880608558655
+        },
+        {
+          "step": 236,
+          "training_targets": 1933312,
+          "train_wall_seconds": 89.37718772300832,
+          "train_cpu_seconds": 336.02221313400025,
+          "validation_ce": 5.234032154083252
+        }
+      ]
+    },
+    {
+      "run_id": "linear_w224_c512_s32",
+      "arm": "mingru_linear",
+      "width": 224,
+      "context": 512,
+      "segment_length": 32,
+      "parameters": 1767584,
+      "batch": 16,
+      "peak_lr": 0.008,
+      "updates": 213,
+      "training_targets": 1744896,
+      "train_wall_seconds": 89.14754623900444,
+      "train_cpu_seconds": 325.55960040400026,
+      "peak_rss_kib": 933760,
+      "prefix_benefit_ce": null,
+      "persistent_state_fp32_bytes_per_sequence": 3584,
+      "label": "lin-minGRU w224 / 512",
+      "ce": 5.27307054400444,
+      "perplexity": 195.0138426522428,
+      "tokens_per_wall_second": 19573.124259886372,
+      "parameters_reached_at_training_length": 1767584,
+      "monitor": [
+        {
+          "step": 0,
+          "training_targets": 0,
+          "train_wall_seconds": 0.0,
+          "train_cpu_seconds": 0.0,
+          "validation_ce": 8.201725721359253
+        },
+        {
+          "step": 75,
+          "training_targets": 614400,
+          "train_wall_seconds": 30.38943632399787,
+          "train_cpu_seconds": 111.57351532700004,
+          "validation_ce": 5.747879385948181
+        },
+        {
+          "step": 146,
+          "training_targets": 1196032,
+          "train_wall_seconds": 60.31133152200164,
+          "train_cpu_seconds": 220.7148209220001,
+          "validation_ce": 5.419199109077454
+        },
+        {
+          "step": 213,
+          "training_targets": 1744896,
+          "train_wall_seconds": 89.14754623900444,
+          "train_cpu_seconds": 325.55960040400026,
+          "validation_ce": 5.306758522987366
+        }
+      ]
+    },
+    {
+      "run_id": "nano_w108_c512_s32",
+      "arm": "nanogpt",
+      "width": 108,
+      "context": 512,
+      "segment_length": null,
+      "parameters": 1008072,
+      "batch": 4,
+      "peak_lr": 0.002,
+      "updates": 563,
+      "training_targets": 1153024,
+      "train_wall_seconds": 89.71533194999574,
+      "train_cpu_seconds": 357.4845715930001,
+      "peak_rss_kib": 534480,
+      "prefix_benefit_ce": null,
+      "persistent_state_fp32_bytes_per_sequence": null,
+      "label": "nanoGPT w108 / 512",
+      "ce": 5.613899201154709,
+      "perplexity": 274.21136144543846,
+      "tokens_per_wall_second": 12852.028465353682,
+      "parameters_reached_at_training_length": 842184,
+      "monitor": [
+        {
+          "step": 0,
+          "training_targets": 0,
+          "train_wall_seconds": 0.0,
+          "train_cpu_seconds": 0.0,
+          "validation_ce": 7.650927186012268
+        },
+        {
+          "step": 191,
+          "training_targets": 391168,
+          "train_wall_seconds": 30.011719270989488,
+          "train_cpu_seconds": 119.62256570599999,
+          "validation_ce": 5.879410028457642
+        },
+        {
+          "step": 379,
+          "training_targets": 776192,
+          "train_wall_seconds": 60.1445954259907,
+          "train_cpu_seconds": 239.66363069200003,
+          "validation_ce": 5.680346488952637
+        },
+        {
+          "step": 563,
+          "training_targets": 1153024,
+          "train_wall_seconds": 89.71533194999574,
+          "train_cpu_seconds": 357.4845715930001,
+          "validation_ce": 5.5940892696380615
+        }
+      ]
+    },
+    {
+      "run_id": "nano_w108_c1024_s32",
+      "arm": "nanogpt",
+      "width": 108,
+      "context": 1024,
+      "segment_length": null,
+      "parameters": 1008072,
+      "batch": 2,
+      "peak_lr": 0.002,
+      "updates": 488,
+      "training_targets": 999424,
+      "train_wall_seconds": 89.64364229999228,
+      "train_cpu_seconds": 357.1112085180001,
+      "peak_rss_kib": 521204,
+      "prefix_benefit_ce": 0.00743904709815979,
+      "persistent_state_fp32_bytes_per_sequence": null,
+      "label": "nanoGPT w108 / 1024",
+      "ce": 5.648145794868469,
+      "perplexity": 283.7648195351528,
+      "tokens_per_wall_second": 11148.855338289686,
+      "parameters_reached_at_training_length": 897480,
+      "monitor": [
+        {
+          "step": 0,
+          "training_targets": 0,
+          "train_wall_seconds": 0.0,
+          "train_cpu_seconds": 0.0,
+          "validation_ce": 7.653245329856873
+        },
+        {
+          "step": 162,
+          "training_targets": 331776,
+          "train_wall_seconds": 30.05399875698822,
+          "train_cpu_seconds": 119.69922257900002,
+          "validation_ce": 5.893639326095581
+        },
+        {
+          "step": 325,
+          "training_targets": 665600,
+          "train_wall_seconds": 60.16116410398354,
+          "train_cpu_seconds": 239.82531495900005,
+          "validation_ce": 5.703541159629822
+        },
+        {
+          "step": 488,
+          "training_targets": 999424,
+          "train_wall_seconds": 89.64364229999228,
+          "train_cpu_seconds": 357.1112085180001,
+          "validation_ce": 5.612748146057129
+        }
+      ]
+    },
+    {
+      "run_id": "native_w147_c2048_s32",
+      "arm": "native",
+      "width": 147,
+      "context": 2048,
+      "segment_length": 32,
+      "parameters": 995925,
+      "batch": 4,
+      "peak_lr": 0.008,
+      "updates": 96,
+      "training_targets": 786432,
+      "train_wall_seconds": 88.63699067300513,
+      "train_cpu_seconds": 340.40937498600016,
+      "peak_rss_kib": 806332,
+      "prefix_benefit_ce": 0.004554808139801025,
+      "persistent_state_fp32_bytes_per_sequence": 2352,
+      "label": "GRU w147 / 2048",
+      "ce": 5.6558678150177,
+      "perplexity": 285.96453939911265,
+      "tokens_per_wall_second": 8872.503387454377,
+      "parameters_reached_at_training_length": 995925,
+      "monitor": [
+        {
+          "step": 0,
+          "training_targets": 0,
+          "train_wall_seconds": 0.0,
+          "train_cpu_seconds": 0.0,
+          "validation_ce": 8.09106707572937
+        },
+        {
+          "step": 33,
+          "training_targets": 270336,
+          "train_wall_seconds": 30.56086104100359,
+          "train_cpu_seconds": 117.66958466400003,
+          "validation_ce": 6.121513485908508
+        },
+        {
+          "step": 65,
+          "training_targets": 532480,
+          "train_wall_seconds": 60.70430443500118,
+          "train_cpu_seconds": 233.32466743099997,
+          "validation_ce": 5.712396860122681
+        },
+        {
+          "step": 96,
+          "training_targets": 786432,
+          "train_wall_seconds": 88.63699067300513,
+          "train_cpu_seconds": 340.40937498600016,
+          "validation_ce": 5.608341097831726
+        }
+      ]
+    },
+    {
+      "run_id": "nano_w108_c2048_s32",
+      "arm": "nanogpt",
+      "width": 108,
+      "context": 2048,
+      "segment_length": null,
+      "parameters": 1008072,
+      "batch": 1,
+      "peak_lr": 0.002,
+      "updates": 377,
+      "training_targets": 772096,
+      "train_wall_seconds": 89.67618834799941,
+      "train_cpu_seconds": 356.56260220299987,
+      "peak_rss_kib": 519044,
+      "prefix_benefit_ce": 0.006117820739746094,
+      "persistent_state_fp32_bytes_per_sequence": null,
+      "label": "nanoGPT w108 / 2048",
+      "ce": 5.808841943740845,
+      "perplexity": 333.23299957893005,
+      "tokens_per_wall_second": 8609.821784616748,
+      "parameters_reached_at_training_length": 1008072,
+      "monitor": [
+        {
+          "step": 0,
+          "training_targets": 0,
+          "train_wall_seconds": 0.0,
+          "train_cpu_seconds": 0.0,
+          "validation_ce": 7.646658658981323
+        },
+        {
+          "step": 127,
+          "training_targets": 260096,
+          "train_wall_seconds": 30.204265727006714,
+          "train_cpu_seconds": 120.30737665999996,
+          "validation_ce": 6.081307291984558
+        },
+        {
+          "step": 257,
+          "training_targets": 526336,
+          "train_wall_seconds": 60.085954031001165,
+          "train_cpu_seconds": 239.16616673600004,
+          "validation_ce": 5.846714973449707
+        },
+        {
+          "step": 377,
+          "training_targets": 772096,
+          "train_wall_seconds": 89.67618834799941,
+          "train_cpu_seconds": 356.56260220299987,
+          "validation_ce": 5.761576890945435
+        }
+      ]
+    },
+    {
+      "run_id": "linear_w224_c2048_s32",
+      "arm": "mingru_linear",
+      "width": 224,
+      "context": 2048,
+      "segment_length": 32,
+      "parameters": 1767584,
+      "batch": 4,
+      "peak_lr": 0.008,
+      "updates": 172,
+      "training_targets": 1409024,
+      "train_wall_seconds": 88.9163285800023,
+      "train_cpu_seconds": 330.5769668650004,
+      "peak_rss_kib": 925008,
+      "prefix_benefit_ce": -0.0003508329391479492,
+      "persistent_state_fp32_bytes_per_sequence": 3584,
+      "label": "lin-minGRU w224 / 2048",
+      "ce": 6.214023232460022,
+      "perplexity": 499.70765251929396,
+      "tokens_per_wall_second": 15846.628200940992,
+      "parameters_reached_at_training_length": 1767584,
+      "monitor": [
+        {
+          "step": 0,
+          "training_targets": 0,
+          "train_wall_seconds": 0.0,
+          "train_cpu_seconds": 0.0,
+          "validation_ce": 8.19765853881836
+        },
+        {
+          "step": 57,
+          "training_targets": 466944,
+          "train_wall_seconds": 30.079090939001617,
+          "train_cpu_seconds": 111.37177424900001,
+          "validation_ce": 6.4980305433273315
+        },
+        {
+          "step": 115,
+          "training_targets": 942080,
+          "train_wall_seconds": 60.01618652900288,
+          "train_cpu_seconds": 223.0481548100001,
+          "validation_ce": 6.459582209587097
+        },
+        {
+          "step": 172,
+          "training_targets": 1409024,
+          "train_wall_seconds": 88.9163285800023,
+          "train_cpu_seconds": 330.5769668650004,
+          "validation_ce": 6.166391849517822
+        }
+      ]
+    }
+  ],
+  "failures": []
+}

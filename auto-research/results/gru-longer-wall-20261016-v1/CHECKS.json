@@ -1,0 +1,38 @@
+{
+  "native_b4_t2_lr004": {
+    "final_checkpoint_replay_max_ce_error": 0.0,
+    "trace_time_targets_and_lr_reconciled": true,
+    "budget_unused_seconds": 0.33612763398377865,
+    "finite_updates": true
+  },
+  "nanogpt_b4_t4_lr004": {
+    "final_checkpoint_replay_max_ce_error": 0.0,
+    "trace_time_targets_and_lr_reconciled": true,
+    "budget_unused_seconds": 0.31227482599751966,
+    "finite_updates": true
+  },
+  "mingru_linear_b4_t2_lr004": {
+    "final_checkpoint_replay_max_ce_error": 0.0,
+    "trace_time_targets_and_lr_reconciled": true,
+    "budget_unused_seconds": 0.17745005496544763,
+    "finite_updates": true
+  },
+  "nanogpt_b4_t4_lr002": {
+    "final_checkpoint_replay_max_ce_error": 0.0,
+    "trace_time_targets_and_lr_reconciled": true,
+    "budget_unused_seconds": 0.2848912749905139,
+    "finite_updates": true
+  },
+  "native_b16_t4_lr008": {
+    "final_checkpoint_replay_max_ce_error": 0.0,
+    "trace_time_targets_and_lr_reconciled": true,
+    "budget_unused_seconds": 0.6623383659953106,
+    "finite_updates": true
+  },
+  "mingru_linear_b16_t4_lr008": {
+    "final_checkpoint_replay_max_ce_error": 0.0,
+    "trace_time_targets_and_lr_reconciled": true,
+    "budget_unused_seconds": 0.5657898599984037,
+    "finite_updates": true
+  }
+}

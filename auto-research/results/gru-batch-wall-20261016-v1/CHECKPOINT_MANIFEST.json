@@ -1,0 +1,32 @@
+{
+  "mingru_linear_throughput": {
+    "path": "execution/mingru_linear_throughput/checkpoint.pt",
+    "sha256": "581e5e110fdc0a866a8a7c3caa047c2b5c1e3ecfeab2f7dd9c7ae4527725453a",
+    "bytes": 12004597
+  },
+  "native_throughput": {
+    "path": "execution/native_throughput/checkpoint.pt",
+    "sha256": "74c78592491e6785df0514cae6377def6c988d981d9828c99bdb8c05e8c1ff9f",
+    "bytes": 11992437
+  },
+  "nanogpt_baseline": {
+    "path": "execution/nanogpt_baseline/checkpoint.pt",
+    "sha256": "45fb2ffc7150343952f814f9a96e7deecbd5f5801295df637335604322ecc940",
+    "bytes": 12201890
+  },
+  "nanogpt_throughput": {
+    "path": "execution/nanogpt_throughput/checkpoint.pt",
+    "sha256": "44f06f024fa5469418915253ee65301f258df34ce38b9d17a75ad0566c0ab8af",
+    "bytes": 12167650
+  },
+  "mingru_linear_baseline": {
+    "path": "execution/mingru_linear_baseline/checkpoint.pt",
+    "sha256": "4219715f22c706d57426d9ba3416f6513946f31327c12aced96f029332ec9ad3",
+    "bytes": 12109941
+  },
+  "native_baseline": {
+    "path": "execution/native_baseline/checkpoint.pt",
+    "sha256": "17839ff37055c59ee9ea5dfce83c8cb050733911461eacd23ad657a43348e4aa",
+    "bytes": 12041141
+  }
+}

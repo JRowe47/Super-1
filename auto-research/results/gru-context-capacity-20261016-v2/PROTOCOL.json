@@ -1,0 +1,347 @@
+{
+  "data": {
+    "dataset": "FineWeb-Edu preserved sample",
+    "vocabulary": 2048,
+    "dtype": "uint16",
+    "train_tokens": 24148694,
+    "validation_tokens": 1315955,
+    "split_metadata": {
+      "vocab": 2048,
+      "split_rule": "SHA256(text) first 16 hex digits mod 100: 0..89 train, 90..94 validation, 95..99 test; exact duplicate texts removed before split",
+      "tokenizer": "Byte-level BPE 2048, trained on train documents only; EOS 0 between documents",
+      "splits": {
+        "train": {
+          "documents": 15130,
+          "tokens": 24148694,
+          "sha256": "d5ff543af38bb0cba0759727b20ac391ead161ebf9aa348831b192603a9ef358"
+        },
+        "validation": {
+          "documents": 880,
+          "tokens": 1315955,
+          "sha256": "e450dec7f2489d3020d266358ef44910519fd70325b8a4999f9fe7a69e2b1752"
+        },
+        "test": {
+          "documents": 884,
+          "tokens": 1415660,
+          "sha256": "fc6223b46eb4a94326604af52eb7f789d411ae9f3bbaf21586deb029e0d70f24"
+        }
+      },
+      "tokenizer_sha256": "3ed2eca49e889b85eee5e4eecb0480e340d652cb18dc9edb3c0deaf3727868a6"
+    },
+    "monitor_validation_region": [
+      0,
+      600000
+    ],
+    "final_validation_region": [
+      650000,
+      1315955
+    ],
+    "note": "Exact-text deduplicated hash split; not a decontaminated benchmark or unseen test set."
+  },
+  "data_hashes": {
+    "train.bin": "d5ff543af38bb0cba0759727b20ac391ead161ebf9aa348831b192603a9ef358",
+    "validation.bin": "e450dec7f2489d3020d266358ef44910519fd70325b8a4999f9fe7a69e2b1752"
+  },
+  "tokenizer_sha256": "3ed2eca49e889b85eee5e4eecb0480e340d652cb18dc9edb3c0deaf3727868a6",
+  "run_id": "gru-context-capacity-20261016-v2",
+  "parent_commit": "1a7111ac68d5760d52b01cd060f397b1b776ed47",
+  "seed": 101605,
+  "data_seed": 101614,
+  "max_blocks": 100000,
+  "train_wall_seconds": 90.0,
+  "monitor_interval_seconds": 30,
+  "hypothesis": "Longer trained context may improve common-tail prediction; widening or slower feedback may change the quality/time tradeoff.",
+  "authorization": "User: Go ahead and continue; continuing explicit rapid CPU exploration and push-to-own-fork authorization. No GPU or paid provisioning.",
+  "recovery": "Fresh v2 after environment reset. V1 console-only partial result remains separate; its checkpoint/protocol were not recovered. Same declared choices and seeds, not an independent replication.",
+  "primary_metric": "Mean CE on identical final512 targets of16 validation windows, final checkpoint only. Lower is better.",
+  "useful_signal": "Descriptive CE difference0.05 motivates follow-up; not a confirmation threshold or automatic promotion.",
+  "training": "Common ordered2048-target blocks tiled into512/1024/2048 sequences. Four blocks/update for recurrent arms; one for nanoGPT. Reset each example; full BPTT. EOS does not reset within an example.",
+  "optimizer": "AdamW betas0.9/0.95 eps1e-8 clip1. Decay0.1 for matrices except2048-row embedding tables; zero decay for vectors/biases AND nanoGPT token/position tables.",
+  "schedule": "5% training-wall warmup with factor floor0.04; cosine to10% peak. Recurrent8192-target updates LR0.008; nanoGPT2048-target updates LR0.002.",
+  "timing": "Training includes data/forward/CE/backward/clip/update; excludes eval/checkpoint. Separate run, setup, launcher and aggregate CPU clocks.",
+  "prefix_diagnostic": "Replace only inputs older than final512 with next validation window prefix cyclically; suffix, targets and absolute positions unchanged. Swapped-minus-authentic CE; distribution-shifting diagnostic, not retrieval proof.",
+  "selection": "Publish all10 trials and failures. One seed, no adaptive choices or best-checkpoint selection.",
+  "contrasts": [
+    "minGRU160 context512/1024/2048",
+    "nanoGPT108 context512/1024/2048",
+    "minGRU224 vs160 at512 and2048",
+    "segment64 vs32 at2048",
+    "native147 vs minGRU160 at2048"
+  ],
+  "caveats": [
+    "Repeatedly used validation, short CPU screen, not SOTA/scaling/GPU evidence.",
+    "Widening changes weights/compute as well as state.",
+    "Chunk64 changes segment feedback and document update period.",
+    "Same targets/update within family; fewer reset sequences at longer lengths.",
+    "All nanoGPT arms use the same2048-position table and width108 to stay near1M; this differs from the previous width120/512-position study.",
+    "The existing optimizer exempts all2048-row embedding tables, including positions. V1 prose omitted this effect; v2 declares it explicitly.",
+    "Equal training wall is not equal CPU, tokens or FLOPs. New runtime measurements do not isolate changes from earlier studies."
+  ],
+  "hard_limits": {
+    "worker_wall_seconds": 150,
+    "launcher_wall_seconds": 180,
+    "cpu_seconds_per_process": 700
+  },
+  "train_stream_sha256": "2552cc7f8c4d858b9a6024feab74b952a7752f2965b574b0137e96888a624310",
+  "train_stream_prefix": [
+    4884501,
+    527440,
+    23793148,
+    4506259,
+    1366690,
+    9032664,
+    18092263,
+    10463036,
+    7308468,
+    3548534,
+    9898663,
+    9575784,
+    16622626,
+    10848591,
+    8218265,
+    17230606
+  ],
+  "monitor_ends": [
+    125927,
+    202190,
+    349068,
+    434038
+  ],
+  "final_ends": [
+    709830,
+    742299,
+    776796,
+    810127,
+    849508,
+    878384,
+    915877,
+    950198,
+    986637,
+    1017994,
+    1055930,
+    1089825,
+    1120779,
+    1161364,
+    1196805,
+    1226450
+  ],
+  "runs": [
+    {
+      "run_id": "linear_w160_c1024_s32",
+      "arm": "mingru_linear",
+      "width": 160,
+      "context": 1024,
+      "segment_length": 32,
+      "config": {
+        "vocab_size": 2048,
+        "width": 160,
+        "max_context": 2048,
+        "segment_length": 32,
+        "document_segments": 8
+      },
+      "threads": 4,
+      "blocks_per_update": 4,
+      "peak_lr": 0.008,
+      "batch": 8,
+      "parameters": 996320,
+      "persistent_state_fp32_bytes_per_sequence": 2560
+    },
+    {
+      "run_id": "linear_w160_c2048_s64",
+      "arm": "mingru_linear",
+      "width": 160,
+      "context": 2048,
+      "segment_length": 64,
+      "config": {
+        "vocab_size": 2048,
+        "width": 160,
+        "max_context": 2048,
+        "segment_length": 64,
+        "document_segments": 8
+      },
+      "threads": 4,
+      "blocks_per_update": 4,
+      "peak_lr": 0.008,
+      "batch": 4,
+      "parameters": 996320,
+      "persistent_state_fp32_bytes_per_sequence": 2560
+    },
+    {
+      "run_id": "linear_w160_c2048_s32",
+      "arm": "mingru_linear",
+      "width": 160,
+      "context": 2048,
+      "segment_length": 32,
+      "config": {
+        "vocab_size": 2048,
+        "width": 160,
+        "max_context": 2048,
+        "segment_length": 32,
+        "document_segments": 8
+      },
+      "threads": 4,
+      "blocks_per_update": 4,
+      "peak_lr": 0.008,
+      "batch": 4,
+      "parameters": 996320,
+      "persistent_state_fp32_bytes_per_sequence": 2560
+    },
+    {
+      "run_id": "nano_w108_c512_s32",
+      "arm": "nanogpt",
+      "width": 108,
+      "context": 512,
+      "segment_length": null,
+      "config": {
+        "vocab_size": 2048,
+        "block_size": 2048,
+        "n_layer": 4,
+        "n_head": 4,
+        "n_embd": 108,
+        "dropout": 0.0,
+        "bias": true
+      },
+      "threads": 4,
+      "blocks_per_update": 1,
+      "peak_lr": 0.002,
+      "batch": 4,
+      "parameters": 1008072,
+      "persistent_state_fp32_bytes_per_sequence": null
+    },
+    {
+      "run_id": "linear_w224_c512_s32",
+      "arm": "mingru_linear",
+      "width": 224,
+      "context": 512,
+      "segment_length": 32,
+      "config": {
+        "vocab_size": 2048,
+        "width": 224,
+        "max_context": 2048,
+        "segment_length": 32,
+        "document_segments": 8
+      },
+      "threads": 4,
+      "blocks_per_update": 4,
+      "peak_lr": 0.008,
+      "batch": 16,
+      "parameters": 1767584,
+      "persistent_state_fp32_bytes_per_sequence": 3584
+    },
+    {
+      "run_id": "linear_w160_c512_s32",
+      "arm": "mingru_linear",
+      "width": 160,
+      "context": 512,
+      "segment_length": 32,
+      "config": {
+        "vocab_size": 2048,
+        "width": 160,
+        "max_context": 2048,
+        "segment_length": 32,
+        "document_segments": 8
+      },
+      "threads": 4,
+      "blocks_per_update": 4,
+      "peak_lr": 0.008,
+      "batch": 16,
+      "parameters": 996320,
+      "persistent_state_fp32_bytes_per_sequence": 2560
+    },
+    {
+      "run_id": "native_w147_c2048_s32",
+      "arm": "native",
+      "width": 147,
+      "context": 2048,
+      "segment_length": 32,
+      "config": {
+        "vocab_size": 2048,
+        "width": 147,
+        "max_context": 2048,
+        "segment_length": 32,
+        "document_segments": 8
+      },
+      "threads": 4,
+      "blocks_per_update": 4,
+      "peak_lr": 0.008,
+      "batch": 4,
+      "parameters": 995925,
+      "persistent_state_fp32_bytes_per_sequence": 2352
+    },
+    {
+      "run_id": "nano_w108_c2048_s32",
+      "arm": "nanogpt",
+      "width": 108,
+      "context": 2048,
+      "segment_length": null,
+      "config": {
+        "vocab_size": 2048,
+        "block_size": 2048,
+        "n_layer": 4,
+        "n_head": 4,
+        "n_embd": 108,
+        "dropout": 0.0,
+        "bias": true
+      },
+      "threads": 4,
+      "blocks_per_update": 1,
+      "peak_lr": 0.002,
+      "batch": 1,
+      "parameters": 1008072,
+      "persistent_state_fp32_bytes_per_sequence": null
+    },
+    {
+      "run_id": "nano_w108_c1024_s32",
+      "arm": "nanogpt",
+      "width": 108,
+      "context": 1024,
+      "segment_length": null,
+      "config": {
+        "vocab_size": 2048,
+        "block_size": 2048,
+        "n_layer": 4,
+        "n_head": 4,
+        "n_embd": 108,
+        "dropout": 0.0,
+        "bias": true
+      },
+      "threads": 4,
+      "blocks_per_update": 1,
+      "peak_lr": 0.002,
+      "batch": 2,
+      "parameters": 1008072,
+      "persistent_state_fp32_bytes_per_sequence": null
+    },
+    {
+      "run_id": "linear_w224_c2048_s32",
+      "arm": "mingru_linear",
+      "width": 224,
+      "context": 2048,
+      "segment_length": 32,
+      "config": {
+        "vocab_size": 2048,
+        "width": 224,
+        "max_context": 2048,
+        "segment_length": 32,
+        "document_segments": 8
+      },
+      "threads": 4,
+      "blocks_per_update": 4,
+      "peak_lr": 0.008,
+      "batch": 4,
+      "parameters": 1767584,
+      "persistent_state_fp32_bytes_per_sequence": 3584
+    }
+  ],
+  "source_hashes": {
+    "experiment.py": "a4e3b9acf91bac96d41acc1f64d75f710c89c2e6cd6fb8883619058cbe9c67e4",
+    "prepare.py": "029b0028cb1ab257a1c0e59f596aa6072c9d9fd852e75f3626423b3c35ce999c",
+    "launch.py": "09103a4a6c464e7c381f9e725552ec2e25c20d15b646d118569ef9d7692f90cd",
+    "../gru-batch-wall-20261016-v1/experiment.py": "1f67b92b7a7834824dd5dba5143525a293be1c927b41874b3257bfe3cec94264",
+    "../gru-batch-wall-20261016-v1/vendor/nanogpt/model.py": "7c01703240dbec5d554527dc666e35b3df8391d0b117fddc07afcf325a21d11c",
+    "../gru-extended-20261016-v1/models.py": "f340db31acb1b6075c10116de2bc11ad8bd50b11d88e1e5d2520227b9b3f2f70",
+    "../gru-extended-20261016-v1/vendor/representation_experiments/__init__.py": "984ccff890f7a52a48a106a611ab4588e0333109d5c36ac88444ffd83a069b4e",
+    "../gru-extended-20261016-v1/vendor/representation_experiments/common.py": "381c5950aa454fc2275c45755bafd4c3e0641802013c0bf7ce9276abf5415fe1",
+    "../gru-extended-20261016-v1/vendor/representation_experiments/predictive_models.py": "b73a7c07801f5672adb52c0cb16a3c772d62e50eebc0366491d497f76d13f73f"
+  }
+}

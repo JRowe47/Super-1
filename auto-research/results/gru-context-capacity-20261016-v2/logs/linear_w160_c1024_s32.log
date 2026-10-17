@@ -1,0 +1,5 @@
+linear_w160_c1024_s32 {'step': 0, 'training_targets': 0, 'train_wall_seconds': 0.0, 'train_cpu_seconds': 0.0, 'validation_ce': 8.126180171966553}
+linear_w160_c1024_s32 {'step': 85, 'training_targets': 696320, 'train_wall_seconds': 30.027389223989303, 'train_cpu_seconds': 112.20301183400001, 'validation_ce': 5.589050889015198}
+linear_w160_c1024_s32 {'step': 165, 'training_targets': 1351680, 'train_wall_seconds': 60.14978525898732, 'train_cpu_seconds': 223.37501257200006, 'validation_ce': 5.304353713989258}
+linear_w160_c1024_s32 {'step': 247, 'training_targets': 2023424, 'train_wall_seconds': 89.24716769799488, 'train_cpu_seconds': 331.8055238640002, 'validation_ce': 5.1932032108306885}
+COMPLETE linear_w160_c1024_s32 247 5.132834851741791 0.0044807493686676025

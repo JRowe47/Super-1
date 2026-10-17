@@ -1,0 +1,52 @@
+{
+  "linear_w160_c1024_s32": {
+    "final_window_replay_max_error": 0.0,
+    "prefix_swap_replay_max_error": 0.0,
+    "targets_clocks_lr_reconciled": true
+  },
+  "linear_w160_c2048_s64": {
+    "final_window_replay_max_error": 0.0,
+    "prefix_swap_replay_max_error": 0.0,
+    "targets_clocks_lr_reconciled": true
+  },
+  "linear_w160_c2048_s32": {
+    "final_window_replay_max_error": 0.0,
+    "prefix_swap_replay_max_error": 0.0,
+    "targets_clocks_lr_reconciled": true
+  },
+  "nano_w108_c512_s32": {
+    "final_window_replay_max_error": 0.0,
+    "prefix_swap_replay_max_error": null,
+    "targets_clocks_lr_reconciled": true
+  },
+  "linear_w224_c512_s32": {
+    "final_window_replay_max_error": 0.0,
+    "prefix_swap_replay_max_error": null,
+    "targets_clocks_lr_reconciled": true
+  },
+  "linear_w160_c512_s32": {
+    "final_window_replay_max_error": 0.0,
+    "prefix_swap_replay_max_error": null,
+    "targets_clocks_lr_reconciled": true
+  },
+  "native_w147_c2048_s32": {
+    "final_window_replay_max_error": 0.0,
+    "prefix_swap_replay_max_error": 0.0,
+    "targets_clocks_lr_reconciled": true
+  },
+  "nano_w108_c2048_s32": {
+    "final_window_replay_max_error": 0.0,
+    "prefix_swap_replay_max_error": 0.0,
+    "targets_clocks_lr_reconciled": true
+  },
+  "nano_w108_c1024_s32": {
+    "final_window_replay_max_error": 0.0,
+    "prefix_swap_replay_max_error": 0.0,
+    "targets_clocks_lr_reconciled": true
+  },
+  "linear_w224_c2048_s32": {
+    "final_window_replay_max_error": 0.0,
+    "prefix_swap_replay_max_error": 0.0,
+    "targets_clocks_lr_reconciled": true
+  }
+}

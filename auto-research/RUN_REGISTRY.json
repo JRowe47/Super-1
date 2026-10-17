@@ -96,8 +96,138 @@
       "terminal": "auto-research/results/synthetic-rotation-radial-20261016-v1/execution/TERMINAL.json",
       "training_metrics": "auto-research/results/synthetic-rotation-radial-20261016-v1/execution/progress.jsonl",
       "updates_per_arm": 80
+    },
+    {
+      "run_id": "gru-extended-20261016-v1",
+      "status": "COMPLETED_EXPLORATORY_NO_ADVANCE",
+      "kind": "Independent explorer text pilot",
+      "approval": "User 2026-10-16 15:02 America/Denver: excellent - go ahead with the next experiment, and push the updates and results when done, proceed with linear mingru and paragru",
+      "protocol": "auto-research/results/gru-extended-20261016-v1/PROTOCOL.json",
+      "protocol_sha256": "7b4ccea2b278a45faf50c6fb14ee5b4a1f047236d9ede00ac03963eb4f750cdb",
+      "source_manifest": "auto-research/results/gru-extended-20261016-v1/SOURCE_MANIFEST.json",
+      "metrics": "auto-research/results/gru-extended-20261016-v1/SUMMARY.json",
+      "report": "auto-research/reports/gru-extended-20261016-v1.md",
+      "terminal": "auto-research/results/gru-extended-20261016-v1/TERMINAL.json",
+      "updates_per_arm": 2000,
+      "arm_seed_rows": 3,
+      "decision": "BOTH_CANDIDATES_EXCEED_CE_TOLERANCE",
+      "parameters": {
+        "native": 995925,
+        "mingru_linear": 996320,
+        "paragru": 995724
+      },
+      "seed": 101602,
+      "targets_per_arm": 1024000,
+      "checkpoint_manifest": "auto-research/results/gru-extended-20261016-v1/CHECKPOINT_MANIFEST.json",
+      "preservation": "auto-research/results/gru-extended-20261016-v1/PRESERVATION.json",
+      "summary": {
+        "native": {
+          "ce": 4.8641151040792465,
+          "training_cpu_speedup_vs_native": 1.0,
+          "decision": "CONTROL"
+        },
+        "mingru_linear": {
+          "ce": 4.9888046234846115,
+          "training_cpu_speedup_vs_native": 2.140619169953866,
+          "decision": "DOES_NOT_MEET_EXPLORATORY_RULE"
+        },
+        "paragru": {
+          "ce": 4.995581492781639,
+          "training_cpu_speedup_vs_native": 1.6683385771090566,
+          "decision": "DOES_NOT_MEET_EXPLORATORY_RULE"
+        }
+      }
+    },
+    {
+      "run_id": "gru-equal-cpu-20261016-v1",
+      "status": "COMPLETED_EXPLORATORY",
+      "kind": "Independent equal-CPU diagnostic",
+      "protocol": "auto-research/results/gru-equal-cpu-20261016-v1/PROTOCOL.json",
+      "protocol_sha256": "8b83e5dc2ac61fe27ad64a57ffe9e655e0148dc04dae56710f845f72d822946d",
+      "source_manifest": "auto-research/results/gru-equal-cpu-20261016-v1/SOURCE_MANIFEST.json",
+      "metrics": "auto-research/results/gru-equal-cpu-20261016-v1/SUMMARY.json",
+      "report": "auto-research/reports/gru-equal-cpu-20261016-v1.md",
+      "terminal": "auto-research/results/gru-equal-cpu-20261016-v1/TERMINAL.json",
+      "fresh_protocol": "auto-research/results/gru-equal-cpu-20261016-v1/FRESH_PROTOCOL.json",
+      "fresh_protocol_sha256": "b1de64e4de63e43d5458866414f66d30c85d15ac7a5b5cee012390324782574d",
+      "native_ce": 4.8641151040792465,
+      "continued_linear_ce": 4.8564019203186035,
+      "fresh_linear_ce": 4.680991232395172,
+      "new_training_cpu_seconds": 392.8907770269988
+    },
+    {
+      "run_id": "gru-batch-wall-20261016-v1",
+      "status": "COMPLETE_EXPLORATORY",
+      "protocol": "auto-research/results/gru-batch-wall-20261016-v1/PROTOCOL.json",
+      "protocol_sha256": "317861655e4c4840ba1826f45c8184afd3f9588c3135021d780a16f2d0e19efc",
+      "metrics": "auto-research/results/gru-batch-wall-20261016-v1/SUMMARY.json",
+      "report": "auto-research/reports/gru-batch-wall-20261016-v1.md",
+      "publication_target": "JRowe47/Super-1 main only",
+      "selection_sha256": "500321736e84e1d51b7810814f68a13475549e861c966be0a109e397bfc12a6a",
+      "completed_runs": 6,
+      "summary": {
+        "mingru_linear_throughput": 5.392680451273918,
+        "native_throughput": 5.72637651860714,
+        "nanogpt_baseline": 5.958116844296455,
+        "nanogpt_throughput": 5.694121807813644,
+        "mingru_linear_baseline": 5.264742121100426,
+        "native_baseline": 5.5790126621723175
+      }
+    },
+    {
+      "run_id": "mingru-thread-lr-20261016-v1",
+      "status": "COMPLETE_EXPLORATORY",
+      "protocol": "auto-research/results/mingru-thread-lr-20261016-v1/PROTOCOL.json",
+      "protocol_sha256": "84a8241d2105803068dfd87e686e9181a545c0ceffd042e6f2e36df88db157e2",
+      "metrics": "auto-research/results/mingru-thread-lr-20261016-v1/SUMMARY.json",
+      "report": "auto-research/reports/mingru-thread-lr-20261016-v1.md",
+      "publication_target": "JRowe47/Super-1 main only",
+      "completed_runs": 7,
+      "failed_runs": 0,
+      "summary": {
+        "b16_t4_lr002": 5.3867084085941315,
+        "b4_t2_lr002": 5.07429426908493,
+        "b1_t2_lr002": 5.189114928245544,
+        "b16_t4_lr008": 5.0710707157850266,
+        "b1_t4_lr002": 5.172636225819588,
+        "b1_t1_lr002": 5.251619651913643,
+        "b4_t2_lr004": 4.884254410862923
+      }
+    },
+    {
+      "run_id": "gru-longer-wall-20261016-v1",
+      "status": "COMPLETE_EXPLORATORY",
+      "protocol": "auto-research/results/gru-longer-wall-20261016-v1/PROTOCOL.json",
+      "protocol_sha256": "1e8598d1e5aa29a1b87cb2280f8c75b09a2c9d6becbb09a6c8a8309231bda191",
+      "metrics": "auto-research/results/gru-longer-wall-20261016-v1/SUMMARY.json",
+      "report": "auto-research/reports/gru-longer-wall-20261016-v1.md",
+      "publication_target": "JRowe47/Super-1 main only",
+      "completed_runs": 6,
+      "failed_runs": 0,
+      "summary": {
+        "native_b4_t2_lr004": 4.541923701763153,
+        "nanogpt_b4_t4_lr004": 5.199139103293419,
+        "mingru_linear_b4_t2_lr004": 4.454563930630684,
+        "nanogpt_b4_t4_lr002": 4.8480289578437805,
+        "native_b16_t4_lr008": 4.534899592399597,
+        "mingru_linear_b16_t4_lr008": 4.382792189717293
+      }
+    },
+    {
+      "run_id": "gru-context-capacity-20261016-v2",
+      "status": "COMPLETE_EXPLORATORY",
+      "approval": "User: Go ahead and continue; continuing explicit rapid CPU exploration and push-to-own-fork authorization. No GPU or paid provisioning.",
+      "protocol": "auto-research/results/gru-context-capacity-20261016-v2/PROTOCOL.json",
+      "protocol_sha256": "6ff0e454f8e1e8de485ca1a4b6a214e28e14b3a8312d1418ef59e2fd36c0c8ff",
+      "report": "auto-research/reports/gru-context-capacity-20261016-v2.md",
+      "recovery_of": "gru-context-capacity-20261016-v1",
+      "summary": "auto-research/results/gru-context-capacity-20261016-v2/SUMMARY.json",
+      "terminal": "auto-research/results/gru-context-capacity-20261016-v2/TERMINAL.json",
+      "seed": 101605,
+      "completed_trials": 10
     }
   ],
   "schema_version": 1,
-  "status": "LANGUAGE_TRAINING_PAUSED_SYNTHETIC_EXPERIMENTS_NO_PROMOTION"
+  "status": "LANGUAGE_TRAINING_PAUSED_SYNTHETIC_EXPERIMENTS_NO_PROMOTION",
+  "independent_fork_authorization": "User-authorized bounded GRU pilot in this fork; historical upstream pause applies to its separate official studies"
 }

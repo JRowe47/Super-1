@@ -1,0 +1,107 @@
+{
+  "run_id": "gru-context-capacity-20261016-v2",
+  "scope": "Contributor-held archives outside Git. Each contains checkpoint.pt with model, optimizer, RNG, recipe and complete traces.",
+  "all_archive_and_checkpoint_hashes_verified": true,
+  "records": [
+    {
+      "run_id": "linear_w160_c1024_s32",
+      "archive_name": "gru_context_capacity_v2_linear_w160_c1024_s32.zip",
+      "archive_bytes": 11161418,
+      "archive_sha256": "bd25f57ce25d3a00a4a7c3e8353ecd4565c2f9ad8316e6738635fe1bb6ea8d35",
+      "checkpoint_sha256": "f9fb090dda3154c0dd480c1e083fe35e7a400f300b13667a064e84b5da96ce71",
+      "preservation_status": "succeeded",
+      "library_file_id": "libfile_790ebf6dc5748191b75465fa28bad6c8",
+      "version": 0
+    },
+    {
+      "run_id": "linear_w160_c2048_s64",
+      "archive_name": "gru_context_capacity_v2_linear_w160_c2048_s64.zip",
+      "archive_bytes": 11160964,
+      "archive_sha256": "cffcd0b39a0db47f46e9b1e2ccacb8b82a4ccfb4c232359e278fc57f18936bbc",
+      "checkpoint_sha256": "5da692e862741f30844c496d8aa2cf69290451d1ae0ea88293818f69c4863d4a",
+      "preservation_status": "succeeded",
+      "library_file_id": "libfile_b9f746196bf481919d1892a541fdb010",
+      "version": 0
+    },
+    {
+      "run_id": "linear_w160_c2048_s32",
+      "archive_name": "gru_context_capacity_v2_linear_w160_c2048_s32.zip",
+      "archive_bytes": 11155752,
+      "archive_sha256": "c063d89bea5c7685fbd41d72b2829a3788adb2cbf1eba26803dc76965f905f91",
+      "checkpoint_sha256": "8c939f945f231beab4bfa77b9a259be48337d97a109cba6832334bc5ad9c4fea",
+      "preservation_status": "succeeded",
+      "library_file_id": "libfile_819cabb0b9bc8191a335fd41dabc9093",
+      "version": 1
+    },
+    {
+      "run_id": "nano_w108_c512_s32",
+      "archive_name": "gru_context_capacity_v2_nano_w108_c512_s32.zip",
+      "archive_bytes": 10050898,
+      "archive_sha256": "559f16ef2dac919fd97e10de485d1746049faf9f2c5af5c6d717e4c87b2ad5fa",
+      "checkpoint_sha256": "19cccd7dfff28ca1ffb5cee223aa84e50c852452ced63b541add0717a6729cae",
+      "preservation_status": "succeeded",
+      "library_file_id": "libfile_f168bb15823881919da7859bc25061b4",
+      "version": 0
+    },
+    {
+      "run_id": "linear_w224_c512_s32",
+      "archive_name": "gru_context_capacity_v2_linear_w224_c512_s32.zip",
+      "archive_bytes": 19791530,
+      "archive_sha256": "e69876145741496a0adc834a9677046b1d2bec1b0fa832a135673bdea2f8ae10",
+      "checkpoint_sha256": "28567dae1169650647081c23962d7afcd215c00f73200dde1a10c841d8d909bf",
+      "preservation_status": "succeeded",
+      "library_file_id": "libfile_3e4a09b0e0008191a431616212fef403",
+      "version": 0
+    },
+    {
+      "run_id": "linear_w160_c512_s32",
+      "archive_name": "gru_context_capacity_v2_linear_w160_c512_s32.zip",
+      "archive_bytes": 11172734,
+      "archive_sha256": "3d0635d933b4c889adad8efcb6457f4da819f56cf8d95c5b478d9bba79d5f32f",
+      "checkpoint_sha256": "d7a71e0065ea58a879f6085c8799a58fbbc45ce0366336ec03603b5ade7237c0",
+      "preservation_status": "succeeded",
+      "library_file_id": "libfile_d46f65c5ba588191bbc0e9d5b09c012b",
+      "version": 0
+    },
+    {
+      "run_id": "native_w147_c2048_s32",
+      "archive_name": "gru_context_capacity_v2_native_w147_c2048_s32.zip",
+      "archive_bytes": 11098135,
+      "archive_sha256": "ef242031f2c35dcafde9590a394f3ba83d4abf53bebf9db554cda3e7d3649391",
+      "checkpoint_sha256": "ad2b151414aa80122bd8c4ac3bb21a4f6ea2fd96361da4a0e4ae8372905f3420",
+      "preservation_status": "succeeded",
+      "library_file_id": "libfile_291a3b8b56148191aa483be433f5f3ec",
+      "version": 0
+    },
+    {
+      "run_id": "nano_w108_c2048_s32",
+      "archive_name": "gru_context_capacity_v2_nano_w108_c2048_s32.zip",
+      "archive_bytes": 11284978,
+      "archive_sha256": "aa75deead141c2d52091e6490cc013d4072e42a82238ac5e2290f454b946f152",
+      "checkpoint_sha256": "ec69738c7393e4bde0a6c6d0980d295dada3a2dd2a1f1dad176262513097f94b",
+      "preservation_status": "succeeded",
+      "library_file_id": "libfile_f10f87bae6fc81919ce4e30505e9ecec",
+      "version": 0
+    },
+    {
+      "run_id": "nano_w108_c1024_s32",
+      "archive_name": "gru_context_capacity_v2_nano_w108_c1024_s32.zip",
+      "archive_bytes": 10448734,
+      "archive_sha256": "317ea7cdeaa4f8f411939219e7f6c3866285fa13b54a590bc296531aefa41540",
+      "checkpoint_sha256": "6bec0c61f02e0bd39d9264f5ac18fa1f4d46c7c6b749cade44366af7999313de",
+      "preservation_status": "succeeded",
+      "library_file_id": "libfile_d980dd0255dc81919109e881c6bf206f",
+      "version": 0
+    },
+    {
+      "run_id": "linear_w224_c2048_s32",
+      "archive_name": "gru_context_capacity_v2_linear_w224_c2048_s32.zip",
+      "archive_bytes": 19899578,
+      "archive_sha256": "78f03bc8f6f910e8e06cd55132879ca49320b16bfe7119289fd5640d617ac178",
+      "checkpoint_sha256": "c772cf77ce090912ad10fd9b63151a613f299dc1ff942aa3d5dcf8edd1982605",
+      "preservation_status": "succeeded",
+      "library_file_id": "libfile_7a5945754f288191abcdb0af2af61ae9",
+      "version": 1
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+BENCH mingru_linear 4 4 19243
+BENCH native 16 4 16937
+BENCH native 4 4 8244
+number of parameters: 0.94M
+BENCH nanogpt 1 4 8634
+BENCH native 1 4 4067
+number of parameters: 0.94M
+BENCH nanogpt 16 4 11929
+BENCH mingru_linear 16 4 27621
+BENCH mingru_linear 1 4 10335
+number of parameters: 0.94M
+BENCH nanogpt 4 4 12620

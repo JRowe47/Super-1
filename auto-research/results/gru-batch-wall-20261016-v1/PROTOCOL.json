@@ -1,0 +1,197 @@
+{
+  "run_id": "gru-batch-wall-20261016-v1",
+  "scope": "Independent one-seed CPU explorer experiment; no official-test access",
+  "authorization": "User: continue with batching/multithreading; research PRs only to JRowe47/Super-1, never upstream without explicit go-ahead",
+  "parent_commit": "8571e1db1897b87bd9350c45b7c25f14ee94fcc2",
+  "arms": [
+    "native",
+    "mingru_linear",
+    "nanogpt"
+  ],
+  "configs": {
+    "native": {
+      "vocab_size": 2048,
+      "width": 147,
+      "max_context": 512,
+      "segment_length": 32,
+      "document_segments": 8
+    },
+    "mingru_linear": {
+      "vocab_size": 2048,
+      "width": 160,
+      "max_context": 512,
+      "segment_length": 32,
+      "document_segments": 8
+    },
+    "nanogpt": {
+      "vocab_size": 2048,
+      "block_size": 512,
+      "n_layer": 4,
+      "n_head": 4,
+      "n_embd": 120,
+      "dropout": 0.0,
+      "bias": true
+    }
+  },
+  "parameters": {
+    "native": 995925,
+    "mingru_linear": 996320,
+    "nanogpt": 1004880
+  },
+  "seed": 101603,
+  "data_seed": 101612,
+  "data_hashes": {
+    "train.bin": "d5ff543af38bb0cba0759727b20ac391ead161ebf9aa348831b192603a9ef358",
+    "validation.bin": "e450dec7f2489d3020d266358ef44910519fd70325b8a4999f9fe7a69e2b1752"
+  },
+  "tokenizer_sha256": "3ed2eca49e889b85eee5e4eecb0480e340d652cb18dc9edb3c0deaf3727868a6",
+  "data": {
+    "dataset": "FineWeb-Edu preserved sample",
+    "vocabulary": 2048,
+    "dtype": "uint16",
+    "train_tokens": 24148694,
+    "validation_tokens": 1315955,
+    "split_metadata": {
+      "vocab": 2048,
+      "split_rule": "SHA256(text) first 16 hex digits mod 100: 0..89 train, 90..94 validation, 95..99 test; exact duplicate texts removed before split",
+      "tokenizer": "Byte-level BPE 2048, trained on train documents only; EOS 0 between documents",
+      "splits": {
+        "train": {
+          "documents": 15130,
+          "tokens": 24148694,
+          "sha256": "d5ff543af38bb0cba0759727b20ac391ead161ebf9aa348831b192603a9ef358"
+        },
+        "validation": {
+          "documents": 880,
+          "tokens": 1315955,
+          "sha256": "e450dec7f2489d3020d266358ef44910519fd70325b8a4999f9fe7a69e2b1752"
+        },
+        "test": {
+          "documents": 884,
+          "tokens": 1415660,
+          "sha256": "fc6223b46eb4a94326604af52eb7f789d411ae9f3bbaf21586deb029e0d70f24"
+        }
+      },
+      "tokenizer_sha256": "3ed2eca49e889b85eee5e4eecb0480e340d652cb18dc9edb3c0deaf3727868a6"
+    },
+    "monitor_validation_region": [
+      0,
+      600000
+    ],
+    "final_validation_region": [
+      650000,
+      1315955
+    ],
+    "note": "Exact-text deduplicated hash split; not a decontaminated benchmark or unseen test set."
+  },
+  "max_windows": 100000,
+  "train_stream_sha256": "41d856bd2a31fafb27dccda83a2b08aad406f6bcf73598e854a89ff7ed120598",
+  "train_stream_prefix": [
+    21647655,
+    20190065,
+    7007196,
+    8803063,
+    20359851,
+    4832912,
+    15970742,
+    21978283,
+    10095048,
+    16021713,
+    16999472,
+    5822460,
+    3123640,
+    19425021,
+    16263134,
+    305567
+  ],
+  "monitor_starts": [
+    260091,
+    35910,
+    526338,
+    138510,
+    580203,
+    169290,
+    257526,
+    301131
+  ],
+  "final_starts": [
+    1195832,
+    1176851,
+    986528,
+    1159409,
+    908552,
+    873155,
+    1021412,
+    912143,
+    1012691,
+    1081946,
+    918812,
+    723872,
+    957287,
+    850583,
+    956261,
+    1268678,
+    664877,
+    1194293,
+    861869,
+    660773,
+    820316,
+    1098875,
+    793640,
+    790049,
+    1111700,
+    859304,
+    682319,
+    1132733,
+    1191728,
+    919838,
+    795692,
+    1115804
+  ],
+  "batches": [
+    1,
+    4,
+    16
+  ],
+  "threads": [
+    1,
+    2,
+    4
+  ],
+  "benchmark_warmups": 2,
+  "benchmark_repeats": 3,
+  "benchmark_order_seed": 101623,
+  "benchmark": "Full update incl data slicing, forward, one CE, backward, clipping and AdamW; fresh throwaway weights per cell; sequential isolated processes per thread count",
+  "selection_rule": "For each architecture choose maximum median tokens/wall-second among nine cells, independent of validation. Also train B1/T1 reference; reuse if selected setup is identical. No hidden arms.",
+  "train_wall_seconds": 60.0,
+  "schedule": "5% training-wall warmup to0.002 (factor floor0.04), then cosine to0.0002 over full time budget; same unscaled peak LR for all batches",
+  "optimizer": "AdamW0.9/0.95 eps1e-8 wd0.1; same tied-token-table and ndim1 exclusions; clip1",
+  "training": "Fresh seed101603 for every arm/setup; identical ordered window stream regrouped into batches; full512 BPTT with state reset per example; one process at a time",
+  "timing": "Training wall includes batch construction through optimizer step; excludes startup, validation and checkpoint IO. Report actual full-run wall and aggregate CPU separately.",
+  "stopping": "Stop before next update if remaining<=max(0.2s,2x largest of last10 update durations); report actual budget and any overshoot",
+  "final_metric": "CE on same32 reused final-region windows/16384targets; monitor8 separate windows; final endpoint only",
+  "expected_resources": "27 tiny benchmark cells then3-6 sequential60s training runs on existing CPU; max4threads; no paid resources or GPU",
+  "hard_limits": {
+    "cpu_seconds_per_process": 600,
+    "wall_seconds_per_training_process": 180,
+    "max_windows": 100000
+  },
+  "caveats": [
+    "One seed, repeatedly viewed validation, tiny models, no tuned-best-recipe or GPU claim",
+    "Maximum-throughput batch may reduce optimizer steps enough to harm short-budget quality",
+    "Same wall allowance/max4CPUthreads is not equal CPU consumption or FLOPs",
+    "Common unscaled LR can favor one batch; no batch-specific tuning",
+    "nanoGPT wrapper now reuses its returned CE; prior wrapper computed an extra discarded CE forward. Older timing includes that redundant work."
+  ],
+  "source_hashes": {
+    "experiment.py": "1f67b92b7a7834824dd5dba5143525a293be1c927b41874b3257bfe3cec94264",
+    "prepare.py": "df1989836abbbe824bad485674125fe8c9f8d57b06777868afa8a94e62e9434b",
+    "launch.py": "4b542a92dc4c978bad289045b7ab27519e7696e287bd1dfeaadf559b5b6f6308",
+    "vendor/nanogpt/model.py": "7c01703240dbec5d554527dc666e35b3df8391d0b117fddc07afcf325a21d11c",
+    "../gru-extended-20261016-v1/models.py": "f340db31acb1b6075c10116de2bc11ad8bd50b11d88e1e5d2520227b9b3f2f70",
+    "../gru-extended-20261016-v1/vendor/representation_experiments/common.py": "381c5950aa454fc2275c45755bafd4c3e0641802013c0bf7ce9276abf5415fe1",
+    "../gru-extended-20261016-v1/vendor/representation_experiments/predictive_models.py": "b73a7c07801f5672adb52c0cb16a3c772d62e50eebc0366491d497f76d13f73f",
+    "../gru-extended-20261016-v1/vendor/representation_experiments/__init__.py": "984ccff890f7a52a48a106a611ab4588e0333109d5c36ac88444ffd83a069b4e"
+  },
+  "created_utc": "2026-10-16T21:46:27Z"
+}

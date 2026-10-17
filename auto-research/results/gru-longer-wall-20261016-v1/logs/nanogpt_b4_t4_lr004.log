@@ -1,0 +1,9 @@
+number of parameters: 0.94M
+nanogpt_b4_t4_lr004 {'step': 0, 'windows': 0, 'training_targets': 0, 'train_wall_seconds': 0.0, 'train_cpu_seconds': 0.0, 'validation_ce': 7.6416120529174805, 'validation_top1': 0.001953125}
+nanogpt_b4_t4_lr004 {'step': 191, 'windows': 764, 'training_targets': 391168, 'train_wall_seconds': 30.133927890999985, 'train_cpu_seconds': 120.18185945199997, 'validation_ce': 5.9397366642951965, 'validation_top1': 0.046630859375}
+nanogpt_b4_t4_lr004 {'step': 380, 'windows': 1520, 'training_targets': 778240, 'train_wall_seconds': 60.12785287300176, 'train_cpu_seconds': 240.1013535489999, 'validation_ce': 5.670834004878998, 'validation_top1': 0.0576171875}
+nanogpt_b4_t4_lr004 {'step': 572, 'windows': 2288, 'training_targets': 1171456, 'train_wall_seconds': 90.02811724900312, 'train_cpu_seconds': 359.33451226, 'validation_ce': 5.5233131647109985, 'validation_top1': 0.06982421875}
+nanogpt_b4_t4_lr004 {'step': 761, 'windows': 3044, 'training_targets': 1558528, 'train_wall_seconds': 120.14650098899438, 'train_cpu_seconds': 479.5191853000001, 'validation_ce': 5.418095290660858, 'validation_top1': 0.08056640625}
+nanogpt_b4_t4_lr004 {'step': 948, 'windows': 3792, 'training_targets': 1941504, 'train_wall_seconds': 150.0425794780076, 'train_cpu_seconds': 598.6845213890005, 'validation_ce': 5.323430418968201, 'validation_top1': 0.096435546875}
+nanogpt_b4_t4_lr004 {'step': 1135, 'windows': 4540, 'training_targets': 2324480, 'train_wall_seconds': 179.68772517400248, 'train_cpu_seconds': 717.0778744360005, 'validation_ce': 5.2761470675468445, 'validation_top1': 0.09814453125}
+COMPLETE nanogpt_b4_t4_lr004 1135 179.68772517400248 5.199139103293419

@@ -1,0 +1,35 @@
+{
+  "reason": "Post-upload integrity check caught two truncated archives despite successful receipts. Rebuilt from intact checkpoints, which replay exactly. Root cause not established. Atomic staging used for repair.",
+  "records": [
+    {
+      "run_id": "linear_w160_c2048_s32",
+      "archive_name": "gru_context_capacity_v2_linear_w160_c2048_s32.zip",
+      "archive_bytes": 11155752,
+      "archive_sha256": "c063d89bea5c7685fbd41d72b2829a3788adb2cbf1eba26803dc76965f905f91",
+      "bad_archive_bytes": 10174072,
+      "bad_archive_sha256": "5ac5aeaa99e07024bafc7fda9577369d624570de915e8914a5f06c8cd169cffb",
+      "library_file_id": "libfile_819cabb0b9bc8191a335fd41dabc9093",
+      "previous_version": 0,
+      "replacement_version": 1,
+      "checkpoint_sha256": "8c939f945f231beab4bfa77b9a259be48337d97a109cba6832334bc5ad9c4fea",
+      "replacement_upload_status": "succeeded",
+      "replacement_matches_original_archive": true,
+      "remote_readback_hash_verified": true
+    },
+    {
+      "run_id": "linear_w224_c2048_s32",
+      "archive_name": "gru_context_capacity_v2_linear_w224_c2048_s32.zip",
+      "archive_bytes": 19899578,
+      "archive_sha256": "78f03bc8f6f910e8e06cd55132879ca49320b16bfe7119289fd5640d617ac178",
+      "bad_archive_bytes": 4642334,
+      "bad_archive_sha256": "579a81094eaf244d8b227b7a8663994c65ade760ba04c81d50725b4ba2774731",
+      "library_file_id": "libfile_7a5945754f288191abcdb0af2af61ae9",
+      "previous_version": 0,
+      "replacement_version": 1,
+      "checkpoint_sha256": "c772cf77ce090912ad10fd9b63151a613f299dc1ff942aa3d5dcf8edd1982605",
+      "replacement_upload_status": "succeeded",
+      "replacement_matches_original_archive": true,
+      "remote_readback_hash_verified": true
+    }
+  ]
+}

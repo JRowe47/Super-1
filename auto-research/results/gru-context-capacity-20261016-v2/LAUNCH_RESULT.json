@@ -1,0 +1,42 @@
+{
+  "linear_w160_c1024_s32": {
+    "exit_code": 0,
+    "end_to_end_worker_wall_seconds": 93.68936569000107
+  },
+  "linear_w160_c2048_s64": {
+    "exit_code": 0,
+    "end_to_end_worker_wall_seconds": 94.2465487139998
+  },
+  "linear_w160_c2048_s32": {
+    "exit_code": 0,
+    "end_to_end_worker_wall_seconds": 95.02399167300064
+  },
+  "nano_w108_c512_s32": {
+    "exit_code": 0,
+    "end_to_end_worker_wall_seconds": 93.07949565699892
+  },
+  "linear_w224_c512_s32": {
+    "exit_code": 0,
+    "end_to_end_worker_wall_seconds": 92.75322310899901
+  },
+  "linear_w160_c512_s32": {
+    "exit_code": 0,
+    "end_to_end_worker_wall_seconds": 93.1287380190006
+  },
+  "native_w147_c2048_s32": {
+    "exit_code": 0,
+    "end_to_end_worker_wall_seconds": 96.82189224600006
+  },
+  "nano_w108_c2048_s32": {
+    "exit_code": 0,
+    "end_to_end_worker_wall_seconds": 96.27999653200095
+  },
+  "nano_w108_c1024_s32": {
+    "exit_code": 0,
+    "end_to_end_worker_wall_seconds": 94.06662899100047
+  },
+  "linear_w224_c2048_s32": {
+    "exit_code": 0,
+    "end_to_end_worker_wall_seconds": 94.86556286300038
+  }
+}
