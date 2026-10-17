@@ -1,0 +1,5 @@
+linear_w160_c512_s32 {'step': 0, 'training_targets': 0, 'train_wall_seconds': 0.0, 'train_cpu_seconds': 0.0, 'validation_ce': 8.11794662475586}
+linear_w160_c512_s32 {'step': 93, 'training_targets': 761856, 'train_wall_seconds': 30.047351972982142, 'train_cpu_seconds': 109.95326975099997, 'validation_ce': 5.469387173652649}
+linear_w160_c512_s32 {'step': 194, 'training_targets': 1589248, 'train_wall_seconds': 60.04467685499549, 'train_cpu_seconds': 221.48142692299996, 'validation_ce': 5.229365587234497}
+linear_w160_c512_s32 {'step': 291, 'training_targets': 2383872, 'train_wall_seconds': 89.44638099299118, 'train_cpu_seconds': 329.8614901739999, 'validation_ce': 5.093558073043823}
+COMPLETE linear_w160_c512_s32 291 5.016995906829834 None

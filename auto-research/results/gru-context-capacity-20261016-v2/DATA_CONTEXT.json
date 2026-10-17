@@ -1,0 +1,87 @@
+{
+  "EOS_id": 0,
+  "scope": "Post-hoc composition check of existing16 final validation windows; no new evaluation region.",
+  "windows_without_EOS_in_latest512_inputs": 11,
+  "windows": [
+    {
+      "final_target_index": 709830,
+      "preceding_non_EOS_inputs_capped_at2048": 1165,
+      "EOS_in_latest512_inputs": false
+    },
+    {
+      "final_target_index": 742299,
+      "preceding_non_EOS_inputs_capped_at2048": 2048,
+      "EOS_in_latest512_inputs": false
+    },
+    {
+      "final_target_index": 776796,
+      "preceding_non_EOS_inputs_capped_at2048": 2026,
+      "EOS_in_latest512_inputs": false
+    },
+    {
+      "final_target_index": 810127,
+      "preceding_non_EOS_inputs_capped_at2048": 394,
+      "EOS_in_latest512_inputs": true
+    },
+    {
+      "final_target_index": 849508,
+      "preceding_non_EOS_inputs_capped_at2048": 2048,
+      "EOS_in_latest512_inputs": false
+    },
+    {
+      "final_target_index": 878384,
+      "preceding_non_EOS_inputs_capped_at2048": 2043,
+      "EOS_in_latest512_inputs": false
+    },
+    {
+      "final_target_index": 915877,
+      "preceding_non_EOS_inputs_capped_at2048": 849,
+      "EOS_in_latest512_inputs": false
+    },
+    {
+      "final_target_index": 950198,
+      "preceding_non_EOS_inputs_capped_at2048": 645,
+      "EOS_in_latest512_inputs": false
+    },
+    {
+      "final_target_index": 986637,
+      "preceding_non_EOS_inputs_capped_at2048": 251,
+      "EOS_in_latest512_inputs": true
+    },
+    {
+      "final_target_index": 1017994,
+      "preceding_non_EOS_inputs_capped_at2048": 2048,
+      "EOS_in_latest512_inputs": false
+    },
+    {
+      "final_target_index": 1055930,
+      "preceding_non_EOS_inputs_capped_at2048": 420,
+      "EOS_in_latest512_inputs": true
+    },
+    {
+      "final_target_index": 1089825,
+      "preceding_non_EOS_inputs_capped_at2048": 642,
+      "EOS_in_latest512_inputs": false
+    },
+    {
+      "final_target_index": 1120779,
+      "preceding_non_EOS_inputs_capped_at2048": 146,
+      "EOS_in_latest512_inputs": true
+    },
+    {
+      "final_target_index": 1161364,
+      "preceding_non_EOS_inputs_capped_at2048": 1091,
+      "EOS_in_latest512_inputs": false
+    },
+    {
+      "final_target_index": 1196805,
+      "preceding_non_EOS_inputs_capped_at2048": 2048,
+      "EOS_in_latest512_inputs": false
+    },
+    {
+      "final_target_index": 1226450,
+      "preceding_non_EOS_inputs_capped_at2048": 313,
+      "EOS_in_latest512_inputs": true
+    }
+  ]
+}

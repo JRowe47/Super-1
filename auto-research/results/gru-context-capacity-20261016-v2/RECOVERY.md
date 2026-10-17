@@ -40,9 +40,22 @@ copy when reproducing a completed study.
 python experiment.py preflight --data-dir /path/to/exact/data
 python launch.py --data-dir /path/to/exact/data --archive-dir /path/to/checkpoint_archives
 python analyze.py --data-dir /path/to/exact/data
+python samples.py --data-dir /path/to/exact/data
+python report.py
 ```
 
 The optional `--upload-helper` points to the current supported Library helper
 in the hosted execution environment. External reproduction may omit it and
 preserve the generated checkpoint archives through its own durable storage.
 Time-budget runs can process different update counts on different hardware.
+
+Analysis and figures require Matplotlib; text illustrations use Tokenizers
+0.23.3 and the same hash-bound tokenizer. After hosted preservation succeeds,
+`python preserve.py --archive-dir /path/to/checkpoint_archives` checks every
+per-item upload receipt and both archive/checkpoint hashes, then writes the
+sanitized archive inventory. This receipt check is specific to hosted uploads;
+external reproducers should record their own preservation locations.
+
+`PREFIX_PROFILE.json` and `DATA_CONTEXT.json` are explicitly post-hoc
+diagnostics. They describe where the prefix effect occurs and the existing
+validation windows' document boundaries; neither changes the frozen ranking.

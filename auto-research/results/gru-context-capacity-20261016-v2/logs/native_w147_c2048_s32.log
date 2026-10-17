@@ -1,0 +1,5 @@
+native_w147_c2048_s32 {'step': 0, 'training_targets': 0, 'train_wall_seconds': 0.0, 'train_cpu_seconds': 0.0, 'validation_ce': 8.09106707572937}
+native_w147_c2048_s32 {'step': 33, 'training_targets': 270336, 'train_wall_seconds': 30.56086104100359, 'train_cpu_seconds': 117.66958466400003, 'validation_ce': 6.121513485908508}
+native_w147_c2048_s32 {'step': 65, 'training_targets': 532480, 'train_wall_seconds': 60.70430443500118, 'train_cpu_seconds': 233.32466743099997, 'validation_ce': 5.712396860122681}
+native_w147_c2048_s32 {'step': 96, 'training_targets': 786432, 'train_wall_seconds': 88.63699067300513, 'train_cpu_seconds': 340.40937498600016, 'validation_ce': 5.608341097831726}
+COMPLETE native_w147_c2048_s32 96 5.6558678150177 0.004554808139801025

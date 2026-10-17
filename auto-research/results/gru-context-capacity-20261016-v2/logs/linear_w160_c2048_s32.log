@@ -1,0 +1,5 @@
+linear_w160_c2048_s32 {'step': 0, 'training_targets': 0, 'train_wall_seconds': 0.0, 'train_cpu_seconds': 0.0, 'validation_ce': 8.125287771224976}
+linear_w160_c2048_s32 {'step': 78, 'training_targets': 638976, 'train_wall_seconds': 30.214270580003358, 'train_cpu_seconds': 113.56339710499999, 'validation_ce': 5.661757588386536}
+linear_w160_c2048_s32 {'step': 157, 'training_targets': 1286144, 'train_wall_seconds': 60.02975971100386, 'train_cpu_seconds': 225.927403506, 'validation_ce': 5.365880608558655}
+linear_w160_c2048_s32 {'step': 236, 'training_targets': 1933312, 'train_wall_seconds': 89.37718772300832, 'train_cpu_seconds': 336.02221313400025, 'validation_ce': 5.234032154083252}
+COMPLETE linear_w160_c2048_s32 236 5.147467374801636 0.0061615705490112305

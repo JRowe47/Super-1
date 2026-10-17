@@ -1,0 +1,62 @@
+[
+  {
+    "run_id": "linear_w160_c1024_s32",
+    "path": "execution/linear_w160_c1024_s32/checkpoint.pt",
+    "sha256": "f9fb090dda3154c0dd480c1e083fe35e7a400f300b13667a064e84b5da96ce71",
+    "bytes": 12011445
+  },
+  {
+    "run_id": "linear_w160_c2048_s64",
+    "path": "execution/linear_w160_c2048_s64/checkpoint.pt",
+    "sha256": "5da692e862741f30844c496d8aa2cf69290451d1ae0ea88293818f69c4863d4a",
+    "bytes": 12011445
+  },
+  {
+    "run_id": "linear_w160_c2048_s32",
+    "path": "execution/linear_w160_c2048_s32/checkpoint.pt",
+    "sha256": "8c939f945f231beab4bfa77b9a259be48337d97a109cba6832334bc5ad9c4fea",
+    "bytes": 12010101
+  },
+  {
+    "run_id": "nano_w108_c512_s32",
+    "path": "execution/nano_w108_c512_s32/checkpoint.pt",
+    "sha256": "19cccd7dfff28ca1ffb5cee223aa84e50c852452ced63b541add0717a6729cae",
+    "bytes": 12229346
+  },
+  {
+    "run_id": "linear_w224_c512_s32",
+    "path": "execution/linear_w224_c512_s32/checkpoint.pt",
+    "sha256": "28567dae1169650647081c23962d7afcd215c00f73200dde1a10c841d8d909bf",
+    "bytes": 21262581
+  },
+  {
+    "run_id": "linear_w160_c512_s32",
+    "path": "execution/linear_w160_c512_s32/checkpoint.pt",
+    "sha256": "d7a71e0065ea58a879f6085c8799a58fbbc45ce0366336ec03603b5ade7237c0",
+    "bytes": 12016629
+  },
+  {
+    "run_id": "native_w147_c2048_s32",
+    "path": "execution/native_w147_c2048_s32/checkpoint.pt",
+    "sha256": "ad2b151414aa80122bd8c4ac3bb21a4f6ea2fd96361da4a0e4ae8372905f3420",
+    "bytes": 11989557
+  },
+  {
+    "run_id": "nano_w108_c2048_s32",
+    "path": "execution/nano_w108_c2048_s32/checkpoint.pt",
+    "sha256": "ec69738c7393e4bde0a6c6d0980d295dada3a2dd2a1f1dad176262513097f94b",
+    "bytes": 12206882
+  },
+  {
+    "run_id": "nano_w108_c1024_s32",
+    "path": "execution/nano_w108_c1024_s32/checkpoint.pt",
+    "sha256": "6bec0c61f02e0bd39d9264f5ac18fa1f4d46c7c6b749cade44366af7999313de",
+    "bytes": 12220258
+  },
+  {
+    "run_id": "linear_w224_c2048_s32",
+    "path": "execution/linear_w224_c2048_s32/checkpoint.pt",
+    "sha256": "c772cf77ce090912ad10fd9b63151a613f299dc1ff942aa3d5dcf8edd1982605",
+    "bytes": 21257781
+  }
+]

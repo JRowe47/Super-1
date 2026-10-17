@@ -1,0 +1,6 @@
+number of parameters: 0.79M
+nano_w108_c2048_s32 {'step': 0, 'training_targets': 0, 'train_wall_seconds': 0.0, 'train_cpu_seconds': 0.0, 'validation_ce': 7.646658658981323}
+nano_w108_c2048_s32 {'step': 127, 'training_targets': 260096, 'train_wall_seconds': 30.204265727006714, 'train_cpu_seconds': 120.30737665999996, 'validation_ce': 6.081307291984558}
+nano_w108_c2048_s32 {'step': 257, 'training_targets': 526336, 'train_wall_seconds': 60.085954031001165, 'train_cpu_seconds': 239.16616673600004, 'validation_ce': 5.846714973449707}
+nano_w108_c2048_s32 {'step': 377, 'training_targets': 772096, 'train_wall_seconds': 89.67618834799941, 'train_cpu_seconds': 356.56260220299987, 'validation_ce': 5.761576890945435}
+COMPLETE nano_w108_c2048_s32 377 5.808841943740845 0.006117820739746094

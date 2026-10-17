@@ -1,0 +1,130 @@
+{
+  "run_id": "nano_w108_c2048_s32",
+  "arm": "nanogpt",
+  "width": 108,
+  "context": 2048,
+  "segment_length": null,
+  "config": {
+    "vocab_size": 2048,
+    "block_size": 2048,
+    "n_layer": 4,
+    "n_head": 4,
+    "n_embd": 108,
+    "dropout": 0.0,
+    "bias": true
+  },
+  "threads": 4,
+  "blocks_per_update": 1,
+  "peak_lr": 0.002,
+  "batch": 1,
+  "parameters": 1008072,
+  "persistent_state_fp32_bytes_per_sequence": null,
+  "seed": 101605,
+  "updates": 377,
+  "training_targets": 772096,
+  "train_wall_seconds": 89.67618834799941,
+  "train_cpu_seconds": 356.56260220299987,
+  "final": {
+    "ce": 5.808841943740845,
+    "perplexity": 333.23299957893005,
+    "top1": 0.0601806640625,
+    "targets": 8192,
+    "window_ce": [
+      5.781529426574707,
+      5.841637134552002,
+      5.663476467132568,
+      5.9348273277282715,
+      6.432311058044434,
+      5.905373573303223,
+      5.787468433380127,
+      5.5402445793151855,
+      5.844250202178955,
+      5.474145889282227,
+      5.8043904304504395,
+      5.839438438415527,
+      5.852260112762451,
+      5.71415901184082,
+      5.734346389770508,
+      5.79161262512207
+    ]
+  },
+  "prefix_swapped": {
+    "ce": 5.814959764480591,
+    "perplexity": 335.27790814893206,
+    "top1": 0.0606689453125,
+    "targets": 8192,
+    "window_ce": [
+      5.775527000427246,
+      5.8357930183410645,
+      5.6698384284973145,
+      5.931394577026367,
+      6.43311882019043,
+      5.906353950500488,
+      5.798896312713623,
+      5.540163516998291,
+      5.843195915222168,
+      5.564147472381592,
+      5.804255962371826,
+      5.842902183532715,
+      5.840390682220459,
+      5.713962078094482,
+      5.7398881912231445,
+      5.799528121948242
+    ]
+  },
+  "prefix_benefit_ce": 0.006117820739746094,
+  "monitor": [
+    {
+      "step": 0,
+      "training_targets": 0,
+      "train_wall_seconds": 0.0,
+      "train_cpu_seconds": 0.0,
+      "validation_ce": 7.646658658981323
+    },
+    {
+      "step": 127,
+      "training_targets": 260096,
+      "train_wall_seconds": 30.204265727006714,
+      "train_cpu_seconds": 120.30737665999996,
+      "validation_ce": 6.081307291984558
+    },
+    {
+      "step": 257,
+      "training_targets": 526336,
+      "train_wall_seconds": 60.085954031001165,
+      "train_cpu_seconds": 239.16616673600004,
+      "validation_ce": 5.846714973449707
+    },
+    {
+      "step": 377,
+      "training_targets": 772096,
+      "train_wall_seconds": 89.67618834799941,
+      "train_cpu_seconds": 356.56260220299987,
+      "validation_ce": 5.761576890945435
+    }
+  ],
+  "run_wall_seconds": 93.73664031100088,
+  "run_cpu_seconds": 372.818374793,
+  "setup_wall_seconds": 1.829334228999869,
+  "checkpoint_sha256": "ec69738c7393e4bde0a6c6d0980d295dada3a2dd2a1f1dad176262513097f94b",
+  "protocol_sha256": "6ff0e454f8e1e8de485ca1a4b6a214e28e14b3a8312d1418ef59e2fd36c0c8ff",
+  "runtime": {
+    "torch": "2.14.1+cpu",
+    "numpy": "2.3.5",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+    "threads": 4,
+    "interop": 1,
+    "affinity": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "device": "cpu",
+    "dtype": "float32",
+    "cpu_model": "AMD EPYC 9V74 80-Core Processor",
+    "cpu_quota": "800000 100000"
+  },
+  "peak_rss_kib": 519044
+}
