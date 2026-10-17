@@ -1,0 +1,163 @@
+{
+  "authorization": {
+    "approved": true,
+    "approved_resources": "Existing conversation CPU runtime only; no paid resource provisioning or external datasets.",
+    "local_cpu_budget": "15 small trials,1 torch thread each,at most3 workers; estimated15 CPU minutes from250-step pilot.",
+    "max_cost": 0,
+    "max_walltime": "Main launcher <=30min; each trial360s training/420s worker.",
+    "user_approval_reference": "User 2026-10-17: Ok, perfect, go ahead and run with that. Approves preceding proposed bounded curve-parameter retention study."
+  },
+  "data": {
+    "confirmation_sha256": "Fresh seeds990001,990002, offsets10000*mode+delay;arrays hashed in scores",
+    "dataset_versions": "Fresh deterministic synthetic locked-register generator tasks.py",
+    "official_test_access_permitted": false,
+    "research_wide_region_reuse_audit": "New task and seeds; no external or historical corpus, teacher, or official test.",
+    "selection_sha256": "Pilot seeds880001,offsets10000*mode+delay; arrays hashed in pilot scores",
+    "split_boundaries": "Train:7000000+seed*10000+step. Pilot generator seeds880001; main990001/990002.",
+    "teacher_and_objective": "No teacher. CE on visible query tokens only; hidden simulator values never fed to model.",
+    "tokenizer_sha256": "Not applicable:52 explicit symbols",
+    "train_sha256": "Per-trial SHA256 of all actually consumed input/label arrays in TERMINAL.json"
+  },
+  "decision": {
+    "next_experiment": "Conditional on results; variable depth, language retention and full self-referential updater weights not in this first phase.",
+    "outcome": "PENDING",
+    "reason": "Frozen before main training"
+  },
+  "deployment": {
+    "batching": "Train32,eval64",
+    "kv_or_state_dtype": "FP32",
+    "latency_statistics": "Not a deployment latency study;training time and process CPU only.",
+    "memory_components": "Record actual h/p scalar count plus one shared integer clock. Learned parameters and fixed basis buffers separate; activations excluded.",
+    "prefill_decode_protocol": "Sequential reference implementation; no deployment benchmark",
+    "quantization_metadata": "None",
+    "warmup_and_synchronization": "No GPU. Timing begins after model and optimizer construction.",
+    "weight_dtype": "FP32"
+  },
+  "design": {
+    "arms": [
+      "fixed48",
+      "wide64",
+      "context64",
+      "adaptive64",
+      "gru64"
+    ],
+    "compute_accounting": "Record training wall and process CPU separately; no throughput/scaling claims.",
+    "control_rationale": "Primary context64 isolates parameter modulation from ordinary additional state at equal state/parameters. wide64 controls state budget with simpler cell. gru64 is standard nonlinear GRU with same state and more parameters. fixed48 is zero-extension reference.",
+    "learning_rate_trials_per_arm": 1,
+    "matching_track": "Equal optimizer steps and paired examples; primary also exact parameter and state match. FLOPs and wall not matched.",
+    "mechanism_equations": [
+      "v,g,a=Linear(embed(x)); z=sigmoid(g+2*curve_gate(p)); theta=.25*tanh(a+curve_angle(p)); h=(1-z)*R(theta)h+z*v",
+      "Every8 inputs: proposal,eta_logits=Linear([embed(x),tanh(h),p]); p=(1-sigmoid(eta_logits))*p+sigmoid(eta_logits)*tanh(proposal)",
+      "context64 uses identical p updater and parameter shapes but adds both curve fields to candidate coordinates instead of gates/angles.",
+      "8 cosine coefficients per field;2 fields over24 adjacent hidden pairs. Curve coordinate indexes hidden pairs, not depth or token time."
+    ],
+    "original_source_hashes": {
+      "attachment_sha256": "7145e9cc2f9cce0b8fee7b238f3aa956bf3cacf5eea5de77f9c1e6b9eaa431e5",
+      "parent_model_github_blob": "00ec06cfcc3f29a52f285f2b9ca20b701d728ed2",
+      "reference_commit": "4b905f740f87ec037c9c9e1e158703c81cc6aed4"
+    },
+    "parameter_counts": {
+      "adaptive64": {
+        "basis_buffer_scalars": 192,
+        "parameters": 10144,
+        "shared_clock_integer": 1,
+        "state_bytes_fp32": 256,
+        "state_scalars": 64
+      },
+      "context64": {
+        "basis_buffer_scalars": 192,
+        "parameters": 10144,
+        "shared_clock_integer": 1,
+        "state_bytes_fp32": 256,
+        "state_scalars": 64
+      },
+      "fixed48": {
+        "basis_buffer_scalars": 192,
+        "parameters": 7552,
+        "shared_clock_integer": 1,
+        "state_bytes_fp32": 192,
+        "state_scalars": 48
+      },
+      "gru64": {
+        "basis_buffer_scalars": 0,
+        "parameters": 22280,
+        "shared_clock_integer": 1,
+        "state_bytes_fp32": 256,
+        "state_scalars": 64
+      },
+      "wide64": {
+        "basis_buffer_scalars": 256,
+        "parameters": 9256,
+        "shared_clock_integer": 1,
+        "state_bytes_fp32": 256,
+        "state_scalars": 64
+      }
+    },
+    "seed_selection_method": "Three consecutive fresh seeds, chosen before main execution; pilot991 excluded.",
+    "seeds": [
+      101701,
+      101702,
+      101703
+    ]
+  },
+  "evaluation": {
+    "canonical_precision": "FP32",
+    "confirmation_frozen_before_scoring": true,
+    "duplicate_policy": "Replay all primary endpoints after loading saved checkpoints;require exact saved aggregate equality.",
+    "mechanism_interventions": "After frozen evaluation: zero_p,no_gate,no_mix on adaptive models at256; trained interventions are distribution-shifting diagnostics, not retrained ablations.",
+    "multiple_comparison_policy": "One primary adaptive-context comparison. Other arms, horizons and interventions descriptive; no multiple-comparison significance claim.",
+    "no_test_tuning": true,
+    "primary_endpoint": "Final step3000;128 independent episodes per mode/delay; final4 queries each. Delays32,256,1024.",
+    "uncertainty_method": "Show every training seed and paired differences. Report mean/range; n=3 cannot establish broad generalization. Per-episode outcomes retained."
+  },
+  "evidence": {
+    "checkpoint_manifest": "CHECKPOINT_MANIFEST.json at completion",
+    "cleanup_receipt": "TERMINAL.json at completion",
+    "preservation_policy": "Code/numeric evidence to own fork draft PR; checkpoints in a companion artifact. Retain pilot and negative results.",
+    "progress_path": "main/<arm>_s<seed>/training.json",
+    "protocol_sha256": "External REGISTRATION.json hashes this file to avoid self-hash.",
+    "source_manifest": {
+      "experiment.py": "c9fa99fccceffba9c1d82b5e05b812f282b55d5a55aab1ca8de32f4113887648",
+      "launch.py": "fc7a21c54fd83eb030618f9cffbab78c06472e4aa3e1dbe59c4805ebc26cb2d1",
+      "model.py": "38f8c336e6f68a29aa7c039a1dbd122f6ad326bc948bc819c44f49df257946ae",
+      "tasks.py": "8c8f47c6a1e9c0b9b633c2eeb67f9fa5a5349f8bc87135ae52cd45bb27070e90"
+    },
+    "terminal_receipt_path": "main/LAUNCH_TERMINAL.json"
+  },
+  "execution": {
+    "canary_matrix": "Independent scalar task oracle;zero extension of both mechanisms;nonzero-controller chunk and causality checks;nonzero gradient numerical check.",
+    "cost_estimate": "Pilot250steps took2.5-4.6s training per arm. Main expected<20CPUmin including evaluation.",
+    "fidelity_tolerances": "Exact zero-extension/chunk/causality agreement; finite-difference absolute gradient error<1e-7 float64.",
+    "hardware": "Existing Linux x86_64 runtime,8-CPU quota,8GiB memory quota;3 workers each1 thread.",
+    "resolved_writable_output": "/workspace/scratch/1c2ace3a678e/curve_inception/auto-research/results/curve-inception-20261017-v1",
+    "runtime_versions": "3.12.14",
+    "source_ownership_and_concurrent_writers": "New isolated unique result directory; no other writer; old macOS SSD mount rule pertains to a different host. Current supplied workspace and mandatory durable artifact handling used."
+  },
+  "experiment_id": "curve-inception-gate-mix",
+  "futility_rule": "Stop on nonfinite loss, failed numerical fidelity, trial wall>360s, or lost evidence. Retain all results. No tuning after main scores.",
+  "hypothesis": "Persisting smooth gate/mixing coefficients improves long-delay conditional recall versus allocating exactly the same parameter count and recurrent-state budget to ordinary candidate modulation.",
+  "minimum_useful_effect": "Mean paired gain >=0.05 accuracy with all3 training seeds positive.",
+  "parent_run_ids": [
+    "gru-context-capacity-20261016-v2"
+  ],
+  "primary_comparator": "adaptive64 minus context64; both10144 parameters and64 FP32 state scalars",
+  "primary_metric": "Final four-query mean accuracy after256 intervening tokens in conflict mode, higher is better.",
+  "run_id": "curve-inception-20261017-v1",
+  "schema_version": 1,
+  "status": "FROZEN_BEFORE_MAIN_TRAINING",
+  "success_rule": "Primary gain >=0.05; all3 paired seed gains positive; adaptive32-token reopened-key accuracy no worse than context by0.02. This supports a follow-up only, not superiority to GRU or language transfer.",
+  "training": {
+    "accessible_history": "Whole episode; no truncation within it.",
+    "bptt_length": "Whole independent episode,20/28/44 tokens",
+    "checkpoint_selection_rule": "Final step3000 only; no best-seed or best-checkpoint selection.",
+    "document_reset_policy": "Reset all state at each newly generated independent episode.",
+    "gradient_accumulation": 1,
+    "microbatch": 32,
+    "optimizer_schedule": "AdamW all parameters lr0.003,betas0.9/0.95,decay0.01,grad clip1. Cosine to0.0003 over3000updates; no warmup.",
+    "precision": "FP32 deterministic CPU",
+    "state_carry_and_detach": "Carry h,p,and clock across every8-input control boundary; full gradients; no intra-episode detach.",
+    "target_exposures_per_trial": "Actual count recorded; exact matching across arms within seed.",
+    "tokens_per_update": "32 episodes x(delay+12); delay8/16/32 chosen deterministically.",
+    "updates": 3000
+  }
+}

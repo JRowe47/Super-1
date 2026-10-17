@@ -96,6 +96,18 @@
       "terminal": "auto-research/results/synthetic-rotation-radial-20261016-v1/execution/TERMINAL.json",
       "training_metrics": "auto-research/results/synthetic-rotation-radial-20261016-v1/execution/progress.jsonl",
       "updates_per_arm": 80
+    },
+    {
+      "approval": "User 2026-10-17: Ok, perfect, go ahead and run with that. Approves preceding proposed bounded curve-parameter retention study.",
+      "arm_seed_rows": 15,
+      "decision": "Primary paired gain -7.88pp;all3 negative. Limited synthetic evidence;no architecture promotion.",
+      "metrics": "auto-research/results/curve-inception-20261017-v1/SUMMARY.json",
+      "protocol": "auto-research/results/curve-inception-20261017-v1/PROTOCOL.json",
+      "protocol_sha256": "38efa9efac4ef453700aed3e543636da0f09e0bf0f0c41d737c1047f1ccc20f3",
+      "report": "auto-research/reports/curve-inception-20261017-v1.md",
+      "run_id": "curve-inception-20261017-v1",
+      "status": "COMPLETE_NO_PROMOTION",
+      "terminal": "auto-research/results/curve-inception-20261017-v1/TERMINAL.json"
     }
   ],
   "schema_version": 1,

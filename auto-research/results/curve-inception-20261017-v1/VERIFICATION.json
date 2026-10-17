@@ -1,0 +1,51 @@
+{
+  "adaptive64_zero_extension_max_error": 0.0,
+  "causal_prefix_max_error": 0.0,
+  "context64_zero_extension_max_error": 0.0,
+  "counts": {
+    "adaptive64": {
+      "basis_buffer_scalars": 192,
+      "parameters": 10144,
+      "shared_clock_integer": 1,
+      "state_bytes_fp32": 256,
+      "state_scalars": 64
+    },
+    "context64": {
+      "basis_buffer_scalars": 192,
+      "parameters": 10144,
+      "shared_clock_integer": 1,
+      "state_bytes_fp32": 256,
+      "state_scalars": 64
+    },
+    "fixed48": {
+      "basis_buffer_scalars": 192,
+      "parameters": 7552,
+      "shared_clock_integer": 1,
+      "state_bytes_fp32": 192,
+      "state_scalars": 48
+    },
+    "gru64": {
+      "basis_buffer_scalars": 0,
+      "parameters": 22280,
+      "shared_clock_integer": 1,
+      "state_bytes_fp32": 256,
+      "state_scalars": 64
+    },
+    "wide64": {
+      "basis_buffer_scalars": 256,
+      "parameters": 9256,
+      "shared_clock_integer": 1,
+      "state_bytes_fp32": 256,
+      "state_scalars": 64
+    }
+  },
+  "curve_orthogonality_max_error": 2.4163094382763833e-07,
+  "independent_oracle": true,
+  "nonzero_chunk_carry_max_error": 0.0,
+  "status": "PASS",
+  "updater_gradient": {
+    "absolute_error": 1.979679161266413e-11,
+    "analytic": -5.21693558504473e-06,
+    "finite_difference": -5.216915788253117e-06
+  }
+}
