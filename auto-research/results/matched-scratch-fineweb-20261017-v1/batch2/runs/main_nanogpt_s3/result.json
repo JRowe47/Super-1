@@ -1,0 +1,89 @@
+{
+  "arm": "nanogpt",
+  "seed": 3,
+  "context": 1024,
+  "params": 124475904,
+  "tokens": 503316480,
+  "steps": 7680,
+  "selection_ce": 3.753228222951293,
+  "curve": [
+    {
+      "step": 768,
+      "tokens": 50331648,
+      "selection_ce": 4.856052812188864
+    },
+    {
+      "step": 1536,
+      "tokens": 100663296,
+      "selection_ce": 4.389205165207386
+    },
+    {
+      "step": 2304,
+      "tokens": 150994944,
+      "selection_ce": 4.199466697871685
+    },
+    {
+      "step": 3072,
+      "tokens": 201326592,
+      "selection_ce": 4.076053032651544
+    },
+    {
+      "step": 3840,
+      "tokens": 251658240,
+      "selection_ce": 3.982941512018442
+    },
+    {
+      "step": 4608,
+      "tokens": 301989888,
+      "selection_ce": 3.9092300925403833
+    },
+    {
+      "step": 5376,
+      "tokens": 352321536,
+      "selection_ce": 3.847025837749243
+    },
+    {
+      "step": 6144,
+      "tokens": 402653184,
+      "selection_ce": 3.7988624908030033
+    },
+    {
+      "step": 6912,
+      "tokens": 452984832,
+      "selection_ce": 3.7656520158052444
+    },
+    {
+      "step": 7680,
+      "tokens": 503316480,
+      "selection_ce": 3.753228222951293
+    }
+  ],
+  "train_seconds": 1160.6920166015625,
+  "train_tok_per_s": 456986.3376533467,
+  "peak_train_mem_bytes": 43767084544,
+  "stateful": false,
+  "config": {
+    "context": 1024,
+    "batch": 64,
+    "tokens": 503316480,
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "weight_decay": 0.1,
+    "grad_clip": 1.0,
+    "min_lr_ratio": 0.1,
+    "eval_tokens": 33554432,
+    "curve_eval_tokens": 4194304,
+    "confirm": true,
+    "eval_every": 768,
+    "arm": "nanogpt",
+    "layers": 12,
+    "heads": 12,
+    "width": 768,
+    "lr": 0.001,
+    "seed": 3
+  },
+  "confirmation_ce": 3.751359125599265,
+  "checkpoint_sha256": "d980107910a530f7f099e3bf382359e938f2a0b354eb72171bb319a065350e56"
+}

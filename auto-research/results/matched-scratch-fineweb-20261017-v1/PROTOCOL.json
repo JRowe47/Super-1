@@ -1,0 +1,110 @@
+{
+  "authorization": {
+    "approved": true,
+    "approved_resources": "Daytona ephemeral sandboxes, up to 2x H100 80GB concurrently",
+    "local_cpu_budget": "n/a",
+    "max_cost": "USD 100",
+    "max_walltime": "this session",
+    "user_approval_reference": "Cowork session 2026-10-17: user supplied Daytona key, 'Keep trying to beat nanoGPT ASAP', selected '~$100 / up to 2xH100' and 'Branch + PR, no merge'."
+  },
+  "data": {
+    "dataset_versions": "HF kjj0/fineweb10B-gpt2: fineweb_train_000001..000010 (1.0B tokens), fineweb_val_000000 (100M tokens)",
+    "official_test_access_permitted": false,
+    "research_wide_region_reuse_audit": "FineWeb never previously used in this repository",
+    "split_boundaries": "train = shards 1-10 concatenated; selection = val tokens [0, 50M); confirmation = val tokens [50M, 100M)",
+    "teacher_and_objective": "none; scratch next-token CE",
+    "tokenizer_sha256": "GPT-2 BPE (pretokenized upstream; vocab 50257 padded to 50304)"
+  },
+  "decision": {
+    "next_experiment": null,
+    "outcome": null,
+    "reason": null
+  },
+  "deployment": {
+    "batching": null,
+    "kv_or_state_dtype": null,
+    "latency_statistics": null,
+    "memory_components": null,
+    "prefill_decode_protocol": null,
+    "quantization_metadata": null,
+    "warmup_and_synchronization": null,
+    "weight_dtype": null
+  },
+  "design": {
+    "arms": {
+      "hier": "width 1344, 125,442,240 params, state reset every window (matches nanoGPT exposure)",
+      "hier_stateful": "same model; B contiguous lanes, state carried across adjacent windows, detached at window boundaries (TBPTT=context); evaluated streaming over contiguous lanes. Separately labeled: accesses history beyond the window, so it is a deployment-regime arm, not the primary comparison.",
+      "nanogpt": "12L/12H/768, 124,475,904 params"
+    },
+    "compute_accounting": "measured train tokens/s on the same H100; analytic MACs/token",
+    "control_rationale": "Primary comparison trains and evaluates both models at the same context, removing the historical 512-train/2K-eval extrapolation confound. Same tokenizer, data, sampler seed, token budget, optimizer recipe and LR grid.",
+    "learning_rate_trials_per_arm": "3: {3e-4, 1e-3, 3e-3} at 100M tokens, seed 1, select by selection-half CE",
+    "matching_track": "parameter-matched and token-matched; FLOPs and walltime reported, not matched",
+    "mechanism_equations": "Unchanged HierarchicalDistributionStudent: fast GRUCell(3d->d) on [token, segment, document]; segment GRUCell on mean of fast over 32 tokens; document GRUCell every 8 segments; combine MLP 3d->2d->d; tied output. FastHierarchy runs each 32-token segment's fast recurrence as one cuDNN GRU call with the same weights (slow states are constant inside a segment).",
+    "original_source_hashes": {
+      "nanogpt model.py (frozen Aug-8 package)": "7c01703240dbec5d554527dc666e35b3df8391d0b117fddc07afcf325a21d11c",
+      "predictive_models.py (exact recovered)": "b73a7c07801f5672adb52c0cb16a3c772d62e50eebc0366491d497f76d13f73f"
+    },
+    "parameter_counts": {
+      "hier": 125442240,
+      "nanogpt": 124475904
+    },
+    "seed_selection_method": "fixed in advance",
+    "seeds": [
+      1,
+      2,
+      3
+    ]
+  },
+  "evaluation": {
+    "canonical_precision": "bf16 autocast eval (FP32 CE accumulation); FP32 duplicate not performed in this run - disclosed limitation",
+    "confirmation_frozen_before_scoring": true,
+    "duplicate_policy": "none",
+    "multiple_comparison_policy": "single primary comparison; stateful arm and other contexts are secondary",
+    "no_test_tuning": true,
+    "primary_endpoint": "confirmation CE, 3 seeds",
+    "uncertainty_method": "per-seed values, paired differences, mean and range"
+  },
+  "evidence": {
+    "checkpoint_manifest": null,
+    "cleanup_receipt": null,
+    "preservation_policy": null,
+    "progress_path": null,
+    "protocol_sha256": null,
+    "source_manifest": null,
+    "terminal_receipt_path": null
+  },
+  "execution": {
+    "canary_matrix": "parity.py (FP32, 4 configs incl. saturated scale 3) and parity64.py (FP64)",
+    "cost_estimate": "~10-14 H100-hours, within USD 100",
+    "fidelity_tolerances": "FP32: logits<=1e-4, loss<=1e-5, grad_rel<=1e-4, state<=1e-5; FP64: all<=1e-9",
+    "hardware": "Daytona H100 80GB HBM3 (driver 580.105.08)",
+    "runtime_versions": "pytorch/pytorch:2.7.1-cuda12.8-cudnn9-runtime, torch 2.7.1+cu128, cuDNN 90701"
+  },
+  "experiment_id": "E02-lite matched scratch-CE context comparison",
+  "frozen_at_utc": "2026-10-17T14:44:32.704088Z",
+  "futility_rule": "If after LR selection the best hierarchy selection CE is worse than best nanoGPT selection CE by >0.15 nats at 100M tokens, main 3-seed runs still execute (to document the gap) but no further budget is spent on scale-up of this arm.",
+  "hypothesis": "The exact original 3-timescale GRU hierarchy (FastHierarchy execution, float64-identical to HierarchicalDistributionStudent) reaches lower held-out next-token CE than pinned upstream nanoGPT at ~125M params, matched training tokens, same data/tokenizer/optimizer recipe, trained and evaluated at the same context (1024).",
+  "minimum_useful_effect": "0.02 nats mean paired improvement",
+  "parent_run_ids": [],
+  "primary_comparator": "pinned upstream nanoGPT model.py sha256 7c01703240dbec5d554527dc666e35b3df8391d0b117fddc07afcf325a21d11c, 12L/12H/768, learned absolute positions, block_size = train = eval context",
+  "primary_metric": "mean token cross-entropy (nats) on the confirmation half of fineweb_val_000000 (first 33,554,432 tokens of that half), non-overlapping reset windows at the training context",
+  "run_id": "matched-scratch-fineweb-20261017-v1",
+  "schema_version": 1,
+  "status": "FROZEN_AUTHORIZED",
+  "success_rule": "hierarchy wins only if confirmation CE is lower on all 3 paired seeds AND mean paired improvement >= 0.02 nats. Otherwise report nanoGPT win / inconclusive as measured.",
+  "training": {
+    "accessible_history": "nanogpt/hier: 1024 window; hier_stateful: unbounded via carried state",
+    "bptt_length": 1024,
+    "checkpoint_selection_rule": "final checkpoint only",
+    "document_reset_policy": "no reset at EOT for any arm (EOT is a token, as in nanoGPT training)",
+    "gradient_accumulation": 1,
+    "microbatch": "64 x 1024",
+    "optimizer_schedule": "AdamW fused, betas (0.9,0.95), wd 0.1 on >=2D params, linear warmup 2% then cosine to 10% of peak, grad clip 1.0",
+    "precision": "bf16 autocast, fp32 master weights; TF32 on",
+    "state_carry_and_detach": "hier_stateful only, detach at each window",
+    "target_exposures_per_trial": "LR trials 100M tokens; main runs 500M tokens",
+    "tokens_per_update": 65536,
+    "updates": "tokens / (batch*context)"
+  }
+}

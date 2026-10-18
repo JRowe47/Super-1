@@ -1,0 +1,16 @@
+{
+ "gpu_sandboxes_remaining": 0,
+ "verified_utc": "2026-10-18T01:40Z",
+ "deleted": [
+  "40c27658 (auto)",
+  "2190c4c8 (auto)",
+  "9832aa68",
+  "01955095"
+ ],
+ "retained": "Daytona volume super1-results (3.3 GB) holding batch-2 checkpoints; delete when no longer needed",
+ "approx_gpu_hours": {
+  "batch1": "~8 H100-hours (2 boxes, 14:35Z to ~18:40Z)",
+  "batch2": "~3.2 H100-hours"
+ },
+ "approx_cost_usd": "~44 GPU-only at the $3.95/H100-hr list price (computeprices.com); CPU/RAM/disk add-ons extra. Check Daytona billing for the actual figure."
+}

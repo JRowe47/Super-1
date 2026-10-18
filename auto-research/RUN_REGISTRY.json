@@ -111,6 +111,24 @@
       "source_manifest": "auto-research/results/external-curve-memory-review-20261016-v1/SOURCE_RECEIPT.json",
       "status": "COMPLETED_READ_ONLY_REVIEW_NO_MODEL_EXECUTION",
       "terminal": "auto-research/results/external-curve-memory-review-20261016-v1/TERMINAL.json"
+    },
+    {
+      "approval": "Cowork session 2026-10-17: user supplied Daytona key, requested beating nanoGPT, approved <=$100 / up to 2xH100 and branch+PR; re-approved relaunch after batch-1 loss.",
+      "cleanup_receipt": "auto-research/results/matched-scratch-fineweb-20261017-v1/CLEANUP.json",
+      "graphs": "auto-research/graphs/matched-scratch-fineweb-20261017-v1/",
+      "headline": "Original hierarchy 4.317 vs nanoGPT 3.750 confirmation CE (rejected). hybrid1 (1 hierarchy + 9 attention blocks) 3.7387, beats nanoGPT on 3/3 seeds by mean 0.0112 nats, below 0.02 useful effect; post-hoc, 1.8x slower training.",
+      "kind": "GPU language-model training: matched scratch-CE nanoGPT vs original hierarchy + post-hoc hybrid arms",
+      "metrics": "auto-research/results/matched-scratch-fineweb-20261017-v1/METRICS.json",
+      "new_model_evaluation": true,
+      "new_training": true,
+      "protocol": "auto-research/results/matched-scratch-fineweb-20261017-v1/PROTOCOL.json",
+      "protocol_addenda": "auto-research/results/matched-scratch-fineweb-20261017-v1/PROTOCOL_ADDENDA.md",
+      "protocol_sha256": "eef9a0e85c783fbb7cbe8ca6cebb061969edc99271bd5cd7c6d57f6d2ca77ba5",
+      "registration_chronology": "Protocol frozen before language training; arms deep_hier, hybrid, hybrid1 added post-hoc with timestamps in addenda.",
+      "report": "auto-research/reports/matched-scratch-fineweb-20261017-v1.md",
+      "run_id": "matched-scratch-fineweb-20261017-v1",
+      "status": "COMPLETED_PRIMARY_REJECTED_EXPLORATORY_HYBRID1_INCONCLUSIVE_PARTIAL_ARTIFACT_LOSS",
+      "terminal": "auto-research/results/matched-scratch-fineweb-20261017-v1/TERMINAL.json"
     }
   ],
   "schema_version": 1,
