@@ -1,0 +1,404 @@
+{
+ "provenance": "Values transcribed verbatim from Daytona run logs/result.json read during the session (tool outputs). The original sandboxes were ephemeral and were auto-deleted at ~18:40 UTC while the agent's command channel was blocked; the per-run files, checkpoints and logs for this first batch were lost. Checkpoint hashes for main runs were not read before deletion and are unavailable.",
+ "lr_trials": {
+  "nanogpt": [
+   {
+    "lr": 0.0003,
+    "selection_ce": 4.788407020270824
+   },
+   {
+    "lr": 0.001,
+    "selection_ce": 4.613476039841771
+   },
+   {
+    "lr": 0.003,
+    "selection_ce": 6.603891154751182
+   }
+  ],
+  "hier": [
+   {
+    "lr": 0.0003,
+    "selection_ce": 5.189287036657333
+   },
+   {
+    "lr": 0.001,
+    "selection_ce": 4.860421533696353
+   },
+   {
+    "lr": 0.003,
+    "selection_ce": 5.7138656321913
+   }
+  ],
+  "hier_stateful": [
+   {
+    "lr": 0.0003,
+    "selection_ce": 5.215765913948417
+   },
+   {
+    "lr": 0.001,
+    "selection_ce": 4.8945775693282485
+   },
+   {
+    "lr": 0.003,
+    "selection_ce": 7.669593269005418
+   }
+  ],
+  "deep_hier": [
+   {
+    "lr": 0.001,
+    "selection_ce": 4.700919880531728
+   },
+   {
+    "lr": 0.003,
+    "selection_ce": 4.641174781136215
+   },
+   {
+    "lr": 0.0003,
+    "selection_ce": null,
+    "note": "completed; value not read before sandbox deletion"
+   }
+  ],
+  "hybrid": [
+   {
+    "lr": 0.001,
+    "selection_ce": 4.455034481361508
+   },
+   {
+    "lr": 0.003,
+    "selection_ce": 4.589763606898487
+   },
+   {
+    "lr": 0.0003,
+    "selection_ce": null,
+    "note": "completed or near-complete; value not read before deletion (4.9469 at 52M tokens)"
+   }
+  ]
+ },
+ "lr_trial_curves": {
+  "nanogpt_1e-3": [
+   {
+    "step": 160,
+    "tokens": 10485760,
+    "selection_ce": 6.397746846079826
+   },
+   {
+    "step": 320,
+    "tokens": 20971520,
+    "selection_ce": 5.971066102385521
+   },
+   {
+    "step": 480,
+    "tokens": 31457280,
+    "selection_ce": 5.626832015812397
+   },
+   {
+    "step": 640,
+    "tokens": 41943040,
+    "selection_ce": 5.350755974650383
+   },
+   {
+    "step": 800,
+    "tokens": 52428800,
+    "selection_ce": 5.140570029616356
+   },
+   {
+    "step": 960,
+    "tokens": 62914560,
+    "selection_ce": 4.955333039164543
+   },
+   {
+    "step": 1120,
+    "tokens": 73400320,
+    "selection_ce": 4.81421735137701
+   },
+   {
+    "step": 1280,
+    "tokens": 83886080,
+    "selection_ce": 4.72353021800518
+   },
+   {
+    "step": 1440,
+    "tokens": 94371840,
+    "selection_ce": 4.6643911227583885
+   },
+   {
+    "step": 1600,
+    "tokens": 104857600,
+    "selection_ce": 4.613476039841771
+   }
+  ],
+  "deep_hier_1e-3": [
+   {
+    "step": 160,
+    "tokens": 10485760,
+    "selection_ce": 5.866068430244923
+   },
+   {
+    "step": 320,
+    "tokens": 20971520,
+    "selection_ce": 5.47804956138134
+   },
+   {
+    "step": 480,
+    "tokens": 31457280,
+    "selection_ce": 5.246124476194382
+   },
+   {
+    "step": 640,
+    "tokens": 41943040,
+    "selection_ce": 5.092440463602543
+   },
+   {
+    "step": 800,
+    "tokens": 52428800,
+    "selection_ce": 4.988653518259525
+   },
+   {
+    "step": 960,
+    "tokens": 62914560,
+    "selection_ce": 4.898023068904877
+   },
+   {
+    "step": 1120,
+    "tokens": 73400320,
+    "selection_ce": 4.829138435423374
+   },
+   {
+    "step": 1280,
+    "tokens": 83886080,
+    "selection_ce": 4.779660098254681
+   },
+   {
+    "step": 1440,
+    "tokens": 94371840,
+    "selection_ce": 4.7456249594688416
+   },
+   {
+    "step": 1600,
+    "tokens": 104857600,
+    "selection_ce": 4.700919880531728
+   }
+  ],
+  "hybrid_1e-3": [
+   {
+    "step": 160,
+    "tokens": 10485760,
+    "selection_ce": 5.888740845024586
+   },
+   {
+    "step": 320,
+    "tokens": 20971520,
+    "selection_ce": 5.467604830861092
+   },
+   {
+    "step": 480,
+    "tokens": 31457280,
+    "selection_ce": 5.198213584721088
+   },
+   {
+    "step": 640,
+    "tokens": 41943040,
+    "selection_ce": 5.004654847085476
+   },
+   {
+    "step": 800,
+    "tokens": 52428800,
+    "selection_ce": 4.829702116549015
+   },
+   {
+    "step": 960,
+    "tokens": 62914560,
+    "selection_ce": 4.700097881257534
+   },
+   {
+    "step": 1120,
+    "tokens": 73400320,
+    "selection_ce": 4.604430161416531
+   },
+   {
+    "step": 1280,
+    "tokens": 83886080,
+    "selection_ce": 4.537371031939983
+   },
+   {
+    "step": 1600,
+    "tokens": 104857600,
+    "selection_ce": 4.455034481361508
+   }
+  ],
+  "hier_1e-3": [
+   {
+    "step": 160,
+    "tokens": 10485760,
+    "selection_ce": 5.994231596589088
+   },
+   {
+    "step": 1280,
+    "tokens": 83886080,
+    "selection_ce": 4.932732909917831
+   },
+   {
+    "step": 1440,
+    "tokens": 94371840,
+    "selection_ce": 4.902363985776901
+   },
+   {
+    "step": 1600,
+    "tokens": 104857600,
+    "selection_ce": 4.860421533696353
+   }
+  ]
+ },
+ "main": {
+  "nanogpt": [
+   {
+    "seed": 1,
+    "confirmation_ce": 3.753653867635876,
+    "selection_ce": 3.7558263381943107,
+    "curve": [
+     {
+      "step": 768,
+      "tokens": 50331648,
+      "selection_ce": 4.8479666113853455
+     },
+     {
+      "step": 1536,
+      "tokens": 100663296,
+      "selection_ce": 4.386518780142069
+     },
+     {
+      "step": 2304,
+      "tokens": 150994944,
+      "selection_ce": 4.200902475044131
+     },
+     {
+      "step": 3072,
+      "tokens": 201326592,
+      "selection_ce": 4.081450052559376
+     },
+     {
+      "step": 3840,
+      "tokens": 251658240,
+      "selection_ce": 3.987103909254074
+     },
+     {
+      "step": 4608,
+      "tokens": 301989888,
+      "selection_ce": 3.9122698046267033
+     },
+     {
+      "step": 5376,
+      "tokens": 352321536,
+      "selection_ce": 3.850942926481366
+     },
+     {
+      "step": 6144,
+      "tokens": 402653184,
+      "selection_ce": 3.8026404846459627
+     },
+     {
+      "step": 6912,
+      "tokens": 452984832,
+      "selection_ce": 3.7677179388701916
+     },
+     {
+      "step": 7680,
+      "tokens": 503316480,
+      "selection_ce": 3.7558263381943107
+     }
+    ]
+   },
+   {
+    "seed": 2,
+    "confirmation_ce": 3.744764108210802,
+    "curve": [
+     {
+      "step": 3840,
+      "tokens": 251658240,
+      "selection_ce": 3.981246806681156
+     }
+    ]
+   }
+  ],
+  "hier": [
+   {
+    "seed": 1,
+    "confirmation_ce": 4.317841766634956,
+    "curve": [
+     {
+      "step": 6912,
+      "tokens": 452984832,
+      "selection_ce": 4.3310103751719
+     }
+    ]
+   },
+   {
+    "seed": 2,
+    "confirmation_ce": 4.316250307252631,
+    "curve": [
+     {
+      "step": 2304,
+      "tokens": 150994944,
+      "selection_ce": 4.683951750397682
+     }
+    ]
+   }
+  ],
+  "hybrid": [
+   {
+    "seed": 1,
+    "confirmation_ce": 3.8230222212150693,
+    "selection_ce": 3.825630389386788,
+    "confirmation_ce_streaming": 3.8230222412385046,
+    "curve": [
+     {
+      "step": 768,
+      "tokens": 50331648,
+      "selection_ce": 4.709106646478176
+     },
+     {
+      "step": 1536,
+      "tokens": 100663296,
+      "selection_ce": 4.382552886381745
+     },
+     {
+      "step": 2304,
+      "tokens": 150994944,
+      "selection_ce": 4.225692579522729
+     },
+     {
+      "step": 3072,
+      "tokens": 201326592,
+      "selection_ce": 4.1191328670829535
+     },
+     {
+      "step": 3840,
+      "tokens": 251658240,
+      "selection_ce": 4.036873247474432
+     },
+     {
+      "step": 4608,
+      "tokens": 301989888,
+      "selection_ce": 3.967705937102437
+     },
+     {
+      "step": 7680,
+      "tokens": 503316480,
+      "selection_ce": 3.825630389386788
+     }
+    ]
+   }
+  ]
+ },
+ "throughput_tok_per_s_H100_bf16": {
+  "nanogpt": 453422,
+  "hier": 317000,
+  "hier_stateful": 317602,
+  "deep_hier": 176617,
+  "hybrid": 196106
+ },
+ "peak_train_mem_bytes_B64_T1024": {
+  "nanogpt": 43767084544,
+  "hier": 52937444864
+ }
+}

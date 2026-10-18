@@ -98,48 +98,80 @@
       "updates_per_arm": 80
     },
     {
-      "run_id": "gru-extended-20261016-v1",
-      "status": "COMPLETED_EXPLORATORY_NO_ADVANCE",
-      "kind": "Independent explorer text pilot",
+      "approval": "Current user supplied repository research instructions while continuing the existing explorer project; this review does not adopt historical run approvals.",
+      "kind": "retrospective read-only source reconciliation and external-result import",
+      "metrics": "auto-research/results/external-curve-memory-review-20261016-v1/EXTERNAL_RESULTS.json",
+      "new_model_evaluation": false,
+      "new_training": false,
+      "protocol": "auto-research/results/external-curve-memory-review-20261016-v1/REVIEW_SCOPE.json",
+      "protocol_sha256": "c72d6b55111fa9e8506b8af2bf4cee95e2db37e0c7493104c6ed2f8e9e63adcc",
+      "registration_chronology": "Review recorded after inspection; no claim of experimental preregistration.",
+      "report": "auto-research/reports/external-curve-memory-review-20261016-v1.md",
+      "run_id": "external-curve-memory-review-20261016-v1",
+      "source_manifest": "auto-research/results/external-curve-memory-review-20261016-v1/SOURCE_RECEIPT.json",
+      "status": "COMPLETED_READ_ONLY_REVIEW_NO_MODEL_EXECUTION",
+      "terminal": "auto-research/results/external-curve-memory-review-20261016-v1/TERMINAL.json"
+    },
+    {
+      "approval": "Cowork session 2026-10-17: user supplied Daytona key, requested beating nanoGPT, approved <=$100 / up to 2xH100 and branch+PR; re-approved relaunch after batch-1 loss.",
+      "cleanup_receipt": "auto-research/results/matched-scratch-fineweb-20261017-v1/CLEANUP.json",
+      "graphs": "auto-research/graphs/matched-scratch-fineweb-20261017-v1/",
+      "headline": "Original hierarchy 4.317 vs nanoGPT 3.750 confirmation CE (rejected). hybrid1 (1 hierarchy + 9 attention blocks) 3.7387, beats nanoGPT on 3/3 seeds by mean 0.0112 nats, below 0.02 useful effect; post-hoc, 1.8x slower training.",
+      "kind": "GPU language-model training: matched scratch-CE nanoGPT vs original hierarchy + post-hoc hybrid arms",
+      "metrics": "auto-research/results/matched-scratch-fineweb-20261017-v1/METRICS.json",
+      "new_model_evaluation": true,
+      "new_training": true,
+      "protocol": "auto-research/results/matched-scratch-fineweb-20261017-v1/PROTOCOL.json",
+      "protocol_addenda": "auto-research/results/matched-scratch-fineweb-20261017-v1/PROTOCOL_ADDENDA.md",
+      "protocol_sha256": "eef9a0e85c783fbb7cbe8ca6cebb061969edc99271bd5cd7c6d57f6d2ca77ba5",
+      "registration_chronology": "Protocol frozen before language training; arms deep_hier, hybrid, hybrid1 added post-hoc with timestamps in addenda.",
+      "report": "auto-research/reports/matched-scratch-fineweb-20261017-v1.md",
+      "run_id": "matched-scratch-fineweb-20261017-v1",
+      "status": "COMPLETED_PRIMARY_REJECTED_EXPLORATORY_HYBRID1_INCONCLUSIVE_PARTIAL_ARTIFACT_LOSS",
+      "terminal": "auto-research/results/matched-scratch-fineweb-20261017-v1/TERMINAL.json"
+    },
+    {
       "approval": "User 2026-10-16 15:02 America/Denver: excellent - go ahead with the next experiment, and push the updates and results when done, proceed with linear mingru and paragru",
-      "protocol": "auto-research/results/gru-extended-20261016-v1/PROTOCOL.json",
-      "protocol_sha256": "7b4ccea2b278a45faf50c6fb14ee5b4a1f047236d9ede00ac03963eb4f750cdb",
-      "source_manifest": "auto-research/results/gru-extended-20261016-v1/SOURCE_MANIFEST.json",
-      "metrics": "auto-research/results/gru-extended-20261016-v1/SUMMARY.json",
-      "report": "auto-research/reports/gru-extended-20261016-v1.md",
-      "terminal": "auto-research/results/gru-extended-20261016-v1/TERMINAL.json",
-      "updates_per_arm": 2000,
       "arm_seed_rows": 3,
+      "checkpoint_manifest": "auto-research/results/gru-extended-20261016-v1/CHECKPOINT_MANIFEST.json",
       "decision": "BOTH_CANDIDATES_EXCEED_CE_TOLERANCE",
+      "kind": "Independent explorer text pilot",
+      "metrics": "auto-research/results/gru-extended-20261016-v1/SUMMARY.json",
       "parameters": {
-        "native": 995925,
         "mingru_linear": 996320,
+        "native": 995925,
         "paragru": 995724
       },
-      "seed": 101602,
-      "targets_per_arm": 1024000,
-      "checkpoint_manifest": "auto-research/results/gru-extended-20261016-v1/CHECKPOINT_MANIFEST.json",
       "preservation": "auto-research/results/gru-extended-20261016-v1/PRESERVATION.json",
+      "protocol": "auto-research/results/gru-extended-20261016-v1/PROTOCOL.json",
+      "protocol_sha256": "7b4ccea2b278a45faf50c6fb14ee5b4a1f047236d9ede00ac03963eb4f750cdb",
+      "report": "auto-research/reports/gru-extended-20261016-v1.md",
+      "run_id": "gru-extended-20261016-v1",
+      "seed": 101602,
+      "source_manifest": "auto-research/results/gru-extended-20261016-v1/SOURCE_MANIFEST.json",
+      "status": "COMPLETED_EXPLORATORY_NO_ADVANCE",
       "summary": {
-        "native": {
-          "ce": 4.8641151040792465,
-          "training_cpu_speedup_vs_native": 1.0,
-          "decision": "CONTROL"
-        },
         "mingru_linear": {
           "ce": 4.9888046234846115,
-          "training_cpu_speedup_vs_native": 2.140619169953866,
-          "decision": "DOES_NOT_MEET_EXPLORATORY_RULE"
+          "decision": "DOES_NOT_MEET_EXPLORATORY_RULE",
+          "training_cpu_speedup_vs_native": 2.140619169953866
+        },
+        "native": {
+          "ce": 4.8641151040792465,
+          "decision": "CONTROL",
+          "training_cpu_speedup_vs_native": 1.0
         },
         "paragru": {
           "ce": 4.995581492781639,
-          "training_cpu_speedup_vs_native": 1.6683385771090566,
-          "decision": "DOES_NOT_MEET_EXPLORATORY_RULE"
+          "decision": "DOES_NOT_MEET_EXPLORATORY_RULE",
+          "training_cpu_speedup_vs_native": 1.6683385771090566
         }
-      }
+      },
+      "targets_per_arm": 1024000,
+      "terminal": "auto-research/results/gru-extended-20261016-v1/TERMINAL.json",
+      "updates_per_arm": 2000
     }
   ],
   "schema_version": 1,
-  "status": "LANGUAGE_TRAINING_PAUSED_SYNTHETIC_EXPERIMENTS_NO_PROMOTION",
-  "independent_fork_authorization": "User-authorized bounded GRU pilot in this fork; historical upstream pause applies to its separate official studies"
+  "status": "LANGUAGE_TRAINING_PAUSED_SYNTHETIC_EXPERIMENTS_NO_PROMOTION"
 }

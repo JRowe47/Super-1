@@ -1,0 +1,20 @@
+{
+ "arm": "hier",
+ "batch": 64,
+ "betas": [
+  0.9,
+  0.95
+ ],
+ "confirm": true,
+ "context": 1024,
+ "curve_eval_tokens": 4194304,
+ "eval_every": 768,
+ "eval_tokens": 33554432,
+ "grad_clip": 1.0,
+ "lr": 0.001,
+ "min_lr_ratio": 0.1,
+ "seed": 3,
+ "tokens": 503316480,
+ "weight_decay": 0.1,
+ "width": 1344
+}

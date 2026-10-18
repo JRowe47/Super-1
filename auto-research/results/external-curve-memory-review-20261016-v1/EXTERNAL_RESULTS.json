@@ -1,0 +1,2652 @@
+{
+  "archive_sha256": "e4378e46e1c45d3aacb3bde6edc31ad0d193c7f506a9257435eac6c1c9f1582e",
+  "artifact_availability": "Complete source, endpoints, teacher and corpus preserved separately in the external project archive. Not included in this PR; this evidence subset is not a self-contained training replication.",
+  "recipe": {
+    "arms": [
+      "reference",
+      "slow_independent",
+      "dct_coeff",
+      "learned_coeff",
+      "feedback_coeff",
+      "surprise_write",
+      "clock_write",
+      "recent_objective",
+      "retention_objective",
+      "continuous_delta"
+    ],
+    "basis_seed": 9071,
+    "batch": 4,
+    "binding_batch": 4,
+    "binding_every": 4,
+    "binding_length": 512,
+    "binding_weight": 1.0,
+    "coefficients": 172,
+    "config": {
+      "depth_steps": 2,
+      "hidden": 256,
+      "variant": "portable",
+      "vocab": 2048,
+      "width": 96
+    },
+    "data_seed": 1007117,
+    "distillation_temperature": 2.0,
+    "distillation_weight": 0.5,
+    "eval_seed": 1007127,
+    "key_dim": 16,
+    "long_batch": 1,
+    "long_every": 20,
+    "long_sequence": 1024,
+    "long_validation_windows": 8,
+    "monitor_steps": [
+      0,
+      50,
+      100,
+      200,
+      400
+    ],
+    "novelty_weight": 0.02,
+    "objective_seed": 1007147,
+    "peak_lr": 0.002,
+    "recipe_note": "New baseline and shared text offsets; every twentieth text update is a full-gradient 1024-token episode. Two objective arms add 100 matched synthetic updates with four scored query targets per example.",
+    "sample_prompts": [
+      "The purpose of science is",
+      "When people learn a new language,"
+    ],
+    "sample_seed": 1007137,
+    "sample_temperature": 0.8,
+    "sample_tokens": 48,
+    "sample_top_k": 40,
+    "seed": 1007107,
+    "sequence": 128,
+    "teacher_for_all": true,
+    "updates": 400,
+    "validation_windows": 32,
+    "value_dim": 43,
+    "warmup": 25,
+    "workers": 6
+  },
+  "rows": [
+    {
+      "arm": "reference",
+      "binding_input_positions": 0,
+      "binding_updates": 0,
+      "bindings": {
+        "candidate_count": 16,
+        "episodes_per_gap": 32,
+        "gaps": {
+          "128": {
+            "categories": {
+              "old": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 128,
+                "restricted_accuracy": 0.0
+              },
+              "overwrite": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 32,
+                "restricted_accuracy": 0.03125
+              },
+              "recent": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 96,
+                "restricted_accuracy": 0.10416666666666667
+              }
+            },
+            "query_ce": 9.007376194000244
+          },
+          "32": {
+            "categories": {
+              "old": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 128,
+                "restricted_accuracy": 0.09375
+              },
+              "overwrite": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 32,
+                "restricted_accuracy": 0.0625
+              },
+              "recent": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 96,
+                "restricted_accuracy": 0.08333333333333333
+              }
+            },
+            "query_ce": 8.709682703018188
+          },
+          "512": {
+            "categories": {
+              "old": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 128,
+                "restricted_accuracy": 0.0859375
+              },
+              "overwrite": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 32,
+                "restricted_accuracy": 0.03125
+              },
+              "recent": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 96,
+                "restricted_accuracy": 0.11458333333333333
+              }
+            },
+            "query_ce": 8.828895688056946
+          }
+        },
+        "restricted_chance": 0.0625,
+        "task": "synthetic symbol bindings; A then interfering B then answer-free queries",
+        "trained_on_format": false
+      },
+      "final": {
+        "ce": 5.188496768474579,
+        "context_probe": {
+          "full_ce": 5.195093750953674,
+          "history_gain": 0.2008225917816162,
+          "reset_ce": 5.3959163427352905,
+          "targets": 1024
+        },
+        "targets": 4096,
+        "top1": 0.1083984375
+      },
+      "original_result_sha256": "c983e7affba62a81ac6d9d8c50f8a27c86678355d002a2eb7c40a025b6e2f876",
+      "parameters": 1563460,
+      "samples": [
+        {
+          "continuation": " a billing. Actos.\nBoty, as he were as some prestsated that the marstratic, in the vanate as the thating over, so you have be",
+          "generated_tokens": 48,
+          "prompt": "The purpose of science is",
+          "token_ids": [
+            457,
+            1386,
+            80,
+            549,
+            279,
+            604,
+            896,
+            311,
+            258,
+            280,
+            374,
+            283,
+            14,
+            327,
+            299,
+            400,
+            14,
+            199,
+            34,
+            321,
+            89,
+            12,
+            345,
+            377,
+            527,
+            345,
+            627,
+            626,
+            307,
+            83,
+            466,
+            332,
+            262,
+            287,
+            285,
+            307,
+            323,
+            84,
+            290,
+            12,
+            284,
+            262,
+            403,
+            282,
+            371,
+            345,
+            262,
+            297,
+            267,
+            283,
+            659,
+            12,
+            567,
+            364,
+            438,
+            309
+          ]
+        },
+        {
+          "continuation": " and dented and to miding hind-enlated. The new cimarter, and and to the world or harbing mamy.\nBotener, it may be to be",
+          "generated_tokens": 48,
+          "prompt": "When people learn a new language,",
+          "token_ids": [
+            55,
+            779,
+            673,
+            1375,
+            258,
+            693,
+            1906,
+            12,
+            288,
+            291,
+            298,
+            278,
+            288,
+            289,
+            287,
+            317,
+            283,
+            296,
+            546,
+            13,
+            268,
+            76,
+            466,
+            14,
+            360,
+            693,
+            269,
+            318,
+            285,
+            357,
+            12,
+            288,
+            288,
+            289,
+            262,
+            904,
+            356,
+            296,
+            285,
+            66,
+            283,
+            287,
+            342,
+            89,
+            14,
+            199,
+            34,
+            321,
+            268,
+            264,
+            12,
+            354,
+            624,
+            309,
+            289,
+            309
+          ]
+        }
+      ],
+      "seed": 1007107,
+      "state": {
+        "bank_scalars": 2752,
+        "fp32_bytes": 12288,
+        "hypothetical_bf16_bytes": 6144,
+        "local_history_scalars": 288,
+        "metadata": "position counter; surprise arm also has a block-used flag",
+        "scope": "Analytical streaming state; full-prefix implementation, no cache speed/BF16 quality claim",
+        "spectral_scalars": 32,
+        "surprise_ema_scalars": 0,
+        "total_scalars": 3072
+      },
+      "text_input_positions": 215040,
+      "train_seconds": 114.57356540489127,
+      "training_batches_sha256": "62fd00e39eb9f6e3830c8bf10d7082021c708d2fa1fc59dfb4929bc7df3a4009",
+      "updates": 400,
+      "validation1024": {
+        "ce": 5.225237607955933,
+        "targets": 4096,
+        "top1": 0.11328125
+      },
+      "validation512": {
+        "ce": 5.200861811637878,
+        "targets": 4096,
+        "top1": 0.11767578125
+      }
+    },
+    {
+      "arm": "slow_independent",
+      "binding_input_positions": 0,
+      "binding_updates": 0,
+      "bindings": {
+        "candidate_count": 16,
+        "episodes_per_gap": 32,
+        "gaps": {
+          "128": {
+            "categories": {
+              "old": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 128,
+                "restricted_accuracy": 0.03125
+              },
+              "overwrite": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 32,
+                "restricted_accuracy": 0.09375
+              },
+              "recent": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 96,
+                "restricted_accuracy": 0.07291666666666667
+              }
+            },
+            "query_ce": 7.498649179935455
+          },
+          "32": {
+            "categories": {
+              "old": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 128,
+                "restricted_accuracy": 0.0859375
+              },
+              "overwrite": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 32,
+                "restricted_accuracy": 0.0625
+              },
+              "recent": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 96,
+                "restricted_accuracy": 0.08333333333333333
+              }
+            },
+            "query_ce": 7.6222339272499084
+          },
+          "512": {
+            "categories": {
+              "old": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 128,
+                "restricted_accuracy": 0.078125
+              },
+              "overwrite": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 32,
+                "restricted_accuracy": 0.03125
+              },
+              "recent": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 96,
+                "restricted_accuracy": 0.052083333333333336
+              }
+            },
+            "query_ce": 7.523431658744812
+          }
+        },
+        "restricted_chance": 0.0625,
+        "task": "synthetic symbol bindings; A then interfering B then answer-free queries",
+        "trained_on_format": false
+      },
+      "final": {
+        "ce": 5.437092423439026,
+        "context_probe": {
+          "full_ce": 5.473876893520355,
+          "history_gain": 0.19713103771209717,
+          "reset_ce": 5.671007931232452,
+          "targets": 1024
+        },
+        "targets": 4096,
+        "top1": 0.089111328125
+      },
+      "original_result_sha256": "be9cbc1af5a939406b135f5efadc92d7d105c240fb64d7763184642884b2df9d",
+      "parameters": 1563460,
+      "samples": [
+        {
+          "continuation": " a sasiicate for the the binster and and dalraories to not couil in the holrer, in the D. NMP.\nDIS is the hot",
+          "generated_tokens": 48,
+          "prompt": "The purpose of science is",
+          "token_ids": [
+            457,
+            1386,
+            80,
+            549,
+            279,
+            604,
+            896,
+            311,
+            258,
+            266,
+            295,
+            73,
+            290,
+            371,
+            328,
+            262,
+            262,
+            280,
+            260,
+            307,
+            264,
+            288,
+            288,
+            291,
+            277,
+            323,
+            275,
+            375,
+            289,
+            429,
+            269,
+            286,
+            300,
+            284,
+            262,
+            296,
+            315,
+            82,
+            264,
+            12,
+            284,
+            262,
+            411,
+            14,
+            432,
+            45,
+            48,
+            14,
+            199,
+            36,
+            41,
+            51,
+            311,
+            262,
+            296,
+            321
+          ]
+        },
+        {
+          "continuation": " and to casdes that is the in Sraal of one of the toting for a fugle.\nIt is to the sounnly to a prama to lus of the",
+          "generated_tokens": 48,
+          "prompt": "When people learn a new language,",
+          "token_ids": [
+            55,
+            779,
+            673,
+            1375,
+            258,
+            693,
+            1906,
+            12,
+            288,
+            289,
+            269,
+            295,
+            68,
+            271,
+            332,
+            311,
+            262,
+            284,
+            330,
+            323,
+            277,
+            279,
+            539,
+            279,
+            262,
+            257,
+            321,
+            283,
+            328,
+            258,
+            281,
+            85,
+            71,
+            293,
+            14,
+            199,
+            1376,
+            311,
+            289,
+            262,
+            266,
+            286,
+            78,
+            78,
+            308,
+            289,
+            258,
+            276,
+            323,
+            77,
+            65,
+            289,
+            304,
+            379,
+            279,
+            262
+          ]
+        }
+      ],
+      "seed": 1007107,
+      "state": {
+        "bank_scalars": 2752,
+        "fp32_bytes": 12288,
+        "hypothetical_bf16_bytes": 6144,
+        "local_history_scalars": 288,
+        "metadata": "position counter; surprise arm also has a block-used flag",
+        "scope": "Analytical streaming state; full-prefix implementation, no cache speed/BF16 quality claim",
+        "spectral_scalars": 32,
+        "surprise_ema_scalars": 0,
+        "total_scalars": 3072
+      },
+      "text_input_positions": 215040,
+      "train_seconds": 112.32878755907586,
+      "training_batches_sha256": "62fd00e39eb9f6e3830c8bf10d7082021c708d2fa1fc59dfb4929bc7df3a4009",
+      "updates": 400,
+      "validation1024": {
+        "ce": 5.481869101524353,
+        "targets": 4096,
+        "top1": 0.091064453125
+      },
+      "validation512": {
+        "ce": 5.462270021438599,
+        "targets": 4096,
+        "top1": 0.096435546875
+      }
+    },
+    {
+      "arm": "dct_coeff",
+      "binding_input_positions": 0,
+      "binding_updates": 0,
+      "bindings": {
+        "candidate_count": 16,
+        "episodes_per_gap": 32,
+        "gaps": {
+          "128": {
+            "categories": {
+              "old": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 128,
+                "restricted_accuracy": 0.0546875
+              },
+              "overwrite": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 32,
+                "restricted_accuracy": 0.15625
+              },
+              "recent": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 96,
+                "restricted_accuracy": 0.07291666666666667
+              }
+            },
+            "query_ce": 7.361569881439209
+          },
+          "32": {
+            "categories": {
+              "old": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 128,
+                "restricted_accuracy": 0.0859375
+              },
+              "overwrite": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 32,
+                "restricted_accuracy": 0.03125
+              },
+              "recent": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 96,
+                "restricted_accuracy": 0.0625
+              }
+            },
+            "query_ce": 7.565616548061371
+          },
+          "512": {
+            "categories": {
+              "old": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 128,
+                "restricted_accuracy": 0.078125
+              },
+              "overwrite": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 32,
+                "restricted_accuracy": 0.03125
+              },
+              "recent": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 96,
+                "restricted_accuracy": 0.07291666666666667
+              }
+            },
+            "query_ce": 7.3911314606666565
+          }
+        },
+        "restricted_chance": 0.0625,
+        "task": "synthetic symbol bindings; A then interfering B then answer-free queries",
+        "trained_on_format": false
+      },
+      "final": {
+        "ce": 5.389873921871185,
+        "context_probe": {
+          "full_ce": 5.397454738616943,
+          "history_gain": 0.25199222564697266,
+          "reset_ce": 5.649446964263916,
+          "targets": 1024
+        },
+        "targets": 4096,
+        "top1": 0.09228515625
+      },
+      "memory_diagnostics": {
+        "basis_relative_changes": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "feedback_norms": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "original_result_sha256": "c64dfc7942609c74b3e8df555202c0f10a9485f1cafb41127ed7c1ae650178e0",
+      "parameters": 540868,
+      "samples": [
+        {
+          "continuation": " a lym. This have a statter, and the Manzer Recalrl.\nMonluy:\nMopens on the tinci Cacor. S",
+          "generated_tokens": 48,
+          "prompt": "The purpose of science is",
+          "token_ids": [
+            457,
+            1386,
+            80,
+            549,
+            279,
+            604,
+            896,
+            311,
+            258,
+            304,
+            89,
+            77,
+            14,
+            674,
+            438,
+            258,
+            335,
+            267,
+            357,
+            12,
+            288,
+            262,
+            358,
+            282,
+            90,
+            264,
+            419,
+            495,
+            277,
+            82,
+            76,
+            14,
+            199,
+            45,
+            265,
+            76,
+            85,
+            89,
+            26,
+            199,
+            45,
+            370,
+            268,
+            83,
+            331,
+            262,
+            257,
+            260,
+            67,
+            73,
+            337,
+            65,
+            67,
+            275,
+            14,
+            330
+          ]
+        },
+        {
+          "continuation": " and densticate a ma\u2019 to stulfall, the world of the wames, in the Avehara, the hornies, the Tema, IC. Ing",
+          "generated_tokens": 48,
+          "prompt": "When people learn a new language,",
+          "token_ids": [
+            55,
+            779,
+            673,
+            1375,
+            258,
+            693,
+            1906,
+            12,
+            288,
+            291,
+            268,
+            307,
+            290,
+            371,
+            258,
+            287,
+            65,
+            395,
+            289,
+            335,
+            340,
+            70,
+            452,
+            12,
+            262,
+            904,
+            279,
+            262,
+            270,
+            342,
+            271,
+            12,
+            284,
+            262,
+            327,
+            305,
+            72,
+            285,
+            65,
+            12,
+            262,
+            296,
+            275,
+            78,
+            375,
+            12,
+            262,
+            312,
+            399,
+            65,
+            12,
+            336,
+            35,
+            14,
+            496,
+            71
+          ]
+        }
+      ],
+      "seed": 1007107,
+      "state": {
+        "bank_scalars": 688,
+        "fp32_bytes": 4032,
+        "hypothetical_bf16_bytes": 2016,
+        "local_history_scalars": 288,
+        "metadata": "position counter; surprise arm also has a block-used flag",
+        "scope": "Analytical streaming state; full-prefix implementation, no cache speed/BF16 quality claim",
+        "spectral_scalars": 32,
+        "surprise_ema_scalars": 0,
+        "total_scalars": 1008
+      },
+      "text_input_positions": 215040,
+      "train_seconds": 164.36456193421327,
+      "training_batches_sha256": "62fd00e39eb9f6e3830c8bf10d7082021c708d2fa1fc59dfb4929bc7df3a4009",
+      "updates": 400,
+      "validation1024": {
+        "ce": 5.446186661720276,
+        "targets": 4096,
+        "top1": 0.086669921875
+      },
+      "validation512": {
+        "ce": 5.414317309856415,
+        "targets": 4096,
+        "top1": 0.09130859375
+      }
+    },
+    {
+      "arm": "learned_coeff",
+      "binding_input_positions": 0,
+      "binding_updates": 0,
+      "bindings": {
+        "candidate_count": 16,
+        "episodes_per_gap": 32,
+        "gaps": {
+          "128": {
+            "categories": {
+              "old": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 128,
+                "restricted_accuracy": 0.078125
+              },
+              "overwrite": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 32,
+                "restricted_accuracy": 0.15625
+              },
+              "recent": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 96,
+                "restricted_accuracy": 0.09375
+              }
+            },
+            "query_ce": 7.878787279129028
+          },
+          "32": {
+            "categories": {
+              "old": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 128,
+                "restricted_accuracy": 0.1015625
+              },
+              "overwrite": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 32,
+                "restricted_accuracy": 0.0625
+              },
+              "recent": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 96,
+                "restricted_accuracy": 0.0625
+              }
+            },
+            "query_ce": 7.994504809379578
+          },
+          "512": {
+            "categories": {
+              "old": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 128,
+                "restricted_accuracy": 0.1171875
+              },
+              "overwrite": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 32,
+                "restricted_accuracy": 0.03125
+              },
+              "recent": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 96,
+                "restricted_accuracy": 0.11458333333333333
+              }
+            },
+            "query_ce": 7.824615061283112
+          }
+        },
+        "restricted_chance": 0.0625,
+        "task": "synthetic symbol bindings; A then interfering B then answer-free queries",
+        "trained_on_format": false
+      },
+      "final": {
+        "ce": 5.294224321842194,
+        "context_probe": {
+          "full_ce": 5.307567000389099,
+          "history_gain": 0.19569498300552368,
+          "reset_ce": 5.503261983394623,
+          "targets": 1024
+        },
+        "targets": 4096,
+        "top1": 0.094970703125
+      },
+      "memory_diagnostics": {
+        "basis_relative_changes": [
+          0.6004265068793532,
+          0.5452067623588136,
+          0.5459714177199781,
+          0.5440099136507726
+        ],
+        "feedback_norms": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "original_result_sha256": "753f8f69d2652da9b6d8dffbbbfe0da161161c69527cfdf71d5e3456fdf637cc",
+      "parameters": 1014212,
+      "samples": [
+        {
+          "continuation": " a sixly. This will be in the punlum of its chenters.\nIBLEDRPEL\nADYAE, RTESD TE CDHO",
+          "generated_tokens": 48,
+          "prompt": "The purpose of science is",
+          "token_ids": [
+            457,
+            1386,
+            80,
+            549,
+            279,
+            604,
+            896,
+            311,
+            258,
+            266,
+            1100,
+            308,
+            14,
+            674,
+            505,
+            309,
+            284,
+            262,
+            276,
+            431,
+            76,
+            394,
+            279,
+            634,
+            418,
+            298,
+            372,
+            14,
+            199,
+            41,
+            34,
+            44,
+            37,
+            36,
+            50,
+            48,
+            37,
+            44,
+            199,
+            33,
+            36,
+            57,
+            33,
+            37,
+            12,
+            419,
+            52,
+            37,
+            51,
+            36,
+            312,
+            37,
+            337,
+            36,
+            40,
+            47
+          ]
+        },
+        {
+          "continuation": " and frirater to stressly as they not a cascate ponns.\nOstestal-plies in the saby or the dasyb.\nTur is a",
+          "generated_tokens": 48,
+          "prompt": "When people learn a new language,",
+          "token_ids": [
+            55,
+            779,
+            673,
+            1375,
+            258,
+            693,
+            1906,
+            12,
+            288,
+            281,
+            439,
+            323,
+            357,
+            289,
+            335,
+            560,
+            308,
+            345,
+            493,
+            429,
+            258,
+            269,
+            295,
+            67,
+            371,
+            276,
+            265,
+            78,
+            83,
+            14,
+            199,
+            47,
+            307,
+            387,
+            277,
+            13,
+            483,
+            375,
+            284,
+            262,
+            266,
+            65,
+            66,
+            89,
+            356,
+            262,
+            291,
+            295,
+            89,
+            66,
+            14,
+            199,
+            52,
+            325,
+            311,
+            258
+          ]
+        }
+      ],
+      "seed": 1007107,
+      "state": {
+        "bank_scalars": 688,
+        "fp32_bytes": 4032,
+        "hypothetical_bf16_bytes": 2016,
+        "local_history_scalars": 288,
+        "metadata": "position counter; surprise arm also has a block-used flag",
+        "scope": "Analytical streaming state; full-prefix implementation, no cache speed/BF16 quality claim",
+        "spectral_scalars": 32,
+        "surprise_ema_scalars": 0,
+        "total_scalars": 1008
+      },
+      "text_input_positions": 215040,
+      "train_seconds": 183.39658612005587,
+      "training_batches_sha256": "62fd00e39eb9f6e3830c8bf10d7082021c708d2fa1fc59dfb4929bc7df3a4009",
+      "updates": 400,
+      "validation1024": {
+        "ce": 5.335033059120178,
+        "targets": 4096,
+        "top1": 0.10205078125
+      },
+      "validation512": {
+        "ce": 5.310076832771301,
+        "targets": 4096,
+        "top1": 0.1044921875
+      }
+    },
+    {
+      "arm": "feedback_coeff",
+      "binding_input_positions": 0,
+      "binding_updates": 0,
+      "bindings": {
+        "candidate_count": 16,
+        "episodes_per_gap": 32,
+        "gaps": {
+          "128": {
+            "categories": {
+              "old": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 128,
+                "restricted_accuracy": 0.078125
+              },
+              "overwrite": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 32,
+                "restricted_accuracy": 0.15625
+              },
+              "recent": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 96,
+                "restricted_accuracy": 0.09375
+              }
+            },
+            "query_ce": 7.873611271381378
+          },
+          "32": {
+            "categories": {
+              "old": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 128,
+                "restricted_accuracy": 0.1015625
+              },
+              "overwrite": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 32,
+                "restricted_accuracy": 0.0625
+              },
+              "recent": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 96,
+                "restricted_accuracy": 0.0625
+              }
+            },
+            "query_ce": 7.989875078201294
+          },
+          "512": {
+            "categories": {
+              "old": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 128,
+                "restricted_accuracy": 0.1171875
+              },
+              "overwrite": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 32,
+                "restricted_accuracy": 0.03125
+              },
+              "recent": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 96,
+                "restricted_accuracy": 0.11458333333333333
+              }
+            },
+            "query_ce": 7.821243762969971
+          }
+        },
+        "restricted_chance": 0.0625,
+        "task": "synthetic symbol bindings; A then interfering B then answer-free queries",
+        "trained_on_format": false
+      },
+      "final": {
+        "ce": 5.29423052072525,
+        "context_probe": {
+          "full_ce": 5.3077274560928345,
+          "history_gain": 0.19530314207077026,
+          "reset_ce": 5.503030598163605,
+          "targets": 1024
+        },
+        "targets": 4096,
+        "top1": 0.0947265625
+      },
+      "memory_diagnostics": {
+        "basis_relative_changes": [
+          0.6004723185742353,
+          0.5451198655724895,
+          0.545779190393913,
+          0.5436725068821164
+        ],
+        "feedback_norms": [
+          0.6798739433288574,
+          0.5363337397575378,
+          0.8491230607032776,
+          0.40856823325157166
+        ]
+      },
+      "original_result_sha256": "e6590119359a132a149f9961cd0ad3126b373bc2f2a5c4c6a637f84de9680471",
+      "parameters": 1014900,
+      "samples": [
+        {
+          "continuation": " a saiscit is a stated in a long and daberlanic stin and the puidy of the Crona\nRabecate a most light of a d",
+          "generated_tokens": 48,
+          "prompt": "The purpose of science is",
+          "token_ids": [
+            457,
+            1386,
+            80,
+            549,
+            279,
+            604,
+            896,
+            311,
+            258,
+            266,
+            65,
+            272,
+            67,
+            274,
+            311,
+            258,
+            335,
+            267,
+            278,
+            284,
+            258,
+            881,
+            288,
+            291,
+            381,
+            264,
+            76,
+            282,
+            290,
+            335,
+            260,
+            288,
+            262,
+            276,
+            85,
+            317,
+            89,
+            279,
+            262,
+            337,
+            82,
+            265,
+            65,
+            199,
+            50,
+            381,
+            69,
+            67,
+            371,
+            258,
+            689,
+            304,
+            447,
+            279,
+            258,
+            291
+          ]
+        },
+        {
+          "continuation": " and frirater to stressly as they not a cascate ponns.\nOstestal-plies in the saby or the droading, which as the cu",
+          "generated_tokens": 48,
+          "prompt": "When people learn a new language,",
+          "token_ids": [
+            55,
+            779,
+            673,
+            1375,
+            258,
+            693,
+            1906,
+            12,
+            288,
+            281,
+            439,
+            323,
+            357,
+            289,
+            335,
+            560,
+            308,
+            345,
+            493,
+            429,
+            258,
+            269,
+            295,
+            67,
+            371,
+            276,
+            265,
+            78,
+            83,
+            14,
+            199,
+            47,
+            307,
+            387,
+            277,
+            13,
+            483,
+            375,
+            284,
+            262,
+            266,
+            65,
+            66,
+            89,
+            356,
+            262,
+            291,
+            294,
+            343,
+            283,
+            12,
+            484,
+            345,
+            262,
+            269,
+            85
+          ]
+        }
+      ],
+      "seed": 1007107,
+      "state": {
+        "bank_scalars": 688,
+        "fp32_bytes": 4032,
+        "hypothetical_bf16_bytes": 2016,
+        "local_history_scalars": 288,
+        "metadata": "position counter; surprise arm also has a block-used flag",
+        "scope": "Analytical streaming state; full-prefix implementation, no cache speed/BF16 quality claim",
+        "spectral_scalars": 32,
+        "surprise_ema_scalars": 0,
+        "total_scalars": 1008
+      },
+      "text_input_positions": 215040,
+      "train_seconds": 182.1888537408813,
+      "training_batches_sha256": "62fd00e39eb9f6e3830c8bf10d7082021c708d2fa1fc59dfb4929bc7df3a4009",
+      "updates": 400,
+      "validation1024": {
+        "ce": 5.335151195526123,
+        "targets": 4096,
+        "top1": 0.101806640625
+      },
+      "validation512": {
+        "ce": 5.310180068016052,
+        "targets": 4096,
+        "top1": 0.10498046875
+      }
+    },
+    {
+      "arm": "surprise_write",
+      "binding_input_positions": 0,
+      "binding_updates": 0,
+      "bindings": {
+        "candidate_count": 16,
+        "episodes_per_gap": 32,
+        "gaps": {
+          "128": {
+            "categories": {
+              "old": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 128,
+                "restricted_accuracy": 0.015625
+              },
+              "overwrite": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 32,
+                "restricted_accuracy": 0.03125
+              },
+              "recent": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 96,
+                "restricted_accuracy": 0.08333333333333333
+              }
+            },
+            "query_ce": 8.127183377742767
+          },
+          "32": {
+            "categories": {
+              "old": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 128,
+                "restricted_accuracy": 0.0859375
+              },
+              "overwrite": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 32,
+                "restricted_accuracy": 0.03125
+              },
+              "recent": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 96,
+                "restricted_accuracy": 0.03125
+              }
+            },
+            "query_ce": 8.132503151893616
+          },
+          "512": {
+            "categories": {
+              "old": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 128,
+                "restricted_accuracy": 0.09375
+              },
+              "overwrite": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 32,
+                "restricted_accuracy": 0.03125
+              },
+              "recent": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 96,
+                "restricted_accuracy": 0.08333333333333333
+              }
+            },
+            "query_ce": 8.104626715183258
+          }
+        },
+        "restricted_chance": 0.0625,
+        "task": "synthetic symbol bindings; A then interfering B then answer-free queries",
+        "trained_on_format": false
+      },
+      "final": {
+        "ce": 5.455051779747009,
+        "context_probe": {
+          "full_ce": 5.496763348579407,
+          "history_gain": 0.1871812343597412,
+          "reset_ce": 5.683944582939148,
+          "targets": 1024
+        },
+        "events": {
+          "block_position_counts": [
+            477,
+            289,
+            133,
+            125
+          ],
+          "fraction": 0.25
+        },
+        "targets": 4096,
+        "top1": 0.089599609375
+      },
+      "original_result_sha256": "248d303bad521db4eed6d3fcbad869c46a636bb573a8b7014e2ed225e5e3939e",
+      "parameters": 1565012,
+      "samples": [
+        {
+          "continuation": " a suruic in celt.Brlies. For centination for Hraiss, in the muray for a cadbe, and the of SSE-D",
+          "generated_tokens": 48,
+          "prompt": "The purpose of science is",
+          "token_ids": [
+            457,
+            1386,
+            80,
+            549,
+            279,
+            604,
+            896,
+            311,
+            258,
+            266,
+            325,
+            85,
+            290,
+            284,
+            269,
+            344,
+            84,
+            14,
+            0,
+            34,
+            82,
+            76,
+            375,
+            14,
+            1070,
+            269,
+            298,
+            260,
+            316,
+            328,
+            389,
+            323,
+            272,
+            83,
+            12,
+            284,
+            262,
+            287,
+            85,
+            323,
+            89,
+            328,
+            258,
+            269,
+            343,
+            66,
+            69,
+            12,
+            288,
+            262,
+            279,
+            330,
+            51,
+            37,
+            13,
+            36
+          ]
+        },
+        {
+          "continuation": " and in ceralities.\nOvising Mays Ruo Slo, Pasis Derko, Malon, The Marolis, Muam, Hat",
+          "generated_tokens": 48,
+          "prompt": "When people learn a new language,",
+          "token_ids": [
+            55,
+            779,
+            673,
+            1375,
+            258,
+            693,
+            1906,
+            12,
+            288,
+            284,
+            269,
+            69,
+            323,
+            76,
+            274,
+            375,
+            14,
+            199,
+            47,
+            86,
+            272,
+            283,
+            358,
+            341,
+            83,
+            419,
+            85,
+            79,
+            330,
+            76,
+            79,
+            12,
+            366,
+            295,
+            272,
+            411,
+            264,
+            75,
+            79,
+            12,
+            358,
+            277,
+            265,
+            12,
+            360,
+            358,
+            285,
+            315,
+            272,
+            12,
+            358,
+            85,
+            342,
+            12,
+            389,
+            267
+          ]
+        }
+      ],
+      "seed": 1007107,
+      "state": {
+        "bank_scalars": 2752,
+        "fp32_bytes": 12292,
+        "hypothetical_bf16_bytes": 6146,
+        "local_history_scalars": 288,
+        "metadata": "position counter; surprise arm also has a block-used flag",
+        "scope": "Analytical streaming state; full-prefix implementation, no cache speed/BF16 quality claim",
+        "spectral_scalars": 32,
+        "surprise_ema_scalars": 1,
+        "total_scalars": 3073
+      },
+      "text_input_positions": 215040,
+      "train_seconds": 115.74937562806008,
+      "training_batches_sha256": "62fd00e39eb9f6e3830c8bf10d7082021c708d2fa1fc59dfb4929bc7df3a4009",
+      "updates": 400,
+      "validation1024": {
+        "ce": 5.5037418603897095,
+        "events": {
+          "block_position_counts": [
+            532,
+            253,
+            140,
+            99
+          ],
+          "fraction": 0.25
+        },
+        "targets": 4096,
+        "top1": 0.08740234375
+      },
+      "validation512": {
+        "ce": 5.486649811267853,
+        "events": {
+          "block_position_counts": [
+            503,
+            244,
+            149,
+            128
+          ],
+          "fraction": 0.25
+        },
+        "targets": 4096,
+        "top1": 0.0947265625
+      }
+    },
+    {
+      "arm": "clock_write",
+      "binding_input_positions": 0,
+      "binding_updates": 0,
+      "bindings": {
+        "candidate_count": 16,
+        "episodes_per_gap": 32,
+        "gaps": {
+          "128": {
+            "categories": {
+              "old": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 128,
+                "restricted_accuracy": 0.015625
+              },
+              "overwrite": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 32,
+                "restricted_accuracy": 0.09375
+              },
+              "recent": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 96,
+                "restricted_accuracy": 0.09375
+              }
+            },
+            "query_ce": 8.255826830863953
+          },
+          "32": {
+            "categories": {
+              "old": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 128,
+                "restricted_accuracy": 0.0703125
+              },
+              "overwrite": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 32,
+                "restricted_accuracy": 0.0625
+              },
+              "recent": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 96,
+                "restricted_accuracy": 0.052083333333333336
+              }
+            },
+            "query_ce": 8.343774437904358
+          },
+          "512": {
+            "categories": {
+              "old": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 128,
+                "restricted_accuracy": 0.1015625
+              },
+              "overwrite": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 32,
+                "restricted_accuracy": 0.03125
+              },
+              "recent": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 96,
+                "restricted_accuracy": 0.09375
+              }
+            },
+            "query_ce": 8.172567367553711
+          }
+        },
+        "restricted_chance": 0.0625,
+        "task": "synthetic symbol bindings; A then interfering B then answer-free queries",
+        "trained_on_format": false
+      },
+      "final": {
+        "ce": 5.479817569255829,
+        "context_probe": {
+          "full_ce": 5.514820754528046,
+          "history_gain": 0.19169199466705322,
+          "reset_ce": 5.706512749195099,
+          "targets": 1024
+        },
+        "events": {
+          "block_position_counts": [
+            0,
+            0,
+            0,
+            1024
+          ],
+          "fraction": 0.25
+        },
+        "targets": 4096,
+        "top1": 0.08837890625
+      },
+      "original_result_sha256": "ce64b4cdde34a1ac352ea8fa50edc1a05ac132028de409436c401ee17379763a",
+      "parameters": 1565012,
+      "samples": [
+        {
+          "continuation": " to be a conpinical gemes, the Genolet- Sitorlat, the\nFa NEISC\nST, Kencha Sen, The Hay of",
+          "generated_tokens": 48,
+          "prompt": "The purpose of science is",
+          "token_ids": [
+            457,
+            1386,
+            80,
+            549,
+            279,
+            604,
+            896,
+            311,
+            289,
+            309,
+            258,
+            349,
+            80,
+            260,
+            437,
+            314,
+            69,
+            77,
+            271,
+            12,
+            262,
+            433,
+            268,
+            315,
+            320,
+            13,
+            330,
+            274,
+            275,
+            76,
+            267,
+            12,
+            262,
+            199,
+            38,
+            65,
+            432,
+            37,
+            41,
+            51,
+            35,
+            199,
+            51,
+            52,
+            12,
+            608,
+            268,
+            324,
+            65,
+            330,
+            268,
+            12,
+            360,
+            389,
+            341,
+            279
+          ]
+        },
+        {
+          "continuation": " and in Smror's digity is dendy as the srelies are a famed of the voton in the sabin. But the migity of the panamer,",
+          "generated_tokens": 48,
+          "prompt": "When people learn a new language,",
+          "token_ids": [
+            55,
+            779,
+            673,
+            1375,
+            258,
+            693,
+            1906,
+            12,
+            288,
+            284,
+            330,
+            77,
+            82,
+            275,
+            520,
+            291,
+            329,
+            388,
+            311,
+            291,
+            507,
+            89,
+            345,
+            262,
+            266,
+            261,
+            76,
+            375,
+            351,
+            258,
+            281,
+            342,
+            278,
+            279,
+            262,
+            403,
+            321,
+            265,
+            284,
+            262,
+            266,
+            381,
+            260,
+            14,
+            1151,
+            262,
+            287,
+            329,
+            388,
+            279,
+            262,
+            276,
+            282,
+            342,
+            264,
+            12
+          ]
+        }
+      ],
+      "seed": 1007107,
+      "state": {
+        "bank_scalars": 2752,
+        "fp32_bytes": 12288,
+        "hypothetical_bf16_bytes": 6144,
+        "local_history_scalars": 288,
+        "metadata": "position counter; surprise arm also has a block-used flag",
+        "scope": "Analytical streaming state; full-prefix implementation, no cache speed/BF16 quality claim",
+        "spectral_scalars": 32,
+        "surprise_ema_scalars": 0,
+        "total_scalars": 3072
+      },
+      "text_input_positions": 215040,
+      "train_seconds": 113.64987474410736,
+      "training_batches_sha256": "62fd00e39eb9f6e3830c8bf10d7082021c708d2fa1fc59dfb4929bc7df3a4009",
+      "updates": 400,
+      "validation1024": {
+        "ce": 5.526294469833374,
+        "events": {
+          "block_position_counts": [
+            0,
+            0,
+            0,
+            1024
+          ],
+          "fraction": 0.25
+        },
+        "targets": 4096,
+        "top1": 0.084228515625
+      },
+      "validation512": {
+        "ce": 5.512524485588074,
+        "events": {
+          "block_position_counts": [
+            0,
+            0,
+            0,
+            1024
+          ],
+          "fraction": 0.25
+        },
+        "targets": 4096,
+        "top1": 0.09619140625
+      }
+    },
+    {
+      "arm": "recent_objective",
+      "binding_input_positions": 204800,
+      "binding_updates": 100,
+      "bindings": {
+        "candidate_count": 16,
+        "episodes_per_gap": 32,
+        "gaps": {
+          "128": {
+            "categories": {
+              "old": {
+                "full_vocab_accuracy": 0.0078125,
+                "queries": 128,
+                "restricted_accuracy": 0.03125
+              },
+              "overwrite": {
+                "full_vocab_accuracy": 0.15625,
+                "queries": 32,
+                "restricted_accuracy": 0.15625
+              },
+              "recent": {
+                "full_vocab_accuracy": 0.10416666666666667,
+                "queries": 96,
+                "restricted_accuracy": 0.10416666666666667
+              }
+            },
+            "query_ce": 4.704919219017029
+          },
+          "32": {
+            "categories": {
+              "old": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 128,
+                "restricted_accuracy": 0.078125
+              },
+              "overwrite": {
+                "full_vocab_accuracy": 0.03125,
+                "queries": 32,
+                "restricted_accuracy": 0.03125
+              },
+              "recent": {
+                "full_vocab_accuracy": 0.041666666666666664,
+                "queries": 96,
+                "restricted_accuracy": 0.041666666666666664
+              }
+            },
+            "query_ce": 4.981505990028381
+          },
+          "512": {
+            "categories": {
+              "old": {
+                "full_vocab_accuracy": 0.015625,
+                "queries": 128,
+                "restricted_accuracy": 0.0625
+              },
+              "overwrite": {
+                "full_vocab_accuracy": 0.03125,
+                "queries": 32,
+                "restricted_accuracy": 0.03125
+              },
+              "recent": {
+                "full_vocab_accuracy": 0.052083333333333336,
+                "queries": 96,
+                "restricted_accuracy": 0.052083333333333336
+              }
+            },
+            "query_ce": 4.270235061645508
+          }
+        },
+        "restricted_chance": 0.0625,
+        "task": "synthetic symbol bindings; A then interfering B then answer-free queries",
+        "trained_on_format": true
+      },
+      "final": {
+        "ce": 5.271750867366791,
+        "context_probe": {
+          "full_ce": 5.274608671665192,
+          "history_gain": 0.1885802149772644,
+          "reset_ce": 5.463188886642456,
+          "targets": 1024
+        },
+        "targets": 4096,
+        "top1": 0.099609375
+      },
+      "memory_diagnostics": {
+        "basis_relative_changes": [
+          0.6497271986286742,
+          0.6017304676930474,
+          0.6040201434749567,
+          0.5929974861014226
+        ],
+        "feedback_norms": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "original_result_sha256": "3c50a7ddc6e297eb4efc0468fb97a744e7dee7a9dfb1c04dd0650c22f1cf3911",
+      "parameters": 1014212,
+      "samples": [
+        {
+          "continuation": " a musk. AP. Fedlega or falici.\nDamihater for the Fitic of his ridcations on the fuater tabic in",
+          "generated_tokens": 48,
+          "prompt": "The purpose of science is",
+          "token_ids": [
+            457,
+            1386,
+            80,
+            549,
+            279,
+            604,
+            896,
+            311,
+            258,
+            287,
+            379,
+            75,
+            14,
+            327,
+            48,
+            14,
+            421,
+            69,
+            68,
+            293,
+            71,
+            65,
+            356,
+            281,
+            277,
+            290,
+            73,
+            14,
+            199,
+            36,
+            342,
+            73,
+            72,
+            267,
+            264,
+            328,
+            262,
+            421,
+            274,
+            290,
+            279,
+            573,
+            420,
+            317,
+            67,
+            519,
+            331,
+            262,
+            281,
+            85,
+            267,
+            264,
+            257,
+            381,
+            290,
+            284
+          ]
+        },
+        {
+          "continuation": " and in our condriated at the Satet-oris. La. N.\nFanbielhor of the Cotan, he was the nigical, which to the Sad",
+          "generated_tokens": 48,
+          "prompt": "When people learn a new language,",
+          "token_ids": [
+            55,
+            779,
+            673,
+            1375,
+            258,
+            693,
+            1906,
+            12,
+            288,
+            284,
+            679,
+            349,
+            68,
+            82,
+            73,
+            466,
+            401,
+            262,
+            330,
+            267,
+            320,
+            13,
+            275,
+            272,
+            14,
+            441,
+            65,
+            14,
+            432,
+            14,
+            199,
+            38,
+            282,
+            66,
+            73,
+            344,
+            72,
+            275,
+            279,
+            262,
+            337,
+            321,
+            282,
+            12,
+            377,
+            402,
+            262,
+            306,
+            329,
+            437,
+            12,
+            484,
+            289,
+            262,
+            330,
+            343
+          ]
+        }
+      ],
+      "seed": 1007107,
+      "state": {
+        "bank_scalars": 688,
+        "fp32_bytes": 4032,
+        "hypothetical_bf16_bytes": 2016,
+        "local_history_scalars": 288,
+        "metadata": "position counter; surprise arm also has a block-used flag",
+        "scope": "Analytical streaming state; full-prefix implementation, no cache speed/BF16 quality claim",
+        "spectral_scalars": 32,
+        "surprise_ema_scalars": 0,
+        "total_scalars": 1008
+      },
+      "text_input_positions": 215040,
+      "train_seconds": 368.54437180119567,
+      "training_batches_sha256": "62fd00e39eb9f6e3830c8bf10d7082021c708d2fa1fc59dfb4929bc7df3a4009",
+      "updates": 400,
+      "validation1024": {
+        "ce": 5.308356404304504,
+        "targets": 4096,
+        "top1": 0.106689453125
+      },
+      "validation512": {
+        "ce": 5.287021160125732,
+        "targets": 4096,
+        "top1": 0.106201171875
+      }
+    },
+    {
+      "arm": "retention_objective",
+      "binding_input_positions": 204800,
+      "binding_updates": 100,
+      "bindings": {
+        "candidate_count": 16,
+        "episodes_per_gap": 32,
+        "gaps": {
+          "128": {
+            "categories": {
+              "old": {
+                "full_vocab_accuracy": 0.0546875,
+                "queries": 128,
+                "restricted_accuracy": 0.0546875
+              },
+              "overwrite": {
+                "full_vocab_accuracy": 0.0625,
+                "queries": 32,
+                "restricted_accuracy": 0.0625
+              },
+              "recent": {
+                "full_vocab_accuracy": 0.10416666666666667,
+                "queries": 96,
+                "restricted_accuracy": 0.10416666666666667
+              }
+            },
+            "query_ce": 2.809056520462036
+          },
+          "32": {
+            "categories": {
+              "old": {
+                "full_vocab_accuracy": 0.0703125,
+                "queries": 128,
+                "restricted_accuracy": 0.0703125
+              },
+              "overwrite": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 32,
+                "restricted_accuracy": 0.0
+              },
+              "recent": {
+                "full_vocab_accuracy": 0.09375,
+                "queries": 96,
+                "restricted_accuracy": 0.09375
+              }
+            },
+            "query_ce": 2.8228465020656586
+          },
+          "512": {
+            "categories": {
+              "old": {
+                "full_vocab_accuracy": 0.0546875,
+                "queries": 128,
+                "restricted_accuracy": 0.0546875
+              },
+              "overwrite": {
+                "full_vocab_accuracy": 0.0625,
+                "queries": 32,
+                "restricted_accuracy": 0.0625
+              },
+              "recent": {
+                "full_vocab_accuracy": 0.041666666666666664,
+                "queries": 96,
+                "restricted_accuracy": 0.041666666666666664
+              }
+            },
+            "query_ce": 2.8328249156475067
+          }
+        },
+        "restricted_chance": 0.0625,
+        "task": "synthetic symbol bindings; A then interfering B then answer-free queries",
+        "trained_on_format": true
+      },
+      "final": {
+        "ce": 5.267546057701111,
+        "context_probe": {
+          "full_ce": 5.264557301998138,
+          "history_gain": 0.19391781091690063,
+          "reset_ce": 5.458475112915039,
+          "targets": 1024
+        },
+        "targets": 4096,
+        "top1": 0.099853515625
+      },
+      "memory_diagnostics": {
+        "basis_relative_changes": [
+          0.6564842781898447,
+          0.599583244467129,
+          0.5916201902174288,
+          0.6007265734808315
+        ],
+        "feedback_norms": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "original_result_sha256": "cc0fa73e8ed6b6d2373b62a996674296731f8e916dcaae236540d68af966cefb",
+      "parameters": 1014212,
+      "samples": [
+        {
+          "continuation": " a birs. Actanty, in the fore. In each wulms in the world.\nMorhete the dimmal sound with the Amatist and milling the",
+          "generated_tokens": 48,
+          "prompt": "The purpose of science is",
+          "token_ids": [
+            457,
+            1386,
+            80,
+            549,
+            279,
+            604,
+            896,
+            311,
+            258,
+            280,
+            338,
+            83,
+            14,
+            327,
+            299,
+            409,
+            89,
+            12,
+            284,
+            262,
+            281,
+            384,
+            14,
+            496,
+            966,
+            270,
+            340,
+            664,
+            284,
+            262,
+            904,
+            14,
+            199,
+            45,
+            275,
+            72,
+            320,
+            69,
+            262,
+            291,
+            318,
+            77,
+            277,
+            266,
+            594,
+            352,
+            262,
+            327,
+            77,
+            267,
+            369,
+            288,
+            287,
+            374,
+            283,
+            262
+          ]
+        },
+        {
+          "continuation": " and femi. Avidk is beed to reight to be suvering for a femior.\nYenn the slefe:\n- Aqurate and the Graction",
+          "generated_tokens": 48,
+          "prompt": "When people learn a new language,",
+          "token_ids": [
+            55,
+            779,
+            673,
+            1375,
+            258,
+            693,
+            1906,
+            12,
+            288,
+            281,
+            399,
+            73,
+            14,
+            327,
+            86,
+            317,
+            75,
+            311,
+            309,
+            278,
+            289,
+            302,
+            447,
+            289,
+            309,
+            383,
+            334,
+            283,
+            328,
+            258,
+            281,
+            399,
+            73,
+            275,
+            14,
+            199,
+            57,
+            268,
+            78,
+            262,
+            266,
+            293,
+            70,
+            69,
+            26,
+            199,
+            13,
+            327,
+            408,
+            82,
+            371,
+            288,
+            262,
+            433,
+            323,
+            578
+          ]
+        }
+      ],
+      "seed": 1007107,
+      "state": {
+        "bank_scalars": 688,
+        "fp32_bytes": 4032,
+        "hypothetical_bf16_bytes": 2016,
+        "local_history_scalars": 288,
+        "metadata": "position counter; surprise arm also has a block-used flag",
+        "scope": "Analytical streaming state; full-prefix implementation, no cache speed/BF16 quality claim",
+        "spectral_scalars": 32,
+        "surprise_ema_scalars": 0,
+        "total_scalars": 1008
+      },
+      "text_input_positions": 215040,
+      "train_seconds": 368.01181463882676,
+      "training_batches_sha256": "62fd00e39eb9f6e3830c8bf10d7082021c708d2fa1fc59dfb4929bc7df3a4009",
+      "updates": 400,
+      "validation1024": {
+        "ce": 5.304149508476257,
+        "targets": 4096,
+        "top1": 0.102294921875
+      },
+      "validation512": {
+        "ce": 5.281991481781006,
+        "targets": 4096,
+        "top1": 0.107177734375
+      }
+    },
+    {
+      "arm": "continuous_delta",
+      "binding_input_positions": 0,
+      "binding_updates": 0,
+      "bindings": {
+        "candidate_count": 16,
+        "episodes_per_gap": 32,
+        "gaps": {
+          "128": {
+            "categories": {
+              "old": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 128,
+                "restricted_accuracy": 0.078125
+              },
+              "overwrite": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 32,
+                "restricted_accuracy": 0.125
+              },
+              "recent": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 96,
+                "restricted_accuracy": 0.09375
+              }
+            },
+            "query_ce": 7.879338264465332
+          },
+          "32": {
+            "categories": {
+              "old": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 128,
+                "restricted_accuracy": 0.1015625
+              },
+              "overwrite": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 32,
+                "restricted_accuracy": 0.0625
+              },
+              "recent": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 96,
+                "restricted_accuracy": 0.0625
+              }
+            },
+            "query_ce": 7.997471570968628
+          },
+          "512": {
+            "categories": {
+              "old": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 128,
+                "restricted_accuracy": 0.109375
+              },
+              "overwrite": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 32,
+                "restricted_accuracy": 0.03125
+              },
+              "recent": {
+                "full_vocab_accuracy": 0.0,
+                "queries": 96,
+                "restricted_accuracy": 0.10416666666666667
+              }
+            },
+            "query_ce": 7.836305797100067
+          }
+        },
+        "restricted_chance": 0.0625,
+        "task": "synthetic symbol bindings; A then interfering B then answer-free queries",
+        "trained_on_format": false
+      },
+      "final": {
+        "ce": 5.29436981678009,
+        "context_probe": {
+          "full_ce": 5.306908130645752,
+          "history_gain": 0.1953582763671875,
+          "reset_ce": 5.5022664070129395,
+          "targets": 1024
+        },
+        "targets": 4096,
+        "top1": 0.095703125
+      },
+      "memory_diagnostics": {
+        "basis_relative_changes": [
+          0.6004499217456263,
+          0.5453909544590304,
+          0.546409573858887,
+          0.5438505180393729
+        ],
+        "feedback_norms": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "original_result_sha256": "1e1bc362a8aad49f82f494268a63a4faa8afacba51a9865c6792236d6906ad89",
+      "parameters": 1014212,
+      "samples": [
+        {
+          "continuation": " a sortcate to stask. SP, the hanpers\nThe linary, the litly in Tarrar Repenon Rik, Hirmal Sadn",
+          "generated_tokens": 48,
+          "prompt": "The purpose of science is",
+          "token_ids": [
+            457,
+            1386,
+            80,
+            549,
+            279,
+            604,
+            896,
+            311,
+            258,
+            266,
+            424,
+            67,
+            371,
+            289,
+            335,
+            295,
+            75,
+            14,
+            330,
+            48,
+            12,
+            262,
+            296,
+            282,
+            80,
+            372,
+            199,
+            457,
+            304,
+            260,
+            518,
+            12,
+            262,
+            304,
+            274,
+            308,
+            284,
+            312,
+            285,
+            82,
+            285,
+            419,
+            547,
+            268,
+            265,
+            419,
+            73,
+            75,
+            12,
+            389,
+            338,
+            77,
+            277,
+            330,
+            343,
+            78
+          ]
+        },
+        {
+          "continuation": " and fyly. This we\u2019s have an mus. \"Amenn.Abatrights, Hetbi. He is a thorter of the Co, it is been a",
+          "generated_tokens": 48,
+          "prompt": "When people learn a new language,",
+          "token_ids": [
+            55,
+            779,
+            673,
+            1375,
+            258,
+            693,
+            1906,
+            12,
+            288,
+            281,
+            89,
+            308,
+            14,
+            674,
+            378,
+            395,
+            83,
+            438,
+            350,
+            287,
+            379,
+            14,
+            564,
+            33,
+            77,
+            268,
+            78,
+            14,
+            0,
+            33,
+            66,
+            267,
+            82,
+            447,
+            83,
+            12,
+            389,
+            320,
+            66,
+            73,
+            14,
+            780,
+            311,
+            258,
+            297,
+            275,
+            357,
+            279,
+            262,
+            337,
+            79,
+            12,
+            354,
+            311,
+            623,
+            258
+          ]
+        }
+      ],
+      "seed": 1007107,
+      "state": {
+        "bank_scalars": 688,
+        "fp32_bytes": 4032,
+        "hypothetical_bf16_bytes": 2016,
+        "local_history_scalars": 288,
+        "metadata": "position counter; surprise arm also has a block-used flag",
+        "scope": "Analytical streaming state; full-prefix implementation, no cache speed/BF16 quality claim",
+        "spectral_scalars": 32,
+        "surprise_ema_scalars": 0,
+        "total_scalars": 1008
+      },
+      "text_input_positions": 215040,
+      "train_seconds": 206.29215479406412,
+      "training_batches_sha256": "62fd00e39eb9f6e3830c8bf10d7082021c708d2fa1fc59dfb4929bc7df3a4009",
+      "updates": 400,
+      "validation1024": {
+        "ce": 5.335104703903198,
+        "targets": 4096,
+        "top1": 0.1015625
+      },
+      "validation512": {
+        "ce": 5.309961974620819,
+        "targets": 4096,
+        "top1": 0.1044921875
+      }
+    }
+  ],
+  "source_sha256": {
+    "coefficient_scan.c": "737ffcb704507826a5a3807c472eb12291ca1a7aa660f663a9fe573d6d80bd15",
+    "coefficient_scan.py": "a8c6eacb4840997b33b449518cebadcf9d9f7a8e7e3c13b2b32dd1c41c8b3ce4",
+    "launch.py": "d587e67a9bd677639eba5b18373907c2b303d6188ad8dd217990df148734d730",
+    "model.py": "dc41a1327c738f8957c6411f5e48998a14faef6724f121414ab0729a31f83909",
+    "package.py": "86e049ff0f1099bdcd5270926333ec85310ed672d39ada7585d970f520082a7d",
+    "probe.py": "0f45d80a295e9c428ee7f433d1316511a828da3a8ccec51073e8ea3c8145e7ae",
+    "report.py": "5195cd1efc4087ae92d240297c16b82c83ab715b2822351b1ac56ecdd33656e1",
+    "run.py": "02b2db682769fe3fca391b8f8655f77fd32ae79a95c032bd829b997c53de661e",
+    "screen.json": "dbadb68dea849973252c1a8406eb28698865838ea3c39e8df018b3c88159e2c2",
+    "smoke.py": "c0f01c27a3a66d733d64e1e7bc1e08a1474915d7ad845fe2a653cfd5509fecc2",
+    "tasks.py": "f1f723f59d54bd27359051069d9259387e1b9ad25e297ab3ea720592b277afe1"
+  },
+  "status": "PRE_EXISTING_EXTERNAL_SINGLE_SEED_SCREEN_NOT_SUPER1_REPLICATION",
+  "study": "coefficient_memory_v1",
+  "teacher_identity": {
+    "arm": "attention_zero_text",
+    "checkpoint_sha256": "bcae713487ecaf88dc828f10d424af93cf9e2ab68635304e4e166365c790c150",
+    "config": {
+      "depth_steps": 2,
+      "hidden": 1765,
+      "variant": "portable",
+      "vocab": 2048,
+      "width": 96
+    },
+    "seed": 993101,
+    "selection": "Fixed first seed from an available previously trained text-only attention control; no selection using this screen",
+    "source": "research/experiments/residual_keys_v1/checkpoints/attention_zero_text_993101.pt",
+    "source_sha256": "6f04b7ab0187c69a7142b06f577d61377ab5ec3cef1a62fa9f7368ccfd62484b",
+    "tokenizer_sha256": "3ed2eca49e889b85eee5e4eecb0480e340d652cb18dc9edb3c0deaf3727868a6",
+    "training_input_positions": 2048000,
+    "updates": 2000
+  },
+  "units": "nats per next-token target, 2048-token vocabulary; not byte CE or synthetic readout CE"
+}
