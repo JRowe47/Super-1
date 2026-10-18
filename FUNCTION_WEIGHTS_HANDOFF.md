@@ -100,3 +100,13 @@ Regression commands completed: 13 unittest cases across `sampling_library.test_p
 A report-generation helper initially hit a Python3.9 f-string syntax error; it was corrected before producing documentation. No training, source manifests or numerical results were changed by that documentation-only error.
 
 - Completed final checks: all 30 original exports replayed exactly; all 15 compact exports preserve tensors/logits; 27 trained depth checks and 31 regression checks passed. Both formats have all 15 isolated RSS receipts. Library hashes and both preregistered source sets remain intact. Results/chart/report and this handoff are prepared for draft PR8; remote publication will be verified next.
+
+## Publication verified
+
+Published experiment/results commit: `6f04f41f6015113500de2af7faf80afb5e307076` on `research/memory-quality-frontier-20261018`.
+Draft PR8: https://github.com/rohanarun/Super-1/pull/8
+Current title: **Preserve function-weight sampling with hierarchical KV and packed weights**.
+
+Verified the remote branch head, draft/open state, updated PR body and embedded chart. Downloaded the remote chart, numerical summary, selected compact curve file and handoff through the GitHub contents API and matched their SHA-256 hashes to local artifacts. The report and chart are included in PR8. This final handoff-publication note is a subsequent documentation commit; use `git log -1 -- FUNCTION_WEIGHTS_HANDOFF.md` for its exact commit. PR8 is not merged. PR9 was not modified.
+
+All 1,630 repository artifact hashes passed. The only remaining unrelated untracked content is the preserved interrupted RWKV directory noted above. No experiment process remains active. Current limitations and next steps are recorded above; there is no background scheduler or ongoing training to monitor.
