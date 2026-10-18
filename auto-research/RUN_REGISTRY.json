@@ -1,5 +1,5 @@
 {
-  "authorization_note": "Language training remains paused. Fresh user-authorized synthetic angular/radial optimization completed without recovery; no future execution authorized. Previous synthetic failure/recovery remains preserved.",
+  "authorization_note": "Language training remains paused. Fresh user-authorized synthetic angular/radial optimization completed without recovery; no future execution authorized. Previous synthetic failure/recovery remains preserved. Current-chat 2026-10-18 approval separately permits adaptive-depth-shakespeare-20261018-v1 only; historical and future run permissions remain unchanged.",
   "created_date": "2026-10-14",
   "evidence_recoveries": [
     {
@@ -129,6 +129,16 @@
       "run_id": "matched-scratch-fineweb-20261017-v1",
       "status": "COMPLETED_PRIMARY_REJECTED_EXPLORATORY_HYBRID1_INCONCLUSIVE_PARTIAL_ARTIFACT_LOSS",
       "terminal": "auto-research/results/matched-scratch-fineweb-20261017-v1/TERMINAL.json"
+    },
+    {
+      "approval": "Current chat: user said \"ok do it\" after the assistant proposed a fixed-step learned-sampling experiment with fixed curve, matching dense and upstream nanoGPT controls across multiple seeds.",
+      "protocol": "auto-research/results/adaptive-depth-shakespeare-20261018-v1/PROTOCOL.json",
+      "protocol_sha256": "6c03bd561e22dcf61d2e023801a6694f955ca50158f1c4fe6639d687c5db77a4",
+      "report": "auto-research/reports/adaptive-depth-shakespeare-20261018-v1.md",
+      "run_id": "adaptive-depth-shakespeare-20261018-v1",
+      "source_manifest": "auto-research/results/adaptive-depth-shakespeare-20261018-v1/SOURCE_MANIFEST.json",
+      "status": "PREREGISTERED_AUTHORIZED",
+      "terminal": "auto-research/results/adaptive-depth-shakespeare-20261018-v1/execution/TERMINAL.json"
     }
   ],
   "schema_version": 1,

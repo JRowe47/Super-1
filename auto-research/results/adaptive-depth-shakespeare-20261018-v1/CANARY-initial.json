@@ -1,0 +1,58 @@
+{
+  "tests": [
+    {
+      "shape": [
+        1,
+        7
+      ],
+      "forward_gradient_optimizer_parity": true,
+      "max_logit_error": 1.7881393432617188e-07
+    },
+    {
+      "shape": [
+        2,
+        17
+      ],
+      "forward_gradient_optimizer_parity": true,
+      "max_logit_error": 1.7881393432617188e-07
+    },
+    {
+      "shape": [
+        8,
+        64
+      ],
+      "forward_gradient_optimizer_parity": true,
+      "max_logit_error": 2.384185791015625e-07
+    },
+    {
+      "causal_logits_and_routing": true,
+      "ordered_positions": true,
+      "nonzero_router_gradient": true,
+      "gradient_analytical": -0.0002084526640828699,
+      "gradient_finite_difference": 0.0
+    }
+  ],
+  "profiles": {
+    "fixed": {
+      "parameters": 68905,
+      "cpu_seconds_per_update": 0.014456800000000002
+    },
+    "global": {
+      "parameters": 68905,
+      "cpu_seconds_per_update": 0.014185999999999987
+    },
+    "token": {
+      "parameters": 68905,
+      "cpu_seconds_per_update": 0.014010199999999973
+    },
+    "dense": {
+      "parameters": 123744,
+      "cpu_seconds_per_update": 0.010631400000000023
+    },
+    "nanogpt": {
+      "parameters": 126384,
+      "cpu_seconds_per_update": 0.009196800000000005
+    }
+  },
+  "projected_training_cpu_seconds": 112.46615999999997
+}
