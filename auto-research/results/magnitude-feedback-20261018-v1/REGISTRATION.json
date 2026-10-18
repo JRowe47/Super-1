@@ -1,0 +1,24 @@
+{
+  "run_id": "magnitude-feedback-20261018-v1",
+  "registered_at_utc": "2026-10-18T04:35:18.683139+00:00",
+  "status": "FROZEN_BEFORE_VERIFICATION_PILOT_MAIN",
+  "repository": "JRowe47/Super-1",
+  "branch": "research/curve-inception-20261017-v1",
+  "parent_commit": "717a2686ea333fa0ea28ea9ac0c35c97eb9bdd3b",
+  "publication_gate": "All listed files and this registration read back byte-equal from immutable commit, then branch lease update verified before verify/pilot/main. Execution receipt timestamps follow this registration.",
+  "sha256": {
+    "BASELINE_RULE_MAPPING.md": "2299c157eaf29c24ca1ce258b15280bce6104e60a5592086228c3c0a9bb860b5",
+    "BASELINE_SOURCE_PROVENANCE.json": "192bf320be675c63013a09a295ccbfaa6380550264706578983af7f09eec80d0",
+    "PROTOCOL.json": "28b8b77f0941208696d3fd2965fccd44359a223974c9b3c860d26c68a9627b1d",
+    "README.md": "835b8fb2c2624597c9cd4be72e32c1dd469775d9a35e9b15a1af1f378c4a099e",
+    "RULE_MAPPING.md": "ec4768c562151150f397e33a2c4a5dc8563d15d80a32de98c071a85ae1b5cf70",
+    "SOURCE_PROVENANCE.json": "7c6bb2d473ad84d31ed919fa9cf3f53e6df47a35996b43ca12b30da8b6edb249",
+    "analyze.py": "a0256c029aecf4e0357de03420dedc4ef0711f0d7653049afc6f10348c4b8a55",
+    "baseline_core.py": "a26735782ca129b38786f960646f0f541848da6f8de2bbd6c02ccedc67715437",
+    "baseline_verify.py": "94d0c236cc4cad90b8a2680885e87497623ea8ee635c09c7e26cc18ff00ff3a1",
+    "core.py": "13471f8a2a9d2bf1d319e50e9af47c7a45f7c549b9fa1f9a4be7bcd99c7a3780",
+    "experiment.py": "d12c54d615c3c93fad45b37190b9576d40eaa42e8ac6b48ca2e670015d1f711e",
+    "launch.py": "9a5d919e6010c6d228b175ee09671becc6a2de97fa03e988a995da90989b59fa",
+    "verify.py": "414de8f6b5fddecda59fcf18178658495c15e4979a073a293b0d97b9d63b7f62"
+  }
+}

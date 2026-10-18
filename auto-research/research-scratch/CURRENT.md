@@ -1,28 +1,20 @@
 # Current research handoff
 
-Updated 2026-10-18 UTC / 2026-10-17 America/Denver.
+Updated 2026-10-18 UTC.
 
-## Latest result
+## Active stage
 
-Run: `bounded-feedback-20261018-v1`.
+`magnitude-feedback-20261018-v1` is frozen before execution. It tests adaptive feedback against a frozen direction with same-state adaptive update magnitudes, and includes a reciprocal normalization control. Six arms, three fresh main seeds701781/2/3, pilot96977; fixed prior retention gate. No results yet.
 
-Bounding learned feedback prevented the earlier numerical blow-ups in all 12 bounded learned-feedback main runs. With bounds throughout warmup, continued feedback adaptation reduced primary post-change cross-entropy by **28.31%** versus freezing, improving all three seeds. Final still-valid old accuracy fell from **94.903% to 90.365%**; the two-point retention guard failed in every seed. **No promotion.** Exact backpropagation remains strongest overall.
+- [Protocol](../results/magnitude-feedback-20261018-v1/PROTOCOL.json)
+- [Source hashes](../results/magnitude-feedback-20261018-v1/REGISTRATION.json)
+- [Reproduction](../results/magnitude-feedback-20261018-v1/README.md)
+- [Provenance](../results/magnitude-feedback-20261018-v1/SOURCE_PROVENANCE.json)
 
-- [Report](../reports/bounded-feedback-20261018-v1.md)
-- [Recorded metrics](../results/bounded-feedback-20261018-v1/RECORDED_SUMMARY.json)
-- [Protocol record](../results/bounded-feedback-20261018-v1/PROTOCOL_RECORD.json)
-- [Execution and preservation status](../results/bounded-feedback-20261018-v1/TERMINAL_RECORD.json)
+Exact source/protocol is being committed before verification and training. Resume by checking VERIFY/PILOT/MAIN receipts and seed RESULT.json before launching anything; never duplicate an active or completed run. Remaining compute has the same900-second aggregate CPU ceiling, at most3 single-thread workers. No GPU, cloud jobs or official-test access.
 
-## First action on resume
+## Previous finding and preservation gap
 
-Recover the completed run directory `auto-research/results/bounded-feedback-20261018-v1` from the prior workspace if it is accessible. Export its exact source, original registration/protocol, compact result records and necessary replay states individually. Verify against the original registration before claiming a complete reproducible release.
+The bounded study reported28.31% lower post-change CE with adaptive feedback, but old-fact retention failed in every seed. [Report](../reports/bounded-feedback-20261018-v1.md). Its source/registration/checkpoints did not survive the workspace reset; the Git records are transcribed findings, not original bytes. Do not claim the new implementation exactly reproduces that lost run.
 
-Training and all 27 main plus 9 pilot replays finished before the workspace returned `environment_offline`. This Git update contains transcribed findings, not the original source/receipt/checkpoint bytes. Original source hashes are unresolved here; do not invent them or claim these records reproduce the run.
-
-The preceding study is `adaptive-feedback-20261018-v1`, saved in `curve_feedback_experiments_2026-10-18.zip` in Library. The earlier seven-study handoff is `curve_online_learning_handoff_2026-10-18.zip` in the Geometric Self Attention folder. Reuse those existing copies when needed. The user cancelled further cumulative archive work.
-
-## Next scientific question
-
-Does adaptive feedback help after matching update magnitude? Its sampled update norm is larger, while directional alignment is not consistently better. Freeze a magnitude-matched frozen-feedback control first; then investigate a separate replay-based retention intervention. Keep exact hidden gradients diagnostic only, preserve the same retention gate, and retain every seed and failed arm.
-
-Neither follow-up is implemented or running. Prioritize preserving the exact implementation over reconstructing a supposedly identical run from prose.
+The new source derives from the hash-verified preserved predecessor `adaptive-feedback-20261018-v1` in the existing `curve_feedback_experiments_2026-10-18.zip`. Only its small source files were extracted. The user requested small individual artifacts and this stable research scratch channel; do not create another cumulative archive.

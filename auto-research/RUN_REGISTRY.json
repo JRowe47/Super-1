@@ -162,6 +162,20 @@
       "decision": "Mean paired post-change CE reduction 28.31%; old retention guard fails every seed. No promotion.",
       "preservation": "Original source, registration, receipt and checkpoint bytes not yet exported; workspace offline.",
       "published_note": "Compact records only, not a complete reproducible release. No new training in this commit."
+    },
+    {
+      "run_id": "magnitude-feedback-20261018-v1",
+      "status": "REGISTERED_BEFORE_EXECUTION",
+      "approval": "Latest user: Awesome, go ahead and continue to the next stage. Prior user: use the existing project folder or GitHub repo; use research scratch and minimize artifacts. Standing bounded CPU synthetic continuation and publication to own fork draft PR3.",
+      "protocol": "auto-research/results/magnitude-feedback-20261018-v1/PROTOCOL.json",
+      "protocol_sha256": "28b8b77f0941208696d3fd2965fccd44359a223974c9b3c860d26c68a9627b1d",
+      "registration": "auto-research/results/magnitude-feedback-20261018-v1/REGISTRATION.json",
+      "source_manifest": "auto-research/results/magnitude-feedback-20261018-v1/REGISTRATION.json",
+      "metrics": "auto-research/results/magnitude-feedback-20261018-v1/SUMMARY.json",
+      "terminal": "auto-research/results/magnitude-feedback-20261018-v1/TERMINAL.json",
+      "report": "auto-research/reports/magnitude-feedback-20261018-v1.md",
+      "decision": "Pending; same-state magnitude control, same retention gate.",
+      "source_provenance": "FRESH_EXTENSION_OF_PRESERVED_PREDECESSOR_NOT_BYTE_IDENTICAL_TO_LOST_BOUNDED_SOURCE"
     }
   ],
   "schema_version": 1,
