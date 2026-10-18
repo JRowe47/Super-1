@@ -1,0 +1,11 @@
+{
+  "run_id": "feedback-readout-20261018-v1",
+  "at_utc": "2026-10-18T15:40:52.333924+00:00",
+  "status": "RECONCILED",
+  "observation": "After main-evidence publication, a partial temporary runtime was present again despite earlier recorded removal. Cause undetermined. No experiment was rerun.",
+  "matching_live_experiment_processes": [],
+  "temporary_runtime_files_removed": 1630,
+  "temporary_runtime_bytes_removed": 51513836,
+  "runtime_absent_after_removal": true,
+  "registered_source_unchanged": true
+}
