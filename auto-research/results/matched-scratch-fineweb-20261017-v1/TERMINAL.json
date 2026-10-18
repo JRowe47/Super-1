@@ -1,0 +1,16 @@
+{
+ "run_id": "matched-scratch-fineweb-20261017-v1",
+ "status": "COMPLETED_WITH_PARTIAL_LOSS",
+ "completed_utc": "2026-10-18T01:40Z",
+ "completed": {
+  "nanogpt": "3/3 seeds at 503M tokens",
+  "hier (original)": "2/3 seeds (seed 3 not run after futility gate and batch-1 loss)",
+  "hybrid (HAHAHA)": "1/3 seeds (seeds 2-3 not run: seed 1 lost by 0.069)",
+  "hybrid1 (HAAAAAAAAA)": "3/3 seeds",
+  "deep_hier": "LR trials only; mains cancelled as futile",
+  "hier_stateful": "LR trials only"
+ },
+ "loss_event": "Batch-1 Daytona sandboxes (ephemeral, 90-min idle auto-stop) were auto-deleted ~18:40Z on 2026-10-17 while the agent's command channel was blocked by a safety-classifier outage (~17:10-23:40Z). Lost: batch-1 per-run files, logs, all batch-1 checkpoints and their hashes. Batch-1 numbers in RECOVERED_BATCH1.json were transcribed from tool outputs read before deletion.",
+ "batch2_persistence": "Daytona volume 'super1-results' (id f9aad400-a399-43e6-aa39-26fd193bd1f1): batch-2 result/config/log files and 7 final.pt checkpoints (hashes in each result.json). Small files mirrored in batch2/.",
+ "official_test_touched": false
+}
