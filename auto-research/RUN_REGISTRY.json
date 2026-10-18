@@ -197,6 +197,64 @@
       "status": "COMPLETED",
       "terminal": "auto-research/results/text-sampling-library-20261018-v1/execution/TERMINAL.json",
       "verification": "auto-research/results/text-sampling-library-20261018-v1/execution/VERIFICATION.json"
+    },
+    {
+      "approval": "User 2026-10-16 15:02 America/Denver: excellent - go ahead with the next experiment, and push the updates and results when done, proceed with linear mingru and paragru",
+      "arm_seed_rows": 3,
+      "checkpoint_manifest": "auto-research/results/gru-extended-20261016-v1/CHECKPOINT_MANIFEST.json",
+      "decision": "BOTH_CANDIDATES_EXCEED_CE_TOLERANCE",
+      "kind": "Independent explorer text pilot",
+      "metrics": "auto-research/results/gru-extended-20261016-v1/SUMMARY.json",
+      "parameters": {
+        "mingru_linear": 996320,
+        "native": 995925,
+        "paragru": 995724
+      },
+      "preservation": "auto-research/results/gru-extended-20261016-v1/PRESERVATION.json",
+      "protocol": "auto-research/results/gru-extended-20261016-v1/PROTOCOL.json",
+      "protocol_sha256": "7b4ccea2b278a45faf50c6fb14ee5b4a1f047236d9ede00ac03963eb4f750cdb",
+      "report": "auto-research/reports/gru-extended-20261016-v1.md",
+      "run_id": "gru-extended-20261016-v1",
+      "seed": 101602,
+      "source_manifest": "auto-research/results/gru-extended-20261016-v1/SOURCE_MANIFEST.json",
+      "status": "COMPLETED_EXPLORATORY_NO_ADVANCE",
+      "summary": {
+        "mingru_linear": {
+          "ce": 4.9888046234846115,
+          "decision": "DOES_NOT_MEET_EXPLORATORY_RULE",
+          "training_cpu_speedup_vs_native": 2.140619169953866
+        },
+        "native": {
+          "ce": 4.8641151040792465,
+          "decision": "CONTROL",
+          "training_cpu_speedup_vs_native": 1.0
+        },
+        "paragru": {
+          "ce": 4.995581492781639,
+          "decision": "DOES_NOT_MEET_EXPLORATORY_RULE",
+          "training_cpu_speedup_vs_native": 1.6683385771090566
+        }
+      },
+      "targets_per_arm": 1024000,
+      "terminal": "auto-research/results/gru-extended-20261016-v1/TERMINAL.json",
+      "updates_per_arm": 2000
+    },
+    {
+      "continued_linear_ce": 4.8564019203186035,
+      "fresh_linear_ce": 4.680991232395172,
+      "fresh_protocol": "auto-research/results/gru-equal-cpu-20261016-v1/FRESH_PROTOCOL.json",
+      "fresh_protocol_sha256": "b1de64e4de63e43d5458866414f66d30c85d15ac7a5b5cee012390324782574d",
+      "kind": "Independent equal-CPU diagnostic",
+      "metrics": "auto-research/results/gru-equal-cpu-20261016-v1/SUMMARY.json",
+      "native_ce": 4.8641151040792465,
+      "new_training_cpu_seconds": 392.8907770269988,
+      "protocol": "auto-research/results/gru-equal-cpu-20261016-v1/PROTOCOL.json",
+      "protocol_sha256": "8b83e5dc2ac61fe27ad64a57ffe9e655e0148dc04dae56710f845f72d822946d",
+      "report": "auto-research/reports/gru-equal-cpu-20261016-v1.md",
+      "run_id": "gru-equal-cpu-20261016-v1",
+      "source_manifest": "auto-research/results/gru-equal-cpu-20261016-v1/SOURCE_MANIFEST.json",
+      "status": "COMPLETED_EXPLORATORY",
+      "terminal": "auto-research/results/gru-equal-cpu-20261016-v1/TERMINAL.json"
     }
   ],
   "schema_version": 1,
