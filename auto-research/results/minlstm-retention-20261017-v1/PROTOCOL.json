@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "status": "FROZEN_BEFORE_PILOT_AND_MAIN",
+  "run_id": "minlstm-retention-20261017-v1",
+  "parent_run_ids": [
+    "curve-inception-20261017-v1"
+  ],
+  "hypothesis": "At equal stored recurrent-state capacity, normalized linear minLSTM improves long-delay passive retention over linear minGRU enough to justify its extra gate projection.",
+  "primary_comparator": "minlstm64 versus mingru64",
+  "primary_metric": "Final four-query accuracy on passive retention with 256 intervening tokens; absolute paired percentage-point difference.",
+  "minimum_useful_effect": "+5 percentage points mean across three seeds",
+  "success_rule": "Mean paired gain >=5pp, positive gain on all three seeds, and both minimal cells achieve >=90% mean accuracy at delay64. Otherwise no retention promotion.",
+  "futility_rule": "Complete every registered trial unless nonfinite values, fidelity failure, or time limit. Preserve failures; no reseeding.",
+  "authorization": {
+    "approved": true,
+    "reference": "User 2026-10-17 explicitly requests an LSTM-like minGRU variant test over retention and relative performance/compute against minGRU and normal LSTM.",
+    "resources": "Existing local CPU only; no external compute, costs, or language-model training.",
+    "per_trial_wall_limit_seconds": 480,
+    "workers": 3
+  },
+  "design": {
+    "arms": {
+      "mingru64": {
+        "parameters": 7968,
+        "recurrent_parameters": 4224,
+        "persistent_state_floats": 64,
+        "persistent_state_bytes_fp32": 256,
+        "recurrent_dense_macs_per_token": 4096,
+        "note": "State excludes weights, optimizer, activations and allocator. MACs exclude gates, scan and readout."
+      },
+      "minlstm64": {
+        "parameters": 10080,
+        "recurrent_parameters": 6336,
+        "persistent_state_floats": 64,
+        "persistent_state_bytes_fp32": 256,
+        "recurrent_dense_macs_per_token": 6144,
+        "note": "State excludes weights, optimizer, activations and allocator. MACs exclude gates, scan and readout."
+      },
+      "lstm32": {
+        "parameters": 11168,
+        "recurrent_parameters": 8448,
+        "persistent_state_floats": 64,
+        "persistent_state_bytes_fp32": 256,
+        "recurrent_dense_macs_per_token": 8192,
+        "note": "State excludes weights, optimizer, activations and allocator. MACs exclude gates, scan and readout."
+      },
+      "lstm64": {
+        "parameters": 28832,
+        "recurrent_parameters": 25088,
+        "persistent_state_floats": 128,
+        "persistent_state_bytes_fp32": 512,
+        "recurrent_dense_macs_per_token": 24576,
+        "note": "State excludes weights, optimizer, activations and allocator. MACs exclude gates, scan and readout."
+      }
+    },
+    "layers": 1,
+    "embedding": 32,
+    "source": "Feng et al., arXiv:2410.01201v3, section3; normalized signed linear minLSTM and signed linear minGRU. Normal LSTM torch.nn.LSTM. No curve rotation or hierarchy.",
+    "equations": {
+      "mingru": "z=sigmoid(Wz*x+bz); v=Wv*x+bv; h=(1-z)*hprev+z*v",
+      "minlstm": "f=sigmoid(Wf*x+bf); i=sigmoid(Wi*x+bi); v=Wv*x+bv; h=f/(f+i)*hprev+i/(f+i)*v",
+      "lstm": "i,f,o=sigmoid(W*x+U*hprev+b), g=tanh(Wg*x+Ug*hprev+bg); c=f*cprev+i*g; h=o*tanh(c)"
+    },
+    "control_rationale": "minGRU64/minLSTM64/LSTM32 each store64 floats. LSTM64 controls hidden width but stores128 floats. Parameters and compute are measured, not matched.",
+    "seeds": [
+      101711,
+      101712,
+      101713
+    ],
+    "seed_selection_method": "Consecutive fixed seed IDs reserved before all runs; distinct from parent study.",
+    "learning_rate_trials_per_arm": 1,
+    "initialization": "All gate weights zero at initialization; carry=.95 and write=.05 exactly for all cells; normal LSTM output gate=.5. Candidate and readout use default PyTorch random initialization.",
+    "readout": "Four linear eight-class heads; visible query token selects the key. Same mechanism for all arms; no lock/answer simulator state passed. Changed from parent study, so raw accuracies are not directly comparable."
+  },
+  "pilot": {
+    "seeds": [
+      811
+    ],
+    "updates": 250,
+    "purpose": "Fixed budget numerical and throughput check only. No selection or hyperparameter tuning. Selection evaluations at32/64 use separate seeds881101/881102."
+  },
+  "data": {
+    "vocabulary": 52,
+    "task_source": "Exact tasks.py copy from parent curve experiment. Four keys, eight values, two keys locked, optional conflict/reopening, simulator labels only.",
+    "training_delays": [
+      8,
+      16,
+      32,
+      64
+    ],
+    "training_mode_probabilities": {
+      "retention": 0.75,
+      "conflict": 0.125,
+      "reopen": 0.125
+    },
+    "training_seed": "700000000+model_seed*10000+step; per-step mode/length RNG=model_seed+123456. Same across every arm.",
+    "confirmation_seeds": [
+      991101,
+      991102
+    ],
+    "confirmation_batches": "4 batches of32 per seed, seed+100*k, 256 episodes per cell/mode/delay.",
+    "official_test_access_permitted": false,
+    "research_wide_reuse": "Same synthetic grammar as parent study. Fresh model/train/eval seeds; prior grammar findings informed this design. No benchmark claims."
+  },
+  "training": {
+    "updates": 3000,
+    "microbatch": 32,
+    "episodes_per_trial": 96000,
+    "optimizer": "AdamW lr.003 cosine to.0003, beta(.9,.95), eps1e-8, decay.01 all parameters; global gradient clip1",
+    "target_exposures_per_trial": "Exact query count and SHA256 recorded per seed; identical across all four arms. Variable episode lengths.",
+    "bptt": "Full episode; scan and native LSTM gradients verified; state reset each episode, no TBPTT.",
+    "precision": "FP32",
+    "checkpoint_selection": "Final step only; checkpoint hash frozen before confirmation.",
+    "objective": "Mean eight-class cross entropy on all visible query tokens; intermediate and final queries."
+  },
+  "execution": {
+    "hardware": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "torch": "2.14.1+cpu",
+    "numpy": "2.3.5",
+    "torch_threads_per_worker": 1,
+    "implementation": "Hillis-Steele affine scan O(T log T) work for minimal cells; optimized native nn.LSTM. No compiler/custom kernels.",
+    "canary_ms_batch32_length64": {
+      "mingru64": 6.555315,
+      "minlstm64": 7.87893,
+      "lstm32": 3.396995,
+      "lstm64": 6.285974
+    },
+    "fidelity": "FP64 outputs/input+parameter gradients/carry/one AdamW update <2e-12; FP32 outputs/gradients/carry/post-update outputs <2e-6. FP32 parameter differences <5e-5; Adam near-zero-gradient amplification documented in VERIFICATION_ATTEMPT_1.json."
+  },
+  "evaluation": {
+    "delays": [
+      0,
+      32,
+      64,
+      256,
+      1024
+    ],
+    "modes": [
+      "retention",
+      "conflict",
+      "reopen"
+    ],
+    "primary_endpoint": "retention/256",
+    "in_distribution_delay": 64,
+    "extrapolation_delays": [
+      256,
+      1024
+    ],
+    "chance_accuracy": 0.125,
+    "confirmation_frozen_before_scoring": true,
+    "uncertainty": "Show all model seeds and seed range; three training seeds are descriptive, not a high-powered population test.",
+    "duplicate_policy": "Reload every checkpoint and exactly replay primary endpoint; duplicates are reproducibility checks, not extra independent evidence.",
+    "multiple_comparisons": "One preregistered primary minLSTM-minus-minGRU contrast; normal LSTM controls and other modes/lengths are descriptive.",
+    "no_test_tuning": true
+  },
+  "deployment": {
+    "timing": "After training, one isolated process,1 CPU thread; model+readout+embedding. Batch32 length64/256/1024 full training with optimizer20 reps after5 warmups; prefill30 after5; decodebatch1/32 200 after20.",
+    "units": "Median CPU and wall milliseconds; report10th/90th percentiles. Measured implementation/hardware specific; not GPU results.",
+    "memory": "Analytic persistent recurrent FP32 state separately from parameters and observed process peakRSS. PeakRSS includes Python/Torch, not activation-only memory."
+  },
+  "preservation": "Code, compact traces, raw scores and receipts to authorized JRowe47/Super-1 research branch. Checkpoints/full traces in durable companion archive. No upstream PR or merge."
+}

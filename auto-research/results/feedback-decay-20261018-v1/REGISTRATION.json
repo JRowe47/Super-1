@@ -1,0 +1,28 @@
+{
+  "run_id": "feedback-decay-20261018-v1",
+  "registered_at_utc": "2026-10-18T06:36:34.534403+00:00",
+  "status": "FROZEN_BEFORE_EXPERIMENT_VERIFICATION_PILOT_MAIN",
+  "repository": "JRowe47/Super-1",
+  "branch": "research/curve-inception-20261017-v1",
+  "parent_commit": "8a67820440394e0d18cd0312d8ca56d974a3a706",
+  "runtime_note": "RUNTIME.json is import-only setup with no experiment data/model updates; CPU charged.",
+  "publication_gate": "All registered files and registration read back byte-equal from immutable commit and branch updated before experiment verification/pilot/main.",
+  "sha256": {
+    "BASELINE_RULE_MAPPING.md": "2299c157eaf29c24ca1ce258b15280bce6104e60a5592086228c3c0a9bb860b5",
+    "BASELINE_SOURCE_PROVENANCE.json": "192bf320be675c63013a09a295ccbfaa6380550264706578983af7f09eec80d0",
+    "PROTOCOL.json": "43623b9146c420863eb894c9464acc8a94caecc51007b6eceb7095ca2fe555f0",
+    "README.md": "15a7fe67ec74769eaa572a57e87e3c35bff35f5b054369b10eacf22d100ada5b",
+    "RULE_MAPPING.md": "d5db0f8baeed95809d68167e9a2577110a45cabbde5708200923a345c5478f9c",
+    "RUNTIME.json": "1756e96b578898ad04ebc31cd1b461e24ac16bfccd7e7b38a22653bb8a71d4ff",
+    "SOURCE_PROVENANCE.json": "0266a094ba18ea28ef5f062403a2581f14cd846b12f161233c20876751174574",
+    "analyze.py": "5f92fc5d705db98521e4882d892e0d75441d3ddc1653f78d0e31d7b61da820db",
+    "baseline_core.py": "a26735782ca129b38786f960646f0f541848da6f8de2bbd6c02ccedc67715437",
+    "baseline_verify.py": "94d0c236cc4cad90b8a2680885e87497623ea8ee635c09c7e26cc18ff00ff3a1",
+    "core.py": "1b92c65841ec97b09295df5168a1eeb81743a3b9ad6e6f13808d0cb2d8a4f1d7",
+    "experiment.py": "3f6c35490689491202c916ee0ffb6b0cf0dd6c912a2bcff752d456cce966f5e9",
+    "feedback_core.py": "13471f8a2a9d2bf1d319e50e9af47c7a45f7c549b9fa1f9a4be7bcd99c7a3780",
+    "feedback_verify.py": "414de8f6b5fddecda59fcf18178658495c15e4979a073a293b0d97b9d63b7f62",
+    "launch.py": "9a5d919e6010c6d228b175ee09671becc6a2de97fa03e988a995da90989b59fa",
+    "verify.py": "a0957a1b76bb89b02a601eb642d380b23b3d0c39fd44ebd0b90b645bea33eed9"
+  }
+}

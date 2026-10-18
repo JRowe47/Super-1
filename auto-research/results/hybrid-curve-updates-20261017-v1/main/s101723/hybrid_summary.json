@@ -1,0 +1,20 @@
+{
+  "arm": "hybrid",
+  "seed": 101723,
+  "main_cpu": 2.069831057,
+  "main_wall": 2.073069255999144,
+  "lifecycle_cpu": 7.434747593,
+  "counts": {
+    "backward": 1000,
+    "proposed": 1000,
+    "eligible": 0,
+    "applied": 0,
+    "skipped": 0,
+    "audits": 0,
+    "audit_failures": 0
+  },
+  "training_examples": 64000,
+  "data_sha256": "c76f8f06db453a2f400e2c71f67237837cc9269c75e23ad6a5844fc494c8db80",
+  "checkpoint_sha256": "7d4e0f1fb3053c1f996d98ff5e680efbdd43b86a3819d539890ba5c63e4db14b",
+  "controller_frozen_after_warmup": true
+}

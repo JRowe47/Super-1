@@ -1,0 +1,57 @@
+{
+  "run_id": "replay-retention-20261018-v1",
+  "status": "COMPLETE_NO_PROMOTION_RETENTION_FAILED",
+  "finished_at_utc": "2026-10-18T05:51:52.030012+00:00",
+  "source_commit_before_experiment_execution": "34f559d1454a067d175e55c372f3b20387b2423d",
+  "pilot_and_verification_commit": "f8649708d08c9ab4b1467898db992833f432b5e4",
+  "protocol_sha256": "7449bfbfa874107ac3f8d64fe2e2dd8f82236882058b3bd018a1686af8972ee3",
+  "registered_source_unchanged": true,
+  "main_seeds": [
+    801791,
+    801792,
+    801793
+  ],
+  "pilot_seed": 97987,
+  "main_runs": 18,
+  "pilot_runs": 6,
+  "main_updates_per_arm": 2048,
+  "pilot_updates_per_arm": 256,
+  "warmup_steps_per_seed": 4096,
+  "full_bitwise_online_replays": 24,
+  "primary_mean_ce_reduction_percent": 21.944166084525513,
+  "effect_gate": true,
+  "retention_gate": false,
+  "promotion": false,
+  "adaptive_mixed_minus_fifo": {
+    "primary_ce_delta_nats": 0.21956990100443363,
+    "relative_ce_reduction_percent": -30.7129180196107,
+    "old_window_delta_pp": 8.535621066888174,
+    "stable_acc_delta_pp": 3.3854166666666665,
+    "novel_acc_delta_pp": -3.7109375,
+    "drift_acc_delta_pp": -23.958333333333332,
+    "balanced_acc_delta_pp": -8.094618055555559
+  },
+  "charged_experiment_cpu_seconds": 199.53490228499996,
+  "cpu_budget_seconds": 900,
+  "cpu_scope": "Verification, pilot/main imports and execution, full online replays, launchers, runtime import canary and frozen analysis; source preparation/dependency setup/transfer excluded.",
+  "all_workers_exited": true,
+  "all_four_remote_checkpoint_hashes_verified": true,
+  "checkpoint_bytes": 754883,
+  "exceptions": [],
+  "source_preservation": "Complete source/protocol preregistered in Git; compact metrics and receipts in Git; individual NPZ states stored and downloaded again for SHA256 verification.",
+  "cleanup": [
+    {
+      "relative_path": "verify-checkpoints-stage4",
+      "file_bytes_removed": 754883,
+      "reason": "Redundant verification copy or reproducible temporary runtime after durable checkpoint verification."
+    },
+    {
+      "relative_path": "research-runtime",
+      "file_bytes_removed": 1085240563,
+      "reason": "Redundant verification copy or reproducible temporary runtime after durable checkpoint verification."
+    }
+  ],
+  "official_test_accessed": false,
+  "new_cloud_resources_created": false,
+  "next_stage": "Propose a causally refreshed long-history bank with same8+8 sampling and512 stored examples, permanent-bank/FIFO controls; not implemented or running."
+}

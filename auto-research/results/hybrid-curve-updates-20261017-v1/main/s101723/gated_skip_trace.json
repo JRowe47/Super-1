@@ -1,0 +1,945 @@
+[
+  {
+    "step": 0,
+    "phase": 0,
+    "loss": 3.9680919647216797,
+    "confidence": 0.9951621890068054,
+    "predicted_gain": -0.029323942959308624,
+    "eligible": false,
+    "applied": false,
+    "audit": null,
+    "memory": [
+      0.13725487019292268,
+      0.0004353343178541319
+    ],
+    "counts": {
+      "backward": 1,
+      "proposed": 1,
+      "eligible": 0,
+      "applied": 0,
+      "skipped": 0,
+      "audits": 0,
+      "audit_failures": 0
+    }
+  },
+  {
+    "step": 25,
+    "phase": 0,
+    "loss": 0.08188030868768692,
+    "confidence": 0.9966810345649719,
+    "predicted_gain": 0.0003040134906768799,
+    "eligible": false,
+    "applied": false,
+    "audit": null,
+    "memory": [
+      0.13725487019292268,
+      0.0004353343178541319
+    ],
+    "counts": {
+      "backward": 26,
+      "proposed": 26,
+      "eligible": 0,
+      "applied": 0,
+      "skipped": 0,
+      "audits": 0,
+      "audit_failures": 0
+    }
+  },
+  {
+    "step": 50,
+    "phase": 0,
+    "loss": 0.0643671303987503,
+    "confidence": 0.9967722296714783,
+    "predicted_gain": 0.0007958933711051941,
+    "eligible": false,
+    "applied": false,
+    "audit": null,
+    "memory": [
+      0.13725487019292268,
+      0.0004353343178541319
+    ],
+    "counts": {
+      "backward": 51,
+      "proposed": 51,
+      "eligible": 0,
+      "applied": 0,
+      "skipped": 0,
+      "audits": 0,
+      "audit_failures": 0
+    }
+  },
+  {
+    "step": 75,
+    "phase": 0,
+    "loss": 0.043544042855501175,
+    "confidence": 0.9968189001083374,
+    "predicted_gain": 0.00031431764364242554,
+    "eligible": false,
+    "applied": false,
+    "audit": null,
+    "memory": [
+      0.13725487019292268,
+      0.0004353343178541319
+    ],
+    "counts": {
+      "backward": 76,
+      "proposed": 76,
+      "eligible": 0,
+      "applied": 0,
+      "skipped": 0,
+      "audits": 0,
+      "audit_failures": 0
+    }
+  },
+  {
+    "step": 100,
+    "phase": 0,
+    "loss": 0.03588968515396118,
+    "confidence": 0.9968699812889099,
+    "predicted_gain": 0.0003655627369880676,
+    "eligible": false,
+    "applied": false,
+    "audit": null,
+    "memory": [
+      0.13725487019292268,
+      0.0004353343178541319
+    ],
+    "counts": {
+      "backward": 101,
+      "proposed": 101,
+      "eligible": 0,
+      "applied": 0,
+      "skipped": 0,
+      "audits": 0,
+      "audit_failures": 0
+    }
+  },
+  {
+    "step": 125,
+    "phase": 0,
+    "loss": 0.032177671790122986,
+    "confidence": 0.9969229102134705,
+    "predicted_gain": 0.0007386878132820129,
+    "eligible": false,
+    "applied": false,
+    "audit": null,
+    "memory": [
+      0.13725487019292268,
+      0.0004353343178541319
+    ],
+    "counts": {
+      "backward": 126,
+      "proposed": 126,
+      "eligible": 0,
+      "applied": 0,
+      "skipped": 0,
+      "audits": 0,
+      "audit_failures": 0
+    }
+  },
+  {
+    "step": 150,
+    "phase": 0,
+    "loss": 0.02704659104347229,
+    "confidence": 0.9969484210014343,
+    "predicted_gain": 0.000431157648563385,
+    "eligible": false,
+    "applied": false,
+    "audit": null,
+    "memory": [
+      0.13725487019292268,
+      0.0004353343178541319
+    ],
+    "counts": {
+      "backward": 151,
+      "proposed": 151,
+      "eligible": 0,
+      "applied": 0,
+      "skipped": 0,
+      "audits": 0,
+      "audit_failures": 0
+    }
+  },
+  {
+    "step": 175,
+    "phase": 0,
+    "loss": 0.025509143248200417,
+    "confidence": 0.9969857335090637,
+    "predicted_gain": 0.0005744621157646179,
+    "eligible": false,
+    "applied": false,
+    "audit": null,
+    "memory": [
+      0.13725487019292268,
+      0.0004353343178541319
+    ],
+    "counts": {
+      "backward": 176,
+      "proposed": 176,
+      "eligible": 0,
+      "applied": 0,
+      "skipped": 0,
+      "audits": 0,
+      "audit_failures": 0
+    }
+  },
+  {
+    "step": 200,
+    "phase": 0,
+    "loss": 0.024093443527817726,
+    "confidence": 0.9970165491104126,
+    "predicted_gain": 0.0006433203816413879,
+    "eligible": false,
+    "applied": false,
+    "audit": null,
+    "memory": [
+      0.13725487019292268,
+      0.0004353343178541319
+    ],
+    "counts": {
+      "backward": 201,
+      "proposed": 201,
+      "eligible": 0,
+      "applied": 0,
+      "skipped": 0,
+      "audits": 0,
+      "audit_failures": 0
+    }
+  },
+  {
+    "step": 225,
+    "phase": 0,
+    "loss": 0.0216095931828022,
+    "confidence": 0.9970479607582092,
+    "predicted_gain": 0.0008165761828422546,
+    "eligible": false,
+    "applied": false,
+    "audit": null,
+    "memory": [
+      0.13725487019292268,
+      0.0004353343178541319
+    ],
+    "counts": {
+      "backward": 226,
+      "proposed": 226,
+      "eligible": 0,
+      "applied": 0,
+      "skipped": 0,
+      "audits": 0,
+      "audit_failures": 0
+    }
+  },
+  {
+    "step": 250,
+    "phase": 1,
+    "loss": 2.179943084716797,
+    "confidence": 0.9959657192230225,
+    "predicted_gain": -0.015853695571422577,
+    "eligible": false,
+    "applied": false,
+    "audit": null,
+    "memory": [
+      0.13725487019292268,
+      0.0004353343178541319
+    ],
+    "counts": {
+      "backward": 251,
+      "proposed": 251,
+      "eligible": 0,
+      "applied": 0,
+      "skipped": 0,
+      "audits": 0,
+      "audit_failures": 0
+    }
+  },
+  {
+    "step": 275,
+    "phase": 1,
+    "loss": 0.06839452683925629,
+    "confidence": 0.9971501231193542,
+    "predicted_gain": 0.00311250239610672,
+    "eligible": false,
+    "applied": false,
+    "audit": null,
+    "memory": [
+      0.13725487019292268,
+      0.0004353343178541319
+    ],
+    "counts": {
+      "backward": 276,
+      "proposed": 276,
+      "eligible": 0,
+      "applied": 0,
+      "skipped": 0,
+      "audits": 0,
+      "audit_failures": 0
+    }
+  },
+  {
+    "step": 300,
+    "phase": 1,
+    "loss": 0.06120447441935539,
+    "confidence": 0.9971838593482971,
+    "predicted_gain": 0.002846650779247284,
+    "eligible": false,
+    "applied": false,
+    "audit": null,
+    "memory": [
+      0.13725487019292268,
+      0.0004353343178541319
+    ],
+    "counts": {
+      "backward": 301,
+      "proposed": 301,
+      "eligible": 0,
+      "applied": 0,
+      "skipped": 0,
+      "audits": 0,
+      "audit_failures": 0
+    }
+  },
+  {
+    "step": 325,
+    "phase": 1,
+    "loss": 0.05032904073596001,
+    "confidence": 0.9972099661827087,
+    "predicted_gain": 0.0022401437163352966,
+    "eligible": false,
+    "applied": false,
+    "audit": null,
+    "memory": [
+      0.13725487019292268,
+      0.0004353343178541319
+    ],
+    "counts": {
+      "backward": 326,
+      "proposed": 326,
+      "eligible": 0,
+      "applied": 0,
+      "skipped": 0,
+      "audits": 0,
+      "audit_failures": 0
+    }
+  },
+  {
+    "step": 350,
+    "phase": 1,
+    "loss": 0.03687701374292374,
+    "confidence": 0.9972524046897888,
+    "predicted_gain": 0.002568386495113373,
+    "eligible": false,
+    "applied": false,
+    "audit": null,
+    "memory": [
+      0.13725487019292268,
+      0.0004353343178541319
+    ],
+    "counts": {
+      "backward": 351,
+      "proposed": 351,
+      "eligible": 0,
+      "applied": 0,
+      "skipped": 0,
+      "audits": 0,
+      "audit_failures": 0
+    }
+  },
+  {
+    "step": 375,
+    "phase": 1,
+    "loss": 0.03342227637767792,
+    "confidence": 0.997287392616272,
+    "predicted_gain": 0.0027501508593559265,
+    "eligible": false,
+    "applied": false,
+    "audit": null,
+    "memory": [
+      0.13725487019292268,
+      0.0004353343178541319
+    ],
+    "counts": {
+      "backward": 376,
+      "proposed": 376,
+      "eligible": 0,
+      "applied": 0,
+      "skipped": 0,
+      "audits": 0,
+      "audit_failures": 0
+    }
+  },
+  {
+    "step": 400,
+    "phase": 1,
+    "loss": 0.026151010766625404,
+    "confidence": 0.9973284006118774,
+    "predicted_gain": 0.0033133551478385925,
+    "eligible": false,
+    "applied": false,
+    "audit": null,
+    "memory": [
+      0.13725487019292268,
+      0.0004353343178541319
+    ],
+    "counts": {
+      "backward": 401,
+      "proposed": 401,
+      "eligible": 0,
+      "applied": 0,
+      "skipped": 0,
+      "audits": 0,
+      "audit_failures": 0
+    }
+  },
+  {
+    "step": 425,
+    "phase": 1,
+    "loss": 0.022050820291042328,
+    "confidence": 0.9973577857017517,
+    "predicted_gain": 0.0036368072032928467,
+    "eligible": false,
+    "applied": false,
+    "audit": null,
+    "memory": [
+      0.13725487019292268,
+      0.0004353343178541319
+    ],
+    "counts": {
+      "backward": 426,
+      "proposed": 426,
+      "eligible": 0,
+      "applied": 0,
+      "skipped": 0,
+      "audits": 0,
+      "audit_failures": 0
+    }
+  },
+  {
+    "step": 450,
+    "phase": 1,
+    "loss": 0.019682615995407104,
+    "confidence": 0.9973769187927246,
+    "predicted_gain": 0.003609113395214081,
+    "eligible": false,
+    "applied": false,
+    "audit": null,
+    "memory": [
+      0.13725487019292268,
+      0.0004353343178541319
+    ],
+    "counts": {
+      "backward": 451,
+      "proposed": 451,
+      "eligible": 0,
+      "applied": 0,
+      "skipped": 0,
+      "audits": 0,
+      "audit_failures": 0
+    }
+  },
+  {
+    "step": 475,
+    "phase": 1,
+    "loss": 0.0193608570843935,
+    "confidence": 0.9973871111869812,
+    "predicted_gain": 0.003329053521156311,
+    "eligible": false,
+    "applied": false,
+    "audit": null,
+    "memory": [
+      0.13725487019292268,
+      0.0004353343178541319
+    ],
+    "counts": {
+      "backward": 476,
+      "proposed": 476,
+      "eligible": 0,
+      "applied": 0,
+      "skipped": 0,
+      "audits": 0,
+      "audit_failures": 0
+    }
+  },
+  {
+    "step": 500,
+    "phase": 2,
+    "loss": 3.1772871017456055,
+    "confidence": 0.9963929057121277,
+    "predicted_gain": -0.01874411851167679,
+    "eligible": false,
+    "applied": false,
+    "audit": null,
+    "memory": [
+      0.13725487019292268,
+      0.0004353343178541319
+    ],
+    "counts": {
+      "backward": 501,
+      "proposed": 501,
+      "eligible": 0,
+      "applied": 0,
+      "skipped": 0,
+      "audits": 0,
+      "audit_failures": 0
+    }
+  },
+  {
+    "step": 525,
+    "phase": 2,
+    "loss": 0.13079285621643066,
+    "confidence": 0.9974220991134644,
+    "predicted_gain": 0.005955494940280914,
+    "eligible": false,
+    "applied": false,
+    "audit": null,
+    "memory": [
+      0.13725487019292268,
+      0.0004353343178541319
+    ],
+    "counts": {
+      "backward": 526,
+      "proposed": 526,
+      "eligible": 0,
+      "applied": 0,
+      "skipped": 0,
+      "audits": 0,
+      "audit_failures": 0
+    }
+  },
+  {
+    "step": 550,
+    "phase": 2,
+    "loss": 0.08967123925685883,
+    "confidence": 0.9974863529205322,
+    "predicted_gain": 0.005987890064716339,
+    "eligible": false,
+    "applied": false,
+    "audit": null,
+    "memory": [
+      0.13725487019292268,
+      0.0004353343178541319
+    ],
+    "counts": {
+      "backward": 551,
+      "proposed": 551,
+      "eligible": 0,
+      "applied": 0,
+      "skipped": 0,
+      "audits": 0,
+      "audit_failures": 0
+    }
+  },
+  {
+    "step": 575,
+    "phase": 2,
+    "loss": 0.06378863751888275,
+    "confidence": 0.9975257515907288,
+    "predicted_gain": 0.0056823864579200745,
+    "eligible": false,
+    "applied": false,
+    "audit": null,
+    "memory": [
+      0.13725487019292268,
+      0.0004353343178541319
+    ],
+    "counts": {
+      "backward": 576,
+      "proposed": 576,
+      "eligible": 0,
+      "applied": 0,
+      "skipped": 0,
+      "audits": 0,
+      "audit_failures": 0
+    }
+  },
+  {
+    "step": 600,
+    "phase": 2,
+    "loss": 0.05132189765572548,
+    "confidence": 0.9975652694702148,
+    "predicted_gain": 0.005776353180408478,
+    "eligible": false,
+    "applied": false,
+    "audit": null,
+    "memory": [
+      0.13725487019292268,
+      0.0004353343178541319
+    ],
+    "counts": {
+      "backward": 601,
+      "proposed": 601,
+      "eligible": 0,
+      "applied": 0,
+      "skipped": 0,
+      "audits": 0,
+      "audit_failures": 0
+    }
+  },
+  {
+    "step": 625,
+    "phase": 2,
+    "loss": 0.04490090161561966,
+    "confidence": 0.9976006150245667,
+    "predicted_gain": 0.0060219839215278625,
+    "eligible": false,
+    "applied": false,
+    "audit": null,
+    "memory": [
+      0.13725487019292268,
+      0.0004353343178541319
+    ],
+    "counts": {
+      "backward": 626,
+      "proposed": 626,
+      "eligible": 0,
+      "applied": 0,
+      "skipped": 0,
+      "audits": 0,
+      "audit_failures": 0
+    }
+  },
+  {
+    "step": 650,
+    "phase": 2,
+    "loss": 0.051285579800605774,
+    "confidence": 0.997634768486023,
+    "predicted_gain": 0.006625160574913025,
+    "eligible": false,
+    "applied": false,
+    "audit": null,
+    "memory": [
+      0.13725487019292268,
+      0.0004353343178541319
+    ],
+    "counts": {
+      "backward": 651,
+      "proposed": 651,
+      "eligible": 0,
+      "applied": 0,
+      "skipped": 0,
+      "audits": 0,
+      "audit_failures": 0
+    }
+  },
+  {
+    "step": 675,
+    "phase": 2,
+    "loss": 0.03456587344408035,
+    "confidence": 0.9976696372032166,
+    "predicted_gain": 0.007121853530406952,
+    "eligible": false,
+    "applied": false,
+    "audit": null,
+    "memory": [
+      0.13725487019292268,
+      0.0004353343178541319
+    ],
+    "counts": {
+      "backward": 676,
+      "proposed": 676,
+      "eligible": 0,
+      "applied": 0,
+      "skipped": 0,
+      "audits": 0,
+      "audit_failures": 0
+    }
+  },
+  {
+    "step": 700,
+    "phase": 2,
+    "loss": 0.03221169114112854,
+    "confidence": 0.9976898431777954,
+    "predicted_gain": 0.007142357528209686,
+    "eligible": false,
+    "applied": false,
+    "audit": null,
+    "memory": [
+      0.13725487019292268,
+      0.0004353343178541319
+    ],
+    "counts": {
+      "backward": 701,
+      "proposed": 701,
+      "eligible": 0,
+      "applied": 0,
+      "skipped": 0,
+      "audits": 0,
+      "audit_failures": 0
+    }
+  },
+  {
+    "step": 725,
+    "phase": 2,
+    "loss": 0.03157056123018265,
+    "confidence": 0.9977078437805176,
+    "predicted_gain": 0.007130511105060577,
+    "eligible": false,
+    "applied": false,
+    "audit": null,
+    "memory": [
+      0.13725487019292268,
+      0.0004353343178541319
+    ],
+    "counts": {
+      "backward": 726,
+      "proposed": 726,
+      "eligible": 0,
+      "applied": 0,
+      "skipped": 0,
+      "audits": 0,
+      "audit_failures": 0
+    }
+  },
+  {
+    "step": 750,
+    "phase": 3,
+    "loss": 2.5299577713012695,
+    "confidence": 0.9970859885215759,
+    "predicted_gain": -0.008717536926269531,
+    "eligible": false,
+    "applied": false,
+    "audit": null,
+    "memory": [
+      0.13725487019292268,
+      0.0004353343178541319
+    ],
+    "counts": {
+      "backward": 751,
+      "proposed": 751,
+      "eligible": 0,
+      "applied": 0,
+      "skipped": 0,
+      "audits": 0,
+      "audit_failures": 0
+    }
+  },
+  {
+    "step": 775,
+    "phase": 3,
+    "loss": 0.1098637804389,
+    "confidence": 0.9977371692657471,
+    "predicted_gain": 0.008013486862182617,
+    "eligible": false,
+    "applied": false,
+    "audit": null,
+    "memory": [
+      0.13725487019292268,
+      0.0004353343178541319
+    ],
+    "counts": {
+      "backward": 776,
+      "proposed": 776,
+      "eligible": 0,
+      "applied": 0,
+      "skipped": 0,
+      "audits": 0,
+      "audit_failures": 0
+    }
+  },
+  {
+    "step": 800,
+    "phase": 3,
+    "loss": 0.060690440237522125,
+    "confidence": 0.9977808594703674,
+    "predicted_gain": 0.008270539343357086,
+    "eligible": false,
+    "applied": false,
+    "audit": null,
+    "memory": [
+      0.13725487019292268,
+      0.0004353343178541319
+    ],
+    "counts": {
+      "backward": 801,
+      "proposed": 801,
+      "eligible": 0,
+      "applied": 0,
+      "skipped": 0,
+      "audits": 0,
+      "audit_failures": 0
+    }
+  },
+  {
+    "step": 825,
+    "phase": 3,
+    "loss": 0.04504306986927986,
+    "confidence": 0.9978058934211731,
+    "predicted_gain": 0.008357696235179901,
+    "eligible": false,
+    "applied": false,
+    "audit": null,
+    "memory": [
+      0.13725487019292268,
+      0.0004353343178541319
+    ],
+    "counts": {
+      "backward": 826,
+      "proposed": 826,
+      "eligible": 0,
+      "applied": 0,
+      "skipped": 0,
+      "audits": 0,
+      "audit_failures": 0
+    }
+  },
+  {
+    "step": 850,
+    "phase": 3,
+    "loss": 0.03690361976623535,
+    "confidence": 0.9978261590003967,
+    "predicted_gain": 0.008381053805351257,
+    "eligible": false,
+    "applied": false,
+    "audit": null,
+    "memory": [
+      0.13725487019292268,
+      0.0004353343178541319
+    ],
+    "counts": {
+      "backward": 851,
+      "proposed": 851,
+      "eligible": 0,
+      "applied": 0,
+      "skipped": 0,
+      "audits": 0,
+      "audit_failures": 0
+    }
+  },
+  {
+    "step": 875,
+    "phase": 3,
+    "loss": 0.03309112414717674,
+    "confidence": 0.9978445768356323,
+    "predicted_gain": 0.008465074002742767,
+    "eligible": false,
+    "applied": false,
+    "audit": null,
+    "memory": [
+      0.13725487019292268,
+      0.0004353343178541319
+    ],
+    "counts": {
+      "backward": 876,
+      "proposed": 876,
+      "eligible": 0,
+      "applied": 0,
+      "skipped": 0,
+      "audits": 0,
+      "audit_failures": 0
+    }
+  },
+  {
+    "step": 900,
+    "phase": 3,
+    "loss": 0.031212611123919487,
+    "confidence": 0.9978623986244202,
+    "predicted_gain": 0.008667699992656708,
+    "eligible": false,
+    "applied": false,
+    "audit": null,
+    "memory": [
+      0.13725487019292268,
+      0.0004353343178541319
+    ],
+    "counts": {
+      "backward": 901,
+      "proposed": 901,
+      "eligible": 0,
+      "applied": 0,
+      "skipped": 0,
+      "audits": 0,
+      "audit_failures": 0
+    }
+  },
+  {
+    "step": 925,
+    "phase": 3,
+    "loss": 0.028817348182201385,
+    "confidence": 0.9978837370872498,
+    "predicted_gain": 0.009306825697422028,
+    "eligible": false,
+    "applied": false,
+    "audit": null,
+    "memory": [
+      0.13725487019292268,
+      0.0004353343178541319
+    ],
+    "counts": {
+      "backward": 926,
+      "proposed": 926,
+      "eligible": 0,
+      "applied": 0,
+      "skipped": 0,
+      "audits": 0,
+      "audit_failures": 0
+    }
+  },
+  {
+    "step": 950,
+    "phase": 3,
+    "loss": 0.02734382450580597,
+    "confidence": 0.9979013204574585,
+    "predicted_gain": 0.009575322270393372,
+    "eligible": false,
+    "applied": false,
+    "audit": null,
+    "memory": [
+      0.13725487019292268,
+      0.0004353343178541319
+    ],
+    "counts": {
+      "backward": 951,
+      "proposed": 951,
+      "eligible": 0,
+      "applied": 0,
+      "skipped": 0,
+      "audits": 0,
+      "audit_failures": 0
+    }
+  },
+  {
+    "step": 975,
+    "phase": 3,
+    "loss": 0.02194245718419552,
+    "confidence": 0.9979196190834045,
+    "predicted_gain": 0.010081075131893158,
+    "eligible": false,
+    "applied": false,
+    "audit": null,
+    "memory": [
+      0.13725487019292268,
+      0.0004353343178541319
+    ],
+    "counts": {
+      "backward": 976,
+      "proposed": 976,
+      "eligible": 0,
+      "applied": 0,
+      "skipped": 0,
+      "audits": 0,
+      "audit_failures": 0
+    }
+  },
+  {
+    "step": 999,
+    "phase": 3,
+    "loss": 0.02194785885512829,
+    "confidence": 0.9979265928268433,
+    "predicted_gain": 0.00985950231552124,
+    "eligible": false,
+    "applied": false,
+    "audit": null,
+    "memory": [
+      0.13725487019292268,
+      0.0004353343178541319
+    ],
+    "counts": {
+      "backward": 1000,
+      "proposed": 1000,
+      "eligible": 0,
+      "applied": 0,
+      "skipped": 0,
+      "audits": 0,
+      "audit_failures": 0
+    }
+  }
+]

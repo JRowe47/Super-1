@@ -1,0 +1,25 @@
+{
+  "amendment": "RUNTIME_REPAIR_ONLY_BEFORE_ANY_PILOT_DATA_OR_TRAINING",
+  "reason": "Initial pilot failed at module import when torch.use_deterministic_algorithms imported absent sympy. Worker was never entered; no data generated, no model updates, no pilot metrics.",
+  "failed_receipt": "PILOT_IMPORT_FAILURE.json",
+  "error": "ModuleNotFoundError: No module named sympy",
+  "action": "Restore required runtime dependencies, retain failed receipt unchanged, authorize exactly one same-source pilot retry. This is not a numerical/fidelity failure. No source, seeds, optimizer, thresholds or comparison changes.",
+  "versions": {
+    "torch": "2.14.1+cpu",
+    "numpy": "2.3.5",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "filelock": "3.20.0",
+    "typing_extensions": "4.16.0",
+    "setuptools": "84.0.0",
+    "networkx": "3.5",
+    "jinja2": "3.1.6",
+    "fsspec": "2025.9.0",
+    "MarkupSafe": "3.0.4"
+  },
+  "deterministic_runtime_import": "PASS",
+  "source_unchanged": true,
+  "canary_cpu_seconds": 2.489906,
+  "accounting": "TERMINAL.json adds failed-start CPU and runtime canary to successful-stage accounting from frozen analyze.py.",
+  "source_commit": "644d69ed8e797e3e06de0af416fa561a8bd6f148"
+}

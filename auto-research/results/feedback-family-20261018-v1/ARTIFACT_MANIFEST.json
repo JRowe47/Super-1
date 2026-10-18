@@ -1,0 +1,73 @@
+{
+  "run_id": "feedback-family-20261018-v1",
+  "state_files": [
+    {
+      "local_path": "/workspace/scratch/8b72ec5282c5/downloads/feedback-family-20261018-v1-pilot-101927-states.npz",
+      "run_relative_path": "pilot/101927/STATES.npz",
+      "bytes": 182390,
+      "sha256": "e7b675911563afd3aa99ac56d2908e76eab6d05f7b0e775c4c349de0687227b8",
+      "purpose": "create_library_file",
+      "status": "succeeded",
+      "file_id": "file_0000000098c8820dbb021d814f6b811e",
+      "library_file_id": "libfile_5afd014df6a08191ba3933908561dfd8",
+      "file_name": "feedback-family-20261018-v1-pilot-101927-states.npz",
+      "local_metadata_applied": true,
+      "path": "/Geometric Self Attention/feedback-family-20261018-v1-pilot-101927-states.npz",
+      "current_version_number": 0,
+      "remote_readback_sha256_verified": true,
+      "active_family_overlay_schema_verified": true
+    },
+    {
+      "local_path": "/workspace/scratch/8b72ec5282c5/downloads/feedback-family-20261018-v1-main-1201831-states.npz",
+      "run_relative_path": "main/1201831/STATES.npz",
+      "bytes": 182328,
+      "sha256": "c83c3efb96c3c899d3d13f3d082d030bb122b096bad0d83d50b21dcb7a502edf",
+      "purpose": "create_library_file",
+      "status": "succeeded",
+      "file_id": "file_00000000605c81f68fd0b6bfd51bac4e",
+      "library_file_id": "libfile_1efe96e597fc8191884c82812847b25e",
+      "file_name": "feedback-family-20261018-v1-main-1201831-states.npz",
+      "local_metadata_applied": true,
+      "path": "/Geometric Self Attention/feedback-family-20261018-v1-main-1201831-states.npz",
+      "current_version_number": 0,
+      "remote_readback_sha256_verified": true,
+      "active_family_overlay_schema_verified": true
+    },
+    {
+      "local_path": "/workspace/scratch/8b72ec5282c5/downloads/feedback-family-20261018-v1-main-1201832-states.npz",
+      "run_relative_path": "main/1201832/STATES.npz",
+      "bytes": 182466,
+      "sha256": "5741318450596a6b4cfb2d50832c95199c41c920d01b938ea6e8c7b6ce4157a3",
+      "purpose": "create_library_file",
+      "status": "succeeded",
+      "file_id": "file_00000000c6a481f6bf3c44b6b1364648",
+      "library_file_id": "libfile_8197023aecf481918afd72f352b4b589",
+      "file_name": "feedback-family-20261018-v1-main-1201832-states.npz",
+      "local_metadata_applied": true,
+      "path": "/Geometric Self Attention/feedback-family-20261018-v1-main-1201832-states.npz",
+      "current_version_number": 0,
+      "remote_readback_sha256_verified": true,
+      "active_family_overlay_schema_verified": true
+    },
+    {
+      "local_path": "/workspace/scratch/8b72ec5282c5/downloads/feedback-family-20261018-v1-main-1201833-states.npz",
+      "run_relative_path": "main/1201833/STATES.npz",
+      "bytes": 182599,
+      "sha256": "08dfe6289219c8af8b0f6ac1cb0122913ea4e4a4fe771244ee1c6d946b81878f",
+      "purpose": "create_library_file",
+      "status": "succeeded",
+      "file_id": "file_000000008b7c81f6a40bef4ff55562a7",
+      "library_file_id": "libfile_e991011991b48191982139add31b7fd1",
+      "file_name": "feedback-family-20261018-v1-main-1201833-states.npz",
+      "local_metadata_applied": true,
+      "path": "/Geometric Self Attention/feedback-family-20261018-v1-main-1201833-states.npz",
+      "current_version_number": 0,
+      "remote_readback_sha256_verified": true,
+      "active_family_overlay_schema_verified": true
+    }
+  ],
+  "total_checkpoint_bytes": 729783,
+  "all_four_remote_readbacks_verified": true,
+  "format": "Four individual compressed NPZ files, no pickle or cumulative archive. Only active feedback families duplicated per arm.",
+  "restore": "Download each file, verify SHA256, place at run_relative_path. Full final state is shared warm overlaid with stored arm. B-only stores finalW+B; VU-only finalW+VU; full learning-only finalW+allF; BP/frozen finalW. InactiveF references warm. Registered seeds regenerate data."
+}

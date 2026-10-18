@@ -1,0 +1,176 @@
+{
+  "schema_version": 1,
+  "status": "FROZEN_BEFORE_VERIFICATION_PILOT_MAIN",
+  "experiment_id": "feedback-matrix-family-factorial",
+  "run_id": "feedback-family-20261018-v1",
+  "parent_run_ids": [
+    "feedback-decay-20261018-v2"
+  ],
+  "hypothesis": "Learning only the B error-transport matrices retains a useful post-change adaptation advantage while fixed V/U feedback encoder/readout matrices limit old-fact loss versus frozen feedback.",
+  "primary_comparator": "b_only_fifo versus frozen_fifo",
+  "primary_metric": "Per-seed equal mean of novel CE at steps544..768 every32 and drift CE at1056..1280 every32 (16 checkpoints); arithmetic mean of three paired relative CE reductions.",
+  "minimum_useful_effect": "Mean relative CE reduction>=5%; every seed>=0%.",
+  "success_rule": "All finite/fidelity/data/replay/preservation gates; mean paired B-only versus frozen CE reduction >=5% and no negative seed; B-only old-window and final-old accuracy at most2pp worse than frozen in every seed. Secondary family arms cannot replace the primary.",
+  "futility_rule": "No tuning or added seeds. Stop on fidelity, preservation, pilot numerical failure or exhausted budget; preserve all failed arms. Main arm failure invalidates the primary gate. Retention or effect failure means no promotion.",
+  "authorization": {
+    "approved": true,
+    "user_approval_reference": "User: Ok, go ahead with that, accepting the proposed B versus V/U family-learning ablation after feedback-decay-v2. Standing900 aggregate CPU seconds, max3 one-thread workers, own fork/draftPR3 and stable research scratch. No paid/GPU/cloud/language expansion.",
+    "approved_resources": "Local CPU only; max3 concurrent one-thread children. No GPU/cloud/paid compute/external datasets. Restore same temporary pinned CPU runtime.",
+    "max_cost": "No paid compute",
+    "max_walltime": "15 minutes experiment execution; source preparation/dependency setup/artifact transfers excluded.",
+    "local_cpu_budget": "900 aggregate experiment process CPU seconds including runtime import canary, verification, pilot/main imports, warmup, diagnostics, full online replays, launchers and analysis. Child caps30+110+3*230=830 plus at most1s hard-limit grace per child."
+  },
+  "design": {
+    "original_source_hashes": {
+      "baseline_core.py": "a26735782ca129b38786f960646f0f541848da6f8de2bbd6c02ccedc67715437",
+      "baseline_verify.py": "94d0c236cc4cad90b8a2680885e87497623ea8ee635c09c7e26cc18ff00ff3a1",
+      "feedback_core.py": "0df7d4fcabbe6b5f24b3a239708d925640370b183fbcf58bc1aae424d8101379",
+      "feedback_verify.py": "414de8f6b5fddecda59fcf18178658495c15e4979a073a293b0d97b9d63b7f62",
+      "uncorrected_feedback_core.py": "13471f8a2a9d2bf1d319e50e9af47c7a45f7c549b9fa1f9a4be7bcd99c7a3780",
+      "launch.py": "9a5d919e6010c6d228b175ee09671becc6a2de97fa03e988a995da90989b59fa",
+      "BASELINE_RULE_MAPPING.md": "2299c157eaf29c24ca1ce258b15280bce6104e60a5592086228c3c0a9bb860b5",
+      "BASELINE_SOURCE_PROVENANCE.json": "192bf320be675c63013a09a295ccbfaa6380550264706578983af7f09eec80d0",
+      "component_core.py": "1b92c65841ec97b09295df5168a1eeb81743a3b9ad6e6f13808d0cb2d8a4f1d7",
+      "component_verify.py": "4ec1280ed794a793631874a4f622472e1cc388ba5898d3f0fa39ad3126e2bec0"
+    },
+    "mechanism_equations": "RULE_MAPPING.md. W update unchanged. For active feedback family F_next=cap(F-0.05*g_F), no online feedback decay; inactive matrices bitwise unchanged. B-only=(B1,B2); V/U-only=(V1,V2,U0,U1); full learning-only=all; frozen=none. Common warmup retains original full feedback learning+decay.",
+    "arms": {
+      "backprop_fifo": "Exact BP forward update; feedback unused/fixed.",
+      "frozen_fifo": "Local forward update; all feedback fixed at warmup.",
+      "b_only_fifo": "Local forward update; B1/B2 learn at original rate, V1/V2/U0/U1 fixed, no feedback decay.",
+      "vu_only_fifo": "Local forward update; V1/V2/U0/U1 learn, B1/B2 fixed, no feedback decay.",
+      "learning_fifo": "Local forward update; all feedback learns, no feedback decay; preserved full learning-only reference."
+    },
+    "control_rationale": "2x2 B learning on/off x V/U learning on/off after identical warmup, plus exact BP. Same FIFO512/16, current16, W optimizer, data/query/replay, model/exposure and one configuration. Primary B-only vs frozen tests useful adaptation with retention. Full and V/U-only are explanatory controls. B updates still affect both hidden-layer error paths; fixed V/U is not isolation of every forward causal effect.",
+    "seeds": [
+      1201831,
+      1201832,
+      1201833
+    ],
+    "seed_selection_method": "Fresh consecutive main seeds1201831..3; pilot101927; family verification101927/16827/25827. Seeds absent from prior global manifest paths. Inherited component/cap regressions retain fixed prior verification seeds, including the original failed-cap case15817. No seed search/exclusion/selection.",
+    "learning_rate_trials_per_arm": 1,
+    "parameter_counts": {
+      "forward": 1504,
+      "feedback": 12544,
+      "local_total": 14048,
+      "backprop_active": 1504,
+      "replay_examples": 512,
+      "replay_data_float32_bytes": 30720,
+      "replay_ids_int64_bytes": 4096,
+      "B_family": 4352,
+      "VU_family": 8192,
+      "online_updated_parameters": {
+        "backprop_fifo": 1504,
+        "frozen_fifo": 1504,
+        "b_only_fifo": 5856,
+        "vu_only_fifo": 9696,
+        "learning_fifo": 14048
+      }
+    },
+    "matching_track": "Same stored model/start/forward optimizer/replay/data/exposure and one rate configuration. Only active feedback learning family changes. All online feedback decay off. Updated feedback parameter counts differ by intended ablation; actual compute reported, no FLOP matching claim.",
+    "compute_accounting": "Common warmup once per seed; imports, original cap and decoded SVD readback (including redundant inactive-family calculations before exact restoration), all local drives, diagnostic BP probes, data regeneration, every full online replay and analysis startup charged. Runtime canary charged once. Earlier completed stages are not charged to this new stage.",
+    "projection_repair": "Byte-preserved common repaired cap from feedback-decay-v2: original4-epsilon projection, decoded readback, overshoot-only32-epsilon correction at most3 times with strict cap2. For partial-family updates, restore every inactive matrix exactly after this full-bank operator; active-family outputs unchanged from reference cap."
+  },
+  "data": {
+    "dataset_versions": "Byte-preserved baseline_core.py threshold-world/FIFO generator and component_core.py FIFO wrapper; only feedback-family learning mask added.",
+    "tokenizer_sha256": "Not applicable: fixed11-dimensional numeric inputs and4 binary labels.",
+    "train_sha256": "Generated before optimization from registered seeds; per-schedule and combined canonical SHA256 in each RESULT.json; regenerated/hash-verified for full replay.",
+    "selection_sha256": "Not applicable: no configuration or checkpoint selection.",
+    "confirmation_sha256": "All arms use the same heldout arrays, which are included in FIFO schedule and combined data hashes, never passed into learner updates.",
+    "split_boundaries": "Unchanged RNG offsets61M world,62M warmup,63M current,64M FIFO replay,65M query. Same initial512 warmup examples, same replay IDs and historical labels in every arm. No new RNG stream.",
+    "research_wide_region_reuse_audit": "Fresh paired worlds1201831..3 and pilot101927; same synthetic generator/endpoints as earlier studies. No official tests, external data or transfer claim.",
+    "teacher_and_objective": "No teacher; BCE-with-logits mean over32x4 targets. Historical replay labels unchanged, including old labels that later conflict with changed rules.",
+    "official_test_access_permitted": false
+  },
+  "training": {
+    "updates": "Main:4096 shared warmup and2048 online updates per arm; pilot4096+256. Four phases of512 main/64 pilot.",
+    "target_exposures_per_trial": "Warmup1048576 binary targets per seed; main online262144 per arm; pilot32768. No extra updates for old anchors; duplicate replay adds no new information.",
+    "tokens_per_update": "No language tokens; warmup64x4 targets, online32x4.",
+    "microbatch": "Warmup64; online16 current+16 replay for every arm.",
+    "gradient_accumulation": 1,
+    "bptt_length": "Not applicable: feedforward model, no BPTT.",
+    "accessible_history": "Unchanged FIFO512 example queue,16 uniform samples before appending current16; online samples age out after32 updates. Historical labels unchanged, including changed-rule conflicts.",
+    "state_carry_and_detach": "Persistent detached stateless SGD matrices; no optimizer/shadow state. Fixed B/VU boolean switches, no phase/query/source/time input. Inactive F stays bitwise equal to common warmup. Precomputed streams/queries are benchmark bookkeeping.",
+    "document_reset_policy": "Not applicable: synthetic contexts, no documents.",
+    "optimizer_schedule": "Forward lr0.05/WD0.001 unchanged. Feedback local drive retains factor0.8 and lr0.05 only for active family; online feedback WD0 for every arm. Common4096 warmup keeps original full local feedback/decay. Strict cap2 uses byte-preserved numerical repair; inactive matrices restored exactly after any full-bank cap. No magnitude normalization, rate search or other optimizer trial.",
+    "precision": "FP32 training, FP32/FP64 fidelity verification.",
+    "checkpoint_selection_rule": "No selection; registered windows/final state. NPZ stores common warmup W/F, finalW for every arm and only actively learned finalF; inactiveF refers to warmup. Full state is warm overlaid with stored arm. Four phase/final full-state hashes and every stored tensor checked by full replay."
+  },
+  "execution": {
+    "hardware": "Local CPU; no GPU; exact platform in each RESULT.json.",
+    "runtime_versions": {
+      "torch": "2.14.1+cpu",
+      "numpy": "2.3.5",
+      "sympy": "1.14.0",
+      "mpmath": "1.3.0",
+      "filelock": "3.20.0",
+      "typing_extensions": "4.16.0",
+      "setuptools": "84.0.0",
+      "networkx": "3.5",
+      "jinja2": "3.1.6",
+      "fsspec": "2025.9.0",
+      "MarkupSafe": "3.0.4"
+    },
+    "resolved_writable_output": "/workspace/scratch/8b72ec5282c5/worktree/auto-research/results/feedback-family-20261018-v1",
+    "source_ownership_and_concurrent_writers": "Single implementation owner; no subagents. Separate per-seed output directories for3 workers. Source and protocol committed/readback byte-equal before experiment verification or training.",
+    "fidelity_tolerances": {
+      "FP32_max_abs": 2e-06,
+      "FP64_max_abs": 2e-12,
+      "replay_schedule": "Exact equality against independent deque/per-example reference for3 verification worlds",
+      "online_replay": "Bitwise complete-state phase/final hash equality and serialized final tensor equality"
+    },
+    "canary_matrix": "All preserved transform/local-rule/gradient/component/cap/FIFO checks, including failed-cap regression. New3 seeds x2 dtypes x2 states x4 family masks: independent dense steps within originalFP32/64 tolerances, same-state forward equality, strictcap, active-family nonzero learning, every inactive matrix bitwise unchanged at step and12-step trajectory, frozen/full endpoints and12-step trajectories bitwise against preserved reference; input isolation, detached outputs and no-autograd local path. Pilot4096warmup+5arms/full replays.",
+    "cost_estimate": "Approximately250-450 aggregate CPU seconds within unchanged900-second envelope, max3 one-thread workers. Launcher hard caps30 verification+110 pilot+3x230 main=830CPU seconds plus launchers/runtime/analysis."
+  },
+  "evaluation": {
+    "primary_endpoint": "Per-seed equal mean of novel CE at steps544..768 every32 and drift CE at1056..1280 every32 (16 checkpoints); arithmetic mean of three paired relative CE reductions.",
+    "confirmation_frozen_before_scoring": true,
+    "canonical_precision": "FP32",
+    "duplicate_policy": "All5 arms for pilot and all3 main seeds repeat the complete online stream from serialized common warmup and regenerated/hash-verified FIFO data. All4 phase/final complete-state hashes plus stored final tensors must match bitwise.",
+    "uncertainty_method": "Three paired seeds, report every result, mean and sample SD. Descriptive evidence only; no significance or population claim.",
+    "multiple_comparison_policy": "Only B-only versus frozen is primary. V/U-only versus frozen, full learning-only versus frozen, full versus B-only, and full versus V/U-only are descriptive. Report family interaction, per-seed fractions of full gain, endpoint decomposition, per-family displacement and same-state direction probes. No secondary promotion or post-outcome primary/rate selection.",
+    "no_test_tuning": true
+  },
+  "deployment": {
+    "weight_dtype": "FP32",
+    "kv_or_state_dtype": "FP32 feedback and replay x/y, int64 provenance IDs; no KV cache.",
+    "quantization_metadata": "None",
+    "batching": "Online32, warmup64; heldout128 per6 contexts main.",
+    "prefill_decode_protocol": "Not applicable: feedforward synthetic classifier; no deployment benchmark.",
+    "warmup_and_synchronization": "4096 shared BP+local warmup, one CPU thread; no asynchronous device.",
+    "memory_components": "Same stored forward1504 and feedback12544 parameters for local policies; online updatedF differs by declared family mask. Replay512 examples,30720 FP32 payload+4096 int64 IDs, excluding containers/RNG. Two fixed booleans add no model bank. PeakRSS/checkpoints measured; total deployment/workspace/latency unmeasured.",
+    "latency_statistics": "Unmeasured: no deployment latency or efficiency claim; process CPU recorded for experimental cost."
+  },
+  "evidence": {
+    "protocol_sha256": "REGISTRATION.json sha256.PROTOCOL.json (self-hash external to protocol)",
+    "source_manifest": "REGISTRATION.json sha256 mapping",
+    "checkpoint_manifest": "Each seed RESULT.json and final ARTIFACT_MANIFEST.json",
+    "progress_path": "pilot/<seed>/PROGRESS.json or main/<seed>/PROGRESS.json, replaced by immutable RESULT.json on completion",
+    "terminal_receipt_path": "TERMINAL.json plus VERIFY/PILOT/MAIN_RECEIPT.json",
+    "preservation_policy": "Exact source/protocol/registry committed before numerical verification or training. Compact JSON evidence in Git, four individually compressed NPZ files in existing project folder, remote download/hash verification. No cumulative archive or data stream dump.",
+    "cleanup_receipt": "TERMINAL.json and EVIDENCE_AUDIT.json: all children exited; temporary restored runtime/readback copies removed after durable checkpoint hash verification."
+  },
+  "decision": {
+    "outcome": "PENDING_REGISTERED_EXECUTION",
+    "reason": "Apply the B-only versus frozen joint criterion after all3 seeds, fidelity, exact replays and preservation. Secondary family outcomes remain explanatory.",
+    "next_experiment": "Decide from which family contributes adaptation/retention and their interaction; no follow-on run or added rates/seeds within this stage.",
+    "promotion_scope": "At most a bounded synthetic B-family joint-objective result. No language, generalization, architecture or deployment promotion without further independently authorized evidence."
+  },
+  "main": {
+    "seeds": [
+      1201831,
+      1201832,
+      1201833
+    ],
+    "warmup_steps": 4096,
+    "phase_steps": 512,
+    "queries_per_context": 128
+  },
+  "pilot": {
+    "seed": 101927,
+    "warmup_steps": 4096,
+    "phase_steps": 64,
+    "queries_per_context": 32,
+    "purpose": "Mechanics only;4096 warmup+5arms/full replays; no outcome-driven tuning."
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "status": "COMPLETE",
+  "runs": [
+    {
+      "arm": "lstm32",
+      "seed": 811,
+      "returncode": 0,
+      "log": "pilot/lstm32_s811.log"
+    },
+    {
+      "arm": "mingru64",
+      "seed": 811,
+      "returncode": 0,
+      "log": "pilot/mingru64_s811.log"
+    },
+    {
+      "arm": "minlstm64",
+      "seed": 811,
+      "returncode": 0,
+      "log": "pilot/minlstm64_s811.log"
+    },
+    {
+      "arm": "lstm64",
+      "seed": 811,
+      "returncode": 0,
+      "log": "pilot/lstm64_s811.log"
+    }
+  ],
+  "wall_seconds": 8.202009112999804
+}

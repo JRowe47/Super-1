@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "checked_at_utc": "2026-10-18T06:07:14.563144+00:00",
+  "registered_source_hashes_unchanged": true,
+  "main_runs_complete": 27,
+  "pilot_runs_complete": 9,
+  "full_bitwise_online_replays": 36,
+  "four_phase_hashes_checked_each": true,
+  "all_replay_policies_512_examples_and16_samples": true,
+  "all_four_remote_state_hashes_verified": true,
+  "all_workers_exited": true,
+  "official_test_accessed": false,
+  "new_cloud_resources_created": false,
+  "temporary_cleanup": [
+    {
+      "relative_path": "verify-checkpoints-stage5",
+      "file_bytes_removed": 1025296,
+      "reason": "Redundant verification copy or reproducible temporary runtime after durable checkpoint verification."
+    },
+    {
+      "relative_path": "research-runtime",
+      "file_bytes_removed": 1075541235,
+      "reason": "Redundant verification copy or reproducible temporary runtime after durable checkpoint verification."
+    }
+  ],
+  "completed_progress_snapshot_cleanup": {
+    "relative_path": "pilot/98997/PROGRESS.json",
+    "file_bytes_removed": 51669,
+    "sha256": "bfd63ca105777f0770db1b6725d1f9b6339f3e04e2d74ebd77dbd62e99ebf4a4",
+    "reason": "Redundant completed progress snapshot; all9 arm records and data hash exactly equal immutable RESULT.json."
+  }
+}

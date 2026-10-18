@@ -1,0 +1,55 @@
+{
+  "run_id": "feedback-readout-20261018-v1",
+  "phase": "MAIN_METRICS_AND_CHECKPOINT_AUDIT_PRESERVED_BEFORE_REPORT",
+  "commit": "f8fd1d3a656bb8eb80aefe3f370a53ab3a74c918",
+  "tree": "76692d1e82ed66aa7c7819387aa4ca7f6b24998f",
+  "branch_verified_at_commit": true,
+  "readbacks": [
+    {
+      "path": "auto-research/results/feedback-readout-20261018-v1/main/1301841/RESULT.json",
+      "bytes": 131897,
+      "byte_equal": true
+    },
+    {
+      "path": "auto-research/results/feedback-readout-20261018-v1/main/1301842/RESULT.json",
+      "bytes": 131691,
+      "byte_equal": true
+    },
+    {
+      "path": "auto-research/results/feedback-readout-20261018-v1/main/1301843/RESULT.json",
+      "bytes": 131880,
+      "byte_equal": true
+    },
+    {
+      "path": "auto-research/results/feedback-readout-20261018-v1/SUMMARY.json",
+      "bytes": 18142,
+      "byte_equal": true
+    },
+    {
+      "path": "auto-research/results/feedback-readout-20261018-v1/MAIN_RECEIPT.json",
+      "bytes": 362,
+      "byte_equal": true
+    },
+    {
+      "path": "auto-research/results/feedback-readout-20261018-v1/PILOT_PUBLICATION.json",
+      "bytes": 1170,
+      "byte_equal": true
+    },
+    {
+      "path": "auto-research/results/feedback-readout-20261018-v1/ARTIFACT_MANIFEST.json",
+      "bytes": 4076,
+      "byte_equal": true
+    },
+    {
+      "path": "auto-research/results/feedback-readout-20261018-v1/EVIDENCE_AUDIT.json",
+      "bytes": 2288,
+      "byte_equal": true
+    },
+    {
+      "path": "auto-research/MANIFEST.sha256.json",
+      "bytes": 138279,
+      "byte_equal": true
+    }
+  ],
+  "verified_at_utc": "2026-10-18T15:36:52.470Z"
+}

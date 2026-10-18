@@ -1,0 +1,78 @@
+{
+  "run_id": "feedback-readout-20261018-v1",
+  "status": "COMPLETE_NO_PROMOTION_OLD_WINDOW_RETENTION_FAILED",
+  "finished_at_utc": "2026-10-18T15:39:45.835182+00:00",
+  "source_commit_before_experiment_execution": "38d685eab9df1306168fd9b068c61456dcf7b29e",
+  "pilot_and_verification_commit": "71470554ea17ac257bba8739ad01cd43174d1f9d",
+  "main_evidence_before_report_commit": "f8fd1d3a656bb8eb80aefe3f370a53ab3a74c918",
+  "protocol_sha256": "605f328f1e6d1ed4744a9ee6b93b9c929f4ad050ffbe8ad10a4be1102ae76fd3",
+  "registered_source_unchanged": true,
+  "main_seeds": [
+    1301841,
+    1301842,
+    1301843
+  ],
+  "pilot_seed": 102937,
+  "main_runs": 15,
+  "pilot_runs": 5,
+  "main_updates_per_arm": 2048,
+  "pilot_updates_per_arm": 256,
+  "warmup_steps_per_seed": 4096,
+  "full_bitwise_online_replays": 20,
+  "primary_mean_ce_reduction_percent": 17.656640583095122,
+  "effect_gate": true,
+  "retention_gate": false,
+  "old_window_failed_seeds": 3,
+  "final_old_failed_seeds": 0,
+  "promotion": false,
+  "U0_only_vs_frozen_mean_ce_reduction_percent": 9.842993771287954,
+  "both_U_vs_frozen_mean_ce_reduction_percent": 28.68114322614102,
+  "U0_only_old_window_failed_seeds": 2,
+  "U0_only_final_old_failed_seeds": 0,
+  "both_U_old_window_failed_seeds": 3,
+  "both_U_final_old_failed_seeds": 0,
+  "charged_experiment_cpu_seconds": 296.10303099999993,
+  "cpu_budget_seconds": 900,
+  "cpu_scope": "Runtime import canary, verification, pilot/main imports and execution, shared warmup, diagnostic probes, all full online replays, launchers and frozen analysis startup. Dependency setup, source/report preparation and transfers excluded.",
+  "all_workers_exited": true,
+  "all_four_remote_checkpoint_hashes_verified": true,
+  "checkpoint_bytes": 469853,
+  "experiment_exceptions": [],
+  "source_preservation": "All21 frozen files published/readback before verification; compact results/receipts in Git; four active-U-overlay NPZ files remotely SHA256 verified.",
+  "cleanup": [
+    {
+      "relative_path": "verify-checkpoints-stage9",
+      "file_bytes_removed": 469853,
+      "reason": "Reproducible temporary runtime or redundant readback after all workers exited and durable byte-exact checkpoint preservation."
+    },
+    {
+      "relative_path": "research-runtime",
+      "file_bytes_removed": 965051069,
+      "reason": "Reproducible temporary runtime or redundant readback after all workers exited and durable byte-exact checkpoint preservation."
+    }
+  ],
+  "completed_progress_snapshot_cleanup": [
+    {
+      "relative_path": "pilot/102937/PROGRESS.json",
+      "bytes": 34670,
+      "sha256": "db3f4eac9e6405e3c050d4563c2d168d4083cc0cab5d4e389bb94553146675d1",
+      "reason": "Completed progress snapshot exactly duplicates retained RESULT.json."
+    },
+    {
+      "relative_path": "main/1301841/PROGRESS.json",
+      "bytes": 126568,
+      "sha256": "e3a14e15067edac093a36deda9d446fd9e81fbc9fa1f7f464d99922bc5f3e901",
+      "reason": "Completed progress snapshot exactly duplicates retained RESULT.json."
+    },
+    {
+      "relative_path": "main/1301842/PROGRESS.json",
+      "bytes": 126369,
+      "sha256": "ff9606a394d2bd838322764a96ea3a514e0b321f10e92d5d7716353377faf735",
+      "reason": "Completed progress snapshot exactly duplicates retained RESULT.json."
+    }
+  ],
+  "official_test_accessed": false,
+  "new_cloud_resources_created": false,
+  "next_stage": "Proposed only: test one fixed half-rate U0-only setting (beta=0.5 on the U0 local learning drive only), with B1/B2/V1/V2/U1 fixed at common warmup and online feedback decay off. Four arms: BP, frozen feedback, original full-rate U0-only, half-rate U0-only. Sole primary half-rate U0-only versus frozen, unchanged >=5% mean paired CE reduction/no negative seed and <=2pp per-seed old-window/final-old loss. Full-rate U0-only is the positive adaptation control. Keep W optimizer, common4096 warmup, FIFO512/16, strict cap2, data/exposure and endpoints. Three fresh paired main seeds plus separate mechanical pilot. Verify beta1 matches preserved U0-only and beta0 matches frozen bitwise, independent dense half-rate steps, inactive matrices, strict cap and all full replays. No added rate grid or outcome-driven tuning. Expected200-350 aggregate CPU seconds inside900, max3 one-thread workers; four compact checkpoint files. This follow-on is not implemented or running; await continuation.",
+  "post_publication_cleanup": "POST_PUBLICATION_CLEANUP.json"
+}

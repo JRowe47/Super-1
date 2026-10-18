@@ -1,0 +1,15 @@
+{
+  "stage": "verify",
+  "started_at_utc": "2026-10-18T06:22:49.854099+00:00",
+  "status": "COMPLETE",
+  "child_exit_codes": [
+    0
+  ],
+  "error": null,
+  "wall_seconds": 2.019876632000887,
+  "child_cpu_seconds": 1.9849729999999999,
+  "launcher_cpu_seconds": 0.031355999999999995,
+  "child_count": 1,
+  "per_child_cpu_cap_seconds": 30,
+  "all_children_exited": true
+}

@@ -1,0 +1,69 @@
+{
+  "run_id": "feedback-decay-20261018-v2",
+  "state_files": [
+    {
+      "local_path": "/workspace/scratch/8b72ec5282c5/downloads/feedback-decay-20261018-v2-pilot-100917-states.npz",
+      "run_relative_path": "pilot/100917/STATES.npz",
+      "bytes": 230512,
+      "sha256": "f7fc519557128f6216388bfec9c5479183a26e9ed4fc9669c9b21693e205c99d",
+      "purpose": "create_library_file",
+      "status": "succeeded",
+      "file_id": "file_000000003fc881f5a193bc5fa62e2bc0",
+      "library_file_id": "libfile_6e1fe1e208a08191a1f0ff1ba379bdce",
+      "file_name": "feedback-decay-20261018-v2-pilot-100917-states.npz",
+      "local_metadata_applied": true,
+      "path": "/Geometric Self Attention/feedback-decay-20261018-v2-pilot-100917-states.npz",
+      "current_version_number": 0,
+      "remote_readback_sha256_verified": true
+    },
+    {
+      "local_path": "/workspace/scratch/8b72ec5282c5/downloads/feedback-decay-20261018-v2-main-1101821-states.npz",
+      "run_relative_path": "main/1101821/STATES.npz",
+      "bytes": 230397,
+      "sha256": "93cf56049f75706fe34868700128b76d968bb1aeaaaf8b1cac407c5e49bd5a85",
+      "purpose": "create_library_file",
+      "status": "succeeded",
+      "file_id": "file_00000000563c81f58ccf15391f6b6834",
+      "library_file_id": "libfile_22bfda136ea88191903a095a1f1ec3b8",
+      "file_name": "feedback-decay-20261018-v2-main-1101821-states.npz",
+      "local_metadata_applied": true,
+      "path": "/Geometric Self Attention/feedback-decay-20261018-v2-main-1101821-states.npz",
+      "current_version_number": 0,
+      "remote_readback_sha256_verified": true
+    },
+    {
+      "local_path": "/workspace/scratch/8b72ec5282c5/downloads/feedback-decay-20261018-v2-main-1101822-states.npz",
+      "run_relative_path": "main/1101822/STATES.npz",
+      "bytes": 230378,
+      "sha256": "8a62650b562aa7bd475bed2b06b787a14c0fcfa0b69e521b69d60a56e6c579b1",
+      "purpose": "create_library_file",
+      "status": "succeeded",
+      "file_id": "file_0000000081d881f5840755488b6355cf",
+      "library_file_id": "libfile_ca45bad938f08191a10970559d8e93ce",
+      "file_name": "feedback-decay-20261018-v2-main-1101822-states.npz",
+      "local_metadata_applied": true,
+      "path": "/Geometric Self Attention/feedback-decay-20261018-v2-main-1101822-states.npz",
+      "current_version_number": 0,
+      "remote_readback_sha256_verified": true
+    },
+    {
+      "local_path": "/workspace/scratch/8b72ec5282c5/downloads/feedback-decay-20261018-v2-main-1101823-states.npz",
+      "run_relative_path": "main/1101823/STATES.npz",
+      "bytes": 230591,
+      "sha256": "860b82b050273ab6e5938a67841f1bc6bdb89e6b492ed97e4e2c68d863e99228",
+      "purpose": "create_library_file",
+      "status": "succeeded",
+      "file_id": "file_0000000098d081f5b4935bab9c261158",
+      "library_file_id": "libfile_3c65d2457e608191909a31941d1e0ba4",
+      "file_name": "feedback-decay-20261018-v2-main-1101823-states.npz",
+      "local_metadata_applied": true,
+      "path": "/Geometric Self Attention/feedback-decay-20261018-v2-main-1101823-states.npz",
+      "current_version_number": 0,
+      "remote_readback_sha256_verified": true
+    }
+  ],
+  "total_checkpoint_bytes": 921878,
+  "all_four_remote_readbacks_verified": true,
+  "format": "Four individual compressed NPZ files, no pickle or cumulative archive.",
+  "restore": "Download each file, verifySHA256, place at run_relative_path. Full final state is shared warm overlaid with stored arm. Adaptive/decay/learning store finalW/F; BP/frozen store finalW and reference warmF. Registered seeds regenerate data."
+}

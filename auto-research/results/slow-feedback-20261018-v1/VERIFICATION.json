@@ -1,0 +1,192 @@
+{
+  "status": "PASS",
+  "numeric": {
+    "torch.float32": {
+      "tolerance": 2e-06,
+      "checks": {
+        "roundtrip": 2.384185791015625e-07,
+        "isometry": 1.430511474609375e-06,
+        "forward": 0.0,
+        "local_reference": 7.450580596923828e-08,
+        "dense_curve_local_step": 2.384185791015625e-07,
+        "exact_gradient": 7.450580596923828e-09,
+        "input_gradient": 0.0,
+        "paired_decay": 1.4901161193847656e-07
+      },
+      "wrong_coordinate_rule_gap": 0.29594850540161133
+    },
+    "torch.float64": {
+      "tolerance": 2e-12,
+      "checks": {
+        "roundtrip": 4.440892098500626e-16,
+        "isometry": 3.552713678800501e-15,
+        "forward": 0.0,
+        "local_reference": 1.6653345369377348e-16,
+        "dense_curve_local_step": 4.440892098500626e-16,
+        "exact_gradient": 5.551115123125783e-17,
+        "input_gradient": 0.0,
+        "paired_decay": 3.3306690738754696e-16
+      },
+      "wrong_coordinate_rule_gap": 0.2986236297604821
+    }
+  },
+  "causal_replay": true,
+  "stale_labels_preserved": true,
+  "arm_isolation": true,
+  "local_update_without_autograd": true,
+  "cpu_seconds": 0.779971979,
+  "extension": {
+    "torch.float32": {
+      "tolerance": 2e-06,
+      "checks": {
+        "cap_dense_equivalence": 8.940696716308594e-08,
+        "frozen_match_adaptive_W0": 2.384185791015625e-07,
+        "frozen_match_adaptive_W1": 1.1920928955078125e-07,
+        "frozen_match_adaptive_W2": 8.940696716308594e-08,
+        "shadow_update": 2.9802322387695312e-08,
+        "adaptive_match_frozen_W0": 2.384185791015625e-07,
+        "adaptive_match_frozen_W1": 1.7881393432617188e-07,
+        "adaptive_match_frozen_W2": 8.940696716308594e-08
+      },
+      "maximum_capped_sigma": 1.9999994039535522
+    },
+    "torch.float64": {
+      "tolerance": 2e-12,
+      "checks": {
+        "cap_dense_equivalence": 2.220446049250313e-16,
+        "frozen_match_adaptive_W0": 5.551115123125783e-16,
+        "frozen_match_adaptive_W1": 2.7755575615628914e-16,
+        "frozen_match_adaptive_W2": 1.3877787807814457e-16,
+        "shadow_update": 5.551115123125783e-17,
+        "adaptive_match_frozen_W0": 3.3306690738754696e-16,
+        "adaptive_match_frozen_W1": 2.3592239273284576e-16,
+        "adaptive_match_frozen_W2": 1.3877787807814457e-16
+      },
+      "maximum_capped_sigma": 1.9999999999999984
+    }
+  },
+  "common_forward_warmup_bitwise": true,
+  "matching_handles_zero": true,
+  "local_matching_without_autograd": true,
+  "slow_feedback": [
+    {
+      "seed": 99907,
+      "dtype": "torch.float32",
+      "tolerance": 2e-06,
+      "errors": {
+        "bounded_dense_step": 1.7881393432617188e-07,
+        "projection_active_dense_step": 1.7881393432617188e-07
+      },
+      "maximum_capped_sigma": 1.9999995231628418,
+      "forward_update_exact_at_same_state": true,
+      "zero_and_one_endpoints_bitwise": true,
+      "endpoint_trajectories_12steps_bitwise": true,
+      "local_without_autograd": true,
+      "input_unmodified_and_output_detached": true
+    },
+    {
+      "seed": 99907,
+      "dtype": "torch.float64",
+      "tolerance": 2e-12,
+      "errors": {
+        "bounded_dense_step": 3.3306690738754696e-16,
+        "projection_active_dense_step": 3.885780586188048e-16
+      },
+      "maximum_capped_sigma": 1.9999999999999991,
+      "forward_update_exact_at_same_state": true,
+      "zero_and_one_endpoints_bitwise": true,
+      "endpoint_trajectories_12steps_bitwise": true,
+      "local_without_autograd": true,
+      "input_unmodified_and_output_detached": true
+    },
+    {
+      "seed": 14817,
+      "dtype": "torch.float32",
+      "tolerance": 2e-06,
+      "errors": {
+        "bounded_dense_step": 2.384185791015625e-07,
+        "projection_active_dense_step": 2.384185791015625e-07
+      },
+      "maximum_capped_sigma": 1.9999992847442627,
+      "forward_update_exact_at_same_state": true,
+      "zero_and_one_endpoints_bitwise": true,
+      "endpoint_trajectories_12steps_bitwise": true,
+      "local_without_autograd": true,
+      "input_unmodified_and_output_detached": true
+    },
+    {
+      "seed": 14817,
+      "dtype": "torch.float64",
+      "tolerance": 2e-12,
+      "errors": {
+        "bounded_dense_step": 4.996003610813204e-16,
+        "projection_active_dense_step": 4.440892098500626e-16
+      },
+      "maximum_capped_sigma": 1.9999999999999991,
+      "forward_update_exact_at_same_state": true,
+      "zero_and_one_endpoints_bitwise": true,
+      "endpoint_trajectories_12steps_bitwise": true,
+      "local_without_autograd": true,
+      "input_unmodified_and_output_detached": true
+    },
+    {
+      "seed": 23817,
+      "dtype": "torch.float32",
+      "tolerance": 2e-06,
+      "errors": {
+        "bounded_dense_step": 2.60770320892334e-07,
+        "projection_active_dense_step": 3.5762786865234375e-07
+      },
+      "maximum_capped_sigma": 1.9999994039535522,
+      "forward_update_exact_at_same_state": true,
+      "zero_and_one_endpoints_bitwise": true,
+      "endpoint_trajectories_12steps_bitwise": true,
+      "local_without_autograd": true,
+      "input_unmodified_and_output_detached": true
+    },
+    {
+      "seed": 23817,
+      "dtype": "torch.float64",
+      "tolerance": 2e-12,
+      "errors": {
+        "bounded_dense_step": 4.440892098500626e-16,
+        "projection_active_dense_step": 4.440892098500626e-16
+      },
+      "maximum_capped_sigma": 1.999999999999999,
+      "forward_update_exact_at_same_state": true,
+      "zero_and_one_endpoints_bitwise": true,
+      "endpoint_trajectories_12steps_bitwise": true,
+      "local_without_autograd": true,
+      "input_unmodified_and_output_detached": true
+    }
+  ],
+  "fifo_reference": [
+    {
+      "seed": 99907,
+      "steps_checked": 128,
+      "original_generator_exact": true,
+      "independent_queue_reference_exact": true,
+      "historical_labels_unchanged": true,
+      "causal_replay": true,
+      "fixed_512_storage_and_32_batch": true
+    },
+    {
+      "seed": 14817,
+      "steps_checked": 128,
+      "original_generator_exact": true,
+      "independent_queue_reference_exact": true,
+      "historical_labels_unchanged": true,
+      "causal_replay": true,
+      "fixed_512_storage_and_32_batch": true
+    },
+    {
+      "seed": 23817,
+      "steps_checked": 128,
+      "original_generator_exact": true,
+      "independent_queue_reference_exact": true,
+      "historical_labels_unchanged": true,
+      "causal_replay": true,
+      "fixed_512_storage_and_32_batch": true
+    }
+  ]
+}

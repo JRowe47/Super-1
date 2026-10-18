@@ -1,0 +1,67 @@
+{
+  "run_id": "feedback-decay-20261018-v2",
+  "status": "COMPLETE_NO_PROMOTION_RETENTION_FAILED",
+  "finished_at_utc": "2026-10-18T06:51:06.874329+00:00",
+  "source_commit_before_experiment_execution": "801d1e3147c47bd5b6004f1d343ea9a2c9185d6b",
+  "pilot_and_verification_commit": "cd316e68f256a4dd4236ed3e47bb09761db217c6",
+  "protocol_sha256": "9631d01c94420a3b22cc4e721897cdebf80270dd58e44d25eaa7faa0ac47fa44",
+  "registered_source_unchanged": true,
+  "main_seeds": [
+    1101821,
+    1101822,
+    1101823
+  ],
+  "pilot_seed": 100917,
+  "main_runs": 15,
+  "pilot_runs": 5,
+  "main_updates_per_arm": 2048,
+  "pilot_updates_per_arm": 256,
+  "warmup_steps_per_seed": 4096,
+  "full_bitwise_online_replays": 20,
+  "primary_mean_ce_reduction_percent": 27.032203923352768,
+  "effect_gate": true,
+  "retention_gate": false,
+  "retention_failed_seeds": 3,
+  "promotion": false,
+  "decay_only_vs_frozen_mean_ce_reduction_percent": -3.5721630281896344,
+  "learning_only_vs_frozen_mean_ce_reduction_percent": 26.881422993807337,
+  "normal_vs_frozen_mean_ce_reduction_percent": 24.465020819948098,
+  "charged_experiment_cpu_seconds": 250.633471,
+  "cpu_budget_seconds": 900,
+  "cpu_scope": "Includes v1 failed verification/diagnosis, single runtime canary, v2 verification, pilot/main imports and execution, full online replays, probes, launchers and analysis startup. Dependency setup, source/report preparation and transfers excluded.",
+  "all_workers_exited": true,
+  "all_four_remote_checkpoint_hashes_verified": true,
+  "checkpoint_bytes": 921878,
+  "experiment_exceptions": [
+    {
+      "run_id": "feedback-decay-20261018-v1",
+      "stage": "verification",
+      "failure": "Strict spectral cap exceeded by4.44e-16 in FP64. No pilot/main training. Frozen failure preserved; shared numerical repair preregistered/published as v2 before execution."
+    }
+  ],
+  "v2_execution_exceptions": [],
+  "source_preservation": "Both frozen revisions plus failedv1 receipts/diagnosis preserved; v2 source before execution, compact result/receipt JSON in Git, four NPZ checkpoints remote byte-hash verified.",
+  "cleanup": [
+    {
+      "relative_path": "verify-checkpoints-stage7",
+      "file_bytes_removed": 921878,
+      "reason": "Reproducible temporary runtime or redundant readback after completed workers and durable byte-exact checkpoint preservation."
+    },
+    {
+      "relative_path": "research-runtime",
+      "file_bytes_removed": 912225523,
+      "reason": "Reproducible temporary runtime or redundant readback after completed workers and durable byte-exact checkpoint preservation."
+    }
+  ],
+  "completed_progress_snapshot_cleanup": [
+    {
+      "relative_path": "pilot/100917/PROGRESS.json",
+      "bytes": 33253,
+      "sha256": "22d3f42a3c95c65ba30074ef8d4329a0622ac5670490a520681ac143947ab5f1",
+      "reason": "Completed progress snapshot exactly duplicates retained RESULT.json."
+    }
+  ],
+  "official_test_accessed": false,
+  "new_cloud_resources_created": false,
+  "next_stage": "Proposed only: separate learning of error-transport matrices B from learning of feedback encoder/readout matrices V/U, with online feedback decay disabled in all local arms to make the switches literal freezes. Fixed FIFO, original rates, cap, common full warmup, exposure and endpoints. Arms frozen, B-only, V/U-only, full learning-only, and BP. Primary B-only versus frozen with unchanged >=5% mean CE/no negative seed and <=2pp per-seed old-window/final-old guard. Three fresh paired main seeds plus a separate pilot; no rate sweep. Test whether B plasticity can retain adaptation while fixed V/U reduces forgetting; do not assume it will. Not implemented or running."
+}

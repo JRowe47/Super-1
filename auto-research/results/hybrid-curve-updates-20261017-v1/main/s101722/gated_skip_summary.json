@@ -1,0 +1,20 @@
+{
+  "arm": "gated_skip",
+  "seed": 101722,
+  "main_cpu": 1.9399848510000002,
+  "main_wall": 1.9403286179986026,
+  "lifecycle_cpu": 7.2838619079999996,
+  "counts": {
+    "backward": 1000,
+    "proposed": 1000,
+    "eligible": 0,
+    "applied": 0,
+    "skipped": 0,
+    "audits": 0,
+    "audit_failures": 0
+  },
+  "training_examples": 64000,
+  "data_sha256": "b846f54fd4532659aab3ddfd652ed2d5fcda7d6dd80f6ddb3c32427efef5c86b",
+  "checkpoint_sha256": "86f4f500b1ed3fdd8c736c34c8081a50d23c6ce539300642414c09e2fd07cbd7",
+  "controller_frozen_after_warmup": true
+}

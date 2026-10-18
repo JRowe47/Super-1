@@ -1,0 +1,26 @@
+{
+  "run_id": "hybrid-curve-updates-20261017-v1",
+  "stage": "PILOT",
+  "authorized_by": "User 2026-10-17 18:10 America/Denver: Ok, cool - go ahead and proceed with the first experiments",
+  "scope": "New synthetic nonlinear update-policy probe; no LM, original GRU substitution, GPU, cloud, or official test",
+  "seeds": [
+    90917
+  ],
+  "config": {
+    "width": 32,
+    "lr": 0.5,
+    "batch": 64,
+    "warmup": 1200,
+    "calibration": 256,
+    "phase_steps": 250,
+    "fidelity_fp32": 2e-06
+  },
+  "source_sha256": "25ae03429846a2cbc2d0ca57054986207d412867b1c61c990e4113b4459ad211",
+  "qualification": "Fixed candidate thresholds [.5,.7,.8,.9,.95,.99], >=64 accepted calibration steps, Wilson lower95>=.95; temporal dependence disclosed; loss-support guard; 10% independent audits.",
+  "pilot_stop": "Any numerical qualification failure, nonfinite training, or 120 CPU seconds for the pilot. Inspect plain-backprop competence and all arms; no main decision until frozen main protocol.",
+  "fidelity_tolerances": {
+    "float32": 2e-06,
+    "float64": 2e-12
+  },
+  "registered_unix": 1792282654.7002723
+}

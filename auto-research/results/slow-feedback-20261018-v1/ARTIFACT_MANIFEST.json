@@ -1,0 +1,69 @@
+{
+  "run_id": "slow-feedback-20261018-v1",
+  "state_files": [
+    {
+      "local_path": "/workspace/scratch/8b72ec5282c5/downloads/slow-feedback-20261018-v1-pilot-99907-states.npz",
+      "run_relative_path": "pilot/99907/STATES.npz",
+      "bytes": 175829,
+      "sha256": "ecb6e2a68d8ad54c244f7ce2e4c47dd4d389631ce4a32a3eae6171259d95ec1e",
+      "purpose": "create_library_file",
+      "status": "succeeded",
+      "file_id": "file_000000004ffc81f5a06b54d602211cde",
+      "library_file_id": "libfile_c326a61a459c8191b99baec632d66b48",
+      "file_name": "slow-feedback-20261018-v1-pilot-99907-states.npz",
+      "local_metadata_applied": true,
+      "path": "/Geometric Self Attention/slow-feedback-20261018-v1-pilot-99907-states.npz",
+      "current_version_number": 0,
+      "remote_readback_sha256_verified": true
+    },
+    {
+      "local_path": "/workspace/scratch/8b72ec5282c5/downloads/slow-feedback-20261018-v1-main-1001811-states.npz",
+      "run_relative_path": "main/1001811/STATES.npz",
+      "bytes": 176102,
+      "sha256": "0a4f6eed002e5fd6ca0c809a2a90ede2eac54a19262a28f1eea23f546169fed3",
+      "purpose": "create_library_file",
+      "status": "succeeded",
+      "file_id": "file_00000000aeac81f592a98485181de104",
+      "library_file_id": "libfile_a03002206b9881919af10861bd7c74c6",
+      "file_name": "slow-feedback-20261018-v1-main-1001811-states.npz",
+      "local_metadata_applied": true,
+      "path": "/Geometric Self Attention/slow-feedback-20261018-v1-main-1001811-states.npz",
+      "current_version_number": 0,
+      "remote_readback_sha256_verified": true
+    },
+    {
+      "local_path": "/workspace/scratch/8b72ec5282c5/downloads/slow-feedback-20261018-v1-main-1001812-states.npz",
+      "run_relative_path": "main/1001812/STATES.npz",
+      "bytes": 176126,
+      "sha256": "ea0b3e388fd6b9fcb935d6b7a7c4b32de60805af997ab29d015d31ff6b7f8589",
+      "purpose": "create_library_file",
+      "status": "succeeded",
+      "file_id": "file_0000000072c481f5b33244e78d5f9db0",
+      "library_file_id": "libfile_bec9518f2ccc8191bc5a86d31c07257a",
+      "file_name": "slow-feedback-20261018-v1-main-1001812-states.npz",
+      "local_metadata_applied": true,
+      "path": "/Geometric Self Attention/slow-feedback-20261018-v1-main-1001812-states.npz",
+      "current_version_number": 0,
+      "remote_readback_sha256_verified": true
+    },
+    {
+      "local_path": "/workspace/scratch/8b72ec5282c5/downloads/slow-feedback-20261018-v1-main-1001813-states.npz",
+      "run_relative_path": "main/1001813/STATES.npz",
+      "bytes": 175574,
+      "sha256": "e3e36de2a0e8958a47cdd9737012fa3b1163406bd5a597aee616d16aec463637",
+      "purpose": "create_library_file",
+      "status": "succeeded",
+      "file_id": "file_00000000f6dc81f58abebcf0fe0fcfdb",
+      "library_file_id": "libfile_ef770cebba2c8191add330debaf9c462",
+      "file_name": "slow-feedback-20261018-v1-main-1001813-states.npz",
+      "local_metadata_applied": true,
+      "path": "/Geometric Self Attention/slow-feedback-20261018-v1-main-1001813-states.npz",
+      "current_version_number": 0,
+      "remote_readback_sha256_verified": true
+    }
+  ],
+  "total_checkpoint_bytes": 703631,
+  "all_four_remote_readbacks_verified": true,
+  "format": "Four individual compressed NPZ files, no pickle or cumulative archive.",
+  "restore": "Download each file, verify SHA256, place at run_relative_path. Complete final state is {**warm, **stored_arm}; adaptive and slow store final feedback, BP/frozen reference warm feedback. Streams regenerate from registered seeds."
+}

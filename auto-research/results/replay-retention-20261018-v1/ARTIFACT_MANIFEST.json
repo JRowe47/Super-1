@@ -1,0 +1,69 @@
+{
+  "run_id": "replay-retention-20261018-v1",
+  "state_files": [
+    {
+      "local_path": "/workspace/scratch/8b72ec5282c5/downloads/replay-retention-20261018-v1-pilot-97987-states.npz",
+      "run_relative_path": "pilot/97987/STATES.npz",
+      "bytes": 188709,
+      "sha256": "b87fd12d412f013606d17a6ccdc97f830cd61e3d687921016f1f9cec5801ffe5",
+      "purpose": "create_library_file",
+      "status": "succeeded",
+      "file_id": "file_00000000df5081f6ab0dac408e24c905",
+      "library_file_id": "libfile_8554c002c60c81919c16765ffd41cd66",
+      "file_name": "replay-retention-20261018-v1-pilot-97987-states.npz",
+      "local_metadata_applied": true,
+      "path": "/Geometric Self Attention/replay-retention-20261018-v1-pilot-97987-states.npz",
+      "current_version_number": 0,
+      "remote_readback_sha256_verified": true
+    },
+    {
+      "local_path": "/workspace/scratch/8b72ec5282c5/downloads/replay-retention-20261018-v1-main-801791-states.npz",
+      "run_relative_path": "main/801791/STATES.npz",
+      "bytes": 188746,
+      "sha256": "3730021553d224d917a6ca3b61cb49dc978f31526db856a06d9c566012183f7f",
+      "purpose": "create_library_file",
+      "status": "succeeded",
+      "file_id": "file_000000005edc81f6bf441d7f4bab7bff",
+      "library_file_id": "libfile_1df92c6ce1908191accab47134922d4e",
+      "file_name": "replay-retention-20261018-v1-main-801791-states.npz",
+      "local_metadata_applied": true,
+      "path": "/Geometric Self Attention/replay-retention-20261018-v1-main-801791-states.npz",
+      "current_version_number": 0,
+      "remote_readback_sha256_verified": true
+    },
+    {
+      "local_path": "/workspace/scratch/8b72ec5282c5/downloads/replay-retention-20261018-v1-main-801792-states.npz",
+      "run_relative_path": "main/801792/STATES.npz",
+      "bytes": 188746,
+      "sha256": "8d20a6e338d0091b83b5a9c981c50a1a0e4bf41acaf61e39953ea7604f274872",
+      "purpose": "create_library_file",
+      "status": "succeeded",
+      "file_id": "file_000000008c9c81f6952e097a4c468c8d",
+      "library_file_id": "libfile_bb71bf7e675c8191b36c0de145c9b128",
+      "file_name": "replay-retention-20261018-v1-main-801792-states.npz",
+      "local_metadata_applied": true,
+      "path": "/Geometric Self Attention/replay-retention-20261018-v1-main-801792-states.npz",
+      "current_version_number": 0,
+      "remote_readback_sha256_verified": true
+    },
+    {
+      "local_path": "/workspace/scratch/8b72ec5282c5/downloads/replay-retention-20261018-v1-main-801793-states.npz",
+      "run_relative_path": "main/801793/STATES.npz",
+      "bytes": 188682,
+      "sha256": "555019641bc7688c8cfb9fc840c4cbae3f40efb98c5cd2e06a0ec0c9e51e96c6",
+      "purpose": "create_library_file",
+      "status": "succeeded",
+      "file_id": "file_0000000027f881f685e1ce73a27873cf",
+      "library_file_id": "libfile_d4af47cd59348191b02489376d6e3330",
+      "file_name": "replay-retention-20261018-v1-main-801793-states.npz",
+      "local_metadata_applied": true,
+      "path": "/Geometric Self Attention/replay-retention-20261018-v1-main-801793-states.npz",
+      "current_version_number": 0,
+      "remote_readback_sha256_verified": true
+    }
+  ],
+  "total_checkpoint_bytes": 754883,
+  "all_four_remote_readbacks_verified": true,
+  "format": "Four small individually compressed NPZ files, no pickle or cumulative archive.",
+  "restore": "Download each named file, verify SHA256, place at run_relative_path. Final full state is {**warm, **stored_arm}; only adaptive arms have separate feedback tensors. Streams regenerate from registered seeds."
+}

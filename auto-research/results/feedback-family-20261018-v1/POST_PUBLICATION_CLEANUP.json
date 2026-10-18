@@ -1,0 +1,14 @@
+{
+  "run_id": "feedback-family-20261018-v1",
+  "at_utc": "2026-10-18T14:35:07.709225+00:00",
+  "status": "COMPLETE",
+  "trigger": "Final local check after Git publication found a partial temporary runtime directory had reappeared; cause not established. No partial result/progress remained.",
+  "relative_path": "research-runtime",
+  "reappeared_file_count": 10212,
+  "reappeared_file_bytes_removed": 646352286,
+  "matching_experiment_workers": [],
+  "runtime_absent_after_removal": true,
+  "registered_source_unchanged": true,
+  "completed_source_results_checkpoints_untouched": true,
+  "initial_completed_evidence_commit": "2a9e48df58589542243e6af5bbc8d991e634d261"
+}

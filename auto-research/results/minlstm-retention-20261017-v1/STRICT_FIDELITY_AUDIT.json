@@ -1,0 +1,126 @@
+{
+  "status": "ORIGINAL_GATE_FAILED_FOR_SUPPLEMENTAL_LSTM64_CONTROL",
+  "source_verification_sha256": "b33092f915550dc9dc10e672b7f89d83ffb08ac49df6e0d082685fc681f4ab0f",
+  "rows": [
+    {
+      "arm": "mingru64",
+      "dtype": "torch.float64",
+      "original_tolerance": 2e-12,
+      "original_gate_pass": true,
+      "failed_fields": [],
+      "observed": {
+        "output_max_abs": 1.3322676295501878e-15,
+        "gradient_max_abs": 6.938893903907228e-18,
+        "input_gradient_max_abs": 3.7947076036992655e-19,
+        "chunk_max_abs": 8.881784197001252e-16,
+        "optimizer_max_abs": 7.28583859910259e-17
+      }
+    },
+    {
+      "arm": "mingru64",
+      "dtype": "torch.float32",
+      "original_tolerance": 2e-06,
+      "original_gate_pass": true,
+      "failed_fields": [],
+      "observed": {
+        "output_max_abs": 5.960464477539062e-07,
+        "gradient_max_abs": 5.587935447692871e-09,
+        "input_gradient_max_abs": 1.7462298274040222e-10,
+        "chunk_max_abs": 3.5762786865234375e-07,
+        "optimizer_max_abs": 1.4901161193847656e-08
+      }
+    },
+    {
+      "arm": "minlstm64",
+      "dtype": "torch.float64",
+      "original_tolerance": 2e-12,
+      "original_gate_pass": true,
+      "failed_fields": [],
+      "observed": {
+        "output_max_abs": 1.1102230246251565e-15,
+        "gradient_max_abs": 6.938893903907228e-18,
+        "input_gradient_max_abs": 4.336808689942018e-19,
+        "chunk_max_abs": 1.3322676295501878e-15,
+        "optimizer_max_abs": 9.367506770274758e-17
+      }
+    },
+    {
+      "arm": "minlstm64",
+      "dtype": "torch.float32",
+      "original_tolerance": 2e-06,
+      "original_gate_pass": true,
+      "failed_fields": [],
+      "observed": {
+        "output_max_abs": 4.76837158203125e-07,
+        "gradient_max_abs": 5.587935447692871e-09,
+        "input_gradient_max_abs": 1.6007106751203537e-10,
+        "chunk_max_abs": 7.152557373046875e-07,
+        "optimizer_max_abs": 2.2351741790771484e-08
+      }
+    },
+    {
+      "arm": "lstm32",
+      "dtype": "torch.float64",
+      "original_tolerance": 2e-12,
+      "original_gate_pass": true,
+      "failed_fields": [],
+      "observed": {
+        "output_max_abs": 1.6653345369377348e-16,
+        "gradient_max_abs": 6.505213034913027e-19,
+        "input_gradient_max_abs": 2.710505431213761e-20,
+        "chunk_max_abs": 2.7755575615628914e-17,
+        "optimizer_max_abs": 4.532832442727397e-15
+      }
+    },
+    {
+      "arm": "lstm32",
+      "dtype": "torch.float32",
+      "original_tolerance": 2e-06,
+      "original_gate_pass": true,
+      "failed_fields": [],
+      "observed": {
+        "output_max_abs": 1.4901161193847656e-07,
+        "gradient_max_abs": 8.149072527885437e-10,
+        "input_gradient_max_abs": 2.546585164964199e-11,
+        "chunk_max_abs": 0.0,
+        "optimizer_max_abs": 4.926696419715881e-07
+      }
+    },
+    {
+      "arm": "lstm64",
+      "dtype": "torch.float64",
+      "original_tolerance": 2e-12,
+      "original_gate_pass": true,
+      "failed_fields": [],
+      "observed": {
+        "output_max_abs": 1.942890293094024e-16,
+        "gradient_max_abs": 6.505213034913027e-19,
+        "input_gradient_max_abs": 2.0328790734103208e-20,
+        "chunk_max_abs": 5.551115123125783e-17,
+        "optimizer_max_abs": 9.514958265732787e-16
+      }
+    },
+    {
+      "arm": "lstm64",
+      "dtype": "torch.float32",
+      "original_tolerance": 2e-06,
+      "original_gate_pass": false,
+      "failed_fields": [
+        "optimizer_max_abs"
+      ],
+      "observed": {
+        "output_max_abs": 2.384185791015625e-07,
+        "gradient_max_abs": 5.820766091346741e-10,
+        "input_gradient_max_abs": 2.3646862246096134e-11,
+        "chunk_max_abs": 0.0,
+        "optimizer_max_abs": 2.0313076674938202e-05
+      }
+    }
+  ],
+  "matched_state_arms_pass": true,
+  "deviation": "FP32 optimizer-parameter threshold was relaxed from2e-6 to5e-5 before training after observing2.03e-5 on LSTM64. The repo forbids post-failure relaxation. Its later PASS is not an original-gate pass.",
+  "consequence": "Retain all measurements; LSTM64 is descriptive only and not a fidelity-qualified confirmation control. minGRU64, minLSTM64 and LSTM32 passed the original thresholds. No architecture promotion.",
+  "new_training": false,
+  "new_evaluation": false,
+  "audited_unix": 1792277916.8684335
+}

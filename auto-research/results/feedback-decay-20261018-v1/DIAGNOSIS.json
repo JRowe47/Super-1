@@ -1,0 +1,42 @@
+{
+  "kind": "FAILURE_DIAGNOSIS_ONLY_NO_TRAINING",
+  "cases": [
+    {
+      "seed": 100917,
+      "dtype": "torch.float32",
+      "status": "PASS"
+    },
+    {
+      "seed": 100917,
+      "dtype": "torch.float64",
+      "status": "PASS"
+    },
+    {
+      "seed": 15817,
+      "dtype": "torch.float32",
+      "status": "PASS"
+    },
+    {
+      "seed": 15817,
+      "dtype": "torch.float64",
+      "status": "FAILED",
+      "traceback": "Traceback (most recent call last):\n  File \"<stdin>\", line 17, in <module>\n  File \"/workspace/scratch/8b72ec5282c5/worktree/auto-research/results/feedback-decay-20261018-v1/verify.py\", line 45, in verify_components\n    assert capmax<=2.\n           ^^^^^^^^^^\nAssertionError\n"
+    }
+  ],
+  "cap_overflows": [
+    {
+      "dtype": "torch.float64",
+      "spectral_norms": {
+        "B1": 2.0000000000000004,
+        "B2": 1.999999999999999,
+        "V1": 1.9999999999999984,
+        "V2": 1.9999999999999976,
+        "U0": 1.999999999999998,
+        "U1": 1.9999999999999984
+      },
+      "maximum_excess_over_2": 4.440892098500626e-16
+    }
+  ],
+  "diagnostic_total_process_cpu_seconds": 1.5090519999999998,
+  "source_modified": false
+}

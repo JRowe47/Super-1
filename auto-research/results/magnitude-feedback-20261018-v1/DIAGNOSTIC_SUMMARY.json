@@ -1,0 +1,35 @@
+{
+  "status": "DESCRIPTIVE_POST_RUN_AGGREGATION_OF_PREREGISTERED_PROBES",
+  "definition": "Unweighted average across3 seeds and4 post-warmup phase boundaries; same-state training-batch hidden-layer SGD-drive cosine including decay. Never fed into policy updates.",
+  "layer_means": {
+    "adaptive": {
+      "W0": {
+        "active_exact_cosine": 0.36001563286993166,
+        "frozen_exact_cosine": 0.4545539713277017,
+        "active_frozen_cosine": 0.19304748297081062,
+        "active_frozen_norm_ratio": 1.4615563700596492
+      },
+      "W1": {
+        "active_exact_cosine": 0.3973232210841645,
+        "frozen_exact_cosine": 0.5232375659969632,
+        "active_frozen_cosine": -0.07205239337037489,
+        "active_frozen_norm_ratio": 1.0717306633790333
+      }
+    },
+    "adaptive_match_frozen": {
+      "W0": {
+        "active_exact_cosine": 0.30084964524831226,
+        "frozen_exact_cosine": 0.48287103667909753,
+        "active_frozen_cosine": 0.1516920577452059,
+        "active_frozen_norm_ratio": 1.6356013466914494
+      },
+      "W1": {
+        "active_exact_cosine": 0.35514711985033537,
+        "frozen_exact_cosine": 0.5521009089077779,
+        "active_frozen_cosine": -0.12806508299769037,
+        "active_frozen_norm_ratio": 1.1088254004716873
+      }
+    }
+  },
+  "interpretation": "Adaptation advantage survives magnitude normalization, but sampled hidden directions are less aligned with exact BP than frozen feedback at the same W. Do not claim it learns a closer BP direction."
+}

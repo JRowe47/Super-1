@@ -1,0 +1,96 @@
+{
+  "runs": [
+    {
+      "arm": "fixed48",
+      "log": "main/fixed48_s101701.log",
+      "returncode": 0,
+      "seed": 101701
+    },
+    {
+      "arm": "wide64",
+      "log": "main/wide64_s101701.log",
+      "returncode": 0,
+      "seed": 101701
+    },
+    {
+      "arm": "context64",
+      "log": "main/context64_s101701.log",
+      "returncode": 0,
+      "seed": 101701
+    },
+    {
+      "arm": "gru64",
+      "log": "main/gru64_s101701.log",
+      "returncode": 0,
+      "seed": 101701
+    },
+    {
+      "arm": "fixed48",
+      "log": "main/fixed48_s101702.log",
+      "returncode": 0,
+      "seed": 101702
+    },
+    {
+      "arm": "adaptive64",
+      "log": "main/adaptive64_s101701.log",
+      "returncode": 0,
+      "seed": 101701
+    },
+    {
+      "arm": "wide64",
+      "log": "main/wide64_s101702.log",
+      "returncode": 0,
+      "seed": 101702
+    },
+    {
+      "arm": "context64",
+      "log": "main/context64_s101702.log",
+      "returncode": 0,
+      "seed": 101702
+    },
+    {
+      "arm": "adaptive64",
+      "log": "main/adaptive64_s101702.log",
+      "returncode": 0,
+      "seed": 101702
+    },
+    {
+      "arm": "gru64",
+      "log": "main/gru64_s101702.log",
+      "returncode": 0,
+      "seed": 101702
+    },
+    {
+      "arm": "fixed48",
+      "log": "main/fixed48_s101703.log",
+      "returncode": 0,
+      "seed": 101703
+    },
+    {
+      "arm": "wide64",
+      "log": "main/wide64_s101703.log",
+      "returncode": 0,
+      "seed": 101703
+    },
+    {
+      "arm": "context64",
+      "log": "main/context64_s101703.log",
+      "returncode": 0,
+      "seed": 101703
+    },
+    {
+      "arm": "gru64",
+      "log": "main/gru64_s101703.log",
+      "returncode": 0,
+      "seed": 101703
+    },
+    {
+      "arm": "adaptive64",
+      "log": "main/adaptive64_s101703.log",
+      "returncode": 0,
+      "seed": 101703
+    }
+  ],
+  "status": "COMPLETE",
+  "wall_seconds": 269.92176132500026
+}

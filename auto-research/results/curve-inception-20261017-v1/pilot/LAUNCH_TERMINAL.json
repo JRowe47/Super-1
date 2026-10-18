@@ -1,0 +1,36 @@
+{
+  "runs": [
+    {
+      "arm": "fixed48",
+      "log": "pilot/fixed48_s991.log",
+      "returncode": 0,
+      "seed": 991
+    },
+    {
+      "arm": "wide64",
+      "log": "pilot/wide64_s991.log",
+      "returncode": 0,
+      "seed": 991
+    },
+    {
+      "arm": "context64",
+      "log": "pilot/context64_s991.log",
+      "returncode": 0,
+      "seed": 991
+    },
+    {
+      "arm": "gru64",
+      "log": "pilot/gru64_s991.log",
+      "returncode": 0,
+      "seed": 991
+    },
+    {
+      "arm": "adaptive64",
+      "log": "pilot/adaptive64_s991.log",
+      "returncode": 0,
+      "seed": 991
+    }
+  ],
+  "status": "COMPLETE",
+  "wall_seconds": 13.173467658001755
+}

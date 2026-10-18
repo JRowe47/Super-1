@@ -1,0 +1,12 @@
+{
+  "failed_run_id": "feedback-decay-20261018-v1",
+  "failed_source_commit": "8d5a000f7572962bc4eb29e072bbe71b1bb5f348",
+  "failed_verification_and_diagnosis_cpu_seconds": 3.378945,
+  "evidence_sha256": {
+    "VERIFY_RECEIPT.json": "f4a0aaae884a0df4649ed4de0f95aeafbe0fe20cfbe4bbb4d16b01070088445c",
+    "DIAGNOSIS.json": "2e5ae287eaf59471e6c5ac0fabc15301ec7b0775cd17a6fad5ec340b7f636bb2",
+    "TERMINAL.json": "be2c39412eb0ecf54d50643e402b040dae550e709fa44ecedcf0a4ca84f9d302"
+  },
+  "runtime_canary_counting": "RUNTIME.json reused unchanged and charged once by v2 analysis. No new runtime setup/check required.",
+  "budget": "Same900 aggregate experimentCPU seconds across v1 and v2; no reset. No pilot/main training in v1."
+}

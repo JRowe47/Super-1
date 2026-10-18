@@ -1,0 +1,73 @@
+{
+  "run_id": "magnitude-feedback-20261018-v1",
+  "state_files": [
+    {
+      "local_path": "/workspace/scratch/8b72ec5282c5/downloads/magnitude-feedback-20261018-v1-pilot-96977-states.npz",
+      "run_relative_path": "pilot/96977/STATES.npz",
+      "bytes": 477556,
+      "sha256": "1525be4eecae8841c4ae9ae80280f885898bf7afb755fa2fe3b925df6dd371e3",
+      "purpose": "create_library_file",
+      "status": "succeeded",
+      "file_id": "file_0000000047b481f5a39052658011cc5f",
+      "library_file_id": "libfile_26a7f9d3ee748191b40e4cababb095a5",
+      "file_name": "magnitude-feedback-20261018-v1-pilot-96977-states.npz",
+      "local_metadata_applied": true,
+      "path": "/Geometric Self Attention/magnitude-feedback-20261018-v1-pilot-96977-states.npz",
+      "current_version_number": 0,
+      "verification": "Full online replay bitwise equal from serialized states; uploaded file downloaded again and SHA256 verified.",
+      "remote_readback_sha256_verified": true
+    },
+    {
+      "local_path": "/workspace/scratch/8b72ec5282c5/downloads/magnitude-feedback-20261018-v1-main-701781-states.npz",
+      "run_relative_path": "main/701781/STATES.npz",
+      "bytes": 477399,
+      "sha256": "64b981848f797f1de8334454b8c9a960984a7364d678362cde566c033d134f67",
+      "purpose": "create_library_file",
+      "status": "succeeded",
+      "file_id": "file_000000009cfc81f5881162ebb94e53d9",
+      "library_file_id": "libfile_034a5c1f8e308191bad035abd6d184c8",
+      "file_name": "magnitude-feedback-20261018-v1-main-701781-states.npz",
+      "local_metadata_applied": true,
+      "path": "/Geometric Self Attention/magnitude-feedback-20261018-v1-main-701781-states.npz",
+      "current_version_number": 0,
+      "verification": "Full online replay bitwise equal from serialized states; uploaded file downloaded again and SHA256 verified.",
+      "remote_readback_sha256_verified": true
+    },
+    {
+      "local_path": "/workspace/scratch/8b72ec5282c5/downloads/magnitude-feedback-20261018-v1-main-701782-states.npz",
+      "run_relative_path": "main/701782/STATES.npz",
+      "bytes": 477685,
+      "sha256": "2fe02de4f9a401e40270f329e3cca0089137dc8f425bb503236fd3b4d24e23c2",
+      "purpose": "create_library_file",
+      "status": "succeeded",
+      "file_id": "file_0000000073d081f5b0073c67e17a27ea",
+      "library_file_id": "libfile_351e0da4799881919cd319cf1ebe6944",
+      "file_name": "magnitude-feedback-20261018-v1-main-701782-states.npz",
+      "local_metadata_applied": true,
+      "path": "/Geometric Self Attention/magnitude-feedback-20261018-v1-main-701782-states.npz",
+      "current_version_number": 0,
+      "verification": "Full online replay bitwise equal from serialized states; uploaded file downloaded again and SHA256 verified.",
+      "remote_readback_sha256_verified": true
+    },
+    {
+      "local_path": "/workspace/scratch/8b72ec5282c5/downloads/magnitude-feedback-20261018-v1-main-701783-states.npz",
+      "run_relative_path": "main/701783/STATES.npz",
+      "bytes": 477412,
+      "sha256": "63b075b08e75a81f5f60b6da6dc7621ff042cd0ef894b1892d92445a5a7d281b",
+      "purpose": "create_library_file",
+      "status": "succeeded",
+      "file_id": "file_000000001b5081f5b5858f4ce8c95394",
+      "library_file_id": "libfile_5be21d961980819195fdb59abc896354",
+      "file_name": "magnitude-feedback-20261018-v1-main-701783-states.npz",
+      "local_metadata_applied": true,
+      "path": "/Geometric Self Attention/magnitude-feedback-20261018-v1-main-701783-states.npz",
+      "current_version_number": 0,
+      "verification": "Full online replay bitwise equal from serialized states; uploaded file downloaded again and SHA256 verified.",
+      "remote_readback_sha256_verified": true
+    }
+  ],
+  "total_checkpoint_bytes": 1910052,
+  "format": "Four individually compressed NPZ state files, no pickle, no cumulative archive.",
+  "restore": "Download each named file, verify SHA256, put at its run_relative_path. Data regenerate from frozen seeds/code; no saved stream needed.",
+  "all_four_remote_readbacks_verified": true
+}

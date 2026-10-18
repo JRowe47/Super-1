@@ -1,0 +1,138 @@
+{
+  "record_kind": "post_run_protocol_record_not_the_original_frozen_file",
+  "run_id": "bounded-feedback-20261018-v1",
+  "original_registration_utc": "2026-10-18T03:50:18.009520+00:00",
+  "original_protocol_sha256": null,
+  "original_source_hashes": null,
+  "original_files_pending_export": [
+    "REGISTRATION.json",
+    "PROTOCOL.json",
+    "baseline_core.py",
+    "core.py",
+    "experiment.py",
+    "verify.py",
+    "launch.py",
+    "RULE_MAPPING.md",
+    "BASELINE_RULE_MAPPING.md",
+    "SOURCE_PROVENANCE.json"
+  ],
+  "hypothesis": "With feedback bounded throughout warmup, continuing local feedback adaptation reduces post-change loss versus freezing without excessive loss of old knowledge.",
+  "task": "Synthetic context-indexed binary relations; old contexts 0-3, novel contexts 4-5, drift reverses relations 0/1 in context 0.",
+  "model": {
+    "layers": [
+      11,
+      32,
+      32,
+      4
+    ],
+    "hidden_activation": "ReLU",
+    "bias": false,
+    "forward_parameters": 1504,
+    "feedback_parameters": 12544,
+    "representation": "complete orthonormal real Fourier coefficients, dense rule then full encode, no truncation"
+  },
+  "seeds": [
+    601771,
+    601772,
+    601773
+  ],
+  "pilot_seed": 95967,
+  "warmup": {
+    "updates": 4096,
+    "batch": 64,
+    "old_examples": 1024,
+    "relation_fact_exposures_per_seed": 1048576,
+    "forward_rule": "exact backpropagation",
+    "feedback": "bounded and unbounded shadow paths; no exact hidden gradients supplied"
+  },
+  "online": {
+    "blocks": [
+      "old stationary",
+      "novel",
+      "drift",
+      "mixed"
+    ],
+    "updates_per_block": 512,
+    "current_batch": 16,
+    "replay_batch": 16,
+    "fifo_capacity": 512,
+    "stale_labels": "retained until eviction",
+    "schedule": "identical predetermined data schedule across arms"
+  },
+  "optimizer": {
+    "name": "SGD",
+    "learning_rate": 0.05,
+    "momentum": 0,
+    "local_drive_multiplier": 0.8,
+    "W_B_decay": 0.001,
+    "V_U_decay": 0.01
+  },
+  "bound": {
+    "cap": 2,
+    "method": "multiply each B/V/U matrix and its coefficients by min(1, 2*(1-4*machine_epsilon)/sigma_max) at each applicable step; full SVD values",
+    "forward_weights_bounded": false
+  },
+  "arms": [
+    "backprop",
+    "random_fixed",
+    "random_bounded_fixed",
+    "unbounded_adaptive",
+    "unbounded_frozen",
+    "handover_adaptive",
+    "handover_frozen",
+    "warmbound_adaptive",
+    "warmbound_frozen"
+  ],
+  "pilot": {
+    "full_warmup": true,
+    "updates_per_online_block": 64,
+    "queries_per_context": 32
+  },
+  "main_queries_per_context": 128,
+  "primary": {
+    "arms": [
+      "warmbound_adaptive",
+      "warmbound_frozen"
+    ],
+    "novel_checkpoint_steps": [
+      544,
+      576,
+      608,
+      640,
+      672,
+      704,
+      736,
+      768
+    ],
+    "drift_checkpoint_steps": [
+      1056,
+      1088,
+      1120,
+      1152,
+      1184,
+      1216,
+      1248,
+      1280
+    ],
+    "metric": "mean of 16 checkpoint cross-entropies; relative reduction within seed, then mean across seeds",
+    "effect_gate": "mean relative reduction >=5% and no negative seed",
+    "retention_guard": "old accuracy loss <=2 percentage points during primary window and at final, in every seed"
+  },
+  "numerical_tolerances": {
+    "FP32": 0.000002,
+    "FP64": 2e-12
+  },
+  "failure_policy": "stop affected arm, retain state and failed prefix; continue controls; no retuning",
+  "resources": {
+    "maximum_workers": 3,
+    "threads_per_worker": 1,
+    "aggregate_cpu_seconds_limit": 900
+  },
+  "source_reference": {
+    "paper": "https://arxiv.org/html/2412.20018v2",
+    "author_file": "https://github.com/liaoq/SAM2026/blob/main/run_netv_compare_with_bp.py",
+    "git_blob": "3f08163f2f045c23871f1f1a1944779617930d2a",
+    "author_code_executed": false
+  },
+  "scope": "SAM-inspired synthetic diagnostic; no language-model, novelty, efficiency or exact-paper-replication claim."
+}

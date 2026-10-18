@@ -1,0 +1,31 @@
+{
+  "run_id": "feedback-family-20261018-v1",
+  "registered_at_utc": "2026-10-18T14:24:39.449781+00:00",
+  "status": "FROZEN_BEFORE_EXPERIMENT_VERIFICATION_PILOT_MAIN",
+  "repository": "JRowe47/Super-1",
+  "branch": "research/curve-inception-20261017-v1",
+  "parent_commit": "e867aa4caad20e84bb5030570bc7fdd4d2535c95",
+  "runtime_note": "RUNTIME.json is import/arithmetic-only before experiment data or model updates; charged to stage budget.",
+  "publication_gate": "All registered source/protocol plus registration read back byte-equal from immutable commit and branch updated before experiment verification/pilot/main.",
+  "sha256": {
+    "BASELINE_RULE_MAPPING.md": "2299c157eaf29c24ca1ce258b15280bce6104e60a5592086228c3c0a9bb860b5",
+    "BASELINE_SOURCE_PROVENANCE.json": "192bf320be675c63013a09a295ccbfaa6380550264706578983af7f09eec80d0",
+    "PROTOCOL.json": "b6d41588d346510748df8507d1448dc22a44183c192313b1e3576ebf4360f673",
+    "README.md": "9ddd3a92139fec8d17fa9d9d23277af87938c87ac1d108b483d5a8573e981da6",
+    "RULE_MAPPING.md": "de0b49db1ff903cb6c6979eff696c4210aa22d9233d1e85799b257641607ad51",
+    "RUNTIME.json": "ec18346253c70f3425e6793696629aedec64d879215f8ac863ca62d65b533efa",
+    "SOURCE_PROVENANCE.json": "038d10cd333c4cbc05c6c3af55c7be03808f90ce416b354253586d47b30ddb20",
+    "analyze.py": "6cdba78b1d5db03094e490b312ed64f44107aa650e328dd81cab627eec6da877",
+    "baseline_core.py": "a26735782ca129b38786f960646f0f541848da6f8de2bbd6c02ccedc67715437",
+    "baseline_verify.py": "94d0c236cc4cad90b8a2680885e87497623ea8ee635c09c7e26cc18ff00ff3a1",
+    "component_core.py": "1b92c65841ec97b09295df5168a1eeb81743a3b9ad6e6f13808d0cb2d8a4f1d7",
+    "component_verify.py": "4ec1280ed794a793631874a4f622472e1cc388ba5898d3f0fa39ad3126e2bec0",
+    "core.py": "d84c681368b35c94b7e744ee4d37d550928660cc736a2843c628b7bdbbab8fd5",
+    "experiment.py": "d81e83e889a115db2bc8f54a567040791e326bdc9cc801787c3d53bbb52a8876",
+    "feedback_core.py": "0df7d4fcabbe6b5f24b3a239708d925640370b183fbcf58bc1aae424d8101379",
+    "feedback_verify.py": "414de8f6b5fddecda59fcf18178658495c15e4979a073a293b0d97b9d63b7f62",
+    "launch.py": "9a5d919e6010c6d228b175ee09671becc6a2de97fa03e988a995da90989b59fa",
+    "uncorrected_feedback_core.py": "13471f8a2a9d2bf1d319e50e9af47c7a45f7c549b9fa1f9a4be7bcd99c7a3780",
+    "verify.py": "492cf7b0b8d002acf59351ca7aa27ec7105e154e99ef6702db5210a6f7c58689"
+  }
+}

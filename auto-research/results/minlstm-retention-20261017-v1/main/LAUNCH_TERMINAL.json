@@ -1,0 +1,78 @@
+{
+  "status": "COMPLETE",
+  "runs": [
+    {
+      "arm": "lstm32",
+      "seed": 101711,
+      "returncode": 0,
+      "log": "main/lstm32_s101711.log"
+    },
+    {
+      "arm": "mingru64",
+      "seed": 101711,
+      "returncode": 0,
+      "log": "main/mingru64_s101711.log"
+    },
+    {
+      "arm": "minlstm64",
+      "seed": 101711,
+      "returncode": 0,
+      "log": "main/minlstm64_s101711.log"
+    },
+    {
+      "arm": "lstm64",
+      "seed": 101711,
+      "returncode": 0,
+      "log": "main/lstm64_s101711.log"
+    },
+    {
+      "arm": "mingru64",
+      "seed": 101712,
+      "returncode": 0,
+      "log": "main/mingru64_s101712.log"
+    },
+    {
+      "arm": "minlstm64",
+      "seed": 101712,
+      "returncode": 0,
+      "log": "main/minlstm64_s101712.log"
+    },
+    {
+      "arm": "lstm32",
+      "seed": 101712,
+      "returncode": 0,
+      "log": "main/lstm32_s101712.log"
+    },
+    {
+      "arm": "lstm64",
+      "seed": 101712,
+      "returncode": 0,
+      "log": "main/lstm64_s101712.log"
+    },
+    {
+      "arm": "mingru64",
+      "seed": 101713,
+      "returncode": 0,
+      "log": "main/mingru64_s101713.log"
+    },
+    {
+      "arm": "minlstm64",
+      "seed": 101713,
+      "returncode": 0,
+      "log": "main/minlstm64_s101713.log"
+    },
+    {
+      "arm": "lstm32",
+      "seed": 101713,
+      "returncode": 0,
+      "log": "main/lstm32_s101713.log"
+    },
+    {
+      "arm": "lstm64",
+      "seed": 101713,
+      "returncode": 0,
+      "log": "main/lstm64_s101713.log"
+    }
+  ],
+  "wall_seconds": 124.65050546899874
+}

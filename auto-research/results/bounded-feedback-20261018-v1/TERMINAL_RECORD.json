@@ -1,0 +1,39 @@
+{
+  "record_kind": "post_run_record_of_receipts_inspected_before_workspace_offline",
+  "run_id": "bounded-feedback-20261018-v1",
+  "original_receipt_bytes_exported": false,
+  "launchers": [
+    {
+      "name": "verify",
+      "exit_code": 0,
+      "child_cpu_seconds": 1.208648
+    },
+    {
+      "name": "pilot",
+      "exit_code": 0,
+      "child_cpu_seconds": 27.423917
+    },
+    {
+      "name": "main",
+      "exit_code": 0,
+      "child_cpu_seconds": 213.881804,
+      "wall_seconds": 74.3856
+    }
+  ],
+  "total_child_cpu_seconds": 242.514369,
+  "verification": {
+    "status": "PASS",
+    "fp32_max_error": 3.5762786865e-7,
+    "fp64_max_error": 4.996e-16,
+    "main_exact_replays": 27,
+    "pilot_exact_replays": 9,
+    "includes_failed_prefixes": true
+  },
+  "training_workers": "All joined by launcher before postprocessing.",
+  "execution": "COMPLETE_WITH_RECORDED_ARM_FAILURES",
+  "preservation": "SOURCE_AND_CHECKPOINT_EXPORT_PENDING",
+  "workspace_error": "environment_offline: Environment is not connected.",
+  "postprocessing": "Analysis file write/invocation attempted, completion unconfirmed.",
+  "new_training_during_repository_export": false,
+  "next_experiment_running": false
+}

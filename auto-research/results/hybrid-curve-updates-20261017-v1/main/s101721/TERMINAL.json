@@ -1,0 +1,164 @@
+{
+  "status": "COMPLETE",
+  "seed": 101721,
+  "wall_seconds": 15.615248010999494,
+  "cpu_seconds": 15.607077272000001,
+  "warmup": {
+    "plain_cpu": 1.2391634740000006,
+    "hybrid_cpu": 5.5133831859999995,
+    "plain_wall": 1.24239911100085,
+    "hybrid_wall": 5.517811228000937,
+    "base_backward_steps": 1456,
+    "controller_training_steps": 1200,
+    "warmup_parameter_replay_error": 0.0,
+    "model_parameters": 808,
+    "predictor_parameters": 898,
+    "gate_parameters": 339,
+    "qualification": {
+      "threshold": 0.5,
+      "loss_limit": 0.009027664549648762,
+      "qualification": true,
+      "trials": [
+        {
+          "threshold": 0.5,
+          "count": 256,
+          "safe": 256,
+          "lower95": 0.9895419965959273
+        },
+        {
+          "threshold": 0.7,
+          "count": 256,
+          "safe": 256,
+          "lower95": 0.9895419965959273
+        },
+        {
+          "threshold": 0.8,
+          "count": 256,
+          "safe": 256,
+          "lower95": 0.9895419965959273
+        },
+        {
+          "threshold": 0.9,
+          "count": 256,
+          "safe": 256,
+          "lower95": 0.9895419965959273
+        },
+        {
+          "threshold": 0.95,
+          "count": 256,
+          "safe": 256,
+          "lower95": 0.9895419965959273
+        },
+        {
+          "threshold": 0.99,
+          "count": 256,
+          "safe": 256,
+          "lower95": 0.9895419965959273
+        }
+      ],
+      "note": "Wilson bound is a heuristic qualification on temporally related calibration steps, not an IID guarantee."
+    }
+  },
+  "arms": {
+    "backprop": {
+      "arm": "backprop",
+      "seed": 101721,
+      "main_cpu": 0.9513561029999984,
+      "main_wall": 0.9497154599994246,
+      "lifecycle_cpu": 2.190519576999999,
+      "counts": {
+        "backward": 1000,
+        "proposed": 0,
+        "eligible": 0,
+        "applied": 0,
+        "skipped": 0,
+        "audits": 0,
+        "audit_failures": 0
+      },
+      "training_examples": 64000,
+      "data_sha256": "5c6a4e816e3e5ef174c990376f6348633b027276523cd8acac9034686dbad05c",
+      "checkpoint_sha256": "02b459bf7f579ec8008a5e78621bfb288aabea216aecd48c4f06d4dd97608715",
+      "controller_frozen_after_warmup": true
+    },
+    "hybrid": {
+      "arm": "hybrid",
+      "seed": 101721,
+      "main_cpu": 1.9919488550000004,
+      "main_wall": 1.9913262340014626,
+      "lifecycle_cpu": 7.505332041,
+      "counts": {
+        "backward": 1000,
+        "proposed": 1000,
+        "eligible": 0,
+        "applied": 0,
+        "skipped": 0,
+        "audits": 0,
+        "audit_failures": 0
+      },
+      "training_examples": 64000,
+      "data_sha256": "5c6a4e816e3e5ef174c990376f6348633b027276523cd8acac9034686dbad05c",
+      "checkpoint_sha256": "02a93c754e35d467148d0aab03b8f6e09fd0365d7d3f2acc12e1f08c0dc075b5",
+      "controller_frozen_after_warmup": true
+    },
+    "gated_skip": {
+      "arm": "gated_skip",
+      "seed": 101721,
+      "main_cpu": 2.007952756,
+      "main_wall": 2.0047997789988585,
+      "lifecycle_cpu": 7.521335941999999,
+      "counts": {
+        "backward": 1000,
+        "proposed": 1000,
+        "eligible": 0,
+        "applied": 0,
+        "skipped": 0,
+        "audits": 0,
+        "audit_failures": 0
+      },
+      "training_examples": 64000,
+      "data_sha256": "5c6a4e816e3e5ef174c990376f6348633b027276523cd8acac9034686dbad05c",
+      "checkpoint_sha256": "c3e3b7c99bd8c302fc79132d06800f12261b220f39e12e190424b8400e625eb8",
+      "controller_frozen_after_warmup": true
+    },
+    "confidence_only": {
+      "arm": "confidence_only",
+      "seed": 101721,
+      "main_cpu": 1.4679778810000013,
+      "main_wall": 1.4676433960012218,
+      "lifecycle_cpu": 6.981361067000001,
+      "counts": {
+        "backward": 81,
+        "proposed": 1000,
+        "eligible": 1000,
+        "applied": 937,
+        "skipped": 0,
+        "audits": 81,
+        "audit_failures": 63
+      },
+      "training_examples": 64000,
+      "data_sha256": "5c6a4e816e3e5ef174c990376f6348633b027276523cd8acac9034686dbad05c",
+      "checkpoint_sha256": "5447b4e627667a4bf20ec95bc25d3c54b405f3fd9a5bda1af7602dd16a5248f3",
+      "controller_frozen_after_warmup": true
+    },
+    "always_hyper": {
+      "arm": "always_hyper",
+      "seed": 101721,
+      "main_cpu": 1.6079258170000017,
+      "main_wall": 1.6096407490003912,
+      "lifecycle_cpu": 7.121309003000001,
+      "counts": {
+        "backward": 81,
+        "proposed": 1000,
+        "eligible": 1000,
+        "applied": 1000,
+        "skipped": 0,
+        "audits": 81,
+        "audit_failures": 74
+      },
+      "training_examples": 64000,
+      "data_sha256": "5c6a4e816e3e5ef174c990376f6348633b027276523cd8acac9034686dbad05c",
+      "checkpoint_sha256": "9474f10b19c6d3053a6516696ca3b5f3ac1929a1f72af32bca36266e7afa74d7",
+      "controller_frozen_after_warmup": true
+    }
+  }
+}

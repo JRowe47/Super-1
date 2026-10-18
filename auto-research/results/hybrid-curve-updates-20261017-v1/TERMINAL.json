@@ -1,0 +1,24 @@
+{
+  "status": "COMPLETE_NO_PROMOTION",
+  "decision": "NO_PROMOTION",
+  "arm_seed_rows": 15,
+  "main_seeds": [
+    101721,
+    101722,
+    101723
+  ],
+  "numerical_qualification": "PASS_ORIGINAL_TOLERANCES",
+  "evaluation": "15 final checkpoints; exact score replay",
+  "registered_criteria": {
+    "composition_noninferiority": true,
+    "retention_noninferiority": true,
+    "backward_reduction": false,
+    "main_cpu_reduction": false,
+    "added_value_over_skip": false
+  },
+  "protocol_sha256": "bc47dce7e2d6614b22690d0572456c22c813e3884acd944d5833985e91169873",
+  "source_sha256": "0bf124da731ac1a15594fd51a05782c38e695853524ea575f529191b957b928b",
+  "main_worker_total_cpu_seconds": 46.525805411,
+  "resources": "CPU only, 3 one-thread workers",
+  "publication_scope": "Existing draft PR in JRowe47/Super-1; no merge"
+}

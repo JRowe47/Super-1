@@ -1,0 +1,1280 @@
+{
+  "run_id": "hybrid-curve-updates-20261017-v1",
+  "decision": "NO_PROMOTION",
+  "status": "COMPLETE",
+  "seeds": [
+    101721,
+    101722,
+    101723
+  ],
+  "descriptive_only": true,
+  "aggregates": {
+    "backprop": {
+      "old_retention": {
+        "mean": 1.0,
+        "minimum": 1.0,
+        "maximum": 1.0,
+        "per_seed": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "new_atomic": {
+        "mean": 1.0,
+        "minimum": 1.0,
+        "maximum": 1.0,
+        "per_seed": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "old_ce": {
+        "mean": 0.0225627018759648,
+        "minimum": 0.012887862045317888,
+        "maximum": 0.029830136336386204,
+        "per_seed": [
+          0.029830136336386204,
+          0.02497010724619031,
+          0.012887862045317888
+        ]
+      },
+      "new_ce": {
+        "mean": 0.0404608774309357,
+        "minimum": 0.039711435325443745,
+        "maximum": 0.0414495300501585,
+        "per_seed": [
+          0.039711435325443745,
+          0.0414495300501585,
+          0.04022166691720486
+        ]
+      },
+      "main_cpu": {
+        "mean": 0.9416352599999994,
+        "minimum": 0.9335566069999999,
+        "maximum": 0.9513561029999984,
+        "per_seed": [
+          0.9513561029999984,
+          0.9399930699999999,
+          0.9335566069999999
+        ]
+      },
+      "lifecycle_cpu": {
+        "mean": 2.1410136126666663,
+        "minimum": 2.107996365,
+        "maximum": 2.190519576999999,
+        "per_seed": [
+          2.190519576999999,
+          2.107996365,
+          2.1245248959999996
+        ]
+      },
+      "composition_2": {
+        "mean": 1.0,
+        "minimum": 1.0,
+        "maximum": 1.0,
+        "per_seed": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "composition_4": {
+        "mean": 1.0,
+        "minimum": 1.0,
+        "maximum": 1.0,
+        "per_seed": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "backward_reduction": {
+        "mean": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0,
+        "per_seed": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "main_cpu_ratio": {
+        "mean": 1.0,
+        "minimum": 1.0,
+        "maximum": 1.0,
+        "per_seed": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "lifecycle_cpu_ratio": {
+        "mean": 1.0,
+        "minimum": 1.0,
+        "maximum": 1.0,
+        "per_seed": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "total_counts": {
+        "backward": 3000,
+        "proposed": 0,
+        "eligible": 0,
+        "applied": 0,
+        "skipped": 0,
+        "audits": 0,
+        "audit_failures": 0
+      }
+    },
+    "hybrid": {
+      "old_retention": {
+        "mean": 1.0,
+        "minimum": 1.0,
+        "maximum": 1.0,
+        "per_seed": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "new_atomic": {
+        "mean": 1.0,
+        "minimum": 1.0,
+        "maximum": 1.0,
+        "per_seed": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "old_ce": {
+        "mean": 0.0225627018759648,
+        "minimum": 0.012887862045317888,
+        "maximum": 0.029830136336386204,
+        "per_seed": [
+          0.029830136336386204,
+          0.02497010724619031,
+          0.012887862045317888
+        ]
+      },
+      "new_ce": {
+        "mean": 0.0404608774309357,
+        "minimum": 0.039711435325443745,
+        "maximum": 0.0414495300501585,
+        "per_seed": [
+          0.039711435325443745,
+          0.0414495300501585,
+          0.04022166691720486
+        ]
+      },
+      "main_cpu": {
+        "mean": 1.981922097,
+        "minimum": 1.8839863789999995,
+        "maximum": 2.069831057,
+        "per_seed": [
+          1.9919488550000004,
+          1.8839863789999995,
+          2.069831057
+        ]
+      },
+      "lifecycle_cpu": {
+        "mean": 7.389314356666667,
+        "minimum": 7.227863435999999,
+        "maximum": 7.505332041,
+        "per_seed": [
+          7.505332041,
+          7.227863435999999,
+          7.434747593
+        ]
+      },
+      "composition_2": {
+        "mean": 1.0,
+        "minimum": 1.0,
+        "maximum": 1.0,
+        "per_seed": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "composition_4": {
+        "mean": 1.0,
+        "minimum": 1.0,
+        "maximum": 1.0,
+        "per_seed": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "backward_reduction": {
+        "mean": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0,
+        "per_seed": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "main_cpu_ratio": {
+        "mean": 2.1050669219845717,
+        "minimum": 2.0042556047780224,
+        "maximum": 2.2171457429361863,
+        "per_seed": [
+          2.0937994182395063,
+          2.0042556047780224,
+          2.2171457429361863
+        ]
+      },
+      "lifecycle_cpu_ratio": {
+        "mean": 3.451516721662571,
+        "minimum": 3.4262793721655944,
+        "maximum": 3.4994871592222574,
+        "per_seed": [
+          3.4262793721655944,
+          3.428783633599861,
+          3.4994871592222574
+        ]
+      },
+      "total_counts": {
+        "backward": 3000,
+        "proposed": 3000,
+        "eligible": 0,
+        "applied": 0,
+        "skipped": 0,
+        "audits": 0,
+        "audit_failures": 0
+      }
+    },
+    "gated_skip": {
+      "old_retention": {
+        "mean": 1.0,
+        "minimum": 1.0,
+        "maximum": 1.0,
+        "per_seed": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "new_atomic": {
+        "mean": 1.0,
+        "minimum": 1.0,
+        "maximum": 1.0,
+        "per_seed": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "old_ce": {
+        "mean": 0.0225627018759648,
+        "minimum": 0.012887862045317888,
+        "maximum": 0.029830136336386204,
+        "per_seed": [
+          0.029830136336386204,
+          0.02497010724619031,
+          0.012887862045317888
+        ]
+      },
+      "new_ce": {
+        "mean": 0.0404608774309357,
+        "minimum": 0.039711435325443745,
+        "maximum": 0.0414495300501585,
+        "per_seed": [
+          0.039711435325443745,
+          0.0414495300501585,
+          0.04022166691720486
+        ]
+      },
+      "main_cpu": {
+        "mean": 1.9686886656666662,
+        "minimum": 1.9399848510000002,
+        "maximum": 2.007952756,
+        "per_seed": [
+          2.007952756,
+          1.9399848510000002,
+          1.9581283899999988
+        ]
+      },
+      "lifecycle_cpu": {
+        "mean": 7.376080925333333,
+        "minimum": 7.2838619079999996,
+        "maximum": 7.521335941999999,
+        "per_seed": [
+          7.521335941999999,
+          7.2838619079999996,
+          7.323044925999999
+        ]
+      },
+      "composition_2": {
+        "mean": 1.0,
+        "minimum": 1.0,
+        "maximum": 1.0,
+        "per_seed": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "composition_4": {
+        "mean": 1.0,
+        "minimum": 1.0,
+        "maximum": 1.0,
+        "per_seed": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "backward_reduction": {
+        "mean": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0,
+        "per_seed": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "main_cpu_ratio": {
+        "mean": 2.090647813537027,
+        "minimum": 2.063828886525728,
+        "maximum": 2.1106216165199743,
+        "per_seed": [
+          2.1106216165199743,
+          2.063828886525728,
+          2.09749293756538
+        ]
+      },
+      "lifecycle_cpu_ratio": {
+        "mean": 3.4452810728872447,
+        "minimum": 3.4335853561741545,
+        "maximum": 3.455348419445685,
+        "per_seed": [
+          3.4335853561741545,
+          3.455348419445685,
+          3.446909443041895
+        ]
+      },
+      "total_counts": {
+        "backward": 3000,
+        "proposed": 3000,
+        "eligible": 0,
+        "applied": 0,
+        "skipped": 0,
+        "audits": 0,
+        "audit_failures": 0
+      }
+    },
+    "confidence_only": {
+      "old_retention": {
+        "mean": 0.96875,
+        "minimum": 0.96875,
+        "maximum": 0.96875,
+        "per_seed": [
+          0.96875,
+          0.96875,
+          0.96875
+        ]
+      },
+      "new_atomic": {
+        "mean": 0.59375,
+        "minimum": 0.46875,
+        "maximum": 0.65625,
+        "per_seed": [
+          0.65625,
+          0.46875,
+          0.65625
+        ]
+      },
+      "old_ce": {
+        "mean": 0.41189661373694736,
+        "minimum": 0.31139613687992096,
+        "maximum": 0.5200694799423218,
+        "per_seed": [
+          0.5200694799423218,
+          0.4042242243885994,
+          0.31139613687992096
+        ]
+      },
+      "new_ce": {
+        "mean": 0.900071861843268,
+        "minimum": 0.8148748278617859,
+        "maximum": 1.0054296627640724,
+        "per_seed": [
+          0.8799110949039459,
+          1.0054296627640724,
+          0.8148748278617859
+        ]
+      },
+      "main_cpu": {
+        "mean": 1.5368240623333342,
+        "minimum": 1.4679778810000013,
+        "maximum": 1.594475182,
+        "per_seed": [
+          1.4679778810000013,
+          1.5480191240000014,
+          1.594475182
+        ]
+      },
+      "lifecycle_cpu": {
+        "mean": 6.944216322000001,
+        "minimum": 6.891896181000001,
+        "maximum": 6.981361067000001,
+        "per_seed": [
+          6.981361067000001,
+          6.891896181000001,
+          6.959391718
+        ]
+      },
+      "composition_2": {
+        "mean": 0.6204427083333334,
+        "minimum": 0.533203125,
+        "maximum": 0.666015625,
+        "per_seed": [
+          0.666015625,
+          0.533203125,
+          0.662109375
+        ]
+      },
+      "composition_4": {
+        "mean": 0.4099934895833333,
+        "minimum": 0.31494140625,
+        "maximum": 0.46044921875,
+        "per_seed": [
+          0.46044921875,
+          0.31494140625,
+          0.45458984375
+        ]
+      },
+      "backward_reduction": {
+        "mean": 0.9103333333333333,
+        "minimum": 0.903,
+        "maximum": 0.919,
+        "per_seed": [
+          0.919,
+          0.909,
+          0.903
+        ]
+      },
+      "main_cpu_ratio": {
+        "mean": 1.6326119689881864,
+        "minimum": 1.5430372248318922,
+        "maximum": 1.7079576857410643,
+        "per_seed": [
+          1.5430372248318922,
+          1.6468409963916029,
+          1.7079576857410643
+        ]
+      },
+      "lifecycle_cpu_ratio": {
+        "mean": 3.2440754415471416,
+        "minimum": 3.1870799696578125,
+        "maximum": 3.275740251904302,
+        "per_seed": [
+          3.1870799696578125,
+          3.26940610307931,
+          3.275740251904302
+        ]
+      },
+      "total_counts": {
+        "backward": 269,
+        "proposed": 3000,
+        "eligible": 3000,
+        "applied": 2831,
+        "skipped": 0,
+        "audits": 269,
+        "audit_failures": 169
+      }
+    },
+    "always_hyper": {
+      "old_retention": {
+        "mean": 0.4270833333333333,
+        "minimum": 0.375,
+        "maximum": 0.53125,
+        "per_seed": [
+          0.375,
+          0.53125,
+          0.375
+        ]
+      },
+      "new_atomic": {
+        "mean": 0.4583333333333333,
+        "minimum": 0.4375,
+        "maximum": 0.5,
+        "per_seed": [
+          0.5,
+          0.4375,
+          0.4375
+        ]
+      },
+      "old_ce": {
+        "mean": 1.3308802942434947,
+        "minimum": 0.9853039085865021,
+        "maximum": 1.5383482575416565,
+        "per_seed": [
+          1.5383482575416565,
+          0.9853039085865021,
+          1.4689887166023254
+        ]
+      },
+      "new_ce": {
+        "mean": 1.5075217261910439,
+        "minimum": 1.3946215584874153,
+        "maximum": 1.5893449559807777,
+        "per_seed": [
+          1.3946215584874153,
+          1.5893449559807777,
+          1.5385986641049385
+        ]
+      },
+      "main_cpu": {
+        "mean": 1.659682083000001,
+        "minimum": 1.6079258170000017,
+        "maximum": 1.711994316000002,
+        "per_seed": [
+          1.6079258170000017,
+          1.711994316000002,
+          1.6591261159999995
+        ]
+      },
+      "lifecycle_cpu": {
+        "mean": 7.067074342666667,
+        "minimum": 7.024042651999999,
+        "maximum": 7.121309003000001,
+        "per_seed": [
+          7.121309003000001,
+          7.055871373000001,
+          7.024042651999999
+        ]
+      },
+      "composition_2": {
+        "mean": 0.2421875,
+        "minimum": 0.201171875,
+        "maximum": 0.283203125,
+        "per_seed": [
+          0.2421875,
+          0.283203125,
+          0.201171875
+        ]
+      },
+      "composition_4": {
+        "mean": 0.140625,
+        "minimum": 0.125,
+        "maximum": 0.14990234375,
+        "per_seed": [
+          0.14990234375,
+          0.14697265625,
+          0.125
+        ]
+      },
+      "backward_reduction": {
+        "mean": 0.9103333333333333,
+        "minimum": 0.903,
+        "maximum": 0.919,
+        "per_seed": [
+          0.919,
+          0.909,
+          0.903
+        ]
+      },
+      "main_cpu_ratio": {
+        "mean": 1.7628782692173803,
+        "minimum": 1.6901408546490444,
+        "maximum": 1.8212839760616557,
+        "per_seed": [
+          1.6901408546490444,
+          1.8212839760616557,
+          1.777209976941441
+        ]
+      },
+      "lifecycle_cpu_ratio": {
+        "mean": 3.3014441113554374,
+        "minimum": 3.2509679793653836,
+        "maximum": 3.347193330193433,
+        "per_seed": [
+          3.2509679793653836,
+          3.347193330193433,
+          3.3061710245074956
+        ]
+      },
+      "total_counts": {
+        "backward": 269,
+        "proposed": 3000,
+        "eligible": 3000,
+        "applied": 3000,
+        "skipped": 0,
+        "audits": 269,
+        "audit_failures": 228
+      }
+    }
+  },
+  "rows": [
+    {
+      "seed": 101721,
+      "arm": "backprop",
+      "atomic_per_operator": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "atomic_mean": 1.0,
+      "old_retention": 1.0,
+      "new_atomic": 1.0,
+      "old_ce": 0.029830136336386204,
+      "new_ce": 0.039711435325443745,
+      "composition": {
+        "2": 1.0,
+        "4": 1.0
+      },
+      "confirmation_input_sha256": "0753b96938d88a9389900c1896b41c39ab33694bd22d642c1d181cd1e54ecdf0",
+      "main_cpu": 0.9513561029999984,
+      "main_wall": 0.9497154599994246,
+      "lifecycle_cpu": 2.190519576999999,
+      "counts": {
+        "backward": 1000,
+        "proposed": 0,
+        "eligible": 0,
+        "applied": 0,
+        "skipped": 0,
+        "audits": 0,
+        "audit_failures": 0
+      },
+      "training_examples": 64000,
+      "data_sha256": "5c6a4e816e3e5ef174c990376f6348633b027276523cd8acac9034686dbad05c",
+      "checkpoint_sha256": "02b459bf7f579ec8008a5e78621bfb288aabea216aecd48c4f06d4dd97608715",
+      "controller_frozen_after_warmup": true
+    },
+    {
+      "seed": 101721,
+      "arm": "hybrid",
+      "atomic_per_operator": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "atomic_mean": 1.0,
+      "old_retention": 1.0,
+      "new_atomic": 1.0,
+      "old_ce": 0.029830136336386204,
+      "new_ce": 0.039711435325443745,
+      "composition": {
+        "2": 1.0,
+        "4": 1.0
+      },
+      "confirmation_input_sha256": "0753b96938d88a9389900c1896b41c39ab33694bd22d642c1d181cd1e54ecdf0",
+      "main_cpu": 1.9919488550000004,
+      "main_wall": 1.9913262340014626,
+      "lifecycle_cpu": 7.505332041,
+      "counts": {
+        "backward": 1000,
+        "proposed": 1000,
+        "eligible": 0,
+        "applied": 0,
+        "skipped": 0,
+        "audits": 0,
+        "audit_failures": 0
+      },
+      "training_examples": 64000,
+      "data_sha256": "5c6a4e816e3e5ef174c990376f6348633b027276523cd8acac9034686dbad05c",
+      "checkpoint_sha256": "02a93c754e35d467148d0aab03b8f6e09fd0365d7d3f2acc12e1f08c0dc075b5",
+      "controller_frozen_after_warmup": true
+    },
+    {
+      "seed": 101721,
+      "arm": "gated_skip",
+      "atomic_per_operator": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "atomic_mean": 1.0,
+      "old_retention": 1.0,
+      "new_atomic": 1.0,
+      "old_ce": 0.029830136336386204,
+      "new_ce": 0.039711435325443745,
+      "composition": {
+        "2": 1.0,
+        "4": 1.0
+      },
+      "confirmation_input_sha256": "0753b96938d88a9389900c1896b41c39ab33694bd22d642c1d181cd1e54ecdf0",
+      "main_cpu": 2.007952756,
+      "main_wall": 2.0047997789988585,
+      "lifecycle_cpu": 7.521335941999999,
+      "counts": {
+        "backward": 1000,
+        "proposed": 1000,
+        "eligible": 0,
+        "applied": 0,
+        "skipped": 0,
+        "audits": 0,
+        "audit_failures": 0
+      },
+      "training_examples": 64000,
+      "data_sha256": "5c6a4e816e3e5ef174c990376f6348633b027276523cd8acac9034686dbad05c",
+      "checkpoint_sha256": "c3e3b7c99bd8c302fc79132d06800f12261b220f39e12e190424b8400e625eb8",
+      "controller_frozen_after_warmup": true
+    },
+    {
+      "seed": 101721,
+      "arm": "confidence_only",
+      "atomic_per_operator": [
+        1.0,
+        0.875,
+        1.0,
+        1.0,
+        0.375,
+        0.625,
+        0.625,
+        1.0
+      ],
+      "atomic_mean": 0.8125,
+      "old_retention": 0.96875,
+      "new_atomic": 0.65625,
+      "old_ce": 0.5200694799423218,
+      "new_ce": 0.8799110949039459,
+      "composition": {
+        "2": 0.666015625,
+        "4": 0.46044921875
+      },
+      "confirmation_input_sha256": "0753b96938d88a9389900c1896b41c39ab33694bd22d642c1d181cd1e54ecdf0",
+      "main_cpu": 1.4679778810000013,
+      "main_wall": 1.4676433960012218,
+      "lifecycle_cpu": 6.981361067000001,
+      "counts": {
+        "backward": 81,
+        "proposed": 1000,
+        "eligible": 1000,
+        "applied": 937,
+        "skipped": 0,
+        "audits": 81,
+        "audit_failures": 63
+      },
+      "training_examples": 64000,
+      "data_sha256": "5c6a4e816e3e5ef174c990376f6348633b027276523cd8acac9034686dbad05c",
+      "checkpoint_sha256": "5447b4e627667a4bf20ec95bc25d3c54b405f3fd9a5bda1af7602dd16a5248f3",
+      "controller_frozen_after_warmup": true
+    },
+    {
+      "seed": 101721,
+      "arm": "always_hyper",
+      "atomic_per_operator": [
+        0.25,
+        0.5,
+        0.5,
+        0.25,
+        0.25,
+        0.5,
+        0.25,
+        1.0
+      ],
+      "atomic_mean": 0.4375,
+      "old_retention": 0.375,
+      "new_atomic": 0.5,
+      "old_ce": 1.5383482575416565,
+      "new_ce": 1.3946215584874153,
+      "composition": {
+        "2": 0.2421875,
+        "4": 0.14990234375
+      },
+      "confirmation_input_sha256": "0753b96938d88a9389900c1896b41c39ab33694bd22d642c1d181cd1e54ecdf0",
+      "main_cpu": 1.6079258170000017,
+      "main_wall": 1.6096407490003912,
+      "lifecycle_cpu": 7.121309003000001,
+      "counts": {
+        "backward": 81,
+        "proposed": 1000,
+        "eligible": 1000,
+        "applied": 1000,
+        "skipped": 0,
+        "audits": 81,
+        "audit_failures": 74
+      },
+      "training_examples": 64000,
+      "data_sha256": "5c6a4e816e3e5ef174c990376f6348633b027276523cd8acac9034686dbad05c",
+      "checkpoint_sha256": "9474f10b19c6d3053a6516696ca3b5f3ac1929a1f72af32bca36266e7afa74d7",
+      "controller_frozen_after_warmup": true
+    },
+    {
+      "seed": 101722,
+      "arm": "backprop",
+      "atomic_per_operator": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "atomic_mean": 1.0,
+      "old_retention": 1.0,
+      "new_atomic": 1.0,
+      "old_ce": 0.02497010724619031,
+      "new_ce": 0.0414495300501585,
+      "composition": {
+        "2": 1.0,
+        "4": 1.0
+      },
+      "confirmation_input_sha256": "036f743047926122f8fed4bc93c725f645cf20b856e8599cb948db1097ee44dc",
+      "main_cpu": 0.9399930699999999,
+      "main_wall": 0.939413930002047,
+      "lifecycle_cpu": 2.107996365,
+      "counts": {
+        "backward": 1000,
+        "proposed": 0,
+        "eligible": 0,
+        "applied": 0,
+        "skipped": 0,
+        "audits": 0,
+        "audit_failures": 0
+      },
+      "training_examples": 64000,
+      "data_sha256": "b846f54fd4532659aab3ddfd652ed2d5fcda7d6dd80f6ddb3c32427efef5c86b",
+      "checkpoint_sha256": "d608738d1e88d7b14ebac57ac75c31d1c692fd9b0ee01b62cde04ce6a47d87fa",
+      "controller_frozen_after_warmup": true
+    },
+    {
+      "seed": 101722,
+      "arm": "hybrid",
+      "atomic_per_operator": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "atomic_mean": 1.0,
+      "old_retention": 1.0,
+      "new_atomic": 1.0,
+      "old_ce": 0.02497010724619031,
+      "new_ce": 0.0414495300501585,
+      "composition": {
+        "2": 1.0,
+        "4": 1.0
+      },
+      "confirmation_input_sha256": "036f743047926122f8fed4bc93c725f645cf20b856e8599cb948db1097ee44dc",
+      "main_cpu": 1.8839863789999995,
+      "main_wall": 1.8842469480005093,
+      "lifecycle_cpu": 7.227863435999999,
+      "counts": {
+        "backward": 1000,
+        "proposed": 1000,
+        "eligible": 0,
+        "applied": 0,
+        "skipped": 0,
+        "audits": 0,
+        "audit_failures": 0
+      },
+      "training_examples": 64000,
+      "data_sha256": "b846f54fd4532659aab3ddfd652ed2d5fcda7d6dd80f6ddb3c32427efef5c86b",
+      "checkpoint_sha256": "054b15e35c13e2347453a039ff082ad70b8012f08be06d60a212e267ac7fc428",
+      "controller_frozen_after_warmup": true
+    },
+    {
+      "seed": 101722,
+      "arm": "gated_skip",
+      "atomic_per_operator": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "atomic_mean": 1.0,
+      "old_retention": 1.0,
+      "new_atomic": 1.0,
+      "old_ce": 0.02497010724619031,
+      "new_ce": 0.0414495300501585,
+      "composition": {
+        "2": 1.0,
+        "4": 1.0
+      },
+      "confirmation_input_sha256": "036f743047926122f8fed4bc93c725f645cf20b856e8599cb948db1097ee44dc",
+      "main_cpu": 1.9399848510000002,
+      "main_wall": 1.9403286179986026,
+      "lifecycle_cpu": 7.2838619079999996,
+      "counts": {
+        "backward": 1000,
+        "proposed": 1000,
+        "eligible": 0,
+        "applied": 0,
+        "skipped": 0,
+        "audits": 0,
+        "audit_failures": 0
+      },
+      "training_examples": 64000,
+      "data_sha256": "b846f54fd4532659aab3ddfd652ed2d5fcda7d6dd80f6ddb3c32427efef5c86b",
+      "checkpoint_sha256": "86f4f500b1ed3fdd8c736c34c8081a50d23c6ce539300642414c09e2fd07cbd7",
+      "controller_frozen_after_warmup": true
+    },
+    {
+      "seed": 101722,
+      "arm": "confidence_only",
+      "atomic_per_operator": [
+        1.0,
+        1.0,
+        1.0,
+        0.875,
+        0.375,
+        0.25,
+        0.25,
+        1.0
+      ],
+      "atomic_mean": 0.71875,
+      "old_retention": 0.96875,
+      "new_atomic": 0.46875,
+      "old_ce": 0.4042242243885994,
+      "new_ce": 1.0054296627640724,
+      "composition": {
+        "2": 0.533203125,
+        "4": 0.31494140625
+      },
+      "confirmation_input_sha256": "036f743047926122f8fed4bc93c725f645cf20b856e8599cb948db1097ee44dc",
+      "main_cpu": 1.5480191240000014,
+      "main_wall": 1.5471345319965621,
+      "lifecycle_cpu": 6.891896181000001,
+      "counts": {
+        "backward": 91,
+        "proposed": 1000,
+        "eligible": 1000,
+        "applied": 954,
+        "skipped": 0,
+        "audits": 91,
+        "audit_failures": 46
+      },
+      "training_examples": 64000,
+      "data_sha256": "b846f54fd4532659aab3ddfd652ed2d5fcda7d6dd80f6ddb3c32427efef5c86b",
+      "checkpoint_sha256": "e20d06f5d9a152f93f7cb1ad0ba7292049e55de429dd9a07d69ece95c46ad31f",
+      "controller_frozen_after_warmup": true
+    },
+    {
+      "seed": 101722,
+      "arm": "always_hyper",
+      "atomic_per_operator": [
+        0.875,
+        0.375,
+        0.5,
+        0.375,
+        0.375,
+        0.25,
+        0.125,
+        1.0
+      ],
+      "atomic_mean": 0.484375,
+      "old_retention": 0.53125,
+      "new_atomic": 0.4375,
+      "old_ce": 0.9853039085865021,
+      "new_ce": 1.5893449559807777,
+      "composition": {
+        "2": 0.283203125,
+        "4": 0.14697265625
+      },
+      "confirmation_input_sha256": "036f743047926122f8fed4bc93c725f645cf20b856e8599cb948db1097ee44dc",
+      "main_cpu": 1.711994316000002,
+      "main_wall": 1.712830077001854,
+      "lifecycle_cpu": 7.055871373000001,
+      "counts": {
+        "backward": 91,
+        "proposed": 1000,
+        "eligible": 1000,
+        "applied": 1000,
+        "skipped": 0,
+        "audits": 91,
+        "audit_failures": 63
+      },
+      "training_examples": 64000,
+      "data_sha256": "b846f54fd4532659aab3ddfd652ed2d5fcda7d6dd80f6ddb3c32427efef5c86b",
+      "checkpoint_sha256": "db215e5999e3c568fd6aa1cc7bb0bf63a9da0c1cb8af3cdb1cae3de68b7e5798",
+      "controller_frozen_after_warmup": true
+    },
+    {
+      "seed": 101723,
+      "arm": "backprop",
+      "atomic_per_operator": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "atomic_mean": 1.0,
+      "old_retention": 1.0,
+      "new_atomic": 1.0,
+      "old_ce": 0.012887862045317888,
+      "new_ce": 0.04022166691720486,
+      "composition": {
+        "2": 1.0,
+        "4": 1.0
+      },
+      "confirmation_input_sha256": "0d3a9601d5191b57d903b96533f4b401a908a003a373f2c54815cd2a4d897de8",
+      "main_cpu": 0.9335566069999999,
+      "main_wall": 0.9375759859976824,
+      "lifecycle_cpu": 2.1245248959999996,
+      "counts": {
+        "backward": 1000,
+        "proposed": 0,
+        "eligible": 0,
+        "applied": 0,
+        "skipped": 0,
+        "audits": 0,
+        "audit_failures": 0
+      },
+      "training_examples": 64000,
+      "data_sha256": "c76f8f06db453a2f400e2c71f67237837cc9269c75e23ad6a5844fc494c8db80",
+      "checkpoint_sha256": "2370e2f4230e48c3a3835de1a0477b94add7dbf93eaf48681157d1837cfaa208",
+      "controller_frozen_after_warmup": true
+    },
+    {
+      "seed": 101723,
+      "arm": "hybrid",
+      "atomic_per_operator": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "atomic_mean": 1.0,
+      "old_retention": 1.0,
+      "new_atomic": 1.0,
+      "old_ce": 0.012887862045317888,
+      "new_ce": 0.04022166691720486,
+      "composition": {
+        "2": 1.0,
+        "4": 1.0
+      },
+      "confirmation_input_sha256": "0d3a9601d5191b57d903b96533f4b401a908a003a373f2c54815cd2a4d897de8",
+      "main_cpu": 2.069831057,
+      "main_wall": 2.073069255999144,
+      "lifecycle_cpu": 7.434747593,
+      "counts": {
+        "backward": 1000,
+        "proposed": 1000,
+        "eligible": 0,
+        "applied": 0,
+        "skipped": 0,
+        "audits": 0,
+        "audit_failures": 0
+      },
+      "training_examples": 64000,
+      "data_sha256": "c76f8f06db453a2f400e2c71f67237837cc9269c75e23ad6a5844fc494c8db80",
+      "checkpoint_sha256": "7d4e0f1fb3053c1f996d98ff5e680efbdd43b86a3819d539890ba5c63e4db14b",
+      "controller_frozen_after_warmup": true
+    },
+    {
+      "seed": 101723,
+      "arm": "gated_skip",
+      "atomic_per_operator": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "atomic_mean": 1.0,
+      "old_retention": 1.0,
+      "new_atomic": 1.0,
+      "old_ce": 0.012887862045317888,
+      "new_ce": 0.04022166691720486,
+      "composition": {
+        "2": 1.0,
+        "4": 1.0
+      },
+      "confirmation_input_sha256": "0d3a9601d5191b57d903b96533f4b401a908a003a373f2c54815cd2a4d897de8",
+      "main_cpu": 1.9581283899999988,
+      "main_wall": 1.9573069060024864,
+      "lifecycle_cpu": 7.323044925999999,
+      "counts": {
+        "backward": 1000,
+        "proposed": 1000,
+        "eligible": 0,
+        "applied": 0,
+        "skipped": 0,
+        "audits": 0,
+        "audit_failures": 0
+      },
+      "training_examples": 64000,
+      "data_sha256": "c76f8f06db453a2f400e2c71f67237837cc9269c75e23ad6a5844fc494c8db80",
+      "checkpoint_sha256": "a05918033cd7db5f0b09b896f204e2a8f07e61445b87774875f559103a44ce7a",
+      "controller_frozen_after_warmup": true
+    },
+    {
+      "seed": 101723,
+      "arm": "confidence_only",
+      "atomic_per_operator": [
+        1.0,
+        0.875,
+        1.0,
+        1.0,
+        0.5,
+        0.5,
+        0.625,
+        1.0
+      ],
+      "atomic_mean": 0.8125,
+      "old_retention": 0.96875,
+      "new_atomic": 0.65625,
+      "old_ce": 0.31139613687992096,
+      "new_ce": 0.8148748278617859,
+      "composition": {
+        "2": 0.662109375,
+        "4": 0.45458984375
+      },
+      "confirmation_input_sha256": "0d3a9601d5191b57d903b96533f4b401a908a003a373f2c54815cd2a4d897de8",
+      "main_cpu": 1.594475182,
+      "main_wall": 1.5959476889984217,
+      "lifecycle_cpu": 6.959391718,
+      "counts": {
+        "backward": 97,
+        "proposed": 1000,
+        "eligible": 1000,
+        "applied": 940,
+        "skipped": 0,
+        "audits": 97,
+        "audit_failures": 60
+      },
+      "training_examples": 64000,
+      "data_sha256": "c76f8f06db453a2f400e2c71f67237837cc9269c75e23ad6a5844fc494c8db80",
+      "checkpoint_sha256": "866b7c7180a9e420628a9d3952a21be8fd0ffbf110b982151fd29c35ed790ad8",
+      "controller_frozen_after_warmup": true
+    },
+    {
+      "seed": 101723,
+      "arm": "always_hyper",
+      "atomic_per_operator": [
+        0.25,
+        0.5,
+        0.375,
+        0.375,
+        0.25,
+        0.0,
+        0.5,
+        1.0
+      ],
+      "atomic_mean": 0.40625,
+      "old_retention": 0.375,
+      "new_atomic": 0.4375,
+      "old_ce": 1.4689887166023254,
+      "new_ce": 1.5385986641049385,
+      "composition": {
+        "2": 0.201171875,
+        "4": 0.125
+      },
+      "confirmation_input_sha256": "0d3a9601d5191b57d903b96533f4b401a908a003a373f2c54815cd2a4d897de8",
+      "main_cpu": 1.6591261159999995,
+      "main_wall": 1.6613181329994404,
+      "lifecycle_cpu": 7.024042651999999,
+      "counts": {
+        "backward": 97,
+        "proposed": 1000,
+        "eligible": 1000,
+        "applied": 1000,
+        "skipped": 0,
+        "audits": 97,
+        "audit_failures": 91
+      },
+      "training_examples": 64000,
+      "data_sha256": "c76f8f06db453a2f400e2c71f67237837cc9269c75e23ad6a5844fc494c8db80",
+      "checkpoint_sha256": "b048b264401405e1ee5685434d939f12d01177c1c4f17016487e3391de6133ba",
+      "controller_frozen_after_warmup": true
+    }
+  ],
+  "calibration": [
+    {
+      "seed": 101721,
+      "threshold": 0.5,
+      "loss_limit": 0.009027664549648762,
+      "calibration_count": 256,
+      "calibration_safe": 256,
+      "calibration_confidence": 0.9962916974909604,
+      "calibration_relative_update_error": 1.1532861581072211,
+      "audited_count": 81,
+      "audited_safe": 18,
+      "audited_confidence": 0.9966005513697495
+    },
+    {
+      "seed": 101722,
+      "threshold": 0.5,
+      "loss_limit": 0.008682253770530224,
+      "calibration_count": 256,
+      "calibration_safe": 256,
+      "calibration_confidence": 0.9966261587105691,
+      "calibration_relative_update_error": 1.0248713658656925,
+      "audited_count": 91,
+      "audited_safe": 45,
+      "audited_confidence": 0.996732771396637
+    },
+    {
+      "seed": 101723,
+      "threshold": 0.5,
+      "loss_limit": 0.008622642606496811,
+      "calibration_count": 256,
+      "calibration_safe": 256,
+      "calibration_confidence": 0.9967118373606354,
+      "calibration_relative_update_error": 1.2321415380574763,
+      "audited_count": 97,
+      "audited_safe": 37,
+      "audited_confidence": 0.9970191667989358
+    }
+  ],
+  "confidence_shift": {
+    "mean_audited_confidence": 0.9967962306228269,
+    "audited_pass_fraction": 0.37174721189591076,
+    "audited_pass_count": 100,
+    "audited_count": 269
+  },
+  "registered_criteria": {
+    "composition_noninferiority": true,
+    "retention_noninferiority": true,
+    "backward_reduction": false,
+    "main_cpu_reduction": false,
+    "added_value_over_skip": false
+  },
+  "exact_checkpoint_replays": true,
+  "main_worker_total_cpu_seconds": 46.525805411,
+  "notes": [
+    "Pilot excluded from main aggregation.",
+    "Ratios are means of paired per-seed ratios.",
+    "Controller frozen after warmup; accepted main updates do not use autograd.",
+    "Composition order is supplied by a fixed external executor.",
+    "No confidence intervals or significance claims from three seeds."
+  ]
+}

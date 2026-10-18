@@ -1,0 +1,25 @@
+{
+  "all_primary_replays_exact": true,
+  "authorization": "User 2026-10-17: Ok, perfect, go ahead and run with that. Approves preceding proposed bounded curve-parameter retention study.",
+  "cleanup": {
+    "external_resources_created": 0,
+    "training_or_analysis_processes_left_running": 0
+  },
+  "main_runs": 15,
+  "main_steps_per_run": 3000,
+  "pilot_runs": 5,
+  "primary": {
+    "gate_passed": false,
+    "max_difference": -0.060546875,
+    "mean_difference": -0.07877604166666667,
+    "min_difference": -0.1015625,
+    "paired_seed_differences": [
+      -0.060546875,
+      -0.07421875,
+      -0.1015625
+    ],
+    "short_reopened_accuracy_gap": 0.125
+  },
+  "status": "COMPLETE_NO_PROMOTION",
+  "utc": "2026-10-17T22:33:28Z"
+}

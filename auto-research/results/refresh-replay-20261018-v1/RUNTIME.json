@@ -1,0 +1,19 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "packages": {
+    "torch": "2.14.1+cpu",
+    "numpy": "2.3.5",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "filelock": "3.20.0",
+    "typing_extensions": "4.16.0",
+    "setuptools": "84.0.0",
+    "networkx": "3.5",
+    "jinja2": "3.1.6",
+    "fsspec": "2025.9.0",
+    "MarkupSafe": "3.0.4"
+  },
+  "deterministic_import_passed": true,
+  "runtime_import_canary_cpu_seconds": 1.763345,
+  "scope": "Dependency/import check only, before experiment verification/data/training; charged to total budget."
+}

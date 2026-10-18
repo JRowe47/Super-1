@@ -1,0 +1,365 @@
+{
+  "rows": [
+    {
+      "seed": 101721,
+      "arm": "backprop",
+      "atomic_per_operator": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "atomic_mean": 1.0,
+      "old_retention": 1.0,
+      "new_atomic": 1.0,
+      "old_ce": 0.029830136336386204,
+      "new_ce": 0.039711435325443745,
+      "composition": {
+        "2": 1.0,
+        "4": 1.0
+      },
+      "confirmation_input_sha256": "0753b96938d88a9389900c1896b41c39ab33694bd22d642c1d181cd1e54ecdf0"
+    },
+    {
+      "seed": 101721,
+      "arm": "hybrid",
+      "atomic_per_operator": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "atomic_mean": 1.0,
+      "old_retention": 1.0,
+      "new_atomic": 1.0,
+      "old_ce": 0.029830136336386204,
+      "new_ce": 0.039711435325443745,
+      "composition": {
+        "2": 1.0,
+        "4": 1.0
+      },
+      "confirmation_input_sha256": "0753b96938d88a9389900c1896b41c39ab33694bd22d642c1d181cd1e54ecdf0"
+    },
+    {
+      "seed": 101721,
+      "arm": "gated_skip",
+      "atomic_per_operator": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "atomic_mean": 1.0,
+      "old_retention": 1.0,
+      "new_atomic": 1.0,
+      "old_ce": 0.029830136336386204,
+      "new_ce": 0.039711435325443745,
+      "composition": {
+        "2": 1.0,
+        "4": 1.0
+      },
+      "confirmation_input_sha256": "0753b96938d88a9389900c1896b41c39ab33694bd22d642c1d181cd1e54ecdf0"
+    },
+    {
+      "seed": 101721,
+      "arm": "confidence_only",
+      "atomic_per_operator": [
+        1.0,
+        0.875,
+        1.0,
+        1.0,
+        0.375,
+        0.625,
+        0.625,
+        1.0
+      ],
+      "atomic_mean": 0.8125,
+      "old_retention": 0.96875,
+      "new_atomic": 0.65625,
+      "old_ce": 0.5200694799423218,
+      "new_ce": 0.8799110949039459,
+      "composition": {
+        "2": 0.666015625,
+        "4": 0.46044921875
+      },
+      "confirmation_input_sha256": "0753b96938d88a9389900c1896b41c39ab33694bd22d642c1d181cd1e54ecdf0"
+    },
+    {
+      "seed": 101721,
+      "arm": "always_hyper",
+      "atomic_per_operator": [
+        0.25,
+        0.5,
+        0.5,
+        0.25,
+        0.25,
+        0.5,
+        0.25,
+        1.0
+      ],
+      "atomic_mean": 0.4375,
+      "old_retention": 0.375,
+      "new_atomic": 0.5,
+      "old_ce": 1.5383482575416565,
+      "new_ce": 1.3946215584874153,
+      "composition": {
+        "2": 0.2421875,
+        "4": 0.14990234375
+      },
+      "confirmation_input_sha256": "0753b96938d88a9389900c1896b41c39ab33694bd22d642c1d181cd1e54ecdf0"
+    },
+    {
+      "seed": 101722,
+      "arm": "backprop",
+      "atomic_per_operator": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "atomic_mean": 1.0,
+      "old_retention": 1.0,
+      "new_atomic": 1.0,
+      "old_ce": 0.02497010724619031,
+      "new_ce": 0.0414495300501585,
+      "composition": {
+        "2": 1.0,
+        "4": 1.0
+      },
+      "confirmation_input_sha256": "036f743047926122f8fed4bc93c725f645cf20b856e8599cb948db1097ee44dc"
+    },
+    {
+      "seed": 101722,
+      "arm": "hybrid",
+      "atomic_per_operator": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "atomic_mean": 1.0,
+      "old_retention": 1.0,
+      "new_atomic": 1.0,
+      "old_ce": 0.02497010724619031,
+      "new_ce": 0.0414495300501585,
+      "composition": {
+        "2": 1.0,
+        "4": 1.0
+      },
+      "confirmation_input_sha256": "036f743047926122f8fed4bc93c725f645cf20b856e8599cb948db1097ee44dc"
+    },
+    {
+      "seed": 101722,
+      "arm": "gated_skip",
+      "atomic_per_operator": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "atomic_mean": 1.0,
+      "old_retention": 1.0,
+      "new_atomic": 1.0,
+      "old_ce": 0.02497010724619031,
+      "new_ce": 0.0414495300501585,
+      "composition": {
+        "2": 1.0,
+        "4": 1.0
+      },
+      "confirmation_input_sha256": "036f743047926122f8fed4bc93c725f645cf20b856e8599cb948db1097ee44dc"
+    },
+    {
+      "seed": 101722,
+      "arm": "confidence_only",
+      "atomic_per_operator": [
+        1.0,
+        1.0,
+        1.0,
+        0.875,
+        0.375,
+        0.25,
+        0.25,
+        1.0
+      ],
+      "atomic_mean": 0.71875,
+      "old_retention": 0.96875,
+      "new_atomic": 0.46875,
+      "old_ce": 0.4042242243885994,
+      "new_ce": 1.0054296627640724,
+      "composition": {
+        "2": 0.533203125,
+        "4": 0.31494140625
+      },
+      "confirmation_input_sha256": "036f743047926122f8fed4bc93c725f645cf20b856e8599cb948db1097ee44dc"
+    },
+    {
+      "seed": 101722,
+      "arm": "always_hyper",
+      "atomic_per_operator": [
+        0.875,
+        0.375,
+        0.5,
+        0.375,
+        0.375,
+        0.25,
+        0.125,
+        1.0
+      ],
+      "atomic_mean": 0.484375,
+      "old_retention": 0.53125,
+      "new_atomic": 0.4375,
+      "old_ce": 0.9853039085865021,
+      "new_ce": 1.5893449559807777,
+      "composition": {
+        "2": 0.283203125,
+        "4": 0.14697265625
+      },
+      "confirmation_input_sha256": "036f743047926122f8fed4bc93c725f645cf20b856e8599cb948db1097ee44dc"
+    },
+    {
+      "seed": 101723,
+      "arm": "backprop",
+      "atomic_per_operator": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "atomic_mean": 1.0,
+      "old_retention": 1.0,
+      "new_atomic": 1.0,
+      "old_ce": 0.012887862045317888,
+      "new_ce": 0.04022166691720486,
+      "composition": {
+        "2": 1.0,
+        "4": 1.0
+      },
+      "confirmation_input_sha256": "0d3a9601d5191b57d903b96533f4b401a908a003a373f2c54815cd2a4d897de8"
+    },
+    {
+      "seed": 101723,
+      "arm": "hybrid",
+      "atomic_per_operator": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "atomic_mean": 1.0,
+      "old_retention": 1.0,
+      "new_atomic": 1.0,
+      "old_ce": 0.012887862045317888,
+      "new_ce": 0.04022166691720486,
+      "composition": {
+        "2": 1.0,
+        "4": 1.0
+      },
+      "confirmation_input_sha256": "0d3a9601d5191b57d903b96533f4b401a908a003a373f2c54815cd2a4d897de8"
+    },
+    {
+      "seed": 101723,
+      "arm": "gated_skip",
+      "atomic_per_operator": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "atomic_mean": 1.0,
+      "old_retention": 1.0,
+      "new_atomic": 1.0,
+      "old_ce": 0.012887862045317888,
+      "new_ce": 0.04022166691720486,
+      "composition": {
+        "2": 1.0,
+        "4": 1.0
+      },
+      "confirmation_input_sha256": "0d3a9601d5191b57d903b96533f4b401a908a003a373f2c54815cd2a4d897de8"
+    },
+    {
+      "seed": 101723,
+      "arm": "confidence_only",
+      "atomic_per_operator": [
+        1.0,
+        0.875,
+        1.0,
+        1.0,
+        0.5,
+        0.5,
+        0.625,
+        1.0
+      ],
+      "atomic_mean": 0.8125,
+      "old_retention": 0.96875,
+      "new_atomic": 0.65625,
+      "old_ce": 0.31139613687992096,
+      "new_ce": 0.8148748278617859,
+      "composition": {
+        "2": 0.662109375,
+        "4": 0.45458984375
+      },
+      "confirmation_input_sha256": "0d3a9601d5191b57d903b96533f4b401a908a003a373f2c54815cd2a4d897de8"
+    },
+    {
+      "seed": 101723,
+      "arm": "always_hyper",
+      "atomic_per_operator": [
+        0.25,
+        0.5,
+        0.375,
+        0.375,
+        0.25,
+        0.0,
+        0.5,
+        1.0
+      ],
+      "atomic_mean": 0.40625,
+      "old_retention": 0.375,
+      "new_atomic": 0.4375,
+      "old_ce": 1.4689887166023254,
+      "new_ce": 1.5385986641049385,
+      "composition": {
+        "2": 0.201171875,
+        "4": 0.125
+      },
+      "confirmation_input_sha256": "0d3a9601d5191b57d903b96533f4b401a908a003a373f2c54815cd2a4d897de8"
+    }
+  ],
+  "exact_replays": true
+}

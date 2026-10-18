@@ -1,0 +1,37 @@
+{
+  "status": "FROZEN_BEFORE_EXPLORATORY_SCORING_AFTER_MAIN_RESULTS",
+  "main_observation": "Both minimal cells scored100% passive retention through1024; longer evaluation resolves ceiling risk.",
+  "delays": [
+    4096,
+    16384
+  ],
+  "model_seeds": [
+    101711,
+    101712,
+    101713
+  ],
+  "evaluation_seeds": [
+    991101,
+    991102
+  ],
+  "chunk_size": 256,
+  "episodes_per_model_seed_delay": 256,
+  "no_retraining": true,
+  "no_primary_rule_change": true,
+  "source_sha256": "3c7de188dcc37dd0c968eb3116fda5dcff3455c1ea95a02784b9ccb38f0cf3de",
+  "checkpoints": {
+    "lstm32_s101711": "f9214e5d17cc5d57f97a7421f07f55a89bea86d10e4784b69371792a710173a9",
+    "lstm32_s101712": "dfd214e5281449c0f80a01b04d650012f118e378ffde306ef01b4b4ff2b0fdc6",
+    "lstm32_s101713": "d170066761ff5190db6761eb20af50ca26b7776f49c13e4946e7e1d31afe45a3",
+    "lstm64_s101711": "a6a153ad4eef0cd023e4a8536ff12ff7c396f6a53fe44f514ceaa4a823177b0f",
+    "lstm64_s101712": "870936787b2f62562a49dd3a4f843c0a47250eb38f9a7e80b1a9ea7c96b265c0",
+    "lstm64_s101713": "3b6d940259390991345fe990461d31381d1a7a3a82e688c09fe48cb333235a6c",
+    "mingru64_s101711": "b4c19953bc887437577e6cf5a129554586b4b8667ba7c1a18e6f46e19faca237",
+    "mingru64_s101712": "904c199f3e64b952d0ad0baccc983a7d0e066a00cb9dfe2d9cbfe0cabf100a25",
+    "mingru64_s101713": "d62225f601b8667aaebc1480a9c1d46b5902ac23bb943d3e4cadc97080b8aa1c",
+    "minlstm64_s101711": "0411e67021fc78e5e01ae941ec02ccde59b3310a4b90abeeece6d6816ba697bb",
+    "minlstm64_s101712": "e3718171acff19b24d8f4670131a7714a59f24036da8caf426bc93a3ac7bd848",
+    "minlstm64_s101713": "fc55c82ffb77def2bb5f5d44bb43e34ef4f53e7002e01b6df860e3c497b3b7a1"
+  },
+  "registered_unix": 1792277347.6349783
+}

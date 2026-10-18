@@ -1,0 +1,16 @@
+{
+  "paper": "https://arxiv.org/html/2412.20018v2",
+  "paper_version": "v2 12 October 2026",
+  "formulation": "Algorithm 2; gated interstream; downstream identity",
+  "repository": "https://github.com/liaoq/SAM2026",
+  "file": "run_netv_compare_with_bp.py",
+  "git_blob_sha": "3f08163f2f045c23871f1f1a1944779617930d2a",
+  "local_sha256": "d92c885f5ebe6452535ecf2a772a4e079b1e99fbcc472eae917d8d5155619a8c",
+  "inspected_functions": [
+    "update_layer_gradients",
+    "update_layer_gradients_combined_norm_nl",
+    "Linear_V",
+    "Net_V"
+  ],
+  "retrieved_utc": "2026-10-18"
+}

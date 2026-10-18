@@ -1,0 +1,82 @@
+{
+  "analysis_seconds": 7.892870568000944,
+  "paired_data_counts_and_hashes_match": true,
+  "protocol_source_hashes_match": true,
+  "replays": [
+    {
+      "arm": "fixed48",
+      "exact": true,
+      "seed": 101701
+    },
+    {
+      "arm": "wide64",
+      "exact": true,
+      "seed": 101701
+    },
+    {
+      "arm": "context64",
+      "exact": true,
+      "seed": 101701
+    },
+    {
+      "arm": "adaptive64",
+      "exact": true,
+      "seed": 101701
+    },
+    {
+      "arm": "gru64",
+      "exact": true,
+      "seed": 101701
+    },
+    {
+      "arm": "fixed48",
+      "exact": true,
+      "seed": 101702
+    },
+    {
+      "arm": "wide64",
+      "exact": true,
+      "seed": 101702
+    },
+    {
+      "arm": "context64",
+      "exact": true,
+      "seed": 101702
+    },
+    {
+      "arm": "adaptive64",
+      "exact": true,
+      "seed": 101702
+    },
+    {
+      "arm": "gru64",
+      "exact": true,
+      "seed": 101702
+    },
+    {
+      "arm": "fixed48",
+      "exact": true,
+      "seed": 101703
+    },
+    {
+      "arm": "wide64",
+      "exact": true,
+      "seed": 101703
+    },
+    {
+      "arm": "context64",
+      "exact": true,
+      "seed": 101703
+    },
+    {
+      "arm": "adaptive64",
+      "exact": true,
+      "seed": 101703
+    },
+    {
+      "arm": "gru64",
+      "exact": true,
+      "seed": 101703
+    }
+  ]
+}

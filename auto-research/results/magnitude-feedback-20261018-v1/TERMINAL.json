@@ -1,0 +1,64 @@
+{
+  "run_id": "magnitude-feedback-20261018-v1",
+  "status": "COMPLETE_NO_PROMOTION_RETENTION_FAILED",
+  "finished_at_utc": "2026-10-18T04:43:52.224867+00:00",
+  "source_commit_before_all_execution": "644d69ed8e797e3e06de0af416fa561a8bd6f148",
+  "runtime_only_amendment_commit_before_pilot_retry": "f93eb05ab64015fcb4b7e16ac7c3c5bdeb17e62e",
+  "pilot_evidence_commit": "13217040402ea885c94e7175de5e1271fcacdb71",
+  "protocol_sha256": "28b8b77f0941208696d3fd2965fccd44359a223974c9b3c860d26c68a9627b1d",
+  "original_frozen_source_unchanged": true,
+  "main_seeds": [
+    701781,
+    701782,
+    701783
+  ],
+  "pilot_seed": 96977,
+  "main_arm_seed_rows": 18,
+  "pilot_arm_seed_rows": 6,
+  "main_updates_per_arm": 2048,
+  "pilot_updates_per_arm": 256,
+  "warmup_updates_per_seed": 4096,
+  "full_bitwise_replays": 24,
+  "matching_layer_step_audits": 25600,
+  "max_matched_drive_relative_norm_error": 2.7293215172816883e-07,
+  "effect_gate": true,
+  "retention_gate": false,
+  "promotion": false,
+  "primary_mean_ce_reduction_percent": 26.44638243390008,
+  "cpu_seconds": {
+    "successful_execution_stages_and_launchers": 222.23788599999997,
+    "failed_pilot_import_and_launcher": 1.344787,
+    "runtime_import_canary": 2.489906,
+    "frozen_analysis": 0.005830242999999999,
+    "charged_experiment_total": 226.07840924299995,
+    "limit": 900,
+    "scope": "Experiment execution/imports/launchers/canary/analysis; dependency download/setup, artifact transfer and source preparation not training."
+  },
+  "all_workers_exited": true,
+  "states_total_bytes": 1910052,
+  "all_four_remote_state_hashes_verified": true,
+  "source_loss_caveat": "Previous bounded-feedback source remains lost; this fresh run is fully preserved and is not claimed byte-identical to it.",
+  "exceptions": [
+    "Initial pilot import failed before worker/data/updates because sympy was absent; preserved receipt and preregistered runtime-only repair. No numerical failure or threshold change."
+  ],
+  "cleanup": [
+    {
+      "relative_path": "verify-checkpoints",
+      "file_bytes_removed": 1910052,
+      "reason": "Reproducible temporary runtime/download or redundant remote-readback copy; original source and durable checkpoints preserved."
+    },
+    {
+      "relative_path": "recovery-download",
+      "file_bytes_removed": 41051336,
+      "reason": "Reproducible temporary runtime/download or redundant remote-readback copy; original source and durable checkpoints preserved."
+    },
+    {
+      "relative_path": "research-runtime",
+      "file_bytes_removed": 1007645761,
+      "reason": "Reproducible temporary runtime/download or redundant remote-readback copy; original source and durable checkpoints preserved."
+    }
+  ],
+  "official_test_accessed": false,
+  "new_cloud_resources_created": false,
+  "next_stage": "Fixed-budget replay retention intervention, not implemented or running."
+}

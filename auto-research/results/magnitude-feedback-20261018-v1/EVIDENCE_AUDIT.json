@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "checked_at_utc": "2026-10-18T04:42:06.860221+00:00",
+  "original_registration_source_hashes_unchanged": true,
+  "main_arms_completed": 18,
+  "pilot_arms_completed": 6,
+  "exact_full_replays": 24,
+  "expected_four_phase_hashes_per_arm": true,
+  "state_download_hash_verification": true,
+  "all_workers_exited": true,
+  "temporary_cleanup": [
+    {
+      "relative_path": "verify-checkpoints",
+      "file_bytes_removed": 1910052,
+      "reason": "Reproducible temporary runtime/download or redundant remote-readback copy; original source and durable checkpoints preserved."
+    },
+    {
+      "relative_path": "recovery-download",
+      "file_bytes_removed": 41051336,
+      "reason": "Reproducible temporary runtime/download or redundant remote-readback copy; original source and durable checkpoints preserved."
+    },
+    {
+      "relative_path": "research-runtime",
+      "file_bytes_removed": 1007645761,
+      "reason": "Reproducible temporary runtime/download or redundant remote-readback copy; original source and durable checkpoints preserved."
+    }
+  ],
+  "official_test_accessed": false,
+  "new_cloud_resources_created": false
+}

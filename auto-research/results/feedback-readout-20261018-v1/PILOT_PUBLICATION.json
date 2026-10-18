@@ -1,0 +1,40 @@
+{
+  "run_id": "feedback-readout-20261018-v1",
+  "phase": "VERIFICATION_AND_PILOT_PRESERVED_DURING_MAIN",
+  "commit": "71470554ea17ac257bba8739ad01cd43174d1f9d",
+  "tree": "243c8ec1e87a354859dcdd2e5f690864c507ce2c",
+  "branch_verified_at_commit": true,
+  "readbacks": [
+    {
+      "path": "auto-research/results/feedback-readout-20261018-v1/PUBLICATION.json",
+      "bytes": 7248,
+      "byte_equal": true
+    },
+    {
+      "path": "auto-research/results/feedback-readout-20261018-v1/VERIFICATION.json",
+      "bytes": 23275,
+      "byte_equal": true
+    },
+    {
+      "path": "auto-research/results/feedback-readout-20261018-v1/VERIFY_RECEIPT.json",
+      "bytes": 361,
+      "byte_equal": true
+    },
+    {
+      "path": "auto-research/results/feedback-readout-20261018-v1/PILOT_RECEIPT.json",
+      "bytes": 358,
+      "byte_equal": true
+    },
+    {
+      "path": "auto-research/results/feedback-readout-20261018-v1/pilot/102937/RESULT.json",
+      "bytes": 39958,
+      "byte_equal": true
+    },
+    {
+      "path": "auto-research/MANIFEST.sha256.json",
+      "bytes": 137115,
+      "byte_equal": true
+    }
+  ],
+  "verified_at_utc": "2026-10-18T15:33:27.310Z"
+}

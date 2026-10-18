@@ -1,0 +1,30 @@
+{
+  "arm": "gru64",
+  "checkpoint_sha256": "4e2a3b58ed4288d7ead9d26b0599175621f289fbce8250dfc7471c1e9c2697a1",
+  "completed_steps": 3000,
+  "counts": {
+    "basis_buffer_scalars": 0,
+    "parameters": 22280,
+    "shared_clock_integer": 1,
+    "state_bytes_fp32": 256,
+    "state_scalars": 64
+  },
+  "input_tokens": 2961664,
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "run_wall_seconds": 39.221438317999855,
+  "seed": 101703,
+  "source": {
+    "experiment.py": "c9fa99fccceffba9c1d82b5e05b812f282b55d5a55aab1ca8de32f4113887648",
+    "model.py": "38f8c336e6f68a29aa7c039a1dbd122f6ad326bc948bc819c44f49df257946ae",
+    "tasks.py": "8c8f47c6a1e9c0b9b633c2eeb67f9fa5a5349f8bc87135ae52cd45bb27070e90"
+  },
+  "split": "main",
+  "status": "COMPLETE",
+  "steps": 3000,
+  "targets": 655792,
+  "threads": 1,
+  "torch": "2.14.1+cpu",
+  "training_cpu_seconds": 37.787704080000005,
+  "training_stream_sha256": "c6dfc9c285e7f747c2daeb4be4ebe6b20ee6e94d38486ab65fc79ea5e8c4f64d",
+  "training_wall_seconds": 37.79855703099747
+}

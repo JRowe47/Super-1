@@ -1,0 +1,128 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "dtype": "torch.float32",
+      "length": 1,
+      "reconstruction": 0.0,
+      "norm_relative_error": 0.0,
+      "tolerance": 2e-06
+    },
+    {
+      "dtype": "torch.float32",
+      "length": 2,
+      "reconstruction": 5.960464477539063e-08,
+      "norm_relative_error": 0.0,
+      "tolerance": 2e-06
+    },
+    {
+      "dtype": "torch.float32",
+      "length": 7,
+      "reconstruction": 5.960464477539063e-08,
+      "norm_relative_error": 7.783118726806307e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "dtype": "torch.float32",
+      "length": 16,
+      "reconstruction": 1.4901161193847656e-07,
+      "norm_relative_error": 7.011956437519436e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "dtype": "torch.float32",
+      "length": 31,
+      "reconstruction": 3.5762786865234375e-07,
+      "norm_relative_error": 8.88519264874701e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "dtype": "torch.float32",
+      "length": 264,
+      "reconstruction": 4.76837158203125e-07,
+      "norm_relative_error": 6.048704409856339e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "dtype": "torch.float32",
+      "length": 544,
+      "reconstruction": 7.152557373046875e-07,
+      "norm_relative_error": 8.482400207106283e-08,
+      "tolerance": 2e-06
+    },
+    {
+      "dtype": "torch.float32",
+      "model_checks": {
+        "output": 0.0,
+        "input_gradient": 0.0,
+        "parameter_gradient": 3.725290298461914e-08,
+        "sgd_0": 1.4901161193847656e-07,
+        "sgd_1": 1.1920928955078125e-07
+      },
+      "tolerance": 2e-06
+    },
+    {
+      "dtype": "torch.float64",
+      "length": 1,
+      "reconstruction": 0.0,
+      "norm_relative_error": 0.0,
+      "tolerance": 2e-12
+    },
+    {
+      "dtype": "torch.float64",
+      "length": 2,
+      "reconstruction": 0.0,
+      "norm_relative_error": 0.0,
+      "tolerance": 2e-12
+    },
+    {
+      "dtype": "torch.float64",
+      "length": 7,
+      "reconstruction": 2.7755575615628914e-16,
+      "norm_relative_error": 0.0,
+      "tolerance": 2e-12
+    },
+    {
+      "dtype": "torch.float64",
+      "length": 16,
+      "reconstruction": 2.6020852139652106e-16,
+      "norm_relative_error": 0.0,
+      "tolerance": 2e-12
+    },
+    {
+      "dtype": "torch.float64",
+      "length": 31,
+      "reconstruction": 4.440892098500626e-16,
+      "norm_relative_error": 1.6418780312145312e-16,
+      "tolerance": 2e-12
+    },
+    {
+      "dtype": "torch.float64",
+      "length": 264,
+      "reconstruction": 1.3322676295501878e-15,
+      "norm_relative_error": 2.034921597649564e-16,
+      "tolerance": 2e-12
+    },
+    {
+      "dtype": "torch.float64",
+      "length": 544,
+      "reconstruction": 1.3322676295501878e-15,
+      "norm_relative_error": 1.4955697921441317e-16,
+      "tolerance": 2e-12
+    },
+    {
+      "dtype": "torch.float64",
+      "model_checks": {
+        "output": 0.0,
+        "input_gradient": 0.0,
+        "parameter_gradient": 1.1102230246251565e-16,
+        "sgd_0": 3.3306690738754696e-16,
+        "sgd_1": 1.6653345369377348e-16
+      },
+      "tolerance": 2e-12
+    }
+  ],
+  "teacher_factor_assembly_max_abs": 6.51925802230835e-09,
+  "no_autograd_application": true,
+  "source_sha256": "25ae03429846a2cbc2d0ca57054986207d412867b1c61c990e4113b4459ad211"
+}

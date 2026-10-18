@@ -1,0 +1,56 @@
+{
+  "run_id": "feedback-family-20261018-v1",
+  "parent_run": "feedback-decay-20261018-v2",
+  "parent_commit": "e867aa4caad20e84bb5030570bc7fdd4d2535c95",
+  "parent_registration_verified_before_copy": true,
+  "verified_parent_file_count": 18,
+  "byte_preserved_files": {
+    "baseline_core.py": {
+      "parent_filename": "baseline_core.py",
+      "sha256": "a26735782ca129b38786f960646f0f541848da6f8de2bbd6c02ccedc67715437"
+    },
+    "baseline_verify.py": {
+      "parent_filename": "baseline_verify.py",
+      "sha256": "94d0c236cc4cad90b8a2680885e87497623ea8ee635c09c7e26cc18ff00ff3a1"
+    },
+    "feedback_core.py": {
+      "parent_filename": "feedback_core.py",
+      "sha256": "0df7d4fcabbe6b5f24b3a239708d925640370b183fbcf58bc1aae424d8101379"
+    },
+    "feedback_verify.py": {
+      "parent_filename": "feedback_verify.py",
+      "sha256": "414de8f6b5fddecda59fcf18178658495c15e4979a073a293b0d97b9d63b7f62"
+    },
+    "uncorrected_feedback_core.py": {
+      "parent_filename": "uncorrected_feedback_core.py",
+      "sha256": "13471f8a2a9d2bf1d319e50e9af47c7a45f7c549b9fa1f9a4be7bcd99c7a3780"
+    },
+    "launch.py": {
+      "parent_filename": "launch.py",
+      "sha256": "9a5d919e6010c6d228b175ee09671becc6a2de97fa03e988a995da90989b59fa"
+    },
+    "BASELINE_RULE_MAPPING.md": {
+      "parent_filename": "BASELINE_RULE_MAPPING.md",
+      "sha256": "2299c157eaf29c24ca1ce258b15280bce6104e60a5592086228c3c0a9bb860b5"
+    },
+    "BASELINE_SOURCE_PROVENANCE.json": {
+      "parent_filename": "BASELINE_SOURCE_PROVENANCE.json",
+      "sha256": "192bf320be675c63013a09a295ccbfaa6380550264706578983af7f09eec80d0"
+    },
+    "component_core.py": {
+      "parent_filename": "core.py",
+      "sha256": "1b92c65841ec97b09295df5168a1eeb81743a3b9ad6e6f13808d0cb2d8a4f1d7"
+    },
+    "component_verify.py": {
+      "parent_filename": "verify.py",
+      "sha256": "4ec1280ed794a793631874a4f622472e1cc388ba5898d3f0fa39ad3126e2bec0"
+    }
+  },
+  "derived_files": {
+    "core.py": "Independent B/VU learning switches with all online feedback decay off; exact inactive restoration after common cap; controls delegated to preserved reference.",
+    "verify.py": "Independent dense family checks and exact inactive trajectories/endpoints; all previous verification retained.",
+    "experiment.py": "Prior five-arm runner with family flags/displacements and compact active-feedback overlays; no data/endpoints changed.",
+    "analyze.py": "Frozen B-only versus frozen primary; all family secondary contrasts/interactions/endpoint components."
+  },
+  "historical_caveats": "Earlier bounded-feedback source/checkpoints remain lost; no recovery claim. feedback-decay-v1 cap-verification failure remains preserved; this uses byte-preserved repaired-v2 cap, original tolerances."
+}

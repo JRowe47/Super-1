@@ -1,0 +1,61 @@
+{
+  "run_id": "feedback-family-20261018-v1",
+  "status": "COMPLETE_NO_PROMOTION_RETENTION_FAILED",
+  "finished_at_utc": "2026-10-18T14:31:58.546891+00:00",
+  "source_commit_before_experiment_execution": "553fb843756fa98ca534196f84902bf2d78aa863",
+  "pilot_and_verification_commit": "036f4e6bf5485d8f5916231f7926e2b1610d6212",
+  "protocol_sha256": "b6d41588d346510748df8507d1448dc22a44183c192313b1e3576ebf4360f673",
+  "registered_source_unchanged": true,
+  "main_seeds": [
+    1201831,
+    1201832,
+    1201833
+  ],
+  "pilot_seed": 101927,
+  "main_runs": 15,
+  "pilot_runs": 5,
+  "main_updates_per_arm": 2048,
+  "pilot_updates_per_arm": 256,
+  "warmup_steps_per_seed": 4096,
+  "full_bitwise_online_replays": 20,
+  "primary_mean_ce_reduction_percent": 6.962235267815254,
+  "effect_gate": true,
+  "retention_gate": false,
+  "retention_failed_seeds": 3,
+  "promotion": false,
+  "VU_only_vs_frozen_mean_ce_reduction_percent": 22.374759947086986,
+  "full_learning_vs_frozen_mean_ce_reduction_percent": 21.87194482362664,
+  "VU_only_old_window_retention_failed_seeds": 3,
+  "VU_only_final_old_retention_failed_seeds": 1,
+  "charged_experiment_cpu_seconds": 273.35818800000004,
+  "cpu_budget_seconds": 900,
+  "cpu_scope": "Runtime import canary, verification, pilot/main imports and execution, common warmup, probes, all full online replays, launchers and analysis startup. Dependency setup, source/report preparation and transfers excluded.",
+  "all_workers_exited": true,
+  "all_four_remote_checkpoint_hashes_verified": true,
+  "checkpoint_bytes": 729783,
+  "experiment_exceptions": [],
+  "source_preservation": "All19 frozen files published/readback before verification; compact results/receipts in Git; four active-family-overlay NPZ files remotely SHA256 verified.",
+  "cleanup": [
+    {
+      "relative_path": "verify-checkpoints-stage8",
+      "file_bytes_removed": 729783,
+      "reason": "Reproducible temporary runtime or redundant readback after completed workers and durable byte-exact checkpoint preservation."
+    },
+    {
+      "relative_path": "research-runtime",
+      "file_bytes_removed": 1066500797,
+      "reason": "Reproducible temporary runtime or redundant readback after completed workers and durable byte-exact checkpoint preservation."
+    }
+  ],
+  "completed_progress_snapshot_cleanup": [
+    {
+      "relative_path": "pilot/101927/PROGRESS.json",
+      "bytes": 34666,
+      "sha256": "507835ae9615605575da2f235afac3c66918dede42797faedc8ea184cb3dca95",
+      "reason": "Completed progress snapshot exactly duplicates retained RESULT.json."
+    }
+  ],
+  "official_test_accessed": false,
+  "new_cloud_resources_created": false,
+  "next_stage": "Proposed only: separate feedback readout learning in U0 versus U1, with B1/B2/V1/V2 fixed at common warmup and all online feedback decay off. Arms frozen, U0-only, U1-only, both-U, and BP. Primary U1-only versus frozen, unchanged >=5% mean CE/no negative seed and <=2pp per-seed old-window/final-old guard. Keep full original rates/FIFO/warmup/cap/exposure/endpoints. Fresh3 paired main seeds and separate pilot. Verify both-U and preserved V/U-only have identical W/U/B trajectories despite differing V, as implied by the equations with B fixed. Test whether adapting only the feedback readout into the second hidden layer reduces forgetting. No rate sweep; not implemented or running."
+}

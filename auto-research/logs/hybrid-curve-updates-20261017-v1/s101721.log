@@ -1,0 +1,5 @@
+{"seed": 101721, "arm": "backprop", "main_cpu": 0.9513561029999984, "counts": {"backward": 1000, "proposed": 0, "eligible": 0, "applied": 0, "skipped": 0, "audits": 0, "audit_failures": 0}}
+{"seed": 101721, "arm": "hybrid", "main_cpu": 1.9919488550000004, "counts": {"backward": 1000, "proposed": 1000, "eligible": 0, "applied": 0, "skipped": 0, "audits": 0, "audit_failures": 0}}
+{"seed": 101721, "arm": "gated_skip", "main_cpu": 2.007952756, "counts": {"backward": 1000, "proposed": 1000, "eligible": 0, "applied": 0, "skipped": 0, "audits": 0, "audit_failures": 0}}
+{"seed": 101721, "arm": "confidence_only", "main_cpu": 1.4679778810000013, "counts": {"backward": 81, "proposed": 1000, "eligible": 1000, "applied": 937, "skipped": 0, "audits": 81, "audit_failures": 63}}
+{"seed": 101721, "arm": "always_hyper", "main_cpu": 1.6079258170000017, "counts": {"backward": 81, "proposed": 1000, "eligible": 1000, "applied": 1000, "skipped": 0, "audits": 81, "audit_failures": 74}}

@@ -1,0 +1,11 @@
+{
+  "status": "PRE_TRAINING_TOLERANCE_FAILURE",
+  "arm": "lstm64",
+  "dtype": "float32",
+  "output_max_abs": 2.384185791015625e-07,
+  "gradient_max_abs": 5.820766091346741e-10,
+  "input_gradient_max_abs": 2.3646862246096134e-11,
+  "optimizer_max_abs": 2.0313076674938202e-05,
+  "tolerance": 2e-06,
+  "reason": "AdamW eps=1e-8 can amplify tiny absolute gradient rounding near zero. FP64 checks passed. Investigate post-update output agreement before launch."
+}

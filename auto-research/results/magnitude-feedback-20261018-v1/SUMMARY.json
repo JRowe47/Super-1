@@ -1,0 +1,176 @@
+{
+  "run_id": "magnitude-feedback-20261018-v1",
+  "numerical_and_replay_valid": true,
+  "comparisons": {
+    "primary": {
+      "candidate": "adaptive",
+      "control": "frozen_match_adaptive",
+      "per_seed": [
+        {
+          "seed": 701781,
+          "candidate_primary_ce": 0.7002315651625395,
+          "control_primary_ce": 0.9592730272561312,
+          "relative_ce_reduction_percent": 27.003934722791513,
+          "old_window_delta_pp": -11.8896484375,
+          "final_old_delta_pp": -6.361603736877441
+        },
+        {
+          "seed": 701782,
+          "candidate_primary_ce": 0.7110857646912336,
+          "control_primary_ce": 0.9642677996307611,
+          "relative_ce_reduction_percent": 26.25640253013492,
+          "old_window_delta_pp": -11.42926886677742,
+          "final_old_delta_pp": -8.258932828903198
+        },
+        {
+          "seed": 701783,
+          "candidate_primary_ce": 0.7140166591852903,
+          "control_primary_ce": 0.9659160785377026,
+          "relative_ce_reduction_percent": 26.078810048773803,
+          "old_window_delta_pp": -6.61969892680645,
+          "final_old_delta_pp": -4.91071343421936
+        }
+      ],
+      "mean_relative_ce_reduction_percent": 26.44638243390008,
+      "sample_sd_percent": 0.4909513096988921,
+      "effect_gate": true,
+      "retention_gate": false,
+      "combined_gate": false,
+      "confirmatory": true
+    },
+    "unmatched_secondary": {
+      "candidate": "adaptive",
+      "control": "frozen",
+      "per_seed": [
+        {
+          "seed": 701781,
+          "candidate_primary_ce": 0.7002315651625395,
+          "control_primary_ce": 0.9760249834507704,
+          "relative_ce_reduction_percent": 28.25679905376537,
+          "old_window_delta_pp": -11.3525390625,
+          "final_old_delta_pp": -6.975448131561279
+        },
+        {
+          "seed": 701782,
+          "candidate_primary_ce": 0.7110857646912336,
+          "control_primary_ce": 1.054146433249116,
+          "relative_ce_reduction_percent": 32.54392916745848,
+          "old_window_delta_pp": -9.7481869161129,
+          "final_old_delta_pp": -8.649557828903198
+        },
+        {
+          "seed": 701783,
+          "candidate_primary_ce": 0.7140166591852903,
+          "control_primary_ce": 0.9461409095674753,
+          "relative_ce_reduction_percent": 24.533792803473606,
+          "old_window_delta_pp": -6.31277859210968,
+          "final_old_delta_pp": -4.017853736877441
+        }
+      ],
+      "mean_relative_ce_reduction_percent": 28.44484034156582,
+      "sample_sd_percent": 4.00837757538464,
+      "effect_gate": true,
+      "retention_gate": false,
+      "combined_gate": false,
+      "confirmatory": false
+    },
+    "reciprocal_secondary": {
+      "candidate": "adaptive_match_frozen",
+      "control": "frozen",
+      "per_seed": [
+        {
+          "seed": 701781,
+          "candidate_primary_ce": 0.6746772304177284,
+          "control_primary_ce": 0.9760249834507704,
+          "relative_ce_reduction_percent": 30.875004036025437,
+          "old_window_delta_pp": -11.30022369325161,
+          "final_old_delta_pp": -6.584823131561279
+        },
+        {
+          "seed": 701782,
+          "candidate_primary_ce": 0.7072733286768198,
+          "control_primary_ce": 1.054146433249116,
+          "relative_ce_reduction_percent": 32.90559011836291,
+          "old_window_delta_pp": -10.3585384786129,
+          "final_old_delta_pp": -5.803573131561279
+        },
+        {
+          "seed": 701783,
+          "candidate_primary_ce": 0.7286553829908371,
+          "control_primary_ce": 0.9461409095674753,
+          "relative_ce_reduction_percent": 22.986589458018564,
+          "old_window_delta_pp": -6.602258607745171,
+          "final_old_delta_pp": -4.185265302658081
+        }
+      ],
+      "mean_relative_ce_reduction_percent": 28.92239453746897,
+      "sample_sd_percent": 5.2398622515642135,
+      "effect_gate": true,
+      "retention_gate": false,
+      "combined_gate": false,
+      "confirmatory": false
+    }
+  },
+  "final_means": {
+    "backprop": {
+      "stable_ce": 0.13303629060586294,
+      "stable_acc": 0.969122032324473,
+      "novel_ce": 0.1738139589627584,
+      "novel_acc": 0.9524739583333334,
+      "drift_ce": 0.3632126847902934,
+      "drift_acc": 0.8515625,
+      "balanced_acc": 0.9243861635526022
+    },
+    "random_fixed": {
+      "stable_ce": 0.24040071169535318,
+      "stable_acc": 0.9270833532015482,
+      "novel_ce": 0.311323881149292,
+      "novel_acc": 0.9052734375,
+      "drift_ce": 0.5720293323198954,
+      "drift_acc": 0.6705729166666666,
+      "balanced_acc": 0.8343099024560716
+    },
+    "frozen": {
+      "stable_ce": 0.2146162192026774,
+      "stable_acc": 0.9345238208770752,
+      "novel_ce": 0.4302845398585002,
+      "novel_acc": 0.8362630208333334,
+      "drift_ce": 0.808363695939382,
+      "drift_acc": 0.3971354166666667,
+      "balanced_acc": 0.7226407527923584
+    },
+    "adaptive": {
+      "stable_ce": 0.31615300973256427,
+      "stable_acc": 0.8690476218859354,
+      "novel_ce": 0.3709211548169454,
+      "novel_acc": 0.8421223958333334,
+      "drift_ce": 0.5295333166917165,
+      "drift_acc": 0.7200520833333334,
+      "balanced_acc": 0.810407367017534
+    },
+    "frozen_match_adaptive": {
+      "stable_ce": 0.21472838521003723,
+      "stable_acc": 0.9341517885526022,
+      "novel_ce": 0.3865787585576375,
+      "novel_acc": 0.8434244791666666,
+      "drift_ce": 0.7211869557698568,
+      "drift_acc": 0.5572916666666666,
+      "balanced_acc": 0.7782893114619784
+    },
+    "adaptive_match_frozen": {
+      "stable_ce": 0.3119860887527466,
+      "stable_acc": 0.879278282324473,
+      "novel_ce": 0.4022328853607178,
+      "novel_acc": 0.830078125,
+      "drift_ce": 0.5736951927344004,
+      "drift_acc": 0.6901041666666666,
+      "balanced_acc": 0.79982019133038
+    }
+  },
+  "execution_cpu_seconds": 222.23788599999997,
+  "within_900_cpu_seconds": true,
+  "analysis_cpu_seconds": 0.005830242999999999,
+  "decision": "NO_PROMOTION",
+  "uncertainty": "Three paired synthetic worlds; descriptive mean, sample SD and every seed. No population significance or language-model claim.",
+  "interpretation_limit": "Matching is per hidden layer at the control own current forward state; trajectories may diverge. A shadow bank supplies magnitudes and adds compute/memory. Reciprocal contrast is secondary."
+}

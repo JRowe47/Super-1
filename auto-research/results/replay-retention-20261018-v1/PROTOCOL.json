@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "status": "FROZEN_BEFORE_VERIFICATION_PILOT_MAIN",
+  "experiment_id": "fixed-storage-replay-retention",
+  "run_id": "replay-retention-20261018-v1",
+  "parent_run_ids": [
+    "magnitude-feedback-20261018-v1"
+  ],
+  "hypothesis": "A fixed old-example replay allocation lets bounded adaptive feedback retain a useful post-change learning advantage without exceeding2pp loss on old facts against equally replayed frozen feedback.",
+  "primary_comparator": "adaptive_mixed versus frozen_mixed",
+  "primary_metric": "Per-seed equal mean of novel CE at steps544..768 every32 and drift CE at1056..1280 every32 (16 checkpoints); arithmetic mean of three paired relative CE reductions.",
+  "minimum_useful_effect": "Mean relative CE reduction>=5%; every seed>=0%.",
+  "success_rule": "All finite/fidelity/data/replay gates, mean CE effect>=5% and no negative seed; adaptive_mixed old-window and final-old accuracy at most2pp worse than frozen_mixed in each seed.",
+  "futility_rule": "No tuning or added seeds. Stop on fidelity, preservation, pilot numerical failure or exhausted budget; preserve all failed arms. Main arm failure invalidates the primary gate. Retention or effect failure means no promotion.",
+  "authorization": {
+    "approved": true,
+    "user_approval_reference": "Latest user: Alright, go ahead with the next. Refers to fixed-budget replay-retention stage documented in prior reply and repo CURRENT. Standing permission: use own JRowe47/Super-1 research branch/draft PR3 and research scratch, keep artifacts small.",
+    "approved_resources": "Local CPU only; max3 concurrent one-thread children. No GPU/cloud/paid compute/external datasets. Restore same temporary pinned CPU runtime.",
+    "max_cost": "No paid compute",
+    "max_walltime": "15 minutes experiment execution; source preparation/dependency setup/artifact transfers excluded.",
+    "local_cpu_budget": "900 aggregate experiment process CPU seconds including runtime import canary, verification, pilot/main imports, warmup, diagnostics, full online replays, launchers and analysis. Child caps30+110+3*230=830 plus at most1s hard-limit grace per child."
+  },
+  "design": {
+    "original_source_hashes": {
+      "baseline_core.py": "a26735782ca129b38786f960646f0f541848da6f8de2bbd6c02ccedc67715437",
+      "baseline_verify.py": "94d0c236cc4cad90b8a2680885e87497623ea8ee635c09c7e26cc18ff00ff3a1",
+      "feedback_core.py": "13471f8a2a9d2bf1d319e50e9af47c7a45f7c549b9fa1f9a4be7bcd99c7a3780",
+      "feedback_verify.py": "414de8f6b5fddecda59fcf18178658495c15e4979a073a293b0d97b9d63b7f62",
+      "launch.py": "9a5d919e6010c6d228b175ee09671becc6a2de97fa03e988a995da90989b59fa",
+      "BASELINE_RULE_MAPPING.md": "2299c157eaf29c24ca1ce258b15280bce6104e60a5592086228c3c0a9bb860b5",
+      "BASELINE_SOURCE_PROVENANCE.json": "192bf320be675c63013a09a295ccbfaa6380550264706578983af7f09eec80d0"
+    },
+    "mechanism_equations": "RULE_MAPPING.md: unchanged bounded local feedback and BP warmup; mixed replay pins first256 of original512 old examples and rolls last256;8 recent+8 anchors per update versus16 from FIFO512.",
+    "arms": {
+      "backprop_fifo": "Exact backprop; FIFO512 with16 sampled",
+      "backprop_mixed": "Exact backprop; FIFO256+fixed old256 with8+8 sampled",
+      "frozen_fifo": "Warm feedback frozen; FIFO512 with16 sampled",
+      "frozen_mixed": "Warm feedback frozen; FIFO256+fixed old256 with8+8 sampled",
+      "adaptive_fifo": "Continued locally adaptive feedback; FIFO512 with16 sampled",
+      "adaptive_mixed": "Continued locally adaptive feedback; FIFO256+fixed old256 with8+8 sampled"
+    },
+    "control_rationale": "Adaptive/frozen \u00d7 FIFO/mixed factorial plus BP under both policies. Same current stream, initial512 memory examples, uniform replay random draws, minibatch32, replay16 and total512-example storage. Mixed policy deliberately reallocates storage and changes recent horizon32->16 batches. Magnitude normalization from prior study is not active; this isolates replay allocation with unchanged unnormalized learning rules.",
+    "seeds": [
+      801791,
+      801792,
+      801793
+    ],
+    "seed_selection_method": "Fresh consecutive seeds801791..3, separate pilot97987, verification seeds97987/12817/21817. No world/seed search or exclusions.",
+    "learning_rate_trials_per_arm": 1,
+    "parameter_counts": {
+      "forward": 1504,
+      "feedback": 12544,
+      "local_total": 14048,
+      "backprop_active": 1504,
+      "replay_examples": 512,
+      "replay_data_float32_bytes": 30720,
+      "replay_ids_int64_bytes": 4096
+    },
+    "matching_track": "Same model/start/lr/decay/exposure/replay samples and storage, no trial selection. Replay data content is the treatment. BP and local methods have different compute costs, which are reported.",
+    "compute_accounting": "Shared BP-forward/local-feedback warmup once per seed; dense SVD caps, two schedule generations/hash checks, all exact diagnostic gradients and full online replays charged. Per-worker RSS measured; concurrent peak, FLOPs and deployment latency unmeasured."
+  },
+  "data": {
+    "dataset_versions": "Same byte-preserved threshold-world generator in baseline_core.py. core.py derives mixed replay without changing any current examples, warmup schedule or heldout queries.",
+    "tokenizer_sha256": "Not applicable: fixed11-dimensional numeric inputs and4 binary labels.",
+    "train_sha256": "Generated before optimization from registered seeds; per-schedule and combined canonical SHA256 in each RESULT.json; regenerated/hash-verified for full replay.",
+    "selection_sha256": "Not applicable: no configuration or checkpoint selection.",
+    "confirmation_sha256": "Heldout query arrays are part of schedule hashes, shared identically across both replay policies, never passed into policy updates.",
+    "split_boundaries": "RNG offsets61M world,62M warmup,63M current,64M replay,65M heldout, unchanged. Same original512 warmup IDs initialize both policies. First256 pinned/last256 recent in mixed; all512 rolling in FIFO.",
+    "research_wide_region_reuse_audit": "Fresh paired world seeds801791..3 and separate pilot97987; same generator family and endpoints as previous studies. No official benchmark data or transfer claim.",
+    "teacher_and_objective": "No teacher; BCE-with-logits mean over32x4 targets. Historical replay labels unchanged, including old labels that later conflict with changed rules.",
+    "official_test_access_permitted": false
+  },
+  "training": {
+    "updates": "Main:4096 shared warmup and2048 online updates per arm; pilot4096+256. Four phases of512 main/64 pilot.",
+    "target_exposures_per_trial": "Warmup1048576 binary targets per seed; main online262144 per arm; pilot32768. No extra updates for old anchors; duplicate replay adds no new information.",
+    "tokens_per_update": "No language tokens; warmup64x4 targets, online32x4.",
+    "microbatch": "Warmup64; online16 current+16 replay. FIFO16 recent; mixed8 recent+8 old.",
+    "gradient_accumulation": 1,
+    "bptt_length": "Not applicable: feedforward model, no BPTT.",
+    "accessible_history": "Fixed total512 examples. FIFO queue512 ages out after32 batches; mixed queue256 ages out after16 and fixed256 old bank persists. Same512 initial examples; sample before appending current16.",
+    "state_carry_and_detach": "All forward/feedback matrices persistent, explicit detached updates, no optimizer state. No extra shadow/magnitude bank. Memory rows retain original labels.",
+    "document_reset_policy": "Not applicable: synthetic contexts, no documents.",
+    "optimizer_schedule": "Unchanged lr.05, feedback multiplier.8, WD W/B .001 and V/U .01. Spectral cap2 initially and after feedback updates with margin1-4eps; no magnitude normalization.",
+    "precision": "FP32 training, FP32/FP64 fidelity verification.",
+    "checkpoint_selection_rule": "No selection; all registered windows and final state reported. NPZ stores shared warmup W/F, every final W and final adaptive F; BP/frozen F reference unchanged warmup. All4 phase/final complete-state hashes checked by replay."
+  },
+  "execution": {
+    "hardware": "Local CPU; no GPU; exact platform in each RESULT.json.",
+    "runtime_versions": {
+      "torch": "2.14.1+cpu",
+      "numpy": "2.3.5",
+      "sympy": "1.14.0",
+      "mpmath": "1.3.0",
+      "filelock": "3.20.0",
+      "typing_extensions": "4.16.0",
+      "setuptools": "84.0.0",
+      "networkx": "3.5",
+      "jinja2": "3.1.6",
+      "fsspec": "2025.9.0",
+      "MarkupSafe": "3.0.4"
+    },
+    "resolved_writable_output": "/workspace/scratch/8b72ec5282c5/worktree/auto-research/results/replay-retention-20261018-v1",
+    "source_ownership_and_concurrent_writers": "Single implementation owner; no subagents. Separate per-seed output directories for3 workers. Source and protocol committed/readback byte-equal before experiment verification or training.",
+    "fidelity_tolerances": {
+      "FP32_max_abs": 2e-06,
+      "FP64_max_abs": 2e-12,
+      "replay_schedule": "Exact equality against independent deque/per-example reference for3 verification worlds",
+      "online_replay": "Bitwise complete-state phase/final hash equality and serialized final tensor equality"
+    },
+    "canary_matrix": "Preserved transform/dense local rule/gradient/cap/no-autograd verification in FP32/64; replay FIFO exact versus predecessor; independent mixed schedule reference; causality; fixed512 memory and32 minibatch; identical currents/queries; persistent stale anchor labels; pilot full warmup and6 arms/replays.",
+    "cost_estimate": "Approximately250-450 aggregate CPU seconds, same900-second hard envelope, no scaling beyond3 workers."
+  },
+  "evaluation": {
+    "primary_endpoint": "Per-seed equal mean of novel CE at steps544..768 every32 and drift CE at1056..1280 every32 (16 checkpoints); arithmetic mean of three paired relative CE reductions.",
+    "confirmation_frozen_before_scoring": true,
+    "canonical_precision": "FP32",
+    "duplicate_policy": "All6 arms for pilot and all3 main seeds repeat the entire online stream from serialized common warmup and independently regenerated/hash-verified schedules. All4 phase and final complete-state hashes plus stored final tensors must match bitwise.",
+    "uncertainty_method": "Three paired seeds, report every result, mean and sample SD. Descriptive evidence only; no significance or population claim.",
+    "multiple_comparison_policy": "Only adaptive_mixed versus frozen_mixed is primary. Adaptive_fifo versus frozen_fifo is replication control. Within-policy mixed-minus-FIFO, adaptive-minus-frozen replay interactions, BP controls and direction probes descriptive; no choosing a favorable comparator.",
+    "no_test_tuning": true
+  },
+  "deployment": {
+    "weight_dtype": "FP32",
+    "kv_or_state_dtype": "FP32 feedback and replay x/y, int64 provenance IDs; no KV cache.",
+    "quantization_metadata": "None",
+    "batching": "Online32, warmup64; heldout128 per6 contexts main.",
+    "prefill_decode_protocol": "Not applicable: feedforward synthetic classifier; no deployment benchmark.",
+    "warmup_and_synchronization": "4096 shared BP+local warmup, one CPU thread; no asynchronous device.",
+    "memory_components": "Both replay policies store512 examples:30720 FP32 payload bytes+4096 int64 ID bytes, excluding allocator/container overhead. Same forward/local feedback counts; no added model bank. Actual per-process peakRSS and serialized checkpoint sizes reported, aggregate/workspace breakdown unmeasured.",
+    "latency_statistics": "Unmeasured: no deployment latency or efficiency claim; process CPU recorded for experimental cost."
+  },
+  "evidence": {
+    "protocol_sha256": "REGISTRATION.json sha256.PROTOCOL.json (self-hash external to protocol)",
+    "source_manifest": "REGISTRATION.json sha256 mapping",
+    "checkpoint_manifest": "Each seed RESULT.json and final ARTIFACT_MANIFEST.json",
+    "progress_path": "pilot/<seed>/PROGRESS.json or main/<seed>/PROGRESS.json, replaced by immutable RESULT.json on completion",
+    "terminal_receipt_path": "TERMINAL.json plus VERIFY/PILOT/MAIN_RECEIPT.json",
+    "preservation_policy": "Exact source/protocol/registry committed before numerical verification or training. Compact JSON evidence in Git, four individually compressed NPZ files in existing project folder, remote download/hash verification. No cumulative archive or data stream dump.",
+    "cleanup_receipt": "TERMINAL.json and EVIDENCE_AUDIT.json: all children exited; temporary restored runtime/readback copies removed after durable checkpoint hash verification."
+  },
+  "decision": {
+    "outcome": "PENDING_REGISTERED_EXECUTION",
+    "reason": "Apply unchanged primary adaptation and retention gates after all3 seeds/replays.",
+    "next_experiment": "Decide from retention/adaptation tradeoff; no follow-on tuning or extra mixtures within this run."
+  },
+  "main": {
+    "seeds": [
+      801791,
+      801792,
+      801793
+    ],
+    "warmup_steps": 4096,
+    "phase_steps": 512,
+    "queries_per_context": 128
+  },
+  "pilot": {
+    "seed": 97987,
+    "warmup_steps": 4096,
+    "phase_steps": 64,
+    "queries_per_context": 32,
+    "purpose": "Mechanics only, full warmup and all6 arms/replays; no tuning from results."
+  }
+}

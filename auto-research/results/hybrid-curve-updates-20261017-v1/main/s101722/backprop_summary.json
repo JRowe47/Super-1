@@ -1,0 +1,20 @@
+{
+  "arm": "backprop",
+  "seed": 101722,
+  "main_cpu": 0.9399930699999999,
+  "main_wall": 0.939413930002047,
+  "lifecycle_cpu": 2.107996365,
+  "counts": {
+    "backward": 1000,
+    "proposed": 0,
+    "eligible": 0,
+    "applied": 0,
+    "skipped": 0,
+    "audits": 0,
+    "audit_failures": 0
+  },
+  "training_examples": 64000,
+  "data_sha256": "b846f54fd4532659aab3ddfd652ed2d5fcda7d6dd80f6ddb3c32427efef5c86b",
+  "checkpoint_sha256": "d608738d1e88d7b14ebac57ac75c31d1c692fd9b0ee01b62cde04ce6a47d87fa",
+  "controller_frozen_after_warmup": true
+}
