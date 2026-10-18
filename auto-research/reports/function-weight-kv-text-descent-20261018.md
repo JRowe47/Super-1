@@ -1,5 +1,7 @@
 # Learned hierarchical KV memory with function weights preserved
 
+![Separate 512-byte text quality and 100K memory measurements](../../graphs/function_weight_kv_text_descent.png)
+
 Two bounded local CPU experiments trained the original function-weight curve model and a pinned upstream nanoGPT reference from scratch on identical text batches. Three seeds, four layers, width 48, four heads, UTF-8 bytes and FP32 were used throughout. Hierarchy changes only KV storage/readout. The learned token-conditioned sampling router, curve/basis projections, normalization, residuals and MLP remain present. During pooling adaptation every backbone/router parameter was frozen and fingerprint-checked.
 
 The result is promising for a small text workload, not a SOTA result. No 70B model was trained or measured. The original full training run and its checkpoints were not replaced.

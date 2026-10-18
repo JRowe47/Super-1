@@ -21,6 +21,8 @@ Cross-entropy is lower-is-better. These results compare the named baselines, not
 
 The function-weight Transformer and its learned inference sampling remain intact. [Cached inference](sampling_library/INFERENCE.md) evaluates the same learned weight curves and router; the optional [hierarchical KV backend](sampling_library/HIERARCHICAL_KV.md) changes only attention storage/readout. The hierarchy is experimental. New [three-seed byte-text pilots](auto-research/reports/function-weight-kv-text-descent-20261018.md) preserve near-full-attention quality at 128/512-byte contexts, with a separate 8K passage diagnostic and a 100K memory-mechanics measurement. These tiny-model results do not establish SOTA quality or useful 100K context. Earlier gated-delta hybrid results describe a separate architecture and must not be attributed to this implementation.
 
+![Function-weight hierarchy: separate text quality and memory experiments](graphs/function_weight_kv_text_descent.png)
+
 The original hierarchy uses learned gates and cross-scale updates to maintain fast, segment, and document-level memory. Its recurrent state stays fixed-size as context grows. Function-generated transition experiments explore structured transformations, relative geometry, and rotations.
 
 The historical pure hierarchy, local-plus-function-weight arm, and later geometry pilots are separately identified in the evidence: they are not one identical trained architecture.
