@@ -1,0 +1,86 @@
+{
+  "causality": true,
+  "gradient_flow": true,
+  "padding_and_signed_nibbles": true,
+  "rows": [
+    {
+      "arm": "curve_fp16",
+      "depth": 2,
+      "max_decoded_values": 3072,
+      "max_logit_error": 3.814697265625e-06,
+      "payload": 137810
+    },
+    {
+      "arm": "curve_fp16",
+      "depth": 3,
+      "max_decoded_values": 3072,
+      "max_logit_error": 3.337860107421875e-06,
+      "payload": 137810
+    },
+    {
+      "arm": "curve_fp16",
+      "depth": 4,
+      "max_decoded_values": 3072,
+      "max_logit_error": 3.337860107421875e-06,
+      "payload": 137810
+    },
+    {
+      "arm": "curve_b4",
+      "depth": 2,
+      "max_decoded_values": 3072,
+      "max_logit_error": 4.76837158203125e-06,
+      "payload": 56594
+    },
+    {
+      "arm": "curve_b4",
+      "depth": 3,
+      "max_decoded_values": 3072,
+      "max_logit_error": 3.814697265625e-06,
+      "payload": 56594
+    },
+    {
+      "arm": "curve_b4",
+      "depth": 4,
+      "max_decoded_values": 3072,
+      "max_logit_error": 3.337860107421875e-06,
+      "payload": 56594
+    },
+    {
+      "arm": "curve_be4",
+      "depth": 2,
+      "max_decoded_values": 3072,
+      "max_logit_error": 3.814697265625e-06,
+      "payload": 38546
+    },
+    {
+      "arm": "curve_be4",
+      "depth": 3,
+      "max_decoded_values": 3072,
+      "max_logit_error": 4.76837158203125e-06,
+      "payload": 38546
+    },
+    {
+      "arm": "curve_be4",
+      "depth": 4,
+      "max_decoded_values": 3072,
+      "max_logit_error": 3.337860107421875e-06,
+      "payload": 38546
+    },
+    {
+      "arm": "nano_fp16",
+      "depth": null,
+      "max_decoded_values": 3072,
+      "max_logit_error": 2.86102294921875e-06,
+      "payload": 300096
+    },
+    {
+      "arm": "nano_q4",
+      "depth": null,
+      "max_decoded_values": 3072,
+      "max_logit_error": 2.86102294921875e-06,
+      "payload": 83520
+    }
+  ],
+  "scope": "Mechanics only; no confirmation bytes read",
+  "status": "PASS"
+}
