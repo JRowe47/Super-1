@@ -1,0 +1,6 @@
+mingru_linear_baseline {'step': 0, 'windows': 0, 'training_targets': 0, 'train_wall_seconds': 0.0, 'train_cpu_seconds': 0.0, 'validation_ce': 8.090981483459473, 'validation_top1': 0.0}
+mingru_linear_baseline {'step': 274, 'windows': 274, 'training_targets': 140288, 'train_wall_seconds': 15.030711586990947, 'train_cpu_seconds': 15.066357989999997, 'validation_ce': 5.918228983879089, 'validation_top1': 0.06201171875}
+mingru_linear_baseline {'step': 550, 'windows': 550, 'training_targets': 281600, 'train_wall_seconds': 30.000805010004115, 'train_cpu_seconds': 30.033061715999985, 'validation_ce': 5.5626260638237, 'validation_top1': 0.091064453125}
+mingru_linear_baseline {'step': 820, 'windows': 820, 'training_targets': 419840, 'train_wall_seconds': 45.02212453799075, 'train_cpu_seconds': 45.08642882499998, 'validation_ce': 5.39204728603363, 'validation_top1': 0.107177734375}
+mingru_linear_baseline {'step': 1084, 'windows': 1084, 'training_targets': 555008, 'train_wall_seconds': 59.81663741601187, 'train_cpu_seconds': 59.88002186299996, 'validation_ce': 5.3074920773506165, 'validation_top1': 0.1103515625}
+COMPLETE mingru_linear_baseline 1084 59.81663741601187 5.264742121100426

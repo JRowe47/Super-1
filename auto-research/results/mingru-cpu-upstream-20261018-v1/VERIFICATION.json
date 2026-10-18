@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "imported_files": 139,
+  "imported_bytes": 2522435,
+  "source_roots_match": true,
+  "python_sources_parsed": 16,
+  "studies": [
+    {
+      "run_id": "gru-batch-wall-20261016-v1",
+      "trials": 6,
+      "status": "PASS"
+    },
+    {
+      "run_id": "mingru-thread-lr-20261016-v1",
+      "trials": 7,
+      "status": "PASS"
+    },
+    {
+      "run_id": "gru-longer-wall-20261016-v1",
+      "trials": 6,
+      "status": "PASS"
+    }
+  ],
+  "recorded_training_trials": 19,
+  "recorded_updates_checked": 14002,
+  "throughput_cells_checked": 27,
+  "new_training": false,
+  "new_model_evaluation": false,
+  "checkpoint_replay_rerun": false,
+  "checkpoint_receipts": "Historical only; external payloads not fetched",
+  "official_test_accessed": false
+}

@@ -333,6 +333,86 @@
       "total_process_memory_improvement_established": false,
       "verification": "auto-research/results/function-weight-int4-20261018-v1/execution/VERIFICATION.json",
       "weight_payload_reduction": 3.57520884138432
+    },
+    {
+      "completed_runs": 6,
+      "historical_publication_target": "JRowe47/Super-1 main only",
+      "metrics": "auto-research/results/gru-batch-wall-20261016-v1/SUMMARY.json",
+      "protocol": "auto-research/results/gru-batch-wall-20261016-v1/PROTOCOL.json",
+      "protocol_sha256": "317861655e4c4840ba1826f45c8184afd3f9588c3135021d780a16f2d0e19efc",
+      "publication_target": "rohanarun/Super-1 main (PR only)",
+      "report": "auto-research/reports/gru-batch-wall-20261016-v1.md",
+      "run_id": "gru-batch-wall-20261016-v1",
+      "selection_sha256": "500321736e84e1d51b7810814f68a13475549e861c966be0a109e397bfc12a6a",
+      "status": "COMPLETE_EXPLORATORY",
+      "summary": {
+        "mingru_linear_baseline": 5.264742121100426,
+        "mingru_linear_throughput": 5.392680451273918,
+        "nanogpt_baseline": 5.958116844296455,
+        "nanogpt_throughput": 5.694121807813644,
+        "native_baseline": 5.5790126621723175,
+        "native_throughput": 5.72637651860714
+      },
+      "terminal": "auto-research/results/gru-batch-wall-20261016-v1/TERMINAL.json",
+      "upstream_publication_authorization": "auto-research/results/mingru-cpu-upstream-20261018-v1/IMPORT.json"
+    },
+    {
+      "completed_runs": 7,
+      "failed_runs": 0,
+      "historical_publication_target": "JRowe47/Super-1 main only",
+      "metrics": "auto-research/results/mingru-thread-lr-20261016-v1/SUMMARY.json",
+      "protocol": "auto-research/results/mingru-thread-lr-20261016-v1/PROTOCOL.json",
+      "protocol_sha256": "84a8241d2105803068dfd87e686e9181a545c0ceffd042e6f2e36df88db157e2",
+      "publication_target": "rohanarun/Super-1 main (PR only)",
+      "report": "auto-research/reports/mingru-thread-lr-20261016-v1.md",
+      "run_id": "mingru-thread-lr-20261016-v1",
+      "status": "COMPLETE_EXPLORATORY",
+      "summary": {
+        "b16_t4_lr002": 5.3867084085941315,
+        "b16_t4_lr008": 5.0710707157850266,
+        "b1_t1_lr002": 5.251619651913643,
+        "b1_t2_lr002": 5.189114928245544,
+        "b1_t4_lr002": 5.172636225819588,
+        "b4_t2_lr002": 5.07429426908493,
+        "b4_t2_lr004": 4.884254410862923
+      },
+      "terminal": "auto-research/results/mingru-thread-lr-20261016-v1/TERMINAL.json",
+      "upstream_publication_authorization": "auto-research/results/mingru-cpu-upstream-20261018-v1/IMPORT.json"
+    },
+    {
+      "completed_runs": 6,
+      "failed_runs": 0,
+      "historical_publication_target": "JRowe47/Super-1 main only",
+      "metrics": "auto-research/results/gru-longer-wall-20261016-v1/SUMMARY.json",
+      "protocol": "auto-research/results/gru-longer-wall-20261016-v1/PROTOCOL.json",
+      "protocol_sha256": "1e8598d1e5aa29a1b87cb2280f8c75b09a2c9d6becbb09a6c8a8309231bda191",
+      "publication_target": "rohanarun/Super-1 main (PR only)",
+      "report": "auto-research/reports/gru-longer-wall-20261016-v1.md",
+      "run_id": "gru-longer-wall-20261016-v1",
+      "status": "COMPLETE_EXPLORATORY",
+      "summary": {
+        "mingru_linear_b16_t4_lr008": 4.382792189717293,
+        "mingru_linear_b4_t2_lr004": 4.454563930630684,
+        "nanogpt_b4_t4_lr002": 4.8480289578437805,
+        "nanogpt_b4_t4_lr004": 5.199139103293419,
+        "native_b16_t4_lr008": 4.534899592399597,
+        "native_b4_t2_lr004": 4.541923701763153
+      },
+      "terminal": "auto-research/results/gru-longer-wall-20261016-v1/TERMINAL.json",
+      "upstream_publication_authorization": "auto-research/results/mingru-cpu-upstream-20261018-v1/IMPORT.json"
+    },
+    {
+      "approval": "User explicitly requested publishing the minGRU tests that outperformed GRU to rohanarun/super-1, excluding subsequent experiments.",
+      "kind": "Archival upstream publication; no new experiment",
+      "metrics": "auto-research/results/mingru-cpu-upstream-20261018-v1/VERIFICATION.json",
+      "new_model_evaluation": false,
+      "new_training": false,
+      "protocol": "auto-research/results/mingru-cpu-upstream-20261018-v1/IMPORT.json",
+      "protocol_sha256": "db9cd4ee36fec0adcb1937e6e161835fbf15a46fda72aa8bf39537fc15e325f5",
+      "registration_chronology": "Retrospective publication record; original experiment registrations preserved.",
+      "report": "auto-research/reports/mingru-cpu-upstream-20261018-v1.md",
+      "run_id": "mingru-cpu-upstream-20261018-v1",
+      "status": "COMPLETED_ARCHIVAL_IMPORT_NO_NEW_MODEL_EXECUTION"
     }
   ],
   "schema_version": 1,

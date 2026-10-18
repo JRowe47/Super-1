@@ -1,0 +1,8 @@
+native_b4_t2_lr004 {'step': 0, 'windows': 0, 'training_targets': 0, 'train_wall_seconds': 0.0, 'train_cpu_seconds': 0.0, 'validation_ce': 8.167105913162231, 'validation_top1': 0.0}
+native_b4_t2_lr004 {'step': 140, 'windows': 560, 'training_targets': 286720, 'train_wall_seconds': 30.215425902006245, 'train_cpu_seconds': 60.426099768, 'validation_ce': 5.6142091155052185, 'validation_top1': 0.0771484375}
+native_b4_t2_lr004 {'step': 288, 'windows': 1152, 'training_targets': 589824, 'train_wall_seconds': 60.061546196016934, 'train_cpu_seconds': 120.07267049199994, 'validation_ce': 5.114705383777618, 'validation_top1': 0.12646484375}
+native_b4_t2_lr004 {'step': 434, 'windows': 1736, 'training_targets': 888832, 'train_wall_seconds': 90.08643884000412, 'train_cpu_seconds': 180.15443546199992, 'validation_ce': 4.871715486049652, 'validation_top1': 0.140625}
+native_b4_t2_lr004 {'step': 583, 'windows': 2332, 'training_targets': 1193984, 'train_wall_seconds': 120.00927714299723, 'train_cpu_seconds': 240.01088596099976, 'validation_ce': 4.748636960983276, 'validation_top1': 0.15478515625}
+native_b4_t2_lr004 {'step': 729, 'windows': 2916, 'training_targets': 1492992, 'train_wall_seconds': 150.09753047300546, 'train_cpu_seconds': 300.1144166779998, 'validation_ce': 4.670580744743347, 'validation_top1': 0.158447265625}
+native_b4_t2_lr004 {'step': 881, 'windows': 3524, 'training_targets': 1804288, 'train_wall_seconds': 179.66387236601622, 'train_cpu_seconds': 359.296552733, 'validation_ce': 4.609803199768066, 'validation_top1': 0.163330078125}
+COMPLETE native_b4_t2_lr004 881 179.66387236601622 4.541923701763153

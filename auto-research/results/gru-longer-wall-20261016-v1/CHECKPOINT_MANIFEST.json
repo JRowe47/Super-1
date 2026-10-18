@@ -1,0 +1,32 @@
+{
+  "native_b4_t2_lr004": {
+    "path": "execution/native_b4_t2_lr004/checkpoint.pt",
+    "sha256": "59870aef1befbec89a726a851466ab1de5e4a4f510a19a7312f08b0080e61277",
+    "bytes": 12082037
+  },
+  "nanogpt_b4_t4_lr004": {
+    "path": "execution/nanogpt_b4_t4_lr004/checkpoint.pt",
+    "sha256": "25582ced88753518d8789bb766a186ce5bf7c938ab583f169303089bbecc42d5",
+    "bytes": 12261410
+  },
+  "mingru_linear_b4_t2_lr004": {
+    "path": "execution/mingru_linear_b4_t2_lr004/checkpoint.pt",
+    "sha256": "7cac7e02fd447ce37810f30ddbe6c80bd4a8fa3c4ecd2c07bcf5d19a78869ea8",
+    "bytes": 12183285
+  },
+  "nanogpt_b4_t4_lr002": {
+    "path": "execution/nanogpt_b4_t4_lr002/checkpoint.pt",
+    "sha256": "9d4be08e43236c7b7066132ee544af684ecfcfee7baf5b41b5ce831a287a4f12",
+    "bytes": 12264418
+  },
+  "native_b16_t4_lr008": {
+    "path": "execution/native_b16_t4_lr008/checkpoint.pt",
+    "sha256": "bded7b9b88907f7ddbac6a4dd12c5b1a40a33432c9a5f08be0f5a9e5c5fabfff",
+    "bytes": 12020981
+  },
+  "mingru_linear_b16_t4_lr008": {
+    "path": "execution/mingru_linear_b16_t4_lr008/checkpoint.pt",
+    "sha256": "25078876642e7da36bc623792d24afeaa677553a04c7e9f21d39317265e7d38e",
+    "bytes": 12054901
+  }
+}

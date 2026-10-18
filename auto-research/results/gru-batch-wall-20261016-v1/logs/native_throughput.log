@@ -1,0 +1,6 @@
+native_throughput {'step': 0, 'windows': 0, 'training_targets': 0, 'train_wall_seconds': 0.0, 'train_cpu_seconds': 0.0, 'validation_ce': 8.093710899353027, 'validation_top1': 0.00048828125}
+native_throughput {'step': 32, 'windows': 512, 'training_targets': 262144, 'train_wall_seconds': 15.479999117000261, 'train_cpu_seconds': 58.80497964800001, 'validation_ce': 6.538934051990509, 'validation_top1': 0.0498046875}
+native_throughput {'step': 61, 'windows': 976, 'training_targets': 499712, 'train_wall_seconds': 30.223523397991812, 'train_cpu_seconds': 114.451521607, 'validation_ce': 6.165453195571899, 'validation_top1': 0.060546875}
+native_throughput {'step': 91, 'windows': 1456, 'training_targets': 745472, 'train_wall_seconds': 45.17137613799605, 'train_cpu_seconds': 171.064518265, 'validation_ce': 5.871308505535126, 'validation_top1': 0.072509765625}
+native_throughput {'step': 121, 'windows': 1936, 'training_targets': 991232, 'train_wall_seconds': 58.984247415002756, 'train_cpu_seconds': 223.1659145449999, 'validation_ce': 5.776365101337433, 'validation_top1': 0.074462890625}
+COMPLETE native_throughput 121 58.984247415002756 5.72637651860714

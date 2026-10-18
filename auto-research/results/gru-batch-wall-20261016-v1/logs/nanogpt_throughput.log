@@ -1,0 +1,7 @@
+number of parameters: 0.94M
+nanogpt_throughput {'step': 0, 'windows': 0, 'training_targets': 0, 'train_wall_seconds': 0.0, 'train_cpu_seconds': 0.0, 'validation_ce': 7.641003131866455, 'validation_top1': 0.001708984375}
+nanogpt_throughput {'step': 92, 'windows': 368, 'training_targets': 188416, 'train_wall_seconds': 15.154281071994774, 'train_cpu_seconds': 60.1877136, 'validation_ce': 6.453031957149506, 'validation_top1': 0.044921875}
+nanogpt_throughput {'step': 183, 'windows': 732, 'training_targets': 374784, 'train_wall_seconds': 30.022109729990916, 'train_cpu_seconds': 119.43091406600001, 'validation_ce': 6.00151127576828, 'validation_top1': 0.05419921875}
+nanogpt_throughput {'step': 275, 'windows': 1100, 'training_targets': 563200, 'train_wall_seconds': 45.14978376998806, 'train_cpu_seconds': 179.44713929799997, 'validation_ce': 5.802549958229065, 'validation_top1': 0.054443359375}
+nanogpt_throughput {'step': 361, 'windows': 1444, 'training_targets': 739328, 'train_wall_seconds': 59.699464010973315, 'train_cpu_seconds': 237.34242527699996, 'validation_ce': 5.7446136474609375, 'validation_top1': 0.0615234375}
+COMPLETE nanogpt_throughput 361 59.699464010973315 5.694121807813644

@@ -1,0 +1,6 @@
+mingru_linear_throughput {'step': 0, 'windows': 0, 'training_targets': 0, 'train_wall_seconds': 0.0, 'train_cpu_seconds': 0.0, 'validation_ce': 8.090981483459473, 'validation_top1': 0.0}
+mingru_linear_throughput {'step': 49, 'windows': 784, 'training_targets': 401408, 'train_wall_seconds': 15.019164751010976, 'train_cpu_seconds': 55.69092606800002, 'validation_ce': 6.232661068439484, 'validation_top1': 0.05419921875}
+mingru_linear_throughput {'step': 98, 'windows': 1568, 'training_targets': 802816, 'train_wall_seconds': 30.287289903013516, 'train_cpu_seconds': 112.33366776400003, 'validation_ce': 5.6883034110069275, 'validation_top1': 0.072265625}
+mingru_linear_throughput {'step': 143, 'windows': 2288, 'training_targets': 1171456, 'train_wall_seconds': 45.324274470009186, 'train_cpu_seconds': 167.575933615, 'validation_ce': 5.497926115989685, 'validation_top1': 0.08984375}
+mingru_linear_throughput {'step': 189, 'windows': 3024, 'training_targets': 1548288, 'train_wall_seconds': 59.46860970701164, 'train_cpu_seconds': 219.69634297899992, 'validation_ce': 5.430789411067963, 'validation_top1': 0.09423828125}
+COMPLETE mingru_linear_throughput 189 59.46860970701164 5.392680451273918

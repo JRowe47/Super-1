@@ -1,0 +1,123 @@
+{
+  "run_id": "b1_t2_lr002",
+  "batch": 1,
+  "threads": 2,
+  "peak_lr": 0.002,
+  "reference_step_wall_seconds": 0.052144949999274104,
+  "arm": "mingru_linear",
+  "parameters": 996320,
+  "seed": 101603,
+  "updates": 1280,
+  "training_targets": 655360,
+  "train_wall_seconds": 59.824030060026416,
+  "train_cpu_seconds": 119.59534957999999,
+  "final": {
+    "ce": 5.189114928245544,
+    "perplexity": 179.30978065761164,
+    "top1": 0.12860107421875,
+    "targets": 16384,
+    "window_ce": [
+      5.336043357849121,
+      5.29353666305542,
+      5.34089469909668,
+      4.978799819946289,
+      5.055591106414795,
+      5.105177402496338,
+      4.86983585357666,
+      5.224536895751953,
+      5.229373931884766,
+      5.187556266784668,
+      5.079675197601318,
+      4.9928202629089355,
+      5.0594482421875,
+      5.329249858856201,
+      5.2511091232299805,
+      5.32454776763916,
+      5.1456098556518555,
+      5.291752815246582,
+      5.162736415863037,
+      5.287484169006348,
+      5.225296974182129,
+      4.860239505767822,
+      5.732862949371338,
+      5.036678314208984,
+      5.408434867858887,
+      5.127159118652344,
+      5.216820240020752,
+      5.370861053466797,
+      5.035220146179199,
+      5.33121919631958,
+      5.002232551574707,
+      5.158873081207275
+    ]
+  },
+  "monitor": [
+    {
+      "step": 0,
+      "windows": 0,
+      "training_targets": 0,
+      "train_wall_seconds": 0.0,
+      "train_cpu_seconds": 0.0,
+      "validation_ce": 8.090981483459473,
+      "validation_top1": 0.0
+    },
+    {
+      "step": 311,
+      "windows": 311,
+      "training_targets": 159232,
+      "train_wall_seconds": 15.027246444989942,
+      "train_cpu_seconds": 30.097061979999985,
+      "validation_ce": 5.839252531528473,
+      "validation_top1": 0.068603515625
+    },
+    {
+      "step": 618,
+      "windows": 618,
+      "training_targets": 316416,
+      "train_wall_seconds": 30.03207822900731,
+      "train_cpu_seconds": 60.06489192900002,
+      "validation_ce": 5.492516458034515,
+      "validation_top1": 0.09326171875
+    },
+    {
+      "step": 956,
+      "windows": 956,
+      "training_targets": 489472,
+      "train_wall_seconds": 45.00556855001378,
+      "train_cpu_seconds": 89.96501320100006,
+      "validation_ce": 5.330958962440491,
+      "validation_top1": 0.105712890625
+    },
+    {
+      "step": 1280,
+      "windows": 1280,
+      "training_targets": 655360,
+      "train_wall_seconds": 59.824030060026416,
+      "train_cpu_seconds": 119.59534957999999,
+      "validation_ce": 5.236840844154358,
+      "validation_top1": 0.114990234375
+    }
+  ],
+  "budget_unused_seconds": 0.17596993997358368,
+  "run_wall_seconds": 61.81860474300083,
+  "run_cpu_seconds": 123.574624279,
+  "checkpoint_sha256": "fb60fb39b03dd40247b8b1c5ecf70331580da88f98c9dca6d85f8167c09190a7",
+  "protocol_sha256": "84a8241d2105803068dfd87e686e9181a545c0ceffd042e6f2e36df88db157e2",
+  "runtime": {
+    "torch": "2.14.1+cpu",
+    "numpy": "2.5.4",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+    "threads": 2,
+    "interop": 1,
+    "affinity": [
+      0,
+      1
+    ],
+    "device": "cpu",
+    "dtype": "float32",
+    "cpu_model": "AMD EPYC 9V74 80-Core Processor",
+    "cpu_quota": "800000 100000"
+  },
+  "peak_rss_kib": 457032
+}
