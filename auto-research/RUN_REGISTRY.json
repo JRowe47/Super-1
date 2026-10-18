@@ -183,6 +183,14 @@
       "status": "COMPLETED",
       "terminal": "auto-research/results/usecase-sampling-descent-20261018-v1/execution/TERMINAL.json",
       "verification": "auto-research/results/usecase-sampling-descent-20261018-v1/execution/VERIFICATION.json"
+    },
+    {
+      "approval": "User asks to keep improving text and store a library of ideal parameters by use case; bounded local sampler-only follow-up, no cloud or perpetual execution.",
+      "protocol": "auto-research/results/text-sampling-library-20261018-v1/PROTOCOL.json",
+      "protocol_sha256": "15675069296bc03051c7638aa13304f619aed549b292f1a62a2018258338c75f",
+      "run_id": "text-sampling-library-20261018-v1",
+      "source_manifest": "auto-research/results/text-sampling-library-20261018-v1/SOURCE_MANIFEST.json",
+      "status": "PREREGISTERED"
     }
   ],
   "schema_version": 1,

@@ -1,0 +1,68 @@
+{
+  "run_id": "text-sampling-library-20261018-v1",
+  "authorization": "User asks to keep improving text and store a library of ideal parameters by use case; bounded local sampler-only follow-up, no cloud or perpetual execution.",
+  "hypothesis": "Smaller gradient steps preserve useful shared initialization while text-only continuation adapts sampling; matched architecture and examples isolate step size.",
+  "config": {
+    "vocab": 256,
+    "width": 48,
+    "heads": 4,
+    "layers": 4,
+    "bases": 2,
+    "router_hidden": 8,
+    "context": 64,
+    "batch": 8,
+    "threads": 1,
+    "seeds": [
+      73,
+      191,
+      307
+    ],
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "eps": 1e-08,
+    "clip": 1.0,
+    "lr_reduction": 0.5,
+    "validation_min_delta": 0.0001,
+    "selection_examples": 128,
+    "confirmation_examples": 256,
+    "minimum_gain_nats": 0.02,
+    "t95_df2": 4.302652729696142,
+    "cpu_seconds": 900,
+    "wall_seconds": 1800,
+    "max_artifact_bytes": 157286400,
+    "run_id": "text-sampling-library-20261018-v1",
+    "rounds": 4,
+    "updates_per_round": 250,
+    "arms": {
+      "continued": 0.003,
+      "small_step": 0.0003
+    },
+    "text_regions": {
+      "tune": [
+        669236,
+        780775
+      ],
+      "selection": [
+        780775,
+        892315
+      ],
+      "confirmation": [
+        1037134,
+        1053774
+      ]
+    },
+    "tokenizer": "utf8-bytes-v1",
+    "use_case": "text/shakespeare-byte",
+    "hypothesis": "Smaller gradient steps preserve useful shared initialization while text-only continuation adapts sampling; matched architecture and examples isolate step size."
+  },
+  "initialization": "Each seed uses its previously selected shared_token round3 and frozen base. Adam optimizer is reset in both arms.",
+  "selection": "Per seed/arm best round0..4 on 128 fixed selection windows; choose one arm by mean selection CE across all3seeds including incumbent fallback.",
+  "confirmation": "Only after FREEZE.json: score all three arms on 256 previously unscored 65-byte windows [1037134,1053774). Primary inferential contrast is validation-selected winner vs incumbent. Other arm descriptive only.",
+  "promotion": "All3 paired gaps negative, mean gain >=0.02 nats/byte and paired95 interval upper bound below0. Otherwise retain reference; retain all candidates. No claim reference is optimal.",
+  "exposure": "Both arms:1000 updates/seed,512 targets/update; common minibatch stream. Historical tuning/selection regions reused and exposed; new final region untouched until freeze.",
+  "limits": "Single Shakespeare corpus, byte model, 4 active steps; 3 reused backbone seeds; no new pretraining, no nanoGPT comparison, no speed claim.",
+  "canary": "Cross-shape exact equality failed and is preserved; same-shape suffix-intervention causality passed exactly; source/gradient semantics unchanged.",
+  "library": "Explicit use-case IDs, exact backbone fingerprint/tokenizer/context, artifact hashes, metrics/evidence, append-only candidate records and active reference pointers; unknown mappings rejected."
+}
