@@ -1,5 +1,9 @@
 # Research catalog and recovery status — 2026-10-15
 
+## Perturbation optimizer recovered — 2026-10-18
+
+The [W560 perturbation optimizer](PERTURBATION_OPTIMIZATION.md) is now preserved as source: 85 original frozen files plus a separately inventoried later MPS snapshot and all three located completed decisions. The recovery includes 137 imported files, fresh passing toy tests, and a read-only audit of all 46 saved candidates. One historical promotion and two rejections remain visible; scores are from reused optimization data. Checkpoints/token arrays stay external and no new language training or W560 evaluation was launched.
+
 ## Located input uploads completed — 2026-10-15
 
 The exact 4GB training corpus (three ordered parts), validation corpus, teacher weights, tokenizer/config files and located pinned benchmark caches are now in the [private input release](https://github.com/rohanarun/function-weights-research/releases/tag/replication-inputs-20261015). Every remote asset digest matches its local SHA-256. See [download/reconstruction instructions](results/recovered-20261015/DOWNLOAD_INPUTS.md) and [input manifest](results/recovered-20261015/INPUT_MANIFEST.json). Earlier external-only statements are historical and superseded. Unlocated artifacts remain explicitly unresolved.

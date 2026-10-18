@@ -1,0 +1,61 @@
+{
+  "schema": "hfw_step3052_binding_contract_v2",
+  "status": "LOCAL_AUDIT_CONTRACT_NO_PARENT_ACCESS_OR_EXECUTION_AUTHORITY",
+  "source": {
+    "namespace": "hierarchical_state_1k_100m_20260814_v3_nanogpt",
+    "root_relative_to_workspace": "hierarchical_state_1k_100m_20260814_v3_nanogpt",
+    "files": {
+      "config/bottleneck_hfw_1k_100m.json": "f0640b60349940ff69c6ae2f62785954edd07d68984e90132dd428af0ddf83c1",
+      "release_manifest.v1.json": "6909266f9950a9c1da0d5a92fa048d29c84699bc39f6a42bb8f92712b9da323c",
+      "representation_experiments/common.py": "eed2cad9f3313b5c889bf72bc72aa78254466ff1e1b5548d363a26b42f7757dd",
+      "representation_experiments/nanogpt_control.py": "1adfffbd843a55f00491b50cb46bc6c5d99041f54d9f48251ce3e79ad672a870",
+      "representation_experiments/predictive_models.py": "05560f064eddfe069be3d4459ea1fff8c644286aba101058370516ea5e298db8",
+      "source_manifest.v1.json": "8375818ce0e0f88ef5cea8af4b531f6d387db2578482d2532ada4e5cc9f1da7e",
+      "third_party/nanogpt/model.py": "7c01703240dbec5d554527dc666e35b3df8391d0b117fddc07afcf325a21d11c"
+    }
+  },
+  "architecture": {
+    "arm": "bottleneck_hfw_1k_100m",
+    "kind": "bottleneck_hierarchical_function_weights",
+    "vocab_size": 151936,
+    "width": 560,
+    "max_context": 512,
+    "state_width": 128,
+    "rank": 39,
+    "controls": 6,
+    "virtual_depth": 24,
+    "basis": "open_uniform_cubic",
+    "expected_functional_affine_modules": 8,
+    "expected_state_codec_modules": 4
+  },
+  "accounting": {
+    "total_learned_parameters": 99874320,
+    "frozen_learned_parameters": 85085280,
+    "allowed_parameters": 14789040,
+    "fixed_buffer_elements": 1152,
+    "state_dict_tensor_elements": 99875472,
+    "groups": {
+      "base_affines": 10046960,
+      "function_weight_left_factors": 1703520,
+      "function_weight_right_factors": 2751840,
+      "state_codecs": 286720
+    }
+  },
+  "immutable_parent": {
+    "checkpoint_sha256": "0c69fbf81526282d7d68ac258a98867d7de0f0e88e69e5f9f0543fdf1c535fba",
+    "review_receipt_sha256": "894f1f44499678755b86f94909033aaaf82ad546c05dd94211554696474f8802",
+    "step": 3052,
+    "checkpoint_path": null,
+    "review_receipt_path": null,
+    "accessed_by_binding_audit": false
+  },
+  "authorization": {
+    "read_parent": false,
+    "load_parent": false,
+    "write_parent": false,
+    "create_real_delta": false,
+    "launch_workers": false,
+    "remote_access": false,
+    "gpu_execution": false
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "schema": "hfw_w560_continuous_controller_config_v1",
+  "status": "V1R1_EXACT_CANDIDATE_FIX_IMPLEMENTED_NOT_LAUNCHED_NOT_FROZEN",
+  "controller_revision": "v1r1",
+  "supersedes_controller_revision": "v1",
+  "v1r1_fix": "EXACT_CANDIDATE_GROUP_FLAT_IS_PROMOTION_SOURCE_OF_TRUTH_NATIVE_SOLVER_DELTAS_ARE_DIRECTIONAL_PROVENANCE",
+  "runtime_release": {
+    "manifest_relative_path": "config/continuous_runtime_manifest.v1.json",
+    "manifest_file_sha256": "f8df4705e6ee9539518b04c62b947fc42204614d6f6627d3ce430220f512837e",
+    "manifest_size_bytes": 9436,
+    "manifest_identity_sha256": "9f3a99d3ddf5afa9ace6d8dc19f5e495b8d07f829fbfe7b87f47a2142b8b3581"
+  },
+  "origin": {
+    "original_checkpoint_path": "/home/rohanarun/funcweights-hierarchy-compiler-v1/runs/bottleneck-hfw-1k-100m-continuation-25m-20260814T2210Z-v5r2r2/checkpoint_step_3052.pt",
+    "relocated_checkpoint_path": "/home/rohanarun/funcweights-hierarchy-compiler-v1/continuous-optimizer-inputs/w560-step3052/checkpoint_step_3052.pt",
+    "checkpoint_sha256": "0c69fbf81526282d7d68ac258a98867d7de0f0e88e69e5f9f0543fdf1c535fba",
+    "size_bytes": 1198558775,
+    "minimum_link_count": 3,
+    "relocated_review_receipt_path": "/home/rohanarun/funcweights-hierarchy-compiler-v1/continuous-optimizer-inputs/w560-step3052/review_stop_checkpoint_step_3052.json",
+    "review_receipt_sha256": "894f1f44499678755b86f94909033aaaf82ad546c05dd94211554696474f8802",
+    "review_schema": "review_stop_checkpoint_publication_receipt_v1",
+    "checkpoint_identity_sha256": "1e220d06231a18d896404137f8439f6936fcab2052ff71db351b2afc94c75139",
+    "model_state_digest": "4143d8cb3729998bd0dc9ded907ba8756ba5a8f8b49335f8185b055f3aac3d0b",
+    "step": 3052,
+    "tokens": 25001984
+  },
+  "source": {
+    "root": "/home/rohanarun/funcweights-hierarchy-compiler-v1/staging/hierarchical-state-1k-100m-v5r2r2-package-20260814T2205Z-5ed20cd0-attempt1/hierarchical_state_1k_100m_20260814_v5r2r2_continuation_nanogpt",
+    "files": {
+      "representation_experiments/predictive_models.py": "05560f064eddfe069be3d4459ea1fff8c644286aba101058370516ea5e298db8",
+      "representation_experiments/common.py": "eed2cad9f3313b5c889bf72bc72aa78254466ff1e1b5548d363a26b42f7757dd",
+      "config/bottleneck_hfw_1k_100m.json": "f0640b60349940ff69c6ae2f62785954edd07d68984e90132dd428af0ddf83c1",
+      "protocol.v1.json": "7a013d9640241577844da13ffb85883cce6b7fab5d50b6e4de924a09fbd62663",
+      "release_manifest.v1.json": "d61d003ede83dcfb302be5da854b3628dd53bdd13632e9d92c7fa8a75a16a190"
+    }
+  },
+  "corpus": {
+    "path": "/home/rohanarun/funcweights-hierarchy-compiler-v1/data/qwen3-06b-representation/val.bin",
+    "sha256": "8517985c4979dbc95c83137ee534e30e789e2275e4ba1ee1fd31e1f0d566e4d3",
+    "size_bytes": 8000000,
+    "dtype": "uint32"
+  },
+  "token_policy": {
+    "context": 512,
+    "batch_size": 2,
+    "prior_public_exclusion": {"batches": 16, "seed": 33001},
+    "search": {"batches": 12, "seed": 73001, "expected_u32le_sha256": "afdd49a132f75d4ec729c6ea1307415fa9697f831fbd618367bac8dc3823af79"},
+    "commit": {
+      "batches": 16,
+      "starts": [63099, 140562, 257526, 309852, 363204, 383724, 489402, 504792, 509409, 583794, 589950, 653562, 725895, 787455, 845424, 855684, 888516, 897750, 978291, 1090125, 1107054, 1111158, 1265571, 1303533, 1393821, 1518480, 1527714, 1593891, 1836540, 1855008, 1879632, 1930419],
+      "expected_u32le_sha256": "b4592e6295a6e3d8b0f3979df2caea459355467bc97d301bfc62caba15dd7047",
+      "published_reveal": {
+        "path": "/home/rohanarun/funcweights-hierarchy-compiler-v1/runs/hfw-w560-proven-solver-authority-20260815T022700Z-v1r4r1-attempt2/sealed_reveals/2e7e92507571b8629d628ab201e29eccc4e778aa0cba3d4973dabe33bdd99526.reveal.json",
+        "sha256": "2e7e92507571b8629d628ab201e29eccc4e778aa0cba3d4973dabe33bdd99526",
+        "schema": "sealed_evaluation_reveal_preimage_v1"
+      },
+      "prior_authorization": {
+        "path": "/home/rohanarun/funcweights-hierarchy-compiler-v1/runs/hfw-w560-proven-solver-public-20260815T022700Z-v1r4r1-attempt2/final_eval_authorizations/7d6476830f364ee4ce0dbe5eda2d8d728b301c77378ed7623675bccd8abddd3e.authorization.json",
+        "sha256": "7d6476830f364ee4ce0dbe5eda2d8d728b301c77378ed7623675bccd8abddd3e",
+        "schema": "exact_four_branch_final_eval_authorization_v1",
+        "status": "AUTHORIZED"
+      },
+      "reclassified_role": "PERMANENT_REUSABLE_COMMIT_OBJECTIVE_NOT_HELD_OUT"
+    },
+    "generate_all_before_first_proposal": true,
+    "new_unique_token_positions_after_initialization": 0,
+    "final_bank": null
+  },
+  "vendor": {
+    "package": "vendor.hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver",
+    "branch_search_sha256": "0aced15800caf4042ffd1863c7cd1c5415bed6d9dc799220be17635bd5c5f349",
+    "production_bridge_sha256": "919c70204c5fefd86a65410f1256c14f54c4ffb34b4db15e5b993ff705cc0ac7",
+    "production_protocol_sha256": "be700d482822ac2e9317e43e6714d0d1100c03d8d60f4b944d8ddcb6ad7f7356"
+  },
+  "controller": {
+    "groups": ["base_affines", "left_factors", "right_factors", "codecs"],
+    "root_seed": 5609001,
+    "parallel_workers": 1,
+    "forward_device": "cuda:0",
+    "expected_parent_commit_mean_ce": 5.413214594125748,
+    "parent_commit_reproduction_tolerance": 1e-7,
+    "minimum_relative_commit_improvement": 0.0001,
+    "duplicate_forward_tolerance": 1e-7,
+    "stale_policy": "reject_without_merge_or_rebase",
+    "full_commit_bank_duplicate_evaluation": true,
+    "materialize_one_full_checkpoint_per_verified_promotion": true,
+    "disk_safety": {
+      "minimum_unreserved_free_bytes": 32212254720,
+      "worker_reservation_formula": {
+        "maximum_group_elements_from_frozen_protocol": 10046960,
+        "maximum_accepts_per_branch_from_frozen_protocol": 18,
+        "artifacts_per_accept": 3,
+        "bytes_per_float32_element": 4,
+        "fixed_metadata_and_filesystem_overhead_bytes": 536870912,
+        "computed_reserved_bytes_per_worker": 2707014272
+      },
+      "promotion_reservation_formula": {
+        "full_checkpoint_source_size_bytes": 1198558775,
+        "maximum_group_elements_from_frozen_protocol": 10046960,
+        "selected_group_artifacts": 2,
+        "bytes_per_float32_element": 4,
+        "fixed_metadata_and_filesystem_overhead_bytes": 536870912,
+        "computed_reserved_bytes_for_possible_promotion": 1815805367
+      }
+    },
+    "max_waves": null
+  },
+  "authority": {
+    "implementation_authorized_by_user": true,
+    "continuous_runtime_authorized_by_user": true,
+    "launch_deferred_until_all_fail_closed_gates_pass": true,
+    "launched": false,
+    "frozen": false,
+    "remote_access_authorized": true
+  }
+}

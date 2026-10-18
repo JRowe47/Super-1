@@ -1,0 +1,31 @@
+{
+  "schema": "hfw_w560_local_verify_public_selection_v1",
+  "role": "LOCAL_VERIFY",
+  "disclosure": "PERMANENT_REUSED_OPTIMIZATION_DATA_NOT_HELD_OUT",
+  "source": {
+    "path": "/Users/rohanarun/Documents/trin/tmp/training4-bootstrap-20260809/data/qwen3-06b-representation/val.bin",
+    "sha256": "8517985c4979dbc95c83137ee534e30e789e2275e4ba1ee1fd31e1f0d566e4d3",
+    "size_bytes": 8000000,
+    "dtype": "uint32_le",
+    "token_count": 2000000
+  },
+  "selection": {
+    "context_tokens": 512,
+    "sequence_tokens": 513,
+    "starts": [63099, 140562, 257526, 309852, 363204, 383724, 489402, 504792, 509409, 583794, 589950, 653562, 725895, 787455, 845424, 855684, 888516, 897750, 978291, 1090125, 1107054, 1111158, 1265571, 1303533, 1393821, 1518480, 1527714, 1593891, 1836540, 1855008, 1879632, 1930419]
+  },
+  "materialized_bank": {
+    "relative_path": "inputs/local_verify/local_verify.u32le",
+    "sha256": "b4592e6295a6e3d8b0f3979df2caea459355467bc97d301bfc62caba15dd7047",
+    "size_bytes": 65664,
+    "logical_shape": [32, 513],
+    "runtime_batch_shape": [8, 4, 513],
+    "dtype": "uint32_le"
+  },
+  "materialization": {
+    "before_any_local_optimization": true,
+    "zero_new_unique_token_positions_after_materialization": true,
+    "reused_for_candidate_selection_across_generations": true,
+    "held_out_generalization_claimed": false
+  }
+}

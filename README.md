@@ -57,6 +57,16 @@ Both three-seed pilots above retain every seed and saved exact duplicate FP32 ev
 
 Negative findings remain available too: the latest [synthetic rotation experiment](auto-research/reports/synthetic-rotation-pr-20261015-v1.md) did not meet its promotion threshold and was not promoted.
 
+## Perturbation-based weight optimization
+
+The recovered [forward-only weight optimizer](auto-research/PERTURBATION_OPTIMIZATION.md) scores paired weight perturbations and uses a trust-region line search without backpropagation. Its original W560 solver/controller, frozen source manifests, 11 passing integrity tests and saved MPS decisions are now included. This historical implementation is separate from the current Transformer and minGRU models; the saved improvement is on reused optimization data, not a held-out benchmark.
+
+![Historical W560 progress by perturbation optimization method](graphs/w560-perturbation-methods-20260822.png)
+
+![Historical W560 local optimizer promotions and rejected candidates](graphs/w560-local-optimizer-20260816.png)
+
+These user-supplied graphs are historical snapshots from August 22 and August 16, 2026. The first explicitly shows G11 checkpoint materialization in progress. Their full trajectories have not been independently replayed in this recovery; the [guide](auto-research/PERTURBATION_OPTIMIZATION.md#historical-graphs) separates them from the audited three-decision ledger.
+
 ## Reproduce and inspect
 
 ```sh

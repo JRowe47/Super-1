@@ -1,0 +1,56 @@
+{
+  "accounting": {
+    "allowed_parameters": 14789040,
+    "fixed_buffer_elements": 1152,
+    "frozen_learned_parameters": 85085280,
+    "groups": {
+      "base_affines": 10046960,
+      "function_weight_left_factors": 1703520,
+      "function_weight_right_factors": 2751840,
+      "state_codecs": 286720
+    },
+    "total_learned_parameters": 99874320
+  },
+  "authorization": {
+    "create_real_delta": false,
+    "gpu_execution": false,
+    "launch_workers": false,
+    "load_parent": false,
+    "read_parent": false,
+    "remote_access": false,
+    "write_parent": false
+  },
+  "blockers": [],
+  "created_at_utc": "2026-08-15T00:20:46.999010+00:00",
+  "immutable_parent": {
+    "accessed_by_binding_audit": false,
+    "checkpoint_path": null,
+    "checkpoint_sha256": "0c69fbf81526282d7d68ac258a98867d7de0f0e88e69e5f9f0543fdf1c535fba",
+    "review_receipt_path": null,
+    "review_receipt_sha256": "894f1f44499678755b86f94909033aaaf82ad546c05dd94211554696474f8802",
+    "step": 3052
+  },
+  "manifest": {
+    "canonical_payload_sha256": "18b6826ba81372f5c65fec853ab558a4fadf12aa0e6a353ffd1a04e48fac0522",
+    "path": "manifests/hfw_step3052_w560_weight_address.v2.json",
+    "sha256": "fb1b77f23305995ed5546354274df60f59e2f5d8f91f8273095cf644387286d6"
+  },
+  "parent_checkpoint_accessed": false,
+  "remote_or_gpu_accessed": false,
+  "schema": "local_hfw_step3052_binding_validation_receipt_v2",
+  "scope": "local_source_config_derivation_only_no_parent_checkpoint_access",
+  "source_files": {
+    "build_hfw_binding_receipt.py": "ef56c190b19b6b7e32f1d0c704d992268a7ba020ccc8ff67b40459ee19bcc1ed",
+    "config/hfw_step3052_binding_contract.v2.json": "be3e1bec6eb91e2de1952a955d5b0df0d019abda3823a12d6ca71d562e573ceb",
+    "hfw_binding.py": "b13e53bde85e3911ed339524d55ad17aa0d86fb3a4c0a06cc160b02e48aea14d",
+    "protocol.py": "9eaa1e0f7ccd12bf16726a8ff6e3af759e9ddbbefb951d891e76deb4297b35de",
+    "test_hfw_binding.py": "dcf6fd0c1d64562d5acdd8225079a8b826549af5c2135dc4a8cd77005b4322c5"
+  },
+  "status": "PASS",
+  "tests": {
+    "combined_output_sha256": "98087e564ed0b87650fee97990068f5a8478ea1c86cfee4b03439adafd46bdd1",
+    "command": "/Applications/Xcode.app/Contents/Developer/usr/bin/python3 -W error -m unittest -v test_hfw_binding.py",
+    "exit_code": 0,
+    "last_nonempty_line": "OK"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "authorization": {
+    "bridge_namespace_accessed": false,
+    "bridge_namespace_mutated": false,
+    "parent_checkpoint_accessed": false,
+    "parent_checkpoint_mutated": false,
+    "production_execution_authorized": false,
+    "remote_access": false,
+    "vm_access": false
+  },
+  "blockers": [],
+  "combined_regression_tests": {
+    "combined_output_sha256": "f9de2d72eb92c1d719cb808a6abae00a9c043f9c8f64654980b01fbd3c98d1a9",
+    "command": "/Applications/Xcode.app/Contents/Developer/usr/bin/python3 -W error -m unittest -q test_sealed_evaluation_v2.py test_sealed_evaluation.py test_hfw_binding.py test_coordinator.py",
+    "exit_code": 0,
+    "last_nonempty_line": "OK",
+    "test_count": 21
+  },
+  "created_at_utc": "2026-08-15T00:41:50.653842+00:00",
+  "focused_tests": {
+    "combined_output_sha256": "83abbc5419e0a89ad117a2f7cfb6440413397fef786dea819557bc6f934831e2",
+    "command": "/Applications/Xcode.app/Contents/Developer/usr/bin/python3 -W error -m unittest -v test_sealed_evaluation_v2.py",
+    "exit_code": 0,
+    "last_nonempty_line": "OK",
+    "test_count": 5
+  },
+  "properties": {
+    "accepted_and_rejected_branch_events_are_canonical": true,
+    "all_four_branches_share_the_bound_parent": true,
+    "calibration_and_public_intervals_excluded_before_commit": true,
+    "exactly_four_unique_branch_finals_required": true,
+    "mutation_and_incomplete_branch_sets_fail_before_terminal": true,
+    "offsets_derived_authority_side_from_validation_identity": true,
+    "one_final_evaluation_call_authorized": true,
+    "private_entropy_is_at_least_256_bits": true,
+    "terminal_precedes_reveal": true,
+    "validation_bytes_rehashed_before_authorization": true
+  },
+  "schema": "sealed_evaluation_v2_integration_validation_receipt_v1",
+  "scope": "local_synthetic_integration_only_no_parent_vm_or_bridge_access",
+  "source_files": {
+    "build_sealed_evaluation_v2_receipt.py": "0c03a3cb4b66b4400d727a50c1a6d41ca584a89b9025cb5b4b70c6e9cb3ff171",
+    "sealed_evaluation.py": "5a8b5d4bb10a4a02ca1c5263af7ceab7db70ead6ceed7fb47ba9188cbfbd662c",
+    "sealed_evaluation_v2.py": "90d38bdfda4ed9f3bfd2e0fa4e2565c6d3bf2354a2a808d8ddba67efc595e050",
+    "test_sealed_evaluation_v2.py": "fef1d8121796e8b90a844b252dcd814518df416fe918772285ebe6343ecb1b12"
+  },
+  "status": "PASS",
+  "vendor_manifest": {
+    "path": "manifests/sealed_evaluation_v2_vendor_manifest.v1.json",
+    "sha256": "dcf9f130f673edd8006831e593c912af037e10f125c5af4ce886b7cecdd58d1b"
+  }
+}

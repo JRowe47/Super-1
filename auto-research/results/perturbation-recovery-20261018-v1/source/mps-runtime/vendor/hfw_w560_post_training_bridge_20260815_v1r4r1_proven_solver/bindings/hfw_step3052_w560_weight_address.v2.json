@@ -1,0 +1,1291 @@
+{
+  "allowed": {
+    "exhaustive_over_allowed_parameters": true,
+    "groups": {
+      "base_affines": {
+        "entries": [
+          {
+            "dtype": "float32",
+            "flat_end_exclusive": 1120,
+            "flat_start": 0,
+            "local_end_exclusive": 1120,
+            "local_start": 0,
+            "parameters": 1120,
+            "shape": [
+              1120
+            ],
+            "state_dict_key": "cross_scale.base.bias"
+          },
+          {
+            "dtype": "float32",
+            "flat_end_exclusive": 1882720,
+            "flat_start": 1120,
+            "local_end_exclusive": 1881600,
+            "local_start": 0,
+            "parameters": 1881600,
+            "shape": [
+              1120,
+              1680
+            ],
+            "state_dict_key": "cross_scale.base.weight"
+          },
+          {
+            "dtype": "float32",
+            "flat_end_exclusive": 2539744,
+            "flat_start": 2538064,
+            "local_end_exclusive": 1680,
+            "local_start": 0,
+            "parameters": 1680,
+            "shape": [
+              1680
+            ],
+            "state_dict_key": "document_cell.hidden_function.base.bias"
+          },
+          {
+            "dtype": "float32",
+            "flat_end_exclusive": 3480544,
+            "flat_start": 2539744,
+            "local_end_exclusive": 940800,
+            "local_start": 0,
+            "parameters": 940800,
+            "shape": [
+              1680,
+              560
+            ],
+            "state_dict_key": "document_cell.hidden_function.base.weight"
+          },
+          {
+            "dtype": "float32",
+            "flat_end_exclusive": 4006528,
+            "flat_start": 4004848,
+            "local_end_exclusive": 1680,
+            "local_start": 0,
+            "parameters": 1680,
+            "shape": [
+              1680
+            ],
+            "state_dict_key": "document_cell.input_function.base.bias"
+          },
+          {
+            "dtype": "float32",
+            "flat_end_exclusive": 4947328,
+            "flat_start": 4006528,
+            "local_end_exclusive": 940800,
+            "local_start": 0,
+            "parameters": 940800,
+            "shape": [
+              1680,
+              560
+            ],
+            "state_dict_key": "document_cell.input_function.base.weight"
+          },
+          {
+            "dtype": "float32",
+            "flat_end_exclusive": 90557472,
+            "flat_start": 90555792,
+            "local_end_exclusive": 1680,
+            "local_start": 0,
+            "parameters": 1680,
+            "shape": [
+              1680
+            ],
+            "state_dict_key": "fast_cell.hidden_function.base.bias"
+          },
+          {
+            "dtype": "float32",
+            "flat_end_exclusive": 91498272,
+            "flat_start": 90557472,
+            "local_end_exclusive": 940800,
+            "local_start": 0,
+            "parameters": 940800,
+            "shape": [
+              1680,
+              560
+            ],
+            "state_dict_key": "fast_cell.hidden_function.base.weight"
+          },
+          {
+            "dtype": "float32",
+            "flat_end_exclusive": 92024256,
+            "flat_start": 92022576,
+            "local_end_exclusive": 1680,
+            "local_start": 0,
+            "parameters": 1680,
+            "shape": [
+              1680
+            ],
+            "state_dict_key": "fast_cell.input_function.base.bias"
+          },
+          {
+            "dtype": "float32",
+            "flat_end_exclusive": 94846656,
+            "flat_start": 92024256,
+            "local_end_exclusive": 2822400,
+            "local_start": 0,
+            "parameters": 2822400,
+            "shape": [
+              1680,
+              1680
+            ],
+            "state_dict_key": "fast_cell.input_function.base.weight"
+          },
+          {
+            "dtype": "float32",
+            "flat_end_exclusive": 95634720,
+            "flat_start": 95634160,
+            "local_end_exclusive": 560,
+            "local_start": 0,
+            "parameters": 560,
+            "shape": [
+              560
+            ],
+            "state_dict_key": "readout.base.bias"
+          },
+          {
+            "dtype": "float32",
+            "flat_end_exclusive": 96261920,
+            "flat_start": 95634720,
+            "local_end_exclusive": 627200,
+            "local_start": 0,
+            "parameters": 627200,
+            "shape": [
+              560,
+              1120
+            ],
+            "state_dict_key": "readout.base.weight"
+          },
+          {
+            "dtype": "float32",
+            "flat_end_exclusive": 96656864,
+            "flat_start": 96655184,
+            "local_end_exclusive": 1680,
+            "local_start": 0,
+            "parameters": 1680,
+            "shape": [
+              1680
+            ],
+            "state_dict_key": "segment_cell.hidden_function.base.bias"
+          },
+          {
+            "dtype": "float32",
+            "flat_end_exclusive": 97597664,
+            "flat_start": 96656864,
+            "local_end_exclusive": 940800,
+            "local_start": 0,
+            "parameters": 940800,
+            "shape": [
+              1680,
+              560
+            ],
+            "state_dict_key": "segment_cell.hidden_function.base.weight"
+          },
+          {
+            "dtype": "float32",
+            "flat_end_exclusive": 98123648,
+            "flat_start": 98121968,
+            "local_end_exclusive": 1680,
+            "local_start": 0,
+            "parameters": 1680,
+            "shape": [
+              1680
+            ],
+            "state_dict_key": "segment_cell.input_function.base.bias"
+          },
+          {
+            "dtype": "float32",
+            "flat_end_exclusive": 99064448,
+            "flat_start": 98123648,
+            "local_end_exclusive": 940800,
+            "local_start": 0,
+            "parameters": 940800,
+            "shape": [
+              1680,
+              560
+            ],
+            "state_dict_key": "segment_cell.input_function.base.weight"
+          }
+        ],
+        "parameters": 10046960,
+        "tensor_count": 16
+      },
+      "function_weight_left_factors": {
+        "entries": [
+          {
+            "dtype": "float32",
+            "flat_end_exclusive": 2275840,
+            "flat_start": 1882720,
+            "local_end_exclusive": 393120,
+            "local_start": 0,
+            "parameters": 393120,
+            "shape": [
+              6,
+              1680,
+              39
+            ],
+            "state_dict_key": "cross_scale.control_left"
+          },
+          {
+            "dtype": "float32",
+            "flat_end_exclusive": 3611584,
+            "flat_start": 3480544,
+            "local_end_exclusive": 131040,
+            "local_start": 0,
+            "parameters": 131040,
+            "shape": [
+              6,
+              560,
+              39
+            ],
+            "state_dict_key": "document_cell.hidden_function.control_left"
+          },
+          {
+            "dtype": "float32",
+            "flat_end_exclusive": 5078368,
+            "flat_start": 4947328,
+            "local_end_exclusive": 131040,
+            "local_start": 0,
+            "parameters": 131040,
+            "shape": [
+              6,
+              560,
+              39
+            ],
+            "state_dict_key": "document_cell.input_function.control_left"
+          },
+          {
+            "dtype": "float32",
+            "flat_end_exclusive": 91629312,
+            "flat_start": 91498272,
+            "local_end_exclusive": 131040,
+            "local_start": 0,
+            "parameters": 131040,
+            "shape": [
+              6,
+              560,
+              39
+            ],
+            "state_dict_key": "fast_cell.hidden_function.control_left"
+          },
+          {
+            "dtype": "float32",
+            "flat_end_exclusive": 95239776,
+            "flat_start": 94846656,
+            "local_end_exclusive": 393120,
+            "local_start": 0,
+            "parameters": 393120,
+            "shape": [
+              6,
+              1680,
+              39
+            ],
+            "state_dict_key": "fast_cell.input_function.control_left"
+          },
+          {
+            "dtype": "float32",
+            "flat_end_exclusive": 96524000,
+            "flat_start": 96261920,
+            "local_end_exclusive": 262080,
+            "local_start": 0,
+            "parameters": 262080,
+            "shape": [
+              6,
+              1120,
+              39
+            ],
+            "state_dict_key": "readout.control_left"
+          },
+          {
+            "dtype": "float32",
+            "flat_end_exclusive": 97728704,
+            "flat_start": 97597664,
+            "local_end_exclusive": 131040,
+            "local_start": 0,
+            "parameters": 131040,
+            "shape": [
+              6,
+              560,
+              39
+            ],
+            "state_dict_key": "segment_cell.hidden_function.control_left"
+          },
+          {
+            "dtype": "float32",
+            "flat_end_exclusive": 99195488,
+            "flat_start": 99064448,
+            "local_end_exclusive": 131040,
+            "local_start": 0,
+            "parameters": 131040,
+            "shape": [
+              6,
+              560,
+              39
+            ],
+            "state_dict_key": "segment_cell.input_function.control_left"
+          }
+        ],
+        "parameters": 1703520,
+        "tensor_count": 8
+      },
+      "function_weight_right_factors": {
+        "entries": [
+          {
+            "dtype": "float32",
+            "flat_end_exclusive": 2537920,
+            "flat_start": 2275840,
+            "local_end_exclusive": 262080,
+            "local_start": 0,
+            "parameters": 262080,
+            "shape": [
+              6,
+              39,
+              1120
+            ],
+            "state_dict_key": "cross_scale.control_right"
+          },
+          {
+            "dtype": "float32",
+            "flat_end_exclusive": 4004704,
+            "flat_start": 3611584,
+            "local_end_exclusive": 393120,
+            "local_start": 0,
+            "parameters": 393120,
+            "shape": [
+              6,
+              39,
+              1680
+            ],
+            "state_dict_key": "document_cell.hidden_function.control_right"
+          },
+          {
+            "dtype": "float32",
+            "flat_end_exclusive": 5471488,
+            "flat_start": 5078368,
+            "local_end_exclusive": 393120,
+            "local_start": 0,
+            "parameters": 393120,
+            "shape": [
+              6,
+              39,
+              1680
+            ],
+            "state_dict_key": "document_cell.input_function.control_right"
+          },
+          {
+            "dtype": "float32",
+            "flat_end_exclusive": 92022432,
+            "flat_start": 91629312,
+            "local_end_exclusive": 393120,
+            "local_start": 0,
+            "parameters": 393120,
+            "shape": [
+              6,
+              39,
+              1680
+            ],
+            "state_dict_key": "fast_cell.hidden_function.control_right"
+          },
+          {
+            "dtype": "float32",
+            "flat_end_exclusive": 95632896,
+            "flat_start": 95239776,
+            "local_end_exclusive": 393120,
+            "local_start": 0,
+            "parameters": 393120,
+            "shape": [
+              6,
+              39,
+              1680
+            ],
+            "state_dict_key": "fast_cell.input_function.control_right"
+          },
+          {
+            "dtype": "float32",
+            "flat_end_exclusive": 96655040,
+            "flat_start": 96524000,
+            "local_end_exclusive": 131040,
+            "local_start": 0,
+            "parameters": 131040,
+            "shape": [
+              6,
+              39,
+              560
+            ],
+            "state_dict_key": "readout.control_right"
+          },
+          {
+            "dtype": "float32",
+            "flat_end_exclusive": 98121824,
+            "flat_start": 97728704,
+            "local_end_exclusive": 393120,
+            "local_start": 0,
+            "parameters": 393120,
+            "shape": [
+              6,
+              39,
+              1680
+            ],
+            "state_dict_key": "segment_cell.hidden_function.control_right"
+          },
+          {
+            "dtype": "float32",
+            "flat_end_exclusive": 99588608,
+            "flat_start": 99195488,
+            "local_end_exclusive": 393120,
+            "local_start": 0,
+            "parameters": 393120,
+            "shape": [
+              6,
+              39,
+              1680
+            ],
+            "state_dict_key": "segment_cell.input_function.control_right"
+          }
+        ],
+        "parameters": 2751840,
+        "tensor_count": 8
+      },
+      "state_codecs": {
+        "entries": [
+          {
+            "dtype": "float32",
+            "flat_end_exclusive": 99660432,
+            "flat_start": 99588752,
+            "local_end_exclusive": 71680,
+            "local_start": 0,
+            "parameters": 71680,
+            "shape": [
+              128,
+              560
+            ],
+            "state_dict_key": "state_codecs.document.weight"
+          },
+          {
+            "dtype": "float32",
+            "flat_end_exclusive": 99732112,
+            "flat_start": 99660432,
+            "local_end_exclusive": 71680,
+            "local_start": 0,
+            "parameters": 71680,
+            "shape": [
+              128,
+              560
+            ],
+            "state_dict_key": "state_codecs.fast.weight"
+          },
+          {
+            "dtype": "float32",
+            "flat_end_exclusive": 99803792,
+            "flat_start": 99732112,
+            "local_end_exclusive": 71680,
+            "local_start": 0,
+            "parameters": 71680,
+            "shape": [
+              128,
+              560
+            ],
+            "state_dict_key": "state_codecs.segment.weight"
+          },
+          {
+            "dtype": "float32",
+            "flat_end_exclusive": 99875472,
+            "flat_start": 99803792,
+            "local_end_exclusive": 71680,
+            "local_start": 0,
+            "parameters": 71680,
+            "shape": [
+              128,
+              560
+            ],
+            "state_dict_key": "state_codecs.segment_sum.weight"
+          }
+        ],
+        "parameters": 286720,
+        "tensor_count": 4
+      }
+    },
+    "pairwise_disjoint": true,
+    "parameters": 14789040
+  },
+  "architecture": {
+    "arm": "bottleneck_hfw_1k_100m",
+    "basis": "open_uniform_cubic",
+    "controls": 6,
+    "expected_functional_affine_modules": 8,
+    "expected_state_codec_modules": 4,
+    "kind": "bottleneck_hierarchical_function_weights",
+    "max_context": 512,
+    "rank": 39,
+    "state_width": 128,
+    "virtual_depth": 24,
+    "vocab_size": 151936,
+    "width": 560
+  },
+  "authorization": {
+    "create_real_delta": false,
+    "gpu_execution": false,
+    "launch_workers": false,
+    "load_parent": false,
+    "read_parent": false,
+    "remote_access": false,
+    "write_parent": false
+  },
+  "canonical_ordering": "lexicographic_state_dict_key_then_c_contiguous_flat_index",
+  "contract": {
+    "path": "distributed_perturbation_coordinator_20260814_v1/config/hfw_step3052_binding_contract.v2.json",
+    "sha256": "be3e1bec6eb91e2de1952a955d5b0df0d019abda3823a12d6ca71d562e573ceb"
+  },
+  "fixed_nonlearned_basis": {
+    "basis": "open_uniform_cubic",
+    "buffer_elements": 1152,
+    "buffers": [
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 2538064,
+        "flat_start": 2537920,
+        "learned_parameter": false,
+        "shape": [
+          24,
+          6
+        ],
+        "state_dict_key": "cross_scale.design",
+        "tensor_elements": 144
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 4004848,
+        "flat_start": 4004704,
+        "learned_parameter": false,
+        "shape": [
+          24,
+          6
+        ],
+        "state_dict_key": "document_cell.hidden_function.design",
+        "tensor_elements": 144
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 5471632,
+        "flat_start": 5471488,
+        "learned_parameter": false,
+        "shape": [
+          24,
+          6
+        ],
+        "state_dict_key": "document_cell.input_function.design",
+        "tensor_elements": 144
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 92022576,
+        "flat_start": 92022432,
+        "learned_parameter": false,
+        "shape": [
+          24,
+          6
+        ],
+        "state_dict_key": "fast_cell.hidden_function.design",
+        "tensor_elements": 144
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 95633040,
+        "flat_start": 95632896,
+        "learned_parameter": false,
+        "shape": [
+          24,
+          6
+        ],
+        "state_dict_key": "fast_cell.input_function.design",
+        "tensor_elements": 144
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 96655184,
+        "flat_start": 96655040,
+        "learned_parameter": false,
+        "shape": [
+          24,
+          6
+        ],
+        "state_dict_key": "readout.design",
+        "tensor_elements": 144
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 98121968,
+        "flat_start": 98121824,
+        "learned_parameter": false,
+        "shape": [
+          24,
+          6
+        ],
+        "state_dict_key": "segment_cell.hidden_function.design",
+        "tensor_elements": 144
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 99588752,
+        "flat_start": 99588608,
+        "learned_parameter": false,
+        "shape": [
+          24,
+          6
+        ],
+        "state_dict_key": "segment_cell.input_function.design",
+        "tensor_elements": 144
+      }
+    ],
+    "learned_spline_or_fourier_parameters": 0,
+    "reason": "cubic_design_is_a_persistent_buffer_not_a_parameter"
+  },
+  "frozen": {
+    "learned_parameters": 85085280,
+    "learned_tensors": [
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 90555792,
+        "flat_start": 5471632,
+        "learned_parameter": true,
+        "shape": [
+          151936,
+          560
+        ],
+        "state_dict_key": "embedding.weight",
+        "tensor_elements": 85084160
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 95633600,
+        "flat_start": 95633040,
+        "learned_parameter": true,
+        "shape": [
+          560
+        ],
+        "state_dict_key": "final_norm.bias",
+        "tensor_elements": 560
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 95634160,
+        "flat_start": 95633600,
+        "learned_parameter": true,
+        "shape": [
+          560
+        ],
+        "state_dict_key": "final_norm.weight",
+        "tensor_elements": 560
+      }
+    ],
+    "reason": "tied_embedding_output_and_final_layer_norm_are_explicitly_frozen"
+  },
+  "immutable_parent": {
+    "accessed_by_binding_audit": false,
+    "checkpoint_path": null,
+    "checkpoint_sha256": "0c69fbf81526282d7d68ac258a98867d7de0f0e88e69e5f9f0543fdf1c535fba",
+    "review_receipt_path": null,
+    "review_receipt_sha256": "894f1f44499678755b86f94909033aaaf82ad546c05dd94211554696474f8802",
+    "step": 3052
+  },
+  "inventory": {
+    "fixed_buffer_elements": 1152,
+    "fixed_buffer_tensor_count": 8,
+    "learned_parameters": 99874320,
+    "learned_tensor_count": 39,
+    "rows": [
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 1120,
+        "flat_start": 0,
+        "learned_parameter": true,
+        "shape": [
+          1120
+        ],
+        "state_dict_key": "cross_scale.base.bias",
+        "tensor_elements": 1120
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 1882720,
+        "flat_start": 1120,
+        "learned_parameter": true,
+        "shape": [
+          1120,
+          1680
+        ],
+        "state_dict_key": "cross_scale.base.weight",
+        "tensor_elements": 1881600
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 2275840,
+        "flat_start": 1882720,
+        "learned_parameter": true,
+        "shape": [
+          6,
+          1680,
+          39
+        ],
+        "state_dict_key": "cross_scale.control_left",
+        "tensor_elements": 393120
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 2537920,
+        "flat_start": 2275840,
+        "learned_parameter": true,
+        "shape": [
+          6,
+          39,
+          1120
+        ],
+        "state_dict_key": "cross_scale.control_right",
+        "tensor_elements": 262080
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 2538064,
+        "flat_start": 2537920,
+        "learned_parameter": false,
+        "shape": [
+          24,
+          6
+        ],
+        "state_dict_key": "cross_scale.design",
+        "tensor_elements": 144
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 2539744,
+        "flat_start": 2538064,
+        "learned_parameter": true,
+        "shape": [
+          1680
+        ],
+        "state_dict_key": "document_cell.hidden_function.base.bias",
+        "tensor_elements": 1680
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 3480544,
+        "flat_start": 2539744,
+        "learned_parameter": true,
+        "shape": [
+          1680,
+          560
+        ],
+        "state_dict_key": "document_cell.hidden_function.base.weight",
+        "tensor_elements": 940800
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 3611584,
+        "flat_start": 3480544,
+        "learned_parameter": true,
+        "shape": [
+          6,
+          560,
+          39
+        ],
+        "state_dict_key": "document_cell.hidden_function.control_left",
+        "tensor_elements": 131040
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 4004704,
+        "flat_start": 3611584,
+        "learned_parameter": true,
+        "shape": [
+          6,
+          39,
+          1680
+        ],
+        "state_dict_key": "document_cell.hidden_function.control_right",
+        "tensor_elements": 393120
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 4004848,
+        "flat_start": 4004704,
+        "learned_parameter": false,
+        "shape": [
+          24,
+          6
+        ],
+        "state_dict_key": "document_cell.hidden_function.design",
+        "tensor_elements": 144
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 4006528,
+        "flat_start": 4004848,
+        "learned_parameter": true,
+        "shape": [
+          1680
+        ],
+        "state_dict_key": "document_cell.input_function.base.bias",
+        "tensor_elements": 1680
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 4947328,
+        "flat_start": 4006528,
+        "learned_parameter": true,
+        "shape": [
+          1680,
+          560
+        ],
+        "state_dict_key": "document_cell.input_function.base.weight",
+        "tensor_elements": 940800
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 5078368,
+        "flat_start": 4947328,
+        "learned_parameter": true,
+        "shape": [
+          6,
+          560,
+          39
+        ],
+        "state_dict_key": "document_cell.input_function.control_left",
+        "tensor_elements": 131040
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 5471488,
+        "flat_start": 5078368,
+        "learned_parameter": true,
+        "shape": [
+          6,
+          39,
+          1680
+        ],
+        "state_dict_key": "document_cell.input_function.control_right",
+        "tensor_elements": 393120
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 5471632,
+        "flat_start": 5471488,
+        "learned_parameter": false,
+        "shape": [
+          24,
+          6
+        ],
+        "state_dict_key": "document_cell.input_function.design",
+        "tensor_elements": 144
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 90555792,
+        "flat_start": 5471632,
+        "learned_parameter": true,
+        "shape": [
+          151936,
+          560
+        ],
+        "state_dict_key": "embedding.weight",
+        "tensor_elements": 85084160
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 90557472,
+        "flat_start": 90555792,
+        "learned_parameter": true,
+        "shape": [
+          1680
+        ],
+        "state_dict_key": "fast_cell.hidden_function.base.bias",
+        "tensor_elements": 1680
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 91498272,
+        "flat_start": 90557472,
+        "learned_parameter": true,
+        "shape": [
+          1680,
+          560
+        ],
+        "state_dict_key": "fast_cell.hidden_function.base.weight",
+        "tensor_elements": 940800
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 91629312,
+        "flat_start": 91498272,
+        "learned_parameter": true,
+        "shape": [
+          6,
+          560,
+          39
+        ],
+        "state_dict_key": "fast_cell.hidden_function.control_left",
+        "tensor_elements": 131040
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 92022432,
+        "flat_start": 91629312,
+        "learned_parameter": true,
+        "shape": [
+          6,
+          39,
+          1680
+        ],
+        "state_dict_key": "fast_cell.hidden_function.control_right",
+        "tensor_elements": 393120
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 92022576,
+        "flat_start": 92022432,
+        "learned_parameter": false,
+        "shape": [
+          24,
+          6
+        ],
+        "state_dict_key": "fast_cell.hidden_function.design",
+        "tensor_elements": 144
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 92024256,
+        "flat_start": 92022576,
+        "learned_parameter": true,
+        "shape": [
+          1680
+        ],
+        "state_dict_key": "fast_cell.input_function.base.bias",
+        "tensor_elements": 1680
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 94846656,
+        "flat_start": 92024256,
+        "learned_parameter": true,
+        "shape": [
+          1680,
+          1680
+        ],
+        "state_dict_key": "fast_cell.input_function.base.weight",
+        "tensor_elements": 2822400
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 95239776,
+        "flat_start": 94846656,
+        "learned_parameter": true,
+        "shape": [
+          6,
+          1680,
+          39
+        ],
+        "state_dict_key": "fast_cell.input_function.control_left",
+        "tensor_elements": 393120
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 95632896,
+        "flat_start": 95239776,
+        "learned_parameter": true,
+        "shape": [
+          6,
+          39,
+          1680
+        ],
+        "state_dict_key": "fast_cell.input_function.control_right",
+        "tensor_elements": 393120
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 95633040,
+        "flat_start": 95632896,
+        "learned_parameter": false,
+        "shape": [
+          24,
+          6
+        ],
+        "state_dict_key": "fast_cell.input_function.design",
+        "tensor_elements": 144
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 95633600,
+        "flat_start": 95633040,
+        "learned_parameter": true,
+        "shape": [
+          560
+        ],
+        "state_dict_key": "final_norm.bias",
+        "tensor_elements": 560
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 95634160,
+        "flat_start": 95633600,
+        "learned_parameter": true,
+        "shape": [
+          560
+        ],
+        "state_dict_key": "final_norm.weight",
+        "tensor_elements": 560
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 95634720,
+        "flat_start": 95634160,
+        "learned_parameter": true,
+        "shape": [
+          560
+        ],
+        "state_dict_key": "readout.base.bias",
+        "tensor_elements": 560
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 96261920,
+        "flat_start": 95634720,
+        "learned_parameter": true,
+        "shape": [
+          560,
+          1120
+        ],
+        "state_dict_key": "readout.base.weight",
+        "tensor_elements": 627200
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 96524000,
+        "flat_start": 96261920,
+        "learned_parameter": true,
+        "shape": [
+          6,
+          1120,
+          39
+        ],
+        "state_dict_key": "readout.control_left",
+        "tensor_elements": 262080
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 96655040,
+        "flat_start": 96524000,
+        "learned_parameter": true,
+        "shape": [
+          6,
+          39,
+          560
+        ],
+        "state_dict_key": "readout.control_right",
+        "tensor_elements": 131040
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 96655184,
+        "flat_start": 96655040,
+        "learned_parameter": false,
+        "shape": [
+          24,
+          6
+        ],
+        "state_dict_key": "readout.design",
+        "tensor_elements": 144
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 96656864,
+        "flat_start": 96655184,
+        "learned_parameter": true,
+        "shape": [
+          1680
+        ],
+        "state_dict_key": "segment_cell.hidden_function.base.bias",
+        "tensor_elements": 1680
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 97597664,
+        "flat_start": 96656864,
+        "learned_parameter": true,
+        "shape": [
+          1680,
+          560
+        ],
+        "state_dict_key": "segment_cell.hidden_function.base.weight",
+        "tensor_elements": 940800
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 97728704,
+        "flat_start": 97597664,
+        "learned_parameter": true,
+        "shape": [
+          6,
+          560,
+          39
+        ],
+        "state_dict_key": "segment_cell.hidden_function.control_left",
+        "tensor_elements": 131040
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 98121824,
+        "flat_start": 97728704,
+        "learned_parameter": true,
+        "shape": [
+          6,
+          39,
+          1680
+        ],
+        "state_dict_key": "segment_cell.hidden_function.control_right",
+        "tensor_elements": 393120
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 98121968,
+        "flat_start": 98121824,
+        "learned_parameter": false,
+        "shape": [
+          24,
+          6
+        ],
+        "state_dict_key": "segment_cell.hidden_function.design",
+        "tensor_elements": 144
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 98123648,
+        "flat_start": 98121968,
+        "learned_parameter": true,
+        "shape": [
+          1680
+        ],
+        "state_dict_key": "segment_cell.input_function.base.bias",
+        "tensor_elements": 1680
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 99064448,
+        "flat_start": 98123648,
+        "learned_parameter": true,
+        "shape": [
+          1680,
+          560
+        ],
+        "state_dict_key": "segment_cell.input_function.base.weight",
+        "tensor_elements": 940800
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 99195488,
+        "flat_start": 99064448,
+        "learned_parameter": true,
+        "shape": [
+          6,
+          560,
+          39
+        ],
+        "state_dict_key": "segment_cell.input_function.control_left",
+        "tensor_elements": 131040
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 99588608,
+        "flat_start": 99195488,
+        "learned_parameter": true,
+        "shape": [
+          6,
+          39,
+          1680
+        ],
+        "state_dict_key": "segment_cell.input_function.control_right",
+        "tensor_elements": 393120
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 99588752,
+        "flat_start": 99588608,
+        "learned_parameter": false,
+        "shape": [
+          24,
+          6
+        ],
+        "state_dict_key": "segment_cell.input_function.design",
+        "tensor_elements": 144
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 99660432,
+        "flat_start": 99588752,
+        "learned_parameter": true,
+        "shape": [
+          128,
+          560
+        ],
+        "state_dict_key": "state_codecs.document.weight",
+        "tensor_elements": 71680
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 99732112,
+        "flat_start": 99660432,
+        "learned_parameter": true,
+        "shape": [
+          128,
+          560
+        ],
+        "state_dict_key": "state_codecs.fast.weight",
+        "tensor_elements": 71680
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 99803792,
+        "flat_start": 99732112,
+        "learned_parameter": true,
+        "shape": [
+          128,
+          560
+        ],
+        "state_dict_key": "state_codecs.segment.weight",
+        "tensor_elements": 71680
+      },
+      {
+        "dtype": "float32",
+        "flat_end_exclusive": 99875472,
+        "flat_start": 99803792,
+        "learned_parameter": true,
+        "shape": [
+          128,
+          560
+        ],
+        "state_dict_key": "state_codecs.segment_sum.weight",
+        "tensor_elements": 71680
+      }
+    ],
+    "state_dict_tensor_count": 47,
+    "state_dict_tensor_elements": 99875472
+  },
+  "proofs": {
+    "allowed_ranges_exclude_fixed_buffers": true,
+    "allowed_ranges_exclude_frozen_learned_tensors": true,
+    "allowed_union_frozen_equals_all_learned_parameters": true,
+    "no_learned_spline_or_fourier_group": true
+  },
+  "schema": "hfw_w560_canonical_weight_address_manifest_v2",
+  "source": {
+    "checkpoint_accessed": false,
+    "files": {
+      "config/bottleneck_hfw_1k_100m.json": "f0640b60349940ff69c6ae2f62785954edd07d68984e90132dd428af0ddf83c1",
+      "release_manifest.v1.json": "6909266f9950a9c1da0d5a92fa048d29c84699bc39f6a42bb8f92712b9da323c",
+      "representation_experiments/common.py": "eed2cad9f3313b5c889bf72bc72aa78254466ff1e1b5548d363a26b42f7757dd",
+      "representation_experiments/nanogpt_control.py": "1adfffbd843a55f00491b50cb46bc6c5d99041f54d9f48251ce3e79ad672a870",
+      "representation_experiments/predictive_models.py": "05560f064eddfe069be3d4459ea1fff8c644286aba101058370516ea5e298db8",
+      "source_manifest.v1.json": "8375818ce0e0f88ef5cea8af4b531f6d387db2578482d2532ada4e5cc9f1da7e",
+      "third_party/nanogpt/model.py": "7c01703240dbec5d554527dc666e35b3df8391d0b117fddc07afcf325a21d11c"
+    },
+    "import_isolation": "explicit_hash_checked_frozen_modules_only",
+    "namespace": "hierarchical_state_1k_100m_20260814_v3_nanogpt"
+  },
+  "status": "PASS_LOCAL_SOURCE_CONFIG_DERIVATION_NO_PARENT_ACCESS"
+}

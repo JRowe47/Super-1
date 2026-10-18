@@ -1,0 +1,18 @@
+{
+  "canonical_weight_manifest_sha256": "fb1b77f23305995ed5546354274df60f59e2f5d8f91f8273095cf644387286d6",
+  "freeze_artifacts": {
+    "exact_group_manifest.v1.json": "73cf1c040eb912bd5ce16867e6cdfc318869656ef0b0dfd1e420e5f58277cc87",
+    "local_test_receipt.v1.json": "3a836724268b4b7e93875182a2a978128d67f459110b02188c6441082a38d3c1",
+    "no_training_source_gate.v1.json": "79885864e89fdbdae935baad8b9c6006977db89f08af326b77d1bddc7d7f45bd",
+    "source_manifest.v1.json": "6bcd8a81fd2f5e5d5ea414cdf6803cbf14131ecd0f21c17d75fa6738e0dc6052"
+  },
+  "launch_authorized": false,
+  "namespace": "hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver",
+  "parent_accessed": false,
+  "parent_checkpoint_sha256": "0c69fbf81526282d7d68ac258a98867d7de0f0e88e69e5f9f0543fdf1c535fba",
+  "parent_review_receipt_sha256": "894f1f44499678755b86f94909033aaaf82ad546c05dd94211554696474f8802",
+  "remote_accessed": false,
+  "schema": "hfw_w560_post_training_local_release_manifest_v1",
+  "stage_authorized": false,
+  "status": "LOCAL_FROZEN_NOT_STAGED_NOT_LAUNCHED"
+}

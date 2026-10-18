@@ -29,6 +29,22 @@
       "status": "PRESERVATION_AND_CLEANUP_VERIFIED",
       "temporary_cloud_resources_remaining": 0,
       "verified_release_assets": 25
+    },
+    {
+      "files_preserved": 137,
+      "fresh_toy_tests": "auto-research/results/perturbation-recovery-20261018-v1/TOY_TESTS.json",
+      "historical_candidates": 46,
+      "historical_decisions": 3,
+      "id": "perturbation-recovery-20261018-v1",
+      "inventory": "auto-research/results/perturbation-recovery-20261018-v1/IMPORT.json",
+      "inventory_sha256": "d4264c53e0071841eaf3f3bcee86590e48993a465780dfcdeb8881247a267ac9",
+      "new_checkpoint_evaluation": false,
+      "new_training": false,
+      "original_frozen_source_files": 85,
+      "report": "auto-research/PERTURBATION_OPTIMIZATION.md",
+      "scope": "Exact frozen source plus separate later MPS snapshot; saved scores use reused optimization data. Checkpoint/token payloads remain external. No launch authorization.",
+      "status": "ARCHIVAL_RECOVERY_VERIFIED",
+      "verification": "auto-research/results/perturbation-recovery-20261018-v1/VERIFICATION.json"
     }
   ],
   "historical_authorization_note": "Language training remains paused. Fresh user-authorized synthetic angular/radial optimization completed without recovery; no future execution authorized. Previous synthetic failure/recovery remains preserved.",

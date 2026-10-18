@@ -1,0 +1,122 @@
+{
+  "arms": {
+    "bottleneck_hfw_1k_100m": {
+      "architecture": "bottleneck_hierarchical_function_weights",
+      "branching": false,
+      "embedding_initialization": "qwen_pca",
+      "parameter_budget": 99874320
+    }
+  },
+  "benchmark": {"limit": 1000, "log_every": 100},
+  "initial_execution_scope": "primary_remote_after_all_gates",
+  "data": "data/qwen3-06b-representation",
+  "data_identity": {
+    "train.bin": "834c82d2ea76e2f17aa43d15862f5ef444322c37d9b29d07fe803bb21ac163e4",
+    "val.bin": "8517985c4979dbc95c83137ee534e30e789e2275e4ba1ee1fd31e1f0d566e4d3"
+  },
+  "practical_dense_reference": "Qwen/Qwen3-0.6B-Base",
+  "comparison": {
+    "pair_id": "primary_100m_one_kib_vs_nanogpt",
+    "role": "one_kib_bottleneck_hfw",
+    "counterpart_config": "nanogpt_100m.json",
+    "primary": true,
+    "diagnostic": false
+  },
+  "embedding_projection": {"chunk_size": 4096, "preserve_global_norm": true},
+  "evaluation": {
+    "batch_size": 2,
+    "batches": 16,
+    "branch_batches": 0,
+    "context": 512,
+    "long_context_batch_size": 1,
+    "long_context_batches": 16,
+    "long_contexts": [],
+    "rollout_positions": [64, 128, 256, 512],
+    "seed": 33001,
+    "temperatures": [
+      {"value": 1.0, "weight": 0.5},
+      {"value": 2.0, "weight": 0.3},
+      {"value": 4.0, "weight": 0.2}
+    ]
+  },
+  "model_max_context": 512,
+  "models": {
+    "bottleneck_hierarchical_function_weights": {
+      "document_segments": 8,
+      "function_weights": {
+        "basis": "open_uniform_cubic",
+        "controls": 6,
+        "rank": 39,
+        "virtual_depth": 24
+      },
+      "maximum_width": 560,
+      "minimum_width": 560,
+      "segment_length": 32,
+      "state_schema": "lossy_tied_component_codec_v1",
+      "state_width": 128,
+      "width_step": 1
+    }
+  },
+  "promotion_gates": {
+    "maximum_actual_runtime_tensor_state_bytes_per_sequence": 2048,
+    "maximum_codec_condition_number": 1000.0,
+    "minimum_codec_singular_value": 1e-06,
+    "maximum_nominal_bf16_tensor_state_bytes_per_sequence": 1024,
+    "one_seed_scaling_claim_authorized": false
+  },
+  "safety": {"minimum_free_gb": 20},
+  "student_parameter_budget": 99874320,
+  "state_schema": "lossy_tied_component_codec_v1",
+  "study": "bottleneck_hfw_1k_100m_nanogpt_20260814_v2",
+  "teacher": "Qwen/Qwen3-1.7B-Base",
+  "teacher_revision": "ea980cb0a6c2ae4b936e82123acc929f1cec04c1",
+  "teacher_weights_sha256": "6df85b39330e5a425ee36253d0f894e4387e4f0a15b9c53cb467d668e6b3a841",
+  "token_dtype": "uint32",
+  "training": {
+    "required_world_size": 4,
+    "batch_size": 4,
+    "betas": [0.9, 0.95],
+    "branching": {
+      "candidates": [
+        {"kind": "teacher_top1"},
+        {"kind": "teacher_sample", "temperature": 1.0},
+        {"kind": "teacher_rank", "rank": 32},
+        {"kind": "student_sample", "temperature": 1.0}
+      ],
+      "every": 4,
+      "maximum_prefix": 448,
+      "minimum_prefix": 64,
+      "rollout_steps": 2,
+      "weight": 0.0
+    },
+    "ce_weight": {"begin_fraction": 0.7, "curve": "cosine", "end_fraction": 1.0, "final": 1.0, "initial": 0.1},
+    "checkpoint_every": 250,
+    "context": 512,
+    "distribution_weight": {"begin_fraction": 0.65, "curve": "cosine", "end_fraction": 1.0, "final": 0.15, "initial": 1.0},
+    "future_state_prediction": {
+      "horizons": [8, 32, 128],
+      "token_stride": 16,
+      "weight": {"begin_fraction": 0.65, "curve": "cosine", "end_fraction": 1.0, "final": 0.1, "initial": 0.2}
+    },
+    "gradient_clip": 1.0,
+    "learning_rate": 0.0002,
+    "log_every": 20,
+    "max_tokens": 1000000000,
+    "minimum_lr_ratio": 0.05,
+    "representation_matching": {
+      "token_stride": 8,
+      "weight": {"begin_fraction": 0.65, "curve": "cosine", "end_fraction": 1.0, "final": 0.05, "initial": 0.2}
+    },
+    "sampling": "non_replacement_blocks",
+    "seed": 29001,
+    "temperatures": [
+      {"value": 1.0, "weight": 0.5},
+      {"value": 2.0, "weight": 0.3},
+      {"value": 4.0, "weight": 0.2}
+    ],
+    "vocab_chunk_size": 8192,
+    "warmup_steps": 2000,
+    "weight_decay": 0.1
+  },
+  "vocab_size": 151936
+}

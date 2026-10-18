@@ -1,0 +1,16 @@
+test_accepted_history_and_loader_bind_exact_replacement_and_solver_delta (test_integrity.IntegrityTests) ... ok
+test_artifact_adapter_changes_projection_only_not_solver_trace (test_integrity.IntegrityTests) ... ok
+test_cli_returns_nonzero_for_block_receipts (test_integrity.IntegrityTests) ... ok
+test_exact_candidate_bytes_survive_noninvertible_float32_delta (test_integrity.IntegrityTests) ... ok
+test_formula_bound_disk_reservations_cover_exact_candidate_sidecars (test_integrity.IntegrityTests) ... ok
+test_ledger_rejects_config_or_token_substitution_and_ignores_staged_head (test_integrity.IntegrityTests) ... ok
+test_stale_proposal_rejected_before_commit_bank_opens (test_integrity.IntegrityTests) ... ok
+test_supervisor_receipts_committer_and_recovery_exceptions_and_stops (test_integrity.IntegrityTests) ... ok
+test_supervisor_singleton_and_disk_gate_fail_closed (test_integrity.IntegrityTests) ... ok
+test_token_commitment_is_create_only_disjoint_and_has_no_final (test_integrity.IntegrityTests) ... ok
+test_vendored_solver_and_bridge_exact_hashes (test_integrity.IntegrityTests) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.365s
+
+OK

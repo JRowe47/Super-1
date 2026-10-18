@@ -1,0 +1,26 @@
+{
+  "autograd_grad_calls": 0,
+  "backward_calls": 0,
+  "inspected_files": {
+    "__init__.py": "16d9c3eda4183e1a91596e0892baf845b78dc140c20facb5fdcc35c3a0c66b23",
+    "artifacts.py": "98b63f3b9d2286e2f71a5748793dd41d506f32565d54d26baf51161d7b0db6c0",
+    "branch_search.py": "0aced15800caf4042ffd1863c7cd1c5415bed6d9dc799220be17635bd5c5f349",
+    "data_commitment.py": "b2e1b5788d123ddee789dea63fe40c9e8dd8e3ceed13b91c6c65eda6ee6f420e",
+    "freeze_package.py": "b440b313a7c20d43e2a6579e9edbe0d0b54cdc3b692bdb74c10f8ba9d0bb18bf",
+    "manifest.py": "48acb7e79b2cbec0eebe95ba0d988e270e3000893a1e8bace671fadcd891dd23",
+    "parent_gate.py": "d189965271ef5597c9b39afa8263ee4f5feb8c0944f81f51fa1d58a7339e8442",
+    "power_sampler.py": "9d3369dcd41c445d7f8d139397a80d5d351e901f30982722314673f0f2ba9650",
+    "production_bridge.py": "919c70204c5fefd86a65410f1256c14f54c4ffb34b4db15e5b993ff705cc0ac7",
+    "production_entrypoint.py": "a9c12a22ae8819aca76f13aabd769f7de6dd8a474f1bb9fc998afd2d3320b9cd",
+    "production_phases.py": "228ca990be5fa38246e5fc16d10b078039f122ab38c375fb4a0b94a43ea15981",
+    "production_runner.py": "346aabe019d4b5cac295b59d7f48b6b5f0459a291837e1baaf8d2b6978a6cc09",
+    "release_validator.py": "22fee704a403c43aff9df7252917249613ee9c55dfffb58a49e083cfea8006c7",
+    "resource_gate.py": "6d87ff86a12118ddcd788c2db01f89a355e14ccfe1037d50dada738ff90a55f4",
+    "runtime_guard.py": "9453260051c2af6d9c3930a15a4883e02b52bee1c16cbf23c3d91a65f81a91f1",
+    "sealed_evaluation_bridge.py": "00f3acf43f4c569a26e345666d7233369394e8f463b0a9ecbd9f3d461730821e"
+  },
+  "optimizer_imports": 0,
+  "receipt_sha256": "2b07921c4ad0e38dda3a510aea57c908fc6f585fb8d297398f7b0263c8494eff",
+  "schema": "hfw_no_training_source_gate_v1",
+  "status": "PASS_NO_AUTOGRAD_NO_OPTIMIZER_SOURCE"
+}

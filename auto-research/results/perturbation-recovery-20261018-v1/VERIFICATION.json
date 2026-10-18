@@ -1,0 +1,36 @@
+{
+  "candidate_evaluations": 46,
+  "decisions": [
+    {
+      "accepted": true,
+      "candidates": 16,
+      "group": "left_factors",
+      "parent_mean": 6.222062796354294,
+      "selected_mean": 6.219697281718254
+    },
+    {
+      "accepted": false,
+      "candidates": 14,
+      "group": "base_affines",
+      "parent_mean": 6.222062796354294,
+      "selected_mean": null
+    },
+    {
+      "accepted": false,
+      "candidates": 16,
+      "group": "right_factors",
+      "parent_mean": 6.219697281718254,
+      "selected_mean": null
+    }
+  ],
+  "frozen_manifest_files": 85,
+  "heads": 2,
+  "historical_graphs": 2,
+  "imported_bytes": 1860841,
+  "imported_files": 137,
+  "new_checkpoint_evaluation": false,
+  "new_training": false,
+  "parsed_json_files": 44,
+  "parsed_python_files": 89,
+  "status": "PASS_ARCHIVAL_HASHES_AND_SAVED_SCORE_ARITHMETIC"
+}
