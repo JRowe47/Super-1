@@ -1,0 +1,39 @@
+{
+  "run_id": "feedback-family-20261018-v1",
+  "status": "PASS",
+  "at_utc": "2026-10-18T14:29:30.455857+00:00",
+  "registered_source_files_unchanged": 19,
+  "all_launcher_receipts_complete": true,
+  "all_workers_exited": true,
+  "full_online_replays_bitwise_exact": 20,
+  "all_inactive_feedback_matrices_bitwise_unchanged": true,
+  "all_four_remote_checkpoint_hashes_verified": true,
+  "active_family_overlay_schema_verified": true,
+  "npz_arrays_per_file": 36,
+  "checkpoint_bytes": 729783,
+  "aggregate_experiment_cpu_seconds": 273.35818800000004,
+  "aggregate_cpu_budget_seconds": 900,
+  "temporary_cleanup": [
+    {
+      "relative_path": "verify-checkpoints-stage8",
+      "file_bytes_removed": 729783,
+      "reason": "Reproducible temporary runtime or redundant readback after completed workers and durable byte-exact checkpoint preservation."
+    },
+    {
+      "relative_path": "research-runtime",
+      "file_bytes_removed": 1066500797,
+      "reason": "Reproducible temporary runtime or redundant readback after completed workers and durable byte-exact checkpoint preservation."
+    }
+  ],
+  "completed_progress_snapshot_cleanup": [
+    {
+      "relative_path": "pilot/101927/PROGRESS.json",
+      "bytes": 34666,
+      "sha256": "507835ae9615605575da2f235afac3c66918dede42797faedc8ea184cb3dca95",
+      "reason": "Completed progress snapshot exactly duplicates retained RESULT.json."
+    }
+  ],
+  "source_before_execution_commit": "553fb843756fa98ca534196f84902bf2d78aa863",
+  "verification_pilot_commit": "036f4e6bf5485d8f5916231f7926e2b1610d6212",
+  "interpretation": "Numerical/preservation gates pass; primary effect passes but retention fails all3. No scientific promotion."
+}
