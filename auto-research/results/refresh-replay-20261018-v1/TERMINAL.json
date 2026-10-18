@@ -1,0 +1,72 @@
+{
+  "run_id": "refresh-replay-20261018-v1",
+  "status": "COMPLETE_NO_PROMOTION_RETENTION_FAILED",
+  "finished_at_utc": "2026-10-18T06:09:31.192912+00:00",
+  "source_commit_before_experiment_execution": "4faa9eb28162de359366e77a7ff1e980dc8826fe",
+  "pilot_and_verification_commit": "386d8addee0316275094e2c1f8554596077f54c2",
+  "protocol_sha256": "7def232286ce614b3d3b34e3c2717e1ce789b5d35067bea4d8d7ed6fc5015235",
+  "registered_source_unchanged": true,
+  "main_seeds": [
+    901801,
+    901802,
+    901803
+  ],
+  "pilot_seed": 98997,
+  "main_runs": 27,
+  "pilot_runs": 9,
+  "main_updates_per_arm": 2048,
+  "pilot_updates_per_arm": 256,
+  "warmup_steps_per_seed": 4096,
+  "full_bitwise_online_replays": 36,
+  "primary_mean_ce_reduction_percent": 25.096392681188707,
+  "effect_gate": true,
+  "retention_gate": false,
+  "promotion": false,
+  "adaptive_refreshed_minus_permanent": {
+    "primary_ce_delta_nats": -0.11261613480746746,
+    "relative_ce_reduction_percent": 11.700367820070534,
+    "old_window_delta_pp": -6.195359056194623,
+    "stable_acc_delta_pp": -1.0230680306752522,
+    "novel_acc_delta_pp": 0.5859375,
+    "drift_acc_delta_pp": 21.484375,
+    "balanced_acc_delta_pp": 7.015748156441582
+  },
+  "adaptive_refreshed_minus_fifo": {
+    "primary_ce_delta_nats": 0.0986517146229744,
+    "relative_ce_reduction_percent": -13.172643258116496,
+    "old_window_delta_pp": 1.6845703125,
+    "stable_acc_delta_pp": 0.27901530265808105,
+    "novel_acc_delta_pp": -1.2369791666666667,
+    "drift_acc_delta_pp": -2.34375,
+    "balanced_acc_delta_pp": -1.1005712880028644
+  },
+  "charged_experiment_cpu_seconds": 261.08174099999997,
+  "cpu_budget_seconds": 900,
+  "cpu_scope": "Verification, pilot/main imports and execution, full online replays, launchers, runtime import canary and frozen analysis; source preparation/dependency setup/artifact transfer and report preparation excluded.",
+  "all_workers_exited": true,
+  "all_four_remote_checkpoint_hashes_verified": true,
+  "checkpoint_bytes": 1025296,
+  "exceptions": [],
+  "source_preservation": "Complete source/protocol preregistered in Git; compact metrics and receipts in Git; individual NPZ states stored and downloaded again for SHA256 verification.",
+  "cleanup": [
+    {
+      "relative_path": "verify-checkpoints-stage5",
+      "file_bytes_removed": 1025296,
+      "reason": "Redundant verification copy or reproducible temporary runtime after durable checkpoint verification."
+    },
+    {
+      "relative_path": "research-runtime",
+      "file_bytes_removed": 1075541235,
+      "reason": "Redundant verification copy or reproducible temporary runtime after durable checkpoint verification."
+    }
+  ],
+  "official_test_accessed": false,
+  "new_cloud_resources_created": false,
+  "next_stage": "Propose a phase-blind feedback-plasticity control with FIFO replay fixed: frozen feedback, current adaptive feedback, one preregistered slower feedback step, and backprop. Forward learning rate unchanged, no replay-rate search. Not implemented or running.",
+  "completed_progress_snapshot_cleanup": {
+    "relative_path": "pilot/98997/PROGRESS.json",
+    "file_bytes_removed": 51669,
+    "sha256": "bfd63ca105777f0770db1b6725d1f9b6339f3e04e2d74ebd77dbd62e99ebf4a4",
+    "reason": "Redundant completed progress snapshot; all9 arm records and data hash exactly equal immutable RESULT.json."
+  }
+}

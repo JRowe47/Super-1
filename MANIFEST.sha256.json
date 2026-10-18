@@ -118,7 +118,7 @@
   "auto-research/reports/synthetic-rotation-radial-20261016-v1.md": "46154c3fa898a1409b2f30753d19beedf980f7f16d3dcef48277a3571cc70af2",
   "auto-research/RESEARCH_CATALOG.md": "009b6f566f5928e1fcca12f4f69bea7f27d1f662faccfb82fb8548ee714d6816",
   "auto-research/research-scratch/.gitignore": "836a35c3e778eed96ae73fcc37ed3c8e9203585e6633f751531285420ac45986",
-  "auto-research/research-scratch/CURRENT.md": "8ed8fce4210e805297af2e345b7b9e34a116d16809e4fa8b5780713f5ef0939c",
+  "auto-research/research-scratch/CURRENT.md": "688b312e4193e4c2fbd5e250597154ad87af14d5af7cb13d8771126b53218e10",
   "auto-research/research-scratch/README.md": "0367b097112c1e7951f54a9a141e708cb6da28a3dc33d683e7601d2bc9925fba",
   "auto-research/results/bounded-feedback-20261018-v1/PROTOCOL_RECORD.json": "3e7f47923c0698c4285f0e0cc9b589354a2dadfad257abadf5ffa726d0338a32",
   "auto-research/results/bounded-feedback-20261018-v1/RECORDED_SUMMARY.json": "d3b02f297fb91503b6c8ee65f6043663c9d94afc4c68b76b9cd47741326fc862",
@@ -585,7 +585,7 @@
   "auto-research/results/workflow-canaries-20261015/README.md": "4825be1295e5bd9059ffb93b5dea20fbc75b5794100d95079666060640df9d6a",
   "auto-research/results/workflow-canaries-20261015/workflow_synthetic_canary.py": "2954d38449856745d653e9877794602386ac692af8e763a060617c17fe6a4757",
   "auto-research/results/workflow-canaries-20261015/workflow-receipt.json": "01d47882cbaf63ccbdb7af3b49e357ff2e88818a89a97e4087edfdbb8ec7568e",
-  "auto-research/RUN_REGISTRY.json": "3159407b5d09a3f22081f4a7dc9c4419c01aaabdedb5f97a5a03320e78cfde89",
+  "auto-research/RUN_REGISTRY.json": "1e9854c628d06120af23e2353031e58d6bc6b56bd1f4b44d30f75d0e87c4f613",
   "auto-research/SCALING_1B.md": "f0ad9fec5b4f2b888132f447b0d473ec70c97d0eb3c68aa472f2d73d2a4ef587",
   "checkpoints/hierarchy/191-cross-0.001-6000.pt": "d6b58161fb3c8d36e8f3fd6feb820831b4213eee665bfc2ae73e38e5ecd900e2",
   "checkpoints/hierarchy/191-local-0.003-6000.pt": "0fac1101751cd095d677e41a76c306ca8d2539f974ddbb39eb1361a3a7857731",
@@ -750,5 +750,14 @@
   "auto-research/results/refresh-replay-20261018-v1/VERIFICATION.json": "74865cb2d30b17027f8baa112475f2ed12bf5b84925587f718c58e62f125c360",
   "auto-research/results/refresh-replay-20261018-v1/VERIFY_RECEIPT.json": "2593dd9842c4c983be93bf46597a12c58325818199d818e90c124cc00a53d285",
   "auto-research/results/refresh-replay-20261018-v1/PILOT_RECEIPT.json": "f2146b726d57d184e6e1721c0a36283def631111462ec61d2c1fd17285c539cd",
-  "auto-research/results/refresh-replay-20261018-v1/pilot/98997/RESULT.json": "4dc30f816e8595d982742a6f9f3db133b192a00b80d7dc19ed57a983cb31534c"
+  "auto-research/results/refresh-replay-20261018-v1/pilot/98997/RESULT.json": "4dc30f816e8595d982742a6f9f3db133b192a00b80d7dc19ed57a983cb31534c",
+  "auto-research/results/refresh-replay-20261018-v1/MAIN_RECEIPT.json": "5426e6a4460ccada63b0505a4f9d334643f98befd60968e6f4a9de251d4d9b33",
+  "auto-research/results/refresh-replay-20261018-v1/SUMMARY.json": "62bab3b350ff7cf8bb10f9adc605864d0efb822afb9330291a638159b3369768",
+  "auto-research/results/refresh-replay-20261018-v1/TERMINAL.json": "9a50f2f04b7b26cb48cdb19895a9cab62480cae4af190d7b31a4663c8674dd98",
+  "auto-research/results/refresh-replay-20261018-v1/EVIDENCE_AUDIT.json": "025dd9c2a72efbefdf91ea16a499edcbf6e0fdfe850bcffb6c5332d580af1a81",
+  "auto-research/results/refresh-replay-20261018-v1/ARTIFACT_MANIFEST.json": "c9c3da918c639c668ba89a87b281c1b83dcf0dc775292e491a3547517ea52fe0",
+  "auto-research/reports/refresh-replay-20261018-v1.md": "7ae7d8e33e8bff958c1fc0825e30a12d2c984f0e803a510ce7e52fae1dd70f7c",
+  "auto-research/results/refresh-replay-20261018-v1/main/901801/RESULT.json": "db3081f2dbf8f7af281859c2b9e7cd85b4643c8173dff8f999897cddc6f7ee76",
+  "auto-research/results/refresh-replay-20261018-v1/main/901802/RESULT.json": "d4d798ae7392640f3030eaa255ce68ee535346908b1ced18960bba0cd68d549b",
+  "auto-research/results/refresh-replay-20261018-v1/main/901803/RESULT.json": "0e29d313dc269a147caa54942c73085c711891a28dca94ddaddaf1168824f7fc"
 }
