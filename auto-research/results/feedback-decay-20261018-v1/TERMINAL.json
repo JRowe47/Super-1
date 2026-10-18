@@ -1,0 +1,17 @@
+{
+  "run_id": "feedback-decay-20261018-v1",
+  "status": "FAILED_BEFORE_TRAINING",
+  "finished_at_utc": "2026-10-18T06:43:44.924836+00:00",
+  "source_commit_before_verification": "8d5a000f7572962bc4eb29e072bbe71b1bb5f348",
+  "registered_source_unchanged": true,
+  "pilot_started": false,
+  "main_started": false,
+  "failure": "FP64 decoded B1 spectral norm2.0000000000000004 exceeds strict2 cap in independent factorial verification at seed15817.",
+  "verification_file_scope": "VERIFICATION.json contains inherited checks only; its PASS is partial. VERIFY_RECEIPT.json is authoritative overall FAILED.",
+  "diagnosis": "4.440892098500626e-16 roundoff overshoot after the inherited4-epsilon projection margin. No threshold or tolerance changed.",
+  "failed_verification_and_diagnosis_cpu_seconds": 3.378945,
+  "runtime_canary_cpu_seconds": 1.608174,
+  "all_workers_exited": true,
+  "recovery_run_id": "feedback-decay-20261018-v2",
+  "recovery_scope": "Shared numerical projection repair only; same unseen main/pilot seeds and unchanged factorial design/gates. All attempts share original900CPU-second envelope."
+}

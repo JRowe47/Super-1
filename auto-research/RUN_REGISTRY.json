@@ -252,7 +252,7 @@
     },
     {
       "run_id": "feedback-decay-20261018-v1",
-      "status": "REGISTERED_PENDING_EXECUTION",
+      "status": "FAILED_BEFORE_TRAINING",
       "approval": "User: Alright, looks good, go ahead, following the feedback-learning versus decay proposal. Standing local CPU900s/max3 single-thread workers, own JRowe47/Super-1 branch/draft PR3, stable research scratch and compact project-folder checkpoints. No paid/GPU/cloud/language expansion.",
       "protocol": "auto-research/results/feedback-decay-20261018-v1/PROTOCOL.json",
       "protocol_sha256": "43623b9146c420863eb894c9464acc8a94caecc51007b6eceb7095ca2fe555f0",
@@ -260,9 +260,26 @@
       "metrics": "auto-research/results/feedback-decay-20261018-v1/SUMMARY.json",
       "terminal": "auto-research/results/feedback-decay-20261018-v1/TERMINAL.json",
       "report": "auto-research/reports/feedback-decay-20261018-v1.md",
-      "decision": "Pending fixed-FIFO feedback learning/decay factorial.",
+      "decision": "FP64 decoded B1 spectral norm2.0000000000000004 exceeds strict2 cap in independent factorial verification at seed15817.",
       "parent_run_ids": [
         "slow-feedback-20261018-v1"
+      ],
+      "recovery_run_id": "feedback-decay-20261018-v2"
+    },
+    {
+      "run_id": "feedback-decay-20261018-v2",
+      "status": "REGISTERED_PENDING_EXECUTION",
+      "approval": "User: Alright, looks good, go ahead, following the feedback-learning versus decay proposal. Standing local CPU900s/max3 single-thread workers, own JRowe47/Super-1 branch/draft PR3, stable research scratch and compact project-folder checkpoints. No paid/GPU/cloud/language expansion.",
+      "protocol": "auto-research/results/feedback-decay-20261018-v2/PROTOCOL.json",
+      "protocol_sha256": "9631d01c94420a3b22cc4e721897cdebf80270dd58e44d25eaa7faa0ac47fa44",
+      "registration": "auto-research/results/feedback-decay-20261018-v2/REGISTRATION.json",
+      "metrics": "auto-research/results/feedback-decay-20261018-v2/SUMMARY.json",
+      "terminal": "auto-research/results/feedback-decay-20261018-v2/TERMINAL.json",
+      "report": "auto-research/reports/feedback-decay-20261018-v2.md",
+      "decision": "Pending unchanged factorial after shared numerical cap repair.",
+      "parent_run_ids": [
+        "slow-feedback-20261018-v1",
+        "feedback-decay-20261018-v1"
       ]
     }
   ],

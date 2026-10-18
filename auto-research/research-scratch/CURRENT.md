@@ -1,8 +1,8 @@
 # Current research handoff
 
-Active authorized run: **feedback-decay-20261018-v1**, preregistered, execution pending. Fixed FIFO512/16, original full feedback rate; five arms=frozen/decay-only/learning-only/normal adaptive/backprop. Primary normal adaptive vs decay-only uses unchanged CE/retention thresholds; frozen reference remains separately visible. Fresh main seeds1101821..3 and pilot100917. Source publication/readback precedes verification and optimization.900 aggregate CPU seconds, max3 one-thread workers, no rate sweep.
+Active authorized run: **feedback-decay-20261018-v2**, preregistered, awaiting source publication/readback before verification or training. Same five-arm fixed-FIFO learning/decay factorial and unseen pilot/main seeds; same primary normal adaptive versus decay-only thresholds. Original frozen-reference retention remains visible.
 
-[Protocol](../results/feedback-decay-20261018-v1/PROTOCOL.json) · [Registration](../results/feedback-decay-20261018-v1/REGISTRATION.json). No outcome yet; no language/architecture promotion is implied by this mechanism control.
+**v1 failed before any training:** verification seed15817 FP64 decoded norm2.0000000000000004 exceeded the strict2 cap. Its frozen source, failed receipt and diagnosis are preserved. v2 adds only common decoded-readback enforcement after original projection, retaining cap/tolerances and charging all attempts to the same900CPU-second budget. [Failure report](../reports/feedback-decay-20261018-v1.md) · [v2 protocol](../results/feedback-decay-20261018-v2/PROTOCOL.json) · [v2 registration](../results/feedback-decay-20261018-v2/REGISTRATION.json).
 
 ## Prior completed handoff
 
