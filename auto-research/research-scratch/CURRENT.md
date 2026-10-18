@@ -1,5 +1,13 @@
 # Current research handoff
 
+Active authorized run: **feedback-readout-20261018-v1**, preregistered and awaiting source publication/readback before verification or training. Five arms: BP, frozen, U0-only, U1-only, both-U. B/V fixed and online feedback decay off. Full rates, FIFO512/16, shared4096 warmup, W optimizer, cap2, exposure and endpoints unchanged. Sole primary U1-only versus frozen keeps5%/no-negative-seed and per-seed2pp old-window/final-old guards. Fresh main seeds1301841..3; mechanical pilot102937. No outcome yet.
+
+Before pilot, verify both-U and preserved V/U-only W/U/B steps and trajectories match bitwise despite differing V. W0 still learns in U1-only. Same900 aggregate CPU-second budget, max3 one-thread workers; no GPU/cloud/language expansion. [Protocol](../results/feedback-readout-20261018-v1/PROTOCOL.json) · [Registration](../results/feedback-readout-20261018-v1/REGISTRATION.json).
+
+## Prior completed handoff
+
+# Current research handoff
+
 Latest completed run: **feedback-family-20261018-v1**. **No promotion: B-only effect passes, both retention guards fail all three main seeds. Nothing is running.**
 
 [Report](../reports/feedback-family-20261018-v1.md) · [Summary](../results/feedback-family-20261018-v1/SUMMARY.json) · [Protocol](../results/feedback-family-20261018-v1/PROTOCOL.json) · [Terminal](../results/feedback-family-20261018-v1/TERMINAL.json) · [Checkpoints](../results/feedback-family-20261018-v1/ARTIFACT_MANIFEST.json).

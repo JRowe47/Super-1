@@ -310,6 +310,21 @@
       "preservation": "Frozen source before execution; all20 full replays exact; four compact NPZ overlays remote byte-hash verified.",
       "artifact_manifest": "auto-research/results/feedback-family-20261018-v1/ARTIFACT_MANIFEST.json",
       "source_commit": "553fb843756fa98ca534196f84902bf2d78aa863"
+    },
+    {
+      "run_id": "feedback-readout-20261018-v1",
+      "status": "REGISTERED_PENDING_EXECUTION",
+      "approval": "User: Go ahead with that, accepting the proposed U0-versus-U1 readout-learning ablation after feedback-family-v1. Standing900 aggregate CPU seconds, max3 one-thread workers, own fork/draftPR3 and stable research scratch. No paid/GPU/cloud/language expansion.",
+      "protocol": "auto-research/results/feedback-readout-20261018-v1/PROTOCOL.json",
+      "protocol_sha256": "605f328f1e6d1ed4744a9ee6b93b9c929f4ad050ffbe8ad10a4be1102ae76fd3",
+      "registration": "auto-research/results/feedback-readout-20261018-v1/REGISTRATION.json",
+      "metrics": "auto-research/results/feedback-readout-20261018-v1/SUMMARY.json",
+      "terminal": "auto-research/results/feedback-readout-20261018-v1/TERMINAL.json",
+      "report": "auto-research/reports/feedback-readout-20261018-v1.md",
+      "decision": "Pending U0/U1 learning ablation; sole primary U1-only versus frozen.",
+      "parent_run_ids": [
+        "feedback-family-20261018-v1"
+      ]
     }
   ],
   "schema_version": 1,
