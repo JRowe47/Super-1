@@ -67,6 +67,8 @@ The recovered [forward-only weight optimizer](auto-research/PERTURBATION_OPTIMIZ
 
 These user-supplied graphs are historical snapshots from August 22 and August 16, 2026. The first explicitly shows G11 checkpoint materialization in progress. Their full trajectories have not been independently replayed in this recovery; the [guide](auto-research/PERTURBATION_OPTIMIZATION.md#historical-graphs) separates them from the audited three-decision ledger.
 
+The [extended research audit](auto-research/reports/perturbation-extended-recovery-20261018.md) preserves later direction, tensor-block and scalar refinement through recorded generation 28, the CE-versus-distillation comparison that retained the unchanged parent, and benchmark canary results without accuracy gains. It also explains why these results do not demonstrate new concept learning and how a symmetry-guided proposal would need to be tested.
+
 ## Reproduce and inspect
 
 ```sh

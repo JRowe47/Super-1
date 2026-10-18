@@ -1,0 +1,12 @@
+LOAD source checkpoint
+LOAD current checkpoint
+BOUND group=left_factors scalars=1703520 nonzero=1703519 batches=[0] tokens=65
+GRADIENT start
+Traceback (most recent call last):
+  File "/Users/rohanarun/Documents/trin/w560_scalar_delta_cpu_pilot.py", line 433, in <module>
+    main()
+  File "/Users/rohanarun/Documents/trin/w560_scalar_delta_cpu_pilot.py", line 265, in main
+    [gradient_leaves[name].grad.detach().reshape(-1).float() for name in group_names]
+  File "/Users/rohanarun/Documents/trin/w560_scalar_delta_cpu_pilot.py", line 265, in <listcomp>
+    [gradient_leaves[name].grad.detach().reshape(-1).float() for name in group_names]
+AttributeError: 'NoneType' object has no attribute 'detach'

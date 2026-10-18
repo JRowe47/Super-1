@@ -1,0 +1,15 @@
+LOAD source checkpoint
+LOAD current checkpoint
+BOUND group=left_factors scalars=1703520 nonzero=1703519 batches=[0] tokens=65
+GRADIENT start
+GRADIENT complete loss=8.857465744019 dot=0.019345048815 cosine=0.000748389117002
+SCREEN current_baseline=8.857465744019 source_baseline=8.757801055908 count=8
+SCREEN 1/8 mode=apply_delta_to_g9_source index=520538 loss=8.759693145752 improvement=-0.00189208984375
+SCREEN 2/8 mode=ablate_delta_from_g10_current index=520538 loss=8.856019020081 improvement=0.00144672393799
+SCREEN 3/8 mode=apply_delta_to_g9_source index=522917 loss=8.759556770325 improvement=-0.0017557144165
+SCREEN 4/8 mode=ablate_delta_from_g10_current index=522917 loss=8.856101036072 improvement=0.00136470794678
+SCREEN 5/8 mode=apply_delta_to_g9_source index=466482 loss=8.757603645325 improvement=0.000197410583496
+SCREEN 6/8 mode=ablate_delta_from_g10_current index=466482 loss=8.856178283691 improvement=0.00128746032715
+SCREEN 7/8 mode=apply_delta_to_g9_source index=512849 loss=8.756410598755 improvement=0.00139045715332
+SCREEN 8/8 mode=ablate_delta_from_g10_current index=512849 loss=8.858693122864 improvement=-0.00122737884521
+DONE screens=8 cpu_shadow_improvers=5

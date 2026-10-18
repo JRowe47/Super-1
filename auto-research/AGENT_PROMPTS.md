@@ -85,3 +85,5 @@ The int4 pilot preserved quality and cut weight tensors3.575x, but per-tensor to
 ## Finding historical optimization mechanisms
 
 A search limited to currently exposed repository code missed the August perturbation optimizer. Before reporting a research mechanism absent, inspect the research catalog, archive manifests and relevant ignored SSD research directories. Distinguish finite differences used for gradient checks from an actual forward-only search that accepts weight changes. Preserve exact recovered source and negative decisions, and label reused optimization data separately from held-out evaluation. Historical authorization flags do not authorize a new launch.
+
+When auditing optimizer history, separate canonical forward-only optimization from gradient-informed diagnostic side experiments. Count local refinement accepts separately from checkpoint promotions. Inspect changed acceptance margins, incomplete candidate sweeps, retained parents and benchmark regressions before summarizing improvement. Loss reductions on reused data do not demonstrate new concept learning; require an explicit unseen-case generalization experiment for that claim.

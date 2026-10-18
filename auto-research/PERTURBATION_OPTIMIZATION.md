@@ -2,6 +2,10 @@
 
 The August 2026 research contains a forward-only weight optimizer for the historical **W560 hierarchical function-weight GRU**. It has now been recovered into Super-1. This is executable solver/controller source with provenance, original tests, and saved decisions. It is separate from the current function-weight Transformer and minGRU experiments; no compatibility with those models is claimed.
 
+## Extended SSD and iCloud recovery
+
+The [follow-up audit](reports/perturbation-extended-recovery-20261018.md) adds 271 historical files: later direction/tensor/scalar refinement code and records, a completed CE-versus-KD comparison, a gradient-informed diagnostic, benchmark results and failure logs. Its records extend through model generation 28 and document the G11 promotion after the chart snapshot. External checkpoint bytes remain unverified. The original three-decision recovery below is a narrower snapshot, not the full later history.
+
 ## Source entry points
 
 All paths below are in [the recovery bundle](results/perturbation-recovery-20261018-v1/).

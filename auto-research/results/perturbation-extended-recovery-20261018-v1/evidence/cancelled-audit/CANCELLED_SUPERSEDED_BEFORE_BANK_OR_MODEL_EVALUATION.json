@@ -1,0 +1,16 @@
+{
+  "schema": "hfw_w560_cancelled_audit_scaffold_v1",
+  "status": "CANCELLED_SUPERSEDED_BY_CE_VS_KD_MATCHED_EXPERIMENT",
+  "directories_created": ["source", "spec", "validation"],
+  "source_files_created": 0,
+  "spec_files_created": 0,
+  "banks_materialized": 0,
+  "token_positions_selected": 0,
+  "model_checkpoints_loaded": 0,
+  "model_forward_calls": 0,
+  "optimizer_steps": 0,
+  "autograd_calls": 0,
+  "active_packages_mutated": false,
+  "active_processes_stopped": false,
+  "must_not_be_reused_or_modified": true
+}

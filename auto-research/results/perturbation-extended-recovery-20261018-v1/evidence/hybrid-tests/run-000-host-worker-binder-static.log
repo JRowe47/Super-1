@@ -1,0 +1,48 @@
+test_credential_scan_counts_each_payload_byte_once (tests.test_bind_campaign.BindingRegressionTests) ... ok
+test_main_parses_arguments_exactly_once (tests.test_bind_campaign.BindingRegressionTests) ... ok
+test_cross_device_hardlink_falls_back_to_durable_atomic_copy (tests.test_bind_campaign.CheckpointImportTests) ... ok
+test_fallback_publish_is_create_only_and_preserves_existing_bytes (tests.test_bind_campaign.CheckpointImportTests) ... ok
+test_fallback_rejects_corrupt_staging_bytes_before_publish (tests.test_bind_campaign.CheckpointImportTests) ... ok
+test_nonfinite_preflight_is_machine_classifiable_before_search (tests.test_cpu_bfloat16_worker.CpuBfloat16WorkerTests) ... ok
+test_nonfinite_search_loss_retains_diagnostics_without_accepting (tests.test_cpu_bfloat16_worker.CpuBfloat16WorkerTests) ... ok
+test_nonfinite_terminal_ranking_reaches_classified_envelope (tests.test_cpu_bfloat16_worker.CpuBfloat16WorkerTests) ... ok
+test_post_preflight_logits_dtype_failure_is_terminal_and_artifact_bound (tests.test_cpu_bfloat16_worker.CpuBfloat16WorkerTests) ... ok
+test_preflight_classifies_logits_dtype_mismatch (tests.test_cpu_bfloat16_worker.CpuBfloat16WorkerTests) ... ok
+test_preflight_operation_exception_is_deterministic_and_machine_readable (tests.test_cpu_bfloat16_worker.CpuBfloat16WorkerTests) ... ok
+test_preflight_requires_bfloat16_logits_and_float32_ce (tests.test_cpu_bfloat16_worker.CpuBfloat16WorkerTests) ... ok
+test_every_accepted_flat_is_streamed_into_ordered_bundle (tests.test_cpu_fp64_shadow_worker.FP64ShadowObjectiveTests) ... ok
+test_failure_peak_rss_includes_post_objective_process_peak (tests.test_cpu_fp64_shadow_worker.FP64ShadowObjectiveTests) ... ok
+test_fp64_diagnostics_do_not_downcast_huge_finite_values (tests.test_cpu_fp64_shadow_worker.FP64ShadowObjectiveTests) ... ok
+test_gate_completes_full_bank_and_requires_strict_mean_improvement (tests.test_cpu_fp64_shadow_worker.FP64ShadowObjectiveTests) ... ok
+test_nonfinite_candidate_is_rejected_after_fixed_full_bank_not_fatal (tests.test_cpu_fp64_shadow_worker.FP64ShadowObjectiveTests) ... ok
+test_retains_exact_f32_candidate_and_runs_every_shadow_tensor_fp64 (tests.test_cpu_fp64_shadow_worker.FP64ShadowObjectiveTests) ... ok
+test_terminal_duplicate_binds_cached_flat_and_losses (tests.test_cpu_fp64_shadow_worker.FP64ShadowObjectiveTests) ... ok
+test_variable_accounting_accepts_exact_zero_and_maximum_gate_bounds (tests.test_cpu_fp64_shadow_worker.FP64ShadowObjectiveTests) ... ok
+test_vendor_gate_is_before_current_mutation_and_artifact_write (tests.test_cpu_fp64_shadow_worker.FP64ShadowObjectiveTests) ... ok
+test_huge_values_and_zero_row_remain_finite_and_scale_stable (tests.test_cpu_fp64_shadow_worker.StableLayerNormTests) ... ok
+test_matches_native_fp64_on_moderate_values (tests.test_cpu_fp64_shadow_worker.StableLayerNormTests) ... ok
+test_cloud_handoff_requires_download_launch_and_zero_resource_cleanup (tests.test_static_contract.StaticContractTests) ... ok
+test_current_pointer_is_recoverable_derived_state (tests.test_static_contract.StaticContractTests) ... ok
+test_frozen_identities_and_derived_groups (tests.test_static_contract.StaticContractTests) ... ok
+test_host_manifest_v2_validates_disposable_sealed_dependencies (tests.test_static_contract.StaticContractTests) ... ok
+test_hybrid_contract_forbids_cpu_filter_and_requires_all_candidates (tests.test_static_contract.StaticContractTests) ... ok
+test_manager_command_has_no_credential_channel (tests.test_static_contract.StaticContractTests) ... ok
+test_pipeline_rejects_wave_bytes_outside_host_runtime_seal (tests.test_static_contract.StaticContractTests) ... ok
+test_pipeline_removes_credential_before_local_authority_stages (tests.test_static_contract.StaticContractTests) ... ok
+test_promoter_revalidates_recovery_dependency_under_both_locks_before_verify_or_append (tests.test_static_contract.StaticContractTests) ... skipped 'fresh hybrid campaign has no recovered task0 dependency'
+test_recovery_v3_uses_generic_failure_and_three_id_intent_fields (tests.test_static_contract.StaticContractTests) ... ok
+test_staging_v3_accepts_distinct_non_nested_device_independent_copies (tests.test_static_contract.StaticContractTests) ... ok
+test_staging_v3_rejects_upload_hardlinks_and_nested_roots (tests.test_static_contract.StaticContractTests) ... ok
+test_terminal_duplicate_is_recomputed_from_cached_loss_vector (tests.test_static_contract.StaticContractTests) ... ok
+test_test_receipt_staging_path_must_match_upload_receipt (tests.test_static_contract.StaticContractTests) ... ok
+test_test_run_commands_use_profile_specific_isolation_flags (tests.test_static_contract.StaticContractTests) ... ok
+test_test_run_receipt_executes_and_derives_exact_evidence (tests.test_static_contract.StaticContractTests) ... ok
+test_test_run_rejects_fake_log_without_execution (tests.test_static_contract.StaticContractTests) ... ok
+test_test_run_rejects_module_source_mapping_drift (tests.test_static_contract.StaticContractTests) ... ok
+test_test_run_validation_rejects_tampered_runner_log (tests.test_static_contract.StaticContractTests) ... ok
+test_worker_contract_keeps_boolean_flags_distinct_from_integer_counts (tests.test_static_contract.StaticContractTests) ... ok
+
+----------------------------------------------------------------------
+Ran 43 tests in 2.184s
+
+OK (skipped=1)

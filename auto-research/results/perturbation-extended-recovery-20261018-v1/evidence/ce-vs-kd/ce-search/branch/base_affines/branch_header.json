@@ -1,0 +1,22 @@
+{
+  "autograd_calls": 0,
+  "branch_seed": 1087976631172712423,
+  "fixed_eval_opened": false,
+  "group": "base_affines",
+  "initial_radius": 0.18,
+  "iterations": 18,
+  "line_search_scales": [
+    0.5,
+    1.0,
+    1.5
+  ],
+  "minimum_relative_improvement": 0.0001,
+  "model_evaluation_budget": 180,
+  "optimizer_steps": 0,
+  "paired_direction_count": 3,
+  "paired_top_k": 2,
+  "parent_checkpoint_sha256": "93df74ca9d49494f0065eaaa941d152fca32dcdaf7de7047239030a015bdba18",
+  "parent_group_sha256": "448bf98d5eb7b6ea43018540e33ea65fba67e0915c29753bd47edcbd4d4b2f4b",
+  "schema": "hfw_post_training_proven_solver_branch_header_v1",
+  "solver": "paired_spectral_trust_region_exact_v1_transfer"
+}

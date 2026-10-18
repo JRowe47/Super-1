@@ -1,0 +1,23 @@
+{
+  "schema": "hfw_w560_daytona_manager_venv_audit_v1",
+  "status": "PASS_EXACT_LOCKED_EXTERNAL_MANAGER_ENVIRONMENT",
+  "manager_python_relative_path": "runtime/daytona-manager-venv/bin/python",
+  "manager_prefix_relative_path": "runtime/daytona-manager-venv",
+  "requirements_lock": {
+    "relative_path": "runtime/daytona-manager-requirements.lock",
+    "sha256": "b356ef976ec69b8bdf07a7a233ae704e2c33c04f1782401e3bb54978fd7a93b9",
+    "size_bytes": 1173,
+    "distribution_count": 51
+  },
+  "python": {
+    "implementation": "CPython",
+    "version": "3.12.12",
+    "major_minor": "3.12",
+    "platform_system": "Darwin",
+    "machine": "arm64"
+  },
+  "daytona_sdk_version": "0.194.0",
+  "installed_distributions_exactly_equal_lock": true,
+  "manager_prefix_is_package_local_venv": true,
+  "credential_environment_forwarded_to_audit_probe": false
+}
