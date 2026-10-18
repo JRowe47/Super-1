@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "checked_at_utc": "2026-10-18T05:49:41.414391+00:00",
+  "registered_source_hashes_unchanged": true,
+  "main_runs_complete": 18,
+  "pilot_runs_complete": 6,
+  "full_bitwise_online_replays": 24,
+  "four_phase_hashes_checked_each": true,
+  "both_replay_policies_512_examples_and16_samples": true,
+  "all_four_remote_state_hashes_verified": true,
+  "all_workers_exited": true,
+  "official_test_accessed": false,
+  "new_cloud_resources_created": false,
+  "temporary_cleanup": [
+    {
+      "relative_path": "verify-checkpoints-stage4",
+      "file_bytes_removed": 754883,
+      "reason": "Redundant verification copy or reproducible temporary runtime after durable checkpoint verification."
+    },
+    {
+      "relative_path": "research-runtime",
+      "file_bytes_removed": 1085240563,
+      "reason": "Redundant verification copy or reproducible temporary runtime after durable checkpoint verification."
+    }
+  ]
+}

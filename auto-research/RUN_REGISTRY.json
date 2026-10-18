@@ -186,7 +186,7 @@
     },
     {
       "run_id": "replay-retention-20261018-v1",
-      "status": "REGISTERED_BEFORE_EXECUTION",
+      "status": "COMPLETE_NO_PROMOTION_RETENTION_FAILED",
       "approval": "Latest user: Alright, go ahead with the next. Refers to fixed-budget replay-retention stage documented in prior reply and repo CURRENT. Standing permission: use own JRowe47/Super-1 research branch/draft PR3 and research scratch, keep artifacts small.",
       "protocol": "auto-research/results/replay-retention-20261018-v1/PROTOCOL.json",
       "protocol_sha256": "7449bfbfa874107ac3f8d64fe2e2dd8f82236882058b3bd018a1686af8972ee3",
@@ -194,10 +194,17 @@
       "metrics": "auto-research/results/replay-retention-20261018-v1/SUMMARY.json",
       "terminal": "auto-research/results/replay-retention-20261018-v1/TERMINAL.json",
       "report": "auto-research/reports/replay-retention-20261018-v1.md",
-      "decision": "Pending fixed-storage replay intervention; same adaptation/retention gates.",
+      "decision": "Adaptive mixed gains3.39pp final-old versus adaptive FIFO, but CE rises30.71% and changed accuracy falls23.96pp. Adaptive vs frozen mixed CE gain21.94%, retention fails all3. No promotion.",
       "parent_run_ids": [
         "magnitude-feedback-20261018-v1"
-      ]
+      ],
+      "main_runs": 18,
+      "pilot_runs": 6,
+      "full_exact_replays": 24,
+      "charged_experiment_cpu_seconds": 199.53490228499996,
+      "preservation": "Exact source/protocol before execution; compact results in Git;4 individual NPZ files remotely hash-verified.",
+      "artifact_manifest": "auto-research/results/replay-retention-20261018-v1/ARTIFACT_MANIFEST.json",
+      "source_commit": "34f559d1454a067d175e55c372f3b20387b2423d"
     }
   ],
   "schema_version": 1,

@@ -1,23 +1,29 @@
 # Current research handoff
 
-Updated 2026-10-18 UTC. Active run: `replay-retention-20261018-v1`, frozen before experiment verification/training. No results yet.
+Updated 2026-10-18 UTC. Latest completed run: `replay-retention-20261018-v1`.
 
-## Registered next stage
+## Latest result and decision
 
-Six arms: exact backprop, frozen feedback and adaptive feedback, each with FIFO or mixed replay. Both policies store 512 examples and train on 16 current +16 replay examples. Mixed keeps 256 old examples and a 256-example recent queue, drawing 8+8. FIFO keeps a rolling512 queue and draws16. Historical labels stay unchanged, including conflicts after rule changes. One fixed mixture, fresh seeds801791/2/3 and pilot97987; no tuning.
+Permanent old-example replay improves retention but harms adaptation. Adaptive mixed replay raises final still-valid-old accuracy **88.19%→91.57%**, while changed-rule accuracy falls **73.05%→49.09%** and primary post-change CE rises **30.71%** versus adaptive FIFO.
 
-Primary: adaptive_mixed versus frozen_mixed, same >=5% mean CE reduction/no-negative-seed and <=2pp old-window/final retention-loss gates. Source/protocol must be committed before verification and training. At most3 single-thread workers,900 aggregate CPU seconds, no GPU/cloud/official-test access.
+Within mixed replay, adaptive feedback still beats frozen feedback by **21.94%** mean paired post-change CE reduction (15.09%,23.85%,26.89%). Final-old losses **3.52,5.25,5.19pp** against frozen mixed fail the unchanged 2pp guard in every seed; old-window losses also fail. **No promotion.** Mixed replay hurts changed-rule learning for BP and frozen feedback too. BP/FIFO remains strongest on final balanced accuracy 90.81%.
 
-- [Protocol](../results/replay-retention-20261018-v1/PROTOCOL.json)
-- [Source hashes](../results/replay-retention-20261018-v1/REGISTRATION.json)
-- [Reproduction](../results/replay-retention-20261018-v1/README.md)
+- [Report](../reports/replay-retention-20261018-v1.md)
+- [Frozen source/reproduction](../results/replay-retention-20261018-v1/README.md)
+- [Protocol](../results/replay-retention-20261018-v1/PROTOCOL.json) and [registration](../results/replay-retention-20261018-v1/REGISTRATION.json)
+- [Metrics](../results/replay-retention-20261018-v1/SUMMARY.json), [endpoint components](../results/replay-retention-20261018-v1/ENDPOINT_COMPONENTS.json)
+- [Terminal](../results/replay-retention-20261018-v1/TERMINAL.json), [checkpoint identities/hashes](../results/replay-retention-20261018-v1/ARTIFACT_MANIFEST.json)
 
-On resume inspect VERIFY/PILOT/MAIN receipts and per-seed results before starting anything. Do not rerun an active or completed run or overwrite evidence.
+All 18 main and 6 pilot arms completed; all 24 full online replays bitwise exact; original numerical tolerances pass. Both replay policies hold 512 examples and use 16 current+16 replay samples. The mixed policy pins 256 old examples and keeps 256 recent, sampling 8+8; historical labels are never refreshed. It exposes 3,736–4,948 stale binary targets versus 30–54 for FIFO. This supports a stale-memory concern but does not isolate it from changed data allocation/recent coverage.
 
-## Previous completed stage
+Source/protocol committed before execution at 34f559d1454a067d175e55c372f3b20387b2423d. No source or gate changes, no execution failures. Charged experiment CPU 199.535s. Four NPZ state files total 754,883 bytes, remotely downloaded and SHA256 verified. Temporary runtime removed; exact pins in RUNTIME.json. All jobs stopped.
 
-[magnitude-feedback-20261018-v1 report](../reports/magnitude-feedback-20261018-v1.md): adaptive feedback lowers post-change CE by26.45% after same-state magnitude matching, but all3 seeds fail retention (final-old losses4.91–8.26pp). All24 replays exact. Exact source and small checkpoints are fully preserved. No promotion.
+## Next stage, proposed and not running
 
-The earlier bounded-feedback study still has a source/checkpoint preservation gap after the prior workspace reset. Its findings are transcriptions, not original bytes. This stage derives from the fully preserved magnitude study.
+Test a causally refreshed long-history bank with the same 256 recent+256 long-history storage and 8+8 replay samples: replace one old-bank row after each update using one randomly selected current example, fixed circular replacement. After initial turnover this caps long-history age at 256 updates without phase metadata or oracle relabeling. Compare FIFO/permanent/refreshed policies under adaptive/frozen/BP, fresh 3 paired seeds, one preregistered refresh rate, unchanged >=5% effect and <=2pp retention gates. Keep the permanent-bank control to isolate refresh from storage/sample allocation. Estimated 250–450 aggregate CPU seconds, standing 900s maximum with at most 3 single-thread workers; no GPU/cloud/official-test access.
 
-Use this research scratch channel and existing project folder. Keep files small and individual; no new cumulative archive. Freeze source and protocol before each new run.
+If this cannot improve the joint tradeoff, reconsider feedback plasticity rather than keep tuning replay. Freeze and publish source/protocol before any new run. Check receipts and worker state before resuming; do not duplicate completed experiments.
+
+## Continuity and artifact policy
+
+Use this research scratch channel and the existing project folder. Keep individual files small; no cumulative archive. Previous [magnitude study](../reports/magnitude-feedback-20261018-v1.md) found a 26.45% adaptation gain after magnitude matching but failed retention; its source/checkpoints are fully preserved. The older bounded-feedback study remains a post-run transcription with missing original bytes after a workspace reset. Do not claim those old bytes have been recovered.
