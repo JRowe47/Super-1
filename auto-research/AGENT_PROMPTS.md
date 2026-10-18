@@ -47,3 +47,11 @@ For token-conditioned depth experiments, always distinguish uniform positions, l
 Small routing gradients can be hidden by FP32 finite-difference cancellation: the initial canary here returned a zero numerical difference despite a nonzero analytic gradient. Always use a nonconstant curve, nonzero router, and a sufficiently precise finite-difference check before accepting connectivity. The FP64 check, causal-prefix equality, and complete optimizer-step parity must pass before language training. Do not weaken a tolerance to manufacture a pass.
 
 Always freeze all checkpoints before reserved confirmation, retain failures and every seed, and distinguish a small single-corpus byte pilot from broad language quality or an optimized deployment result. Uncached full-prefix decoding must be labeled as such.
+
+## Iterative sampling optimization by workload
+
+The user clarified that “recursively” meant a benchmark/gradient-descent/re-evaluation research loop, not a recursive inference controller. Always preserve that distinction. Optimize sampling on dedicated tuning data, choose checkpoints with selection data, and freeze every workload's choices before reserved confirmation. Report each workload separately and retain the initial policy as an eligible fallback.
+
+A shared backbone can learn text while remaining at chance on structured tasks. Always check each workload's baseline competence before interpreting sampling gains. Nonzero sampler gradients and tiny CE changes do not establish retrieval or arithmetic capability. If the backbone has not learned a task, preserve that failure and address task learning in a separately scoped experiment instead of endlessly tuning routing or weakening the success criterion.
+
+Compare per-workload policies against a shared policy with matched per-workload examples and against token-independent positions. Report extra total controller storage, fixed active steps and every adaptation round. Learning-rate reductions and checkpoint selection must be fixed before confirmation. Never update the underlying model during a sampling-only claim; verify frozen weight fingerprints, not just parameter flags.

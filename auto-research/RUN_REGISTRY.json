@@ -149,13 +149,40 @@
     },
     {
       "approval": "Current chat: user requested optimizing sampling per use-case iteratively after benchmarking, explicitly by gradient descent. This authorizes the bounded local follow-up; no recursive inference controller, cloud spending or endless research loop.",
+      "base_checkpoints": 3,
+      "confirmation_rows": 36,
+      "decision": "NO_USECASE_SPECIALIZATION_PROMOTED",
+      "decisions_by_usecase": {
+        "arithmetic": {
+          "base_learning_qualified": false,
+          "improves_frozen_uniform": false,
+          "specialization_supported": false,
+          "token_conditioning_supported": false
+        },
+        "retrieval": {
+          "base_learning_qualified": false,
+          "improves_frozen_uniform": false,
+          "specialization_supported": false,
+          "token_conditioning_supported": false
+        },
+        "text": {
+          "base_learning_qualified": true,
+          "improves_frozen_uniform": false,
+          "specialization_supported": false,
+          "token_conditioning_supported": false
+        }
+      },
+      "metrics": "auto-research/results/usecase-sampling-descent-20261018-v1/execution/RESULT.json",
       "protocol": "auto-research/results/usecase-sampling-descent-20261018-v1/PROTOCOL.json",
       "protocol_sha256": "81b1a5187cb6b1ec02ff6ee1f3420b2ddcb54743fc83d656ae94ca29965aa087",
       "report": "auto-research/reports/usecase-sampling-descent-20261018-v1.md",
+      "rounds": 3,
       "run_id": "usecase-sampling-descent-20261018-v1",
+      "sampler_round_checkpoints": 84,
       "source_manifest": "auto-research/results/usecase-sampling-descent-20261018-v1/SOURCE_MANIFEST.json",
-      "status": "PREREGISTERED_AUTHORIZED",
-      "terminal": "auto-research/results/usecase-sampling-descent-20261018-v1/execution/TERMINAL.json"
+      "status": "COMPLETED",
+      "terminal": "auto-research/results/usecase-sampling-descent-20261018-v1/execution/TERMINAL.json",
+      "verification": "auto-research/results/usecase-sampling-descent-20261018-v1/execution/VERIFICATION.json"
     }
   ],
   "schema_version": 1,

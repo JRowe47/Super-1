@@ -1,0 +1,30 @@
+{
+  "commit": "8b700e96da27777afaae4ab0b16ea1277dcaea5d",
+  "pid": 60395,
+  "protocol_sha256": "81b1a5187cb6b1ec02ff6ee1f3420b2ddcb54743fc83d656ae94ca29965aa087",
+  "runtime": {
+    "device": "cpu",
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "precision": "FP32",
+    "python": "3.9.6 (default, Aug 25 2026, 21:26:21) \n[Clang 21.0.0 (clang-2100.3.34.2)]",
+    "threads": 1,
+    "torch": "2.8.0"
+  },
+  "source_manifest": {
+    "artifacts/nanogpt-10m-20260815/package/source/official_nanogpt/third_party/nanogpt/model.py": "7c01703240dbec5d554527dc666e35b3df8391d0b117fddc07afcf325a21d11c",
+    "auto-research/results/adaptive-depth-shakespeare-20261018-v1/corpus.txt": "86c4e6aa9db7c042ec79f339dcb96d42b0075e16b8fc2e86bf0ca57e2dc565ed",
+    "auto-research/results/adaptive-depth-shakespeare-20261018-v1/model.py": "0a93477afa16d497ba0fa755e0cd4a5d5280846808edc1e5f79b5df1b45fd2d9",
+    "auto-research/results/usecase-sampling-descent-20261018-v1/CANARY.json": "8f1897eb56201f9c7ba628a92f9111cfca5d36430ad6f22754667fedd1ae374d",
+    "auto-research/results/usecase-sampling-descent-20261018-v1/CONFIG.json": "a336d6302e72144cf7b5e2aeba2d7eca2cf0f9dfe79a3bed9d5a32d77d4cc56c",
+    "auto-research/results/usecase-sampling-descent-20261018-v1/DATA.json": "eb7f660e478f5fb2a0033308dafc6f3b56890386c69814e6c00d6bc0e75cf9f0",
+    "auto-research/results/usecase-sampling-descent-20261018-v1/PROFILE.json": "77aee1e034117b3fa5194699b8494e7f484952d9249c7112bc31c8b6a1cb5b92",
+    "auto-research/results/usecase-sampling-descent-20261018-v1/PROTOCOL.json": "81b1a5187cb6b1ec02ff6ee1f3420b2ddcb54743fc83d656ae94ca29965aa087",
+    "auto-research/results/usecase-sampling-descent-20261018-v1/canary.py": "a8c243f348f6c27311f71b27179ce2fd60c473b4058b2a6b22b41efa8d416d90",
+    "auto-research/results/usecase-sampling-descent-20261018-v1/policy.py": "47c661c2d71c7320882889f5b16e063608972b581a5784f916b7903bb66fa6e6",
+    "auto-research/results/usecase-sampling-descent-20261018-v1/prepare.py": "8663fd8112232904b2af72323c49a2cbbd8ae7b56de2cdde6f3d7cc62e816983",
+    "auto-research/results/usecase-sampling-descent-20261018-v1/run.py": "789373233822154ceeb0d18600b380c9a9eebdb1da93524d554b8b5e8d68880d",
+    "auto-research/results/usecase-sampling-descent-20261018-v1/tasks.py": "32bb2e3f78cceb69eb72ba7d76377acaa48ac6bfc2a70daa37fe7ede8616bc62",
+    "src/hierarchy/experiments/function_weight_wt2_original_transformer_port/model.py": "3180772c6614b31d2152782d36aba4c3c6545f216fcca21df870975133393145"
+  },
+  "utc": "2026-10-18T13:39:19Z"
+}

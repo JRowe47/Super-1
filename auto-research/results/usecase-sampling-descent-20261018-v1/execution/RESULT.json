@@ -1,0 +1,1599 @@
+{
+  "contrasts": {
+    "arithmetic": {
+      "arithmetic_global": {
+        "familywise_interval": [
+          -0.0007343959145895266,
+          0.0009307733509095137
+        ],
+        "gaps_nats_per_target": [
+          -2.0988285541534424e-05,
+          0.0,
+          0.0003155544400215149
+        ],
+        "mean": 9.818871815999349e-05,
+        "paired_t95": [
+          -0.0003701619641009306,
+          0.0005665394004209176
+        ]
+      },
+      "shared_token": {
+        "familywise_interval": [
+          -0.0025098454795519313,
+          0.001976778789583822
+        ],
+        "gaps_nats_per_target": [
+          -0.00012702122330665588,
+          0.0001571252942085266,
+          -0.0008297041058540344
+        ],
+        "mean": -0.00026653334498405457,
+        "paired_t95": [
+          -0.0015284552294649095,
+          0.0009953885394968004
+        ]
+      },
+      "uniform": {
+        "familywise_interval": [
+          0.0,
+          0.0
+        ],
+        "gaps_nats_per_target": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "paired_t95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "retrieval": {
+      "retrieval_global": {
+        "familywise_interval": [
+          -0.00754112604055913,
+          0.00582386903756968
+        ],
+        "gaps_nats_per_target": [
+          0.0,
+          2.9988586902618408e-05,
+          -0.002605874091386795
+        ],
+        "mean": -0.0008586285014947256,
+        "paired_t95": [
+          -0.004617708549960302,
+          0.0029004515469708506
+        ]
+      },
+      "shared_token": {
+        "familywise_interval": [
+          -0.003727363547106449,
+          0.002870554229040806
+        ],
+        "gaps_nats_per_target": [
+          8.843466639518738e-05,
+          -8.872151374816895e-05,
+          -0.0012849271297454834
+        ],
+        "mean": -0.00042840465903282166,
+        "paired_t95": [
+          -0.0022841555163091547,
+          0.0014273461982435114
+        ]
+      },
+      "uniform": {
+        "familywise_interval": [
+          -0.023702640851070402,
+          0.018258439520726522
+        ],
+        "gaps_nats_per_target": [
+          0.0,
+          4.171207547187805e-05,
+          -0.008208014070987701
+        ],
+        "mean": -0.0027221006651719413,
+        "paired_t95": [
+          -0.014524204527956627,
+          0.009080003197612744
+        ]
+      }
+    },
+    "text": {
+      "shared_token": {
+        "familywise_interval": [
+          -0.003873445099070408,
+          0.0070481821949032325
+        ],
+        "gaps_nats_per_target": [
+          0.0013189539313316345,
+          0.0029361173510551453,
+          0.0005070343613624573
+        ],
+        "mean": 0.0015873685479164124,
+        "paired_t95": [
+          -0.001484482284616884,
+          0.004659219380449709
+        ]
+      },
+      "text_global": {
+        "familywise_interval": [
+          -0.02064307267271284,
+          0.00216384713652535
+        ],
+        "gaps_nats_per_target": [
+          -0.008717384189367294,
+          -0.006958357989788055,
+          -0.012043096125125885
+        ],
+        "mean": -0.009239612768093744,
+        "paired_t95": [
+          -0.01565435790796736,
+          -0.002824867628220126
+        ]
+      },
+      "uniform": {
+        "familywise_interval": [
+          -0.02139839109322198,
+          0.00011124289573002065
+        ],
+        "gaps_nats_per_target": [
+          -0.009070932865142822,
+          -0.00941091775894165,
+          -0.013448871672153473
+        ],
+        "mean": -0.010643574098745981,
+        "paired_t95": [
+          -0.01669344059738647,
+          -0.004593707600105493
+        ]
+      }
+    }
+  },
+  "decisions": {
+    "arithmetic": {
+      "base_learning_qualified": false,
+      "improves_frozen_uniform": false,
+      "specialization_supported": false,
+      "token_conditioning_supported": false
+    },
+    "retrieval": {
+      "base_learning_qualified": false,
+      "improves_frozen_uniform": false,
+      "specialization_supported": false,
+      "token_conditioning_supported": false
+    },
+    "text": {
+      "base_learning_qualified": true,
+      "improves_frozen_uniform": false,
+      "specialization_supported": false,
+      "token_conditioning_supported": false
+    }
+  },
+  "rows": [
+    {
+      "benchmark": {
+        "parameter_bytes": 275620,
+        "prefill_batch1_ms_p50": 1.337270499988108,
+        "prefill_batch1_ms_p95": 1.4619169999718906,
+        "sampling_parameters": 409,
+        "scope": "CPU FP32 full 64-position forward; no KV cache or total-memory claim"
+      },
+      "best_round": 0,
+      "candidate": "uniform",
+      "checkpoint": null,
+      "confirmation": {
+        "accuracy": 0.356201171875,
+        "ce": 2.236077506095171,
+        "logits_sha256": "33c44b671cb1f89ef619a5545a52a569031c27cd26d071acf1a9bc49c3edbebb",
+        "targets": 16384
+      },
+      "duplicate": {
+        "accuracy": 0.356201171875,
+        "ce": 2.236077506095171,
+        "logits_sha256": "33c44b671cb1f89ef619a5545a52a569031c27cd26d071acf1a9bc49c3edbebb",
+        "targets": 16384
+      },
+      "positions_mean": [
+        0.0,
+        0.3333333134651184,
+        0.666666567325592,
+        1.0
+      ],
+      "positions_std": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "seed": 73,
+      "task": "text"
+    },
+    {
+      "benchmark": {
+        "parameter_bytes": 275620,
+        "prefill_batch1_ms_p50": 1.3304164999681234,
+        "prefill_batch1_ms_p95": 1.3945420000140984,
+        "sampling_parameters": 409,
+        "scope": "CPU FP32 full 64-position forward; no KV cache or total-memory claim"
+      },
+      "best_round": 0,
+      "candidate": "uniform",
+      "checkpoint": null,
+      "confirmation": {
+        "accuracy": 0.12109375,
+        "ce": 2.0925102457404137,
+        "logits_sha256": "8cd84267210dec11397235c1fa0a4e344368d4a713ad8ea50bb474155bafb208",
+        "targets": 256
+      },
+      "duplicate": {
+        "accuracy": 0.12109375,
+        "ce": 2.0925102457404137,
+        "logits_sha256": "8cd84267210dec11397235c1fa0a4e344368d4a713ad8ea50bb474155bafb208",
+        "targets": 256
+      },
+      "positions_mean": [
+        0.0,
+        0.3333333432674408,
+        0.6666666269302368,
+        1.0
+      ],
+      "positions_std": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "seed": 73,
+      "task": "retrieval"
+    },
+    {
+      "benchmark": {
+        "parameter_bytes": 275620,
+        "prefill_batch1_ms_p50": 1.3027290000309222,
+        "prefill_batch1_ms_p95": 1.371833999996852,
+        "sampling_parameters": 409,
+        "scope": "CPU FP32 full 64-position forward; no KV cache or total-memory claim"
+      },
+      "best_round": 0,
+      "candidate": "uniform",
+      "checkpoint": null,
+      "confirmation": {
+        "accuracy": 0.1328125,
+        "ce": 2.0936989560723305,
+        "logits_sha256": "9952f0abd3e54ccb4cfa0e0a964a10a72a638b535f2e8b66c5654c1fa044726b",
+        "targets": 256
+      },
+      "duplicate": {
+        "accuracy": 0.1328125,
+        "ce": 2.0936989560723305,
+        "logits_sha256": "9952f0abd3e54ccb4cfa0e0a964a10a72a638b535f2e8b66c5654c1fa044726b",
+        "targets": 256
+      },
+      "positions_mean": [
+        0.0,
+        0.3333333432674408,
+        0.6666666269302368,
+        1.0
+      ],
+      "positions_std": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "seed": 73,
+      "task": "arithmetic"
+    },
+    {
+      "benchmark": {
+        "parameter_bytes": 275620,
+        "prefill_batch1_ms_p50": 1.3735630000155652,
+        "prefill_batch1_ms_p95": 1.5225839999857271,
+        "sampling_parameters": 409,
+        "scope": "CPU FP32 full 64-position forward; no KV cache or total-memory claim"
+      },
+      "best_round": 3,
+      "candidate": "shared_token",
+      "checkpoint": "shared_token-73-round3.pt",
+      "confirmation": {
+        "accuracy": 0.360595703125,
+        "ce": 2.2256876192986965,
+        "logits_sha256": "f960b194ed78e776035ceec8e2daf286b7ed36a0103138ef1478382d158699fc",
+        "targets": 16384
+      },
+      "duplicate": {
+        "accuracy": 0.360595703125,
+        "ce": 2.2256876192986965,
+        "logits_sha256": "f960b194ed78e776035ceec8e2daf286b7ed36a0103138ef1478382d158699fc",
+        "targets": 16384
+      },
+      "positions_mean": [
+        0.0,
+        0.3050403594970703,
+        0.6002298593521118,
+        1.0
+      ],
+      "positions_std": [
+        0.0,
+        0.07931417971849442,
+        0.09663303941488266,
+        0.0
+      ],
+      "seed": 73,
+      "task": "text"
+    },
+    {
+      "benchmark": {
+        "parameter_bytes": 275620,
+        "prefill_batch1_ms_p50": 1.3217914999756886,
+        "prefill_batch1_ms_p95": 1.4656250000371074,
+        "sampling_parameters": 409,
+        "scope": "CPU FP32 full 64-position forward; no KV cache or total-memory claim"
+      },
+      "best_round": 3,
+      "candidate": "shared_token",
+      "checkpoint": "shared_token-73-round3.pt",
+      "confirmation": {
+        "accuracy": 0.12109375,
+        "ce": 2.0924218110740185,
+        "logits_sha256": "1fb6d0ebbba88e4b3e2fa7901e4e8de57f18f9049f0d5159b90bed8caa03a8f2",
+        "targets": 256
+      },
+      "duplicate": {
+        "accuracy": 0.12109375,
+        "ce": 2.0924218110740185,
+        "logits_sha256": "1fb6d0ebbba88e4b3e2fa7901e4e8de57f18f9049f0d5159b90bed8caa03a8f2",
+        "targets": 256
+      },
+      "positions_mean": [
+        0.0,
+        0.37774181365966797,
+        0.7245863676071167,
+        1.0
+      ],
+      "positions_std": [
+        0.0,
+        0.0036356498021632433,
+        0.0033706114627420902,
+        0.0
+      ],
+      "seed": 73,
+      "task": "retrieval"
+    },
+    {
+      "benchmark": {
+        "parameter_bytes": 275620,
+        "prefill_batch1_ms_p50": 1.2593540000125358,
+        "prefill_batch1_ms_p95": 1.7025829999965936,
+        "sampling_parameters": 409,
+        "scope": "CPU FP32 full 64-position forward; no KV cache or total-memory claim"
+      },
+      "best_round": 3,
+      "candidate": "shared_token",
+      "checkpoint": "shared_token-73-round3.pt",
+      "confirmation": {
+        "accuracy": 0.1328125,
+        "ce": 2.093825977295637,
+        "logits_sha256": "49efecad49dac3929fd10bac7493ec5f7103c8051db602352f99cf5b75c62992",
+        "targets": 256
+      },
+      "duplicate": {
+        "accuracy": 0.1328125,
+        "ce": 2.093825977295637,
+        "logits_sha256": "49efecad49dac3929fd10bac7493ec5f7103c8051db602352f99cf5b75c62992",
+        "targets": 256
+      },
+      "positions_mean": [
+        0.0,
+        0.41615480184555054,
+        0.7449326515197754,
+        1.0
+      ],
+      "positions_std": [
+        0.0,
+        0.002615357283502817,
+        0.002380458638072014,
+        0.0
+      ],
+      "seed": 73,
+      "task": "arithmetic"
+    },
+    {
+      "benchmark": {
+        "parameter_bytes": 275620,
+        "prefill_batch1_ms_p50": 1.301999500014972,
+        "prefill_batch1_ms_p95": 1.677125000014712,
+        "sampling_parameters": 409,
+        "scope": "CPU FP32 full 64-position forward; no KV cache or total-memory claim"
+      },
+      "best_round": 1,
+      "candidate": "text_global",
+      "checkpoint": "text_global-73-round1.pt",
+      "confirmation": {
+        "accuracy": 0.35736083984375,
+        "ce": 2.2357239574193954,
+        "logits_sha256": "b402599a45872eb7c8623587b750e0e15cec614e87f9f34b8c677b6b73b94e65",
+        "targets": 16384
+      },
+      "duplicate": {
+        "accuracy": 0.35736083984375,
+        "ce": 2.2357239574193954,
+        "logits_sha256": "b402599a45872eb7c8623587b750e0e15cec614e87f9f34b8c677b6b73b94e65",
+        "targets": 16384
+      },
+      "positions_mean": [
+        0.0,
+        0.30199217796325684,
+        0.6215956807136536,
+        1.0
+      ],
+      "positions_std": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "seed": 73,
+      "task": "text"
+    },
+    {
+      "benchmark": {
+        "parameter_bytes": 275620,
+        "prefill_batch1_ms_p50": 1.3021249999951579,
+        "prefill_batch1_ms_p95": 1.6144159999953445,
+        "sampling_parameters": 409,
+        "scope": "CPU FP32 full 64-position forward; no KV cache or total-memory claim"
+      },
+      "best_round": 3,
+      "candidate": "text_token",
+      "checkpoint": "text_token-73-round3.pt",
+      "confirmation": {
+        "accuracy": 0.36053466796875,
+        "ce": 2.227006573230028,
+        "logits_sha256": "40765616f3a93c89d9831164e599fd6c4c330d4f1406993d41e991f9a2fb85bb",
+        "targets": 16384
+      },
+      "duplicate": {
+        "accuracy": 0.36053466796875,
+        "ce": 2.227006573230028,
+        "logits_sha256": "40765616f3a93c89d9831164e599fd6c4c330d4f1406993d41e991f9a2fb85bb",
+        "targets": 16384
+      },
+      "positions_mean": [
+        0.0,
+        0.3071175813674927,
+        0.6027694940567017,
+        1.0
+      ],
+      "positions_std": [
+        0.0,
+        0.07357148826122284,
+        0.08853725343942642,
+        0.0
+      ],
+      "seed": 73,
+      "task": "text",
+      "uniform_intervention": {
+        "accuracy": 0.356201171875,
+        "ce": 2.236077506095171,
+        "logits_sha256": "33c44b671cb1f89ef619a5545a52a569031c27cd26d071acf1a9bc49c3edbebb",
+        "targets": 16384
+      }
+    },
+    {
+      "benchmark": {
+        "parameter_bytes": 275620,
+        "prefill_batch1_ms_p50": 1.3781250000022283,
+        "prefill_batch1_ms_p95": 1.5490000000113469,
+        "sampling_parameters": 409,
+        "scope": "CPU FP32 full 64-position forward; no KV cache or total-memory claim"
+      },
+      "best_round": 0,
+      "candidate": "retrieval_global",
+      "checkpoint": "retrieval_global-73-round0.pt",
+      "confirmation": {
+        "accuracy": 0.12109375,
+        "ce": 2.0925102457404137,
+        "logits_sha256": "8cd84267210dec11397235c1fa0a4e344368d4a713ad8ea50bb474155bafb208",
+        "targets": 256
+      },
+      "duplicate": {
+        "accuracy": 0.12109375,
+        "ce": 2.0925102457404137,
+        "logits_sha256": "8cd84267210dec11397235c1fa0a4e344368d4a713ad8ea50bb474155bafb208",
+        "targets": 256
+      },
+      "positions_mean": [
+        0.0,
+        0.3333333432674408,
+        0.6666666269302368,
+        1.0
+      ],
+      "positions_std": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "seed": 73,
+      "task": "retrieval"
+    },
+    {
+      "benchmark": {
+        "parameter_bytes": 275620,
+        "prefill_batch1_ms_p50": 1.3215204999710295,
+        "prefill_batch1_ms_p95": 1.725249999992684,
+        "sampling_parameters": 409,
+        "scope": "CPU FP32 full 64-position forward; no KV cache or total-memory claim"
+      },
+      "best_round": 0,
+      "candidate": "retrieval_token",
+      "checkpoint": "retrieval_token-73-round0.pt",
+      "confirmation": {
+        "accuracy": 0.12109375,
+        "ce": 2.0925102457404137,
+        "logits_sha256": "8cd84267210dec11397235c1fa0a4e344368d4a713ad8ea50bb474155bafb208",
+        "targets": 256
+      },
+      "duplicate": {
+        "accuracy": 0.12109375,
+        "ce": 2.0925102457404137,
+        "logits_sha256": "8cd84267210dec11397235c1fa0a4e344368d4a713ad8ea50bb474155bafb208",
+        "targets": 256
+      },
+      "positions_mean": [
+        0.0,
+        0.3333333432674408,
+        0.6666666269302368,
+        1.0
+      ],
+      "positions_std": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "seed": 73,
+      "task": "retrieval",
+      "uniform_intervention": {
+        "accuracy": 0.12109375,
+        "ce": 2.0925102457404137,
+        "logits_sha256": "8cd84267210dec11397235c1fa0a4e344368d4a713ad8ea50bb474155bafb208",
+        "targets": 256
+      }
+    },
+    {
+      "benchmark": {
+        "parameter_bytes": 275620,
+        "prefill_batch1_ms_p50": 1.2808330000098067,
+        "prefill_batch1_ms_p95": 1.5173749999917163,
+        "sampling_parameters": 409,
+        "scope": "CPU FP32 full 64-position forward; no KV cache or total-memory claim"
+      },
+      "best_round": 1,
+      "candidate": "arithmetic_global",
+      "checkpoint": "arithmetic_global-73-round1.pt",
+      "confirmation": {
+        "accuracy": 0.1328125,
+        "ce": 2.093719944357872,
+        "logits_sha256": "6296f92d4bda4cfe6f8ba9a53e72e9b1d5bd48be363ae58a6ce8708d65df043c",
+        "targets": 256
+      },
+      "duplicate": {
+        "accuracy": 0.1328125,
+        "ce": 2.093719944357872,
+        "logits_sha256": "6296f92d4bda4cfe6f8ba9a53e72e9b1d5bd48be363ae58a6ce8708d65df043c",
+        "targets": 256
+      },
+      "positions_mean": [
+        0.0,
+        0.3555976450443268,
+        0.6947336792945862,
+        1.0
+      ],
+      "positions_std": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "seed": 73,
+      "task": "arithmetic"
+    },
+    {
+      "benchmark": {
+        "parameter_bytes": 275620,
+        "prefill_batch1_ms_p50": 1.2395629999844004,
+        "prefill_batch1_ms_p95": 1.5285420000168415,
+        "sampling_parameters": 409,
+        "scope": "CPU FP32 full 64-position forward; no KV cache or total-memory claim"
+      },
+      "best_round": 0,
+      "candidate": "arithmetic_token",
+      "checkpoint": "arithmetic_token-73-round0.pt",
+      "confirmation": {
+        "accuracy": 0.1328125,
+        "ce": 2.0936989560723305,
+        "logits_sha256": "9952f0abd3e54ccb4cfa0e0a964a10a72a638b535f2e8b66c5654c1fa044726b",
+        "targets": 256
+      },
+      "duplicate": {
+        "accuracy": 0.1328125,
+        "ce": 2.0936989560723305,
+        "logits_sha256": "9952f0abd3e54ccb4cfa0e0a964a10a72a638b535f2e8b66c5654c1fa044726b",
+        "targets": 256
+      },
+      "positions_mean": [
+        0.0,
+        0.3333333432674408,
+        0.6666666269302368,
+        1.0
+      ],
+      "positions_std": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "seed": 73,
+      "task": "arithmetic",
+      "uniform_intervention": {
+        "accuracy": 0.1328125,
+        "ce": 2.0936989560723305,
+        "logits_sha256": "9952f0abd3e54ccb4cfa0e0a964a10a72a638b535f2e8b66c5654c1fa044726b",
+        "targets": 256
+      }
+    },
+    {
+      "benchmark": {
+        "parameter_bytes": 275620,
+        "prefill_batch1_ms_p50": 1.3264164999782224,
+        "prefill_batch1_ms_p95": 1.526167000008627,
+        "sampling_parameters": 409,
+        "scope": "CPU FP32 full 64-position forward; no KV cache or total-memory claim"
+      },
+      "best_round": 0,
+      "candidate": "uniform",
+      "checkpoint": null,
+      "confirmation": {
+        "accuracy": 0.35028076171875,
+        "ce": 2.252956509590149,
+        "logits_sha256": "853754adb34485a6340075affb20d27be2dc7ae595f68a4e13a5b7f5f131e0f7",
+        "targets": 16384
+      },
+      "duplicate": {
+        "accuracy": 0.35028076171875,
+        "ce": 2.252956509590149,
+        "logits_sha256": "853754adb34485a6340075affb20d27be2dc7ae595f68a4e13a5b7f5f131e0f7",
+        "targets": 16384
+      },
+      "positions_mean": [
+        0.0,
+        0.3333333134651184,
+        0.666666567325592,
+        1.0
+      ],
+      "positions_std": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "seed": 191,
+      "task": "text"
+    },
+    {
+      "benchmark": {
+        "parameter_bytes": 275620,
+        "prefill_batch1_ms_p50": 1.2237500000082946,
+        "prefill_batch1_ms_p95": 1.6080830000078095,
+        "sampling_parameters": 409,
+        "scope": "CPU FP32 full 64-position forward; no KV cache or total-memory claim"
+      },
+      "best_round": 0,
+      "candidate": "uniform",
+      "checkpoint": null,
+      "confirmation": {
+        "accuracy": 0.12109375,
+        "ce": 2.0973541140556335,
+        "logits_sha256": "3f49519b0d8aa60c5627a444cf0356ca9df055f48d5d58d450c51825cd0600f3",
+        "targets": 256
+      },
+      "duplicate": {
+        "accuracy": 0.12109375,
+        "ce": 2.0973541140556335,
+        "logits_sha256": "3f49519b0d8aa60c5627a444cf0356ca9df055f48d5d58d450c51825cd0600f3",
+        "targets": 256
+      },
+      "positions_mean": [
+        0.0,
+        0.3333333432674408,
+        0.6666666269302368,
+        1.0
+      ],
+      "positions_std": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "seed": 191,
+      "task": "retrieval"
+    },
+    {
+      "benchmark": {
+        "parameter_bytes": 275620,
+        "prefill_batch1_ms_p50": 1.3312709999979688,
+        "prefill_batch1_ms_p95": 1.4575000000149885,
+        "sampling_parameters": 409,
+        "scope": "CPU FP32 full 64-position forward; no KV cache or total-memory claim"
+      },
+      "best_round": 0,
+      "candidate": "uniform",
+      "checkpoint": null,
+      "confirmation": {
+        "accuracy": 0.1328125,
+        "ce": 2.0968816354870796,
+        "logits_sha256": "474d23f006b5858628853e28e0ea1346e9ca644ee6517e55d43a42d0d147e907",
+        "targets": 256
+      },
+      "duplicate": {
+        "accuracy": 0.1328125,
+        "ce": 2.0968816354870796,
+        "logits_sha256": "474d23f006b5858628853e28e0ea1346e9ca644ee6517e55d43a42d0d147e907",
+        "targets": 256
+      },
+      "positions_mean": [
+        0.0,
+        0.3333333432674408,
+        0.6666666269302368,
+        1.0
+      ],
+      "positions_std": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "seed": 191,
+      "task": "arithmetic"
+    },
+    {
+      "benchmark": {
+        "parameter_bytes": 275620,
+        "prefill_batch1_ms_p50": 1.2282499999969332,
+        "prefill_batch1_ms_p95": 1.4538340000171956,
+        "sampling_parameters": 409,
+        "scope": "CPU FP32 full 64-position forward; no KV cache or total-memory claim"
+      },
+      "best_round": 3,
+      "candidate": "shared_token",
+      "checkpoint": "shared_token-191-round3.pt",
+      "confirmation": {
+        "accuracy": 0.35797119140625,
+        "ce": 2.240609474480152,
+        "logits_sha256": "c5dd2b42f925446ee637af8c34f03936bc14ef6c0255f25efa5720577192dc0b",
+        "targets": 16384
+      },
+      "duplicate": {
+        "accuracy": 0.35797119140625,
+        "ce": 2.240609474480152,
+        "logits_sha256": "c5dd2b42f925446ee637af8c34f03936bc14ef6c0255f25efa5720577192dc0b",
+        "targets": 16384
+      },
+      "positions_mean": [
+        0.0,
+        0.3436029553413391,
+        0.6783236265182495,
+        1.0
+      ],
+      "positions_std": [
+        0.0,
+        0.06366954743862152,
+        0.06629953533411026,
+        0.0
+      ],
+      "seed": 191,
+      "task": "text"
+    },
+    {
+      "benchmark": {
+        "parameter_bytes": 275620,
+        "prefill_batch1_ms_p50": 1.3450829999896996,
+        "prefill_batch1_ms_p95": 1.395333000004939,
+        "sampling_parameters": 409,
+        "scope": "CPU FP32 full 64-position forward; no KV cache or total-memory claim"
+      },
+      "best_round": 3,
+      "candidate": "shared_token",
+      "checkpoint": "shared_token-191-round3.pt",
+      "confirmation": {
+        "accuracy": 0.12109375,
+        "ce": 2.0974845476448536,
+        "logits_sha256": "89145d5e80fd765c20bca3e85aefe7d516abe4cadc43f0c92caccfe563196266",
+        "targets": 256
+      },
+      "duplicate": {
+        "accuracy": 0.12109375,
+        "ce": 2.0974845476448536,
+        "logits_sha256": "89145d5e80fd765c20bca3e85aefe7d516abe4cadc43f0c92caccfe563196266",
+        "targets": 256
+      },
+      "positions_mean": [
+        0.0,
+        0.24318960309028625,
+        0.5140621662139893,
+        1.0
+      ],
+      "positions_std": [
+        0.0,
+        0.0034758609253913164,
+        0.004585913382470608,
+        0.0
+      ],
+      "seed": 191,
+      "task": "retrieval"
+    },
+    {
+      "benchmark": {
+        "parameter_bytes": 275620,
+        "prefill_batch1_ms_p50": 1.3365204999900016,
+        "prefill_batch1_ms_p95": 1.4259580000270944,
+        "sampling_parameters": 409,
+        "scope": "CPU FP32 full 64-position forward; no KV cache or total-memory claim"
+      },
+      "best_round": 3,
+      "candidate": "shared_token",
+      "checkpoint": "shared_token-191-round3.pt",
+      "confirmation": {
+        "accuracy": 0.1328125,
+        "ce": 2.096724510192871,
+        "logits_sha256": "70330aa5d874df7f4dbab8752460d67916b7393a3de5151b9b900147d6eb1780",
+        "targets": 256
+      },
+      "duplicate": {
+        "accuracy": 0.1328125,
+        "ce": 2.096724510192871,
+        "logits_sha256": "70330aa5d874df7f4dbab8752460d67916b7393a3de5151b9b900147d6eb1780",
+        "targets": 256
+      },
+      "positions_mean": [
+        0.0,
+        0.26799476146698,
+        0.5405250787734985,
+        1.0
+      ],
+      "positions_std": [
+        0.0,
+        0.002468301448971033,
+        0.0033217051532119513,
+        0.0
+      ],
+      "seed": 191,
+      "task": "arithmetic"
+    },
+    {
+      "benchmark": {
+        "parameter_bytes": 275620,
+        "prefill_batch1_ms_p50": 1.3114794999751211,
+        "prefill_batch1_ms_p95": 3.084915999977511,
+        "sampling_parameters": 409,
+        "scope": "CPU FP32 full 64-position forward; no KV cache or total-memory claim"
+      },
+      "best_round": 1,
+      "candidate": "text_global",
+      "checkpoint": "text_global-191-round1.pt",
+      "confirmation": {
+        "accuracy": 0.35205078125,
+        "ce": 2.2505039498209953,
+        "logits_sha256": "4e5e6f377bd27747cb1b2af39e9391a6c2949434e9171f2a8fb2fea4874ba61f",
+        "targets": 16384
+      },
+      "duplicate": {
+        "accuracy": 0.35205078125,
+        "ce": 2.2505039498209953,
+        "logits_sha256": "4e5e6f377bd27747cb1b2af39e9391a6c2949434e9171f2a8fb2fea4874ba61f",
+        "targets": 16384
+      },
+      "positions_mean": [
+        0.0,
+        0.3588535189628601,
+        0.6951919794082642,
+        1.0
+      ],
+      "positions_std": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "seed": 191,
+      "task": "text"
+    },
+    {
+      "benchmark": {
+        "parameter_bytes": 275620,
+        "prefill_batch1_ms_p50": 1.385437500033504,
+        "prefill_batch1_ms_p95": 2.1652089999975033,
+        "sampling_parameters": 409,
+        "scope": "CPU FP32 full 64-position forward; no KV cache or total-memory claim"
+      },
+      "best_round": 3,
+      "candidate": "text_token",
+      "checkpoint": "text_token-191-round3.pt",
+      "confirmation": {
+        "accuracy": 0.35601806640625,
+        "ce": 2.2435455918312073,
+        "logits_sha256": "4fe0ef1423dde7ae4596936596876d55e3a92f694afa10f74fdcf5b74d6addd9",
+        "targets": 16384
+      },
+      "duplicate": {
+        "accuracy": 0.35601806640625,
+        "ce": 2.2435455918312073,
+        "logits_sha256": "4fe0ef1423dde7ae4596936596876d55e3a92f694afa10f74fdcf5b74d6addd9",
+        "targets": 16384
+      },
+      "positions_mean": [
+        0.0,
+        0.3397238254547119,
+        0.6706967353820801,
+        1.0
+      ],
+      "positions_std": [
+        0.0,
+        0.0603179931640625,
+        0.06614252924919128,
+        0.0
+      ],
+      "seed": 191,
+      "task": "text",
+      "uniform_intervention": {
+        "accuracy": 0.35028076171875,
+        "ce": 2.252956509590149,
+        "logits_sha256": "853754adb34485a6340075affb20d27be2dc7ae595f68a4e13a5b7f5f131e0f7",
+        "targets": 16384
+      }
+    },
+    {
+      "benchmark": {
+        "parameter_bytes": 275620,
+        "prefill_batch1_ms_p50": 1.3127290000056746,
+        "prefill_batch1_ms_p95": 1.568249999991167,
+        "sampling_parameters": 409,
+        "scope": "CPU FP32 full 64-position forward; no KV cache or total-memory claim"
+      },
+      "best_round": 1,
+      "candidate": "retrieval_global",
+      "checkpoint": "retrieval_global-191-round1.pt",
+      "confirmation": {
+        "accuracy": 0.12109375,
+        "ce": 2.097365837544203,
+        "logits_sha256": "8489dfd72099553a0e33e19b47772611834cc8a06049167b9866ecfd0d88ddca",
+        "targets": 256
+      },
+      "duplicate": {
+        "accuracy": 0.12109375,
+        "ce": 2.097365837544203,
+        "logits_sha256": "8489dfd72099553a0e33e19b47772611834cc8a06049167b9866ecfd0d88ddca",
+        "targets": 256
+      },
+      "positions_mean": [
+        0.0,
+        0.30516332387924194,
+        0.6296466588973999,
+        1.0
+      ],
+      "positions_std": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "seed": 191,
+      "task": "retrieval"
+    },
+    {
+      "benchmark": {
+        "parameter_bytes": 275620,
+        "prefill_batch1_ms_p50": 1.3258335000045918,
+        "prefill_batch1_ms_p95": 1.767250000000331,
+        "sampling_parameters": 409,
+        "scope": "CPU FP32 full 64-position forward; no KV cache or total-memory claim"
+      },
+      "best_round": 1,
+      "candidate": "retrieval_token",
+      "checkpoint": "retrieval_token-191-round1.pt",
+      "confirmation": {
+        "accuracy": 0.12109375,
+        "ce": 2.0973958261311054,
+        "logits_sha256": "72c69c0bff0af14a568d6deec2422f4f82f4d95eecaa5e0bed1638bd1aa44efb",
+        "targets": 256
+      },
+      "duplicate": {
+        "accuracy": 0.12109375,
+        "ce": 2.0973958261311054,
+        "logits_sha256": "72c69c0bff0af14a568d6deec2422f4f82f4d95eecaa5e0bed1638bd1aa44efb",
+        "targets": 256
+      },
+      "positions_mean": [
+        0.0,
+        0.2779223918914795,
+        0.5930731892585754,
+        1.0
+      ],
+      "positions_std": [
+        0.0,
+        9.284676343668252e-05,
+        0.0001370315148960799,
+        0.0
+      ],
+      "seed": 191,
+      "task": "retrieval",
+      "uniform_intervention": {
+        "accuracy": 0.12109375,
+        "ce": 2.0973541140556335,
+        "logits_sha256": "3f49519b0d8aa60c5627a444cf0356ca9df055f48d5d58d450c51825cd0600f3",
+        "targets": 256
+      }
+    },
+    {
+      "benchmark": {
+        "parameter_bytes": 275620,
+        "prefill_batch1_ms_p50": 1.4107915000067806,
+        "prefill_batch1_ms_p95": 2.162082999973336,
+        "sampling_parameters": 409,
+        "scope": "CPU FP32 full 64-position forward; no KV cache or total-memory claim"
+      },
+      "best_round": 0,
+      "candidate": "arithmetic_global",
+      "checkpoint": "arithmetic_global-191-round0.pt",
+      "confirmation": {
+        "accuracy": 0.1328125,
+        "ce": 2.0968816354870796,
+        "logits_sha256": "474d23f006b5858628853e28e0ea1346e9ca644ee6517e55d43a42d0d147e907",
+        "targets": 256
+      },
+      "duplicate": {
+        "accuracy": 0.1328125,
+        "ce": 2.0968816354870796,
+        "logits_sha256": "474d23f006b5858628853e28e0ea1346e9ca644ee6517e55d43a42d0d147e907",
+        "targets": 256
+      },
+      "positions_mean": [
+        0.0,
+        0.3333333432674408,
+        0.6666666269302368,
+        1.0
+      ],
+      "positions_std": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "seed": 191,
+      "task": "arithmetic"
+    },
+    {
+      "benchmark": {
+        "parameter_bytes": 275620,
+        "prefill_batch1_ms_p50": 1.2473335000038333,
+        "prefill_batch1_ms_p95": 1.5807910000376069,
+        "sampling_parameters": 409,
+        "scope": "CPU FP32 full 64-position forward; no KV cache or total-memory claim"
+      },
+      "best_round": 0,
+      "candidate": "arithmetic_token",
+      "checkpoint": "arithmetic_token-191-round0.pt",
+      "confirmation": {
+        "accuracy": 0.1328125,
+        "ce": 2.0968816354870796,
+        "logits_sha256": "474d23f006b5858628853e28e0ea1346e9ca644ee6517e55d43a42d0d147e907",
+        "targets": 256
+      },
+      "duplicate": {
+        "accuracy": 0.1328125,
+        "ce": 2.0968816354870796,
+        "logits_sha256": "474d23f006b5858628853e28e0ea1346e9ca644ee6517e55d43a42d0d147e907",
+        "targets": 256
+      },
+      "positions_mean": [
+        0.0,
+        0.3333333432674408,
+        0.6666666269302368,
+        1.0
+      ],
+      "positions_std": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "seed": 191,
+      "task": "arithmetic",
+      "uniform_intervention": {
+        "accuracy": 0.1328125,
+        "ce": 2.0968816354870796,
+        "logits_sha256": "474d23f006b5858628853e28e0ea1346e9ca644ee6517e55d43a42d0d147e907",
+        "targets": 256
+      }
+    },
+    {
+      "benchmark": {
+        "parameter_bytes": 275620,
+        "prefill_batch1_ms_p50": 1.48860449996846,
+        "prefill_batch1_ms_p95": 2.029374999949596,
+        "sampling_parameters": 409,
+        "scope": "CPU FP32 full 64-position forward; no KV cache or total-memory claim"
+      },
+      "best_round": 0,
+      "candidate": "uniform",
+      "checkpoint": null,
+      "confirmation": {
+        "accuracy": 0.35467529296875,
+        "ce": 2.2684845849871635,
+        "logits_sha256": "3425d31a8d4cc129519a0be60cc461ea23e7e2969a4e9aee342b63f14e35b933",
+        "targets": 16384
+      },
+      "duplicate": {
+        "accuracy": 0.35467529296875,
+        "ce": 2.2684845849871635,
+        "logits_sha256": "3425d31a8d4cc129519a0be60cc461ea23e7e2969a4e9aee342b63f14e35b933",
+        "targets": 16384
+      },
+      "positions_mean": [
+        0.0,
+        0.3333333134651184,
+        0.666666567325592,
+        1.0
+      ],
+      "positions_std": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "seed": 307,
+      "task": "text"
+    },
+    {
+      "benchmark": {
+        "parameter_bytes": 275620,
+        "prefill_batch1_ms_p50": 1.3529994999714745,
+        "prefill_batch1_ms_p95": 2.6612920000275153,
+        "sampling_parameters": 409,
+        "scope": "CPU FP32 full 64-position forward; no KV cache or total-memory claim"
+      },
+      "best_round": 0,
+      "candidate": "uniform",
+      "checkpoint": null,
+      "confirmation": {
+        "accuracy": 0.125,
+        "ce": 2.1005574837327003,
+        "logits_sha256": "795a4c1292b194408f20b86ab1eb04652f4709439168d70f31c23dc6c22191ba",
+        "targets": 256
+      },
+      "duplicate": {
+        "accuracy": 0.125,
+        "ce": 2.1005574837327003,
+        "logits_sha256": "795a4c1292b194408f20b86ab1eb04652f4709439168d70f31c23dc6c22191ba",
+        "targets": 256
+      },
+      "positions_mean": [
+        0.0,
+        0.3333333432674408,
+        0.6666666269302368,
+        1.0
+      ],
+      "positions_std": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "seed": 307,
+      "task": "retrieval"
+    },
+    {
+      "benchmark": {
+        "parameter_bytes": 275620,
+        "prefill_batch1_ms_p50": 1.334938000013608,
+        "prefill_batch1_ms_p95": 1.634999999964748,
+        "sampling_parameters": 409,
+        "scope": "CPU FP32 full 64-position forward; no KV cache or total-memory claim"
+      },
+      "best_round": 0,
+      "candidate": "uniform",
+      "checkpoint": null,
+      "confirmation": {
+        "accuracy": 0.14453125,
+        "ce": 2.0851062014698982,
+        "logits_sha256": "51667f9e1f60c66362da5476092e57509f79a9bb459075a455a9e2b32e714937",
+        "targets": 256
+      },
+      "duplicate": {
+        "accuracy": 0.14453125,
+        "ce": 2.0851062014698982,
+        "logits_sha256": "51667f9e1f60c66362da5476092e57509f79a9bb459075a455a9e2b32e714937",
+        "targets": 256
+      },
+      "positions_mean": [
+        0.0,
+        0.3333333432674408,
+        0.6666666269302368,
+        1.0
+      ],
+      "positions_std": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "seed": 307,
+      "task": "arithmetic"
+    },
+    {
+      "benchmark": {
+        "parameter_bytes": 275620,
+        "prefill_batch1_ms_p50": 1.3294169999937822,
+        "prefill_batch1_ms_p95": 1.5579590000243115,
+        "sampling_parameters": 409,
+        "scope": "CPU FP32 full 64-position forward; no KV cache or total-memory claim"
+      },
+      "best_round": 3,
+      "candidate": "shared_token",
+      "checkpoint": "shared_token-307-round3.pt",
+      "confirmation": {
+        "accuracy": 0.3583984375,
+        "ce": 2.2545286789536476,
+        "logits_sha256": "b1c64e90bf258d2f1785b70a0dd687cd6648491043270931cc0a9f5d7afeb8cd",
+        "targets": 16384
+      },
+      "duplicate": {
+        "accuracy": 0.3583984375,
+        "ce": 2.2545286789536476,
+        "logits_sha256": "b1c64e90bf258d2f1785b70a0dd687cd6648491043270931cc0a9f5d7afeb8cd",
+        "targets": 16384
+      },
+      "positions_mean": [
+        0.0,
+        0.3616260886192322,
+        0.7084291577339172,
+        1.0
+      ],
+      "positions_std": [
+        0.0,
+        0.09201227128505707,
+        0.08384741842746735,
+        0.0
+      ],
+      "seed": 307,
+      "task": "text"
+    },
+    {
+      "benchmark": {
+        "parameter_bytes": 275620,
+        "prefill_batch1_ms_p50": 1.285813000009739,
+        "prefill_batch1_ms_p95": 1.5294170000288432,
+        "sampling_parameters": 409,
+        "scope": "CPU FP32 full 64-position forward; no KV cache or total-memory claim"
+      },
+      "best_round": 3,
+      "candidate": "shared_token",
+      "checkpoint": "shared_token-307-round3.pt",
+      "confirmation": {
+        "accuracy": 0.12109375,
+        "ce": 2.093634396791458,
+        "logits_sha256": "9d12ee603b16b8db1efcc64d8f4ec1486e94077a6106852ded04217c07fc0e54",
+        "targets": 256
+      },
+      "duplicate": {
+        "accuracy": 0.12109375,
+        "ce": 2.093634396791458,
+        "logits_sha256": "9d12ee603b16b8db1efcc64d8f4ec1486e94077a6106852ded04217c07fc0e54",
+        "targets": 256
+      },
+      "positions_mean": [
+        0.0,
+        0.7611202001571655,
+        0.9701108932495117,
+        1.0
+      ],
+      "positions_std": [
+        0.0,
+        0.022848932072520256,
+        0.006315292790532112,
+        0.0
+      ],
+      "seed": 307,
+      "task": "retrieval"
+    },
+    {
+      "benchmark": {
+        "parameter_bytes": 275620,
+        "prefill_batch1_ms_p50": 1.406561999999667,
+        "prefill_batch1_ms_p95": 1.6168340000035641,
+        "sampling_parameters": 409,
+        "scope": "CPU FP32 full 64-position forward; no KV cache or total-memory claim"
+      },
+      "best_round": 3,
+      "candidate": "shared_token",
+      "checkpoint": "shared_token-307-round3.pt",
+      "confirmation": {
+        "accuracy": 0.1328125,
+        "ce": 2.0859359055757523,
+        "logits_sha256": "5c16cad44b07abf1b3dd8e8be82acb794b1cae3659ff593ed84a40853ca6cb48",
+        "targets": 256
+      },
+      "duplicate": {
+        "accuracy": 0.1328125,
+        "ce": 2.0859359055757523,
+        "logits_sha256": "5c16cad44b07abf1b3dd8e8be82acb794b1cae3659ff593ed84a40853ca6cb48",
+        "targets": 256
+      },
+      "positions_mean": [
+        0.0,
+        0.7392578125,
+        0.9641116857528687,
+        1.0
+      ],
+      "positions_std": [
+        0.0,
+        0.01635591685771942,
+        0.005270452704280615,
+        0.0
+      ],
+      "seed": 307,
+      "task": "arithmetic"
+    },
+    {
+      "benchmark": {
+        "parameter_bytes": 275620,
+        "prefill_batch1_ms_p50": 1.3090205000310107,
+        "prefill_batch1_ms_p95": 1.347208000026967,
+        "sampling_parameters": 409,
+        "scope": "CPU FP32 full 64-position forward; no KV cache or total-memory claim"
+      },
+      "best_round": 3,
+      "candidate": "text_global",
+      "checkpoint": "text_global-307-round3.pt",
+      "confirmation": {
+        "accuracy": 0.355712890625,
+        "ce": 2.267078809440136,
+        "logits_sha256": "1fc3a89a95bb467f3d2fc39fd772c405280fa86f2f1112951c06b31b138fc352",
+        "targets": 16384
+      },
+      "duplicate": {
+        "accuracy": 0.355712890625,
+        "ce": 2.267078809440136,
+        "logits_sha256": "1fc3a89a95bb467f3d2fc39fd772c405280fa86f2f1112951c06b31b138fc352",
+        "targets": 16384
+      },
+      "positions_mean": [
+        0.0,
+        0.37011387944221497,
+        0.7420244812965393,
+        1.0
+      ],
+      "positions_std": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "seed": 307,
+      "task": "text"
+    },
+    {
+      "benchmark": {
+        "parameter_bytes": 275620,
+        "prefill_batch1_ms_p50": 1.275937499997326,
+        "prefill_batch1_ms_p95": 1.4193750000117689,
+        "sampling_parameters": 409,
+        "scope": "CPU FP32 full 64-position forward; no KV cache or total-memory claim"
+      },
+      "best_round": 3,
+      "candidate": "text_token",
+      "checkpoint": "text_token-307-round3.pt",
+      "confirmation": {
+        "accuracy": 0.3582763671875,
+        "ce": 2.25503571331501,
+        "logits_sha256": "1dd6a17efd39c1b4f918627975cb62cc32afad6a87158a1a49ac9390211dbeda",
+        "targets": 16384
+      },
+      "duplicate": {
+        "accuracy": 0.3582763671875,
+        "ce": 2.25503571331501,
+        "logits_sha256": "1dd6a17efd39c1b4f918627975cb62cc32afad6a87158a1a49ac9390211dbeda",
+        "targets": 16384
+      },
+      "positions_mean": [
+        0.0,
+        0.3755504786968231,
+        0.7128630876541138,
+        1.0
+      ],
+      "positions_std": [
+        0.0,
+        0.07580673694610596,
+        0.07354167848825455,
+        0.0
+      ],
+      "seed": 307,
+      "task": "text",
+      "uniform_intervention": {
+        "accuracy": 0.35467529296875,
+        "ce": 2.2684845849871635,
+        "logits_sha256": "3425d31a8d4cc129519a0be60cc461ea23e7e2969a4e9aee342b63f14e35b933",
+        "targets": 16384
+      }
+    },
+    {
+      "benchmark": {
+        "parameter_bytes": 275620,
+        "prefill_batch1_ms_p50": 1.32206299997506,
+        "prefill_batch1_ms_p95": 1.5816249999716092,
+        "sampling_parameters": 409,
+        "scope": "CPU FP32 full 64-position forward; no KV cache or total-memory claim"
+      },
+      "best_round": 3,
+      "candidate": "retrieval_global",
+      "checkpoint": "retrieval_global-307-round3.pt",
+      "confirmation": {
+        "accuracy": 0.12109375,
+        "ce": 2.0949553437530994,
+        "logits_sha256": "86f409706ad961462eaa66a9d581a5ef96f1d6363b879a5b79eae1e8271d94dd",
+        "targets": 256
+      },
+      "duplicate": {
+        "accuracy": 0.12109375,
+        "ce": 2.0949553437530994,
+        "logits_sha256": "86f409706ad961462eaa66a9d581a5ef96f1d6363b879a5b79eae1e8271d94dd",
+        "targets": 256
+      },
+      "positions_mean": [
+        0.0,
+        0.6476649641990662,
+        0.9486970901489258,
+        1.0
+      ],
+      "positions_std": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "seed": 307,
+      "task": "retrieval"
+    },
+    {
+      "benchmark": {
+        "parameter_bytes": 275620,
+        "prefill_batch1_ms_p50": 1.2996245000067574,
+        "prefill_batch1_ms_p95": 1.6161660000193478,
+        "sampling_parameters": 409,
+        "scope": "CPU FP32 full 64-position forward; no KV cache or total-memory claim"
+      },
+      "best_round": 3,
+      "candidate": "retrieval_token",
+      "checkpoint": "retrieval_token-307-round3.pt",
+      "confirmation": {
+        "accuracy": 0.140625,
+        "ce": 2.0923494696617126,
+        "logits_sha256": "88cd27b4c898acf4a01e8b569835803706148ee0e7186770e6a76890301c4ef6",
+        "targets": 256
+      },
+      "duplicate": {
+        "accuracy": 0.140625,
+        "ce": 2.0923494696617126,
+        "logits_sha256": "88cd27b4c898acf4a01e8b569835803706148ee0e7186770e6a76890301c4ef6",
+        "targets": 256
+      },
+      "positions_mean": [
+        0.0,
+        0.7244076132774353,
+        0.9425593018531799,
+        1.0
+      ],
+      "positions_std": [
+        0.0,
+        0.06777632236480713,
+        0.03490213304758072,
+        0.0
+      ],
+      "seed": 307,
+      "task": "retrieval",
+      "uniform_intervention": {
+        "accuracy": 0.125,
+        "ce": 2.1005574837327003,
+        "logits_sha256": "795a4c1292b194408f20b86ab1eb04652f4709439168d70f31c23dc6c22191ba",
+        "targets": 256
+      }
+    },
+    {
+      "benchmark": {
+        "parameter_bytes": 275620,
+        "prefill_batch1_ms_p50": 1.2944999999717766,
+        "prefill_batch1_ms_p95": 1.4977499999986321,
+        "sampling_parameters": 409,
+        "scope": "CPU FP32 full 64-position forward; no KV cache or total-memory claim"
+      },
+      "best_round": 1,
+      "candidate": "arithmetic_global",
+      "checkpoint": "arithmetic_global-307-round1.pt",
+      "confirmation": {
+        "accuracy": 0.13671875,
+        "ce": 2.0847906470298767,
+        "logits_sha256": "31f2575eccdb645a8a2fa8fcb84d278bd97e82f62f440f90131114ecf92aaec0",
+        "targets": 256
+      },
+      "duplicate": {
+        "accuracy": 0.13671875,
+        "ce": 2.0847906470298767,
+        "logits_sha256": "31f2575eccdb645a8a2fa8fcb84d278bd97e82f62f440f90131114ecf92aaec0",
+        "targets": 256
+      },
+      "positions_mean": [
+        0.0,
+        0.5027832388877869,
+        0.8553103804588318,
+        1.0
+      ],
+      "positions_std": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "seed": 307,
+      "task": "arithmetic"
+    },
+    {
+      "benchmark": {
+        "parameter_bytes": 275620,
+        "prefill_batch1_ms_p50": 1.3273335000292263,
+        "prefill_batch1_ms_p95": 1.5006249999487409,
+        "sampling_parameters": 409,
+        "scope": "CPU FP32 full 64-position forward; no KV cache or total-memory claim"
+      },
+      "best_round": 0,
+      "candidate": "arithmetic_token",
+      "checkpoint": "arithmetic_token-307-round0.pt",
+      "confirmation": {
+        "accuracy": 0.14453125,
+        "ce": 2.0851062014698982,
+        "logits_sha256": "51667f9e1f60c66362da5476092e57509f79a9bb459075a455a9e2b32e714937",
+        "targets": 256
+      },
+      "duplicate": {
+        "accuracy": 0.14453125,
+        "ce": 2.0851062014698982,
+        "logits_sha256": "51667f9e1f60c66362da5476092e57509f79a9bb459075a455a9e2b32e714937",
+        "targets": 256
+      },
+      "positions_mean": [
+        0.0,
+        0.3333333432674408,
+        0.6666666269302368,
+        1.0
+      ],
+      "positions_std": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "seed": 307,
+      "task": "arithmetic",
+      "uniform_intervention": {
+        "accuracy": 0.14453125,
+        "ce": 2.0851062014698982,
+        "logits_sha256": "51667f9e1f60c66362da5476092e57509f79a9bb459075a455a9e2b32e714937",
+        "targets": 256
+      }
+    }
+  ],
+  "scope": "Frozen-backbone sampling optimization across one text corpus and two synthetic tasks. No overall nanoGPT or SOTA claim."
+}
