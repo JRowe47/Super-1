@@ -1,0 +1,91 @@
+{
+  "arm": "hybrid",
+  "seed": 2,
+  "context": 1024,
+  "params": 126041856,
+  "tokens": 503316480,
+  "steps": 7680,
+  "selection_ce": 3.7408121046610177,
+  "curve": [
+    {
+      "step": 768,
+      "tokens": 50331648,
+      "selection_ce": 4.7481802105903625
+    },
+    {
+      "step": 1536,
+      "tokens": 100663296,
+      "selection_ce": 4.3669146075844765
+    },
+    {
+      "step": 2304,
+      "tokens": 150994944,
+      "selection_ce": 4.186223533004522
+    },
+    {
+      "step": 3072,
+      "tokens": 201326592,
+      "selection_ce": 4.064613765105605
+    },
+    {
+      "step": 3840,
+      "tokens": 251658240,
+      "selection_ce": 3.97228098846972
+    },
+    {
+      "step": 4608,
+      "tokens": 301989888,
+      "selection_ce": 3.8977292347699404
+    },
+    {
+      "step": 5376,
+      "tokens": 352321536,
+      "selection_ce": 3.8353867046535015
+    },
+    {
+      "step": 6144,
+      "tokens": 402653184,
+      "selection_ce": 3.7868428844958544
+    },
+    {
+      "step": 6912,
+      "tokens": 452984832,
+      "selection_ce": 3.753275878727436
+    },
+    {
+      "step": 7680,
+      "tokens": 503316480,
+      "selection_ce": 3.7408121046610177
+    }
+  ],
+  "train_seconds": 2006.2836635112762,
+  "train_tok_per_s": 259386.73666969617,
+  "peak_train_mem_bytes": 68172168704,
+  "stateful": false,
+  "config": {
+    "context": 1024,
+    "batch": 64,
+    "tokens": 503316480,
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "weight_decay": 0.1,
+    "grad_clip": 1.0,
+    "min_lr_ratio": 0.1,
+    "eval_tokens": 33554432,
+    "curve_eval_tokens": 4194304,
+    "arm": "hybrid",
+    "width": 768,
+    "pattern": "HAAAAAAAAA",
+    "heads": 12,
+    "lr": 0.001,
+    "seed": 2,
+    "confirm": true,
+    "eval_every": 768
+  },
+  "confirmation_ce": 3.738830422516912,
+  "confirmation_ce_reset_windows": 3.738830422516912,
+  "confirmation_ce_streaming": 3.7388304388150573,
+  "checkpoint_sha256": "7a2d3edeb413cacca552991a0e3f87b5c7c052a94f0da6504faca7a5100f22f2"
+}

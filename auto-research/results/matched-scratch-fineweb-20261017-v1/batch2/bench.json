@@ -1,0 +1,50 @@
+[
+  {
+    "run": "main_nanogpt_s3",
+    "arm": "nanogpt",
+    "batch": 1,
+    "context": 1024,
+    "p50_ms": 1.9512660801410675,
+    "p95_ms": 2.0615998655557632,
+    "prefill_tok_per_s": 524787.4753841718,
+    "peak_alloc_bytes": 823456768,
+    "peak_minus_resident_bytes": 31843328,
+    "fp32_weight_bytes": 497903616
+  },
+  {
+    "run": "main_nanogpt_s3",
+    "arm": "nanogpt",
+    "batch": 16,
+    "context": 1024,
+    "p50_ms": 10.087067261338234,
+    "p95_ms": 10.132834315299988,
+    "prefill_tok_per_s": 1624258.030160727,
+    "peak_alloc_bytes": 1198329856,
+    "peak_minus_resident_bytes": 405807104,
+    "fp32_weight_bytes": 497903616
+  },
+  {
+    "run": "main_hybrid1_s2",
+    "arm": "hybrid",
+    "batch": 1,
+    "context": 1024,
+    "p50_ms": 17.48875342309475,
+    "p95_ms": 18.313448876142502,
+    "prefill_tok_per_s": 58551.91477785708,
+    "peak_alloc_bytes": 901024768,
+    "peak_minus_resident_bytes": 113119744,
+    "fp32_weight_bytes": 504167424
+  },
+  {
+    "run": "main_hybrid1_s2",
+    "arm": "hybrid",
+    "batch": 16,
+    "context": 1024,
+    "p50_ms": 26.500828564167023,
+    "p95_ms": 27.62279286980629,
+    "prefill_tok_per_s": 618244.8205469905,
+    "peak_alloc_bytes": 2587326976,
+    "peak_minus_resident_bytes": 1799430144,
+    "fp32_weight_bytes": 504167424
+  }
+]

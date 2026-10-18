@@ -1,0 +1,137 @@
+{
+  "commit": "e9afef41fe85de826e8edc97dcf2ffeb6917f2f3",
+  "files": {
+    "MANIFEST.sha256.json": {
+      "bytes": 60710,
+      "git_blob_sha1": "e99b04ba15011083d416afdf0db04ae834d1e724",
+      "matches_published_manifest": null,
+      "sha256": "8e602bfbcf478f1991124ee35ae21310bc4509a32cabd6d240ef07a418b5dbda"
+    },
+    "README.md": {
+      "bytes": 5697,
+      "git_blob_sha1": "7371e131923106e8fbb974ecca4934692c4a44a0",
+      "matches_published_manifest": true,
+      "sha256": "0b8e5f3ab7f0c4232d926c79acbda16ac99101ac3b28684f62316a21d0a61db2"
+    },
+    "auto-research.md": {
+      "bytes": 21856,
+      "git_blob_sha1": "4383a77af2eecec873092a3073daa7e585be5dff",
+      "matches_published_manifest": true,
+      "sha256": "592626532147899e02977c375eb19d778e6146ac9cb8a56534324ca8140017bb"
+    },
+    "auto-research/AGENT_PROMPTS.md": {
+      "bytes": 3702,
+      "git_blob_sha1": "4e56c05b372b20b458552a8b2791672f4ec9b1c6",
+      "matches_published_manifest": true,
+      "sha256": "55fc33f1144f40d08edb41f94989ed5cddb4069663e1b57dd2d12ca2551210b7"
+    },
+    "auto-research/EXPERIMENTS.md": {
+      "bytes": 10600,
+      "git_blob_sha1": "e2fa78744ac4ea43927b774d598e3a743dec1598",
+      "matches_published_manifest": true,
+      "sha256": "b1b423218c20e9bee6ba51b7c860370ca96d5dcba4e6adeb3e2696be99e1c954"
+    },
+    "auto-research/PROTOCOL_TEMPLATE.json": {
+      "bytes": 2638,
+      "git_blob_sha1": "73c6be8a7bc3e5803b1b0f38f64fa2e7c5dbb10e",
+      "matches_published_manifest": true,
+      "sha256": "64eb7642040cdc259e33fc69b92f9ebc9f06037721675216716c27752edd980a"
+    },
+    "auto-research/REPORT_TEMPLATE.md": {
+      "bytes": 1554,
+      "git_blob_sha1": "1fe20840143da8f3993f5eff4ba29689724b9594",
+      "matches_published_manifest": true,
+      "sha256": "247a07effceffacd9cce205fff128b8b59609b79cf1f69775ed7cdcaf0da5f0c"
+    },
+    "auto-research/RESEARCH_CATALOG.md": {
+      "bytes": 8539,
+      "git_blob_sha1": "07d1b95b5ee83d4ca946c071fcc109f5e051fca7",
+      "matches_published_manifest": true,
+      "sha256": "009b6f566f5928e1fcca12f4f69bea7f27d1f662faccfb82fb8548ee714d6816"
+    },
+    "auto-research/RUN_REGISTRY.json": {
+      "bytes": 6250,
+      "git_blob_sha1": "9784f2be3b074ca84e137fb2fb131bae6af29dfb",
+      "matches_published_manifest": true,
+      "sha256": "4a5664ce0f5531650cd7a3721371da6d0bfdaf700c0066cf53dff635d9a7d6af"
+    },
+    "auto-research/SCALING_1B.md": {
+      "bytes": 11307,
+      "git_blob_sha1": "cdf6b21ef757d3a9bc0f09d7ca426976dc2d5e40",
+      "matches_published_manifest": true,
+      "sha256": "f0ad9fec5b4f2b888132f447b0d473ec70c97d0eb3c68aa472f2d73d2a4ef587"
+    },
+    "auto-research/reports/synthetic-rotation-radial-20261016-v1.md": {
+      "bytes": 11923,
+      "git_blob_sha1": "bf36ae090497ce2bcf94ddfe751396935ecb163d",
+      "matches_published_manifest": true,
+      "sha256": "46154c3fa898a1409b2f30753d19beedf980f7f16d3dcef48277a3571cc70af2"
+    },
+    "auto-research/results/cloud-recovery-20261015/README.md": {
+      "bytes": 1713,
+      "git_blob_sha1": "ba0b1107783e33f64bb76cb35ecf79863690df18",
+      "matches_published_manifest": true,
+      "sha256": "ccb0ad7ca27a28dfd9134136d7bcebea50d487fb982ab7d048e64d20646acc60"
+    },
+    "auto-research/results/cloud-recovery-20261015/exact-historical-source/representation_experiments/configs/qwen06b_matched_hierarchy_function_v1.json": {
+      "bytes": 4228,
+      "git_blob_sha1": "ab1cc566147a5b9a15532ebf9286a97b6a295b11",
+      "matches_published_manifest": true,
+      "sha256": "f47d8cabafa5f16ff32c1169fba2064bf8124907cfc99e7d8374212cc25c58fa"
+    },
+    "auto-research/results/cloud-recovery-20261015/exact-historical-source/representation_experiments/predictive_models.py": {
+      "bytes": 34215,
+      "git_blob_sha1": "c99cf906a5a6805d490ad84e360170083bd01720",
+      "matches_published_manifest": true,
+      "sha256": "b73a7c07801f5672adb52c0cb16a3c772d62e50eebc0366491d497f76d13f73f"
+    },
+    "auto-research/results/synthetic-rotation-radial-20261016-v1/SOURCE_MANIFEST.json": {
+      "bytes": 1426,
+      "git_blob_sha1": "fad3b76414cccd3f9813e6ba93352d06c153826f",
+      "matches_published_manifest": true,
+      "sha256": "5a694c4b6cdaebea1d4a47d4aa461ef0eb6cb3d2153b117d8b7f884b8a1d9730"
+    },
+    "auto-research/results/synthetic-rotation-radial-20261016-v1/execution/RESULT.json": {
+      "bytes": 1200,
+      "git_blob_sha1": "8cdea18b80bd3a3eab29dee6786ab6aef33a506f",
+      "matches_published_manifest": true,
+      "sha256": "4a55a61592ddeb2e07b734e7580c23bd3e6314f77271b0677ef524a10d47418c"
+    },
+    "auto-research/results/synthetic-rotation-radial-20261016-v1/generate_data.py": {
+      "bytes": 1341,
+      "git_blob_sha1": "caac750d0feb09817e4dcc738c78027466f515be",
+      "matches_published_manifest": true,
+      "sha256": "9dcb9c062fae3781f81e2363618e9d294caa1174084f7f91e8c467208769d5af"
+    },
+    "auto-research/results/synthetic-rotation-radial-20261016-v1/geometry.py": {
+      "bytes": 1537,
+      "git_blob_sha1": "dc22cd7983bce60780071ab7e96c8f4a048068b8",
+      "matches_published_manifest": true,
+      "sha256": "6dd095a8b647b87fdd22b3281192e43221320823923b1a7b65523b63da056fbf"
+    },
+    "auto-research/results/synthetic-rotation-radial-20261016-v1/run_experiment.py": {
+      "bytes": 13715,
+      "git_blob_sha1": "d2d2dee62e70503e0c687040d9a7fd8d9816ebe4",
+      "matches_published_manifest": true,
+      "sha256": "488dc214203f2377084377ff856f9dd33622b17ae8c13e0e971301ccbd5d4009"
+    },
+    "evidence/publication_audit.json": {
+      "bytes": 8792,
+      "git_blob_sha1": "82530dfe2611fb0d5be0987ef5346d185c490ab9",
+      "matches_published_manifest": true,
+      "sha256": "705c2140b46bc51150cfe464d78f52b22cfc294b4aafb6048b36f34b4498a998"
+    },
+    "scripts/verify_evidence.py": {
+      "bytes": 2517,
+      "git_blob_sha1": "5239480f5f32383705ef147a22fcdf76b6551eed",
+      "matches_published_manifest": true,
+      "sha256": "4cd31acec7968942ebe91bdb58cf50258d828a884f7937c9e52b5f3860df5666"
+    }
+  },
+  "native_model_executions": 0,
+  "native_source_matches_latest_run_manifest": true,
+  "repository": "rohanarun/Super-1",
+  "saved_pair_gaps_recomputed": true,
+  "scope": "21 selected text files; not full repository/checkpoint verification",
+  "tree_truncated": false
+}
