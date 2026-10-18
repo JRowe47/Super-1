@@ -317,6 +317,22 @@
       "scope": "Tiny single-book byte model; no SOTA or100K quality claim.",
       "status": "COMPLETED_NO_AUTOMATIC_PROMOTION",
       "verification": "auto-research/results/function-kv-text-descent-512-20261018-v1/execution/VERIFICATION.json"
+    },
+    {
+      "approval": "User explicitly approved trying function-weight compression and requested durable progress/handoff instructions.",
+      "function_weights_and_sampling_preserved": true,
+      "library": "auto-research/results/function-weight-int4-20261018-v1/LIBRARY.json",
+      "lossless_packaging_file_reduction": 3.144875021697622,
+      "original_storage_gate_pass": false,
+      "protocol": "auto-research/results/function-weight-int4-20261018-v1/PROTOCOL.md",
+      "quality_gate_pass": true,
+      "report": "auto-research/reports/function-weight-int4-20261018.md",
+      "run_id": "function-weight-int4-20261018-v1",
+      "source_manifest": "auto-research/results/function-weight-int4-20261018-v1/SOURCE_MANIFEST.json",
+      "status": "COMPLETED_RESEARCH_ONLY",
+      "total_process_memory_improvement_established": false,
+      "verification": "auto-research/results/function-weight-int4-20261018-v1/execution/VERIFICATION.json",
+      "weight_payload_reduction": 3.57520884138432
     }
   ],
   "schema_version": 1,

@@ -1,0 +1,219 @@
+{
+  "compact_file_reductions": {
+    "curve_b4": [
+      2.2618757802746567,
+      2.2618757802746567,
+      2.2618757802746567
+    ],
+    "curve_be4": [
+      3.144875021697622,
+      3.144875021697622,
+      3.144875021697622
+    ],
+    "nano_q4": [
+      3.3291967094382047,
+      3.3291967094382047,
+      3.3291967094382047
+    ]
+  },
+  "original_gate_unchanged": true,
+  "rows": [
+    {
+      "arm": "nano_fp16",
+      "confirmation_ce": 2.357462774623524,
+      "exact_logits": true,
+      "exact_tensors": true,
+      "file": "nano_fp16-73-selected.s1pw",
+      "file_bytes": 307974,
+      "payload_bytes": 300096,
+      "seed": 73,
+      "sha256": "c87da262e2e62f46a8b182179e056a803e41ab0b6654fc2bb6824a6777b36192",
+      "source": "nano_fp16-73-selected.packed.pt",
+      "source_sha256": "666923895703c7c79701b8cedc2e8d08402112638c5baa811aa4d7870741c824"
+    },
+    {
+      "arm": "curve_b4",
+      "confirmation_ce": 2.206514510241422,
+      "exact_logits": true,
+      "exact_tensors": true,
+      "file": "curve_b4-73-selected.s1pw",
+      "file_bytes": 64080,
+      "payload_bytes": 56594,
+      "seed": 73,
+      "sha256": "87645ecca956c90f6ed0df130f5d44ac0b372e2496eba666848ccd55d4aa28e3",
+      "source": "curve_b4-73-selected.packed.pt",
+      "source_sha256": "1ca06669a0755f228be48fb1602450726713bd1deb31ad2c11f1c40a9261cad5"
+    },
+    {
+      "arm": "nano_q4",
+      "confirmation_ce": 2.3595129359852183,
+      "exact_logits": true,
+      "exact_tensors": true,
+      "file": "nano_q4-73-selected.s1pw",
+      "file_bytes": 92507,
+      "payload_bytes": 83520,
+      "seed": 73,
+      "sha256": "7893e0d334d19c812329dc9c9a8b20dc8fe98f0b790d62960c6cde678ab7e95c",
+      "source": "nano_q4-73-selected.packed.pt",
+      "source_sha256": "7839c9703b2e348fee40aafd3b7ab79f31cffd1d1cb47e9b66f9435ccefdff4f"
+    },
+    {
+      "arm": "curve_fp16",
+      "confirmation_ce": 2.20456786589189,
+      "exact_logits": true,
+      "exact_tensors": true,
+      "file": "curve_fp16-73-selected.s1pw",
+      "file_bytes": 144941,
+      "payload_bytes": 137810,
+      "seed": 73,
+      "sha256": "062d6968196bc37b8f97c0dfcb88c4662586e3850c909fd35e995849e588df0d",
+      "source": "curve_fp16-73-selected.packed.pt",
+      "source_sha256": "d8559822fcb379f80f33d66920dd01f92705b1bc4b2874130dfd083d174bda71"
+    },
+    {
+      "arm": "curve_be4",
+      "confirmation_ce": 2.21397386897694,
+      "exact_logits": true,
+      "exact_tensors": true,
+      "file": "curve_be4-73-selected.s1pw",
+      "file_bytes": 46088,
+      "payload_bytes": 38546,
+      "seed": 73,
+      "sha256": "651fb55ee6549c8ded377eee562b518de6d17db6d51729c9cf29dfe295a24cef",
+      "source": "curve_be4-73-selected.packed.pt",
+      "source_sha256": "f3930de40ff01640884f562f13955159cac7b78d3767711752b701f91a08e527"
+    },
+    {
+      "arm": "curve_fp16",
+      "confirmation_ce": 2.181297085501931,
+      "exact_logits": true,
+      "exact_tensors": true,
+      "file": "curve_fp16-191-selected.s1pw",
+      "file_bytes": 144941,
+      "payload_bytes": 137810,
+      "seed": 191,
+      "sha256": "2e940ae6189de0f77658d2673f2b070dff99cf1126157f1870706766d9fe81a4",
+      "source": "curve_fp16-191-selected.packed.pt",
+      "source_sha256": "91fdc6042947c0f4cdf64cf60d3d415d9b02ef2b613df4b7f4136f06e6f7187f"
+    },
+    {
+      "arm": "curve_be4",
+      "confirmation_ce": 2.1874656677246094,
+      "exact_logits": true,
+      "exact_tensors": true,
+      "file": "curve_be4-191-selected.s1pw",
+      "file_bytes": 46088,
+      "payload_bytes": 38546,
+      "seed": 191,
+      "sha256": "ba93f400811730808781703a0da6276a7cc9b71ce45c50b35dced091bba42904",
+      "source": "curve_be4-191-selected.packed.pt",
+      "source_sha256": "79e4056a745fa8877a2deaa69ab3b12b417a6aa102b8abdc179f370c29f3bc1e"
+    },
+    {
+      "arm": "nano_fp16",
+      "confirmation_ce": 2.3585814996199175,
+      "exact_logits": true,
+      "exact_tensors": true,
+      "file": "nano_fp16-191-selected.s1pw",
+      "file_bytes": 307974,
+      "payload_bytes": 300096,
+      "seed": 191,
+      "sha256": "0e6269929ddac78993cb767cb58cddb6f3b2ec5ee3c79c5fd1b2417b654aa4c1",
+      "source": "nano_fp16-191-selected.packed.pt",
+      "source_sha256": "9a508582a6b3771e605ab3b610e140864579c191ebf61e907b63efc0e59cd66c"
+    },
+    {
+      "arm": "curve_b4",
+      "confirmation_ce": 2.1826355023817583,
+      "exact_logits": true,
+      "exact_tensors": true,
+      "file": "curve_b4-191-selected.s1pw",
+      "file_bytes": 64080,
+      "payload_bytes": 56594,
+      "seed": 191,
+      "sha256": "74340fec689bfd454b1090ceac88d0d82367ed113ef786041d3a729d7e30c44d",
+      "source": "curve_b4-191-selected.packed.pt",
+      "source_sha256": "a90f9f2a27a0051e5cf5bf4916c660c0c1dc966ef848cc75ea82501ad8e7161c"
+    },
+    {
+      "arm": "nano_q4",
+      "confirmation_ce": 2.3579529415477407,
+      "exact_logits": true,
+      "exact_tensors": true,
+      "file": "nano_q4-191-selected.s1pw",
+      "file_bytes": 92507,
+      "payload_bytes": 83520,
+      "seed": 191,
+      "sha256": "7646fe60bb6c508e852832e41bab5522a405e638c4928579f11730cd3e5374a7",
+      "source": "nano_q4-191-selected.packed.pt",
+      "source_sha256": "d850ae87d5f75a3699957d16a185a1b9dcd651834eb45668f7ca16aa8a3f57a9"
+    },
+    {
+      "arm": "curve_fp16",
+      "confirmation_ce": 2.2251958413557573,
+      "exact_logits": true,
+      "exact_tensors": true,
+      "file": "curve_fp16-307-selected.s1pw",
+      "file_bytes": 144941,
+      "payload_bytes": 137810,
+      "seed": 307,
+      "sha256": "4a11d87885f93ce75ea167034cf81727aaf1f483f631cf78f10058c6285f6c94",
+      "source": "curve_fp16-307-selected.packed.pt",
+      "source_sha256": "392d8340a647a0e22e91eac3de75f6dbeea1835c3ac7d04f9baecb1c0dc3437e"
+    },
+    {
+      "arm": "curve_b4",
+      "confirmation_ce": 2.227250012484464,
+      "exact_logits": true,
+      "exact_tensors": true,
+      "file": "curve_b4-307-selected.s1pw",
+      "file_bytes": 64080,
+      "payload_bytes": 56594,
+      "seed": 307,
+      "sha256": "64e8bca39fc53ff4b57c696def18512c4ad85a99bb3d3da377cfc4be720b17bb",
+      "source": "curve_b4-307-selected.packed.pt",
+      "source_sha256": "ebff7728de35f6fdb29d61b9fd723b789b4c98ae20ed52e91d6a6bc9fb992cdb"
+    },
+    {
+      "arm": "nano_fp16",
+      "confirmation_ce": 2.359508362683383,
+      "exact_logits": true,
+      "exact_tensors": true,
+      "file": "nano_fp16-307-selected.s1pw",
+      "file_bytes": 307974,
+      "payload_bytes": 300096,
+      "seed": 307,
+      "sha256": "a549c9d009fddb9c6427e276185ddec05e6a95f700b96bdf1d84c98c0d6a1211",
+      "source": "nano_fp16-307-selected.packed.pt",
+      "source_sha256": "2f9edf3f20e70769d6f80d8c567b93e645b19353e48e93edc46b0e13c308a170"
+    },
+    {
+      "arm": "curve_be4",
+      "confirmation_ce": 2.2300814498554575,
+      "exact_logits": true,
+      "exact_tensors": true,
+      "file": "curve_be4-307-selected.s1pw",
+      "file_bytes": 46088,
+      "payload_bytes": 38546,
+      "seed": 307,
+      "sha256": "b44e055eb12e375f19514809dfe9517a30498edef550b3c6d4635610c0fd8214",
+      "source": "curve_be4-307-selected.packed.pt",
+      "source_sha256": "e9978bf91f1753ea8217906a18e83d1d2bf309a474ef8c11bdc3f800fad038b9"
+    },
+    {
+      "arm": "nano_q4",
+      "confirmation_ce": 2.3609547831795434,
+      "exact_logits": true,
+      "exact_tensors": true,
+      "file": "nano_q4-307-selected.s1pw",
+      "file_bytes": 92507,
+      "payload_bytes": 83520,
+      "seed": 307,
+      "sha256": "ddeb4fce7dc4b8649d0f882ef69facc04452024262af20594eb9a5947dfac060",
+      "source": "nano_q4-307-selected.packed.pt",
+      "source_sha256": "0c6b806dbac07f7234cd0cfdab25e06c5513b724df66243154544d49ce7aa870"
+    }
+  ],
+  "scope": "Lossless packaging follow-up after quality exposure; no new quality evidence",
+  "status": "COMPLETED"
+}

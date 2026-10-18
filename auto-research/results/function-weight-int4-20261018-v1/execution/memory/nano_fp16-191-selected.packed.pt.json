@@ -1,0 +1,10 @@
+{
+  "file": "nano_fp16-191-selected.packed.pt",
+  "file_bytes": 317959,
+  "load_and_forward_seconds": 0.02028487499999998,
+  "max_decoded_weight_bytes": 12288,
+  "payload_bytes": 300096,
+  "peak_rss_bytes": 191119360,
+  "scope": "CPU full-sequence512 reference implementation; includes interpreter/activations and index scratch, no KV cache",
+  "sha256": "9a508582a6b3771e605ab3b610e140864579c191ebf61e907b63efc0e59cd66c"
+}

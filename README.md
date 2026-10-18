@@ -23,6 +23,10 @@ The function-weight Transformer and its learned inference sampling remain intact
 
 ![Function-weight hierarchy: separate text quality and memory experiments](graphs/function_weight_kv_text_descent.png)
 
+A separate [function-weight compression pilot](auto-research/reports/function-weight-int4-20261018.md) quantizes shared bases and tied embeddings while retaining learned sampling. Across three tiny-model seeds, weight tensors are **3.58× smaller** with **0.68% higher mean perplexity** than the matched FP16 recovery control. Lossless compact packaging gives **3.14× smaller deployment files**; the original file-size gate failed and is preserved. Total process RAM remains roughly unchanged at this scale. [Load the experimental profiles](sampling_library/PACKED_WEIGHTS.md) or read the [progress and handoff file](FUNCTION_WEIGHTS_HANDOFF.md).
+
+![Packed function weights: actual storage and text quality](graphs/function_weight_int4.png)
+
 The original hierarchy uses learned gates and cross-scale updates to maintain fast, segment, and document-level memory. Its recurrent state stays fixed-size as context grows. Function-generated transition experiments explore structured transformations, relative geometry, and rotations.
 
 The historical pure hierarchy, local-plus-function-weight arm, and later geometry pilots are separately identified in the evidence: they are not one identical trained architecture.

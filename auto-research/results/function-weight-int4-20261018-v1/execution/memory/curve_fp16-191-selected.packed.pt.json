@@ -1,0 +1,10 @@
+{
+  "file": "curve_fp16-191-selected.packed.pt",
+  "file_bytes": 151418,
+  "load_and_forward_seconds": 0.023716249999999994,
+  "max_decoded_weight_bytes": 12288,
+  "payload_bytes": 137810,
+  "peak_rss_bytes": 193085440,
+  "scope": "CPU full-sequence512 reference implementation; includes interpreter/activations and index scratch, no KV cache",
+  "sha256": "91fdc6042947c0f4cdf64cf60d3d415d9b02ef2b613df4b7f4136f06e6f7187f"
+}

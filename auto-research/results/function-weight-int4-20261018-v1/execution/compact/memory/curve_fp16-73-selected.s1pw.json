@@ -1,0 +1,10 @@
+{
+  "file": "curve_fp16-73-selected.s1pw",
+  "file_bytes": 144941,
+  "load_and_forward_seconds": 0.016386082999999996,
+  "max_decoded_weight_bytes": 12288,
+  "payload_bytes": 137810,
+  "peak_rss_bytes": 191528960,
+  "scope": "Fresh process, compact export only,512-token full attention; not latency benchmark",
+  "sha256": "062d6968196bc37b8f97c0dfcb88c4662586e3850c909fd35e995849e588df0d"
+}

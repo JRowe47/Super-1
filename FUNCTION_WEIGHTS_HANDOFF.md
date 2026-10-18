@@ -26,9 +26,21 @@ Preserve the unrelated untracked `auto-research/results/recurrent-capacity-rwkv-
 
 ## Current experiment status
 
-Preparing a bounded three-seed weight-only experiment. KV stays full causal attention for every arm. Compare full-precision continuation controls,4-bit shared bases,4-bit shared bases+embedding and4-bit nanoGPT; train with next-byte CE+frozen-teacher KL. All arms get matched recovery targets. Select on validation, freeze, then evaluate an unused byte region. Measure packed file bytes and unique packed tensor bytes, including scales, separately from peak process RAM.
+Completed `function-weight-int4-20261018-v1`, with KV held at full causal attention. All five arms and three seeds finished, with 60 immutable recovery checkpoints, 30 original packed exports and 15 compact exports. No process is intentionally left running.
 
-Critical requirement: a fake-quant training result alone is insufficient. Export true nibble-packed tensors, load an inference model with no full-precision weight masters, and decode only bounded matrix tiles or requested embedding rows. Verify packed-vs-fake-quant logits and preserve t sampling at depths2/3/4. Keep high-precision coefficient/router/norm parameters initially. Do not claim the prototype is an optimized quantized kernel or a drop-in cached-serving runtime.
+- Primary model (int4 shared bases + tied embedding): 38,546 weight bytes versus 137,810 FP16 bytes, **3.575x smaller**.
+- Mean confirmation CE 2.210507 versus matched FP16 recovery 2.203687: **0.684% worse mean perplexity**, passing the preset 2% tolerance on every seed and the paired upper confidence bound.
+- Original torch deployment files: 53,925 versus 151,418 bytes, **2.808x**. The original 3x file-storage gate FAILED and remains failed.
+- Separately preregistered lossless packaging follow-up: 46,088 versus 144,941 bytes with both controls using the same compact format, **3.145x**. Every tensor and confirmation logit is exactly unchanged.
+- Quantized nanoGPT control: CE 2.359474, compact file 92,507 bytes. This is a tiny single-book comparison, not SOTA evidence.
+- Compact curve peak process RSS stays around 182–184 MiB; weight compression did not establish dramatic total-process RAM savings at this scale.
+- Function curves, token-conditioned t and selectable depths 2/3/4 are preserved. Packed inference is experimental full-sequence CPU inference; it is not yet integrated with cached/hierarchical-KV serving. Language quality was tested only at depth 4.
+
+Results: `auto-research/reports/function-weight-int4-20261018.md`.
+Protocols and raw evidence: `auto-research/results/function-weight-int4-20261018-v1/`.
+Hash-bound learned profile index: `auto-research/results/function-weight-int4-20261018-v1/LIBRARY.json` (all 15 research profiles inactive by default).
+Loader instructions: `sampling_library/PACKED_WEIGHTS.md`.
+Chart: `graphs/function_weight_int4.png` and reproducible renderer `scripts/render_function_weight_int4.py`.
 
 ## Continuation instructions
 
@@ -46,3 +58,45 @@ Critical requirement: a fake-quant training result alone is insufficient. Export
 - Implemented experimental nibble-packed inference in `sampling_library/packed_weights.py`; random mechanics canary passes all five arms, including curve depths2/3/4, sampled positions, causal prefixes and gradients. Protocol/config/source hashes are in `auto-research/results/function-weight-int4-20261018-v1/`. Controls use FP16 rounding to match actual FP16 deployment; original teachers remain FP32. Training has not started yet.
 
 - Recovery run completed at preregistration commit96f7d72:60 checkpoints,30 packed exports,45 confirmation rows,113.35CPU seconds/121.86wall seconds. All30 exports independently replay exactly;27 trained depth2/3/4 checks pass. Curve bases+embedding:3.575x smaller payload,0.684% mean PPL regression vs matched FP16 control, quality gate passes. Torch serialization yields only2.808x file reduction, so original joint/storage gate FAILS. A separately committed lossless packaging follow-up will test a coalesced byte buffer on every selected arm with no weight/quality changes.
+
+## Exact commands and durable receipts
+
+Workdir for every command: `/Volumes/SP AI 01_16/CodexWorkspaces/Super-1-memory-frontier-20261018`. Use `python3 -B` to avoid bytecode churn. Never rerun a write command into an existing immutable output.
+
+Executed training (already complete; do not launch again):
+
+```sh
+python3 -B auto-research/results/function-weight-int4-20261018-v1/run.py canary
+python3 -B auto-research/results/function-weight-int4-20261018-v1/run.py train
+python3 -B auto-research/results/function-weight-int4-20261018-v1/analyze.py
+python3 -B auto-research/results/function-weight-int4-20261018-v1/verify.py --output auto-research/results/function-weight-int4-20261018-v1/execution/VERIFICATION.json
+python3 -B auto-research/results/function-weight-int4-20261018-v1/package.py
+```
+
+Recovery protocol/source commit: `96f7d72`. Packaging follow-up protocol/source commit: `160d243`. Recovery used 113.35 CPU seconds / 121.86 wall seconds. All runs used one CPU thread. Recovery log is `TRAIN.log`; the terminal receipt says COMPLETED. `FREEZE.json` precedes new confirmation. Full-precision recovery masters and optimizer states are research artifacts; only `.packed.pt` and `.s1pw` are compressed deployment formats.
+
+Receipts in the experiment directory:
+
+- `SOURCE_MANIFEST.json`: model, corpus, parent checkpoints and preregistered code/config hashes.
+- `execution/START.json`, `TERMINAL.json`, `FREEZE.json`, `RESULT.json`, `SUMMARY.json`: run identity, completion, selection, all quality results and original gates.
+- `execution/VERIFICATION.json`: 60 checkpoint hashes, matching minibatches/selection, 30 exact deployment replays and 27 trained depth/t checks.
+- `execution/memory/`: 15 original-format fresh-worker RSS receipts.
+- `execution/compact/START.json`, `RESULT.json`: packaging commit/hashes and 15 exact tensor/logit round trips with compact-vs-compact ratios.
+- `execution/compact/memory/`: 15 compact-format fresh-worker RSS receipts.
+- `LIBRARY.json`: selected checkpoint/source hashes, compact files, tokenizer, context, tested depth and quality.
+
+Safe read-only replay: run `verify.py --output` with a NEW absolute file path on the SSD. For isolated memory replay, use `run.py memory --path <original-packed-file> --destination <new-json>` or `package.py --memory <compact-file> --destination <new-json>`. The destination must not already exist.
+
+Regression commands completed: 13 unittest cases across `sampling_library.test_packed_weights_archive`, `test_inference`, `test_hierarchical_kv`, `test_hierarchy_profiles`; 13 checks in `python3 -B -m sampling_library.test_library`; 5 checks in `python3 -B -m sampling_library.test_profiles`. Chart command: `python3 -B scripts/render_function_weight_int4.py`. Repository hash check: `python3 -B scripts/verify_evidence.py`.
+
+## Next research and integration steps
+
+1. Keep this result scoped to a byte-level Alice model; the new confirmation region is [114128,119771). It is now consumed and cannot become future tuning data while still called untouched. Old confirmation/diagnostic regions are recorded in the parent protocols.
+2. Test broader held-out text and larger models with quantized nanoGPT and equal recovery budgets. Preregister a new run/directory before any training; do not modify these frozen sources or relax gates. Do not infer authorization for paid/cloud or unbounded runs.
+3. Integrate the packed projection/embedding store with the existing cached function-weight runtime, preserving full-KV/hierarchy behavior and cache identity checks. First require full/cached/chunk and t parity, then measure joint weight+KV peak RAM. Current packed inference does not offer this yet.
+4. After the above, investigate 3/2-bit learned codebooks or activation-aware low-rank residuals. Do not conflate the current full-rank quantized bases with a demonstrated low-rank compression result.
+5. Preserve the original file-gate failure, all seeds and negative results. Do not multiply the earlier 100K KV RSS ratio by the weight-storage ratio; they are different measurements and not jointly validated.
+
+A report-generation helper initially hit a Python3.9 f-string syntax error; it was corrected before producing documentation. No training, source manifests or numerical results were changed by that documentation-only error.
+
+- Completed final checks: all 30 original exports replayed exactly; all 15 compact exports preserve tensors/logits; 27 trained depth checks and 31 regression checks passed. Both formats have all 15 isolated RSS receipts. Library hashes and both preregistered source sets remain intact. Results/chart/report and this handoff are prepared for draft PR8; remote publication will be verified next.
