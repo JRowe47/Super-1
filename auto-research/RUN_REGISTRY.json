@@ -258,11 +258,17 @@
     },
     {
       "approval": "User explicitly asked for learning how many layers per use case; PR3/4 resolved and merged before this experiment. Bounded local CPU sampler-only extension.",
+      "decision": "LEARNED_FOUR_LAYERS_REFERENCE_RETAINED",
+      "library": "sampling_library/depth_profiles.json",
+      "metrics": "auto-research/results/text-depth-library-20261018-v1/execution/RESULT.json",
       "protocol": "auto-research/results/text-depth-library-20261018-v1/PROTOCOL.json",
       "protocol_sha256": "be34d9fe37fba0ef4e882123f443abb534d74048754f99ad9f0bf7cc006b80dd",
+      "report": "auto-research/reports/text-depth-library-20261018-v1.md",
       "run_id": "text-depth-library-20261018-v1",
       "source_manifest": "auto-research/results/text-depth-library-20261018-v1/SOURCE_MANIFEST.json",
-      "status": "PREREGISTERED"
+      "status": "COMPLETED",
+      "terminal": "auto-research/results/text-depth-library-20261018-v1/execution/TERMINAL.json",
+      "verification": "auto-research/results/text-depth-library-20261018-v1/execution/VERIFICATION.json"
     }
   ],
   "schema_version": 1,

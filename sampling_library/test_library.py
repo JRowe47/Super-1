@@ -42,6 +42,11 @@ def main():
         assert resolve(entry['use_case'],entry['base_fingerprint'],entry['tokenizer'],entry['context'],index)['id']=='replacement'
         assert len(read(index)['entries'])==2 and sum(e['active'] for e in read(index)['entries'])==1
         tests.append('preserve_old_reference_on_replacement')
-    study.save(h/'execution/LIBRARY_VERIFICATION.json',{'status':'PASS','checks':tests})
+    receipt={'status':'PASS','checks':tests}
+    path=h/'execution/LIBRARY_VERIFICATION.json'
+    if path.exists():
+        assert json.loads(path.read_text())==receipt
+    else:
+        study.save(path,receipt)
     print('PASS:',len(tests),'library checks')
 if __name__=='__main__':main()

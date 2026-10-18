@@ -88,3 +88,7 @@ Protocols, results, logs, and all outcomes live in [auto-research/](auto-researc
 ## License
 
 [MIT](LICENSE) for original code and documentation. Third-party material retains its original licenses and notices.
+
+## Experimental sampling parameter library
+
+[Learned sampling positions and layer-count profiles](sampling_library/README.md) preserve exact model compatibility, benchmark evidence and rejected candidates. Text-only pilots currently retain the four-layer research reference; two- and three-layer profiles expose measured quality/CPU tradeoffs. This is not a universal optimum or broad language-performance claim.

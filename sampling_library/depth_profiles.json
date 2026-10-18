@@ -1,0 +1,791 @@
+{
+  "entries": [
+    {
+      "active": false,
+      "base_checkpoint": {
+        "path": "auto-research/results/usecase-sampling-descent-20261018-v1/execution/base-73.pt",
+        "sha256": "8d44401651fa5ae6a63d3d368c95834ff97a42d0c8901bd3d706dfd5a112e61d"
+      },
+      "base_fingerprint": "218970774ec08fac12dda6138a43684ac06cfe3dd2ec27d47c0aa8355bd7df47",
+      "checkpoint": {
+        "path": "auto-research/results/text-depth-library-20261018-v1/execution/depth2-73-round0.pt",
+        "sha256": "88e4e3f3e81e4a3a17b0352477eddebd18b62a7e3aac01af153eb80a9eb0e081"
+      },
+      "config": {
+        "path": "auto-research/results/text-depth-library-20261018-v1/CONFIG.json",
+        "sha256": "ba27000d2e2cca01027bd9820d8549aeb2922675f307d7366eee6c8cf8b8276c"
+      },
+      "context": 64,
+      "evidence": [
+        {
+          "path": "auto-research/results/text-depth-library-20261018-v1/PROTOCOL.json",
+          "sha256": "be34d9fe37fba0ef4e882123f443abb534d74048754f99ad9f0bf7cc006b80dd"
+        },
+        {
+          "path": "auto-research/results/text-depth-library-20261018-v1/execution/FREEZE.json",
+          "sha256": "36dbc774af45769811c2a6f66360963efdf8b88b6fae9993ebcdd98570d1cc5b"
+        },
+        {
+          "path": "auto-research/results/text-depth-library-20261018-v1/execution/RESULT.json",
+          "sha256": "64411e9c6de501ec75482d29e09165bc5e9f7916dfd303e547f60dcf377fc331"
+        },
+        {
+          "path": "auto-research/results/text-depth-library-20261018-v1/execution/VERIFICATION.json",
+          "sha256": "4e63748b59a21e370117adf5b50eb1320ced05a09a09e9baa44c3a5a859ac68a"
+        }
+      ],
+      "execution_depth": 2,
+      "id": "text-depth-library-20261018-v1/layers-2/73",
+      "limitations": "Explicit experimental profile, not an automatic replacement. Backbone trained at4 layers; low-depth normalization-prefix distribution shift. No GPU speed claim.",
+      "metrics": {
+        "benchmark": {
+          "executed_layers": 2,
+          "prefill_batch1_ms_median": 0.678979499998178,
+          "scope": "One CPU thread FP32 uncached64-byte prefill; full frozen backbone remains stored."
+        },
+        "confirmation": {
+          "accuracy": 0.26971435546875,
+          "ce": 2.661193512380123,
+          "logits_sha256": "e7091d51abff95099ba93f31b447199e0c7260bf592f672f39d627e872d95722",
+          "targets": 16384
+        },
+        "confirmation_byte_region": [
+          1053774,
+          1070414
+        ],
+        "selection": {
+          "accuracy": 0.26904296875,
+          "ce": 2.6874093115329742,
+          "logits_sha256": "231dcfd0dc2d0b49337e24aab105c8452bcaae0a8446a796dc2c9c6042dbbef7",
+          "targets": 8192
+        },
+        "unit": "nats/byte"
+      },
+      "model_source": {
+        "path": "auto-research/results/text-depth-library-20261018-v1/model.py",
+        "sha256": "b5e68e7514a0c3b1d322d4b41d0c858a17dcbcf6b94ea4c8b55c9e0c87e8892f"
+      },
+      "seed": 73,
+      "source_manifest": {
+        "path": "auto-research/results/text-depth-library-20261018-v1/SOURCE_MANIFEST.json",
+        "sha256": "5e50bfa5db544e97e5920b9b607487fb910c55ea81514ff241ac44a05d8a359c"
+      },
+      "status": "candidate",
+      "tokenizer": "utf8-bytes-v1",
+      "training": {
+        "backbone_frozen": true,
+        "coordinate_updates": 0,
+        "run_id": "text-depth-library-20261018-v1",
+        "selected_round": 0
+      },
+      "use_case": "text/shakespeare-byte"
+    },
+    {
+      "active": false,
+      "base_checkpoint": {
+        "path": "auto-research/results/usecase-sampling-descent-20261018-v1/execution/base-73.pt",
+        "sha256": "8d44401651fa5ae6a63d3d368c95834ff97a42d0c8901bd3d706dfd5a112e61d"
+      },
+      "base_fingerprint": "218970774ec08fac12dda6138a43684ac06cfe3dd2ec27d47c0aa8355bd7df47",
+      "checkpoint": {
+        "path": "auto-research/results/text-depth-library-20261018-v1/execution/depth3-73-round3.pt",
+        "sha256": "64e7d1340763b799e06ed8d621dfb9b88c435bbf2cd4312056c4f69adae91610"
+      },
+      "config": {
+        "path": "auto-research/results/text-depth-library-20261018-v1/CONFIG.json",
+        "sha256": "ba27000d2e2cca01027bd9820d8549aeb2922675f307d7366eee6c8cf8b8276c"
+      },
+      "context": 64,
+      "evidence": [
+        {
+          "path": "auto-research/results/text-depth-library-20261018-v1/PROTOCOL.json",
+          "sha256": "be34d9fe37fba0ef4e882123f443abb534d74048754f99ad9f0bf7cc006b80dd"
+        },
+        {
+          "path": "auto-research/results/text-depth-library-20261018-v1/execution/FREEZE.json",
+          "sha256": "36dbc774af45769811c2a6f66360963efdf8b88b6fae9993ebcdd98570d1cc5b"
+        },
+        {
+          "path": "auto-research/results/text-depth-library-20261018-v1/execution/RESULT.json",
+          "sha256": "64411e9c6de501ec75482d29e09165bc5e9f7916dfd303e547f60dcf377fc331"
+        },
+        {
+          "path": "auto-research/results/text-depth-library-20261018-v1/execution/VERIFICATION.json",
+          "sha256": "4e63748b59a21e370117adf5b50eb1320ced05a09a09e9baa44c3a5a859ac68a"
+        }
+      ],
+      "execution_depth": 3,
+      "id": "text-depth-library-20261018-v1/layers-3/73",
+      "limitations": "Explicit experimental profile, not an automatic replacement. Backbone trained at4 layers; low-depth normalization-prefix distribution shift. No GPU speed claim.",
+      "metrics": {
+        "benchmark": {
+          "executed_layers": 3,
+          "prefill_batch1_ms_median": 1.0069579999978373,
+          "scope": "One CPU thread FP32 uncached64-byte prefill; full frozen backbone remains stored."
+        },
+        "confirmation": {
+          "accuracy": 0.3634033203125,
+          "ce": 2.2251810505986214,
+          "logits_sha256": "82ab53744516a1f0cf97bce266fb78d4943e8b3ab72c7be430942a194899f98e",
+          "targets": 16384
+        },
+        "confirmation_byte_region": [
+          1053774,
+          1070414
+        ],
+        "selection": {
+          "accuracy": 0.37109375,
+          "ce": 2.2061340510845184,
+          "logits_sha256": "f83b7f786914157c481a76b90aebf2e67a2491e51452dab8b4138b48d9b9ba8b",
+          "targets": 8192
+        },
+        "unit": "nats/byte"
+      },
+      "model_source": {
+        "path": "auto-research/results/text-depth-library-20261018-v1/model.py",
+        "sha256": "b5e68e7514a0c3b1d322d4b41d0c858a17dcbcf6b94ea4c8b55c9e0c87e8892f"
+      },
+      "seed": 73,
+      "source_manifest": {
+        "path": "auto-research/results/text-depth-library-20261018-v1/SOURCE_MANIFEST.json",
+        "sha256": "5e50bfa5db544e97e5920b9b607487fb910c55ea81514ff241ac44a05d8a359c"
+      },
+      "status": "candidate",
+      "tokenizer": "utf8-bytes-v1",
+      "training": {
+        "backbone_frozen": true,
+        "coordinate_updates": 600,
+        "run_id": "text-depth-library-20261018-v1",
+        "selected_round": 3
+      },
+      "use_case": "text/shakespeare-byte"
+    },
+    {
+      "active": false,
+      "base_checkpoint": {
+        "path": "auto-research/results/usecase-sampling-descent-20261018-v1/execution/base-73.pt",
+        "sha256": "8d44401651fa5ae6a63d3d368c95834ff97a42d0c8901bd3d706dfd5a112e61d"
+      },
+      "base_fingerprint": "218970774ec08fac12dda6138a43684ac06cfe3dd2ec27d47c0aa8355bd7df47",
+      "checkpoint": {
+        "path": "auto-research/results/text-depth-library-20261018-v1/execution/depth4-73-round3.pt",
+        "sha256": "0fe50dad3f643643873e675e4ac31487da01f1d62c090baa683fa8faa195ce07"
+      },
+      "config": {
+        "path": "auto-research/results/text-depth-library-20261018-v1/CONFIG.json",
+        "sha256": "ba27000d2e2cca01027bd9820d8549aeb2922675f307d7366eee6c8cf8b8276c"
+      },
+      "context": 64,
+      "evidence": [
+        {
+          "path": "auto-research/results/text-depth-library-20261018-v1/PROTOCOL.json",
+          "sha256": "be34d9fe37fba0ef4e882123f443abb534d74048754f99ad9f0bf7cc006b80dd"
+        },
+        {
+          "path": "auto-research/results/text-depth-library-20261018-v1/execution/FREEZE.json",
+          "sha256": "36dbc774af45769811c2a6f66360963efdf8b88b6fae9993ebcdd98570d1cc5b"
+        },
+        {
+          "path": "auto-research/results/text-depth-library-20261018-v1/execution/RESULT.json",
+          "sha256": "64411e9c6de501ec75482d29e09165bc5e9f7916dfd303e547f60dcf377fc331"
+        },
+        {
+          "path": "auto-research/results/text-depth-library-20261018-v1/execution/VERIFICATION.json",
+          "sha256": "4e63748b59a21e370117adf5b50eb1320ced05a09a09e9baa44c3a5a859ac68a"
+        }
+      ],
+      "execution_depth": 4,
+      "id": "text-depth-library-20261018-v1/layers-4/73",
+      "limitations": "Explicit experimental profile, not an automatic replacement. Backbone trained at4 layers; low-depth normalization-prefix distribution shift. No GPU speed claim.",
+      "metrics": {
+        "benchmark": {
+          "executed_layers": 4,
+          "prefill_batch1_ms_median": 1.3595419999994363,
+          "scope": "One CPU thread FP32 uncached64-byte prefill; full frozen backbone remains stored."
+        },
+        "confirmation": {
+          "accuracy": 0.36376953125,
+          "ce": 2.2118589729070663,
+          "logits_sha256": "60d32ad1e25139c11e7a6f9940f9ecd0f61e2506fba0059d5f165dec6feaa45b",
+          "targets": 16384
+        },
+        "confirmation_byte_region": [
+          1053774,
+          1070414
+        ],
+        "selection": {
+          "accuracy": 0.3729248046875,
+          "ce": 2.1878099739551544,
+          "logits_sha256": "6b28394a8fcd98b504d823629ae395dce840f7940c2f25c072a70264ad6c521a",
+          "targets": 8192
+        },
+        "unit": "nats/byte"
+      },
+      "model_source": {
+        "path": "auto-research/results/text-depth-library-20261018-v1/model.py",
+        "sha256": "b5e68e7514a0c3b1d322d4b41d0c858a17dcbcf6b94ea4c8b55c9e0c87e8892f"
+      },
+      "seed": 73,
+      "source_manifest": {
+        "path": "auto-research/results/text-depth-library-20261018-v1/SOURCE_MANIFEST.json",
+        "sha256": "5e50bfa5db544e97e5920b9b607487fb910c55ea81514ff241ac44a05d8a359c"
+      },
+      "status": "candidate",
+      "tokenizer": "utf8-bytes-v1",
+      "training": {
+        "backbone_frozen": true,
+        "coordinate_updates": 600,
+        "run_id": "text-depth-library-20261018-v1",
+        "selected_round": 3
+      },
+      "use_case": "text/shakespeare-byte"
+    },
+    {
+      "active": false,
+      "base_checkpoint": {
+        "path": "auto-research/results/usecase-sampling-descent-20261018-v1/execution/base-191.pt",
+        "sha256": "727742acacd9c42fd6b88a7fee0e9fff193ae8248523cf3c7a35f68f99372a6a"
+      },
+      "base_fingerprint": "c9908b6add68e165382d269110b9b65d97f087c460d1854c32f83e5ed0a5e7bf",
+      "checkpoint": {
+        "path": "auto-research/results/text-depth-library-20261018-v1/execution/depth2-191-round0.pt",
+        "sha256": "34bf37d1541ad803006c804dc9be2893a6c46edda272beff23e8db3b98b6e526"
+      },
+      "config": {
+        "path": "auto-research/results/text-depth-library-20261018-v1/CONFIG.json",
+        "sha256": "ba27000d2e2cca01027bd9820d8549aeb2922675f307d7366eee6c8cf8b8276c"
+      },
+      "context": 64,
+      "evidence": [
+        {
+          "path": "auto-research/results/text-depth-library-20261018-v1/PROTOCOL.json",
+          "sha256": "be34d9fe37fba0ef4e882123f443abb534d74048754f99ad9f0bf7cc006b80dd"
+        },
+        {
+          "path": "auto-research/results/text-depth-library-20261018-v1/execution/FREEZE.json",
+          "sha256": "36dbc774af45769811c2a6f66360963efdf8b88b6fae9993ebcdd98570d1cc5b"
+        },
+        {
+          "path": "auto-research/results/text-depth-library-20261018-v1/execution/RESULT.json",
+          "sha256": "64411e9c6de501ec75482d29e09165bc5e9f7916dfd303e547f60dcf377fc331"
+        },
+        {
+          "path": "auto-research/results/text-depth-library-20261018-v1/execution/VERIFICATION.json",
+          "sha256": "4e63748b59a21e370117adf5b50eb1320ced05a09a09e9baa44c3a5a859ac68a"
+        }
+      ],
+      "execution_depth": 2,
+      "id": "text-depth-library-20261018-v1/layers-2/191",
+      "limitations": "Explicit experimental profile, not an automatic replacement. Backbone trained at4 layers; low-depth normalization-prefix distribution shift. No GPU speed claim.",
+      "metrics": {
+        "benchmark": {
+          "executed_layers": 2,
+          "prefill_batch1_ms_median": 0.6893960000020627,
+          "scope": "One CPU thread FP32 uncached64-byte prefill; full frozen backbone remains stored."
+        },
+        "confirmation": {
+          "accuracy": 0.2762451171875,
+          "ce": 2.680108144879341,
+          "logits_sha256": "814574311736b50316f8e326f9bd3aa078e617baafeed96ee3e2631316b2f44d",
+          "targets": 16384
+        },
+        "confirmation_byte_region": [
+          1053774,
+          1070414
+        ],
+        "selection": {
+          "accuracy": 0.2757568359375,
+          "ce": 2.705152466893196,
+          "logits_sha256": "6bb4ef499367a408fadeacacf398bf7671f506b949e388626defe3b4d0195dfa",
+          "targets": 8192
+        },
+        "unit": "nats/byte"
+      },
+      "model_source": {
+        "path": "auto-research/results/text-depth-library-20261018-v1/model.py",
+        "sha256": "b5e68e7514a0c3b1d322d4b41d0c858a17dcbcf6b94ea4c8b55c9e0c87e8892f"
+      },
+      "seed": 191,
+      "source_manifest": {
+        "path": "auto-research/results/text-depth-library-20261018-v1/SOURCE_MANIFEST.json",
+        "sha256": "5e50bfa5db544e97e5920b9b607487fb910c55ea81514ff241ac44a05d8a359c"
+      },
+      "status": "candidate",
+      "tokenizer": "utf8-bytes-v1",
+      "training": {
+        "backbone_frozen": true,
+        "coordinate_updates": 0,
+        "run_id": "text-depth-library-20261018-v1",
+        "selected_round": 0
+      },
+      "use_case": "text/shakespeare-byte"
+    },
+    {
+      "active": false,
+      "base_checkpoint": {
+        "path": "auto-research/results/usecase-sampling-descent-20261018-v1/execution/base-191.pt",
+        "sha256": "727742acacd9c42fd6b88a7fee0e9fff193ae8248523cf3c7a35f68f99372a6a"
+      },
+      "base_fingerprint": "c9908b6add68e165382d269110b9b65d97f087c460d1854c32f83e5ed0a5e7bf",
+      "checkpoint": {
+        "path": "auto-research/results/text-depth-library-20261018-v1/execution/depth3-191-round2.pt",
+        "sha256": "ff05fede50011094900efe48efd5baaa9dff684b0248a1f184b483138bbd2c13"
+      },
+      "config": {
+        "path": "auto-research/results/text-depth-library-20261018-v1/CONFIG.json",
+        "sha256": "ba27000d2e2cca01027bd9820d8549aeb2922675f307d7366eee6c8cf8b8276c"
+      },
+      "context": 64,
+      "evidence": [
+        {
+          "path": "auto-research/results/text-depth-library-20261018-v1/PROTOCOL.json",
+          "sha256": "be34d9fe37fba0ef4e882123f443abb534d74048754f99ad9f0bf7cc006b80dd"
+        },
+        {
+          "path": "auto-research/results/text-depth-library-20261018-v1/execution/FREEZE.json",
+          "sha256": "36dbc774af45769811c2a6f66360963efdf8b88b6fae9993ebcdd98570d1cc5b"
+        },
+        {
+          "path": "auto-research/results/text-depth-library-20261018-v1/execution/RESULT.json",
+          "sha256": "64411e9c6de501ec75482d29e09165bc5e9f7916dfd303e547f60dcf377fc331"
+        },
+        {
+          "path": "auto-research/results/text-depth-library-20261018-v1/execution/VERIFICATION.json",
+          "sha256": "4e63748b59a21e370117adf5b50eb1320ced05a09a09e9baa44c3a5a859ac68a"
+        }
+      ],
+      "execution_depth": 3,
+      "id": "text-depth-library-20261018-v1/layers-3/191",
+      "limitations": "Explicit experimental profile, not an automatic replacement. Backbone trained at4 layers; low-depth normalization-prefix distribution shift. No GPU speed claim.",
+      "metrics": {
+        "benchmark": {
+          "executed_layers": 3,
+          "prefill_batch1_ms_median": 1.0217499999995994,
+          "scope": "One CPU thread FP32 uncached64-byte prefill; full frozen backbone remains stored."
+        },
+        "confirmation": {
+          "accuracy": 0.36614990234375,
+          "ce": 2.2058332562446594,
+          "logits_sha256": "747da36434fa98e99042fc5a423b4a549b45b5340e9bf01aedaece49cd28c05c",
+          "targets": 16384
+        },
+        "confirmation_byte_region": [
+          1053774,
+          1070414
+        ],
+        "selection": {
+          "accuracy": 0.36376953125,
+          "ce": 2.2169998437166214,
+          "logits_sha256": "b47ebb195645d3a82879cb9cff29c29ba976601c050d9e4ac87424bee0b5047c",
+          "targets": 8192
+        },
+        "unit": "nats/byte"
+      },
+      "model_source": {
+        "path": "auto-research/results/text-depth-library-20261018-v1/model.py",
+        "sha256": "b5e68e7514a0c3b1d322d4b41d0c858a17dcbcf6b94ea4c8b55c9e0c87e8892f"
+      },
+      "seed": 191,
+      "source_manifest": {
+        "path": "auto-research/results/text-depth-library-20261018-v1/SOURCE_MANIFEST.json",
+        "sha256": "5e50bfa5db544e97e5920b9b607487fb910c55ea81514ff241ac44a05d8a359c"
+      },
+      "status": "candidate",
+      "tokenizer": "utf8-bytes-v1",
+      "training": {
+        "backbone_frozen": true,
+        "coordinate_updates": 400,
+        "run_id": "text-depth-library-20261018-v1",
+        "selected_round": 2
+      },
+      "use_case": "text/shakespeare-byte"
+    },
+    {
+      "active": false,
+      "base_checkpoint": {
+        "path": "auto-research/results/usecase-sampling-descent-20261018-v1/execution/base-191.pt",
+        "sha256": "727742acacd9c42fd6b88a7fee0e9fff193ae8248523cf3c7a35f68f99372a6a"
+      },
+      "base_fingerprint": "c9908b6add68e165382d269110b9b65d97f087c460d1854c32f83e5ed0a5e7bf",
+      "checkpoint": {
+        "path": "auto-research/results/text-depth-library-20261018-v1/execution/depth4-191-round2.pt",
+        "sha256": "da5101ce6242e57070f483e99132ef420c1afb3a7f0150abfb3b6aa5d67ef9a7"
+      },
+      "config": {
+        "path": "auto-research/results/text-depth-library-20261018-v1/CONFIG.json",
+        "sha256": "ba27000d2e2cca01027bd9820d8549aeb2922675f307d7366eee6c8cf8b8276c"
+      },
+      "context": 64,
+      "evidence": [
+        {
+          "path": "auto-research/results/text-depth-library-20261018-v1/PROTOCOL.json",
+          "sha256": "be34d9fe37fba0ef4e882123f443abb534d74048754f99ad9f0bf7cc006b80dd"
+        },
+        {
+          "path": "auto-research/results/text-depth-library-20261018-v1/execution/FREEZE.json",
+          "sha256": "36dbc774af45769811c2a6f66360963efdf8b88b6fae9993ebcdd98570d1cc5b"
+        },
+        {
+          "path": "auto-research/results/text-depth-library-20261018-v1/execution/RESULT.json",
+          "sha256": "64411e9c6de501ec75482d29e09165bc5e9f7916dfd303e547f60dcf377fc331"
+        },
+        {
+          "path": "auto-research/results/text-depth-library-20261018-v1/execution/VERIFICATION.json",
+          "sha256": "4e63748b59a21e370117adf5b50eb1320ced05a09a09e9baa44c3a5a859ac68a"
+        }
+      ],
+      "execution_depth": 4,
+      "id": "text-depth-library-20261018-v1/layers-4/191",
+      "limitations": "Explicit experimental profile, not an automatic replacement. Backbone trained at4 layers; low-depth normalization-prefix distribution shift. No GPU speed claim.",
+      "metrics": {
+        "benchmark": {
+          "executed_layers": 4,
+          "prefill_batch1_ms_median": 1.3675420000005545,
+          "scope": "One CPU thread FP32 uncached64-byte prefill; full frozen backbone remains stored."
+        },
+        "confirmation": {
+          "accuracy": 0.37078857421875,
+          "ce": 2.2006460279226303,
+          "logits_sha256": "32bd6045fa2a138afca0eb42c7a2dff66f76e7b2caa3c5762bf5b5234d92cf2c",
+          "targets": 16384
+        },
+        "confirmation_byte_region": [
+          1053774,
+          1070414
+        ],
+        "selection": {
+          "accuracy": 0.364013671875,
+          "ce": 2.207157850265503,
+          "logits_sha256": "f681fe44bd19f6df6c33662d4b9af465539fbe2acbc6abf1d988114b9d083dba",
+          "targets": 8192
+        },
+        "unit": "nats/byte"
+      },
+      "model_source": {
+        "path": "auto-research/results/text-depth-library-20261018-v1/model.py",
+        "sha256": "b5e68e7514a0c3b1d322d4b41d0c858a17dcbcf6b94ea4c8b55c9e0c87e8892f"
+      },
+      "seed": 191,
+      "source_manifest": {
+        "path": "auto-research/results/text-depth-library-20261018-v1/SOURCE_MANIFEST.json",
+        "sha256": "5e50bfa5db544e97e5920b9b607487fb910c55ea81514ff241ac44a05d8a359c"
+      },
+      "status": "candidate",
+      "tokenizer": "utf8-bytes-v1",
+      "training": {
+        "backbone_frozen": true,
+        "coordinate_updates": 400,
+        "run_id": "text-depth-library-20261018-v1",
+        "selected_round": 2
+      },
+      "use_case": "text/shakespeare-byte"
+    },
+    {
+      "active": false,
+      "base_checkpoint": {
+        "path": "auto-research/results/usecase-sampling-descent-20261018-v1/execution/base-307.pt",
+        "sha256": "c8f43164149c3610e1036ad9608b7966708c6f52e72302e814bd9bf0ae850350"
+      },
+      "base_fingerprint": "3d3f35945f75cecc4fa0072a4f4d1e8d2f837250e7e5b9fd3597bd9c4da195ea",
+      "checkpoint": {
+        "path": "auto-research/results/text-depth-library-20261018-v1/execution/depth2-307-round0.pt",
+        "sha256": "f6769ab92cc94e2a118cc8c9bf7a4296b6f0d523a3679323202c6a0bbff57c83"
+      },
+      "config": {
+        "path": "auto-research/results/text-depth-library-20261018-v1/CONFIG.json",
+        "sha256": "ba27000d2e2cca01027bd9820d8549aeb2922675f307d7366eee6c8cf8b8276c"
+      },
+      "context": 64,
+      "evidence": [
+        {
+          "path": "auto-research/results/text-depth-library-20261018-v1/PROTOCOL.json",
+          "sha256": "be34d9fe37fba0ef4e882123f443abb534d74048754f99ad9f0bf7cc006b80dd"
+        },
+        {
+          "path": "auto-research/results/text-depth-library-20261018-v1/execution/FREEZE.json",
+          "sha256": "36dbc774af45769811c2a6f66360963efdf8b88b6fae9993ebcdd98570d1cc5b"
+        },
+        {
+          "path": "auto-research/results/text-depth-library-20261018-v1/execution/RESULT.json",
+          "sha256": "64411e9c6de501ec75482d29e09165bc5e9f7916dfd303e547f60dcf377fc331"
+        },
+        {
+          "path": "auto-research/results/text-depth-library-20261018-v1/execution/VERIFICATION.json",
+          "sha256": "4e63748b59a21e370117adf5b50eb1320ced05a09a09e9baa44c3a5a859ac68a"
+        }
+      ],
+      "execution_depth": 2,
+      "id": "text-depth-library-20261018-v1/layers-2/307",
+      "limitations": "Explicit experimental profile, not an automatic replacement. Backbone trained at4 layers; low-depth normalization-prefix distribution shift. No GPU speed claim.",
+      "metrics": {
+        "benchmark": {
+          "executed_layers": 2,
+          "prefill_batch1_ms_median": 0.6682500000039227,
+          "scope": "One CPU thread FP32 uncached64-byte prefill; full frozen backbone remains stored."
+        },
+        "confirmation": {
+          "accuracy": 0.3111572265625,
+          "ce": 2.488886944949627,
+          "logits_sha256": "0ab859a1c941a091986f46b9e92975856ec8ad6266a7bf444e925ff64f5a104f",
+          "targets": 16384
+        },
+        "confirmation_byte_region": [
+          1053774,
+          1070414
+        ],
+        "selection": {
+          "accuracy": 0.305419921875,
+          "ce": 2.4986104667186737,
+          "logits_sha256": "a63f453c75b7306740a456509690757c51d197782735a85836d8ac9928e772bf",
+          "targets": 8192
+        },
+        "unit": "nats/byte"
+      },
+      "model_source": {
+        "path": "auto-research/results/text-depth-library-20261018-v1/model.py",
+        "sha256": "b5e68e7514a0c3b1d322d4b41d0c858a17dcbcf6b94ea4c8b55c9e0c87e8892f"
+      },
+      "seed": 307,
+      "source_manifest": {
+        "path": "auto-research/results/text-depth-library-20261018-v1/SOURCE_MANIFEST.json",
+        "sha256": "5e50bfa5db544e97e5920b9b607487fb910c55ea81514ff241ac44a05d8a359c"
+      },
+      "status": "candidate",
+      "tokenizer": "utf8-bytes-v1",
+      "training": {
+        "backbone_frozen": true,
+        "coordinate_updates": 0,
+        "run_id": "text-depth-library-20261018-v1",
+        "selected_round": 0
+      },
+      "use_case": "text/shakespeare-byte"
+    },
+    {
+      "active": false,
+      "base_checkpoint": {
+        "path": "auto-research/results/usecase-sampling-descent-20261018-v1/execution/base-307.pt",
+        "sha256": "c8f43164149c3610e1036ad9608b7966708c6f52e72302e814bd9bf0ae850350"
+      },
+      "base_fingerprint": "3d3f35945f75cecc4fa0072a4f4d1e8d2f837250e7e5b9fd3597bd9c4da195ea",
+      "checkpoint": {
+        "path": "auto-research/results/text-depth-library-20261018-v1/execution/depth3-307-round3.pt",
+        "sha256": "e2e7df2cc0c3ca0baef5a06ede83a453cbdb82af7087b0ba1db312489a9b9b04"
+      },
+      "config": {
+        "path": "auto-research/results/text-depth-library-20261018-v1/CONFIG.json",
+        "sha256": "ba27000d2e2cca01027bd9820d8549aeb2922675f307d7366eee6c8cf8b8276c"
+      },
+      "context": 64,
+      "evidence": [
+        {
+          "path": "auto-research/results/text-depth-library-20261018-v1/PROTOCOL.json",
+          "sha256": "be34d9fe37fba0ef4e882123f443abb534d74048754f99ad9f0bf7cc006b80dd"
+        },
+        {
+          "path": "auto-research/results/text-depth-library-20261018-v1/execution/FREEZE.json",
+          "sha256": "36dbc774af45769811c2a6f66360963efdf8b88b6fae9993ebcdd98570d1cc5b"
+        },
+        {
+          "path": "auto-research/results/text-depth-library-20261018-v1/execution/RESULT.json",
+          "sha256": "64411e9c6de501ec75482d29e09165bc5e9f7916dfd303e547f60dcf377fc331"
+        },
+        {
+          "path": "auto-research/results/text-depth-library-20261018-v1/execution/VERIFICATION.json",
+          "sha256": "4e63748b59a21e370117adf5b50eb1320ced05a09a09e9baa44c3a5a859ac68a"
+        }
+      ],
+      "execution_depth": 3,
+      "id": "text-depth-library-20261018-v1/layers-3/307",
+      "limitations": "Explicit experimental profile, not an automatic replacement. Backbone trained at4 layers; low-depth normalization-prefix distribution shift. No GPU speed claim.",
+      "metrics": {
+        "benchmark": {
+          "executed_layers": 3,
+          "prefill_batch1_ms_median": 1.0495420000040667,
+          "scope": "One CPU thread FP32 uncached64-byte prefill; full frozen backbone remains stored."
+        },
+        "confirmation": {
+          "accuracy": 0.37164306640625,
+          "ce": 2.2290002554655075,
+          "logits_sha256": "fbcafcb0450f82bbf5093236e9199adb443929b64bf7725989cebe2335a70eb6",
+          "targets": 16384
+        },
+        "confirmation_byte_region": [
+          1053774,
+          1070414
+        ],
+        "selection": {
+          "accuracy": 0.360595703125,
+          "ce": 2.2295336425304413,
+          "logits_sha256": "521a534e407a90d8a9075f69c9f01b799611a267d7801a7600d41166767b6839",
+          "targets": 8192
+        },
+        "unit": "nats/byte"
+      },
+      "model_source": {
+        "path": "auto-research/results/text-depth-library-20261018-v1/model.py",
+        "sha256": "b5e68e7514a0c3b1d322d4b41d0c858a17dcbcf6b94ea4c8b55c9e0c87e8892f"
+      },
+      "seed": 307,
+      "source_manifest": {
+        "path": "auto-research/results/text-depth-library-20261018-v1/SOURCE_MANIFEST.json",
+        "sha256": "5e50bfa5db544e97e5920b9b607487fb910c55ea81514ff241ac44a05d8a359c"
+      },
+      "status": "candidate",
+      "tokenizer": "utf8-bytes-v1",
+      "training": {
+        "backbone_frozen": true,
+        "coordinate_updates": 600,
+        "run_id": "text-depth-library-20261018-v1",
+        "selected_round": 3
+      },
+      "use_case": "text/shakespeare-byte"
+    },
+    {
+      "active": false,
+      "base_checkpoint": {
+        "path": "auto-research/results/usecase-sampling-descent-20261018-v1/execution/base-307.pt",
+        "sha256": "c8f43164149c3610e1036ad9608b7966708c6f52e72302e814bd9bf0ae850350"
+      },
+      "base_fingerprint": "3d3f35945f75cecc4fa0072a4f4d1e8d2f837250e7e5b9fd3597bd9c4da195ea",
+      "checkpoint": {
+        "path": "auto-research/results/text-depth-library-20261018-v1/execution/depth4-307-round3.pt",
+        "sha256": "462c31e89260e789ae6f5768cf31c89347ed4cc1bef7ef943a8e3ce601f27d41"
+      },
+      "config": {
+        "path": "auto-research/results/text-depth-library-20261018-v1/CONFIG.json",
+        "sha256": "ba27000d2e2cca01027bd9820d8549aeb2922675f307d7366eee6c8cf8b8276c"
+      },
+      "context": 64,
+      "evidence": [
+        {
+          "path": "auto-research/results/text-depth-library-20261018-v1/PROTOCOL.json",
+          "sha256": "be34d9fe37fba0ef4e882123f443abb534d74048754f99ad9f0bf7cc006b80dd"
+        },
+        {
+          "path": "auto-research/results/text-depth-library-20261018-v1/execution/FREEZE.json",
+          "sha256": "36dbc774af45769811c2a6f66360963efdf8b88b6fae9993ebcdd98570d1cc5b"
+        },
+        {
+          "path": "auto-research/results/text-depth-library-20261018-v1/execution/RESULT.json",
+          "sha256": "64411e9c6de501ec75482d29e09165bc5e9f7916dfd303e547f60dcf377fc331"
+        },
+        {
+          "path": "auto-research/results/text-depth-library-20261018-v1/execution/VERIFICATION.json",
+          "sha256": "4e63748b59a21e370117adf5b50eb1320ced05a09a09e9baa44c3a5a859ac68a"
+        }
+      ],
+      "execution_depth": 4,
+      "id": "text-depth-library-20261018-v1/layers-4/307",
+      "limitations": "Explicit experimental profile, not an automatic replacement. Backbone trained at4 layers; low-depth normalization-prefix distribution shift. No GPU speed claim.",
+      "metrics": {
+        "benchmark": {
+          "executed_layers": 4,
+          "prefill_batch1_ms_median": 1.4291039999996258,
+          "scope": "One CPU thread FP32 uncached64-byte prefill; full frozen backbone remains stored."
+        },
+        "confirmation": {
+          "accuracy": 0.37091064453125,
+          "ce": 2.22945998609066,
+          "logits_sha256": "8569ca7e0a1eb900203666462052690348b53609eb3ebb0b177c711a7f15134d",
+          "targets": 16384
+        },
+        "confirmation_byte_region": [
+          1053774,
+          1070414
+        ],
+        "selection": {
+          "accuracy": 0.3590087890625,
+          "ce": 2.226842477917671,
+          "logits_sha256": "feac6fea2b39780768ac849c6c8c1254407d3df7c623734497980eec923ebb04",
+          "targets": 8192
+        },
+        "unit": "nats/byte"
+      },
+      "model_source": {
+        "path": "auto-research/results/text-depth-library-20261018-v1/model.py",
+        "sha256": "b5e68e7514a0c3b1d322d4b41d0c858a17dcbcf6b94ea4c8b55c9e0c87e8892f"
+      },
+      "seed": 307,
+      "source_manifest": {
+        "path": "auto-research/results/text-depth-library-20261018-v1/SOURCE_MANIFEST.json",
+        "sha256": "5e50bfa5db544e97e5920b9b607487fb910c55ea81514ff241ac44a05d8a359c"
+      },
+      "status": "candidate",
+      "tokenizer": "utf8-bytes-v1",
+      "training": {
+        "backbone_frozen": true,
+        "coordinate_updates": 600,
+        "run_id": "text-depth-library-20261018-v1",
+        "selected_round": 3
+      },
+      "use_case": "text/shakespeare-byte"
+    }
+  ],
+  "policies": [
+    {
+      "default_reference_retained": true,
+      "learned_argmax_layers": 4,
+      "learned_probabilities": {
+        "2": 7.34883442987666e-08,
+        "3": 9.588367220203509e-07,
+        "4": 0.999998927116394
+      },
+      "promoted": false,
+      "seed": 73,
+      "selector_checkpoint": {
+        "path": "auto-research/results/text-depth-library-20261018-v1/execution/depth-selector-73-round3.pt",
+        "sha256": "20b7353ae7fb1f0d5f7de9b3c6fa674a2ae4227f8d0bde5cebc3c42b1b78f83d"
+      },
+      "use_case": "text/shakespeare-byte",
+      "validation_selected_checkpoint": {
+        "path": "auto-research/results/text-depth-library-20261018-v1/execution/depth4-73-round3.pt",
+        "sha256": "0fe50dad3f643643873e675e4ac31487da01f1d62c090baa683fa8faa195ce07"
+      },
+      "validation_selected_layers": 4
+    },
+    {
+      "default_reference_retained": true,
+      "learned_argmax_layers": 4,
+      "learned_probabilities": {
+        "2": 6.892938131386472e-08,
+        "3": 2.326609774172539e-06,
+        "4": 0.999997615814209
+      },
+      "promoted": false,
+      "seed": 191,
+      "selector_checkpoint": {
+        "path": "auto-research/results/text-depth-library-20261018-v1/execution/depth-selector-191-round3.pt",
+        "sha256": "a804a3a37f7dc18ab54b6e7ca48c521eca4ccc24c91a1950b0cdf5cbe6df8a3d"
+      },
+      "use_case": "text/shakespeare-byte",
+      "validation_selected_checkpoint": {
+        "path": "auto-research/results/text-depth-library-20261018-v1/execution/depth4-191-round2.pt",
+        "sha256": "da5101ce6242e57070f483e99132ef420c1afb3a7f0150abfb3b6aa5d67ef9a7"
+      },
+      "validation_selected_layers": 4
+    },
+    {
+      "default_reference_retained": true,
+      "learned_argmax_layers": 4,
+      "learned_probabilities": {
+        "2": 9.482778295932803e-08,
+        "3": 7.250583621498663e-06,
+        "4": 0.9999926090240479
+      },
+      "promoted": false,
+      "seed": 307,
+      "selector_checkpoint": {
+        "path": "auto-research/results/text-depth-library-20261018-v1/execution/depth-selector-307-round3.pt",
+        "sha256": "9d296ef6df547c7f579be1bcf0e6d51c9ecdba80a011aecbf522dd46be20f71b"
+      },
+      "use_case": "text/shakespeare-byte",
+      "validation_selected_checkpoint": {
+        "path": "auto-research/results/text-depth-library-20261018-v1/execution/depth4-307-round3.pt",
+        "sha256": "462c31e89260e789ae6f5768cf31c89347ed4cc1bef7ef943a8e3ce601f27d41"
+      },
+      "validation_selected_layers": 4
+    }
+  ],
+  "schema_version": 1,
+  "scope": "Explicit measured depth profiles. Lower CE is better; smaller layer count is not an automatic quality win."
+}

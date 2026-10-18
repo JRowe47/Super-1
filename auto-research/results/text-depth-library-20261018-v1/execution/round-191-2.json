@@ -1,0 +1,52 @@
+{
+  "argmax_depth": 4,
+  "batch_sha256": "785356a7c6a427ff6faeea324cd459573a86e0474837f5f66af7f9291e06a8fa",
+  "depth_probabilities": [
+    6.2357457863981836e-06,
+    0.00017886220302898437,
+    0.9998149275779724
+  ],
+  "round": 2,
+  "seed": 191,
+  "selection": [
+    {
+      "checkpoint": "auto-research/results/text-depth-library-20261018-v1/execution/depth2-191-round2.pt",
+      "depth": 2,
+      "round": 2,
+      "seed": 191,
+      "selection": {
+        "accuracy": 0.2757568359375,
+        "ce": 2.705152466893196,
+        "logits_sha256": "6bb4ef499367a408fadeacacf398bf7671f506b949e388626defe3b4d0195dfa",
+        "targets": 8192
+      },
+      "sha256": "10872026c9ba83dec171d5c3263da279d3be03263f2cc1525545234d721b312b"
+    },
+    {
+      "checkpoint": "auto-research/results/text-depth-library-20261018-v1/execution/depth3-191-round2.pt",
+      "depth": 3,
+      "round": 2,
+      "seed": 191,
+      "selection": {
+        "accuracy": 0.36376953125,
+        "ce": 2.2169998437166214,
+        "logits_sha256": "b47ebb195645d3a82879cb9cff29c29ba976601c050d9e4ac87424bee0b5047c",
+        "targets": 8192
+      },
+      "sha256": "ff05fede50011094900efe48efd5baaa9dff684b0248a1f184b483138bbd2c13"
+    },
+    {
+      "checkpoint": "auto-research/results/text-depth-library-20261018-v1/execution/depth4-191-round2.pt",
+      "depth": 4,
+      "round": 2,
+      "seed": 191,
+      "selection": {
+        "accuracy": 0.364013671875,
+        "ce": 2.207157850265503,
+        "logits_sha256": "f681fe44bd19f6df6c33662d4b9af465539fbe2acbc6abf1d988114b9d083dba",
+        "targets": 8192
+      },
+      "sha256": "da5101ce6242e57070f483e99132ef420c1afb3a7f0150abfb3b6aa5d67ef9a7"
+    }
+  ]
+}
