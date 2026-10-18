@@ -1,0 +1,21 @@
+{
+  "arm": "h16",
+  "backbone_fingerprint": "763985460dfeb1ca4244241c78dc4bc26f497d0bd21f729c8600ed22e4339f65",
+  "base_checkpoint": "curve-73-step600.pt",
+  "base_sha256": "be7f01495f0e634f46f12cdda3c8f159b851d66d90edecf089f52fd51feb969c",
+  "batch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "checkpoint": "h16-73-round0.pt",
+  "cpu_seconds": 0.12873100000000193,
+  "extra_targets_seen": 0,
+  "lr": 0.03,
+  "pool_parameters": 576,
+  "round": 0,
+  "seed": 73,
+  "selection": {
+    "ce": 2.0884965658187866,
+    "logits_sha256": "74c03ca5b73d20c18b3d2953263762e4bce51ab7a2779b062631f8eff23f5571",
+    "tail_ce": 2.0845762491226196,
+    "targets": 4096
+  },
+  "sha256": "7556bc9b57054f58afc56d472e8cd55f6ad4417ba3f6f9f63c831e6d34629652"
+}

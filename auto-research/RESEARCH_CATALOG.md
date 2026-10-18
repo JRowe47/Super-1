@@ -76,3 +76,7 @@ Word-energy-native has six completed trial candidates and lacks a terminal compl
 ## Retrieval versus missing data
 
 The earlier initial GitHub audit searched incomplete SSD project copies and missed dedicated repro-packages and the relocated iCloud Documents project. Those findings should not be interpreted as deletion. Large model/corpus files were intentionally omitted from lightweight code archives. Their absence from a ZIP is not evidence that they were lost.
+
+## Function-weight KV text descent, 2026-10-18
+
+[Report](reports/function-weight-kv-text-descent-20261018.md): two three-seed text pilots with learned KV pooling, preserved function weights and sampling, a fresh 8K passage diagnostic, hashed profile libraries, and a separate 100K memory-mechanics measurement. Passed the narrow quality gates; original short/8K total-memory gates failed. No SOTA or 100K quality claim.

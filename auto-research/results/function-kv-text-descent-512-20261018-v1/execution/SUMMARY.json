@@ -1,0 +1,499 @@
+{
+  "contrasts": {
+    "curve_minus_nano": {
+      "geometric_ppl_ratio": 0.8611171864301926,
+      "mean_ce_gap": -0.14952467878659567,
+      "paired_ce_gaps": [
+        -0.14860418438911438,
+        -0.1728895902633667,
+        -0.1270802617073059
+      ],
+      "paired_t95": [
+        -0.2064574694605013,
+        -0.09259188811269004
+      ],
+      "passes_quality_gate": true
+    },
+    "h16_minus_curve": {
+      "geometric_ppl_ratio": 1.0032432803509594,
+      "mean_ce_gap": 0.003238032261530558,
+      "paired_ce_gaps": [
+        0.00017395615577697754,
+        0.004175812005996704,
+        0.005364328622817993
+      ],
+      "paired_t95": [
+        -0.0035170707352969754,
+        0.009993135258358092
+      ],
+      "passes_quality_gate": true
+    },
+    "h16_minus_nano": {
+      "geometric_ppl_ratio": 0.8639100308808151,
+      "mean_ce_gap": -0.1462866465250651,
+      "paired_ce_gaps": [
+        -0.1484302282333374,
+        -0.16871377825737,
+        -0.12171593308448792
+      ],
+      "paired_t95": [
+        -0.2048430771398229,
+        -0.0877302159103073
+      ],
+      "passes_quality_gate": true
+    },
+    "h16_tail_minus_curve": {
+      "geometric_ppl_ratio": 1.0012520236994167,
+      "mean_ce_gap": 0.001251240571339925,
+      "paired_ce_gaps": [
+        -0.0018176734447479248,
+        0.0019850432872772217,
+        0.0035863518714904785
+      ],
+      "paired_t95": [
+        -0.005644075221087278,
+        0.008146556363767129
+      ],
+      "passes_quality_gate": true
+    },
+    "h16_tail_minus_nano": {
+      "geometric_ppl_ratio": 0.8585751814616025,
+      "mean_ce_gap": -0.15248102943102518,
+      "paired_ce_gaps": [
+        -0.15172195434570312,
+        -0.17864912748336792,
+        -0.12707200646400452
+      ],
+      "paired_t95": [
+        -0.21656417544490011,
+        -0.08839788341715024
+      ],
+      "passes_quality_gate": true
+    },
+    "h16_trained_minus_zero": {
+      "geometric_ppl_ratio": 0.9960726139165773,
+      "mean_ce_gap": -0.003935118516286214,
+      "paired_ce_gaps": [
+        -0.003218740224838257,
+        -0.005130589008331299,
+        -0.003456026315689087
+      ],
+      "paired_t95": [
+        -0.006523797943086312,
+        -0.001346439089486116
+      ],
+      "passes_quality_gate": true
+    },
+    "h32_minus_curve": {
+      "geometric_ppl_ratio": 0.998636173240849,
+      "mean_ce_gap": -0.0013647576173146565,
+      "paired_ce_gaps": [
+        -0.00351560115814209,
+        -0.0004202723503112793,
+        -0.00015839934349060059
+      ],
+      "paired_t95": [
+        -0.006003342090029373,
+        0.0032738268554000603
+      ],
+      "passes_quality_gate": true
+    },
+    "h32_minus_nano": {
+      "geometric_ppl_ratio": 0.8599427717685743,
+      "mean_ce_gap": -0.1508894364039103,
+      "paired_ce_gaps": [
+        -0.15211978554725647,
+        -0.17330986261367798,
+        -0.1272386610507965
+      ],
+      "paired_t95": [
+        -0.20817422419414533,
+        -0.09360464861367529
+      ],
+      "passes_quality_gate": true
+    },
+    "h32_tail_minus_curve": {
+      "geometric_ppl_ratio": 0.997598853238095,
+      "mean_ce_gap": -0.00240403413772583,
+      "paired_ce_gaps": [
+        -0.004479795694351196,
+        -0.0017628073692321777,
+        -0.0009694993495941162
+      ],
+      "paired_t95": [
+        -0.006977090756317351,
+        0.0021690224808656906
+      ],
+      "passes_quality_gate": true
+    },
+    "h32_tail_minus_nano": {
+      "geometric_ppl_ratio": 0.8554425820585565,
+      "mean_ce_gap": -0.15613630414009094,
+      "paired_ce_gaps": [
+        -0.1543840765953064,
+        -0.18239697813987732,
+        -0.1316278576850891
+      ],
+      "paired_t95": [
+        -0.2193076196101152,
+        -0.0929649886700667
+      ],
+      "passes_quality_gate": true
+    },
+    "h32_trained_minus_zero": {
+      "geometric_ppl_ratio": 0.9968898185234297,
+      "mean_ce_gap": -0.003115028142929077,
+      "paired_ce_gaps": [
+        -0.002532958984375,
+        -0.004139363765716553,
+        -0.0026727616786956787
+      ],
+      "paired_t95": [
+        -0.0053255391701392965,
+        -0.0009045171157188578
+      ],
+      "passes_quality_gate": true
+    }
+  },
+  "limitations": [
+    "Single-book byte pilot, not SOTA or nanoGPT speedrun replication.",
+    "512-byte quality only; larger context measurements are mechanics, not recall or language quality.",
+    "Identical base target exposure, not equal parameter count or training FLOPs; hierarchy receives extra supervised and distillation training.",
+    "Peak RSS includes interpreter/allocator/runtime. Cache-only and retained parameter+cache bytes are separately reported."
+  ],
+  "means": {
+    "curve": {
+      "ce": 2.1313113272190094,
+      "tail_ce": 2.1246791581312814
+    },
+    "h16": {
+      "ce": 2.13454935948054,
+      "tail_ce": 2.1259303987026215,
+      "zero_pool_ce": 2.138484477996826
+    },
+    "h32": {
+      "ce": 2.1299465696016946,
+      "tail_ce": 2.1222751239935556,
+      "zero_pool_ce": 2.1330615977446237
+    },
+    "nano": {
+      "ce": 2.280836006005605,
+      "tail_ce": 2.2784114281336465
+    }
+  },
+  "memory": [
+    {
+      "arm": "exact",
+      "decode_ms_median": 1.138333000000047,
+      "decode_tokens": 16,
+      "dtype": "float32",
+      "length": 512,
+      "loaded_peak_rss_bytes": 190971904,
+      "logical_cache_bytes": 811008,
+      "parameter_bytes": 275620,
+      "peak_rss_bytes": 196624384,
+      "prefill_seconds": 0.012768291999999959,
+      "scope": "Isolated process, actual retained KV plus total peak RSS. Above512 bytes is memory mechanics only; no long-context quality claim.",
+      "seed": 191
+    },
+    {
+      "arm": "exact",
+      "decode_ms_median": 1.8668545000000147,
+      "decode_tokens": 16,
+      "dtype": "float32",
+      "length": 8192,
+      "loaded_peak_rss_bytes": 190988288,
+      "logical_cache_bytes": 12607488,
+      "parameter_bytes": 275620,
+      "peak_rss_bytes": 353452032,
+      "prefill_seconds": 1.051065208,
+      "scope": "Isolated process, actual retained KV plus total peak RSS. Above512 bytes is memory mechanics only; no long-context quality claim.",
+      "seed": 191
+    },
+    {
+      "arm": "exact",
+      "decode_ms_median": 1.125500000000057,
+      "decode_tokens": 16,
+      "dtype": "float32",
+      "length": 512,
+      "loaded_peak_rss_bytes": 191774720,
+      "logical_cache_bytes": 811008,
+      "parameter_bytes": 275620,
+      "peak_rss_bytes": 196214784,
+      "prefill_seconds": 0.012544416999999974,
+      "scope": "Isolated process, actual retained KV plus total peak RSS. Above512 bytes is memory mechanics only; no long-context quality claim.",
+      "seed": 307
+    },
+    {
+      "arm": "exact",
+      "decode_ms_median": 1.9525414999999047,
+      "decode_tokens": 16,
+      "dtype": "float32",
+      "length": 8192,
+      "loaded_peak_rss_bytes": 189956096,
+      "logical_cache_bytes": 12607488,
+      "parameter_bytes": 275620,
+      "peak_rss_bytes": 361725952,
+      "prefill_seconds": 1.082911708,
+      "scope": "Isolated process, actual retained KV plus total peak RSS. Above512 bytes is memory mechanics only; no long-context quality claim.",
+      "seed": 307
+    },
+    {
+      "arm": "exact",
+      "decode_ms_median": 1.0564375000000625,
+      "decode_tokens": 16,
+      "dtype": "float32",
+      "length": 512,
+      "loaded_peak_rss_bytes": 191201280,
+      "logical_cache_bytes": 811008,
+      "parameter_bytes": 275620,
+      "peak_rss_bytes": 196083712,
+      "prefill_seconds": 0.011664542,
+      "scope": "Isolated process, actual retained KV plus total peak RSS. Above512 bytes is memory mechanics only; no long-context quality claim.",
+      "seed": 73
+    },
+    {
+      "arm": "exact",
+      "decode_ms_median": 1.8851869999999549,
+      "decode_tokens": 16,
+      "dtype": "float32",
+      "length": 8192,
+      "loaded_peak_rss_bytes": 190873600,
+      "logical_cache_bytes": 12607488,
+      "parameter_bytes": 275620,
+      "peak_rss_bytes": 356958208,
+      "prefill_seconds": 1.0264344159999998,
+      "scope": "Isolated process, actual retained KV plus total peak RSS. Above512 bytes is memory mechanics only; no long-context quality claim.",
+      "seed": 73
+    },
+    {
+      "arm": "h16",
+      "decode_ms_median": 1.1040419999999718,
+      "decode_tokens": 16,
+      "dtype": "float32",
+      "length": 512,
+      "loaded_peak_rss_bytes": 190627840,
+      "logical_cache_bytes": 24576,
+      "parameter_bytes": 277924,
+      "peak_rss_bytes": 194543616,
+      "prefill_seconds": 0.09484029199999999,
+      "scope": "Isolated process, actual retained KV plus total peak RSS. Above512 bytes is memory mechanics only; no long-context quality claim.",
+      "seed": 191
+    },
+    {
+      "arm": "h16",
+      "decode_ms_median": 1.010104500000164,
+      "decode_tokens": 16,
+      "dtype": "float32",
+      "length": 8192,
+      "loaded_peak_rss_bytes": 190005248,
+      "logical_cache_bytes": 24576,
+      "parameter_bytes": 277924,
+      "peak_rss_bytes": 194150400,
+      "prefill_seconds": 1.285888958,
+      "scope": "Isolated process, actual retained KV plus total peak RSS. Above512 bytes is memory mechanics only; no long-context quality claim.",
+      "seed": 191
+    },
+    {
+      "arm": "h16",
+      "decode_ms_median": 1.0192915000000191,
+      "decode_tokens": 16,
+      "dtype": "float32",
+      "length": 512,
+      "loaded_peak_rss_bytes": 190922752,
+      "logical_cache_bytes": 24576,
+      "parameter_bytes": 277924,
+      "peak_rss_bytes": 194904064,
+      "prefill_seconds": 0.08197941599999992,
+      "scope": "Isolated process, actual retained KV plus total peak RSS. Above512 bytes is memory mechanics only; no long-context quality claim.",
+      "seed": 307
+    },
+    {
+      "arm": "h16",
+      "decode_ms_median": 1.031167000000055,
+      "decode_tokens": 16,
+      "dtype": "float32",
+      "length": 8192,
+      "loaded_peak_rss_bytes": 192528384,
+      "logical_cache_bytes": 24576,
+      "parameter_bytes": 277924,
+      "peak_rss_bytes": 196313088,
+      "prefill_seconds": 1.2895369580000002,
+      "scope": "Isolated process, actual retained KV plus total peak RSS. Above512 bytes is memory mechanics only; no long-context quality claim.",
+      "seed": 307
+    },
+    {
+      "arm": "h16",
+      "decode_ms_median": 1.189042000000029,
+      "decode_tokens": 16,
+      "dtype": "float32",
+      "length": 512,
+      "loaded_peak_rss_bytes": 191791104,
+      "logical_cache_bytes": 24576,
+      "parameter_bytes": 277924,
+      "peak_rss_bytes": 195559424,
+      "prefill_seconds": 0.09784241599999999,
+      "scope": "Isolated process, actual retained KV plus total peak RSS. Above512 bytes is memory mechanics only; no long-context quality claim.",
+      "seed": 73
+    },
+    {
+      "arm": "h16",
+      "decode_ms_median": 0.9783749999999758,
+      "decode_tokens": 16,
+      "dtype": "float32",
+      "length": 8192,
+      "loaded_peak_rss_bytes": 191479808,
+      "logical_cache_bytes": 24576,
+      "parameter_bytes": 277924,
+      "peak_rss_bytes": 195870720,
+      "prefill_seconds": 1.3318466249999998,
+      "scope": "Isolated process, actual retained KV plus total peak RSS. Above512 bytes is memory mechanics only; no long-context quality claim.",
+      "seed": 73
+    },
+    {
+      "arm": "h32",
+      "decode_ms_median": 1.0705420000000077,
+      "decode_tokens": 16,
+      "dtype": "float32",
+      "length": 512,
+      "loaded_peak_rss_bytes": 191938560,
+      "logical_cache_bytes": 49152,
+      "parameter_bytes": 277924,
+      "peak_rss_bytes": 196018176,
+      "prefill_seconds": 0.087901,
+      "scope": "Isolated process, actual retained KV plus total peak RSS. Above512 bytes is memory mechanics only; no long-context quality claim.",
+      "seed": 191
+    },
+    {
+      "arm": "h32",
+      "decode_ms_median": 1.311458500000029,
+      "decode_tokens": 16,
+      "dtype": "float32",
+      "length": 8192,
+      "loaded_peak_rss_bytes": 190021632,
+      "logical_cache_bytes": 49152,
+      "parameter_bytes": 277924,
+      "peak_rss_bytes": 194347008,
+      "prefill_seconds": 1.4964721659999998,
+      "scope": "Isolated process, actual retained KV plus total peak RSS. Above512 bytes is memory mechanics only; no long-context quality claim.",
+      "seed": 191
+    },
+    {
+      "arm": "h32",
+      "decode_ms_median": 1.051124999999986,
+      "decode_tokens": 16,
+      "dtype": "float32",
+      "length": 512,
+      "loaded_peak_rss_bytes": 190955520,
+      "logical_cache_bytes": 49152,
+      "parameter_bytes": 277924,
+      "peak_rss_bytes": 194936832,
+      "prefill_seconds": 0.08911870799999999,
+      "scope": "Isolated process, actual retained KV plus total peak RSS. Above512 bytes is memory mechanics only; no long-context quality claim.",
+      "seed": 307
+    },
+    {
+      "arm": "h32",
+      "decode_ms_median": 1.0701040000000717,
+      "decode_tokens": 16,
+      "dtype": "float32",
+      "length": 8192,
+      "loaded_peak_rss_bytes": 191987712,
+      "logical_cache_bytes": 49152,
+      "parameter_bytes": 277924,
+      "peak_rss_bytes": 195837952,
+      "prefill_seconds": 1.399106916,
+      "scope": "Isolated process, actual retained KV plus total peak RSS. Above512 bytes is memory mechanics only; no long-context quality claim.",
+      "seed": 307
+    },
+    {
+      "arm": "h32",
+      "decode_ms_median": 1.2620419999999632,
+      "decode_tokens": 16,
+      "dtype": "float32",
+      "length": 512,
+      "loaded_peak_rss_bytes": 191086592,
+      "logical_cache_bytes": 49152,
+      "parameter_bytes": 277924,
+      "peak_rss_bytes": 195067904,
+      "prefill_seconds": 0.10140591700000001,
+      "scope": "Isolated process, actual retained KV plus total peak RSS. Above512 bytes is memory mechanics only; no long-context quality claim.",
+      "seed": 73
+    },
+    {
+      "arm": "h32",
+      "decode_ms_median": 1.0197079999999525,
+      "decode_tokens": 16,
+      "dtype": "float32",
+      "length": 8192,
+      "loaded_peak_rss_bytes": 189857792,
+      "logical_cache_bytes": 49152,
+      "parameter_bytes": 277924,
+      "peak_rss_bytes": 194199552,
+      "prefill_seconds": 1.3829545829999998,
+      "scope": "Isolated process, actual retained KV plus total peak RSS. Above512 bytes is memory mechanics only; no long-context quality claim.",
+      "seed": 73
+    }
+  ],
+  "promoted": false,
+  "quality_gate_pass": true,
+  "selected_capacity": "h16",
+  "selected_memory_ratios": [
+    {
+      "cache_reduction": 33.0,
+      "length": 512,
+      "peak_rss_reduction": 1.002680965147453,
+      "retained_weights_plus_cache_reduction": 3.5921586776859504,
+      "seed": 73
+    },
+    {
+      "cache_reduction": 513.0,
+      "length": 8192,
+      "peak_rss_reduction": 1.8224173985780008,
+      "retained_weights_plus_cache_reduction": 42.58878677685951,
+      "seed": 73
+    },
+    {
+      "cache_reduction": 33.0,
+      "length": 512,
+      "peak_rss_reduction": 1.0106956375273708,
+      "retained_weights_plus_cache_reduction": 3.5921586776859504,
+      "seed": 191
+    },
+    {
+      "cache_reduction": 513.0,
+      "length": 8192,
+      "peak_rss_reduction": 1.820506329113924,
+      "retained_weights_plus_cache_reduction": 42.58878677685951,
+      "seed": 191
+    },
+    {
+      "cache_reduction": 33.0,
+      "length": 512,
+      "peak_rss_reduction": 1.0067249495628783,
+      "retained_weights_plus_cache_reduction": 3.5921586776859504,
+      "seed": 307
+    },
+    {
+      "cache_reduction": 513.0,
+      "length": 8192,
+      "peak_rss_reduction": 1.842597229177099,
+      "retained_weights_plus_cache_reduction": 42.58878677685951,
+      "seed": 307
+    }
+  ],
+  "selection_feasible": [
+    "h16",
+    "h32"
+  ],
+  "total_memory_gate_pass": false,
+  "training": {
+    "confirmation_rows": 18,
+    "cpu_seconds": 324.161599,
+    "round_checkpoints": 48,
+    "status": "COMPLETED",
+    "wall_seconds": 327.47689654100003
+  },
+  "verified_round_checkpoints": 48,
+  "verified_source_hashes": 12
+}
