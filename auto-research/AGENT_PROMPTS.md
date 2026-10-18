@@ -55,3 +55,9 @@ The user clarified that “recursively” meant a benchmark/gradient-descent/re-
 A shared backbone can learn text while remaining at chance on structured tasks. Always check each workload's baseline competence before interpreting sampling gains. Nonzero sampler gradients and tiny CE changes do not establish retrieval or arithmetic capability. If the backbone has not learned a task, preserve that failure and address task learning in a separately scoped experiment instead of endlessly tuning routing or weakening the success criterion.
 
 Compare per-workload policies against a shared policy with matched per-workload examples and against token-independent positions. Report extra total controller storage, fixed active steps and every adaptation round. Learning-rate reductions and checkpoint selection must be fixed before confirmation. Never update the underlying model during a sampling-only claim; verify frozen weight fingerprints, not just parameter flags.
+
+## Evidence-backed parameter libraries
+
+A use-case library must preserve exact backbone, tokenizer, context and sampling-architecture compatibility. Store learned controllers and all rejected candidates, not hand-written task-to-layer heuristics or claimed universal optima. Choose on validation, freeze, then confirm on untouched bytes; do not rank incomparable evaluation regions. Continued tuning may improve the mean while regressing a seed: preserve the reference when the preregistered promotion gate fails. A library entry is not evidence of deployed speed or broad language ability.
+
+A causal-prefix exact-equality test across different tensor lengths failed at FP32 in the library canary. Preserve that failure; test future-token intervention at equal shapes for causality without changing a numerical threshold. Do not claim cross-length bitwise invariance from a same-shape intervention.

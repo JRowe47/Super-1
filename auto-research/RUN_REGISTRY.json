@@ -186,11 +186,17 @@
     },
     {
       "approval": "User asks to keep improving text and store a library of ideal parameters by use case; bounded local sampler-only follow-up, no cloud or perpetual execution.",
+      "decision": "REFERENCE_RETAINED_NO_PROMOTION",
+      "library": "sampling_library/index.json",
+      "metrics": "auto-research/results/text-sampling-library-20261018-v1/execution/RESULT.json",
       "protocol": "auto-research/results/text-sampling-library-20261018-v1/PROTOCOL.json",
       "protocol_sha256": "15675069296bc03051c7638aa13304f619aed549b292f1a62a2018258338c75f",
+      "report": "auto-research/reports/text-sampling-library-20261018-v1.md",
       "run_id": "text-sampling-library-20261018-v1",
       "source_manifest": "auto-research/results/text-sampling-library-20261018-v1/SOURCE_MANIFEST.json",
-      "status": "PREREGISTERED"
+      "status": "COMPLETED",
+      "terminal": "auto-research/results/text-sampling-library-20261018-v1/execution/TERMINAL.json",
+      "verification": "auto-research/results/text-sampling-library-20261018-v1/execution/VERIFICATION.json"
     }
   ],
   "schema_version": 1,

@@ -1,0 +1,869 @@
+{
+  "entries": [
+    {
+      "active": true,
+      "base_checkpoint": {
+        "path": "auto-research/results/usecase-sampling-descent-20261018-v1/execution/base-73.pt",
+        "sha256": "8d44401651fa5ae6a63d3d368c95834ff97a42d0c8901bd3d706dfd5a112e61d"
+      },
+      "base_fingerprint": "218970774ec08fac12dda6138a43684ac06cfe3dd2ec27d47c0aa8355bd7df47",
+      "checkpoint": {
+        "path": "auto-research/results/usecase-sampling-descent-20261018-v1/execution/shared_token-73-round3.pt",
+        "sha256": "194b48937f1d6acad06c80ea0a5013d7e08d1d366705da03ca31fa1be2c0f6de"
+      },
+      "context": 64,
+      "evidence": [
+        {
+          "path": "auto-research/results/text-sampling-library-20261018-v1/PROTOCOL.json",
+          "sha256": "15675069296bc03051c7638aa13304f619aed549b292f1a62a2018258338c75f"
+        },
+        {
+          "path": "auto-research/results/text-sampling-library-20261018-v1/SOURCE_MANIFEST.json",
+          "sha256": "faa499e443723f76c84add29cb5af68d3775710129b5d654127469550385ff84"
+        },
+        {
+          "path": "auto-research/results/text-sampling-library-20261018-v1/execution/FREEZE.json",
+          "sha256": "d5768dae9dfaa29f2721ae12d0423da5067f87fef6a1d2dded3df9dfc585a319"
+        },
+        {
+          "path": "auto-research/results/text-sampling-library-20261018-v1/execution/RESULT.json",
+          "sha256": "434f549498040c0554e7bf4a0ed7c35119ac3ef5c9535f7eebaeb4f12903d6b8"
+        },
+        {
+          "path": "auto-research/results/text-sampling-library-20261018-v1/execution/VERIFICATION.json",
+          "sha256": "29eecd01ff360e1fa5614839fa77abe66a5bc0fe5c707c513266fc70b3ebf43b"
+        }
+      ],
+      "execution_depth": 4,
+      "id": "text-sampling-library-20261018-v1/incumbent/73",
+      "limitations": "Single Shakespeare corpus; reference means retained research baseline, not universal optimum or established architecture improvement.",
+      "metrics": {
+        "confirmation": {
+          "accuracy": 0.3760986328125,
+          "ce": 2.18467915058136,
+          "logits_sha256": "aec46b651a66ef2c6ce130e656d6eb3592ec0b1d058031e1a0f82810a2cfa872",
+          "targets": 16384
+        },
+        "confirmation_byte_region": [
+          1037134,
+          1053774
+        ],
+        "positions": {
+          "arm": "incumbent",
+          "maximum": [
+            0.0,
+            0.5797761678695679,
+            0.8756648302078247,
+            1.0
+          ],
+          "mean": [
+            0.0,
+            0.3050403594970703,
+            0.6002298593521118,
+            1.0
+          ],
+          "minimum": [
+            0.0,
+            0.1354621797800064,
+            0.3290841579437256,
+            1.0
+          ],
+          "seed": 73,
+          "std": [
+            0.0,
+            0.07931417971849442,
+            0.09663303941488266,
+            0.0
+          ]
+        },
+        "selection": {
+          "accuracy": 0.3729248046875,
+          "ce": 2.1910913437604904,
+          "logits_sha256": "8e553e2ea70cdb2a691b4f904e263b0fc42d681226f303c276f4ab001d806b90",
+          "targets": 8192
+        },
+        "unit": "nats/byte"
+      },
+      "seed": 73,
+      "status": "research_reference",
+      "tokenizer": "utf8-bytes-v1",
+      "training": {
+        "backbone_frozen": true,
+        "initial_lr": null,
+        "run_id": "text-sampling-library-20261018-v1",
+        "selected_round": 0,
+        "updates_per_round": 250
+      },
+      "use_case": "text/shakespeare-byte"
+    },
+    {
+      "active": false,
+      "base_checkpoint": {
+        "path": "auto-research/results/usecase-sampling-descent-20261018-v1/execution/base-73.pt",
+        "sha256": "8d44401651fa5ae6a63d3d368c95834ff97a42d0c8901bd3d706dfd5a112e61d"
+      },
+      "base_fingerprint": "218970774ec08fac12dda6138a43684ac06cfe3dd2ec27d47c0aa8355bd7df47",
+      "checkpoint": {
+        "path": "auto-research/results/text-sampling-library-20261018-v1/execution/continued-73-round4.pt",
+        "sha256": "a7b55495786a65b0acdf47beb0371f2fa0e4a3be271f97c465d1d3cce25ec9a9"
+      },
+      "context": 64,
+      "evidence": [
+        {
+          "path": "auto-research/results/text-sampling-library-20261018-v1/PROTOCOL.json",
+          "sha256": "15675069296bc03051c7638aa13304f619aed549b292f1a62a2018258338c75f"
+        },
+        {
+          "path": "auto-research/results/text-sampling-library-20261018-v1/SOURCE_MANIFEST.json",
+          "sha256": "faa499e443723f76c84add29cb5af68d3775710129b5d654127469550385ff84"
+        },
+        {
+          "path": "auto-research/results/text-sampling-library-20261018-v1/execution/FREEZE.json",
+          "sha256": "d5768dae9dfaa29f2721ae12d0423da5067f87fef6a1d2dded3df9dfc585a319"
+        },
+        {
+          "path": "auto-research/results/text-sampling-library-20261018-v1/execution/RESULT.json",
+          "sha256": "434f549498040c0554e7bf4a0ed7c35119ac3ef5c9535f7eebaeb4f12903d6b8"
+        },
+        {
+          "path": "auto-research/results/text-sampling-library-20261018-v1/execution/VERIFICATION.json",
+          "sha256": "29eecd01ff360e1fa5614839fa77abe66a5bc0fe5c707c513266fc70b3ebf43b"
+        }
+      ],
+      "execution_depth": 4,
+      "id": "text-sampling-library-20261018-v1/continued/73",
+      "limitations": "Single Shakespeare corpus; reference means retained research baseline, not universal optimum or established architecture improvement.",
+      "metrics": {
+        "confirmation": {
+          "accuracy": 0.377685546875,
+          "ce": 2.1796710900962353,
+          "logits_sha256": "2defdb8023c75fecdbb0e0af804fe877378df89313943b111238fe9cfc237a9c",
+          "targets": 16384
+        },
+        "confirmation_byte_region": [
+          1037134,
+          1053774
+        ],
+        "positions": {
+          "arm": "continued",
+          "maximum": [
+            0.0,
+            0.7451000809669495,
+            0.9522632360458374,
+            1.0
+          ],
+          "mean": [
+            0.0,
+            0.3213452100753784,
+            0.5990869998931885,
+            1.0
+          ],
+          "minimum": [
+            0.0,
+            0.06632108241319656,
+            0.17362773418426514,
+            1.0
+          ],
+          "seed": 73,
+          "std": [
+            0.0,
+            0.09999537467956543,
+            0.12384582310914993,
+            0.0
+          ]
+        },
+        "selection": {
+          "accuracy": 0.373046875,
+          "ce": 2.186212658882141,
+          "logits_sha256": "dceebebb338baf3127e74cd709e499def667f4867f01cb02c72290b6afe12af8",
+          "targets": 8192
+        },
+        "unit": "nats/byte"
+      },
+      "seed": 73,
+      "status": "candidate",
+      "tokenizer": "utf8-bytes-v1",
+      "training": {
+        "backbone_frozen": true,
+        "initial_lr": 0.003,
+        "run_id": "text-sampling-library-20261018-v1",
+        "selected_round": 4,
+        "updates_per_round": 250
+      },
+      "use_case": "text/shakespeare-byte"
+    },
+    {
+      "active": false,
+      "base_checkpoint": {
+        "path": "auto-research/results/usecase-sampling-descent-20261018-v1/execution/base-73.pt",
+        "sha256": "8d44401651fa5ae6a63d3d368c95834ff97a42d0c8901bd3d706dfd5a112e61d"
+      },
+      "base_fingerprint": "218970774ec08fac12dda6138a43684ac06cfe3dd2ec27d47c0aa8355bd7df47",
+      "checkpoint": {
+        "path": "auto-research/results/text-sampling-library-20261018-v1/execution/small_step-73-round4.pt",
+        "sha256": "27eb87c5c5276841e77c86b48b63f6ba32aeacab6c51a5cd73d4f519b169d44f"
+      },
+      "context": 64,
+      "evidence": [
+        {
+          "path": "auto-research/results/text-sampling-library-20261018-v1/PROTOCOL.json",
+          "sha256": "15675069296bc03051c7638aa13304f619aed549b292f1a62a2018258338c75f"
+        },
+        {
+          "path": "auto-research/results/text-sampling-library-20261018-v1/SOURCE_MANIFEST.json",
+          "sha256": "faa499e443723f76c84add29cb5af68d3775710129b5d654127469550385ff84"
+        },
+        {
+          "path": "auto-research/results/text-sampling-library-20261018-v1/execution/FREEZE.json",
+          "sha256": "d5768dae9dfaa29f2721ae12d0423da5067f87fef6a1d2dded3df9dfc585a319"
+        },
+        {
+          "path": "auto-research/results/text-sampling-library-20261018-v1/execution/RESULT.json",
+          "sha256": "434f549498040c0554e7bf4a0ed7c35119ac3ef5c9535f7eebaeb4f12903d6b8"
+        },
+        {
+          "path": "auto-research/results/text-sampling-library-20261018-v1/execution/VERIFICATION.json",
+          "sha256": "29eecd01ff360e1fa5614839fa77abe66a5bc0fe5c707c513266fc70b3ebf43b"
+        }
+      ],
+      "execution_depth": 4,
+      "id": "text-sampling-library-20261018-v1/small_step/73",
+      "limitations": "Single Shakespeare corpus; reference means retained research baseline, not universal optimum or established architecture improvement.",
+      "metrics": {
+        "confirmation": {
+          "accuracy": 0.3765869140625,
+          "ce": 2.18318510055542,
+          "logits_sha256": "8f37cc59e7a95987902ee190edb5458416064e438c43c32202738734d7f43529",
+          "targets": 16384
+        },
+        "confirmation_byte_region": [
+          1037134,
+          1053774
+        ],
+        "positions": {
+          "arm": "small_step",
+          "maximum": [
+            0.0,
+            0.6052914261817932,
+            0.8934804201126099,
+            1.0
+          ],
+          "mean": [
+            0.0,
+            0.30927401781082153,
+            0.6040658950805664,
+            1.0
+          ],
+          "minimum": [
+            0.0,
+            0.12528084218502045,
+            0.30812394618988037,
+            1.0
+          ],
+          "seed": 73,
+          "std": [
+            0.0,
+            0.0828913152217865,
+            0.10181409120559692,
+            0.0
+          ]
+        },
+        "selection": {
+          "accuracy": 0.3726806640625,
+          "ce": 2.1898370683193207,
+          "logits_sha256": "a263df3d2521946f30f4c06bcf6dbee165d95f8eee7e773c073e754d01f081fe",
+          "targets": 8192
+        },
+        "unit": "nats/byte"
+      },
+      "seed": 73,
+      "status": "candidate",
+      "tokenizer": "utf8-bytes-v1",
+      "training": {
+        "backbone_frozen": true,
+        "initial_lr": 0.0003,
+        "run_id": "text-sampling-library-20261018-v1",
+        "selected_round": 4,
+        "updates_per_round": 250
+      },
+      "use_case": "text/shakespeare-byte"
+    },
+    {
+      "active": true,
+      "base_checkpoint": {
+        "path": "auto-research/results/usecase-sampling-descent-20261018-v1/execution/base-191.pt",
+        "sha256": "727742acacd9c42fd6b88a7fee0e9fff193ae8248523cf3c7a35f68f99372a6a"
+      },
+      "base_fingerprint": "c9908b6add68e165382d269110b9b65d97f087c460d1854c32f83e5ed0a5e7bf",
+      "checkpoint": {
+        "path": "auto-research/results/usecase-sampling-descent-20261018-v1/execution/shared_token-191-round3.pt",
+        "sha256": "ec176f61eca35963f4f6ead7d538997bb578cad50ffe43bc21d61afb9c666fae"
+      },
+      "context": 64,
+      "evidence": [
+        {
+          "path": "auto-research/results/text-sampling-library-20261018-v1/PROTOCOL.json",
+          "sha256": "15675069296bc03051c7638aa13304f619aed549b292f1a62a2018258338c75f"
+        },
+        {
+          "path": "auto-research/results/text-sampling-library-20261018-v1/SOURCE_MANIFEST.json",
+          "sha256": "faa499e443723f76c84add29cb5af68d3775710129b5d654127469550385ff84"
+        },
+        {
+          "path": "auto-research/results/text-sampling-library-20261018-v1/execution/FREEZE.json",
+          "sha256": "d5768dae9dfaa29f2721ae12d0423da5067f87fef6a1d2dded3df9dfc585a319"
+        },
+        {
+          "path": "auto-research/results/text-sampling-library-20261018-v1/execution/RESULT.json",
+          "sha256": "434f549498040c0554e7bf4a0ed7c35119ac3ef5c9535f7eebaeb4f12903d6b8"
+        },
+        {
+          "path": "auto-research/results/text-sampling-library-20261018-v1/execution/VERIFICATION.json",
+          "sha256": "29eecd01ff360e1fa5614839fa77abe66a5bc0fe5c707c513266fc70b3ebf43b"
+        }
+      ],
+      "execution_depth": 4,
+      "id": "text-sampling-library-20261018-v1/incumbent/191",
+      "limitations": "Single Shakespeare corpus; reference means retained research baseline, not universal optimum or established architecture improvement.",
+      "metrics": {
+        "confirmation": {
+          "accuracy": 0.37518310546875,
+          "ce": 2.1860485896468163,
+          "logits_sha256": "15c429172f860908590f14bb07eb5f9f44ab2ecb643f048613e25fe7b76916e1",
+          "targets": 16384
+        },
+        "confirmation_byte_region": [
+          1037134,
+          1053774
+        ],
+        "positions": {
+          "arm": "incumbent",
+          "maximum": [
+            0.0,
+            0.5623526573181152,
+            0.8643624782562256,
+            1.0
+          ],
+          "mean": [
+            0.0,
+            0.3436029553413391,
+            0.6783236265182495,
+            1.0
+          ],
+          "minimum": [
+            0.0,
+            0.178045853972435,
+            0.4407773017883301,
+            1.0
+          ],
+          "seed": 191,
+          "std": [
+            0.0,
+            0.06366954743862152,
+            0.06629953533411026,
+            0.0
+          ]
+        },
+        "selection": {
+          "accuracy": 0.362060546875,
+          "ce": 2.210637480020523,
+          "logits_sha256": "cf64787df3903ec05bb444cdb961d15b6f330ead6cf907eae814c25310243625",
+          "targets": 8192
+        },
+        "unit": "nats/byte"
+      },
+      "seed": 191,
+      "status": "research_reference",
+      "tokenizer": "utf8-bytes-v1",
+      "training": {
+        "backbone_frozen": true,
+        "initial_lr": null,
+        "run_id": "text-sampling-library-20261018-v1",
+        "selected_round": 0,
+        "updates_per_round": 250
+      },
+      "use_case": "text/shakespeare-byte"
+    },
+    {
+      "active": false,
+      "base_checkpoint": {
+        "path": "auto-research/results/usecase-sampling-descent-20261018-v1/execution/base-191.pt",
+        "sha256": "727742acacd9c42fd6b88a7fee0e9fff193ae8248523cf3c7a35f68f99372a6a"
+      },
+      "base_fingerprint": "c9908b6add68e165382d269110b9b65d97f087c460d1854c32f83e5ed0a5e7bf",
+      "checkpoint": {
+        "path": "auto-research/results/text-sampling-library-20261018-v1/execution/continued-191-round3.pt",
+        "sha256": "ad1367d52cff06403e2fdff19ebee7403aecc28a070220d0565490d5b353f59a"
+      },
+      "context": 64,
+      "evidence": [
+        {
+          "path": "auto-research/results/text-sampling-library-20261018-v1/PROTOCOL.json",
+          "sha256": "15675069296bc03051c7638aa13304f619aed549b292f1a62a2018258338c75f"
+        },
+        {
+          "path": "auto-research/results/text-sampling-library-20261018-v1/SOURCE_MANIFEST.json",
+          "sha256": "faa499e443723f76c84add29cb5af68d3775710129b5d654127469550385ff84"
+        },
+        {
+          "path": "auto-research/results/text-sampling-library-20261018-v1/execution/FREEZE.json",
+          "sha256": "d5768dae9dfaa29f2721ae12d0423da5067f87fef6a1d2dded3df9dfc585a319"
+        },
+        {
+          "path": "auto-research/results/text-sampling-library-20261018-v1/execution/RESULT.json",
+          "sha256": "434f549498040c0554e7bf4a0ed7c35119ac3ef5c9535f7eebaeb4f12903d6b8"
+        },
+        {
+          "path": "auto-research/results/text-sampling-library-20261018-v1/execution/VERIFICATION.json",
+          "sha256": "29eecd01ff360e1fa5614839fa77abe66a5bc0fe5c707c513266fc70b3ebf43b"
+        }
+      ],
+      "execution_depth": 4,
+      "id": "text-sampling-library-20261018-v1/continued/191",
+      "limitations": "Single Shakespeare corpus; reference means retained research baseline, not universal optimum or established architecture improvement.",
+      "metrics": {
+        "confirmation": {
+          "accuracy": 0.37371826171875,
+          "ce": 2.1861729584634304,
+          "logits_sha256": "0b3bf6d6cfb8daa979c3db514f45e6d7bc681109716d5b019ac23239694775fb",
+          "targets": 16384
+        },
+        "confirmation_byte_region": [
+          1037134,
+          1053774
+        ],
+        "positions": {
+          "arm": "continued",
+          "maximum": [
+            0.0,
+            0.5968977808952332,
+            0.8917344808578491,
+            1.0
+          ],
+          "mean": [
+            0.0,
+            0.34503552317619324,
+            0.6807329654693604,
+            1.0
+          ],
+          "minimum": [
+            0.0,
+            0.13543517887592316,
+            0.38643282651901245,
+            1.0
+          ],
+          "seed": 191,
+          "std": [
+            0.0,
+            0.0806237980723381,
+            0.08009030669927597,
+            0.0
+          ]
+        },
+        "selection": {
+          "accuracy": 0.3648681640625,
+          "ce": 2.2057346403598785,
+          "logits_sha256": "d8b079fdb541f18988c70d3896752e2bc97222770f8d0e9e3a687cb63ac9e7cb",
+          "targets": 8192
+        },
+        "unit": "nats/byte"
+      },
+      "seed": 191,
+      "status": "candidate",
+      "tokenizer": "utf8-bytes-v1",
+      "training": {
+        "backbone_frozen": true,
+        "initial_lr": 0.003,
+        "run_id": "text-sampling-library-20261018-v1",
+        "selected_round": 3,
+        "updates_per_round": 250
+      },
+      "use_case": "text/shakespeare-byte"
+    },
+    {
+      "active": false,
+      "base_checkpoint": {
+        "path": "auto-research/results/usecase-sampling-descent-20261018-v1/execution/base-191.pt",
+        "sha256": "727742acacd9c42fd6b88a7fee0e9fff193ae8248523cf3c7a35f68f99372a6a"
+      },
+      "base_fingerprint": "c9908b6add68e165382d269110b9b65d97f087c460d1854c32f83e5ed0a5e7bf",
+      "checkpoint": {
+        "path": "auto-research/results/text-sampling-library-20261018-v1/execution/small_step-191-round3.pt",
+        "sha256": "8e814817b94de23ad1d205266327657cba5e0c4e5752878c3bd78a129a78fa71"
+      },
+      "context": 64,
+      "evidence": [
+        {
+          "path": "auto-research/results/text-sampling-library-20261018-v1/PROTOCOL.json",
+          "sha256": "15675069296bc03051c7638aa13304f619aed549b292f1a62a2018258338c75f"
+        },
+        {
+          "path": "auto-research/results/text-sampling-library-20261018-v1/SOURCE_MANIFEST.json",
+          "sha256": "faa499e443723f76c84add29cb5af68d3775710129b5d654127469550385ff84"
+        },
+        {
+          "path": "auto-research/results/text-sampling-library-20261018-v1/execution/FREEZE.json",
+          "sha256": "d5768dae9dfaa29f2721ae12d0423da5067f87fef6a1d2dded3df9dfc585a319"
+        },
+        {
+          "path": "auto-research/results/text-sampling-library-20261018-v1/execution/RESULT.json",
+          "sha256": "434f549498040c0554e7bf4a0ed7c35119ac3ef5c9535f7eebaeb4f12903d6b8"
+        },
+        {
+          "path": "auto-research/results/text-sampling-library-20261018-v1/execution/VERIFICATION.json",
+          "sha256": "29eecd01ff360e1fa5614839fa77abe66a5bc0fe5c707c513266fc70b3ebf43b"
+        }
+      ],
+      "execution_depth": 4,
+      "id": "text-sampling-library-20261018-v1/small_step/191",
+      "limitations": "Single Shakespeare corpus; reference means retained research baseline, not universal optimum or established architecture improvement.",
+      "metrics": {
+        "confirmation": {
+          "accuracy": 0.3753662109375,
+          "ce": 2.186414387077093,
+          "logits_sha256": "c8fab3c1b6c369b000944e0789c33e1c370f48cff70e056b393cb6d9f8b4798b",
+          "targets": 16384
+        },
+        "confirmation_byte_region": [
+          1037134,
+          1053774
+        ],
+        "positions": {
+          "arm": "small_step",
+          "maximum": [
+            0.0,
+            0.5763415694236755,
+            0.8625703454017639,
+            1.0
+          ],
+          "mean": [
+            0.0,
+            0.34596094489097595,
+            0.6793715953826904,
+            1.0
+          ],
+          "minimum": [
+            0.0,
+            0.15990345180034637,
+            0.4243239462375641,
+            1.0
+          ],
+          "seed": 191,
+          "std": [
+            0.0,
+            0.07466015219688416,
+            0.0728214681148529,
+            0.0
+          ]
+        },
+        "selection": {
+          "accuracy": 0.3629150390625,
+          "ce": 2.2079788595438004,
+          "logits_sha256": "ec7cb6838d2892d26c6cff7faaf57e2112420fae86b90b5fa8d3d0f6eb0efb75",
+          "targets": 8192
+        },
+        "unit": "nats/byte"
+      },
+      "seed": 191,
+      "status": "candidate",
+      "tokenizer": "utf8-bytes-v1",
+      "training": {
+        "backbone_frozen": true,
+        "initial_lr": 0.0003,
+        "run_id": "text-sampling-library-20261018-v1",
+        "selected_round": 3,
+        "updates_per_round": 250
+      },
+      "use_case": "text/shakespeare-byte"
+    },
+    {
+      "active": true,
+      "base_checkpoint": {
+        "path": "auto-research/results/usecase-sampling-descent-20261018-v1/execution/base-307.pt",
+        "sha256": "c8f43164149c3610e1036ad9608b7966708c6f52e72302e814bd9bf0ae850350"
+      },
+      "base_fingerprint": "3d3f35945f75cecc4fa0072a4f4d1e8d2f837250e7e5b9fd3597bd9c4da195ea",
+      "checkpoint": {
+        "path": "auto-research/results/usecase-sampling-descent-20261018-v1/execution/shared_token-307-round3.pt",
+        "sha256": "ab64af56db7632713b815cef20314f7f93f477ecc9262fe20f8d0215fc4ae9c6"
+      },
+      "context": 64,
+      "evidence": [
+        {
+          "path": "auto-research/results/text-sampling-library-20261018-v1/PROTOCOL.json",
+          "sha256": "15675069296bc03051c7638aa13304f619aed549b292f1a62a2018258338c75f"
+        },
+        {
+          "path": "auto-research/results/text-sampling-library-20261018-v1/SOURCE_MANIFEST.json",
+          "sha256": "faa499e443723f76c84add29cb5af68d3775710129b5d654127469550385ff84"
+        },
+        {
+          "path": "auto-research/results/text-sampling-library-20261018-v1/execution/FREEZE.json",
+          "sha256": "d5768dae9dfaa29f2721ae12d0423da5067f87fef6a1d2dded3df9dfc585a319"
+        },
+        {
+          "path": "auto-research/results/text-sampling-library-20261018-v1/execution/RESULT.json",
+          "sha256": "434f549498040c0554e7bf4a0ed7c35119ac3ef5c9535f7eebaeb4f12903d6b8"
+        },
+        {
+          "path": "auto-research/results/text-sampling-library-20261018-v1/execution/VERIFICATION.json",
+          "sha256": "29eecd01ff360e1fa5614839fa77abe66a5bc0fe5c707c513266fc70b3ebf43b"
+        }
+      ],
+      "execution_depth": 4,
+      "id": "text-sampling-library-20261018-v1/incumbent/307",
+      "limitations": "Single Shakespeare corpus; reference means retained research baseline, not universal optimum or established architecture improvement.",
+      "metrics": {
+        "confirmation": {
+          "accuracy": 0.3740234375,
+          "ce": 2.202432867139578,
+          "logits_sha256": "03ab57fa0551bb518781521a115ec48d3f95e71bd9008657b801daee9deaebc4",
+          "targets": 16384
+        },
+        "confirmation_byte_region": [
+          1037134,
+          1053774
+        ],
+        "positions": {
+          "arm": "incumbent",
+          "maximum": [
+            0.0,
+            0.6728608012199402,
+            0.9443341493606567,
+            1.0
+          ],
+          "mean": [
+            0.0,
+            0.3616260886192322,
+            0.7084291577339172,
+            1.0
+          ],
+          "minimum": [
+            0.0,
+            0.18887169659137726,
+            0.46393051743507385,
+            1.0
+          ],
+          "seed": 307,
+          "std": [
+            0.0,
+            0.09201227128505707,
+            0.08384741842746735,
+            0.0
+          ]
+        },
+        "selection": {
+          "accuracy": 0.359130859375,
+          "ce": 2.2283809930086136,
+          "logits_sha256": "0c620d0859b85ee44a4760c223ff50ea159bd4771311f86f917d76984531df7b",
+          "targets": 8192
+        },
+        "unit": "nats/byte"
+      },
+      "seed": 307,
+      "status": "research_reference",
+      "tokenizer": "utf8-bytes-v1",
+      "training": {
+        "backbone_frozen": true,
+        "initial_lr": null,
+        "run_id": "text-sampling-library-20261018-v1",
+        "selected_round": 0,
+        "updates_per_round": 250
+      },
+      "use_case": "text/shakespeare-byte"
+    },
+    {
+      "active": false,
+      "base_checkpoint": {
+        "path": "auto-research/results/usecase-sampling-descent-20261018-v1/execution/base-307.pt",
+        "sha256": "c8f43164149c3610e1036ad9608b7966708c6f52e72302e814bd9bf0ae850350"
+      },
+      "base_fingerprint": "3d3f35945f75cecc4fa0072a4f4d1e8d2f837250e7e5b9fd3597bd9c4da195ea",
+      "checkpoint": {
+        "path": "auto-research/results/text-sampling-library-20261018-v1/execution/continued-307-round3.pt",
+        "sha256": "3dd719bf733b990d274dc7bfd1b9ec08adf7f8e8e72c253058a8ea5feb9e32c2"
+      },
+      "context": 64,
+      "evidence": [
+        {
+          "path": "auto-research/results/text-sampling-library-20261018-v1/PROTOCOL.json",
+          "sha256": "15675069296bc03051c7638aa13304f619aed549b292f1a62a2018258338c75f"
+        },
+        {
+          "path": "auto-research/results/text-sampling-library-20261018-v1/SOURCE_MANIFEST.json",
+          "sha256": "faa499e443723f76c84add29cb5af68d3775710129b5d654127469550385ff84"
+        },
+        {
+          "path": "auto-research/results/text-sampling-library-20261018-v1/execution/FREEZE.json",
+          "sha256": "d5768dae9dfaa29f2721ae12d0423da5067f87fef6a1d2dded3df9dfc585a319"
+        },
+        {
+          "path": "auto-research/results/text-sampling-library-20261018-v1/execution/RESULT.json",
+          "sha256": "434f549498040c0554e7bf4a0ed7c35119ac3ef5c9535f7eebaeb4f12903d6b8"
+        },
+        {
+          "path": "auto-research/results/text-sampling-library-20261018-v1/execution/VERIFICATION.json",
+          "sha256": "29eecd01ff360e1fa5614839fa77abe66a5bc0fe5c707c513266fc70b3ebf43b"
+        }
+      ],
+      "execution_depth": 4,
+      "id": "text-sampling-library-20261018-v1/continued/307",
+      "limitations": "Single Shakespeare corpus; reference means retained research baseline, not universal optimum or established architecture improvement.",
+      "metrics": {
+        "confirmation": {
+          "accuracy": 0.37518310546875,
+          "ce": 2.2004308253526688,
+          "logits_sha256": "5c61767dda606413e9af4539d339c2be5e86a3fc5a937ad09c501237f249c98e",
+          "targets": 16384
+        },
+        "confirmation_byte_region": [
+          1037134,
+          1053774
+        ],
+        "positions": {
+          "arm": "continued",
+          "maximum": [
+            0.0,
+            0.716720700263977,
+            0.957445502281189,
+            1.0
+          ],
+          "mean": [
+            0.0,
+            0.3568528890609741,
+            0.702163815498352,
+            1.0
+          ],
+          "minimum": [
+            0.0,
+            0.14240004122257233,
+            0.34938961267471313,
+            1.0
+          ],
+          "seed": 307,
+          "std": [
+            0.0,
+            0.09814493358135223,
+            0.09356262534856796,
+            0.0
+          ]
+        },
+        "selection": {
+          "accuracy": 0.3609619140625,
+          "ce": 2.2262039184570312,
+          "logits_sha256": "6e50ebb1d168ac4563846d05b76495483c2e2b7f1f1fe9032dae34d30b2ca9c0",
+          "targets": 8192
+        },
+        "unit": "nats/byte"
+      },
+      "seed": 307,
+      "status": "candidate",
+      "tokenizer": "utf8-bytes-v1",
+      "training": {
+        "backbone_frozen": true,
+        "initial_lr": 0.003,
+        "run_id": "text-sampling-library-20261018-v1",
+        "selected_round": 3,
+        "updates_per_round": 250
+      },
+      "use_case": "text/shakespeare-byte"
+    },
+    {
+      "active": false,
+      "base_checkpoint": {
+        "path": "auto-research/results/usecase-sampling-descent-20261018-v1/execution/base-307.pt",
+        "sha256": "c8f43164149c3610e1036ad9608b7966708c6f52e72302e814bd9bf0ae850350"
+      },
+      "base_fingerprint": "3d3f35945f75cecc4fa0072a4f4d1e8d2f837250e7e5b9fd3597bd9c4da195ea",
+      "checkpoint": {
+        "path": "auto-research/results/text-sampling-library-20261018-v1/execution/small_step-307-round3.pt",
+        "sha256": "639c301b66dc558920a6719e8453cc7f86c9b93bb9e617d9f16ec6bedf433f06"
+      },
+      "context": 64,
+      "evidence": [
+        {
+          "path": "auto-research/results/text-sampling-library-20261018-v1/PROTOCOL.json",
+          "sha256": "15675069296bc03051c7638aa13304f619aed549b292f1a62a2018258338c75f"
+        },
+        {
+          "path": "auto-research/results/text-sampling-library-20261018-v1/SOURCE_MANIFEST.json",
+          "sha256": "faa499e443723f76c84add29cb5af68d3775710129b5d654127469550385ff84"
+        },
+        {
+          "path": "auto-research/results/text-sampling-library-20261018-v1/execution/FREEZE.json",
+          "sha256": "d5768dae9dfaa29f2721ae12d0423da5067f87fef6a1d2dded3df9dfc585a319"
+        },
+        {
+          "path": "auto-research/results/text-sampling-library-20261018-v1/execution/RESULT.json",
+          "sha256": "434f549498040c0554e7bf4a0ed7c35119ac3ef5c9535f7eebaeb4f12903d6b8"
+        },
+        {
+          "path": "auto-research/results/text-sampling-library-20261018-v1/execution/VERIFICATION.json",
+          "sha256": "29eecd01ff360e1fa5614839fa77abe66a5bc0fe5c707c513266fc70b3ebf43b"
+        }
+      ],
+      "execution_depth": 4,
+      "id": "text-sampling-library-20261018-v1/small_step/307",
+      "limitations": "Single Shakespeare corpus; reference means retained research baseline, not universal optimum or established architecture improvement.",
+      "metrics": {
+        "confirmation": {
+          "accuracy": 0.37469482421875,
+          "ce": 2.201727483421564,
+          "logits_sha256": "89b201cf3584e6ba8e983278fff3c39100c1c6876a8b44327d9e6d51da807236",
+          "targets": 16384
+        },
+        "confirmation_byte_region": [
+          1037134,
+          1053774
+        ],
+        "positions": {
+          "arm": "small_step",
+          "maximum": [
+            0.0,
+            0.680840253829956,
+            0.9437927603721619,
+            1.0
+          ],
+          "mean": [
+            0.0,
+            0.3621513843536377,
+            0.7100588083267212,
+            1.0
+          ],
+          "minimum": [
+            0.0,
+            0.19214247167110443,
+            0.46442997455596924,
+            1.0
+          ],
+          "seed": 307,
+          "std": [
+            0.0,
+            0.0934402197599411,
+            0.08338667452335358,
+            0.0
+          ]
+        },
+        "selection": {
+          "accuracy": 0.3594970703125,
+          "ce": 2.2282614707946777,
+          "logits_sha256": "a703bd58169e9f812515948f94a2fe24709844828ec74661aeb6d428ea0435a8",
+          "targets": 8192
+        },
+        "unit": "nats/byte"
+      },
+      "seed": 307,
+      "status": "candidate",
+      "tokenizer": "utf8-bytes-v1",
+      "training": {
+        "backbone_frozen": true,
+        "initial_lr": 0.0003,
+        "run_id": "text-sampling-library-20261018-v1",
+        "selected_round": 3,
+        "updates_per_round": 250
+      },
+      "use_case": "text/shakespeare-byte"
+    }
+  ],
+  "schema_version": 1
+}
