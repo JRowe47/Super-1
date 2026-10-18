@@ -1,0 +1,28 @@
+{
+  "run_id": "slow-feedback-20261018-v1",
+  "registered_at_utc": "2026-10-18T06:22:02.971341+00:00",
+  "status": "FROZEN_BEFORE_EXPERIMENT_VERIFICATION_PILOT_MAIN",
+  "repository": "JRowe47/Super-1",
+  "branch": "research/curve-inception-20261017-v1",
+  "parent_commit": "a30771363ba42c1fabc66a1c64fffa01d67f1012",
+  "runtime_note": "RUNTIME.json is an import-only setup receipt with no experiment data/model updates; its CPU is charged.",
+  "publication_gate": "All registered files and registration read back byte-equal from immutable commit and branch updated before experiment verification/pilot/main.",
+  "sha256": {
+    "BASELINE_RULE_MAPPING.md": "2299c157eaf29c24ca1ce258b15280bce6104e60a5592086228c3c0a9bb860b5",
+    "BASELINE_SOURCE_PROVENANCE.json": "192bf320be675c63013a09a295ccbfaa6380550264706578983af7f09eec80d0",
+    "PROTOCOL.json": "dc30899a06125b20216eaf4dabbb9a2ca367b0d9c7eeb2454732fd431c5c2674",
+    "README.md": "15c60233537cb3d66905dd3c8336ed60c0db72fe371549244a58f6444d464ce9",
+    "RULE_MAPPING.md": "a399ef29d360ec3791fcb9488899e1cfe8924aa8ad92139a23d67335bdadb75c",
+    "RUNTIME.json": "56c57794ca586e23921c16d0649c4619275863f0815392dadfca62fa58deab1f",
+    "SOURCE_PROVENANCE.json": "a3008ab88d313e545e3ebe8d9384ada68fe20b1b8243d4ffb3d17f20a1ac27d0",
+    "analyze.py": "fc18265871562ca0b84f979f6dbc88319d37b52fa5cd959168e348989279c0e5",
+    "baseline_core.py": "a26735782ca129b38786f960646f0f541848da6f8de2bbd6c02ccedc67715437",
+    "baseline_verify.py": "94d0c236cc4cad90b8a2680885e87497623ea8ee635c09c7e26cc18ff00ff3a1",
+    "core.py": "cd09fed9a34fdf0f36302529db45bf758f83528b42fb70cbb5128d699c110cd0",
+    "experiment.py": "ae4ba6f747aed103be934d24bcc91c97d02be0fcfe484f00da0a4318c5edc59e",
+    "feedback_core.py": "13471f8a2a9d2bf1d319e50e9af47c7a45f7c549b9fa1f9a4be7bcd99c7a3780",
+    "feedback_verify.py": "414de8f6b5fddecda59fcf18178658495c15e4979a073a293b0d97b9d63b7f62",
+    "launch.py": "9a5d919e6010c6d228b175ee09671becc6a2de97fa03e988a995da90989b59fa",
+    "verify.py": "313b4fc191edc43d83aae50bbcc005cc5095c5df6e974f94f2e2ca7358847d3b"
+  }
+}

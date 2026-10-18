@@ -227,6 +227,21 @@
       "preservation": "Exact source/protocol before execution; compact results in Git;4 individual NPZ files remotely hash-verified.",
       "artifact_manifest": "auto-research/results/refresh-replay-20261018-v1/ARTIFACT_MANIFEST.json",
       "source_commit": "4faa9eb28162de359366e77a7ff1e980dc8826fe"
+    },
+    {
+      "run_id": "slow-feedback-20261018-v1",
+      "status": "REGISTERED_PENDING_EXECUTION",
+      "approval": "User: Ok, go ahead and continue, following completed causal-refresh results and proposed feedback-plasticity test. Standing bounded CPU900s, max3 one-thread workers, own JRowe47/Super-1 branch/draft PR3, research scratch/project folder and compact artifacts.",
+      "protocol": "auto-research/results/slow-feedback-20261018-v1/PROTOCOL.json",
+      "protocol_sha256": "dc30899a06125b20216eaf4dabbb9a2ca367b0d9c7eeb2454732fd431c5c2674",
+      "registration": "auto-research/results/slow-feedback-20261018-v1/REGISTRATION.json",
+      "metrics": "auto-research/results/slow-feedback-20261018-v1/SUMMARY.json",
+      "terminal": "auto-research/results/slow-feedback-20261018-v1/TERMINAL.json",
+      "report": "auto-research/reports/slow-feedback-20261018-v1.md",
+      "decision": "Pending preregistered fixed-FIFO feedback plasticity experiment.",
+      "parent_run_ids": [
+        "refresh-replay-20261018-v1"
+      ]
     }
   ],
   "schema_version": 1,

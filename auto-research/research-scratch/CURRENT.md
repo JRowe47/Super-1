@@ -1,5 +1,13 @@
 # Current research handoff
 
+Active authorized run: **slow-feedback-20261018-v1**, preregistered and pending execution. Keep FIFO512/16 fixed; four arms are backprop/frozen/normal adaptive/slow adaptive. Slow uses0.1 of the complete feedback SGD drive including decay after unchanged warmup. Fresh main seeds1001811..3, pilot99907. Same joint CE/retention gate and900 aggregate CPU-second envelope; max3 one-thread workers. Source publication/readback must precede checks and optimization.
+
+[Protocol](../results/slow-feedback-20261018-v1/PROTOCOL.json) and [registration](../results/slow-feedback-20261018-v1/REGISTRATION.json). No result exists yet. No rate tuning or follow-on experiment in this run.
+
+## Prior completed handoff
+
+# Current research handoff
+
 Latest completed run: **refresh-replay-20261018-v1**. **No promotion: retention gate failed.** Nothing is running.
 
 [Report](../reports/refresh-replay-20261018-v1.md) · [Summary](../results/refresh-replay-20261018-v1/SUMMARY.json) · [Protocol](../results/refresh-replay-20261018-v1/PROTOCOL.json) · [Terminal](../results/refresh-replay-20261018-v1/TERMINAL.json) · [Checkpoints](../results/refresh-replay-20261018-v1/ARTIFACT_MANIFEST.json).

@@ -1,0 +1,23 @@
+{
+  "run_id": "slow-feedback-20261018-v1",
+  "parent_run": "refresh-replay-20261018-v1",
+  "parent_commit": "a30771363ba42c1fabc66a1c64fffa01d67f1012",
+  "parent_registration_verified_before_copy": true,
+  "verified_parent_file_count": 18,
+  "byte_preserved_files": {
+    "baseline_core.py": "a26735782ca129b38786f960646f0f541848da6f8de2bbd6c02ccedc67715437",
+    "baseline_verify.py": "94d0c236cc4cad90b8a2680885e87497623ea8ee635c09c7e26cc18ff00ff3a1",
+    "feedback_core.py": "13471f8a2a9d2bf1d319e50e9af47c7a45f7c549b9fa1f9a4be7bcd99c7a3780",
+    "feedback_verify.py": "414de8f6b5fddecda59fcf18178658495c15e4979a073a293b0d97b9d63b7f62",
+    "launch.py": "9a5d919e6010c6d228b175ee09671becc6a2de97fa03e988a995da90989b59fa",
+    "BASELINE_RULE_MAPPING.md": "2299c157eaf29c24ca1ce258b15280bce6104e60a5592086228c3c0a9bb860b5",
+    "BASELINE_SOURCE_PROVENANCE.json": "192bf320be675c63013a09a295ccbfaa6380550264706578983af7f09eec80d0"
+  },
+  "derived_files": {
+    "core.py": "Adds fixed0.1 feedback SGD multiplier and unchanged FIFO schedule wrapper; delegates original controls to byte-preserved feedback_core.",
+    "verify.py": "Adds independent dense slow update/endpoint/forward-isolation/FIFO checks to preserved baseline checks.",
+    "experiment.py": "Predecessor runner restricted to FIFO with slow arm, full slow feedback serialization and diagnostics.",
+    "analyze.py": "Frozen four-arm comparison and unchanged adaptation/retention gates."
+  },
+  "historical_gap": "Older bounded-feedback source remains lost; this run derives only from fully preserved predecessor source. No recovery or byte-identical reproduction of missing source is claimed."
+}
