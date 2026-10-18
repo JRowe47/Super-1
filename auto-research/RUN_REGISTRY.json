@@ -183,6 +183,21 @@
       "preservation": "Exact source committed before execution; full compact results in Git,4 individual NPZ files remotely hash-verified.",
       "artifact_manifest": "auto-research/results/magnitude-feedback-20261018-v1/ARTIFACT_MANIFEST.json",
       "source_commit": "644d69ed8e797e3e06de0af416fa561a8bd6f148"
+    },
+    {
+      "run_id": "replay-retention-20261018-v1",
+      "status": "REGISTERED_BEFORE_EXECUTION",
+      "approval": "Latest user: Alright, go ahead with the next. Refers to fixed-budget replay-retention stage documented in prior reply and repo CURRENT. Standing permission: use own JRowe47/Super-1 research branch/draft PR3 and research scratch, keep artifacts small.",
+      "protocol": "auto-research/results/replay-retention-20261018-v1/PROTOCOL.json",
+      "protocol_sha256": "7449bfbfa874107ac3f8d64fe2e2dd8f82236882058b3bd018a1686af8972ee3",
+      "registration": "auto-research/results/replay-retention-20261018-v1/REGISTRATION.json",
+      "metrics": "auto-research/results/replay-retention-20261018-v1/SUMMARY.json",
+      "terminal": "auto-research/results/replay-retention-20261018-v1/TERMINAL.json",
+      "report": "auto-research/reports/replay-retention-20261018-v1.md",
+      "decision": "Pending fixed-storage replay intervention; same adaptation/retention gates.",
+      "parent_run_ids": [
+        "magnitude-feedback-20261018-v1"
+      ]
     }
   ],
   "schema_version": 1,

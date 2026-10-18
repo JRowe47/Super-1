@@ -1,0 +1,28 @@
+{
+  "run_id": "replay-retention-20261018-v1",
+  "registered_at_utc": "2026-10-18T05:43:15.653063+00:00",
+  "status": "FROZEN_BEFORE_EXPERIMENT_VERIFICATION_PILOT_MAIN",
+  "repository": "JRowe47/Super-1",
+  "branch": "research/curve-inception-20261017-v1",
+  "parent_commit": "725164fa4973b6b4b2b5cd0f525d2f8729e63ebe",
+  "runtime_note": "RUNTIME.json is an import-only setup receipt, no experiment data/model updates. Its CPU is charged.",
+  "publication_gate": "All registered files and registration read back byte-equal from immutable commit and branch updated before numerical verification/pilot/main.",
+  "sha256": {
+    "BASELINE_RULE_MAPPING.md": "2299c157eaf29c24ca1ce258b15280bce6104e60a5592086228c3c0a9bb860b5",
+    "BASELINE_SOURCE_PROVENANCE.json": "192bf320be675c63013a09a295ccbfaa6380550264706578983af7f09eec80d0",
+    "PROTOCOL.json": "7449bfbfa874107ac3f8d64fe2e2dd8f82236882058b3bd018a1686af8972ee3",
+    "README.md": "5c5ccf3ca6636d3c77a04440c7f9edf36659f317560998e844cae98c3a46cd64",
+    "RULE_MAPPING.md": "afc16b280f9249d037ebc648c0cd4a59dbdeb6fd966aaa113c592ded9da7e88b",
+    "RUNTIME.json": "d187ea1c74fb67569d821c7717e19919b70848ce32eafb912e5ae04c570812f1",
+    "SOURCE_PROVENANCE.json": "28abfd163348de73735d9ef14db1e0169126430dc54da19c47a5aba9a215c438",
+    "analyze.py": "40a3f38eee4fb213dbfc9eaecfa7a156b26d067ba630e795136cac10318c1368",
+    "baseline_core.py": "a26735782ca129b38786f960646f0f541848da6f8de2bbd6c02ccedc67715437",
+    "baseline_verify.py": "94d0c236cc4cad90b8a2680885e87497623ea8ee635c09c7e26cc18ff00ff3a1",
+    "core.py": "7b8495fecf8d695707b91de445bbfa03deed988cf569b15d8f2f223c2f220d46",
+    "experiment.py": "0947b4bc0fa8a70e7f8baa76de51ff395647597a0ff2550dd8f3e802a4c8d94f",
+    "feedback_core.py": "13471f8a2a9d2bf1d319e50e9af47c7a45f7c549b9fa1f9a4be7bcd99c7a3780",
+    "feedback_verify.py": "414de8f6b5fddecda59fcf18178658495c15e4979a073a293b0d97b9d63b7f62",
+    "launch.py": "9a5d919e6010c6d228b175ee09671becc6a2de97fa03e988a995da90989b59fa",
+    "verify.py": "533fb4ceb6064e98700a31b1ee3ecaece28ba6ac9a2e32803d20067b2df6e6ef"
+  }
+}
