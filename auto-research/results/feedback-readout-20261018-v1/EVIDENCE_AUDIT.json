@@ -1,0 +1,52 @@
+{
+  "run_id": "feedback-readout-20261018-v1",
+  "status": "PASS",
+  "at_utc": "2026-10-18T15:35:45.701425+00:00",
+  "registered_source_files_unchanged": 21,
+  "all_launcher_receipts_complete": true,
+  "all_workers_exited": true,
+  "matching_live_experiment_processes": [],
+  "full_online_replays_bitwise_exact": 20,
+  "all_inactive_feedback_matrices_bitwise_unchanged": true,
+  "all_four_remote_checkpoint_hashes_verified": true,
+  "active_readout_overlay_schema_verified": true,
+  "npz_arrays_per_file": 28,
+  "checkpoint_bytes": 469853,
+  "aggregate_experiment_cpu_seconds": 296.10303099999993,
+  "aggregate_cpu_budget_seconds": 900,
+  "temporary_cleanup": [
+    {
+      "relative_path": "verify-checkpoints-stage9",
+      "file_bytes_removed": 469853,
+      "reason": "Reproducible temporary runtime or redundant readback after all workers exited and durable byte-exact checkpoint preservation."
+    },
+    {
+      "relative_path": "research-runtime",
+      "file_bytes_removed": 965051069,
+      "reason": "Reproducible temporary runtime or redundant readback after all workers exited and durable byte-exact checkpoint preservation."
+    }
+  ],
+  "completed_progress_snapshot_cleanup": [
+    {
+      "relative_path": "pilot/102937/PROGRESS.json",
+      "bytes": 34670,
+      "sha256": "db3f4eac9e6405e3c050d4563c2d168d4083cc0cab5d4e389bb94553146675d1",
+      "reason": "Completed progress snapshot exactly duplicates retained RESULT.json."
+    },
+    {
+      "relative_path": "main/1301841/PROGRESS.json",
+      "bytes": 126568,
+      "sha256": "e3a14e15067edac093a36deda9d446fd9e81fbc9fa1f7f464d99922bc5f3e901",
+      "reason": "Completed progress snapshot exactly duplicates retained RESULT.json."
+    },
+    {
+      "relative_path": "main/1301842/PROGRESS.json",
+      "bytes": 126369,
+      "sha256": "ff9606a394d2bd838322764a96ea3a514e0b321f10e92d5d7716353377faf735",
+      "reason": "Completed progress snapshot exactly duplicates retained RESULT.json."
+    }
+  ],
+  "source_before_execution_commit": "38d685eab9df1306168fd9b068c61456dcf7b29e",
+  "verification_pilot_commit": "71470554ea17ac257bba8739ad01cd43174d1f9d",
+  "interpretation": "Numerical and preservation gates pass. Scientific decision remains the unchanged primary joint effect/retention rule in SUMMARY.json."
+}
