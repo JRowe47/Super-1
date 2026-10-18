@@ -1,0 +1,278 @@
+{
+  "authorization": {
+    "cuda_preoptimizer_gates": false,
+    "gpu_evaluation": false,
+    "gpu_training": false,
+    "inert_remote_staging": false
+  },
+  "bindings": {
+    "configs": {
+      "config/bottleneck_hfw_1k_100m.json": {
+        "arm": "bottleneck_hfw_1k_100m",
+        "sha256": "f0640b60349940ff69c6ae2f62785954edd07d68984e90132dd428af0ddf83c1",
+        "student_parameter_budget": 99874320
+      },
+      "config/bottleneck_hfw_runtime_1k_diagnostic.json": {
+        "arm": "bottleneck_hfw_runtime_1k_diagnostic",
+        "sha256": "641c8689f6344dc1df199b2b8d9dcafc798605e32cca9c51484a033c9d8dc4e9",
+        "student_parameter_budget": 99845200
+      },
+      "config/nanogpt_100m.json": {
+        "arm": "nanogpt_100m",
+        "sha256": "e7a84e5a569e1e02443b0aaa15bafdcc7347a5ae0e11cf4e91aa5ab4bc6fa52a",
+        "student_parameter_budget": 100428720
+      },
+      "config/nanogpt_20m.json": {
+        "arm": "nanogpt_20m",
+        "sha256": "77153901c3c60306cb1accb10e5028943bd069b6691dc3025c08eba06864ff91",
+        "student_parameter_budget": 20694656
+      },
+      "config/native_hfw_100m.json": {
+        "arm": "native_hfw_100m_parameter_matched",
+        "sha256": "256ba696c3dd08f3fd40156d9fc9e7f560f9afdff08c956d5d2f4dbe8d04e78a",
+        "student_parameter_budget": 99881096
+      },
+      "config/native_hfw_1k_20m.json": {
+        "arm": "native_hfw_1k_20m",
+        "sha256": "036d0d6f05a1099b813577697fdb123b061f2eae13617820afd60da7e1c6a0bc",
+        "student_parameter_budget": 20627840
+      },
+      "config/native_hfw_same_core_560_r39.json": {
+        "arm": "native_hfw_same_core_560_r39",
+        "sha256": "48aa3dbb1a177441c96324572b5abf58c9079f101e72ed9de5d745bfe47e4b83",
+        "student_parameter_budget": 99587600
+      }
+    },
+    "operator_guide": {
+      "path": "OPERATOR_GUIDE.md",
+      "sha256": "99558aede6c2708491f83474849f73fda72d20d3f8a8acf32135de88333c5561"
+    },
+    "preflight_guide": {
+      "path": "preflight/README.md",
+      "sha256": "2952bf8be96f31d26a52be136a9435fae97f2b37636b7fadc79388f0abb63173"
+    },
+    "protocol": {
+      "path": "protocol.v1.json",
+      "sha256": "7a013d9640241577844da13ffb85883cce6b7fab5d50b6e4de924a09fbd62663"
+    },
+    "readme": {
+      "path": "README.md",
+      "sha256": "d1bb0f5b9e3fa191757edcb13a712aa6b373b570ab7fdbcde1c2bcc2f320b2d0"
+    },
+    "source_manifest": {
+      "path": "source_manifest.v1.json",
+      "sha256": "5ed20cd06e7c0cc688c2b02aab8621b62d6e0001a80ecf5f48b80871eff0e3ee"
+    }
+  },
+  "claim_limits": {
+    "context_specific_cross_entropy_and_top1_must_also_be_reported": true,
+    "diagnostic_pairs": [
+      "same_core_compression_ablation",
+      "parameter_matched_recurrent_systems_diagnostic",
+      "runtime_state_width_diagnostic"
+    ],
+    "efficiency_fields": [
+      "parameters",
+      "analytic_macs_per_token",
+      "measured_training_throughput",
+      "measured_peak_reserved_cuda_bytes",
+      "nominal_bf16_tensor_state_bytes",
+      "actual_fp32_runtime_tensor_state_bytes",
+      "logical_control_metadata_bytes",
+      "theoretical_nanogpt_kv_bytes"
+    ],
+    "fixed_batches_per_context": 16,
+    "fixed_evaluation_contexts": [
+      512
+    ],
+    "fixed_evaluation_contexts_1024_2048": "unavailable_for_faithful_nanogpt_block_size_512_pair",
+    "fixed_evaluation_seed": 33001,
+    "lower_cross_entropy_is_better": true,
+    "practical_qwen_reference_is_not_a_matched_causal_comparator": true,
+    "primary_pairs": [
+      "clean_20m_native_one_kib_vs_nanogpt",
+      "primary_100m_one_kib_vs_nanogpt"
+    ],
+    "primary_quality_metric": "fixed_heldout_cross_entropy_at_context_512",
+    "scaling_claim_authorized": false,
+    "screen_winner_label": "lower_one_seed_point_estimate_only",
+    "statistical_significance_claim_authorized": false,
+    "synchronized_train_cross_entropy_is_secondary": true,
+    "synchronized_train_cross_entropy_step": 3041
+  },
+  "creation_policy": "new_only_append_only",
+  "dataset": {
+    "bytes_rehashed_remotely": false,
+    "content_sha256": {
+      "train.bin": "834c82d2ea76e2f17aa43d15862f5ef444322c37d9b29d07fe803bb21ac163e4",
+      "val.bin": "8517985c4979dbc95c83137ee534e30e789e2275e4ba1ee1fd31e1f0d566e4d3"
+    },
+    "path": "data/qwen3-06b-representation",
+    "token_dtype": "uint32"
+  },
+  "gate_revision_predecessor": {
+    "machine_specific_root_omitted": true,
+    "namespace": "hierarchical_state_1k_100m_20260814_v5r2r1_continuation_nanogpt",
+    "preserved_sibling_and_packaged_evidence_authenticated": true,
+    "protocol_sha256": "171a78e38dc1445c25867835c6434ddfcd267e56a021c414e5f0db0e031cbe6c",
+    "release_manifest_sha256": "4b09d7e4ec9c3288e3e18f86a008acb092b807fb6fc8ac071e42441c44600bd3",
+    "source_manifest_sha256": "e7562684680bb7977beddba69ad8cb6582892c597087c40af9117866b46ceebd"
+  },
+  "local_verification": {
+    "architecture_tests": {
+      "combined_output_sha256": "140d2052fe10fcc47d427e68dabf1e823090faf78c6f6e29d11aaa9feb230913",
+      "command": "python3 -B -W error tests/test_one_kib_architectures.py",
+      "exit_code": 0,
+      "last_nonempty_line": "PASS 34/34",
+      "warnings_as_errors": true
+    },
+    "checkpoint_gate_tests": {
+      "combined_output_sha256": "6ac520faab8bbb7ae711aa7b0a8963aa5dd504db98bc4d90f0148bbc5c1de30d",
+      "command": "python3 -B -W error preflight/tests/test_checkpoint_gate.py",
+      "exit_code": 0,
+      "last_nonempty_line": "OK",
+      "warnings_as_errors": true
+    },
+    "continuation_checkpoint_tests": {
+      "combined_output_sha256": "372ee57a30b8a8b17bb056a0814266786a922da7dcf4139f4f9a2457745d6424",
+      "command": "python3 -B -W error preflight/tests/test_continuation_checkpoint.py",
+      "exit_code": 0,
+      "last_nonempty_line": "OK",
+      "warnings_as_errors": true
+    },
+    "continuation_gate_tests": {
+      "combined_output_sha256": "bae893262299c008504077264bbb5f2805158d70b96bf71bcc2aeca432eb3a80",
+      "command": "python3 -B -W error preflight/tests/test_continuation_gate.py",
+      "exit_code": 0,
+      "last_nonempty_line": "OK",
+      "warnings_as_errors": true
+    },
+    "gpu_executed": false,
+    "json_parse": {
+      "paths": [
+        "config/bottleneck_hfw_1k_100m.json",
+        "config/bottleneck_hfw_runtime_1k_diagnostic.json",
+        "config/nanogpt_100m.json",
+        "config/nanogpt_20m.json",
+        "config/native_hfw_100m.json",
+        "config/native_hfw_1k_20m.json",
+        "config/native_hfw_same_core_560_r39.json",
+        "protocol.v1.json"
+      ],
+      "status": "PASS"
+    },
+    "optimizer_constructed": false,
+    "optimizer_steps": 0,
+    "preoptimizer_gate_tests": {
+      "combined_output_sha256": "db88d3842185e91106b0e5b8a2bf890f1c986270a7ddae6272bbc2a9a30e40b1",
+      "command": "python3 -B -W error preflight/tests/test_preoptimizer_gate.py",
+      "exit_code": 0,
+      "last_nonempty_line": "number of parameters: 0.01M",
+      "warnings_as_errors": true
+    },
+    "python_compile": {
+      "method": "compile_exact_source_bytes_without_bytecode_output",
+      "python_file_count": 21,
+      "status": "PASS"
+    }
+  },
+  "namespace": "hierarchical_state_1k_100m_20260814_v5r2r2_continuation_nanogpt",
+  "predecessor": {
+    "architecture_regression_predecessor": {
+      "namespace": "coherent_state_sweep_20260813_v9r1",
+      "release_manifest_sha256": "3438bdbaeed6f6a474ecc7f0fd3d33a8d91cdd67d8dde4ff51fe7a392b410a62",
+      "source_manifest_sha256": "df407a85557b4eb9640ca2d0344e992cd2069d913f14bebc228d584a071c0c99"
+    },
+    "namespace": "hierarchical_state_1k_100m_20260814_v3_nanogpt",
+    "protocol": {
+      "path": "protocol.v1.json",
+      "sha256": "6670c2fdbe90daa011376339ed5fe9411bd95235e0d9268e75417d4903225e35"
+    },
+    "release_manifest": {
+      "path": "release_manifest.v1.json",
+      "sha256": "6909266f9950a9c1da0d5a92fa048d29c84699bc39f6a42bb8f92712b9da323c"
+    },
+    "root_staging_copies_exact": true,
+    "source_manifest": {
+      "path": "source_manifest.v1.json",
+      "sha256": "8375818ce0e0f88ef5cea8af4b531f6d387db2578482d2532ada4e5cc9f1da7e"
+    }
+  },
+  "preservation": {
+    "excluded_files_preserved_and_hashed": {
+      "common.py": "eed2cad9f3313b5c889bf72bc72aa78254466ff1e1b5548d363a26b42f7757dd",
+      "distribution_distillation.py": "cf4d2429aaf41b11eef421ee2d60793bcdb5004cd9a6155c51ec1738d890fbb8",
+      "predecessor_evidence/v5r1_protocol.v1.json": "9e38e86db9f840997769b6e6599e7bb2f5c65e50923229049ed0f79d2f6b17ab",
+      "predecessor_evidence/v5r1_release_manifest.v1.json": "b70168ca59753d79cdf33801c5638f175bb183e1379611ef4d5f870bc9b87b22",
+      "predecessor_evidence/v5r1_source_manifest.v1.json": "3d7452265a135c742323302db859084f2d63d450d9193cfb0337009a7aecae0b",
+      "predecessor_evidence/v5r2r1_protocol.v1.json": "171a78e38dc1445c25867835c6434ddfcd267e56a021c414e5f0db0e031cbe6c",
+      "predecessor_evidence/v5r2r1_release_manifest.v1.json": "4b09d7e4ec9c3288e3e18f86a008acb092b807fb6fc8ac071e42441c44600bd3",
+      "predecessor_evidence/v5r2r1_source_manifest.v1.json": "e7562684680bb7977beddba69ad8cb6582892c597087c40af9117866b46ceebd",
+      "predictive_models.py": "834901644e457ebd34ae070e8167547f9d33b59979df7c0ccd924d704862b4ef",
+      "protocol.draft.json": "67fc517016f8daeca1f71f905d70ecb51d8c66c05c860f9d5aacb9d921460595"
+    },
+    "pycache_absent": true,
+    "root_v3_staging_copies_verified": true,
+    "v3_predecessor_manifests_and_protocol_verified": true,
+    "v5r2r1_gate_revision_predecessor_verified": true
+  },
+  "required_prelaunch_gates": {
+    "all_codec_groups_live_before_and_after_rank_mean": true,
+    "all_learned_gradients_present_and_finite": true,
+    "all_rank_gate_training_and_evaluation_import_attestations_required": true,
+    "all_rank_protocol_bound_recurrent_state_gradient_proof": true,
+    "causality_and_recurrent_chunk_resume": true,
+    "checkpoint_tensor_finiteness_and_fixed_evaluation_receipt": true,
+    "continuation_child_outside_frozen_source_and_immutable_parent": true,
+    "continuation_compatibility_gate_optimizer_constructed": true,
+    "continuation_compatibility_gate_optimizer_state_loaded": true,
+    "continuation_compatibility_gate_optimizer_steps": 0,
+    "continuation_entrypoints_use_absolute_frozen_launcher_paths": true,
+    "create_only_review_stop_checkpoint_publication_receipt": true,
+    "create_only_screen_complete_marker_permanently_forbids_training_resume": true,
+    "exact_source_config_protocol_data_and_teacher_bindings": true,
+    "existing_checkpoint_training_resume_forbidden": true,
+    "first_child_global_step_1251_receipts_required": true,
+    "first_continuation_step_independently_revalidates_full_recurrent_proof_and_exactly_binds_stable_identity": true,
+    "five_uint64_control_metadata_fields_validated_and_reported_separately": true,
+    "four_rank_cuda": true,
+    "fresh_child_continuation_ddp4_zero_step_gate": true,
+    "fresh_child_continuation_requires_exact_parent_lineage": true,
+    "fresh_create_only_empty_read_only_out_of_tree_pycache_prefix_receipt": true,
+    "full_production_batch_context_and_exact_objective_forward_backward": true,
+    "full_source_manifest_rehashed_before_any_protected_import": true,
+    "gate_revision_predecessor_sibling_and_evidence_bytes_authenticated": true,
+    "independent_local_review": true,
+    "isolated_pycache_prefix_unchanged_before_and_after_execution": true,
+    "launcher_child_parent_and_arm_match_target_argv_and_protocol": true,
+    "maximum_codec_condition_number": 1000.0,
+    "minimum_codec_singular_value": 1e-06,
+    "missing_isolated_cache_probes_required": true,
+    "nanogpt_adapter_adds_zero_parameters": true,
+    "nanogpt_adapter_bitwise_upstream_forward_and_gradient_equivalence": true,
+    "nanogpt_commit_and_vendored_file_bytes_exact": true,
+    "nanogpt_prefix_causality_and_finiteness": true,
+    "optimizer_constructed": false,
+    "optimizer_steps": 0,
+    "peak_reserved_cuda_bytes_per_rank_strictly_below": 80530636800,
+    "protected_imports_require_source_file_loader_and_exact_spec_origin": true,
+    "pycache_prefix_and_evidence_outside_source_parent_and_child": true,
+    "review_stop_step_bound_in_checkpoint_identity": 3052,
+    "same_core_compression_changes_only_four_declared_codec_parameters": true,
+    "sequential_arms_only": true,
+    "source_tree_and_readable_isolated_prefix_pyc_opens_forbidden": true,
+    "strict_existing_screen_complete_marker_revalidation": true,
+    "teacher_revision_and_weight_bytes_rehashed_before_fresh_resume_and_eval": true
+  },
+  "schema": "hierarchical_state_1k_100m_continuation_release_manifest_v1",
+  "status": "LOCAL_FROZEN_PASS_PENDING_INDEPENDENT_REVIEW_AND_FOUR_RANK_CUDA_PREFLIGHT",
+  "teacher_artifact": {
+    "bytes_rehashed_remotely": false,
+    "model_id": "Qwen/Qwen3-1.7B-Base",
+    "revision": "ea980cb0a6c2ae4b936e82123acc929f1cec04c1",
+    "weights_filename": "model.safetensors",
+    "weights_sha256": "6df85b39330e5a425ee36253d0f894e4387e4f0a15b9c53cb467d668e6b3a841"
+  },
+  "training_authorized": false,
+  "version": 1
+}

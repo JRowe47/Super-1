@@ -1,0 +1,16 @@
+{
+  "archive_sha256": "43054d20413b264055ac57f66f78d3974c6dc0ca72c69343877e4a959e874339",
+  "canonical_weight_manifest_sha256": "fb1b77f23305995ed5546354274df60f59e2f5d8f91f8273095cf644387286d6",
+  "exact_group_manifest_sha256": "73cf1c040eb912bd5ce16867e6cdfc318869656ef0b0dfd1e420e5f58277cc87",
+  "launch_authorized": false,
+  "parent_accessed": false,
+  "parent_checkpoint_sha256": "0c69fbf81526282d7d68ac258a98867d7de0f0e88e69e5f9f0543fdf1c535fba",
+  "release_manifest_sha256": "5284e92d8d845f85e1d13e68828652bafe2f48eb63792224e5172156f65a5101",
+  "remote_accessed": false,
+  "schema": "hfw_w560_local_release_validation_receipt_v1",
+  "source_manifest_sha256": "6bcd8a81fd2f5e5d5ea414cdf6803cbf14131ecd0f21c17d75fa6738e0dc6052",
+  "stage_authorized": false,
+  "status": "PASS_LOCAL_RELEASE_CREATE_ONLY",
+  "tests_failed": 0,
+  "tests_passed": 18
+}

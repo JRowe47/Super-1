@@ -1,0 +1,34 @@
+{
+  "authority_side_api": [
+    "create_authority_generated_eval_commitment(...) -> AuthorityGeneratedCommitment",
+    "seal_reveal_authorize_four_branch_final_eval(...) -> authorization record"
+  ],
+  "files": {
+    "sealed_evaluation.py": "5a8b5d4bb10a4a02ca1c5263af7ceab7db70ead6ceed7fb47ba9188cbfbd662c",
+    "sealed_evaluation_v2.py": "90d38bdfda4ed9f3bfd2e0fa4e2565c6d3bf2354a2a808d8ddba67efc595e050"
+  },
+  "inherited_v1_api": [
+    "create_calibration_manifest(...) -> calibration manifest SHA-256",
+    "validate_proposal_chain(...) -> canonical accepted/rejected chain audit",
+    "read_public_reveal(...) -> revealed preimage only after terminal seal"
+  ],
+  "integration_contract": {
+    "branch_event_decisions": [
+      "accepted",
+      "rejected"
+    ],
+    "final_evaluation_calls_authorized": 1,
+    "required_common_parent": true,
+    "required_unique_branch_finals": 4,
+    "search_receives_authority_capability": false,
+    "search_receives_evaluation_offsets_before_terminal": false,
+    "search_receives_private_entropy": false
+  },
+  "placement": "place both files in the same import directory",
+  "schema": "sealed_evaluation_v2_vendor_manifest_v1",
+  "search_side_api": [
+    "AuthorityGeneratedCommitment.search_capability.public_payload()",
+    "append_branch_event(capability, branch_event=..., allowed_groups=...)"
+  ],
+  "status": "PASS_LOCAL_VENDOR_CANDIDATE_NOT_PRODUCTION_AUTHORIZED"
+}

@@ -1,0 +1,871 @@
+{
+  "authorization": "User explicitly requested: find it in our research and get it in the repo.",
+  "excluded_historical_test_scratch_files": [
+    "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/tests/accepted-unheaded-ilsg_jk6/ledger/contract.json",
+    "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/tests/accepted-unheaded-ilsg_jk6/ledger/decisions/2950931b2c2956f9209e60fab595cd892571ffb8ebba855f189eab9cc13fa98d.decision.json",
+    "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/tests/accepted-unheaded-ilsg_jk6/ledger/heads/00000007-470797646584ec05ba9661abb4ac11d3898505a50f1610efb7a01087c885d79a.head.json",
+    "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/tests/accepted-unheaded-ilsg_jk6/ledger/jobs/000000000000-dd34a9d3983c50e6b981be359611d717074c61d8ccd3b7238dd60086ce1b8749.job.json",
+    "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/tests/accepted-unheaded-ilsg_jk6/ledger/proposal_imports/e69a24a81962acb5a724fe56743677cdc3b8dde2d494e51fab028869ec8f1314.local-proposal.json",
+    "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/tests/allocator-current-head-vmuakwcm/ledger/contract.json",
+    "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/tests/allocator-current-head-vmuakwcm/ledger/decisions/c933e1e820922be76588e309a58693a28b392463160e56eb5ddfbf70e14d4cd4.decision.json",
+    "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/tests/allocator-current-head-vmuakwcm/ledger/heads/00000007-470797646584ec05ba9661abb4ac11d3898505a50f1610efb7a01087c885d79a.head.json",
+    "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/tests/allocator-current-head-vmuakwcm/ledger/heads/00000008-776d59b0a85a5c56ea023833792e5b88c8a1d17c0512d37b07daf70b15fa2f9c.head.json",
+    "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/tests/allocator-current-head-vmuakwcm/ledger/jobs/000000000000-32277c1de8b00b8f5dff9e0dff84dc3f0984f36d26b65702691e67135a1358c2.job.json",
+    "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/tests/no-orphan-jobs-gsk58q7q/ledger/contract.json",
+    "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/tests/no-orphan-jobs-gsk58q7q/ledger/decisions/78445bc5bb91edc388b4576dbe4aa89ec9abb0eb21e47c57e04122fd7dafecf9.decision.json",
+    "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/tests/no-orphan-jobs-gsk58q7q/ledger/heads/00000007-470797646584ec05ba9661abb4ac11d3898505a50f1610efb7a01087c885d79a.head.json",
+    "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/tests/no-orphan-jobs-gsk58q7q/ledger/jobs/000000000000-dd34a9d3983c50e6b981be359611d717074c61d8ccd3b7238dd60086ce1b8749.job.json",
+    "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/tests/no-orphan-jobs-gsk58q7q/ledger/jobs/000000000001-1f790b3e5fb63a1b693005107d93b217ab2c487f406ca67fe51347270ce24964.job.json",
+    "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/tests/no-orphan-jobs-gsk58q7q/ledger/proposal_imports/6dc5cfcc42c695b83d1f6b4b0e8fbd03564249fd38f86fc60f24e7e8bdf7fcd8.local-proposal.json",
+    "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/tests/proposal-roots-93k9jx75/ledger/contract.json",
+    "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/tests/proposal-roots-93k9jx75/ledger/heads/00000007-470797646584ec05ba9661abb4ac11d3898505a50f1610efb7a01087c885d79a.head.json",
+    "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/tests/proposal-roots-93k9jx75/ledger/proposal_imports/8030a111c0c97c2d50af676604435e04eff25becd6872def61131278963ede08.local-proposal.json",
+    "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/tests/proposal-roots-93k9jx75/ledger/proposal_imports/dd90e03f7af2dfb3f525b006b5716380209e8ba5b545ed8ae7475340e237e919.local-proposal.json",
+    "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/tests/resume-verify-before-successor-vwo1fydk/ledger/contract.json",
+    "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/tests/resume-verify-before-successor-vwo1fydk/ledger/decisions/78445bc5bb91edc388b4576dbe4aa89ec9abb0eb21e47c57e04122fd7dafecf9.decision.json",
+    "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/tests/resume-verify-before-successor-vwo1fydk/ledger/heads/00000007-470797646584ec05ba9661abb4ac11d3898505a50f1610efb7a01087c885d79a.head.json",
+    "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/tests/resume-verify-before-successor-vwo1fydk/ledger/jobs/000000000000-dd34a9d3983c50e6b981be359611d717074c61d8ccd3b7238dd60086ce1b8749.job.json",
+    "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/tests/resume-verify-before-successor-vwo1fydk/ledger/jobs/000000000001-1f790b3e5fb63a1b693005107d93b217ab2c487f406ca67fe51347270ce24964.job.json",
+    "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/tests/resume-verify-before-successor-vwo1fydk/ledger/proposal_imports/6dc5cfcc42c695b83d1f6b4b0e8fbd03564249fd38f86fc60f24e7e8bdf7fcd8.local-proposal.json",
+    "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/tests/resume-verify-before-successor-vwo1fydk/run/attempts/job-000000000000-attempt-0001/CUMULATIVE_CYCLE_COMPLETE.json",
+    "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/tests/resume-verify-before-successor-vwo1fydk/run/call-1787376897263851000.receipt.json",
+    "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/tests/resume-verify-before-successor-vwo1fydk/run/contract.json",
+    "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/tests/stale-reject-97lpb8oe/ledger/contract.json",
+    "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/tests/stale-reject-97lpb8oe/ledger/decisions/0bbd5fe4a810fd689c158c37eafd31fbbc32217aa3748499019aa1e65db794ee.decision.json",
+    "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/tests/stale-reject-97lpb8oe/ledger/heads/00000007-470797646584ec05ba9661abb4ac11d3898505a50f1610efb7a01087c885d79a.head.json",
+    "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/tests/stale-reject-97lpb8oe/ledger/proposal_imports/655ef29579e0f88fe8dabb519f41c587344d6c70b67d4dca352fac2dc731ee35.local-proposal.json"
+  ],
+  "files": [
+    {
+      "bytes": 7465,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/README.md",
+      "sha256": "79d140f1a14a458a3aa19aba012e10835fdf9c454cc1dcde2304b7bf3ed91f00",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/README.md"
+    },
+    {
+      "bytes": 79,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/__init__.py",
+      "sha256": "16d9c3eda4183e1a91596e0892baf845b78dc140c20facb5fdcc35c3a0c66b23",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/__init__.py"
+    },
+    {
+      "bytes": 6072,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/artifacts.py",
+      "sha256": "98b63f3b9d2286e2f71a5748793dd41d506f32565d54d26baf51161d7b0db6c0",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/artifacts.py"
+    },
+    {
+      "bytes": 24542,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/bindings/canonical_sealed_evaluation.py",
+      "sha256": "5a8b5d4bb10a4a02ca1c5263af7ceab7db70ead6ceed7fb47ba9188cbfbd662c",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/bindings/canonical_sealed_evaluation.py"
+    },
+    {
+      "bytes": 22595,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/bindings/canonical_sealed_evaluation_v2.py",
+      "sha256": "90d38bdfda4ed9f3bfd2e0fa4e2565c6d3bf2354a2a808d8ddba67efc595e050",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/bindings/canonical_sealed_evaluation_v2.py"
+    },
+    {
+      "bytes": 2448,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/bindings/hfw_step3052_binding_contract.v2.json",
+      "sha256": "be3e1bec6eb91e2de1952a955d5b0df0d019abda3823a12d6ca71d562e573ceb",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/bindings/hfw_step3052_binding_contract.v2.json"
+    },
+    {
+      "bytes": 35504,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/bindings/hfw_step3052_w560_weight_address.v2.json",
+      "sha256": "fb1b77f23305995ed5546354274df60f59e2f5d8f91f8273095cf644387286d6",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/bindings/hfw_step3052_w560_weight_address.v2.json"
+    },
+    {
+      "bytes": 2305,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/bindings/local_hfw_binding_validation.v2.json",
+      "sha256": "f922e8206d125dc1d3bf661a33f15e848d69c8e2e3b009308cda3d46191c508d",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/bindings/local_hfw_binding_validation.v2.json"
+    },
+    {
+      "bytes": 2474,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/bindings/sealed_evaluation_v2_integration_validation.v1.json",
+      "sha256": "dc3bc5eb939b29647c6be10c0d6cf38190e02865c2ad1b87dace5a21189b3b5a",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/bindings/sealed_evaluation_v2_integration_validation.v1.json"
+    },
+    {
+      "bytes": 1420,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/bindings/sealed_evaluation_v2_vendor_manifest.v1.json",
+      "sha256": "dcf9f130f673edd8006831e593c912af037e10f125c5af4ce886b7cecdd58d1b",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/bindings/sealed_evaluation_v2_vendor_manifest.v1.json"
+    },
+    {
+      "bytes": 2787,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/bindings/sealed_evaluation_validation.v1.json",
+      "sha256": "79ceef2c76522826f55b6b7fc836ec0f0db13612effbee94360f51a5b2182c4d",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/bindings/sealed_evaluation_validation.v1.json"
+    },
+    {
+      "bytes": 49271,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/branch_search.py",
+      "sha256": "0aced15800caf4042ffd1863c7cd1c5415bed6d9dc799220be17635bd5c5f349",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/branch_search.py"
+    },
+    {
+      "bytes": 9436,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/config/continuous_runtime_manifest.v1.json",
+      "sha256": "f8df4705e6ee9539518b04c62b947fc42204614d6f6627d3ce430220f512837e",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/config/continuous_runtime_manifest.v1.json"
+    },
+    {
+      "bytes": 6654,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/config/controller.json",
+      "sha256": "9791dd05cc00b5d3db2129bc82d19f85665f05ad64af7406372bdef560b45d27",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/config/controller.json"
+    },
+    {
+      "bytes": 7892,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/config/production_protocol.json",
+      "sha256": "be700d482822ac2e9317e43e6714d0d1100c03d8d60f4b944d8ddcb6ad7f7356",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/config/production_protocol.json"
+    },
+    {
+      "bytes": 7064,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/data_commitment.py",
+      "sha256": "b2e1b5788d123ddee789dea63fe40c9e8dd8e3ceed13b91c6c65eda6ee6f420e",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/data_commitment.py"
+    },
+    {
+      "bytes": 5944,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/freeze_package.py",
+      "sha256": "b440b313a7c20d43e2a6579e9edbe0d0b54cdc3b692bdb74c10f8ba9d0bb18bf",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/freeze_package.py"
+    },
+    {
+      "bytes": 128,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/hfw_continuous/__init__.py",
+      "sha256": "2f75f805e7a38ecb5a3dd72193017bcb931c2f16fc5168c7989f9e7770d29e97",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/hfw_continuous/__init__.py"
+    },
+    {
+      "bytes": 4666,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/hfw_continuous/bootstrap.py",
+      "sha256": "6720b24dca86b2d958724038463296bb2bd8c058bbe6d1c900abe9c294985729",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/hfw_continuous/bootstrap.py"
+    },
+    {
+      "bytes": 4776,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/hfw_continuous/cli.py",
+      "sha256": "1e1c038bc82efe927dd8376dcd80426694eed0c43c05cca6c1bc4772c8a8be8f",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/hfw_continuous/cli.py"
+    },
+    {
+      "bytes": 28490,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/hfw_continuous/committer.py",
+      "sha256": "3ad3ea7dbc878b67434737ae60459812aab2a38f0be34f593286720942ad1f51",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/hfw_continuous/committer.py"
+    },
+    {
+      "bytes": 7276,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/hfw_continuous/common.py",
+      "sha256": "666905000e99fd0e533b6da623325fb5bd4782adf99821fcb4de646ae84ec8ec",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/hfw_continuous/common.py"
+    },
+    {
+      "bytes": 4283,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/hfw_continuous/disk_safety.py",
+      "sha256": "ce8b9a6f8c43fbbd32d68c1e3e9fc5e47cb11187c21ef0dc15e933f94039aecf",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/hfw_continuous/disk_safety.py"
+    },
+    {
+      "bytes": 18643,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/hfw_continuous/ledger.py",
+      "sha256": "2c4023869188e2bbf58a89ca12b1a7e25494f50632a34ffc517a562b9eaf9b73",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/hfw_continuous/ledger.py"
+    },
+    {
+      "bytes": 20172,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/hfw_continuous/proposal_worker.py",
+      "sha256": "4af77cbff180e3c91c6e2905b95620ab31cd29c48ba4cbe3c40a7d47441a36e9",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/hfw_continuous/proposal_worker.py"
+    },
+    {
+      "bytes": 5162,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/hfw_continuous/release_binding.py",
+      "sha256": "7701167c3d4f30c6b3ebcaa49daefbfc31b56c6e25f82ee5635920720736390b",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/hfw_continuous/release_binding.py"
+    },
+    {
+      "bytes": 5428,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/hfw_continuous/relocation.py",
+      "sha256": "d205661f597e3f261d66bb700255b0976b030fc16be93c83f9c5c9f130ce9593",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/hfw_continuous/relocation.py"
+    },
+    {
+      "bytes": 7304,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/hfw_continuous/state.py",
+      "sha256": "2977912174e3bee18d0dd747a360e458a2214153721ca3ad808569bdaf5a50d9",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/hfw_continuous/state.py"
+    },
+    {
+      "bytes": 14603,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/hfw_continuous/supervisor.py",
+      "sha256": "598699ffe77a42b50fd0cc10ed69d2ee4c676df87f995dac9dc3d0735d05dd72",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/hfw_continuous/supervisor.py"
+    },
+    {
+      "bytes": 15814,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/hfw_continuous/token_commitment.py",
+      "sha256": "0314762d1db1e92b383bf4c5a17e3d5b031c06ee828a69513e5f39a25daca21a",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/hfw_continuous/token_commitment.py"
+    },
+    {
+      "bytes": 7690,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/manifest.py",
+      "sha256": "48acb7e79b2cbec0eebe95ba0d988e270e3000893a1e8bace671fadcd891dd23",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/manifest.py"
+    },
+    {
+      "bytes": 4362,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/parent_gate.py",
+      "sha256": "d189965271ef5597c9b39afa8263ee4f5feb8c0944f81f51fa1d58a7339e8442",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/parent_gate.py"
+    },
+    {
+      "bytes": 9225,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/power_sampler.py",
+      "sha256": "9d3369dcd41c445d7f8d139397a80d5d351e901f30982722314673f0f2ba9650",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/power_sampler.py"
+    },
+    {
+      "bytes": 8966,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/production_bridge.py",
+      "sha256": "919c70204c5fefd86a65410f1256c14f54c4ffb34b4db15e5b993ff705cc0ac7",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/production_bridge.py"
+    },
+    {
+      "bytes": 7548,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/production_entrypoint.py",
+      "sha256": "a9c12a22ae8819aca76f13aabd769f7de6dd8a474f1bb9fc998afd2d3320b9cd",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/production_entrypoint.py"
+    },
+    {
+      "bytes": 22821,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/production_phases.py",
+      "sha256": "228ca990be5fa38246e5fc16d10b078039f122ab38c375fb4a0b94a43ea15981",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/production_phases.py"
+    },
+    {
+      "bytes": 10382,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/production_runner.py",
+      "sha256": "346aabe019d4b5cac295b59d7f48b6b5f0459a291837e1baaf8d2b6978a6cc09",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/production_runner.py"
+    },
+    {
+      "bytes": 3654,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/release_validator.py",
+      "sha256": "22fee704a403c43aff9df7252917249613ee9c55dfffb58a49e083cfea8006c7",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/release_validator.py"
+    },
+    {
+      "bytes": 4483,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/resource_gate.py",
+      "sha256": "6d87ff86a12118ddcd788c2db01f89a355e14ccfe1037d50dada738ff90a55f4",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/resource_gate.py"
+    },
+    {
+      "bytes": 2153,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/runtime_guard.py",
+      "sha256": "9453260051c2af6d9c3930a15a4883e02b52bee1c16cbf23c3d91a65f81a91f1",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/runtime_guard.py"
+    },
+    {
+      "bytes": 9832,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/sealed_evaluation_bridge.py",
+      "sha256": "00f3acf43f4c569a26e345666d7233369394e8f463b0a9ecbd9f3d461730821e",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/sealed_evaluation_bridge.py"
+    },
+    {
+      "bytes": 1643,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/static_gate.py",
+      "sha256": "38fa086b94fc602d267ad84709c548edef793f7a6a657aa26811b119d807dc91",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/static_gate.py"
+    },
+    {
+      "bytes": 39,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/tests/__init__.py",
+      "sha256": "8e5d2039f67db3b449f7ae5d5e2f4346eee76e5b19c1dd06b79c0bcd60b06ebb",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/tests/__init__.py"
+    },
+    {
+      "bytes": 402,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/tests/run_integrity_tests.py",
+      "sha256": "213326e81e4b2c50965037159f5d9061a7ff1bb87a5efb4c8ff570421b219c72",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/tests/run_integrity_tests.py"
+    },
+    {
+      "bytes": 1082,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/tests/run_tests.py",
+      "sha256": "ea903f2efa2e5c5fa66a6e520d096c32aa528fb4f9dca37ef9c43d40b7d038cd",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/tests/run_tests.py"
+    },
+    {
+      "bytes": 38058,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/tests/test_integrity.py",
+      "sha256": "f0041a82f4f4061c5105c919d8ac5e973fa9d5ae747d76a9c8dcf273138ac3f7",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/tests/test_integrity.py"
+    },
+    {
+      "bytes": 31469,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/tests/test_production_contract.py",
+      "sha256": "e43d74cc537fdafc69df26fb6ab9d15ad95f66d41be36fb71ef528a379a5ee10",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/tests/test_production_contract.py"
+    },
+    {
+      "bytes": 72,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/__init__.py",
+      "sha256": "ac3e703406186cc99fb9b8ca363c8baa100c90d5b2a97d66fa69b26ece5ebb38",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/__init__.py"
+    },
+    {
+      "bytes": 79,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/__init__.py",
+      "sha256": "16d9c3eda4183e1a91596e0892baf845b78dc140c20facb5fdcc35c3a0c66b23",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/__init__.py"
+    },
+    {
+      "bytes": 6072,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/artifacts.py",
+      "sha256": "98b63f3b9d2286e2f71a5748793dd41d506f32565d54d26baf51161d7b0db6c0",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/artifacts.py"
+    },
+    {
+      "bytes": 24542,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/bindings/canonical_sealed_evaluation.py",
+      "sha256": "5a8b5d4bb10a4a02ca1c5263af7ceab7db70ead6ceed7fb47ba9188cbfbd662c",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/bindings/canonical_sealed_evaluation.py"
+    },
+    {
+      "bytes": 22595,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/bindings/canonical_sealed_evaluation_v2.py",
+      "sha256": "90d38bdfda4ed9f3bfd2e0fa4e2565c6d3bf2354a2a808d8ddba67efc595e050",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/bindings/canonical_sealed_evaluation_v2.py"
+    },
+    {
+      "bytes": 2448,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/bindings/hfw_step3052_binding_contract.v2.json",
+      "sha256": "be3e1bec6eb91e2de1952a955d5b0df0d019abda3823a12d6ca71d562e573ceb",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/bindings/hfw_step3052_binding_contract.v2.json"
+    },
+    {
+      "bytes": 35504,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/bindings/hfw_step3052_w560_weight_address.v2.json",
+      "sha256": "fb1b77f23305995ed5546354274df60f59e2f5d8f91f8273095cf644387286d6",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/bindings/hfw_step3052_w560_weight_address.v2.json"
+    },
+    {
+      "bytes": 2305,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/bindings/local_hfw_binding_validation.v2.json",
+      "sha256": "f922e8206d125dc1d3bf661a33f15e848d69c8e2e3b009308cda3d46191c508d",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/bindings/local_hfw_binding_validation.v2.json"
+    },
+    {
+      "bytes": 2474,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/bindings/sealed_evaluation_v2_integration_validation.v1.json",
+      "sha256": "dc3bc5eb939b29647c6be10c0d6cf38190e02865c2ad1b87dace5a21189b3b5a",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/bindings/sealed_evaluation_v2_integration_validation.v1.json"
+    },
+    {
+      "bytes": 1420,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/bindings/sealed_evaluation_v2_vendor_manifest.v1.json",
+      "sha256": "dcf9f130f673edd8006831e593c912af037e10f125c5af4ce886b7cecdd58d1b",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/bindings/sealed_evaluation_v2_vendor_manifest.v1.json"
+    },
+    {
+      "bytes": 2787,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/bindings/sealed_evaluation_validation.v1.json",
+      "sha256": "79ceef2c76522826f55b6b7fc836ec0f0db13612effbee94360f51a5b2182c4d",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/bindings/sealed_evaluation_validation.v1.json"
+    },
+    {
+      "bytes": 49271,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/branch_search.py",
+      "sha256": "0aced15800caf4042ffd1863c7cd1c5415bed6d9dc799220be17635bd5c5f349",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/branch_search.py"
+    },
+    {
+      "bytes": 7892,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/config/production_protocol.json",
+      "sha256": "be700d482822ac2e9317e43e6714d0d1100c03d8d60f4b944d8ddcb6ad7f7356",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/config/production_protocol.json"
+    },
+    {
+      "bytes": 7064,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/data_commitment.py",
+      "sha256": "b2e1b5788d123ddee789dea63fe40c9e8dd8e3ceed13b91c6c65eda6ee6f420e",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/data_commitment.py"
+    },
+    {
+      "bytes": 8294,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/freeze/exact_group_manifest.v1.json",
+      "sha256": "73cf1c040eb912bd5ce16867e6cdfc318869656ef0b0dfd1e420e5f58277cc87",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/freeze/exact_group_manifest.v1.json"
+    },
+    {
+      "bytes": 1660,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/freeze/local_test_receipt.v1.json",
+      "sha256": "3a836724268b4b7e93875182a2a978128d67f459110b02188c6441082a38d3c1",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/freeze/local_test_receipt.v1.json"
+    },
+    {
+      "bytes": 1787,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/freeze/no_training_source_gate.v1.json",
+      "sha256": "79885864e89fdbdae935baad8b9c6006977db89f08af326b77d1bddc7d7f45bd",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/freeze/no_training_source_gate.v1.json"
+    },
+    {
+      "bytes": 348160,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/freeze/package_archive.v1.tar",
+      "sha256": "43054d20413b264055ac57f66f78d3974c6dc0ca72c69343877e4a959e874339",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/freeze/package_archive.v1.tar"
+    },
+    {
+      "bytes": 217,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/freeze/package_archive_receipt.v1.json",
+      "sha256": "dd395aaaa3d18fbc4bf0f09cfd519f9adef67d600aa21824755467e639b6f0bb",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/freeze/package_archive_receipt.v1.json"
+    },
+    {
+      "bytes": 1058,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/freeze/release_manifest.v1.json",
+      "sha256": "5284e92d8d845f85e1d13e68828652bafe2f48eb63792224e5172156f65a5101",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/freeze/release_manifest.v1.json"
+    },
+    {
+      "bytes": 853,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/freeze/release_validation_receipt.v1.json",
+      "sha256": "a2e5e6ec74c9ef8408c4cb864c19c3c344a960df2144115a21bd4ab3a1d87632",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/freeze/release_validation_receipt.v1.json"
+    },
+    {
+      "bytes": 3227,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/freeze/source_manifest.v1.json",
+      "sha256": "6bcd8a81fd2f5e5d5ea414cdf6803cbf14131ecd0f21c17d75fa6738e0dc6052",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/freeze/source_manifest.v1.json"
+    },
+    {
+      "bytes": 5944,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/freeze_package.py",
+      "sha256": "b440b313a7c20d43e2a6579e9edbe0d0b54cdc3b692bdb74c10f8ba9d0bb18bf",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/freeze_package.py"
+    },
+    {
+      "bytes": 7690,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/manifest.py",
+      "sha256": "48acb7e79b2cbec0eebe95ba0d988e270e3000893a1e8bace671fadcd891dd23",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/manifest.py"
+    },
+    {
+      "bytes": 4362,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/parent_gate.py",
+      "sha256": "d189965271ef5597c9b39afa8263ee4f5feb8c0944f81f51fa1d58a7339e8442",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/parent_gate.py"
+    },
+    {
+      "bytes": 9225,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/power_sampler.py",
+      "sha256": "9d3369dcd41c445d7f8d139397a80d5d351e901f30982722314673f0f2ba9650",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/power_sampler.py"
+    },
+    {
+      "bytes": 8966,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/production_bridge.py",
+      "sha256": "919c70204c5fefd86a65410f1256c14f54c4ffb34b4db15e5b993ff705cc0ac7",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/production_bridge.py"
+    },
+    {
+      "bytes": 7548,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/production_entrypoint.py",
+      "sha256": "a9c12a22ae8819aca76f13aabd769f7de6dd8a474f1bb9fc998afd2d3320b9cd",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/production_entrypoint.py"
+    },
+    {
+      "bytes": 22821,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/production_phases.py",
+      "sha256": "228ca990be5fa38246e5fc16d10b078039f122ab38c375fb4a0b94a43ea15981",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/production_phases.py"
+    },
+    {
+      "bytes": 10382,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/production_runner.py",
+      "sha256": "346aabe019d4b5cac295b59d7f48b6b5f0459a291837e1baaf8d2b6978a6cc09",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/production_runner.py"
+    },
+    {
+      "bytes": 3654,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/release_validator.py",
+      "sha256": "22fee704a403c43aff9df7252917249613ee9c55dfffb58a49e083cfea8006c7",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/release_validator.py"
+    },
+    {
+      "bytes": 4483,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/resource_gate.py",
+      "sha256": "6d87ff86a12118ddcd788c2db01f89a355e14ccfe1037d50dada738ff90a55f4",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/resource_gate.py"
+    },
+    {
+      "bytes": 2153,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/runtime_guard.py",
+      "sha256": "9453260051c2af6d9c3930a15a4883e02b52bee1c16cbf23c3d91a65f81a91f1",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/runtime_guard.py"
+    },
+    {
+      "bytes": 9832,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/sealed_evaluation_bridge.py",
+      "sha256": "00f3acf43f4c569a26e345666d7233369394e8f463b0a9ecbd9f3d461730821e",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/sealed_evaluation_bridge.py"
+    },
+    {
+      "bytes": 1643,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/static_gate.py",
+      "sha256": "38fa086b94fc602d267ad84709c548edef793f7a6a657aa26811b119d807dc91",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/static_gate.py"
+    },
+    {
+      "bytes": 39,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/tests/__init__.py",
+      "sha256": "8e5d2039f67db3b449f7ae5d5e2f4346eee76e5b19c1dd06b79c0bcd60b06ebb",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/tests/__init__.py"
+    },
+    {
+      "bytes": 1082,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/tests/run_tests.py",
+      "sha256": "ea903f2efa2e5c5fa66a6e520d096c32aa528fb4f9dca37ef9c43d40b7d038cd",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/tests/run_tests.py"
+    },
+    {
+      "bytes": 31469,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/tests/test_production_contract.py",
+      "sha256": "e43d74cc537fdafc69df26fb6ab9d15ad95f66d41be36fb71ef528a379a5ee10",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/tests/test_production_contract.py"
+    },
+    {
+      "bytes": 13821,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/provenance/frozen-release/source_manifest.v1.json",
+      "sha256": "b956870739e5fb04193f765835ddc9dd33e2d1b4125ec1f87144b3cca4c1eb74",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1-continuous-freeze-attempt1/source_manifest.v1.json"
+    },
+    {
+      "bytes": 1683,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/provenance/frozen-release/release_manifest.v1.json",
+      "sha256": "d5e892f86464ade9bc539e05134039390001f5a56d78b86d18d19284157acbbb",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1-continuous-freeze-attempt1/release_manifest.v1.json"
+    },
+    {
+      "bytes": 1950,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/provenance/frozen-release/release_validation_receipt.v1.json",
+      "sha256": "ec59d0844e7332d51c647bef062591aca1999c58d35bf79aebc2f5d74f360e4f",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1-continuous-freeze-attempt1/release_validation_receipt.v1.json"
+    },
+    {
+      "bytes": 1701,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/provenance/frozen-release/local_test_receipt.v1.json",
+      "sha256": "1a739c82cbfcc2098198df6f0c7a8236e4e6120cb5a0fec992537aba3a624bea",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1-continuous-freeze-attempt1/local_test_receipt.v1.json"
+    },
+    {
+      "bytes": 605,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/provenance/frozen-release/package_archive_receipt.v1.json",
+      "sha256": "3303e65a8e6fdc246a7ce6d33e492895a98ab9c6bf573cc5ede8a627cf487ef4",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-optimizer-20260815-v1r1-continuous-freeze-attempt1/package_archive_receipt.v1.json"
+    },
+    {
+      "bytes": 1996,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/evidence/mps-20260822/README.md",
+      "sha256": "1097b6d3bebb0ad6949fc23e30a8886df7769dd67938b70c2cc267a28802accd",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/README.md"
+    },
+    {
+      "bytes": 138,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/mps-runtime/hfw_continuous/__init__.py",
+      "sha256": "a04ed3a3155524f41ab149f6cb398ecfc5293a7a09ddadbadb2bdc0501d26cde",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/hfw_continuous/__init__.py"
+    },
+    {
+      "bytes": 7276,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/mps-runtime/hfw_continuous/common.py",
+      "sha256": "666905000e99fd0e533b6da623325fb5bd4782adf99821fcb4de646ae84ec8ec",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/hfw_continuous/common.py"
+    },
+    {
+      "bytes": 6466,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/mps-runtime/hfw_continuous/local_candidate_import.py",
+      "sha256": "6210c1fb0fab31532a9cffea6f33e4a95cf6dde0cf3e9c6c7110531caa7292d2",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/hfw_continuous/local_candidate_import.py"
+    },
+    {
+      "bytes": 4648,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/mps-runtime/hfw_continuous/local_cli.py",
+      "sha256": "4a4bc540dc90a6c208947287593b92e652b749ec97d4aac52ccadf039df77f00",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/hfw_continuous/local_cli.py"
+    },
+    {
+      "bytes": 7088,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/mps-runtime/hfw_continuous/local_config.py",
+      "sha256": "54d45bde917549a0ee4927cfd4333566c3e7dbf2458280ed457212d803133944",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/hfw_continuous/local_config.py"
+    },
+    {
+      "bytes": 18985,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/mps-runtime/hfw_continuous/local_ledger.py",
+      "sha256": "9dc9108e275ac2d0edfbd7663ca98a8b86a40b689ee42f8d562cd37260d073a9",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/hfw_continuous/local_ledger.py"
+    },
+    {
+      "bytes": 21646,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/mps-runtime/hfw_continuous/local_promoter.py",
+      "sha256": "717ee996742b80b5a8433afbb14b8af7f2050e35f82f9b9a85c15f54679468b2",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/hfw_continuous/local_promoter.py"
+    },
+    {
+      "bytes": 9619,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/mps-runtime/hfw_continuous/local_runner.py",
+      "sha256": "e1e1be8f0118b6bda6e2806a0347cdd51ce5f6683a10c43f42d5e84a96af5036",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/hfw_continuous/local_runner.py"
+    },
+    {
+      "bytes": 27202,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/mps-runtime/hfw_continuous/local_solver_worker.py",
+      "sha256": "103a63936c47eeac839a818123aaddd3b331af9eaa9583c56a2f07c4882aa43d",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/hfw_continuous/local_solver_worker.py"
+    },
+    {
+      "bytes": 7038,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/mps-runtime/hfw_continuous/local_verify_bank.py",
+      "sha256": "e65018a850865ee08e6e35eee5faf124398639a5e29ec433e8721c0a8ff02b12",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/hfw_continuous/local_verify_bank.py"
+    },
+    {
+      "bytes": 9211,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/mps-runtime/hfw_continuous/mps_adapter.py",
+      "sha256": "da5a890a7d5195489d3986547088f06b811b334fe83ed528e77532a98b25f0c6",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/hfw_continuous/mps_adapter.py"
+    },
+    {
+      "bytes": 5162,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/mps-runtime/hfw_continuous/release_binding.py",
+      "sha256": "7701167c3d4f30c6b3ebcaa49daefbfc31b56c6e25f82ee5635920720736390b",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/hfw_continuous/release_binding.py"
+    },
+    {
+      "bytes": 5420,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/mps-runtime/hfw_continuous/relocation.py",
+      "sha256": "b8d12a40f85b039b8d3bfa78dd3738a8e98b32a993b55289bcafe5f3e4dbb6fc",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/hfw_continuous/relocation.py"
+    },
+    {
+      "bytes": 7304,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/mps-runtime/hfw_continuous/state.py",
+      "sha256": "2977912174e3bee18d0dd747a360e458a2214153721ca3ad808569bdaf5a50d9",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/hfw_continuous/state.py"
+    },
+    {
+      "bytes": 8497,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/mps-runtime/config/controller.json",
+      "sha256": "9413d98d063928d41a92dfbfd84449726507d30e11a212c2a6e6d46fb90e8201",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/config/controller.json"
+    },
+    {
+      "bytes": 1355,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/mps-runtime/config/local_verify_selection.v1.json",
+      "sha256": "9e7ce01c662022c94afa8b7bf7c146e38744a2dc7dcefa3e415a1538228f1cec",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/config/local_verify_selection.v1.json"
+    },
+    {
+      "bytes": 4311,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/mps-runtime/config/runtime_manifest.v1.json",
+      "sha256": "43857a0a404c90f5db96793b1d836d4162978a4de37e5a9ee15d9c2506666ab5",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/config/runtime_manifest.v1.json"
+    },
+    {
+      "bytes": 72,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/mps-runtime/vendor/__init__.py",
+      "sha256": "ac3e703406186cc99fb9b8ca363c8baa100c90d5b2a97d66fa69b26ece5ebb38",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/vendor/__init__.py"
+    },
+    {
+      "bytes": 79,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/mps-runtime/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/__init__.py",
+      "sha256": "16d9c3eda4183e1a91596e0892baf845b78dc140c20facb5fdcc35c3a0c66b23",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/__init__.py"
+    },
+    {
+      "bytes": 6072,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/mps-runtime/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/artifacts.py",
+      "sha256": "98b63f3b9d2286e2f71a5748793dd41d506f32565d54d26baf51161d7b0db6c0",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/artifacts.py"
+    },
+    {
+      "bytes": 2448,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/mps-runtime/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/bindings/hfw_step3052_binding_contract.v2.json",
+      "sha256": "be3e1bec6eb91e2de1952a955d5b0df0d019abda3823a12d6ca71d562e573ceb",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/bindings/hfw_step3052_binding_contract.v2.json"
+    },
+    {
+      "bytes": 35504,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/mps-runtime/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/bindings/hfw_step3052_w560_weight_address.v2.json",
+      "sha256": "fb1b77f23305995ed5546354274df60f59e2f5d8f91f8273095cf644387286d6",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/bindings/hfw_step3052_w560_weight_address.v2.json"
+    },
+    {
+      "bytes": 2305,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/mps-runtime/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/bindings/local_hfw_binding_validation.v2.json",
+      "sha256": "f922e8206d125dc1d3bf661a33f15e848d69c8e2e3b009308cda3d46191c508d",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/bindings/local_hfw_binding_validation.v2.json"
+    },
+    {
+      "bytes": 49271,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/mps-runtime/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/branch_search.py",
+      "sha256": "0aced15800caf4042ffd1863c7cd1c5415bed6d9dc799220be17635bd5c5f349",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/branch_search.py"
+    },
+    {
+      "bytes": 7892,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/mps-runtime/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/config/production_protocol.json",
+      "sha256": "be700d482822ac2e9317e43e6714d0d1100c03d8d60f4b944d8ddcb6ad7f7356",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/config/production_protocol.json"
+    },
+    {
+      "bytes": 7690,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/mps-runtime/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/manifest.py",
+      "sha256": "48acb7e79b2cbec0eebe95ba0d988e270e3000893a1e8bace671fadcd891dd23",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/manifest.py"
+    },
+    {
+      "bytes": 4362,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/mps-runtime/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/parent_gate.py",
+      "sha256": "d189965271ef5597c9b39afa8263ee4f5feb8c0944f81f51fa1d58a7339e8442",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/parent_gate.py"
+    },
+    {
+      "bytes": 8966,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/mps-runtime/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/production_bridge.py",
+      "sha256": "919c70204c5fefd86a65410f1256c14f54c4ffb34b4db15e5b993ff705cc0ac7",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/production_bridge.py"
+    },
+    {
+      "bytes": 2153,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/mps-runtime/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/runtime_guard.py",
+      "sha256": "9453260051c2af6d9c3930a15a4883e02b52bee1c16cbf23c3d91a65f81a91f1",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/vendor/hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver/runtime_guard.py"
+    },
+    {
+      "bytes": 1,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/mps-runtime/tests/__init__.py",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/tests/__init__.py"
+    },
+    {
+      "bytes": 420,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/mps-runtime/tests/run_tests.py",
+      "sha256": "288314a9e32493a7bb702166615500551c10c6acdb5895237ce44624d61bc92b",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/tests/run_tests.py"
+    },
+    {
+      "bytes": 16295,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/mps-runtime/tests/test_cumulative_local.py",
+      "sha256": "f1bbc9de35283aad39b73cf4287c8580e5479214cd2a777ff4989781b72c5c63",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/tests/test_cumulative_local.py"
+    },
+    {
+      "bytes": 4072,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/mps-runtime/inputs/frozen_source/config/bottleneck_hfw_1k_100m.json",
+      "sha256": "f0640b60349940ff69c6ae2f62785954edd07d68984e90132dd428af0ddf83c1",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/inputs/frozen_source/config/bottleneck_hfw_1k_100m.json"
+    },
+    {
+      "bytes": 20265,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/mps-runtime/inputs/frozen_source/protocol.v1.json",
+      "sha256": "7a013d9640241577844da13ffb85883cce6b7fab5d50b6e4de924a09fbd62663",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/inputs/frozen_source/protocol.v1.json"
+    },
+    {
+      "bytes": 12996,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/mps-runtime/inputs/frozen_source/release_manifest.v1.json",
+      "sha256": "d61d003ede83dcfb302be5da854b3628dd53bdd13632e9d92c7fa8a75a16a190",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/inputs/frozen_source/release_manifest.v1.json"
+    },
+    {
+      "bytes": 8022,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/mps-runtime/inputs/frozen_source/representation_experiments/common.py",
+      "sha256": "eed2cad9f3313b5c889bf72bc72aa78254466ff1e1b5548d363a26b42f7757dd",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/inputs/frozen_source/representation_experiments/common.py"
+    },
+    {
+      "bytes": 6018,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/mps-runtime/inputs/frozen_source/representation_experiments/nanogpt_control.py",
+      "sha256": "1adfffbd843a55f00491b50cb46bc6c5d99041f54d9f48251ce3e79ad672a870",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/inputs/frozen_source/representation_experiments/nanogpt_control.py"
+    },
+    {
+      "bytes": 140777,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/mps-runtime/inputs/frozen_source/representation_experiments/predictive_models.py",
+      "sha256": "05560f064eddfe069be3d4459ea1fff8c644286aba101058370516ea5e298db8",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/inputs/frozen_source/representation_experiments/predictive_models.py"
+    },
+    {
+      "bytes": 16345,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/mps-runtime/inputs/frozen_source/third_party/nanogpt/model.py",
+      "sha256": "7c01703240dbec5d554527dc666e35b3df8391d0b117fddc07afcf325a21d11c",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/inputs/frozen_source/third_party/nanogpt/model.py"
+    },
+    {
+      "bytes": 2684,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/evidence/mps-20260822/ledger/heads/00000007-470797646584ec05ba9661abb4ac11d3898505a50f1610efb7a01087c885d79a.head.json",
+      "sha256": "470797646584ec05ba9661abb4ac11d3898505a50f1610efb7a01087c885d79a",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/live/ledger/heads/00000007-470797646584ec05ba9661abb4ac11d3898505a50f1610efb7a01087c885d79a.head.json"
+    },
+    {
+      "bytes": 43421,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/evidence/mps-20260822/ledger/heads/00000008-9821ba6958adbb3ff75b7f459732620b3f865de97027a47d9661a82d74d1554c.head.json",
+      "sha256": "9821ba6958adbb3ff75b7f459732620b3f865de97027a47d9661a82d74d1554c",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/live/ledger/heads/00000008-9821ba6958adbb3ff75b7f459732620b3f865de97027a47d9661a82d74d1554c.head.json"
+    },
+    {
+      "bytes": 47503,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/evidence/mps-20260822/ledger/decisions/66895eb3382d84bf676f9b46aecbeb6d7ae32d671b8bd4e92762845ae13847ea.decision.json",
+      "sha256": "66895eb3382d84bf676f9b46aecbeb6d7ae32d671b8bd4e92762845ae13847ea",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/live/ledger/decisions/66895eb3382d84bf676f9b46aecbeb6d7ae32d671b8bd4e92762845ae13847ea.decision.json"
+    },
+    {
+      "bytes": 39671,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/evidence/mps-20260822/ledger/decisions/c107a8df542f1c7a8181de4e90b032813aeaf19615f7b2a9ff9aba71c999ddc9.decision.json",
+      "sha256": "c107a8df542f1c7a8181de4e90b032813aeaf19615f7b2a9ff9aba71c999ddc9",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/live/ledger/decisions/c107a8df542f1c7a8181de4e90b032813aeaf19615f7b2a9ff9aba71c999ddc9.decision.json"
+    },
+    {
+      "bytes": 44458,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/evidence/mps-20260822/ledger/decisions/e647d873c515bd1df5f154b86590c3d85b45d0e7798e9ef4850a74a6b07747d5.decision.json",
+      "sha256": "e647d873c515bd1df5f154b86590c3d85b45d0e7798e9ef4850a74a6b07747d5",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/live/ledger/decisions/e647d873c515bd1df5f154b86590c3d85b45d0e7798e9ef4850a74a6b07747d5.decision.json"
+    },
+    {
+      "bytes": 1305,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/evidence/mps-20260822/ledger/contract.json",
+      "sha256": "d1a30a6df7c7d49e07535d2b207cfd0bec7b696067a2cd43cec0c4d0c76f4149",
+      "source": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/live/ledger/contract.json"
+    },
+    {
+      "bytes": 1072,
+      "destination": "auto-research/results/perturbation-recovery-20261018-v1/source/mps-runtime/inputs/frozen_source/third_party/nanogpt/LICENSE",
+      "note": "Identical upstream model license from pinned repository source; filename retained.",
+      "sha256": "a59ec5cdb1c1e447e5266a014b3e7ded511f8d6e5a08931e931c87490ff821fe",
+      "source": "/Volumes/SP AI 01_16/CodexWorkspaces/Super-1-perturbation-recovery-20261018/artifacts/nanogpt-10m-20260815/package/source/official_nanogpt/third_party/nanogpt/LICENSE"
+    }
+  ],
+  "frozen_source_count": 85,
+  "kind": "Recovered historical perturbation optimizer; source and evidence import, not new language training",
+  "missing_payloads": "Original/continued W560 checkpoint and token-array payloads stay external; paths/hashes retained as historical references.",
+  "new_checkpoint_evaluation": false,
+  "new_training": false,
+  "run_id": "perturbation-recovery-20261018-v1",
+  "scope": "Frozen v1r1 source byte-verified against original release manifest; later MPS source and all three available completed decisions plus both heads preserved separately. No cloud manager, credentials, datasets, sealed test payloads or large checkpoints copied. No launch authorization.",
+  "source_manifest_sha256": "b956870739e5fb04193f765835ddc9dd33e2d1b4125ec1f87144b3cca4c1eb74"
+}

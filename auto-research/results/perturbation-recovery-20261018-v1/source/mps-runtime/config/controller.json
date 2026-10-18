@@ -1,0 +1,141 @@
+{
+  "schema": "hfw_w560_mps_cumulative_local_optimizer_config_v1",
+  "status": "V2_GENERATION7_RECOVERY_BOUND_CONTINUOUS_CANONICAL_MPS_LAUNCH_AUTHORIZED",
+  "runtime_release": {
+    "manifest_relative_path": "config/runtime_manifest.v1.json",
+    "manifest_file_sha256": "43857a0a404c90f5db96793b1d836d4162978a4de37e5a9ee15d9c2506666ab5",
+    "manifest_size_bytes": 4311,
+    "manifest_identity_sha256": "431238d6e6f4067f866bd790b3257a004c0a9e9299d218098ee06bedb13da125"
+  },
+  "origin": {
+    "original_checkpoint_path": "/home/rohanarun/funcweights-hierarchy-compiler-v1/runs/bottleneck-hfw-1k-100m-continuation-25m-20260814T2210Z-v5r2r2/checkpoint_step_3052.pt",
+    "relocated_checkpoint_path": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/inputs/lineage/origin/checkpoint_step_3052.pt",
+    "checkpoint_sha256": "0c69fbf81526282d7d68ac258a98867d7de0f0e88e69e5f9f0543fdf1c535fba",
+    "size_bytes": 1198558775,
+    "minimum_link_count": 3,
+    "relocated_review_receipt_path": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/inputs/lineage/origin/review_stop_checkpoint_step_3052.json",
+    "review_receipt_sha256": "894f1f44499678755b86f94909033aaaf82ad546c05dd94211554696474f8802",
+    "review_schema": "review_stop_checkpoint_publication_receipt_v1",
+    "checkpoint_identity_sha256": "1e220d06231a18d896404137f8439f6936fcab2052ff71db351b2afc94c75139",
+    "model_state_digest": "4143d8cb3729998bd0dc9ded907ba8756ba5a8f8b49335f8185b055f3aac3d0b",
+    "step": 3052,
+    "tokens": 25001984
+  },
+  "source": {
+    "root": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/inputs/frozen_source",
+    "files": {
+      "representation_experiments/predictive_models.py": "05560f064eddfe069be3d4459ea1fff8c644286aba101058370516ea5e298db8",
+      "representation_experiments/common.py": "eed2cad9f3313b5c889bf72bc72aa78254466ff1e1b5548d363a26b42f7757dd",
+      "representation_experiments/nanogpt_control.py": "1adfffbd843a55f00491b50cb46bc6c5d99041f54d9f48251ce3e79ad672a870",
+      "third_party/nanogpt/model.py": "7c01703240dbec5d554527dc666e35b3df8391d0b117fddc07afcf325a21d11c",
+      "third_party/nanogpt/LICENSE": "a59ec5cdb1c1e447e5266a014b3e7ded511f8d6e5a08931e931c87490ff821fe",
+      "config/bottleneck_hfw_1k_100m.json": "f0640b60349940ff69c6ae2f62785954edd07d68984e90132dd428af0ddf83c1",
+      "protocol.v1.json": "7a013d9640241577844da13ffb85883cce6b7fab5d50b6e4de924a09fbd62663",
+      "release_manifest.v1.json": "d61d003ede83dcfb302be5da854b3628dd53bdd13632e9d92c7fa8a75a16a190"
+    }
+  },
+  "vendor": {
+    "package": "vendor.hfw_w560_post_training_bridge_20260815_v1r4r1_proven_solver",
+    "branch_search_sha256": "0aced15800caf4042ffd1863c7cd1c5415bed6d9dc799220be17635bd5c5f349",
+    "production_bridge_sha256": "919c70204c5fefd86a65410f1256c14f54c4ffb34b4db15e5b993ff705cc0ac7",
+    "production_protocol_sha256": "be700d482822ac2e9317e43e6714d0d1100c03d8d60f4b944d8ddcb6ad7f7356"
+  },
+  "search": {
+    "role": "SEARCH",
+    "bank": {
+      "relative_path": "inputs/search/search.u32le",
+      "sha256": "afdd49a132f75d4ec729c6ea1307415fa9697f831fbd618367bac8dc3823af79",
+      "size_bytes": 49248,
+      "shape": [12, 2, 513],
+      "dtype": "uint32_le"
+    },
+    "materialized_before_first_solver_job": true,
+    "new_unique_token_positions_after_initialization": 0
+  },
+  "local_verify": {
+    "role": "LOCAL_VERIFY",
+    "disclosure": "PERMANENT_REUSED_OPTIMIZATION_DATA_NOT_HELD_OUT",
+    "held_out_generalization_claimed": false,
+    "selection_spec": {
+      "relative_path": "config/local_verify_selection.v1.json",
+      "sha256": "9e7ce01c662022c94afa8b7bf7c146e38744a2dc7dcefa3e415a1538228f1cec"
+    },
+    "bank": {
+      "relative_path": "inputs/local_verify/local_verify.u32le",
+      "sha256": "b4592e6295a6e3d8b0f3979df2caea459355467bc97d301bfc62caba15dd7047",
+      "size_bytes": 65664,
+      "logical_shape": [32, 513],
+      "runtime_batch_shape": [8, 4, 513],
+      "dtype": "uint32_le"
+    },
+    "materialization_receipt": {
+      "relative_path": "inputs/local_verify/LOCAL_VERIFY_MATERIALIZED.json",
+      "sha256": "76fb3515a3f917ab21501163bc0f6f0590f9ec5a3cba4c90db1c5548ef95f54f",
+      "size_bytes": 1567
+    },
+    "materialized_before_any_local_optimization": true,
+    "zero_new_unique_token_positions_after_materialization": true,
+    "reused_across_generations_for_candidate_selection": true
+  },
+  "lineage": {
+    "source_current_head_record_path": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/inputs/lineage/source_authority/00000001-980c95f6d938a4661423d08ac0c9f97bdfea542db824b6062f4d6f7229839f01.head.json",
+    "source_current_head_record_sha256": "980c95f6d938a4661423d08ac0c9f97bdfea542db824b6062f4d6f7229839f01",
+    "source_decision_path": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/inputs/lineage/source_authority/0ecf3c0645683edd3189899069682a8a6b279c7231e936d7b723c840a6f1caae.decision.json",
+    "source_decision_sha256": "0ecf3c0645683edd3189899069682a8a6b279c7231e936d7b723c840a6f1caae",
+    "source_parent_checkpoint_sha256": "8b65f885c2e1a81437bedca34511a6c6692c1bcec7671764b2a431f26757b4a6",
+    "source_local_promotions": 6,
+    "source_generation": 7,
+    "current_checkpoint_path": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/inputs/lineage/current/generation-00000007-04830cf33045b19d.pt",
+    "current_checkpoint_sha256": "04830cf33045b19dadb610873770b97e8d0cdb1446b5bccf96389f35b35b76fd",
+    "current_checkpoint_size_bytes": 399517590,
+    "current_model_state_digest": "ed60c063d0b33a1b0b44927b6cf55e8741dafdbe2594a6b4d760d7379f400c25",
+    "current_accepted_proposal_sha256": "6a8bf92bbb0dab819081561f6a33b7c4793b0d27ae61f45b8e035f48cb9765c5",
+    "current_selected_candidate_order": 3,
+    "current_group": "right_factors",
+    "current_solver_delta_path": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/inputs/lineage/deltas/80eee8e1f8f9a22ad111a7ba31dbba6eb9eb590e7d6daec78d4ba0c130785709.group_delta.f32le",
+    "current_solver_delta_sha256": "80eee8e1f8f9a22ad111a7ba31dbba6eb9eb590e7d6daec78d4ba0c130785709",
+    "current_replacement_group_flat_path": "/Volumes/SP AI 01_16/hfw-w560-continuous-mps-cumulative-optimizer-20260822-v2-attempt1/runtime/inputs/lineage/replacement_group_flats/65bfe5d9b473e47ac7990a15aef895500b353a53ae95f3a3920451f0a5566a58.group_flat.f32le",
+    "current_replacement_group_flat_sha256": "65bfe5d9b473e47ac7990a15aef895500b353a53ae95f3a3920451f0a5566a58",
+    "origin_checkpoint_sha256": "0c69fbf81526282d7d68ac258a98867d7de0f0e88e69e5f9f0543fdf1c535fba"
+  },
+  "controller": {
+    "forward_device": "mps",
+    "forward_autocast_dtype": "bfloat16",
+    "parallel_workers": 1,
+    "minimum_relative_local_verify_improvement": 0.0001,
+    "duplicate_forward_tolerance": 1e-7,
+    "stale_policy": "reject_without_merge_or_rebase",
+    "groups": ["base_affines", "left_factors", "right_factors", "codecs"],
+    "root_seed": 5609001
+  },
+  "solver_limits": {
+    "maximum_group_elements": 10046960,
+    "maximum_accepts_per_branch": 18,
+    "parallel_workers": 1
+  },
+  "mps_local_lane": {
+    "numerical_lane": "mps_bfloat16_forward_cpu_float64_functional_normalization_v1",
+    "model_forward_device": "mps",
+    "model_forward_autocast_dtype": "bfloat16",
+    "functional_normalization_device": "cpu",
+    "functional_normalization_dtype": "float64",
+    "float64_transfer_order": "mps_to_cpu_then_cpu_float64",
+    "vendor_solver_bytes_edited": false,
+    "solver_settings_edited": false,
+    "local_verify_role": "LOCAL_VERIFY",
+    "local_verify_is_reused_optimization_data_not_held_out": true,
+    "cloud_access": false,
+    "remote_checkpoint_authority": false,
+    "adapter_source_sha256": "da5a890a7d5195489d3986547088f06b811b334fe83ed528e77532a98b25f0c6",
+    "contract_identity_sha256": "6d375cb64d1c34e3b771003cbd5f75bca9f15aa3769c5e61e7420ee080ced42f"
+  },
+  "authority": {
+    "user_authorized_cumulative_local_optimizer_build": true,
+    "local_solver_launch_authorized": true,
+    "local_verify_and_bounded_smoke_authorized": true,
+    "cloud_access_authorized": false,
+    "remote_checkpoint_write_authorized": false,
+    "training_or_backprop_authorized": false,
+    "adam_or_any_optimizer_authorized": false
+  }
+}

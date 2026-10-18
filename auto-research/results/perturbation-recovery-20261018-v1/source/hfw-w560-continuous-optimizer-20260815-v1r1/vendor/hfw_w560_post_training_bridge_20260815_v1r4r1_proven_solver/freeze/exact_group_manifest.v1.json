@@ -1,0 +1,397 @@
+{
+  "canonical_weight_address_binding": {
+    "canonical_group_aliases": {
+      "base_affines": "base_affines",
+      "codecs": "state_codecs",
+      "left_factors": "function_weight_left_factors",
+      "right_factors": "function_weight_right_factors"
+    },
+    "contract_sha256": "be3e1bec6eb91e2de1952a955d5b0df0d019abda3823a12d6ca71d562e573ceb",
+    "manifest_sha256": "fb1b77f23305995ed5546354274df60f59e2f5d8f91f8273095cf644387286d6",
+    "validation_receipt_sha256": "f922e8206d125dc1d3bf661a33f15e848d69c8e2e3b009308cda3d46191c508d"
+  },
+  "derived_from_meta_model": true,
+  "frozen_count": 85085280,
+  "group_counts": {
+    "base_affines": 10046960,
+    "codecs": 286720,
+    "left_factors": 1703520,
+    "right_factors": 2751840
+  },
+  "groups": {
+    "base_affines": [
+      {
+        "dtype": "float32",
+        "name": "fast_cell.input_function.base.weight",
+        "numel": 2822400,
+        "shape": [
+          1680,
+          1680
+        ]
+      },
+      {
+        "dtype": "float32",
+        "name": "fast_cell.input_function.base.bias",
+        "numel": 1680,
+        "shape": [
+          1680
+        ]
+      },
+      {
+        "dtype": "float32",
+        "name": "fast_cell.hidden_function.base.weight",
+        "numel": 940800,
+        "shape": [
+          1680,
+          560
+        ]
+      },
+      {
+        "dtype": "float32",
+        "name": "fast_cell.hidden_function.base.bias",
+        "numel": 1680,
+        "shape": [
+          1680
+        ]
+      },
+      {
+        "dtype": "float32",
+        "name": "segment_cell.input_function.base.weight",
+        "numel": 940800,
+        "shape": [
+          1680,
+          560
+        ]
+      },
+      {
+        "dtype": "float32",
+        "name": "segment_cell.input_function.base.bias",
+        "numel": 1680,
+        "shape": [
+          1680
+        ]
+      },
+      {
+        "dtype": "float32",
+        "name": "segment_cell.hidden_function.base.weight",
+        "numel": 940800,
+        "shape": [
+          1680,
+          560
+        ]
+      },
+      {
+        "dtype": "float32",
+        "name": "segment_cell.hidden_function.base.bias",
+        "numel": 1680,
+        "shape": [
+          1680
+        ]
+      },
+      {
+        "dtype": "float32",
+        "name": "document_cell.input_function.base.weight",
+        "numel": 940800,
+        "shape": [
+          1680,
+          560
+        ]
+      },
+      {
+        "dtype": "float32",
+        "name": "document_cell.input_function.base.bias",
+        "numel": 1680,
+        "shape": [
+          1680
+        ]
+      },
+      {
+        "dtype": "float32",
+        "name": "document_cell.hidden_function.base.weight",
+        "numel": 940800,
+        "shape": [
+          1680,
+          560
+        ]
+      },
+      {
+        "dtype": "float32",
+        "name": "document_cell.hidden_function.base.bias",
+        "numel": 1680,
+        "shape": [
+          1680
+        ]
+      },
+      {
+        "dtype": "float32",
+        "name": "cross_scale.base.weight",
+        "numel": 1881600,
+        "shape": [
+          1120,
+          1680
+        ]
+      },
+      {
+        "dtype": "float32",
+        "name": "cross_scale.base.bias",
+        "numel": 1120,
+        "shape": [
+          1120
+        ]
+      },
+      {
+        "dtype": "float32",
+        "name": "readout.base.weight",
+        "numel": 627200,
+        "shape": [
+          560,
+          1120
+        ]
+      },
+      {
+        "dtype": "float32",
+        "name": "readout.base.bias",
+        "numel": 560,
+        "shape": [
+          560
+        ]
+      }
+    ],
+    "codecs": [
+      {
+        "dtype": "float32",
+        "name": "state_codecs.fast.weight",
+        "numel": 71680,
+        "shape": [
+          128,
+          560
+        ]
+      },
+      {
+        "dtype": "float32",
+        "name": "state_codecs.segment.weight",
+        "numel": 71680,
+        "shape": [
+          128,
+          560
+        ]
+      },
+      {
+        "dtype": "float32",
+        "name": "state_codecs.document.weight",
+        "numel": 71680,
+        "shape": [
+          128,
+          560
+        ]
+      },
+      {
+        "dtype": "float32",
+        "name": "state_codecs.segment_sum.weight",
+        "numel": 71680,
+        "shape": [
+          128,
+          560
+        ]
+      }
+    ],
+    "frozen": [
+      {
+        "dtype": "float32",
+        "name": "embedding.weight",
+        "numel": 85084160,
+        "shape": [
+          151936,
+          560
+        ]
+      },
+      {
+        "dtype": "float32",
+        "name": "final_norm.weight",
+        "numel": 560,
+        "shape": [
+          560
+        ]
+      },
+      {
+        "dtype": "float32",
+        "name": "final_norm.bias",
+        "numel": 560,
+        "shape": [
+          560
+        ]
+      }
+    ],
+    "left_factors": [
+      {
+        "dtype": "float32",
+        "name": "fast_cell.input_function.control_left",
+        "numel": 393120,
+        "shape": [
+          6,
+          1680,
+          39
+        ]
+      },
+      {
+        "dtype": "float32",
+        "name": "fast_cell.hidden_function.control_left",
+        "numel": 131040,
+        "shape": [
+          6,
+          560,
+          39
+        ]
+      },
+      {
+        "dtype": "float32",
+        "name": "segment_cell.input_function.control_left",
+        "numel": 131040,
+        "shape": [
+          6,
+          560,
+          39
+        ]
+      },
+      {
+        "dtype": "float32",
+        "name": "segment_cell.hidden_function.control_left",
+        "numel": 131040,
+        "shape": [
+          6,
+          560,
+          39
+        ]
+      },
+      {
+        "dtype": "float32",
+        "name": "document_cell.input_function.control_left",
+        "numel": 131040,
+        "shape": [
+          6,
+          560,
+          39
+        ]
+      },
+      {
+        "dtype": "float32",
+        "name": "document_cell.hidden_function.control_left",
+        "numel": 131040,
+        "shape": [
+          6,
+          560,
+          39
+        ]
+      },
+      {
+        "dtype": "float32",
+        "name": "cross_scale.control_left",
+        "numel": 393120,
+        "shape": [
+          6,
+          1680,
+          39
+        ]
+      },
+      {
+        "dtype": "float32",
+        "name": "readout.control_left",
+        "numel": 262080,
+        "shape": [
+          6,
+          1120,
+          39
+        ]
+      }
+    ],
+    "right_factors": [
+      {
+        "dtype": "float32",
+        "name": "fast_cell.input_function.control_right",
+        "numel": 393120,
+        "shape": [
+          6,
+          39,
+          1680
+        ]
+      },
+      {
+        "dtype": "float32",
+        "name": "fast_cell.hidden_function.control_right",
+        "numel": 393120,
+        "shape": [
+          6,
+          39,
+          1680
+        ]
+      },
+      {
+        "dtype": "float32",
+        "name": "segment_cell.input_function.control_right",
+        "numel": 393120,
+        "shape": [
+          6,
+          39,
+          1680
+        ]
+      },
+      {
+        "dtype": "float32",
+        "name": "segment_cell.hidden_function.control_right",
+        "numel": 393120,
+        "shape": [
+          6,
+          39,
+          1680
+        ]
+      },
+      {
+        "dtype": "float32",
+        "name": "document_cell.input_function.control_right",
+        "numel": 393120,
+        "shape": [
+          6,
+          39,
+          1680
+        ]
+      },
+      {
+        "dtype": "float32",
+        "name": "document_cell.hidden_function.control_right",
+        "numel": 393120,
+        "shape": [
+          6,
+          39,
+          1680
+        ]
+      },
+      {
+        "dtype": "float32",
+        "name": "cross_scale.control_right",
+        "numel": 262080,
+        "shape": [
+          6,
+          39,
+          1120
+        ]
+      },
+      {
+        "dtype": "float32",
+        "name": "readout.control_right",
+        "numel": 131040,
+        "shape": [
+          6,
+          39,
+          560
+        ]
+      }
+    ]
+  },
+  "learned_spline_or_fourier_group": false,
+  "manifest_sha256": "4f2ce9457b2e4bd151993046f3f34350973d3b94eb466ae059ffe677a98f3ec4",
+  "model_kind": "bottleneck_hierarchical_function_weights",
+  "schema": "hfw_w560_exact_group_manifest_v1",
+  "total_parameters": 99874320,
+  "vocab_size": 151936,
+  "width": 560
+}

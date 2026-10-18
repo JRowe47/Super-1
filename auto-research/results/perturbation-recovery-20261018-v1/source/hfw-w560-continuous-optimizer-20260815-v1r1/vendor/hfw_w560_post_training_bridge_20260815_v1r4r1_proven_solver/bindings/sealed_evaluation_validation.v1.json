@@ -1,0 +1,50 @@
+{
+  "authorization": {
+    "parent_checkpoint_accessed": false,
+    "parent_checkpoint_mutated": false,
+    "production_evaluation_authorized": false,
+    "production_search_authorized": false,
+    "remote_access": false,
+    "vm_access": false
+  },
+  "blockers": [],
+  "created_at_utc": "2026-08-15T00:30:58.380630+00:00",
+  "demo": {
+    "combined_output_sha256": "4865ed824d7f21393ed79c0ab10dc5d97308dce72efcd66e958b6186f30fa63e",
+    "command": "/Applications/Xcode.app/Contents/Developer/usr/bin/python3 -W error run_sealed_evaluation_demo.py --config config/sealed_evaluation_demo.v1.json --output /Users/rohanarun/Documents/trin/funcweights/distributed_perturbation_coordinator_20260814_v1/artifacts/sealed_evaluation_demo_v1",
+    "disjointness_proof_sha256": "18245e483bc0a39b9c9c52ba7254d9d149b7b952925489620aa982bbc4af0f1f",
+    "exit_code": 0,
+    "opaque_eval_commitment_sha256": "6c8ffb5c57a1ebe9f572e0a2eddd55137e91c7f001181991dad3cf564ac15057",
+    "summary_path": "artifacts/sealed_evaluation_demo_v1/summary.json",
+    "summary_sha256": "9359ccab44f7a43a4c6f0f391d56c1c8eff2c6cca701454348db67b4b04d71d7",
+    "terminal_entry_sha256": "7d1256f06bfc197752514095a96b150448fd60ecf82642034f43248e4634e7e8"
+  },
+  "properties": {
+    "accepted_and_rejected_proposals_share_one_hash_chain": true,
+    "authority_preimage_is_outside_search_visible_root": true,
+    "calibration_eval_disjointness_proved_after_reveal": true,
+    "early_reveal_fails_closed": true,
+    "early_search_read_fails_closed": true,
+    "post_terminal_proposals_fail_closed": true,
+    "reveal_mutation_fails_closed": true,
+    "search_receives_only_opaque_eval_commitment": true,
+    "terminal_registry_is_append_only_and_content_addressed": true,
+    "validation_bytes_rehashed_against_reveal": true
+  },
+  "schema": "sealed_evaluation_local_validation_receipt_v1",
+  "scope": "fresh_local_generic_protocol_only_no_parent_or_vm_access",
+  "source_files": {
+    "build_sealed_evaluation_receipt.py": "18c929790bda7002482e1edee3012d9ac5203746089851f35b3744604a33d9ac",
+    "config/sealed_evaluation_demo.v1.json": "9a283531143e6569767005b998ba3f639ce632665b9b17a02521e29f8984728d",
+    "run_sealed_evaluation_demo.py": "302ad24714bdbe04d78e1c79291b99895f47453a5ec3e9e4595161e426abb682",
+    "sealed_evaluation.py": "5a8b5d4bb10a4a02ca1c5263af7ceab7db70ead6ceed7fb47ba9188cbfbd662c",
+    "test_sealed_evaluation.py": "90afb22551afea1f1bace54c0ae99f60bff01d7bc463bb1c203c2ec69f6ae3ff"
+  },
+  "status": "PASS",
+  "tests": {
+    "combined_output_sha256": "a770c3d8613764ea558ff10f87b5fa3afffaa3270a55d7ce423606ec29b08bdf",
+    "command": "/Applications/Xcode.app/Contents/Developer/usr/bin/python3 -W error -m unittest -v test_sealed_evaluation.py",
+    "exit_code": 0,
+    "last_nonempty_line": "OK"
+  }
+}
