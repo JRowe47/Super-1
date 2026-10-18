@@ -1,0 +1,10 @@
+{
+  "file": "nano_fp16-307-selected.s1pw",
+  "file_bytes": 307974,
+  "load_and_forward_seconds": 0.013582166999999923,
+  "max_decoded_weight_bytes": 12288,
+  "payload_bytes": 300096,
+  "peak_rss_bytes": 190611456,
+  "scope": "Fresh process, compact export only,512-token full attention; not latency benchmark",
+  "sha256": "a549c9d009fddb9c6427e276185ddec05e6a95f700b96bdf1d84c98c0d6a1211"
+}

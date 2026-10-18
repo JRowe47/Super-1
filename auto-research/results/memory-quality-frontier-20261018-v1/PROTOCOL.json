@@ -1,0 +1,90 @@
+{
+  "run_id": "memory-quality-frontier-20261018-v1",
+  "authorization": "Current user approved trying the memory-first three-way pilot, then explicitly requested relaxing compression to approach nanoGPT quality. Local bounded CPU training only; no cloud spending or full SOTA trial.",
+  "config": {
+    "run_id": "memory-quality-frontier-20261018-v1",
+    "vocab": 256,
+    "width": 64,
+    "heads": 4,
+    "layers": 4,
+    "ffn_multiplier": 4,
+    "patterns": {
+      "transformer": "AAAA",
+      "compact": "DDDA",
+      "relaxed": "DAAA"
+    },
+    "context": 256,
+    "batch": 4,
+    "chunk_size": 32,
+    "threads": 1,
+    "seeds": [
+      73,
+      191,
+      307
+    ],
+    "updates": 500,
+    "lr": 0.001,
+    "weight_decay": 0.01,
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "warmup": 25,
+    "min_lr_fraction": 0.1,
+    "clip": 1.0,
+    "selection_every": 100,
+    "selection_examples": 64,
+    "confirmation_examples": 128,
+    "text_regions": {
+      "train": [
+        0,
+        669236
+      ],
+      "selection": [
+        780775,
+        892315
+      ],
+      "confirmation": [
+        1070414,
+        1103310
+      ]
+    },
+    "quality_max_relative_ppl_increase": 0.01,
+    "memory_target_ratio": 0.25,
+    "relaxation_minimum_ce_gain": 0.01,
+    "t95_df2": 4.302652729696142,
+    "cpu_seconds": 900,
+    "wall_seconds": 1800,
+    "max_artifact_bytes": 157286400,
+    "memory_contexts": [
+      256,
+      2048,
+      8192
+    ],
+    "memory_chunk": 64,
+    "decode_steps": 32,
+    "max_prefill_seconds": 120,
+    "canary_seed": 202610189,
+    "forward_atol": 2e-05,
+    "forward_rtol": 0.0002,
+    "fp64_atol": 1e-09,
+    "decay_bias": 4.0,
+    "latency_max_ratio": 1.25
+  },
+  "hypothesis": "Replacing two compressed recurrent blocks with exact attention recovers language quality, at the cost of more retained context. One attention/memory ratio ablation.",
+  "arms": {
+    "transformer": "AAAA: four exact causal RoPE attention blocks, cached inference. Own nanoGPT-style microbaseline, not pinned upstream nanoGPT or current SOTA.",
+    "compact": "DDDA: three normalized gated-delta blocks and one full attention block.",
+    "relaxed": "DAAA: one gated-delta block and three full attention blocks. Same4 executed blocks and shared initialization."
+  },
+  "matching": "Identical train minibatches per seed,500 updates and512000 targets per arm. Same width64/head4/MLP4x and one optimizer setting; parameter counts within1%. Actual CPU unequal and disclosed. No walltime-matched quality claim.",
+  "sources": "Reference gated-delta recurrence from pinned FLA commit in SOURCES.json, checked forward against unchanged upstream FP32 function. Own CPU triangular solve matches sequential recurrence/gradients/optimizer in FP64. This is a simplified memory hybrid, not a full published GatedDeltaNet replication.",
+  "selection": "Keep minimum selection CE among steps0/100/200/300/400/500. Freeze all9 selected checkpoints before reserved confirmation.",
+  "data": "Reused historical Shakespeare train and selection bytes are exposed research data. Fresh confirmation [1070414,1103310),128 non-overlapping257-byte windows,32768 scored targets. Byte vocabulary256; not comparable to prior FineWeb tokenCE4.317/3.750. No official test.",
+  "quality_gate": "Relaxed-minus-transformer paired95 upper bound <=log(1.01), and every seed perplexity ratio<=1.01. This tests noninferiority on this tiny pilot only.",
+  "relaxation_gate": "Relaxed-minus-compact mean<=-0.01 nats/byte, all3 seed gaps<0, paired95 upper<0. Preserve failure.",
+  "memory_gate": "At8192-byte mechanics probe, relaxed process peakRSS <=25% of matched transformer for every paired seed. Mean prefill and cached decode ratios each<=1.25. Count runtime, weights, caches, and transient allocation in RSS. Separately report retained model+state tensor bytes; never substitute that for total-memory gate.",
+  "scope_limit": "Quality trained/tested at256 only.8192 is a memory probe, not evidence for quality beyond training context. Proposed future4x memory at32K goal remains untested. With3 attention blocks, relaxed asymptotic KV savings are only25%, so a4x total-memory win is not expected; this pilot maps the quality/memory tradeoff.",
+  "resource": "One CPU thread, training cap900CPU/1800wall seconds,150MiB artifacts; projected134CPU seconds from measured canary.27 isolated memory workers, each prefill cap120s; no GPU, no installs.",
+  "failure_preservation": "Initial upstream-module import failed because einops is absent. Unmodified reference recurrent function was loaded through AST without the unused chunk-function import; source unchanged, no tolerance relaxation."
+}

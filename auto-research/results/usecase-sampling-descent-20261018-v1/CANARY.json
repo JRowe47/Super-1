@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "causal_prefix_exact": true,
+  "ordered_coordinates": true,
+  "backbone_immutable_after_optimizer": true,
+  "backbone_gradients_absent": true,
+  "sampling_gradient_nonzero": true,
+  "finite_difference": {
+    "analytical": -0.0010442511768987786,
+    "numerical": -0.0010442511744201965,
+    "abs_error": 2.478582009773911e-12
+  },
+  "synthetic_labels_and_no_answer_leakage": true,
+  "profile_cpu_seconds_per_step": {
+    "fixed": 0.007137400000000005,
+    "token": 0.004807400000000017
+  },
+  "projected_cpu_seconds": 116.42184000000032
+}

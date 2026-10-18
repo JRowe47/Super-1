@@ -1,0 +1,95 @@
+{
+  "authorization": "User requested continued text quality and inference memory research. Bounded local CPU pilot only. Preserve function weights, learned t sampling and block layout; hierarchy changes KV storage/readout only.",
+  "hypothesis": "Learned pooling can recover full-attention quality at 4x to 8x smaller KV capacity. First isolate the full-attention backbone quality against the pinned upstream nanoGPT implementation.",
+  "data": {
+    "title": "Alice in Wonderland, Project Gutenberg ebook 11",
+    "url": "https://www.gutenberg.org/cache/epub/11/pg11.txt",
+    "raw_sha256": "01b38ea4c710a84bc18d0bd41271a5a1a92b94e97b2812f4dece97d4a694725e",
+    "body_sha256": "80c9af47ff5506a805c09e8bd7738e5a1e415ef54e231816c2344cb100add324",
+    "body_bytes": 154485,
+    "extraction": "Bytes between first START marker closing *** and first END marker; no normalization. Original file and license retained.",
+    "split_rule": "Disjoint fixed byte regions in CONFIG; no prior checkpoints used. Confirmation never used for updates, checkpoint selection or capacity choice. Repeated phrases within one book remain possible."
+  },
+  "comparison": "Both full-attention backbones trained from scratch on exactly matched batches and target exposures. Same width, layers, heads, precision, optimizer and schedule; parameter count and architecture differ and are reported. Not compute matched. Curves use RoPE; nanoGPT uses learned positions. Hierarchy receives extra training and teacher compute, explicitly reported.",
+  "pool_training": "Freeze every backbone and router parameter. Optimize only hierarchy pooling directions with next-byte CE plus full-attention teacher KL. Save zero-init and all three rounds. Halve LR after a round that fails to improve selection CE. Same minibatches per seed for both capacities.",
+  "selection": "Choose best round per seed/capacity by selection mean CE. Select smallest capacity with <=2% selection PPL overhead versus both full curve and nanoGPT for every seed; otherwise lowest mean selection CE, marked exploratory. Freeze all choices before confirmation.",
+  "gates": "Require both all-token and latter-half confirmation one-sided upper paired t95 log-PPL gaps and each seed gap <=log(1.02) versus full curve and nanoGPT. Separate4x peak RSS gate at512 and8192. Choices frozen before fresh confirmation.",
+  "limits": "512-byte single-book language pilot only;8192-byte memory mechanics is extrapolation. Not SOTA,70B,100K or retrieval-quality evidence.",
+  "config": {
+    "run_id": "function-kv-text-descent-512-20261018-v1",
+    "vocab": 256,
+    "width": 48,
+    "heads": 4,
+    "layers": 4,
+    "bases": 2,
+    "router_hidden": 8,
+    "context": 512,
+    "batch": 2,
+    "pool_batch": 1,
+    "threads": 1,
+    "seeds": [
+      73,
+      191,
+      307
+    ],
+    "base_updates": 600,
+    "base_lr": 0.001,
+    "selection_every": 200,
+    "pool_rounds": 3,
+    "pool_updates_per_round": 20,
+    "pool_lr": 0.03,
+    "lr_reduction": 0.5,
+    "clip": 1.0,
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "weight_decay": 0.01,
+    "distillation_weight": 1.0,
+    "candidates": {
+      "h16": {
+        "recent_capacity": 12,
+        "level_capacities": [
+          2,
+          2
+        ]
+      },
+      "h32": {
+        "recent_capacity": 24,
+        "level_capacities": [
+          4,
+          4
+        ]
+      }
+    },
+    "text_regions": {
+      "train": [
+        0,
+        110000
+      ],
+      "selection": [
+        110000,
+        114128
+      ],
+      "confirmation": [
+        132000,
+        140208
+      ]
+    },
+    "selection_examples": 8,
+    "confirmation_examples": 16,
+    "quality_ppl_tolerance": 0.02,
+    "total_memory_reduction_target": 4,
+    "t95_df2": 4.302652729696142,
+    "cpu_seconds": 1800,
+    "wall_seconds": 3600,
+    "max_artifact_bytes": 100000000,
+    "memory_lengths": [
+      512,
+      8192
+    ],
+    "memory_chunk": 128,
+    "decode_tokens": 16
+  },
+  "iteration_basis": "The earlier128-byte pilot had lower mean confirmation CE for compressed curve than upstream nanoGPT, but short-context average can hide late-token errors. Train both backbones from scratch at512 bytes with equal614400 base target exposures, preserving old experiment. New confirmation region132000:140208 was unused in the previous run."
+}

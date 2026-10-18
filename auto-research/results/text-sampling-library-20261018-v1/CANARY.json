@@ -1,0 +1,12 @@
+{
+  "cpu_seconds_per_step": 0.012772300000000004,
+  "cross_shape_max_abs_difference": 5.7220458984375e-06,
+  "equal_shape_suffix_intervention_exact": true,
+  "frozen_base": true,
+  "ordered_positions": true,
+  "prior_cross_shape_exact_assertion": "FAILED_PRESERVED",
+  "projected_training_cpu_seconds": 76.63380000000004,
+  "sampler_changed": true,
+  "scope": "Cross-length bitwise invariance is not established. Equal-shape future-token intervention verifies causality without tolerance relaxation. Existing source has archived FP64 finite-difference verification.",
+  "status": "PASS_EQUAL_SHAPE_CAUSALITY"
+}

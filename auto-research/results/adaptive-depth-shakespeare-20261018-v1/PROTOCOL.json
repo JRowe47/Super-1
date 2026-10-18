@@ -1,0 +1,199 @@
+{
+  "authorization": {
+    "approved": true,
+    "approved_resources": "Agent-selected small local CPU-only language pilot within the approved experiment; no cloud, GPU, dependencies or paid resources. Does not resume any historical run.",
+    "local_cpu_budget": {
+      "artifact_bytes": 104857600,
+      "seconds": 900,
+      "threads": 1
+    },
+    "max_cost": "USD 0 incremental provider spend",
+    "max_walltime": 1800,
+    "user_approval_reference": "Current chat: user said \"ok do it\" after the assistant proposed a fixed-step learned-sampling experiment with fixed curve, matching dense and upstream nanoGPT controls across multiple seeds."
+  },
+  "data": {
+    "confirmation_sha256": "c54f3753a4e6e3c3d1759212815a7caf826e68a33021b25312984400bed40a1f",
+    "dataset_versions": {
+      "bytes": 1115394,
+      "content_sha256": "86c4e6aa9db7c042ec79f339dcb96d42b0075e16b8fc2e86bf0ca57e2dc565ed",
+      "description": "Public Shakespeare text from char-rnn Tiny Shakespeare. Snapshot included; content hash is authoritative despite mutable upstream URL.",
+      "source_url": "https://raw.githubusercontent.com/karpathy/char-rnn/master/data/tinyshakespeare/input.txt"
+    },
+    "official_test_access_permitted": false,
+    "research_wide_region_reuse_audit": "No Tiny Shakespeare references found in existing auto-research/src/data text search; no exhaustive audit of external chats/pretraining. Public familiar corpus, single work collection, no semantic deduplication; byte regions disjoint.",
+    "selection_sha256": "ef3b6eb3897a96dde32bc0b42686ea22f84dbf93746e611936b431d2a9524fac",
+    "split_boundaries": {
+      "confirmation": [
+        1003854,
+        1115394
+      ],
+      "confirmation_scored_windows": 256,
+      "sampling": "Evaluation uses first N nonoverlapping 65-byte chunks of its split, 64 next-byte targets each. Train random 65-byte windows wholly inside train.",
+      "selection": [
+        892315,
+        1003854
+      ],
+      "selection_scored_windows": 64,
+      "train": [
+        0,
+        892315
+      ]
+    },
+    "teacher_and_objective": "No teacher; scratch next-byte CE over fixed 256-byte vocabulary; all positions scored.",
+    "tokenizer_sha256": "40aff2e9d2d8922e47afd4648e6967497158785fbd1da870e7110266bf944880",
+    "train_sha256": "8564bb90b6305620187b212d62ee40694e1b3639401878b3fdc4ec395016ec4a"
+  },
+  "decision": {
+    "next_experiment": "Determined only after this bounded pilot; no automatic retries or scale-up",
+    "outcome": "PENDING_EXECUTION",
+    "reason": "No corpus training or confirmation evaluation before freeze"
+  },
+  "deployment": {
+    "batching": "Batch 1 isolated CPU subprocess per checkpoint",
+    "kv_or_state_dtype": "No cache",
+    "latency_statistics": "p50 and nearest-rank p95 prefill and mean per-token decode across repetitions; throughput from median; startup excluded",
+    "memory_components": "Parameter bytes; fresh process ru_maxrss including runtime, checkpoint load, data, activations/workspace. Before-model peak separately recorded. Current activation-only/allocator peaks unmeasured; no GPU.",
+    "prefill_decode_protocol": "64-byte selection prefill; greedy uncached decode 16 bytes from 32-byte prefix; same prompt, own generated continuations; each timed call computes all-position logits for consistency",
+    "quantization_metadata": "None",
+    "warmup_and_synchronization": {
+      "repeats": 30,
+      "sync": "CPU synchronous",
+      "warmups": 5
+    },
+    "weight_dtype": "FP32"
+  },
+  "design": {
+    "arms": [
+      "fixed",
+      "global",
+      "token",
+      "dense",
+      "nanogpt"
+    ],
+    "compute_accounting": {
+      "note": "Projection-only analytic MACs omit attention, logits, coefficient/router work and backward; measured CPU and wall time reported. No FLOP-match claim.",
+      "profile": {
+        "dense": {
+          "cpu_seconds_per_update": 0.010546400000000001,
+          "parameters": 123744
+        },
+        "fixed": {
+          "cpu_seconds_per_update": 0.015030200000000039,
+          "parameters": 68905
+        },
+        "global": {
+          "cpu_seconds_per_update": 0.014592399999999995,
+          "parameters": 68905
+        },
+        "nanogpt": {
+          "cpu_seconds_per_update": 0.009243599999999973,
+          "parameters": 126384
+        },
+        "token": {
+          "cpu_seconds_per_update": 0.014221799999999974,
+          "parameters": 68905
+        }
+      },
+      "projection_MACs_per_token": {
+        "curve_each": 221184,
+        "dense_each": 110592
+      }
+    },
+    "control_rationale": "Dense uses unchanged source GPT full with RoPE. nanoGPT is byte-exact pinned upstream 3adf61e154c3fe3fca428ad6bc3818b27a3b8291 with learned positions trained/evaluated at 64. Three curve arms have identical initial parameters, basis applications and block counts; fixed router is inert, global lacks token features. No curve reordering or halting.",
+    "learning_rate_trials_per_arm": 1,
+    "matching_track": "Same width, depth, data, exposure and optimizer recipe. Curve arms have equal stored parameters and basis computations; dense/nanoGPT have more independent weights but fewer basis matmuls. Not equal training FLOPs or latency.",
+    "mechanism_equations": "W(t)=sum_k [P_k dot (1,t,t^2,t^3)] B_k. t0=0, t_last=1. Internal t_i=t_prev+(1-t_prev)*sigmoid(router([LN(h_token),t_prev])-log(L-i-1)). Router zero-output initialized. Global supplies zero token features. Fixed multiplies router output by zero. Same t for all six projections in each step; separate original per-block LayerNorm retained.",
+    "original_source_hashes": {
+      "artifacts/nanogpt-10m-20260815/package/source/official_nanogpt/third_party/nanogpt/model.py": "7c01703240dbec5d554527dc666e35b3df8391d0b117fddc07afcf325a21d11c",
+      "src/hierarchy/experiments/function_weight_wt2_original_transformer_port/model.py": "3180772c6614b31d2152782d36aba4c3c6545f216fcca21df870975133393145"
+    },
+    "parameter_counts": {
+      "dense": 123744,
+      "fixed": 68905,
+      "global": 68905,
+      "nanogpt": 126384,
+      "token": 68905
+    },
+    "seed_selection_method": "Prespecified reuse of the repository paired seed identifiers; new corpus and hypothesis",
+    "seeds": [
+      73,
+      191,
+      307
+    ]
+  },
+  "evaluation": {
+    "canonical_precision": "FP32",
+    "confirmation_frozen_before_scoring": true,
+    "duplicate_policy": "Two complete evaluations per checkpoint; require exact CE and logit SHA256",
+    "multiple_comparison_policy": "Fixed is single primary comparison. Global is required mechanistic control. Dense/nanoGPT comparisons diagnostic unless all gates pass; no selective winner reporting.",
+    "no_test_tuning": true,
+    "primary_endpoint": "Final frozen checkpoints on reserved confirmation region, 16384 targets each",
+    "uncertainty_method": "All three paired gaps and descriptive paired t95 interval df=2; small n and normality unverified; common corpus is not independent datasets"
+  },
+  "evidence": {
+    "checkpoint_manifest": "auto-research/results/adaptive-depth-shakespeare-20261018-v1/execution/FREEZE.json",
+    "cleanup_receipt": "auto-research/results/adaptive-depth-shakespeare-20261018-v1/execution/CLEANUP.json",
+    "preservation_policy": "Exclusive creation; retain every checkpoint, seed, failure and original canary. No source/data/threshold modification after freeze.",
+    "progress_path": "auto-research/results/adaptive-depth-shakespeare-20261018-v1/execution/progress.jsonl",
+    "protocol_sha256": "Stored in SOURCE_MANIFEST and RUN_REGISTRY to avoid self-hash",
+    "source_manifest": "auto-research/results/adaptive-depth-shakespeare-20261018-v1/SOURCE_MANIFEST.json",
+    "terminal_receipt_path": "auto-research/results/adaptive-depth-shakespeare-20261018-v1/execution/TERMINAL.json"
+  },
+  "execution": {
+    "canary_matrix": "CANARY.json; three shapes, nonconstant curves, forward/grad/AdamW parity, perturbed nonzero router causal logits/positions, ordered positions, nonzero and finite-difference router gradient",
+    "cost_estimate": {
+      "additional": "evaluation/benchmark/import overhead, within configured cap; no GPU estimates",
+      "measured_projected_training_cpu_seconds": 114.54191999999998
+    },
+    "fidelity_tolerances": {
+      "atol": 2e-05,
+      "duplicate": "exact",
+      "router_FP64_central_difference_absolute": 1e-08,
+      "rtol": 0.0002
+    },
+    "hardware": "macOS-27.0.1-arm64-arm-64bit",
+    "resolved_writable_output": "/Volumes/SP AI 01_16/CodexWorkspaces/Super-1-adaptive-depth-20261018/auto-research/results/adaptive-depth-shakespeare-20261018-v1",
+    "runtime_versions": {
+      "python": "3.9.6 (default, Aug 25 2026, 21:26:21) \n[Clang 21.0.0 (clang-2100.3.34.2)]",
+      "torch": "2.8.0"
+    },
+    "source_ownership_and_concurrent_writers": "Dedicated SSD git worktree and branch; original allocation branch and untracked RELEASE_ASSET_COPY.json preserved; no matching research workload observed. All child processes receive SSD TMPDIR; Python -B prevents bytecode writes."
+  },
+  "experiment_id": "Token-conditioned continuous-depth sampling at fixed steps",
+  "frozen_at_utc": "2026-10-18T13:23:29Z",
+  "futility_rule": "Stop on source/data drift, nonfinite loss/gradient, failed fidelity, resource or storage cap, or preservation failure. No early stopping or tuning from selection/confirmation; report all negative outcomes.",
+  "hypothesis": "Token-conditioned ordered positions on the existing cubic weight curve reduce reserved byte CE relative to uniform sampling at identical block and basis counts.",
+  "minimum_useful_effect": 0.02,
+  "parent_run_ids": [],
+  "primary_comparator": "token versus fixed; global positions are the required explanatory control for token-specific benefit",
+  "primary_metric": "Reserved confirmation mean next-byte CE, nats/byte",
+  "run_id": "adaptive-depth-shakespeare-20261018-v1",
+  "schema_version": 1,
+  "status": "FROZEN_AUTHORIZED_BOUNDED_LOCAL_PILOT",
+  "success_rule": "All paired differences token-fixed < 0; mean <= -0.02 nats/byte; descriptive paired t95 upper < 0; all arms improve selection CE from initialization. Token-specific support additionally requires the same gate against global. NanoGPT claim additionally requires the same gates against dense and nanoGPT. Every row complete and duplicate-exact.",
+  "training": {
+    "accessible_history": "64 bytes inside each reset window; no extrapolation endpoint",
+    "bptt_length": 64,
+    "checkpoint_selection_rule": "Final update only for every arm/seed; monitoring cannot select or retune",
+    "document_reset_policy": "Independent windows; no additional document boundary metadata",
+    "gradient_accumulation": 1,
+    "microbatch": 8,
+    "optimizer_schedule": {
+      "betas": [
+        0.9,
+        0.95
+      ],
+      "clip": 1.0,
+      "eps": 1e-08,
+      "lr": 0.001,
+      "minimum_lr_fraction": 0.1,
+      "warmup_updates": 30,
+      "weight_decay": 0.01
+    },
+    "precision": "CPU FP32",
+    "state_carry_and_detach": "No cross-window state",
+    "target_exposures_per_trial": 307200,
+    "tokens_per_update": 512,
+    "updates": 600
+  }
+}

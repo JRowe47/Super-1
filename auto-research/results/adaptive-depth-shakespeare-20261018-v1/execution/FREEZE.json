@@ -1,0 +1,469 @@
+{
+  "checkpoints": {
+    "dense-191.pt": "67bcf7e74c205426dc8f65dd48eca73e5f722fdbb10fe3e1104dd9796503eaf5",
+    "dense-307.pt": "6dbb4197a971c0ac1e274037b4e8f6f790a5ba95e9a5b8ea2bbf16a133663a8c",
+    "dense-73.pt": "cbc09db6f0f49e152db830cfef58f21b8ae9bb1c2a83f5f0ed14ee8db63656d5",
+    "fixed-191.pt": "b89433ca0c27f600f6b6f219d41d8e2a9e1bcdc364690f72b9839bfca322efc8",
+    "fixed-307.pt": "328f8ea584f8115d6f1cf627a1ac2d5a3b59682ae377913320f7615d94b98c38",
+    "fixed-73.pt": "f91896fb8b336e76bb6e1628518de4daa92b772ea591ddb2d775e30c604d5df1",
+    "global-191.pt": "c4fee80e95462eef3d2c3b9503620f0349bf695b36b4d6cb8593c7e7433ab490",
+    "global-307.pt": "4e4364cb3acc41d982063e0af2d31032894b04472b7d27e69bfb45c2e9bb035a",
+    "global-73.pt": "5e7bf4930e924dad49643112c58f2720a241aaae7bc2edf2bf6e02e54d11b180",
+    "nanogpt-191.pt": "a8972c856bcb81bbbea2cbad6227267a8219b6865a0a822fd4ca6aeb254ea502",
+    "nanogpt-307.pt": "a633c77451d0b68f71074af5298720fff24bc4f2b594bd730989019c763898b7",
+    "nanogpt-73.pt": "592ed6c8fa0cc3be78d6b319a85ea980e2371def45ec2e57be5147b5db0221b7",
+    "token-191.pt": "cf9d82f454a8371328d4e1bebe91e5cdf73016e99994d72305bdcfd7ed73f2d8",
+    "token-307.pt": "a1f7a84c233ddcfd607186e30272f2d702a60e6d360924c9edd803f4cd8b9030",
+    "token-73.pt": "ac89a486046e2ff64a79b119fcd091f435ae50929f2d577f060445db5ce9f4a2"
+  },
+  "rows": [
+    {
+      "arm": "dense",
+      "checkpoint": "dense-73.pt",
+      "checkpoint_sha256": "cbc09db6f0f49e152db830cfef58f21b8ae9bb1c2a83f5f0ed14ee8db63656d5",
+      "final_selection": {
+        "ce": 2.2662360072135925,
+        "logits_sha256": "19c91c2926e35af68a9d8a606b9b913ac45fb8f18f6aea695a0c902ddfd825f1",
+        "targets": 4096
+      },
+      "initial_selection": {
+        "ce": 5.565755844116211,
+        "logits_sha256": "0046a9a4be79792cbadb42d38c7a8b71b208a77d147679c3654730e2328c758e",
+        "targets": 4096
+      },
+      "parameters": 123744,
+      "sampler_sha256": "54d6f5b5feb99d09d0c6206fa19f83a829682163acfc9fcf228bd1797359ecca",
+      "seed": 73,
+      "target_exposures": 307200,
+      "training_cpu_seconds_including_selection": 6.749091000000001,
+      "training_wall_seconds_including_selection": 6.936706,
+      "updates": 600
+    },
+    {
+      "arm": "global",
+      "checkpoint": "global-73.pt",
+      "checkpoint_sha256": "5e7bf4930e924dad49643112c58f2720a241aaae7bc2edf2bf6e02e54d11b180",
+      "final_selection": {
+        "ce": 2.302576869726181,
+        "logits_sha256": "25b5fe5c6c5b723a281dae1a6fd228778ab3943a296ae2a33ad7ddc203d07d4f",
+        "targets": 4096
+      },
+      "initial_selection": {
+        "ce": 5.540552616119385,
+        "logits_sha256": "815d533be14d1530d1ca9d460d817bc35c81cc707c46681046e6f23e49221b78",
+        "targets": 4096
+      },
+      "parameters": 68905,
+      "router_output_weight_norm": 0.19644497334957123,
+      "sampler_sha256": "54d6f5b5feb99d09d0c6206fa19f83a829682163acfc9fcf228bd1797359ecca",
+      "seed": 73,
+      "selection_positions_mean": [
+        0.0,
+        0.36533015966415405,
+        0.7062361836433411,
+        1.0
+      ],
+      "selection_positions_std": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "target_exposures": 307200,
+      "training_cpu_seconds_including_selection": 8.9704,
+      "training_wall_seconds_including_selection": 9.049585207999998,
+      "updates": 600
+    },
+    {
+      "arm": "nanogpt",
+      "checkpoint": "nanogpt-73.pt",
+      "checkpoint_sha256": "592ed6c8fa0cc3be78d6b319a85ea980e2371def45ec2e57be5147b5db0221b7",
+      "final_selection": {
+        "ce": 2.4643321335315704,
+        "logits_sha256": "502ff964abd78d0990b327ebe3dabd242b346758ed8d17a615156331d7d40788",
+        "targets": 4096
+      },
+      "initial_selection": {
+        "ce": 5.522000253200531,
+        "logits_sha256": "bb75c5d20d6323b54e4aae2ddf9227ec0c9ec73da47ee1e6539ffd21ef575f31",
+        "targets": 4096
+      },
+      "parameters": 126384,
+      "sampler_sha256": "54d6f5b5feb99d09d0c6206fa19f83a829682163acfc9fcf228bd1797359ecca",
+      "seed": 73,
+      "target_exposures": 307200,
+      "training_cpu_seconds_including_selection": 5.830986000000003,
+      "training_wall_seconds_including_selection": 5.9032571659999995,
+      "updates": 600
+    },
+    {
+      "arm": "fixed",
+      "checkpoint": "fixed-73.pt",
+      "checkpoint_sha256": "f91896fb8b336e76bb6e1628518de4daa92b772ea591ddb2d775e30c604d5df1",
+      "final_selection": {
+        "ce": 2.3028621673583984,
+        "logits_sha256": "e38600f3333273eb6e8410e2ef03ea08f7bc6e3dfc7915d5562cae833e2c0a5a",
+        "targets": 4096
+      },
+      "initial_selection": {
+        "ce": 5.540552616119385,
+        "logits_sha256": "815d533be14d1530d1ca9d460d817bc35c81cc707c46681046e6f23e49221b78",
+        "targets": 4096
+      },
+      "parameters": 68905,
+      "router_output_weight_norm": 0.0,
+      "sampler_sha256": "54d6f5b5feb99d09d0c6206fa19f83a829682163acfc9fcf228bd1797359ecca",
+      "seed": 73,
+      "selection_positions_mean": [
+        0.0,
+        0.3333333432674408,
+        0.6666666269302368,
+        1.0
+      ],
+      "selection_positions_std": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "target_exposures": 307200,
+      "training_cpu_seconds_including_selection": 9.125877000000003,
+      "training_wall_seconds_including_selection": 9.249675957999997,
+      "updates": 600
+    },
+    {
+      "arm": "token",
+      "checkpoint": "token-73.pt",
+      "checkpoint_sha256": "ac89a486046e2ff64a79b119fcd091f435ae50929f2d577f060445db5ce9f4a2",
+      "final_selection": {
+        "ce": 2.300998955965042,
+        "logits_sha256": "598060c677f3137b176bdda02bb41fb41de314f0c4b70f228dd6376b8974596e",
+        "targets": 4096
+      },
+      "initial_selection": {
+        "ce": 5.540552616119385,
+        "logits_sha256": "815d533be14d1530d1ca9d460d817bc35c81cc707c46681046e6f23e49221b78",
+        "targets": 4096
+      },
+      "parameters": 68905,
+      "router_output_weight_norm": 0.23017773032188416,
+      "sampler_sha256": "54d6f5b5feb99d09d0c6206fa19f83a829682163acfc9fcf228bd1797359ecca",
+      "seed": 73,
+      "selection_positions_mean": [
+        0.0,
+        0.46439576148986816,
+        0.8012770414352417,
+        1.0
+      ],
+      "selection_positions_std": [
+        0.0,
+        0.03183438256382942,
+        0.023116083815693855,
+        0.0
+      ],
+      "target_exposures": 307200,
+      "training_cpu_seconds_including_selection": 9.213291999999996,
+      "training_wall_seconds_including_selection": 9.338248332999996,
+      "updates": 600
+    },
+    {
+      "arm": "fixed",
+      "checkpoint": "fixed-191.pt",
+      "checkpoint_sha256": "b89433ca0c27f600f6b6f219d41d8e2a9e1bcdc364690f72b9839bfca322efc8",
+      "final_selection": {
+        "ce": 2.302856206893921,
+        "logits_sha256": "d93f217afd448b173bf81b5574937e325ef63b09574dcaeb455554a04855cd52",
+        "targets": 4096
+      },
+      "initial_selection": {
+        "ce": 5.559408247470856,
+        "logits_sha256": "a243c403508664a77cb44949193498deb08eb74772488e81d13dd05f4c3d5523",
+        "targets": 4096
+      },
+      "parameters": 68905,
+      "router_output_weight_norm": 0.0,
+      "sampler_sha256": "ed71e9a7fdaaef01983f1b1cfe9f759c23c39156ab641b1de540400fbf398c66",
+      "seed": 191,
+      "selection_positions_mean": [
+        0.0,
+        0.3333333432674408,
+        0.6666666269302368,
+        1.0
+      ],
+      "selection_positions_std": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "target_exposures": 307200,
+      "training_cpu_seconds_including_selection": 9.334589000000001,
+      "training_wall_seconds_including_selection": 9.640974875000005,
+      "updates": 600
+    },
+    {
+      "arm": "token",
+      "checkpoint": "token-191.pt",
+      "checkpoint_sha256": "cf9d82f454a8371328d4e1bebe91e5cdf73016e99994d72305bdcfd7ed73f2d8",
+      "final_selection": {
+        "ce": 2.3007567524909973,
+        "logits_sha256": "3aff9fe0ea6baf7dbe2cf2085609bbcc552017283c81430f693aef1be3994133",
+        "targets": 4096
+      },
+      "initial_selection": {
+        "ce": 5.559408247470856,
+        "logits_sha256": "a243c403508664a77cb44949193498deb08eb74772488e81d13dd05f4c3d5523",
+        "targets": 4096
+      },
+      "parameters": 68905,
+      "router_output_weight_norm": 0.31348085403442383,
+      "sampler_sha256": "ed71e9a7fdaaef01983f1b1cfe9f759c23c39156ab641b1de540400fbf398c66",
+      "seed": 191,
+      "selection_positions_mean": [
+        0.0,
+        0.5224306583404541,
+        0.8387038707733154,
+        1.0
+      ],
+      "selection_positions_std": [
+        0.0,
+        0.050988346338272095,
+        0.04323223605751991,
+        0.0
+      ],
+      "target_exposures": 307200,
+      "training_cpu_seconds_including_selection": 9.387259,
+      "training_wall_seconds_including_selection": 9.640244666999997,
+      "updates": 600
+    },
+    {
+      "arm": "dense",
+      "checkpoint": "dense-191.pt",
+      "checkpoint_sha256": "67bcf7e74c205426dc8f65dd48eca73e5f722fdbb10fe3e1104dd9796503eaf5",
+      "final_selection": {
+        "ce": 2.2640496492385864,
+        "logits_sha256": "54eaa8db823caa76099128c457a7e908a424e4b38979223dfc8e65e0bd3d6506",
+        "targets": 4096
+      },
+      "initial_selection": {
+        "ce": 5.517107903957367,
+        "logits_sha256": "a4478f60db8002ce25273d18d505035832ed0fdfd9bc232652c7067fb74eed05",
+        "targets": 4096
+      },
+      "parameters": 123744,
+      "sampler_sha256": "ed71e9a7fdaaef01983f1b1cfe9f759c23c39156ab641b1de540400fbf398c66",
+      "seed": 191,
+      "target_exposures": 307200,
+      "training_cpu_seconds_including_selection": 6.851962999999998,
+      "training_wall_seconds_including_selection": 6.957411291999996,
+      "updates": 600
+    },
+    {
+      "arm": "global",
+      "checkpoint": "global-191.pt",
+      "checkpoint_sha256": "c4fee80e95462eef3d2c3b9503620f0349bf695b36b4d6cb8593c7e7433ab490",
+      "final_selection": {
+        "ce": 2.302440822124481,
+        "logits_sha256": "9611080e17f693e91255ea5291f8745a962e3eb4d12d2fab4d6de8ed964277a4",
+        "targets": 4096
+      },
+      "initial_selection": {
+        "ce": 5.559408247470856,
+        "logits_sha256": "a243c403508664a77cb44949193498deb08eb74772488e81d13dd05f4c3d5523",
+        "targets": 4096
+      },
+      "parameters": 68905,
+      "router_output_weight_norm": 0.2578349709510803,
+      "sampler_sha256": "ed71e9a7fdaaef01983f1b1cfe9f759c23c39156ab641b1de540400fbf398c66",
+      "seed": 191,
+      "selection_positions_mean": [
+        0.0,
+        0.38018661737442017,
+        0.7222937941551208,
+        1.0
+      ],
+      "selection_positions_std": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "target_exposures": 307200,
+      "training_cpu_seconds_including_selection": 9.281837999999993,
+      "training_wall_seconds_including_selection": 9.485577957999993,
+      "updates": 600
+    },
+    {
+      "arm": "nanogpt",
+      "checkpoint": "nanogpt-191.pt",
+      "checkpoint_sha256": "a8972c856bcb81bbbea2cbad6227267a8219b6865a0a822fd4ca6aeb254ea502",
+      "final_selection": {
+        "ce": 2.4744735062122345,
+        "logits_sha256": "aa03fd19c5ea83e653972c51c45c76f183900578360e22921a9ce6cebf2505a6",
+        "targets": 4096
+      },
+      "initial_selection": {
+        "ce": 5.537408292293549,
+        "logits_sha256": "72210c16516adeb807553e45850383bb4b66bc45dc9f34f7e44fd41b1496a63b",
+        "targets": 4096
+      },
+      "parameters": 126384,
+      "sampler_sha256": "ed71e9a7fdaaef01983f1b1cfe9f759c23c39156ab641b1de540400fbf398c66",
+      "seed": 191,
+      "target_exposures": 307200,
+      "training_cpu_seconds_including_selection": 5.973961000000003,
+      "training_wall_seconds_including_selection": 6.08228625000001,
+      "updates": 600
+    },
+    {
+      "arm": "fixed",
+      "checkpoint": "fixed-307.pt",
+      "checkpoint_sha256": "328f8ea584f8115d6f1cf627a1ac2d5a3b59682ae377913320f7615d94b98c38",
+      "final_selection": {
+        "ce": 2.336178332567215,
+        "logits_sha256": "592f3f4e7664de454bfc8029fa0c9c319dd69c5d8c492d802c40668cf6a1596f",
+        "targets": 4096
+      },
+      "initial_selection": {
+        "ce": 5.528705596923828,
+        "logits_sha256": "d7d58407e2b1411961477521213c9d7ef10dc63aafdb664959362178e8189916",
+        "targets": 4096
+      },
+      "parameters": 68905,
+      "router_output_weight_norm": 0.0,
+      "sampler_sha256": "540cf87e559fac17e4f08302d2b4d7f22899cacb0fb8955acefa98b6383cc33c",
+      "seed": 307,
+      "selection_positions_mean": [
+        0.0,
+        0.3333333432674408,
+        0.6666666269302368,
+        1.0
+      ],
+      "selection_positions_std": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "target_exposures": 307200,
+      "training_cpu_seconds_including_selection": 9.39183899999999,
+      "training_wall_seconds_including_selection": 9.668469416999997,
+      "updates": 600
+    },
+    {
+      "arm": "global",
+      "checkpoint": "global-307.pt",
+      "checkpoint_sha256": "4e4364cb3acc41d982063e0af2d31032894b04472b7d27e69bfb45c2e9bb035a",
+      "final_selection": {
+        "ce": 2.3287383019924164,
+        "logits_sha256": "c7d8aa2df178c68fbc54504615c1ef0758d32e6dcf42e7b1b924b78d22ef1e86",
+        "targets": 4096
+      },
+      "initial_selection": {
+        "ce": 5.528705596923828,
+        "logits_sha256": "d7d58407e2b1411961477521213c9d7ef10dc63aafdb664959362178e8189916",
+        "targets": 4096
+      },
+      "parameters": 68905,
+      "router_output_weight_norm": 0.14364023506641388,
+      "sampler_sha256": "540cf87e559fac17e4f08302d2b4d7f22899cacb0fb8955acefa98b6383cc33c",
+      "seed": 307,
+      "selection_positions_mean": [
+        0.0,
+        0.35285869240760803,
+        0.69261234998703,
+        1.0
+      ],
+      "selection_positions_std": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "target_exposures": 307200,
+      "training_cpu_seconds_including_selection": 8.969771000000009,
+      "training_wall_seconds_including_selection": 9.041819167,
+      "updates": 600
+    },
+    {
+      "arm": "dense",
+      "checkpoint": "dense-307.pt",
+      "checkpoint_sha256": "6dbb4197a971c0ac1e274037b4e8f6f790a5ba95e9a5b8ea2bbf16a133663a8c",
+      "final_selection": {
+        "ce": 2.236480176448822,
+        "logits_sha256": "0d66494bfab04b741a416ffb5320e3adf1eedbdc0a262994da84788179792935",
+        "targets": 4096
+      },
+      "initial_selection": {
+        "ce": 5.533807754516602,
+        "logits_sha256": "24f49e9ef30b6fb32cd1d3fe22a745927e6f3e3f74019359a79e0cc1ee124232",
+        "targets": 4096
+      },
+      "parameters": 123744,
+      "sampler_sha256": "540cf87e559fac17e4f08302d2b4d7f22899cacb0fb8955acefa98b6383cc33c",
+      "seed": 307,
+      "target_exposures": 307200,
+      "training_cpu_seconds_including_selection": 7.036840000000012,
+      "training_wall_seconds_including_selection": 7.192684749999998,
+      "updates": 600
+    },
+    {
+      "arm": "token",
+      "checkpoint": "token-307.pt",
+      "checkpoint_sha256": "a1f7a84c233ddcfd607186e30272f2d702a60e6d360924c9edd803f4cd8b9030",
+      "final_selection": {
+        "ce": 2.3076646625995636,
+        "logits_sha256": "e644b9193438b7d8078ba69df8f98f2c7ceaf8a3014d066e91d709c9818d6e26",
+        "targets": 4096
+      },
+      "initial_selection": {
+        "ce": 5.528705596923828,
+        "logits_sha256": "d7d58407e2b1411961477521213c9d7ef10dc63aafdb664959362178e8189916",
+        "targets": 4096
+      },
+      "parameters": 68905,
+      "router_output_weight_norm": 0.18814170360565186,
+      "sampler_sha256": "540cf87e559fac17e4f08302d2b4d7f22899cacb0fb8955acefa98b6383cc33c",
+      "seed": 307,
+      "selection_positions_mean": [
+        0.0,
+        0.42852210998535156,
+        0.7654151916503906,
+        1.0
+      ],
+      "selection_positions_std": [
+        0.0,
+        0.03175182268023491,
+        0.03666486591100693,
+        0.0
+      ],
+      "target_exposures": 307200,
+      "training_cpu_seconds_including_selection": 9.628559999999993,
+      "training_wall_seconds_including_selection": 10.164061583000006,
+      "updates": 600
+    },
+    {
+      "arm": "nanogpt",
+      "checkpoint": "nanogpt-307.pt",
+      "checkpoint_sha256": "a633c77451d0b68f71074af5298720fff24bc4f2b594bd730989019c763898b7",
+      "final_selection": {
+        "ce": 2.457251250743866,
+        "logits_sha256": "d0005957da4cb35c0b4331b1504ecd2d42e515ac232b964ddc0af41cfad1e4f2",
+        "targets": 4096
+      },
+      "initial_selection": {
+        "ce": 5.533338785171509,
+        "logits_sha256": "0a1f3a4f5c423add63172f8d5718477e52b07df37ccc14eed19e8f61603c69a3",
+        "targets": 4096
+      },
+      "parameters": 126384,
+      "sampler_sha256": "540cf87e559fac17e4f08302d2b4d7f22899cacb0fb8955acefa98b6383cc33c",
+      "seed": 307,
+      "target_exposures": 307200,
+      "training_cpu_seconds_including_selection": 5.909293000000005,
+      "training_wall_seconds_including_selection": 6.002601249999998,
+      "updates": 600
+    }
+  ],
+  "utc": "2026-10-18T13:25:37Z"
+}

@@ -1,0 +1,17 @@
+{
+  "arm": "nano",
+  "batch_sha256": "2304c14c215f8700ce5da2190b8ac8999c9a43c5f998e02d8396c1bc613ef9bc",
+  "checkpoint": "nano-73-step200.pt",
+  "cpu_seconds": 6.763897,
+  "parameters": 150048,
+  "seed": 73,
+  "selection": {
+    "ce": 2.4455828070640564,
+    "logits_sha256": "a0d24080e7a679a2081b7b4cb142ea6b46ef9b71d737cdfc7a02359fedfde069",
+    "tail_ce": 2.455946624279022,
+    "targets": 4096
+  },
+  "sha256": "5cf3fee04276797f0716899256034e3f79b9d2d7a09032d6eefddfa2a1941230",
+  "step": 200,
+  "targets_seen": 204800
+}

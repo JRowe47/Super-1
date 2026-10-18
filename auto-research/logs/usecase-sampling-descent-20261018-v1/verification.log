@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "base_checkpoints": 3,
+  "sampler_round_checkpoints": 84,
+  "independent_confirmation_replays": 36,
+  "selection_and_paired_samplers_verified": true,
+  "source_data_and_frozen_backbone_hashes_verified": true,
+  "decisions_verified": true
+}

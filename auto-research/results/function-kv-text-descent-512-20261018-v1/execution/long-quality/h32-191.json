@@ -1,0 +1,14 @@
+{
+  "arm": "h32",
+  "base_checkpoint": "curve-191-step600.pt",
+  "base_sha256": "045ef4b125e0b88d7c4e4a0c7d5ee8bbb65b8755a9cec5c3bac163463d0e66c7",
+  "cpu_seconds": 2.815166999999999,
+  "duplicate_exact": true,
+  "metrics": {
+    "cache_bytes": 49152,
+    "ce": 2.17094749212265,
+    "logits_sha256": "65f3234c66f2924392ee6d64e5bc4e70588517ca378c56dfc5de1ab6657ca0d3",
+    "tail_ce": 2.154656622558832
+  },
+  "seed": 191
+}

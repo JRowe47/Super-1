@@ -1,0 +1,229 @@
+{
+  "charts": [
+    {
+      "name": "function_weight_kv_text_descent",
+      "readme_embedded": true,
+      "receipt_sha256": "5217af51ea1559969bf97a12a9a3b3acc492c2cf0f8edc26393d09bd03a594c7"
+    },
+    {
+      "name": "function_weight_int4",
+      "readme_embedded": true,
+      "receipt_sha256": "2f6a31b2b78dc0d39c91630e24b222d580ad9a4b0c5387c384bc8f9cfddd342b"
+    }
+  ],
+  "commands": [
+    {
+      "command": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        "scripts/verify_evidence.py"
+      ],
+      "exit_code": 0,
+      "log_sha256": "4ea5b783483f2dcd51aecae11280d23df180e2810c0f5490a976164f3c32b618",
+      "name": "repository-hashes"
+    },
+    {
+      "command": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "sampling_library.test_packed_weights_archive",
+        "sampling_library.test_inference",
+        "sampling_library.test_hierarchical_kv",
+        "sampling_library.test_hierarchy_profiles"
+      ],
+      "exit_code": 0,
+      "log_sha256": "1662737c39c287fd4033ca3750daac8a6a1b2edca631e123816cc99a554bca5a",
+      "name": "unit-tests"
+    },
+    {
+      "command": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        "-m",
+        "sampling_library.test_library"
+      ],
+      "exit_code": 0,
+      "log_sha256": "ead5fd99cb4cc47c89e4ddd780d3d69f7284a39192b8eca8038254035a6983d3",
+      "name": "library"
+    },
+    {
+      "command": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        "-m",
+        "sampling_library.test_profiles"
+      ],
+      "exit_code": 0,
+      "log_sha256": "697207d46e6e8fb4e83b91a9e7d82942f3bda74805dd756cc6df3e2216e74121",
+      "name": "depth-profiles"
+    },
+    {
+      "command": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "-B",
+        "auto-research/results/function-weight-int4-20261018-v1/verify.py",
+        "--output",
+        "/Volumes/SP AI 01_16/CodexWorkspaces/Super-1-memory-frontier-20261018/auto-research/results/pr8-merge-verification-20261018-v1/PACKED_REPLAY.json"
+      ],
+      "exit_code": 0,
+      "log_sha256": "aad4854cd314ba97fdf208b9c1c312ed953db2d2f7fb42c2faf76efb6364bed1",
+      "name": "packed-replay"
+    }
+  ],
+  "compact_profiles": [
+    {
+      "exact_tensors": true,
+      "id": "nano_fp16-seed73",
+      "sha256": "c87da262e2e62f46a8b182179e056a803e41ab0b6654fc2bb6824a6777b36192"
+    },
+    {
+      "exact_tensors": true,
+      "id": "curve_b4-seed73",
+      "sha256": "87645ecca956c90f6ed0df130f5d44ac0b372e2496eba666848ccd55d4aa28e3"
+    },
+    {
+      "exact_tensors": true,
+      "id": "nano_q4-seed73",
+      "sha256": "7893e0d334d19c812329dc9c9a8b20dc8fe98f0b790d62960c6cde678ab7e95c"
+    },
+    {
+      "exact_tensors": true,
+      "id": "curve_fp16-seed73",
+      "sha256": "062d6968196bc37b8f97c0dfcb88c4662586e3850c909fd35e995849e588df0d"
+    },
+    {
+      "exact_tensors": true,
+      "id": "curve_be4-seed73",
+      "sha256": "651fb55ee6549c8ded377eee562b518de6d17db6d51729c9cf29dfe295a24cef"
+    },
+    {
+      "exact_tensors": true,
+      "id": "curve_fp16-seed191",
+      "sha256": "2e940ae6189de0f77658d2673f2b070dff99cf1126157f1870706766d9fe81a4"
+    },
+    {
+      "exact_tensors": true,
+      "id": "curve_be4-seed191",
+      "sha256": "ba93f400811730808781703a0da6276a7cc9b71ce45c50b35dced091bba42904"
+    },
+    {
+      "exact_tensors": true,
+      "id": "nano_fp16-seed191",
+      "sha256": "0e6269929ddac78993cb767cb58cddb6f3b2ec5ee3c79c5fd1b2417b654aa4c1"
+    },
+    {
+      "exact_tensors": true,
+      "id": "curve_b4-seed191",
+      "sha256": "74340fec689bfd454b1090ceac88d0d82367ed113ef786041d3a729d7e30c44d"
+    },
+    {
+      "exact_tensors": true,
+      "id": "nano_q4-seed191",
+      "sha256": "7646fe60bb6c508e852832e41bab5522a405e638c4928579f11730cd3e5374a7"
+    },
+    {
+      "exact_tensors": true,
+      "id": "curve_fp16-seed307",
+      "sha256": "4a11d87885f93ce75ea167034cf81727aaf1f483f631cf78f10058c6285f6c94"
+    },
+    {
+      "exact_tensors": true,
+      "id": "curve_b4-seed307",
+      "sha256": "64e8bca39fc53ff4b57c696def18512c4ad85a99bb3d3da377cfc4be720b17bb"
+    },
+    {
+      "exact_tensors": true,
+      "id": "nano_fp16-seed307",
+      "sha256": "a549c9d009fddb9c6427e276185ddec05e6a95f700b96bdf1d84c98c0d6a1211"
+    },
+    {
+      "exact_tensors": true,
+      "id": "curve_be4-seed307",
+      "sha256": "b44e055eb12e375f19514809dfe9517a30498edef550b3c6d4635610c0fd8214"
+    },
+    {
+      "exact_tensors": true,
+      "id": "nano_q4-seed307",
+      "sha256": "ddeb4fce7dc4b8649d0f882ef69facc04452024262af20594eb9a5947dfac060"
+    }
+  ],
+  "hierarchy_profiles": [
+    {
+      "ce": 2.0952933728694916,
+      "exact_logits": true,
+      "id": "function-kv-text-descent-20261018-v1/h16/73",
+      "run": "function-kv-text-descent-20261018-v1"
+    },
+    {
+      "ce": 2.094913899898529,
+      "exact_logits": true,
+      "id": "function-kv-text-descent-20261018-v1/h32/73",
+      "run": "function-kv-text-descent-20261018-v1"
+    },
+    {
+      "ce": 2.0969833433628082,
+      "exact_logits": true,
+      "id": "function-kv-text-descent-20261018-v1/h16/191",
+      "run": "function-kv-text-descent-20261018-v1"
+    },
+    {
+      "ce": 2.09765362739563,
+      "exact_logits": true,
+      "id": "function-kv-text-descent-20261018-v1/h32/191",
+      "run": "function-kv-text-descent-20261018-v1"
+    },
+    {
+      "ce": 2.0833491384983063,
+      "exact_logits": true,
+      "id": "function-kv-text-descent-20261018-v1/h16/307",
+      "run": "function-kv-text-descent-20261018-v1"
+    },
+    {
+      "ce": 2.083511233329773,
+      "exact_logits": true,
+      "id": "function-kv-text-descent-20261018-v1/h32/307",
+      "run": "function-kv-text-descent-20261018-v1"
+    },
+    {
+      "ce": 2.1278423964977264,
+      "exact_logits": true,
+      "id": "function-kv-text-descent-512-20261018-v1/h16/73",
+      "run": "function-kv-text-descent-512-20261018-v1"
+    },
+    {
+      "ce": 2.1241528391838074,
+      "exact_logits": true,
+      "id": "function-kv-text-descent-512-20261018-v1/h32/73",
+      "run": "function-kv-text-descent-512-20261018-v1"
+    },
+    {
+      "ce": 2.1165399849414825,
+      "exact_logits": true,
+      "id": "function-kv-text-descent-512-20261018-v1/h16/191",
+      "run": "function-kv-text-descent-512-20261018-v1"
+    },
+    {
+      "ce": 2.1119439005851746,
+      "exact_logits": true,
+      "id": "function-kv-text-descent-512-20261018-v1/h32/191",
+      "run": "function-kv-text-descent-512-20261018-v1"
+    },
+    {
+      "ce": 2.159265697002411,
+      "exact_logits": true,
+      "id": "function-kv-text-descent-512-20261018-v1/h16/307",
+      "run": "function-kv-text-descent-512-20261018-v1"
+    },
+    {
+      "ce": 2.1537429690361023,
+      "exact_logits": true,
+      "id": "function-kv-text-descent-512-20261018-v1/h32/307",
+      "run": "function-kv-text-descent-512-20261018-v1"
+    }
+  ],
+  "no_training": true,
+  "status": "PASS",
+  "tested_head": "59e82bcec4f7d390fad8a1ce58d0a2df2d1fd76e"
+}

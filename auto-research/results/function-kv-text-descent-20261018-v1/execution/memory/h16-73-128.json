@@ -1,0 +1,14 @@
+{
+  "arm": "h16",
+  "decode_ms_median": 0.9977709999999806,
+  "decode_tokens": 16,
+  "dtype": "float32",
+  "length": 128,
+  "loaded_peak_rss_bytes": 190201856,
+  "logical_cache_bytes": 24576,
+  "parameter_bytes": 277924,
+  "peak_rss_bytes": 194052096,
+  "prefill_seconds": 0.021929167000000027,
+  "scope": "Isolated process, actual retained KV plus total peak RSS. Above128 bytes is memory mechanics only; no long-context quality claim.",
+  "seed": 73
+}

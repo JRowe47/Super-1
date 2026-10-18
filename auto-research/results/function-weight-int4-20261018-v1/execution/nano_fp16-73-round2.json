@@ -1,0 +1,15 @@
+{
+  "arm": "nano_fp16",
+  "batch_sha256": "a00daffff72fc1ea3aa12a8e76bb568e1e0291b0aa9520e3297b0c54cc8ee5ff",
+  "checkpoint": "nano_fp16-73-round2.pt",
+  "extra_targets": 81920,
+  "lr": 0.0001,
+  "round": 2,
+  "seed": 73,
+  "selection": {
+    "ce": 2.3415952920913696,
+    "logits_sha256": "3cdc568194f30ee3f29ac1195cc0880a251da757816cf1bb96fb6b16255acc79",
+    "targets": 4096
+  },
+  "sha256": "626fe8dd96ec16e6330ec2ead240e16e4580cc95547fef74c8d253a313e22a11"
+}

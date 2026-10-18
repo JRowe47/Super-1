@@ -1,0 +1,25 @@
+{
+  "chart_visually_inspected": true,
+  "profile_index_hashes": 15,
+  "source_sha256": "3180772c6614b31d2152782d36aba4c3c6545f216fcca21df870975133393145",
+  "status": "PASS",
+  "tests": [
+    {
+      "cases": 13,
+      "command": "python3 -B -m unittest sampling_library.test_packed_weights_archive sampling_library.test_inference sampling_library.test_hierarchical_kv sampling_library.test_hierarchy_profiles",
+      "exit_code": 0
+    },
+    {
+      "checks": 13,
+      "command": "python3 -B -m sampling_library.test_library",
+      "exit_code": 0
+    },
+    {
+      "checks": 5,
+      "command": "python3 -B -m sampling_library.test_profiles",
+      "exit_code": 0
+    }
+  ],
+  "timestamp_utc": "2026-10-18T16:06:27.308242+00:00",
+  "training_and_packaging_sources_unchanged": true
+}

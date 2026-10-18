@@ -1,0 +1,219 @@
+{
+  "authorization": {
+    "approved": true,
+    "approved_resources": "One CPU thread, CPU FP32, three workloads and seeds, shared backbone pretraining followed by three sampler-only rounds. Existing dependencies/data plus local synthetic generation.",
+    "local_cpu_budget": {
+      "new_artifact_limit_bytes": 157286400,
+      "seconds": 900,
+      "threads": 1
+    },
+    "max_cost": "USD 0 provider spend",
+    "max_walltime": 1800,
+    "user_approval_reference": "Current chat: user requested optimizing sampling per use-case iteratively after benchmarking, explicitly by gradient descent. This authorizes the bounded local follow-up; no recursive inference controller, cloud spending or endless research loop."
+  },
+  "data": {
+    "confirmation_sha256": {
+      "arithmetic": "cc403f0a3c09f2011258227e97a04c03c2f8766e9330a1df5f42fd7f625433fa",
+      "retrieval": "8e93c47c573c2d4813380985c311ed2402b161ef4bf7724ca1fb6af033b67c86",
+      "text": "7d37ef5e2c2950af42b7ab927d4960fa6e504375b45ecfc23eb300597cb97fbf"
+    },
+    "dataset_versions": {
+      "synthetic": {
+        "generator_seed": 202610181,
+        "path": "auto-research/results/usecase-sampling-descent-20261018-v1/DATA.json",
+        "sha256": "eb7f660e478f5fb2a0033308dafc6f3b56890386c69814e6c00d6bc0e75cf9f0",
+        "tasks": "Four random key/value bindings queried once; four-operand addition modulo 8. Generated examples are benchmark fixtures, not routing heuristics."
+      },
+      "text": {
+        "origin": "char-rnn Tiny Shakespeare snapshot",
+        "path": "auto-research/results/adaptive-depth-shakespeare-20261018-v1/corpus.txt",
+        "sha256": "86c4e6aa9db7c042ec79f339dcb96d42b0075e16b8fc2e86bf0ca57e2dc565ed"
+      }
+    },
+    "official_test_access_permitted": false,
+    "research_wide_region_reuse_audit": "Text confirmation starts at 1020494, immediately after previous pilot scored prefix ended (1003854 + 256*65). Selection/tuning text was used by prior pilot training, disclosed; current backbone is fresh and only sees its own train region. No prior checkpoint transfer. Synthetic exact prompts are disjoint across all four splits; substrings/compositional elements may repeat. Public corpus familiarity and single-domain limits remain.",
+    "selection_sha256": {
+      "arithmetic": "09a94cb2c89b8d19b0eb03318d2739eb51f8a4b5dc6ef8d71387f04789960f62",
+      "retrieval": "9d0b778872f3bb1865aae851cc6f836159423f9172cf028f5caba549ff2194e6",
+      "text": "1d352cb82d9470c6913a30422f758835426215bfbb3f0dbbfdf35fa5023ee3a9"
+    },
+    "split_boundaries": {
+      "evaluation": "First 128 selection /256 confirmation examples; text uses nonoverlapping 65-byte chunks, 64 next-byte targets; synthetic one answer target per prompt.",
+      "synthetic": {
+        "confirmation": 256,
+        "selection": 128,
+        "train": 2048,
+        "tune": 768
+      },
+      "text": {
+        "confirmation": [
+          1020494,
+          1115394
+        ],
+        "selection": [
+          780775,
+          892315
+        ],
+        "train": [
+          0,
+          669236
+        ],
+        "tune": [
+          669236,
+          780775
+        ]
+      }
+    },
+    "teacher_and_objective": "No teacher. Balanced task updates: mean CE per task batch. Text all bytes scored; synthetic only single answer byte. Padding/answer are never scored as inputs to the answer prediction.",
+    "tokenizer_sha256": "40aff2e9d2d8922e47afd4648e6967497158785fbd1da870e7110266bf944880",
+    "train_sha256": {
+      "arithmetic": "950375086812c0befb9b2145154602e8a81df7588797b5d9cb3f67e5aa3be728",
+      "retrieval": "453e10cd7cef31624e788803ea64995a3f1e8ef39befdecd830aae630fef6d7d",
+      "text": "f7581f84bb0c35455b635a392e4b50a2060c9ae8ab4fea2dc5dbd2f685b8cce6"
+    },
+    "tuning_sha256": {
+      "arithmetic": "45ae0a4074a797c645e4c553f660096cf81023463cf8bd77ea2ca9a3e4c7b7a6",
+      "retrieval": "3e0d30719d59ddc68018fa070be1c42b36519f9c34b74c94fd424f647a839d1d",
+      "text": "8f8a2eeb453e7f80971a6e2147b69d6f37997e6c773ea5b662e77d5f8f06352b"
+    }
+  },
+  "decision": {
+    "next_experiment": "Choose from measured gradients and validation trajectories; no automatic new run after this budget.",
+    "outcome": "PENDING",
+    "reason": "No corpus/model training before protocol freeze; synthetic mechanical canary only"
+  },
+  "deployment": {
+    "batching": "Batch one, fixed 64 input slots",
+    "kv_or_state_dtype": "No cache",
+    "latency_statistics": "p50 and nearest-rank p95, shared host load caveat",
+    "memory_components": "Weight bytes and controller count; total process/device memory unmeasured here, no memory advantage claim",
+    "prefill_decode_protocol": "Full forward median and p95 on a selection prompt per case. Decode not benchmarked in this follow-up.",
+    "quantization_metadata": "None",
+    "warmup_and_synchronization": {
+      "repeats": 20,
+      "sync": "CPU synchronous",
+      "warmup": 5
+    },
+    "weight_dtype": "FP32"
+  },
+  "design": {
+    "arms": [
+      "uniform frozen",
+      "shared_token",
+      "per_use_case_global",
+      "per_use_case_token"
+    ],
+    "compute_accounting": "Full-shape measured profile in PROFILE.json; actual parent CPU/wall and fixed forward timings. No FLOP/parameter-matched cross-architecture claim.",
+    "control_rationale": "Every sampler is initialized uniformly from the same frozen seed backbone. Shared controller receives 200 updates per workload per round; each specialized controller receives 200 updates on its workload. Same per-workload batches. Shared checkpoint selected by macro-average selection CE; specialized by own workload CE. Three specialized policies use three times the total router storage but equal active per-request router size. Dense/nanoGPT are not rerun because this experiment isolates sampling on the same backbone. Prior study remains separate.",
+    "learning_rate_trials_per_arm": "One initial LR; three rounds. ReduceLROnPlateau halves LR after no selection improvement using fixed threshold. Every round plus initial checkpoint is retained and eligible; equal four selection opportunities.",
+    "matching_track": "Same backbone, active dimensions and four executed blocks; equal per-workload tuning examples and target exposure. Shared and per-use-case storage/training aggregate are explicitly distinguished.",
+    "mechanism_equations": "Unchanged prior SampledCurve cubic W(t) with four ordered depth positions and fixed endpoints. Backbone learned on task-balanced mixed data, then frozen. Only router coefficients receive Adam gradients. Global mode supplies no token features. Workload-specific routers are selected by explicit caller workload identity; no keyword routing rules.",
+    "original_source_hashes": {
+      "artifacts/nanogpt-10m-20260815/package/source/official_nanogpt/third_party/nanogpt/model.py": "7c01703240dbec5d554527dc666e35b3df8391d0b117fddc07afcf325a21d11c",
+      "auto-research/results/adaptive-depth-shakespeare-20261018-v1/corpus.txt": "86c4e6aa9db7c042ec79f339dcb96d42b0075e16b8fc2e86bf0ca57e2dc565ed",
+      "auto-research/results/adaptive-depth-shakespeare-20261018-v1/model.py": "0a93477afa16d497ba0fa755e0cd4a5d5280846808edc1e5f79b5df1b45fd2d9",
+      "src/hierarchy/experiments/function_weight_wt2_original_transformer_port/model.py": "3180772c6614b31d2152782d36aba4c3c6545f216fcca21df870975133393145"
+    },
+    "parameter_counts": {
+      "active_total": 68905,
+      "backbone": 68496,
+      "router": 409,
+      "three_specialized_total_router": 1227
+    },
+    "seed_selection_method": "Prespecified paired identifiers",
+    "seeds": [
+      73,
+      191,
+      307
+    ]
+  },
+  "evaluation": {
+    "canonical_precision": "FP32",
+    "confirmation_frozen_before_scoring": true,
+    "duplicate_policy": "Two exact evaluations plus independent replay of all 36 endpoint rows",
+    "learning_qualification": {
+      "synthetic": "Every seed final selection accuracy >=22.5%, versus 12.5% answer-class chance. Failure means unlearned task; cannot promote sampler mechanism even if CE moves.",
+      "text": "Every seed final selection CE improves at least 10% from initialization"
+    },
+    "multiple_comparison_policy": "Three primary per-use-case specialization comparisons; success also requires uniform baseline. Global control required for token-dependence claim. Raw differences reported even if gate fails.",
+    "no_test_tuning": true,
+    "primary_endpoint": "All selected policies plus frozen baseline on fresh reserved confirmation, each workload separately",
+    "uncertainty_method": "Three paired seeds, t intervals df2; familywise alpha=.05 across three use cases by Bonferroni. Small sample normality unverified; intervals only cover seed variability on shared holdout."
+  },
+  "evidence": {
+    "checkpoint_manifest": "auto-research/results/usecase-sampling-descent-20261018-v1/execution/FREEZE.json",
+    "cleanup_receipt": "auto-research/results/usecase-sampling-descent-20261018-v1/execution/CLEANUP.json",
+    "preservation_policy": "Exclusive-created outputs; preserve all base and every round optimizer/controller checkpoint, selected and rejected; no repeat on confirmation",
+    "progress_path": "auto-research/results/usecase-sampling-descent-20261018-v1/execution/progress.jsonl",
+    "protocol_sha256": "Recorded externally in source manifest and registry",
+    "source_manifest": "auto-research/results/usecase-sampling-descent-20261018-v1/SOURCE_MANIFEST.json",
+    "terminal_receipt_path": "auto-research/results/usecase-sampling-descent-20261018-v1/execution/TERMINAL.json"
+  },
+  "execution": {
+    "canary_matrix": "CANARY.json: nonconstant curve, nonzero router, causal logits/positions, positive ordered increments, gradients only on sampler, one optimizer step changes sampler but not base. All synthetic labels independently validated.",
+    "cost_estimate": {
+      "estimated_training_cpu_seconds": 318.03907500000014,
+      "fixed": 0.0216905,
+      "shape": [
+        8,
+        64
+      ],
+      "token": 0.012401875000000007
+    },
+    "fidelity_tolerances": {
+      "backbone_hash": "exact unchanged",
+      "causal_prefix": "exact",
+      "duplicate_logits": "exact",
+      "routing_gradient_central_difference_atol": 1e-08
+    },
+    "hardware": "macOS-27.0.1-arm64-arm-64bit",
+    "resolved_writable_output": "/Volumes/SP AI 01_16/CodexWorkspaces/Super-1-adaptive-depth-20261018/auto-research/results/usecase-sampling-descent-20261018-v1",
+    "runtime_versions": {
+      "python": "3.9.6 (default, Aug 25 2026, 21:26:21) \n[Clang 21.0.0 (clang-2100.3.34.2)]",
+      "torch": "2.8.0"
+    },
+    "source_ownership_and_concurrent_writers": "Reuse dedicated SSD branch of prior draft PR; old evidence stays immutable. No matching run process. Child TMPDIR on SSD; Python -B."
+  },
+  "experiment_id": "Gradient descent on workload-specific sampling with frozen backbone",
+  "frozen_at_utc": "2026-10-18T13:39:17Z",
+  "futility_rule": "Stop for nonfinite loss/gradient, source/data drift, backbone mutation during sampling, unavailable SSD, resource/preservation failure or revoked permission. Always complete declared rounds if otherwise valid; no tuning from confirmation.",
+  "hypothesis": "A token-dependent sampler tuned separately for each workload improves reserved loss relative to the frozen uniform baseline and a shared sampler given equal per-workload tuning exposure.",
+  "minimum_useful_effect": 0.02,
+  "parent_run_ids": [
+    "adaptive-depth-shakespeare-20261018-v1"
+  ],
+  "primary_comparator": "Per-use-case token sampler versus shared token sampler; frozen uniform baseline and per-use-case global positions are mandatory controls.",
+  "primary_metric": "Separate per-use-case reserved CE: nats/byte for text; nats/answer for synthetic tasks. Never pool reported endpoint losses.",
+  "run_id": "usecase-sampling-descent-20261018-v1",
+  "schema_version": 1,
+  "status": "FROZEN_AUTHORIZED_LOCAL_USECASE_TUNING",
+  "success_rule": "Per workload: all three paired CE gaps negative, mean <= -0.02, Bonferroni-across-three-workloads paired-t interval upper <0. Specialization support requires both shared and uniform comparisons; token-conditioning support also requires global comparison. Backbone learning qualification must pass before any mechanism promotion.",
+  "training": {
+    "accessible_history": "Within 64-byte window only",
+    "bptt_length": 64,
+    "checkpoint_selection_rule": "Backbone final only. Router lowest selection loss among rounds 0-3; ties retain earlier. Shared router selected once by mean of per-task selection losses; never choose a different shared checkpoint per task.",
+    "document_reset_policy": "Independent examples; right padding for synthetic tasks excluded from loss",
+    "gradient_accumulation": 1,
+    "microbatch": 8,
+    "optimizer_schedule": {
+      "backbone": "AdamW constant LR, config betas/eps/weight decay; gradients clipped",
+      "configuration": "auto-research/results/usecase-sampling-descent-20261018-v1/CONFIG.json",
+      "sampling": "Adam on router only; config LR/betas/eps, gradient clip; ReduceLROnPlateau by selection between rounds; no weight decay"
+    },
+    "precision": "CPU FP32; finite difference canary FP64",
+    "state_carry_and_detach": "No state across examples",
+    "target_exposures_per_trial": {
+      "backbone_per_task_synthetic": 4800,
+      "backbone_per_task_text": 307200,
+      "sampler_per_task_synthetic": 4800,
+      "sampler_per_task_text": 307200
+    },
+    "tokens_per_update": "512 input slots; 512 text targets or eight synthetic answer targets",
+    "updates": {
+      "backbone_per_seed": 1800,
+      "rounds": 3,
+      "sampling_per_round_shared": 600,
+      "sampling_per_round_specialist": 200
+    }
+  }
+}

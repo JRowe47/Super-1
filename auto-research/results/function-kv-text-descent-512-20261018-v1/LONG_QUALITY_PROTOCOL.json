@@ -1,0 +1,25 @@
+{
+  "purpose": "Check whether the already-selected512-context hierarchy preserves language quality over a fresh continuous8192-byte passage. No further tuning or selection on this passage.",
+  "byte_region": [
+    144000,
+    152193
+  ],
+  "context": 8192,
+  "chunk": 128,
+  "quality_ppl_tolerance": 0.02,
+  "seeds": [
+    73,
+    191,
+    307
+  ],
+  "arms": [
+    "exact",
+    "h16",
+    "h32"
+  ],
+  "selection": "Use512 pilot FREEZE choices; report every capacity but only preselected capacity determines pass.",
+  "comparison": "Same function-weight backbone and learned router, same bytes and absolute positions, only KV backend differs. Two identical repeats per arm/seed. Compare all-token and latter-half CE using both upper paired t95 and each-seed2%PPL gate.",
+  "scope": "One continuous held-out8K-byte passage from Alice, model trained512. This is a narrow extrapolation-quality diagnostic, not long-range recall,100K quality,70B scale or a long-context nanoGPT comparison. Three seeds do not make three independent text samples.",
+  "long_quality_source_sha256": "eb9c0d4c4c498625ae40b01cc3cce4b02d800fc2137d50923bc5f3b133e5e4fc",
+  "frozen_training_source_manifest_sha256": "432c29012640a688ef12513a0dc354f6eaaf7ab31bdfae9cb1c7116516e85aa2"
+}

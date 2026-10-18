@@ -1,0 +1,125 @@
+{
+  "status": "PASS",
+  "kind": "MECHANICS_ONLY",
+  "tests": 8,
+  "test_output": "........\n----------------------------------------------------------------------\nRan 8 tests in 1.824s\n\nOK\n",
+  "trained_profiles_in_tests": 9,
+  "cases": [
+    {
+      "profile": "text-depth-library-20261018-v1/layers-2/73",
+      "depth": 2,
+      "tokens": 256,
+      "recent_capacity": 8,
+      "level_capacities": [
+        2,
+        2
+      ],
+      "original_model_parameter_count": 68905,
+      "additional_pool_parameters": 576,
+      "logical_cache_bytes": 9216,
+      "cache_bound_bytes": 9216,
+      "exact_KV_bytes": 196608,
+      "same_function_weight_and_router_parameter_objects": true,
+      "sampling_coordinate_min": 0.0,
+      "sampling_coordinate_max": 1.0
+    },
+    {
+      "profile": "text-depth-library-20261018-v1/layers-2/73",
+      "depth": 2,
+      "tokens": 256,
+      "recent_capacity": 16,
+      "level_capacities": [
+        4,
+        4
+      ],
+      "original_model_parameter_count": 68905,
+      "additional_pool_parameters": 576,
+      "logical_cache_bytes": 18432,
+      "cache_bound_bytes": 18432,
+      "exact_KV_bytes": 196608,
+      "same_function_weight_and_router_parameter_objects": true,
+      "sampling_coordinate_min": 0.0,
+      "sampling_coordinate_max": 1.0
+    },
+    {
+      "profile": "text-depth-library-20261018-v1/layers-3/73",
+      "depth": 3,
+      "tokens": 256,
+      "recent_capacity": 8,
+      "level_capacities": [
+        2,
+        2
+      ],
+      "original_model_parameter_count": 68905,
+      "additional_pool_parameters": 576,
+      "logical_cache_bytes": 13824,
+      "cache_bound_bytes": 13824,
+      "exact_KV_bytes": 294912,
+      "same_function_weight_and_router_parameter_objects": true,
+      "sampling_coordinate_min": 0.0,
+      "sampling_coordinate_max": 1.0
+    },
+    {
+      "profile": "text-depth-library-20261018-v1/layers-3/73",
+      "depth": 3,
+      "tokens": 256,
+      "recent_capacity": 16,
+      "level_capacities": [
+        4,
+        4
+      ],
+      "original_model_parameter_count": 68905,
+      "additional_pool_parameters": 576,
+      "logical_cache_bytes": 27648,
+      "cache_bound_bytes": 27648,
+      "exact_KV_bytes": 294912,
+      "same_function_weight_and_router_parameter_objects": true,
+      "sampling_coordinate_min": 0.0,
+      "sampling_coordinate_max": 1.0
+    },
+    {
+      "profile": "text-depth-library-20261018-v1/layers-4/73",
+      "depth": 4,
+      "tokens": 256,
+      "recent_capacity": 8,
+      "level_capacities": [
+        2,
+        2
+      ],
+      "original_model_parameter_count": 68905,
+      "additional_pool_parameters": 576,
+      "logical_cache_bytes": 18432,
+      "cache_bound_bytes": 18432,
+      "exact_KV_bytes": 393216,
+      "same_function_weight_and_router_parameter_objects": true,
+      "sampling_coordinate_min": 0.0,
+      "sampling_coordinate_max": 1.0
+    },
+    {
+      "profile": "text-depth-library-20261018-v1/layers-4/73",
+      "depth": 4,
+      "tokens": 256,
+      "recent_capacity": 16,
+      "level_capacities": [
+        4,
+        4
+      ],
+      "original_model_parameter_count": 68905,
+      "additional_pool_parameters": 576,
+      "logical_cache_bytes": 36864,
+      "cache_bound_bytes": 36864,
+      "exact_KV_bytes": 393216,
+      "same_function_weight_and_router_parameter_objects": true,
+      "sampling_coordinate_min": 0.0,
+      "sampling_coordinate_max": 1.0
+    }
+  ],
+  "source_hashes": {
+    "sampling_library/inference.py": "c902de3389622acbf9cf18905428fa4274b18ba852b195e08ee10cb757e60490",
+    "sampling_library/hierarchical_kv.py": "b9197b09a4b5fc258ccfa190266b3c0e644935b02abf2503cb6014afc7aed0bb",
+    "sampling_library/test_inference.py": "eeed2fcd2d961b757a121e9961bd73a4c8ae33f26881af7f406d733907636c4d",
+    "sampling_library/test_hierarchical_kv.py": "f426c26d83a86817520a2c8de4807e1f765a31a29e9d74be7d3fcc34f296da39",
+    "src/hierarchy/experiments/function_weight_wt2_original_transformer_port/model.py": "3180772c6614b31d2152782d36aba4c3c6545f216fcca21df870975133393145"
+  },
+  "scope": "Function weights, sampling and layer layout preserved; hierarchy changes attention KV storage/readout only. Pool-learning unit test is synthetic distillation connectivity, not language training or quality promotion. Cache bytes exclude weights/runtime; no total-memory or speed claim."
+}

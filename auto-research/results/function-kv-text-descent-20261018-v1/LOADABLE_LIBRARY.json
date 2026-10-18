@@ -1,0 +1,318 @@
+{
+  "automatic_promotion": false,
+  "entries": [
+    {
+      "active": false,
+      "base_checkpoint": {
+        "path": "auto-research/results/function-kv-text-descent-20261018-v1/execution/curve-73-step600.pt",
+        "sha256": "be7f01495f0e634f46f12cdda3c8f159b851d66d90edecf089f52fd51feb969c"
+      },
+      "capacity": {
+        "level_capacities": [
+          2,
+          2
+        ],
+        "recent_capacity": 12
+      },
+      "config": {
+        "path": "auto-research/results/function-kv-text-descent-20261018-v1/CONFIG.json",
+        "sha256": "165dd0cd0de5d1b04e6df5c159dbec38347a3c0c993a3c50fc5e0d6f116896c1"
+      },
+      "confirmation_ce": 2.0952933728694916,
+      "context": 128,
+      "execution_depth": 4,
+      "id": "function-kv-text-descent-20261018-v1/h16/73",
+      "limitations": [
+        "Single-book byte pilot, not SOTA or nanoGPT speedrun replication.",
+        "128-byte quality only; larger context measurements are mechanics, not recall or language quality.",
+        "Identical base target exposure, not equal parameter count or training FLOPs; hierarchy receives extra supervised and distillation training.",
+        "Peak RSS includes interpreter/allocator/runtime. Cache-only and retained parameter+cache bytes are separately reported."
+      ],
+      "model_source": {
+        "path": "auto-research/results/text-depth-library-20261018-v1/model.py",
+        "sha256": "b5e68e7514a0c3b1d322d4b41d0c858a17dcbcf6b94ea4c8b55c9e0c87e8892f"
+      },
+      "pool_checkpoint": {
+        "path": "auto-research/results/function-kv-text-descent-20261018-v1/execution/h16-73-round3.pt",
+        "sha256": "947db7097811ed7361f4f976359a414a38226d0ed837d26e254596e97214c4c4"
+      },
+      "selection": {
+        "ce": 2.0873319506645203,
+        "logits_sha256": "4c7bbfe9733b960cff82b175bc85f99bdd9535b463c3cc8e8fab7e0c95ae30cd",
+        "tail_ce": 2.082837998867035,
+        "targets": 4096
+      },
+      "selection_record": {
+        "path": "auto-research/results/function-kv-text-descent-20261018-v1/execution/h16-73-round3.json",
+        "sha256": "2ef07b0fa6e6a18977adcd7b383fd72894fed985c27d9374dc11203406ea088e"
+      },
+      "source_manifest": {
+        "path": "auto-research/results/function-kv-text-descent-20261018-v1/SOURCE_MANIFEST.json",
+        "sha256": "3f0731d9abf51191a2e1fa0839436d9b79b6e41e4b1665d66d95134955030b01"
+      },
+      "status": "EXPERIMENTAL_EXPLICIT_OPT_IN",
+      "use_case": "text/alice-utf8-byte"
+    },
+    {
+      "active": false,
+      "base_checkpoint": {
+        "path": "auto-research/results/function-kv-text-descent-20261018-v1/execution/curve-73-step600.pt",
+        "sha256": "be7f01495f0e634f46f12cdda3c8f159b851d66d90edecf089f52fd51feb969c"
+      },
+      "capacity": {
+        "level_capacities": [
+          4,
+          4
+        ],
+        "recent_capacity": 24
+      },
+      "config": {
+        "path": "auto-research/results/function-kv-text-descent-20261018-v1/CONFIG.json",
+        "sha256": "165dd0cd0de5d1b04e6df5c159dbec38347a3c0c993a3c50fc5e0d6f116896c1"
+      },
+      "confirmation_ce": 2.094913899898529,
+      "context": 128,
+      "execution_depth": 4,
+      "id": "function-kv-text-descent-20261018-v1/h32/73",
+      "limitations": [
+        "Single-book byte pilot, not SOTA or nanoGPT speedrun replication.",
+        "128-byte quality only; larger context measurements are mechanics, not recall or language quality.",
+        "Identical base target exposure, not equal parameter count or training FLOPs; hierarchy receives extra supervised and distillation training.",
+        "Peak RSS includes interpreter/allocator/runtime. Cache-only and retained parameter+cache bytes are separately reported."
+      ],
+      "model_source": {
+        "path": "auto-research/results/text-depth-library-20261018-v1/model.py",
+        "sha256": "b5e68e7514a0c3b1d322d4b41d0c858a17dcbcf6b94ea4c8b55c9e0c87e8892f"
+      },
+      "pool_checkpoint": {
+        "path": "auto-research/results/function-kv-text-descent-20261018-v1/execution/h32-73-round3.pt",
+        "sha256": "d42127059a2c3418ac78118620082865ddc3cc665d3d0232486adc01a06b95db"
+      },
+      "selection": {
+        "ce": 2.087008833885193,
+        "logits_sha256": "2818318e4ad278143e2528d8bdcb589f6af453df4fdb698d5b7b1e31558c5dbf",
+        "tail_ce": 2.082033157348633,
+        "targets": 4096
+      },
+      "selection_record": {
+        "path": "auto-research/results/function-kv-text-descent-20261018-v1/execution/h32-73-round3.json",
+        "sha256": "d6579de7529f4078a0a8fec0db6e66371356da42c9df1e4e3161ef5b08ff9de6"
+      },
+      "source_manifest": {
+        "path": "auto-research/results/function-kv-text-descent-20261018-v1/SOURCE_MANIFEST.json",
+        "sha256": "3f0731d9abf51191a2e1fa0839436d9b79b6e41e4b1665d66d95134955030b01"
+      },
+      "status": "EXPERIMENTAL_EXPLICIT_OPT_IN",
+      "use_case": "text/alice-utf8-byte"
+    },
+    {
+      "active": false,
+      "base_checkpoint": {
+        "path": "auto-research/results/function-kv-text-descent-20261018-v1/execution/curve-191-step600.pt",
+        "sha256": "03b49640a7f4c5c7b882b0aeaf053421a503dce4f69ad375e973e7b5eafb6078"
+      },
+      "capacity": {
+        "level_capacities": [
+          2,
+          2
+        ],
+        "recent_capacity": 12
+      },
+      "config": {
+        "path": "auto-research/results/function-kv-text-descent-20261018-v1/CONFIG.json",
+        "sha256": "165dd0cd0de5d1b04e6df5c159dbec38347a3c0c993a3c50fc5e0d6f116896c1"
+      },
+      "confirmation_ce": 2.0969833433628082,
+      "context": 128,
+      "execution_depth": 4,
+      "id": "function-kv-text-descent-20261018-v1/h16/191",
+      "limitations": [
+        "Single-book byte pilot, not SOTA or nanoGPT speedrun replication.",
+        "128-byte quality only; larger context measurements are mechanics, not recall or language quality.",
+        "Identical base target exposure, not equal parameter count or training FLOPs; hierarchy receives extra supervised and distillation training.",
+        "Peak RSS includes interpreter/allocator/runtime. Cache-only and retained parameter+cache bytes are separately reported."
+      ],
+      "model_source": {
+        "path": "auto-research/results/text-depth-library-20261018-v1/model.py",
+        "sha256": "b5e68e7514a0c3b1d322d4b41d0c858a17dcbcf6b94ea4c8b55c9e0c87e8892f"
+      },
+      "pool_checkpoint": {
+        "path": "auto-research/results/function-kv-text-descent-20261018-v1/execution/h16-191-round2.pt",
+        "sha256": "dbe1ea4888e6c7585dee165070d39e0fd706fd06faca66b1670843d1f25923ea"
+      },
+      "selection": {
+        "ce": 2.0897973775863647,
+        "logits_sha256": "c45b6099e17dfe04af51ee8fb01629bbeddc81119e6c18fc41b191d8c6431307",
+        "tail_ce": 2.0914303064346313,
+        "targets": 4096
+      },
+      "selection_record": {
+        "path": "auto-research/results/function-kv-text-descent-20261018-v1/execution/h16-191-round2.json",
+        "sha256": "ccea8cd07fc334dc8e336d76cfee8407ffbf5e726371a8d40b12736bacaf9e88"
+      },
+      "source_manifest": {
+        "path": "auto-research/results/function-kv-text-descent-20261018-v1/SOURCE_MANIFEST.json",
+        "sha256": "3f0731d9abf51191a2e1fa0839436d9b79b6e41e4b1665d66d95134955030b01"
+      },
+      "status": "EXPERIMENTAL_EXPLICIT_OPT_IN",
+      "use_case": "text/alice-utf8-byte"
+    },
+    {
+      "active": false,
+      "base_checkpoint": {
+        "path": "auto-research/results/function-kv-text-descent-20261018-v1/execution/curve-191-step600.pt",
+        "sha256": "03b49640a7f4c5c7b882b0aeaf053421a503dce4f69ad375e973e7b5eafb6078"
+      },
+      "capacity": {
+        "level_capacities": [
+          4,
+          4
+        ],
+        "recent_capacity": 24
+      },
+      "config": {
+        "path": "auto-research/results/function-kv-text-descent-20261018-v1/CONFIG.json",
+        "sha256": "165dd0cd0de5d1b04e6df5c159dbec38347a3c0c993a3c50fc5e0d6f116896c1"
+      },
+      "confirmation_ce": 2.09765362739563,
+      "context": 128,
+      "execution_depth": 4,
+      "id": "function-kv-text-descent-20261018-v1/h32/191",
+      "limitations": [
+        "Single-book byte pilot, not SOTA or nanoGPT speedrun replication.",
+        "128-byte quality only; larger context measurements are mechanics, not recall or language quality.",
+        "Identical base target exposure, not equal parameter count or training FLOPs; hierarchy receives extra supervised and distillation training.",
+        "Peak RSS includes interpreter/allocator/runtime. Cache-only and retained parameter+cache bytes are separately reported."
+      ],
+      "model_source": {
+        "path": "auto-research/results/text-depth-library-20261018-v1/model.py",
+        "sha256": "b5e68e7514a0c3b1d322d4b41d0c858a17dcbcf6b94ea4c8b55c9e0c87e8892f"
+      },
+      "pool_checkpoint": {
+        "path": "auto-research/results/function-kv-text-descent-20261018-v1/execution/h32-191-round3.pt",
+        "sha256": "08a5dd992317e99d5fa076e33afe5334db40038716ecf4b720d8945577ddbd9f"
+      },
+      "selection": {
+        "ce": 2.090560495853424,
+        "logits_sha256": "ab5c5d85a561366c5155ff4830f2053b6a50db1ab0532351cfd57eedc0e53bfc",
+        "tail_ce": 2.0917164087295532,
+        "targets": 4096
+      },
+      "selection_record": {
+        "path": "auto-research/results/function-kv-text-descent-20261018-v1/execution/h32-191-round3.json",
+        "sha256": "ed539539ab62676cd0dfb57d9923e4c8434842baaba0126c00b35e52bcf092a9"
+      },
+      "source_manifest": {
+        "path": "auto-research/results/function-kv-text-descent-20261018-v1/SOURCE_MANIFEST.json",
+        "sha256": "3f0731d9abf51191a2e1fa0839436d9b79b6e41e4b1665d66d95134955030b01"
+      },
+      "status": "EXPERIMENTAL_EXPLICIT_OPT_IN",
+      "use_case": "text/alice-utf8-byte"
+    },
+    {
+      "active": false,
+      "base_checkpoint": {
+        "path": "auto-research/results/function-kv-text-descent-20261018-v1/execution/curve-307-step600.pt",
+        "sha256": "437775671052620b6474eef7efc7ce41e30e6151c1fdbc9e2398089b48c8faee"
+      },
+      "capacity": {
+        "level_capacities": [
+          2,
+          2
+        ],
+        "recent_capacity": 12
+      },
+      "config": {
+        "path": "auto-research/results/function-kv-text-descent-20261018-v1/CONFIG.json",
+        "sha256": "165dd0cd0de5d1b04e6df5c159dbec38347a3c0c993a3c50fc5e0d6f116896c1"
+      },
+      "confirmation_ce": 2.0833491384983063,
+      "context": 128,
+      "execution_depth": 4,
+      "id": "function-kv-text-descent-20261018-v1/h16/307",
+      "limitations": [
+        "Single-book byte pilot, not SOTA or nanoGPT speedrun replication.",
+        "128-byte quality only; larger context measurements are mechanics, not recall or language quality.",
+        "Identical base target exposure, not equal parameter count or training FLOPs; hierarchy receives extra supervised and distillation training.",
+        "Peak RSS includes interpreter/allocator/runtime. Cache-only and retained parameter+cache bytes are separately reported."
+      ],
+      "model_source": {
+        "path": "auto-research/results/text-depth-library-20261018-v1/model.py",
+        "sha256": "b5e68e7514a0c3b1d322d4b41d0c858a17dcbcf6b94ea4c8b55c9e0c87e8892f"
+      },
+      "pool_checkpoint": {
+        "path": "auto-research/results/function-kv-text-descent-20261018-v1/execution/h16-307-round3.pt",
+        "sha256": "14652740b63e4a4424a42724a9ad1b30b2affdc9feb6e59641c442cd7cc31d69"
+      },
+      "selection": {
+        "ce": 2.093498110771179,
+        "logits_sha256": "d9a45804ca3956b6e16bedf803c27467f84f60f4947b0d34bb34519f62bdb3f5",
+        "tail_ce": 2.0874192118644714,
+        "targets": 4096
+      },
+      "selection_record": {
+        "path": "auto-research/results/function-kv-text-descent-20261018-v1/execution/h16-307-round3.json",
+        "sha256": "4ab667fd21f15d7332d1b28f41c6ad9d19eb785f1613fda0752d4a3d443adeee"
+      },
+      "source_manifest": {
+        "path": "auto-research/results/function-kv-text-descent-20261018-v1/SOURCE_MANIFEST.json",
+        "sha256": "3f0731d9abf51191a2e1fa0839436d9b79b6e41e4b1665d66d95134955030b01"
+      },
+      "status": "EXPERIMENTAL_EXPLICIT_OPT_IN",
+      "use_case": "text/alice-utf8-byte"
+    },
+    {
+      "active": false,
+      "base_checkpoint": {
+        "path": "auto-research/results/function-kv-text-descent-20261018-v1/execution/curve-307-step600.pt",
+        "sha256": "437775671052620b6474eef7efc7ce41e30e6151c1fdbc9e2398089b48c8faee"
+      },
+      "capacity": {
+        "level_capacities": [
+          4,
+          4
+        ],
+        "recent_capacity": 24
+      },
+      "config": {
+        "path": "auto-research/results/function-kv-text-descent-20261018-v1/CONFIG.json",
+        "sha256": "165dd0cd0de5d1b04e6df5c159dbec38347a3c0c993a3c50fc5e0d6f116896c1"
+      },
+      "confirmation_ce": 2.083511233329773,
+      "context": 128,
+      "execution_depth": 4,
+      "id": "function-kv-text-descent-20261018-v1/h32/307",
+      "limitations": [
+        "Single-book byte pilot, not SOTA or nanoGPT speedrun replication.",
+        "128-byte quality only; larger context measurements are mechanics, not recall or language quality.",
+        "Identical base target exposure, not equal parameter count or training FLOPs; hierarchy receives extra supervised and distillation training.",
+        "Peak RSS includes interpreter/allocator/runtime. Cache-only and retained parameter+cache bytes are separately reported."
+      ],
+      "model_source": {
+        "path": "auto-research/results/text-depth-library-20261018-v1/model.py",
+        "sha256": "b5e68e7514a0c3b1d322d4b41d0c858a17dcbcf6b94ea4c8b55c9e0c87e8892f"
+      },
+      "pool_checkpoint": {
+        "path": "auto-research/results/function-kv-text-descent-20261018-v1/execution/h32-307-round2.pt",
+        "sha256": "113bff63fd174ec396fe564cc74f87f990eac0c3722d5b208ea21728cb74d7df"
+      },
+      "selection": {
+        "ce": 2.0933602452278137,
+        "logits_sha256": "7bfee718d36892fea37d792c82fc968bb89da5c5d83a38d6480f95634a2ee853",
+        "tail_ce": 2.087662637233734,
+        "targets": 4096
+      },
+      "selection_record": {
+        "path": "auto-research/results/function-kv-text-descent-20261018-v1/execution/h32-307-round2.json",
+        "sha256": "306ba483c4f3a8c629eb343f1abf0198a1ed53d61b58eb688bda7fe0a100336f"
+      },
+      "source_manifest": {
+        "path": "auto-research/results/function-kv-text-descent-20261018-v1/SOURCE_MANIFEST.json",
+        "sha256": "3f0731d9abf51191a2e1fa0839436d9b79b6e41e4b1665d66d95134955030b01"
+      },
+      "status": "EXPERIMENTAL_EXPLICIT_OPT_IN",
+      "use_case": "text/alice-utf8-byte"
+    }
+  ],
+  "reason": "Retain explicit measured profiles; no broad-quality or total-memory success inferred from cache reduction."
+}

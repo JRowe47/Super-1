@@ -1,5 +1,5 @@
 {
-  "authorization_note": "Language training remains paused. Fresh user-authorized synthetic angular/radial optimization completed without recovery; no future execution authorized. Previous synthetic failure/recovery remains preserved.",
+  "authorization_note": "Authorization is scoped per run. The user explicitly authorized the new local function-weight/KV text experiments on2026-10-18. Earlier pauses and failed runs remain historical records; no cloud spend or unbounded training is authorized.",
   "created_date": "2026-10-14",
   "evidence_recoveries": [
     {
@@ -31,6 +31,7 @@
       "verified_release_assets": 25
     }
   ],
+  "historical_authorization_note": "Language training remains paused. Fresh user-authorized synthetic angular/radial optimization completed without recovery; no future execution authorized. Previous synthetic failure/recovery remains preserved.",
   "runs": [
     {
       "approval": "User-requested separate-chat synthetic self-test; not language-training or cloud authorization",
@@ -189,84 +190,229 @@
       "terminal": "auto-research/results/gru-equal-cpu-20261016-v1/TERMINAL.json"
     },
     {
-      "run_id": "gru-batch-wall-20261016-v1",
-      "status": "COMPLETE_EXPLORATORY",
+      "approval": "Current user approved trying the memory-first three-way pilot, then explicitly requested relaxing compression to approach nanoGPT quality. Local bounded CPU training only; no cloud spending or full SOTA trial.",
+      "combined_gate": false,
+      "memory_terminal": "auto-research/results/memory-quality-frontier-20261018-v1/execution/MEMORY_TERMINAL.json",
+      "protocol": "auto-research/results/memory-quality-frontier-20261018-v1/PROTOCOL.json",
+      "protocol_sha256": "1b9a62b139be63df5f43f5a83874f57bc4fef05b3a1fad26a489753c8384d58c",
+      "quality_noninferiority_pass": true,
+      "relaxation_improvement_pass": false,
+      "report": "auto-research/results/memory-quality-frontier-20261018-v1/README.md",
+      "run_id": "memory-quality-frontier-20261018-v1",
+      "source_manifest": "auto-research/results/memory-quality-frontier-20261018-v1/SOURCE_MANIFEST.json",
+      "status": "COMPLETED_NO_PROMOTION",
+      "terminal": "auto-research/results/memory-quality-frontier-20261018-v1/execution/TERMINAL.json",
+      "total_memory_pass": false
+    },
+    {
+      "approval": "Current chat: user said \"ok do it\" after the assistant proposed a fixed-step learned-sampling experiment with fixed curve, matching dense and upstream nanoGPT controls across multiple seeds.",
+      "arm_seed_rows": 15,
+      "decision": "NO_PROMOTION_INCONCLUSIVE_OR_NEGATIVE",
+      "metrics": "auto-research/results/adaptive-depth-shakespeare-20261018-v1/execution/RESULT.json",
+      "protocol": "auto-research/results/adaptive-depth-shakespeare-20261018-v1/PROTOCOL.json",
+      "protocol_sha256": "6c03bd561e22dcf61d2e023801a6694f955ca50158f1c4fe6639d687c5db77a4",
+      "report": "auto-research/reports/adaptive-depth-shakespeare-20261018-v1.md",
+      "run_id": "adaptive-depth-shakespeare-20261018-v1",
+      "source_freeze_commit": "5460ec90ac4b5fe3e6c97656280ed27390ee31b3",
+      "source_manifest": "auto-research/results/adaptive-depth-shakespeare-20261018-v1/SOURCE_MANIFEST.json",
+      "status": "COMPLETED",
+      "target_exposures_per_arm_seed": 307200,
+      "terminal": "auto-research/results/adaptive-depth-shakespeare-20261018-v1/execution/TERMINAL.json",
+      "updates_per_arm": 600,
+      "verification": "auto-research/results/adaptive-depth-shakespeare-20261018-v1/execution/VERIFICATION.json"
+    },
+    {
+      "approval": "Current chat: user requested optimizing sampling per use-case iteratively after benchmarking, explicitly by gradient descent. This authorizes the bounded local follow-up; no recursive inference controller, cloud spending or endless research loop.",
+      "base_checkpoints": 3,
+      "confirmation_rows": 36,
+      "decision": "NO_USECASE_SPECIALIZATION_PROMOTED",
+      "decisions_by_usecase": {
+        "arithmetic": {
+          "base_learning_qualified": false,
+          "improves_frozen_uniform": false,
+          "specialization_supported": false,
+          "token_conditioning_supported": false
+        },
+        "retrieval": {
+          "base_learning_qualified": false,
+          "improves_frozen_uniform": false,
+          "specialization_supported": false,
+          "token_conditioning_supported": false
+        },
+        "text": {
+          "base_learning_qualified": true,
+          "improves_frozen_uniform": false,
+          "specialization_supported": false,
+          "token_conditioning_supported": false
+        }
+      },
+      "metrics": "auto-research/results/usecase-sampling-descent-20261018-v1/execution/RESULT.json",
+      "protocol": "auto-research/results/usecase-sampling-descent-20261018-v1/PROTOCOL.json",
+      "protocol_sha256": "81b1a5187cb6b1ec02ff6ee1f3420b2ddcb54743fc83d656ae94ca29965aa087",
+      "report": "auto-research/reports/usecase-sampling-descent-20261018-v1.md",
+      "rounds": 3,
+      "run_id": "usecase-sampling-descent-20261018-v1",
+      "sampler_round_checkpoints": 84,
+      "source_manifest": "auto-research/results/usecase-sampling-descent-20261018-v1/SOURCE_MANIFEST.json",
+      "status": "COMPLETED",
+      "terminal": "auto-research/results/usecase-sampling-descent-20261018-v1/execution/TERMINAL.json",
+      "verification": "auto-research/results/usecase-sampling-descent-20261018-v1/execution/VERIFICATION.json"
+    },
+    {
+      "approval": "User asks to keep improving text and store a library of ideal parameters by use case; bounded local sampler-only follow-up, no cloud or perpetual execution.",
+      "decision": "REFERENCE_RETAINED_NO_PROMOTION",
+      "library": "sampling_library/index.json",
+      "metrics": "auto-research/results/text-sampling-library-20261018-v1/execution/RESULT.json",
+      "protocol": "auto-research/results/text-sampling-library-20261018-v1/PROTOCOL.json",
+      "protocol_sha256": "15675069296bc03051c7638aa13304f619aed549b292f1a62a2018258338c75f",
+      "report": "auto-research/reports/text-sampling-library-20261018-v1.md",
+      "run_id": "text-sampling-library-20261018-v1",
+      "source_manifest": "auto-research/results/text-sampling-library-20261018-v1/SOURCE_MANIFEST.json",
+      "status": "COMPLETED",
+      "terminal": "auto-research/results/text-sampling-library-20261018-v1/execution/TERMINAL.json",
+      "verification": "auto-research/results/text-sampling-library-20261018-v1/execution/VERIFICATION.json"
+    },
+    {
+      "approval": "User explicitly asked for learning how many layers per use case; PR3/4 resolved and merged before this experiment. Bounded local CPU sampler-only extension.",
+      "decision": "LEARNED_FOUR_LAYERS_REFERENCE_RETAINED",
+      "library": "sampling_library/depth_profiles.json",
+      "metrics": "auto-research/results/text-depth-library-20261018-v1/execution/RESULT.json",
+      "protocol": "auto-research/results/text-depth-library-20261018-v1/PROTOCOL.json",
+      "protocol_sha256": "be34d9fe37fba0ef4e882123f443abb534d74048754f99ad9f0bf7cc006b80dd",
+      "report": "auto-research/reports/text-depth-library-20261018-v1.md",
+      "run_id": "text-depth-library-20261018-v1",
+      "source_manifest": "auto-research/results/text-depth-library-20261018-v1/SOURCE_MANIFEST.json",
+      "status": "COMPLETED",
+      "terminal": "auto-research/results/text-depth-library-20261018-v1/execution/TERMINAL.json",
+      "verification": "auto-research/results/text-depth-library-20261018-v1/execution/VERIFICATION.json"
+    },
+    {
+      "approval": "User requested updating PR7/PR8 to preserve function weights and layer sampling at inference.",
+      "language_quality_benchmark": false,
+      "report": "sampling_library/HIERARCHICAL_KV.md",
+      "run_id": "function-weight-hierarchical-kv-20261018-v1",
+      "status": "PASS_MECHANICS_ONLY",
+      "verification": "auto-research/results/function-weight-hierarchical-kv-20261018-v1/VERIFICATION.json"
+    },
+    {
+      "approval": "User requested continued progress toward nanoGPT quality with dramatically lower inference memory.",
+      "function_weights_and_sampling_preserved": true,
+      "language_quality_benchmark": true,
+      "original_total_memory_gate_pass": false,
+      "quality_gate_pass": true,
+      "report": "auto-research/reports/function-weight-kv-text-descent-20261018.md",
+      "run_id": "function-kv-text-descent-20261018-v1",
+      "scope": "Tiny single-book byte model; no SOTA or100K quality claim.",
+      "status": "COMPLETED_NO_AUTOMATIC_PROMOTION",
+      "verification": "auto-research/results/function-kv-text-descent-20261018-v1/execution/VERIFICATION.json"
+    },
+    {
+      "approval": "User requested continued progress toward nanoGPT quality with dramatically lower inference memory.",
+      "function_weights_and_sampling_preserved": true,
+      "language_quality_benchmark": true,
+      "original_total_memory_gate_pass": false,
+      "quality_gate_pass": true,
+      "report": "auto-research/reports/function-weight-kv-text-descent-20261018.md",
+      "run_id": "function-kv-text-descent-512-20261018-v1",
+      "scope": "Tiny single-book byte model; no SOTA or100K quality claim.",
+      "status": "COMPLETED_NO_AUTOMATIC_PROMOTION",
+      "verification": "auto-research/results/function-kv-text-descent-512-20261018-v1/execution/VERIFICATION.json"
+    },
+    {
+      "approval": "User explicitly approved trying function-weight compression and requested durable progress/handoff instructions.",
+      "function_weights_and_sampling_preserved": true,
+      "library": "auto-research/results/function-weight-int4-20261018-v1/LIBRARY.json",
+      "lossless_packaging_file_reduction": 3.144875021697622,
+      "original_storage_gate_pass": false,
+      "protocol": "auto-research/results/function-weight-int4-20261018-v1/PROTOCOL.md",
+      "quality_gate_pass": true,
+      "report": "auto-research/reports/function-weight-int4-20261018.md",
+      "run_id": "function-weight-int4-20261018-v1",
+      "source_manifest": "auto-research/results/function-weight-int4-20261018-v1/SOURCE_MANIFEST.json",
+      "status": "COMPLETED_RESEARCH_ONLY",
+      "total_process_memory_improvement_established": false,
+      "verification": "auto-research/results/function-weight-int4-20261018-v1/execution/VERIFICATION.json",
+      "weight_payload_reduction": 3.57520884138432
+    },
+    {
+      "completed_runs": 6,
+      "historical_publication_target": "JRowe47/Super-1 main only",
+      "metrics": "auto-research/results/gru-batch-wall-20261016-v1/SUMMARY.json",
       "protocol": "auto-research/results/gru-batch-wall-20261016-v1/PROTOCOL.json",
       "protocol_sha256": "317861655e4c4840ba1826f45c8184afd3f9588c3135021d780a16f2d0e19efc",
-      "metrics": "auto-research/results/gru-batch-wall-20261016-v1/SUMMARY.json",
-      "report": "auto-research/reports/gru-batch-wall-20261016-v1.md",
       "publication_target": "rohanarun/Super-1 main (PR only)",
+      "report": "auto-research/reports/gru-batch-wall-20261016-v1.md",
+      "run_id": "gru-batch-wall-20261016-v1",
       "selection_sha256": "500321736e84e1d51b7810814f68a13475549e861c966be0a109e397bfc12a6a",
-      "completed_runs": 6,
+      "status": "COMPLETE_EXPLORATORY",
       "summary": {
+        "mingru_linear_baseline": 5.264742121100426,
         "mingru_linear_throughput": 5.392680451273918,
-        "native_throughput": 5.72637651860714,
         "nanogpt_baseline": 5.958116844296455,
         "nanogpt_throughput": 5.694121807813644,
-        "mingru_linear_baseline": 5.264742121100426,
-        "native_baseline": 5.5790126621723175
+        "native_baseline": 5.5790126621723175,
+        "native_throughput": 5.72637651860714
       },
-      "historical_publication_target": "JRowe47/Super-1 main only",
-      "upstream_publication_authorization": "auto-research/results/mingru-cpu-upstream-20261018-v1/IMPORT.json",
-      "terminal": "auto-research/results/gru-batch-wall-20261016-v1/TERMINAL.json"
+      "terminal": "auto-research/results/gru-batch-wall-20261016-v1/TERMINAL.json",
+      "upstream_publication_authorization": "auto-research/results/mingru-cpu-upstream-20261018-v1/IMPORT.json"
     },
     {
-      "run_id": "mingru-thread-lr-20261016-v1",
-      "status": "COMPLETE_EXPLORATORY",
-      "protocol": "auto-research/results/mingru-thread-lr-20261016-v1/PROTOCOL.json",
-      "protocol_sha256": "84a8241d2105803068dfd87e686e9181a545c0ceffd042e6f2e36df88db157e2",
-      "metrics": "auto-research/results/mingru-thread-lr-20261016-v1/SUMMARY.json",
-      "report": "auto-research/reports/mingru-thread-lr-20261016-v1.md",
-      "publication_target": "rohanarun/Super-1 main (PR only)",
       "completed_runs": 7,
       "failed_runs": 0,
+      "historical_publication_target": "JRowe47/Super-1 main only",
+      "metrics": "auto-research/results/mingru-thread-lr-20261016-v1/SUMMARY.json",
+      "protocol": "auto-research/results/mingru-thread-lr-20261016-v1/PROTOCOL.json",
+      "protocol_sha256": "84a8241d2105803068dfd87e686e9181a545c0ceffd042e6f2e36df88db157e2",
+      "publication_target": "rohanarun/Super-1 main (PR only)",
+      "report": "auto-research/reports/mingru-thread-lr-20261016-v1.md",
+      "run_id": "mingru-thread-lr-20261016-v1",
+      "status": "COMPLETE_EXPLORATORY",
       "summary": {
         "b16_t4_lr002": 5.3867084085941315,
-        "b4_t2_lr002": 5.07429426908493,
-        "b1_t2_lr002": 5.189114928245544,
         "b16_t4_lr008": 5.0710707157850266,
-        "b1_t4_lr002": 5.172636225819588,
         "b1_t1_lr002": 5.251619651913643,
+        "b1_t2_lr002": 5.189114928245544,
+        "b1_t4_lr002": 5.172636225819588,
+        "b4_t2_lr002": 5.07429426908493,
         "b4_t2_lr004": 4.884254410862923
       },
-      "historical_publication_target": "JRowe47/Super-1 main only",
-      "upstream_publication_authorization": "auto-research/results/mingru-cpu-upstream-20261018-v1/IMPORT.json",
-      "terminal": "auto-research/results/mingru-thread-lr-20261016-v1/TERMINAL.json"
+      "terminal": "auto-research/results/mingru-thread-lr-20261016-v1/TERMINAL.json",
+      "upstream_publication_authorization": "auto-research/results/mingru-cpu-upstream-20261018-v1/IMPORT.json"
     },
     {
-      "run_id": "gru-longer-wall-20261016-v1",
-      "status": "COMPLETE_EXPLORATORY",
-      "protocol": "auto-research/results/gru-longer-wall-20261016-v1/PROTOCOL.json",
-      "protocol_sha256": "1e8598d1e5aa29a1b87cb2280f8c75b09a2c9d6becbb09a6c8a8309231bda191",
-      "metrics": "auto-research/results/gru-longer-wall-20261016-v1/SUMMARY.json",
-      "report": "auto-research/reports/gru-longer-wall-20261016-v1.md",
-      "publication_target": "rohanarun/Super-1 main (PR only)",
       "completed_runs": 6,
       "failed_runs": 0,
+      "historical_publication_target": "JRowe47/Super-1 main only",
+      "metrics": "auto-research/results/gru-longer-wall-20261016-v1/SUMMARY.json",
+      "protocol": "auto-research/results/gru-longer-wall-20261016-v1/PROTOCOL.json",
+      "protocol_sha256": "1e8598d1e5aa29a1b87cb2280f8c75b09a2c9d6becbb09a6c8a8309231bda191",
+      "publication_target": "rohanarun/Super-1 main (PR only)",
+      "report": "auto-research/reports/gru-longer-wall-20261016-v1.md",
+      "run_id": "gru-longer-wall-20261016-v1",
+      "status": "COMPLETE_EXPLORATORY",
       "summary": {
-        "native_b4_t2_lr004": 4.541923701763153,
-        "nanogpt_b4_t4_lr004": 5.199139103293419,
+        "mingru_linear_b16_t4_lr008": 4.382792189717293,
         "mingru_linear_b4_t2_lr004": 4.454563930630684,
         "nanogpt_b4_t4_lr002": 4.8480289578437805,
+        "nanogpt_b4_t4_lr004": 5.199139103293419,
         "native_b16_t4_lr008": 4.534899592399597,
-        "mingru_linear_b16_t4_lr008": 4.382792189717293
+        "native_b4_t2_lr004": 4.541923701763153
       },
-      "historical_publication_target": "JRowe47/Super-1 main only",
-      "upstream_publication_authorization": "auto-research/results/mingru-cpu-upstream-20261018-v1/IMPORT.json",
-      "terminal": "auto-research/results/gru-longer-wall-20261016-v1/TERMINAL.json"
+      "terminal": "auto-research/results/gru-longer-wall-20261016-v1/TERMINAL.json",
+      "upstream_publication_authorization": "auto-research/results/mingru-cpu-upstream-20261018-v1/IMPORT.json"
     },
     {
-      "run_id": "mingru-cpu-upstream-20261018-v1",
-      "kind": "Archival upstream publication; no new experiment",
-      "status": "COMPLETED_ARCHIVAL_IMPORT_NO_NEW_MODEL_EXECUTION",
       "approval": "User explicitly requested publishing the minGRU tests that outperformed GRU to rohanarun/super-1, excluding subsequent experiments.",
+      "kind": "Archival upstream publication; no new experiment",
+      "metrics": "auto-research/results/mingru-cpu-upstream-20261018-v1/VERIFICATION.json",
+      "new_model_evaluation": false,
+      "new_training": false,
       "protocol": "auto-research/results/mingru-cpu-upstream-20261018-v1/IMPORT.json",
       "protocol_sha256": "db9cd4ee36fec0adcb1937e6e161835fbf15a46fda72aa8bf39537fc15e325f5",
-      "metrics": "auto-research/results/mingru-cpu-upstream-20261018-v1/VERIFICATION.json",
+      "registration_chronology": "Retrospective publication record; original experiment registrations preserved.",
       "report": "auto-research/reports/mingru-cpu-upstream-20261018-v1.md",
-      "new_training": false,
-      "new_model_evaluation": false,
-      "registration_chronology": "Retrospective publication record; original experiment registrations preserved."
+      "run_id": "mingru-cpu-upstream-20261018-v1",
+      "status": "COMPLETED_ARCHIVAL_IMPORT_NO_NEW_MODEL_EXECUTION"
     }
   ],
   "schema_version": 1,

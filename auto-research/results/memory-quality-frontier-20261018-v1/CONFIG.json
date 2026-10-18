@@ -1,0 +1,70 @@
+{
+  "run_id": "memory-quality-frontier-20261018-v1",
+  "vocab": 256,
+  "width": 64,
+  "heads": 4,
+  "layers": 4,
+  "ffn_multiplier": 4,
+  "patterns": {
+    "transformer": "AAAA",
+    "compact": "DDDA",
+    "relaxed": "DAAA"
+  },
+  "context": 256,
+  "batch": 4,
+  "chunk_size": 32,
+  "threads": 1,
+  "seeds": [
+    73,
+    191,
+    307
+  ],
+  "updates": 500,
+  "lr": 0.001,
+  "weight_decay": 0.01,
+  "betas": [
+    0.9,
+    0.95
+  ],
+  "warmup": 25,
+  "min_lr_fraction": 0.1,
+  "clip": 1.0,
+  "selection_every": 100,
+  "selection_examples": 64,
+  "confirmation_examples": 128,
+  "text_regions": {
+    "train": [
+      0,
+      669236
+    ],
+    "selection": [
+      780775,
+      892315
+    ],
+    "confirmation": [
+      1070414,
+      1103310
+    ]
+  },
+  "quality_max_relative_ppl_increase": 0.01,
+  "memory_target_ratio": 0.25,
+  "relaxation_minimum_ce_gain": 0.01,
+  "t95_df2": 4.302652729696142,
+  "cpu_seconds": 900,
+  "wall_seconds": 1800,
+  "max_artifact_bytes": 157286400,
+  "memory_contexts": [
+    256,
+    2048,
+    8192
+  ],
+  "memory_chunk": 64,
+  "decode_steps": 32,
+  "max_prefill_seconds": 120,
+  "canary_seed": 202610189,
+  "forward_atol": 2e-05,
+  "forward_rtol": 0.0002,
+  "fp64_atol": 1e-09,
+  "decay_bias": 4.0,
+  "latency_max_ratio": 1.25
+}

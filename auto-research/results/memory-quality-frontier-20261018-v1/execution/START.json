@@ -1,0 +1,24 @@
+{
+  "commit": "96a6cff489f0d186a0cfee737caeb159fa6c2700",
+  "device": "cpu",
+  "pid": 80166,
+  "protocol_sha256": "1b9a62b139be63df5f43f5a83874f57bc4fef05b3a1fad26a489753c8384d58c",
+  "source_manifest": {
+    "auto-research/results/memory-quality-frontier-20261018-v1/.gitignore": "1a9ba1479331c1ee35add00917198fb47e2c75de2e39eae2c6ed9963f4eca2cd",
+    "auto-research/results/memory-quality-frontier-20261018-v1/CANARY.json": "cab5e830b15f7212ca2a1959f472d641ecb34fcbae27b04cc0c03fa2fc9d8316",
+    "auto-research/results/memory-quality-frontier-20261018-v1/CANARY_INITIAL_FAILURE.json": "7628d2d3b0c7491faa5718c75d78a8163802f540e2805f2ecb2790c650844ea4",
+    "auto-research/results/memory-quality-frontier-20261018-v1/CONFIG.json": "c623afe00504ee71a758f68487930d851ae265b046318badb5f67e781f816ec7",
+    "auto-research/results/memory-quality-frontier-20261018-v1/PROTOCOL.json": "1b9a62b139be63df5f43f5a83874f57bc4fef05b3a1fad26a489753c8384d58c",
+    "auto-research/results/memory-quality-frontier-20261018-v1/SOURCES.json": "165e4ba122cfb68b024f1521f40b586f69df86b9aa62567e4f6e40d50d752420",
+    "auto-research/results/memory-quality-frontier-20261018-v1/canary.py": "089327e870e78ceaa72f8d312e6f0258106670a30e1abc6e1f37eff16e433cb5",
+    "auto-research/results/memory-quality-frontier-20261018-v1/corpus.txt": "86c4e6aa9db7c042ec79f339dcb96d42b0075e16b8fc2e86bf0ca57e2dc565ed",
+    "auto-research/results/memory-quality-frontier-20261018-v1/measure.py": "87eedded9f3c25249234c017127b3ba11376fae620df97c3a6674ef56a9a1974",
+    "auto-research/results/memory-quality-frontier-20261018-v1/measure_all.py": "1ff03de1d36da1abf3687f9eb8bc817ef94c097295a86e878778c67537f153bb",
+    "auto-research/results/memory-quality-frontier-20261018-v1/model.py": "3b4e487b7a602bd8259188c3069442795e5ae003112f4d373337064c48cca418",
+    "auto-research/results/memory-quality-frontier-20261018-v1/run.py": "539b883f0996a60a6ff60a9d45b3269bef65b5e2dbd2623219fde2d3c43ce3c9",
+    "auto-research/results/memory-quality-frontier-20261018-v1/vendor/LICENSE": "41a83c8187efc1e3ccc21909e806a9e52338e69448554d9754706c3d1cd610e7",
+    "auto-research/results/memory-quality-frontier-20261018-v1/vendor/naive.py": "d1cf17992349fd3e94af999b22e3d3a81be4a2d1881ce5b70a3457257166e0cb",
+    "auto-research/results/memory-quality-frontier-20261018-v1/verify.py": "6f07b14ac073683a33f475944d2cbe5cf714e3c4ac4cf0d5960fce2b4b737895"
+  },
+  "torch": "2.8.0"
+}

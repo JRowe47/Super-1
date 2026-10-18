@@ -1,0 +1,42 @@
+{
+  "categorical_expected_loss_gradient": true,
+  "counts": [
+    {
+      "depth": 2,
+      "executed_blocks": [
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "depth": 3,
+      "executed_blocks": [
+        1,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "depth": 4,
+      "executed_blocks": [
+        1,
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "cpu_seconds_per_all_depth_batch": 0.020366300000000014,
+  "four_step_optimizer_parity": true,
+  "projected_training_cpu_seconds": 36.65934000000002,
+  "same_shape_causality_exact": true,
+  "status": "PASS",
+  "three_step_gradient": {
+    "absolute_error": 2.1282198225947013e-11,
+    "analytic": 0.07079829391539649,
+    "numeric": 0.0707982938941143
+  }
+}

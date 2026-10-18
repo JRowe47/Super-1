@@ -1,0 +1,17 @@
+{
+  "arm": "compact",
+  "batch_sha256": "e7005daa8a4ffd91abbe24c547a2c50defc07f265be20bee07ad7a10899210b5",
+  "checkpoint": "compact-191-step300.pt",
+  "cpu_seconds_so_far": 13.571788999999995,
+  "parameter_count": 215752,
+  "seed": 191,
+  "selection": {
+    "accuracy": 0.35296630859375,
+    "ce": 2.3128973990678787,
+    "logits_sha256": "706113b27ec945958e3d91862c09e26efc12fbfc1c87973c6dd050e30ed4d420",
+    "targets": 16384
+  },
+  "sha256": "b462543c9190ea7d3cbddfb854b488c2e05bd9cc0cd268e4462f554046c272ae",
+  "step": 300,
+  "targets_seen": 307200
+}

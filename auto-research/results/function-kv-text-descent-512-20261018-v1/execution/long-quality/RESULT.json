@@ -1,0 +1,191 @@
+{
+  "contrasts": {
+    "h16_ce": {
+      "gaps": [
+        -0.17915900982916355,
+        -0.26625338755548,
+        -0.16540364921092987
+      ],
+      "geometric_ppl_ratio": 0.8157842578497662,
+      "mean": -0.20360534886519113,
+      "paired_t95": [
+        -0.339460318235947,
+        -0.06775037949443521
+      ],
+      "pass": true
+    },
+    "h16_tail_ce": {
+      "gaps": [
+        -0.2362189181149006,
+        -0.34532954543828964,
+        -0.2215815931558609
+      ],
+      "geometric_ppl_ratio": 0.765129622063607,
+      "mean": -0.26771001890301704,
+      "paired_t95": [
+        -0.4356817459812149,
+        -0.09973829182481919
+      ],
+      "pass": true
+    },
+    "h32_ce": {
+      "gaps": [
+        -0.1797056421637535,
+        -0.26827162131667137,
+        -0.16633553616702557
+      ],
+      "geometric_ppl_ratio": 0.814833946426981,
+      "mean": -0.20477093321581682,
+      "paired_t95": [
+        -0.3423872966675947,
+        -0.06715456976403891
+      ],
+      "pass": true
+    },
+    "h32_tail_ce": {
+      "gaps": [
+        -0.23615192621946335,
+        -0.3461834229528904,
+        -0.22184976190328598
+      ],
+      "geometric_ppl_ratio": 0.7648605849249265,
+      "mean": -0.2680617036918799,
+      "paired_t95": [
+        -0.4370632399743435,
+        -0.09906016740941634
+      ],
+      "pass": true
+    }
+  },
+  "rows": [
+    {
+      "arm": "exact",
+      "base_checkpoint": "curve-73-step600.pt",
+      "base_sha256": "b7fc7ea24ce55c52c069adeeb64c2c3fcebe7cb741fb6f465eefcbf1c2de92a9",
+      "cpu_seconds": 2.08453,
+      "duplicate_exact": true,
+      "metrics": {
+        "cache_bytes": 12582912,
+        "ce": 2.346140820533037,
+        "logits_sha256": "01dbbb2256fbd458cfcb83c340f5dd701ce6e59ecd433acca9677a57b0c37fbb",
+        "tail_ce": 2.3806355968117714
+      },
+      "seed": 73
+    },
+    {
+      "arm": "h16",
+      "base_checkpoint": "curve-73-step600.pt",
+      "base_sha256": "b7fc7ea24ce55c52c069adeeb64c2c3fcebe7cb741fb6f465eefcbf1c2de92a9",
+      "cpu_seconds": 2.739917,
+      "duplicate_exact": true,
+      "metrics": {
+        "cache_bytes": 24576,
+        "ce": 2.1669818107038736,
+        "logits_sha256": "1ff7327ebd62fe6b94aaaaa9b40211c1bd9ba07aaef69d28505df974908b38bb",
+        "tail_ce": 2.144416678696871
+      },
+      "seed": 73
+    },
+    {
+      "arm": "h32",
+      "base_checkpoint": "curve-73-step600.pt",
+      "base_sha256": "b7fc7ea24ce55c52c069adeeb64c2c3fcebe7cb741fb6f465eefcbf1c2de92a9",
+      "cpu_seconds": 2.7819909999999997,
+      "duplicate_exact": true,
+      "metrics": {
+        "cache_bytes": 49152,
+        "ce": 2.1664351783692837,
+        "logits_sha256": "b6f6141b36d10cd9a37a7bb411745e50a517d0178548e68ebef79242167823cc",
+        "tail_ce": 2.144483670592308
+      },
+      "seed": 73
+    },
+    {
+      "arm": "exact",
+      "base_checkpoint": "curve-191-step600.pt",
+      "base_sha256": "045ef4b125e0b88d7c4e4a0c7d5ee8bbb65b8755a9cec5c3bac163463d0e66c7",
+      "cpu_seconds": 2.0826639999999994,
+      "duplicate_exact": true,
+      "metrics": {
+        "cache_bytes": 12582912,
+        "ce": 2.4392191134393215,
+        "logits_sha256": "5a4703d1f56452afda036009ed0d2c09930e43f8bd7793084a57e4f34b8e9caa",
+        "tail_ce": 2.5008400455117226
+      },
+      "seed": 191
+    },
+    {
+      "arm": "h16",
+      "base_checkpoint": "curve-191-step600.pt",
+      "base_sha256": "045ef4b125e0b88d7c4e4a0c7d5ee8bbb65b8755a9cec5c3bac163463d0e66c7",
+      "cpu_seconds": 2.7299640000000007,
+      "duplicate_exact": true,
+      "metrics": {
+        "cache_bytes": 24576,
+        "ce": 2.1729657258838415,
+        "logits_sha256": "e2d4885efeab7598b61c0a8f3b60c194d467d2c8569361428369217503a7dc16",
+        "tail_ce": 2.155510500073433
+      },
+      "seed": 191
+    },
+    {
+      "arm": "h32",
+      "base_checkpoint": "curve-191-step600.pt",
+      "base_sha256": "045ef4b125e0b88d7c4e4a0c7d5ee8bbb65b8755a9cec5c3bac163463d0e66c7",
+      "cpu_seconds": 2.815166999999999,
+      "duplicate_exact": true,
+      "metrics": {
+        "cache_bytes": 49152,
+        "ce": 2.17094749212265,
+        "logits_sha256": "65f3234c66f2924392ee6d64e5bc4e70588517ca378c56dfc5de1ab6657ca0d3",
+        "tail_ce": 2.154656622558832
+      },
+      "seed": 191
+    },
+    {
+      "arm": "exact",
+      "base_checkpoint": "curve-307-step600.pt",
+      "base_sha256": "01a289b560cd3c4e8fb04edcfeb58ee44b7564d3fcf8d7523351876c970f6ea0",
+      "cpu_seconds": 2.039798000000001,
+      "duplicate_exact": true,
+      "metrics": {
+        "cache_bytes": 12582912,
+        "ce": 2.373006884008646,
+        "logits_sha256": "760c633592d9b783a571d640832b74e427ed177a9e9adbe57fab845d4d948098",
+        "tail_ce": 2.4032528921961784
+      },
+      "seed": 307
+    },
+    {
+      "arm": "h16",
+      "base_checkpoint": "curve-307-step600.pt",
+      "base_sha256": "01a289b560cd3c4e8fb04edcfeb58ee44b7564d3fcf8d7523351876c970f6ea0",
+      "cpu_seconds": 2.692961999999998,
+      "duplicate_exact": true,
+      "metrics": {
+        "cache_bytes": 24576,
+        "ce": 2.207603234797716,
+        "logits_sha256": "bb0ddc0e9e3554567c7ca8a7da30b027069b063b4d0a9828b1ab303ff3eac084",
+        "tail_ce": 2.1816712990403175
+      },
+      "seed": 307
+    },
+    {
+      "arm": "h32",
+      "base_checkpoint": "curve-307-step600.pt",
+      "base_sha256": "01a289b560cd3c4e8fb04edcfeb58ee44b7564d3fcf8d7523351876c970f6ea0",
+      "cpu_seconds": 2.848901999999999,
+      "duplicate_exact": true,
+      "metrics": {
+        "cache_bytes": 49152,
+        "ce": 2.2066713478416204,
+        "logits_sha256": "e28f8c82dd5a7bbe839da97e5e93a6d4755bde3c25641ad28a59cdf3432b1239",
+        "tail_ce": 2.1814031302928925
+      },
+      "seed": 307
+    }
+  ],
+  "scope": "One continuous held-out8K-byte passage from Alice, model trained512. This is a narrow extrapolation-quality diagnostic, not long-range recall,100K quality,70B scale or a long-context nanoGPT comparison. Three seeds do not make three independent text samples.",
+  "selected_capacity": "h16",
+  "selected_quality_gate_pass": true
+}

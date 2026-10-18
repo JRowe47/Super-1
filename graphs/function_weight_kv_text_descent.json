@@ -1,0 +1,38 @@
+{
+  "inputs": {
+    "auto-research/results/function-kv-text-descent-20261018-v1/execution/long-context/exact.json": "8d88e80af4f40719bde00cdb8f95ef2b385a68be1adf4a0099dff050c1de2721",
+    "auto-research/results/function-kv-text-descent-20261018-v1/execution/long-context/h16.json": "a47313190b68f5d654836378b9d0d631ab099609371926b9b9a53bbb25c772d5",
+    "auto-research/results/function-kv-text-descent-512-20261018-v1/execution/RESULT.json": "290a18cc3b35c1406760a59805f6c25c9f03b5e2fb78d259a45cd30ba9eaa00b"
+  },
+  "outputs": {
+    "graphs/function_weight_kv_text_descent.png": "513b822301dc2770fed5ebe3a911528d0a4f0ea93c46e33a1892bbb64d133ece",
+    "graphs/function_weight_kv_text_descent.svg": "da24bff78576c922dde96a2b287782a248641f59ec15c39f38a7323eeb74de63"
+  },
+  "peak_ram_mib": {
+    "exact": 1729.0,
+    "h16": 185.703125
+  },
+  "peak_ram_reduction": 9.310559528817837,
+  "quality_means": {
+    "curve": 2.1313113272190094,
+    "h16": 2.13454935948054,
+    "nano": 2.280836006005605
+  },
+  "quality_seeds": [
+    [
+      2.276272624731064,
+      2.2852537631988525,
+      2.280981630086899
+    ],
+    [
+      2.1276684403419495,
+      2.112364172935486,
+      2.153901368379593
+    ],
+    [
+      2.1278423964977264,
+      2.1165399849414825,
+      2.159265697002411
+    ]
+  ]
+}

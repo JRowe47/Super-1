@@ -1,0 +1,355 @@
+{
+  "contrasts": {
+    "compact_minus_transformer": {
+      "gaps": [
+        -0.051630616188049316,
+        -0.09210176765918732,
+        -0.0749887153506279
+      ],
+      "mean": -0.07290703306595485,
+      "mean_ce_ppl_ratio": 0.9296872561821712,
+      "paired_t95": [
+        -0.12337408519413698,
+        -0.02243998093777272
+      ]
+    },
+    "relaxed_minus_compact": {
+      "gaps": [
+        0.018272697925567627,
+        0.05465443432331085,
+        0.04333031177520752
+      ],
+      "mean": 0.038752481341362,
+      "mean_ce_ppl_ratio": 1.0395131529031478,
+      "paired_t95": [
+        -0.007496871711088635,
+        0.08500183439381263
+      ]
+    },
+    "relaxed_minus_transformer": {
+      "gaps": [
+        -0.03335791826248169,
+        -0.037447333335876465,
+        -0.03165840357542038
+      ],
+      "mean": -0.03415455172459284,
+      "mean_ce_ppl_ratio": 0.9664221308878053,
+      "paired_t95": [
+        -0.04154622677231538,
+        -0.02676287667687031
+      ]
+    }
+  },
+  "memory_gate": "pending separate isolated-process measurement",
+  "relaxation_improvement_pass": false,
+  "relaxed_quality_noninferiority_pass": true,
+  "rows": [
+    {
+      "arm": "relaxed",
+      "batch_sha256": "fd7bafd0962eca5e1b356b54791759cea43ecbeaad1232b6acca13a1d8431520",
+      "checkpoint": "relaxed-73-step500.pt",
+      "completed_cpu_seconds": 16.185733,
+      "completed_targets": 512000,
+      "completed_updates": 500,
+      "confirmation": {
+        "accuracy": 0.361175537109375,
+        "ce": 2.241903990507126,
+        "logits_sha256": "3314cb5915706c9583c11c07dcc0841e30202ee548d6446e52b859d058e4d453",
+        "targets": 32768
+      },
+      "cpu_seconds_so_far": 16.173628,
+      "inference_checkpoint": "relaxed-73-inference.pt",
+      "inference_sha256": "0f948f756be0a613ebdad0c6d99949f65ef146ae8f53f26a25a45ae270ebf7db",
+      "initial_selection": {
+        "accuracy": 0.002685546875,
+        "ce": 5.551422953605652,
+        "logits_sha256": "6f4cbb5698b962b850d63d7692f70c95ffab2677126a9fe8bb91c300fadaded4",
+        "targets": 16384
+      },
+      "parameter_count": 214680,
+      "seed": 73,
+      "selection": {
+        "accuracy": 0.36297607421875,
+        "ce": 2.261230081319809,
+        "logits_sha256": "ffe4afcbdcad4cf1fa8c6e9d06952537a802ac64ad44663507493137f5cf6eb8",
+        "targets": 16384
+      },
+      "sha256": "b8625bedd8e0fdc7de5e797bd019144230986b2d68a8088f22d1993d0aee6fa1",
+      "step": 500,
+      "targets_seen": 512000
+    },
+    {
+      "arm": "transformer",
+      "batch_sha256": "fd7bafd0962eca5e1b356b54791759cea43ecbeaad1232b6acca13a1d8431520",
+      "checkpoint": "transformer-73-step500.pt",
+      "completed_cpu_seconds": 13.313227999999999,
+      "completed_targets": 512000,
+      "completed_updates": 500,
+      "confirmation": {
+        "accuracy": 0.342529296875,
+        "ce": 2.2752619087696075,
+        "logits_sha256": "c755878ad6d005a81c05fa13a13fa799a9a13c2131a73d64d72255ca074f1c43",
+        "targets": 32768
+      },
+      "cpu_seconds_so_far": 13.299222,
+      "inference_checkpoint": "transformer-73-inference.pt",
+      "inference_sha256": "c9c8c7fdd1ddf1387dde3413250f80e304ed7677a10b3c1ad08fb0b1cd46dc69",
+      "initial_selection": {
+        "accuracy": 0.0035400390625,
+        "ce": 5.599073141813278,
+        "logits_sha256": "0f34a2758f2824b1f08c65f1d6dbb72ba5ffae2b6f680e01e42b8f6748fb8bef",
+        "targets": 16384
+      },
+      "parameter_count": 214144,
+      "seed": 73,
+      "selection": {
+        "accuracy": 0.33685302734375,
+        "ce": 2.3088033944368362,
+        "logits_sha256": "0209745ce7496a279c40679683c4fe1a094add4156bcacdc55bc7b19e2ee6052",
+        "targets": 16384
+      },
+      "sha256": "e84fe364d710247c713e8fdb57a40822d88731fa74dc93836a6202c9634de5b2",
+      "step": 500,
+      "targets_seen": 512000
+    },
+    {
+      "arm": "compact",
+      "batch_sha256": "fd7bafd0962eca5e1b356b54791759cea43ecbeaad1232b6acca13a1d8431520",
+      "checkpoint": "compact-73-step500.pt",
+      "completed_cpu_seconds": 21.517463,
+      "completed_targets": 512000,
+      "completed_updates": 500,
+      "confirmation": {
+        "accuracy": 0.371185302734375,
+        "ce": 2.2236312925815582,
+        "logits_sha256": "85221d014ddb85c1e69c01e6d50b02cd67bf07c1253fa7f4f87ceba9796fafe0",
+        "targets": 32768
+      },
+      "cpu_seconds_so_far": 21.50416,
+      "inference_checkpoint": "compact-73-inference.pt",
+      "inference_sha256": "3d1d040290c57566cd9a16f1ee2f22cab4940ce8b8ad0b74d5ad4e34768654fa",
+      "initial_selection": {
+        "accuracy": 0.00189208984375,
+        "ce": 5.551035761833191,
+        "logits_sha256": "e57e6d9dcbae04d8bfbb6899d83b48495c9560324f39ac5e5f466393039ffa85",
+        "targets": 16384
+      },
+      "parameter_count": 215752,
+      "seed": 73,
+      "selection": {
+        "accuracy": 0.3690185546875,
+        "ce": 2.242404207587242,
+        "logits_sha256": "fc4138b1c21637c290d54109d1a1744b5577e89d7d2bcd16befe3558e5de12af",
+        "targets": 16384
+      },
+      "sha256": "c3ac7ffe6c2dfd7012da89a95574cdfd08cbc676be321dc7b17f46dc86871ba0",
+      "step": 500,
+      "targets_seen": 512000
+    },
+    {
+      "arm": "compact",
+      "batch_sha256": "33b70f027229864e3ff28cef6d42f01614f87c49e1f0c40fb6796cd6dfdad3fe",
+      "checkpoint": "compact-191-step500.pt",
+      "completed_cpu_seconds": 22.208533000000003,
+      "completed_targets": 512000,
+      "completed_updates": 500,
+      "confirmation": {
+        "accuracy": 0.376007080078125,
+        "ce": 2.1942019686102867,
+        "logits_sha256": "a9ad7cbfae1b3cff007e505a21e7981b6b8b544ed3e871f101e653956ca44486",
+        "targets": 32768
+      },
+      "cpu_seconds_so_far": 22.191328999999996,
+      "inference_checkpoint": "compact-191-inference.pt",
+      "inference_sha256": "31b27e78a43732d1f2704945b50483b82b93f49a3999371f910a3b817d89168b",
+      "initial_selection": {
+        "accuracy": 0.0052490234375,
+        "ce": 5.561509996652603,
+        "logits_sha256": "f49ac9575f42b76fdc091c58cfb309eb8c851e4e01c1b376ef65523448a9d026",
+        "targets": 16384
+      },
+      "parameter_count": 215752,
+      "seed": 191,
+      "selection": {
+        "accuracy": 0.3756103515625,
+        "ce": 2.21874238550663,
+        "logits_sha256": "3f7a11ce361b78dc4d772dcca5cc0c461abc811ba4b5c02510bd8cab1e325be9",
+        "targets": 16384
+      },
+      "sha256": "c07091f1e54a23f5f6a7918fd234211d1348fa2f7b0c9d3284158067d7badd1d",
+      "step": 500,
+      "targets_seen": 512000
+    },
+    {
+      "arm": "transformer",
+      "batch_sha256": "33b70f027229864e3ff28cef6d42f01614f87c49e1f0c40fb6796cd6dfdad3fe",
+      "checkpoint": "transformer-191-step500.pt",
+      "completed_cpu_seconds": 12.659909999999996,
+      "completed_targets": 512000,
+      "completed_updates": 500,
+      "confirmation": {
+        "accuracy": 0.334930419921875,
+        "ce": 2.286303736269474,
+        "logits_sha256": "c10ea93acf50c853f405e531a2dda2146f9299b4680e3ac964e1fd3de416be25",
+        "targets": 32768
+      },
+      "cpu_seconds_so_far": 12.647894000000008,
+      "inference_checkpoint": "transformer-191-inference.pt",
+      "inference_sha256": "41ca89f625ff5d43a215ac504a6ff40d6dcadb270cb0a6d076f9b927a23308d5",
+      "initial_selection": {
+        "accuracy": 0.00830078125,
+        "ce": 5.56031796336174,
+        "logits_sha256": "92e5683a383cb31fb64566f27baeb2c84858999458ea530e3d72aaa3ae2601fc",
+        "targets": 16384
+      },
+      "parameter_count": 214144,
+      "seed": 191,
+      "selection": {
+        "accuracy": 0.33428955078125,
+        "ce": 2.309550032019615,
+        "logits_sha256": "43d5291fef6372c45222fe5f9eca65b715769e34143567da781b7243f430995a",
+        "targets": 16384
+      },
+      "sha256": "8e816b11bc11eed4b3a09362a71ee8f0126daabf16eba563a41d50ffacd3f9e6",
+      "step": 500,
+      "targets_seen": 512000
+    },
+    {
+      "arm": "relaxed",
+      "batch_sha256": "33b70f027229864e3ff28cef6d42f01614f87c49e1f0c40fb6796cd6dfdad3fe",
+      "checkpoint": "relaxed-191-step500.pt",
+      "completed_cpu_seconds": 15.92479200000001,
+      "completed_targets": 512000,
+      "completed_updates": 500,
+      "confirmation": {
+        "accuracy": 0.36199951171875,
+        "ce": 2.2488564029335976,
+        "logits_sha256": "916aba31c836e4c2b583249d8d004cad57e82b686aeaf93ab109b1152563cc1c",
+        "targets": 32768
+      },
+      "cpu_seconds_so_far": 15.909593000000001,
+      "inference_checkpoint": "relaxed-191-inference.pt",
+      "inference_sha256": "2b766721537799aa0877f55f0f46b10c4ca9808d2e44d96e963993c12cbfd681",
+      "initial_selection": {
+        "accuracy": 0.00714111328125,
+        "ce": 5.563911497592926,
+        "logits_sha256": "db7f8054fe2de5b601bdaf980dc707a76c6a3c3a5d932d8db73d2704bbcd495a",
+        "targets": 16384
+      },
+      "parameter_count": 214680,
+      "seed": 191,
+      "selection": {
+        "accuracy": 0.35931396484375,
+        "ce": 2.2628777027130127,
+        "logits_sha256": "5819f6d1255f845017da27013f23185db3202fac02d94c29e9776e1ec34945bf",
+        "targets": 16384
+      },
+      "sha256": "a475c20225ad9a34298cebee5502769f82124a6e135c57a2ab61617f56f8ece1",
+      "step": 500,
+      "targets_seen": 512000
+    },
+    {
+      "arm": "transformer",
+      "batch_sha256": "c440b6e5b9cb1c1eb39bbf21ef368885c364ee49f582e58979135383e2c5aea6",
+      "checkpoint": "transformer-307-step500.pt",
+      "completed_cpu_seconds": 12.722831999999997,
+      "completed_targets": 512000,
+      "completed_updates": 500,
+      "confirmation": {
+        "accuracy": 0.345703125,
+        "ce": 2.270384520292282,
+        "logits_sha256": "9a816142084fb599fe5ebbe3f62295eb89f880005e0bd72faf0a2024001d23a6",
+        "targets": 32768
+      },
+      "cpu_seconds_so_far": 12.708165000000008,
+      "inference_checkpoint": "transformer-307-inference.pt",
+      "inference_sha256": "c4a1cbcbdbbf09eccab6ba61cce0a4472c049e3e60f255f359950854116b5c7e",
+      "initial_selection": {
+        "accuracy": 0.02703857421875,
+        "ce": 5.567964881658554,
+        "logits_sha256": "f2a4a1b103478e0f4715fe08bd675b4d6ac8cb53d126d0a3166e775b4c912228",
+        "targets": 16384
+      },
+      "parameter_count": 214144,
+      "seed": 307,
+      "selection": {
+        "accuracy": 0.34307861328125,
+        "ce": 2.2995351254940033,
+        "logits_sha256": "f312a24521975232a7c461d6b99ac573e5e299fbbb66186ace896c5bc6109618",
+        "targets": 16384
+      },
+      "sha256": "b910f1816e3ddad229dbf1f6a4704c637603b4698371f6ec3e8bea77c1c2f5cf",
+      "step": 500,
+      "targets_seen": 512000
+    },
+    {
+      "arm": "compact",
+      "batch_sha256": "c440b6e5b9cb1c1eb39bbf21ef368885c364ee49f582e58979135383e2c5aea6",
+      "checkpoint": "compact-307-step500.pt",
+      "completed_cpu_seconds": 22.134493000000006,
+      "completed_targets": 512000,
+      "completed_updates": 500,
+      "confirmation": {
+        "accuracy": 0.373931884765625,
+        "ce": 2.195395804941654,
+        "logits_sha256": "a6cc4b608935e26e642afc7fba52db783b447b88566d9e0761dab9bb647d1df7",
+        "targets": 32768
+      },
+      "cpu_seconds_so_far": 22.120538999999994,
+      "inference_checkpoint": "compact-307-inference.pt",
+      "inference_sha256": "6fae52f38c47d6109a9b4a50ca404edb11ad85cc8e806f06c023ae7d13425eee",
+      "initial_selection": {
+        "accuracy": 0.00372314453125,
+        "ce": 5.5543380081653595,
+        "logits_sha256": "82a1c518bb3eed0e1b7b69b88648ce55555013ec2a0772cec6982d66fc6a0d95",
+        "targets": 16384
+      },
+      "parameter_count": 215752,
+      "seed": 307,
+      "selection": {
+        "accuracy": 0.3740234375,
+        "ce": 2.211160436272621,
+        "logits_sha256": "6bf7fe9f0a317925090b57b83518d400d54b3fb5d6f27c27a86875deae09f0a7",
+        "targets": 16384
+      },
+      "sha256": "82d72570054f0f0d3f34998b995c17112e5f2f9169921aea5fb6253051f747a8",
+      "step": 500,
+      "targets_seen": 512000
+    },
+    {
+      "arm": "relaxed",
+      "batch_sha256": "c440b6e5b9cb1c1eb39bbf21ef368885c364ee49f582e58979135383e2c5aea6",
+      "checkpoint": "relaxed-307-step500.pt",
+      "completed_cpu_seconds": 16.13964900000002,
+      "completed_targets": 512000,
+      "completed_updates": 500,
+      "confirmation": {
+        "accuracy": 0.363739013671875,
+        "ce": 2.2387261167168617,
+        "logits_sha256": "e67d64425f79596e86a7ddf90fe2dfd893c15373be92511a4127a034787ae635",
+        "targets": 32768
+      },
+      "cpu_seconds_so_far": 16.127573000000012,
+      "inference_checkpoint": "relaxed-307-inference.pt",
+      "inference_sha256": "a740874bec6aa12a68ae443a1c30a7f9f145015e885d245b1fd18b4ed2960103",
+      "initial_selection": {
+        "accuracy": 0.00482177734375,
+        "ce": 5.548086911439896,
+        "logits_sha256": "9ee6ded9fb3ef9037d1a691674a48c8c2f00393892ef17399d371b805e28b5d7",
+        "targets": 16384
+      },
+      "parameter_count": 214680,
+      "seed": 307,
+      "selection": {
+        "accuracy": 0.36102294921875,
+        "ce": 2.256672039628029,
+        "logits_sha256": "b8b0af6c2d2eb9b2dbe771b6bc4cdb5c0527c17d998c10470829dc71ac01a953",
+        "targets": 16384
+      },
+      "sha256": "cb706743ce116b15d8393a7ca2b7ec7aeb5b502cc5385983dd4d66d23c44fa07",
+      "step": 500,
+      "targets_seen": 512000
+    }
+  ],
+  "scope": "Small Shakespeare byte pilot; quality only at trained256 context. Larger contexts are memory mechanics only. No original-hierarchy, nanoGPT speedrun or SOTA replication."
+}

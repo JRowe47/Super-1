@@ -1,0 +1,15 @@
+{
+  "arm": "curve_be4",
+  "batch_sha256": "6552974261db1937f206c9dc6823e8444f13da552756d9b59e641801ff52f914",
+  "checkpoint": "curve_be4-191-round2.pt",
+  "extra_targets": 81920,
+  "lr": 0.0001,
+  "round": 2,
+  "seed": 191,
+  "selection": {
+    "ce": 2.1457197666168213,
+    "logits_sha256": "dcde7d8958647b289ed4c674b23ce616516d1564a1c0f0bb962332ecff9e0ea8",
+    "targets": 4096
+  },
+  "sha256": "10e030699b90d61f0b3eb1df6b7ae3267dcbe1b75ca982aae068291398cc8320"
+}

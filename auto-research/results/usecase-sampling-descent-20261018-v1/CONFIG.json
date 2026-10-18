@@ -1,0 +1,75 @@
+{
+  "run_id": "usecase-sampling-descent-20261018-v1",
+  "vocab": 256,
+  "width": 48,
+  "heads": 4,
+  "layers": 4,
+  "bases": 2,
+  "router_hidden": 8,
+  "context": 64,
+  "batch": 8,
+  "threads": 1,
+  "seeds": [
+    73,
+    191,
+    307
+  ],
+  "tasks": [
+    "text",
+    "retrieval",
+    "arithmetic"
+  ],
+  "base_updates_per_task": 600,
+  "rounds": 3,
+  "updates_per_round_per_task": 200,
+  "base_lr": 0.001,
+  "sampling_lr": 0.003,
+  "betas": [
+    0.9,
+    0.95
+  ],
+  "eps": 1e-08,
+  "weight_decay": 0.01,
+  "clip": 1.0,
+  "lr_reduction": 0.5,
+  "validation_min_delta": 0.0001,
+  "selection_examples": 128,
+  "confirmation_examples": 256,
+  "synthetic_train_examples": 2048,
+  "synthetic_tune_examples": 768,
+  "data_seed": 202610181,
+  "canary_seed": 202610182,
+  "modulus": 8,
+  "arithmetic_operands": 4,
+  "retrieval_pairs": 4,
+  "retrieval_keys": "abcdefgh",
+  "text_regions": {
+    "train": [
+      0,
+      669236
+    ],
+    "tune": [
+      669236,
+      780775
+    ],
+    "selection": [
+      780775,
+      892315
+    ],
+    "confirmation": [
+      1020494,
+      1115394
+    ]
+  },
+  "minimum_gain_nats": 0.02,
+  "t95_df2": 4.302652729696142,
+  "bonferroni_t_df2": 7.648803937915533,
+  "minimum_task_accuracy": 0.225,
+  "minimum_text_relative_gain": 0.1,
+  "cpu_seconds": 900,
+  "wall_seconds": 1800,
+  "max_artifact_bytes": 157286400,
+  "benchmark_repeats": 20,
+  "benchmark_warmup": 5,
+  "family_alpha": 0.05
+}

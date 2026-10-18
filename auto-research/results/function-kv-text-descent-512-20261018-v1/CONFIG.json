@@ -1,0 +1,76 @@
+{
+  "run_id": "function-kv-text-descent-512-20261018-v1",
+  "vocab": 256,
+  "width": 48,
+  "heads": 4,
+  "layers": 4,
+  "bases": 2,
+  "router_hidden": 8,
+  "context": 512,
+  "batch": 2,
+  "pool_batch": 1,
+  "threads": 1,
+  "seeds": [
+    73,
+    191,
+    307
+  ],
+  "base_updates": 600,
+  "base_lr": 0.001,
+  "selection_every": 200,
+  "pool_rounds": 3,
+  "pool_updates_per_round": 20,
+  "pool_lr": 0.03,
+  "lr_reduction": 0.5,
+  "clip": 1.0,
+  "betas": [
+    0.9,
+    0.95
+  ],
+  "weight_decay": 0.01,
+  "distillation_weight": 1.0,
+  "candidates": {
+    "h16": {
+      "recent_capacity": 12,
+      "level_capacities": [
+        2,
+        2
+      ]
+    },
+    "h32": {
+      "recent_capacity": 24,
+      "level_capacities": [
+        4,
+        4
+      ]
+    }
+  },
+  "text_regions": {
+    "train": [
+      0,
+      110000
+    ],
+    "selection": [
+      110000,
+      114128
+    ],
+    "confirmation": [
+      132000,
+      140208
+    ]
+  },
+  "selection_examples": 8,
+  "confirmation_examples": 16,
+  "quality_ppl_tolerance": 0.02,
+  "total_memory_reduction_target": 4,
+  "t95_df2": 4.302652729696142,
+  "cpu_seconds": 1800,
+  "wall_seconds": 3600,
+  "max_artifact_bytes": 100000000,
+  "memory_lengths": [
+    512,
+    8192
+  ],
+  "memory_chunk": 128,
+  "decode_tokens": 16
+}
