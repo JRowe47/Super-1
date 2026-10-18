@@ -110,3 +110,11 @@ Current title: **Preserve function-weight sampling with hierarchical KV and pack
 Verified the remote branch head, draft/open state, updated PR body and embedded chart. Downloaded the remote chart, numerical summary, selected compact curve file and handoff through the GitHub contents API and matched their SHA-256 hashes to local artifacts. The report and chart are included in PR8. This final handoff-publication note is a subsequent documentation commit; use `git log -1 -- FUNCTION_WEIGHTS_HANDOFF.md` for its exact commit. PR8 is not merged. PR9 was not modified.
 
 All 1,630 repository artifact hashes passed. The only remaining unrelated untracked content is the preserved interrupted RWKV directory noted above. No experiment process remains active. Current limitations and next steps are recorded above; there is no background scheduler or ongoing training to monitor.
+
+## User-authorized main-branch merge verification
+
+The user explicitly requested verification, merge of PR8 and charts in the README. Both charts are already embedded in this branch's README and will land with the merge. PR8 was stacked on PR7; retargeting PR8 to main includes the already-audited PR7 dependency in one merge, preserving its history and existing worktrees.
+
+Fresh audit: `auto-research/results/pr8-merge-verification-20261018-v1/VERIFICATION.json` and its logs. All 31 runtime/library checks passed; all 12 hierarchy profiles and 30 packed deployments replayed their confirmation logits exactly; all 15 compact profiles matched their original packed tensors and hash-bound library entries. The 27 trained depth/t checks also passed. Both charts were visually inspected and their input/output hashes and README embeddings verified. No training or source-model changes were made. GitHub had no configured status checks; these are local numerical/runtime checks with durable receipts.
+
+This entry records verification immediately before the authorized merge. The authoritative final merge state/commit is available from `gh pr view 8 --json state,mergedAt,mergeCommit`. A post-merge remote verification receipt is saved locally at `/Volumes/SP AI 01_16/CodexWorkspaces/.super1-pr8-merge-receipt.json` once GitHub confirms completion; absence of that receipt does not establish completion. Prior draft/unmerged statements above are historical snapshots.
