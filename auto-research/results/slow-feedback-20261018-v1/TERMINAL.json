@@ -1,0 +1,69 @@
+{
+  "run_id": "slow-feedback-20261018-v1",
+  "status": "COMPLETE_NO_PROMOTION_EFFECT_FAILED",
+  "finished_at_utc": "2026-10-18T06:28:39.560774+00:00",
+  "source_commit_before_experiment_execution": "272e90a306793d60ba9265bcf6b1ce21985e819a",
+  "pilot_and_verification_commit": "3b95cd068c33e604f67da12e1349d6efe41a11da",
+  "protocol_sha256": "dc30899a06125b20216eaf4dabbb9a2ca367b0d9c7eeb2454732fd431c5c2674",
+  "registered_source_unchanged": true,
+  "main_seeds": [
+    1001811,
+    1001812,
+    1001813
+  ],
+  "pilot_seed": 99907,
+  "main_runs": 12,
+  "pilot_runs": 4,
+  "main_updates_per_arm": 2048,
+  "pilot_updates_per_arm": 256,
+  "warmup_steps_per_seed": 4096,
+  "full_bitwise_online_replays": 16,
+  "primary_mean_ce_reduction_percent": 1.6833040936645223,
+  "effect_gate": false,
+  "retention_gate": true,
+  "promotion": false,
+  "adaptive_secondary_mean_ce_reduction_percent": 25.314168220233373,
+  "slow_minus_adaptive": {
+    "slow_minus_adaptive_primary_ce": 0.23255490635832152,
+    "slow_minus_adaptive_old_window_pp": 7.677641014258067,
+    "adaptive_gain_fraction_preserved": 0.07247947448020689,
+    "slow_feedback_displacement": 0.7642285227775574,
+    "adaptive_feedback_displacement": 6.625039736429851,
+    "stable_acc_delta_pp": 2.9761910438537598,
+    "novel_acc_delta_pp": -3.4505208333333335,
+    "drift_acc_delta_pp": -31.640625,
+    "balanced_acc_delta_pp": -10.704984929826526
+  },
+  "charged_experiment_cpu_seconds": 163.69363599999997,
+  "cpu_budget_seconds": 900,
+  "cpu_scope": "Verification, pilot/main imports and execution, full online replays, launchers, runtime import canary and frozen analysis startup; dependency setup/source/report preparation and artifact transfer excluded.",
+  "all_workers_exited": true,
+  "all_four_remote_checkpoint_hashes_verified": true,
+  "checkpoint_bytes": 703631,
+  "experiment_exceptions": [],
+  "setup_note": "Transient pip index timeouts resolved by automatic retries before experiment execution; pinned versions unchanged.",
+  "source_preservation": "Exact source/protocol before execution, all compact metrics/receipts in Git, four individual NPZ states remotely readback SHA256 verified.",
+  "cleanup": [
+    {
+      "relative_path": "verify-checkpoints-stage6",
+      "file_bytes_removed": 703631,
+      "reason": "Redundant readback or reproducible temporary runtime after durable checkpoint verification."
+    },
+    {
+      "relative_path": "research-runtime",
+      "file_bytes_removed": 1083929843,
+      "reason": "Redundant readback or reproducible temporary runtime after durable checkpoint verification."
+    }
+  ],
+  "completed_progress_snapshot_cleanup": [
+    {
+      "relative_path": "pilot/99907/PROGRESS.json",
+      "bytes": 25167,
+      "sha256": "a30d87f7d1837c256e6ac3bb4990d229d7d1404548fdb2330cbedcb7f17eebdc",
+      "reason": "Redundant completed progress snapshot; all arm records and data hash exactly equal RESULT.json."
+    }
+  ],
+  "official_test_accessed": false,
+  "new_cloud_resources_created": false,
+  "next_stage": "Propose a fixed-FIFO2x2 control separating feedback local learning from feedback weight decay: frozen(neither), decay-only, learning-only, normal adaptive(both), plus backprop. Primary normal adaptive versus decay-only, unchanged joint gate. No rate sweep. Proposed only, not implemented or running."
+}

@@ -230,7 +230,7 @@
     },
     {
       "run_id": "slow-feedback-20261018-v1",
-      "status": "REGISTERED_PENDING_EXECUTION",
+      "status": "COMPLETE_NO_PROMOTION_EFFECT_FAILED",
       "approval": "User: Ok, go ahead and continue, following completed causal-refresh results and proposed feedback-plasticity test. Standing bounded CPU900s, max3 one-thread workers, own JRowe47/Super-1 branch/draft PR3, research scratch/project folder and compact artifacts.",
       "protocol": "auto-research/results/slow-feedback-20261018-v1/PROTOCOL.json",
       "protocol_sha256": "dc30899a06125b20216eaf4dabbb9a2ca367b0d9c7eeb2454732fd431c5c2674",
@@ -238,10 +238,17 @@
       "metrics": "auto-research/results/slow-feedback-20261018-v1/SUMMARY.json",
       "terminal": "auto-research/results/slow-feedback-20261018-v1/TERMINAL.json",
       "report": "auto-research/reports/slow-feedback-20261018-v1.md",
-      "decision": "Pending preregistered fixed-FIFO feedback plasticity experiment.",
+      "decision": "Slow feedback passes retention all3 but only1.6833% primary CE gain (<5%); normal adaptive25.3142% gains but fails retention. No promotion; next isolate feedback learning versus decay.",
       "parent_run_ids": [
         "refresh-replay-20261018-v1"
-      ]
+      ],
+      "main_runs": 12,
+      "pilot_runs": 4,
+      "full_exact_replays": 16,
+      "charged_experiment_cpu_seconds": 163.69363599999997,
+      "preservation": "Exact source/protocol before execution; compact results in Git; four individual NPZ files remotely hash-verified.",
+      "artifact_manifest": "auto-research/results/slow-feedback-20261018-v1/ARTIFACT_MANIFEST.json",
+      "source_commit": "272e90a306793d60ba9265bcf6b1ce21985e819a"
     }
   ],
   "schema_version": 1,

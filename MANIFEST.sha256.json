@@ -118,7 +118,7 @@
   "auto-research/reports/synthetic-rotation-radial-20261016-v1.md": "46154c3fa898a1409b2f30753d19beedf980f7f16d3dcef48277a3571cc70af2",
   "auto-research/RESEARCH_CATALOG.md": "009b6f566f5928e1fcca12f4f69bea7f27d1f662faccfb82fb8548ee714d6816",
   "auto-research/research-scratch/.gitignore": "836a35c3e778eed96ae73fcc37ed3c8e9203585e6633f751531285420ac45986",
-  "auto-research/research-scratch/CURRENT.md": "d8259a7cdc59a99bada015871a8d32dbd66df83a98b9b2b31abc3dafdf90a332",
+  "auto-research/research-scratch/CURRENT.md": "eab2910a8605680052d81a81c111f790342b5e9728ed0e4e7f468e46c9b9cce4",
   "auto-research/research-scratch/README.md": "0367b097112c1e7951f54a9a141e708cb6da28a3dc33d683e7601d2bc9925fba",
   "auto-research/results/bounded-feedback-20261018-v1/PROTOCOL_RECORD.json": "3e7f47923c0698c4285f0e0cc9b589354a2dadfad257abadf5ffa726d0338a32",
   "auto-research/results/bounded-feedback-20261018-v1/RECORDED_SUMMARY.json": "d3b02f297fb91503b6c8ee65f6043663c9d94afc4c68b76b9cd47741326fc862",
@@ -585,7 +585,7 @@
   "auto-research/results/workflow-canaries-20261015/README.md": "4825be1295e5bd9059ffb93b5dea20fbc75b5794100d95079666060640df9d6a",
   "auto-research/results/workflow-canaries-20261015/workflow_synthetic_canary.py": "2954d38449856745d653e9877794602386ac692af8e763a060617c17fe6a4757",
   "auto-research/results/workflow-canaries-20261015/workflow-receipt.json": "01d47882cbaf63ccbdb7af3b49e357ff2e88818a89a97e4087edfdbb8ec7568e",
-  "auto-research/RUN_REGISTRY.json": "fd765ce01f620a4f928bc2eee463ef9ee1b3bac75728a382e63086ad69382570",
+  "auto-research/RUN_REGISTRY.json": "2c0e0ff754d376d6f46dbf8e66af09ecb2e3c4824f725c1e765d95402648b1ca",
   "auto-research/SCALING_1B.md": "f0ad9fec5b4f2b888132f447b0d473ec70c97d0eb3c68aa472f2d73d2a4ef587",
   "checkpoints/hierarchy/191-cross-0.001-6000.pt": "d6b58161fb3c8d36e8f3fd6feb820831b4213eee665bfc2ae73e38e5ecd900e2",
   "checkpoints/hierarchy/191-local-0.003-6000.pt": "0fac1101751cd095d677e41a76c306ca8d2539f974ddbb39eb1361a3a7857731",
@@ -781,5 +781,14 @@
   "auto-research/results/slow-feedback-20261018-v1/VERIFICATION.json": "754776561da707a4753f54611fc7bc880046c0b572ac87fe5b9467d54f99876f",
   "auto-research/results/slow-feedback-20261018-v1/VERIFY_RECEIPT.json": "2f4432d20eb47e21bf211faf1ba1b6429b7cbaa060df40fcfb7de69f0cafb143",
   "auto-research/results/slow-feedback-20261018-v1/PILOT_RECEIPT.json": "54d81933fab4d4af8274792702086703161fda89cdbe6ca0d7f196e377e75461",
-  "auto-research/results/slow-feedback-20261018-v1/pilot/99907/RESULT.json": "beab340daf186c108155bfac4c09354ce123c080e0ed32b0b9bf6242e9b54f40"
+  "auto-research/results/slow-feedback-20261018-v1/pilot/99907/RESULT.json": "beab340daf186c108155bfac4c09354ce123c080e0ed32b0b9bf6242e9b54f40",
+  "auto-research/results/slow-feedback-20261018-v1/MAIN_RECEIPT.json": "b55f5dd5a9bf5613147b39f18cf7a6fe5e22a2529de29be0e5999c46cf06917e",
+  "auto-research/results/slow-feedback-20261018-v1/SUMMARY.json": "d2af5391cc7bd84dd82332524d82a57e9690e2a9f7612004720445d0f54fbbe7",
+  "auto-research/results/slow-feedback-20261018-v1/TERMINAL.json": "92ed609241178a8e900cd2a7f003c3c8b037ac7ba439e214f422027597ee0134",
+  "auto-research/results/slow-feedback-20261018-v1/EVIDENCE_AUDIT.json": "d215f63a3e2772af731ed4256dcd030e3282b720868e3089d9061ea3e26bf635",
+  "auto-research/results/slow-feedback-20261018-v1/ARTIFACT_MANIFEST.json": "22446ebf391914b2162b30d9853dcd21a4139ec62b3784a30919258c8ff7770e",
+  "auto-research/reports/slow-feedback-20261018-v1.md": "2b618a118df24c39ea82cbae31824198d581dee5b5455cccfec306a01cd02a7d",
+  "auto-research/results/slow-feedback-20261018-v1/main/1001811/RESULT.json": "0f5032cf5cfa04e6d1af4a35b3f16af3b2d071c4de9e37ad8d188d610216e22e",
+  "auto-research/results/slow-feedback-20261018-v1/main/1001812/RESULT.json": "5c509d4a30b135ebc619a2fc25ec0bcd6acfa1f6c2b0ef2d4a42a9c42d27bd3f",
+  "auto-research/results/slow-feedback-20261018-v1/main/1001813/RESULT.json": "2382d1ec14bcff9a8eb6ac676c5f4117944ddec9c105fc72af585aba59b8f32d"
 }

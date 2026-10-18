@@ -1,43 +1,36 @@
 # Current research handoff
 
-Active authorized run: **slow-feedback-20261018-v1**, preregistered and pending execution. Keep FIFO512/16 fixed; four arms are backprop/frozen/normal adaptive/slow adaptive. Slow uses0.1 of the complete feedback SGD drive including decay after unchanged warmup. Fresh main seeds1001811..3, pilot99907. Same joint CE/retention gate and900 aggregate CPU-second envelope; max3 one-thread workers. Source publication/readback must precede checks and optimization.
+Latest completed run: **slow-feedback-20261018-v1**. **No promotion: useful-effect gate failed; retention passed.** Nothing is running.
 
-[Protocol](../results/slow-feedback-20261018-v1/PROTOCOL.json) and [registration](../results/slow-feedback-20261018-v1/REGISTRATION.json). No result exists yet. No rate tuning or follow-on experiment in this run.
+[Report](../reports/slow-feedback-20261018-v1.md) · [Summary](../results/slow-feedback-20261018-v1/SUMMARY.json) · [Protocol](../results/slow-feedback-20261018-v1/PROTOCOL.json) · [Terminal](../results/slow-feedback-20261018-v1/TERMINAL.json) · [Checkpoints](../results/slow-feedback-20261018-v1/ARTIFACT_MANIFEST.json).
 
-## Prior completed handoff
+## Latest result
 
-# Current research handoff
+Four arms share FIFO512/16, current16, unchanged4096-step warmup, forward lr/decay and spectral cap2. Slow adaptive uses0.1 of the entire feedback SGD drive including decay before projection. Controls: frozen, normal adaptive, backprop. Fresh main seeds1001811/1001812/1001813, pilot99907; main2048 online steps per arm, pilot256.
 
-Latest completed run: **refresh-replay-20261018-v1**. **No promotion: retention gate failed.** Nothing is running.
+Primary slow-versus-frozen CE reductions1.9965/2.8885/0.1649%, mean1.6833%, sample SD1.3885pp: below5% minimum. Old-window deltas-1.1265/-1.3602/-0.9521pp, final-old-0.2790/-0.5022/-0.3906pp: every retention comparison is within2pp. Joint gate fails.
 
-[Report](../reports/refresh-replay-20261018-v1.md) · [Summary](../results/refresh-replay-20261018-v1/SUMMARY.json) · [Protocol](../results/refresh-replay-20261018-v1/PROTOCOL.json) · [Terminal](../results/refresh-replay-20261018-v1/TERMINAL.json) · [Checkpoints](../results/refresh-replay-20261018-v1/ARTIFACT_MANIFEST.json).
-
-## Latest finding
-
-Nine arms cross backprop/frozen/adaptive feedback with FIFO512, permanent256+256 mixed replay, and causally refreshed256+256 replay. Both mixed modes sample8+8; refreshed bank replaces one circular row per update using a uniform current example with observed label. No phase or oracle relabeling.
-
-Fresh main seeds901801/901802/901803, pilot98997. Primary adaptive_refreshed versus frozen_refreshed CE reductions26.11/25.72/23.46%, mean25.0964%, SD1.4345pp. Old-window deltas-6.78/-10.14/-7.04pp; final-old-4.35/-3.79/-1.23pp. Effect gate passes; retention requires both measures>=-2pp in EVERY seed and fails all3 via old-window.
-
-Relative to adaptive permanent replay, refresh reduces CE11.70%, restores21.48pp final changed accuracy and7.02pp balanced accuracy, but loses1.02pp final-old and6.20pp old-window accuracy. Compared with adaptive FIFO it still raises CE13.17%, with only0.28pp final-old gain and2.34pp changed accuracy loss. Refresh also helps BP/frozen changed accuracy, so it is not a feedback-specific rescue.
-
-Obsolete replay targets FIFO/permanent/refreshed:901801=38/3244/164;901802=24/3544/132;901803=54/3796/126. Refreshed labels become current after complete turnover, but novel-context learning also improves before any rule changes: age/content and staleness are not independently isolated.
+Normal adaptive gains25.3142% CE versus frozen but fails retention all3. Slow preserves7.248% of normal's benefit when averaging per-seed gain fractions, gains2.9762pp final-old accuracy versus normal, but loses31.6406pp final changed accuracy and10.7050pp balanced accuracy. Mean final changed accuracy: frozen36.46%, slow37.63%, normal69.27%, BP81.12%. Normal's benefit is concentrated in the changed-rule window; novel-window CE is worse than frozen. No rate/comparator selection.
 
 ## Evidence and authority
 
-Source frozen and published before execution: `4faa9eb28162de359366e77a7ff1e980dc8826fe`. Protocol SHA256 `7def232286ce614b3d3b34e3c2717e1ce789b5d35067bea4d8d7ed6fc5015235`. Verification/pilot commit `386d8addee0316275094e2c1f8554596077f54c2`. All27 main+9 pilot arms completed; all36 full online replays bitwise exact at all4 phases/final state. Numerical tolerances unchanged; independent refresh references passed.
+Source/protocol published/readback before experiment: `272e90a306793d60ba9265bcf6b1ce21985e819a`; protocol SHA256 `dc30899a06125b20216eaf4dabbb9a2ca367b0d9c7eeb2454732fd431c5c2674`. Pilot/verification commit `3b95cd068c33e604f67da12e1349d6efe41a11da`. All12 main+4 pilot arms complete;16 full online replays bitwise exact at four phases/final state. Original FP32/FP64 tolerances pass, with independent dense slow-step and exact multiplier0/1 endpoint/trajectory checks.
 
-261.082 aggregate CPU seconds of900; no experiment failures or source changes. Four compact checkpoints total1,025,296bytes, remote SHA256 readback verified. Temporary runtime removed; all workers exited. No official tests, external datasets, GPU/cloud/paid compute or language training.
+163.694 aggregate CPU seconds/900, max3 one-thread workers; no experiment failures or source changes. Pinned dependency setup had transient network timeouts resolved by automatic retries before experiment execution. Four compact checkpoints total703,631bytes, remote SHA256 readback verified. All workers exited; temporary runtime/readback copies removed. Source and report hashes in global MANIFEST.sha256.json. No official tests, external datasets, GPU/cloud/paid compute or language training.
 
-Work only in JRowe47/Super-1, branch research/curve-inception-20261017-v1, existing draft PR3. Do not merge or target upstream. Use auto-research/research-scratch for stable handoff; preserve previous results and minimize artifacts. Existing project folder contains each seed's NPZ file, not a new cumulative archive. Current local staging tree is not a full Git checkout; use current remote branch as authority. The older bounded-feedback source gap remains unresolved; recent runs are fully preserved.
+Work only in JRowe47/Super-1 on research/curve-inception-20261017-v1, existing draft PR3. No merge/upstream submission. Use auto-research/research-scratch for stable back-and-forth; all per-run files under auto-research/results and reports. Existing project folder holds individual NPZ checkpoints; no new cumulative archive. Local worktree is a staging tree, not a full checkout; current remote branch is authority. Keep original archives and older evidence intact. Earlier bounded-feedback source/checkpoints remain lost; never claim exact reconstruction of that run.
 
 ## Next proposed stage
 
-Pivot from replay allocation to **feedback plasticity**. Fix FIFO replay512/16, common warmup, forward lr/decay, exposure and spectral cap. Four arms: frozen, normal adaptive, one slow-feedback setting, backprop. A candidate single fixed setting is0.1 times the entire feedback SGD update including decay after warmup; leave forward updates unchanged. Freeze source/equations and three fresh paired main seeds plus separate pilot BEFORE any experiment execution. No rate sweep or phase metadata. Primary slow-versus-frozen:>=5% mean paired CE gain, no negative seed, both old-window and final-old losses<=2pp in every seed; full original numerical/source/preservation/replay gates. Compare with normal adaptive to expose whether apparent retention simply sacrifices the useful effect.
+Separate **feedback local learning from feedback weight decay**, both of which were scaled in this experiment. Fixed FIFO512/16, original full feedback step0.05, common warmup, forward optimizer, cap2, exposure and endpoints.2x2: feedback data-dependent drive on/off xfeedback decay on/off, giving frozen(neither), decay-only, learning-only, normal adaptive(both), plus BP. This tests a missing simpler explanation: passive feedback decay may account for some apparent adaptive-feedback benefit.
 
-Estimated150–300 CPU seconds, within standing900 aggregate CPU seconds, max3 concurrent one-thread workers and four small state files. Runtime restoration uses pinned versions in latest RUNTIME.json; remove it after durable evidence checks. Follow-on is proposed only, not implemented/launched; await the user's continuation. Do not enlarge the compute scope or start language/1B work.
+Proposed primary: normal adaptive versus decay-only, with unchanged>=5% mean paired post-change CE reduction, no negative seed, and both old-window/final-old loss<=2pp in every seed. Frozen and learning-only are explanatory controls; report all contrasts, do not select a favorable primary afterward. Fresh3 paired main seeds and separate mechanical pilot; prepublish exact source/protocol, original tolerances, all full replays and compact remote-preserved states. No rate sweep.
+
+Expected200–350 aggregate CPU seconds within standing900s, max3 one-thread workers; four small NPZ files. Restore exact versions from latest RUNTIME.json and remove temporary runtime after preservation. Follow-on is proposed only, not implemented/launched; await the user's continuation. No permission for language/1B/cloud expansion is implied.
 
 ## Earlier checkpoints
 
-- [Permanent replay retention](../reports/replay-retention-20261018-v1.md): adaptive mixed vs frozen21.94% CE gain, retention fails all3; permanent bank raises adaptive CE30.71% versus FIFO.
-- [Magnitude feedback](../reports/magnitude-feedback-20261018-v1.md): magnitude-controlled CE advantage26.45%, retention still fails. Do not infer closer BP gradients.
-- Historical bounded-feedback run lost source/checkpoints; keep its transcription caveat. Do not describe it as exactly reproduced.
+- [Refreshed replay](../reports/refresh-replay-20261018-v1.md): primary adaptive/frozen CE gain25.10%, retention fails; refresh helps permanent-bank adaptation but remains slower than FIFO.
+- [Permanent replay](../reports/replay-retention-20261018-v1.md): improved old retention but sharply impaired changed-rule learning.
+- [Magnitude control](../reports/magnitude-feedback-20261018-v1.md):26.45% CE gain survives matched update magnitude, retention fails; do not infer improved BP alignment.
+- Earlier bounded-feedback missing-source transcription stays explicitly caveated.
