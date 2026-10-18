@@ -202,6 +202,96 @@
       "status": "COMPLETED_NO_PROMOTION",
       "terminal": "auto-research/results/memory-quality-frontier-20261018-v1/execution/TERMINAL.json",
       "total_memory_pass": false
+    },
+    {
+      "approval": "Current chat: user said \"ok do it\" after the assistant proposed a fixed-step learned-sampling experiment with fixed curve, matching dense and upstream nanoGPT controls across multiple seeds.",
+      "arm_seed_rows": 15,
+      "decision": "NO_PROMOTION_INCONCLUSIVE_OR_NEGATIVE",
+      "metrics": "auto-research/results/adaptive-depth-shakespeare-20261018-v1/execution/RESULT.json",
+      "protocol": "auto-research/results/adaptive-depth-shakespeare-20261018-v1/PROTOCOL.json",
+      "protocol_sha256": "6c03bd561e22dcf61d2e023801a6694f955ca50158f1c4fe6639d687c5db77a4",
+      "report": "auto-research/reports/adaptive-depth-shakespeare-20261018-v1.md",
+      "run_id": "adaptive-depth-shakespeare-20261018-v1",
+      "source_freeze_commit": "5460ec90ac4b5fe3e6c97656280ed27390ee31b3",
+      "source_manifest": "auto-research/results/adaptive-depth-shakespeare-20261018-v1/SOURCE_MANIFEST.json",
+      "status": "COMPLETED",
+      "target_exposures_per_arm_seed": 307200,
+      "terminal": "auto-research/results/adaptive-depth-shakespeare-20261018-v1/execution/TERMINAL.json",
+      "updates_per_arm": 600,
+      "verification": "auto-research/results/adaptive-depth-shakespeare-20261018-v1/execution/VERIFICATION.json"
+    },
+    {
+      "approval": "Current chat: user requested optimizing sampling per use-case iteratively after benchmarking, explicitly by gradient descent. This authorizes the bounded local follow-up; no recursive inference controller, cloud spending or endless research loop.",
+      "base_checkpoints": 3,
+      "confirmation_rows": 36,
+      "decision": "NO_USECASE_SPECIALIZATION_PROMOTED",
+      "decisions_by_usecase": {
+        "arithmetic": {
+          "base_learning_qualified": false,
+          "improves_frozen_uniform": false,
+          "specialization_supported": false,
+          "token_conditioning_supported": false
+        },
+        "retrieval": {
+          "base_learning_qualified": false,
+          "improves_frozen_uniform": false,
+          "specialization_supported": false,
+          "token_conditioning_supported": false
+        },
+        "text": {
+          "base_learning_qualified": true,
+          "improves_frozen_uniform": false,
+          "specialization_supported": false,
+          "token_conditioning_supported": false
+        }
+      },
+      "metrics": "auto-research/results/usecase-sampling-descent-20261018-v1/execution/RESULT.json",
+      "protocol": "auto-research/results/usecase-sampling-descent-20261018-v1/PROTOCOL.json",
+      "protocol_sha256": "81b1a5187cb6b1ec02ff6ee1f3420b2ddcb54743fc83d656ae94ca29965aa087",
+      "report": "auto-research/reports/usecase-sampling-descent-20261018-v1.md",
+      "rounds": 3,
+      "run_id": "usecase-sampling-descent-20261018-v1",
+      "sampler_round_checkpoints": 84,
+      "source_manifest": "auto-research/results/usecase-sampling-descent-20261018-v1/SOURCE_MANIFEST.json",
+      "status": "COMPLETED",
+      "terminal": "auto-research/results/usecase-sampling-descent-20261018-v1/execution/TERMINAL.json",
+      "verification": "auto-research/results/usecase-sampling-descent-20261018-v1/execution/VERIFICATION.json"
+    },
+    {
+      "approval": "User asks to keep improving text and store a library of ideal parameters by use case; bounded local sampler-only follow-up, no cloud or perpetual execution.",
+      "decision": "REFERENCE_RETAINED_NO_PROMOTION",
+      "library": "sampling_library/index.json",
+      "metrics": "auto-research/results/text-sampling-library-20261018-v1/execution/RESULT.json",
+      "protocol": "auto-research/results/text-sampling-library-20261018-v1/PROTOCOL.json",
+      "protocol_sha256": "15675069296bc03051c7638aa13304f619aed549b292f1a62a2018258338c75f",
+      "report": "auto-research/reports/text-sampling-library-20261018-v1.md",
+      "run_id": "text-sampling-library-20261018-v1",
+      "source_manifest": "auto-research/results/text-sampling-library-20261018-v1/SOURCE_MANIFEST.json",
+      "status": "COMPLETED",
+      "terminal": "auto-research/results/text-sampling-library-20261018-v1/execution/TERMINAL.json",
+      "verification": "auto-research/results/text-sampling-library-20261018-v1/execution/VERIFICATION.json"
+    },
+    {
+      "approval": "User explicitly asked for learning how many layers per use case; PR3/4 resolved and merged before this experiment. Bounded local CPU sampler-only extension.",
+      "decision": "LEARNED_FOUR_LAYERS_REFERENCE_RETAINED",
+      "library": "sampling_library/depth_profiles.json",
+      "metrics": "auto-research/results/text-depth-library-20261018-v1/execution/RESULT.json",
+      "protocol": "auto-research/results/text-depth-library-20261018-v1/PROTOCOL.json",
+      "protocol_sha256": "be34d9fe37fba0ef4e882123f443abb534d74048754f99ad9f0bf7cc006b80dd",
+      "report": "auto-research/reports/text-depth-library-20261018-v1.md",
+      "run_id": "text-depth-library-20261018-v1",
+      "source_manifest": "auto-research/results/text-depth-library-20261018-v1/SOURCE_MANIFEST.json",
+      "status": "COMPLETED",
+      "terminal": "auto-research/results/text-depth-library-20261018-v1/execution/TERMINAL.json",
+      "verification": "auto-research/results/text-depth-library-20261018-v1/execution/VERIFICATION.json"
+    },
+    {
+      "approval": "User requested updating PR7/PR8 to preserve function weights and layer sampling at inference.",
+      "language_quality_benchmark": false,
+      "report": "sampling_library/HIERARCHICAL_KV.md",
+      "run_id": "function-weight-hierarchical-kv-20261018-v1",
+      "status": "PASS_MECHANICS_ONLY",
+      "verification": "auto-research/results/function-weight-hierarchical-kv-20261018-v1/VERIFICATION.json"
     }
   ],
   "schema_version": 1,

@@ -1,0 +1,53 @@
+{
+  "independent_replays": [
+    {
+      "arm": "incumbent",
+      "ce": 2.18467915058136,
+      "seed": 73
+    },
+    {
+      "arm": "continued",
+      "ce": 2.1796710900962353,
+      "seed": 73
+    },
+    {
+      "arm": "small_step",
+      "ce": 2.18318510055542,
+      "seed": 73
+    },
+    {
+      "arm": "incumbent",
+      "ce": 2.1860485896468163,
+      "seed": 191
+    },
+    {
+      "arm": "continued",
+      "ce": 2.1861729584634304,
+      "seed": 191
+    },
+    {
+      "arm": "small_step",
+      "ce": 2.186414387077093,
+      "seed": 191
+    },
+    {
+      "arm": "incumbent",
+      "ce": 2.202432867139578,
+      "seed": 307
+    },
+    {
+      "arm": "continued",
+      "ce": 2.2004308253526688,
+      "seed": 307
+    },
+    {
+      "arm": "small_step",
+      "ce": 2.201727483421564,
+      "seed": 307
+    }
+  ],
+  "matched_batches": true,
+  "selection_minima": true,
+  "source_hashes": true,
+  "status": "PASS"
+}

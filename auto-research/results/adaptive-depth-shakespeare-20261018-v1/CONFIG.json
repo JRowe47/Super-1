@@ -1,0 +1,13 @@
+{
+  "vocab": 256, "width": 48, "heads": 4, "layers": 4, "bases": 2, "router_hidden": 8,
+  "context": 64, "batch": 8, "updates": 600, "seeds": [73, 191, 307],
+  "arms": ["fixed", "global", "token", "dense", "nanogpt"],
+  "lr": 0.001, "weight_decay": 0.01, "betas": [0.9, 0.95], "eps": 1e-8,
+  "clip": 1.0, "warmup_updates": 30, "minimum_lr_fraction": 0.1,
+  "selection_every": 100, "selection_windows": 64, "confirmation_windows": 256,
+  "threads": 1, "cpu_seconds": 900, "wall_seconds": 1800, "max_artifact_bytes": 104857600,
+  "train_fraction": 0.8, "selection_end_fraction": 0.9, "minimum_gain_nats": 0.02,
+  "benchmark_repeats": 30, "benchmark_warmup": 5, "benchmark_decode_steps": 16,
+  "t_critical_df2": 4.302652729696142, "canary_seed": 20261018,
+  "fidelity_atol": 0.00002, "fidelity_rtol": 0.0002
+}

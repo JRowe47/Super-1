@@ -41,3 +41,35 @@ The synthetic experiment completed all training but failed when a secondary rese
 ## Inference-first memory experiments
 
 The relaxed-compression pilot did not improve over the compact hybrid, and retained tensor savings substantially overstated measured total-process savings. Always test the compression/quality hypothesis before assuming less compression is better; preserve both the worse arm and the primary failed gate. Report total resident/peak memory separately from weights and cache/state accounting. Spending more training compute may be acceptable for inference gains, but disclose that cost and tuning opportunity. Do not describe fixed-depth results as dynamic layer-sampling gains; validate cache consistency and resident weights for any future dynamic policy.
+
+## Continuous depth versus adaptive execution
+
+A continuous weight function was previously mistaken for an adaptive execution policy. Always inspect the forward path: fixed construction coordinates and a loop over every block do not learn sampling positions or halting. Account for per-block normalization and routing parameters when changing depth.
+
+For token-conditioned depth experiments, always distinguish uniform positions, learned token-independent positions, and token-conditioned positions. Train and evaluate at the same context, preserve common initialization and samplers for the curve arms, and report basis applications and router overhead. Matching block count does not match FLOPs against a dense Transformer.
+
+Small routing gradients can be hidden by FP32 finite-difference cancellation: the initial canary here returned a zero numerical difference despite a nonzero analytic gradient. Always use a nonconstant curve, nonzero router, and a sufficiently precise finite-difference check before accepting connectivity. The FP64 check, causal-prefix equality, and complete optimizer-step parity must pass before language training. Do not weaken a tolerance to manufacture a pass.
+
+Always freeze all checkpoints before reserved confirmation, retain failures and every seed, and distinguish a small single-corpus byte pilot from broad language quality or an optimized deployment result. Uncached full-prefix decoding must be labeled as such.
+
+## Iterative sampling optimization by workload
+
+The user clarified that “recursively” meant a benchmark/gradient-descent/re-evaluation research loop, not a recursive inference controller. Always preserve that distinction. Optimize sampling on dedicated tuning data, choose checkpoints with selection data, and freeze every workload's choices before reserved confirmation. Report each workload separately and retain the initial policy as an eligible fallback.
+
+A shared backbone can learn text while remaining at chance on structured tasks. Always check each workload's baseline competence before interpreting sampling gains. Nonzero sampler gradients and tiny CE changes do not establish retrieval or arithmetic capability. If the backbone has not learned a task, preserve that failure and address task learning in a separately scoped experiment instead of endlessly tuning routing or weakening the success criterion.
+
+Compare per-workload policies against a shared policy with matched per-workload examples and against token-independent positions. Report extra total controller storage, fixed active steps and every adaptation round. Learning-rate reductions and checkpoint selection must be fixed before confirmation. Never update the underlying model during a sampling-only claim; verify frozen weight fingerprints, not just parameter flags.
+
+## Evidence-backed parameter libraries
+
+A use-case library must preserve exact backbone, tokenizer, context and sampling-architecture compatibility. Store learned controllers and all rejected candidates, not hand-written task-to-layer heuristics or claimed universal optima. Choose on validation, freeze, then confirm on untouched bytes; do not rank incomparable evaluation regions. Continued tuning may improve the mean while regressing a seed: preserve the reference when the preregistered promotion gate fails. A library entry is not evidence of deployed speed or broad language ability.
+
+A causal-prefix exact-equality test across different tensor lengths failed at FP32 in the library canary. Preserve that failure; test future-token intervention at equal shapes for causality without changing a numerical threshold. Do not claim cross-length bitwise invariance from a same-shape intervention.
+
+## Learned execution depth
+
+When learning layer count, distinguish workload-level categorical selection from token-wise halting. Count executed normalization blocks with hooks; a changed depth field alone may leave the full loop running. Preserve exact full-depth forward/optimizer parity, and verify gradients on the altered lower-depth path. Resampling a weight curve does not retrain frozen per-block normalization: report the depth distribution shift. Record that depth2 has no trainable interior coordinate when endpoints are fixed. Training all branches costs more than inference through one chosen branch. A quality-only objective may legitimately select maximum depth; retain measured cheaper profiles without claiming they are equivalent or forcing a cost penalty after seeing results.
+
+## Function weights and KV memory are separate boundaries
+
+The alternative gated-delta pilot replaced the model instead of testing hierarchical KV storage on the function-weight backbone. Preserve curve/basis projections, sampling policy, layer layout, normalization and MLP when changing attention memory. A different recurrent architecture is a separately named baseline, never an implicit replacement. Test cached/full logits and sampled coordinates on the saved trained profiles, retain exact KV as the reference backend, and require causal/chunk-invariant hierarchical reads. Depth or router changes require rebuilding incompatible caches. Mechanical tests and synthetic compressor fitting do not establish language quality, total deployment memory or a valid RWKV comparison.

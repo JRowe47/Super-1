@@ -1,0 +1,18 @@
+{
+  "arm": "small_step",
+  "base_fingerprint": "218970774ec08fac12dda6138a43684ac06cfe3dd2ec27d47c0aa8355bd7df47",
+  "batch_sha256": "a07cbc4bcfc55fe0a4778d3b43f1778344531f4e39f28de8ff275b1060ec9d4f",
+  "checkpoint": "auto-research/results/text-sampling-library-20261018-v1/execution/small_step-73-round1.pt",
+  "gradient_norm_mean": 0.051392736338078976,
+  "lr": 0.0003,
+  "next_lr": 0.0003,
+  "round": 1,
+  "seed": 73,
+  "selection": {
+    "accuracy": 0.3726806640625,
+    "ce": 2.1902252584695816,
+    "logits_sha256": "fd7516a1e44ce69fbeff19cae74802827bca8f25efb9a6207a184b52f826c678",
+    "targets": 8192
+  },
+  "sha256": "2c8cd248eea8359ef76a99420735607da91040fd404fb8cf0b256a523635eecc"
+}

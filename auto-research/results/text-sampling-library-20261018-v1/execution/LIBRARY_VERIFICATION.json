@@ -1,0 +1,18 @@
+{
+  "checks": [
+    "exact_reload_seed_73",
+    "different_backbone_seed_73",
+    "exact_reload_seed_191",
+    "different_backbone_seed_191",
+    "exact_reload_seed_307",
+    "different_backbone_seed_307",
+    "incompatible_unseen/domain_utf8-bytes-v1_64",
+    "incompatible_text/shakespeare-byte_other-tokenizer_64",
+    "incompatible_text/shakespeare-byte_utf8-bytes-v1_128",
+    "duplicate_id",
+    "tampered_artifact",
+    "unconfirmed_promotion",
+    "preserve_old_reference_on_replacement"
+  ],
+  "status": "PASS"
+}

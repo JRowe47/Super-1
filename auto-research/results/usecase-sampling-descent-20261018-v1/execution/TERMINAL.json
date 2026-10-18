@@ -1,0 +1,31 @@
+{
+  "artifact_bytes": 1850684,
+  "backbone_unchanged": true,
+  "base_checkpoints": 3,
+  "confirmation_rows": 36,
+  "cpu_seconds": 291.835827,
+  "decisions": {
+    "arithmetic": {
+      "base_learning_qualified": false,
+      "improves_frozen_uniform": false,
+      "specialization_supported": false,
+      "token_conditioning_supported": false
+    },
+    "retrieval": {
+      "base_learning_qualified": false,
+      "improves_frozen_uniform": false,
+      "specialization_supported": false,
+      "token_conditioning_supported": false
+    },
+    "text": {
+      "base_learning_qualified": true,
+      "improves_frozen_uniform": false,
+      "specialization_supported": false,
+      "token_conditioning_supported": false
+    }
+  },
+  "duplicate_exact": true,
+  "sampler_round_checkpoints": 84,
+  "status": "COMPLETED",
+  "wall_seconds": 299.456516792
+}

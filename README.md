@@ -19,6 +19,8 @@ Cross-entropy is lower-is-better. These results compare the named baselines, not
 
 ## Architecture
 
+The function-weight Transformer and its learned inference sampling remain intact. [Cached inference](sampling_library/INFERENCE.md) evaluates the same learned weight curves and router; the optional [hierarchical KV backend](sampling_library/HIERARCHICAL_KV.md) changes only attention storage/readout. The hierarchy is experimental and has mechanics checks, not a completed quality benchmark. Earlier gated-delta hybrid results describe a separate architecture and must not be attributed to this implementation.
+
 The original hierarchy uses learned gates and cross-scale updates to maintain fast, segment, and document-level memory. Its recurrent state stays fixed-size as context grows. Function-generated transition experiments explore structured transformations, relative geometry, and rotations.
 
 The historical pure hierarchy, local-plus-function-weight arm, and later geometry pilots are separately identified in the evidence: they are not one identical trained architecture.
@@ -88,3 +90,7 @@ Protocols, results, logs, and all outcomes live in [auto-research/](auto-researc
 ## License
 
 [MIT](LICENSE) for original code and documentation. Third-party material retains its original licenses and notices.
+
+## Experimental sampling parameter library
+
+[Learned sampling positions and layer-count profiles](sampling_library/README.md) preserve exact model compatibility, benchmark evidence and rejected candidates. Text-only pilots currently retain the four-layer research reference; two- and three-layer profiles expose measured quality/CPU tradeoffs. This is not a universal optimum or broad language-performance claim.

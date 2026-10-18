@@ -1,0 +1,58 @@
+{
+  "tests": [
+    {
+      "shape": [
+        1,
+        7
+      ],
+      "forward_gradient_optimizer_parity": true,
+      "max_logit_error": 1.7881393432617188e-07
+    },
+    {
+      "shape": [
+        2,
+        17
+      ],
+      "forward_gradient_optimizer_parity": true,
+      "max_logit_error": 1.7881393432617188e-07
+    },
+    {
+      "shape": [
+        8,
+        64
+      ],
+      "forward_gradient_optimizer_parity": true,
+      "max_logit_error": 2.384185791015625e-07
+    },
+    {
+      "causal_logits_and_routing": true,
+      "ordered_positions": true,
+      "nonzero_router_gradient": true,
+      "gradient_analytical": -0.00020845255203640962,
+      "gradient_finite_difference": -0.00020845249970591337
+    }
+  ],
+  "profiles": {
+    "fixed": {
+      "parameters": 68905,
+      "cpu_seconds_per_update": 0.015030200000000039
+    },
+    "global": {
+      "parameters": 68905,
+      "cpu_seconds_per_update": 0.014592399999999995
+    },
+    "token": {
+      "parameters": 68905,
+      "cpu_seconds_per_update": 0.014221799999999974
+    },
+    "dense": {
+      "parameters": 123744,
+      "cpu_seconds_per_update": 0.010546400000000001
+    },
+    "nanogpt": {
+      "parameters": 126384,
+      "cpu_seconds_per_update": 0.009243599999999973
+    }
+  },
+  "projected_training_cpu_seconds": 114.54191999999998
+}

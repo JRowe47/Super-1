@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "kind": "MECHANICS_ONLY",
+  "tests": 3,
+  "trained_profiles_replayed": 9,
+  "full_vs_cached_logits_and_t": true,
+  "same_backbone_and_router_objects": true,
+  "curve_and_router_gradient_equivalence": true,
+  "incompatible_cache_rejection": true,
+  "source_hashes": {
+    "sampling_library/inference.py": "c902de3389622acbf9cf18905428fa4274b18ba852b195e08ee10cb757e60490",
+    "sampling_library/test_inference.py": "eeed2fcd2d961b757a121e9961bd73a4c8ae33f26881af7f406d733907636c4d",
+    "sampling_library/INFERENCE.md": "cf2289d853d3050dea375e4dc93ff22d0e4f3771a360c5e80776de5d8432a4a5"
+  },
+  "command": "python3 -B -m sampling_library.test_inference",
+  "scope": "Preserve function weights and learned sampling during exact cached inference. No hierarchy compression, new language training, quality promotion or GPU performance claim."
+}
