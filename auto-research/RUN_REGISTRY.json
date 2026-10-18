@@ -132,13 +132,20 @@
     },
     {
       "approval": "Current chat: user said \"ok do it\" after the assistant proposed a fixed-step learned-sampling experiment with fixed curve, matching dense and upstream nanoGPT controls across multiple seeds.",
+      "arm_seed_rows": 15,
+      "decision": "NO_PROMOTION_INCONCLUSIVE_OR_NEGATIVE",
+      "metrics": "auto-research/results/adaptive-depth-shakespeare-20261018-v1/execution/RESULT.json",
       "protocol": "auto-research/results/adaptive-depth-shakespeare-20261018-v1/PROTOCOL.json",
       "protocol_sha256": "6c03bd561e22dcf61d2e023801a6694f955ca50158f1c4fe6639d687c5db77a4",
       "report": "auto-research/reports/adaptive-depth-shakespeare-20261018-v1.md",
       "run_id": "adaptive-depth-shakespeare-20261018-v1",
+      "source_freeze_commit": "5460ec90ac4b5fe3e6c97656280ed27390ee31b3",
       "source_manifest": "auto-research/results/adaptive-depth-shakespeare-20261018-v1/SOURCE_MANIFEST.json",
-      "status": "PREREGISTERED_AUTHORIZED",
-      "terminal": "auto-research/results/adaptive-depth-shakespeare-20261018-v1/execution/TERMINAL.json"
+      "status": "COMPLETED",
+      "target_exposures_per_arm_seed": 307200,
+      "terminal": "auto-research/results/adaptive-depth-shakespeare-20261018-v1/execution/TERMINAL.json",
+      "updates_per_arm": 600,
+      "verification": "auto-research/results/adaptive-depth-shakespeare-20261018-v1/execution/VERIFICATION.json"
     }
   ],
   "schema_version": 1,

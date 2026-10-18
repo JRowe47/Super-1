@@ -37,3 +37,13 @@ Always distinguish proposal, launch, progress, completion, confirmation, publica
 ## Tensor layout at baseline boundaries
 
 The synthetic experiment completed all training but failed when a secondary reset-window diagnostic passed noncontiguous sliced targets to pinned nanoGPT, whose loss uses view. Always validate contiguous input and target layouts after chunking at adapters, including secondary diagnostics. Preserve upstream source and the failed receipt. Any evaluation recovery must use the already frozen checkpoints, retain the original decision rule, disclose prior metric exposure and never silently retrain or relabel the failed run as uninterrupted success.
+
+## Continuous depth versus adaptive execution
+
+A continuous weight function was previously mistaken for an adaptive execution policy. Always inspect the forward path: fixed construction coordinates and a loop over every block do not learn sampling positions or halting. Account for per-block normalization and routing parameters when changing depth.
+
+For token-conditioned depth experiments, always distinguish uniform positions, learned token-independent positions, and token-conditioned positions. Train and evaluate at the same context, preserve common initialization and samplers for the curve arms, and report basis applications and router overhead. Matching block count does not match FLOPs against a dense Transformer.
+
+Small routing gradients can be hidden by FP32 finite-difference cancellation: the initial canary here returned a zero numerical difference despite a nonzero analytic gradient. Always use a nonconstant curve, nonzero router, and a sufficiently precise finite-difference check before accepting connectivity. The FP64 check, causal-prefix equality, and complete optimizer-step parity must pass before language training. Do not weaken a tolerance to manufacture a pass.
+
+Always freeze all checkpoints before reserved confirmation, retain failures and every seed, and distinguish a small single-corpus byte pilot from broad language quality or an optimized deployment result. Uncached full-prefix decoding must be labeled as such.

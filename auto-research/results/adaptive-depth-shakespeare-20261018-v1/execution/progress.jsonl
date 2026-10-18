@@ -1,0 +1,120 @@
+{"phase": "start", "arm": "dense", "seed": 73, "selection_ce": 5.565755844116211}
+{"phase": "train", "arm": "dense", "seed": 73, "update": 100, "targets": 51200, "train_ce": 3.1131155490875244, "selection_ce": 2.9223426580429077}
+{"phase": "train", "arm": "dense", "seed": 73, "update": 200, "targets": 102400, "train_ce": 2.5066356658935547, "selection_ce": 2.520573705434799}
+{"phase": "train", "arm": "dense", "seed": 73, "update": 300, "targets": 153600, "train_ce": 2.423546314239502, "selection_ce": 2.366783708333969}
+{"phase": "train", "arm": "dense", "seed": 73, "update": 400, "targets": 204800, "train_ce": 2.3413562774658203, "selection_ce": 2.3100683391094208}
+{"phase": "train", "arm": "dense", "seed": 73, "update": 500, "targets": 256000, "train_ce": 2.3828351497650146, "selection_ce": 2.2813552021980286}
+{"phase": "train", "arm": "dense", "seed": 73, "update": 600, "targets": 307200, "train_ce": 2.328906536102295, "selection_ce": 2.2662360072135925}
+{"phase": "start", "arm": "global", "seed": 73, "selection_ce": 5.540552616119385}
+{"phase": "train", "arm": "global", "seed": 73, "update": 100, "targets": 51200, "train_ce": 3.281135320663452, "selection_ce": 3.0651196241378784}
+{"phase": "train", "arm": "global", "seed": 73, "update": 200, "targets": 102400, "train_ce": 2.5680034160614014, "selection_ce": 2.594335377216339}
+{"phase": "train", "arm": "global", "seed": 73, "update": 300, "targets": 153600, "train_ce": 2.4733283519744873, "selection_ce": 2.420503854751587}
+{"phase": "train", "arm": "global", "seed": 73, "update": 400, "targets": 204800, "train_ce": 2.4128265380859375, "selection_ce": 2.3597412705421448}
+{"phase": "train", "arm": "global", "seed": 73, "update": 500, "targets": 256000, "train_ce": 2.4107320308685303, "selection_ce": 2.3205169439315796}
+{"phase": "train", "arm": "global", "seed": 73, "update": 600, "targets": 307200, "train_ce": 2.3674232959747314, "selection_ce": 2.302576869726181}
+{"phase": "start", "arm": "nanogpt", "seed": 73, "selection_ce": 5.522000253200531}
+{"phase": "train", "arm": "nanogpt", "seed": 73, "update": 100, "targets": 51200, "train_ce": 3.221552610397339, "selection_ce": 3.033804804086685}
+{"phase": "train", "arm": "nanogpt", "seed": 73, "update": 200, "targets": 102400, "train_ce": 2.639362335205078, "selection_ce": 2.6488950848579407}
+{"phase": "train", "arm": "nanogpt", "seed": 73, "update": 300, "targets": 153600, "train_ce": 2.6165826320648193, "selection_ce": 2.5439538061618805}
+{"phase": "train", "arm": "nanogpt", "seed": 73, "update": 400, "targets": 204800, "train_ce": 2.5687918663024902, "selection_ce": 2.5000070333480835}
+{"phase": "train", "arm": "nanogpt", "seed": 73, "update": 500, "targets": 256000, "train_ce": 2.5416321754455566, "selection_ce": 2.4842602014541626}
+{"phase": "train", "arm": "nanogpt", "seed": 73, "update": 600, "targets": 307200, "train_ce": 2.5208983421325684, "selection_ce": 2.4643321335315704}
+{"phase": "start", "arm": "fixed", "seed": 73, "selection_ce": 5.540552616119385}
+{"phase": "train", "arm": "fixed", "seed": 73, "update": 100, "targets": 51200, "train_ce": 3.2811193466186523, "selection_ce": 3.0651433765888214}
+{"phase": "train", "arm": "fixed", "seed": 73, "update": 200, "targets": 102400, "train_ce": 2.568073034286499, "selection_ce": 2.594379425048828}
+{"phase": "train", "arm": "fixed", "seed": 73, "update": 300, "targets": 153600, "train_ce": 2.473414659500122, "selection_ce": 2.4205660223960876}
+{"phase": "train", "arm": "fixed", "seed": 73, "update": 400, "targets": 204800, "train_ce": 2.412750720977783, "selection_ce": 2.3597192466259003}
+{"phase": "train", "arm": "fixed", "seed": 73, "update": 500, "targets": 256000, "train_ce": 2.4111759662628174, "selection_ce": 2.3206955790519714}
+{"phase": "train", "arm": "fixed", "seed": 73, "update": 600, "targets": 307200, "train_ce": 2.367433786392212, "selection_ce": 2.3028621673583984}
+{"phase": "start", "arm": "token", "seed": 73, "selection_ce": 5.540552616119385}
+{"phase": "train", "arm": "token", "seed": 73, "update": 100, "targets": 51200, "train_ce": 3.2811765670776367, "selection_ce": 3.0650490522384644}
+{"phase": "train", "arm": "token", "seed": 73, "update": 200, "targets": 102400, "train_ce": 2.5676674842834473, "selection_ce": 2.594013810157776}
+{"phase": "train", "arm": "token", "seed": 73, "update": 300, "targets": 153600, "train_ce": 2.4726901054382324, "selection_ce": 2.4203324913978577}
+{"phase": "train", "arm": "token", "seed": 73, "update": 400, "targets": 204800, "train_ce": 2.412407636642456, "selection_ce": 2.3591331243515015}
+{"phase": "train", "arm": "token", "seed": 73, "update": 500, "targets": 256000, "train_ce": 2.4088780879974365, "selection_ce": 2.3192651569843292}
+{"phase": "train", "arm": "token", "seed": 73, "update": 600, "targets": 307200, "train_ce": 2.3674862384796143, "selection_ce": 2.300998955965042}
+{"phase": "start", "arm": "fixed", "seed": 191, "selection_ce": 5.559408247470856}
+{"phase": "train", "arm": "fixed", "seed": 191, "update": 100, "targets": 51200, "train_ce": 2.9842333793640137, "selection_ce": 2.97674098610878}
+{"phase": "train", "arm": "fixed", "seed": 191, "update": 200, "targets": 102400, "train_ce": 2.709763765335083, "selection_ce": 2.574891835451126}
+{"phase": "train", "arm": "fixed", "seed": 191, "update": 300, "targets": 153600, "train_ce": 2.4735474586486816, "selection_ce": 2.4296984672546387}
+{"phase": "train", "arm": "fixed", "seed": 191, "update": 400, "targets": 204800, "train_ce": 2.472081184387207, "selection_ce": 2.3559649884700775}
+{"phase": "train", "arm": "fixed", "seed": 191, "update": 500, "targets": 256000, "train_ce": 2.3109090328216553, "selection_ce": 2.319611817598343}
+{"phase": "train", "arm": "fixed", "seed": 191, "update": 600, "targets": 307200, "train_ce": 2.3260319232940674, "selection_ce": 2.302856206893921}
+{"phase": "start", "arm": "token", "seed": 191, "selection_ce": 5.559408247470856}
+{"phase": "train", "arm": "token", "seed": 191, "update": 100, "targets": 51200, "train_ce": 2.9842495918273926, "selection_ce": 2.976708322763443}
+{"phase": "train", "arm": "token", "seed": 191, "update": 200, "targets": 102400, "train_ce": 2.70944881439209, "selection_ce": 2.5742154121398926}
+{"phase": "train", "arm": "token", "seed": 191, "update": 300, "targets": 153600, "train_ce": 2.473454475402832, "selection_ce": 2.429124653339386}
+{"phase": "train", "arm": "token", "seed": 191, "update": 400, "targets": 204800, "train_ce": 2.4714319705963135, "selection_ce": 2.3550236523151398}
+{"phase": "train", "arm": "token", "seed": 191, "update": 500, "targets": 256000, "train_ce": 2.3092782497406006, "selection_ce": 2.317597210407257}
+{"phase": "train", "arm": "token", "seed": 191, "update": 600, "targets": 307200, "train_ce": 2.3230655193328857, "selection_ce": 2.3007567524909973}
+{"phase": "start", "arm": "dense", "seed": 191, "selection_ce": 5.517107903957367}
+{"phase": "train", "arm": "dense", "seed": 191, "update": 100, "targets": 51200, "train_ce": 2.94975209236145, "selection_ce": 2.9389799535274506}
+{"phase": "train", "arm": "dense", "seed": 191, "update": 200, "targets": 102400, "train_ce": 2.6363189220428467, "selection_ce": 2.5261195302009583}
+{"phase": "train", "arm": "dense", "seed": 191, "update": 300, "targets": 153600, "train_ce": 2.4308159351348877, "selection_ce": 2.384219318628311}
+{"phase": "train", "arm": "dense", "seed": 191, "update": 400, "targets": 204800, "train_ce": 2.4229772090911865, "selection_ce": 2.3090797066688538}
+{"phase": "train", "arm": "dense", "seed": 191, "update": 500, "targets": 256000, "train_ce": 2.264800786972046, "selection_ce": 2.277319014072418}
+{"phase": "train", "arm": "dense", "seed": 191, "update": 600, "targets": 307200, "train_ce": 2.2952189445495605, "selection_ce": 2.2640496492385864}
+{"phase": "start", "arm": "global", "seed": 191, "selection_ce": 5.559408247470856}
+{"phase": "train", "arm": "global", "seed": 191, "update": 100, "targets": 51200, "train_ce": 2.9842324256896973, "selection_ce": 2.9767338633537292}
+{"phase": "train", "arm": "global", "seed": 191, "update": 200, "targets": 102400, "train_ce": 2.709688425064087, "selection_ce": 2.5748007595539093}
+{"phase": "train", "arm": "global", "seed": 191, "update": 300, "targets": 153600, "train_ce": 2.4734690189361572, "selection_ce": 2.4295862019062042}
+{"phase": "train", "arm": "global", "seed": 191, "update": 400, "targets": 204800, "train_ce": 2.471896171569824, "selection_ce": 2.35577392578125}
+{"phase": "train", "arm": "global", "seed": 191, "update": 500, "targets": 256000, "train_ce": 2.310483694076538, "selection_ce": 2.3192188441753387}
+{"phase": "train", "arm": "global", "seed": 191, "update": 600, "targets": 307200, "train_ce": 2.325439214706421, "selection_ce": 2.302440822124481}
+{"phase": "start", "arm": "nanogpt", "seed": 191, "selection_ce": 5.537408292293549}
+{"phase": "train", "arm": "nanogpt", "seed": 191, "update": 100, "targets": 51200, "train_ce": 3.0744388103485107, "selection_ce": 3.0560507476329803}
+{"phase": "train", "arm": "nanogpt", "seed": 191, "update": 200, "targets": 102400, "train_ce": 2.7581892013549805, "selection_ce": 2.6432375013828278}
+{"phase": "train", "arm": "nanogpt", "seed": 191, "update": 300, "targets": 153600, "train_ce": 2.620056390762329, "selection_ce": 2.557200074195862}
+{"phase": "train", "arm": "nanogpt", "seed": 191, "update": 400, "targets": 204800, "train_ce": 2.607468366622925, "selection_ce": 2.5082066357135773}
+{"phase": "train", "arm": "nanogpt", "seed": 191, "update": 500, "targets": 256000, "train_ce": 2.45603084564209, "selection_ce": 2.4840263724327087}
+{"phase": "train", "arm": "nanogpt", "seed": 191, "update": 600, "targets": 307200, "train_ce": 2.4829444885253906, "selection_ce": 2.4744735062122345}
+{"phase": "start", "arm": "fixed", "seed": 307, "selection_ce": 5.528705596923828}
+{"phase": "train", "arm": "fixed", "seed": 307, "update": 100, "targets": 51200, "train_ce": 3.2482693195343018, "selection_ce": 3.113772690296173}
+{"phase": "train", "arm": "fixed", "seed": 307, "update": 200, "targets": 102400, "train_ce": 2.570040225982666, "selection_ce": 2.6288564205169678}
+{"phase": "train", "arm": "fixed", "seed": 307, "update": 300, "targets": 153600, "train_ce": 2.407093048095703, "selection_ce": 2.4580142498016357}
+{"phase": "train", "arm": "fixed", "seed": 307, "update": 400, "targets": 204800, "train_ce": 2.419369697570801, "selection_ce": 2.4062854051589966}
+{"phase": "train", "arm": "fixed", "seed": 307, "update": 500, "targets": 256000, "train_ce": 2.349841356277466, "selection_ce": 2.347427487373352}
+{"phase": "train", "arm": "fixed", "seed": 307, "update": 600, "targets": 307200, "train_ce": 2.328477382659912, "selection_ce": 2.336178332567215}
+{"phase": "start", "arm": "global", "seed": 307, "selection_ce": 5.528705596923828}
+{"phase": "train", "arm": "global", "seed": 307, "update": 100, "targets": 51200, "train_ce": 3.2401435375213623, "selection_ce": 3.1211056411266327}
+{"phase": "train", "arm": "global", "seed": 307, "update": 200, "targets": 102400, "train_ce": 2.5637197494506836, "selection_ce": 2.626832962036133}
+{"phase": "train", "arm": "global", "seed": 307, "update": 300, "targets": 153600, "train_ce": 2.4023141860961914, "selection_ce": 2.4573000371456146}
+{"phase": "train", "arm": "global", "seed": 307, "update": 400, "targets": 204800, "train_ce": 2.426872730255127, "selection_ce": 2.399808317422867}
+{"phase": "train", "arm": "global", "seed": 307, "update": 500, "targets": 256000, "train_ce": 2.3496809005737305, "selection_ce": 2.344480276107788}
+{"phase": "train", "arm": "global", "seed": 307, "update": 600, "targets": 307200, "train_ce": 2.324378252029419, "selection_ce": 2.3287383019924164}
+{"phase": "start", "arm": "dense", "seed": 307, "selection_ce": 5.533807754516602}
+{"phase": "train", "arm": "dense", "seed": 307, "update": 100, "targets": 51200, "train_ce": 3.041661262512207, "selection_ce": 2.907231479883194}
+{"phase": "train", "arm": "dense", "seed": 307, "update": 200, "targets": 102400, "train_ce": 2.4091644287109375, "selection_ce": 2.4999435245990753}
+{"phase": "train", "arm": "dense", "seed": 307, "update": 300, "targets": 153600, "train_ce": 2.3735427856445312, "selection_ce": 2.374472886323929}
+{"phase": "train", "arm": "dense", "seed": 307, "update": 400, "targets": 204800, "train_ce": 2.330329179763794, "selection_ce": 2.3104828000068665}
+{"phase": "train", "arm": "dense", "seed": 307, "update": 500, "targets": 256000, "train_ce": 2.2200353145599365, "selection_ce": 2.2502649426460266}
+{"phase": "train", "arm": "dense", "seed": 307, "update": 600, "targets": 307200, "train_ce": 2.246777296066284, "selection_ce": 2.236480176448822}
+{"phase": "start", "arm": "token", "seed": 307, "selection_ce": 5.528705596923828}
+{"phase": "train", "arm": "token", "seed": 307, "update": 100, "targets": 51200, "train_ce": 3.2541823387145996, "selection_ce": 3.1323312520980835}
+{"phase": "train", "arm": "token", "seed": 307, "update": 200, "targets": 102400, "train_ce": 2.574585199356079, "selection_ce": 2.636151820421219}
+{"phase": "train", "arm": "token", "seed": 307, "update": 300, "targets": 153600, "train_ce": 2.400909900665283, "selection_ce": 2.44720259308815}
+{"phase": "train", "arm": "token", "seed": 307, "update": 400, "targets": 204800, "train_ce": 2.432938575744629, "selection_ce": 2.3838935792446136}
+{"phase": "train", "arm": "token", "seed": 307, "update": 500, "targets": 256000, "train_ce": 2.327852725982666, "selection_ce": 2.3213561475276947}
+{"phase": "train", "arm": "token", "seed": 307, "update": 600, "targets": 307200, "train_ce": 2.311309576034546, "selection_ce": 2.3076646625995636}
+{"phase": "start", "arm": "nanogpt", "seed": 307, "selection_ce": 5.533338785171509}
+{"phase": "train", "arm": "nanogpt", "seed": 307, "update": 100, "targets": 51200, "train_ce": 3.1258442401885986, "selection_ce": 3.0215193927288055}
+{"phase": "train", "arm": "nanogpt", "seed": 307, "update": 200, "targets": 102400, "train_ce": 2.5789222717285156, "selection_ce": 2.659337133169174}
+{"phase": "train", "arm": "nanogpt", "seed": 307, "update": 300, "targets": 153600, "train_ce": 2.5102338790893555, "selection_ce": 2.553480386734009}
+{"phase": "train", "arm": "nanogpt", "seed": 307, "update": 400, "targets": 204800, "train_ce": 2.4923489093780518, "selection_ce": 2.4980966448783875}
+{"phase": "train", "arm": "nanogpt", "seed": 307, "update": 500, "targets": 256000, "train_ce": 2.475029706954956, "selection_ce": 2.468858003616333}
+{"phase": "train", "arm": "nanogpt", "seed": 307, "update": 600, "targets": 307200, "train_ce": 2.432420253753662, "selection_ce": 2.457251250743866}
+{"phase": "confirmed", "arm": "dense", "seed": 73, "ce": 2.314121186733246}
+{"phase": "confirmed", "arm": "global", "seed": 73, "ce": 2.34345743060112}
+{"phase": "confirmed", "arm": "nanogpt", "seed": 73, "ce": 2.510472096502781}
+{"phase": "confirmed", "arm": "fixed", "seed": 73, "ce": 2.34360084682703}
+{"phase": "confirmed", "arm": "token", "seed": 73, "ce": 2.3425178825855255}
+{"phase": "confirmed", "arm": "fixed", "seed": 191, "ce": 2.3492477610707283}
+{"phase": "confirmed", "arm": "token", "seed": 191, "ce": 2.346518896520138}
+{"phase": "confirmed", "arm": "dense", "seed": 191, "ce": 2.3048355504870415}
+{"phase": "confirmed", "arm": "global", "seed": 191, "ce": 2.3487207368016243}
+{"phase": "confirmed", "arm": "nanogpt", "seed": 191, "ce": 2.5098303332924843}
+{"phase": "confirmed", "arm": "fixed", "seed": 307, "ce": 2.367483027279377}
+{"phase": "confirmed", "arm": "global", "seed": 307, "ce": 2.3698680996894836}
+{"phase": "confirmed", "arm": "dense", "seed": 307, "ce": 2.283576861023903}
+{"phase": "confirmed", "arm": "token", "seed": 307, "ce": 2.3585624024271965}
+{"phase": "confirmed", "arm": "nanogpt", "seed": 307, "ce": 2.4952757880091667}
