@@ -1,0 +1,72 @@
+{
+  "run_id": "text-depth-library-20261018-v1",
+  "authorization": "User explicitly asked for learning how many layers per use case; PR3/4 resolved and merged before this experiment. Bounded local CPU sampler-only extension.",
+  "config": {
+    "vocab": 256,
+    "width": 48,
+    "heads": 4,
+    "layers": 4,
+    "bases": 2,
+    "router_hidden": 8,
+    "context": 64,
+    "batch": 8,
+    "threads": 1,
+    "seeds": [
+      73,
+      191,
+      307
+    ],
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "eps": 1e-08,
+    "clip": 1.0,
+    "lr_reduction": 0.5,
+    "validation_min_delta": 0.0001,
+    "selection_examples": 128,
+    "confirmation_examples": 256,
+    "minimum_gain_nats": 0.02,
+    "t95_df2": 4.302652729696142,
+    "cpu_seconds": 900,
+    "wall_seconds": 1800,
+    "max_artifact_bytes": 157286400,
+    "run_id": "text-depth-library-20261018-v1",
+    "rounds": 3,
+    "updates_per_round": 200,
+    "text_regions": {
+      "tune": [
+        669236,
+        780775
+      ],
+      "selection": [
+        780775,
+        892315
+      ],
+      "confirmation": [
+        1053774,
+        1070414
+      ]
+    },
+    "tokenizer": "utf8-bytes-v1",
+    "use_case": "text/shakespeare-byte",
+    "hypothesis": "Learn a workload-level categorical depth alongside token-dependent sampling coordinates; lower depths trade quality for executed compute. Quality-only depth objective, no arbitrary compute penalty.",
+    "depths": [
+      2,
+      3,
+      4
+    ],
+    "router_lr": 0.003,
+    "depth_lr": 0.03,
+    "benchmark_repeats": 20,
+    "benchmark_warmup": 5
+  },
+  "hypothesis": "Learn a workload-level categorical depth alongside token-dependent sampling coordinates; lower depths trade quality for executed compute. Quality-only depth objective, no arbitrary compute penalty.",
+  "mechanism": "Each depth executes the first d frozen normalization blocks, resampling the same weight curve with endpoints0,1. Frozen backbone originally trained with4 blocks: reduced-depth distribution shift is a limitation. Depth2 has no interior coordinate or coordinate updates.",
+  "learning": "600 common tuning minibatches per seed. Each branch d>2 optimizes coordinate CE independently with Adam lr0.003; every depth sees identical examples. Three categorical logits optimize sum(softmax(logits)*detached branch CE) with Adam lr0.03. Quality-only objective, no compute penalty. Inference argmax chooses one depth for the entire workload/request; no per-token skipping.",
+  "selection": "At each round save all branches and logits. Keep validation-best profile per depth. Keep validation-best learned argmax policy across rounds0..3, with old4-step incumbent as fallback. All choices freeze before confirmation.",
+  "confirmation": "256 fresh65-byte windows [1053774,1070414); one primary paired contrast selected policy vs incumbent. Other profiles/latencies descriptive.",
+  "promotion": "Same useful-effect gate: every paired seed improves, mean CE gain >=0.02 nats/byte, paired95 upper bound below0. No automatic quality promotion for cheaper layers.",
+  "accounting": "3 reused backbone seeds; 36 router checkpoints and12 selector checkpoints. Training evaluates all3 depth branches; serving runs one branch. Full backbone storage remains allocated. Local CPU FP32 batch1 latency measured on validation, not extrapolated to GPUs.",
+  "canary": "Exact4-step optimizer and forward parity with parent; actual block counts via normalization hooks; orderedpositions; same-shape causal intervention; FP64 three-step router finite difference <1e-7; exact categorical expected-loss derivative."
+}

@@ -255,6 +255,14 @@
       "source_manifest": "auto-research/results/gru-equal-cpu-20261016-v1/SOURCE_MANIFEST.json",
       "status": "COMPLETED_EXPLORATORY",
       "terminal": "auto-research/results/gru-equal-cpu-20261016-v1/TERMINAL.json"
+    },
+    {
+      "approval": "User explicitly asked for learning how many layers per use case; PR3/4 resolved and merged before this experiment. Bounded local CPU sampler-only extension.",
+      "protocol": "auto-research/results/text-depth-library-20261018-v1/PROTOCOL.json",
+      "protocol_sha256": "be34d9fe37fba0ef4e882123f443abb534d74048754f99ad9f0bf7cc006b80dd",
+      "run_id": "text-depth-library-20261018-v1",
+      "source_manifest": "auto-research/results/text-depth-library-20261018-v1/SOURCE_MANIFEST.json",
+      "status": "PREREGISTERED"
     }
   ],
   "schema_version": 1,
