@@ -268,7 +268,7 @@
     },
     {
       "run_id": "feedback-decay-20261018-v2",
-      "status": "REGISTERED_PENDING_EXECUTION",
+      "status": "COMPLETE_NO_PROMOTION_RETENTION_FAILED",
       "approval": "User: Alright, looks good, go ahead, following the feedback-learning versus decay proposal. Standing local CPU900s/max3 single-thread workers, own JRowe47/Super-1 branch/draft PR3, stable research scratch and compact project-folder checkpoints. No paid/GPU/cloud/language expansion.",
       "protocol": "auto-research/results/feedback-decay-20261018-v2/PROTOCOL.json",
       "protocol_sha256": "9631d01c94420a3b22cc4e721897cdebf80270dd58e44d25eaa7faa0ac47fa44",
@@ -276,11 +276,18 @@
       "metrics": "auto-research/results/feedback-decay-20261018-v2/SUMMARY.json",
       "terminal": "auto-research/results/feedback-decay-20261018-v2/TERMINAL.json",
       "report": "auto-research/reports/feedback-decay-20261018-v2.md",
-      "decision": "Pending unchanged factorial after shared numerical cap repair.",
+      "decision": "Normal feedback improves CE27.0322% over decay-only but fails both retention guards all3. Decay-only worsens CE vs frozen; learning-only improves26.8814% but also fails retention. No promotion; next propose feedback-family learning ablation.",
       "parent_run_ids": [
         "slow-feedback-20261018-v1",
         "feedback-decay-20261018-v1"
-      ]
+      ],
+      "main_runs": 15,
+      "pilot_runs": 5,
+      "full_exact_replays": 20,
+      "charged_experiment_cpu_seconds": 250.633471,
+      "preservation": "Frozen source before execution; v1verification failure preserved; results in Git; four NPZ files remote byte-hash verified.",
+      "artifact_manifest": "auto-research/results/feedback-decay-20261018-v2/ARTIFACT_MANIFEST.json",
+      "source_commit": "801d1e3147c47bd5b6004f1d343ea9a2c9185d6b"
     }
   ],
   "schema_version": 1,
