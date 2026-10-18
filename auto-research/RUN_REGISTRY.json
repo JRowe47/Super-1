@@ -143,6 +143,25 @@
       "checkpoint_freeze": "auto-research/results/hybrid-curve-updates-20261017-v1/CHECKPOINT_FREEZE.json",
       "strict_fidelity": "PASS original FP32 2e-6 and FP64 2e-12 tolerances, no relaxation",
       "publication_approval": "Standing user permission in this session: Go ahead and publish it, it's OK. Existing draft in own fork only."
+    },
+    {
+      "run_id": "bounded-feedback-20261018-v1",
+      "status": "EXECUTION_COMPLETE_RETENTION_FAILED_ORIGINAL_EVIDENCE_EXPORT_PENDING",
+      "approval": "User requested continuation; later explicitly requested research scratch in the existing repo and minimal artifacts.",
+      "record_kind": "POST_RUN_TRANSCRIPTION_ORIGINAL_LOCAL_REGISTRATION_PENDING_EXPORT",
+      "protocol": null,
+      "protocol_sha256": null,
+      "protocol_record": "auto-research/results/bounded-feedback-20261018-v1/PROTOCOL_RECORD.json",
+      "metrics": "auto-research/results/bounded-feedback-20261018-v1/RECORDED_SUMMARY.json",
+      "terminal_record": "auto-research/results/bounded-feedback-20261018-v1/TERMINAL_RECORD.json",
+      "report": "auto-research/reports/bounded-feedback-20261018-v1.md",
+      "handoff": "auto-research/research-scratch/CURRENT.md",
+      "main_arm_seed_rows": 27,
+      "main_exact_replays": 27,
+      "pilot_exact_replays": 9,
+      "decision": "Mean paired post-change CE reduction 28.31%; old retention guard fails every seed. No promotion.",
+      "preservation": "Original source, registration, receipt and checkpoint bytes not yet exported; workspace offline.",
+      "published_note": "Compact records only, not a complete reproducible release. No new training in this commit."
     }
   ],
   "schema_version": 1,

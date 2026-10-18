@@ -1,0 +1,145 @@
+{
+  "record_kind": "post_run_transcription_of_observed_results",
+  "run_id": "bounded-feedback-20261018-v1",
+  "raw_evidence_exported": false,
+  "seeds": [
+    601771,
+    601772,
+    601773
+  ],
+  "primary": {
+    "adaptive": "warmbound_adaptive",
+    "control": "warmbound_frozen",
+    "metric": "paired relative reduction in primary post-change cross-entropy, percent",
+    "seed_results": [
+      {
+        "seed": 601771,
+        "relative_loss_reduction_percent": 26.528646152074806,
+        "old_window_accuracy_delta_pp": -9.80050191283226,
+        "old_final_accuracy_delta_pp": -6.25
+      },
+      {
+        "seed": 601772,
+        "relative_loss_reduction_percent": 29.64682201435948,
+        "old_window_accuracy_delta_pp": -8.0147884786129,
+        "old_final_accuracy_delta_pp": -5.022323131561279
+      },
+      {
+        "seed": 601773,
+        "relative_loss_reduction_percent": 28.76880520901536,
+        "old_window_accuracy_delta_pp": -9.1971255838871,
+        "old_final_accuracy_delta_pp": -2.34375
+      }
+    ],
+    "minimum_mean_reduction_percent": 5,
+    "maximum_old_accuracy_loss_pp": 2,
+    "effect_gate": "PASS",
+    "retention_gate": "FAIL_IN_ALL_THREE_SEEDS",
+    "combined_gate": "FAIL_NO_PROMOTION",
+    "mean_relative_loss_reduction_percent": 28.314757791816547
+  },
+  "final_accuracy_percent_mean_3_seeds": [
+    {
+      "arm": "backprop",
+      "old": 97.34,
+      "novel": 95.443,
+      "changed": 83.984,
+      "balanced": 92.256
+    },
+    {
+      "arm": "random_fixed",
+      "old": 94.215,
+      "novel": 91.602,
+      "changed": 70.573,
+      "balanced": 85.463
+    },
+    {
+      "arm": "random_bounded_fixed",
+      "old": 90.327,
+      "novel": 77.702,
+      "changed": 39.062,
+      "balanced": 69.031
+    },
+    {
+      "arm": "handover_adaptive",
+      "old": 91.183,
+      "novel": 86.686,
+      "changed": 61.979,
+      "balanced": 79.949
+    },
+    {
+      "arm": "handover_frozen",
+      "old": 95.219,
+      "novel": 83.366,
+      "changed": 46.875,
+      "balanced": 75.153
+    },
+    {
+      "arm": "warmbound_adaptive",
+      "old": 90.365,
+      "novel": 85.84,
+      "changed": 69.401,
+      "balanced": 81.868
+    },
+    {
+      "arm": "warmbound_frozen",
+      "old": 94.903,
+      "novel": 81.673,
+      "changed": 41.536,
+      "balanced": 72.704
+    }
+  ],
+  "rounding": "Final accuracy means rounded to 3 decimal places. All seeds included for each reported mean; no survivor-only averages.",
+  "bounded_learned_feedback_main_completions": 12,
+  "unbounded_main_outcomes": [
+    {
+      "seed": 601771,
+      "arm": "unbounded_adaptive",
+      "status": "NONFINITE",
+      "failure_step": 3
+    },
+    {
+      "seed": 601772,
+      "arm": "unbounded_adaptive",
+      "status": "NONFINITE",
+      "failure_step": 3
+    },
+    {
+      "seed": 601773,
+      "arm": "unbounded_adaptive",
+      "status": "NONFINITE",
+      "failure_step": 4
+    },
+    {
+      "seed": 601771,
+      "arm": "unbounded_frozen",
+      "status": "NONFINITE",
+      "failure_step": 4
+    },
+    {
+      "seed": 601772,
+      "arm": "unbounded_frozen",
+      "status": "NONFINITE",
+      "failure_step": 4
+    },
+    {
+      "seed": 601773,
+      "arm": "unbounded_frozen",
+      "status": "FINITE_BUT_CATASTROPHIC_LOSS",
+      "primary_ce": 7.327592852933725e+30,
+      "final_old_ce": 2.1045514529493406e+33
+    }
+  ],
+  "diagnostics": {
+    "max_checked_bounded_feedback_singular_value": 1.999999761581421,
+    "global_update_cosine_mean": {
+      "warmbound_adaptive": 0.7836378,
+      "warmbound_frozen": 0.7988591
+    },
+    "update_norm_relative_to_exact_mean": {
+      "warmbound_adaptive": 1.0474667,
+      "warmbound_frozen": 0.8087583
+    },
+    "limitations": "Probes are on different model trajectories; global cosine includes the exact readout update. Directional improvement is not isolated."
+  }
+}

@@ -18,3 +18,6 @@ Read [the root agent research brief](../auto-research.md) first. No automatic ru
 
 Start with [RESEARCH_CATALOG.md](RESEARCH_CATALOG.md) and [the 2026-10-15 recovery inventory](results/recovered-20261015/INVENTORY.json): historical nanoGPT artifacts, original reproduction bundles, constrained-distance/geometry experiments, energy/query controls, transfer and execution-fidelity evidence, and unresolved replay inputs.
 \n## 1B frontier roadmap\n\n[SCALING_1B.md](SCALING_1B.md) defines the staged reproduction, geometry isolation, measured execution, scaling and fair 1B comparison plan. The user-requested separate-chat self-test is scoped to bounded local synthetic canaries, not unrestricted training.\n
+## Current research handoff
+
+Start with [research-scratch/CURRENT.md](research-scratch/CURRENT.md) for compact continuation state, the latest experiment result and outstanding preservation work. [research-scratch/README.md](research-scratch/README.md) records the user-requested storage workflow.
