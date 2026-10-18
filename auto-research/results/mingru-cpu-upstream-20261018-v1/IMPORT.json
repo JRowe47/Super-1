@@ -1,0 +1,86 @@
+{
+  "import_id": "mingru-cpu-upstream-20261018-v1",
+  "date": "2026-10-18",
+  "kind": "Archival upstream publication; no new experiment",
+  "authorization": "User explicitly requested publishing the minGRU tests that outperformed GRU to rohanarun/super-1, excluding subsequent experiments.",
+  "source_repository": "JRowe47/Super-1",
+  "source_branch": "research/gru-batch-wall-20261016-v1",
+  "source_commit": "4b905f740f87ec037c9c9e1e158703c81cc6aed4",
+  "upstream_repository": "rohanarun/Super-1",
+  "upstream_base_commit": "884c07ad289361c3bb0ccfe1ae4931d7a60258eb",
+  "studies": [
+    "gru-batch-wall-20261016-v1",
+    "mingru-thread-lr-20261016-v1",
+    "gru-longer-wall-20261016-v1"
+  ],
+  "source_roots": [
+    {
+      "path": "auto-research/results/gru-batch-wall-20261016-v1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9a847b88660e458229fe801c4001e1f53f4fd3e9"
+    },
+    {
+      "path": "auto-research/graphs/gru-batch-wall-20261016-v1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ec2a6935353db01645eb5906181a6d645e879d00"
+    },
+    {
+      "path": "auto-research/reports/gru-batch-wall-20261016-v1.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "345470a64fafd471b6aae2ef0b0b3e7ed14e578e"
+    },
+    {
+      "path": "auto-research/results/mingru-thread-lr-20261016-v1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "008c06eda9d4cbde3f9faea15a526b40fca0f7cf"
+    },
+    {
+      "path": "auto-research/graphs/mingru-thread-lr-20261016-v1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bc67661eb7d41eca507789d3b0a33a2015e6de4e"
+    },
+    {
+      "path": "auto-research/reports/mingru-thread-lr-20261016-v1.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "885f0beaf70962d271ba91b7e983a21b095bda98"
+    },
+    {
+      "path": "auto-research/results/gru-longer-wall-20261016-v1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6c26b9ee42b8d8393289f17042757b5af6d61973"
+    },
+    {
+      "path": "auto-research/graphs/gru-longer-wall-20261016-v1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "42fd53c210378028a3c291033e9eba324219383c"
+    },
+    {
+      "path": "auto-research/reports/gru-longer-wall-20261016-v1.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a315918e6afcc9d36e43afb585b5c9f4b5cff9bd"
+    }
+  ],
+  "imported_files": 139,
+  "imported_bytes": 2522435,
+  "exclusions": [
+    "gru-context-capacity-20261016-v2",
+    "curve conversion",
+    "spectral experiments",
+    "online-learning experiments",
+    "fork-only workflow instructions"
+  ],
+  "new_training": false,
+  "new_model_evaluation": false,
+  "official_test_accessed": false,
+  "historical_authorization_note": "Original source/reports/protocols are byte-for-byte preserved. Their fork-only publication restrictions describe the 2026-10-16 authorization and are superseded for these three studies only by the current explicit upstream request.",
+  "checkpoint_limitation": "Checkpoint/token-array archives remain outside Git. Historical replay and preservation receipts are included; payloads are not fetched or re-evaluated during this import."
+}

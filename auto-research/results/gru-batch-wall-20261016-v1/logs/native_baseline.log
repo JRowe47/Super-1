@@ -1,0 +1,6 @@
+native_baseline {'step': 0, 'windows': 0, 'training_targets': 0, 'train_wall_seconds': 0.0, 'train_cpu_seconds': 0.0, 'validation_ce': 8.093710899353027, 'validation_top1': 0.00048828125}
+native_baseline {'step': 137, 'windows': 137, 'training_targets': 70144, 'train_wall_seconds': 15.105766370996207, 'train_cpu_seconds': 15.062954345000005, 'validation_ce': 6.297913193702698, 'validation_top1': 0.05712890625}
+native_baseline {'step': 275, 'windows': 275, 'training_targets': 140800, 'train_wall_seconds': 30.0253563569986, 'train_cpu_seconds': 29.968558707, 'validation_ce': 5.8634233474731445, 'validation_top1': 0.066162109375}
+native_baseline {'step': 407, 'windows': 407, 'training_targets': 208384, 'train_wall_seconds': 45.07092744399415, 'train_cpu_seconds': 45.02499507499999, 'validation_ce': 5.6766855120658875, 'validation_top1': 0.080078125}
+native_baseline {'step': 537, 'windows': 537, 'training_targets': 274944, 'train_wall_seconds': 59.76874094598497, 'train_cpu_seconds': 59.74979400599994, 'validation_ce': 5.615854322910309, 'validation_top1': 0.083251953125}
+COMPLETE native_baseline 537 59.76874094598497 5.5790126621723175

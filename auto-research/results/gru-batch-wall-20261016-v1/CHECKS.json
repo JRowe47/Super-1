@@ -1,0 +1,44 @@
+{
+  "mingru_linear_throughput": {
+    "replay_max_ce_error": 0.0,
+    "batch_logits_error": 3.814697265625e-06,
+    "batch_gradient_relative_l2": 1.9391612227082078e-07,
+    "trace_reconciled": true,
+    "budget_unused_seconds": 0.5313902929883625
+  },
+  "native_throughput": {
+    "replay_max_ce_error": 0.0,
+    "batch_logits_error": 2.86102294921875e-06,
+    "batch_gradient_relative_l2": 2.0911079445795622e-07,
+    "trace_reconciled": true,
+    "budget_unused_seconds": 1.0157525849972444
+  },
+  "nanogpt_baseline": {
+    "replay_max_ce_error": 0.0,
+    "batch_logits_error": 0.0,
+    "batch_gradient_relative_l2": 1.506648459326243e-07,
+    "trace_reconciled": true,
+    "budget_unused_seconds": 0.10523177198774647
+  },
+  "nanogpt_throughput": {
+    "replay_max_ce_error": 0.0,
+    "batch_logits_error": 0.0,
+    "batch_gradient_relative_l2": 1.493806109920115e-07,
+    "trace_reconciled": true,
+    "budget_unused_seconds": 0.30053598902668455
+  },
+  "mingru_linear_baseline": {
+    "replay_max_ce_error": 0.0,
+    "batch_logits_error": 7.62939453125e-06,
+    "batch_gradient_relative_l2": 2.1493679014383815e-07,
+    "trace_reconciled": true,
+    "budget_unused_seconds": 0.18336258398812788
+  },
+  "native_baseline": {
+    "replay_max_ce_error": 0.0,
+    "batch_logits_error": 8.58306884765625e-06,
+    "batch_gradient_relative_l2": 2.4265924025712593e-07,
+    "trace_reconciled": true,
+    "budget_unused_seconds": 0.23125905401502678
+  }
+}

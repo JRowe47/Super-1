@@ -1,0 +1,222 @@
+{
+  "data_hashes": {
+    "train.bin": "d5ff543af38bb0cba0759727b20ac391ead161ebf9aa348831b192603a9ef358",
+    "validation.bin": "e450dec7f2489d3020d266358ef44910519fd70325b8a4999f9fe7a69e2b1752"
+  },
+  "tokenizer_sha256": "3ed2eca49e889b85eee5e4eecb0480e340d652cb18dc9edb3c0deaf3727868a6",
+  "data": {
+    "dataset": "FineWeb-Edu preserved sample",
+    "vocabulary": 2048,
+    "dtype": "uint16",
+    "train_tokens": 24148694,
+    "validation_tokens": 1315955,
+    "split_metadata": {
+      "vocab": 2048,
+      "split_rule": "SHA256(text) first 16 hex digits mod 100: 0..89 train, 90..94 validation, 95..99 test; exact duplicate texts removed before split",
+      "tokenizer": "Byte-level BPE 2048, trained on train documents only; EOS 0 between documents",
+      "splits": {
+        "train": {
+          "documents": 15130,
+          "tokens": 24148694,
+          "sha256": "d5ff543af38bb0cba0759727b20ac391ead161ebf9aa348831b192603a9ef358"
+        },
+        "validation": {
+          "documents": 880,
+          "tokens": 1315955,
+          "sha256": "e450dec7f2489d3020d266358ef44910519fd70325b8a4999f9fe7a69e2b1752"
+        },
+        "test": {
+          "documents": 884,
+          "tokens": 1415660,
+          "sha256": "fc6223b46eb4a94326604af52eb7f789d411ae9f3bbaf21586deb029e0d70f24"
+        }
+      },
+      "tokenizer_sha256": "3ed2eca49e889b85eee5e4eecb0480e340d652cb18dc9edb3c0deaf3727868a6"
+    },
+    "monitor_validation_region": [
+      0,
+      600000
+    ],
+    "final_validation_region": [
+      650000,
+      1315955
+    ],
+    "note": "Exact-text deduplicated hash split; not a decontaminated benchmark or unseen test set."
+  },
+  "seed": 101603,
+  "data_seed": 101612,
+  "max_windows": 100000,
+  "train_stream_sha256": "41d856bd2a31fafb27dccda83a2b08aad406f6bcf73598e854a89ff7ed120598",
+  "train_stream_prefix": [
+    21647655,
+    20190065,
+    7007196,
+    8803063,
+    20359851,
+    4832912,
+    15970742,
+    21978283,
+    10095048,
+    16021713,
+    16999472,
+    5822460,
+    3123640,
+    19425021,
+    16263134,
+    305567
+  ],
+  "monitor_starts": [
+    260091,
+    35910,
+    526338,
+    138510,
+    580203,
+    169290,
+    257526,
+    301131
+  ],
+  "final_starts": [
+    1195832,
+    1176851,
+    986528,
+    1159409,
+    908552,
+    873155,
+    1021412,
+    912143,
+    1012691,
+    1081946,
+    918812,
+    723872,
+    957287,
+    850583,
+    956261,
+    1268678,
+    664877,
+    1194293,
+    861869,
+    660773,
+    820316,
+    1098875,
+    793640,
+    790049,
+    1111700,
+    859304,
+    682319,
+    1132733,
+    1191728,
+    919838,
+    795692,
+    1115804
+  ],
+  "optimizer": "AdamW0.9/0.95 eps1e-8 wd0.1; same tied-token-table and ndim1 exclusions; clip1",
+  "timing": "Training wall includes batch construction through optimizer step; excludes startup, validation and checkpoint IO. Report actual full-run wall and aggregate CPU separately.",
+  "stopping": "Stop before next update if remaining<=max(0.2s,2x largest of last10 update durations); report actual budget and any overshoot",
+  "final_metric": "CE on same32 reused final-region windows/16384targets; monitor8 separate windows; final endpoint only",
+  "run_id": "mingru-thread-lr-20261016-v1",
+  "parent_commit": "68f53d2f98cb52712c248014938956de2317a1d8",
+  "parent_protocol_sha256": "317861655e4c4840ba1826f45c8184afd3f9588c3135021d780a16f2d0e19efc",
+  "scope": "Independent one-seed CPU explorer screen; official test untouched",
+  "authorization": "User: continue; update existing draft PR in JRowe47/Super-1 only, never upstream without explicit go-ahead",
+  "configs": {
+    "mingru_linear": {
+      "vocab_size": 2048,
+      "width": 160,
+      "max_context": 512,
+      "segment_length": 32,
+      "document_segments": 8
+    }
+  },
+  "parameters": {
+    "mingru_linear": 996320
+  },
+  "runs": [
+    {
+      "run_id": "b16_t4_lr002",
+      "batch": 16,
+      "threads": 4,
+      "peak_lr": 0.002,
+      "reference_step_wall_seconds": 0.2965892869997333
+    },
+    {
+      "run_id": "b4_t2_lr002",
+      "batch": 4,
+      "threads": 2,
+      "peak_lr": 0.002,
+      "reference_step_wall_seconds": 0.09904784199898131
+    },
+    {
+      "run_id": "b1_t2_lr002",
+      "batch": 1,
+      "threads": 2,
+      "peak_lr": 0.002,
+      "reference_step_wall_seconds": 0.052144949999274104
+    },
+    {
+      "run_id": "b16_t4_lr008",
+      "batch": 16,
+      "threads": 4,
+      "peak_lr": 0.008,
+      "reference_step_wall_seconds": 0.2965892869997333
+    },
+    {
+      "run_id": "b1_t4_lr002",
+      "batch": 1,
+      "threads": 4,
+      "peak_lr": 0.002,
+      "reference_step_wall_seconds": 0.04953860900059226
+    },
+    {
+      "run_id": "b1_t1_lr002",
+      "batch": 1,
+      "threads": 1,
+      "peak_lr": 0.002,
+      "reference_step_wall_seconds": 0.06403849399976025
+    },
+    {
+      "run_id": "b4_t2_lr004",
+      "batch": 4,
+      "threads": 2,
+      "peak_lr": 0.004,
+      "reference_step_wall_seconds": 0.09904784199898131
+    }
+  ],
+  "run_order_seed": 101625,
+  "train_wall_seconds": 60.0,
+  "schedule": "5% training-wall warmup (factor floor0.04), then cosine to10% peak over full60s; declared peak LR per trial",
+  "training": "Fresh initialization with seed101603 in every trial; same ordered window stream regrouped into batches; reset512 full BPTT; sequential isolated workers",
+  "contrasts": [
+    "B1/T2 and B1/T4 vs fresh B1/T1 at LR0.002",
+    "B4/T2 LR0.004 vs LR0.002",
+    "B16/T4 LR0.008 vs LR0.002",
+    "All seven final validation losses and optimizer-update counts at matched training-wall allowance"
+  ],
+  "selection": "Publish every declared trial, including failures; final validation CE ranks configurations descriptively; no hidden retries or replacement arms",
+  "expected_resources": "Seven sequential60s training trials on existing CPU, max4threads, no paid resources or GPU",
+  "hard_limits": {
+    "cpu_seconds_per_process": 600,
+    "wall_seconds_per_training_process": 180,
+    "max_windows": 100000
+  },
+  "failure_policy": "Persist model/optimizer/state at exception; record failure; continue remaining declared arms",
+  "caveats": [
+    "One seed reused from parent for controlled comparison; not independent seed replication",
+    "Repeatedly viewed validation, tiny models and a short training budget; no GPU or general scaling claim",
+    "Equal training-wall allowance is not equal aggregate CPU consumption; startup/evaluation/IO excluded and reported separately",
+    "Two larger-batch peak LR trials are exploratory choices, not an established Adam batch-scaling law",
+    "Small numerical thread differences and shared-host timing variation remain possible",
+    "Common data prefix is regrouped by batch; different throughput means different exposure and optimizer-step counts"
+  ],
+  "source_hashes": {
+    "experiment.py": "9bc0ced4ebdc900d9f950779ed2cc634fd4b2edfb2360c02a771ba6b786c3d98",
+    "prepare.py": "48751421a891066507e8518e9b4dad598d365e16692e92a9458a9c501b99da3b",
+    "launch.py": "01935d1bd50ed6cbb437f58402e01bd72b29d48588a501c7f68f14699e9c7fdf",
+    "../gru-batch-wall-20261016-v1/experiment.py": "1f67b92b7a7834824dd5dba5143525a293be1c927b41874b3257bfe3cec94264",
+    "../gru-batch-wall-20261016-v1/vendor/nanogpt/model.py": "7c01703240dbec5d554527dc666e35b3df8391d0b117fddc07afcf325a21d11c",
+    "../gru-extended-20261016-v1/models.py": "f340db31acb1b6075c10116de2bc11ad8bd50b11d88e1e5d2520227b9b3f2f70",
+    "../gru-extended-20261016-v1/vendor/representation_experiments/common.py": "381c5950aa454fc2275c45755bafd4c3e0641802013c0bf7ce9276abf5415fe1",
+    "../gru-extended-20261016-v1/vendor/representation_experiments/predictive_models.py": "b73a7c07801f5672adb52c0cb16a3c772d62e50eebc0366491d497f76d13f73f",
+    "../gru-extended-20261016-v1/vendor/representation_experiments/__init__.py": "984ccff890f7a52a48a106a611ab4588e0333109d5c36ac88444ffd83a069b4e"
+  },
+  "created_utc": "2026-10-16T22:07:26Z"
+}

@@ -1,0 +1,4 @@
+PREFLIGHT native {'batch_vs_individual_logits_error': 1.9073486328125e-06, 'batch_vs_individual_gradient_relative_l2': 1.2822697215142398e-07, 'parameters': 995925}
+PREFLIGHT mingru_linear {'batch_vs_individual_logits_error': 1.9073486328125e-06, 'batch_vs_individual_gradient_relative_l2': 1.165729202057264e-07, 'parameters': 996320}
+number of parameters: 0.94M
+PREFLIGHT nanogpt {'batch_vs_individual_logits_error': 0.0, 'batch_vs_individual_gradient_relative_l2': 1.4508711387861695e-07, 'parameters': 1004880, 'reused_vs_recomputed_ce_error': 0.0}

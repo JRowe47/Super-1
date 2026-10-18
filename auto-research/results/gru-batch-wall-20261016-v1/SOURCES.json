@@ -1,0 +1,9 @@
+{
+  "nanogpt": {
+    "source": "Unchanged vendored nanoGPT model from matched_1m_v1",
+    "project": "https://github.com/karpathy/nanoGPT",
+    "license": "vendor/nanogpt/LICENSE",
+    "model_sha256": "7c01703240dbec5d554527dc666e35b3df8391d0b117fddc07afcf325a21d11c"
+  },
+  "gru": "Hash-bound parent gru-extended-20261016-v1 models.py and MIT-licensed representation_experiments vendor; see parent SOURCES.md"
+}
