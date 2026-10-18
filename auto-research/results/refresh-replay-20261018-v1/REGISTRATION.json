@@ -1,0 +1,30 @@
+{
+  "run_id": "refresh-replay-20261018-v1",
+  "registered_at_utc": "2026-10-18T06:02:39.762459+00:00",
+  "status": "FROZEN_BEFORE_EXPERIMENT_VERIFICATION_PILOT_MAIN",
+  "repository": "JRowe47/Super-1",
+  "branch": "research/curve-inception-20261017-v1",
+  "parent_commit": "b2242483aef9f6d75fd12ee18e87ceff24559ce5",
+  "runtime_note": "RUNTIME.json is an import-only setup receipt; no data/model updates. Its CPU is charged.",
+  "publication_gate": "All registered files and registration read back byte-equal from immutable commit and branch updated before experiment verification/pilot/main.",
+  "sha256": {
+    "BASELINE_RULE_MAPPING.md": "2299c157eaf29c24ca1ce258b15280bce6104e60a5592086228c3c0a9bb860b5",
+    "BASELINE_SOURCE_PROVENANCE.json": "192bf320be675c63013a09a295ccbfaa6380550264706578983af7f09eec80d0",
+    "PROTOCOL.json": "7def232286ce614b3d3b34e3c2717e1ce789b5d35067bea4d8d7ed6fc5015235",
+    "README.md": "9de87d150ad03ec21a0f1ccf7bc6c3ca8c7c323cb391b4062e8e60f5a2f43d4c",
+    "RULE_MAPPING.md": "5d474d69a9764447d5f134d2c1f6e2b10faa33b785df728a92460f4436553b92",
+    "RUNTIME.json": "1a9e4c5261e5ef750cb68e7fc8d8cdc9bb2470ea28650b842cebffeafa981168",
+    "SOURCE_PROVENANCE.json": "1c7d3cc5f8edd8c386a6a9a6c09517f290b72fa187bc88811aadef971506e10d",
+    "analyze.py": "d2c5fca730b2db6a369861cc1b1c8f3e355dc27978c37d57c403883d24d0bcf2",
+    "baseline_core.py": "a26735782ca129b38786f960646f0f541848da6f8de2bbd6c02ccedc67715437",
+    "baseline_verify.py": "94d0c236cc4cad90b8a2680885e87497623ea8ee635c09c7e26cc18ff00ff3a1",
+    "core.py": "f7d300d923855d155e2da0bb83430859c8c2a1254bea7dbd1c27d24ea09ab792",
+    "experiment.py": "c26d9c991a62909b43132f2319fb3e219014f007330c71bc1339fc134f6481e7",
+    "feedback_core.py": "13471f8a2a9d2bf1d319e50e9af47c7a45f7c549b9fa1f9a4be7bcd99c7a3780",
+    "feedback_verify.py": "414de8f6b5fddecda59fcf18178658495c15e4979a073a293b0d97b9d63b7f62",
+    "launch.py": "9a5d919e6010c6d228b175ee09671becc6a2de97fa03e988a995da90989b59fa",
+    "replay_core.py": "7b8495fecf8d695707b91de445bbfa03deed988cf569b15d8f2f223c2f220d46",
+    "replay_verify.py": "533fb4ceb6064e98700a31b1ee3ecaece28ba6ac9a2e32803d20067b2df6e6ef",
+    "verify.py": "03bc2a88f2400b0bb29ead8cf13c7f8a6a56cb722c4072b6427b72317cbf5536"
+  }
+}

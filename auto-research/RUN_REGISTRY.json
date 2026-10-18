@@ -205,6 +205,21 @@
       "preservation": "Exact source/protocol before execution; compact results in Git;4 individual NPZ files remotely hash-verified.",
       "artifact_manifest": "auto-research/results/replay-retention-20261018-v1/ARTIFACT_MANIFEST.json",
       "source_commit": "34f559d1454a067d175e55c372f3b20387b2423d"
+    },
+    {
+      "run_id": "refresh-replay-20261018-v1",
+      "status": "REGISTERED_PENDING_EXECUTION",
+      "approval": "Latest user: Alright, go ahead with the next. Refers to causal replay-bank refresh proposed in the completed replay-retention handoff. Standing permission: bounded local CPU900s, own JRowe47/Super-1 research branch/draft PR3, project folder and research scratch; small individual artifacts.",
+      "protocol": "auto-research/results/refresh-replay-20261018-v1/PROTOCOL.json",
+      "protocol_sha256": "7def232286ce614b3d3b34e3c2717e1ce789b5d35067bea4d8d7ed6fc5015235",
+      "registration": "auto-research/results/refresh-replay-20261018-v1/REGISTRATION.json",
+      "metrics": "auto-research/results/refresh-replay-20261018-v1/SUMMARY.json",
+      "terminal": "auto-research/results/refresh-replay-20261018-v1/TERMINAL.json",
+      "report": "auto-research/reports/refresh-replay-20261018-v1.md",
+      "decision": "Pending preregistered nine-arm experiment.",
+      "parent_run_ids": [
+        "replay-retention-20261018-v1"
+      ]
     }
   ],
   "schema_version": 1,

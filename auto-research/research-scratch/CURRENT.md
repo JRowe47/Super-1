@@ -1,5 +1,15 @@
 # Current research handoff
 
+Active authorized run: `refresh-replay-20261018-v1`. Preregistered, execution pending. Nine arms: FIFO/permanent/refreshed replay crossed with backprop/frozen/adaptive feedback. Refresh1 bank row per update,256 recent+256 history and8+8 sampling fixed. Fresh main seeds901801..3, pilot98997. Same joint CE/retention gate,900 aggregate CPU-second envelope, max3 one-thread workers. Source publication/readback precedes verification and optimization.
+
+Protocol: [PROTOCOL.json](../results/refresh-replay-20261018-v1/PROTOCOL.json). Registration: [REGISTRATION.json](../results/refresh-replay-20261018-v1/REGISTRATION.json). Completed results will be placed alongside these files; do not infer a completed result from this preregistration.
+
+The previous permanent bank improved retention but sharply harmed changed-fact learning. This run tests whether a causal age bound improves that tradeoff. No phase-aware refresh or relabeling. If the joint gate fails, pivot to feedback plasticity instead of extending replay-rate searches.
+
+## Prior completed handoff
+
+# Current research handoff
+
 Updated 2026-10-18 UTC. Latest completed run: `replay-retention-20261018-v1`.
 
 ## Latest result and decision
