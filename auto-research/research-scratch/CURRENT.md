@@ -1,5 +1,13 @@
 # Current research handoff
 
+Active authorized run: **feedback-family-20261018-v1**, preregistered and awaiting source publication/readback before verification or training. Five arms: BP, frozen, B-only, V/U-only, full learning-only. Online feedback decay off; inactive matrices literally frozen. FIFO512/16, full rates, common warmup, forward rule, cap2 and exposure/endpoints fixed. Primary B-only versus frozen uses unchanged5%/no-negative-seed and per-seed2pp old-window/final-old guards. Fresh main seeds1201831..3; pilot101927. No outcome yet.
+
+Same900 aggregate CPU-second budget, max3 one-thread workers; no GPU/cloud/language expansion. [Protocol](../results/feedback-family-20261018-v1/PROTOCOL.json) · [Registration](../results/feedback-family-20261018-v1/REGISTRATION.json).
+
+## Prior completed handoff
+
+# Current research handoff
+
 Latest completed run: **feedback-decay-20261018-v2**. **No promotion: effect passes, retention fails all three main seeds. Nothing is running.**
 
 [Report](../reports/feedback-decay-20261018-v2.md) · [Summary](../results/feedback-decay-20261018-v2/SUMMARY.json) · [Protocol](../results/feedback-decay-20261018-v2/PROTOCOL.json) · [Terminal](../results/feedback-decay-20261018-v2/TERMINAL.json) · [Checkpoints](../results/feedback-decay-20261018-v2/ARTIFACT_MANIFEST.json).

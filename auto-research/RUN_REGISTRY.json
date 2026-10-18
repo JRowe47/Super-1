@@ -288,6 +288,21 @@
       "preservation": "Frozen source before execution; v1verification failure preserved; results in Git; four NPZ files remote byte-hash verified.",
       "artifact_manifest": "auto-research/results/feedback-decay-20261018-v2/ARTIFACT_MANIFEST.json",
       "source_commit": "801d1e3147c47bd5b6004f1d343ea9a2c9185d6b"
+    },
+    {
+      "run_id": "feedback-family-20261018-v1",
+      "status": "REGISTERED_PENDING_EXECUTION",
+      "approval": "User: Ok, go ahead with that, accepting the proposed B versus V/U family-learning ablation after feedback-decay-v2. Standing900 aggregate CPU seconds, max3 one-thread workers, own fork/draftPR3 and stable research scratch. No paid/GPU/cloud/language expansion.",
+      "protocol": "auto-research/results/feedback-family-20261018-v1/PROTOCOL.json",
+      "protocol_sha256": "b6d41588d346510748df8507d1448dc22a44183c192313b1e3576ebf4360f673",
+      "registration": "auto-research/results/feedback-family-20261018-v1/REGISTRATION.json",
+      "metrics": "auto-research/results/feedback-family-20261018-v1/SUMMARY.json",
+      "terminal": "auto-research/results/feedback-family-20261018-v1/TERMINAL.json",
+      "report": "auto-research/reports/feedback-family-20261018-v1.md",
+      "decision": "Pending B versus V/U family-learning factorial; B-only versus frozen primary.",
+      "parent_run_ids": [
+        "feedback-decay-20261018-v2"
+      ]
     }
   ],
   "schema_version": 1,
