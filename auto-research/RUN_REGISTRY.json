@@ -249,6 +249,21 @@
       "preservation": "Exact source/protocol before execution; compact results in Git; four individual NPZ files remotely hash-verified.",
       "artifact_manifest": "auto-research/results/slow-feedback-20261018-v1/ARTIFACT_MANIFEST.json",
       "source_commit": "272e90a306793d60ba9265bcf6b1ce21985e819a"
+    },
+    {
+      "run_id": "feedback-decay-20261018-v1",
+      "status": "REGISTERED_PENDING_EXECUTION",
+      "approval": "User: Alright, looks good, go ahead, following the feedback-learning versus decay proposal. Standing local CPU900s/max3 single-thread workers, own JRowe47/Super-1 branch/draft PR3, stable research scratch and compact project-folder checkpoints. No paid/GPU/cloud/language expansion.",
+      "protocol": "auto-research/results/feedback-decay-20261018-v1/PROTOCOL.json",
+      "protocol_sha256": "43623b9146c420863eb894c9464acc8a94caecc51007b6eceb7095ca2fe555f0",
+      "registration": "auto-research/results/feedback-decay-20261018-v1/REGISTRATION.json",
+      "metrics": "auto-research/results/feedback-decay-20261018-v1/SUMMARY.json",
+      "terminal": "auto-research/results/feedback-decay-20261018-v1/TERMINAL.json",
+      "report": "auto-research/reports/feedback-decay-20261018-v1.md",
+      "decision": "Pending fixed-FIFO feedback learning/decay factorial.",
+      "parent_run_ids": [
+        "slow-feedback-20261018-v1"
+      ]
     }
   ],
   "schema_version": 1,

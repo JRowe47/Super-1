@@ -1,5 +1,13 @@
 # Current research handoff
 
+Active authorized run: **feedback-decay-20261018-v1**, preregistered, execution pending. Fixed FIFO512/16, original full feedback rate; five arms=frozen/decay-only/learning-only/normal adaptive/backprop. Primary normal adaptive vs decay-only uses unchanged CE/retention thresholds; frozen reference remains separately visible. Fresh main seeds1101821..3 and pilot100917. Source publication/readback precedes verification and optimization.900 aggregate CPU seconds, max3 one-thread workers, no rate sweep.
+
+[Protocol](../results/feedback-decay-20261018-v1/PROTOCOL.json) · [Registration](../results/feedback-decay-20261018-v1/REGISTRATION.json). No outcome yet; no language/architecture promotion is implied by this mechanism control.
+
+## Prior completed handoff
+
+# Current research handoff
+
 Latest completed run: **slow-feedback-20261018-v1**. **No promotion: useful-effect gate failed; retention passed.** Nothing is running.
 
 [Report](../reports/slow-feedback-20261018-v1.md) · [Summary](../results/slow-feedback-20261018-v1/SUMMARY.json) · [Protocol](../results/slow-feedback-20261018-v1/PROTOCOL.json) · [Terminal](../results/slow-feedback-20261018-v1/TERMINAL.json) · [Checkpoints](../results/slow-feedback-20261018-v1/ARTIFACT_MANIFEST.json).
