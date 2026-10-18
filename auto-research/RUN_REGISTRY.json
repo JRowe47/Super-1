@@ -187,6 +187,14 @@
       "source_manifest": "auto-research/results/gru-equal-cpu-20261016-v1/SOURCE_MANIFEST.json",
       "status": "COMPLETED_EXPLORATORY",
       "terminal": "auto-research/results/gru-equal-cpu-20261016-v1/TERMINAL.json"
+    },
+    {
+      "approval": "Current user approved trying the memory-first three-way pilot, then explicitly requested relaxing compression to approach nanoGPT quality. Local bounded CPU training only; no cloud spending or full SOTA trial.",
+      "protocol": "auto-research/results/memory-quality-frontier-20261018-v1/PROTOCOL.json",
+      "protocol_sha256": "1b9a62b139be63df5f43f5a83874f57bc4fef05b3a1fad26a489753c8384d58c",
+      "run_id": "memory-quality-frontier-20261018-v1",
+      "source_manifest": "auto-research/results/memory-quality-frontier-20261018-v1/SOURCE_MANIFEST.json",
+      "status": "PREREGISTERED"
     }
   ],
   "schema_version": 1,

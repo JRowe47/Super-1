@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "fp64_recurrence_max_error": 4.718447854656915e-16,
+  "fp64_gradient_max_error": 3.469446951953614e-17,
+  "upstream_fp32_parity": true,
+  "records": [
+    {
+      "arm": "transformer",
+      "parameters": 214144,
+      "cached_forward_max_error": 3.5762786865234375e-07,
+      "optimizer_max_error": 0.0,
+      "state_bytes_at_batch2_length67": 274432
+    },
+    {
+      "arm": "compact",
+      "parameters": 215752,
+      "cached_forward_max_error": 5.550682544708252e-07,
+      "optimizer_max_error": 1.840288880484986e-12,
+      "state_bytes_at_batch2_length67": 93184
+    },
+    {
+      "arm": "relaxed",
+      "parameters": 214680,
+      "cached_forward_max_error": 2.980232238769531e-07,
+      "optimizer_max_error": 4.4537290522228545e-14,
+      "state_bytes_at_batch2_length67": 214016
+    }
+  ],
+  "cpu_seconds_per_step": {
+    "transformer": 0.023723800000000007,
+    "compact": 0.03849339999999999,
+    "relaxed": 0.027051800000000004
+  },
+  "projected_training_cpu_seconds": 133.9035,
+  "source_sha256": "3b4e487b7a602bd8259188c3069442795e5ae003112f4d373337064c48cca418"
+}
