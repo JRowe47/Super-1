@@ -1,0 +1,18 @@
+{
+  "purpose": "Measure actual100000-byte-token inference mechanics on the already frozen128-context model. No language-quality or retrieval claim at100K. Do not replace the original4x total-memory gate.",
+  "seed": 73,
+  "length": 100000,
+  "decode_tokens": 16,
+  "arms": [
+    "h16",
+    "exact"
+  ],
+  "device": "cpu",
+  "dtype": "float32",
+  "threads": 1,
+  "prefill_chunk": 128,
+  "timeout_seconds_per_worker": 600,
+  "freeze_sha256": "ed3d4f4a22571ecf8c244b030b69accef930d32aea7a091c60a4bea8008cb5d8",
+  "source_manifest_sha256": "3f0731d9abf51191a2e1fa0839436d9b79b6e41e4b1665d66d95134955030b01",
+  "reason": "First pilot at8192 tokens reduced peak RSS about1.8x. Measure the users100K memory target directly, with bounded work and explicit absence of100K quality evidence."
+}

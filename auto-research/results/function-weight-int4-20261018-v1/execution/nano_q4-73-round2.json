@@ -1,0 +1,15 @@
+{
+  "arm": "nano_q4",
+  "batch_sha256": "a00daffff72fc1ea3aa12a8e76bb568e1e0291b0aa9520e3297b0c54cc8ee5ff",
+  "checkpoint": "nano_q4-73-round2.pt",
+  "extra_targets": 81920,
+  "lr": 0.0001,
+  "round": 2,
+  "seed": 73,
+  "selection": {
+    "ce": 2.3430827260017395,
+    "logits_sha256": "ca1da9bddb386729f057d353e6706c372d653fecd391aa4c2814691ab7254979",
+    "targets": 4096
+  },
+  "sha256": "654d2b0af0a1d9bc4294362ed14d8f4c82597d82135c696e47a67cdcef7f9276"
+}

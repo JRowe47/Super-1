@@ -1,0 +1,218 @@
+{
+  "mean_gap": -0.002295244485139847,
+  "paired_gaps": [
+    -0.005008060485124588,
+    0.000124368816614151,
+    -0.0020020417869091034
+  ],
+  "paired_t95": [
+    -0.00870120590982329,
+    0.004110716939543597
+  ],
+  "promoted": false,
+  "rows": [
+    {
+      "arm": "incumbent",
+      "checkpoint": "auto-research/results/usecase-sampling-descent-20261018-v1/execution/shared_token-73-round3.pt",
+      "confirmation": {
+        "accuracy": 0.3760986328125,
+        "ce": 2.18467915058136,
+        "logits_sha256": "aec46b651a66ef2c6ce130e656d6eb3592ec0b1d058031e1a0f82810a2cfa872",
+        "targets": 16384
+      },
+      "round": 0,
+      "seed": 73,
+      "selection": {
+        "accuracy": 0.3729248046875,
+        "ce": 2.1910913437604904,
+        "logits_sha256": "8e553e2ea70cdb2a691b4f904e263b0fc42d681226f303c276f4ab001d806b90",
+        "targets": 8192
+      },
+      "sha256": "194b48937f1d6acad06c80ea0a5013d7e08d1d366705da03ca31fa1be2c0f6de"
+    },
+    {
+      "arm": "continued",
+      "base_fingerprint": "218970774ec08fac12dda6138a43684ac06cfe3dd2ec27d47c0aa8355bd7df47",
+      "batch_sha256": "cb0e14da5c054102ff1c3141a23651097e98880bce75c3d25713c99149d22d3d",
+      "checkpoint": "auto-research/results/text-sampling-library-20261018-v1/execution/continued-73-round4.pt",
+      "confirmation": {
+        "accuracy": 0.377685546875,
+        "ce": 2.1796710900962353,
+        "logits_sha256": "2defdb8023c75fecdbb0e0af804fe877378df89313943b111238fe9cfc237a9c",
+        "targets": 16384
+      },
+      "gradient_norm_mean": 0.06055500516295433,
+      "lr": 0.003,
+      "next_lr": 0.003,
+      "round": 4,
+      "seed": 73,
+      "selection": {
+        "accuracy": 0.373046875,
+        "ce": 2.186212658882141,
+        "logits_sha256": "dceebebb338baf3127e74cd709e499def667f4867f01cb02c72290b6afe12af8",
+        "targets": 8192
+      },
+      "sha256": "a7b55495786a65b0acdf47beb0371f2fa0e4a3be271f97c465d1d3cce25ec9a9"
+    },
+    {
+      "arm": "small_step",
+      "base_fingerprint": "218970774ec08fac12dda6138a43684ac06cfe3dd2ec27d47c0aa8355bd7df47",
+      "batch_sha256": "cb0e14da5c054102ff1c3141a23651097e98880bce75c3d25713c99149d22d3d",
+      "checkpoint": "auto-research/results/text-sampling-library-20261018-v1/execution/small_step-73-round4.pt",
+      "confirmation": {
+        "accuracy": 0.3765869140625,
+        "ce": 2.18318510055542,
+        "logits_sha256": "8f37cc59e7a95987902ee190edb5458416064e438c43c32202738734d7f43529",
+        "targets": 16384
+      },
+      "gradient_norm_mean": 0.052217961363494395,
+      "lr": 0.00015,
+      "next_lr": 0.00015,
+      "round": 4,
+      "seed": 73,
+      "selection": {
+        "accuracy": 0.3726806640625,
+        "ce": 2.1898370683193207,
+        "logits_sha256": "a263df3d2521946f30f4c06bcf6dbee165d95f8eee7e773c073e754d01f081fe",
+        "targets": 8192
+      },
+      "sha256": "27eb87c5c5276841e77c86b48b63f6ba32aeacab6c51a5cd73d4f519b169d44f"
+    },
+    {
+      "arm": "incumbent",
+      "checkpoint": "auto-research/results/usecase-sampling-descent-20261018-v1/execution/shared_token-191-round3.pt",
+      "confirmation": {
+        "accuracy": 0.37518310546875,
+        "ce": 2.1860485896468163,
+        "logits_sha256": "15c429172f860908590f14bb07eb5f9f44ab2ecb643f048613e25fe7b76916e1",
+        "targets": 16384
+      },
+      "round": 0,
+      "seed": 191,
+      "selection": {
+        "accuracy": 0.362060546875,
+        "ce": 2.210637480020523,
+        "logits_sha256": "cf64787df3903ec05bb444cdb961d15b6f330ead6cf907eae814c25310243625",
+        "targets": 8192
+      },
+      "sha256": "ec176f61eca35963f4f6ead7d538997bb578cad50ffe43bc21d61afb9c666fae"
+    },
+    {
+      "arm": "continued",
+      "base_fingerprint": "c9908b6add68e165382d269110b9b65d97f087c460d1854c32f83e5ed0a5e7bf",
+      "batch_sha256": "2ea6b35528c43247be9e0e972965a7199c2292c90ab3d372b088f942c1d6d1a6",
+      "checkpoint": "auto-research/results/text-sampling-library-20261018-v1/execution/continued-191-round3.pt",
+      "confirmation": {
+        "accuracy": 0.37371826171875,
+        "ce": 2.1861729584634304,
+        "logits_sha256": "0b3bf6d6cfb8daa979c3db514f45e6d7bc681109716d5b019ac23239694775fb",
+        "targets": 16384
+      },
+      "gradient_norm_mean": 0.0819622211009264,
+      "lr": 0.003,
+      "next_lr": 0.003,
+      "round": 3,
+      "seed": 191,
+      "selection": {
+        "accuracy": 0.3648681640625,
+        "ce": 2.2057346403598785,
+        "logits_sha256": "d8b079fdb541f18988c70d3896752e2bc97222770f8d0e9e3a687cb63ac9e7cb",
+        "targets": 8192
+      },
+      "sha256": "ad1367d52cff06403e2fdff19ebee7403aecc28a070220d0565490d5b353f59a"
+    },
+    {
+      "arm": "small_step",
+      "base_fingerprint": "c9908b6add68e165382d269110b9b65d97f087c460d1854c32f83e5ed0a5e7bf",
+      "batch_sha256": "2ea6b35528c43247be9e0e972965a7199c2292c90ab3d372b088f942c1d6d1a6",
+      "checkpoint": "auto-research/results/text-sampling-library-20261018-v1/execution/small_step-191-round3.pt",
+      "confirmation": {
+        "accuracy": 0.3753662109375,
+        "ce": 2.186414387077093,
+        "logits_sha256": "c8fab3c1b6c369b000944e0789c33e1c370f48cff70e056b393cb6d9f8b4798b",
+        "targets": 16384
+      },
+      "gradient_norm_mean": 0.07313587895035743,
+      "lr": 0.0003,
+      "next_lr": 0.0003,
+      "round": 3,
+      "seed": 191,
+      "selection": {
+        "accuracy": 0.3629150390625,
+        "ce": 2.2079788595438004,
+        "logits_sha256": "ec7cb6838d2892d26c6cff7faaf57e2112420fae86b90b5fa8d3d0f6eb0efb75",
+        "targets": 8192
+      },
+      "sha256": "8e814817b94de23ad1d205266327657cba5e0c4e5752878c3bd78a129a78fa71"
+    },
+    {
+      "arm": "incumbent",
+      "checkpoint": "auto-research/results/usecase-sampling-descent-20261018-v1/execution/shared_token-307-round3.pt",
+      "confirmation": {
+        "accuracy": 0.3740234375,
+        "ce": 2.202432867139578,
+        "logits_sha256": "03ab57fa0551bb518781521a115ec48d3f95e71bd9008657b801daee9deaebc4",
+        "targets": 16384
+      },
+      "round": 0,
+      "seed": 307,
+      "selection": {
+        "accuracy": 0.359130859375,
+        "ce": 2.2283809930086136,
+        "logits_sha256": "0c620d0859b85ee44a4760c223ff50ea159bd4771311f86f917d76984531df7b",
+        "targets": 8192
+      },
+      "sha256": "ab64af56db7632713b815cef20314f7f93f477ecc9262fe20f8d0215fc4ae9c6"
+    },
+    {
+      "arm": "continued",
+      "base_fingerprint": "3d3f35945f75cecc4fa0072a4f4d1e8d2f837250e7e5b9fd3597bd9c4da195ea",
+      "batch_sha256": "26cc1f4e2bcc51269704648f79ffd986333da349d6c25941cab716e90ae0a027",
+      "checkpoint": "auto-research/results/text-sampling-library-20261018-v1/execution/continued-307-round3.pt",
+      "confirmation": {
+        "accuracy": 0.37518310546875,
+        "ce": 2.2004308253526688,
+        "logits_sha256": "5c61767dda606413e9af4539d339c2be5e86a3fc5a937ad09c501237f249c98e",
+        "targets": 16384
+      },
+      "gradient_norm_mean": 0.05939812111854553,
+      "lr": 0.0015,
+      "next_lr": 0.0015,
+      "round": 3,
+      "seed": 307,
+      "selection": {
+        "accuracy": 0.3609619140625,
+        "ce": 2.2262039184570312,
+        "logits_sha256": "6e50ebb1d168ac4563846d05b76495483c2e2b7f1f1fe9032dae34d30b2ca9c0",
+        "targets": 8192
+      },
+      "sha256": "3dd719bf733b990d274dc7bfd1b9ec08adf7f8e8e72c253058a8ea5feb9e32c2"
+    },
+    {
+      "arm": "small_step",
+      "base_fingerprint": "3d3f35945f75cecc4fa0072a4f4d1e8d2f837250e7e5b9fd3597bd9c4da195ea",
+      "batch_sha256": "26cc1f4e2bcc51269704648f79ffd986333da349d6c25941cab716e90ae0a027",
+      "checkpoint": "auto-research/results/text-sampling-library-20261018-v1/execution/small_step-307-round3.pt",
+      "confirmation": {
+        "accuracy": 0.37469482421875,
+        "ce": 2.201727483421564,
+        "logits_sha256": "89b201cf3584e6ba8e983278fff3c39100c1c6876a8b44327d9e6d51da807236",
+        "targets": 16384
+      },
+      "gradient_norm_mean": 0.05506778416782618,
+      "lr": 7.5e-05,
+      "next_lr": 7.5e-05,
+      "round": 3,
+      "seed": 307,
+      "selection": {
+        "accuracy": 0.3594970703125,
+        "ce": 2.2282614707946777,
+        "logits_sha256": "a703bd58169e9f812515948f94a2fe24709844828ec74661aeb6d428ea0435a8",
+        "targets": 8192
+      },
+      "sha256": "639c301b66dc558920a6719e8453cc7f86c9b93bb9e617d9f16ec6bedf433f06"
+    }
+  ],
+  "scope": "One validation-selected contrast on new held-out Shakespeare bytes; no broad text or inference speed claim.",
+  "winner_on_validation": "continued"
+}

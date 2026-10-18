@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "profiles": [
+    {
+      "id": "function-kv-text-descent-512-20261018-v1/h16/73",
+      "confirmation_logits_sha256": "bba7c3e328f9818ccbc0e142b5c90acbaf7d870694a4ea8b6ca4569781600582",
+      "ce": 2.1278423964977264,
+      "exact_replay": true
+    },
+    {
+      "id": "function-kv-text-descent-512-20261018-v1/h32/73",
+      "confirmation_logits_sha256": "cb5ff05229c89d02d5ca1438be704561d9bc51f5d526341dd00e0257ac711571",
+      "ce": 2.1241528391838074,
+      "exact_replay": true
+    },
+    {
+      "id": "function-kv-text-descent-512-20261018-v1/h16/191",
+      "confirmation_logits_sha256": "33ca0007e4684deb801c00081763435d05da30668c95087e30f8b88112bb853c",
+      "ce": 2.1165399849414825,
+      "exact_replay": true
+    },
+    {
+      "id": "function-kv-text-descent-512-20261018-v1/h32/191",
+      "confirmation_logits_sha256": "0301833104d23ec21b62c95480d2863e98b09d88c0856ab2edd4d47ba2bab706",
+      "ce": 2.1119439005851746,
+      "exact_replay": true
+    },
+    {
+      "id": "function-kv-text-descent-512-20261018-v1/h16/307",
+      "confirmation_logits_sha256": "32c0183fad49a5dde38a7e50d91d9ce60e18dce5d4af5fff6ceba0724d5377af",
+      "ce": 2.159265697002411,
+      "exact_replay": true
+    },
+    {
+      "id": "function-kv-text-descent-512-20261018-v1/h32/307",
+      "confirmation_logits_sha256": "43890fa4b547f13cd32889d388ddf303333a70ac2ba2969c736bbdcaad55e5d8",
+      "ce": 2.1537429690361023,
+      "exact_replay": true
+    }
+  ],
+  "loader_sha256": "8bcba1cd8827bb44c56be64b38c863533f9fb27fbc42b455af2d8c6a318febfb"
+}

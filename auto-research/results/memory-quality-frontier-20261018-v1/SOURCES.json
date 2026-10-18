@@ -1,0 +1,15 @@
+{
+  "gated_delta_reference": {
+    "repo": "https://github.com/fla-org/flash-linear-attention",
+    "commit": "9e97506c338769e8031966fb22fe31780addd8fa",
+    "source": "fla/ops/gated_delta_rule/naive.py",
+    "license": "MIT"
+  },
+  "paper": "https://arxiv.org/abs/2412.06464",
+  "corpus": {
+    "url": "https://raw.githubusercontent.com/karpathy/char-rnn/master/data/tinyshakespeare/input.txt",
+    "sha256": "86c4e6aa9db7c042ec79f339dcb96d42b0075e16b8fc2e86bf0ca57e2dc565ed",
+    "prior_scored_confirmation_ends_at": 1070414
+  },
+  "scope": "Own small RoPE Transformer and hybrid harness, validated against upstream recurrence. Not a full GatedDeltaNet or nanoGPT speedrun reproduction."
+}

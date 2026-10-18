@@ -1,0 +1,63 @@
+{
+  "all_checkpoint_hashes": true,
+  "independent_replays": [
+    {
+      "arm": "relaxed",
+      "ce": 2.241903990507126,
+      "seed": 73,
+      "trained_cached_max_error": 3.814697265625e-06
+    },
+    {
+      "arm": "transformer",
+      "ce": 2.2752619087696075,
+      "seed": 73,
+      "trained_cached_max_error": 0.0
+    },
+    {
+      "arm": "compact",
+      "ce": 2.2236312925815582,
+      "seed": 73,
+      "trained_cached_max_error": 5.9604644775390625e-06
+    },
+    {
+      "arm": "compact",
+      "ce": 2.1942019686102867,
+      "seed": 191,
+      "trained_cached_max_error": 4.291534423828125e-06
+    },
+    {
+      "arm": "transformer",
+      "ce": 2.286303736269474,
+      "seed": 191,
+      "trained_cached_max_error": 0.0
+    },
+    {
+      "arm": "relaxed",
+      "ce": 2.2488564029335976,
+      "seed": 191,
+      "trained_cached_max_error": 4.76837158203125e-06
+    },
+    {
+      "arm": "transformer",
+      "ce": 2.270384520292282,
+      "seed": 307,
+      "trained_cached_max_error": 0.0
+    },
+    {
+      "arm": "compact",
+      "ce": 2.195395804941654,
+      "seed": 307,
+      "trained_cached_max_error": 4.291534423828125e-06
+    },
+    {
+      "arm": "relaxed",
+      "ce": 2.2387261167168617,
+      "seed": 307,
+      "trained_cached_max_error": 3.814697265625e-06
+    }
+  ],
+  "matched_training_batches": true,
+  "selection_minima": true,
+  "source_hashes": true,
+  "status": "PASS"
+}

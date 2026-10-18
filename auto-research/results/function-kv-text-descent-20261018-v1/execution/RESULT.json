@@ -1,0 +1,484 @@
+{
+  "rows": [
+    {
+      "arm": "nano",
+      "batch_sha256": "4c28eae9d8e3c5b16f97fa0c48933581db182ec543201fd99114c958d0cfc0ce",
+      "checkpoint": "nano-73-step600.pt",
+      "confirmation": {
+        "ce": 2.2927826642990112,
+        "logits_sha256": "cee70c3d85523e62507768ac01a68ddaad59877a856df8601351161a6385fd7a",
+        "tail_ce": 2.3279281556606293,
+        "targets": 8192
+      },
+      "cpu_seconds": 10.065201,
+      "parameters": 131616,
+      "seed": 73,
+      "selection": {
+        "ce": 2.303272306919098,
+        "logits_sha256": "08ef87af53995b6d8924a2b36fecc7e317ea7d6ff47c6cca3f3bec42d0e295f0",
+        "tail_ce": 2.347567081451416,
+        "targets": 4096
+      },
+      "sha256": "c7958c0a163f20ad36ecd041c03e26178edc19480a29f97a12cf24033f49f482",
+      "step": 600,
+      "targets_seen": 614400
+    },
+    {
+      "arm": "curve",
+      "batch_sha256": "4c28eae9d8e3c5b16f97fa0c48933581db182ec543201fd99114c958d0cfc0ce",
+      "checkpoint": "curve-73-step600.pt",
+      "confirmation": {
+        "ce": 2.096699297428131,
+        "logits_sha256": "7fe819e412c12fe831cad7ec8ceabea2f34a8edd5a49b2816c958dd3984e3888",
+        "tail_ce": 2.118529289960861,
+        "targets": 8192
+      },
+      "cpu_seconds": 14.027586,
+      "parameters": 68905,
+      "seed": 73,
+      "selection": {
+        "ce": 2.0888147950172424,
+        "logits_sha256": "bc4d055fc1bb7558f0b7ce63cceea60669416c1a62afa1478f1e4f5490e94a67",
+        "tail_ce": 2.085835576057434,
+        "targets": 4096
+      },
+      "sha256": "be7f01495f0e634f46f12cdda3c8f159b851d66d90edecf089f52fd51feb969c",
+      "step": 600,
+      "targets_seen": 614400
+    },
+    {
+      "arm": "curve",
+      "batch_sha256": "4a14d8a439bdfa6f551f93a2d52631d6c9611f9139db5b1807c37bc815404a6f",
+      "checkpoint": "curve-191-step600.pt",
+      "confirmation": {
+        "ce": 2.102344512939453,
+        "logits_sha256": "a6a5a0b0c2d9bd2a58cf44935f674e835068d434f7e5335f2a645f9ba0089914",
+        "tail_ce": 2.1206419467926025,
+        "targets": 8192
+      },
+      "cpu_seconds": 13.818069000000001,
+      "parameters": 68905,
+      "seed": 191,
+      "selection": {
+        "ce": 2.0963043570518494,
+        "logits_sha256": "b652f0a92730573e28b1f57970e1465261070d239b1a1a76a6c708b66e818082",
+        "tail_ce": 2.1024014949798584,
+        "targets": 4096
+      },
+      "sha256": "03b49640a7f4c5c7b882b0aeaf053421a503dce4f69ad375e973e7b5eafb6078",
+      "step": 600,
+      "targets_seen": 614400
+    },
+    {
+      "arm": "nano",
+      "batch_sha256": "4a14d8a439bdfa6f551f93a2d52631d6c9611f9139db5b1807c37bc815404a6f",
+      "checkpoint": "nano-191-step600.pt",
+      "confirmation": {
+        "ce": 2.294001966714859,
+        "logits_sha256": "2972857bc382c569c627311138d1f4a506d0cbafbae297087748c2839821ef73",
+        "tail_ce": 2.3280321061611176,
+        "targets": 8192
+      },
+      "cpu_seconds": 9.735276000000006,
+      "parameters": 131616,
+      "seed": 191,
+      "selection": {
+        "ce": 2.3019644618034363,
+        "logits_sha256": "f66b25678c06295dc1f95cc66da4dc1bdbb43c759534505157f8adb6aa3b5a54",
+        "tail_ce": 2.3406726121902466,
+        "targets": 4096
+      },
+      "sha256": "98121ee088dcd83e526614e6718c26246f54236c4d23c8446a98c72c1370677d",
+      "step": 600,
+      "targets_seen": 614400
+    },
+    {
+      "arm": "nano",
+      "batch_sha256": "3140c164928ed2b12573e569ce255a99c018ddb7ce6c6b0136511b5acd40bbd7",
+      "checkpoint": "nano-307-step600.pt",
+      "confirmation": {
+        "ce": 2.2900331020355225,
+        "logits_sha256": "efb5fc717b896674a4c1ffb883009fe578221ecacfd03c8ce745e87709959583",
+        "tail_ce": 2.3290585577487946,
+        "targets": 8192
+      },
+      "cpu_seconds": 9.732129,
+      "parameters": 131616,
+      "seed": 307,
+      "selection": {
+        "ce": 2.314281940460205,
+        "logits_sha256": "083d59981a68451dc4ce7ec95f68c2d748807af8cfb4533d0fa6c84c4bd9a753",
+        "tail_ce": 2.354094922542572,
+        "targets": 4096
+      },
+      "sha256": "0da3d1a4d81732e49d2d132d12af813622c5ccef4d3863d9a426c25c187bbdfd",
+      "step": 600,
+      "targets_seen": 614400
+    },
+    {
+      "arm": "curve",
+      "batch_sha256": "3140c164928ed2b12573e569ce255a99c018ddb7ce6c6b0136511b5acd40bbd7",
+      "checkpoint": "curve-307-step600.pt",
+      "confirmation": {
+        "ce": 2.0893227756023407,
+        "logits_sha256": "ad75f0ef41aeb4fbe3e6f4e3eaafbfdaa395b33396ad409c798ab299210350d7",
+        "tail_ce": 2.1172222048044205,
+        "targets": 8192
+      },
+      "cpu_seconds": 13.707422999999991,
+      "parameters": 68905,
+      "seed": 307,
+      "selection": {
+        "ce": 2.0983176231384277,
+        "logits_sha256": "c809665fa2034e3c2e441945dc5b1f4cb4340772a7e09b4b075034868e34086a",
+        "tail_ce": 2.0963985919952393,
+        "targets": 4096
+      },
+      "sha256": "437775671052620b6474eef7efc7ce41e30e6151c1fdbc9e2398089b48c8faee",
+      "step": 600,
+      "targets_seen": 614400
+    },
+    {
+      "arm": "h16",
+      "backbone_fingerprint": "763985460dfeb1ca4244241c78dc4bc26f497d0bd21f729c8600ed22e4339f65",
+      "base_checkpoint": "curve-73-step600.pt",
+      "base_sha256": "be7f01495f0e634f46f12cdda3c8f159b851d66d90edecf089f52fd51feb969c",
+      "batch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "checkpoint": "h16-73-round0.pt",
+      "confirmation": {
+        "ce": 2.097357839345932,
+        "logits_sha256": "3e274f74bd4a8ebe5e6ffe7fad9f47b7aa3a3ad05221b8a4af7eb28cfdd58486",
+        "tail_ce": 2.118502527475357,
+        "targets": 8192
+      },
+      "cpu_seconds": 0.12873100000000193,
+      "extra_targets_seen": 0,
+      "lr": 0.03,
+      "pool_parameters": 576,
+      "round": 0,
+      "seed": 73,
+      "selection": {
+        "ce": 2.0884965658187866,
+        "logits_sha256": "74c03ca5b73d20c18b3d2953263762e4bce51ab7a2779b062631f8eff23f5571",
+        "tail_ce": 2.0845762491226196,
+        "targets": 4096
+      },
+      "sha256": "7556bc9b57054f58afc56d472e8cd55f6ad4417ba3f6f9f63c831e6d34629652",
+      "variant": "zero"
+    },
+    {
+      "arm": "h16",
+      "backbone_fingerprint": "763985460dfeb1ca4244241c78dc4bc26f497d0bd21f729c8600ed22e4339f65",
+      "base_checkpoint": "curve-73-step600.pt",
+      "base_sha256": "be7f01495f0e634f46f12cdda3c8f159b851d66d90edecf089f52fd51feb969c",
+      "batch_sha256": "b74e1a3ac1e1a26651a02f76b797d866f5102c6d05846c3b63f2d0f6d2041cbb",
+      "checkpoint": "h16-73-round3.pt",
+      "confirmation": {
+        "ce": 2.0952933728694916,
+        "logits_sha256": "00946b4e2b1fdd4a9a5f01123ef703a84bd1593108a5de61dfddafd1bb6921dc",
+        "tail_ce": 2.116166412830353,
+        "targets": 8192
+      },
+      "cpu_seconds": 6.152292000000003,
+      "extra_targets_seen": 15360,
+      "lr": 0.03,
+      "pool_parameters": 576,
+      "round": 3,
+      "seed": 73,
+      "selection": {
+        "ce": 2.0873319506645203,
+        "logits_sha256": "4c7bbfe9733b960cff82b175bc85f99bdd9535b463c3cc8e8fab7e0c95ae30cd",
+        "tail_ce": 2.082837998867035,
+        "targets": 4096
+      },
+      "sha256": "947db7097811ed7361f4f976359a414a38226d0ed837d26e254596e97214c4c4",
+      "variant": "selected"
+    },
+    {
+      "arm": "h32",
+      "backbone_fingerprint": "763985460dfeb1ca4244241c78dc4bc26f497d0bd21f729c8600ed22e4339f65",
+      "base_checkpoint": "curve-73-step600.pt",
+      "base_sha256": "be7f01495f0e634f46f12cdda3c8f159b851d66d90edecf089f52fd51feb969c",
+      "batch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "checkpoint": "h32-73-round0.pt",
+      "confirmation": {
+        "ce": 2.096111923456192,
+        "logits_sha256": "9e82f7a1fe22dbe1691931ab2c1db2ce373f0025afcbd2d5b6350007bafe6cdc",
+        "tail_ce": 2.116887181997299,
+        "targets": 8192
+      },
+      "cpu_seconds": 0.13060899999999975,
+      "extra_targets_seen": 0,
+      "lr": 0.03,
+      "pool_parameters": 576,
+      "round": 0,
+      "seed": 73,
+      "selection": {
+        "ce": 2.0879015922546387,
+        "logits_sha256": "2908a5cfc5089183ab8eb6985209ee57f13a7d25d753f5365c925e8e81090654",
+        "tail_ce": 2.0836181044578552,
+        "targets": 4096
+      },
+      "sha256": "7556bc9b57054f58afc56d472e8cd55f6ad4417ba3f6f9f63c831e6d34629652",
+      "variant": "zero"
+    },
+    {
+      "arm": "h32",
+      "backbone_fingerprint": "763985460dfeb1ca4244241c78dc4bc26f497d0bd21f729c8600ed22e4339f65",
+      "base_checkpoint": "curve-73-step600.pt",
+      "base_sha256": "be7f01495f0e634f46f12cdda3c8f159b851d66d90edecf089f52fd51feb969c",
+      "batch_sha256": "b74e1a3ac1e1a26651a02f76b797d866f5102c6d05846c3b63f2d0f6d2041cbb",
+      "checkpoint": "h32-73-round3.pt",
+      "confirmation": {
+        "ce": 2.094913899898529,
+        "logits_sha256": "c8b0228d5aa622ebefa6687cee978d8f803f7d1de654516983af73435ef245bd",
+        "tail_ce": 2.1149443089962006,
+        "targets": 8192
+      },
+      "cpu_seconds": 6.709965999999998,
+      "extra_targets_seen": 15360,
+      "lr": 0.03,
+      "pool_parameters": 576,
+      "round": 3,
+      "seed": 73,
+      "selection": {
+        "ce": 2.087008833885193,
+        "logits_sha256": "2818318e4ad278143e2528d8bdcb589f6af453df4fdb698d5b7b1e31558c5dbf",
+        "tail_ce": 2.082033157348633,
+        "targets": 4096
+      },
+      "sha256": "d42127059a2c3418ac78118620082865ddc3cc665d3d0232486adc01a06b95db",
+      "variant": "selected"
+    },
+    {
+      "arm": "h16",
+      "backbone_fingerprint": "353c5083fd000c08051c6fb742511666a380a7924e0d5de523fef89f0f7444db",
+      "base_checkpoint": "curve-191-step600.pt",
+      "base_sha256": "03b49640a7f4c5c7b882b0aeaf053421a503dce4f69ad375e973e7b5eafb6078",
+      "batch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "checkpoint": "h16-191-round0.pt",
+      "confirmation": {
+        "ce": 2.097581535577774,
+        "logits_sha256": "a3764382f9e834e8dac87087945546625cf1265dccdf70dbfe9690350871a182",
+        "tail_ce": 2.1109242290258408,
+        "targets": 8192
+      },
+      "cpu_seconds": 0.12377700000000402,
+      "extra_targets_seen": 0,
+      "lr": 0.03,
+      "pool_parameters": 576,
+      "round": 0,
+      "seed": 191,
+      "selection": {
+        "ce": 2.0905283093452454,
+        "logits_sha256": "0db4477309f304a9a2b2837895119fade8e48ecf72f1c0a0116368c8bcf426b1",
+        "tail_ce": 2.0920616388320923,
+        "targets": 4096
+      },
+      "sha256": "7556bc9b57054f58afc56d472e8cd55f6ad4417ba3f6f9f63c831e6d34629652",
+      "variant": "zero"
+    },
+    {
+      "arm": "h16",
+      "backbone_fingerprint": "353c5083fd000c08051c6fb742511666a380a7924e0d5de523fef89f0f7444db",
+      "base_checkpoint": "curve-191-step600.pt",
+      "base_sha256": "03b49640a7f4c5c7b882b0aeaf053421a503dce4f69ad375e973e7b5eafb6078",
+      "batch_sha256": "205eec9c8ebe9f885f0e203f72105a8a56b190a142cc9d1ccbdaf9a95c756a45",
+      "checkpoint": "h16-191-round2.pt",
+      "confirmation": {
+        "ce": 2.0969833433628082,
+        "logits_sha256": "df8f83ee6953b42cd5ad7f3fc3cf2671287a30108b7418e33af1613c01a4c127",
+        "tail_ce": 2.109999254345894,
+        "targets": 8192
+      },
+      "cpu_seconds": 4.18531500000001,
+      "extra_targets_seen": 10240,
+      "lr": 0.03,
+      "pool_parameters": 576,
+      "round": 2,
+      "seed": 191,
+      "selection": {
+        "ce": 2.0897973775863647,
+        "logits_sha256": "c45b6099e17dfe04af51ee8fb01629bbeddc81119e6c18fc41b191d8c6431307",
+        "tail_ce": 2.0914303064346313,
+        "targets": 4096
+      },
+      "sha256": "dbe1ea4888e6c7585dee165070d39e0fd706fd06faca66b1670843d1f25923ea",
+      "variant": "selected"
+    },
+    {
+      "arm": "h32",
+      "backbone_fingerprint": "353c5083fd000c08051c6fb742511666a380a7924e0d5de523fef89f0f7444db",
+      "base_checkpoint": "curve-191-step600.pt",
+      "base_sha256": "03b49640a7f4c5c7b882b0aeaf053421a503dce4f69ad375e973e7b5eafb6078",
+      "batch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "checkpoint": "h32-191-round0.pt",
+      "confirmation": {
+        "ce": 2.098090022802353,
+        "logits_sha256": "eae0dc2f600e724c2813cffcca359ada4805a5cd6b95f4d40e8eae201e2d435c",
+        "tail_ce": 2.1120973080396652,
+        "targets": 8192
+      },
+      "cpu_seconds": 0.13370299999999702,
+      "extra_targets_seen": 0,
+      "lr": 0.03,
+      "pool_parameters": 576,
+      "round": 0,
+      "seed": 191,
+      "selection": {
+        "ce": 2.09099680185318,
+        "logits_sha256": "c7eef28ff837104fce93a390c593f0edf160dc892e2febe0bc74c4d22f3d3d0a",
+        "tail_ce": 2.092303156852722,
+        "targets": 4096
+      },
+      "sha256": "7556bc9b57054f58afc56d472e8cd55f6ad4417ba3f6f9f63c831e6d34629652",
+      "variant": "zero"
+    },
+    {
+      "arm": "h32",
+      "backbone_fingerprint": "353c5083fd000c08051c6fb742511666a380a7924e0d5de523fef89f0f7444db",
+      "base_checkpoint": "curve-191-step600.pt",
+      "base_sha256": "03b49640a7f4c5c7b882b0aeaf053421a503dce4f69ad375e973e7b5eafb6078",
+      "batch_sha256": "944457463089a82c828350ba250f92eba1dc471cb67d9c3121685ae2bcbecf1f",
+      "checkpoint": "h32-191-round3.pt",
+      "confirmation": {
+        "ce": 2.09765362739563,
+        "logits_sha256": "3b583d39ec6a36d2f6de5f5fa04e90e55a00e1d149d66ac662ab12d8a3157311",
+        "tail_ce": 2.1113487035036087,
+        "targets": 8192
+      },
+      "cpu_seconds": 6.61220999999999,
+      "extra_targets_seen": 15360,
+      "lr": 0.03,
+      "pool_parameters": 576,
+      "round": 3,
+      "seed": 191,
+      "selection": {
+        "ce": 2.090560495853424,
+        "logits_sha256": "ab5c5d85a561366c5155ff4830f2053b6a50db1ab0532351cfd57eedc0e53bfc",
+        "tail_ce": 2.0917164087295532,
+        "targets": 4096
+      },
+      "sha256": "08a5dd992317e99d5fa076e33afe5334db40038716ecf4b720d8945577ddbd9f",
+      "variant": "selected"
+    },
+    {
+      "arm": "h16",
+      "backbone_fingerprint": "a1933ed090ec25e8494907ce188a9efb4fd36465f6f21d1e68baea5b1f9a5a4b",
+      "base_checkpoint": "curve-307-step600.pt",
+      "base_sha256": "437775671052620b6474eef7efc7ce41e30e6151c1fdbc9e2398089b48c8faee",
+      "batch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "checkpoint": "h16-307-round0.pt",
+      "confirmation": {
+        "ce": 2.084479719400406,
+        "logits_sha256": "7e2e22d9e06ea5fd78841a2e14acca1a428daea5268e1e106ada5bdb7661e047",
+        "tail_ce": 2.1079632490873337,
+        "targets": 8192
+      },
+      "cpu_seconds": 0.12398800000001131,
+      "extra_targets_seen": 0,
+      "lr": 0.03,
+      "pool_parameters": 576,
+      "round": 0,
+      "seed": 307,
+      "selection": {
+        "ce": 2.094277083873749,
+        "logits_sha256": "a1cccd34f1578762e3fd796a624499bd6305ce5ba104a21ef028ded37a814266",
+        "tail_ce": 2.0884671211242676,
+        "targets": 4096
+      },
+      "sha256": "7556bc9b57054f58afc56d472e8cd55f6ad4417ba3f6f9f63c831e6d34629652",
+      "variant": "zero"
+    },
+    {
+      "arm": "h16",
+      "backbone_fingerprint": "a1933ed090ec25e8494907ce188a9efb4fd36465f6f21d1e68baea5b1f9a5a4b",
+      "base_checkpoint": "curve-307-step600.pt",
+      "base_sha256": "437775671052620b6474eef7efc7ce41e30e6151c1fdbc9e2398089b48c8faee",
+      "batch_sha256": "cf6f192b9971d72018bae24181c3b3e4e9724847894f4f53941203505680c4f7",
+      "checkpoint": "h16-307-round3.pt",
+      "confirmation": {
+        "ce": 2.0833491384983063,
+        "logits_sha256": "1a655cdb788dbbcc6879f344c5a8f27ff92a0248b1b553ffb8ea08af0ce18936",
+        "tail_ce": 2.106082111597061,
+        "targets": 8192
+      },
+      "cpu_seconds": 6.300047000000006,
+      "extra_targets_seen": 15360,
+      "lr": 0.03,
+      "pool_parameters": 576,
+      "round": 3,
+      "seed": 307,
+      "selection": {
+        "ce": 2.093498110771179,
+        "logits_sha256": "d9a45804ca3956b6e16bedf803c27467f84f60f4947b0d34bb34519f62bdb3f5",
+        "tail_ce": 2.0874192118644714,
+        "targets": 4096
+      },
+      "sha256": "14652740b63e4a4424a42724a9ad1b30b2affdc9feb6e59641c442cd7cc31d69",
+      "variant": "selected"
+    },
+    {
+      "arm": "h32",
+      "backbone_fingerprint": "a1933ed090ec25e8494907ce188a9efb4fd36465f6f21d1e68baea5b1f9a5a4b",
+      "base_checkpoint": "curve-307-step600.pt",
+      "base_sha256": "437775671052620b6474eef7efc7ce41e30e6151c1fdbc9e2398089b48c8faee",
+      "batch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "checkpoint": "h32-307-round0.pt",
+      "confirmation": {
+        "ce": 2.084140971302986,
+        "logits_sha256": "0ec7539eb9451612bfd85c5cf463e2a78a1c3b1e1a0a272f41af35d7e96c9a11",
+        "tail_ce": 2.1071277409791946,
+        "targets": 8192
+      },
+      "cpu_seconds": 0.12995100000000548,
+      "extra_targets_seen": 0,
+      "lr": 0.03,
+      "pool_parameters": 576,
+      "round": 0,
+      "seed": 307,
+      "selection": {
+        "ce": 2.0939600467681885,
+        "logits_sha256": "b6e94c3fca752d93f2793c85f087d15cc979a7c45518d5e5330e16f422ab9d39",
+        "tail_ce": 2.087952435016632,
+        "targets": 4096
+      },
+      "sha256": "7556bc9b57054f58afc56d472e8cd55f6ad4417ba3f6f9f63c831e6d34629652",
+      "variant": "zero"
+    },
+    {
+      "arm": "h32",
+      "backbone_fingerprint": "a1933ed090ec25e8494907ce188a9efb4fd36465f6f21d1e68baea5b1f9a5a4b",
+      "base_checkpoint": "curve-307-step600.pt",
+      "base_sha256": "437775671052620b6474eef7efc7ce41e30e6151c1fdbc9e2398089b48c8faee",
+      "batch_sha256": "d30ffac0e25fc02f683a8f0e59cc25cf912e7244d0861d575e4a0f4728917b33",
+      "checkpoint": "h32-307-round2.pt",
+      "confirmation": {
+        "ce": 2.083511233329773,
+        "logits_sha256": "61f430c112c9cda26f6a338365c436b6045afec2fcc567b0de28438502ab134b",
+        "tail_ce": 2.1062838584184647,
+        "targets": 8192
+      },
+      "cpu_seconds": 4.564166999999998,
+      "extra_targets_seen": 10240,
+      "lr": 0.03,
+      "pool_parameters": 576,
+      "round": 2,
+      "seed": 307,
+      "selection": {
+        "ce": 2.0933602452278137,
+        "logits_sha256": "7bfee718d36892fea37d792c82fc968bb89da5c5d83a38d6480f95634a2ee853",
+        "tail_ce": 2.087662637233734,
+        "targets": 4096
+      },
+      "sha256": "113bff63fd174ec396fe564cc74f87f990eac0c3722d5b208ea21728cb74d7df",
+      "variant": "selected"
+    }
+  ],
+  "scope": "Fresh from-scratch Alice byte pilot. Quality at128 bytes only; not SOTA or long-context evidence.",
+  "selected_capacity": "h16",
+  "selection_feasible": [
+    "h16",
+    "h32"
+  ]
+}

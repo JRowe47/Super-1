@@ -1,0 +1,98 @@
+{
+  "independent_replays": [
+    {
+      "ce": 2.661193512380123,
+      "depth": 2,
+      "kind": "profile",
+      "seed": 73
+    },
+    {
+      "ce": 2.2251810505986214,
+      "depth": 3,
+      "kind": "profile",
+      "seed": 73
+    },
+    {
+      "ce": 2.2118589729070663,
+      "depth": 4,
+      "kind": "profile",
+      "seed": 73
+    },
+    {
+      "ce": 2.215854339301586,
+      "depth": 4,
+      "kind": "incumbent",
+      "seed": 73
+    },
+    {
+      "ce": 2.2118589729070663,
+      "depth": 4,
+      "kind": "selected",
+      "seed": 73
+    },
+    {
+      "ce": 2.680108144879341,
+      "depth": 2,
+      "kind": "profile",
+      "seed": 191
+    },
+    {
+      "ce": 2.2058332562446594,
+      "depth": 3,
+      "kind": "profile",
+      "seed": 191
+    },
+    {
+      "ce": 2.2006460279226303,
+      "depth": 4,
+      "kind": "profile",
+      "seed": 191
+    },
+    {
+      "ce": 2.200851187109947,
+      "depth": 4,
+      "kind": "incumbent",
+      "seed": 191
+    },
+    {
+      "ce": 2.2006460279226303,
+      "depth": 4,
+      "kind": "selected",
+      "seed": 191
+    },
+    {
+      "ce": 2.488886944949627,
+      "depth": 2,
+      "kind": "profile",
+      "seed": 307
+    },
+    {
+      "ce": 2.2290002554655075,
+      "depth": 3,
+      "kind": "profile",
+      "seed": 307
+    },
+    {
+      "ce": 2.22945998609066,
+      "depth": 4,
+      "kind": "profile",
+      "seed": 307
+    },
+    {
+      "ce": 2.230139397084713,
+      "depth": 4,
+      "kind": "incumbent",
+      "seed": 307
+    },
+    {
+      "ce": 2.22945998609066,
+      "depth": 4,
+      "kind": "selected",
+      "seed": 307
+    }
+  ],
+  "selector_probability_and_argmax": true,
+  "source_hashes": true,
+  "status": "PASS",
+  "validation_selection_minima": true
+}

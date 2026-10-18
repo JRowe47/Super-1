@@ -1,0 +1,15 @@
+{
+  "arm": "curve_fp16",
+  "batch_sha256": "5090d3799cc5f8878562de105ea8d3a538507d891ed91ac6a0117226928c2b14",
+  "checkpoint": "curve_fp16-73-round3.pt",
+  "extra_targets": 122880,
+  "lr": 0.0001,
+  "round": 3,
+  "seed": 73,
+  "selection": {
+    "ce": 2.1505943536758423,
+    "logits_sha256": "58c4247ffb7c1b8d13bd63e608b922353d3a1633772d9c9ae0d4a6ab4d7a9504",
+    "targets": 4096
+  },
+  "sha256": "3d3b5270d7656c82e3a704903d1a42a54cf7aad4c865cec2664ea2e7aa0b2980"
+}

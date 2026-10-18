@@ -1,0 +1,60 @@
+{
+  "vocab": 256,
+  "width": 48,
+  "heads": 4,
+  "layers": 4,
+  "bases": 2,
+  "router_hidden": 8,
+  "context": 64,
+  "batch": 8,
+  "threads": 1,
+  "seeds": [
+    73,
+    191,
+    307
+  ],
+  "betas": [
+    0.9,
+    0.95
+  ],
+  "eps": 1e-08,
+  "clip": 1.0,
+  "lr_reduction": 0.5,
+  "validation_min_delta": 0.0001,
+  "selection_examples": 128,
+  "confirmation_examples": 256,
+  "minimum_gain_nats": 0.02,
+  "t95_df2": 4.302652729696142,
+  "cpu_seconds": 900,
+  "wall_seconds": 1800,
+  "max_artifact_bytes": 157286400,
+  "run_id": "text-depth-library-20261018-v1",
+  "rounds": 3,
+  "updates_per_round": 200,
+  "text_regions": {
+    "tune": [
+      669236,
+      780775
+    ],
+    "selection": [
+      780775,
+      892315
+    ],
+    "confirmation": [
+      1053774,
+      1070414
+    ]
+  },
+  "tokenizer": "utf8-bytes-v1",
+  "use_case": "text/shakespeare-byte",
+  "hypothesis": "Learn a workload-level categorical depth alongside token-dependent sampling coordinates; lower depths trade quality for executed compute. Quality-only depth objective, no arbitrary compute penalty.",
+  "depths": [
+    2,
+    3,
+    4
+  ],
+  "router_lr": 0.003,
+  "depth_lr": 0.03,
+  "benchmark_repeats": 20,
+  "benchmark_warmup": 5
+}

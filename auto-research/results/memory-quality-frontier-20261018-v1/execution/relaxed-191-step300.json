@@ -1,0 +1,17 @@
+{
+  "arm": "relaxed",
+  "batch_sha256": "e7005daa8a4ffd91abbe24c547a2c50defc07f265be20bee07ad7a10899210b5",
+  "checkpoint": "relaxed-191-step300.pt",
+  "cpu_seconds_so_far": 9.677551000000008,
+  "parameter_count": 214680,
+  "seed": 191,
+  "selection": {
+    "accuracy": 0.34210205078125,
+    "ce": 2.341013416647911,
+    "logits_sha256": "77d391703fb6ccc643859239d6a4e4bf88c674c838121f51c7cfabd93ab4afe8",
+    "targets": 16384
+  },
+  "sha256": "db966c4640db3a2aca3b6054aecafb7591f22595ddff98da2735125c94ce4a24",
+  "step": 300,
+  "targets_seen": 307200
+}

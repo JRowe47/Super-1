@@ -1,0 +1,207 @@
+{"arm": "exact", "decode_ms_median": 0.8710000000000662, "decode_tokens": 16, "dtype": "float32", "length": 128, "loaded_peak_rss_bytes": 191102976, "logical_cache_bytes": 221184, "parameter_bytes": 275620, "peak_rss_bytes": 195280896, "prefill_seconds": 0.019709917000000132, "scope": "Isolated process, actual retained KV plus total peak RSS. Above128 bytes is memory mechanics only; no long-context quality claim.", "seed": 73}
+{"arm": "h16", "decode_ms_median": 0.9977709999999806, "decode_tokens": 16, "dtype": "float32", "length": 128, "loaded_peak_rss_bytes": 190201856, "logical_cache_bytes": 24576, "parameter_bytes": 277924, "peak_rss_bytes": 194052096, "prefill_seconds": 0.021929167000000027, "scope": "Isolated process, actual retained KV plus total peak RSS. Above128 bytes is memory mechanics only; no long-context quality claim.", "seed": 73}
+{"arm": "h32", "decode_ms_median": 1.0161039999999621, "decode_tokens": 16, "dtype": "float32", "length": 128, "loaded_peak_rss_bytes": 190627840, "logical_cache_bytes": 49152, "parameter_bytes": 277924, "peak_rss_bytes": 194330624, "prefill_seconds": 0.01987420800000006, "scope": "Isolated process, actual retained KV plus total peak RSS. Above128 bytes is memory mechanics only; no long-context quality claim.", "seed": 73}
+{"arm": "exact", "decode_ms_median": 2.2203329999999077, "decode_tokens": 16, "dtype": "float32", "length": 8192, "loaded_peak_rss_bytes": 179634176, "logical_cache_bytes": 12607488, "parameter_bytes": 275620, "peak_rss_bytes": 325713920, "prefill_seconds": 1.1252653750000001, "scope": "Isolated process, actual retained KV plus total peak RSS. Above128 bytes is memory mechanics only; no long-context quality claim.", "seed": 73}
+{"arm": "h16", "decode_ms_median": 1.1867499999997921, "decode_tokens": 16, "dtype": "float32", "length": 8192, "loaded_peak_rss_bytes": 179027968, "logical_cache_bytes": 24576, "parameter_bytes": 277924, "peak_rss_bytes": 182878208, "prefill_seconds": 1.546464333, "scope": "Isolated process, actual retained KV plus total peak RSS. Above128 bytes is memory mechanics only; no long-context quality claim.", "seed": 73}
+{"arm": "h32", "decode_ms_median": 1.2049789999999394, "decode_tokens": 16, "dtype": "float32", "length": 8192, "loaded_peak_rss_bytes": 178929664, "logical_cache_bytes": 49152, "parameter_bytes": 277924, "peak_rss_bytes": 183042048, "prefill_seconds": 1.5687145829999998, "scope": "Isolated process, actual retained KV plus total peak RSS. Above128 bytes is memory mechanics only; no long-context quality claim.", "seed": 73}
+{"arm": "exact", "decode_ms_median": 0.9054380000000362, "decode_tokens": 16, "dtype": "float32", "length": 128, "loaded_peak_rss_bytes": 191266816, "logical_cache_bytes": 221184, "parameter_bytes": 275620, "peak_rss_bytes": 195411968, "prefill_seconds": 0.0026872079999999965, "scope": "Isolated process, actual retained KV plus total peak RSS. Above128 bytes is memory mechanics only; no long-context quality claim.", "seed": 191}
+{"arm": "h16", "decode_ms_median": 1.0761455000000142, "decode_tokens": 16, "dtype": "float32", "length": 128, "loaded_peak_rss_bytes": 190332928, "logical_cache_bytes": 24576, "parameter_bytes": 277924, "peak_rss_bytes": 193953792, "prefill_seconds": 0.021145791999999997, "scope": "Isolated process, actual retained KV plus total peak RSS. Above128 bytes is memory mechanics only; no long-context quality claim.", "seed": 191}
+{"arm": "h32", "decode_ms_median": 0.9595630000000521, "decode_tokens": 16, "dtype": "float32", "length": 128, "loaded_peak_rss_bytes": 178454528, "logical_cache_bytes": 49152, "parameter_bytes": 277924, "peak_rss_bytes": 182206464, "prefill_seconds": 0.020616332999999987, "scope": "Isolated process, actual retained KV plus total peak RSS. Above128 bytes is memory mechanics only; no long-context quality claim.", "seed": 191}
+{"arm": "exact", "decode_ms_median": 2.000687000000001, "decode_tokens": 16, "dtype": "float32", "length": 8192, "loaded_peak_rss_bytes": 184139776, "logical_cache_bytes": 12607488, "parameter_bytes": 275620, "peak_rss_bytes": 320864256, "prefill_seconds": 1.02920675, "scope": "Isolated process, actual retained KV plus total peak RSS. Above128 bytes is memory mechanics only; no long-context quality claim.", "seed": 191}
+{"arm": "h16", "decode_ms_median": 1.0320834999999473, "decode_tokens": 16, "dtype": "float32", "length": 8192, "loaded_peak_rss_bytes": 176603136, "logical_cache_bytes": 24576, "parameter_bytes": 277924, "peak_rss_bytes": 180371456, "prefill_seconds": 1.2993868750000002, "scope": "Isolated process, actual retained KV plus total peak RSS. Above128 bytes is memory mechanics only; no long-context quality claim.", "seed": 191}
+{"arm": "h32", "decode_ms_median": 0.9989789999997889, "decode_tokens": 16, "dtype": "float32", "length": 8192, "loaded_peak_rss_bytes": 191365120, "logical_cache_bytes": 49152, "parameter_bytes": 277924, "peak_rss_bytes": 195526656, "prefill_seconds": 1.4290033329999998, "scope": "Isolated process, actual retained KV plus total peak RSS. Above128 bytes is memory mechanics only; no long-context quality claim.", "seed": 191}
+{"arm": "exact", "decode_ms_median": 0.9357290000000518, "decode_tokens": 16, "dtype": "float32", "length": 128, "loaded_peak_rss_bytes": 176734208, "logical_cache_bytes": 221184, "parameter_bytes": 275620, "peak_rss_bytes": 181108736, "prefill_seconds": 0.002917916999999992, "scope": "Isolated process, actual retained KV plus total peak RSS. Above128 bytes is memory mechanics only; no long-context quality claim.", "seed": 307}
+{"arm": "h16", "decode_ms_median": 1.044395499999906, "decode_tokens": 16, "dtype": "float32", "length": 128, "loaded_peak_rss_bytes": 175620096, "logical_cache_bytes": 24576, "parameter_bytes": 277924, "peak_rss_bytes": 179453952, "prefill_seconds": 0.020347166999999944, "scope": "Isolated process, actual retained KV plus total peak RSS. Above128 bytes is memory mechanics only; no long-context quality claim.", "seed": 307}
+{"arm": "h32", "decode_ms_median": 1.041311999999961, "decode_tokens": 16, "dtype": "float32", "length": 128, "loaded_peak_rss_bytes": 191922176, "logical_cache_bytes": 49152, "parameter_bytes": 277924, "peak_rss_bytes": 195739648, "prefill_seconds": 0.019729832999999974, "scope": "Isolated process, actual retained KV plus total peak RSS. Above128 bytes is memory mechanics only; no long-context quality claim.", "seed": 307}
+{"arm": "exact", "decode_ms_median": 1.9056875000003082, "decode_tokens": 16, "dtype": "float32", "length": 8192, "loaded_peak_rss_bytes": 167378944, "logical_cache_bytes": 12607488, "parameter_bytes": 275620, "peak_rss_bytes": 339902464, "prefill_seconds": 1.1202017910000004, "scope": "Isolated process, actual retained KV plus total peak RSS. Above128 bytes is memory mechanics only; no long-context quality claim.", "seed": 307}
+{"arm": "h16", "decode_ms_median": 0.9833959999999697, "decode_tokens": 16, "dtype": "float32", "length": 8192, "loaded_peak_rss_bytes": 190103552, "logical_cache_bytes": 24576, "parameter_bytes": 277924, "peak_rss_bytes": 194183168, "prefill_seconds": 1.282417208, "scope": "Isolated process, actual retained KV plus total peak RSS. Above128 bytes is memory mechanics only; no long-context quality claim.", "seed": 307}
+{"arm": "h32", "decode_ms_median": 0.9437709999999822, "decode_tokens": 16, "dtype": "float32", "length": 8192, "loaded_peak_rss_bytes": 191758336, "logical_cache_bytes": 49152, "parameter_bytes": 277924, "peak_rss_bytes": 195903488, "prefill_seconds": 1.4028368330000003, "scope": "Isolated process, actual retained KV plus total peak RSS. Above128 bytes is memory mechanics only; no long-context quality claim.", "seed": 307}
+{
+  "means": {
+    "nano": {
+      "ce": 2.2922725776831308,
+      "tail_ce": 2.328339606523514
+    },
+    "curve": {
+      "ce": 2.0961221953233085,
+      "tail_ce": 2.118797813852628
+    },
+    "h16": {
+      "ce": 2.091875284910202,
+      "tail_ce": 2.1107492595911026,
+      "zero_pool_ce": 2.0931396981080375
+    },
+    "h32": {
+      "ce": 2.0920262535413108,
+      "tail_ce": 2.110858956972758,
+      "zero_pool_ce": 2.09278097252051
+    }
+  },
+  "contrasts": {
+    "curve_minus_nano": {
+      "paired_ce_gaps": [
+        -0.19608336687088013,
+        -0.19165745377540588,
+        -0.20071032643318176
+      ],
+      "mean_ce_gap": -0.1961503823598226,
+      "paired_t95": [
+        -0.20739559778047637,
+        -0.18490516693916884
+      ],
+      "geometric_ppl_ratio": 0.8218886278329101,
+      "passes_quality_gate": true
+    },
+    "h16_minus_nano": {
+      "paired_ce_gaps": [
+        -0.19748929142951965,
+        -0.19701862335205078,
+        -0.2066839635372162
+      ],
+      "mean_ce_gap": -0.20039729277292886,
+      "paired_t95": [
+        -0.21393460210673365,
+        -0.18685998343912408
+      ],
+      "geometric_ppl_ratio": 0.8184055418731178,
+      "passes_quality_gate": true
+    },
+    "h16_minus_curve": {
+      "paired_ce_gaps": [
+        -0.0014059245586395264,
+        -0.0053611695766448975,
+        -0.005973637104034424
+      ],
+      "mean_ce_gap": -0.004246910413106282,
+      "paired_t95": [
+        -0.010405958833956709,
+        0.0019121380077441446
+      ],
+      "geometric_ppl_ratio": 0.9957620949580769,
+      "passes_quality_gate": true
+    },
+    "h16_trained_minus_zero": {
+      "paired_ce_gaps": [
+        -0.0020644664764404297,
+        -0.0005981922149658203,
+        -0.0011305809020996094
+      ],
+      "mean_ce_gap": -0.0012644131978352864,
+      "paired_t95": [
+        -0.0031082448398560463,
+        0.0005794184441854733
+      ],
+      "geometric_ppl_ratio": 0.9987363858357271,
+      "passes_quality_gate": true
+    },
+    "h32_minus_nano": {
+      "paired_ce_gaps": [
+        -0.19786876440048218,
+        -0.19634833931922913,
+        -0.2065218687057495
+      ],
+      "mean_ce_gap": -0.20024632414182028,
+      "paired_t95": [
+        -0.21387850776267558,
+        -0.18661414052096498
+      ],
+      "geometric_ppl_ratio": 0.8185291047642915,
+      "passes_quality_gate": true
+    },
+    "h32_minus_curve": {
+      "paired_ce_gaps": [
+        -0.0017853975296020508,
+        -0.004690885543823242,
+        -0.005811542272567749
+      ],
+      "mean_ce_gap": -0.004095941781997681,
+      "paired_t95": [
+        -0.009257887258750059,
+        0.0010660036947546985
+      ],
+      "geometric_ppl_ratio": 0.9959124351465032,
+      "passes_quality_gate": true
+    },
+    "h32_trained_minus_zero": {
+      "paired_ce_gaps": [
+        -0.0011980235576629639,
+        -0.00043639540672302246,
+        -0.0006297379732131958
+      ],
+      "mean_ce_gap": -0.0007547189791997274,
+      "paired_t95": [
+        -0.0017381820056443682,
+        0.0002287440472449133
+      ],
+      "geometric_ppl_ratio": 0.9992455657495345,
+      "passes_quality_gate": true
+    }
+  },
+  "selected_capacity": "h16",
+  "selection_feasible": [
+    "h16",
+    "h32"
+  ],
+  "verified_round_checkpoints": 48,
+  "verified_source_hashes": 11,
+  "training": {
+    "confirmation_rows": 18,
+    "cpu_seconds": 117.15168200000001,
+    "round_checkpoints": 48,
+    "status": "COMPLETED",
+    "wall_seconds": 119.980008917
+  },
+  "limitations": [
+    "Single-book byte pilot, not SOTA or nanoGPT speedrun replication.",
+    "128-byte quality only; larger context measurements are mechanics, not recall or language quality.",
+    "Identical base target exposure, not equal parameter count or training FLOPs; hierarchy receives extra supervised and distillation training.",
+    "Peak RSS includes interpreter/allocator/runtime. Cache-only and retained parameter+cache bytes are separately reported."
+  ],
+  "quality_gate_pass": true,
+  "total_memory_gate_pass": false,
+  "promoted": false,
+  "selected_memory_ratios": [
+    {
+      "seed": 73,
+      "length": 128,
+      "cache_reduction": 9.0,
+      "retained_weights_plus_cache_reduction": 1.6423272727272726,
+      "peak_rss_reduction": 1.0063323201621075
+    },
+    {
+      "seed": 73,
+      "length": 8192,
+      "cache_reduction": 513.0,
+      "retained_weights_plus_cache_reduction": 42.58878677685951,
+      "peak_rss_reduction": 1.7810428238666907
+    },
+    {
+      "seed": 191,
+      "length": 128,
+      "cache_reduction": 9.0,
+      "retained_weights_plus_cache_reduction": 1.6423272727272726,
+      "peak_rss_reduction": 1.0075181618516642
+    },
+    {
+      "seed": 191,
+      "length": 8192,
+      "cache_reduction": 513.0,
+      "retained_weights_plus_cache_reduction": 42.58878677685951,
+      "peak_rss_reduction": 1.7789081660459625
+    },
+    {
+      "seed": 307,
+      "length": 128,
+      "cache_reduction": 9.0,
+      "retained_weights_plus_cache_reduction": 1.6423272727272726,
+      "peak_rss_reduction": 1.0092212179311604
+    },
+    {
+      "seed": 307,
+      "length": 8192,
+      "cache_reduction": 513.0,
+      "retained_weights_plus_cache_reduction": 42.58878677685951,
+      "peak_rss_reduction": 1.7504218697266285
+    }
+  ]
+}

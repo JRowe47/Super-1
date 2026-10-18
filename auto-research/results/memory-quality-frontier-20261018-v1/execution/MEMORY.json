@@ -1,0 +1,802 @@
+{
+  "combined_gate": false,
+  "latency_pass": true,
+  "primary_arm": "relaxed",
+  "primary_context": 8192,
+  "quality_pass": true,
+  "records": [
+    {
+      "arm": "compact",
+      "checkpoint_sha256": "31b27e78a43732d1f2704945b50483b82b93f49a3999371f910a3b817d89168b",
+      "context": 8192,
+      "decode_ms_per_token": 1.1002395937499965,
+      "decode_state_bytes": 4222976,
+      "decode_tokens": 32,
+      "last_logits_sha256": "467fd7f92208286f5cf9dc3f4cf0fb2ddedeb7935391bd55b425e32a405631cc",
+      "loaded_peak_rss_bytes": 179683328,
+      "model_bytes": 863008,
+      "prefill_peak_rss_bytes": 201523200,
+      "prefill_seconds": 0.39759329099999996,
+      "prefill_state_bytes": 4206592,
+      "process_peak_rss_bytes": 208748544,
+      "retained_model_plus_state_bytes": 5085984,
+      "scope": "Fresh process CPU FP32, batch1, streaming chunk64 prefill and teacher-forced cached decode. RSS includes runtime/allocator/transients; retained tensors are not peak total memory. Quality beyond256 untested.",
+      "seed": 191,
+      "startup_peak_rss_bytes": 176439296
+    },
+    {
+      "arm": "relaxed",
+      "checkpoint_sha256": "2b766721537799aa0877f55f0f46b10c4ca9808d2e44d96e963993c12cbfd681",
+      "context": 256,
+      "decode_ms_per_token": 0.4533502500000015,
+      "decode_state_bytes": 446464,
+      "decode_tokens": 32,
+      "last_logits_sha256": "14e66fdb024315ebb82f9c0b2afd03957d6f19c02d8eb981403a0fa97a3cd0dd",
+      "loaded_peak_rss_bytes": 187301888,
+      "model_bytes": 858720,
+      "prefill_peak_rss_bytes": 192217088,
+      "prefill_seconds": 0.004890916999999995,
+      "prefill_state_bytes": 397312,
+      "process_peak_rss_bytes": 192217088,
+      "retained_model_plus_state_bytes": 1305184,
+      "scope": "Fresh process CPU FP32, batch1, streaming chunk64 prefill and teacher-forced cached decode. RSS includes runtime/allocator/transients; retained tensors are not peak total memory. Quality beyond256 untested.",
+      "seed": 191,
+      "startup_peak_rss_bytes": 184582144
+    },
+    {
+      "arm": "transformer",
+      "checkpoint_sha256": "c4a1cbcbdbbf09eccab6ba61cce0a4472c049e3e60f255f359950854116b5c7e",
+      "context": 8192,
+      "decode_ms_per_token": 2.0706875000000013,
+      "decode_state_bytes": 16842752,
+      "decode_tokens": 32,
+      "last_logits_sha256": "1f1527eca0d6cb99bff58c2b824f55dda7acb623b07e8e59b214008d3847d2f0",
+      "loaded_peak_rss_bytes": 174292992,
+      "model_bytes": 856576,
+      "prefill_peak_rss_bytes": 232062976,
+      "prefill_seconds": 1.063646042,
+      "prefill_state_bytes": 16777216,
+      "process_peak_rss_bytes": 265633792,
+      "retained_model_plus_state_bytes": 17699328,
+      "scope": "Fresh process CPU FP32, batch1, streaming chunk64 prefill and teacher-forced cached decode. RSS includes runtime/allocator/transients; retained tensors are not peak total memory. Quality beyond256 untested.",
+      "seed": 307,
+      "startup_peak_rss_bytes": 172572672
+    },
+    {
+      "arm": "relaxed",
+      "checkpoint_sha256": "a740874bec6aa12a68ae443a1c30a7f9f145015e885d245b1fd18b4ed2960103",
+      "context": 8192,
+      "decode_ms_per_token": 1.5712031250000036,
+      "decode_state_bytes": 12636160,
+      "decode_tokens": 32,
+      "last_logits_sha256": "b86766909c3fc961db6e5ba9254b7d7ca1d4ca7723954fae998cfb8772b5f20d",
+      "loaded_peak_rss_bytes": 187318272,
+      "model_bytes": 858720,
+      "prefill_peak_rss_bytes": 246120448,
+      "prefill_seconds": 0.8096300000000001,
+      "prefill_state_bytes": 12587008,
+      "process_peak_rss_bytes": 271728640,
+      "retained_model_plus_state_bytes": 13494880,
+      "scope": "Fresh process CPU FP32, batch1, streaming chunk64 prefill and teacher-forced cached decode. RSS includes runtime/allocator/transients; retained tensors are not peak total memory. Quality beyond256 untested.",
+      "seed": 307,
+      "startup_peak_rss_bytes": 183861248
+    },
+    {
+      "arm": "compact",
+      "checkpoint_sha256": "3d1d040290c57566cd9a16f1ee2f22cab4940ce8b8ad0b74d5ad4e34768654fa",
+      "context": 256,
+      "decode_ms_per_token": 0.4721914062499992,
+      "decode_state_bytes": 159744,
+      "decode_tokens": 32,
+      "last_logits_sha256": "0a7a59c83a4eea36b5b559f21232893dfa4c892cdec9d214a41aae80ba14df7f",
+      "loaded_peak_rss_bytes": 186843136,
+      "model_bytes": 863008,
+      "prefill_peak_rss_bytes": 191627264,
+      "prefill_seconds": 0.007037416999999935,
+      "prefill_state_bytes": 143360,
+      "process_peak_rss_bytes": 191676416,
+      "retained_model_plus_state_bytes": 1022752,
+      "scope": "Fresh process CPU FP32, batch1, streaming chunk64 prefill and teacher-forced cached decode. RSS includes runtime/allocator/transients; retained tensors are not peak total memory. Quality beyond256 untested.",
+      "seed": 73,
+      "startup_peak_rss_bytes": 183582720
+    },
+    {
+      "arm": "transformer",
+      "checkpoint_sha256": "c4a1cbcbdbbf09eccab6ba61cce0a4472c049e3e60f255f359950854116b5c7e",
+      "context": 2048,
+      "decode_ms_per_token": 0.6867226562499995,
+      "decode_state_bytes": 4259840,
+      "decode_tokens": 32,
+      "last_logits_sha256": "b508a0223b1d0fd8f5372b54eebc5b2994c2ad954452cf39bc754535912afd87",
+      "loaded_peak_rss_bytes": 187990016,
+      "model_bytes": 856576,
+      "prefill_peak_rss_bytes": 200933376,
+      "prefill_seconds": 0.08609,
+      "prefill_state_bytes": 4194304,
+      "process_peak_rss_bytes": 203112448,
+      "retained_model_plus_state_bytes": 5116416,
+      "scope": "Fresh process CPU FP32, batch1, streaming chunk64 prefill and teacher-forced cached decode. RSS includes runtime/allocator/transients; retained tensors are not peak total memory. Quality beyond256 untested.",
+      "seed": 307,
+      "startup_peak_rss_bytes": 185630720
+    },
+    {
+      "arm": "transformer",
+      "checkpoint_sha256": "41ca89f625ff5d43a215ac504a6ff40d6dcadb270cb0a6d076f9b927a23308d5",
+      "context": 8192,
+      "decode_ms_per_token": 2.0984335937500043,
+      "decode_state_bytes": 16842752,
+      "decode_tokens": 32,
+      "last_logits_sha256": "687d947becd513378fcc0b01b0de5669bf127d010b2fe406d521af5fb8274ecb",
+      "loaded_peak_rss_bytes": 174571520,
+      "model_bytes": 856576,
+      "prefill_peak_rss_bytes": 226361344,
+      "prefill_seconds": 1.025919792,
+      "prefill_state_bytes": 16777216,
+      "process_peak_rss_bytes": 259145728,
+      "retained_model_plus_state_bytes": 17699328,
+      "scope": "Fresh process CPU FP32, batch1, streaming chunk64 prefill and teacher-forced cached decode. RSS includes runtime/allocator/transients; retained tensors are not peak total memory. Quality beyond256 untested.",
+      "seed": 191,
+      "startup_peak_rss_bytes": 172195840
+    },
+    {
+      "arm": "relaxed",
+      "checkpoint_sha256": "0f948f756be0a613ebdad0c6d99949f65ef146ae8f53f26a25a45ae270ebf7db",
+      "context": 256,
+      "decode_ms_per_token": 0.48167187499999903,
+      "decode_state_bytes": 446464,
+      "decode_tokens": 32,
+      "last_logits_sha256": "20fe415dac19e8dc20e8437faf189b126c32f3d42bfac4856a880c1baf1f42c0",
+      "loaded_peak_rss_bytes": 178929664,
+      "model_bytes": 858720,
+      "prefill_peak_rss_bytes": 184369152,
+      "prefill_seconds": 0.0060500409999999505,
+      "prefill_state_bytes": 397312,
+      "process_peak_rss_bytes": 184418304,
+      "retained_model_plus_state_bytes": 1305184,
+      "scope": "Fresh process CPU FP32, batch1, streaming chunk64 prefill and teacher-forced cached decode. RSS includes runtime/allocator/transients; retained tensors are not peak total memory. Quality beyond256 untested.",
+      "seed": 73,
+      "startup_peak_rss_bytes": 175505408
+    },
+    {
+      "arm": "relaxed",
+      "checkpoint_sha256": "a740874bec6aa12a68ae443a1c30a7f9f145015e885d245b1fd18b4ed2960103",
+      "context": 2048,
+      "decode_ms_per_token": 0.6879713437500032,
+      "decode_state_bytes": 3198976,
+      "decode_tokens": 32,
+      "last_logits_sha256": "f35ab4f5b558e8cb4d20685be873fd128dc0f7cd58742ab58da7e10201799eb3",
+      "loaded_peak_rss_bytes": 180289536,
+      "model_bytes": 858720,
+      "prefill_peak_rss_bytes": 192020480,
+      "prefill_seconds": 0.07499866599999994,
+      "prefill_state_bytes": 3149824,
+      "process_peak_rss_bytes": 194510848,
+      "retained_model_plus_state_bytes": 4057696,
+      "scope": "Fresh process CPU FP32, batch1, streaming chunk64 prefill and teacher-forced cached decode. RSS includes runtime/allocator/transients; retained tensors are not peak total memory. Quality beyond256 untested.",
+      "seed": 307,
+      "startup_peak_rss_bytes": 180289536
+    },
+    {
+      "arm": "relaxed",
+      "checkpoint_sha256": "2b766721537799aa0877f55f0f46b10c4ca9808d2e44d96e963993c12cbfd681",
+      "context": 8192,
+      "decode_ms_per_token": 1.594058593749996,
+      "decode_state_bytes": 12636160,
+      "decode_tokens": 32,
+      "last_logits_sha256": "ad2a4e1d12a01de0249c0b9dab9abc74756b6c6fe38dd33cc5a07ab48dba43b6",
+      "loaded_peak_rss_bytes": 175259648,
+      "model_bytes": 858720,
+      "prefill_peak_rss_bytes": 227803136,
+      "prefill_seconds": 0.8189751659999999,
+      "prefill_state_bytes": 12587008,
+      "process_peak_rss_bytes": 253411328,
+      "retained_model_plus_state_bytes": 13494880,
+      "scope": "Fresh process CPU FP32, batch1, streaming chunk64 prefill and teacher-forced cached decode. RSS includes runtime/allocator/transients; retained tensors are not peak total memory. Quality beyond256 untested.",
+      "seed": 191,
+      "startup_peak_rss_bytes": 171966464
+    },
+    {
+      "arm": "compact",
+      "checkpoint_sha256": "31b27e78a43732d1f2704945b50483b82b93f49a3999371f910a3b817d89168b",
+      "context": 256,
+      "decode_ms_per_token": 0.4929075625000022,
+      "decode_state_bytes": 159744,
+      "decode_tokens": 32,
+      "last_logits_sha256": "cd503b663c3ccada9695a61a3cd5fc37bcc7163cde2be7706ba3cf5fab8949b0",
+      "loaded_peak_rss_bytes": 187580416,
+      "model_bytes": 863008,
+      "prefill_peak_rss_bytes": 191807488,
+      "prefill_seconds": 0.005728875000000078,
+      "prefill_state_bytes": 143360,
+      "process_peak_rss_bytes": 191856640,
+      "retained_model_plus_state_bytes": 1022752,
+      "scope": "Fresh process CPU FP32, batch1, streaming chunk64 prefill and teacher-forced cached decode. RSS includes runtime/allocator/transients; retained tensors are not peak total memory. Quality beyond256 untested.",
+      "seed": 191,
+      "startup_peak_rss_bytes": 184467456
+    },
+    {
+      "arm": "compact",
+      "checkpoint_sha256": "6fae52f38c47d6109a9b4a50ca404edb11ad85cc8e806f06c023ae7d13425eee",
+      "context": 8192,
+      "decode_ms_per_token": 0.9523229062499972,
+      "decode_state_bytes": 4222976,
+      "decode_tokens": 32,
+      "last_logits_sha256": "0026df13597f91e566070f78529265ca0d5fc78327e0c706238a88d9d0add406",
+      "loaded_peak_rss_bytes": 187514880,
+      "model_bytes": 863008,
+      "prefill_peak_rss_bytes": 215302144,
+      "prefill_seconds": 0.380439709,
+      "prefill_state_bytes": 4206592,
+      "process_peak_rss_bytes": 223870976,
+      "retained_model_plus_state_bytes": 5085984,
+      "scope": "Fresh process CPU FP32, batch1, streaming chunk64 prefill and teacher-forced cached decode. RSS includes runtime/allocator/transients; retained tensors are not peak total memory. Quality beyond256 untested.",
+      "seed": 307,
+      "startup_peak_rss_bytes": 184958976
+    },
+    {
+      "arm": "relaxed",
+      "checkpoint_sha256": "2b766721537799aa0877f55f0f46b10c4ca9808d2e44d96e963993c12cbfd681",
+      "context": 2048,
+      "decode_ms_per_token": 0.6861914062499981,
+      "decode_state_bytes": 3198976,
+      "decode_tokens": 32,
+      "last_logits_sha256": "57514fbc7aad9feeac3781ca48df7502c1c81951a8cf618c2ec88e3d67bfa767",
+      "loaded_peak_rss_bytes": 188383232,
+      "model_bytes": 858720,
+      "prefill_peak_rss_bytes": 200966144,
+      "prefill_seconds": 0.07603249999999995,
+      "prefill_state_bytes": 3149824,
+      "process_peak_rss_bytes": 201637888,
+      "retained_model_plus_state_bytes": 4057696,
+      "scope": "Fresh process CPU FP32, batch1, streaming chunk64 prefill and teacher-forced cached decode. RSS includes runtime/allocator/transients; retained tensors are not peak total memory. Quality beyond256 untested.",
+      "seed": 191,
+      "startup_peak_rss_bytes": 184844288
+    },
+    {
+      "arm": "transformer",
+      "checkpoint_sha256": "41ca89f625ff5d43a215ac504a6ff40d6dcadb270cb0a6d076f9b927a23308d5",
+      "context": 256,
+      "decode_ms_per_token": 0.41504946875000126,
+      "decode_state_bytes": 589824,
+      "decode_tokens": 32,
+      "last_logits_sha256": "4a428fc155b1148b35ea1ec5af7960c66c3e38be9432ef426bd493a4e0682114",
+      "loaded_peak_rss_bytes": 176029696,
+      "model_bytes": 856576,
+      "prefill_peak_rss_bytes": 180404224,
+      "prefill_seconds": 0.004567958999999955,
+      "prefill_state_bytes": 524288,
+      "process_peak_rss_bytes": 180535296,
+      "retained_model_plus_state_bytes": 1446400,
+      "scope": "Fresh process CPU FP32, batch1, streaming chunk64 prefill and teacher-forced cached decode. RSS includes runtime/allocator/transients; retained tensors are not peak total memory. Quality beyond256 untested.",
+      "seed": 191,
+      "startup_peak_rss_bytes": 173408256
+    },
+    {
+      "arm": "relaxed",
+      "checkpoint_sha256": "a740874bec6aa12a68ae443a1c30a7f9f145015e885d245b1fd18b4ed2960103",
+      "context": 256,
+      "decode_ms_per_token": 0.4413229062499996,
+      "decode_state_bytes": 446464,
+      "decode_tokens": 32,
+      "last_logits_sha256": "bff98d52e6d8edda85360a6d25aceba3b757a1bbe362d714239ff7c354ed68a5",
+      "loaded_peak_rss_bytes": 173817856,
+      "model_bytes": 858720,
+      "prefill_peak_rss_bytes": 178978816,
+      "prefill_seconds": 0.005577667000000064,
+      "prefill_state_bytes": 397312,
+      "process_peak_rss_bytes": 179126272,
+      "retained_model_plus_state_bytes": 1305184,
+      "scope": "Fresh process CPU FP32, batch1, streaming chunk64 prefill and teacher-forced cached decode. RSS includes runtime/allocator/transients; retained tensors are not peak total memory. Quality beyond256 untested.",
+      "seed": 307,
+      "startup_peak_rss_bytes": 170213376
+    },
+    {
+      "arm": "compact",
+      "checkpoint_sha256": "6fae52f38c47d6109a9b4a50ca404edb11ad85cc8e806f06c023ae7d13425eee",
+      "context": 2048,
+      "decode_ms_per_token": 0.5646849062500015,
+      "decode_state_bytes": 1077248,
+      "decode_tokens": 32,
+      "last_logits_sha256": "2a7e5eba3559eecf55d4410ccaf8996ae26ff42aa8da51411e56f99d0a592f19",
+      "loaded_peak_rss_bytes": 170115072,
+      "model_bytes": 863008,
+      "prefill_peak_rss_bytes": 180207616,
+      "prefill_seconds": 0.05500433399999993,
+      "prefill_state_bytes": 1060864,
+      "process_peak_rss_bytes": 180256768,
+      "retained_model_plus_state_bytes": 1940256,
+      "scope": "Fresh process CPU FP32, batch1, streaming chunk64 prefill and teacher-forced cached decode. RSS includes runtime/allocator/transients; retained tensors are not peak total memory. Quality beyond256 untested.",
+      "seed": 307,
+      "startup_peak_rss_bytes": 167510016
+    },
+    {
+      "arm": "transformer",
+      "checkpoint_sha256": "c9c8c7fdd1ddf1387dde3413250f80e304ed7677a10b3c1ad08fb0b1cd46dc69",
+      "context": 8192,
+      "decode_ms_per_token": 2.042690125000003,
+      "decode_state_bytes": 16842752,
+      "decode_tokens": 32,
+      "last_logits_sha256": "1360ddebdd9356b58d00abb34b369662005de6f2238a393655ff3e1816cab790",
+      "loaded_peak_rss_bytes": 186679296,
+      "model_bytes": 856576,
+      "prefill_peak_rss_bytes": 223166464,
+      "prefill_seconds": 1.084183833,
+      "prefill_state_bytes": 16777216,
+      "process_peak_rss_bytes": 253509632,
+      "retained_model_plus_state_bytes": 17699328,
+      "scope": "Fresh process CPU FP32, batch1, streaming chunk64 prefill and teacher-forced cached decode. RSS includes runtime/allocator/transients; retained tensors are not peak total memory. Quality beyond256 untested.",
+      "seed": 73,
+      "startup_peak_rss_bytes": 184532992
+    },
+    {
+      "arm": "compact",
+      "checkpoint_sha256": "3d1d040290c57566cd9a16f1ee2f22cab4940ce8b8ad0b74d5ad4e34768654fa",
+      "context": 2048,
+      "decode_ms_per_token": 0.5948034062500003,
+      "decode_state_bytes": 1077248,
+      "decode_tokens": 32,
+      "last_logits_sha256": "8afc7cfffaee72f9a7196da2f881a4123ff81e4078f7b126ce1296330971962d",
+      "loaded_peak_rss_bytes": 186646528,
+      "model_bytes": 863008,
+      "prefill_peak_rss_bytes": 194363392,
+      "prefill_seconds": 0.05604549999999997,
+      "prefill_state_bytes": 1060864,
+      "process_peak_rss_bytes": 195641344,
+      "retained_model_plus_state_bytes": 1940256,
+      "scope": "Fresh process CPU FP32, batch1, streaming chunk64 prefill and teacher-forced cached decode. RSS includes runtime/allocator/transients; retained tensors are not peak total memory. Quality beyond256 untested.",
+      "seed": 73,
+      "startup_peak_rss_bytes": 184107008
+    },
+    {
+      "arm": "transformer",
+      "checkpoint_sha256": "41ca89f625ff5d43a215ac504a6ff40d6dcadb270cb0a6d076f9b927a23308d5",
+      "context": 2048,
+      "decode_ms_per_token": 0.6714830624999988,
+      "decode_state_bytes": 4259840,
+      "decode_tokens": 32,
+      "last_logits_sha256": "70aa456e4644d5597c3dc7de1c49cfe933e98985c8df2fdbe4d394045aaaa2b6",
+      "loaded_peak_rss_bytes": 173883392,
+      "model_bytes": 856576,
+      "prefill_peak_rss_bytes": 189693952,
+      "prefill_seconds": 0.08628166599999998,
+      "prefill_state_bytes": 4194304,
+      "process_peak_rss_bytes": 189710336,
+      "retained_model_plus_state_bytes": 5116416,
+      "scope": "Fresh process CPU FP32, batch1, streaming chunk64 prefill and teacher-forced cached decode. RSS includes runtime/allocator/transients; retained tensors are not peak total memory. Quality beyond256 untested.",
+      "seed": 191,
+      "startup_peak_rss_bytes": 172048384
+    },
+    {
+      "arm": "compact",
+      "checkpoint_sha256": "3d1d040290c57566cd9a16f1ee2f22cab4940ce8b8ad0b74d5ad4e34768654fa",
+      "context": 8192,
+      "decode_ms_per_token": 0.894583343750005,
+      "decode_state_bytes": 4222976,
+      "decode_tokens": 32,
+      "last_logits_sha256": "a0260707e4b5fea4fb539f053c11bd624f0f51330975a77315ab85305ddcf0a9",
+      "loaded_peak_rss_bytes": 178323456,
+      "model_bytes": 863008,
+      "prefill_peak_rss_bytes": 198000640,
+      "prefill_seconds": 0.39651370799999996,
+      "prefill_state_bytes": 4206592,
+      "process_peak_rss_bytes": 204095488,
+      "retained_model_plus_state_bytes": 5085984,
+      "scope": "Fresh process CPU FP32, batch1, streaming chunk64 prefill and teacher-forced cached decode. RSS includes runtime/allocator/transients; retained tensors are not peak total memory. Quality beyond256 untested.",
+      "seed": 73,
+      "startup_peak_rss_bytes": 178323456
+    },
+    {
+      "arm": "transformer",
+      "checkpoint_sha256": "c9c8c7fdd1ddf1387dde3413250f80e304ed7677a10b3c1ad08fb0b1cd46dc69",
+      "context": 256,
+      "decode_ms_per_token": 0.4609583437499981,
+      "decode_state_bytes": 589824,
+      "decode_tokens": 32,
+      "last_logits_sha256": "7bcf0110364d658b9eacf3eb8b25a109b41cb275c75f9a38109bd058eaea5f10",
+      "loaded_peak_rss_bytes": 172998656,
+      "model_bytes": 856576,
+      "prefill_peak_rss_bytes": 176553984,
+      "prefill_seconds": 0.004284375000000007,
+      "prefill_state_bytes": 524288,
+      "process_peak_rss_bytes": 176553984,
+      "retained_model_plus_state_bytes": 1446400,
+      "scope": "Fresh process CPU FP32, batch1, streaming chunk64 prefill and teacher-forced cached decode. RSS includes runtime/allocator/transients; retained tensors are not peak total memory. Quality beyond256 untested.",
+      "seed": 73,
+      "startup_peak_rss_bytes": 170541056
+    },
+    {
+      "arm": "relaxed",
+      "checkpoint_sha256": "0f948f756be0a613ebdad0c6d99949f65ef146ae8f53f26a25a45ae270ebf7db",
+      "context": 8192,
+      "decode_ms_per_token": 1.5864479062499965,
+      "decode_state_bytes": 12636160,
+      "decode_tokens": 32,
+      "last_logits_sha256": "0657fe52eb21243cd81e4495c66bf1e394802942904dd3f3171a10b1b273cd27",
+      "loaded_peak_rss_bytes": 173916160,
+      "model_bytes": 858720,
+      "prefill_peak_rss_bytes": 217317376,
+      "prefill_seconds": 0.8284840000000001,
+      "prefill_state_bytes": 12587008,
+      "process_peak_rss_bytes": 242925568,
+      "retained_model_plus_state_bytes": 13494880,
+      "scope": "Fresh process CPU FP32, batch1, streaming chunk64 prefill and teacher-forced cached decode. RSS includes runtime/allocator/transients; retained tensors are not peak total memory. Quality beyond256 untested.",
+      "seed": 73,
+      "startup_peak_rss_bytes": 170606592
+    },
+    {
+      "arm": "relaxed",
+      "checkpoint_sha256": "0f948f756be0a613ebdad0c6d99949f65ef146ae8f53f26a25a45ae270ebf7db",
+      "context": 2048,
+      "decode_ms_per_token": 0.6969479062499985,
+      "decode_state_bytes": 3198976,
+      "decode_tokens": 32,
+      "last_logits_sha256": "425b44fd84e0c7adbe852f51a219fddbf90c943b97bde206daf7c9359a401194",
+      "loaded_peak_rss_bytes": 188284928,
+      "model_bytes": 858720,
+      "prefill_peak_rss_bytes": 204472320,
+      "prefill_seconds": 0.07101529100000004,
+      "prefill_state_bytes": 3149824,
+      "process_peak_rss_bytes": 208158720,
+      "retained_model_plus_state_bytes": 4057696,
+      "scope": "Fresh process CPU FP32, batch1, streaming chunk64 prefill and teacher-forced cached decode. RSS includes runtime/allocator/transients; retained tensors are not peak total memory. Quality beyond256 untested.",
+      "seed": 73,
+      "startup_peak_rss_bytes": 184745984
+    },
+    {
+      "arm": "compact",
+      "checkpoint_sha256": "31b27e78a43732d1f2704945b50483b82b93f49a3999371f910a3b817d89168b",
+      "context": 2048,
+      "decode_ms_per_token": 0.5114049375000013,
+      "decode_state_bytes": 1077248,
+      "decode_tokens": 32,
+      "last_logits_sha256": "b3d444c2847b771909a7ef199d0dbe153d1777cd94d037405ba4a02e66b4eeff",
+      "loaded_peak_rss_bytes": 186515456,
+      "model_bytes": 863008,
+      "prefill_peak_rss_bytes": 195117056,
+      "prefill_seconds": 0.054588583000000024,
+      "prefill_state_bytes": 1060864,
+      "process_peak_rss_bytes": 196722688,
+      "retained_model_plus_state_bytes": 1940256,
+      "scope": "Fresh process CPU FP32, batch1, streaming chunk64 prefill and teacher-forced cached decode. RSS includes runtime/allocator/transients; retained tensors are not peak total memory. Quality beyond256 untested.",
+      "seed": 191,
+      "startup_peak_rss_bytes": 183615488
+    },
+    {
+      "arm": "compact",
+      "checkpoint_sha256": "6fae52f38c47d6109a9b4a50ca404edb11ad85cc8e806f06c023ae7d13425eee",
+      "context": 256,
+      "decode_ms_per_token": 0.589445312499999,
+      "decode_state_bytes": 159744,
+      "decode_tokens": 32,
+      "last_logits_sha256": "4f0db59a5fcd92360634b2f4630ea357be3d53c93400d4d2bd9519b8b70c0019",
+      "loaded_peak_rss_bytes": 187006976,
+      "model_bytes": 863008,
+      "prefill_peak_rss_bytes": 191758336,
+      "prefill_seconds": 0.00658154199999994,
+      "prefill_state_bytes": 143360,
+      "process_peak_rss_bytes": 191873024,
+      "retained_model_plus_state_bytes": 1022752,
+      "scope": "Fresh process CPU FP32, batch1, streaming chunk64 prefill and teacher-forced cached decode. RSS includes runtime/allocator/transients; retained tensors are not peak total memory. Quality beyond256 untested.",
+      "seed": 307,
+      "startup_peak_rss_bytes": 184418304
+    },
+    {
+      "arm": "transformer",
+      "checkpoint_sha256": "c4a1cbcbdbbf09eccab6ba61cce0a4472c049e3e60f255f359950854116b5c7e",
+      "context": 256,
+      "decode_ms_per_token": 0.4622226562500005,
+      "decode_state_bytes": 589824,
+      "decode_tokens": 32,
+      "last_logits_sha256": "c01867eea0da3f50ee92f86541859de5c8b07151e7d6c043800dc6f634d553f4",
+      "loaded_peak_rss_bytes": 182796288,
+      "model_bytes": 856576,
+      "prefill_peak_rss_bytes": 182796288,
+      "prefill_seconds": 0.005184250000000001,
+      "prefill_state_bytes": 524288,
+      "process_peak_rss_bytes": 182796288,
+      "retained_model_plus_state_bytes": 1446400,
+      "scope": "Fresh process CPU FP32, batch1, streaming chunk64 prefill and teacher-forced cached decode. RSS includes runtime/allocator/transients; retained tensors are not peak total memory. Quality beyond256 untested.",
+      "seed": 307,
+      "startup_peak_rss_bytes": 182796288
+    },
+    {
+      "arm": "transformer",
+      "checkpoint_sha256": "c9c8c7fdd1ddf1387dde3413250f80e304ed7677a10b3c1ad08fb0b1cd46dc69",
+      "context": 2048,
+      "decode_ms_per_token": 0.7715637812500016,
+      "decode_state_bytes": 4259840,
+      "decode_tokens": 32,
+      "last_logits_sha256": "59b2b8b2aa2365d817ec7f8c88277c0bfd390ad38c5cd9121bb2f57496b37a81",
+      "loaded_peak_rss_bytes": 173981696,
+      "model_bytes": 856576,
+      "prefill_peak_rss_bytes": 188268544,
+      "prefill_seconds": 0.08627879099999991,
+      "prefill_state_bytes": 4194304,
+      "process_peak_rss_bytes": 190169088,
+      "retained_model_plus_state_bytes": 5116416,
+      "scope": "Fresh process CPU FP32, batch1, streaming chunk64 prefill and teacher-forced cached decode. RSS includes runtime/allocator/transients; retained tensors are not peak total memory. Quality beyond256 untested.",
+      "seed": 73,
+      "startup_peak_rss_bytes": 172015616
+    }
+  ],
+  "scope": "Quality is tested at256 only.8192 is untrained memory/cached-execution stress. Even a joint pilot pass would not establish long-context quality or SOTA.",
+  "summary": {
+    "2048": {
+      "compact": {
+        "mean_ratios": {
+          "decode_ms_per_token": 0.7849336881591781,
+          "prefill_seconds": 0.6403938435684096,
+          "process_peak_rss_bytes": 0.9844039942659094,
+          "retained_model_plus_state_bytes": 0.37922170519363557
+        },
+        "paired_ratios": {
+          "decode_ms_per_token": [
+            0.7709063342584149,
+            0.7616051186696942,
+            0.822289611549425
+          ],
+          "prefill_seconds": [
+            0.6495860610749637,
+            0.6326788242591426,
+            0.6389166453711225
+          ],
+          "process_peak_rss_bytes": [
+            1.0287757387783234,
+            1.0369634683478712,
+            0.8874727756715335
+          ],
+          "retained_model_plus_state_bytes": [
+            0.37922170519363557,
+            0.37922170519363557,
+            0.37922170519363557
+          ]
+        }
+      },
+      "relaxed": {
+        "mean_ratios": {
+          "decode_ms_per_token": 0.9756717541860027,
+          "prefill_seconds": 0.8584898219889137,
+          "process_peak_rss_bytes": 1.0383738578191812,
+          "retained_model_plus_state_bytes": 0.7930739017312118
+        },
+        "paired_ratios": {
+          "decode_ms_per_token": [
+            0.9032926676792439,
+            1.02190426620031,
+            1.0018183286784543
+          ],
+          "prefill_seconds": [
+            0.8230909378412605,
+            0.8812127016648006,
+            0.87116582646068
+          ],
+          "process_peak_rss_bytes": [
+            1.0945980873610752,
+            1.0628724414889024,
+            0.9576510446075663
+          ],
+          "retained_model_plus_state_bytes": [
+            0.7930739017312118,
+            0.7930739017312118,
+            0.7930739017312118
+          ]
+        }
+      },
+      "transformer": {
+        "mean_ratios": {
+          "decode_ms_per_token": 1.0,
+          "prefill_seconds": 1.0,
+          "process_peak_rss_bytes": 1.0,
+          "retained_model_plus_state_bytes": 1.0
+        },
+        "paired_ratios": {
+          "decode_ms_per_token": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "prefill_seconds": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "process_peak_rss_bytes": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "retained_model_plus_state_bytes": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      }
+    },
+    "256": {
+      "compact": {
+        "mean_ratios": {
+          "decode_ms_per_token": 1.1623991669270293,
+          "prefill_seconds": 1.3887489625727203,
+          "process_peak_rss_bytes": 1.0660060311919415,
+          "retained_model_plus_state_bytes": 0.7071017699115044
+        },
+        "paired_ratios": {
+          "decode_ms_per_token": [
+            1.0243689319269451,
+            1.1875875036883798,
+            1.275241065165763
+          ],
+          "prefill_seconds": [
+            1.642577272064169,
+            1.254143261793754,
+            1.269526353860238
+          ],
+          "process_peak_rss_bytes": [
+            1.0856533036377134,
+            1.062709864779018,
+            1.049654925159093
+          ],
+          "retained_model_plus_state_bytes": [
+            0.7071017699115044,
+            0.7071017699115044,
+            0.7071017699115044
+          ]
+        }
+      },
+      "relaxed": {
+        "mean_ratios": {
+          "decode_ms_per_token": 1.030666691624955,
+          "prefill_seconds": 1.1862350691749133,
+          "process_peak_rss_bytes": 1.029724254793847,
+          "retained_model_plus_state_bytes": 0.9023672566371681
+        },
+        "paired_ratios": {
+          "decode_ms_per_token": [
+            1.0449357984964363,
+            1.092280039209182,
+            0.9547842371692465
+          ],
+          "prefill_seconds": [
+            1.4121175200583378,
+            1.070700722138715,
+            1.0758869653276872
+          ],
+          "process_peak_rss_bytes": [
+            1.044543429844098,
+            1.0647064161902169,
+            0.979922918347226
+          ],
+          "retained_model_plus_state_bytes": [
+            0.9023672566371681,
+            0.9023672566371681,
+            0.9023672566371681
+          ]
+        }
+      },
+      "transformer": {
+        "mean_ratios": {
+          "decode_ms_per_token": 1.0,
+          "prefill_seconds": 1.0,
+          "process_peak_rss_bytes": 1.0,
+          "retained_model_plus_state_bytes": 1.0
+        },
+        "paired_ratios": {
+          "decode_ms_per_token": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "prefill_seconds": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "process_peak_rss_bytes": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "retained_model_plus_state_bytes": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      }
+    },
+    "8192": {
+      "compact": {
+        "mean_ratios": {
+          "decode_ms_per_token": 0.4740550233904885,
+          "prefill_seconds": 0.37031625316547195,
+          "process_peak_rss_bytes": 0.8177953338155373,
+          "retained_model_plus_state_bytes": 0.28735463854898896
+        },
+        "paired_ratios": {
+          "decode_ms_per_token": [
+            0.43794373546991305,
+            0.5243147064681776,
+            0.4599066282333749
+          ],
+          "prefill_seconds": [
+            0.3657255309764428,
+            0.387548124229969,
+            0.35767510429000404
+          ],
+          "process_peak_rss_bytes": [
+            0.805079816454469,
+            0.8055257001959917,
+            0.8427804847961512
+          ],
+          "retained_model_plus_state_bytes": [
+            0.28735463854898896,
+            0.28735463854898896,
+            0.28735463854898896
+          ]
+        }
+      },
+      "relaxed": {
+        "mean_ratios": {
+          "decode_ms_per_token": 0.7650239486505035,
+          "prefill_seconds": 0.7745406764203436,
+          "process_peak_rss_bytes": 0.9863554384083026,
+          "retained_model_plus_state_bytes": 0.7624515461829964
+        },
+        "paired_ratios": {
+          "decode_ms_per_token": [
+            0.776646387444593,
+            0.7596421437865636,
+            0.7587833147203538
+          ],
+          "prefill_seconds": [
+            0.7641545416772509,
+            0.7982838155441296,
+            0.7611836720396502
+          ],
+          "process_peak_rss_bytes": [
+            0.9582498545854068,
+            0.9778719099702852,
+            1.022944550669216
+          ],
+          "retained_model_plus_state_bytes": [
+            0.7624515461829964,
+            0.7624515461829964,
+            0.7624515461829964
+          ]
+        }
+      },
+      "transformer": {
+        "mean_ratios": {
+          "decode_ms_per_token": 1.0,
+          "prefill_seconds": 1.0,
+          "process_peak_rss_bytes": 1.0,
+          "retained_model_plus_state_bytes": 1.0
+        },
+        "paired_ratios": {
+          "decode_ms_per_token": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "prefill_seconds": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "process_peak_rss_bytes": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "retained_model_plus_state_bytes": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      }
+    }
+  },
+  "total_memory_pass": false
+}

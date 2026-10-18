@@ -1,0 +1,5 @@
+{
+  "status": "IMPORT_FAILED_BEFORE_MODEL_EXECUTION",
+  "error": "ModuleNotFoundError: No module named 'einops'",
+  "resolution": "Extract the unchanged upstream recurrent function AST; it uses torch only. Vendor source and function body remain unmodified; no tolerance changes."
+}

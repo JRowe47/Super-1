@@ -1,0 +1,17 @@
+{
+  "arm": "curve",
+  "batch_sha256": "7bf0b290b141a3e36655302ef4d384e3aea89b41bf317e0b22bc9b6abfb62b34",
+  "checkpoint": "curve-307-step400.pt",
+  "cpu_seconds": 16.692236999999977,
+  "parameters": 68905,
+  "seed": 307,
+  "selection": {
+    "ce": 2.252427637577057,
+    "logits_sha256": "7d60c225e58bcdb6dfc16b37143a2488d139109d16ae2882f523339fe7aee701",
+    "tail_ce": 2.2736834287643433,
+    "targets": 4096
+  },
+  "sha256": "63d1f3c30466f2069aaed70738a9fca454f861417291225a65014ecc6d61d3b0",
+  "step": 400,
+  "targets_seen": 409600
+}

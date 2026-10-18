@@ -1,0 +1,17 @@
+{
+  "arm": "transformer",
+  "batch_sha256": "fd7bafd0962eca5e1b356b54791759cea43ecbeaad1232b6acca13a1d8431520",
+  "checkpoint": "transformer-73-step500.pt",
+  "cpu_seconds_so_far": 13.299222,
+  "parameter_count": 214144,
+  "seed": 73,
+  "selection": {
+    "accuracy": 0.33685302734375,
+    "ce": 2.3088033944368362,
+    "logits_sha256": "0209745ce7496a279c40679683c4fe1a094add4156bcacdc55bc7b19e2ee6052",
+    "targets": 16384
+  },
+  "sha256": "e84fe364d710247c713e8fdb57a40822d88731fa74dc93836a6202c9634de5b2",
+  "step": 500,
+  "targets_seen": 512000
+}
