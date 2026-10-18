@@ -1,0 +1,15 @@
+{
+  "stage": "pilot",
+  "started_at_utc": "2026-10-18T14:25:40.326405+00:00",
+  "status": "COMPLETE",
+  "child_exit_codes": [
+    0
+  ],
+  "error": null,
+  "wall_seconds": 25.838679901000205,
+  "child_cpu_seconds": 25.832411999999998,
+  "launcher_cpu_seconds": 0.06290899999999999,
+  "child_count": 1,
+  "per_child_cpu_cap_seconds": 110,
+  "all_children_exited": true
+}
