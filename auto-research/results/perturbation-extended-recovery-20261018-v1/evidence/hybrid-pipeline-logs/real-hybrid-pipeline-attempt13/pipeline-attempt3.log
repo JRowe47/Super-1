@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/Volumes/SP AI 01_16/hfw-w560-daytona-hybrid-ce-optimizer-20260822-attempt13/runtime/hfw_dist/run_pipeline.py", line 13, in <module>
+    from .promote_mps import promote_wave
+  File "/Volumes/SP AI 01_16/hfw-w560-daytona-hybrid-ce-optimizer-20260822-attempt13/runtime/hfw_dist/promote_mps.py", line 14, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'

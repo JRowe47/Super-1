@@ -1,0 +1,377 @@
+{
+  "accept_index": 4,
+  "batch_indices": [
+    5
+  ],
+  "calibration_after": [
+    4.62966775894165
+  ],
+  "calibration_before": [
+    4.6420674324035645
+  ],
+  "delta_file": "accepted_04_delta.f32le",
+  "delta_semantics": "cumulative_current_minus_immutable_parent",
+  "delta_sha256": "da4f72e5593906f4d4fd7cfa19cc155f44f381e2f3530306a4777be4f2562ad5",
+  "fixed_eval_opened": false,
+  "group": "base_affines",
+  "immediate_parent_child_sha256": "2bc827f0a17b30d4d3cfe88e7ef2e808f179bba81f49acc46f725992ae35491a",
+  "immutable_parent_checkpoint_sha256": "93df74ca9d49494f0065eaaa941d152fca32dcdaf7de7047239030a015bdba18",
+  "incremental_delta_file": "accepted_04_incremental_delta.f32le",
+  "incremental_delta_semantics": "accepted_child_minus_previous_branch_child",
+  "incremental_delta_sha256": "7d28a9f6f033230f68dd545e0e9fec80e813340ebfcfec81f4928231a5765bca",
+  "mean_after": 4.62966775894165,
+  "mean_before": 4.6420674324035645,
+  "pair_index": 5,
+  "parent_norm_displacement": 0.019519764930009842,
+  "previous_chain_sha256": "cf2c16c5f172e9c1c01f6dc32ab5b9eb52623c978b78ac3d0a31ede2d580b134",
+  "radius": 0.11368467014399997,
+  "relative_acceptance_threshold": 4.641603225660324,
+  "schema": "hfw_post_training_accepted_delta_v1",
+  "seed": 1087976631172712441,
+  "side": "line_0_0.5",
+  "solver": "paired_spectral_trust_region_exact_v1_transfer",
+  "tensor_radius_calibration": [
+    [
+      {
+        "name": "fast_cell.input_function.base.weight",
+        "norm_kind": "parameter_rms",
+        "proposal_rms": 0.0032070300549475253,
+        "radius": 0.11368467014399997,
+        "reference_rms": 0.028209872543811798
+      },
+      {
+        "name": "fast_cell.input_function.base.bias",
+        "norm_kind": "parameter_rms",
+        "proposal_rms": 0.0020894786333202488,
+        "radius": 0.11368467014399997,
+        "reference_rms": 0.01837959885597229
+      },
+      {
+        "name": "fast_cell.hidden_function.base.weight",
+        "norm_kind": "parameter_rms",
+        "proposal_rms": 0.004117595981759324,
+        "radius": 0.11368467014399997,
+        "reference_rms": 0.03621944785118103
+      },
+      {
+        "name": "fast_cell.hidden_function.base.bias",
+        "norm_kind": "parameter_rms",
+        "proposal_rms": 0.003042573485290859,
+        "radius": 0.11368467014399997,
+        "reference_rms": 0.026763269677758217
+      },
+      {
+        "name": "segment_cell.input_function.base.weight",
+        "norm_kind": "parameter_rms",
+        "proposal_rms": 0.0030437146286713484,
+        "radius": 0.11368467014399997,
+        "reference_rms": 0.026773307472467422
+      },
+      {
+        "name": "segment_cell.input_function.base.bias",
+        "norm_kind": "parameter_rms",
+        "proposal_rms": 0.002568418352373113,
+        "radius": 0.11368467014399997,
+        "reference_rms": 0.02259247750043869
+      },
+      {
+        "name": "segment_cell.hidden_function.base.weight",
+        "norm_kind": "parameter_rms",
+        "proposal_rms": 0.0029110559166112275,
+        "radius": 0.11368467014399997,
+        "reference_rms": 0.02560640685260296
+      },
+      {
+        "name": "segment_cell.hidden_function.base.bias",
+        "norm_kind": "parameter_rms",
+        "proposal_rms": 0.002697551992276061,
+        "radius": 0.11368467014399997,
+        "reference_rms": 0.023728370666503906
+      },
+      {
+        "name": "document_cell.input_function.base.weight",
+        "norm_kind": "parameter_rms",
+        "proposal_rms": 0.003007624089944857,
+        "radius": 0.11368467014399997,
+        "reference_rms": 0.026455845683813095
+      },
+      {
+        "name": "document_cell.input_function.base.bias",
+        "norm_kind": "parameter_rms",
+        "proposal_rms": 0.003979043938576101,
+        "radius": 0.11368467014399997,
+        "reference_rms": 0.03500070795416832
+      },
+      {
+        "name": "document_cell.hidden_function.base.weight",
+        "norm_kind": "parameter_rms",
+        "proposal_rms": 0.0027035878339753496,
+        "radius": 0.11368467014399997,
+        "reference_rms": 0.023781463503837585
+      },
+      {
+        "name": "document_cell.hidden_function.base.bias",
+        "norm_kind": "parameter_rms",
+        "proposal_rms": 0.003986076719046098,
+        "radius": 0.11368467014399997,
+        "reference_rms": 0.03506257012486458
+      },
+      {
+        "name": "cross_scale.base.weight",
+        "norm_kind": "parameter_rms",
+        "proposal_rms": 0.0018526633244373152,
+        "radius": 0.11368467014399997,
+        "reference_rms": 0.01629650965332985
+      },
+      {
+        "name": "cross_scale.base.bias",
+        "norm_kind": "parameter_rms",
+        "proposal_rms": 0.0012646051841616332,
+        "radius": 0.11368467014399997,
+        "reference_rms": 0.011123796924948692
+      },
+      {
+        "name": "readout.base.weight",
+        "norm_kind": "parameter_rms",
+        "proposal_rms": 0.002272610229329134,
+        "radius": 0.11368467014399997,
+        "reference_rms": 0.019990472123026848
+      },
+      {
+        "name": "readout.base.bias",
+        "norm_kind": "parameter_rms",
+        "proposal_rms": 0.0014072284135822441,
+        "radius": 0.11368467014399997,
+        "reference_rms": 0.012378348037600517
+      }
+    ],
+    [
+      {
+        "name": "fast_cell.input_function.base.weight",
+        "norm_kind": "parameter_rms",
+        "proposal_rms": 0.0032070300549475253,
+        "radius": 0.11368467014399997,
+        "reference_rms": 0.028209872543811798
+      },
+      {
+        "name": "fast_cell.input_function.base.bias",
+        "norm_kind": "parameter_rms",
+        "proposal_rms": 0.0020894786333202488,
+        "radius": 0.11368467014399997,
+        "reference_rms": 0.01837959885597229
+      },
+      {
+        "name": "fast_cell.hidden_function.base.weight",
+        "norm_kind": "parameter_rms",
+        "proposal_rms": 0.004117595981759324,
+        "radius": 0.11368467014399997,
+        "reference_rms": 0.03621944785118103
+      },
+      {
+        "name": "fast_cell.hidden_function.base.bias",
+        "norm_kind": "parameter_rms",
+        "proposal_rms": 0.003042573485290859,
+        "radius": 0.11368467014399997,
+        "reference_rms": 0.026763269677758217
+      },
+      {
+        "name": "segment_cell.input_function.base.weight",
+        "norm_kind": "parameter_rms",
+        "proposal_rms": 0.0030437146286713484,
+        "radius": 0.11368467014399997,
+        "reference_rms": 0.026773307472467422
+      },
+      {
+        "name": "segment_cell.input_function.base.bias",
+        "norm_kind": "parameter_rms",
+        "proposal_rms": 0.002568418352373113,
+        "radius": 0.11368467014399997,
+        "reference_rms": 0.02259247750043869
+      },
+      {
+        "name": "segment_cell.hidden_function.base.weight",
+        "norm_kind": "parameter_rms",
+        "proposal_rms": 0.0029110559166112275,
+        "radius": 0.11368467014399997,
+        "reference_rms": 0.02560640685260296
+      },
+      {
+        "name": "segment_cell.hidden_function.base.bias",
+        "norm_kind": "parameter_rms",
+        "proposal_rms": 0.002697551992276061,
+        "radius": 0.11368467014399997,
+        "reference_rms": 0.023728370666503906
+      },
+      {
+        "name": "document_cell.input_function.base.weight",
+        "norm_kind": "parameter_rms",
+        "proposal_rms": 0.003007624089944857,
+        "radius": 0.11368467014399997,
+        "reference_rms": 0.026455845683813095
+      },
+      {
+        "name": "document_cell.input_function.base.bias",
+        "norm_kind": "parameter_rms",
+        "proposal_rms": 0.003979043938576101,
+        "radius": 0.11368467014399997,
+        "reference_rms": 0.03500070795416832
+      },
+      {
+        "name": "document_cell.hidden_function.base.weight",
+        "norm_kind": "parameter_rms",
+        "proposal_rms": 0.0027035878339753496,
+        "radius": 0.11368467014399997,
+        "reference_rms": 0.023781463503837585
+      },
+      {
+        "name": "document_cell.hidden_function.base.bias",
+        "norm_kind": "parameter_rms",
+        "proposal_rms": 0.003986076719046098,
+        "radius": 0.11368467014399997,
+        "reference_rms": 0.03506257012486458
+      },
+      {
+        "name": "cross_scale.base.weight",
+        "norm_kind": "parameter_rms",
+        "proposal_rms": 0.0018526633244373152,
+        "radius": 0.11368467014399997,
+        "reference_rms": 0.01629650965332985
+      },
+      {
+        "name": "cross_scale.base.bias",
+        "norm_kind": "parameter_rms",
+        "proposal_rms": 0.0012646051841616332,
+        "radius": 0.11368467014399997,
+        "reference_rms": 0.011123796924948692
+      },
+      {
+        "name": "readout.base.weight",
+        "norm_kind": "parameter_rms",
+        "proposal_rms": 0.002272610229329134,
+        "radius": 0.11368467014399997,
+        "reference_rms": 0.019990472123026848
+      },
+      {
+        "name": "readout.base.bias",
+        "norm_kind": "parameter_rms",
+        "proposal_rms": 0.0014072284135822441,
+        "radius": 0.11368467014399997,
+        "reference_rms": 0.012378348037600517
+      }
+    ],
+    [
+      {
+        "name": "fast_cell.input_function.base.weight",
+        "norm_kind": "parameter_rms",
+        "proposal_rms": 0.0032070300549475253,
+        "radius": 0.11368467014399997,
+        "reference_rms": 0.028209872543811798
+      },
+      {
+        "name": "fast_cell.input_function.base.bias",
+        "norm_kind": "parameter_rms",
+        "proposal_rms": 0.0020894786333202488,
+        "radius": 0.11368467014399997,
+        "reference_rms": 0.01837959885597229
+      },
+      {
+        "name": "fast_cell.hidden_function.base.weight",
+        "norm_kind": "parameter_rms",
+        "proposal_rms": 0.004117595981759324,
+        "radius": 0.11368467014399997,
+        "reference_rms": 0.03621944785118103
+      },
+      {
+        "name": "fast_cell.hidden_function.base.bias",
+        "norm_kind": "parameter_rms",
+        "proposal_rms": 0.003042573485290859,
+        "radius": 0.11368467014399997,
+        "reference_rms": 0.026763269677758217
+      },
+      {
+        "name": "segment_cell.input_function.base.weight",
+        "norm_kind": "parameter_rms",
+        "proposal_rms": 0.0030437146286713484,
+        "radius": 0.11368467014399997,
+        "reference_rms": 0.026773307472467422
+      },
+      {
+        "name": "segment_cell.input_function.base.bias",
+        "norm_kind": "parameter_rms",
+        "proposal_rms": 0.002568418352373113,
+        "radius": 0.11368467014399997,
+        "reference_rms": 0.02259247750043869
+      },
+      {
+        "name": "segment_cell.hidden_function.base.weight",
+        "norm_kind": "parameter_rms",
+        "proposal_rms": 0.0029110559166112275,
+        "radius": 0.11368467014399997,
+        "reference_rms": 0.02560640685260296
+      },
+      {
+        "name": "segment_cell.hidden_function.base.bias",
+        "norm_kind": "parameter_rms",
+        "proposal_rms": 0.002697551992276061,
+        "radius": 0.11368467014399997,
+        "reference_rms": 0.023728370666503906
+      },
+      {
+        "name": "document_cell.input_function.base.weight",
+        "norm_kind": "parameter_rms",
+        "proposal_rms": 0.003007624089944857,
+        "radius": 0.11368467014399997,
+        "reference_rms": 0.026455845683813095
+      },
+      {
+        "name": "document_cell.input_function.base.bias",
+        "norm_kind": "parameter_rms",
+        "proposal_rms": 0.003979043938576101,
+        "radius": 0.11368467014399997,
+        "reference_rms": 0.03500070795416832
+      },
+      {
+        "name": "document_cell.hidden_function.base.weight",
+        "norm_kind": "parameter_rms",
+        "proposal_rms": 0.0027035878339753496,
+        "radius": 0.11368467014399997,
+        "reference_rms": 0.023781463503837585
+      },
+      {
+        "name": "document_cell.hidden_function.base.bias",
+        "norm_kind": "parameter_rms",
+        "proposal_rms": 0.003986076719046098,
+        "radius": 0.11368467014399997,
+        "reference_rms": 0.03506257012486458
+      },
+      {
+        "name": "cross_scale.base.weight",
+        "norm_kind": "parameter_rms",
+        "proposal_rms": 0.0018526633244373152,
+        "radius": 0.11368467014399997,
+        "reference_rms": 0.01629650965332985
+      },
+      {
+        "name": "cross_scale.base.bias",
+        "norm_kind": "parameter_rms",
+        "proposal_rms": 0.0012646051841616332,
+        "radius": 0.11368467014399997,
+        "reference_rms": 0.011123796924948692
+      },
+      {
+        "name": "readout.base.weight",
+        "norm_kind": "parameter_rms",
+        "proposal_rms": 0.002272610229329134,
+        "radius": 0.11368467014399997,
+        "reference_rms": 0.019990472123026848
+      },
+      {
+        "name": "readout.base.bias",
+        "norm_kind": "parameter_rms",
+        "proposal_rms": 0.0014072284135822441,
+        "radius": 0.11368467014399997,
+        "reference_rms": 0.012378348037600517
+      }
+    ]
+  ]
+}

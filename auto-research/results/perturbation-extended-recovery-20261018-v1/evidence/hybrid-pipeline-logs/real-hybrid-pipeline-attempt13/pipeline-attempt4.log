@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/Volumes/SP AI 01_16/hfw-w560-daytona-hybrid-ce-optimizer-20260822-attempt13/runtime/hfw_dist/run_pipeline.py", line 430, in <module>
+    main()
+  File "/Volumes/SP AI 01_16/hfw-w560-daytona-hybrid-ce-optimizer-20260822-attempt13/runtime/hfw_dist/run_pipeline.py", line 420, in main
+    result = run_pipeline(_build_parser().parse_args())
+  File "/Volumes/SP AI 01_16/hfw-w560-daytona-hybrid-ce-optimizer-20260822-attempt13/runtime/hfw_dist/run_pipeline.py", line 184, in run_pipeline
+    host_runtime = validate_host_runtime(package_root)
+  File "/Volumes/SP AI 01_16/hfw-w560-daytona-hybrid-ce-optimizer-20260822-attempt13/runtime/hfw_dist/runtime_manifest.py", line 876, in validate_host_runtime
+    upload_staging = _validate_upload_snapshot_staging(package_root, wave_root)
+  File "/Volumes/SP AI 01_16/hfw-w560-daytona-hybrid-ce-optimizer-20260822-attempt13/runtime/hfw_dist/runtime_manifest.py", line 691, in _validate_upload_snapshot_staging
+    expected = build_upload_staging_receipt(
+  File "/Volumes/SP AI 01_16/hfw-w560-daytona-hybrid-ce-optimizer-20260822-attempt13/runtime/hfw_dist/seal_upload_staging.py", line 142, in build_upload_staging_receipt
+    upload_tree, upload_identities = _strict_tree_inventory(
+  File "/Volumes/SP AI 01_16/hfw-w560-daytona-hybrid-ce-optimizer-20260822-attempt13/runtime/hfw_dist/seal_upload_staging.py", line 42, in _strict_tree_inventory
+    raise RuntimeError(f"upload staging directory is writable: {root}")
+RuntimeError: upload staging directory is writable: /Users/rohanarun/Documents/trin/w560_daytona_upload_attempt13_hybrid_wave_00000000

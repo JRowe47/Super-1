@@ -84,3 +84,7 @@ The earlier initial GitHub audit searched incomplete SSD project copies and miss
 ## Function-weight KV text descent, 2026-10-18
 
 [Report](reports/function-weight-kv-text-descent-20261018.md): two three-seed text pilots with learned KV pooling, preserved function weights and sampling, a fresh 8K passage diagnostic, hashed profile libraries, and a separate 100K memory-mechanics measurement. Passed the narrow quality gates; original short/8K total-memory gates failed. No SOTA or 100K quality claim.
+
+## Extended perturbation records — 2026-10-18
+
+The [SSD/iCloud follow-up audit](reports/perturbation-extended-recovery-20261018.md) preserves 271 additional historical files, 21 later heads/decisions, tensor/scalar refinement, CE/KD parent retention, benchmark regressions, one-backward scalar screening, historical test skips and pipeline failures. Source/receipt recovery does not establish new concept learning or authorize a new experiment.

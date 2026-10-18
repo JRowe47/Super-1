@@ -1,0 +1,65 @@
+{
+  "ce_vs_kd": {
+    "promoted": false,
+    "retained": "unchanged_parent"
+  },
+  "external_checkpoints_verified": false,
+  "historical_benchmark_canary": {
+    "arc_easy": {
+      "count": 128,
+      "current_accuracy": 0.2890625,
+      "prior_accuracy": 0.2890625
+    },
+    "hellaswag": {
+      "count": 128,
+      "current_accuracy": 0.1953125,
+      "prior_accuracy": 0.1953125
+    },
+    "lambada": {
+      "count": 128,
+      "current_accuracy": 0.0,
+      "prior_accuracy": 0.0
+    },
+    "piqa": {
+      "count": 128,
+      "current_accuracy": 0.5234375,
+      "prior_accuracy": 0.53125
+    }
+  },
+  "historical_refinement_counts": {
+    "accepted_decisions": 20,
+    "block_accepted": 19,
+    "block_candidates": 219,
+    "block_searches": 73,
+    "duplicated_vector_pairs": 1128,
+    "line_candidates": 45,
+    "partial_candidate_sweeps": 6,
+    "rejected_decisions": 1,
+    "scalar_accepted": 11,
+    "scalar_candidates": 264,
+    "scalar_searches": 88
+  },
+  "historical_test_logs": {
+    "run-000-host-worker-binder-static.log": {
+      "historical_tests_run": 43,
+      "passed": 42,
+      "skipped": 1
+    },
+    "run-001-manager.log": {
+      "historical_tests_run": 74,
+      "passed": 69,
+      "skipped": 5
+    }
+  },
+  "imported_files": 271,
+  "latest_recorded_model_generation": 28,
+  "latest_saved_mean_ce": 6.212864637374878,
+  "new_model_evaluation": false,
+  "parsed_files": {
+    "json": 212,
+    "python": 48
+  },
+  "scalar_diagnostic_backward_calls": 1,
+  "scalar_diagnostic_screens": 8,
+  "status": "PASS_SAVED_FILES_AND_ARITHMETIC_ONLY"
+}

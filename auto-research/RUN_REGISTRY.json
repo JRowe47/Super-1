@@ -45,6 +45,21 @@
       "scope": "Exact frozen source plus separate later MPS snapshot; saved scores use reused optimization data. Checkpoint/token payloads remain external. No launch authorization.",
       "status": "ARCHIVAL_RECOVERY_VERIFIED",
       "verification": "auto-research/results/perturbation-recovery-20261018-v1/VERIFICATION.json"
+    },
+    {
+      "external_checkpoints_verified": false,
+      "files_preserved": 271,
+      "historical_decisions": 21,
+      "historical_heads": 21,
+      "id": "perturbation-extended-recovery-20261018-v1",
+      "inventory": "auto-research/results/perturbation-extended-recovery-20261018-v1/IMPORT.json",
+      "inventory_sha256": "38ba93809970cd063a21099a75375df705b6999f1372078c1674f02646ef5ecd",
+      "new_model_evaluation": false,
+      "new_training": false,
+      "report": "auto-research/reports/perturbation-extended-recovery-20261018.md",
+      "scope": "Additional SSD/iCloud source, saved scores, tests and failures. Includes separate gradient diagnostic; no concept-learning claim or new launch.",
+      "status": "ARCHIVAL_FILES_AND_SAVED_ARITHMETIC_VERIFIED",
+      "verification": "auto-research/results/perturbation-extended-recovery-20261018-v1/VERIFICATION.json"
     }
   ],
   "historical_authorization_note": "Language training remains paused. Fresh user-authorized synthetic angular/radial optimization completed without recovery; no future execution authorized. Previous synthetic failure/recovery remains preserved.",

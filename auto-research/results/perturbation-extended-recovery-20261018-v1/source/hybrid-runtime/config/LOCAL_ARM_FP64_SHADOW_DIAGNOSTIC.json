@@ -1,0 +1,104 @@
+{
+  "schema": "hfw_w560_local_arm_fp64_shadow_full_task0_diagnostic_v1",
+  "status": "PASS_LOCAL_ARM_FULL_TASK0_DIAGNOSTIC",
+  "authority_disclosure": {
+    "canonical_checkpoint_and_model_source_bytes_untouched": true,
+    "canonical_fp32_state_contract_executed_by_proposal_shadow": false,
+    "distinct_fp64_shadow_state_surrogate": true,
+    "mps_sole_promotion_authority": true,
+    "proposal_shadow_replaces_canonical_fp32_state_storage": true,
+    "raw_ce_cross_lane_comparable": false
+  },
+  "artifact_root": "/Volumes/SP AI 01_16/hfw-w560-daytona-distributed-ce-optimizer-20260816-attempt5/runtime/logs/local-arm-full-task0-diagnostic-attempt1",
+  "task": {
+    "group": "base_affines",
+    "pairs_completed": 18,
+    "provisional_search_accepts": 8,
+    "acceptance_gate_attempts": 15,
+    "acceptance_gate_passes": 8,
+    "acceptance_gate_rejections": 7
+  },
+  "full_search_bank": {
+    "batch_count": 12,
+    "base_batch_losses": [
+      11.29622506685293,
+      13.03499992747495,
+      12.739404553994486,
+      11.925009270706676,
+      11.802261294120292,
+      12.09911642206869,
+      12.10304155396463,
+      11.954797383880916,
+      12.270841437871415,
+      12.531833253120084,
+      12.769457677233522,
+      11.046657052066065
+    ],
+    "base_mean_ce": 12.13113707444622,
+    "terminal_batch_losses": [
+      9.591996737507237,
+      10.706774402150327,
+      10.65896560375937,
+      10.028002308919636,
+      10.205275955894553,
+      9.511341933700002,
+      10.173447459096543,
+      10.93927413092955,
+      11.125889074142737,
+      10.6302244534739,
+      9.955950062112914,
+      10.010090482127449
+    ],
+    "terminal_mean_ce": 10.294769383651184,
+    "self_calibrated_base_minus_terminal_improvement": 1.8363676907950364,
+    "terminal_flat_sha256": "5a719e04b8a004c274f770b6873274099ec1f04128d392687cf9b7c85a22c009",
+    "terminal_duplicate_absolute_tolerance": 1e-07,
+    "terminal_duplicate_maximum_absolute_difference": 0.0,
+    "terminal_duplicate_status": "PASS_TERMINAL_FULL_BANK_DUPLICATES_CACHED_COMMIT_GATE"
+  },
+  "objective_accounting": {
+    "base_preflight_logical_evaluations": 12,
+    "base_preflight_physical_model_forwards": 24,
+    "search_logical_evaluations": 180,
+    "search_physical_model_forwards": 360,
+    "acceptance_gate_logical_evaluations": 180,
+    "acceptance_gate_physical_model_forwards": 360,
+    "terminal_logical_evaluations": 12,
+    "terminal_physical_model_forwards": 24,
+    "total_logical_evaluations": 384,
+    "total_physical_model_forwards": 768
+  },
+  "resource_evidence": {
+    "memory_limit_bytes": 4294967296,
+    "peak_rss_bytes": 3563864064,
+    "rss_margin_bytes": 731103232,
+    "strictly_below_memory_limit": true
+  },
+  "local_environment": {
+    "machine": "arm64",
+    "numpy_version": "2.0.2",
+    "platform_processor": "arm",
+    "platform_system": "Darwin",
+    "python_version": "3.9.6",
+    "torch_cpu_capability": "NO AVX",
+    "torch_version": "2.8.0"
+  },
+  "timing_evidence": {
+    "base_all_12_preflight_seconds": 26.229520833000002,
+    "base_preflight_seconds_per_physical_forward": 1.092896701375,
+    "search_and_acceptance_gates_seconds": 556.283441667,
+    "search_and_acceptance_gates_seconds_per_physical_forward": 0.7726158912041667,
+    "terminal_seconds": 18.868540208,
+    "terminal_seconds_per_physical_forward": 0.7861891753333291,
+    "full_task_seconds": 601.381502708,
+    "observed_seconds_per_physical_forward_including_overhead": 0.7830488316510417,
+    "arm_linear_projection_minimum_408_physical_seconds": 319.483923313625,
+    "arm_linear_projection_maximum_840_physical_seconds": 657.761018586875,
+    "projection_disclosure": "Linear ARM projection only; exact x86_64 two-vCPU seed runtime and memory are authoritative before fanout."
+  },
+  "writes": {
+    "cloud_resources": false,
+    "checkpoint_or_head": false,
+    "promotion": false
+  }
+}

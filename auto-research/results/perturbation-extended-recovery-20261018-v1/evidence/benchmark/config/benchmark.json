@@ -1,0 +1,156 @@
+{
+  "schema": "hfw_w560_promotion_benchmark_config_v1",
+  "status": "COMPILED_NOT_LAUNCHED_REQUIRES_REDTEAM_PASS",
+  "authority": {
+    "local_frozen_asset_import_authorized": true,
+    "public_dataset_prefetch_authorized": false,
+    "network_access_authorized": false,
+    "cloud_access_authorized": false,
+    "training_or_backprop_authorized": false,
+    "optimizer_authorized": false,
+    "adam_authorized": false,
+    "checkpoint_write_authorized": false,
+    "lineage_write_authorized": false,
+    "promotion_gate_authorized": false,
+    "benchmark_result_may_gate_promotion": false
+  },
+  "disclosure": "REPEATED_OR_ADAPTIVELY_USED_BENCHMARKS_ARE_AUDIT_DATA_NOT_HELD_OUT",
+  "active_controller": {
+    "package_root": "/Volumes/SP AI 01_16/hfw-w560-continuous-winner-controller-attempt8-ce-20260816-attempt6",
+    "runtime_root": "/Volumes/SP AI 01_16/hfw-w560-continuous-winner-controller-attempt8-ce-20260816-attempt6/runtime",
+    "config_path": "/Volumes/SP AI 01_16/hfw-w560-continuous-winner-controller-attempt8-ce-20260816-attempt6/runtime/config/controller.json",
+    "config_sha256": "0080a1d5c49fab9ad97770c4c31ac60483070e7c51e2d17827f6263d4863f406",
+    "runtime_manifest_path": "/Volumes/SP AI 01_16/hfw-w560-continuous-winner-controller-attempt8-ce-20260816-attempt6/runtime/config/runtime_manifest.v1.json",
+    "runtime_manifest_sha256": "6af3fc835423c1ebe91b96a4c8916eb4fb1b54393a4f172080b9b4468b5d49bb",
+    "runtime_manifest_identity_sha256": "0632b6debb406a780c8c50751f142737769d7816392d6648e1fe9277ff7e17e1",
+    "lineage_root": "/Volumes/SP AI 01_16/hfw-w560-continuous-winner-controller-attempt8-ce-20260816-attempt6/runtime/lineage",
+    "lineage_contract_path": "/Volumes/SP AI 01_16/hfw-w560-continuous-winner-controller-attempt8-ce-20260816-attempt6/runtime/lineage/contract.json",
+    "lineage_contract_sha256": "0b616937621a05b43279217236bdc9dc153946ffbdf7c084065e3198372be7f2",
+    "initial_head_path": "/Volumes/SP AI 01_16/hfw-w560-continuous-winner-controller-attempt8-ce-20260816-attempt6/runtime/lineage/heads/00000002-d25000635ad3d04c1756855b15934c4e0fd17ad88741ba41f101c5f94ce96d2d.head.json",
+    "initial_head_sha256": "d25000635ad3d04c1756855b15934c4e0fd17ad88741ba41f101c5f94ce96d2d",
+    "initial_checkpoint_sha256": "93df74ca9d49494f0065eaaa941d152fca32dcdaf7de7047239030a015bdba18",
+    "source_winner_head_sha256": "3e7acd4c8683f890089db33b4e72faabfc2ad09c583a05e9005142c2af6434c6",
+    "loader_diagnostic_path": "/Volumes/SP AI 01_16/hfw-w560-continuous-winner-controller-attempt8-ce-20260816-attempt6/runtime/validation/WINNER_CHECKPOINT_LOADER_DIAGNOSTIC.json",
+    "loader_diagnostic_sha256": "9cd7bf5b93941844a9bafc1cda892d63597beb663192a7ded50237357751e045",
+    "verify_shape_diagnostic_path": "/Volumes/SP AI 01_16/hfw-w560-continuous-winner-controller-attempt8-ce-20260816-attempt6/runtime/validation/VERIFY_SHAPE_DIAGNOSTIC.json",
+    "verify_shape_diagnostic_sha256": "711eea234fd85bfe691eaad53543e080cf047bd462cb7c87c0794c89764226ad",
+    "run_root": "/Volumes/SP AI 01_16/hfw-w560-continuous-winner-controller-attempt8-ce-20260816-attempt6/runtime/runs/continuous-ce-successor-attempt1",
+    "run_contract_path": "/Volumes/SP AI 01_16/hfw-w560-continuous-winner-controller-attempt8-ce-20260816-attempt6/runtime/runs/continuous-ce-successor-attempt1/contract.json",
+    "run_contract_sha256": "8b52f0a2c1cddfaa030da545c48278226ddd26996cb8cf3d7c400c57bbe2c694",
+    "runner_lock_path": "/Volumes/SP AI 01_16/hfw-w560-continuous-winner-controller-attempt8-ce-20260816-attempt6/runtime/runs/continuous-ce-successor-attempt1/runner.lock",
+    "lineage_lock_path": "/Volumes/SP AI 01_16/hfw-w560-continuous-winner-controller-attempt8-ce-20260816-attempt6/runtime/lineage/lineage.lock",
+    "run_attempts_root": "/Volumes/SP AI 01_16/hfw-w560-continuous-winner-controller-attempt8-ce-20260816-attempt6/runtime/runs/continuous-ce-successor-attempt1/attempts",
+    "frozen_source_inventory": {
+      "config/bottleneck_hfw_1k_100m.json": "f0640b60349940ff69c6ae2f62785954edd07d68984e90132dd428af0ddf83c1",
+      "protocol.v1.json": "7a013d9640241577844da13ffb85883cce6b7fab5d50b6e4de924a09fbd62663",
+      "release_manifest.v1.json": "d61d003ede83dcfb302be5da854b3628dd53bdd13632e9d92c7fa8a75a16a190",
+      "representation_experiments/common.py": "eed2cad9f3313b5c889bf72bc72aa78254466ff1e1b5548d363a26b42f7757dd",
+      "representation_experiments/nanogpt_control.py": "1adfffbd843a55f00491b50cb46bc6c5d99041f54d9f48251ce3e79ad672a870",
+      "representation_experiments/predictive_models.py": "05560f064eddfe069be3d4459ea1fff8c644286aba101058370516ea5e298db8",
+      "third_party/nanogpt/LICENSE": "a59ec5cdb1c1e447e5266a014b3e7ded511f8d6e5a08931e931c87490ff821fe",
+      "third_party/nanogpt/model.py": "7c01703240dbec5d554527dc666e35b3df8391d0b117fddc07afcf325a21d11c"
+    }
+  },
+  "locks": {
+    "host_mps_lane": "/Volumes/SP AI 01_16/hfw-w560-promotion-benchmarks-20260816-v1-attempt6/runtime/locks/host_mps_lane.lock"
+  },
+  "supervisor": {
+    "solver_command": [
+      "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+      "-B",
+      "-m",
+      "hfw_continuous.local_cli",
+      "run-continuous",
+      "--config",
+      "/Volumes/SP AI 01_16/hfw-w560-continuous-winner-controller-attempt8-ce-20260816-attempt6/runtime/config/controller.json",
+      "--ledger",
+      "/Volumes/SP AI 01_16/hfw-w560-continuous-winner-controller-attempt8-ce-20260816-attempt6/runtime/lineage",
+      "--run",
+      "/Volumes/SP AI 01_16/hfw-w560-continuous-winner-controller-attempt8-ce-20260816-attempt6/runtime/runs/continuous-ce-successor-attempt1",
+      "--maximum-cycles",
+      "1"
+    ],
+    "solver_pythonpath": "/Volumes/SP AI 01_16/hfw-w560-continuous-winner-controller-attempt8-ce-20260816-attempt6/runtime",
+    "solver_pycache_prefix": "/tmp/hfw-attempt6-run-pycache",
+    "solver_path": "/usr/bin:/bin:/usr/sbin:/sbin",
+    "solver_dependency_versions": {"torch": "2.8.0", "numpy": "2.0.2"},
+    "full_every_accepted_promotions": 4,
+    "full_every_seconds": 86400,
+    "sole_continuous_solver_launcher": true,
+    "unbounded_runner_forbidden": true,
+    "launch_requires_external_redteam_pass": true
+  },
+  "benchmark_environment": {
+    "python_executable": "/opt/homebrew/Cellar/python@3.12/3.12.13_1/Frameworks/Python.framework/Versions/3.12/bin/python3.12",
+    "python_executable_sha256": "372c9d4f13af39cea1d55b8ed716c515726918286d4abfd9a8ddf0a8cf0a886a",
+    "python_version": "3.12.13",
+    "pythonpath": "/Volumes/SP AI 01_16/hfw-w560-promotion-benchmarks-20260816-v1-attempt6/runtime:/Volumes/SP AI 01_16/hfw-w560-promotion-benchmarks-20260816-v1-attempt6/runtime/environment/benchmark_pydeps",
+    "external_pycache_prefix": "/tmp/hfw-promotion-benchmark-attempt6-pycache",
+    "python_no_site_required": true,
+    "python_safe_path_required": true,
+    "sys_path_allowlist": [
+      "/Volumes/SP AI 01_16/hfw-w560-promotion-benchmarks-20260816-v1-attempt6/runtime",
+      "/Volumes/SP AI 01_16/hfw-w560-promotion-benchmarks-20260816-v1-attempt6/runtime/environment/benchmark_pydeps",
+      "/opt/homebrew/Cellar/python@3.12/3.12.13_1/Frameworks/Python.framework/Versions/3.12/lib/python312.zip",
+      "/opt/homebrew/Cellar/python@3.12/3.12.13_1/Frameworks/Python.framework/Versions/3.12/lib/python3.12",
+      "/opt/homebrew/Cellar/python@3.12/3.12.13_1/Frameworks/Python.framework/Versions/3.12/lib/python3.12/lib-dynload"
+    ],
+    "inventory_relative_path": "config/benchmark_environment_manifest.v1.json",
+    "inventory_file_sha256": "d216611c374ad6987c3b935b9de38bc83b13d2163359829ab1ea209ae6ddead7",
+    "inventory_content_identity_sha256": "2ef319c6d2981337edacc207ecc2c59cb71c8f443bc79d839a87a1f1e1bd313b",
+    "inventory_file_count": 19095,
+    "inventory_total_size_bytes": 466338337,
+    "readable_bytecode_count": 0,
+    "versions": {"torch": "2.8.0", "transformers": "5.12.1", "tokenizers": "0.22.2", "safetensors": "0.8.0"},
+    "all_regular_environment_files_sha_bound": true,
+    "symlinks_authorized": false,
+    "readable_pyc_or_pyo_authorized": false
+  },
+  "tokenizer": {
+    "repo_id": "Qwen/Qwen3-0.6B-Base",
+    "revision": "da87bfb608c14b7cf20ba1ce41287e8de496c0cd",
+    "identity_relative_path": "inputs/tokenizer/TOKENIZER_IDENTITY.json",
+    "identity_sha256": "44e37f9bcace1569fc3328822fdf8e79aab6649dbd6d05dddca8466fc2ecda74",
+    "files": {
+      "tokenizer.json": {"sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539", "size_bytes": 7031645},
+      "tokenizer_config.json": {"sha256": "3c04ed3ca964ea2f6b2b5faf0dc4d31aec1cb1e8b4bcf63f402d295046b422b5", "size_bytes": 9678},
+      "vocab.json": {"sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910", "size_bytes": 2776833},
+      "merges.txt": {"sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5", "size_bytes": 1671853}
+    }
+  },
+  "asset_import": {
+    "source_package": "/Volumes/SP AI 01_16/hfw-w560-promotion-benchmarks-20260816-v1-attempt1",
+    "source_manifest_path": "/Volumes/SP AI 01_16/hfw-w560-promotion-benchmarks-20260816-v1-attempt1/runtime/assets/manifest.v1.json",
+    "source_manifest_sha256": "1af183cbfaab73aed3c80f22f4662d1b2fe2d12777b3672db797d6588992ac14",
+    "source_receipt_path": "/Volumes/SP AI 01_16/hfw-w560-promotion-benchmarks-20260816-v1-attempt1/runtime/receipts/ASSET_PREFETCH_COMPLETE.json",
+    "source_receipt_sha256": "e720d72f98cea4db9ae3947259b902c163e5c42f20ce7f3ac73e56075d89b301",
+    "network_access": false,
+    "copied_bytes_only": true
+  },
+  "dataset_provenance": {
+    "relative_path": "inputs/dataset_provenance/assets.json",
+    "sha256": "34d3970d08343c0b40a95df9a4dbb906ce3aa6bf50fdb175a73f742eb050085f",
+    "size_bytes": 1362
+  },
+  "task_order": ["lambada", "hellaswag", "arc_easy", "piqa"],
+  "datasets": {
+    "lambada": {"repo_id": "EleutherAI/lambada_openai", "config": "en", "split": "test", "revision": "900124bf3b8235c6daf21033af9948b3f07346c4", "expected_rows": 5153},
+    "hellaswag": {"repo_id": "Rowan/hellaswag", "config": null, "split": "validation", "revision": "218ec52e09a7e7462a5400043bb9a69a41d06b76", "expected_rows": 10042},
+    "arc_easy": {"repo_id": "allenai/ai2_arc", "config": "ARC-Easy", "split": "validation", "revision": "210d026faf9955653af8916fad021475a3f00453", "expected_rows": 570},
+    "piqa": {"repo_id": "lighteval/piqa", "config": null, "split": "validation", "revision": "41782e6bf0ef7de82a2ca8a9feb1dca042837fae", "expected_rows": 1838}
+  },
+  "evaluation": {
+    "canary_first_n": 128,
+    "full_first_n": 1000,
+    "maximum_combined_tokens": 513,
+    "batch_size": 1,
+    "device": "mps",
+    "autocast_dtype": "bfloat16",
+    "plain_encode_add_special_tokens": false,
+    "bootstrap_resamples": 4096,
+    "bootstrap_seed_source": "prior_head_current_head_mode_task_metric",
+    "lambada_metric": "teacher_forced_per_position_argmax_exact_match_under_gold_prefixes_plus_mean_token_nll_and_perplexity",
+    "multiple_choice_metric": "length_normalized_loglikelihood_accuracy_and_gold_minus_best_wrong_margin",
+    "paired_metrics": ["all_correctness_flips", "accuracy_delta", "nll_delta", "margin_delta", "deterministic_bootstrap_ci95"]
+  }
+}

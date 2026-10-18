@@ -1,0 +1,59 @@
+{
+  "acceptance_threshold": 4.346782838058472,
+  "accepted_loss": null,
+  "accepted_side": null,
+  "batch_indices": [
+    0
+  ],
+  "center_duplicate_loss_vector": [
+    4.347217559814453,
+    4.347217559814453,
+    4.347217559814453
+  ],
+  "center_loss_vector": [
+    4.347217559814453,
+    4.347217559814453,
+    4.347217559814453
+  ],
+  "center_mean": 4.347217559814453,
+  "direction_sha256": "2f56bb09bdbbd8adeb635ac52b508b83f0c2691ec6f601a40f279ce5be25cf6d",
+  "direction_sha256s": [
+    "6a9db29dd9b02f8bdea3a472dd1521997fca62bf670563bc3c7cef8b595e06f8",
+    "107434c7c70a6db25766df60bd99d0f315c5dde4ce1dd181d65a98979ed94cd1",
+    "b8729bd2fafe9f5d03c846b288d2a981ff77c4d1efac00ddbc50bc0c186553a8"
+  ],
+  "finite_fail_closed": true,
+  "line_search_loss_vector": [
+    4.354940891265869,
+    4.402420520782471,
+    4.487004280090332
+  ],
+  "minus_duplicate_loss_vector": [
+    4.424135208129883,
+    4.402701377868652,
+    4.424158096313477
+  ],
+  "minus_loss_vector": [
+    4.424135208129883,
+    4.402701377868652,
+    4.424158096313477
+  ],
+  "minus_mean": 4.416998227437337,
+  "pair_index": 0,
+  "parent_norm_displacement": null,
+  "plus_duplicate_loss_vector": [
+    4.42902946472168,
+    4.460759162902832,
+    4.433061122894287
+  ],
+  "plus_loss_vector": [
+    4.42902946472168,
+    4.460759162902832,
+    4.433061122894287
+  ],
+  "plus_mean": 4.4409499168396,
+  "previous_chain_sha256": "f10241fb8dc10f61fd33f9b958ba12e3436b82793b77bfc65fa8583a9f935e43",
+  "radius": 0.11159999999999999,
+  "schema": "hfw_post_training_proven_solver_proposal_v1",
+  "seed": 1087976631172712423
+}
