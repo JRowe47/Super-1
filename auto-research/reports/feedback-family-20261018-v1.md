@@ -129,3 +129,7 @@ Next isolate **U0 versus U1 learning**, with B1/B2/V1/V2 fixed and online feedba
 Five proposed arms: frozen, U0-only, U1-only, both-U and BP. Primary **U1-only versus frozen**, with the same mean >=5% CE reduction/no negative seed and both per-seed 2pp retention guards. Both-U serves as the positive adaptation control. Before training, verify that both-U and the preserved V/U-only policy have bitwise-identical W/U/B trajectories even though V differs, along with the original numerical/cap/replay checks. Then use three fresh paired main seeds and a separate pilot, same full feedback rates, FIFO, warmup, cap, exposure and endpoints. No rate sweep or post-outcome primary selection.
 
 Expected **250–450 aggregate CPU seconds**, inside the standing 900s budget and maximum three one-thread workers, with four small checkpoint files. This next experiment is **proposed only, not implemented or running**; await the user's continuation. No language/1B/cloud expansion is implied.
+
+## Final cleanup reconciliation
+
+After initial publication, a final local check found part of the temporary runtime had reappeared (646,352,286 bytes in 10,212 files); the cause is not established. No experiment worker was running and no incomplete progress remained. Those reproducible files were removed again, with all registered source and completed evidence unchanged. [Cleanup receipt](../results/feedback-family-20261018-v1/POST_PUBLICATION_CLEANUP.json).
