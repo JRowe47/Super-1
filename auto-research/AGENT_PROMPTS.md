@@ -37,3 +37,7 @@ Always distinguish proposal, launch, progress, completion, confirmation, publica
 ## Tensor layout at baseline boundaries
 
 The synthetic experiment completed all training but failed when a secondary reset-window diagnostic passed noncontiguous sliced targets to pinned nanoGPT, whose loss uses view. Always validate contiguous input and target layouts after chunking at adapters, including secondary diagnostics. Preserve upstream source and the failed receipt. Any evaluation recovery must use the already frozen checkpoints, retain the original decision rule, disclose prior metric exposure and never silently retrain or relabel the failed run as uninterrupted success.
+
+## Inference-first memory experiments
+
+The relaxed-compression pilot did not improve over the compact hybrid, and retained tensor savings substantially overstated measured total-process savings. Always test the compression/quality hypothesis before assuming less compression is better; preserve both the worse arm and the primary failed gate. Report total resident/peak memory separately from weights and cache/state accounting. Spending more training compute may be acceptable for inference gains, but disclose that cost and tuning opportunity. Do not describe fixed-depth results as dynamic layer-sampling gains; validate cache consistency and resident weights for any future dynamic policy.

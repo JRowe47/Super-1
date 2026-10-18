@@ -1,0 +1,19 @@
+{
+  "arm": "compact",
+  "checkpoint_sha256": "31b27e78a43732d1f2704945b50483b82b93f49a3999371f910a3b817d89168b",
+  "context": 256,
+  "decode_ms_per_token": 0.4929075625000022,
+  "decode_state_bytes": 159744,
+  "decode_tokens": 32,
+  "last_logits_sha256": "cd503b663c3ccada9695a61a3cd5fc37bcc7163cde2be7706ba3cf5fab8949b0",
+  "loaded_peak_rss_bytes": 187580416,
+  "model_bytes": 863008,
+  "prefill_peak_rss_bytes": 191807488,
+  "prefill_seconds": 0.005728875000000078,
+  "prefill_state_bytes": 143360,
+  "process_peak_rss_bytes": 191856640,
+  "retained_model_plus_state_bytes": 1022752,
+  "scope": "Fresh process CPU FP32, batch1, streaming chunk64 prefill and teacher-forced cached decode. RSS includes runtime/allocator/transients; retained tensors are not peak total memory. Quality beyond256 untested.",
+  "seed": 191,
+  "startup_peak_rss_bytes": 184467456
+}

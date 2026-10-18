@@ -190,11 +190,18 @@
     },
     {
       "approval": "Current user approved trying the memory-first three-way pilot, then explicitly requested relaxing compression to approach nanoGPT quality. Local bounded CPU training only; no cloud spending or full SOTA trial.",
+      "combined_gate": false,
+      "memory_terminal": "auto-research/results/memory-quality-frontier-20261018-v1/execution/MEMORY_TERMINAL.json",
       "protocol": "auto-research/results/memory-quality-frontier-20261018-v1/PROTOCOL.json",
       "protocol_sha256": "1b9a62b139be63df5f43f5a83874f57bc4fef05b3a1fad26a489753c8384d58c",
+      "quality_noninferiority_pass": true,
+      "relaxation_improvement_pass": false,
+      "report": "auto-research/results/memory-quality-frontier-20261018-v1/README.md",
       "run_id": "memory-quality-frontier-20261018-v1",
       "source_manifest": "auto-research/results/memory-quality-frontier-20261018-v1/SOURCE_MANIFEST.json",
-      "status": "PREREGISTERED"
+      "status": "COMPLETED_NO_PROMOTION",
+      "terminal": "auto-research/results/memory-quality-frontier-20261018-v1/execution/TERMINAL.json",
+      "total_memory_pass": false
     }
   ],
   "schema_version": 1,
