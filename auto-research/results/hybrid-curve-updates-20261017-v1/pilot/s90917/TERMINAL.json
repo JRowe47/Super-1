@@ -1,0 +1,144 @@
+{
+  "status": "COMPLETE",
+  "seed": 90917,
+  "wall_seconds": 14.23871175900058,
+  "cpu_seconds": 14.236140228,
+  "warmup": {
+    "plain_cpu": 1.2194061669999998,
+    "hybrid_cpu": 5.4316835779999995,
+    "plain_wall": 1.2192772829985188,
+    "hybrid_wall": 5.434226287998172,
+    "base_backward_steps": 1456,
+    "controller_training_steps": 1200,
+    "warmup_parameter_replay_error": 0.0,
+    "model_parameters": 808,
+    "predictor_parameters": 898,
+    "gate_parameters": 339,
+    "qualification": {
+      "threshold": 0.5,
+      "loss_limit": 0.009727464988827705,
+      "qualification": true,
+      "trials": [
+        {
+          "threshold": 0.5,
+          "count": 256,
+          "safe": 256,
+          "lower95": 0.9895419965959273
+        },
+        {
+          "threshold": 0.7,
+          "count": 256,
+          "safe": 256,
+          "lower95": 0.9895419965959273
+        },
+        {
+          "threshold": 0.8,
+          "count": 256,
+          "safe": 256,
+          "lower95": 0.9895419965959273
+        },
+        {
+          "threshold": 0.9,
+          "count": 256,
+          "safe": 256,
+          "lower95": 0.9895419965959273
+        },
+        {
+          "threshold": 0.95,
+          "count": 256,
+          "safe": 256,
+          "lower95": 0.9895419965959273
+        },
+        {
+          "threshold": 0.99,
+          "count": 256,
+          "safe": 256,
+          "lower95": 0.9895419965959273
+        }
+      ],
+      "note": "Wilson bound is a heuristic qualification on temporally related calibration steps, not an IID guarantee."
+    }
+  },
+  "arms": {
+    "backprop": {
+      "arm": "backprop",
+      "seed": 90917,
+      "main_cpu": 1.0439821790000003,
+      "main_wall": 1.042409621000843,
+      "lifecycle_cpu": 2.263388346,
+      "counts": {
+        "backward": 1000,
+        "proposed": 0,
+        "eligible": 0,
+        "applied": 0,
+        "skipped": 0,
+        "audits": 0,
+        "audit_failures": 0
+      },
+      "training_examples": 64000,
+      "data_sha256": "7caf3edde7b1c744a952fa42d9a0d154078ad1bd2f797a6a35782502df0d391f",
+      "checkpoint_sha256": "a7bab09799f995e8feadc11f9a17fe345c0e751af222b46de4d971215b4e22f1",
+      "controller_frozen_after_warmup": true
+    },
+    "hybrid": {
+      "arm": "hybrid",
+      "seed": 90917,
+      "main_cpu": 2.031929926,
+      "main_wall": 2.032716090998292,
+      "lifecycle_cpu": 7.463613504,
+      "counts": {
+        "backward": 1000,
+        "proposed": 1000,
+        "eligible": 0,
+        "applied": 0,
+        "skipped": 0,
+        "audits": 0,
+        "audit_failures": 0
+      },
+      "training_examples": 64000,
+      "data_sha256": "7caf3edde7b1c744a952fa42d9a0d154078ad1bd2f797a6a35782502df0d391f",
+      "checkpoint_sha256": "66dd4094226ed6647aa6270e6fc8cc48bbebe65362225daf6a03267ddfe5f815",
+      "controller_frozen_after_warmup": true
+    },
+    "gated_skip": {
+      "arm": "gated_skip",
+      "seed": 90917,
+      "main_cpu": 2.0753431640000013,
+      "main_wall": 2.07822581399887,
+      "lifecycle_cpu": 7.507026742000001,
+      "counts": {
+        "backward": 1000,
+        "proposed": 1000,
+        "eligible": 0,
+        "applied": 0,
+        "skipped": 0,
+        "audits": 0,
+        "audit_failures": 0
+      },
+      "training_examples": 64000,
+      "data_sha256": "7caf3edde7b1c744a952fa42d9a0d154078ad1bd2f797a6a35782502df0d391f",
+      "checkpoint_sha256": "b9bbd9b2f81fe678e5769121940dbad2dd76007c75858bf77083822e878b6f4c",
+      "controller_frozen_after_warmup": true
+    },
+    "always_hyper": {
+      "arm": "always_hyper",
+      "seed": 90917,
+      "main_cpu": 1.6679666599999994,
+      "main_wall": 1.6702193159981107,
+      "lifecycle_cpu": 7.099650237999999,
+      "counts": {
+        "backward": 104,
+        "proposed": 1000,
+        "eligible": 1000,
+        "applied": 1000,
+        "skipped": 0,
+        "audits": 104,
+        "audit_failures": 91
+      },
+      "training_examples": 64000,
+      "data_sha256": "7caf3edde7b1c744a952fa42d9a0d154078ad1bd2f797a6a35782502df0d391f",
+      "checkpoint_sha256": "2e7dff294ecdfbda3a9497592cc61ae4780de573292ae654921c0a26a5d55a94",
+      "controller_frozen_after_warmup": true
+    }
+  }
+}

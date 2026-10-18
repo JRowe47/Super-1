@@ -1,0 +1,126 @@
+{
+  "run_id": "hybrid-curve-updates-20261017-v1",
+  "stage": "MAIN",
+  "scope": "New synthetic nonlinear update-policy probe; no LM, original GRU substitution, GPU, cloud, or official test",
+  "seeds": [
+    101721,
+    101722,
+    101723
+  ],
+  "config": {
+    "width": 32,
+    "lr": 0.5,
+    "batch": 64,
+    "warmup": 1200,
+    "calibration": 256,
+    "phase_steps": 250,
+    "fidelity_fp32": 2e-06
+  },
+  "source_sha256": "0bf124da731ac1a15594fd51a05782c38e695853524ea575f529191b957b928b",
+  "qualification": "Fixed candidate thresholds [.5,.7,.8,.9,.95,.99], >=64 accepted calibration steps, Wilson lower95>=.95; temporal dependence disclosed; loss-support guard; 10% independent audits.",
+  "pilot_stop": "Any numerical qualification failure, nonfinite training, or 120 CPU seconds for the pilot. Inspect plain-backprop competence and all arms; no main decision until frozen main protocol.",
+  "fidelity_tolerances": {
+    "float32": 2e-06,
+    "float64": 2e-12
+  },
+  "registered_unix": 1792282856.0634382,
+  "status": "FROZEN_BEFORE_MAIN",
+  "hypothesis": "A confidence-qualified forward-only updater can preserve learned primitive composition and earlier facts while replacing >=25% of main backward passes and reducing post-warmup CPU >=10%.",
+  "primary_comparator": "hybrid versus backprop, paired by initialization and exact atomic training stream",
+  "primary_metric": "Final two-operation composition accuracy difference (fraction correct); 512 exhaustive compositions per seed",
+  "minimum_useful_effect": {
+    "max_composition_drop": 0.02,
+    "max_old_retention_drop": 0.01,
+    "min_backward_reduction": 0.25,
+    "min_main_cpu_reduction": 0.1
+  },
+  "success_rule": "All three paired seeds satisfy quality limits; means meet both cost thresholds. Added-value evidence versus gated_skip requires >=.02 composition gain or >=.02 nats lower new-primitive CE. No broad language or architecture promotion from this probe.",
+  "futility_rule": "Stop an arm on nonfinite values, failed frozen fidelity tolerance, integrity failure, or 120 CPU seconds per seed. Low acceptance and harmful always_hyper outcomes are retained; do not retune main.",
+  "authorization": {
+    "approved": true,
+    "reference": "User 2026-10-17 18:10 America/Denver: Ok, cool - go ahead and proceed with the first experiments",
+    "resources": "Current user-supplied workspace; CPU only; one thread per seed; three workers; 120 CPU s cap per seed; no external data, installs, spending, official tests, or cloud resources. Earlier Mac-SSD-only workflow does not describe this explicitly supplied environment.",
+    "max_wall_seconds": 600
+  },
+  "design": {
+    "arms": [
+      "backprop",
+      "hybrid",
+      "gated_skip",
+      "confidence_only",
+      "always_hyper"
+    ],
+    "control_rationale": {
+      "gated_skip": "Same confidence/support gate and predictor overhead, but no edit on accepted steps.",
+      "confidence_only": "Learned confidence gate without calibrated loss-support guard; same sampled audit fallback. Added after pilot, before main.",
+      "always_hyper": "Diagnostic applies every predicted update even when audited harmful."
+    },
+    "warmup": "1200 concurrent predictor/gate training steps plus 256 frozen-controller calibration steps; separate exact plain-backprop warmup replay for startup cost.",
+    "predictor": "Learned per-example low-rank update factors assembled into both complete affine-layer deltas; no model gradient input or autograd on accepted main updates.",
+    "controller_main": "Frozen after warmup for this isolation study; two EMA summaries can change after audits. Joint ongoing controller adaptation is deferred.",
+    "model": "808 real coefficients, two fully represented Fourier parameter banks; tanh MLP 16->32->8. Explicitly new probe, not historical hierarchy.",
+    "counts": {
+      "base": 808,
+      "update_net": 898,
+      "gate": 339
+    },
+    "seed_selection": "Three new consecutive seeds fixed before any main run. Pilot 90917 excluded.",
+    "tuning": "One shared LR .5 and configuration, unchanged after pilot; only confidence_only diagnostic arm added.",
+    "matching": "Exact examples and starting learner per seed, not equal compute or total controller parameters."
+  },
+  "data": {
+    "generator_source_sha256": "0bf124da731ac1a15594fd51a05782c38e695853524ea575f529191b957b928b",
+    "world_seed_formula": "model_seed+1700000",
+    "stream_seed_formula": "model_seed*100000 + step*10 + {0,1,2,3}; main step offset 10000",
+    "confirmation_seed_formula": "3300000+model_seed for length4",
+    "atomic_facts": "Eight random permutations on eight values; initial operators 0..3 then operators 4..7 one per 250-step phase. Main batches 50% new operator / 50% replay of previously introduced operators.",
+    "confirmation": "Exhaustive 512 two-operation compositions; 2048 four-operation chains; 64 atomic facts. Atomic facts overlap training by design, combinations never receive training loss. A fixed external executor supplies composition order.",
+    "queries": "Independent batch draws of current and initial operators for warmup qualification and 10% main audits; these are charged supervision, not free inference or withheld final tests.",
+    "region_reuse": "New worlds and streams; existing pilot world excluded from main. Finite atomic-domain overlap is intentional.",
+    "tokenizer": "None; fixed observed one-hot symbols.",
+    "official_test_access_permitted": false
+  },
+  "training": {
+    "warmup": 1456,
+    "main_updates_per_arm": 1000,
+    "batch": 64,
+    "main_examples": 64000,
+    "optimizer": "SGD .5 without momentum/weight decay for learner; Adam .001 for predictor/gate during first 1200 warmup steps only.",
+    "precision": "FP32",
+    "selection": "Final checkpoint only; no main tuning or selection.",
+    "state": "Curve weights persist across curriculum phases; controller EMA state initialized identically per arm. No token-context or learned multi-timescale hierarchy in this probe."
+  },
+  "execution": {
+    "hardware": "CPU, no CUDA; one PyTorch thread per worker",
+    "torch": "2.14.1+cpu",
+    "python": "3.12.14",
+    "output": "/workspace/scratch/1c2ace3a678e/curve_inception/auto-research/results/hybrid-curve-updates-20261017-v1",
+    "ownership": "Unique run directory and exclusive creation of per-seed output; no archived run changed.",
+    "fidelity": {
+      "fp32": 2e-06,
+      "fp64": 2e-12,
+      "never_relax_after_failure": true
+    },
+    "baseline_step": "Teacher factor extraction included in both plain and curve learner paths. Complete Fourier transform preserves all coordinates.",
+    "timing": "Measured process CPU and wall time; lifecycle includes independently measured appropriate warmup; three seed processes concurrent; isolated microbenchmark may follow after training."
+  },
+  "evaluation": {
+    "primary_endpoint": "After all four curriculum phases",
+    "confirmation_frozen_before_scoring": true,
+    "canonical_precision": "FP32",
+    "duplicate_policy": "Reload every final checkpoint, verify hash, score twice and require identical metrics.",
+    "uncertainty": "All three paired results and descriptive mean/range; no asymptotic significance claim from n=3.",
+    "multiple_comparisons": "Only hybrid vs backprop primary; other contrasts explanatory/diagnostic.",
+    "no_test_tuning": true
+  },
+  "evidence": {
+    "source_manifest": "SOURCE_MANIFEST.json",
+    "checkpoints": "Each main seed summary stores SHA256 before final confirmation.",
+    "progress": "Per-arm traces plus logs; terminal receipts per seed.",
+    "preservation": "Keep pilot source/results and all main source, checkpoints, scores, logs; package reproducible evidence.",
+    "registration": "Locally frozen, not externally preregistered. Pilot protocol preceded pilot; shared registry is added after pilot and before main."
+  },
+  "decision": {
+    "status": "PENDING_MAIN"
+  }
+}

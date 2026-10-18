@@ -1,5 +1,5 @@
 {
-  "authorization_note": "Language training remains paused. Fresh user-authorized synthetic angular/radial optimization completed without recovery; no future execution authorized. Previous synthetic failure/recovery remains preserved. User-authorized curve-parameter and minLSTM synthetic studies completed2026-10-17; language training remains paused.",
+  "authorization_note": "Language training remains paused. Fresh user-authorized synthetic angular/radial optimization completed without recovery; no future execution authorized. Previous synthetic failure/recovery remains preserved. User-authorized curve-parameter and minLSTM synthetic studies completed2026-10-17; language training remains paused. User-authorized bounded hybrid-curve synthetic study completed 2026-10-17; no architecture promotion or language-training execution.",
   "created_date": "2026-10-14",
   "evidence_recoveries": [
     {
@@ -126,6 +126,23 @@
       "strict_fidelity": "Three equal-state models PASS original tolerance; supplemental LSTM64 FAIL original FP32 optimizer parameter parity, descriptive only.",
       "terminal": "auto-research/results/minlstm-retention-20261017-v1/TERMINAL.json",
       "updates_per_arm": 3000
+    },
+    {
+      "run_id": "hybrid-curve-updates-20261017-v1",
+      "status": "COMPLETE_NO_PROMOTION",
+      "approval": "User 2026-10-17 18:10 America/Denver: Ok, cool - go ahead and proceed with the first experiments",
+      "protocol": "auto-research/results/hybrid-curve-updates-20261017-v1/PROTOCOL.json",
+      "protocol_sha256": "bc47dce7e2d6614b22690d0572456c22c813e3884acd944d5833985e91169873",
+      "source_manifest": "auto-research/results/hybrid-curve-updates-20261017-v1/SOURCE_MANIFEST.json",
+      "pilot_registration": "Local PILOT_PROTOCOL.json before pilot; this registry entry after pilot, before main.",
+      "report": "auto-research/reports/hybrid-curve-updates-20261017-v1.md",
+      "decision": "Guarded hybrid uses zero predicted updates, matches quality, costs 2.105x main CPU. Confidence-only avoids 91.03% backward calls but two-step accuracy falls to 62.04%, CPU 1.633x. No promotion.",
+      "arm_seed_rows": 15,
+      "terminal": "auto-research/results/hybrid-curve-updates-20261017-v1/TERMINAL.json",
+      "metrics": "auto-research/results/hybrid-curve-updates-20261017-v1/SUMMARY.json",
+      "checkpoint_freeze": "auto-research/results/hybrid-curve-updates-20261017-v1/CHECKPOINT_FREEZE.json",
+      "strict_fidelity": "PASS original FP32 2e-6 and FP64 2e-12 tolerances, no relaxation",
+      "publication_approval": "Standing user permission in this session: Go ahead and publish it, it's OK. Existing draft in own fork only."
     }
   ],
   "schema_version": 1,

@@ -1,0 +1,20 @@
+{
+  "arm": "confidence_only",
+  "seed": 101723,
+  "main_cpu": 1.594475182,
+  "main_wall": 1.5959476889984217,
+  "lifecycle_cpu": 6.959391718,
+  "counts": {
+    "backward": 97,
+    "proposed": 1000,
+    "eligible": 1000,
+    "applied": 940,
+    "skipped": 0,
+    "audits": 97,
+    "audit_failures": 60
+  },
+  "training_examples": 64000,
+  "data_sha256": "c76f8f06db453a2f400e2c71f67237837cc9269c75e23ad6a5844fc494c8db80",
+  "checkpoint_sha256": "866b7c7180a9e420628a9d3952a21be8fd0ffbf110b982151fd29c35ed790ad8",
+  "controller_frozen_after_warmup": true
+}

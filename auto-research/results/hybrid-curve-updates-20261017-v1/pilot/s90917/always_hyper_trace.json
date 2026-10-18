@@ -1,0 +1,4574 @@
+[
+  {
+    "step": 0,
+    "phase": 0,
+    "loss": 5.972474098205566,
+    "confidence": 0.9941667318344116,
+    "predicted_gain": -0.2730475068092346,
+    "eligible": true,
+    "applied": true,
+    "audit": null,
+    "memory": [
+      0.13069268620927985,
+      0.002539076635498481
+    ],
+    "counts": {
+      "backward": 0,
+      "proposed": 1,
+      "eligible": 1,
+      "applied": 1,
+      "skipped": 0,
+      "audits": 0,
+      "audit_failures": 0
+    }
+  },
+  {
+    "step": 2,
+    "phase": 0,
+    "loss": 5.526320934295654,
+    "confidence": 0.9942129254341125,
+    "predicted_gain": -0.2595178186893463,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.09429027396254241,
+      "state_accuracy": 0.5,
+      "candidate_loss": [
+        11.26034164428711,
+        0.007094666827470064
+      ],
+      "reference_loss": [
+        9.539318084716797,
+        0.009582431986927986
+      ],
+      "relative_update_error": 0.9218335151672363
+    },
+    "memory": [
+      0.12876721947465203,
+      0.010673500040063753
+    ],
+    "counts": {
+      "backward": 1,
+      "proposed": 3,
+      "eligible": 3,
+      "applied": 3,
+      "skipped": 0,
+      "audits": 1,
+      "audit_failures": 1
+    }
+  },
+  {
+    "step": 13,
+    "phase": 0,
+    "loss": 5.02379035949707,
+    "confidence": 0.9939308166503906,
+    "predicted_gain": -0.24803252518177032,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.0827888660132885,
+      "state_accuracy": 0.5,
+      "candidate_loss": [
+        9.079168319702148,
+        0.010413379408419132
+      ],
+      "reference_loss": [
+        7.69281530380249,
+        0.012266231700778008
+      ],
+      "relative_update_error": 0.9088828563690186
+    },
+    "memory": [
+      0.1268732727827645,
+      0.018402007996484657
+    ],
+    "counts": {
+      "backward": 2,
+      "proposed": 14,
+      "eligible": 14,
+      "applied": 14,
+      "skipped": 0,
+      "audits": 2,
+      "audit_failures": 2
+    }
+  },
+  {
+    "step": 21,
+    "phase": 0,
+    "loss": 4.177156448364258,
+    "confidence": 0.9939415454864502,
+    "predicted_gain": -0.2228962481021881,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.07314185053110123,
+      "state_accuracy": 0.5,
+      "candidate_loss": [
+        7.678808689117432,
+        0.01564979925751686
+      ],
+      "reference_loss": [
+        6.630169868469238,
+        0.024480002000927925
+      ],
+      "relative_update_error": 0.9188175201416016
+    },
+    "memory": [
+      0.12512369674433427,
+      0.024969627475214768
+    ],
+    "counts": {
+      "backward": 3,
+      "proposed": 22,
+      "eligible": 22,
+      "applied": 22,
+      "skipped": 0,
+      "audits": 3,
+      "audit_failures": 3
+    }
+  },
+  {
+    "step": 25,
+    "phase": 0,
+    "loss": 3.5911076068878174,
+    "confidence": 0.9939697980880737,
+    "predicted_gain": -0.20284000039100647,
+    "eligible": true,
+    "applied": true,
+    "audit": null,
+    "memory": [
+      0.12512369674433427,
+      0.024969627475214768
+    ],
+    "counts": {
+      "backward": 3,
+      "proposed": 26,
+      "eligible": 26,
+      "applied": 26,
+      "skipped": 0,
+      "audits": 3,
+      "audit_failures": 3
+    }
+  },
+  {
+    "step": 38,
+    "phase": 0,
+    "loss": 2.973629951477051,
+    "confidence": 0.9937406182289124,
+    "predicted_gain": -0.18505561351776123,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.07481842115521431,
+      "state_accuracy": 0.5,
+      "candidate_loss": [
+        5.460548400878906,
+        0.04925217851996422
+      ],
+      "reference_loss": [
+        4.344457626342773,
+        0.058924198150634766
+      ],
+      "relative_update_error": 0.9106124043464661
+    },
+    "memory": [
+      0.12342057392884988,
+      0.029233005719581373
+    ],
+    "counts": {
+      "backward": 4,
+      "proposed": 39,
+      "eligible": 39,
+      "applied": 39,
+      "skipped": 0,
+      "audits": 4,
+      "audit_failures": 4
+    }
+  },
+  {
+    "step": 39,
+    "phase": 0,
+    "loss": 3.0447258949279785,
+    "confidence": 0.993744432926178,
+    "predicted_gain": -0.18866831064224243,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.0714489072561264,
+      "state_accuracy": 0.5,
+      "candidate_loss": [
+        5.109312057495117,
+        0.041450005024671555
+      ],
+      "reference_loss": [
+        4.00410795211792,
+        0.05346381664276123
+      ],
+      "relative_update_error": 0.9109957814216614
+    },
+    "memory": [
+      0.12180452413951569,
+      0.0336323256029081
+    ],
+    "counts": {
+      "backward": 5,
+      "proposed": 40,
+      "eligible": 40,
+      "applied": 40,
+      "skipped": 0,
+      "audits": 5,
+      "audit_failures": 5
+    }
+  },
+  {
+    "step": 40,
+    "phase": 0,
+    "loss": 2.7818572521209717,
+    "confidence": 0.9937707781791687,
+    "predicted_gain": -0.17939665913581848,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.06233508139848709,
+      "state_accuracy": 0.5,
+      "candidate_loss": [
+        5.15728759765625,
+        0.03559017553925514
+      ],
+      "reference_loss": [
+        4.258742332458496,
+        0.043710559606552124
+      ],
+      "relative_update_error": 0.9075547456741333
+    },
+    "memory": [
+      0.12025207166091056,
+      0.03780378820962927
+    ],
+    "counts": {
+      "backward": 6,
+      "proposed": 41,
+      "eligible": 41,
+      "applied": 41,
+      "skipped": 0,
+      "audits": 6,
+      "audit_failures": 6
+    }
+  },
+  {
+    "step": 50,
+    "phase": 0,
+    "loss": 2.179053783416748,
+    "confidence": 0.99396812915802,
+    "predicted_gain": -0.1519395112991333,
+    "eligible": true,
+    "applied": true,
+    "audit": null,
+    "memory": [
+      0.12025207166091056,
+      0.03780378820962927
+    ],
+    "counts": {
+      "backward": 6,
+      "proposed": 51,
+      "eligible": 51,
+      "applied": 51,
+      "skipped": 0,
+      "audits": 6,
+      "audit_failures": 6
+    }
+  },
+  {
+    "step": 75,
+    "phase": 0,
+    "loss": 0.8756127953529358,
+    "confidence": 0.9952534437179565,
+    "predicted_gain": -0.07290755212306976,
+    "eligible": true,
+    "applied": true,
+    "audit": null,
+    "memory": [
+      0.12025207166091056,
+      0.03780378820962927
+    ],
+    "counts": {
+      "backward": 6,
+      "proposed": 76,
+      "eligible": 76,
+      "applied": 76,
+      "skipped": 0,
+      "audits": 6,
+      "audit_failures": 6
+    }
+  },
+  {
+    "step": 80,
+    "phase": 0,
+    "loss": 0.9149682521820068,
+    "confidence": 0.995227575302124,
+    "predicted_gain": -0.07522384077310562,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.02116198092699051,
+      "state_accuracy": 0.8125,
+      "candidate_loss": [
+        1.3035659790039062,
+        0.25570929050445557
+      ],
+      "reference_loss": [
+        1.0058362483978271,
+        0.3026003837585449
+      ],
+      "relative_update_error": 0.9160952568054199
+    },
+    "memory": [
+      0.11881994436189212,
+      0.038616691791453564
+    ],
+    "counts": {
+      "backward": 7,
+      "proposed": 81,
+      "eligible": 81,
+      "applied": 81,
+      "skipped": 0,
+      "audits": 7,
+      "audit_failures": 7
+    }
+  },
+  {
+    "step": 95,
+    "phase": 0,
+    "loss": 0.5892077684402466,
+    "confidence": 0.9954433441162109,
+    "predicted_gain": -0.05681435763835907,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.005408748984336853,
+      "state_accuracy": 0.90625,
+      "candidate_loss": [
+        0.7114342451095581,
+        0.430181622505188
+      ],
+      "reference_loss": [
+        0.5725339651107788,
+        0.44166117906570435
+      ],
+      "relative_update_error": 0.9520928859710693
+    },
+    "memory": [
+      0.11763941157365286,
+      0.039256137634581995
+    ],
+    "counts": {
+      "backward": 8,
+      "proposed": 96,
+      "eligible": 96,
+      "applied": 96,
+      "skipped": 0,
+      "audits": 8,
+      "audit_failures": 8
+    }
+  },
+  {
+    "step": 100,
+    "phase": 0,
+    "loss": 0.5992745757102966,
+    "confidence": 0.9953455328941345,
+    "predicted_gain": -0.05975227802991867,
+    "eligible": true,
+    "applied": true,
+    "audit": null,
+    "memory": [
+      0.11763941157365286,
+      0.039256137634581995
+    ],
+    "counts": {
+      "backward": 8,
+      "proposed": 101,
+      "eligible": 101,
+      "applied": 101,
+      "skipped": 0,
+      "audits": 8,
+      "audit_failures": 8
+    }
+  },
+  {
+    "step": 125,
+    "phase": 0,
+    "loss": 0.5319010615348816,
+    "confidence": 0.9957289099693298,
+    "predicted_gain": -0.04695484787225723,
+    "eligible": true,
+    "applied": true,
+    "audit": null,
+    "memory": [
+      0.11763941157365286,
+      0.039256137634581995
+    ],
+    "counts": {
+      "backward": 8,
+      "proposed": 126,
+      "eligible": 126,
+      "applied": 126,
+      "skipped": 0,
+      "audits": 8,
+      "audit_failures": 8
+    }
+  },
+  {
+    "step": 128,
+    "phase": 0,
+    "loss": 0.524276077747345,
+    "confidence": 0.9955461025238037,
+    "predicted_gain": -0.05360537767410278,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": 0.0004255622625350952,
+      "state_accuracy": 0.8125,
+      "candidate_loss": [
+        0.49838194251060486,
+        0.6166005730628967
+      ],
+      "reference_loss": [
+        0.42943453788757324,
+        0.630839467048645
+      ],
+      "relative_update_error": 0.9371068477630615
+    },
+    "memory": [
+      0.11644297523378552,
+      0.039994877749684785
+    ],
+    "counts": {
+      "backward": 9,
+      "proposed": 129,
+      "eligible": 129,
+      "applied": 129,
+      "skipped": 0,
+      "audits": 9,
+      "audit_failures": 9
+    }
+  },
+  {
+    "step": 129,
+    "phase": 0,
+    "loss": 0.5006386637687683,
+    "confidence": 0.9954853057861328,
+    "predicted_gain": -0.054061323404312134,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.0018305033445358276,
+      "state_accuracy": 0.8828125,
+      "candidate_loss": [
+        0.4980221688747406,
+        0.5818014144897461
+      ],
+      "reference_loss": [
+        0.423878014087677,
+        0.5670539140701294
+      ],
+      "relative_update_error": 0.9408990740776062
+    },
+    "memory": [
+      0.11532532184248427,
+      0.04060667486518935
+    ],
+    "counts": {
+      "backward": 10,
+      "proposed": 130,
+      "eligible": 130,
+      "applied": 130,
+      "skipped": 0,
+      "audits": 10,
+      "audit_failures": 10
+    }
+  },
+  {
+    "step": 138,
+    "phase": 0,
+    "loss": 0.6117241978645325,
+    "confidence": 0.9952217936515808,
+    "predicted_gain": -0.06567341089248657,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": 0.000751107931137085,
+      "state_accuracy": 0.859375,
+      "candidate_loss": [
+        0.5255436301231384,
+        0.5595129132270813
+      ],
+      "reference_loss": [
+        0.40778395533561707,
+        0.5209836959838867
+      ],
+      "relative_update_error": 0.9636327624320984
+    },
+    "memory": [
+      0.11437721956252055,
+      0.04189756706311107
+    ],
+    "counts": {
+      "backward": 11,
+      "proposed": 139,
+      "eligible": 139,
+      "applied": 139,
+      "skipped": 0,
+      "audits": 11,
+      "audit_failures": 11
+    }
+  },
+  {
+    "step": 143,
+    "phase": 0,
+    "loss": 0.5702524781227112,
+    "confidence": 0.9954914450645447,
+    "predicted_gain": -0.05870787799358368,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": true,
+      "gain": 0.005943477153778076,
+      "state_accuracy": 0.78125,
+      "candidate_loss": [
+        0.5203724503517151,
+        0.602548360824585
+      ],
+      "reference_loss": [
+        0.5104185938835144,
+        0.6385456919670105
+      ],
+      "relative_update_error": 0.9264401197433472
+    },
+    "memory": [
+      0.11329055918311125,
+      0.043035256467323604
+    ],
+    "counts": {
+      "backward": 12,
+      "proposed": 144,
+      "eligible": 144,
+      "applied": 144,
+      "skipped": 0,
+      "audits": 12,
+      "audit_failures": 11
+    }
+  },
+  {
+    "step": 150,
+    "phase": 0,
+    "loss": 0.5658389925956726,
+    "confidence": 0.9955412745475769,
+    "predicted_gain": -0.05592448264360428,
+    "eligible": true,
+    "applied": true,
+    "audit": null,
+    "memory": [
+      0.11329055918311125,
+      0.043035256467323604
+    ],
+    "counts": {
+      "backward": 12,
+      "proposed": 151,
+      "eligible": 151,
+      "applied": 151,
+      "skipped": 0,
+      "audits": 12,
+      "audit_failures": 11
+    }
+  },
+  {
+    "step": 162,
+    "phase": 0,
+    "loss": 0.5543644428253174,
+    "confidence": 0.9955304265022278,
+    "predicted_gain": -0.056938350200653076,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.004084154963493347,
+      "state_accuracy": 0.8515625,
+      "candidate_loss": [
+        0.48993587493896484,
+        0.6008477210998535
+      ],
+      "reference_loss": [
+        0.4226306974887848,
+        0.5580017566680908
+      ],
+      "relative_update_error": 0.928507924079895
+    },
+    "memory": [
+      0.11226857084435515,
+      0.04352620340581541
+    ],
+    "counts": {
+      "backward": 13,
+      "proposed": 163,
+      "eligible": 163,
+      "applied": 163,
+      "skipped": 0,
+      "audits": 13,
+      "audit_failures": 12
+    }
+  },
+  {
+    "step": 175,
+    "phase": 0,
+    "loss": 0.5798752307891846,
+    "confidence": 0.9953996539115906,
+    "predicted_gain": -0.06278827041387558,
+    "eligible": true,
+    "applied": true,
+    "audit": null,
+    "memory": [
+      0.11226857084435515,
+      0.04352620340581541
+    ],
+    "counts": {
+      "backward": 13,
+      "proposed": 176,
+      "eligible": 176,
+      "applied": 176,
+      "skipped": 0,
+      "audits": 13,
+      "audit_failures": 12
+    }
+  },
+  {
+    "step": 195,
+    "phase": 0,
+    "loss": 0.5177080035209656,
+    "confidence": 0.9957113265991211,
+    "predicted_gain": -0.05060628056526184,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": 0.0003177523612976074,
+      "state_accuracy": 0.828125,
+      "candidate_loss": [
+        0.455348402261734,
+        0.6162891387939453
+      ],
+      "reference_loss": [
+        0.39779970049858093,
+        0.6182994842529297
+      ],
+      "relative_update_error": 0.9405736923217773
+    },
+    "memory": [
+      0.11135801076374628,
+      0.04389609488185261
+    ],
+    "counts": {
+      "backward": 14,
+      "proposed": 196,
+      "eligible": 196,
+      "applied": 196,
+      "skipped": 0,
+      "audits": 14,
+      "audit_failures": 13
+    }
+  },
+  {
+    "step": 196,
+    "phase": 0,
+    "loss": 0.5814661383628845,
+    "confidence": 0.9955871105194092,
+    "predicted_gain": -0.05949478596448898,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": 0.0016385167837142944,
+      "state_accuracy": 0.765625,
+      "candidate_loss": [
+        0.46294161677360535,
+        0.6734395623207092
+      ],
+      "reference_loss": [
+        0.4084654450416565,
+        0.6907635927200317
+      ],
+      "relative_update_error": 0.9073586463928223
+    },
+    "memory": [
+      0.11032690345752308,
+      0.044757955275170146
+    ],
+    "counts": {
+      "backward": 15,
+      "proposed": 197,
+      "eligible": 197,
+      "applied": 197,
+      "skipped": 0,
+      "audits": 15,
+      "audit_failures": 14
+    }
+  },
+  {
+    "step": 197,
+    "phase": 0,
+    "loss": 0.5753411054611206,
+    "confidence": 0.9953585267066956,
+    "predicted_gain": -0.0639551505446434,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": 0.0006834864616394043,
+      "state_accuracy": 0.796875,
+      "candidate_loss": [
+        0.4855470359325409,
+        0.663273274898529
+      ],
+      "reference_loss": [
+        0.4916421175003052,
+        0.6380765438079834
+      ],
+      "relative_update_error": 0.9422498345375061
+    },
+    "memory": [
+      0.10952180745733445,
+      0.045751989361725774
+    ],
+    "counts": {
+      "backward": 16,
+      "proposed": 198,
+      "eligible": 198,
+      "applied": 198,
+      "skipped": 0,
+      "audits": 16,
+      "audit_failures": 15
+    }
+  },
+  {
+    "step": 200,
+    "phase": 0,
+    "loss": 0.4814629554748535,
+    "confidence": 0.9958845973014832,
+    "predicted_gain": -0.045089803636074066,
+    "eligible": true,
+    "applied": true,
+    "audit": null,
+    "memory": [
+      0.10952180745733445,
+      0.045751989361725774
+    ],
+    "counts": {
+      "backward": 16,
+      "proposed": 201,
+      "eligible": 201,
+      "applied": 201,
+      "skipped": 0,
+      "audits": 16,
+      "audit_failures": 15
+    }
+  },
+  {
+    "step": 201,
+    "phase": 0,
+    "loss": 0.5788066983222961,
+    "confidence": 0.9954220652580261,
+    "predicted_gain": -0.06591933220624924,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.002438947558403015,
+      "state_accuracy": 0.8671875,
+      "candidate_loss": [
+        0.45930957794189453,
+        0.5784371495246887
+      ],
+      "reference_loss": [
+        0.45941391587257385,
+        0.5616909861564636
+      ],
+      "relative_update_error": 0.8793178200721741
+    },
+    "memory": [
+      0.10844230618482859,
+      0.046638409126031795
+    ],
+    "counts": {
+      "backward": 17,
+      "proposed": 202,
+      "eligible": 202,
+      "applied": 202,
+      "skipped": 0,
+      "audits": 17,
+      "audit_failures": 16
+    }
+  },
+  {
+    "step": 210,
+    "phase": 0,
+    "loss": 0.5202230215072632,
+    "confidence": 0.9957299828529358,
+    "predicted_gain": -0.052305668592453,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.0025501400232315063,
+      "state_accuracy": 0.8046875,
+      "candidate_loss": [
+        0.4598585069179535,
+        0.6910550594329834
+      ],
+      "reference_loss": [
+        0.40359097719192505,
+        0.694959282875061
+      ],
+      "relative_update_error": 0.9118139743804932
+    },
+    "memory": [
+      0.10757926074748962,
+      0.046794265098191276
+    ],
+    "counts": {
+      "backward": 18,
+      "proposed": 211,
+      "eligible": 211,
+      "applied": 211,
+      "skipped": 0,
+      "audits": 18,
+      "audit_failures": 17
+    }
+  },
+  {
+    "step": 213,
+    "phase": 0,
+    "loss": 0.5826056599617004,
+    "confidence": 0.9955759048461914,
+    "predicted_gain": -0.05973737686872482,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.0021916180849075317,
+      "state_accuracy": 0.8515625,
+      "candidate_loss": [
+        0.4636216163635254,
+        0.5846861004829407
+      ],
+      "reference_loss": [
+        0.4129024147987366,
+        0.5739356875419617
+      ],
+      "relative_update_error": 0.91716468334198
+    },
+    "memory": [
+      0.10678612112682505,
+      0.04733183978247257
+    ],
+    "counts": {
+      "backward": 19,
+      "proposed": 214,
+      "eligible": 214,
+      "applied": 214,
+      "skipped": 0,
+      "audits": 19,
+      "audit_failures": 18
+    }
+  },
+  {
+    "step": 223,
+    "phase": 0,
+    "loss": 0.5076071619987488,
+    "confidence": 0.9958900809288025,
+    "predicted_gain": -0.04648713022470474,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.0025734007358551025,
+      "state_accuracy": 0.8828125,
+      "candidate_loss": [
+        0.45371729135513306,
+        0.6107774972915649
+      ],
+      "reference_loss": [
+        0.3810895085334778,
+        0.61015784740448
+      ],
+      "relative_update_error": 0.934280276298523
+    },
+    "memory": [
+      0.10611821645197642,
+      0.04716093426779142
+    ],
+    "counts": {
+      "backward": 20,
+      "proposed": 224,
+      "eligible": 224,
+      "applied": 224,
+      "skipped": 0,
+      "audits": 20,
+      "audit_failures": 19
+    }
+  },
+  {
+    "step": 225,
+    "phase": 0,
+    "loss": 0.5235556960105896,
+    "confidence": 0.9958848357200623,
+    "predicted_gain": -0.04975104331970215,
+    "eligible": true,
+    "applied": true,
+    "audit": null,
+    "memory": [
+      0.10611821645197642,
+      0.04716093426779142
+    ],
+    "counts": {
+      "backward": 20,
+      "proposed": 226,
+      "eligible": 226,
+      "applied": 226,
+      "skipped": 0,
+      "audits": 20,
+      "audit_failures": 19
+    }
+  },
+  {
+    "step": 233,
+    "phase": 0,
+    "loss": 0.5081086754798889,
+    "confidence": 0.9960015416145325,
+    "predicted_gain": -0.04473351687192917,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": true,
+      "gain": 0.00641988217830658,
+      "state_accuracy": 0.890625,
+      "candidate_loss": [
+        0.45251786708831787,
+        0.6181756258010864
+      ],
+      "reference_loss": [
+        0.44885876774787903,
+        0.6477017402648926
+      ],
+      "relative_update_error": 0.9164674282073975
+    },
+    "memory": [
+      0.10539464277041459,
+      0.04736055750691364
+    ],
+    "counts": {
+      "backward": 21,
+      "proposed": 234,
+      "eligible": 234,
+      "applied": 234,
+      "skipped": 0,
+      "audits": 21,
+      "audit_failures": 19
+    }
+  },
+  {
+    "step": 247,
+    "phase": 0,
+    "loss": 0.49963149428367615,
+    "confidence": 0.9960169196128845,
+    "predicted_gain": -0.044221289455890656,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.00028972327709198,
+      "state_accuracy": 0.8984375,
+      "candidate_loss": [
+        0.4146375060081482,
+        0.6210725903511047
+      ],
+      "reference_loss": [
+        0.39131203293800354,
+        0.6063417196273804
+      ],
+      "relative_update_error": 0.9217022061347961
+    },
+    "memory": [
+      0.10473342166256784,
+      0.04718910794050789
+    ],
+    "counts": {
+      "backward": 22,
+      "proposed": 248,
+      "eligible": 248,
+      "applied": 248,
+      "skipped": 0,
+      "audits": 22,
+      "audit_failures": 20
+    }
+  },
+  {
+    "step": 248,
+    "phase": 0,
+    "loss": 0.5360271334648132,
+    "confidence": 0.9958130717277527,
+    "predicted_gain": -0.05377277731895447,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.0014860481023788452,
+      "state_accuracy": 0.8984375,
+      "candidate_loss": [
+        0.40675121545791626,
+        0.6175096035003662
+      ],
+      "reference_loss": [
+        0.39514100551605225,
+        0.6023029685020447
+      ],
+      "relative_update_error": 0.8892019987106323
+    },
+    "memory": [
+      0.1039427605729926,
+      0.04744398900431127
+    ],
+    "counts": {
+      "backward": 23,
+      "proposed": 249,
+      "eligible": 249,
+      "applied": 249,
+      "skipped": 0,
+      "audits": 23,
+      "audit_failures": 21
+    }
+  },
+  {
+    "step": 250,
+    "phase": 1,
+    "loss": 2.8788816928863525,
+    "confidence": 0.9940361976623535,
+    "predicted_gain": -0.18509194254875183,
+    "eligible": true,
+    "applied": true,
+    "audit": null,
+    "memory": [
+      0.1039427605729926,
+      0.04744398900431127
+    ],
+    "counts": {
+      "backward": 23,
+      "proposed": 251,
+      "eligible": 251,
+      "applied": 251,
+      "skipped": 0,
+      "audits": 23,
+      "audit_failures": 21
+    }
+  },
+  {
+    "step": 261,
+    "phase": 1,
+    "loss": 2.006953239440918,
+    "confidence": 0.9941761493682861,
+    "predicted_gain": -0.14991991221904755,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.03930811583995819,
+      "state_accuracy": 0.515625,
+      "candidate_loss": [
+        3.3847787380218506,
+        0.4590023458003998
+      ],
+      "reference_loss": [
+        2.9114913940429688,
+        0.4593210220336914
+      ],
+      "relative_update_error": 0.8716310262680054
+    },
+    "memory": [
+      0.103103777675683,
+      0.05060237937305018
+    ],
+    "counts": {
+      "backward": 24,
+      "proposed": 262,
+      "eligible": 262,
+      "applied": 262,
+      "skipped": 0,
+      "audits": 24,
+      "audit_failures": 22
+    }
+  },
+  {
+    "step": 263,
+    "phase": 1,
+    "loss": 2.493893623352051,
+    "confidence": 0.9941919445991516,
+    "predicted_gain": -0.16719436645507812,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.050927937030792236,
+      "state_accuracy": 0.3984375,
+      "candidate_loss": [
+        3.7873661518096924,
+        0.5383306741714478
+      ],
+      "reference_loss": [
+        3.1674187183380127,
+        0.6541955471038818
+      ],
+      "relative_update_error": 0.9022955298423767
+    },
+    "memory": [
+      0.10246006644111073,
+      0.05388558187561196
+    ],
+    "counts": {
+      "backward": 25,
+      "proposed": 264,
+      "eligible": 264,
+      "applied": 264,
+      "skipped": 0,
+      "audits": 25,
+      "audit_failures": 23
+    }
+  },
+  {
+    "step": 275,
+    "phase": 1,
+    "loss": 2.171546697616577,
+    "confidence": 0.9938556551933289,
+    "predicted_gain": -0.16388331353664398,
+    "eligible": true,
+    "applied": true,
+    "audit": null,
+    "memory": [
+      0.10246006644111073,
+      0.05388558187561196
+    ],
+    "counts": {
+      "backward": 25,
+      "proposed": 276,
+      "eligible": 276,
+      "applied": 276,
+      "skipped": 0,
+      "audits": 25,
+      "audit_failures": 23
+    }
+  },
+  {
+    "step": 293,
+    "phase": 1,
+    "loss": 0.9813675880432129,
+    "confidence": 0.995317816734314,
+    "predicted_gain": -0.08267237991094589,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.013949543237686157,
+      "state_accuracy": 0.859375,
+      "candidate_loss": [
+        1.378494143486023,
+        0.5316877365112305
+      ],
+      "reference_loss": [
+        1.141959547996521,
+        0.5356401801109314
+      ],
+      "relative_update_error": 0.9194261431694031
+    },
+    "memory": [
+      0.10193419383490221,
+      0.05462744461549435
+    ],
+    "counts": {
+      "backward": 26,
+      "proposed": 294,
+      "eligible": 294,
+      "applied": 294,
+      "skipped": 0,
+      "audits": 26,
+      "audit_failures": 24
+    }
+  },
+  {
+    "step": 300,
+    "phase": 1,
+    "loss": 1.4168791770935059,
+    "confidence": 0.9952163696289062,
+    "predicted_gain": -0.10429371893405914,
+    "eligible": true,
+    "applied": true,
+    "audit": null,
+    "memory": [
+      0.10193419383490221,
+      0.05462744461549435
+    ],
+    "counts": {
+      "backward": 26,
+      "proposed": 301,
+      "eligible": 301,
+      "applied": 301,
+      "skipped": 0,
+      "audits": 26,
+      "audit_failures": 24
+    }
+  },
+  {
+    "step": 319,
+    "phase": 1,
+    "loss": 1.0841987133026123,
+    "confidence": 0.9953208565711975,
+    "predicted_gain": -0.0921013355255127,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.01373058557510376,
+      "state_accuracy": 0.8046875,
+      "candidate_loss": [
+        1.0186939239501953,
+        0.6034294366836548
+      ],
+      "reference_loss": [
+        0.8235087394714355,
+        0.6470296382904053
+      ],
+      "relative_update_error": 0.8913620710372925
+    },
+    "memory": [
+      0.10129429449834357,
+      0.055814609882240074
+    ],
+    "counts": {
+      "backward": 27,
+      "proposed": 320,
+      "eligible": 320,
+      "applied": 320,
+      "skipped": 0,
+      "audits": 27,
+      "audit_failures": 25
+    }
+  },
+  {
+    "step": 325,
+    "phase": 1,
+    "loss": 0.8529295325279236,
+    "confidence": 0.9954217076301575,
+    "predicted_gain": -0.07914484292268753,
+    "eligible": true,
+    "applied": true,
+    "audit": null,
+    "memory": [
+      0.10129429449834357,
+      0.055814609882240074
+    ],
+    "counts": {
+      "backward": 27,
+      "proposed": 326,
+      "eligible": 326,
+      "applied": 326,
+      "skipped": 0,
+      "audits": 27,
+      "audit_failures": 25
+    }
+  },
+  {
+    "step": 343,
+    "phase": 1,
+    "loss": 0.8179198503494263,
+    "confidence": 0.9955704808235168,
+    "predicted_gain": -0.07415477931499481,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.003671586513519287,
+      "state_accuracy": 0.78125,
+      "candidate_loss": [
+        0.6068868637084961,
+        0.638562023639679
+      ],
+      "reference_loss": [
+        0.5204737186431885,
+        0.6561700105667114
+      ],
+      "relative_update_error": 0.9268434047698975
+    },
+    "memory": [
+      0.10086379679727588,
+      0.056548039028201845
+    ],
+    "counts": {
+      "backward": 28,
+      "proposed": 344,
+      "eligible": 344,
+      "applied": 344,
+      "skipped": 0,
+      "audits": 28,
+      "audit_failures": 26
+    }
+  },
+  {
+    "step": 344,
+    "phase": 1,
+    "loss": 0.8012741804122925,
+    "confidence": 0.9953820109367371,
+    "predicted_gain": -0.07985451817512512,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.01274225115776062,
+      "state_accuracy": 0.765625,
+      "candidate_loss": [
+        0.699756920337677,
+        0.7144182324409485
+      ],
+      "reference_loss": [
+        0.5813902020454407,
+        0.7119048237800598
+      ],
+      "relative_update_error": 0.9086156487464905
+    },
+    "memory": [
+      0.10036368520114454,
+      0.05707625042765997
+    ],
+    "counts": {
+      "backward": 29,
+      "proposed": 345,
+      "eligible": 345,
+      "applied": 345,
+      "skipped": 0,
+      "audits": 29,
+      "audit_failures": 27
+    }
+  },
+  {
+    "step": 350,
+    "phase": 1,
+    "loss": 0.7764474153518677,
+    "confidence": 0.9954482913017273,
+    "predicted_gain": -0.0771636888384819,
+    "eligible": true,
+    "applied": true,
+    "audit": null,
+    "memory": [
+      0.10036368520114454,
+      0.05707625042765997
+    ],
+    "counts": {
+      "backward": 29,
+      "proposed": 351,
+      "eligible": 351,
+      "applied": 351,
+      "skipped": 0,
+      "audits": 29,
+      "audit_failures": 27
+    }
+  },
+  {
+    "step": 353,
+    "phase": 1,
+    "loss": 0.7435538172721863,
+    "confidence": 0.9956837892532349,
+    "predicted_gain": -0.06929509341716766,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": true,
+      "gain": 0.0017429888248443604,
+      "state_accuracy": 0.828125,
+      "candidate_loss": [
+        0.5904022455215454,
+        0.7306841611862183
+      ],
+      "reference_loss": [
+        0.5900036692619324,
+        0.7513689994812012
+      ],
+      "relative_update_error": 0.8890995979309082
+    },
+    "memory": [
+      0.09979099893074185,
+      0.05777434201837757
+    ],
+    "counts": {
+      "backward": 30,
+      "proposed": 354,
+      "eligible": 354,
+      "applied": 354,
+      "skipped": 0,
+      "audits": 30,
+      "audit_failures": 27
+    }
+  },
+  {
+    "step": 356,
+    "phase": 1,
+    "loss": 0.9005116820335388,
+    "confidence": 0.995284378528595,
+    "predicted_gain": -0.08943040668964386,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.0053980350494384766,
+      "state_accuracy": 0.828125,
+      "candidate_loss": [
+        0.6542817950248718,
+        0.73755943775177
+      ],
+      "reference_loss": [
+        0.6038801670074463,
+        0.7495368719100952
+      ],
+      "relative_update_error": 0.9125515222549438
+    },
+    "memory": [
+      0.09936420659547948,
+      0.05908724349946896
+    ],
+    "counts": {
+      "backward": 31,
+      "proposed": 357,
+      "eligible": 357,
+      "applied": 357,
+      "skipped": 0,
+      "audits": 31,
+      "audit_failures": 28
+    }
+  },
+  {
+    "step": 363,
+    "phase": 1,
+    "loss": 0.729914128780365,
+    "confidence": 0.995518147945404,
+    "predicted_gain": -0.07523152232170105,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.003928646445274353,
+      "state_accuracy": 0.8828125,
+      "candidate_loss": [
+        0.4189796447753906,
+        0.7397026419639587
+      ],
+      "reference_loss": [
+        0.3897729516029358,
+        0.7084981203079224
+      ],
+      "relative_update_error": 0.8956586718559265
+    },
+    "memory": [
+      0.09887428962498514,
+      0.059698025118316844
+    ],
+    "counts": {
+      "backward": 32,
+      "proposed": 364,
+      "eligible": 364,
+      "applied": 364,
+      "skipped": 0,
+      "audits": 32,
+      "audit_failures": 29
+    }
+  },
+  {
+    "step": 372,
+    "phase": 1,
+    "loss": 0.8297923803329468,
+    "confidence": 0.9953773021697998,
+    "predicted_gain": -0.0821242555975914,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.0012430250644683838,
+      "state_accuracy": 0.828125,
+      "candidate_loss": [
+        0.6044981479644775,
+        0.8266592025756836
+      ],
+      "reference_loss": [
+        0.4710715711116791,
+        0.8530604839324951
+      ],
+      "relative_update_error": 0.938565194606781
+    },
+    "memory": [
+      0.09862340111676977,
+      0.06075718538905715
+    ],
+    "counts": {
+      "backward": 33,
+      "proposed": 373,
+      "eligible": 373,
+      "applied": 373,
+      "skipped": 0,
+      "audits": 33,
+      "audit_failures": 30
+    }
+  },
+  {
+    "step": 375,
+    "phase": 1,
+    "loss": 0.8918067216873169,
+    "confidence": 0.9956680536270142,
+    "predicted_gain": -0.07752332091331482,
+    "eligible": true,
+    "applied": true,
+    "audit": null,
+    "memory": [
+      0.09862340111676977,
+      0.06075718538905715
+    ],
+    "counts": {
+      "backward": 33,
+      "proposed": 376,
+      "eligible": 376,
+      "applied": 376,
+      "skipped": 0,
+      "audits": 33,
+      "audit_failures": 30
+    }
+  },
+  {
+    "step": 379,
+    "phase": 1,
+    "loss": 0.6662508249282837,
+    "confidence": 0.9959761500358582,
+    "predicted_gain": -0.056988880038261414,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.0012940168380737305,
+      "state_accuracy": 0.7734375,
+      "candidate_loss": [
+        0.5429452657699585,
+        0.7352147102355957
+      ],
+      "reference_loss": [
+        0.422970712184906,
+        0.7332882285118103
+      ],
+      "relative_update_error": 0.9420636296272278
+    },
+    "memory": [
+      0.09840254920906741,
+      0.06050406927961368
+    ],
+    "counts": {
+      "backward": 34,
+      "proposed": 380,
+      "eligible": 380,
+      "applied": 380,
+      "skipped": 0,
+      "audits": 34,
+      "audit_failures": 31
+    }
+  },
+  {
+    "step": 388,
+    "phase": 1,
+    "loss": 0.8776549696922302,
+    "confidence": 0.9953745007514954,
+    "predicted_gain": -0.08769592642784119,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.002107679843902588,
+      "state_accuracy": 0.8046875,
+      "candidate_loss": [
+        0.5497226715087891,
+        0.8916271328926086
+      ],
+      "reference_loss": [
+        0.4960540533065796,
+        0.8748714327812195
+      ],
+      "relative_update_error": 0.9200929999351501
+    },
+    "memory": [
+      0.09808288674828977,
+      0.061758278144829926
+    ],
+    "counts": {
+      "backward": 35,
+      "proposed": 389,
+      "eligible": 389,
+      "applied": 389,
+      "skipped": 0,
+      "audits": 35,
+      "audit_failures": 32
+    }
+  },
+  {
+    "step": 400,
+    "phase": 1,
+    "loss": 0.6746276021003723,
+    "confidence": 0.9958481788635254,
+    "predicted_gain": -0.06448926031589508,
+    "eligible": true,
+    "applied": true,
+    "audit": null,
+    "memory": [
+      0.09808288674828977,
+      0.061758278144829926
+    ],
+    "counts": {
+      "backward": 35,
+      "proposed": 401,
+      "eligible": 401,
+      "applied": 401,
+      "skipped": 0,
+      "audits": 35,
+      "audit_failures": 32
+    }
+  },
+  {
+    "step": 403,
+    "phase": 1,
+    "loss": 0.745833694934845,
+    "confidence": 0.9956100583076477,
+    "predicted_gain": -0.07699170708656311,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.0008953362703323364,
+      "state_accuracy": 0.8359375,
+      "candidate_loss": [
+        0.4590349495410919,
+        0.7388695478439331
+      ],
+      "reference_loss": [
+        0.40815985202789307,
+        0.7420923113822937
+      ],
+      "relative_update_error": 0.9250605702400208
+    },
+    "memory": [
+      0.09780404526207538,
+      0.06247518277839996
+    ],
+    "counts": {
+      "backward": 36,
+      "proposed": 404,
+      "eligible": 404,
+      "applied": 404,
+      "skipped": 0,
+      "audits": 36,
+      "audit_failures": 33
+    }
+  },
+  {
+    "step": 406,
+    "phase": 1,
+    "loss": 0.7218366861343384,
+    "confidence": 0.9959444403648376,
+    "predicted_gain": -0.0644691064953804,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.003286421298980713,
+      "state_accuracy": 0.8046875,
+      "candidate_loss": [
+        0.4317021369934082,
+        0.8441286087036133
+      ],
+      "reference_loss": [
+        0.3871077001094818,
+        0.8162733912467957
+      ],
+      "relative_update_error": 0.8982792496681213
+    },
+    "memory": [
+      0.09740523924731222,
+      0.062410557899299945
+    ],
+    "counts": {
+      "backward": 37,
+      "proposed": 407,
+      "eligible": 407,
+      "applied": 407,
+      "skipped": 0,
+      "audits": 37,
+      "audit_failures": 34
+    }
+  },
+  {
+    "step": 408,
+    "phase": 1,
+    "loss": 0.6927058696746826,
+    "confidence": 0.9958409667015076,
+    "predicted_gain": -0.06765265762805939,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.003997012972831726,
+      "state_accuracy": 0.78125,
+      "candidate_loss": [
+        0.36631473898887634,
+        0.9007938504219055
+      ],
+      "reference_loss": [
+        0.3258154094219208,
+        0.8722505569458008
+      ],
+      "relative_update_error": 0.9064480066299438
+    },
+    "memory": [
+      0.09706721731809631,
+      0.062472812237096324
+    ],
+    "counts": {
+      "backward": 38,
+      "proposed": 409,
+      "eligible": 409,
+      "applied": 409,
+      "skipped": 0,
+      "audits": 38,
+      "audit_failures": 35
+    }
+  },
+  {
+    "step": 425,
+    "phase": 1,
+    "loss": 0.8938325643539429,
+    "confidence": 0.995591402053833,
+    "predicted_gain": -0.08471576869487762,
+    "eligible": true,
+    "applied": true,
+    "audit": null,
+    "memory": [
+      0.09706721731809631,
+      0.062472812237096324
+    ],
+    "counts": {
+      "backward": 38,
+      "proposed": 426,
+      "eligible": 426,
+      "applied": 426,
+      "skipped": 0,
+      "audits": 38,
+      "audit_failures": 35
+    }
+  },
+  {
+    "step": 433,
+    "phase": 1,
+    "loss": 0.7600128054618835,
+    "confidence": 0.995891809463501,
+    "predicted_gain": -0.07022451609373093,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.0021285712718963623,
+      "state_accuracy": 0.828125,
+      "candidate_loss": [
+        0.42691197991371155,
+        0.8259431719779968
+      ],
+      "reference_loss": [
+        0.41407710313796997,
+        0.7718633413314819
+      ],
+      "relative_update_error": 0.9149280190467834
+    },
+    "memory": [
+      0.09678849654742541,
+      0.06275396886633323
+    ],
+    "counts": {
+      "backward": 39,
+      "proposed": 434,
+      "eligible": 434,
+      "applied": 434,
+      "skipped": 0,
+      "audits": 39,
+      "audit_failures": 36
+    }
+  },
+  {
+    "step": 434,
+    "phase": 1,
+    "loss": 0.7299283742904663,
+    "confidence": 0.9961226582527161,
+    "predicted_gain": -0.061367012560367584,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": 0.0024918019771575928,
+      "state_accuracy": 0.8203125,
+      "candidate_loss": [
+        0.4789898693561554,
+        0.8403855562210083
+      ],
+      "reference_loss": [
+        0.4344085454940796,
+        0.8752135634422302
+      ],
+      "relative_update_error": 0.9302127957344055
+    },
+    "memory": [
+      0.09660013569872616,
+      0.06280921114989282
+    ],
+    "counts": {
+      "backward": 40,
+      "proposed": 435,
+      "eligible": 435,
+      "applied": 435,
+      "skipped": 0,
+      "audits": 40,
+      "audit_failures": 37
+    }
+  },
+  {
+    "step": 437,
+    "phase": 1,
+    "loss": 0.7326011061668396,
+    "confidence": 0.9959738850593567,
+    "predicted_gain": -0.06948662549257278,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.006660297513008118,
+      "state_accuracy": 0.765625,
+      "candidate_loss": [
+        0.44221463799476624,
+        0.9180576801300049
+      ],
+      "reference_loss": [
+        0.42807772755622864,
+        0.8749468922615051
+      ],
+      "relative_update_error": 0.9151685237884521
+    },
+    "memory": [
+      0.09634597153273211,
+      0.06281006699137641
+    ],
+    "counts": {
+      "backward": 41,
+      "proposed": 438,
+      "eligible": 438,
+      "applied": 438,
+      "skipped": 0,
+      "audits": 41,
+      "audit_failures": 38
+    }
+  },
+  {
+    "step": 445,
+    "phase": 1,
+    "loss": 0.8368085026741028,
+    "confidence": 0.9958246946334839,
+    "predicted_gain": -0.07762840390205383,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": 0.0017126798629760742,
+      "state_accuracy": 0.859375,
+      "candidate_loss": [
+        0.42939767241477966,
+        0.7266528010368347
+      ],
+      "reference_loss": [
+        0.37744444608688354,
+        0.7724062204360962
+      ],
+      "relative_update_error": 0.9353442788124084
+    },
+    "memory": [
+      0.09620539435015754,
+      0.06363661783005908
+    ],
+    "counts": {
+      "backward": 42,
+      "proposed": 446,
+      "eligible": 446,
+      "applied": 446,
+      "skipped": 0,
+      "audits": 42,
+      "audit_failures": 39
+    }
+  },
+  {
+    "step": 450,
+    "phase": 1,
+    "loss": 0.7972019910812378,
+    "confidence": 0.9958434700965881,
+    "predicted_gain": -0.07629118114709854,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.0052032470703125,
+      "state_accuracy": 0.8359375,
+      "candidate_loss": [
+        0.4938018321990967,
+        0.8245500326156616
+      ],
+      "reference_loss": [
+        0.42718666791915894,
+        0.7609946131706238
+      ],
+      "relative_update_error": 0.9247715473175049
+    },
+    "memory": [
+      0.09601898236923719,
+      0.06400918364239543
+    ],
+    "counts": {
+      "backward": 43,
+      "proposed": 451,
+      "eligible": 451,
+      "applied": 451,
+      "skipped": 0,
+      "audits": 43,
+      "audit_failures": 40
+    }
+  },
+  {
+    "step": 455,
+    "phase": 1,
+    "loss": 0.7784203886985779,
+    "confidence": 0.9957817792892456,
+    "predicted_gain": -0.07869638502597809,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.0037617087364196777,
+      "state_accuracy": 0.8515625,
+      "candidate_loss": [
+        0.4720679819583893,
+        0.715110719203949
+      ],
+      "reference_loss": [
+        0.4107160270214081,
+        0.6701685786247253
+      ],
+      "relative_update_error": 0.9340044260025024
+    },
+    "memory": [
+      0.09588805538078783,
+      0.06455545827475358
+    ],
+    "counts": {
+      "backward": 44,
+      "proposed": 456,
+      "eligible": 456,
+      "applied": 456,
+      "skipped": 0,
+      "audits": 44,
+      "audit_failures": 41
+    }
+  },
+  {
+    "step": 469,
+    "phase": 1,
+    "loss": 0.8058072924613953,
+    "confidence": 0.9958392381668091,
+    "predicted_gain": -0.07996174693107605,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.002157256007194519,
+      "state_accuracy": 0.828125,
+      "candidate_loss": [
+        0.43432119488716125,
+        0.8061729669570923
+      ],
+      "reference_loss": [
+        0.39339980483055115,
+        0.8199214935302734
+      ],
+      "relative_update_error": 0.9285672307014465
+    },
+    "memory": [
+      0.09573648876525567,
+      0.06521790990720998
+    ],
+    "counts": {
+      "backward": 45,
+      "proposed": 470,
+      "eligible": 470,
+      "applied": 470,
+      "skipped": 0,
+      "audits": 45,
+      "audit_failures": 42
+    }
+  },
+  {
+    "step": 470,
+    "phase": 1,
+    "loss": 0.7005525827407837,
+    "confidence": 0.9963028430938721,
+    "predicted_gain": -0.05750138312578201,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": 0.004814460873603821,
+      "state_accuracy": 0.8359375,
+      "candidate_loss": [
+        0.4625147879123688,
+        0.8370363116264343
+      ],
+      "reference_loss": [
+        0.4020872116088867,
+        0.8642650842666626
+      ],
+      "relative_update_error": 0.9176046252250671
+    },
+    "memory": [
+      0.09553768745311822,
+      0.06507280661181877
+    ],
+    "counts": {
+      "backward": 46,
+      "proposed": 471,
+      "eligible": 471,
+      "applied": 471,
+      "skipped": 0,
+      "audits": 46,
+      "audit_failures": 43
+    }
+  },
+  {
+    "step": 472,
+    "phase": 1,
+    "loss": 0.7249004244804382,
+    "confidence": 0.9961163997650146,
+    "predicted_gain": -0.06877246499061584,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": true,
+      "gain": 0.006965160369873047,
+      "state_accuracy": 0.8359375,
+      "candidate_loss": [
+        0.44740596413612366,
+        0.8664993047714233
+      ],
+      "reference_loss": [
+        0.43802011013031006,
+        0.9131956100463867
+      ],
+      "relative_update_error": 0.8748968839645386
+    },
+    "memory": [
+      0.09513528750028499,
+      0.06560604754925228
+    ],
+    "counts": {
+      "backward": 47,
+      "proposed": 473,
+      "eligible": 473,
+      "applied": 473,
+      "skipped": 0,
+      "audits": 47,
+      "audit_failures": 43
+    }
+  },
+  {
+    "step": 473,
+    "phase": 1,
+    "loss": 0.8048781752586365,
+    "confidence": 0.9960141181945801,
+    "predicted_gain": -0.07361207157373428,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": true,
+      "gain": 0.00500236451625824,
+      "state_accuracy": 0.828125,
+      "candidate_loss": [
+        0.45771855115890503,
+        0.8347454071044922
+      ],
+      "reference_loss": [
+        0.47126662731170654,
+        0.8445307016372681
+      ],
+      "relative_update_error": 0.9168962240219116
+    },
+    "memory": [
+      0.0949630042453803,
+      0.0662564669762893
+    ],
+    "counts": {
+      "backward": 48,
+      "proposed": 474,
+      "eligible": 474,
+      "applied": 474,
+      "skipped": 0,
+      "audits": 48,
+      "audit_failures": 43
+    }
+  },
+  {
+    "step": 475,
+    "phase": 1,
+    "loss": 0.8827592134475708,
+    "confidence": 0.9959306120872498,
+    "predicted_gain": -0.07816536724567413,
+    "eligible": true,
+    "applied": true,
+    "audit": null,
+    "memory": [
+      0.0949630042453803,
+      0.0662564669762893
+    ],
+    "counts": {
+      "backward": 48,
+      "proposed": 476,
+      "eligible": 476,
+      "applied": 476,
+      "skipped": 0,
+      "audits": 48,
+      "audit_failures": 43
+    }
+  },
+  {
+    "step": 482,
+    "phase": 1,
+    "loss": 0.7056958079338074,
+    "confidence": 0.9960504174232483,
+    "predicted_gain": -0.06993577629327774,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": 0.0004793703556060791,
+      "state_accuracy": 0.796875,
+      "candidate_loss": [
+        0.4011918306350708,
+        0.897798478603363
+      ],
+      "reference_loss": [
+        0.36369386315345764,
+        0.8653923273086548
+      ],
+      "relative_update_error": 0.9184858798980713
+    },
+    "memory": [
+      0.09480728343260164,
+      0.06646440095991903
+    ],
+    "counts": {
+      "backward": 49,
+      "proposed": 483,
+      "eligible": 483,
+      "applied": 483,
+      "skipped": 0,
+      "audits": 49,
+      "audit_failures": 44
+    }
+  },
+  {
+    "step": 487,
+    "phase": 1,
+    "loss": 0.748215913772583,
+    "confidence": 0.9962236881256104,
+    "predicted_gain": -0.06552933901548386,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": 0.003997400403022766,
+      "state_accuracy": 0.796875,
+      "candidate_loss": [
+        0.5007166266441345,
+        0.7882179021835327
+      ],
+      "reference_loss": [
+        0.4692535996437073,
+        0.7923840284347534
+      ],
+      "relative_update_error": 0.913030207157135
+    },
+    "memory": [
+      0.09463207029675723,
+      0.0666175178828484
+    ],
+    "counts": {
+      "backward": 50,
+      "proposed": 488,
+      "eligible": 488,
+      "applied": 488,
+      "skipped": 0,
+      "audits": 50,
+      "audit_failures": 45
+    }
+  },
+  {
+    "step": 491,
+    "phase": 1,
+    "loss": 0.9271676540374756,
+    "confidence": 0.9958670139312744,
+    "predicted_gain": -0.08603373914957047,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": 0.007729724049568176,
+      "state_accuracy": 0.8046875,
+      "candidate_loss": [
+        0.4530877470970154,
+        0.8448864221572876
+      ],
+      "reference_loss": [
+        0.4390069246292114,
+        0.9219568371772766
+      ],
+      "relative_update_error": 0.9186798930168152
+    },
+    "memory": [
+      0.09449386624700344,
+      0.06797481514866291
+    ],
+    "counts": {
+      "backward": 51,
+      "proposed": 492,
+      "eligible": 492,
+      "applied": 492,
+      "skipped": 0,
+      "audits": 51,
+      "audit_failures": 46
+    }
+  },
+  {
+    "step": 500,
+    "phase": 2,
+    "loss": 1.9489617347717285,
+    "confidence": 0.9953768253326416,
+    "predicted_gain": -0.14402098953723907,
+    "eligible": true,
+    "applied": true,
+    "audit": null,
+    "memory": [
+      0.09449386624700344,
+      0.06797481514866291
+    ],
+    "counts": {
+      "backward": 51,
+      "proposed": 501,
+      "eligible": 501,
+      "applied": 501,
+      "skipped": 0,
+      "audits": 51,
+      "audit_failures": 46
+    }
+  },
+  {
+    "step": 501,
+    "phase": 2,
+    "loss": 1.9256573915481567,
+    "confidence": 0.9949244260787964,
+    "predicted_gain": -0.15939271450042725,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.06128081679344177,
+      "state_accuracy": 0.46875,
+      "candidate_loss": [
+        2.9086391925811768,
+        0.796404242515564
+      ],
+      "reference_loss": [
+        2.383596420288086,
+        0.8237413763999939
+      ],
+      "relative_update_error": 0.8983083367347717
+    },
+    "memory": [
+      0.09426071461832712,
+      0.06948166927657903
+    ],
+    "counts": {
+      "backward": 52,
+      "proposed": 502,
+      "eligible": 502,
+      "applied": 502,
+      "skipped": 0,
+      "audits": 52,
+      "audit_failures": 47
+    }
+  },
+  {
+    "step": 513,
+    "phase": 2,
+    "loss": 1.3720242977142334,
+    "confidence": 0.9945850968360901,
+    "predicted_gain": -0.1458558440208435,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.022042810916900635,
+      "state_accuracy": 0.484375,
+      "candidate_loss": [
+        2.29107403755188,
+        0.7697910070419312
+      ],
+      "reference_loss": [
+        2.093343734741211,
+        0.7877720594406128
+      ],
+      "relative_update_error": 0.9103808403015137
+    },
+    "memory": [
+      0.09409958308891833,
+      0.07219823746794722
+    ],
+    "counts": {
+      "backward": 53,
+      "proposed": 514,
+      "eligible": 514,
+      "applied": 514,
+      "skipped": 0,
+      "audits": 53,
+      "audit_failures": 48
+    }
+  },
+  {
+    "step": 515,
+    "phase": 2,
+    "loss": 1.2257159948349,
+    "confidence": 0.9951249957084656,
+    "predicted_gain": -0.12522530555725098,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.02401101589202881,
+      "state_accuracy": 0.5,
+      "candidate_loss": [
+        1.9018089771270752,
+        0.7324415445327759
+      ],
+      "reference_loss": [
+        1.586613416671753,
+        0.661419153213501
+      ],
+      "relative_update_error": 0.8838302493095398
+    },
+    "memory": [
+      0.0938137551810201,
+      0.07364904007781096
+    ],
+    "counts": {
+      "backward": 54,
+      "proposed": 516,
+      "eligible": 516,
+      "applied": 516,
+      "skipped": 0,
+      "audits": 54,
+      "audit_failures": 49
+    }
+  },
+  {
+    "step": 525,
+    "phase": 2,
+    "loss": 1.3209824562072754,
+    "confidence": 0.9952576756477356,
+    "predicted_gain": -0.1253674030303955,
+    "eligible": true,
+    "applied": true,
+    "audit": null,
+    "memory": [
+      0.0938137551810201,
+      0.07364904007781096
+    ],
+    "counts": {
+      "backward": 54,
+      "proposed": 526,
+      "eligible": 526,
+      "applied": 526,
+      "skipped": 0,
+      "audits": 54,
+      "audit_failures": 49
+    }
+  },
+  {
+    "step": 529,
+    "phase": 2,
+    "loss": 1.189160943031311,
+    "confidence": 0.9957388639450073,
+    "predicted_gain": -0.10462960600852966,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.01767212152481079,
+      "state_accuracy": 0.703125,
+      "candidate_loss": [
+        1.2440719604492188,
+        0.7605693340301514
+      ],
+      "reference_loss": [
+        1.0498862266540527,
+        0.7346744537353516
+      ],
+      "relative_update_error": 0.892251193523407
+    },
+    "memory": [
+      0.09358432338958612,
+      0.07431446229810636
+    ],
+    "counts": {
+      "backward": 55,
+      "proposed": 530,
+      "eligible": 530,
+      "applied": 530,
+      "skipped": 0,
+      "audits": 55,
+      "audit_failures": 50
+    }
+  },
+  {
+    "step": 540,
+    "phase": 2,
+    "loss": 1.2058658599853516,
+    "confidence": 0.9954795837402344,
+    "predicted_gain": -0.1167210042476654,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.015561312437057495,
+      "state_accuracy": 0.6484375,
+      "candidate_loss": [
+        0.9379280805587769,
+        0.9641885757446289
+      ],
+      "reference_loss": [
+        0.7450483441352844,
+        0.9157469272613525
+      ],
+      "relative_update_error": 0.8930692672729492
+    },
+    "memory": [
+      0.09337045355647157,
+      0.07565672377373142
+    ],
+    "counts": {
+      "backward": 56,
+      "proposed": 541,
+      "eligible": 541,
+      "applied": 541,
+      "skipped": 0,
+      "audits": 56,
+      "audit_failures": 51
+    }
+  },
+  {
+    "step": 550,
+    "phase": 2,
+    "loss": 1.0262714624404907,
+    "confidence": 0.9958924055099487,
+    "predicted_gain": -0.09687892347574234,
+    "eligible": true,
+    "applied": true,
+    "audit": null,
+    "memory": [
+      0.09337045355647157,
+      0.07565672377373142
+    ],
+    "counts": {
+      "backward": 56,
+      "proposed": 551,
+      "eligible": 551,
+      "applied": 551,
+      "skipped": 0,
+      "audits": 56,
+      "audit_failures": 51
+    }
+  },
+  {
+    "step": 560,
+    "phase": 2,
+    "loss": 1.0895124673843384,
+    "confidence": 0.9958981871604919,
+    "predicted_gain": -0.10268032550811768,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": true,
+      "gain": 0.0036729276180267334,
+      "state_accuracy": 0.796875,
+      "candidate_loss": [
+        0.6321233510971069,
+        0.8841009736061096
+      ],
+      "reference_loss": [
+        0.6831563711166382,
+        0.9161437749862671
+      ],
+      "relative_update_error": 0.866132378578186
+    },
+    "memory": [
+      0.09303259277153891,
+      0.07719155024135206
+    ],
+    "counts": {
+      "backward": 57,
+      "proposed": 561,
+      "eligible": 561,
+      "applied": 561,
+      "skipped": 0,
+      "audits": 57,
+      "audit_failures": 51
+    }
+  },
+  {
+    "step": 575,
+    "phase": 2,
+    "loss": 1.0315967798233032,
+    "confidence": 0.9961205124855042,
+    "predicted_gain": -0.0904041975736618,
+    "eligible": true,
+    "applied": true,
+    "audit": null,
+    "memory": [
+      0.09303259277153891,
+      0.07719155024135206
+    ],
+    "counts": {
+      "backward": 57,
+      "proposed": 576,
+      "eligible": 576,
+      "applied": 576,
+      "skipped": 0,
+      "audits": 57,
+      "audit_failures": 51
+    }
+  },
+  {
+    "step": 600,
+    "phase": 2,
+    "loss": 0.8276451230049133,
+    "confidence": 0.996467113494873,
+    "predicted_gain": -0.07181728631258011,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.004233315587043762,
+      "state_accuracy": 0.7109375,
+      "candidate_loss": [
+        0.4551279842853546,
+        1.1717491149902344
+      ],
+      "reference_loss": [
+        0.3897453248500824,
+        1.1202853918075562
+      ],
+      "relative_update_error": 0.9194694757461548
+    },
+    "memory": [
+      0.09297831051169274,
+      0.07671117126556128
+    ],
+    "counts": {
+      "backward": 58,
+      "proposed": 601,
+      "eligible": 601,
+      "applied": 601,
+      "skipped": 0,
+      "audits": 58,
+      "audit_failures": 52
+    }
+  },
+  {
+    "step": 618,
+    "phase": 2,
+    "loss": 0.9122797846794128,
+    "confidence": 0.996440589427948,
+    "predicted_gain": -0.08402493596076965,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": true,
+      "gain": 0.008519276976585388,
+      "state_accuracy": 0.78125,
+      "candidate_loss": [
+        0.4053373634815216,
+        1.0519517660140991
+      ],
+      "reference_loss": [
+        0.4231618046760559,
+        1.1091043949127197
+      ],
+      "relative_update_error": 0.8748039603233337
+    },
+    "memory": [
+      0.09270341478772477,
+      0.07750282334915096
+    ],
+    "counts": {
+      "backward": 59,
+      "proposed": 619,
+      "eligible": 619,
+      "applied": 619,
+      "skipped": 0,
+      "audits": 59,
+      "audit_failures": 52
+    }
+  },
+  {
+    "step": 620,
+    "phase": 2,
+    "loss": 0.966293215751648,
+    "confidence": 0.9963410496711731,
+    "predicted_gain": -0.088750921189785,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.004149958491325378,
+      "state_accuracy": 0.8046875,
+      "candidate_loss": [
+        0.41249334812164307,
+        0.9992058277130127
+      ],
+      "reference_loss": [
+        0.3737758696079254,
+        0.9822263717651367
+      ],
+      "relative_update_error": 0.8806331753730774
+    },
+    "memory": [
+      0.09247140992520392,
+      0.07785773031661639
+    ],
+    "counts": {
+      "backward": 60,
+      "proposed": 621,
+      "eligible": 621,
+      "applied": 621,
+      "skipped": 0,
+      "audits": 60,
+      "audit_failures": 53
+    }
+  },
+  {
+    "step": 625,
+    "phase": 2,
+    "loss": 0.8615999817848206,
+    "confidence": 0.9964575171470642,
+    "predicted_gain": -0.0775362104177475,
+    "eligible": true,
+    "applied": true,
+    "audit": null,
+    "memory": [
+      0.09247140992520392,
+      0.07785773031661639
+    ],
+    "counts": {
+      "backward": 60,
+      "proposed": 626,
+      "eligible": 626,
+      "applied": 626,
+      "skipped": 0,
+      "audits": 60,
+      "audit_failures": 53
+    }
+  },
+  {
+    "step": 626,
+    "phase": 2,
+    "loss": 0.7265459299087524,
+    "confidence": 0.9967154264450073,
+    "predicted_gain": -0.0635576918721199,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": 0.0006369203329086304,
+      "state_accuracy": 0.734375,
+      "candidate_loss": [
+        0.40769097208976746,
+        1.145354986190796
+      ],
+      "reference_loss": [
+        0.3847786486148834,
+        1.1580137014389038
+      ],
+      "relative_update_error": 0.8657382726669312
+    },
+    "memory": [
+      0.09217653079227837,
+      0.07717457441103699
+    ],
+    "counts": {
+      "backward": 61,
+      "proposed": 627,
+      "eligible": 627,
+      "applied": 627,
+      "skipped": 0,
+      "audits": 61,
+      "audit_failures": 54
+    }
+  },
+  {
+    "step": 640,
+    "phase": 2,
+    "loss": 0.8335509300231934,
+    "confidence": 0.9966036081314087,
+    "predicted_gain": -0.07291444391012192,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.0007906705141067505,
+      "state_accuracy": 0.78125,
+      "candidate_loss": [
+        0.4072757065296173,
+        1.1914536952972412
+      ],
+      "reference_loss": [
+        0.39498865604400635,
+        1.138184905052185
+      ],
+      "relative_update_error": 0.9092005491256714
+    },
+    "memory": [
+      0.09211370699829281,
+      0.0769220343602859
+    ],
+    "counts": {
+      "backward": 62,
+      "proposed": 641,
+      "eligible": 641,
+      "applied": 641,
+      "skipped": 0,
+      "audits": 62,
+      "audit_failures": 55
+    }
+  },
+  {
+    "step": 643,
+    "phase": 2,
+    "loss": 0.8764861226081848,
+    "confidence": 0.9965965151786804,
+    "predicted_gain": -0.07501747459173203,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -4.170835018157959e-05,
+      "state_accuracy": 0.7734375,
+      "candidate_loss": [
+        0.4262981712818146,
+        1.005213737487793
+      ],
+      "reference_loss": [
+        0.3809131681919098,
+        1.0090497732162476
+      ],
+      "relative_update_error": 0.9299927949905396
+    },
+    "memory": [
+      0.09215798562333086,
+      0.07682472095434913
+    ],
+    "counts": {
+      "backward": 63,
+      "proposed": 644,
+      "eligible": 644,
+      "applied": 644,
+      "skipped": 0,
+      "audits": 63,
+      "audit_failures": 56
+    }
+  },
+  {
+    "step": 650,
+    "phase": 2,
+    "loss": 0.8919615745544434,
+    "confidence": 0.9965968728065491,
+    "predicted_gain": -0.07910960167646408,
+    "eligible": true,
+    "applied": true,
+    "audit": null,
+    "memory": [
+      0.09215798562333086,
+      0.07682472095434913
+    ],
+    "counts": {
+      "backward": 63,
+      "proposed": 651,
+      "eligible": 651,
+      "applied": 651,
+      "skipped": 0,
+      "audits": 63,
+      "audit_failures": 56
+    }
+  },
+  {
+    "step": 662,
+    "phase": 2,
+    "loss": 0.8390407562255859,
+    "confidence": 0.9966610670089722,
+    "predicted_gain": -0.07524631917476654,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": 0.00643080472946167,
+      "state_accuracy": 0.7578125,
+      "candidate_loss": [
+        0.43590298295021057,
+        1.1493781805038452
+      ],
+      "reference_loss": [
+        0.4161355495452881,
+        1.1867314577102661
+      ],
+      "relative_update_error": 0.8678763508796692
+    },
+    "memory": [
+      0.09188946809656265,
+      0.07706734110184309
+    ],
+    "counts": {
+      "backward": 64,
+      "proposed": 663,
+      "eligible": 663,
+      "applied": 663,
+      "skipped": 0,
+      "audits": 64,
+      "audit_failures": 57
+    }
+  },
+  {
+    "step": 666,
+    "phase": 2,
+    "loss": 0.9641224145889282,
+    "confidence": 0.996501088142395,
+    "predicted_gain": -0.08795486390590668,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": 0.00369948148727417,
+      "state_accuracy": 0.75,
+      "candidate_loss": [
+        0.4120207130908966,
+        1.211910605430603
+      ],
+      "reference_loss": [
+        0.3843948543071747,
+        1.20182204246521
+      ],
+      "relative_update_error": 0.9099557399749756
+    },
+    "memory": [
+      0.0918447733916094,
+      0.07779669131640997
+    ],
+    "counts": {
+      "backward": 65,
+      "proposed": 667,
+      "eligible": 667,
+      "applied": 667,
+      "skipped": 0,
+      "audits": 65,
+      "audit_failures": 58
+    }
+  },
+  {
+    "step": 675,
+    "phase": 2,
+    "loss": 1.0120728015899658,
+    "confidence": 0.996451735496521,
+    "predicted_gain": -0.09573732316493988,
+    "eligible": true,
+    "applied": true,
+    "audit": null,
+    "memory": [
+      0.0918447733916094,
+      0.07779669131640997
+    ],
+    "counts": {
+      "backward": 65,
+      "proposed": 676,
+      "eligible": 676,
+      "applied": 676,
+      "skipped": 0,
+      "audits": 65,
+      "audit_failures": 58
+    }
+  },
+  {
+    "step": 697,
+    "phase": 2,
+    "loss": 0.9730017185211182,
+    "confidence": 0.9967218041419983,
+    "predicted_gain": -0.08572903275489807,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.002063438296318054,
+      "state_accuracy": 0.8359375,
+      "candidate_loss": [
+        0.4485293924808502,
+        1.0675742626190186
+      ],
+      "reference_loss": [
+        0.4608190655708313,
+        1.0296815633773804
+      ],
+      "relative_update_error": 0.8628386855125427
+    },
+    "memory": [
+      0.09156672814959164,
+      0.07809013647351848
+    ],
+    "counts": {
+      "backward": 66,
+      "proposed": 698,
+      "eligible": 698,
+      "applied": 698,
+      "skipped": 0,
+      "audits": 66,
+      "audit_failures": 59
+    }
+  },
+  {
+    "step": 700,
+    "phase": 2,
+    "loss": 0.9712510704994202,
+    "confidence": 0.9967589974403381,
+    "predicted_gain": -0.08154337853193283,
+    "eligible": true,
+    "applied": true,
+    "audit": null,
+    "memory": [
+      0.09156672814959164,
+      0.07809013647351848
+    ],
+    "counts": {
+      "backward": 66,
+      "proposed": 701,
+      "eligible": 701,
+      "applied": 701,
+      "skipped": 0,
+      "audits": 66,
+      "audit_failures": 59
+    }
+  },
+  {
+    "step": 705,
+    "phase": 2,
+    "loss": 0.895326554775238,
+    "confidence": 0.9967169165611267,
+    "predicted_gain": -0.08393790572881699,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.006648942828178406,
+      "state_accuracy": 0.765625,
+      "candidate_loss": [
+        0.42523977160453796,
+        1.2146296501159668
+      ],
+      "reference_loss": [
+        0.4080188572406769,
+        1.1288506984710693
+      ],
+      "relative_update_error": 0.8746747374534607
+    },
+    "memory": [
+      0.09136176542937936,
+      0.07805007779487448
+    ],
+    "counts": {
+      "backward": 67,
+      "proposed": 706,
+      "eligible": 706,
+      "applied": 706,
+      "skipped": 0,
+      "audits": 67,
+      "audit_failures": 60
+    }
+  },
+  {
+    "step": 706,
+    "phase": 2,
+    "loss": 0.9638099074363708,
+    "confidence": 0.9968342185020447,
+    "predicted_gain": -0.0793309137225151,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": true,
+      "gain": 0.004282921552658081,
+      "state_accuracy": 0.8359375,
+      "candidate_loss": [
+        0.43205583095550537,
+        1.0318551063537598
+      ],
+      "reference_loss": [
+        0.49196657538414,
+        1.056528925895691
+      ],
+      "relative_update_error": 0.8957039713859558
+    },
+    "memory": [
+      0.09127219701484017,
+      0.07832826566888941
+    ],
+    "counts": {
+      "backward": 68,
+      "proposed": 707,
+      "eligible": 707,
+      "applied": 707,
+      "skipped": 0,
+      "audits": 68,
+      "audit_failures": 60
+    }
+  },
+  {
+    "step": 713,
+    "phase": 2,
+    "loss": 0.9837329387664795,
+    "confidence": 0.9968255758285522,
+    "predicted_gain": -0.0848311334848404,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.022557124495506287,
+      "state_accuracy": 0.734375,
+      "candidate_loss": [
+        0.44395503401756287,
+        1.3308078050613403
+      ],
+      "reference_loss": [
+        0.3917015790939331,
+        1.2219794988632202
+      ],
+      "relative_update_error": 0.845064103603363
+    },
+    "memory": [
+      0.09093390768211497,
+      0.07752555283491165
+    ],
+    "counts": {
+      "backward": 69,
+      "proposed": 714,
+      "eligible": 714,
+      "applied": 714,
+      "skipped": 0,
+      "audits": 69,
+      "audit_failures": 61
+    }
+  },
+  {
+    "step": 720,
+    "phase": 2,
+    "loss": 1.120146632194519,
+    "confidence": 0.9966170191764832,
+    "predicted_gain": -0.09820060431957245,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": 0.0003169029951095581,
+      "state_accuracy": 0.71875,
+      "candidate_loss": [
+        0.421437531709671,
+        1.2491501569747925
+      ],
+      "reference_loss": [
+        0.42522531747817993,
+        1.1815831661224365
+      ],
+      "relative_update_error": 0.9230419397354126
+    },
+    "memory": [
+      0.09100242199668629,
+      0.07857515055890017
+    ],
+    "counts": {
+      "backward": 70,
+      "proposed": 721,
+      "eligible": 721,
+      "applied": 721,
+      "skipped": 0,
+      "audits": 70,
+      "audit_failures": 62
+    }
+  },
+  {
+    "step": 722,
+    "phase": 2,
+    "loss": 1.114309310913086,
+    "confidence": 0.9967219233512878,
+    "predicted_gain": -0.09657792001962662,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.012440934777259827,
+      "state_accuracy": 0.6953125,
+      "candidate_loss": [
+        0.41356125473976135,
+        1.1607776880264282
+      ],
+      "reference_loss": [
+        0.4521503746509552,
+        1.0726814270019531
+      ],
+      "relative_update_error": 0.874315083026886
+    },
+    "memory": [
+      0.0908238763119864,
+      0.0788532422930735
+    ],
+    "counts": {
+      "backward": 71,
+      "proposed": 723,
+      "eligible": 723,
+      "applied": 723,
+      "skipped": 0,
+      "audits": 71,
+      "audit_failures": 63
+    }
+  },
+  {
+    "step": 725,
+    "phase": 2,
+    "loss": 1.017307996749878,
+    "confidence": 0.9967918992042542,
+    "predicted_gain": -0.08616504818201065,
+    "eligible": true,
+    "applied": true,
+    "audit": null,
+    "memory": [
+      0.0908238763119864,
+      0.0788532422930735
+    ],
+    "counts": {
+      "backward": 71,
+      "proposed": 726,
+      "eligible": 726,
+      "applied": 726,
+      "skipped": 0,
+      "audits": 71,
+      "audit_failures": 63
+    }
+  },
+  {
+    "step": 738,
+    "phase": 2,
+    "loss": 1.0014625787734985,
+    "confidence": 0.9969214200973511,
+    "predicted_gain": -0.08204249292612076,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.0011376291513442993,
+      "state_accuracy": 0.7890625,
+      "candidate_loss": [
+        0.443313866853714,
+        1.0808024406433105
+      ],
+      "reference_loss": [
+        0.4411992132663727,
+        1.0193870067596436
+      ],
+      "relative_update_error": 0.8759242296218872
+    },
+    "memory": [
+      0.09066230364449653,
+      0.07895582336715865
+    ],
+    "counts": {
+      "backward": 72,
+      "proposed": 739,
+      "eligible": 739,
+      "applied": 739,
+      "skipped": 0,
+      "audits": 72,
+      "audit_failures": 64
+    }
+  },
+  {
+    "step": 750,
+    "phase": 3,
+    "loss": 2.6306605339050293,
+    "confidence": 0.9958434700965881,
+    "predicted_gain": -0.19981636106967926,
+    "eligible": true,
+    "applied": true,
+    "audit": null,
+    "memory": [
+      0.09066230364449653,
+      0.07895582336715865
+    ],
+    "counts": {
+      "backward": 72,
+      "proposed": 751,
+      "eligible": 751,
+      "applied": 751,
+      "skipped": 0,
+      "audits": 72,
+      "audit_failures": 64
+    }
+  },
+  {
+    "step": 752,
+    "phase": 3,
+    "loss": 2.332799196243286,
+    "confidence": 0.995876669883728,
+    "predicted_gain": -0.18749290704727173,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.05926787853240967,
+      "state_accuracy": 0.34375,
+      "candidate_loss": [
+        3.7272050380706787,
+        1.107046365737915
+      ],
+      "reference_loss": [
+        3.065239429473877,
+        1.1250617504119873
+      ],
+      "relative_update_error": 0.8635022044181824
+    },
+    "memory": [
+      0.0904466994843626,
+      0.08141928362454381
+    ],
+    "counts": {
+      "backward": 73,
+      "proposed": 753,
+      "eligible": 753,
+      "applied": 753,
+      "skipped": 0,
+      "audits": 73,
+      "audit_failures": 65
+    }
+  },
+  {
+    "step": 759,
+    "phase": 3,
+    "loss": 1.6409379243850708,
+    "confidence": 0.996259331703186,
+    "predicted_gain": -0.1471499502658844,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.033424198627471924,
+      "state_accuracy": 0.46875,
+      "candidate_loss": [
+        2.5690605640411377,
+        1.0654083490371704
+      ],
+      "reference_loss": [
+        2.266173839569092,
+        1.1019989252090454
+      ],
+      "relative_update_error": 0.854833722114563
+    },
+    "memory": [
+      0.09019853312071727,
+      0.08303460702523724
+    ],
+    "counts": {
+      "backward": 74,
+      "proposed": 760,
+      "eligible": 760,
+      "applied": 760,
+      "skipped": 0,
+      "audits": 74,
+      "audit_failures": 66
+    }
+  },
+  {
+    "step": 763,
+    "phase": 3,
+    "loss": 2.024106025695801,
+    "confidence": 0.9959642887115479,
+    "predicted_gain": -0.17359615862369537,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.03346705436706543,
+      "state_accuracy": 0.3671875,
+      "candidate_loss": [
+        2.0951008796691895,
+        1.220613718032837
+      ],
+      "reference_loss": [
+        1.7391095161437988,
+        1.270766258239746
+      ],
+      "relative_update_error": 0.8914815783500671
+    },
+    "memory": [
+      0.09014601435643174,
+      0.08588933188680688
+    ],
+    "counts": {
+      "backward": 75,
+      "proposed": 764,
+      "eligible": 764,
+      "applied": 764,
+      "skipped": 0,
+      "audits": 75,
+      "audit_failures": 67
+    }
+  },
+  {
+    "step": 766,
+    "phase": 3,
+    "loss": 1.8979185819625854,
+    "confidence": 0.9959724545478821,
+    "predicted_gain": -0.1688394844532013,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.035655319690704346,
+      "state_accuracy": 0.28125,
+      "candidate_loss": [
+        2.202094554901123,
+        1.34743332862854
+      ],
+      "reference_loss": [
+        1.7286384105682373,
+        1.4030321836471558
+      ],
+      "relative_update_error": 0.894378662109375
+    },
+    "memory": [
+      0.09011060694915703,
+      0.08825407353059138
+    ],
+    "counts": {
+      "backward": 76,
+      "proposed": 767,
+      "eligible": 767,
+      "applied": 767,
+      "skipped": 0,
+      "audits": 76,
+      "audit_failures": 68
+    }
+  },
+  {
+    "step": 768,
+    "phase": 3,
+    "loss": 1.5850869417190552,
+    "confidence": 0.9963577389717102,
+    "predicted_gain": -0.14097405970096588,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.021850407123565674,
+      "state_accuracy": 0.3671875,
+      "candidate_loss": [
+        2.340332508087158,
+        1.4026801586151123
+      ],
+      "reference_loss": [
+        2.124551773071289,
+        1.4091322422027588
+      ],
+      "relative_update_error": 0.8639026880264282
+    },
+    "memory": [
+      0.0899245900418313,
+      0.08979755248293182
+    ],
+    "counts": {
+      "backward": 77,
+      "proposed": 769,
+      "eligible": 769,
+      "applied": 769,
+      "skipped": 0,
+      "audits": 77,
+      "audit_failures": 69
+    }
+  },
+  {
+    "step": 770,
+    "phase": 3,
+    "loss": 1.5580170154571533,
+    "confidence": 0.996264636516571,
+    "predicted_gain": -0.147779643535614,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.032414376735687256,
+      "state_accuracy": 0.3984375,
+      "candidate_loss": [
+        1.6667755842208862,
+        1.2866064310073853
+      ],
+      "reference_loss": [
+        1.4785854816436768,
+        1.3352981805801392
+      ],
+      "relative_update_error": 0.8547545075416565
+    },
+    "memory": [
+      0.08970213307744801,
+      0.09107593819878156
+    ],
+    "counts": {
+      "backward": 78,
+      "proposed": 771,
+      "eligible": 771,
+      "applied": 771,
+      "skipped": 0,
+      "audits": 78,
+      "audit_failures": 70
+    }
+  },
+  {
+    "step": 773,
+    "phase": 3,
+    "loss": 1.8748961687088013,
+    "confidence": 0.9959283471107483,
+    "predicted_gain": -0.17506448924541473,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.02257150411605835,
+      "state_accuracy": 0.546875,
+      "candidate_loss": [
+        1.7705111503601074,
+        1.2014193534851074
+      ],
+      "reference_loss": [
+        1.5062695741653442,
+        1.4018778800964355
+      ],
+      "relative_update_error": 0.8689091801643372
+    },
+    "memory": [
+      0.08956157232439729,
+      0.09414679054531029
+    ],
+    "counts": {
+      "backward": 79,
+      "proposed": 774,
+      "eligible": 774,
+      "applied": 774,
+      "skipped": 0,
+      "audits": 79,
+      "audit_failures": 71
+    }
+  },
+  {
+    "step": 775,
+    "phase": 3,
+    "loss": 1.3803956508636475,
+    "confidence": 0.9966747760772705,
+    "predicted_gain": -0.11974209547042847,
+    "eligible": true,
+    "applied": true,
+    "audit": null,
+    "memory": [
+      0.08956157232439729,
+      0.09414679054531029
+    ],
+    "counts": {
+      "backward": 79,
+      "proposed": 776,
+      "eligible": 776,
+      "applied": 776,
+      "skipped": 0,
+      "audits": 79,
+      "audit_failures": 71
+    }
+  },
+  {
+    "step": 778,
+    "phase": 3,
+    "loss": 1.3045377731323242,
+    "confidence": 0.9968864321708679,
+    "predicted_gain": -0.10172304511070251,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": 0.0018169283866882324,
+      "state_accuracy": 0.6328125,
+      "candidate_loss": [
+        1.6691019535064697,
+        1.0474215745925903
+      ],
+      "reference_loss": [
+        1.5364227294921875,
+        1.06598699092865
+      ],
+      "relative_update_error": 0.8852343559265137
+    },
+    "memory": [
+      0.08950966548781,
+      0.09461644969291431
+    ],
+    "counts": {
+      "backward": 80,
+      "proposed": 779,
+      "eligible": 779,
+      "applied": 779,
+      "skipped": 0,
+      "audits": 80,
+      "audit_failures": 72
+    }
+  },
+  {
+    "step": 787,
+    "phase": 3,
+    "loss": 1.4538379907608032,
+    "confidence": 0.9967032074928284,
+    "predicted_gain": -0.12184582650661469,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.03996235132217407,
+      "state_accuracy": 0.6171875,
+      "candidate_loss": [
+        1.3225973844528198,
+        1.4631229639053345
+      ],
+      "reference_loss": [
+        1.0718812942504883,
+        1.3916481733322144
+      ],
+      "relative_update_error": 0.8759433627128601
+    },
+    "memory": [
+      0.08941389902698381,
+      0.09397980096749062
+    ],
+    "counts": {
+      "backward": 81,
+      "proposed": 788,
+      "eligible": 788,
+      "applied": 788,
+      "skipped": 0,
+      "audits": 81,
+      "audit_failures": 73
+    }
+  },
+  {
+    "step": 800,
+    "phase": 3,
+    "loss": 1.3338333368301392,
+    "confidence": 0.9968788623809814,
+    "predicted_gain": -0.11136116087436676,
+    "eligible": true,
+    "applied": true,
+    "audit": null,
+    "memory": [
+      0.08941389902698381,
+      0.09397980096749062
+    ],
+    "counts": {
+      "backward": 81,
+      "proposed": 801,
+      "eligible": 801,
+      "applied": 801,
+      "skipped": 0,
+      "audits": 81,
+      "audit_failures": 73
+    }
+  },
+  {
+    "step": 811,
+    "phase": 3,
+    "loss": 1.0755364894866943,
+    "confidence": 0.9970620274543762,
+    "predicted_gain": -0.09112699329853058,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": 0.0026734471321105957,
+      "state_accuracy": 0.4453125,
+      "candidate_loss": [
+        1.0948339700698853,
+        1.5869405269622803
+      ],
+      "reference_loss": [
+        1.119167685508728,
+        1.5523885488510132
+      ],
+      "relative_update_error": 0.8590084910392761
+    },
+    "memory": [
+      0.089238246530831,
+      0.09397083294064813
+    ],
+    "counts": {
+      "backward": 82,
+      "proposed": 812,
+      "eligible": 812,
+      "applied": 812,
+      "skipped": 0,
+      "audits": 82,
+      "audit_failures": 74
+    }
+  },
+  {
+    "step": 825,
+    "phase": 3,
+    "loss": 1.14378821849823,
+    "confidence": 0.9970369338989258,
+    "predicted_gain": -0.09850858151912689,
+    "eligible": true,
+    "applied": true,
+    "audit": null,
+    "memory": [
+      0.089238246530831,
+      0.09397083294064813
+    ],
+    "counts": {
+      "backward": 82,
+      "proposed": 826,
+      "eligible": 826,
+      "applied": 826,
+      "skipped": 0,
+      "audits": 82,
+      "audit_failures": 74
+    }
+  },
+  {
+    "step": 828,
+    "phase": 3,
+    "loss": 1.0255675315856934,
+    "confidence": 0.9970532655715942,
+    "predicted_gain": -0.09373649954795837,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.013859480619430542,
+      "state_accuracy": 0.6328125,
+      "candidate_loss": [
+        0.7439871430397034,
+        1.2925198078155518
+      ],
+      "reference_loss": [
+        0.6984421014785767,
+        1.2079099416732788
+      ],
+      "relative_update_error": 0.8672559857368469
+    },
+    "memory": [
+      0.08911261413297368,
+      0.09326614224004211
+    ],
+    "counts": {
+      "backward": 83,
+      "proposed": 829,
+      "eligible": 829,
+      "applied": 829,
+      "skipped": 0,
+      "audits": 83,
+      "audit_failures": 75
+    }
+  },
+  {
+    "step": 834,
+    "phase": 3,
+    "loss": 1.2724049091339111,
+    "confidence": 0.9967940449714661,
+    "predicted_gain": -0.12214947491884232,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.005617678165435791,
+      "state_accuracy": 0.578125,
+      "candidate_loss": [
+        0.6296012997627258,
+        1.4238287210464478
+      ],
+      "reference_loss": [
+        0.5917192101478577,
+        1.3922903537750244
+      ],
+      "relative_update_error": 0.885979413986206
+    },
+    "memory": [
+      0.08908688049625603,
+      0.09442942496571033
+    ],
+    "counts": {
+      "backward": 84,
+      "proposed": 835,
+      "eligible": 835,
+      "applied": 835,
+      "skipped": 0,
+      "audits": 84,
+      "audit_failures": 76
+    }
+  },
+  {
+    "step": 838,
+    "phase": 3,
+    "loss": 1.0678391456604004,
+    "confidence": 0.9970742464065552,
+    "predicted_gain": -0.09756891429424286,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.0025617480278015137,
+      "state_accuracy": 0.625,
+      "candidate_loss": [
+        0.6649397015571594,
+        1.5155960321426392
+      ],
+      "reference_loss": [
+        0.6608985066413879,
+        1.4708703756332397
+      ],
+      "relative_update_error": 0.8699197173118591
+    },
+    "memory": [
+      0.08898213505800252,
+      0.09445831203074688
+    ],
+    "counts": {
+      "backward": 85,
+      "proposed": 839,
+      "eligible": 839,
+      "applied": 839,
+      "skipped": 0,
+      "audits": 85,
+      "audit_failures": 77
+    }
+  },
+  {
+    "step": 841,
+    "phase": 3,
+    "loss": 1.0659334659576416,
+    "confidence": 0.9972774386405945,
+    "predicted_gain": -0.0837002769112587,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.010351598262786865,
+      "state_accuracy": 0.6015625,
+      "candidate_loss": [
+        0.6489492654800415,
+        1.4664493799209595
+      ],
+      "reference_loss": [
+        0.6085395216941833,
+        1.5651723146438599
+      ],
+      "relative_update_error": 0.8693921566009521
+    },
+    "memory": [
+      0.08887998908810715,
+      0.09340283036163313
+    ],
+    "counts": {
+      "backward": 86,
+      "proposed": 842,
+      "eligible": 842,
+      "applied": 842,
+      "skipped": 0,
+      "audits": 86,
+      "audit_failures": 78
+    }
+  },
+  {
+    "step": 843,
+    "phase": 3,
+    "loss": 1.2390731573104858,
+    "confidence": 0.9968714118003845,
+    "predicted_gain": -0.12104888260364532,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": true,
+      "gain": -0.002824634313583374,
+      "state_accuracy": 0.6015625,
+      "candidate_loss": [
+        0.6240207552909851,
+        1.5155895948410034
+      ],
+      "reference_loss": [
+        0.6941789984703064,
+        1.56459379196167
+      ],
+      "relative_update_error": 0.8345296382904053
+    },
+    "memory": [
+      0.08860863782515381,
+      0.09464390125805457
+    ],
+    "counts": {
+      "backward": 87,
+      "proposed": 844,
+      "eligible": 844,
+      "applied": 844,
+      "skipped": 0,
+      "audits": 87,
+      "audit_failures": 78
+    }
+  },
+  {
+    "step": 850,
+    "phase": 3,
+    "loss": 1.2926915884017944,
+    "confidence": 0.9968704581260681,
+    "predicted_gain": -0.12419945001602173,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.006691157817840576,
+      "state_accuracy": 0.6953125,
+      "candidate_loss": [
+        0.6297065615653992,
+        1.480461597442627
+      ],
+      "reference_loss": [
+        0.6208755970001221,
+        1.4644625186920166
+      ],
+      "relative_update_error": 0.8444483876228333
+    },
+    "memory": [
+      0.08840044787201029,
+      0.0957871208050609
+    ],
+    "counts": {
+      "backward": 88,
+      "proposed": 851,
+      "eligible": 851,
+      "applied": 851,
+      "skipped": 0,
+      "audits": 88,
+      "audit_failures": 79
+    }
+  },
+  {
+    "step": 855,
+    "phase": 3,
+    "loss": 0.8548014760017395,
+    "confidence": 0.9974162578582764,
+    "predicted_gain": -0.06938576698303223,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": true,
+      "gain": 0.005824744701385498,
+      "state_accuracy": 0.6015625,
+      "candidate_loss": [
+        0.5860176086425781,
+        1.6467512845993042
+      ],
+      "reference_loss": [
+        0.6083780527114868,
+        1.641197681427002
+      ],
+      "relative_update_error": 0.8246351480484009
+    },
+    "memory": [
+      0.08810360121865177,
+      0.09475829034902873
+    ],
+    "counts": {
+      "backward": 89,
+      "proposed": 856,
+      "eligible": 856,
+      "applied": 856,
+      "skipped": 0,
+      "audits": 89,
+      "audit_failures": 79
+    }
+  },
+  {
+    "step": 859,
+    "phase": 3,
+    "loss": 1.1051846742630005,
+    "confidence": 0.9972025156021118,
+    "predicted_gain": -0.09660746157169342,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": 0.012919962406158447,
+      "state_accuracy": 0.6484375,
+      "candidate_loss": [
+        0.5525129437446594,
+        1.438010334968567
+      ],
+      "reference_loss": [
+        0.5248741507530212,
+        1.5590903759002686
+      ],
+      "relative_update_error": 0.834032416343689
+    },
+    "memory": [
+      0.08786858323943762,
+      0.09549674703046988
+    ],
+    "counts": {
+      "backward": 90,
+      "proposed": 860,
+      "eligible": 860,
+      "applied": 860,
+      "skipped": 0,
+      "audits": 90,
+      "audit_failures": 80
+    }
+  },
+  {
+    "step": 869,
+    "phase": 3,
+    "loss": 1.0710633993148804,
+    "confidence": 0.9973363280296326,
+    "predicted_gain": -0.0866808146238327,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": true,
+      "gain": -0.0024636685848236084,
+      "state_accuracy": 0.6953125,
+      "candidate_loss": [
+        0.6434372663497925,
+        1.5133916139602661
+      ],
+      "reference_loss": [
+        0.6508396863937378,
+        1.53398859500885
+      ],
+      "relative_update_error": 0.8384296894073486
+    },
+    "memory": [
+      0.08766730252450249,
+      0.09493276698089684
+    ],
+    "counts": {
+      "backward": 91,
+      "proposed": 870,
+      "eligible": 870,
+      "applied": 870,
+      "skipped": 0,
+      "audits": 91,
+      "audit_failures": 80
+    }
+  },
+  {
+    "step": 870,
+    "phase": 3,
+    "loss": 1.095786213874817,
+    "confidence": 0.997317373752594,
+    "predicted_gain": -0.08819790184497833,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.00836208462715149,
+      "state_accuracy": 0.6328125,
+      "candidate_loss": [
+        0.5553969144821167,
+        1.6231943368911743
+      ],
+      "reference_loss": [
+        0.5761024355888367,
+        1.5464321374893188
+      ],
+      "relative_update_error": 0.8737668991088867
+    },
+    "memory": [
+      0.08765277189382178,
+      0.09417791949274333
+    ],
+    "counts": {
+      "backward": 92,
+      "proposed": 871,
+      "eligible": 871,
+      "applied": 871,
+      "skipped": 0,
+      "audits": 92,
+      "audit_failures": 81
+    }
+  },
+  {
+    "step": 875,
+    "phase": 3,
+    "loss": 1.0215325355529785,
+    "confidence": 0.9974232912063599,
+    "predicted_gain": -0.07656121999025345,
+    "eligible": true,
+    "applied": true,
+    "audit": null,
+    "memory": [
+      0.08765277189382178,
+      0.09417791949274333
+    ],
+    "counts": {
+      "backward": 92,
+      "proposed": 876,
+      "eligible": 876,
+      "applied": 876,
+      "skipped": 0,
+      "audits": 92,
+      "audit_failures": 81
+    }
+  },
+  {
+    "step": 883,
+    "phase": 3,
+    "loss": 1.1188775300979614,
+    "confidence": 0.9973477125167847,
+    "predicted_gain": -0.08979563415050507,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": 0.0022189319133758545,
+      "state_accuracy": 0.6875,
+      "candidate_loss": [
+        0.5535014271736145,
+        1.6295397281646729
+      ],
+      "reference_loss": [
+        0.535631000995636,
+        1.6249103546142578
+      ],
+      "relative_update_error": 0.8599376678466797
+    },
+    "memory": [
+      0.08756982163836409,
+      0.09406975182130022
+    ],
+    "counts": {
+      "backward": 93,
+      "proposed": 884,
+      "eligible": 884,
+      "applied": 884,
+      "skipped": 0,
+      "audits": 93,
+      "audit_failures": 82
+    }
+  },
+  {
+    "step": 899,
+    "phase": 3,
+    "loss": 1.020409107208252,
+    "confidence": 0.9974657297134399,
+    "predicted_gain": -0.08084388822317123,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.010122537612915039,
+      "state_accuracy": 0.65625,
+      "candidate_loss": [
+        0.5296242237091064,
+        1.4937610626220703
+      ],
+      "reference_loss": [
+        0.5322902798652649,
+        1.4402010440826416
+      ],
+      "relative_update_error": 0.8666661381721497
+    },
+    "memory": [
+      0.08752466124730664,
+      0.09290233176074801
+    ],
+    "counts": {
+      "backward": 94,
+      "proposed": 900,
+      "eligible": 900,
+      "applied": 900,
+      "skipped": 0,
+      "audits": 94,
+      "audit_failures": 83
+    }
+  },
+  {
+    "step": 900,
+    "phase": 3,
+    "loss": 1.0328177213668823,
+    "confidence": 0.9974684715270996,
+    "predicted_gain": -0.07952870428562164,
+    "eligible": true,
+    "applied": true,
+    "audit": null,
+    "memory": [
+      0.08752466124730664,
+      0.09290233176074801
+    ],
+    "counts": {
+      "backward": 94,
+      "proposed": 901,
+      "eligible": 901,
+      "applied": 901,
+      "skipped": 0,
+      "audits": 94,
+      "audit_failures": 83
+    }
+  },
+  {
+    "step": 913,
+    "phase": 3,
+    "loss": 1.054835319519043,
+    "confidence": 0.9975249171257019,
+    "predicted_gain": -0.0810123085975647,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": 0.010666429996490479,
+      "state_accuracy": 0.6640625,
+      "candidate_loss": [
+        0.5554966926574707,
+        1.5624638795852661
+      ],
+      "reference_loss": [
+        0.5318615436553955,
+        1.596078634262085
+      ],
+      "relative_update_error": 0.8528048396110535
+    },
+    "memory": [
+      0.08741245238299657,
+      0.09284115210241337
+    ],
+    "counts": {
+      "backward": 95,
+      "proposed": 914,
+      "eligible": 914,
+      "applied": 914,
+      "skipped": 0,
+      "audits": 95,
+      "audit_failures": 84
+    }
+  },
+  {
+    "step": 925,
+    "phase": 3,
+    "loss": 1.0600229501724243,
+    "confidence": 0.9975740313529968,
+    "predicted_gain": -0.07919131219387054,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": true,
+      "gain": 0.002206653356552124,
+      "state_accuracy": 0.6796875,
+      "candidate_loss": [
+        0.5351986289024353,
+        1.7816041707992554
+      ],
+      "reference_loss": [
+        0.5418573617935181,
+        1.7767387628555298
+      ],
+      "relative_update_error": 0.8605934977531433
+    },
+    "memory": [
+      0.08734479725261245,
+      0.09226899277481383
+    ],
+    "counts": {
+      "backward": 96,
+      "proposed": 926,
+      "eligible": 926,
+      "applied": 926,
+      "skipped": 0,
+      "audits": 96,
+      "audit_failures": 84
+    }
+  },
+  {
+    "step": 928,
+    "phase": 3,
+    "loss": 1.1504946947097778,
+    "confidence": 0.9975627660751343,
+    "predicted_gain": -0.08313623070716858,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.0005107074975967407,
+      "state_accuracy": 0.7109375,
+      "candidate_loss": [
+        0.49091610312461853,
+        1.517838478088379
+      ],
+      "reference_loss": [
+        0.4699072241783142,
+        1.501933217048645
+      ],
+      "relative_update_error": 0.899133026599884
+    },
+    "memory": [
+      0.08747322252298123,
+      0.09178681929655173
+    ],
+    "counts": {
+      "backward": 97,
+      "proposed": 929,
+      "eligible": 929,
+      "applied": 929,
+      "skipped": 0,
+      "audits": 97,
+      "audit_failures": 85
+    }
+  },
+  {
+    "step": 930,
+    "phase": 3,
+    "loss": 1.1181761026382446,
+    "confidence": 0.9975982308387756,
+    "predicted_gain": -0.08185353875160217,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.006076544523239136,
+      "state_accuracy": 0.6640625,
+      "candidate_loss": [
+        0.5304605960845947,
+        1.6220943927764893
+      ],
+      "reference_loss": [
+        0.561748743057251,
+        1.5803169012069702
+      ],
+      "relative_update_error": 0.8631079792976379
+    },
+    "memory": [
+      0.08741510129332036,
+      0.0909863280431423
+    ],
+    "counts": {
+      "backward": 98,
+      "proposed": 931,
+      "eligible": 931,
+      "applied": 931,
+      "skipped": 0,
+      "audits": 98,
+      "audit_failures": 86
+    }
+  },
+  {
+    "step": 940,
+    "phase": 3,
+    "loss": 1.1205517053604126,
+    "confidence": 0.9976257681846619,
+    "predicted_gain": -0.07928168028593063,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.0020808279514312744,
+      "state_accuracy": 0.625,
+      "candidate_loss": [
+        0.5129232406616211,
+        1.7161283493041992
+      ],
+      "reference_loss": [
+        0.510131299495697,
+        1.6849411725997925
+      ],
+      "relative_update_error": 0.9097709655761719
+    },
+    "memory": [
+      0.0875932010565352,
+      0.09029705425771015
+    ],
+    "counts": {
+      "backward": 99,
+      "proposed": 941,
+      "eligible": 941,
+      "applied": 941,
+      "skipped": 0,
+      "audits": 99,
+      "audit_failures": 87
+    }
+  },
+  {
+    "step": 941,
+    "phase": 3,
+    "loss": 1.1364749670028687,
+    "confidence": 0.9975951313972473,
+    "predicted_gain": -0.08546143770217896,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": 0.007545530796051025,
+      "state_accuracy": 0.6484375,
+      "candidate_loss": [
+        0.5536640882492065,
+        1.4787131547927856
+      ],
+      "reference_loss": [
+        0.6272053122520447,
+        1.457160234451294
+      ],
+      "relative_update_error": 0.80815190076828
+    },
+    "memory": [
+      0.08725430050754984,
+      0.09043254996973613
+    ],
+    "counts": {
+      "backward": 100,
+      "proposed": 942,
+      "eligible": 942,
+      "applied": 942,
+      "skipped": 0,
+      "audits": 100,
+      "audit_failures": 88
+    }
+  },
+  {
+    "step": 950,
+    "phase": 3,
+    "loss": 0.9694794416427612,
+    "confidence": 0.9977206587791443,
+    "predicted_gain": -0.07070353627204895,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.0009230375289916992,
+      "state_accuracy": 0.6328125,
+      "candidate_loss": [
+        0.532123327255249,
+        1.685154914855957
+      ],
+      "reference_loss": [
+        0.5134419202804565,
+        1.77581787109375
+      ],
+      "relative_update_error": 0.8627786636352539
+    },
+    "memory": [
+      0.08720547880034862,
+      0.08939994740840218
+    ],
+    "counts": {
+      "backward": 101,
+      "proposed": 951,
+      "eligible": 951,
+      "applied": 951,
+      "skipped": 0,
+      "audits": 101,
+      "audit_failures": 89
+    }
+  },
+  {
+    "step": 965,
+    "phase": 3,
+    "loss": 1.184915542602539,
+    "confidence": 0.9976898431777954,
+    "predicted_gain": -0.08445261418819427,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": true,
+      "gain": 0.009309232234954834,
+      "state_accuracy": 0.6640625,
+      "candidate_loss": [
+        0.5452263951301575,
+        1.4708439111709595
+      ],
+      "reference_loss": [
+        0.5721991658210754,
+        1.5375794172286987
+      ],
+      "relative_update_error": 0.8523645997047424
+    },
+    "memory": [
+      0.0871070278588549,
+      0.08961804235913952
+    ],
+    "counts": {
+      "backward": 102,
+      "proposed": 966,
+      "eligible": 966,
+      "applied": 966,
+      "skipped": 0,
+      "audits": 102,
+      "audit_failures": 89
+    }
+  },
+  {
+    "step": 975,
+    "phase": 3,
+    "loss": 1.148084044456482,
+    "confidence": 0.9977085590362549,
+    "predicted_gain": -0.08245525509119034,
+    "eligible": true,
+    "applied": true,
+    "audit": null,
+    "memory": [
+      0.0871070278588549,
+      0.08961804235913952
+    ],
+    "counts": {
+      "backward": 102,
+      "proposed": 976,
+      "eligible": 976,
+      "applied": 976,
+      "skipped": 0,
+      "audits": 102,
+      "audit_failures": 89
+    }
+  },
+  {
+    "step": 986,
+    "phase": 3,
+    "loss": 1.1002317667007446,
+    "confidence": 0.997797966003418,
+    "predicted_gain": -0.07490380853414536,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": -0.0076739490032196045,
+      "state_accuracy": 0.6796875,
+      "candidate_loss": [
+        0.5400640964508057,
+        1.5325422286987305
+      ],
+      "reference_loss": [
+        0.5327602624893188,
+        1.478898286819458
+      ],
+      "relative_update_error": 0.8481688499450684
+    },
+    "memory": [
+      0.08699252071563748,
+      0.08849863321772881
+    ],
+    "counts": {
+      "backward": 103,
+      "proposed": 987,
+      "eligible": 987,
+      "applied": 987,
+      "skipped": 0,
+      "audits": 103,
+      "audit_failures": 90
+    }
+  },
+  {
+    "step": 995,
+    "phase": 3,
+    "loss": 1.1806504726409912,
+    "confidence": 0.9977721571922302,
+    "predicted_gain": -0.08153486251831055,
+    "eligible": true,
+    "applied": true,
+    "audit": {
+      "safe": false,
+      "gain": 0.00176239013671875,
+      "state_accuracy": 0.65625,
+      "candidate_loss": [
+        0.5142926573753357,
+        1.5516854524612427
+      ],
+      "reference_loss": [
+        0.48672574758529663,
+        1.5247387886047363
+      ],
+      "relative_update_error": 0.9105671048164368
+    },
+    "memory": [
+      0.0871957302039378,
+      0.08823856418959383
+    ],
+    "counts": {
+      "backward": 104,
+      "proposed": 996,
+      "eligible": 996,
+      "applied": 996,
+      "skipped": 0,
+      "audits": 104,
+      "audit_failures": 91
+    }
+  },
+  {
+    "step": 999,
+    "phase": 3,
+    "loss": 1.0236012935638428,
+    "confidence": 0.9978777170181274,
+    "predicted_gain": -0.06604621559381485,
+    "eligible": true,
+    "applied": true,
+    "audit": null,
+    "memory": [
+      0.0871957302039378,
+      0.08823856418959383
+    ],
+    "counts": {
+      "backward": 104,
+      "proposed": 1000,
+      "eligible": 1000,
+      "applied": 1000,
+      "skipped": 0,
+      "audits": 104,
+      "audit_failures": 91
+    }
+  }
+]

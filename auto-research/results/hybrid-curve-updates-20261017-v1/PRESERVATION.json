@@ -1,0 +1,15 @@
+{
+  "status": "SAVED_AND_ARCHIVE_VERIFIED",
+  "archive_filename": "hybrid_curve_update_checkpoints_2026-10-17.zip",
+  "archive_sha256": "3253b3e8fd058922b53bc071bc7c2abd8c2ffb8d530fdfa07fa96f239fa6ca9b",
+  "checkpoint_count": 23,
+  "pilot_checkpoints": 5,
+  "main_checkpoints": 18,
+  "companion_library_file_id": "libfile_f7ad0c63eb588191bfae255a0c2afb60",
+  "companion_file_id": "file_000000007dcc81fbaf46586d34d9c8d4",
+  "availability": "User's retained companion archive; source/protocol/metrics are published in the existing draft PR.",
+  "extraction": "Extract archive into auto-research/results/hybrid-curve-updates-20261017-v1/; paths begin main/ or pilot/.",
+  "checksum_manifest": "CHECKPOINTS.sha256.json",
+  "not_in_git": "Checkpoint binaries kept in companion archive; Git contains code, evidence, hashes and replay instructions.",
+  "publication_pr": "https://github.com/JRowe47/Super-1/pull/3"
+}

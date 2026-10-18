@@ -1,0 +1,56 @@
+{
+  "plain_cpu": 1.2391634740000006,
+  "hybrid_cpu": 5.5133831859999995,
+  "plain_wall": 1.24239911100085,
+  "hybrid_wall": 5.517811228000937,
+  "base_backward_steps": 1456,
+  "controller_training_steps": 1200,
+  "warmup_parameter_replay_error": 0.0,
+  "model_parameters": 808,
+  "predictor_parameters": 898,
+  "gate_parameters": 339,
+  "qualification": {
+    "threshold": 0.5,
+    "loss_limit": 0.009027664549648762,
+    "qualification": true,
+    "trials": [
+      {
+        "threshold": 0.5,
+        "count": 256,
+        "safe": 256,
+        "lower95": 0.9895419965959273
+      },
+      {
+        "threshold": 0.7,
+        "count": 256,
+        "safe": 256,
+        "lower95": 0.9895419965959273
+      },
+      {
+        "threshold": 0.8,
+        "count": 256,
+        "safe": 256,
+        "lower95": 0.9895419965959273
+      },
+      {
+        "threshold": 0.9,
+        "count": 256,
+        "safe": 256,
+        "lower95": 0.9895419965959273
+      },
+      {
+        "threshold": 0.95,
+        "count": 256,
+        "safe": 256,
+        "lower95": 0.9895419965959273
+      },
+      {
+        "threshold": 0.99,
+        "count": 256,
+        "safe": 256,
+        "lower95": 0.9895419965959273
+      }
+    ],
+    "note": "Wilson bound is a heuristic qualification on temporally related calibration steps, not an IID guarantee."
+  }
+}
