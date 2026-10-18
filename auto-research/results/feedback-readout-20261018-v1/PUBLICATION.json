@@ -1,0 +1,162 @@
+{
+  "run_id": "feedback-readout-20261018-v1",
+  "phase": "SOURCE_BEFORE_VERIFICATION_PILOT_MAIN",
+  "commit": "38d685eab9df1306168fd9b068c61456dcf7b29e",
+  "tree": "8204c069a7866147ee368766c9b9b183297de1d7",
+  "branch_verified_at_commit": true,
+  "readbacks": [
+    {
+      "path": "auto-research/results/feedback-readout-20261018-v1/core.py",
+      "bytes": 1393,
+      "byte_equal": true
+    },
+    {
+      "path": "auto-research/results/feedback-readout-20261018-v1/REGISTRATION.json",
+      "bytes": 2589,
+      "byte_equal": true
+    },
+    {
+      "path": "auto-research/results/feedback-readout-20261018-v1/PROTOCOL.json",
+      "bytes": 15976,
+      "byte_equal": true
+    },
+    {
+      "path": "auto-research/results/feedback-readout-20261018-v1/SOURCE_PROVENANCE.json",
+      "bytes": 3016,
+      "byte_equal": true
+    },
+    {
+      "path": "auto-research/results/feedback-readout-20261018-v1/README.md",
+      "bytes": 1434,
+      "byte_equal": true
+    },
+    {
+      "path": "auto-research/results/feedback-readout-20261018-v1/feedback_core.py",
+      "bytes": 4138,
+      "byte_equal": true
+    },
+    {
+      "path": "auto-research/results/feedback-readout-20261018-v1/launch.py",
+      "bytes": 2957,
+      "byte_equal": true
+    },
+    {
+      "path": "auto-research/results/feedback-readout-20261018-v1/RULE_MAPPING.md",
+      "bytes": 1985,
+      "byte_equal": true
+    },
+    {
+      "path": "auto-research/results/feedback-readout-20261018-v1/baseline_verify.py",
+      "bytes": 4106,
+      "byte_equal": true
+    },
+    {
+      "path": "auto-research/results/feedback-readout-20261018-v1/RUNTIME.json",
+      "bytes": 572,
+      "byte_equal": true
+    },
+    {
+      "path": "auto-research/results/feedback-readout-20261018-v1/family_verify.py",
+      "bytes": 5177,
+      "byte_equal": true
+    },
+    {
+      "path": "auto-research/results/feedback-readout-20261018-v1/BASELINE_SOURCE_PROVENANCE.json",
+      "bytes": 577,
+      "byte_equal": true
+    },
+    {
+      "path": "auto-research/results/feedback-readout-20261018-v1/BASELINE_RULE_MAPPING.md",
+      "bytes": 3193,
+      "byte_equal": true
+    },
+    {
+      "path": "auto-research/results/feedback-readout-20261018-v1/feedback_verify.py",
+      "bytes": 4864,
+      "byte_equal": true
+    },
+    {
+      "path": "auto-research/results/feedback-readout-20261018-v1/component_verify.py",
+      "bytes": 9333,
+      "byte_equal": true
+    },
+    {
+      "path": "auto-research/results/feedback-readout-20261018-v1/component_core.py",
+      "bytes": 1837,
+      "byte_equal": true
+    },
+    {
+      "path": "auto-research/results/feedback-readout-20261018-v1/analyze.py",
+      "bytes": 9068,
+      "byte_equal": true
+    },
+    {
+      "path": "auto-research/results/feedback-readout-20261018-v1/verify.py",
+      "bytes": 5977,
+      "byte_equal": true
+    },
+    {
+      "path": "auto-research/results/feedback-readout-20261018-v1/uncorrected_feedback_core.py",
+      "bytes": 3379,
+      "byte_equal": true
+    },
+    {
+      "path": "auto-research/results/feedback-readout-20261018-v1/family_core.py",
+      "bytes": 1675,
+      "byte_equal": true
+    },
+    {
+      "path": "auto-research/results/feedback-readout-20261018-v1/baseline_core.py",
+      "bytes": 10265,
+      "byte_equal": true
+    },
+    {
+      "path": "auto-research/results/feedback-readout-20261018-v1/experiment.py",
+      "bytes": 12847,
+      "byte_equal": true
+    },
+    {
+      "path": "auto-research/RUN_REGISTRY.json",
+      "bytes": 23651,
+      "byte_equal": true
+    },
+    {
+      "path": "auto-research/research-scratch/CURRENT.md",
+      "bytes": 7121,
+      "byte_equal": true
+    },
+    {
+      "path": "auto-research/MANIFEST.sha256.json",
+      "bytes": 136396,
+      "byte_equal": true
+    }
+  ],
+  "registered_files": 21,
+  "source_sha256": {
+    "auto-research/results/feedback-readout-20261018-v1/core.py": "df19ff6fdba467c642c5b9ff5ff4758eae5210f1453405eb9c525e677fa32e57",
+    "auto-research/results/feedback-readout-20261018-v1/REGISTRATION.json": "525f0f66615852e16ac951f4a15640dd6f23751a58c1739077be90c82aae4a11",
+    "auto-research/results/feedback-readout-20261018-v1/PROTOCOL.json": "605f328f1e6d1ed4744a9ee6b93b9c929f4ad050ffbe8ad10a4be1102ae76fd3",
+    "auto-research/results/feedback-readout-20261018-v1/SOURCE_PROVENANCE.json": "f2f9748b95011009d5b82eee4a4a8ad5eb9e1e5658c57ce70c95b1df254cebf0",
+    "auto-research/results/feedback-readout-20261018-v1/README.md": "99ae340d25d3d5177f051db924febb2caa204c780067077b0ceac61aa7181c7f",
+    "auto-research/results/feedback-readout-20261018-v1/feedback_core.py": "0df7d4fcabbe6b5f24b3a239708d925640370b183fbcf58bc1aae424d8101379",
+    "auto-research/results/feedback-readout-20261018-v1/launch.py": "9a5d919e6010c6d228b175ee09671becc6a2de97fa03e988a995da90989b59fa",
+    "auto-research/results/feedback-readout-20261018-v1/RULE_MAPPING.md": "0ad76081434ae155b46114a0c260e7e7573c904cdad640edb8f0019a5113347e",
+    "auto-research/results/feedback-readout-20261018-v1/baseline_verify.py": "94d0c236cc4cad90b8a2680885e87497623ea8ee635c09c7e26cc18ff00ff3a1",
+    "auto-research/results/feedback-readout-20261018-v1/RUNTIME.json": "967fef40873d68420e34ac4828a3c00a1ce893a61cdad53543657f3cad4f24bd",
+    "auto-research/results/feedback-readout-20261018-v1/family_verify.py": "492cf7b0b8d002acf59351ca7aa27ec7105e154e99ef6702db5210a6f7c58689",
+    "auto-research/results/feedback-readout-20261018-v1/BASELINE_SOURCE_PROVENANCE.json": "192bf320be675c63013a09a295ccbfaa6380550264706578983af7f09eec80d0",
+    "auto-research/results/feedback-readout-20261018-v1/BASELINE_RULE_MAPPING.md": "2299c157eaf29c24ca1ce258b15280bce6104e60a5592086228c3c0a9bb860b5",
+    "auto-research/results/feedback-readout-20261018-v1/feedback_verify.py": "414de8f6b5fddecda59fcf18178658495c15e4979a073a293b0d97b9d63b7f62",
+    "auto-research/results/feedback-readout-20261018-v1/component_verify.py": "4ec1280ed794a793631874a4f622472e1cc388ba5898d3f0fa39ad3126e2bec0",
+    "auto-research/results/feedback-readout-20261018-v1/component_core.py": "1b92c65841ec97b09295df5168a1eeb81743a3b9ad6e6f13808d0cb2d8a4f1d7",
+    "auto-research/results/feedback-readout-20261018-v1/analyze.py": "b308f0dec31b3b961f4bd20519a054efff71a8f4d6ecd2aa0dc76494987e39c3",
+    "auto-research/results/feedback-readout-20261018-v1/verify.py": "7d63ee4420beb347589485e900d554bfcee9a3230f9fbf3fbc55ba9a57f7f478",
+    "auto-research/results/feedback-readout-20261018-v1/uncorrected_feedback_core.py": "13471f8a2a9d2bf1d319e50e9af47c7a45f7c549b9fa1f9a4be7bcd99c7a3780",
+    "auto-research/results/feedback-readout-20261018-v1/family_core.py": "d84c681368b35c94b7e744ee4d37d550928660cc736a2843c628b7bdbbab8fd5",
+    "auto-research/results/feedback-readout-20261018-v1/baseline_core.py": "a26735782ca129b38786f960646f0f541848da6f8de2bbd6c02ccedc67715437",
+    "auto-research/results/feedback-readout-20261018-v1/experiment.py": "e75b89260cca6c57c59998c8179bb6ec3f9447bb129f440ffd91f01adb01794b",
+    "auto-research/RUN_REGISTRY.json": "9940cf43691086845fe19734103e18b1d187cdf03dc02228208311c937c61a1f",
+    "auto-research/research-scratch/CURRENT.md": "2ea919d56c3b4d670603eab39ca4db24eab19b23545176b66c3e1dfe5d4e32f4"
+  },
+  "verified_at_utc": "2026-10-18T15:31:41.725Z"
+}

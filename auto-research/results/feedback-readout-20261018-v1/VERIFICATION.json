@@ -1,0 +1,582 @@
+{
+  "status": "PASS",
+  "numeric": {
+    "torch.float32": {
+      "tolerance": 2e-06,
+      "checks": {
+        "roundtrip": 2.384185791015625e-07,
+        "isometry": 1.430511474609375e-06,
+        "forward": 0.0,
+        "local_reference": 7.450580596923828e-08,
+        "dense_curve_local_step": 2.384185791015625e-07,
+        "exact_gradient": 7.450580596923828e-09,
+        "input_gradient": 0.0,
+        "paired_decay": 1.4901161193847656e-07
+      },
+      "wrong_coordinate_rule_gap": 0.29594850540161133
+    },
+    "torch.float64": {
+      "tolerance": 2e-12,
+      "checks": {
+        "roundtrip": 4.440892098500626e-16,
+        "isometry": 3.552713678800501e-15,
+        "forward": 0.0,
+        "local_reference": 1.6653345369377348e-16,
+        "dense_curve_local_step": 4.440892098500626e-16,
+        "exact_gradient": 5.551115123125783e-17,
+        "input_gradient": 0.0,
+        "paired_decay": 3.3306690738754696e-16
+      },
+      "wrong_coordinate_rule_gap": 0.2986236297604821
+    }
+  },
+  "causal_replay": true,
+  "stale_labels_preserved": true,
+  "arm_isolation": true,
+  "local_update_without_autograd": true,
+  "cpu_seconds": 5.011681412,
+  "extension": {
+    "torch.float32": {
+      "tolerance": 2e-06,
+      "checks": {
+        "cap_dense_equivalence": 8.940696716308594e-08,
+        "frozen_match_adaptive_W0": 2.384185791015625e-07,
+        "frozen_match_adaptive_W1": 1.1920928955078125e-07,
+        "frozen_match_adaptive_W2": 8.940696716308594e-08,
+        "shadow_update": 2.9802322387695312e-08,
+        "adaptive_match_frozen_W0": 2.384185791015625e-07,
+        "adaptive_match_frozen_W1": 1.7881393432617188e-07,
+        "adaptive_match_frozen_W2": 8.940696716308594e-08
+      },
+      "maximum_capped_sigma": 1.9999994039535522
+    },
+    "torch.float64": {
+      "tolerance": 2e-12,
+      "checks": {
+        "cap_dense_equivalence": 2.220446049250313e-16,
+        "frozen_match_adaptive_W0": 5.551115123125783e-16,
+        "frozen_match_adaptive_W1": 2.7755575615628914e-16,
+        "frozen_match_adaptive_W2": 1.3877787807814457e-16,
+        "shadow_update": 5.551115123125783e-17,
+        "adaptive_match_frozen_W0": 3.3306690738754696e-16,
+        "adaptive_match_frozen_W1": 2.3592239273284576e-16,
+        "adaptive_match_frozen_W2": 1.3877787807814457e-16
+      },
+      "maximum_capped_sigma": 1.9999999999999984
+    }
+  },
+  "common_forward_warmup_bitwise": true,
+  "matching_handles_zero": true,
+  "local_matching_without_autograd": true,
+  "feedback_components": [
+    {
+      "seed": 100917,
+      "dtype": "torch.float32",
+      "tolerance": 2e-06,
+      "errors": {
+        "bounded_frozen": 2.384185791015625e-07,
+        "bounded_decay": 2.384185791015625e-07,
+        "bounded_learning": 2.384185791015625e-07,
+        "bounded_adaptive": 2.384185791015625e-07,
+        "projection_active_frozen": 1.7881393432617188e-07,
+        "projection_active_decay": 2.384185791015625e-07,
+        "projection_active_learning": 2.384185791015625e-07,
+        "projection_active_adaptive": 1.7881393432617188e-07,
+        "decay_closed_form_12steps": 2.384185791015625e-07
+      },
+      "maximum_capped_sigma": 1.9999994039535522,
+      "same_state_forward_updates_bitwise": true,
+      "original_endpoint_steps_and_12step_trajectories_bitwise": true,
+      "decay_feedback_independent_of_data_bitwise": true,
+      "input_unmodified_output_detached": true,
+      "all_local_paths_without_autograd": true
+    },
+    {
+      "seed": 100917,
+      "dtype": "torch.float64",
+      "tolerance": 2e-12,
+      "errors": {
+        "bounded_frozen": 4.440892098500626e-16,
+        "bounded_decay": 4.440892098500626e-16,
+        "bounded_learning": 4.440892098500626e-16,
+        "bounded_adaptive": 4.440892098500626e-16,
+        "projection_active_frozen": 3.3306690738754696e-16,
+        "projection_active_decay": 5.551115123125783e-16,
+        "projection_active_learning": 5.551115123125783e-16,
+        "projection_active_adaptive": 3.3306690738754696e-16,
+        "decay_closed_form_12steps": 5.551115123125783e-16
+      },
+      "maximum_capped_sigma": 1.999999999999999,
+      "same_state_forward_updates_bitwise": true,
+      "original_endpoint_steps_and_12step_trajectories_bitwise": true,
+      "decay_feedback_independent_of_data_bitwise": true,
+      "input_unmodified_output_detached": true,
+      "all_local_paths_without_autograd": true
+    },
+    {
+      "seed": 15817,
+      "dtype": "torch.float32",
+      "tolerance": 2e-06,
+      "errors": {
+        "bounded_frozen": 2.384185791015625e-07,
+        "bounded_decay": 2.384185791015625e-07,
+        "bounded_learning": 2.384185791015625e-07,
+        "bounded_adaptive": 2.384185791015625e-07,
+        "projection_active_frozen": 2.980232238769531e-07,
+        "projection_active_decay": 2.980232238769531e-07,
+        "projection_active_learning": 2.980232238769531e-07,
+        "projection_active_adaptive": 2.980232238769531e-07,
+        "decay_closed_form_12steps": 1.7881393432617188e-07
+      },
+      "maximum_capped_sigma": 1.9999994039535522,
+      "same_state_forward_updates_bitwise": true,
+      "original_endpoint_steps_and_12step_trajectories_bitwise": true,
+      "decay_feedback_independent_of_data_bitwise": true,
+      "input_unmodified_output_detached": true,
+      "all_local_paths_without_autograd": true
+    },
+    {
+      "seed": 15817,
+      "dtype": "torch.float64",
+      "tolerance": 2e-12,
+      "errors": {
+        "bounded_frozen": 4.440892098500626e-16,
+        "bounded_decay": 4.440892098500626e-16,
+        "bounded_learning": 4.440892098500626e-16,
+        "bounded_adaptive": 4.440892098500626e-16,
+        "projection_active_frozen": 4.440892098500626e-16,
+        "projection_active_decay": 3.552713678800501e-15,
+        "projection_active_learning": 4.884981308350689e-15,
+        "projection_active_adaptive": 4.996003610813204e-16,
+        "decay_closed_form_12steps": 3.885780586188048e-16
+      },
+      "maximum_capped_sigma": 1.9999999999999993,
+      "same_state_forward_updates_bitwise": true,
+      "original_endpoint_steps_and_12step_trajectories_bitwise": true,
+      "decay_feedback_independent_of_data_bitwise": true,
+      "input_unmodified_output_detached": true,
+      "all_local_paths_without_autograd": true
+    },
+    {
+      "seed": 24817,
+      "dtype": "torch.float32",
+      "tolerance": 2e-06,
+      "errors": {
+        "bounded_frozen": 2.384185791015625e-07,
+        "bounded_decay": 2.384185791015625e-07,
+        "bounded_learning": 2.384185791015625e-07,
+        "bounded_adaptive": 2.384185791015625e-07,
+        "projection_active_frozen": 2.384185791015625e-07,
+        "projection_active_decay": 2.384185791015625e-07,
+        "projection_active_learning": 1.817941665649414e-06,
+        "projection_active_adaptive": 2.384185791015625e-07,
+        "decay_closed_form_12steps": 2.384185791015625e-07
+      },
+      "maximum_capped_sigma": 1.9999994039535522,
+      "same_state_forward_updates_bitwise": true,
+      "original_endpoint_steps_and_12step_trajectories_bitwise": true,
+      "decay_feedback_independent_of_data_bitwise": true,
+      "input_unmodified_output_detached": true,
+      "all_local_paths_without_autograd": true
+    },
+    {
+      "seed": 24817,
+      "dtype": "torch.float64",
+      "tolerance": 2e-12,
+      "errors": {
+        "bounded_frozen": 4.3021142204224816e-16,
+        "bounded_decay": 4.3021142204224816e-16,
+        "bounded_learning": 4.3021142204224816e-16,
+        "bounded_adaptive": 4.3021142204224816e-16,
+        "projection_active_frozen": 4.440892098500626e-16,
+        "projection_active_decay": 4.440892098500626e-16,
+        "projection_active_learning": 4.440892098500626e-16,
+        "projection_active_adaptive": 4.440892098500626e-16,
+        "decay_closed_form_12steps": 5.551115123125783e-16
+      },
+      "maximum_capped_sigma": 1.9999999999999991,
+      "same_state_forward_updates_bitwise": true,
+      "original_endpoint_steps_and_12step_trajectories_bitwise": true,
+      "decay_feedback_independent_of_data_bitwise": true,
+      "input_unmodified_output_detached": true,
+      "all_local_paths_without_autograd": true
+    }
+  ],
+  "fifo_reference": [
+    {
+      "seed": 100917,
+      "steps_checked": 128,
+      "original_generator_and_reference_exact": true,
+      "causal_replay_and_historical_labels": true,
+      "same512_storage_and32_batch": true
+    },
+    {
+      "seed": 15817,
+      "steps_checked": 128,
+      "original_generator_and_reference_exact": true,
+      "causal_replay_and_historical_labels": true,
+      "same512_storage_and32_batch": true
+    },
+    {
+      "seed": 24817,
+      "steps_checked": 128,
+      "original_generator_and_reference_exact": true,
+      "causal_replay_and_historical_labels": true,
+      "same512_storage_and32_batch": true
+    }
+  ],
+  "projection_repair": {
+    "cases": [
+      {
+        "seed": 100917,
+        "dtype": "torch.float32",
+        "unchanged_matrices": 48,
+        "corrected_overshoot_matrices": 0,
+        "maximum_coefficient_difference": 0.0,
+        "maximum_repaired_sigma": 1.9999996423721313,
+        "tolerance": 2e-06
+      },
+      {
+        "seed": 100917,
+        "dtype": "torch.float64",
+        "unchanged_matrices": 48,
+        "corrected_overshoot_matrices": 0,
+        "maximum_coefficient_difference": 0.0,
+        "maximum_repaired_sigma": 1.999999999999999,
+        "tolerance": 2e-12
+      },
+      {
+        "seed": 15817,
+        "dtype": "torch.float32",
+        "unchanged_matrices": 48,
+        "corrected_overshoot_matrices": 0,
+        "maximum_coefficient_difference": 0.0,
+        "maximum_repaired_sigma": 1.999999761581421,
+        "tolerance": 2e-06
+      },
+      {
+        "seed": 15817,
+        "dtype": "torch.float64",
+        "unchanged_matrices": 46,
+        "corrected_overshoot_matrices": 2,
+        "maximum_coefficient_difference": 3.774758283725532e-15,
+        "maximum_repaired_sigma": 1.9999999999999993,
+        "tolerance": 2e-12
+      },
+      {
+        "seed": 24817,
+        "dtype": "torch.float32",
+        "unchanged_matrices": 47,
+        "corrected_overshoot_matrices": 1,
+        "maximum_coefficient_difference": 1.8477439880371094e-06,
+        "maximum_repaired_sigma": 1.9999996423721313,
+        "tolerance": 2e-06
+      },
+      {
+        "seed": 24817,
+        "dtype": "torch.float64",
+        "unchanged_matrices": 48,
+        "corrected_overshoot_matrices": 0,
+        "maximum_coefficient_difference": 0.0,
+        "maximum_repaired_sigma": 1.9999999999999991,
+        "tolerance": 2e-12
+      }
+    ],
+    "known_overshoot_exercised": true,
+    "unchanged_when_within_cap_bitwise": true,
+    "all_corrections_within_original_tolerances": true,
+    "strict_cap": 2.0
+  },
+  "feedback_families": [
+    {
+      "seed": 101927,
+      "dtype": "torch.float32",
+      "tolerance": 2e-06,
+      "errors": {
+        "bounded_frozen": 2.384185791015625e-07,
+        "bounded_b_only": 2.384185791015625e-07,
+        "bounded_vu_only": 2.384185791015625e-07,
+        "bounded_learning": 2.384185791015625e-07,
+        "projection_active_frozen": 2.384185791015625e-07,
+        "projection_active_b_only": 2.384185791015625e-07,
+        "projection_active_vu_only": 2.384185791015625e-07,
+        "projection_active_learning": 2.384185791015625e-07
+      },
+      "maximum_capped_sigma": 1.9999995231628418,
+      "inactive_matrices_bitwise_frozen_12steps": true,
+      "same_state_forward_updates_bitwise": true,
+      "frozen_full_endpoints_and_12step_trajectories_bitwise": true,
+      "input_unmodified_output_detached": true,
+      "all_local_paths_without_autograd": true,
+      "active_family_nonzero_update_exercised": true
+    },
+    {
+      "seed": 101927,
+      "dtype": "torch.float64",
+      "tolerance": 2e-12,
+      "errors": {
+        "bounded_frozen": 4.440892098500626e-16,
+        "bounded_b_only": 4.440892098500626e-16,
+        "bounded_vu_only": 4.440892098500626e-16,
+        "bounded_learning": 4.440892098500626e-16,
+        "projection_active_frozen": 4.440892098500626e-16,
+        "projection_active_b_only": 4.440892098500626e-16,
+        "projection_active_vu_only": 5.551115123125783e-16,
+        "projection_active_learning": 6.661338147750939e-16
+      },
+      "maximum_capped_sigma": 1.9999999999999993,
+      "inactive_matrices_bitwise_frozen_12steps": true,
+      "same_state_forward_updates_bitwise": true,
+      "frozen_full_endpoints_and_12step_trajectories_bitwise": true,
+      "input_unmodified_output_detached": true,
+      "all_local_paths_without_autograd": true,
+      "active_family_nonzero_update_exercised": true
+    },
+    {
+      "seed": 16827,
+      "dtype": "torch.float32",
+      "tolerance": 2e-06,
+      "errors": {
+        "bounded_frozen": 1.7881393432617188e-07,
+        "bounded_b_only": 1.7881393432617188e-07,
+        "bounded_vu_only": 1.7881393432617188e-07,
+        "bounded_learning": 1.7881393432617188e-07,
+        "projection_active_frozen": 2.384185791015625e-07,
+        "projection_active_b_only": 2.384185791015625e-07,
+        "projection_active_vu_only": 2.384185791015625e-07,
+        "projection_active_learning": 2.086162567138672e-07
+      },
+      "maximum_capped_sigma": 1.9999995231628418,
+      "inactive_matrices_bitwise_frozen_12steps": true,
+      "same_state_forward_updates_bitwise": true,
+      "frozen_full_endpoints_and_12step_trajectories_bitwise": true,
+      "input_unmodified_output_detached": true,
+      "all_local_paths_without_autograd": true,
+      "active_family_nonzero_update_exercised": true
+    },
+    {
+      "seed": 16827,
+      "dtype": "torch.float64",
+      "tolerance": 2e-12,
+      "errors": {
+        "bounded_frozen": 5.551115123125783e-16,
+        "bounded_b_only": 5.551115123125783e-16,
+        "bounded_vu_only": 5.551115123125783e-16,
+        "bounded_learning": 5.551115123125783e-16,
+        "projection_active_frozen": 4.440892098500626e-16,
+        "projection_active_b_only": 4.440892098500626e-16,
+        "projection_active_vu_only": 6.661338147750939e-16,
+        "projection_active_learning": 3.885780586188048e-16
+      },
+      "maximum_capped_sigma": 1.9999999999999991,
+      "inactive_matrices_bitwise_frozen_12steps": true,
+      "same_state_forward_updates_bitwise": true,
+      "frozen_full_endpoints_and_12step_trajectories_bitwise": true,
+      "input_unmodified_output_detached": true,
+      "all_local_paths_without_autograd": true,
+      "active_family_nonzero_update_exercised": true
+    },
+    {
+      "seed": 25827,
+      "dtype": "torch.float32",
+      "tolerance": 2e-06,
+      "errors": {
+        "bounded_frozen": 2.384185791015625e-07,
+        "bounded_b_only": 2.384185791015625e-07,
+        "bounded_vu_only": 2.384185791015625e-07,
+        "bounded_learning": 2.384185791015625e-07,
+        "projection_active_frozen": 2.384185791015625e-07,
+        "projection_active_b_only": 3.5762786865234375e-07,
+        "projection_active_vu_only": 2.384185791015625e-07,
+        "projection_active_learning": 2.384185791015625e-07
+      },
+      "maximum_capped_sigma": 1.999999761581421,
+      "inactive_matrices_bitwise_frozen_12steps": true,
+      "same_state_forward_updates_bitwise": true,
+      "frozen_full_endpoints_and_12step_trajectories_bitwise": true,
+      "input_unmodified_output_detached": true,
+      "all_local_paths_without_autograd": true,
+      "active_family_nonzero_update_exercised": true
+    },
+    {
+      "seed": 25827,
+      "dtype": "torch.float64",
+      "tolerance": 2e-12,
+      "errors": {
+        "bounded_frozen": 4.440892098500626e-16,
+        "bounded_b_only": 4.440892098500626e-16,
+        "bounded_vu_only": 4.440892098500626e-16,
+        "bounded_learning": 4.440892098500626e-16,
+        "projection_active_frozen": 5.551115123125783e-16,
+        "projection_active_b_only": 4.996003610813204e-16,
+        "projection_active_vu_only": 4.440892098500626e-16,
+        "projection_active_learning": 4.440892098500626e-16
+      },
+      "maximum_capped_sigma": 2.0,
+      "inactive_matrices_bitwise_frozen_12steps": true,
+      "same_state_forward_updates_bitwise": true,
+      "frozen_full_endpoints_and_12step_trajectories_bitwise": true,
+      "input_unmodified_output_detached": true,
+      "all_local_paths_without_autograd": true,
+      "active_family_nonzero_update_exercised": true
+    }
+  ],
+  "feedback_readouts": [
+    {
+      "seed": 102937,
+      "dtype": "torch.float32",
+      "tolerance": 2e-06,
+      "errors": {
+        "bounded_frozen": 1.7881393432617188e-07,
+        "bounded_u0_only": 1.7881393432617188e-07,
+        "bounded_u1_only": 1.7881393432617188e-07,
+        "bounded_both_u": 1.7881393432617188e-07,
+        "projection_active_frozen": 1.7881393432617188e-07,
+        "projection_active_u0_only": 2.384185791015625e-07,
+        "projection_active_u1_only": 1.7881393432617188e-07,
+        "projection_active_both_u": 2.384185791015625e-07
+      },
+      "maximum_capped_sigma": 1.9999991655349731,
+      "inactive_matrices_bitwise_frozen_12steps": true,
+      "same_state_forward_updates_bitwise": true,
+      "frozen_endpoint_12step_trajectory_bitwise": true,
+      "both_U_vs_preserved_VU_W_U_B_steps_and_12step_trajectory_bitwise": true,
+      "V_fixed_in_both_U_and_changed_in_reference": true,
+      "U1_only_all_forward_layers_update": true,
+      "input_unmodified_output_detached": true,
+      "all_local_paths_without_autograd": true,
+      "active_readout_nonzero_update_exercised": true,
+      "nonboolean_switches_rejected": true
+    },
+    {
+      "seed": 102937,
+      "dtype": "torch.float64",
+      "tolerance": 2e-12,
+      "errors": {
+        "bounded_frozen": 4.34114549863196e-16,
+        "bounded_u0_only": 4.34114549863196e-16,
+        "bounded_u1_only": 4.34114549863196e-16,
+        "bounded_both_u": 4.34114549863196e-16,
+        "projection_active_frozen": 4.440892098500626e-16,
+        "projection_active_u0_only": 4.440892098500626e-16,
+        "projection_active_u1_only": 4.440892098500626e-16,
+        "projection_active_both_u": 4.440892098500626e-16
+      },
+      "maximum_capped_sigma": 1.999999999999998,
+      "inactive_matrices_bitwise_frozen_12steps": true,
+      "same_state_forward_updates_bitwise": true,
+      "frozen_endpoint_12step_trajectory_bitwise": true,
+      "both_U_vs_preserved_VU_W_U_B_steps_and_12step_trajectory_bitwise": true,
+      "V_fixed_in_both_U_and_changed_in_reference": true,
+      "U1_only_all_forward_layers_update": true,
+      "input_unmodified_output_detached": true,
+      "all_local_paths_without_autograd": true,
+      "active_readout_nonzero_update_exercised": true,
+      "nonboolean_switches_rejected": true
+    },
+    {
+      "seed": 17837,
+      "dtype": "torch.float32",
+      "tolerance": 2e-06,
+      "errors": {
+        "bounded_frozen": 1.7881393432617188e-07,
+        "bounded_u0_only": 1.7881393432617188e-07,
+        "bounded_u1_only": 1.7881393432617188e-07,
+        "bounded_both_u": 1.7881393432617188e-07,
+        "projection_active_frozen": 2.384185791015625e-07,
+        "projection_active_u0_only": 2.384185791015625e-07,
+        "projection_active_u1_only": 2.384185791015625e-07,
+        "projection_active_both_u": 2.384185791015625e-07
+      },
+      "maximum_capped_sigma": 1.9999995231628418,
+      "inactive_matrices_bitwise_frozen_12steps": true,
+      "same_state_forward_updates_bitwise": true,
+      "frozen_endpoint_12step_trajectory_bitwise": true,
+      "both_U_vs_preserved_VU_W_U_B_steps_and_12step_trajectory_bitwise": true,
+      "V_fixed_in_both_U_and_changed_in_reference": true,
+      "U1_only_all_forward_layers_update": true,
+      "input_unmodified_output_detached": true,
+      "all_local_paths_without_autograd": true,
+      "active_readout_nonzero_update_exercised": true,
+      "nonboolean_switches_rejected": true
+    },
+    {
+      "seed": 17837,
+      "dtype": "torch.float64",
+      "tolerance": 2e-12,
+      "errors": {
+        "bounded_frozen": 4.440892098500626e-16,
+        "bounded_u0_only": 4.440892098500626e-16,
+        "bounded_u1_only": 4.440892098500626e-16,
+        "bounded_both_u": 4.440892098500626e-16,
+        "projection_active_frozen": 3.469446951953614e-16,
+        "projection_active_u0_only": 3.3306690738754696e-16,
+        "projection_active_u1_only": 3.469446951953614e-16,
+        "projection_active_both_u": 3.3306690738754696e-16
+      },
+      "maximum_capped_sigma": 1.9999999999999987,
+      "inactive_matrices_bitwise_frozen_12steps": true,
+      "same_state_forward_updates_bitwise": true,
+      "frozen_endpoint_12step_trajectory_bitwise": true,
+      "both_U_vs_preserved_VU_W_U_B_steps_and_12step_trajectory_bitwise": true,
+      "V_fixed_in_both_U_and_changed_in_reference": true,
+      "U1_only_all_forward_layers_update": true,
+      "input_unmodified_output_detached": true,
+      "all_local_paths_without_autograd": true,
+      "active_readout_nonzero_update_exercised": true,
+      "nonboolean_switches_rejected": true
+    },
+    {
+      "seed": 26837,
+      "dtype": "torch.float32",
+      "tolerance": 2e-06,
+      "errors": {
+        "bounded_frozen": 2.980232238769531e-07,
+        "bounded_u0_only": 2.980232238769531e-07,
+        "bounded_u1_only": 2.980232238769531e-07,
+        "bounded_both_u": 2.980232238769531e-07,
+        "projection_active_frozen": 2.384185791015625e-07,
+        "projection_active_u0_only": 2.682209014892578e-07,
+        "projection_active_u1_only": 2.384185791015625e-07,
+        "projection_active_both_u": 2.682209014892578e-07
+      },
+      "maximum_capped_sigma": 1.9999994039535522,
+      "inactive_matrices_bitwise_frozen_12steps": true,
+      "same_state_forward_updates_bitwise": true,
+      "frozen_endpoint_12step_trajectory_bitwise": true,
+      "both_U_vs_preserved_VU_W_U_B_steps_and_12step_trajectory_bitwise": true,
+      "V_fixed_in_both_U_and_changed_in_reference": true,
+      "U1_only_all_forward_layers_update": true,
+      "input_unmodified_output_detached": true,
+      "all_local_paths_without_autograd": true,
+      "active_readout_nonzero_update_exercised": true,
+      "nonboolean_switches_rejected": true
+    },
+    {
+      "seed": 26837,
+      "dtype": "torch.float64",
+      "tolerance": 2e-12,
+      "errors": {
+        "bounded_frozen": 4.440892098500626e-16,
+        "bounded_u0_only": 4.440892098500626e-16,
+        "bounded_u1_only": 4.440892098500626e-16,
+        "bounded_both_u": 4.440892098500626e-16,
+        "projection_active_frozen": 3.3306690738754696e-16,
+        "projection_active_u0_only": 3.608224830031759e-16,
+        "projection_active_u1_only": 3.3306690738754696e-16,
+        "projection_active_both_u": 3.608224830031759e-16
+      },
+      "maximum_capped_sigma": 1.999999999999999,
+      "inactive_matrices_bitwise_frozen_12steps": true,
+      "same_state_forward_updates_bitwise": true,
+      "frozen_endpoint_12step_trajectory_bitwise": true,
+      "both_U_vs_preserved_VU_W_U_B_steps_and_12step_trajectory_bitwise": true,
+      "V_fixed_in_both_U_and_changed_in_reference": true,
+      "U1_only_all_forward_layers_update": true,
+      "input_unmodified_output_detached": true,
+      "all_local_paths_without_autograd": true,
+      "active_readout_nonzero_update_exercised": true,
+      "nonboolean_switches_rejected": true
+    }
+  ]
+}
