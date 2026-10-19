@@ -1,0 +1,6 @@
+{
+  "training": "Two independent 4-thread CPU workers; identical batch schedule and update budgets.",
+  "norm_diagnostic": "One exploratory 2-thread validation-only worker briefly overlapped training around update 570. This is why elapsed training time is not presented as a speed comparison.",
+  "inference_timing": "Run only after all training and diagnostic workers complete.",
+  "primary_protocol_changes": "None after training began. The norm diagnostic is separately labeled and never changes training or fresh-audit candidate selection."
+}

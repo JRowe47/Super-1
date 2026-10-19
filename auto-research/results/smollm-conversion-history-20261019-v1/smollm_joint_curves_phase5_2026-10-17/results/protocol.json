@@ -1,0 +1,64 @@
+{
+  "phase": 5,
+  "windows_zero_indexed": [
+    [
+      4,
+      5,
+      6,
+      7
+    ],
+    [
+      12,
+      13,
+      14,
+      15
+    ]
+  ],
+  "initialization": "Frozen original knots plus phase-4 selected slopes; all arms have exactly matching initial functions at both reduced resolutions.",
+  "arms": [
+    "raw_curve",
+    "orthogonal_curve",
+    "dense"
+  ],
+  "primary_curve_arm": "orthogonal_curve",
+  "training_resolutions": [
+    3,
+    2
+  ],
+  "raw_curve": "Train increments of the four Hermite derivatives in original coordinates.",
+  "orthogonal_curve": "Same four-derivative function space reparameterized by B=V diag(1/sigma) from the 5x4 derivative sampling matrix A; AB has orthonormal columns.",
+  "dense": "Five independent dense sampled weight sets per window: 3-step and 2-step controls have separate Parameters and Adam state; inactive resolution does not update. Fixed residual branch multipliers match curve initialization.",
+  "shared_native_blocks": "All 22 blocks outside the two windows, embedding, head and final norm remain frozen; gradients propagate through the complete suffix.",
+  "objective": "Mean teacher-to-student next-token KL, temperature 1; no intermediate-state loss in this phase.",
+  "updates_per_arm": 600,
+  "updates_per_resolution": 300,
+  "batch_sequences": 2,
+  "context": 128,
+  "seed": 60517,
+  "data_exposure": "Exactly the same 600 ordered minibatches and alternating resolutions for all arms; 153600 input tokens per arm, 76800 at each resolution.",
+  "optimizer": {
+    "name": "AdamW",
+    "weight_decay": 0,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "gradient_clip_norm": 1,
+    "schedule": "20-update linear warmup then cosine to 20% of peak"
+  },
+  "peak_lrs": {
+    "dense": 0.0001,
+    "raw_curve": 0.00037785539094441017,
+    "orthogonal_curve": 7.868842673097846e-05
+  },
+  "calibration": "Training-only two-probe RMS update-scale matching to dense LR 1e-4. Probe updates discarded; no validation sweep. This is not exact optimizer equivalence.",
+  "checkpoint_selection": "Every 100 updates including initialization: minimum equal mean N=3/N=2 teacher KL on the first 8 validation windows; one shared checkpoint per arm, including dense.",
+  "final_validation": "All 32 validation windows; gate delta NLL <= .05 and KL <= .05.",
+  "primary_audit": "64 document-held-out windows from 32 previously unused official-train articles. Reserved before training; never used for learning, calibration or selection.",
+  "audit_candidates": "All 3 arms at N=3 and N=2; phase4 initial functions at both N; dense weights projected into the Hermite curve space at both N; each individual converted window of orthogonal and dense N=3 as diagnostic ablations.",
+  "projection_control": "After checkpoint selection, project dense learned increments D onto the rank-4 curve sample space with U U^T D. No retraining or test-based choices. Measures the immediate cost of imposing this curve constraint on this fitted dense solution, not an optimum over all curves.",
+  "long_context_candidates": "Phase4, orthogonal, dense at N=3, context 256, exactly same 128 target tokens as short audit.",
+  "parameter_comparison": "Curves: 28320768 trainable increments. Dense: 35400960 across both resolutions (21240576 active N=3; 14160384 active N=2). Dense has 25% more total trained values; update count and token exposure matched, not storage or wall clock.",
+  "cost_protocol": "12 alternating native/candidate paired prefill timings after warmup; compare streamed function weights to native blocks with sampled weights and residual scaling folded into o/down matrices.",
+  "limits": "One seed; phase4 warm start; short continuation budget; depth-only coefficients. No adaptive depth per sequence, no hierarchical state, no input-conditioned basis. Not a GSA reproduction. Improvement over phase4 cannot isolate joint training from additional updates/data."
+}

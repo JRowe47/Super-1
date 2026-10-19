@@ -1,0 +1,15 @@
+{
+  "same_validation_windows": true,
+  "absolute_metric_differences": {
+    "delta_nll": 2.0116567611694336e-07,
+    "mean_kl": 1.885928213596344e-08,
+    "top1_agreement": 0.0
+  },
+  "tolerances": {
+    "delta_nll": 1e-05,
+    "mean_kl": 1e-05,
+    "top1_agreement": 0.001
+  },
+  "passed": true,
+  "meaning": "Compiled reference reproduces the selected phase-5 dense validation metrics; folding changes FP32 roundoff, which can affect argmax near ties."
+}

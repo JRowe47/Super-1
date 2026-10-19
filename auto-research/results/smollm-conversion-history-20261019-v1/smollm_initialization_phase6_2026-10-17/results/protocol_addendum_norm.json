@@ -1,0 +1,11 @@
+{
+  "status": "Exploratory diagnostic added after the 300-update validation checkpoints, before any phase-6 fresh-audit evaluation.",
+  "question": "Does sampled matrix-norm attenuation help explain sensitivity to residual strength?",
+  "rule": "For each of the seven 2-D projection matrices, rescale the interpolated sample to sqrt((1-u)*||W_j||_F^2 + u*||W_(j+1)||_F^2), using adjacent ORIGINAL knots. Leave both RMSNorm vectors unchanged.",
+  "residual_scales": [
+    1.0,
+    1.3333333333333333
+  ],
+  "data": "All 32 validation windows only.",
+  "training_changes": "None. No candidate selection, training, LR changes or fresh-audit comparison uses these controls."
+}

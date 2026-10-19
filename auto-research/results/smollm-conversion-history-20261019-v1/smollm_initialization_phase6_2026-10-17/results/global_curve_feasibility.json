@@ -1,0 +1,93 @@
+{
+  "scope": "Feasibility planning only. No global-curve model trained or quality-tested.",
+  "grids": {
+    "28": {
+      "coordinates": [
+        0.0357142857142857,
+        1.1071428571428572,
+        2.1785714285714284,
+        3.25,
+        4.321428571428571,
+        5.392857142857143,
+        6.464285714285714,
+        7.5357142857142865,
+        8.607142857142858,
+        9.678571428571429,
+        10.75,
+        11.821428571428571,
+        12.892857142857142,
+        13.964285714285714,
+        15.035714285714286,
+        16.107142857142858,
+        17.178571428571427,
+        18.25,
+        19.321428571428573,
+        20.392857142857142,
+        21.464285714285715,
+        22.535714285714285,
+        23.607142857142858,
+        24.678571428571427,
+        25.75,
+        26.821428571428573,
+        27.892857142857142,
+        28.964285714285715
+      ],
+      "native_knot_collisions": [],
+      "derivative_sample_rank": 28,
+      "arbitrary_independent_sample_corrections_supported": true,
+      "nonzero_condition_number": 6.916173739501919,
+      "right_inverse_error": 1.3322676295501878e-15
+    },
+    "26": {
+      "coordinates": [
+        0.07692307692307687,
+        1.2307692307692308,
+        2.3846153846153846,
+        3.5384615384615383,
+        4.6923076923076925,
+        5.846153846153846,
+        7.0,
+        8.153846153846153,
+        9.307692307692308,
+        10.461538461538462,
+        11.615384615384615,
+        12.76923076923077,
+        13.923076923076923,
+        15.076923076923077,
+        16.23076923076923,
+        17.384615384615383,
+        18.53846153846154,
+        19.692307692307693,
+        20.846153846153847,
+        22.0,
+        23.153846153846153,
+        24.307692307692307,
+        25.46153846153846,
+        26.615384615384617,
+        27.76923076923077,
+        28.923076923076923
+      ],
+      "native_knot_collisions": [
+        {
+          "sample_index": 6,
+          "original_knot": 7
+        },
+        {
+          "sample_index": 19,
+          "original_knot": 22
+        }
+      ],
+      "derivative_sample_rank": 24,
+      "arbitrary_independent_sample_corrections_supported": false,
+      "nonzero_condition_number": 3.200082104553988,
+      "right_inverse_error": 1.0
+    }
+  },
+  "proposed_28_block_trainable_values": 99122688,
+  "original_preservation": "Clone all reduced-model decoder blocks before training; keep embeddings, tied head and final norm fixed. Store all original knots separately.",
+  "parameter_gradient_and_adam_plus_original_bytes": 2124023040,
+  "parameter_gradient_and_adam_plus_original_gib": 1.9781506061553955,
+  "memory_limit": "This is only parameter/gradient/moment/original storage. Excludes activations, teacher cache, temporary buffers, framework overhead and curve construction.",
+  "curve_rule": "For N=28 use C0(t)+a(t) A28+ D, with a 30-knot Hermite base computed from original blocks and 28 target-minus-base tensors. The 28 sample locations do not coincide with original knots.",
+  "collision_limit": "At the uniform N=26 grid, samples 6 and 19 land on immutable original knots 7 and 22. Those sample weights cannot be changed independently in a curve depending only on depth. They must remain fixed or the sampling grid/parameterization must change."
+}

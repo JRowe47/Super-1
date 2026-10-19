@@ -1,0 +1,16 @@
+{
+  "scope": "All 30 original blocks. No training or curve fitting. One-block removal at a time.",
+  "model": "HuggingFaceTB/SmolLM2-135M",
+  "revision": "93efa2f097d58c2a74874c7e644dbc9b0cee75a2",
+  "windows": 8,
+  "context": 128,
+  "predicted_tokens": 1024,
+  "data": "First 8 phase-3 validation windows, reused for exploratory diagnosis; no fresh held-out claim.",
+  "batch": 2,
+  "dtype": "float32",
+  "threads": 4,
+  "attention": "eager",
+  "cache": false,
+  "cka": "Biased centered linear CKA on 256 evenly indexed probe tokens; descriptive, dependent tokens.",
+  "ablation": "Every original block 0..29 separately replaced by identity. No selection of a compressed model."
+}

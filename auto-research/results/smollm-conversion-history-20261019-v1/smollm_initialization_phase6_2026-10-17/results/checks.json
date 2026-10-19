@@ -1,0 +1,53 @@
+{
+  "interpolated": {
+    "all_sampled_weight_max_abs_difference": 3.725290298461914e-09,
+    "curve_vs_native_max_logit_difference": 8.296966552734375e-05,
+    "logit_equivalence_tokens": 1024,
+    "four_step_original_max_logit_difference": 0.0,
+    "checkpoint_reload_max_logit_difference": 0.0,
+    "native_parameter_count": 127434816,
+    "curve_cache": {
+      "max_cached_vs_prefill_logit_difference": 0.00012683868408203125,
+      "threshold": 0.001,
+      "passed": true,
+      "kv_layers": 28,
+      "cached_tokens": 32,
+      "kv_bytes": 1376256
+    },
+    "native_cache": {
+      "max_cached_vs_prefill_logit_difference": 0.00016880035400390625,
+      "threshold": 0.001,
+      "passed": true,
+      "kv_layers": 28,
+      "cached_tokens": 32,
+      "kv_bytes": 1376256
+    },
+    "passed": true
+  },
+  "retained": {
+    "all_sampled_weight_max_abs_difference": 1.1920928955078125e-07,
+    "curve_vs_native_max_logit_difference": 9.34600830078125e-05,
+    "logit_equivalence_tokens": 1024,
+    "four_step_original_max_logit_difference": 0.0,
+    "checkpoint_reload_max_logit_difference": 0.0,
+    "native_parameter_count": 127434816,
+    "curve_cache": {
+      "max_cached_vs_prefill_logit_difference": 0.0001964569091796875,
+      "threshold": 0.001,
+      "passed": true,
+      "kv_layers": 28,
+      "cached_tokens": 32,
+      "kv_bytes": 1376256
+    },
+    "native_cache": {
+      "max_cached_vs_prefill_logit_difference": 0.0001506805419921875,
+      "threshold": 0.001,
+      "passed": true,
+      "kv_layers": 28,
+      "cached_tokens": 32,
+      "kv_bytes": 1376256
+    },
+    "passed": true
+  },
+  "original_parameter_hashes_unchanged": true
+}

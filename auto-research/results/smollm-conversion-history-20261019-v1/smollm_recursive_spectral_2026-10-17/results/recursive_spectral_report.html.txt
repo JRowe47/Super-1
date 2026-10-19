@@ -1,0 +1,522 @@
+Artifact omitted from compact publication.
+Original archive: smollm_recursive_spectral_2026-10-17.zip
+Original member: smollm_recursive_spectral/results/recursive_spectral_report.html
+Uncompressed bytes: 2081923
+ZIP CRC32 (not a cryptographic hash): c75d5f7e
+Request the original saved archive from the author. It is not a public download in this repository. Full model replay may require pretrained weights, data and environment dependencies.
+
+Plain-text report extracted from original HTML (images/layout omitted):
+
+
+
+
+
+
+Recursive spectral updates
+
+
+
+
+
+17 October 2026 · Recursive Fourier study · Post-hoc interventions
+
+Finding useful spectral updates
+
+
+
+Measured result:
+ gradient-guided masks retained 25.26% of the update's real spectral degrees of freedom and recovered 54.8% of the full update's audit NLL improvement. Perplexity was 1.224× the original 30-block model, versus 1.255× for random spectral bands and 1.109× for the full update. These masks were extracted from an already trained update. No sparse model was trained in this study.
+
+
+
+
+What was done
+
+The entire decoder body was serialized as a one-dimensional waveform: block order, then alphabetically ordered tensor family, then row-major entries. A global real FFT was partitioned recursively into 2, 4, 8, 16, 32 and 64 frequency bands. The original 30-block checkpoint, both phase-6 28-block initial/final checkpoints, and both training updates were measured. The embedding, output head and final normalization were excluded.
+
+
+A second, localized representation was used for functional interventions: FFTs along matrix columns, grouped into contiguous sets of 32 rows, within each of the six trained blocks and seven projection families. This preserves the layer and parameter map needed for targeted edits. It is distinct from masking the global flattened waveform. The two RMSNorm vectors were carried over in full for every spectral-mask arm; a norm-only control measures their effect.
+
+
+Each row group was divided into 16 frequency bands. Four bands were retained by low frequency, high frequency, random selection, update energy, or predicted descent. DC and Nyquist coefficients were always included. The exact selected fraction varies from 25.02% to 25.32% because of discrete band edges.
+
+
+Recursive decomposition
+
+
+
+The global spectra are broadly distributed. The highest-energy leaf of the retained-final waveform contains 1.627% of total energy; a uniform 64-way division would have 1.563% per leaf. This does not identify a small dominant spectral branch.
+
+
+Changing the serialization of the same tensor entries from row-major to column-major changes the measured spectrum. Decoding either order recovers identical matrices. Frequency is therefore a property of the chosen coordinate ordering, not an intrinsic semantic address.
+
+
+
+
+The eight global components sum back to the complete retained-model update with relative RMS error 3.24e-07 in FP32. The picture shows the first 128 values of a fixed 512-weight excerpt so the oscillations remain visible; each component was reconstructed from the full 99,122,688-value FFT. Coarser 2- and 4-component curves are sums of these children. No frequency was discarded in this reconstruction. Sample points are joined for display; even a smooth Fourier component can oscillate rapidly.
+
+
+Layer identity and permutation coordinates
+
+
+This extension was added in response to the layer/permutation question after the primary outcomes. Each of the 28 retained-final blocks now has its own recursive FFT, together with separate transforms of all nine tensor families. Both initial/final checkpoints and their updates are additionally resolved for the six adapted blocks. All indices are zero-based. The underlying data retain all six recursion levels; the figure shows 64 leaves for the block spectra.
+
+
+
+
+A layer has many parameterizations that implement the same function. For a gated MLP, f(x) = W
+down
+[SiLU(W
+gate
+x) ⊙ W
+up
+x]. With permutation matrix P, replace the gate/up weights by PW
+gate/up
+ and the down weights by W
+down
+Pᵀ. The internal neuron labels change, while f(x) is unchanged. We applied one independently drawn permutation to each of the six trained MLPs, preserving every attention matrix, norm, residual channel, and layer position.
+
+
+On 1,024 training-context targets, the 28-block model's relative RMS logit change was 8.57e-07; its maximum absolute logit change was 0.000128, consistent with FP32 accumulation order. All next-token argmax predictions agreed. The NLL difference was -1.19e-07 nats. Inverting the permutations restored the candidate tensors exactly, and all original model parameter hashes remained unchanged.
+
+
+Despite the preserved function, the normalized whole-block power spectra changed by 48.1–48.5% in total variation at individual FFT bins. After aggregation into 64 bands, their difference was only 0.18–0.27%. Total variation is half the L1 distance between normalized power distributions; this is not a fraction of altered model behavior. Fine spectral changes can be large even when coarse energy plots remain nearly flat.
+
+
+
+
+
+28-block position
+
+Original layer
+
+Fine-bin power TV
+
+64-band power TV
+
+Fixed-mask relative difference
+
+
+
+
+
+4
+
+4
+
+48.06%
+
+0.196%
+
+1.222
+
+
+
+5
+
+6
+
+48.24%
+
+0.183%
+
+1.223
+
+
+
+6
+
+7
+
+48.44%
+
+0.197%
+
+1.221
+
+
+
+11
+
+12
+
+48.31%
+
+0.231%
+
+1.220
+
+
+
+12
+
+14
+
+48.42%
+
+0.269%
+
+1.223
+
+
+
+13
+
+15
+
+48.46%
+
+0.232%
+
+1.221
+
+
+
+
+
+The final column tests the existing selected frequency mask on the down-projection update, whose column axis labels intermediate MLP neurons. We apply the same frequency mask in permuted coordinates, inverse-map the resulting update, and compare with filtering in native coordinates. Differences of roughly 1.22 times the native filtered-update norm show that the fixed spectral support does not commute with neuron permutation. This is a coordinate-sensitivity diagnostic, not a new loss/perplexity intervention.
+
+
+Layer separation is necessary but does not itself solve alignment. Different layers are not assumed to be permutations of one common function. Their internal MLP labels may vary independently, whereas arbitrary permutations of the residual stream cannot be made independently inside one block without compatible changes to its connections. Attention has additional coupled constraints, including rotary positions and grouped-query sharing; no attention permutation was attempted here.
+
+
+The next comparison should preserve original layer identities and tensor families, compare raw versus explicitly aligned internal coordinates, and record inverse mappings so native checkpoints remain exactly recoverable. Matching must use training activations/weights and be tested for functional preservation. For checkpoints descended from the same initialization, keep the existing correspondence as the primary comparison; independently realigning each endpoint could conceal real training changes. Across depth, distinguish unchanged retained blocks from newly interpolated blocks. This study demonstrates the need for the control, not that cross-layer alignment will improve depth interpolation.
+
+
+Local loss information separates useful regions
+
+
+
+Let ΔW be the complete learned update and G the gradient of teacher-to-student KL at the unadapted 28-block model. A region's score is −⟨G, ΔW
+region
+⟩, computed using the complex Fourier coefficients and correct real-spectrum endpoint weights. Positive scores predict a local loss decrease. Scores came only from the first eight training windows (1,024 targets), before validation/audit evaluation. This is a first-order approximation, not an assertion that contributions add independently after finite updates.
+
+
+All masks were fixed before scoring the evaluation sets. The gradient-selected mask's perplexity relative to random bands was 0.974778×. The paired document-bootstrap 95% interval for NLL(selected) − NLL(random) was [-0.029119, -0.021581] nats. This is conditional on one training run and a reused audit; it does not measure seed uncertainty.
+
+
+Functional results
+
+
+
+
+Blocks
+
+Intervention
+
+PPL / original ↓
+
+Teacher KL ↓
+
+Full-update NLL improvement retained
+
+
+
+
+
+28
+
+Before recovery
+
+1.378491
+
+0.303414
+
+0.0%
+
+
+
+28
+
+Norm updates only
+
+1.363648
+
+0.293080
+
+5.0%
+
+
+
+28
+
+Lowest frequencies
+
+1.263658
+
+0.225761
+
+40.0%
+
+
+
+28
+
+Highest frequencies
+
+1.252669
+
+0.217916
+
+44.0%
+
+
+
+28
+
+Random spectral bands
+
+1.255238
+
+0.220548
+
+43.1%
+
+
+
+28
+
+Largest-energy bands
+
+1.247729
+
+0.215450
+
+45.8%
+
+
+
+28
+
+Gradient-selected bands
+
+1.223578
+
+0.196651
+
+54.8%
+
+
+
+28
+
+Random bands, matched norm
+
+1.254820
+
+0.220266
+
+43.2%
+
+
+
+28
+
+Random individual weights
+
+1.255624
+
+0.220726
+
+42.9%
+
+
+
+28
+
+Guided individual weights*
+
+1.232725
+
+0.217068
+
+51.4%
+
+
+
+28
+
+Selected bands, shifted phase
+
+1.390068
+
+0.310485
+
+-3.8%
+
+
+
+28
+
+Full learned update
+
+1.109028
+
+0.136715
+
+100.0%
+
+
+
+26
+
+Before recovery
+
+2.010724
+
+0.690426
+
+0.0%
+
+
+
+26
+
+Random spectral bands
+
+1.851653
+
+0.611667
+
+35.3%
+
+
+
+26
+
+Gradient-selected bands
+
+1.780237
+
+0.572797
+
+52.1%
+
+
+
+26
+
+Full learned update
+
+1.591753
+
+0.471126
+
+100.0%
+
+
+
+
+
+Recovery fraction is [NLL(initial) − NLL(masked)] / [NLL(initial) − NLL(full update)] at the same depth. It can be negative or exceed 100%; it is not the percentage of original-model quality restored. The reference model remains the original 30-block model in every PPL ratio.
+
+
+The 26-block test kept the endpoints of each edited triplet, corresponding to original layers 4/7 and 12/15. It directly transferred the 28-block masks and learned updates without retraining, interpolation, or residual rescaling. It tests further block removal, not arbitrary continuous-depth resampling.
+
+
+Phase and magnitude controls
+
+Random spectral masks were also scaled per matrix to match the selected update's norm. A random individual-weight mask retained exactly the selected spectral mask's real degrees of freedom per matrix. These controls distinguish update scale and generic sparsity from frequency placement.
+
+
+The phase control circularly shifted every row of the selected update by one column. Its Fourier magnitudes and update norms are preserved; only phases change. Its audit perplexity was 1.390068× original versus 1.223578× for the unshifted mask. A power spectrum alone cannot distinguish these updates.
+
+
+Exploratory control: is the benefit specifically Fourier?
+
+After the primary outcomes were available, one additional control applied the same −gradient×dense-update score to individual weight coordinates. Selection was within the same 32-row regions and retained exactly the same number of real degrees of freedom as the selected spectral mask, with identical full norm updates. This addendum is recorded separately and is not represented as part of the original prespecified comparison.
+
+
+Guided individual weights recovered 51.4% of the full update's NLL improvement, at 1.232725× original perplexity. The paired NLL difference, spatial minus spectral, was 0.007448 nats with interval [-0.006581, 0.021443]. The interval includes zero. This run supports loss-guided selection over random selection but does not establish a reliable advantage for Fourier over equally guided individual-weight selection.
+
+
+Verification and limits
+
+The two phase-6 reference models reproduce their previously recorded audit NLL/KL within 2×10⁻⁵. Every original model parameter hash is unchanged. Local forward/inverse Fourier and gradient Parseval checks passed. All intervention logits were finite. The global FFT collection and component reconstruction took 98.6 seconds; functional preparation and scoring took 435.6 seconds. These are diagnostic costs, not inference-speed improvements.
+
+
+These are the existing phase-6 sets: 32 validation windows and 64 audit windows across 32 documents, 128 targets each. The audit has been reported previously and is not a new independent benchmark. There is one source training seed and only six adapted blocks. All candidate updates inherit information from the full phase-6 training run. The selected coefficients have not been trained independently, so this demonstrates update sufficiency rather than saved training compute or a new sparse-training algorithm.
+
+
+Next experiment
+
+Train sparse spectral coordinates starting from zero update on the same base model. A deployable selector must use current gradients alone (or a short accounted-for training pilot); the present gradient-times-dense-update score knows the finished dense solution and is an optimistic reference. Compare current-gradient spectral selection, random spectral, and equally guided individual-weight supports at matched trainable count, initial function, data and tuning budget. Use multiple seeds and an untouched audit. Refresh selected regions only on training data and account for the cost of scoring them. Evaluate the same masks at 28 and 26 blocks; keep depth-conditioned selection separate from direct transfer.
+
+
+For regions showing useful effects, refine their frequency tree while preserving a global coefficient budget. Compare parent-band interventions against their children before increasing resolution. This directly tests whether recursive allocation helps more than a fixed-resolution mask. Native versus curve-coefficient training is still a separate experiment.
+
+
+Related work
+
+
+Git Re-Basin (ICLR 2023)
+ studies alignment modulo function-preserving hidden-unit permutations. That motivates alignment controls; it does not establish that different depth layers are equivalent functions. 
+
+
+FourierFT (ICML 2024)
+ learns sparse Fourier coefficients for matrix updates. It supports the general direction but uses a different update construction and does not establish the results above. 
+SciPy's ShortTimeFFT documentation
+ describes localized Fourier analysis and invertible overlap-add reconstruction; that is a future tapered-window control, whereas this study uses explicit matrix rows and non-overlapping row groups.
+
+
+Reproduce
+
+Recover the existing phase-6 archive and pinned model. The code, protocol, masks, spectra, source hashes, plots and per-window results are included in this small companion bundle. The large model and teacher caches are not duplicated.
+
+
+python global_probe.py --phase6 /path/to/smollm_initialization_phase6
+python interventions.py --phase6 /path/to/smollm_initialization_phase6
+python targeting_control.py --phase6 /path/to/smollm_initialization_phase6
+python layer_permutation_probe.py --phase6 /path/to/smollm_initialization_phase6
+python build_report.py
+
+
+Frozen primary protocol
+
+{
+  "study": "Recursive spectral update sufficiency",
+  "status_at_creation": "Written before new spectral measurements or functional evaluations",
+  "date": "2026-10-17",
+  "model": "HuggingFaceTB/SmolLM2-135M",
+  "revision": "93efa2f097d58c2a74874c7e644dbc9b0cee75a2",
+  "sources": "Saved phase-6 initializations and selected 1800-update checkpoints",
+  "global_waveform": "Block-major, alphabetically ordered parameter families, C-order tensor flattening. Compare original 30 blocks, retained/interpolated 28-block initial/final weights, and their endpoint updates. Embedding/head/final norm excluded.",
+  "global_recursion": "Disjoint binary frequency partitions through level 6 (64 leaves), all bins preserved. Four/eight component reconstructions and a fixed excerpt demonstrate additive decomposition. Frequency subdivision is distinct from repeated forward FFTs.",
+  "local_transform": "Each of the 42 trained projection matrices: orthonormal real FFT along its column axis, rows grouped in contiguous groups of 32. Sixteen frequency bands partition positive interior bins. DC and Nyquist always retained; two RMSNorm vectors per changed block retained in full for spectral-mask arms.",
+  "mask_budget": "Choose 4 of 16 frequency bands per 32-row region, approximately 25% of real spectral degrees of freedom; report actual counts including endpoints and norms.",
+  "mask_selection": "Low-quarter, high-quarter, fixed-random-quarter, highest-update-energy-quarter, and highest predicted descent-quarter. Descent score is minus the inner product between initial-model KL gradient and the already learned update in each spectral region. Gradient uses only first 8 phase-6 training windows.",
+  "primary_variants_28": [
+    "initial",
+    "full_update",
+    "norm_only",
+    "low_quarter",
+    "high_quarter",
+    "random_quarter",
+    "energy_quarter",
+    "gradient_quarter",
+    "random_norm_matched",
+    "random_spatial",
+    "gradient_shift_one"
+  ],
+  "controls": {
+    "random_norm_matched": "Same random spectral mask, per-matrix update norm matched to gradient-selected update; same full norm updates.",
+    "random_spatial": "Fixed random individual-weight mask with exactly the gradient mask's real degrees-of-freedom count per matrix; same norm updates.",
+    "gradient_shift_one": "Cyclically shift each row of the gradient-selected matrix update by one column; identical Fourier magnitudes and update norms, different phase. Norm vectors unchanged."
+  },
+  "depth_transfer_26": "Initial, full_update, gradient_quarter, random_quarter. Keep only endpoints from each edited triplet: original blocks 4 and 7, 12 and 15. Unit residual scaling. Direct transfer of the 28-block update; no 26-block training, curve resampling or weight realignment.",
+  "evaluation": "All candidates on existing phase-6 validation (32 windows) and audit (64 windows, 32 documents), context 128. These are previously used sets, not a fresh test. Audit never selects masks, gradients or variants in this study.",
+  "metrics": "Next-token NLL, teacher KL, perplexity ratio to original 30-block model, paired document bootstrap. Recovery fraction is initial-minus-masked NLL divided by initial-minus-full-update NLL at the same depth.",
+  "scope": "Post-hoc sufficiency/intervention study. No fresh sparse-model training and no training-cost saving claim. All masked updates are derived from a fully trained checkpoint; this uses its information.",
+  "limits": [
+    "One original training seed",
+    "Only six blocks were trained",
+    "Weight frequency depends on tensor ordering",
+    "Large Fourier magnitude does not imply functional importance",
+    "No power-spectrum comparison can recover phase information",
+    "Native-versus-curve coefficient training remains untested"
+  ]
+}
+
+
+
+

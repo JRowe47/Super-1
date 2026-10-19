@@ -1,0 +1,76 @@
+{
+  "phase": 6,
+  "model": "HuggingFaceTB/SmolLM2-135M",
+  "model_revision": "93efa2f097d58c2a74874c7e644dbc9b0cee75a2",
+  "question": "Does retained-native initialization recover reduced-depth quality better than interpolated initialization under matched longer distillation?",
+  "windows_zero_indexed": [
+    [
+      4,
+      5,
+      6,
+      7
+    ],
+    [
+      12,
+      13,
+      14,
+      15
+    ]
+  ],
+  "steps_per_window": 3,
+  "decoder_blocks": 28,
+  "arms": [
+    "interpolated",
+    "retained"
+  ],
+  "retained_offsets": [
+    0,
+    2,
+    3
+  ],
+  "removed_original_blocks": [
+    5,
+    13
+  ],
+  "retention_policy": "Predetermined endpoints plus rounded-up middle of linspace(0,3,3), giving offsets [0,2,3]. No pruning search.",
+  "interpolated_initialization": "Phase-4 selected Hermite curve samples at [1/6, 1.5, 17/6]. These slopes have earlier training history.",
+  "primary_residual_scale": 1.0,
+  "scaling_rationale": "Both primary arms use ordinary native transformer residual strength. Separately score the old 4/3 multiplier at initialization on validation; no scale selection using the audit.",
+  "trainable_parameters": 21240576,
+  "frozen": "All original knots are immutable. Only six cloned/reconstructed blocks train; other 22 blocks, embeddings, output head and final norm remain frozen.",
+  "updates_per_arm": 1800,
+  "batch_sequences": 2,
+  "context": 128,
+  "seed": 60617,
+  "input_tokens_per_arm": 460800,
+  "data_pool_input_tokens": 131072,
+  "phase5_comparison": "Each phase-5 dense resolution had 300 updates. This phase trains N=3 only for 1800 updates (6x per-resolution exposure). It also changes residual scale and schedule, so phase-5 to phase-6 improvement is not isolated to duration alone.",
+  "objective": "Full-model teacher-to-student next-token KL at temperature 1; no intermediate-state loss.",
+  "optimizer": {
+    "name": "AdamW",
+    "lr": 0.0001,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "weight_decay": 0.0,
+    "gradient_clip_norm": 1.0,
+    "warmup_updates": 60,
+    "schedule": "cosine to 20% of peak"
+  },
+  "matched": "Both arms use identical ordered batches, exposure, trainable count, objective, optimizer and residual convention. No extra LR sweep.",
+  "selection": "Check every 300 updates including 0; minimum mean KL on first 8 validation windows. Gate on all 32 validation windows: delta NLL <= .05 and KL <= .05.",
+  "audit": "64 windows / 8192 targets / 32 new document-held-out official-train articles, excluding all phase-5 audit articles. No audit-driven training or selection.",
+  "audit_candidates": [
+    "initial_interpolated",
+    "initial_retained",
+    "phase5_dense",
+    "trained_interpolated",
+    "trained_retained"
+  ],
+  "interaction_ablations": "Each trained candidate at each window alone, using original weights in the other window; score the same fresh audit.",
+  "long_context": "Phase-5 dense and both trained candidates at context 256, score the same final 128 targets.",
+  "curve_lift": "Three cardinal functions l(t)=a(t) A3+ vanish at every original knot and form I3 at the three fitted samples. Store target-minus-base tensors. Unit residual strength; original four-step and fitted three-step schedules only.",
+  "conversion_checks": "All sampled tensors; end-to-end logits on 8 audit windows; exact original four-step logits; DynamicCache; selected-block reload; ordinary safetensors model reload.",
+  "limits": "One seed, two four-block regions, fixed depth and short text windows. No claim about N=2, arbitrary unseen depths, input-conditioned GSA, original-pretraining leakage or state/cache asymptotics."
+}

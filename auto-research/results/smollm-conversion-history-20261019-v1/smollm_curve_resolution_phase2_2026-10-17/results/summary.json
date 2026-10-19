@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "validation_configs": 84,
+  "test_candidates": 8,
+  "calibration_tokens": 16384,
+  "validation_tokens": 4096,
+  "test_tokens": 16384,
+  "test_reference_nll": 3.477835128083825,
+  "untouched_parameter_tensors_checked": 263,
+  "untouched_parameters_identical": true,
+  "joint_cached_vs_prefill_max_abs_logit": 0.00010251998901367188,
+  "joint_cache_check_spec": {
+    "id": "joint_activation_svd_0.125",
+    "method": "joint_activation_svd",
+    "budget": 0.125
+  },
+  "sample": {
+    "prompt": "The purpose of a scientific experiment is",
+    "original": " to test a hypothesis. A hypothesis is a statement that is made to explain a phenomenon. A hypothesis is a statement that is made to explain a phenomenon. A hypothesis is a statement that is made to",
+    "joint_curve": " to test a hypothesis. A hypothesis is a statement that is made to explain a phenomenon. A hypothesis is a statement that is made to explain a phenomenon. A hypothesis is a statement that is made to"
+  },
+  "run_elapsed_seconds": 1446.0994754549974,
+  "peak_process_rss_mib": 1367.71875,
+  "python": "3.12.14",
+  "torch": "2.5.1+cpu"
+}

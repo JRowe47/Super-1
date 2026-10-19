@@ -1,0 +1,160 @@
+{
+  "status": "complete",
+  "window": 12,
+  "history": [
+    {
+      "stage": "local",
+      "update": 0,
+      "validation": {
+        "3": 0.4733266457915306,
+        "2": 1.007933348417282,
+        "mean": 0.7406299971044064
+      },
+      "elapsed_seconds": 0.3704681179997351
+    },
+    {
+      "stage": "local",
+      "update": 50,
+      "validation": {
+        "3": 0.3413569778203964,
+        "2": 0.656770333647728,
+        "mean": 0.4990636557340622
+      },
+      "elapsed_seconds": 7.761005255999407
+    },
+    {
+      "stage": "local",
+      "update": 100,
+      "validation": {
+        "3": 0.31061504781246185,
+        "2": 0.5937658846378326,
+        "mean": 0.45219046622514725
+      },
+      "elapsed_seconds": 14.731283495999378
+    },
+    {
+      "stage": "local",
+      "update": 150,
+      "validation": {
+        "3": 0.29060864448547363,
+        "2": 0.5563445538282394,
+        "mean": 0.42347659915685654
+      },
+      "elapsed_seconds": 21.814868458999626
+    },
+    {
+      "stage": "local",
+      "update": 200,
+      "validation": {
+        "3": 0.2761487364768982,
+        "2": 0.5277193784713745,
+        "mean": 0.40193405747413635
+      },
+      "elapsed_seconds": 28.69571801499933
+    },
+    {
+      "stage": "local",
+      "update": 250,
+      "validation": {
+        "3": 0.26551133394241333,
+        "2": 0.5063101723790169,
+        "mean": 0.3859107531607151
+      },
+      "elapsed_seconds": 35.96013676599978
+    },
+    {
+      "stage": "local",
+      "update": 300,
+      "validation": {
+        "3": 0.256339143961668,
+        "2": 0.4878520369529724,
+        "mean": 0.3720955904573202
+      },
+      "elapsed_seconds": 43.00606482999956
+    },
+    {
+      "stage": "global",
+      "update": 0,
+      "validation": {
+        "3": {
+          "mean_kl": 0.09262336324900389,
+          "delta_nll": 0.07928270101547241,
+          "perplexity_ratio_to_original": 1.0825103055799992
+        },
+        "2": {
+          "mean_kl": 0.20234605018049479,
+          "delta_nll": 0.1854279339313507,
+          "perplexity_ratio_to_original": 1.203733448311932
+        },
+        "mean_kl": 0.14748470671474934
+      },
+      "elapsed_seconds": 47.55900657999973
+    },
+    {
+      "stage": "global",
+      "update": 20,
+      "validation": {
+        "3": {
+          "mean_kl": 0.08883085893467069,
+          "delta_nll": 0.07312753796577454,
+          "perplexity_ratio_to_original": 1.0758677421483553
+        },
+        "2": {
+          "mean_kl": 0.18990211002528667,
+          "delta_nll": 0.16859912872314453,
+          "perplexity_ratio_to_original": 1.1836455543019557
+        },
+        "mean_kl": 0.13936648447997868
+      },
+      "elapsed_seconds": 68.81550364899977
+    },
+    {
+      "stage": "global",
+      "update": 40,
+      "validation": {
+        "3": {
+          "mean_kl": 0.08633643295615911,
+          "delta_nll": 0.06983679533004761,
+          "perplexity_ratio_to_original": 1.0723331571932342
+        },
+        "2": {
+          "mean_kl": 0.18079188745468855,
+          "delta_nll": 0.15732499957084656,
+          "perplexity_ratio_to_original": 1.1703759237702485
+        },
+        "mean_kl": 0.13356416020542383
+      },
+      "elapsed_seconds": 89.49605958399934
+    },
+    {
+      "stage": "global",
+      "update": 60,
+      "validation": {
+        "3": {
+          "mean_kl": 0.08494409220293164,
+          "delta_nll": 0.06772792339324951,
+          "perplexity_ratio_to_original": 1.0700741267313272
+        },
+        "2": {
+          "mean_kl": 0.17515953723341227,
+          "delta_nll": 0.1483636200428009,
+          "perplexity_ratio_to_original": 1.159934595156398
+        },
+        "mean_kl": 0.13005181471817195
+      },
+      "elapsed_seconds": 110.59070173199962
+    }
+  ],
+  "floor": 0.006904004096984864,
+  "local_best": {
+    "update": 300,
+    "mean_validation_path_loss": 0.3720955904573202
+  },
+  "global_best": {
+    "update": 60,
+    "mean_validation_kl": 0.13005181471817195
+  },
+  "trainable_slope_values": 14160384,
+  "elapsed_seconds": 110.6222780299995,
+  "max_rss_kib": 2871480
+}

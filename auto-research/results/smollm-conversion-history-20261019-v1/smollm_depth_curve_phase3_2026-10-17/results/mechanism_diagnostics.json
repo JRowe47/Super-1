@@ -1,0 +1,33 @@
+{
+  "scope": "First validation window only; no selection uses this diagnostic.",
+  "token_for_plot": 127,
+  "metrics": {
+    "1": {
+      "relative_rms_error": 0.41569238901138306
+    },
+    "2": {
+      "relative_rms_error": 0.40737801790237427
+    },
+    "4": {
+      "relative_rms_error": 0.4214896857738495
+    },
+    "8": {
+      "relative_rms_error": 0.4401026666164398
+    },
+    "16": {
+      "relative_rms_error": 0.4671282470226288
+    },
+    "32": {
+      "relative_rms_error": 0.49247974157333374
+    },
+    "64": {
+      "relative_rms_error": 0.5083211064338684
+    },
+    "frozen_state_n8": {
+      "relative_rms_error": 0.5379067659378052,
+      "difference_from_recurrent_relative_rms": 0.3899625539779663
+    },
+    "control_relative_variation": 0.18629226215846847
+  },
+  "note": "Weight-curve smoothness does not imply solver-resolution invariance. N=64 is a diagnostic, not a ground-truth path."
+}

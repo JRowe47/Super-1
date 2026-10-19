@@ -1,0 +1,62 @@
+{
+  "selection_used": "validation only",
+  "selected": [
+    {
+      "id": "svd_qk_0.125",
+      "method": "svd",
+      "target": "qk",
+      "budget": 0.125
+    },
+    {
+      "id": "activation_svd_qk_0.125",
+      "method": "activation_svd",
+      "target": "qk",
+      "budget": 0.125
+    },
+    {
+      "id": "joint_activation_svd_0.125",
+      "method": "joint_activation_svd",
+      "budget": 0.125
+    },
+    {
+      "id": "mlp_importance_12",
+      "method": "mlp_groups",
+      "groups": 12,
+      "ordering": "importance"
+    },
+    {
+      "id": "mlp_random_0_12",
+      "method": "mlp_groups",
+      "groups": 12,
+      "ordering": "random_0"
+    },
+    {
+      "id": "mlp_contiguous_12",
+      "method": "mlp_groups",
+      "groups": 12,
+      "ordering": "contiguous"
+    },
+    {
+      "id": "haar_qk_0.5",
+      "method": "haar",
+      "target": "qk",
+      "budget": 0.5
+    },
+    {
+      "id": "knots_qk_0.5",
+      "method": "knots",
+      "target": "qk",
+      "budget": 0.5
+    }
+  ],
+  "reasons": {
+    "svd_qk_0.125": "svd Q/K: Lowest projection MAC count passing validation delta NLL <= 0.05 and KL <= 0.05.",
+    "activation_svd_qk_0.125": "activation_svd Q/K: Lowest projection MAC count passing validation delta NLL <= 0.05 and KL <= 0.05.",
+    "joint_activation_svd_0.125": "Joint activation-aware Q/K: Lowest projection MAC count passing validation delta NLL <= 0.05 and KL <= 0.05.",
+    "mlp_importance_12": "Importance-ranked MLP: No candidate met the gate; chose lowest validation KL as a failed-gate representative.",
+    "mlp_random_0_12": "Prespecified matched/control comparison.",
+    "mlp_contiguous_12": "Prespecified matched/control comparison.",
+    "haar_qk_0.5": "Prespecified matched/control comparison.",
+    "knots_qk_0.5": "Prespecified matched/control comparison."
+  }
+}

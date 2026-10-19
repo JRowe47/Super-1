@@ -1,0 +1,12 @@
+{
+  "repaired_archive": "smollm_cross_layer_survey_2026-10-17.zip",
+  "reason": "Prior stored ZIP was truncated; 24 complete entries were CRC-verified and recovered, then survey code regenerated missing files from pinned model.",
+  "repaired_archive_sha256": "cc35c574f9c17b7c6b86869ec2b1048e7aef37496f8a3871057b5f9460ac90ce",
+  "recovered_vs_regenerated_json_identical": [
+    "pair_results.json",
+    "weights.json",
+    "activations.json",
+    "normalized_similarity.json"
+  ],
+  "library_replacement_version": 1
+}

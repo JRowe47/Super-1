@@ -1,0 +1,99 @@
+{
+  "selection_split": "first 8 validation windows for checkpoints; all 32 for gate reporting",
+  "passed_gate": {
+    "initial_n3": false,
+    "initial_n2": false,
+    "raw_curve_n3": false,
+    "raw_curve_n2": false,
+    "orthogonal_curve_n3": false,
+    "orthogonal_curve_n2": false,
+    "dense_n3": false,
+    "dense_n2": false,
+    "projected_dense_n3": false,
+    "projected_dense_n2": false,
+    "lifted_dense_n3": false,
+    "lifted_dense_n2": false
+  },
+  "audit_rows_locked": [
+    {
+      "id": "initial_n3",
+      "kind": "initial",
+      "steps": 3,
+      "only": null
+    },
+    {
+      "id": "initial_n2",
+      "kind": "initial",
+      "steps": 2,
+      "only": null
+    },
+    {
+      "id": "raw_curve_n3",
+      "kind": "raw_curve",
+      "steps": 3,
+      "only": null
+    },
+    {
+      "id": "raw_curve_n2",
+      "kind": "raw_curve",
+      "steps": 2,
+      "only": null
+    },
+    {
+      "id": "orthogonal_curve_n3",
+      "kind": "orthogonal_curve",
+      "steps": 3,
+      "only": null
+    },
+    {
+      "id": "orthogonal_curve_n2",
+      "kind": "orthogonal_curve",
+      "steps": 2,
+      "only": null
+    },
+    {
+      "id": "dense_n3",
+      "kind": "dense",
+      "steps": 3,
+      "only": null
+    },
+    {
+      "id": "dense_n2",
+      "kind": "dense",
+      "steps": 2,
+      "only": null
+    },
+    {
+      "id": "projected_dense_n3",
+      "kind": "projected_dense",
+      "steps": 3,
+      "only": null
+    },
+    {
+      "id": "projected_dense_n2",
+      "kind": "projected_dense",
+      "steps": 2,
+      "only": null
+    },
+    {
+      "id": "lifted_dense_n3",
+      "kind": "lifted_dense",
+      "steps": 3,
+      "only": null
+    },
+    {
+      "id": "lifted_dense_n2",
+      "kind": "lifted_dense",
+      "steps": 2,
+      "only": null
+    }
+  ],
+  "primary_curve": "orthogonal_curve",
+  "no_test_based_resolution_selection": true,
+  "extra_ablations": "orthogonal_curve and dense, N=3, each individual window",
+  "long_context": [
+    "initial_n3",
+    "orthogonal_curve_n3",
+    "dense_n3"
+  ]
+}

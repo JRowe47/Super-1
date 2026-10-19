@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "model_parameters": 134515008,
+  "blocks": 30,
+  "reference_nll": 3.1936749815940857,
+  "reference_perplexity": 24.377851181551073,
+  "probe_predicted_tokens": 1024,
+  "baseline_probe_seconds_with_hooks": 1.8825955219999742,
+  "elapsed_seconds": 52.13147420699988,
+  "peak_rss_mib": 1847.08203125,
+  "parameter_tensors_checked": 272,
+  "all_parameters_unchanged": true,
+  "restored_max_logit_difference": 0.0,
+  "median_adjacent_state_cka": 0.999849392624858,
+  "median_adjacent_update_cka": 0.5742001418890005,
+  "median_adjacent_update_mean_token_cosine": 0.0016236021183431149,
+  "median_adjacent_raw_weight_cosine": 0.0016703947970275166,
+  "median_neighbor_average_relative_weight_error": 1.224209727859368,
+  "lowest_single_skip_delta_nll": {
+    "removed_block": 14,
+    "delta_nll": 0.08902046084403992,
+    "perplexity_ratio": 1.093103021907971,
+    "argmax_agreement": 0.849609375,
+    "per_window_delta_nll": [
+      0.03305411338806152,
+      0.09691333770751953,
+      0.11487507820129395,
+      0.1319901943206787,
+      0.026195049285888672,
+      0.11112856864929199,
+      0.05155587196350098,
+      0.14645147323608398
+    ]
+  },
+  "highest_single_skip_delta_nll": {
+    "removed_block": 0,
+    "delta_nll": 8.042369425296783,
+    "perplexity_ratio": 3109.973316698566,
+    "argmax_agreement": 0.0107421875,
+    "per_window_delta_nll": [
+      7.127918720245361,
+      6.8163392543792725,
+      7.925801038742065,
+      8.686436891555786,
+      9.459700584411621,
+      7.639536142349243,
+      6.767044305801392,
+      9.916178464889526
+    ]
+  }
+}

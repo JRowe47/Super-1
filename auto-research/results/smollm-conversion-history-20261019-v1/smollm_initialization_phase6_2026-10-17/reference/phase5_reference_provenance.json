@@ -1,0 +1,14 @@
+{
+  "source_phase": 5,
+  "selected_update": 600,
+  "schedule": "N=3 in windows [4,7] and [12,15], residual multiplier 4/3",
+  "export_rule": "Copy all nine parameter tensors per sampled block, folding 4/3 into attention o_proj and MLP down_proj matrices.",
+  "new_block_starts": [
+    4,
+    11
+  ],
+  "sha256": {
+    "phase5_dense_checkpoint": "7153f331a5f2c7bcd9190f08c79d71f9d41841b54082293fee0b05205647f9a3",
+    "compiled_six_native_blocks": "49bf42fbe20e168da3c24cfb31d22c6a32dc666419704568e15855b40bce11e6"
+  }
+}

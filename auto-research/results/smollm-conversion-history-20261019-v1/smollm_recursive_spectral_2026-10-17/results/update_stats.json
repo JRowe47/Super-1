@@ -1,0 +1,1534 @@
+{
+  "initial": {},
+  "full_update": {},
+  "norm_only": {
+    "4.0.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.0,
+      "real_dof": 0
+    },
+    "4.0.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.0,
+      "real_dof": 0
+    },
+    "4.0.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.0,
+      "real_dof": 0
+    },
+    "4.0.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.0,
+      "real_dof": 0
+    },
+    "4.0.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.0,
+      "real_dof": 0
+    },
+    "4.0.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.0,
+      "real_dof": 0
+    },
+    "4.0.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.0,
+      "real_dof": 0
+    },
+    "4.1.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.0,
+      "real_dof": 0
+    },
+    "4.1.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.0,
+      "real_dof": 0
+    },
+    "4.1.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.0,
+      "real_dof": 0
+    },
+    "4.1.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.0,
+      "real_dof": 0
+    },
+    "4.1.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.0,
+      "real_dof": 0
+    },
+    "4.1.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.0,
+      "real_dof": 0
+    },
+    "4.1.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.0,
+      "real_dof": 0
+    },
+    "4.2.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.0,
+      "real_dof": 0
+    },
+    "4.2.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.0,
+      "real_dof": 0
+    },
+    "4.2.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.0,
+      "real_dof": 0
+    },
+    "4.2.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.0,
+      "real_dof": 0
+    },
+    "4.2.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.0,
+      "real_dof": 0
+    },
+    "4.2.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.0,
+      "real_dof": 0
+    },
+    "4.2.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.0,
+      "real_dof": 0
+    },
+    "12.0.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.0,
+      "real_dof": 0
+    },
+    "12.0.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.0,
+      "real_dof": 0
+    },
+    "12.0.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.0,
+      "real_dof": 0
+    },
+    "12.0.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.0,
+      "real_dof": 0
+    },
+    "12.0.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.0,
+      "real_dof": 0
+    },
+    "12.0.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.0,
+      "real_dof": 0
+    },
+    "12.0.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.0,
+      "real_dof": 0
+    },
+    "12.1.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.0,
+      "real_dof": 0
+    },
+    "12.1.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.0,
+      "real_dof": 0
+    },
+    "12.1.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.0,
+      "real_dof": 0
+    },
+    "12.1.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.0,
+      "real_dof": 0
+    },
+    "12.1.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.0,
+      "real_dof": 0
+    },
+    "12.1.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.0,
+      "real_dof": 0
+    },
+    "12.1.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.0,
+      "real_dof": 0
+    },
+    "12.2.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.0,
+      "real_dof": 0
+    },
+    "12.2.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.0,
+      "real_dof": 0
+    },
+    "12.2.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.0,
+      "real_dof": 0
+    },
+    "12.2.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.0,
+      "real_dof": 0
+    },
+    "12.2.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.0,
+      "real_dof": 0
+    },
+    "12.2.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.0,
+      "real_dof": 0
+    },
+    "12.2.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.0,
+      "real_dof": 0
+    }
+  },
+  "low_quarter": {
+    "4.0.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.24756205966138145,
+      "real_dof": 82944
+    },
+    "4.0.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.2534993891275476,
+      "real_dof": 27648
+    },
+    "4.0.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.24831258319490962,
+      "real_dof": 27648
+    },
+    "4.0.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.24107415938071422,
+      "real_dof": 82944
+    },
+    "4.0.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.24845457891310385,
+      "real_dof": 221184
+    },
+    "4.0.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.2489275841532938,
+      "real_dof": 221184
+    },
+    "4.0.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.2501550135217152,
+      "real_dof": 221184
+    },
+    "4.1.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.24882879038739658,
+      "real_dof": 82944
+    },
+    "4.1.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.25203559368813133,
+      "real_dof": 27648
+    },
+    "4.1.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.24301476837084438,
+      "real_dof": 27648
+    },
+    "4.1.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.24986121628150182,
+      "real_dof": 82944
+    },
+    "4.1.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.25019634394693746,
+      "real_dof": 221184
+    },
+    "4.1.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.24998813498470862,
+      "real_dof": 221184
+    },
+    "4.1.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.25166040153691577,
+      "real_dof": 221184
+    },
+    "4.2.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.2415203044628129,
+      "real_dof": 82944
+    },
+    "4.2.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.2432560298481709,
+      "real_dof": 27648
+    },
+    "4.2.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.2506925510661942,
+      "real_dof": 27648
+    },
+    "4.2.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.2509734447292109,
+      "real_dof": 82944
+    },
+    "4.2.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.24982256374163175,
+      "real_dof": 221184
+    },
+    "4.2.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.24981687514001202,
+      "real_dof": 221184
+    },
+    "4.2.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.2512890875865227,
+      "real_dof": 221184
+    },
+    "12.0.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.25391224931543344,
+      "real_dof": 82944
+    },
+    "12.0.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.2500104049387475,
+      "real_dof": 27648
+    },
+    "12.0.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.25118389947862413,
+      "real_dof": 27648
+    },
+    "12.0.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.2508189278626039,
+      "real_dof": 82944
+    },
+    "12.0.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.2519666576022112,
+      "real_dof": 221184
+    },
+    "12.0.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.25249099504800276,
+      "real_dof": 221184
+    },
+    "12.0.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.2492854072038981,
+      "real_dof": 221184
+    },
+    "12.1.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.2573049014857674,
+      "real_dof": 82944
+    },
+    "12.1.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.2607153937839588,
+      "real_dof": 27648
+    },
+    "12.1.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.25141278181461035,
+      "real_dof": 27648
+    },
+    "12.1.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.2542246832826549,
+      "real_dof": 82944
+    },
+    "12.1.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.25224354238280217,
+      "real_dof": 221184
+    },
+    "12.1.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.25299565132103213,
+      "real_dof": 221184
+    },
+    "12.1.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.2485734265631409,
+      "real_dof": 221184
+    },
+    "12.2.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.25034978913282574,
+      "real_dof": 82944
+    },
+    "12.2.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.2568397480016263,
+      "real_dof": 27648
+    },
+    "12.2.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.2521265005271134,
+      "real_dof": 27648
+    },
+    "12.2.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.24974202751895394,
+      "real_dof": 82944
+    },
+    "12.2.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.25062125154563686,
+      "real_dof": 221184
+    },
+    "12.2.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.2502764012532687,
+      "real_dof": 221184
+    },
+    "12.2.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.25245484332612056,
+      "real_dof": 221184
+    }
+  },
+  "high_quarter": {
+    "4.0.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.2551750807967845,
+      "real_dof": 84096
+    },
+    "4.0.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.2518353760208699,
+      "real_dof": 28032
+    },
+    "4.0.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.2535492537890238,
+      "real_dof": 28032
+    },
+    "4.0.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.25761391042537995,
+      "real_dof": 84096
+    },
+    "4.0.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.25461951616356315,
+      "real_dof": 224256
+    },
+    "4.0.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.2551763005990708,
+      "real_dof": 224256
+    },
+    "4.0.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.25142393418758696,
+      "real_dof": 222336
+    },
+    "4.1.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.25439430498784765,
+      "real_dof": 84096
+    },
+    "4.1.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.25580187125361364,
+      "real_dof": 28032
+    },
+    "4.1.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.2582612567564864,
+      "real_dof": 28032
+    },
+    "4.1.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.25672412942960326,
+      "real_dof": 84096
+    },
+    "4.1.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.2550741958315473,
+      "real_dof": 224256
+    },
+    "4.1.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.2547403730485525,
+      "real_dof": 224256
+    },
+    "4.1.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.25169157558757643,
+      "real_dof": 222336
+    },
+    "4.2.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.26295268780685155,
+      "real_dof": 84096
+    },
+    "4.2.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.25733687381698633,
+      "real_dof": 28032
+    },
+    "4.2.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.255949187947776,
+      "real_dof": 28032
+    },
+    "4.2.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.24969709190316092,
+      "real_dof": 84096
+    },
+    "4.2.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.2561257315239518,
+      "real_dof": 224256
+    },
+    "4.2.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.25599075575567537,
+      "real_dof": 224256
+    },
+    "4.2.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.2509014062570464,
+      "real_dof": 222336
+    },
+    "12.0.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.2532095986495112,
+      "real_dof": 84096
+    },
+    "12.0.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.2537653146090147,
+      "real_dof": 28032
+    },
+    "12.0.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.25528178177534855,
+      "real_dof": 28032
+    },
+    "12.0.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.2505893145930052,
+      "real_dof": 84096
+    },
+    "12.0.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.25311538536569717,
+      "real_dof": 224256
+    },
+    "12.0.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.25500174731401,
+      "real_dof": 224256
+    },
+    "12.0.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.25130425236688375,
+      "real_dof": 222336
+    },
+    "12.1.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.24335533577190605,
+      "real_dof": 84096
+    },
+    "12.1.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.2472133842246083,
+      "real_dof": 28032
+    },
+    "12.1.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.2533317448323442,
+      "real_dof": 28032
+    },
+    "12.1.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.26047237999993134,
+      "real_dof": 84096
+    },
+    "12.1.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.253212288442792,
+      "real_dof": 224256
+    },
+    "12.1.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.25316484334791267,
+      "real_dof": 224256
+    },
+    "12.1.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.25180559085063076,
+      "real_dof": 222336
+    },
+    "12.2.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.25109058029070114,
+      "real_dof": 84096
+    },
+    "12.2.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.25398789742619376,
+      "real_dof": 28032
+    },
+    "12.2.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.25559821604548255,
+      "real_dof": 28032
+    },
+    "12.2.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.26121840317981726,
+      "real_dof": 84096
+    },
+    "12.2.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.2541236756649584,
+      "real_dof": 224256
+    },
+    "12.2.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.2524051174984741,
+      "real_dof": 224256
+    },
+    "12.2.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.2524966310296663,
+      "real_dof": 222336
+    }
+  },
+  "random_quarter": {
+    "4.0.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.24848840960422328,
+      "real_dof": 83648
+    },
+    "4.0.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.2477787728787073,
+      "real_dof": 27904
+    },
+    "4.0.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.2546345356593533,
+      "real_dof": 27840
+    },
+    "4.0.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.25347025503020365,
+      "real_dof": 83776
+    },
+    "4.0.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.2531055460408744,
+      "real_dof": 223680
+    },
+    "4.0.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.2520195913847134,
+      "real_dof": 223168
+    },
+    "4.0.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.25011264914667575,
+      "real_dof": 221760
+    },
+    "4.1.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.2518466659478968,
+      "real_dof": 83840
+    },
+    "4.1.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.25432030557259916,
+      "real_dof": 27904
+    },
+    "4.1.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.2526341341365633,
+      "real_dof": 27968
+    },
+    "4.1.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.25723180592016676,
+      "real_dof": 83648
+    },
+    "4.1.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.25312904152858245,
+      "real_dof": 223552
+    },
+    "4.1.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.25198372843895955,
+      "real_dof": 223488
+    },
+    "4.1.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.2515036240706314,
+      "real_dof": 222080
+    },
+    "4.2.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.2514104621197734,
+      "real_dof": 83712
+    },
+    "4.2.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.25318372538983747,
+      "real_dof": 28032
+    },
+    "4.2.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.2537374441851676,
+      "real_dof": 27904
+    },
+    "4.2.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.2520795437192828,
+      "real_dof": 84032
+    },
+    "4.2.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.25294654093684144,
+      "real_dof": 223424
+    },
+    "4.2.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.25257992008168817,
+      "real_dof": 223552
+    },
+    "4.2.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.25140868045913023,
+      "real_dof": 222272
+    },
+    "12.0.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.25403512077469925,
+      "real_dof": 83776
+    },
+    "12.0.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.25294100818496695,
+      "real_dof": 27968
+    },
+    "12.0.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.2545262417274281,
+      "real_dof": 27968
+    },
+    "12.0.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.2554699544521673,
+      "real_dof": 83776
+    },
+    "12.0.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.2536652583547094,
+      "real_dof": 223488
+    },
+    "12.0.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.2539703938296519,
+      "real_dof": 223424
+    },
+    "12.0.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.25052335946692056,
+      "real_dof": 222016
+    },
+    "12.1.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.2528044034769547,
+      "real_dof": 83904
+    },
+    "12.1.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.2535028525356039,
+      "real_dof": 27968
+    },
+    "12.1.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.25178345567141924,
+      "real_dof": 27904
+    },
+    "12.1.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.254649536151287,
+      "real_dof": 83904
+    },
+    "12.1.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.2531454238749246,
+      "real_dof": 223616
+    },
+    "12.1.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.25337352806802266,
+      "real_dof": 223808
+    },
+    "12.1.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.25205882955251424,
+      "real_dof": 221952
+    },
+    "12.2.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.24956684153455086,
+      "real_dof": 83648
+    },
+    "12.2.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.25586503876582417,
+      "real_dof": 27968
+    },
+    "12.2.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.25600324052712325,
+      "real_dof": 27904
+    },
+    "12.2.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.2530435825364026,
+      "real_dof": 83584
+    },
+    "12.2.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.25340707214261204,
+      "real_dof": 223616
+    },
+    "12.2.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.2528360348023078,
+      "real_dof": 223680
+    },
+    "12.2.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.25213491534985827,
+      "real_dof": 222208
+    }
+  },
+  "energy_quarter": {
+    "4.0.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.27539497267490287,
+      "real_dof": 83968
+    },
+    "4.0.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.2753310112199271,
+      "real_dof": 28032
+    },
+    "4.0.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.26774919848997325,
+      "real_dof": 28032
+    },
+    "4.0.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.2793560299017423,
+      "real_dof": 84096
+    },
+    "4.0.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.2671532968125915,
+      "real_dof": 224256
+    },
+    "4.0.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.266391234967542,
+      "real_dof": 224192
+    },
+    "4.0.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.258476227886986,
+      "real_dof": 222272
+    },
+    "4.1.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.2766506354520967,
+      "real_dof": 84032
+    },
+    "4.1.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.27884376907334585,
+      "real_dof": 27904
+    },
+    "4.1.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.2688296805787187,
+      "real_dof": 28032
+    },
+    "4.1.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.27934269377763316,
+      "real_dof": 84096
+    },
+    "4.1.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.26680237195318485,
+      "real_dof": 224192
+    },
+    "4.1.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.2659385163955342,
+      "real_dof": 224256
+    },
+    "4.1.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.25822301777883305,
+      "real_dof": 222272
+    },
+    "4.2.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.2769303620719302,
+      "real_dof": 84096
+    },
+    "4.2.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.2756801498156155,
+      "real_dof": 28032
+    },
+    "4.2.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.2673470252172215,
+      "real_dof": 28032
+    },
+    "4.2.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.2765183800207255,
+      "real_dof": 84096
+    },
+    "4.2.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.26725083184400866,
+      "real_dof": 224256
+    },
+    "4.2.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.2671615669044157,
+      "real_dof": 224256
+    },
+    "4.2.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.2586484416671921,
+      "real_dof": 221952
+    },
+    "12.0.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.27485096231432465,
+      "real_dof": 84032
+    },
+    "12.0.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.2756155622438787,
+      "real_dof": 27968
+    },
+    "12.0.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.26840191148012166,
+      "real_dof": 28032
+    },
+    "12.0.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.27561363069150574,
+      "real_dof": 84096
+    },
+    "12.0.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.26798830031788534,
+      "real_dof": 224256
+    },
+    "12.0.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.2672107123823203,
+      "real_dof": 224256
+    },
+    "12.0.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.2589531409339652,
+      "real_dof": 222144
+    },
+    "12.1.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.28132424744586726,
+      "real_dof": 83840
+    },
+    "12.1.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.27890199979449964,
+      "real_dof": 27904
+    },
+    "12.1.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.26657803524599794,
+      "real_dof": 28032
+    },
+    "12.1.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.27590602461622143,
+      "real_dof": 83968
+    },
+    "12.1.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.26754737590263733,
+      "real_dof": 224256
+    },
+    "12.1.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.267077089343264,
+      "real_dof": 224192
+    },
+    "12.1.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.2588007896324873,
+      "real_dof": 222336
+    },
+    "12.2.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.2743552193284343,
+      "real_dof": 84096
+    },
+    "12.2.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.2801784591375756,
+      "real_dof": 28032
+    },
+    "12.2.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.26777992235697384,
+      "real_dof": 27968
+    },
+    "12.2.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.28065429164357747,
+      "real_dof": 84096
+    },
+    "12.2.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.26795471510065366,
+      "real_dof": 224192
+    },
+    "12.2.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.26815719239895913,
+      "real_dof": 224256
+    },
+    "12.2.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.26015839576362415,
+      "real_dof": 222208
+    }
+  },
+  "gradient_quarter": {
+    "4.0.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.25644414912268143,
+      "real_dof": 83648
+    },
+    "4.0.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.2535174067498719,
+      "real_dof": 28032
+    },
+    "4.0.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.25629794373488035,
+      "real_dof": 28032
+    },
+    "4.0.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.26070774406945707,
+      "real_dof": 83968
+    },
+    "4.0.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.2542761104832099,
+      "real_dof": 223680
+    },
+    "4.0.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.2556934892435534,
+      "real_dof": 223360
+    },
+    "4.0.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.25094866886746564,
+      "real_dof": 221952
+    },
+    "4.1.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.25495826425673435,
+      "real_dof": 83776
+    },
+    "4.1.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.26326873186587124,
+      "real_dof": 27904
+    },
+    "4.1.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.2504510022063292,
+      "real_dof": 27968
+    },
+    "4.1.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.2591569613799582,
+      "real_dof": 83520
+    },
+    "4.1.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.25415511814998815,
+      "real_dof": 223616
+    },
+    "4.1.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.2545910623079908,
+      "real_dof": 223744
+    },
+    "4.1.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.2513030530656871,
+      "real_dof": 221952
+    },
+    "4.2.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.2542719030936572,
+      "real_dof": 83904
+    },
+    "4.2.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.25579342308736613,
+      "real_dof": 27904
+    },
+    "4.2.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.2547901294262929,
+      "real_dof": 28032
+    },
+    "4.2.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.2607935676904213,
+      "real_dof": 84032
+    },
+    "4.2.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.2559573802228039,
+      "real_dof": 223808
+    },
+    "4.2.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.2558813431878373,
+      "real_dof": 224128
+    },
+    "4.2.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.25236605462350903,
+      "real_dof": 222016
+    },
+    "12.0.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.2531731249736509,
+      "real_dof": 83712
+    },
+    "12.0.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.2563323684062444,
+      "real_dof": 28032
+    },
+    "12.0.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.25474191320899464,
+      "real_dof": 27904
+    },
+    "12.0.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.26043537188274685,
+      "real_dof": 84032
+    },
+    "12.0.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.25701406453541864,
+      "real_dof": 224064
+    },
+    "12.0.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.25593249209163316,
+      "real_dof": 224000
+    },
+    "12.0.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.25304828633291565,
+      "real_dof": 221760
+    },
+    "12.1.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.2561087850456705,
+      "real_dof": 83648
+    },
+    "12.1.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.25653089546824304,
+      "real_dof": 28032
+    },
+    "12.1.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.2563333812467941,
+      "real_dof": 28032
+    },
+    "12.1.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.2570736710201875,
+      "real_dof": 83200
+    },
+    "12.1.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.257347806208942,
+      "real_dof": 224064
+    },
+    "12.1.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.255237078177266,
+      "real_dof": 224064
+    },
+    "12.1.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.25137114951222694,
+      "real_dof": 222272
+    },
+    "12.2.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.25498651402896605,
+      "real_dof": 83712
+    },
+    "12.2.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.2554977619677975,
+      "real_dof": 27904
+    },
+    "12.2.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.25333989867014345,
+      "real_dof": 28032
+    },
+    "12.2.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.2597234900674462,
+      "real_dof": 84096
+    },
+    "12.2.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.2558608314681323,
+      "real_dof": 224000
+    },
+    "12.2.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.2543320841110004,
+      "real_dof": 223808
+    },
+    "12.2.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.2530800618140217,
+      "real_dof": 222080
+    }
+  },
+  "random_norm_matched": {
+    "4.0.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.25644414912268143,
+      "real_dof": 83648
+    },
+    "4.0.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.25351740674987183,
+      "real_dof": 27904
+    },
+    "4.0.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.25629794373488035,
+      "real_dof": 27840
+    },
+    "4.0.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.2607077440694571,
+      "real_dof": 83776
+    },
+    "4.0.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.25427611048320997,
+      "real_dof": 223680
+    },
+    "4.0.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.2556934892435534,
+      "real_dof": 223168
+    },
+    "4.0.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.2509486688674657,
+      "real_dof": 221760
+    },
+    "4.1.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.25495826425673435,
+      "real_dof": 83840
+    },
+    "4.1.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.26326873186587135,
+      "real_dof": 27904
+    },
+    "4.1.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.25045100220632915,
+      "real_dof": 27968
+    },
+    "4.1.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.25915696137995825,
+      "real_dof": 83648
+    },
+    "4.1.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.2541551181499881,
+      "real_dof": 223552
+    },
+    "4.1.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.2545910623079908,
+      "real_dof": 223488
+    },
+    "4.1.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.2513030530656871,
+      "real_dof": 222080
+    },
+    "4.2.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.2542719030936572,
+      "real_dof": 83712
+    },
+    "4.2.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.2557934230873662,
+      "real_dof": 28032
+    },
+    "4.2.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.2547901294262929,
+      "real_dof": 27904
+    },
+    "4.2.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.26079356769042134,
+      "real_dof": 84032
+    },
+    "4.2.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.25595738022280384,
+      "real_dof": 223424
+    },
+    "4.2.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.2558813431878373,
+      "real_dof": 223552
+    },
+    "4.2.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.25236605462350903,
+      "real_dof": 222272
+    },
+    "12.0.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.2531731249736509,
+      "real_dof": 83776
+    },
+    "12.0.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.2563323684062444,
+      "real_dof": 27968
+    },
+    "12.0.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.2547419132089946,
+      "real_dof": 27968
+    },
+    "12.0.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.26043537188274685,
+      "real_dof": 83776
+    },
+    "12.0.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.25701406453541864,
+      "real_dof": 223488
+    },
+    "12.0.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.2559324920916332,
+      "real_dof": 223424
+    },
+    "12.0.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.25304828633291576,
+      "real_dof": 222016
+    },
+    "12.1.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.2561087850456704,
+      "real_dof": 83904
+    },
+    "12.1.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.25653089546824304,
+      "real_dof": 27968
+    },
+    "12.1.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.2563333812467942,
+      "real_dof": 27904
+    },
+    "12.1.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.2570736710201875,
+      "real_dof": 83904
+    },
+    "12.1.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.257347806208942,
+      "real_dof": 223616
+    },
+    "12.1.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.255237078177266,
+      "real_dof": 223808
+    },
+    "12.1.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.25137114951222694,
+      "real_dof": 221952
+    },
+    "12.2.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.25498651402896605,
+      "real_dof": 83648
+    },
+    "12.2.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.25549776196779755,
+      "real_dof": 27968
+    },
+    "12.2.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.25333989867014345,
+      "real_dof": 27904
+    },
+    "12.2.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.2597234900674462,
+      "real_dof": 83584
+    },
+    "12.2.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.2558608314681323,
+      "real_dof": 223616
+    },
+    "12.2.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.2543320841110004,
+      "real_dof": 223680
+    },
+    "12.2.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.2530800618140217,
+      "real_dof": 222208
+    }
+  },
+  "random_spatial": {
+    "4.0.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.2519603400694444,
+      "real_dof": 83648
+    },
+    "4.0.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.2532222409361425,
+      "real_dof": 28032
+    },
+    "4.0.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.25504471975156606,
+      "real_dof": 28032
+    },
+    "4.0.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.25266908023657764,
+      "real_dof": 83968
+    },
+    "4.0.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.2525105593085064,
+      "real_dof": 223680
+    },
+    "4.0.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.25285566038407264,
+      "real_dof": 223360
+    },
+    "4.0.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.25137752848908057,
+      "real_dof": 221952
+    },
+    "4.1.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.25328086778527953,
+      "real_dof": 83776
+    },
+    "4.1.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.2565921932687252,
+      "real_dof": 27904
+    },
+    "4.1.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.25383933821925597,
+      "real_dof": 27968
+    },
+    "4.1.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.25240187904639994,
+      "real_dof": 83520
+    },
+    "4.1.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.252175297061058,
+      "real_dof": 223616
+    },
+    "4.1.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.2526108487595655,
+      "real_dof": 223744
+    },
+    "4.1.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.2510547695890062,
+      "real_dof": 221952
+    },
+    "4.2.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.25253543740461154,
+      "real_dof": 83904
+    },
+    "4.2.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.25078968850519706,
+      "real_dof": 27904
+    },
+    "4.2.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.25003608094789237,
+      "real_dof": 28032
+    },
+    "4.2.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.25570958203421557,
+      "real_dof": 84032
+    },
+    "4.2.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.2534167590525192,
+      "real_dof": 223808
+    },
+    "4.2.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.2522587288311941,
+      "real_dof": 224128
+    },
+    "4.2.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.2503281362340867,
+      "real_dof": 222016
+    },
+    "12.0.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.25212413225313585,
+      "real_dof": 83712
+    },
+    "12.0.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.2524619777827732,
+      "real_dof": 28032
+    },
+    "12.0.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.2500897056204288,
+      "real_dof": 27904
+    },
+    "12.0.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.25287030064826105,
+      "real_dof": 84032
+    },
+    "12.0.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.2531917237474337,
+      "real_dof": 224064
+    },
+    "12.0.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.25375246088305853,
+      "real_dof": 224000
+    },
+    "12.0.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.2505723438277503,
+      "real_dof": 221760
+    },
+    "12.1.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.2525033940691881,
+      "real_dof": 83648
+    },
+    "12.1.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.2542330973742564,
+      "real_dof": 28032
+    },
+    "12.1.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.25471223810158444,
+      "real_dof": 28032
+    },
+    "12.1.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.24900755457406148,
+      "real_dof": 83200
+    },
+    "12.1.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.2531069839912987,
+      "real_dof": 224064
+    },
+    "12.1.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.25225824003345476,
+      "real_dof": 224064
+    },
+    "12.1.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.2517943016257486,
+      "real_dof": 222272
+    },
+    "12.2.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.25299874651458865,
+      "real_dof": 83712
+    },
+    "12.2.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.25040480845527896,
+      "real_dof": 27904
+    },
+    "12.2.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.25639678714124586,
+      "real_dof": 28032
+    },
+    "12.2.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.2535521867133782,
+      "real_dof": 84096
+    },
+    "12.2.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.25164906393489145,
+      "real_dof": 224000
+    },
+    "12.2.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.2521038504848206,
+      "real_dof": 223808
+    },
+    "12.2.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.2497071030118654,
+      "real_dof": 222080
+    }
+  },
+  "gradient_shift_one": {
+    "4.0.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.25644414912268143,
+      "real_dof": 83648
+    },
+    "4.0.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.2535174067498719,
+      "real_dof": 28032
+    },
+    "4.0.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.25629794373488035,
+      "real_dof": 28032
+    },
+    "4.0.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.26070774406945707,
+      "real_dof": 83968
+    },
+    "4.0.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.2542761104832099,
+      "real_dof": 223680
+    },
+    "4.0.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.2556934892435534,
+      "real_dof": 223360
+    },
+    "4.0.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.25094866886746564,
+      "real_dof": 221952
+    },
+    "4.1.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.25495826425673435,
+      "real_dof": 83776
+    },
+    "4.1.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.26326873186587124,
+      "real_dof": 27904
+    },
+    "4.1.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.2504510022063292,
+      "real_dof": 27968
+    },
+    "4.1.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.2591569613799582,
+      "real_dof": 83520
+    },
+    "4.1.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.2541551181499882,
+      "real_dof": 223616
+    },
+    "4.1.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.2545910623079908,
+      "real_dof": 223744
+    },
+    "4.1.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.2513030530656871,
+      "real_dof": 221952
+    },
+    "4.2.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.2542719030936572,
+      "real_dof": 83904
+    },
+    "4.2.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.25579342308736613,
+      "real_dof": 27904
+    },
+    "4.2.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.2547901294262929,
+      "real_dof": 28032
+    },
+    "4.2.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.2607935676904213,
+      "real_dof": 84032
+    },
+    "4.2.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.25595738022280395,
+      "real_dof": 223808
+    },
+    "4.2.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.2558813431878373,
+      "real_dof": 224128
+    },
+    "4.2.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.25236605462350903,
+      "real_dof": 222016
+    },
+    "12.0.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.25317312497365085,
+      "real_dof": 83712
+    },
+    "12.0.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.2563323684062444,
+      "real_dof": 28032
+    },
+    "12.0.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.25474191320899464,
+      "real_dof": 27904
+    },
+    "12.0.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.26043537188274685,
+      "real_dof": 84032
+    },
+    "12.0.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.25701406453541864,
+      "real_dof": 224064
+    },
+    "12.0.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.25593249209163316,
+      "real_dof": 224000
+    },
+    "12.0.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.25304828633291565,
+      "real_dof": 221760
+    },
+    "12.1.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.2561087850456704,
+      "real_dof": 83648
+    },
+    "12.1.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.25653089546824304,
+      "real_dof": 28032
+    },
+    "12.1.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.2563333812467941,
+      "real_dof": 28032
+    },
+    "12.1.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.2570736710201875,
+      "real_dof": 83200
+    },
+    "12.1.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.257347806208942,
+      "real_dof": 224064
+    },
+    "12.1.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.255237078177266,
+      "real_dof": 224064
+    },
+    "12.1.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.25137114951222694,
+      "real_dof": 222272
+    },
+    "12.2.self_attn.q_proj.weight": {
+      "retained_update_energy_fraction": 0.25498651402896605,
+      "real_dof": 83712
+    },
+    "12.2.self_attn.k_proj.weight": {
+      "retained_update_energy_fraction": 0.2554977619677975,
+      "real_dof": 27904
+    },
+    "12.2.self_attn.v_proj.weight": {
+      "retained_update_energy_fraction": 0.25333989867014345,
+      "real_dof": 28032
+    },
+    "12.2.self_attn.o_proj.weight": {
+      "retained_update_energy_fraction": 0.2597234900674462,
+      "real_dof": 84096
+    },
+    "12.2.mlp.gate_proj.weight": {
+      "retained_update_energy_fraction": 0.2558608314681323,
+      "real_dof": 224000
+    },
+    "12.2.mlp.up_proj.weight": {
+      "retained_update_energy_fraction": 0.2543320841110004,
+      "real_dof": 223808
+    },
+    "12.2.mlp.down_proj.weight": {
+      "retained_update_energy_fraction": 0.2530800618140217,
+      "real_dof": 222080
+    }
+  }
+}

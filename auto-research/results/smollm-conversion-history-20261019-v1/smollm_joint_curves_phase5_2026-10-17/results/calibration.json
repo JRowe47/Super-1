@@ -1,0 +1,62 @@
+{
+  "method": "Two one-step training-only probes (N=3 on rows 0/1; N=2 on rows 2/3), reset before each. Match average RMS change across all five sampled weight sets to dense LR 1e-4. Probe updates discarded. Adam is not coordinate invariant; this matches initial update scale, not every future update.",
+  "arms": {
+    "dense": {
+      "probe_lr": 0.0001,
+      "per_resolution": {
+        "3": {
+          "loss": 0.24391014873981476,
+          "sampled_weight_rms_update": 7.733503318922453e-05,
+          "gradient_norm": 0.9390373826026917
+        },
+        "2": {
+          "loss": 0.5500082969665527,
+          "sampled_weight_rms_update": 6.315444515577602e-05,
+          "gradient_norm": 1.457893967628479
+        }
+      },
+      "mean_sampled_weight_rms_update": 7.024473917250027e-05,
+      "trainable_values": 35400960,
+      "lr_multiplier": 1.0,
+      "training_peak_lr": 0.0001
+    },
+    "raw_curve": {
+      "probe_lr": 0.0001,
+      "per_resolution": {
+        "3": {
+          "loss": 0.24391014873981476,
+          "sampled_weight_rms_update": 1.7576813739476205e-05,
+          "gradient_norm": 0.1278858184814453
+        },
+        "2": {
+          "loss": 0.5500082969665527,
+          "sampled_weight_rms_update": 1.9603938927268005e-05,
+          "gradient_norm": 0.2577097415924072
+        }
+      },
+      "mean_sampled_weight_rms_update": 1.8590376333372105e-05,
+      "trainable_values": 28320768,
+      "lr_multiplier": 3.7785539094441014,
+      "training_peak_lr": 0.00037785539094441017
+    },
+    "orthogonal_curve": {
+      "probe_lr": 0.0001,
+      "per_resolution": {
+        "3": {
+          "loss": 0.24391014873981476,
+          "sampled_weight_rms_update": 8.928008652703997e-05,
+          "gradient_norm": 0.8491000533103943
+        },
+        "2": {
+          "loss": 0.5500082969665527,
+          "sampled_weight_rms_update": 8.925884757226375e-05,
+          "gradient_norm": 1.3240506649017334
+        }
+      },
+      "mean_sampled_weight_rms_update": 8.926946704965186e-05,
+      "trainable_values": 28320768,
+      "lr_multiplier": 0.7868842673097847,
+      "training_peak_lr": 7.868842673097846e-05
+    }
+  }
+}

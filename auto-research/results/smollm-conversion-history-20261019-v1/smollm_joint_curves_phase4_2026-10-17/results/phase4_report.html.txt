@@ -1,0 +1,385 @@
+Artifact omitted from compact publication.
+Original archive: smollm_joint_curves_phase4_2026-10-17.zip
+Original member: smollm_joint_curves_phase4/results/phase4_report.html
+Uncompressed bytes: 378923
+ZIP CRC32 (not a cryptographic hash): 4a88cae0
+Request the original saved archive from the author. It is not a public download in this repository. Full model replay may require pretrained weights, data and environment dependencies.
+
+Plain-text report extracted from original HTML (images/layout omitted):
+
+
+
+
+
+
+SmolLM2-135M — Joint Layer Curves, Phase 4
+
+
+
+
+EXPERIMENT 04 · 17 OCTOBER 2026
+
+SmolLM2-135M
+Joint curves across layers
+
+    
+We moved from one layer to the entire 30-block decoder, then trained two four-block curves and evaluated each at four, three and two decoder steps. All original weights remain available, and four-step execution remains exactly equivalent to the native window.
+
+    
+
+Measured result.
+ The all-30-knot representation has zero logit difference on the 256-token prefill check. No reduced-depth curve passed both validation thresholds. The selected composite runs 28 decoder blocks and has 1.257× original test perplexity. These results concern this short-budget post-hoc conversion, not all possible continuous-depth architectures.
+
+    
+
+    
+What the representation does
+
+Each of nine homologous tensor families has a cubic Hermite curve across block depth. At integer depth we return the original frozen tensor directly. Between knots we learn four derivative tensors per window. The attention and MLP residual branches retain the native ordering and are scaled by 4/N when replacing four blocks with N evaluations. Evaluation coordinates are 
+(i+0.5)·4/N − 0.5
+. N=4 lands exactly on the four original weights; N=3 and N=2 land between them.
+
+    
+The full model keeps its embeddings, output head and final norm. This prototype adds 14,160,384 trained slope values per window: 56,641,536 bytes in FP32, on top of retained original weights. It is a functionality experiment, not parameter compression. The global representation is a family of tensor curves; a norm plot is only one projection of those curves.
+
+    
+
+    
+Training and evaluation
+
+Windows 4–7 and 12–15 were selected from the previous cross-layer survey (indices start at zero). Each received 300 local updates and 60 updates with gradients from the final next-token probabilities, alternating three and two evaluations. The local target includes intermediate teacher states, with linear interpolation for fractional boundaries; those interpolated states are a chosen training proxy. The final objective is teacher-to-student KL plus 0.1 times local path loss. All native parameters were frozen.
+
+    
+Training used 256 WikiText-2 windows (32,768 input tokens), final validation 32 windows (4,096 tokens), and test 64 windows (8,192 predicted tokens across 16 documents), all at context 128. The first eight validation windows selected checkpoints. The splits reuse phase-3 data: test was held out from this phase's optimization and selection, but is not a fresh benchmark. One seed was run. Total training time for both windows was 3.9 minutes on four CPU threads.
+
+    
+The gate was fixed at validation ΔNLL ≤ 0.05 and KL ≤ 0.05. Per window we selected the fewest evaluations passing both, or the lowest-KL failed-gate representative if none passed. The composite combines those selections; test scores never chose its depths. Drop controls kept offsets [0,1,3] at three steps and [0,3] at two steps, with no residual rescaling.
+
+    
+
+
+
+Candidate
+
+Blocks
+
+Test PPL ratio
+
+95% interval
+
+Teacher KL
+
+Top-1 agreement
+
+
+
+
+
+w4_initial_n3
+
+29
+
+1.3436×
+
+1.3054–1.3748
+
+0.2722
+
+72.2%
+
+
+
+w4_initial_n2
+
+28
+
+1.8793×
+
+1.7591–1.9748
+
+0.6047
+
+59.9%
+
+
+
+w4_trained_n4
+
+30
+
+1.0000×
+
+1.0000–1.0000
+
+0.0000
+
+100.0%
+
+
+
+w4_trained_n3
+
+29
+
+1.1290×
+
+1.1093–1.1534
+
+0.1479
+
+80.0%
+
+
+
+w4_trained_n2
+
+28
+
+1.2801×
+
+1.2388–1.3242
+
+0.2750
+
+72.8%
+
+
+
+w4_drop_n3
+
+29
+
+1.2587×
+
+1.2183–1.2989
+
+0.2108
+
+74.6%
+
+
+
+w4_drop_n2
+
+28
+
+1.4234×
+
+1.3613–1.4662
+
+0.3289
+
+69.5%
+
+
+
+w12_initial_n3
+
+29
+
+1.2808×
+
+1.2362–1.3198
+
+0.2196
+
+73.0%
+
+
+
+w12_initial_n2
+
+28
+
+1.6917×
+
+1.6204–1.7481
+
+0.5223
+
+61.0%
+
+
+
+w12_trained_n4
+
+30
+
+1.0000×
+
+1.0000–1.0000
+
+0.0000
+
+100.0%
+
+
+
+w12_trained_n3
+
+29
+
+1.0976×
+
+1.0781–1.1132
+
+0.0951
+
+81.6%
+
+
+
+w12_trained_n2
+
+28
+
+1.1873×
+
+1.1458–1.2232
+
+0.1899
+
+74.6%
+
+
+
+w12_drop_n3
+
+29
+
+1.0986×
+
+1.0845–1.1090
+
+0.0882
+
+82.4%
+
+
+
+w12_drop_n2
+
+28
+
+1.2807×
+
+1.2307–1.3220
+
+0.2220
+
+73.2%
+
+
+
+selected_composite
+
+28
+
+1.2567×
+
+1.2315–1.2780
+
+0.2537
+
+72.7%
+
+
+
+
+    
+PPL ratio = exp(candidate NLL − native NLL); lower is better, 1 is original. Intervals are paired document bootstrap, 2,000 resamples, pointwise and conditional on this corpus and fitted checkpoint. They do not capture training-seed uncertainty. Original test perplexity: 38.135.
+
+    
+Interactions between windows
+
+The composite's ΔNLL minus the sum of its two constituent ΔNLLs is +0.0140 nats/token, with document-bootstrap 95% interval [+0.0097, +0.0192]. Negative values mean less degradation than the additive ΔNLL prediction; positive values mean more. This is a behavioral interaction measurement, not evidence of a shared low-dimensional weight basis or proof of interchangeability.
+
+    
+Cache correctness and measured cost
+
+All retained native attention blocks are reindexed after depth reduction. DynamicCache uses one KV entry per executed block. Cached versus full-prefill logits were checked on 32 tokens for each trained reduced configuration and the selected composite; all passed the 0.001 absolute-logit threshold. Exported slopes reloaded with zero logit difference, and all original parameter hashes remained unchanged. A new cache is required if resolution changes.
+
+    
+
+
+
+Candidate
+
+Streamed ms
+
+Latency/native
+
+Pre-sampled ms
+
+Latency/native
+
+
+
+
+
+w4_trained_n3
+
+241.6
+
+1.019×
+
+209.2
+
+0.976×
+
+
+
+w12_trained_n3
+
+217.1
+
+1.023×
+
+205.3
+
+0.981×
+
+
+
+selected_composite
+
+225.2
+
+1.038×
+
+209.1
+
+0.985×
+
+
+
+
+    
+12 alternating paired measurements after two warm-up pairs; CPU float32, batch 1, context 128. Pre-sampling occurs outside the timed region and consumes extra matrix storage. Streamed evaluation includes curve sampling each forward. Counts of fewer decoder projections are not a claim of measured speedup.
+
+    
+Interpretation and next experiment
+
+Exact knot conversion is viable across the full model in this environment. Reduced resolution is a separate optimization problem, and each window's quality must be measured in the complete model. Compare trained curves with the drop controls: improvement over interpolation alone does not establish an advantage over dropping native blocks.
+
+    
+The next targeted comparison is a directly trained reduced-depth block stack at the same executed depth and distillation budget. That separates errors due to the curve constraint from errors due to having fewer attention/MLP steps. Function-preserving neuron/head alignment is another controlled hypothesis because this experiment interpolates raw, unaligned tensor coordinates. Further training, longer contexts and a new external test corpus would be needed before claiming a useful conversion.
+
+    
+This implements depth-only, post-hoc Hermite curves. It does not reproduce the proposed GSA system's input-conditioned coefficients, from-scratch training, or hierarchical memory/cache.
+
+    
+Reproduce
+
+python -m venv venv
+venv/bin/pip install -r requirements.txt
+venv/bin/python download_model.py
+venv/bin/python prepare.py
+venv/bin/python train.py
+venv/bin/python run_evaluation.py
+venv/bin/python build_report.py
+
+Prepared token windows and selected checkpoints are included. The pinned original model is downloaded separately. Teacher caches are regenerated. Delete completed result files/checkpoints to retrain; evaluation resumes completed candidate rows. Model revision and source/data hashes accompany the bundle.
+
+
+

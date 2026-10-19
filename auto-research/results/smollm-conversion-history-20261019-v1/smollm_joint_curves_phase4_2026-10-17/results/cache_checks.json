@@ -1,0 +1,42 @@
+{
+  "w4_trained_n3": {
+    "max_cached_logit_abs_difference": 9.822845458984375e-05,
+    "cache_layers": 29,
+    "kv_bytes": 1425408,
+    "tokens": 32,
+    "tolerance": 0.001,
+    "passed": true
+  },
+  "w4_trained_n2": {
+    "max_cached_logit_abs_difference": 0.00021541118621826172,
+    "cache_layers": 28,
+    "kv_bytes": 1376256,
+    "tokens": 32,
+    "tolerance": 0.001,
+    "passed": true
+  },
+  "w12_trained_n3": {
+    "max_cached_logit_abs_difference": 0.00011396408081054688,
+    "cache_layers": 29,
+    "kv_bytes": 1425408,
+    "tokens": 32,
+    "tolerance": 0.001,
+    "passed": true
+  },
+  "w12_trained_n2": {
+    "max_cached_logit_abs_difference": 0.00012111663818359375,
+    "cache_layers": 28,
+    "kv_bytes": 1376256,
+    "tokens": 32,
+    "tolerance": 0.001,
+    "passed": true
+  },
+  "selected_composite": {
+    "max_cached_logit_abs_difference": 0.00010585784912109375,
+    "cache_layers": 28,
+    "kv_bytes": 1376256,
+    "tokens": 32,
+    "tolerance": 0.001,
+    "passed": true
+  }
+}

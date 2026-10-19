@@ -1,0 +1,54 @@
+{
+  "spec": {
+    "id": "pilot",
+    "regime": "fixed",
+    "steps": 8
+  },
+  "configuration": {
+    "hidden_size": 576,
+    "width": 192,
+    "knots": 4,
+    "steps": 1,
+    "epsilon": 1e-05
+  },
+  "updates": 40,
+  "batch_size": 512,
+  "token_presentations": 20480,
+  "peak_learning_rate": 0.0003,
+  "weight_decay": 0.01,
+  "gradient_clip_norm": 1.0,
+  "best_update": 40,
+  "best_validation_relative_mse": 0.6450158098517981,
+  "history": [
+    {
+      "update": 0,
+      "training_relative_mse": null,
+      "validation": {
+        "8": {
+          "relative_mse": 0.9917741821211226,
+          "relative_rms_error": 0.9958785980836834
+        }
+      },
+      "selection_score": 0.9917741821211226,
+      "elapsed_seconds": 0.1911067520013603
+    },
+    {
+      "update": 40,
+      "training_relative_mse": 0.6439501047134399,
+      "validation": {
+        "8": {
+          "relative_mse": 0.6450158098517981,
+          "relative_rms_error": 0.8031287629339383
+        }
+      },
+      "selection_score": 0.6450158098517981,
+      "elapsed_seconds": 3.6040409289998934
+    }
+  ],
+  "elapsed_seconds": 3.6046791859989753,
+  "excluded_from_main": true,
+  "purpose": "Check finite gradients, initial learning and wall time; main training restarts from original initialization.",
+  "training_windows": 256,
+  "training_tokens": 32768,
+  "main_protocol_adjustment": "Expanded main training to 1024 windows and 3000 updates after the stable, fast pilot; pilot weights are not reused."
+}

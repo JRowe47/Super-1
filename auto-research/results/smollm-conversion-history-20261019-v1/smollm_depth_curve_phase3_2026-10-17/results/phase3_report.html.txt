@@ -1,0 +1,1203 @@
+Artifact omitted from compact publication.
+Original archive: smollm_depth_curve_phase3_2026-10-17.zip
+Original member: smollm_depth_curve_phase3/results/phase3_report.html
+Uncompressed bytes: 1152148
+ZIP CRC32 (not a cryptographic hash): 04b2a717
+Request the original saved archive from the author. It is not a public download in this repository. Full model replay may require pretrained weights, data and environment dependencies.
+
+Plain-text report extracted from original HTML (images/layout omitted):
+
+
+
+
+
+
+SmolLM2-135M — learned depth curves
+
+
+
+
+
+
+EXPERIMENT 03 · LEARNED MLP WEIGHTS AS A FUNCTION OF DEPTH
+
+
+SmolLM2-135M
+One learned curve, four evaluation depths
+
+
+131,072 training tokens · 4,096 validation tokens · 16,384 test tokens from 16 previously unused test articles
+
+
+No learned curve passed the predefined validation quality gate in this run. The experiment changes the MLP transformation inside the first block; attention still runs once and all 30 outer transformer blocks remain.
+
+
+
+Validation-selected curve:
+ Curve · mixed-depth training · N=1. On the fresh test sample, Δ NLL is +0.873086 nats/token, with a 95% document-bootstrap interval [+0.763893, +0.970286]. Perplexity changes by +139.43%; argmax agreement is 57.5%. This is the lowest-KL failed-gate representative, not a successful quality-preserving replacement.
+
+
+The parameter-matched one-pass width-768 student changes test perplexity by +6.11%. On-demand CPU latency for the selected curve is 0.531× the original first-block measurement and 0.995× the full-model measurement. Quality and runtime are separate outcomes.
+
+
+
+
+What changed from the previous phase
+
+
+Phase 2 reduced matrix ranks and coefficient resolution while retaining a fixed computational depth. Here, depth t indexes the weights of a SwiGLU vector field. Four learned Catmull-Rom control vectors define gate, up and down matrices over t ∈ [0,1]. The same fitted curve is sampled with N = 1, 2, 4 or 8 Euler steps, with each update scaled by 1/N.
+
+
+u₀ = 0
+F(h,t) = D(t) [SiLU(G(t) RMSNorm(h)) ⊙ U(t) RMSNorm(h)]
+uᵢ₊₁ = uᵢ + F(a + uᵢ, i/N) / N
+output = a + uₙ
+
+
+a is the state after the original first attention operation. The original post-attention RMSNorm scales remain frozen and are reused inside F. The depth coordinate now controls computation, rather than indexing a flattened array of weights. This is a chosen continuous-depth construction, not a recovery of an undocumented GSA implementation.
+
+
+Controls and training
+
+
+
+
+
+
+Student
+
+Width
+
+Control vectors
+
+Trainable MLP values
+
+Training steps per example
+
+
+
+
+
+One pass, narrow
+
+192
+
+1
+
+331,776
+
+1
+
+
+
+One pass, parameter matched
+
+768
+
+1
+
+1,327,104
+
+1
+
+
+
+Curve, fixed depth
+
+192
+
+4
+
+1,327,104
+
+8
+
+
+
+Curve, mixed depth
+
+192
+
+4
+
+1,327,104
+
+1 / 2 / 4 / 8
+
+
+
+
+
+
+Each student starts with importance-selected teacher gate/up neurons and a training-only ridge fit for the down projection. Curve controls start identical. All methods use the same seeded minibatch stream and 3,000 AdamW updates. They see the same number of teacher examples, but their training FLOPs and elapsed times differ. The loss fits the MLP residual update; later transformer blocks do not participate in backpropagation. Hidden-state MSE alone cannot establish preserved language quality.
+
+
+
+
+
+
+Student
+
+Updates
+
+Selected update
+
+Token presentations
+
+Field-token evaluations
+
+Selected val. relative RMS
+
+Training seconds
+
+
+
+
+
+One pass · width 192
+
+3000
+
+3000
+
+1,536,000
+
+1,536,000
+
+0.3979
+
+28.6
+
+
+
+One pass · width 768
+
+3000
+
+3000
+
+1,536,000
+
+1,536,000
+
+0.1736
+
+74.2
+
+
+
+Curve · trained at 8
+
+3000
+
+3000
+
+1,536,000
+
+12,288,000
+
+0.4534
+
+238.8
+
+
+
+Curve · mixed-depth training
+
+3000
+
+3000
+
+1,536,000
+
+5,760,000
+
+0.4623
+
+123.3
+
+
+
+
+
+
+The 40-update pilot used a smaller 32,768-token sample and a different minibatch seed. Its validation MSE fell from 0.9918 to 0.6450. That established learning and affordable runtime; the main run rebuilt its initialization on the larger sample and did not reuse pilot weights. Checkpoints were selected by validation endpoint MSE every 100 updates. Fixed-depth selection uses N=8; mixed-depth selection averages the four depths equally.
+
+
+Fresh held-out language evaluation
+
+
+Positive Δ NLL is worse. Perplexity ratios use exp(Δ NLL). Argmax agreement compares with the original model, not ground-truth answer accuracy. All curve depths are reported without selecting among test results. The fixed phase-2 Q/K baseline is reevaluated on this phase's new articles.
+
+
+
+
+
+
+Candidate
+
+Δ NLL
+
+95% CI
+
+PPL change
+
+KL
+
+Argmax agreement
+
+Block values
+
+Block projection MACs / original
+
+
+
+
+
+Phase-2 shared Q/K
+
++0.00030
+
+[-0.00014, +0.00062]
+
++0.03%
+
+0.00027
+
+99.0%
+
+3,152,832
+
+89.1%
+
+
+
+One pass · width 192
+
++0.68018
+
+[+0.58733, +0.75614]
+
++97.42%
+
+0.68842
+
+62.1%
+
+1,217,664
+
+34.4%
+
+
+
+One pass · width 768
+
++0.05927
+
+[+0.04393, +0.07391]
+
++6.11%
+
+0.06393
+
+89.3%
+
+2,212,992
+
+62.5%
+
+
+
+Curve · trained at 8 · N=1
+
++1.91186
+
+[+1.80601, +2.02314]
+
++576.57%
+
+1.88033
+
+40.5%
+
+2,212,992
+
+34.4%
+
+
+
+Curve · trained at 8 · N=2
+
++1.72403
+
+[+1.59138, +1.85385]
+
++460.71%
+
+1.71153
+
+44.2%
+
+2,212,992
+
+43.8%
+
+
+
+Curve · trained at 8 · N=4
+
++1.18472
+
+[+1.05064, +1.30348]
+
++226.98%
+
+1.20838
+
+51.5%
+
+2,212,992
+
+62.5%
+
+
+
+Curve · trained at 8 · N=8
+
++1.02423
+
+[+0.91066, +1.13178]
+
++178.49%
+
+1.04910
+
+53.8%
+
+2,212,992
+
+100.0%
+
+
+
+Curve · mixed-depth training · N=1
+
++0.87309
+
+[+0.76389, +0.97029]
+
++139.43%
+
+0.88353
+
+57.5%
+
+2,212,992
+
+34.4%
+
+
+
+Curve · mixed-depth training · N=2
+
++1.00366
+
+[+0.88635, +1.11373]
+
++172.82%
+
+1.02053
+
+54.6%
+
+2,212,992
+
+43.8%
+
+
+
+Curve · mixed-depth training · N=4
+
++1.08060
+
+[+0.95779, +1.19579]
+
++194.64%
+
+1.10011
+
+52.9%
+
+2,212,992
+
+62.5%
+
+
+
+Curve · mixed-depth training · N=8
+
++1.18979
+
+[+1.06215, +1.31140]
+
++228.64%
+
+1.21138
+
+51.1%
+
+2,212,992
+
+100.0%
+
+
+
+Curve · mixed-depth training · N=1 + shared Q/K
+
++0.87619
+
+[+0.76580, +0.97340]
+
++140.17%
+
+0.88645
+
+57.4%
+
+1,825,728
+
+23.4%
+
+
+
+
+
+
+The engineering gate was validation Δ NLL ≤ 0.05 and KL ≤ 0.05. Among curves passing both, selection favors the fewest field evaluations and then lowest KL; otherwise it reports the lowest-KL failed candidate. The choice and its Q/K composition were written before reading test metrics. Validation scores for the selected curve were Δ NLL +0.952188 and KL 0.957205.
+
+
+The learned paths
+
+
+
+
+The plot uses token 128 of the first validation window, fixed before seeing the outcome. The endpoint star is the original teacher MLP output. The axes are a two-dimensional projection of 576-dimensional states. A path close to the star in this projection does not establish low full-dimensional error or good language-model quality.
+
+
+
+
+
+
+Euler evaluations
+
+Relative RMS error on the first validation window
+
+
+
+
+
+1
+
+0.4157
+
+
+
+2
+
+0.4074
+
+
+
+4
+
+0.4215
+
+
+
+8
+
+0.4401
+
+
+
+16
+
+0.4671
+
+
+
+32
+
+0.4925
+
+
+
+64
+
+0.5083
+
+
+
+8, frozen state
+
+0.5379
+
+
+
+
+
+
+The 16/32/64-step runs are exploratory numerical diagnostics. A model optimized at eight steps need not improve when its ODE discretization is refined. The frozen-state ablation evaluates every field at the original a instead of the evolving a+u; it is not a trained alternative. Its output differs from the recurrent eight-step version by 0.3900 relative to teacher-update RMS. Relative variation of the four learned control vectors around their mean is 0.1863.
+
+
+Runtime and memory accounting
+
+
+The original first block has 3,540,096 values and 3,538,944 learned projection MACs per token. Each width-192 field evaluation costs 331,776 projection MACs. At eight evaluations the MLP projection count equals the original MLP's; spline assembly, repeated normalization, residual updates and kernel overhead are additional work. Reducing steps reduces this part of compute, not the number of outer blocks or the KV cache size.
+
+
+On-demand evaluation samples matrices for each step. The optional cached mode keeps N materialized matrix sets in addition to the spline controls; this costs 1.266 MiB per step in FP32. Coefficient storage, sampled-matrix memory and arithmetic counts are distinct. Matrix assembly costs are recorded in the raw accounting. Equal-precision coefficient counts are not compressed-file size comparisons against the original BF16 checkpoint.
+
+
+
+
+
+
+Candidate
+
+Weights
+
+Scope
+
+Original ms
+
+Candidate ms
+
+Paired ratio
+
+Observed ratio range
+
+Extra matrix cache MiB
+
+
+
+
+
+Curve · mixed-depth training · N=1
+
+on demand
+
+block
+
+8.002
+
+4.315
+
+0.531×
+
+0.507–0.555×
+
+0.00
+
+
+
+Curve · mixed-depth training · N=1
+
+on demand
+
+full_model
+
+305.828
+
+298.546
+
+0.995×
+
+0.806–1.564×
+
+0.00
+
+
+
+Curve · mixed-depth training · N=1
+
+cached
+
+block
+
+7.897
+
+3.937
+
+0.491×
+
+0.456–0.502×
+
+1.27
+
+
+
+Curve · mixed-depth training · N=1
+
+cached
+
+full_model
+
+305.326
+
+308.052
+
+0.996×
+
+0.873–1.320×
+
+1.27
+
+
+
+Curve · mixed-depth training · N=2
+
+on demand
+
+block
+
+7.936
+
+5.358
+
+0.658×
+
+0.634–0.800×
+
+0.00
+
+
+
+Curve · mixed-depth training · N=2
+
+on demand
+
+full_model
+
+304.006
+
+305.321
+
+0.995×
+
+0.837–1.191×
+
+0.00
+
+
+
+Curve · mixed-depth training · N=2
+
+cached
+
+block
+
+9.162
+
+6.070
+
+0.666×
+
+0.570–1.551×
+
+2.53
+
+
+
+Curve · mixed-depth training · N=2
+
+cached
+
+full_model
+
+315.743
+
+302.372
+
+0.953×
+
+0.765–1.096×
+
+2.53
+
+
+
+Curve · mixed-depth training · N=4
+
+on demand
+
+block
+
+8.768
+
+10.762
+
+1.207×
+
+0.783–1.549×
+
+0.00
+
+
+
+Curve · mixed-depth training · N=4
+
+on demand
+
+full_model
+
+307.347
+
+324.574
+
+1.039×
+
+0.927–1.215×
+
+0.00
+
+
+
+Curve · mixed-depth training · N=4
+
+cached
+
+block
+
+8.182
+
+6.487
+
+0.783×
+
+0.716–0.876×
+
+5.06
+
+
+
+Curve · mixed-depth training · N=4
+
+cached
+
+full_model
+
+302.190
+
+308.294
+
+1.013×
+
+0.816–1.156×
+
+5.06
+
+
+
+Curve · mixed-depth training · N=8
+
+on demand
+
+block
+
+8.069
+
+11.580
+
+1.436×
+
+1.402–1.498×
+
+0.00
+
+
+
+Curve · mixed-depth training · N=8
+
+on demand
+
+full_model
+
+293.140
+
+276.162
+
+1.012×
+
+0.842–1.125×
+
+0.00
+
+
+
+Curve · mixed-depth training · N=8
+
+cached
+
+block
+
+8.180
+
+9.739
+
+1.187×
+
+1.148–2.187×
+
+10.12
+
+
+
+Curve · mixed-depth training · N=8
+
+cached
+
+full_model
+
+241.278
+
+288.946
+
+1.064×
+
+0.578–1.518×
+
+10.12
+
+
+
+One pass · width 768
+
+on demand
+
+block
+
+7.131
+
+5.816
+
+0.756×
+
+0.607–1.051×
+
+0.00
+
+
+
+One pass · width 768
+
+on demand
+
+full_model
+
+286.369
+
+279.496
+
+1.016×
+
+0.822–1.280×
+
+0.00
+
+
+
+Phase-2 shared Q/K
+
+on demand
+
+block
+
+7.933
+
+7.005
+
+0.939×
+
+0.767–1.042×
+
+0.00
+
+
+
+Phase-2 shared Q/K
+
+on demand
+
+full_model
+
+274.531
+
+244.432
+
+0.933×
+
+0.617–1.132×
+
+0.00
+
+
+
+
+
+
+Timings use batch 1, 128-token prefill, four CPU threads, FP32/eager attention and 12 alternating-order pairs after warmup. Ratios below 1 are faster. The first-block measurement includes embedding and rotary setup; full-model timing includes the output head. Shared-host timing is noisy and establishes no GPU claim.
+
+
+Correctness and interpretation limits
+
+
+
+The full-width one-step control was bit-identical to the original model.
+
+263 learned tensors outside block 0 remained identical by hash.
+
+Selected-curve cached decoding versus prefill differed by at most 0.000154972076 in logits.
+
+Materialized versus on-demand sampled weights produced exactly matching logits.
+
+All four exported checkpoints are checked against their saved state and measured held-out losses by 
+verify_exports.py
+.
+
+
+
+Training, validation and test use official WikiText-2 article partitions. All articles sampled during phase-2 validation/test are excluded from the corresponding phase-3 evaluation pools. The test set has 16 documents, so the paired 2,000-resample bootstrap intervals have limited breadth. These are pointwise intervals, not simultaneous intervals across all twelve comparisons. The model may have seen WikiText in pretraining. Fixed 128-token windows are not standard full WikiText perplexity. One training minibatch seed is not a seed-robust architecture comparison.
+
+
+The experiment changes both the MLP representation and its integration depth. Both four-control curves have half the original MLP's parameter budget. The direct width-768 control matches their stored parameters and their four-step projection MACs; the direct width-192 control matches one field's width. The one-step curve accesses only its first control vector. These controls help separate capacity, optimization and recurrence, but do not establish the best possible curve architecture. All selected checkpoints were at the final update, so the bounded training budget does not establish convergence. No conclusions about all-layer conversion, adaptive halting, long-context quality, cache compression or TinyLlama follow from this run.
+
+
+Next decision
+
+
+The next experiment should begin with a function-preserving decomposition at full resolution. The original width-1,536 SwiGLU MLP is a sum of neuron contributions: split it into eight width-192 groups, evaluate every group at the same original attention-output state a, and sum the outputs. Algebraically this reproduces the original MLP; its implementation must first meet a floating-point equivalence check. It retains all original MLP weights and is a proposed control, not a measured result in this phase.
+
+
+Then fit an ordered curve through those contributions and test coarser sampling against that verified reference. Compare keeping a available to each field with the current evolving-state construction, and compare intermediate-path supervision with endpoint-only training. This separates conversion fidelity from the additional compression constraint. Require a curve to beat the parameter-matched direct student and pass the language-quality gate before repeat seeds, longer contexts, broader layer coverage or TinyLlama. Smooth weight functions alone do not establish useful depth invariance.
+
+
+
+Greedy continuations, unchanged prompts and no sampling
+
+The purpose of a scientific experiment is
+
+
+Original:
+  to test a hypothesis. A hypothesis is a statement that is made to explain a phenomenon. A hypothesis is a statement that is made to explain a phenomenon. A hypothesis is a statement that is made to
+
+
+Curve, 8 steps:
+  to make a new knowledge of the world.
+
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+
+
+Same curve, 1 step:
+  to provide a new understanding of the world.
+
+The purpose of a scientific experiment is to provide a new understanding of the world.
+
+The purpose of a scientific experiment is to provide a new
+
+The city council voted to
+
+
+Original:
+  allow the city to build a new 100-year-old bridge over the river.
+
+The city council voted to allow the city to build a new 100-year
+
+
+Curve, 8 steps:
+  the
+
+
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+
+Same curve, 1 step:
+  the
+ city council, and the city council voted to the city council.
+ The city council voted to the city council.
+ The city council voted to the city council.
+ The city council voted
+
+To solve the problem, we first
+
+
+Original:
+  need to find the best solution. We can do this by using the following algorithm:
+
+```python
+def find_best_solution(self, x, y):
+    """
+    Finds
+
+
+Curve, 8 steps:
+ 
+
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+
+Same curve, 1 step:
+  need to find the problem, and then we can find the problem.
+
+The problem is the problem, and the problem is the problem, and the problem is the problem, and the problem is
+
+
+
+
+Frozen protocol
+
+{
+  "scope": "Only block-0 MLP is distilled; original attention executes once; all other model tensors frozen.",
+  "depth_equation": "u[0]=0; u[i+1]=u[i]+F(a+u[i], i/N)/N; output=a+u[N]. F is RMSNorm plus SwiGLU with depth-dependent weights.",
+  "curves": "Four clamped Catmull-Rom control vectors hold all gate/up/down weights. Continuous C1 weight curve; same controls at all evaluated depths.",
+  "train_specs": [
+    {
+      "id": "direct_192",
+      "regime": "fixed",
+      "width": 192,
+      "knots": 1,
+      "steps": 1
+    },
+    {
+      "id": "direct_768",
+      "regime": "fixed",
+      "width": 768,
+      "knots": 1,
+      "steps": 1
+    },
+    {
+      "id": "curve_fixed8",
+      "regime": "fixed",
+      "width": 192,
+      "knots": 4,
+      "steps": 8
+    },
+    {
+      "id": "curve_mixed",
+      "regime": "mixed",
+      "width": 192,
+      "knots": 4,
+      "steps": 8
+    }
+  ],
+  "updates_per_student": 3000,
+  "batch_tokens": 512,
+  "seed": 30317,
+  "objective": "Mean-squared error of first-block MLP residual output, divided by mean training target squared magnitude. No gradients through later blocks.",
+  "optimizer": {
+    "name": "AdamW",
+    "peak_lr": 0.0003,
+    "weight_decay": 0.01,
+    "warmup_updates": 40,
+    "cosine_floor": 0.1,
+    "gradient_clip_norm": 1.0
+  },
+  "checkpoint_selection": "Every 100 updates plus initialization/final: minimum validation endpoint MSE. Fixed8 uses N=8; mixed uses equal mean across N=1,2,4,8; direct uses N=1.",
+  "validation_gate": {
+    "delta_nll_max": 0.05,
+    "kl_max": 0.05
+  },
+  "test_candidates": "All four depths for both trained curve students, both direct students, fixed phase-2 Q/K baseline, and validation-selected curve composed with that Q/K baseline.",
+  "curve_selection": "Minimum field evaluations passing both validation gates, then minimum KL; if no curve passes, minimum KL is explicitly a failed-gate representative.",
+  "precision": "float32",
+  "device": "CPU",
+  "threads": 4,
+  "full_model_evaluation_batch": 2,
+  "data_manifest_sha256": "344e8f16367d240e06444fc29a523f5dc57332d6d892ab676a0265df5726615a",
+  "architecture_limit": "Only the MLP sub-transformation has variable depth. No removal of the 30 outer blocks, no attention-cache compression, no adaptive solver or input-conditioned spline basis."
+}
+
+
+
+Files and research context
+
+
+The archive contains source, pinned versions, sample token arrays, data/selection manifests, initialization and trained checkpoints, per-window metrics, raw timing pairs, trajectory arrays and this report. 
+README.md
+ gives reproduction commands. The original model and regenerable teacher caches are excluded.
+
+
+
+
+Neural Ordinary Differential Equations
+: learned vector fields and numerical depth. This implementation uses unrolled Euler gradients, not the paper's adjoint method.
+
+
+Universal Transformers
+: recurrence over depth; this experiment does not repeat attention or implement adaptive halting.
+
+
+Official SmolLM2-135M
+ and 
+WikiText dataset
+.
+
+
+
+Process time 22.1 minutes; peak RSS 2496 MiB. A completed verification status is not a declaration that the quality target passed.
+
+
+
+

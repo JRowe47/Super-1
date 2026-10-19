@@ -1,0 +1,17 @@
+{
+  "selected_steps": {
+    "interpolated": 1800,
+    "retained": 1800
+  },
+  "passed_gate": {
+    "initial_interpolated": false,
+    "initial_retained": false,
+    "phase5_dense": false,
+    "trained_interpolated": false,
+    "trained_retained": false
+  },
+  "gate": "Full 32 validation windows: delta NLL <= .05 AND teacher KL <= .05.",
+  "no_audit_based_selection": true,
+  "primary_comparison": "trained_retained versus trained_interpolated",
+  "checkpoint_rule": "Minimum teacher KL on first 8 validation windows, checked every 300 updates including 0."
+}

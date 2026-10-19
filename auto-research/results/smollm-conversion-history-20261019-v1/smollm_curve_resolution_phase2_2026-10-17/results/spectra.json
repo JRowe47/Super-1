@@ -1,0 +1,65 @@
+[
+  {
+    "matrix": "q_proj",
+    "shape": [
+      576,
+      576
+    ],
+    "rank_90_percent_energy": 65,
+    "rank_99_percent_energy": 211
+  },
+  {
+    "matrix": "k_proj",
+    "shape": [
+      192,
+      576
+    ],
+    "rank_90_percent_energy": 31,
+    "rank_99_percent_energy": 89
+  },
+  {
+    "matrix": "v_proj",
+    "shape": [
+      192,
+      576
+    ],
+    "rank_90_percent_energy": 130,
+    "rank_99_percent_energy": 180
+  },
+  {
+    "matrix": "o_proj",
+    "shape": [
+      576,
+      576
+    ],
+    "rank_90_percent_energy": 180,
+    "rank_99_percent_energy": 366
+  },
+  {
+    "matrix": "gate_proj",
+    "shape": [
+      1536,
+      576
+    ],
+    "rank_90_percent_energy": 394,
+    "rank_99_percent_energy": 539
+  },
+  {
+    "matrix": "up_proj",
+    "shape": [
+      1536,
+      576
+    ],
+    "rank_90_percent_energy": 396,
+    "rank_99_percent_energy": 539
+  },
+  {
+    "matrix": "down_proj",
+    "shape": [
+      576,
+      1536
+    ],
+    "rank_90_percent_energy": 388,
+    "rank_99_percent_energy": 530
+  }
+]

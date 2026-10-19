@@ -1,0 +1,8 @@
+{
+  "frozen_before_audit_evaluation": true,
+  "additional_control": "lifted_dense: deterministic fifth-mode augmentation of the selected dense checkpoint; no training or validation search.",
+  "same_parameter_count_as_dense_control": 35400960,
+  "sample_orthogonality_error": 2.3239105296018846e-15,
+  "native_knot_mode_max_abs": 0.0,
+  "audit": "Evaluate quality at N=3 and N=2 on all 64 audit windows. Verify every sampled tensor against dense weights; verify logits on first 8 audit windows at both N; verify N=4 exact native logits."
+}

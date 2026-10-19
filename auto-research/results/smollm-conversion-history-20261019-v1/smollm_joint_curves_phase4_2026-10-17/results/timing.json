@@ -1,0 +1,344 @@
+{
+  "w4_trained_n3": {
+    "streamed": {
+      "native_median_ms": 218.80142849977346,
+      "curve_median_ms": 241.628005000166,
+      "median_paired_ratio": 1.0194840266864114,
+      "pairs_ms": [
+        {
+          "native": 306.67784200068127,
+          "curve": 301.96190799961187
+        },
+        {
+          "curve": 256.0596559997066,
+          "native": 224.77499799970246
+        },
+        {
+          "native": 256.7027590002908,
+          "curve": 249.1611700006615
+        },
+        {
+          "curve": 211.78840799984755,
+          "native": 210.69230400007655
+        },
+        {
+          "native": 244.9855770000795,
+          "curve": 220.24764900015725
+        },
+        {
+          "curve": 234.0948399996705,
+          "native": 233.53897700053494
+        },
+        {
+          "native": 222.9639679999309,
+          "curve": 353.35398799998075
+        },
+        {
+          "curve": 221.88631299923145,
+          "native": 214.63888899961603
+        },
+        {
+          "native": 211.3995049994628,
+          "curve": 212.1058009997796
+        },
+        {
+          "curve": 253.63185100013652,
+          "native": 206.37329700002738
+        },
+        {
+          "native": 207.25117599977239,
+          "curve": 216.21450899965566
+        },
+        {
+          "curve": 263.1033719999323,
+          "native": 212.8216090004571
+        }
+      ],
+      "note": "Single-process CPU, 4 threads, batch 1, context 128. Installation/pre-materialization outside timed region; forward and output logits included."
+    },
+    "materialized": {
+      "native_median_ms": 215.55827849988418,
+      "curve_median_ms": 209.2438349995973,
+      "median_paired_ratio": 0.9760111334532515,
+      "pairs_ms": [
+        {
+          "native": 211.83024200036016,
+          "curve": 207.78304299983574
+        },
+        {
+          "curve": 216.07577499980835,
+          "native": 213.98626300015167
+        },
+        {
+          "native": 215.50633200058655,
+          "curve": 203.60020299995085
+        },
+        {
+          "curve": 206.9980520000172,
+          "native": 216.65098599987687
+        },
+        {
+          "native": 219.4092540003112,
+          "curve": 222.78030699999363
+        },
+        {
+          "curve": 211.26479499980633,
+          "native": 205.959625000105
+        },
+        {
+          "native": 215.6102249991818,
+          "curve": 209.38515399939206
+        },
+        {
+          "curve": 214.940072999525,
+          "native": 228.2151800000065
+        },
+        {
+          "native": 220.24041799977567,
+          "curve": 213.40446200065344
+        },
+        {
+          "curve": 205.98018400050933,
+          "native": 216.48172500044893
+        },
+        {
+          "native": 211.27969700046378,
+          "curve": 207.44432100036647
+        },
+        {
+          "curve": 209.10251599980256,
+          "native": 204.88008599932073
+        }
+      ],
+      "note": "Single-process CPU, 4 threads, batch 1, context 128. Installation/pre-materialization outside timed region; forward and output logits included."
+    }
+  },
+  "w12_trained_n3": {
+    "streamed": {
+      "native_median_ms": 214.63489899997512,
+      "curve_median_ms": 217.13170399971204,
+      "median_paired_ratio": 1.0231127717786626,
+      "pairs_ms": [
+        {
+          "native": 206.74905299983948,
+          "curve": 210.1903550001225
+        },
+        {
+          "curve": 211.7935469996155,
+          "native": 231.95905000011408
+        },
+        {
+          "native": 214.936389000286,
+          "curve": 217.99515499969857
+        },
+        {
+          "curve": 253.11370600047667,
+          "native": 216.80102800019085
+        },
+        {
+          "native": 213.14165199964918,
+          "curve": 221.25182499985385
+        },
+        {
+          "curve": 229.84037500009435,
+          "native": 222.6450569996814
+        },
+        {
+          "native": 216.42938700006198,
+          "curve": 264.9199600000429
+        },
+        {
+          "curve": 215.10809499977768,
+          "native": 208.92785900014132
+        },
+        {
+          "native": 207.5994829992851,
+          "curve": 222.8677279999829
+        },
+        {
+          "curve": 213.33714999946096,
+          "native": 214.33340899966424
+        },
+        {
+          "native": 211.33680999992066,
+          "curve": 214.03323499998805
+        },
+        {
+          "curve": 216.26825299972552,
+          "native": 216.83679399939138
+        }
+      ],
+      "note": "Single-process CPU, 4 threads, batch 1, context 128. Installation/pre-materialization outside timed region; forward and output logits included."
+    },
+    "materialized": {
+      "native_median_ms": 210.1964720000069,
+      "curve_median_ms": 205.3205910001452,
+      "median_paired_ratio": 0.9805169388209727,
+      "pairs_ms": [
+        {
+          "native": 213.20954600014375,
+          "curve": 210.86752900009742
+        },
+        {
+          "curve": 208.08130700061156,
+          "native": 209.67335300065315
+        },
+        {
+          "native": 206.5724539997973,
+          "curve": 209.4792759999109
+        },
+        {
+          "curve": 202.4621010004921,
+          "native": 204.38418600042496
+        },
+        {
+          "native": 205.08466299997963,
+          "curve": 205.41451999997662
+        },
+        {
+          "curve": 201.7592110005353,
+          "native": 211.82818199940812
+        },
+        {
+          "native": 209.88297299936676,
+          "curve": 203.523400999984
+        },
+        {
+          "curve": 202.10859900089417,
+          "native": 210.84424599939666
+        },
+        {
+          "native": 248.59793500036176,
+          "curve": 206.82456700069451
+        },
+        {
+          "curve": 213.50948899998912,
+          "native": 210.50997100064706
+        },
+        {
+          "native": 212.29639499961195,
+          "curve": 205.2266620003138
+        },
+        {
+          "curve": 201.24059299996588,
+          "native": 207.0337159993869
+        }
+      ],
+      "note": "Single-process CPU, 4 threads, batch 1, context 128. Installation/pre-materialization outside timed region; forward and output logits included."
+    }
+  },
+  "selected_composite": {
+    "streamed": {
+      "native_median_ms": 216.7271130001609,
+      "curve_median_ms": 225.17762249981388,
+      "median_paired_ratio": 1.0376851238327514,
+      "pairs_ms": [
+        {
+          "native": 208.1741960000727,
+          "curve": 228.4356200007096
+        },
+        {
+          "curve": 225.53021899966552,
+          "native": 217.9390669998611
+        },
+        {
+          "native": 218.10505200028274,
+          "curve": 222.46469299989258
+        },
+        {
+          "curve": 233.56500000045344,
+          "native": 211.1375100002988
+        },
+        {
+          "native": 209.14935900054843,
+          "curve": 217.62800499982404
+        },
+        {
+          "curve": 217.93035300015617,
+          "native": 207.2420360000251
+        },
+        {
+          "native": 206.71422499981418,
+          "curve": 224.82502599996224
+        },
+        {
+          "curve": 220.46201000011934,
+          "native": 221.66235500026232
+        },
+        {
+          "native": 215.5151590004607,
+          "curve": 245.68462099978206
+        },
+        {
+          "curve": 232.91704199982632,
+          "native": 234.74654800065764
+        },
+        {
+          "native": 279.8710500001107,
+          "curve": 277.3888629999419
+        },
+        {
+          "curve": 223.86586799984798,
+          "native": 228.3137889999125
+        }
+      ],
+      "note": "Single-process CPU, 4 threads, batch 1, context 128. Installation/pre-materialization outside timed region; forward and output logits included."
+    },
+    "materialized": {
+      "native_median_ms": 213.4659550001743,
+      "curve_median_ms": 209.09012099991742,
+      "median_paired_ratio": 0.984656948409824,
+      "pairs_ms": [
+        {
+          "native": 222.94939999937924,
+          "curve": 230.0467139993998
+        },
+        {
+          "curve": 203.58616599969537,
+          "native": 216.196912999294
+        },
+        {
+          "native": 229.36025699982565,
+          "curve": 208.41733799989015
+        },
+        {
+          "curve": 231.8346450001627,
+          "native": 212.50528800010215
+        },
+        {
+          "native": 216.98177300004318,
+          "curve": 202.67525000053865
+        },
+        {
+          "curve": 216.50157299973216,
+          "native": 214.42662200024643
+        },
+        {
+          "native": 205.08759999938775,
+          "curve": 209.76290399994468
+        },
+        {
+          "curve": 191.88415899952815,
+          "native": 205.98286499989626
+        },
+        {
+          "native": 206.92025199969066,
+          "curve": 198.56836199960526
+        },
+        {
+          "curve": 199.9761760007459,
+          "native": 214.99915900039923
+        },
+        {
+          "native": 186.19205599952693,
+          "curve": 214.70494400000462
+        },
+        {
+          "curve": 233.4519289997843,
+          "native": 207.506640000247
+        }
+      ],
+      "note": "Single-process CPU, 4 threads, batch 1, context 128. Installation/pre-materialization outside timed region; forward and output logits included."
+    }
+  }
+}

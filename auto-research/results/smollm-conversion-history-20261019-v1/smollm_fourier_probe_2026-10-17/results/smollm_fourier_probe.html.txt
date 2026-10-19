@@ -1,0 +1,410 @@
+Artifact omitted from compact publication.
+Original archive: smollm_fourier_probe_2026-10-17.zip
+Original member: smollm_fourier_probe/results/smollm_fourier_probe.html
+Uncompressed bytes: 420995
+ZIP CRC32 (not a cryptographic hash): dad2f2ca
+Request the original saved archive from the author. It is not a public download in this repository. Full model replay may require pretrained weights, data and environment dependencies.
+
+Plain-text report extracted from original HTML (images/layout omitted):
+
+
+
+
+
+
+SmolLM2 depth Fourier probe
+
+
+
+
+
+17 October 2026 · Read-only diagnostic · No new model training
+
+
+Fourier curves across the 28 blocks
+
+
+An exact decomposition is cheap. These checkpoints do not show a small set of dominant low-frequency depth modes in the projection weights.
+
+
+
+Measured:
+ the seven projection families retain 28.72% of their squared weight norm in the lowest 8 of 28 cosine modes. An equal-energy reference retains 28.57%. All 28 modes are needed to cross 99% in this frequency order. Training updates are also broadly distributed. This is a structural weight measurement, not a language-quality ablation.
+
+
+
+
+What exactly is decomposed?
+
+
+For each corresponding tensor entry, collect its value across the 28 decoder blocks. Attention Q, K, V, O; MLP gate, up, down; and two RMSNorm vectors are kept as separate families. Tensor shapes match across blocks. Token embeddings, tied output head and final model norm are outside this depth stack.
+
+
+Write the complete block-weight vector at depth ℓ as W(ℓ) = Σ φₖ(ℓ) Bₖ. Each Bₖ is a block-sized coefficient vector containing 3,540,096 real values; φₖ is a scalar sine/cosine basis function. A mode is therefore a tensor-valued curve contribution, not one scalar storing the whole block.
+
+
+
+
+
+Interpretation
+
+Exact reconstruction requirement
+
+
+
+
+
+DFT across 28 blocks
+
+15 nonnegative frequency bands: DC + 13 sine/cosine pairs + Nyquist = 28 real coefficient tensors
+
+
+
+DCT across 28 blocks
+
+28 real cosine coefficient tensors
+
+
+
+One flattened scalar sequence over the 28 blocks
+
+99,122,688 real degrees of freedom, or 49,561,345 nonnegative complex FFT bins with endpoint constraints
+
+
+
+Learned linear depth basis
+
+Measured projection-stack rank is 28; fewer independent basis vectors cannot reconstruct it exactly at the recorded numerical tolerance
+
+
+
+
+
+The exact depth transform retains 99,122,688 real coefficient values, about 378.1 MiB at FP32 before metadata. It is a change of coordinates. Low-mode truncation is a separate lossy experiment. Smooth sine waves can sum to an arbitrarily jagged discrete sequence. The DFT extends depth periodically, coupling the last block back to the first. A cosine transform is a useful boundary-condition control because its even extension avoids that wraparound assumption.
+
+
+Exact here means exact in real arithmetic and within roundoff in the numeric implementation. Across every retained-final tensor, float64 FFT and DCT roundtrips had maximum absolute error 1.78e-15. The combined transforms and inverse checks took 1.41 seconds; the full diagnostic took 5.27 seconds on this CPU. These timings exclude downloading and loading a language runtime; they do not predict per-token speed.
+
+
+A global Fourier interpolant through the 28 sampled weights does not recreate the previous Hermite curve between samples, and does not automatically preserve the original 30 layer knots. It also does not preserve the composed network when evaluated at fewer depths. More off-grid samples add no new information.
+
+
+Before versus after phase 6
+
+
+
+
+
+Projection weights / updates
+
+Energy in 8 lowest DCT modes
+
+Modes for 90%
+
+Modes for 99%
+
+Depth-stack rank
+
+
+
+
+
+Retained: before
+
+28.7216%
+
+26
+
+28
+
+28
+
+
+
+Retained: after
+
+28.7217%
+
+26
+
+28
+
+28
+
+
+
+Interpolated: before
+
+28.8850%
+
+26
+
+28
+
+28
+
+
+
+Interpolated: after
+
+28.8839%
+
+26
+
+28
+
+28
+
+
+
+Retained: update
+
+27.1867%
+
+26
+
+28
+
+6
+
+
+
+Interpolated: update
+
+27.2655%
+
+26
+
+28
+
+6
+
+
+
+
+
+Squared norms are pooled over the seven matrices. The maximum before/after change in any normalized DCT mode is only 0.000104 percentage points for retained initialization, and 0.000973 for interpolation. The absolute weight spectrum is dominated by the pretrained checkpoint, so actual updates are the more sensitive diagnostic.
+
+
+Only final block positions 4, 5, 6, 11, 12, 13 changed. Their updates are zero elsewhere. The update stack therefore has rank at most six by design; observing rank six is not a newly discovered six-curve compression mechanism. Localized, nearly orthogonal updates can have a nearly flat Fourier spectrum. This outcome cannot rule out useful localized or aligned structure. Power spectra discard phase and sign information: a nearly unchanged energy plot does not mean an unchanged model. Transforming the actual before/after difference captures coefficient movement, but still does not identify semantic function.
+
+
+Family differences
+
+
+
+
+
+Family
+
+Retained-final energy in lowest 8 DCT modes
+
+
+
+
+
+Input RMSNorm
+
+97.94%
+
+
+
+Post-attention RMSNorm
+
+99.45%
+
+
+
+Attention Q
+
+29.07%
+
+
+
+Attention K
+
+30.22%
+
+
+
+Attention V
+
+28.72%
+
+
+
+Attention O
+
+28.29%
+
+
+
+MLP gate
+
+28.87%
+
+
+
+MLP up
+
+28.62%
+
+
+
+MLP down
+
+28.47%
+
+
+
+
+
+The normalization vectors are markedly smoother, but together they contain only 1,152 values per block (0.0325% of block parameters). Their large constant component is partly a shared-scale effect. This is a candidate for a small functional ablation, not evidence that the main matrices can be safely smoothed.
+
+
+Layer-order control
+
+
+One thousand fixed-seed permutations of block order were applied to the Gram matrices. These are descriptive controls on spectra; the permuted networks were not evaluated and are not function-preserving. The statistic below excludes the constant mode and asks how much remaining energy lies in cosine modes 1–7.
+
+
+
+
+
+Stack
+
+Actual order
+
+Shuffle mean
+
+Shuffle central 95%
+
+
+
+
+
+retained final
+
+26.047%
+
+25.926%
+
+25.830–26.033%
+
+
+
+interpolated final
+
+26.205%
+
+25.925%
+
+25.527–26.196%
+
+
+
+retained delta
+
+24.490%
+
+25.953%
+
+22.279–31.661%
+
+
+
+interpolated delta
+
+24.561%
+
+25.954%
+
+22.250–31.720%
+
+
+
+
+
+The trained raw weights show slight ordering structure, but the effect is small: roughly 26% versus a 25.9% shuffled reference, not strong low-frequency concentration. Update spectra lie comfortably within their shuffled ranges. These are exploratory comparisons, not preregistered significance tests.
+
+
+What this does and does not compare
+
+
+Phase 6 optimized ordinary block parameters and then lifted each selected checkpoint into a curve. At the fitted samples, native and curve forms represent the same weights; their spectra must agree within roundoff. They are not independently trained regimes. Only initial/final weights were saved, so this probe measures endpoint change, not the trajectory during training.
+
+
+A full orthonormal DCT parameterization changes no expressivity. With matched initial weights, plain SGD steps map back identically in ideal arithmetic. AdamW uses coordinate-wise moments and generally follows a different path after an orthogonal transform. Therefore a curve-training advantage must be separated from an optimizer-coordinate effect. The random-basis control serves that purpose.
+
+
+Recommended toy experiment — not run
+
+
+Use 8 blocks, width 128, 4 heads, context 128 and an approximately 8K-token vocabulary with a tied output head: about 2.6M parameters. This gives more useful depth-frequency resolution than a 4-block model. Use document-held-out ordinary text, three paired seeds, identical minibatches and saved checkpoints; report tokens, updates and wall time.
+
+
+
+
+Representation control:
+ dense weights, all 8 DCT depth modes, and all 8 random orthogonal depth modes. Derive each from the same initialization. Verify a short plain-SGD equivalence run; then compare AdamW with equal learning-rate search budgets.
+
+
+
+Structural control:
+ on the same fixed base model, learn updates in 4 low depth modes versus 4 random orthogonal modes, plus a dense-update reference. Zero updates give identical initial functions. This tests a smooth-depth prior without conflating it with different starting models.
+
+
+
+Interventions:
+ attenuate individual bands or remove training-update bands, by tensor family, and measure held-out loss and teacher KL. Keep parameter displacement comparable. Frequency energy alone cannot identify which modes carry useful behavior.
+
+
+
+Depth functionality:
+ after these controls, test an explicit multi-depth training objective, fixed sampling and residual scaling. Compare 4/6/8 steps and a held-out 7-step schedule. Smooth weights do not automatically imply stable reduced-depth computation.
+
+
+
+Track per-family weight, update and gradient spectra, coefficient drift (including phase/sign), depth-stack singular values, and residual activations on fixed text probes. Functional permutations of neurons/heads can alter weight spectra, so comparisons between independently trained models require symmetry-aware alignment or matched initialization. Arbitrarily sorting weights does not preserve the model.
+
+
+Related work and interpretation
+
+
+
+Training Transformers in Cosine Coefficient Space (Bergach, 2026, v2)
+ reports a 4-layer, width-128 character model using within-matrix 2D DCT parameterization. Its revised ablation finds random orthogonal bases competitive with DCT. This is a small-model preprint, uses a different transform axis from our depth experiment, and does not establish a universal spectral advantage. It motivates the random-basis control here; its larger mechanistic claims are not adopted as established facts.
+
+
+
+Rippel et al. (2015)
+ study spectral CNN parameterization. 
+VectorAdam (2022)
+ documents Adam's coordinate dependence. 
+Git Re-Basin
+ demonstrates why neuron permutations matter to weight comparisons. Transform conventions follow the official 
+NumPy real FFT
+ and 
+SciPy DCT
+ documentation.
+
+
+Reproduce
+
+
+The small bundle contains the analysis, all aggregate/family statistics, Gram matrices, figure, and the proposed toy protocol. It does not duplicate model weights. Recover the phase-6 bundle and its pinned reference model, then run:
+
+
+OPENBLAS_NUM_THREADS=4 OMP_NUM_THREADS=4 python3 run_probe.py --phase6 /path/to/smollm_initialization_phase6
+python3 build_report.py
+
+
+Reference revision: 
+93efa2f097d58c2a74874c7e644dbc9b0cee75a2
+. Input SHA-256 hashes and runtime versions are recorded in 
+results/diagnostics.json
+. No new quality, latency, compression or training claim follows from this weight-only probe.
+
+
+
+

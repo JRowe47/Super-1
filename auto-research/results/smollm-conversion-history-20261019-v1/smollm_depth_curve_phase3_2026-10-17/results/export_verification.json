@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "student": "direct_192",
+      "tested_steps": 1,
+      "state_tensors_exact": 2,
+      "max_loss_difference": 0.0
+    },
+    {
+      "student": "direct_768",
+      "tested_steps": 1,
+      "state_tensors_exact": 2,
+      "max_loss_difference": 0.0
+    },
+    {
+      "student": "curve_fixed8",
+      "tested_steps": 8,
+      "state_tensors_exact": 2,
+      "max_loss_difference": 0.0,
+      "eight_step_cached_vs_prefill_max_logit": 0.00015926361083984375
+    },
+    {
+      "student": "curve_mixed",
+      "tested_steps": 8,
+      "state_tensors_exact": 2,
+      "max_loss_difference": 0.0,
+      "eight_step_cached_vs_prefill_max_logit": 0.00011444091796875
+    }
+  ]
+}

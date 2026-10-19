@@ -1,0 +1,4 @@
+{
+  "workers": "One sequential curve-training process and one independent dense process, each with 4 Torch CPU threads, under an 8-core CPU quota. Separate models, optimizers and outputs. The sequential trainer skips the completed dense arm.",
+  "fairness": "Same batches and optimizer updates, but training wall time is not a controlled speed benchmark. All paired inference timing is after both workers exit."
+}

@@ -1,0 +1,482 @@
+{
+  "orthogonal_curve_n3": {
+    "streamed": {
+      "native_median_ms": 223.915799999304,
+      "candidate_median_ms": 230.27004749928892,
+      "median_paired_ratio": 1.0503567146797528,
+      "pairs_ms": [
+        {
+          "native": 210.19793300001766,
+          "candidate": 219.126377000066
+        },
+        {
+          "candidate": 225.96583399899828,
+          "native": 225.4234230003931
+        },
+        {
+          "native": 233.5050460005732,
+          "candidate": 251.68070499967143
+        },
+        {
+          "candidate": 240.79713100036315,
+          "native": 223.49093699995137
+        },
+        {
+          "native": 250.57710299915925,
+          "candidate": 261.0157649996836
+        },
+        {
+          "candidate": 234.57426099957956,
+          "native": 224.34066299865663
+        },
+        {
+          "native": 264.2806820003898,
+          "candidate": 272.7415999997902
+        },
+        {
+          "candidate": 256.1890870001662,
+          "native": 277.01468000122986
+        },
+        {
+          "native": 209.53659499900823,
+          "candidate": 224.06455400050618
+        },
+        {
+          "candidate": 220.59494700079085,
+          "native": 209.0754939999897
+        },
+        {
+          "native": 207.6254700004938,
+          "candidate": 220.5732659986097
+        },
+        {
+          "candidate": 222.03236099994683,
+          "native": 208.96368799913034
+        }
+      ],
+      "context": 128,
+      "batch": 1,
+      "threads": 4,
+      "note": "12 alternating paired prefill timings; 2 warmup pairs. Setup/sampling into native blocks is excluded for native_export; streamed forward includes function-weight sampling."
+    },
+    "native_export": {
+      "native_median_ms": 212.09682950029674,
+      "candidate_median_ms": 197.87589199950162,
+      "median_paired_ratio": 0.938443721693007,
+      "pairs_ms": [
+        {
+          "native": 201.4649669999926,
+          "candidate": 193.09722099933424
+        },
+        {
+          "candidate": 194.28625799992005,
+          "native": 205.96235399898433
+        },
+        {
+          "native": 201.176470000064,
+          "candidate": 190.53813900063687
+        },
+        {
+          "candidate": 192.71139999909792,
+          "native": 204.31097300024703
+        },
+        {
+          "native": 206.93541999935405,
+          "candidate": 197.13009999941278
+        },
+        {
+          "candidate": 193.42739800049458,
+          "native": 209.5776249989285
+        },
+        {
+          "native": 254.67866100007086,
+          "candidate": 202.82738899913966
+        },
+        {
+          "candidate": 198.62168399959046,
+          "native": 215.1310930003092
+        },
+        {
+          "native": 217.51531600057206,
+          "candidate": 206.14504200057127
+        },
+        {
+          "candidate": 204.5685949997278,
+          "native": 223.49842899893702
+        },
+        {
+          "native": 214.61603400166496,
+          "candidate": 200.37873900037084
+        },
+        {
+          "candidate": 205.01555700138852,
+          "native": 231.2086410001939
+        }
+      ],
+      "context": 128,
+      "batch": 1,
+      "threads": 4,
+      "note": "12 alternating paired prefill timings; 2 warmup pairs. Setup/sampling into native blocks is excluded for native_export; streamed forward includes function-weight sampling."
+    }
+  },
+  "orthogonal_curve_n2": {
+    "streamed": {
+      "native_median_ms": 210.12087299914128,
+      "candidate_median_ms": 203.72904199939512,
+      "median_paired_ratio": 0.969507560373163,
+      "pairs_ms": [
+        {
+          "native": 212.29283799948462,
+          "candidate": 227.9508289993828
+        },
+        {
+          "candidate": 199.04560900067736,
+          "native": 207.66891200037207
+        },
+        {
+          "native": 208.94920600039768,
+          "candidate": 203.63563899991277
+        },
+        {
+          "candidate": 205.97628999894368,
+          "native": 212.8559230004612
+        },
+        {
+          "native": 209.149811998941,
+          "candidate": 202.3192119995656
+        },
+        {
+          "candidate": 201.11926699973992,
+          "native": 211.09193399934156
+        },
+        {
+          "native": 214.08866599995235,
+          "candidate": 203.82244499887747
+        },
+        {
+          "candidate": 232.0663800001057,
+          "native": 220.6492180011992
+        },
+        {
+          "native": 236.2814839998464,
+          "candidate": 209.78033499886806
+        },
+        {
+          "candidate": 208.1816810004966,
+          "native": 204.9974219989963
+        },
+        {
+          "native": 203.38281400108826,
+          "candidate": 197.55299399912474
+        },
+        {
+          "candidate": 202.4923579992901,
+          "native": 206.58738300153345
+        }
+      ],
+      "context": 128,
+      "batch": 1,
+      "threads": 4,
+      "note": "12 alternating paired prefill timings; 2 warmup pairs. Setup/sampling into native blocks is excluded for native_export; streamed forward includes function-weight sampling."
+    },
+    "native_export": {
+      "native_median_ms": 219.90127800017945,
+      "candidate_median_ms": 193.6423860006471,
+      "median_paired_ratio": 0.865942468585668,
+      "pairs_ms": [
+        {
+          "native": 234.48972900041554,
+          "candidate": 205.27292499900796
+        },
+        {
+          "candidate": 246.42065800071578,
+          "native": 216.66778800135944
+        },
+        {
+          "native": 219.1327900000033,
+          "candidate": 187.68335800086788
+        },
+        {
+          "candidate": 188.73970999993617,
+          "native": 220.42792499996722
+        },
+        {
+          "native": 242.3759599987534,
+          "candidate": 198.54506200135802
+        },
+        {
+          "candidate": 202.59164299932308,
+          "native": 247.5830200000928
+        },
+        {
+          "native": 247.21952300023986,
+          "candidate": 208.52983700024197
+        },
+        {
+          "candidate": 203.73063299848582,
+          "native": 219.37463100039167
+        },
+        {
+          "native": 211.72073799971258,
+          "candidate": 187.23609299922828
+        },
+        {
+          "candidate": 185.95353700038686,
+          "native": 227.4770770000032
+        },
+        {
+          "native": 210.13779799977783,
+          "candidate": 188.43928199930815
+        },
+        {
+          "candidate": 181.7505720009649,
+          "native": 204.30942999882973
+        }
+      ],
+      "context": 128,
+      "batch": 1,
+      "threads": 4,
+      "note": "12 alternating paired prefill timings; 2 warmup pairs. Setup/sampling into native blocks is excluded for native_export; streamed forward includes function-weight sampling."
+    }
+  },
+  "dense_n3": {
+    "streamed": {
+      "native_median_ms": 210.08031249948544,
+      "candidate_median_ms": 207.14988650161104,
+      "median_paired_ratio": 0.9914076879981004,
+      "pairs_ms": [
+        {
+          "native": 204.82131599965214,
+          "candidate": 203.90916699943773
+        },
+        {
+          "candidate": 207.90134700109775,
+          "native": 210.5823199999577
+        },
+        {
+          "native": 233.74864399920625,
+          "candidate": 203.00472999952035
+        },
+        {
+          "candidate": 204.25734099990223,
+          "native": 209.73249300004682
+        },
+        {
+          "native": 218.52734300045995,
+          "candidate": 226.42510699915874
+        },
+        {
+          "candidate": 206.8371040004422,
+          "native": 204.51966899963736
+        },
+        {
+          "native": 207.24448599867173,
+          "candidate": 209.98264300033043
+        },
+        {
+          "candidate": 207.0951760015305,
+          "native": 212.96729599998798
+        },
+        {
+          "native": 210.42813199892407,
+          "candidate": 206.42321199920843
+        },
+        {
+          "candidate": 207.20459700169158,
+          "native": 225.57492200030538
+        },
+        {
+          "native": 206.73051700032374,
+          "candidate": 228.42483400017954
+        },
+        {
+          "candidate": 209.6435030016437,
+          "native": 207.99058900047385
+        }
+      ],
+      "context": 128,
+      "batch": 1,
+      "threads": 4,
+      "note": "12 alternating paired prefill timings; 2 warmup pairs. Setup/sampling into native blocks is excluded for native_export; streamed forward includes function-weight sampling."
+    },
+    "native_export": {
+      "native_median_ms": 216.64254999996047,
+      "candidate_median_ms": 205.53662000020267,
+      "median_paired_ratio": 0.9615151201612466,
+      "pairs_ms": [
+        {
+          "native": 209.42324699899473,
+          "candidate": 205.33034700019925
+        },
+        {
+          "candidate": 228.0615880008554,
+          "native": 224.56546900139074
+        },
+        {
+          "native": 255.20756200057804,
+          "candidate": 197.43178200042166
+        },
+        {
+          "candidate": 202.73239699963597,
+          "native": 209.8187820010935
+        },
+        {
+          "native": 210.670721000497,
+          "candidate": 197.10469900019234
+        },
+        {
+          "candidate": 205.1924160005001,
+          "native": 214.4560430006095
+        },
+        {
+          "native": 218.82905699931143,
+          "candidate": 205.07291200010513
+        },
+        {
+          "candidate": 223.45262300041213,
+          "native": 213.94900400082406
+        },
+        {
+          "native": 221.82149200125423,
+          "candidate": 249.62561400025152
+        },
+        {
+          "candidate": 205.7428930002061,
+          "native": 353.50536100122554
+        },
+        {
+          "native": 355.8247000000847,
+          "candidate": 230.4299519983033
+        },
+        {
+          "candidate": 233.71862400017562,
+          "native": 209.36744100072247
+        }
+      ],
+      "context": 128,
+      "batch": 1,
+      "threads": 4,
+      "note": "12 alternating paired prefill timings; 2 warmup pairs. Setup/sampling into native blocks is excluded for native_export; streamed forward includes function-weight sampling."
+    }
+  },
+  "dense_n2": {
+    "streamed": {
+      "native_median_ms": 216.60705099930055,
+      "candidate_median_ms": 199.3055289995027,
+      "median_paired_ratio": 0.9246262803140284,
+      "pairs_ms": [
+        {
+          "native": 212.68062700073642,
+          "candidate": 195.28628199986997
+        },
+        {
+          "candidate": 190.16661500063492,
+          "native": 276.4389280000614
+        },
+        {
+          "native": 230.532208999648,
+          "candidate": 196.4960309996968
+        },
+        {
+          "candidate": 198.11989099980565,
+          "native": 219.04427299887175
+        },
+        {
+          "native": 218.61396799977229,
+          "candidate": 200.49116699919978
+        },
+        {
+          "candidate": 209.83778399931907,
+          "native": 222.62203299942485
+        },
+        {
+          "native": 220.03893999863067,
+          "candidate": 209.6160269993561
+        },
+        {
+          "candidate": 208.1398439986515,
+          "native": 210.95771999898716
+        },
+        {
+          "native": 209.97276399975817,
+          "candidate": 200.90618999893195
+        },
+        {
+          "candidate": 195.28433899904485,
+          "native": 211.89972200045304
+        },
+        {
+          "native": 211.60900200084143,
+          "candidate": 196.302074000414
+        },
+        {
+          "candidate": 209.2505849996087,
+          "native": 214.60013399882882
+        }
+      ],
+      "context": 128,
+      "batch": 1,
+      "threads": 4,
+      "note": "12 alternating paired prefill timings; 2 warmup pairs. Setup/sampling into native blocks is excluded for native_export; streamed forward includes function-weight sampling."
+    },
+    "native_export": {
+      "native_median_ms": 214.2190370004755,
+      "candidate_median_ms": 191.06576049944124,
+      "median_paired_ratio": 0.8896017217753629,
+      "pairs_ms": [
+        {
+          "native": 209.5241810002335,
+          "candidate": 190.9410089992889
+        },
+        {
+          "candidate": 189.77878999976383,
+          "native": 214.24556100100745
+        },
+        {
+          "native": 208.97438700012572,
+          "candidate": 193.32402200052456
+        },
+        {
+          "candidate": 191.54673400043976,
+          "native": 214.4012400003703
+        },
+        {
+          "native": 213.14794499994605,
+          "candidate": 186.93476599946734
+        },
+        {
+          "candidate": 186.35588899996947,
+          "native": 217.6270640011353
+        },
+        {
+          "native": 214.19251299994357,
+          "candidate": 192.3214750004263
+        },
+        {
+          "candidate": 197.87625299977663,
+          "native": 213.2240400005685
+        },
+        {
+          "native": 215.99500900083513,
+          "candidate": 191.2966099989717
+        },
+        {
+          "candidate": 190.3846400000475,
+          "native": 217.40370399857056
+        },
+        {
+          "native": 213.8004530006583,
+          "candidate": 191.19051199959358
+        },
+        {
+          "candidate": 186.78157899921644,
+          "native": 227.7027510008338
+        }
+      ],
+      "context": 128,
+      "batch": 1,
+      "threads": 4,
+      "note": "12 alternating paired prefill timings; 2 warmup pairs. Setup/sampling into native blocks is excluded for native_export; streamed forward includes function-weight sampling."
+    }
+  }
+}

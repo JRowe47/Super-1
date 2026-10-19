@@ -1,0 +1,541 @@
+{
+  "seed": 26317,
+  "context_tokens": 128,
+  "threads": 4,
+  "dtype": "float32",
+  "attention": "eager",
+  "training_steps": 0,
+  "scope": "Only block 0; all other parameters unchanged.",
+  "budgets": [
+    0.75,
+    0.5,
+    0.25,
+    0.125
+  ],
+  "budget_definition": "Retained coefficient values divided by the targeted original dense matrix values. SVD ranks account for BOTH factors; full-rank controls are separate.",
+  "validation_selection": "For ordinary, activation-aware, joint activation-aware Q/K and importance MLP, choose minimum projection MACs passing delta NLL <= .05 and KL <= .05; otherwise lowest KL representative. Matched random/contiguous MLP, half-budget Haar and knots are prespecified controls.",
+  "timing": "12 alternating-order pairs after warmup, 128-token prefill. MAC accounting covers learned linear projections, not attention scores, softmax, normalization or kernels.",
+  "specs": [
+    {
+      "id": "exact_curves",
+      "method": "exact_curves"
+    },
+    {
+      "id": "full_rank_svd_all",
+      "method": "svd",
+      "target": "all",
+      "full_rank": true
+    },
+    {
+      "id": "full_rank_activation_qk",
+      "method": "activation_svd",
+      "target": "qk",
+      "full_rank": true
+    },
+    {
+      "id": "full_rank_joint_activation_qk",
+      "method": "joint_activation_svd",
+      "full_rank": true
+    },
+    {
+      "id": "full_haar_qk",
+      "method": "haar",
+      "target": "qk",
+      "budget": 1.0
+    },
+    {
+      "id": "full_knots_qk",
+      "method": "knots",
+      "target": "qk",
+      "budget": 1.0
+    },
+    {
+      "id": "full_mlp_groups",
+      "method": "mlp_groups",
+      "groups": 16,
+      "ordering": "importance"
+    },
+    {
+      "id": "svd_q_0.75",
+      "method": "svd",
+      "target": "q",
+      "budget": 0.75
+    },
+    {
+      "id": "svd_q_0.5",
+      "method": "svd",
+      "target": "q",
+      "budget": 0.5
+    },
+    {
+      "id": "svd_q_0.25",
+      "method": "svd",
+      "target": "q",
+      "budget": 0.25
+    },
+    {
+      "id": "svd_q_0.125",
+      "method": "svd",
+      "target": "q",
+      "budget": 0.125
+    },
+    {
+      "id": "svd_k_0.75",
+      "method": "svd",
+      "target": "k",
+      "budget": 0.75
+    },
+    {
+      "id": "svd_k_0.5",
+      "method": "svd",
+      "target": "k",
+      "budget": 0.5
+    },
+    {
+      "id": "svd_k_0.25",
+      "method": "svd",
+      "target": "k",
+      "budget": 0.25
+    },
+    {
+      "id": "svd_k_0.125",
+      "method": "svd",
+      "target": "k",
+      "budget": 0.125
+    },
+    {
+      "id": "svd_qk_0.75",
+      "method": "svd",
+      "target": "qk",
+      "budget": 0.75
+    },
+    {
+      "id": "svd_qk_0.5",
+      "method": "svd",
+      "target": "qk",
+      "budget": 0.5
+    },
+    {
+      "id": "svd_qk_0.25",
+      "method": "svd",
+      "target": "qk",
+      "budget": 0.25
+    },
+    {
+      "id": "svd_qk_0.125",
+      "method": "svd",
+      "target": "qk",
+      "budget": 0.125
+    },
+    {
+      "id": "activation_svd_q_0.75",
+      "method": "activation_svd",
+      "target": "q",
+      "budget": 0.75
+    },
+    {
+      "id": "activation_svd_q_0.5",
+      "method": "activation_svd",
+      "target": "q",
+      "budget": 0.5
+    },
+    {
+      "id": "activation_svd_q_0.25",
+      "method": "activation_svd",
+      "target": "q",
+      "budget": 0.25
+    },
+    {
+      "id": "activation_svd_q_0.125",
+      "method": "activation_svd",
+      "target": "q",
+      "budget": 0.125
+    },
+    {
+      "id": "activation_svd_k_0.75",
+      "method": "activation_svd",
+      "target": "k",
+      "budget": 0.75
+    },
+    {
+      "id": "activation_svd_k_0.5",
+      "method": "activation_svd",
+      "target": "k",
+      "budget": 0.5
+    },
+    {
+      "id": "activation_svd_k_0.25",
+      "method": "activation_svd",
+      "target": "k",
+      "budget": 0.25
+    },
+    {
+      "id": "activation_svd_k_0.125",
+      "method": "activation_svd",
+      "target": "k",
+      "budget": 0.125
+    },
+    {
+      "id": "activation_svd_qk_0.75",
+      "method": "activation_svd",
+      "target": "qk",
+      "budget": 0.75
+    },
+    {
+      "id": "activation_svd_qk_0.5",
+      "method": "activation_svd",
+      "target": "qk",
+      "budget": 0.5
+    },
+    {
+      "id": "activation_svd_qk_0.25",
+      "method": "activation_svd",
+      "target": "qk",
+      "budget": 0.25
+    },
+    {
+      "id": "activation_svd_qk_0.125",
+      "method": "activation_svd",
+      "target": "qk",
+      "budget": 0.125
+    },
+    {
+      "id": "haar_q_0.75",
+      "method": "haar",
+      "target": "q",
+      "budget": 0.75
+    },
+    {
+      "id": "haar_q_0.5",
+      "method": "haar",
+      "target": "q",
+      "budget": 0.5
+    },
+    {
+      "id": "haar_q_0.25",
+      "method": "haar",
+      "target": "q",
+      "budget": 0.25
+    },
+    {
+      "id": "haar_q_0.125",
+      "method": "haar",
+      "target": "q",
+      "budget": 0.125
+    },
+    {
+      "id": "haar_k_0.75",
+      "method": "haar",
+      "target": "k",
+      "budget": 0.75
+    },
+    {
+      "id": "haar_k_0.5",
+      "method": "haar",
+      "target": "k",
+      "budget": 0.5
+    },
+    {
+      "id": "haar_k_0.25",
+      "method": "haar",
+      "target": "k",
+      "budget": 0.25
+    },
+    {
+      "id": "haar_k_0.125",
+      "method": "haar",
+      "target": "k",
+      "budget": 0.125
+    },
+    {
+      "id": "haar_qk_0.75",
+      "method": "haar",
+      "target": "qk",
+      "budget": 0.75
+    },
+    {
+      "id": "haar_qk_0.5",
+      "method": "haar",
+      "target": "qk",
+      "budget": 0.5
+    },
+    {
+      "id": "haar_qk_0.25",
+      "method": "haar",
+      "target": "qk",
+      "budget": 0.25
+    },
+    {
+      "id": "haar_qk_0.125",
+      "method": "haar",
+      "target": "qk",
+      "budget": 0.125
+    },
+    {
+      "id": "knots_q_0.75",
+      "method": "knots",
+      "target": "q",
+      "budget": 0.75
+    },
+    {
+      "id": "knots_q_0.5",
+      "method": "knots",
+      "target": "q",
+      "budget": 0.5
+    },
+    {
+      "id": "knots_q_0.25",
+      "method": "knots",
+      "target": "q",
+      "budget": 0.25
+    },
+    {
+      "id": "knots_q_0.125",
+      "method": "knots",
+      "target": "q",
+      "budget": 0.125
+    },
+    {
+      "id": "knots_k_0.75",
+      "method": "knots",
+      "target": "k",
+      "budget": 0.75
+    },
+    {
+      "id": "knots_k_0.5",
+      "method": "knots",
+      "target": "k",
+      "budget": 0.5
+    },
+    {
+      "id": "knots_k_0.25",
+      "method": "knots",
+      "target": "k",
+      "budget": 0.25
+    },
+    {
+      "id": "knots_k_0.125",
+      "method": "knots",
+      "target": "k",
+      "budget": 0.125
+    },
+    {
+      "id": "knots_qk_0.75",
+      "method": "knots",
+      "target": "qk",
+      "budget": 0.75
+    },
+    {
+      "id": "knots_qk_0.5",
+      "method": "knots",
+      "target": "qk",
+      "budget": 0.5
+    },
+    {
+      "id": "knots_qk_0.25",
+      "method": "knots",
+      "target": "qk",
+      "budget": 0.25
+    },
+    {
+      "id": "knots_qk_0.125",
+      "method": "knots",
+      "target": "qk",
+      "budget": 0.125
+    },
+    {
+      "id": "joint_svd_0.75",
+      "method": "joint_svd",
+      "budget": 0.75
+    },
+    {
+      "id": "joint_svd_0.5",
+      "method": "joint_svd",
+      "budget": 0.5
+    },
+    {
+      "id": "joint_svd_0.25",
+      "method": "joint_svd",
+      "budget": 0.25
+    },
+    {
+      "id": "joint_svd_0.125",
+      "method": "joint_svd",
+      "budget": 0.125
+    },
+    {
+      "id": "joint_activation_svd_0.75",
+      "method": "joint_activation_svd",
+      "budget": 0.75
+    },
+    {
+      "id": "joint_activation_svd_0.5",
+      "method": "joint_activation_svd",
+      "budget": 0.5
+    },
+    {
+      "id": "joint_activation_svd_0.25",
+      "method": "joint_activation_svd",
+      "budget": 0.25
+    },
+    {
+      "id": "joint_activation_svd_0.125",
+      "method": "joint_activation_svd",
+      "budget": 0.125
+    },
+    {
+      "id": "mlp_importance_12",
+      "method": "mlp_groups",
+      "groups": 12,
+      "ordering": "importance"
+    },
+    {
+      "id": "mlp_importance_8",
+      "method": "mlp_groups",
+      "groups": 8,
+      "ordering": "importance"
+    },
+    {
+      "id": "mlp_importance_4",
+      "method": "mlp_groups",
+      "groups": 4,
+      "ordering": "importance"
+    },
+    {
+      "id": "mlp_importance_2",
+      "method": "mlp_groups",
+      "groups": 2,
+      "ordering": "importance"
+    },
+    {
+      "id": "mlp_contiguous_12",
+      "method": "mlp_groups",
+      "groups": 12,
+      "ordering": "contiguous"
+    },
+    {
+      "id": "mlp_contiguous_8",
+      "method": "mlp_groups",
+      "groups": 8,
+      "ordering": "contiguous"
+    },
+    {
+      "id": "mlp_contiguous_4",
+      "method": "mlp_groups",
+      "groups": 4,
+      "ordering": "contiguous"
+    },
+    {
+      "id": "mlp_contiguous_2",
+      "method": "mlp_groups",
+      "groups": 2,
+      "ordering": "contiguous"
+    },
+    {
+      "id": "mlp_random_0_12",
+      "method": "mlp_groups",
+      "groups": 12,
+      "ordering": "random_0"
+    },
+    {
+      "id": "mlp_random_0_8",
+      "method": "mlp_groups",
+      "groups": 8,
+      "ordering": "random_0"
+    },
+    {
+      "id": "mlp_random_0_4",
+      "method": "mlp_groups",
+      "groups": 4,
+      "ordering": "random_0"
+    },
+    {
+      "id": "mlp_random_0_2",
+      "method": "mlp_groups",
+      "groups": 2,
+      "ordering": "random_0"
+    },
+    {
+      "id": "mlp_random_1_12",
+      "method": "mlp_groups",
+      "groups": 12,
+      "ordering": "random_1"
+    },
+    {
+      "id": "mlp_random_1_8",
+      "method": "mlp_groups",
+      "groups": 8,
+      "ordering": "random_1"
+    },
+    {
+      "id": "mlp_random_1_4",
+      "method": "mlp_groups",
+      "groups": 4,
+      "ordering": "random_1"
+    },
+    {
+      "id": "mlp_random_1_2",
+      "method": "mlp_groups",
+      "groups": 2,
+      "ordering": "random_1"
+    },
+    {
+      "id": "mlp_random_2_12",
+      "method": "mlp_groups",
+      "groups": 12,
+      "ordering": "random_2"
+    },
+    {
+      "id": "mlp_random_2_8",
+      "method": "mlp_groups",
+      "groups": 8,
+      "ordering": "random_2"
+    },
+    {
+      "id": "mlp_random_2_4",
+      "method": "mlp_groups",
+      "groups": 4,
+      "ordering": "random_2"
+    },
+    {
+      "id": "mlp_random_2_2",
+      "method": "mlp_groups",
+      "groups": 2,
+      "ordering": "random_2"
+    },
+    {
+      "id": "mlp_skip",
+      "method": "mlp_skip"
+    }
+  ],
+  "model_manifest": {
+    "repository": "HuggingFaceTB/SmolLM2-135M",
+    "revision": "93efa2f097d58c2a74874c7e644dbc9b0cee75a2",
+    "files": {
+      "config.json": {
+        "sha256": "1d556eab73b69c7f11f64c557a2f9c6f440bd4c6b89bb2584a6b498c92603843",
+        "bytes": 704
+      },
+      "generation_config.json": {
+        "sha256": "2056c988e990b0d13670f63f2f3b87b3b6d07edaf7a3416998ba27dab2d8a059",
+        "bytes": 111
+      },
+      "tokenizer.json": {
+        "sha256": "9ca9acddb6525a194ec8ac7a87f24fbba7232a9a15ffa1af0c1224fcd888e47c",
+        "bytes": 2104556
+      },
+      "tokenizer_config.json": {
+        "sha256": "4bb9af56a342753d39374f4016a16574cab299fe088e896f425ce3c433f61424",
+        "bytes": 3658
+      },
+      "special_tokens_map.json": {
+        "sha256": "e786b595b9a23148bf1630df78d9037a048ea671e48bfd3549a1e3c233742bb3",
+        "bytes": 831
+      },
+      "model.safetensors": {
+        "sha256": "80521b40281d6ce74e35c9282c22539e75aa0ac8578892b2a59955ef78d55da1",
+        "bytes": 269060552
+      }
+    }
+  }
+}

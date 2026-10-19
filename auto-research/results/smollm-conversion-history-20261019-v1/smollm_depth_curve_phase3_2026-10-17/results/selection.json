@@ -1,0 +1,17 @@
+{
+  "selection_split": "validation only",
+  "passed_gate": false,
+  "selected_curve": {
+    "id": "curve_mixed_n1",
+    "kind": "student",
+    "student": "curve_mixed",
+    "steps": 1
+  },
+  "combined": {
+    "id": "selected_curve_plus_shared_qk",
+    "kind": "combined",
+    "student": "curve_mixed",
+    "steps": 1
+  },
+  "reason": "No curve passed; lowest-KL failed-gate representative."
+}

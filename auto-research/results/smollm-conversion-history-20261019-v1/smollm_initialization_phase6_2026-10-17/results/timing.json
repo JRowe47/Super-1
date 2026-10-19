@@ -1,0 +1,254 @@
+{
+  "interpolated": {
+    "native_blocks": {
+      "original_median_ms": 220.56431849978253,
+      "candidate_median_ms": 202.07326699892292,
+      "median_paired_ratio": 0.9307820282537959,
+      "pairs_ms": [
+        {
+          "original": 214.62529900054506,
+          "candidate": 199.16591299988795
+        },
+        {
+          "candidate": 199.3898660002742,
+          "original": 218.7475769987941
+        },
+        {
+          "original": 226.63938900041103,
+          "candidate": 201.29268999880878
+        },
+        {
+          "candidate": 198.0780149988277,
+          "original": 211.72253700024157
+        },
+        {
+          "original": 209.68142699894088,
+          "candidate": 196.23829400006798
+        },
+        {
+          "candidate": 209.4013329988229,
+          "original": 224.29599800125288
+        },
+        {
+          "original": 281.4643059991795,
+          "candidate": 200.3517989996908
+        },
+        {
+          "candidate": 202.93050300097093,
+          "original": 220.30399899995246
+        },
+        {
+          "original": 214.85254999970493,
+          "candidate": 221.58623399991484
+        },
+        {
+          "candidate": 212.33715400012443,
+          "original": 221.35177800009842
+        },
+        {
+          "original": 226.60120300133713,
+          "candidate": 202.85384399903705
+        },
+        {
+          "candidate": 206.20858800066344,
+          "original": 220.8246379996126
+        }
+      ],
+      "warmup_pairs": 2,
+      "recorded_pairs": 12,
+      "context": 128,
+      "batch": 1,
+      "threads": 4,
+      "precision": "FP32",
+      "scope": "CPU prefill, excludes curve fitting and native model construction"
+    },
+    "streamed_curve": {
+      "original_median_ms": 220.75327550010115,
+      "candidate_median_ms": 237.67640000005485,
+      "median_paired_ratio": 1.0593636869573206,
+      "pairs_ms": [
+        {
+          "original": 241.46467999889865,
+          "candidate": 267.473907000749
+        },
+        {
+          "candidate": 245.6845010001416,
+          "original": 215.22616599941102
+        },
+        {
+          "original": 230.49691599953803,
+          "candidate": 244.68739599979017
+        },
+        {
+          "candidate": 243.0660270001681,
+          "original": 236.54356999941228
+        },
+        {
+          "original": 220.0809890000528,
+          "candidate": 232.2867729999416
+        },
+        {
+          "candidate": 261.7149440011417,
+          "original": 218.21093099970312
+        },
+        {
+          "original": 215.30975099994976,
+          "candidate": 227.61742600050638
+        },
+        {
+          "candidate": 225.39148299983935,
+          "original": 311.82169299972884
+        },
+        {
+          "original": 241.63956200027314,
+          "candidate": 228.47754800022813
+        },
+        {
+          "candidate": 262.69484300064505,
+          "original": 213.21809600158304
+        },
+        {
+          "original": 214.07026599990786,
+          "candidate": 230.28563399930135
+        },
+        {
+          "candidate": 229.13823500130093,
+          "original": 221.4255620001495
+        }
+      ],
+      "warmup_pairs": 2,
+      "recorded_pairs": 12,
+      "context": 128,
+      "batch": 1,
+      "threads": 4,
+      "precision": "FP32",
+      "scope": "CPU prefill, excludes curve fitting and native model construction"
+    }
+  },
+  "retained": {
+    "native_blocks": {
+      "original_median_ms": 226.1184349990799,
+      "candidate_median_ms": 214.57236200058105,
+      "median_paired_ratio": 0.9545523018652593,
+      "pairs_ms": [
+        {
+          "original": 269.3185820007784,
+          "candidate": 205.09770999888133
+        },
+        {
+          "candidate": 200.46647600065626,
+          "original": 215.648933999546
+        },
+        {
+          "original": 220.9267140005977,
+          "candidate": 210.56034399953205
+        },
+        {
+          "candidate": 241.51365000034275,
+          "original": 227.6188470004854
+        },
+        {
+          "original": 225.27791399988928,
+          "candidate": 249.39082099990628
+        },
+        {
+          "candidate": 260.8520470002986,
+          "original": 231.89175600055023
+        },
+        {
+          "original": 222.41009900062636,
+          "candidate": 214.91607000098156
+        },
+        {
+          "candidate": 215.97988400026225,
+          "original": 225.91404399827297
+        },
+        {
+          "original": 269.8953309991339,
+          "candidate": 214.22865400018054
+        },
+        {
+          "candidate": 238.61608000152046,
+          "original": 238.59041200012143
+        },
+        {
+          "original": 226.32282599988685,
+          "candidate": 208.62972199938667
+        },
+        {
+          "candidate": 209.34505100012757,
+          "original": 220.23463900040952
+        }
+      ],
+      "warmup_pairs": 2,
+      "recorded_pairs": 12,
+      "context": 128,
+      "batch": 1,
+      "threads": 4,
+      "precision": "FP32",
+      "scope": "CPU prefill, excludes curve fitting and native model construction"
+    },
+    "streamed_curve": {
+      "original_median_ms": 224.3464524990486,
+      "candidate_median_ms": 232.3987744985061,
+      "median_paired_ratio": 1.0335279090200724,
+      "pairs_ms": [
+        {
+          "original": 213.8229419997515,
+          "candidate": 233.13283199968282
+        },
+        {
+          "candidate": 225.3033429988136,
+          "original": 220.84856499895977
+        },
+        {
+          "original": 210.47282300060033,
+          "candidate": 232.29612299837754
+        },
+        {
+          "candidate": 228.31299700010277,
+          "original": 225.86847900129214
+        },
+        {
+          "original": 233.33142500086979,
+          "candidate": 240.5338849985128
+        },
+        {
+          "candidate": 227.92136799944274,
+          "original": 243.5524329994223
+        },
+        {
+          "original": 217.31419400020968,
+          "candidate": 225.19074599949818
+        },
+        {
+          "candidate": 287.9761429994687,
+          "original": 377.62551899868413
+        },
+        {
+          "original": 219.90624499994738,
+          "candidate": 236.80318299921055
+        },
+        {
+          "candidate": 252.85272400105896,
+          "original": 224.31137099920306
+        },
+        {
+          "original": 246.78336000033596,
+          "candidate": 230.9129370005394
+        },
+        {
+          "candidate": 232.50142599863466,
+          "original": 224.38153399889416
+        }
+      ],
+      "warmup_pairs": 2,
+      "recorded_pairs": 12,
+      "context": 128,
+      "batch": 1,
+      "threads": 4,
+      "precision": "FP32",
+      "scope": "CPU prefill, excludes curve fitting and native model construction"
+    }
+  }
+}

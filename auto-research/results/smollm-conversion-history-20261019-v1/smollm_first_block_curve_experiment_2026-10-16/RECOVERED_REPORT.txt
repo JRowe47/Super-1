@@ -1,0 +1,410 @@
+Plain-text extraction of separately saved smollm_first_block_report.html. Figures/layout omitted. Source/checkpoint archive incomplete.
+
+
+
+
+
+
+
+
+
+SmolLM2 first-block curve experiment
+
+
+
+
+
+GEOMETRIC SELF ATTENTION · 16 OCTOBER 2026 · EXPERIMENT 01
+
+
+SmolLM2: one block, exact curve representation
+
+NUMERICAL EQUIVALENCE PASSED
+
+
+The first transformer block now reads all of its parameters from a single cubic curve. The other 29 blocks remain unchanged. Every tested logit matches the original bit for bit.
+
+
+
+
+What this establishes
+
+
+A lossless conversion and executable inverse are working for a pretrained language model. Seven projection matrices and two RMSNorm vectors map to one curve with 
+3,540,096 scalar knots
+. The saved curve was reloaded before constructing the tested candidate.
+
+
+
+Scope:
+ this is a parameter representation. Attention, RoPE, normalization, feed-forward nonlinearities, and residual connections retain their original computation. Curve position indexes stored parameter entries; it does not index depth or time.
+
+
+The checkpoint is 
+HuggingFaceTB/SmolLM2-135M
+, revision 
+93efa2f097d58c2a74874c7e644dbc9b0cee75a2
+. Its 134,515,008 learned parameters retain all their information. Both models were evaluated in FP32, widening the source BF16 values exactly. No training or quantization was performed.
+
+
+Equivalence checks
+
+
+
+
+
+Check
+
+Coverage
+
+Observed result
+
+
+
+
+
+
+First-block parameter reconstruction
+
+9 tensors; 3,540,096 values
+
+Bitwise identical; hashes match
+
+
+
+
+Unconverted parameters
+
+263 tensors; 130,974,912 values
+
+Bitwise unchanged
+
+
+
+
+Arbitrary hidden-state inputs
+
+20 cases; scales 0–10; lengths 1–128
+
+Zero output error
+
+
+
+
+Full-model logits
+
+13 cases; 907 positions including padding; sequences up to 512 tokens
+
+Zero error, including 64-row streaming
+
+
+
+
+KV-cache incremental decoding
+
+24 token steps
+
+Bitwise-identical logits
+
+
+
+
+Greedy generation
+
+3 continuations, 40 tokens each
+
+Identical token sequences
+
+
+
+
+Independent noninteger interpolation
+
+9,000 coordinates; SciPy FP64 reference
+
+Max FP32 difference 2.53e-07
+
+
+
+
+
+
+
+Late-position block tests reach position 8,191 using short sequences; they are not 8,192-token full-model tests. Eight hand-authored regression texts have mean next-token NLL 2.908673263 for both models over 205 predicted tokens. This is a sanity check, not a language-quality benchmark.
+
+
+The curve participates in computation
+
+
+Moving the query-projection sampling coordinates by +0.125 of one knot interval, with all other tensors unchanged, produces a maximum first-block output change of 
+0.256037
+ and a maximum logit change of 
+0.136566
+. Returning to the original integer coordinates restores bitwise equality. Argmax tokens stayed unchanged on this particular prompt.
+
+
+This control demonstrates that the curve evaluation is active. It does not demonstrate a useful semantic direction or better model quality.
+
+
+Why the conversion is exact
+
+Cθ(j) = θ[j]                       at every integer knot j
+R(Cθ) = θ                          recover original tensors
+Fcurve(x, cache) = Foriginal(x, cache)   preserve the computation graph
+
+
+The interpolant is the C1 uniform Catmull–Rom cubic with implicit central-difference slopes and clamped endpoint neighbors. Once that rule is fixed, the parameter vector and its curve have a one-to-one correspondence. Off-knot geometry is a chosen extension. Other interpolation rules could pass through the same stored values.
+
+
+
+All converted tensor shapes and round-trip results
+
+
+
+
+
+Tensor
+
+Shape
+
+Max error
+
+Hashes
+
+
+
+
+
+self_attn.q_proj.weight
+
+576 × 576
+
+0
+
+Identical
+
+
+
+self_attn.k_proj.weight
+
+192 × 576
+
+0
+
+Identical
+
+
+
+self_attn.v_proj.weight
+
+192 × 576
+
+0
+
+Identical
+
+
+
+self_attn.o_proj.weight
+
+576 × 576
+
+0
+
+Identical
+
+
+
+mlp.gate_proj.weight
+
+1536 × 576
+
+0
+
+Identical
+
+
+
+mlp.up_proj.weight
+
+1536 × 576
+
+0
+
+Identical
+
+
+
+mlp.down_proj.weight
+
+576 × 1536
+
+0
+
+Identical
+
+
+
+input_layernorm.weight
+
+576
+
+0
+
+Identical
+
+
+
+post_attention_layernorm.weight
+
+576
+
+0
+
+Identical
+
+
+
+
+
+
+
+Cost and timing
+
+
+The curve stores 
+14.16 MB
+ of FP32 values, equal to the original block in FP32. The original BF16 values occupy 7.08 MB. There is no compression. At exact knots, evaluating the cardinal basis simplifies to a direct view into the ordinate array. Matrix multiplication still performs the projection work.
+
+
+
+
+
+
+CPU measurement, batch 1 × 128 tokens
+
+Original median
+
+Curve median
+
+
+
+
+
+
+First block
+
+6.74 ms
+
+6.73 ms
+
+
+
+
+Full model
+
+224.67 ms
+
+234.58 ms
+
+
+
+
+First block, 64-row streamed curve
+
+—
+
+11.58 ms
+
+
+
+
+
+
+
+Four CPU threads, eager attention, FP32. The first two rows use 16 alternating-order pairs after warmup. Median paired curve/original ratios are 1.021 for the block and 1.022 for the full model, with wide run-to-run variation. These descriptive timings establish no speed advantage. The earlier sequential timing is preserved in the raw results but superseded by this paired follow-up.
+
+
+Generated samples
+
+These are unedited outputs from the small base model. They illustrate preserved behavior, including its repetition and factual limitations.
+
+
+The purpose of a scientific experiment is
+
+ to test a hypothesis. A hypothesis is a statement that is made to explain a phenomenon. A hypothesis is a statement that is made to explain a phenomenon. A hypothesis is a statement that is made to
+
+Original and curve: identical 40 generated tokens.
+
+
+
+A network switch and a router differ because
+
+ they are different types of switches. A switch is a device that can be used to connect two or more networks together. A router is a device that is used to connect two or more networks together.
+
+Original and curve: identical 40 generated tokens.
+
+
+
+The old observatory stood on a hill. One evening,
+
+ as the sun was setting, the old man, who was a tall, thin man, stood on the hill, and looked out of the window. He saw the moon, and the stars, and
+
+Original and curve: identical 40 generated tokens.
+
+
+
+Limits and next useful question
+
+
+The construction retains every degree of freedom. Scalar flattening is arbitrary, so visual smoothness between neighboring coefficients is not evidence of a low-dimensional learned structure. This experiment does not establish improved quality, faster inference, smaller memory, trainability, or continuous-depth behavior.
+
+
+The exact conversion is now a control for testing better coordinate choices and the functional effect of curve edits, still within the first block. TinyLlama was not modified or downloaded in this experiment.
+
+
+Reproduce and inspect
+
+The companion archive includes source code, the saved first-block curve, hashes, both raw result files, this report, and the scientific plot. It excludes the full reference checkpoint, which the pinned downloader can retrieve.
+
+
+python -m pip install -r requirements.txt
+python download_model.py
+python run_experiment.py --threads 4
+python validate_interpolation_and_timing.py
+python build_report.py
+
+
+Python 3.12.14; PyTorch 2.5.1+cpu; Transformers 4.46.3. Core numerical experiment elapsed 32.23 seconds, excluding download, dependency setup, and the independent follow-up. Peak test-process RSS was 2.62 GiB while holding both models and intermediate outputs.
+
+
+Source references
+
+
+
+
+Official SmolLM2-135M model card
+
+
+
+
+Pinned model configuration
+
+
+
+
+Transformers 4.46.3 reference Llama implementation
+
+
+
+
+Independent cubic-Hermite reference
+
+
+
+
+Project context was read from the supplied October 15 archive. It predates the TinyLlama conversion; no prior conversion implementation was available. This experiment implements the first-block exact-equivalence scope agreed in this conversation.
+
+
+
+

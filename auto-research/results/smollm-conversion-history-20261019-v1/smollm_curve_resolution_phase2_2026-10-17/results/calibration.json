@@ -1,0 +1,9 @@
+{
+  "calibration_tokens": 16384,
+  "ridge": 2.4263675721286504e-07,
+  "ridge_relative_to_mean_diagonal": 0.0001,
+  "activation_weighting": "Q/K input second moment after input RMSNorm; uncentered covariance plus ridge.",
+  "importance_score": "E[gated_activation_j^2] * ||down_projection_column_j||_2^2; individual contribution energy, omitting cross-neuron correlations.",
+  "groups": 16,
+  "neurons_per_group": 96
+}

@@ -1,0 +1,8 @@
+{
+  "python": "3.12.14",
+  "torch": "2.5.1+cpu",
+  "threads": 4,
+  "precision": "FP32",
+  "device": "CPU",
+  "max_rss_kib": 2804044
+}

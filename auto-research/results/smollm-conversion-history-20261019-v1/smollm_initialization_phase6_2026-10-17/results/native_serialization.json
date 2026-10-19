@@ -1,0 +1,18 @@
+{
+  "interpolated": {
+    "saved_model_reload_max_logit_difference": 0.0,
+    "public_curve_loader_max_logit_difference": 5.53131103515625e-05,
+    "decoder_blocks": 28,
+    "input_tokens": 32,
+    "passed": true,
+    "format": "Ordinary Transformers safetensors save_pretrained and from_pretrained"
+  },
+  "retained": {
+    "saved_model_reload_max_logit_difference": 0.0,
+    "public_curve_loader_max_logit_difference": 9.34600830078125e-05,
+    "decoder_blocks": 28,
+    "input_tokens": 32,
+    "passed": true,
+    "format": "Ordinary Transformers safetensors save_pretrained and from_pretrained"
+  }
+}

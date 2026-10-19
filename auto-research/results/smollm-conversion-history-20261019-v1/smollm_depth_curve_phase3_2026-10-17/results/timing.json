@@ -1,0 +1,1343 @@
+[
+  {
+    "configuration": {
+      "id": "curve_mixed_n1",
+      "kind": "student",
+      "student": "curve_mixed",
+      "steps": 1
+    },
+    "materialized": false,
+    "accounting": {
+      "student_trainable_values": 1327104,
+      "spline_knots": 4,
+      "mlp_width": 192,
+      "field_evaluations": 1,
+      "block_coefficient_values": 2212992,
+      "block_projection_macs_per_token": 1216512,
+      "block_projection_mac_fraction_saved": 0.65625,
+      "sampled_matrix_cache_values": 0,
+      "streamed_weight_assembly_macs_per_forward": 1327104,
+      "norms_per_mlp": 1,
+      "attention_evaluations": 1,
+      "scope": "Only block 0; learned linear MACs exclude attention scores, normalizations, activation functions, residual adds and spline assembly."
+    },
+    "measurements": {
+      "block": {
+        "original_median_ms": 8.002038999620709,
+        "candidate_median_ms": 4.31457949889591,
+        "median_paired_ratio": 0.5306167871145644,
+        "pairs_ms": [
+          {
+            "original": 8.043138001085026,
+            "candidate": 4.438657997525297
+          },
+          {
+            "candidate": 4.033196000818862,
+            "original": 7.902539997303393
+          },
+          {
+            "original": 8.023839000088628,
+            "candidate": 4.397276999952737
+          },
+          {
+            "candidate": 4.082670002389932,
+            "original": 7.927066002594074
+          },
+          {
+            "original": 8.618802999990294,
+            "candidate": 4.50872200235608
+          },
+          {
+            "candidate": 4.262877999281045,
+            "original": 8.092382002359955
+          },
+          {
+            "original": 8.169566001015482,
+            "candidate": 4.366280998510774
+          },
+          {
+            "candidate": 4.008560001238948,
+            "original": 7.862120000936557
+          },
+          {
+            "original": 7.980238999152789,
+            "candidate": 4.4126729990239255
+          },
+          {
+            "candidate": 4.082895000465214,
+            "original": 7.350830001087161
+          },
+          {
+            "original": 8.144046001689276,
+            "candidate": 4.460534000827465
+          },
+          {
+            "candidate": 4.022854998765979,
+            "original": 7.927564998681191
+          }
+        ]
+      },
+      "full_model": {
+        "original_median_ms": 305.82783150020987,
+        "candidate_median_ms": 298.5461234984541,
+        "median_paired_ratio": 0.9950460772774823,
+        "pairs_ms": [
+          {
+            "original": 309.226025998214,
+            "candidate": 483.76211000140756
+          },
+          {
+            "candidate": 400.3297009985545,
+            "original": 379.4128650006314
+          },
+          {
+            "original": 306.89839600017876,
+            "candidate": 316.4455229998566
+          },
+          {
+            "candidate": 293.303692000336,
+            "original": 300.7633730012458
+          },
+          {
+            "original": 354.0277040010551,
+            "candidate": 285.27637499792036
+          },
+          {
+            "candidate": 301.50802899879636,
+            "original": 300.59271099889884
+          },
+          {
+            "original": 302.5943909997295,
+            "candidate": 294.15980399789987
+          },
+          {
+            "candidate": 291.2572259992885,
+            "original": 288.3927950024372
+          },
+          {
+            "original": 339.60446499986574,
+            "candidate": 296.3377259984554
+          },
+          {
+            "candidate": 292.6647029999003,
+            "original": 344.7043569976813
+          },
+          {
+            "original": 304.757267000241,
+            "candidate": 379.4300640001893
+          },
+          {
+            "candidate": 300.7545209984528,
+            "original": 304.70128299930366
+          }
+        ]
+      }
+    }
+  },
+  {
+    "configuration": {
+      "id": "curve_mixed_n1",
+      "kind": "student",
+      "student": "curve_mixed",
+      "steps": 1
+    },
+    "materialized": true,
+    "accounting": {
+      "student_trainable_values": 1327104,
+      "spline_knots": 4,
+      "mlp_width": 192,
+      "field_evaluations": 1,
+      "block_coefficient_values": 2212992,
+      "block_projection_macs_per_token": 1216512,
+      "block_projection_mac_fraction_saved": 0.65625,
+      "sampled_matrix_cache_values": 331776,
+      "streamed_weight_assembly_macs_per_forward": 0,
+      "norms_per_mlp": 1,
+      "attention_evaluations": 1,
+      "scope": "Only block 0; learned linear MACs exclude attention scores, normalizations, activation functions, residual adds and spline assembly."
+    },
+    "measurements": {
+      "block": {
+        "original_median_ms": 7.896820501628099,
+        "candidate_median_ms": 3.9371940001728944,
+        "median_paired_ratio": 0.49081523204746114,
+        "pairs_ms": [
+          {
+            "original": 7.8701710008317605,
+            "candidate": 3.9440489999833517
+          },
+          {
+            "candidate": 3.930339000362437,
+            "original": 7.9234700024244376
+          },
+          {
+            "original": 8.073862998571713,
+            "candidate": 3.966232001403114
+          },
+          {
+            "candidate": 3.6066789980395697,
+            "original": 7.770473999698879
+          },
+          {
+            "original": 8.117698002024554,
+            "candidate": 3.9808139990782365
+          },
+          {
+            "candidate": 3.568382002413273,
+            "original": 7.716983000136679
+          },
+          {
+            "original": 7.865043997298926,
+            "candidate": 3.9486659989051986
+          },
+          {
+            "candidate": 3.5334000021975953,
+            "original": 7.7490709991252515
+          },
+          {
+            "original": 8.094774002529448,
+            "candidate": 4.036464997625444
+          },
+          {
+            "candidate": 3.678124998259591,
+            "original": 7.859945999371121
+          },
+          {
+            "original": 8.535808003216516,
+            "candidate": 4.218976999254664
+          },
+          {
+            "candidate": 3.82068599719787,
+            "original": 7.9993930012278724
+          }
+        ]
+      },
+      "full_model": {
+        "original_median_ms": 305.32565800058364,
+        "candidate_median_ms": 308.0521690008027,
+        "median_paired_ratio": 0.995712882210395,
+        "pairs_ms": [
+          {
+            "original": 304.8545909987297,
+            "candidate": 334.11981999961426
+          },
+          {
+            "candidate": 297.3730710000382,
+            "original": 340.52501400219626
+          },
+          {
+            "original": 447.3193000012543,
+            "candidate": 458.9626679990033
+          },
+          {
+            "candidate": 324.4385029975092,
+            "original": 299.5327360004012
+          },
+          {
+            "original": 305.7967250024376,
+            "candidate": 403.55229300257633
+          },
+          {
+            "candidate": 379.66744499863125,
+            "original": 378.4965890008607
+          },
+          {
+            "original": 334.40957399943727,
+            "candidate": 312.56315800055745
+          },
+          {
+            "candidate": 299.7823559999233,
+            "original": 303.59960699934163
+          },
+          {
+            "original": 302.0110020006541,
+            "candidate": 298.487235999346
+          },
+          {
+            "candidate": 303.5411800010479,
+            "original": 345.0797559999046
+          },
+          {
+            "original": 288.3739390017581,
+            "candidate": 301.1536800004251
+          },
+          {
+            "candidate": 292.9173670017917,
+            "original": 298.068805001094
+          }
+        ]
+      }
+    }
+  },
+  {
+    "configuration": {
+      "id": "curve_mixed_n2",
+      "kind": "student",
+      "student": "curve_mixed",
+      "steps": 2
+    },
+    "materialized": false,
+    "accounting": {
+      "student_trainable_values": 1327104,
+      "spline_knots": 4,
+      "mlp_width": 192,
+      "field_evaluations": 2,
+      "block_coefficient_values": 2212992,
+      "block_projection_macs_per_token": 1548288,
+      "block_projection_mac_fraction_saved": 0.5625,
+      "sampled_matrix_cache_values": 0,
+      "streamed_weight_assembly_macs_per_forward": 2654208,
+      "norms_per_mlp": 2,
+      "attention_evaluations": 1,
+      "scope": "Only block 0; learned linear MACs exclude attention scores, normalizations, activation functions, residual adds and spline assembly."
+    },
+    "measurements": {
+      "block": {
+        "original_median_ms": 7.936288500786759,
+        "candidate_median_ms": 5.357769499823917,
+        "median_paired_ratio": 0.6580969569054378,
+        "pairs_ms": [
+          {
+            "original": 8.307718999276403,
+            "candidate": 6.643261000135681
+          },
+          {
+            "candidate": 5.449069998576306,
+            "original": 8.118599002045812
+          },
+          {
+            "original": 8.33864499873016,
+            "candidate": 5.403422001108993
+          },
+          {
+            "candidate": 5.096126998978434,
+            "original": 7.88242799899308
+          },
+          {
+            "original": 7.94535200111568,
+            "candidate": 5.610548996628495
+          },
+          {
+            "candidate": 5.006112998671597,
+            "original": 7.899444000941003
+          },
+          {
+            "original": 8.056636001128936,
+            "candidate": 5.42323099944042
+          },
+          {
+            "candidate": 5.116416999953799,
+            "original": 7.877181000367273
+          },
+          {
+            "original": 7.96813499982818,
+            "candidate": 5.312116998538841
+          },
+          {
+            "candidate": 4.967747001501266,
+            "original": 7.829940001101932
+          },
+          {
+            "original": 7.927225000457838,
+            "candidate": 5.521407998458017
+          },
+          {
+            "candidate": 5.013485002564266,
+            "original": 7.8957180012366734
+          }
+        ]
+      },
+      "full_model": {
+        "original_median_ms": 304.00594499951694,
+        "candidate_median_ms": 305.32075749943033,
+        "median_paired_ratio": 0.9945241404498641,
+        "pairs_ms": [
+          {
+            "original": 304.15892399832956,
+            "candidate": 305.6728199990175
+          },
+          {
+            "candidate": 304.96869499984314,
+            "original": 312.5082000005932
+          },
+          {
+            "original": 306.23042499792064,
+            "candidate": 310.34335699951043
+          },
+          {
+            "candidate": 304.0093279996654,
+            "original": 306.90217099981965
+          },
+          {
+            "original": 335.81041599973105,
+            "candidate": 311.05949800257804
+          },
+          {
+            "candidate": 323.37932500013267,
+            "original": 345.9091799995804
+          },
+          {
+            "original": 303.8529660007043,
+            "candidate": 361.9187329968554
+          },
+          {
+            "candidate": 328.31756499945186,
+            "original": 292.10465800133534
+          },
+          {
+            "original": 281.6197700012708,
+            "candidate": 243.27363100019284
+          },
+          {
+            "candidate": 273.38686700022663,
+            "original": 273.8046310005302
+          },
+          {
+            "original": 296.4566019982158,
+            "candidate": 248.07798000256298
+          },
+          {
+            "candidate": 238.81044700101484,
+            "original": 221.16384899709374
+          }
+        ]
+      }
+    }
+  },
+  {
+    "configuration": {
+      "id": "curve_mixed_n2",
+      "kind": "student",
+      "student": "curve_mixed",
+      "steps": 2
+    },
+    "materialized": true,
+    "accounting": {
+      "student_trainable_values": 1327104,
+      "spline_knots": 4,
+      "mlp_width": 192,
+      "field_evaluations": 2,
+      "block_coefficient_values": 2212992,
+      "block_projection_macs_per_token": 1548288,
+      "block_projection_mac_fraction_saved": 0.5625,
+      "sampled_matrix_cache_values": 663552,
+      "streamed_weight_assembly_macs_per_forward": 0,
+      "norms_per_mlp": 2,
+      "attention_evaluations": 1,
+      "scope": "Only block 0; learned linear MACs exclude attention scores, normalizations, activation functions, residual adds and spline assembly."
+    },
+    "measurements": {
+      "block": {
+        "original_median_ms": 9.162442500382895,
+        "candidate_median_ms": 6.06965100087109,
+        "median_paired_ratio": 0.6661622398539447,
+        "pairs_ms": [
+          {
+            "original": 8.011641002667602,
+            "candidate": 12.42617600291851
+          },
+          {
+            "candidate": 5.027806000725832,
+            "original": 7.550127000286011
+          },
+          {
+            "original": 8.075014000496594,
+            "candidate": 7.249550002597971
+          },
+          {
+            "candidate": 4.606942002283176,
+            "original": 8.078349001152674
+          },
+          {
+            "original": 7.490197000151966,
+            "candidate": 5.864561000635149
+          },
+          {
+            "candidate": 6.571786001586588,
+            "original": 9.324797996669076
+          },
+          {
+            "original": 9.41549299750477,
+            "candidate": 6.274495000980096
+          },
+          {
+            "candidate": 5.697127999155782,
+            "original": 9.45930800298811
+          },
+          {
+            "original": 9.814053002628498,
+            "candidate": 6.353722001222195
+          },
+          {
+            "candidate": 5.8648070007620845,
+            "original": 9.302444999775616
+          },
+          {
+            "original": 9.677931000624085,
+            "candidate": 6.527879999339348
+          },
+          {
+            "candidate": 5.738128998928005,
+            "original": 9.022440000990173
+          }
+        ]
+      },
+      "full_model": {
+        "original_median_ms": 315.74293250014307,
+        "candidate_median_ms": 302.3716694988252,
+        "median_paired_ratio": 0.9527774891659668,
+        "pairs_ms": [
+          {
+            "original": 312.59945099736797,
+            "candidate": 276.2715909993858
+          },
+          {
+            "candidate": 254.9628959968686,
+            "original": 333.31740599896875
+          },
+          {
+            "original": 318.8864140029182,
+            "candidate": 304.64595800003735
+          },
+          {
+            "candidate": 272.4776799987012,
+            "original": 306.44843299887725
+          },
+          {
+            "original": 340.03219599981094,
+            "candidate": 330.01326999874436
+          },
+          {
+            "candidate": 330.9254819978378,
+            "original": 307.33335499826353
+          },
+          {
+            "original": 335.38794400010374,
+            "candidate": 367.4936200004595
+          },
+          {
+            "candidate": 306.2989870013553,
+            "original": 350.10027999669546
+          },
+          {
+            "original": 362.3532990022795,
+            "candidate": 322.5609840010293
+          },
+          {
+            "candidate": 300.0973809976131,
+            "original": 303.92560600012075
+          },
+          {
+            "original": 297.2692349976569,
+            "candidate": 282.4687369975436
+          },
+          {
+            "candidate": 290.8507850006572,
+            "original": 295.6624529979308
+          }
+        ]
+      }
+    }
+  },
+  {
+    "configuration": {
+      "id": "curve_mixed_n4",
+      "kind": "student",
+      "student": "curve_mixed",
+      "steps": 4
+    },
+    "materialized": false,
+    "accounting": {
+      "student_trainable_values": 1327104,
+      "spline_knots": 4,
+      "mlp_width": 192,
+      "field_evaluations": 4,
+      "block_coefficient_values": 2212992,
+      "block_projection_macs_per_token": 2211840,
+      "block_projection_mac_fraction_saved": 0.375,
+      "sampled_matrix_cache_values": 0,
+      "streamed_weight_assembly_macs_per_forward": 5308416,
+      "norms_per_mlp": 4,
+      "attention_evaluations": 1,
+      "scope": "Only block 0; learned linear MACs exclude attention scores, normalizations, activation functions, residual adds and spline assembly."
+    },
+    "measurements": {
+      "block": {
+        "original_median_ms": 8.76835050075897,
+        "candidate_median_ms": 10.761931000160985,
+        "median_paired_ratio": 1.2070829218236971,
+        "pairs_ms": [
+          {
+            "original": 6.886409999424359,
+            "candidate": 10.667216000001645
+          },
+          {
+            "candidate": 10.856646000320325,
+            "original": 9.017799999128329
+          },
+          {
+            "original": 8.181009001418715,
+            "candidate": 9.901089997583767
+          },
+          {
+            "candidate": 8.659269002237124,
+            "original": 8.067170001595514
+          },
+          {
+            "original": 8.955075998528628,
+            "candidate": 9.962980999262072
+          },
+          {
+            "candidate": 8.42883700170205,
+            "original": 7.1543570011272095
+          },
+          {
+            "original": 7.639747000212083,
+            "candidate": 10.861021997698117
+          },
+          {
+            "candidate": 12.324874001933495,
+            "original": 8.727470001758775
+          },
+          {
+            "original": 11.446169999544509,
+            "candidate": 11.109630999271758
+          },
+          {
+            "candidate": 12.469107001379598,
+            "original": 8.809230999759166
+          },
+          {
+            "original": 11.482403002446517,
+            "candidate": 8.991741000500042
+          },
+          {
+            "candidate": 11.84108600136824,
+            "original": 9.242923002602765
+          }
+        ]
+      },
+      "full_model": {
+        "original_median_ms": 307.34654299885733,
+        "candidate_median_ms": 324.5738830009941,
+        "median_paired_ratio": 1.0391130014933472,
+        "pairs_ms": [
+          {
+            "original": 280.53650200308766,
+            "candidate": 340.8645239978796
+          },
+          {
+            "candidate": 315.4655090002052,
+            "original": 321.71030700192205
+          },
+          {
+            "original": 285.29347500079894,
+            "candidate": 273.45950000017183
+          },
+          {
+            "candidate": 317.97725800061016,
+            "original": 340.7262609980535
+          },
+          {
+            "original": 311.557687997265,
+            "candidate": 337.8324949990201
+          },
+          {
+            "candidate": 331.17050800137804,
+            "original": 316.32601199817145
+          },
+          {
+            "original": 333.0147169981501,
+            "candidate": 316.9892450023326
+          },
+          {
+            "candidate": 300.0112009976874,
+            "original": 273.21287499944447
+          },
+          {
+            "original": 376.65850200210116,
+            "candidate": 349.1390560011496
+          },
+          {
+            "candidate": 339.1935530016781,
+            "original": 281.641245001083
+          },
+          {
+            "original": 290.9547620001831,
+            "candidate": 300.06111200054875
+          },
+          {
+            "candidate": 359.4253649971506,
+            "original": 303.13539800044964
+          }
+        ]
+      }
+    }
+  },
+  {
+    "configuration": {
+      "id": "curve_mixed_n4",
+      "kind": "student",
+      "student": "curve_mixed",
+      "steps": 4
+    },
+    "materialized": true,
+    "accounting": {
+      "student_trainable_values": 1327104,
+      "spline_knots": 4,
+      "mlp_width": 192,
+      "field_evaluations": 4,
+      "block_coefficient_values": 2212992,
+      "block_projection_macs_per_token": 2211840,
+      "block_projection_mac_fraction_saved": 0.375,
+      "sampled_matrix_cache_values": 1327104,
+      "streamed_weight_assembly_macs_per_forward": 0,
+      "norms_per_mlp": 4,
+      "attention_evaluations": 1,
+      "scope": "Only block 0; learned linear MACs exclude attention scores, normalizations, activation functions, residual adds and spline assembly."
+    },
+    "measurements": {
+      "block": {
+        "original_median_ms": 8.1821800013131,
+        "candidate_median_ms": 6.487487500635325,
+        "median_paired_ratio": 0.7832676883512871,
+        "pairs_ms": [
+          {
+            "original": 8.22985000195331,
+            "candidate": 6.430983001337154
+          },
+          {
+            "candidate": 6.327260001853574,
+            "original": 8.485449001454981
+          },
+          {
+            "original": 8.190341999579687,
+            "candidate": 7.174636000854662
+          },
+          {
+            "candidate": 6.7265719990246,
+            "original": 7.954851997055812
+          },
+          {
+            "original": 8.04680900182575,
+            "candidate": 6.614845999138197
+          },
+          {
+            "candidate": 6.158888998470502,
+            "original": 8.174018003046513
+          },
+          {
+            "original": 8.267215998785105,
+            "candidate": 6.583760001376504
+          },
+          {
+            "candidate": 6.250356000236934,
+            "original": 8.037634997890564
+          },
+          {
+            "original": 9.201631000905763,
+            "candidate": 6.5891180020116735
+          },
+          {
+            "candidate": 6.389501999365166,
+            "original": 8.138313998642843
+          },
+          {
+            "original": 8.296989999507787,
+            "candidate": 6.543991999933496
+          },
+          {
+            "candidate": 6.216454999957932,
+            "original": 7.993160001205979
+          }
+        ]
+      },
+      "full_model": {
+        "original_median_ms": 302.18988199885644,
+        "candidate_median_ms": 308.2939340001758,
+        "median_paired_ratio": 1.0132443620044604,
+        "pairs_ms": [
+          {
+            "original": 400.5524499989406,
+            "candidate": 326.8758529993647
+          },
+          {
+            "candidate": 337.5162599986652,
+            "original": 311.92160099817556
+          },
+          {
+            "original": 300.8220829979109,
+            "candidate": 310.2784549992066
+          },
+          {
+            "candidate": 258.02808300068136,
+            "original": 276.086296998983
+          },
+          {
+            "original": 274.00467099869275,
+            "candidate": 311.0973600014404
+          },
+          {
+            "candidate": 298.49616900173714,
+            "original": 302.0040119990881
+          },
+          {
+            "original": 305.17104599857703,
+            "candidate": 304.49293100173236
+          },
+          {
+            "candidate": 300.37160200299695,
+            "original": 302.37575199862476
+          },
+          {
+            "original": 304.88275999960024,
+            "candidate": 352.5340270025481
+          },
+          {
+            "candidate": 314.1773870011093,
+            "original": 300.39304199817707
+          },
+          {
+            "original": 304.5547430010629,
+            "candidate": 298.3848059993761
+          },
+          {
+            "candidate": 306.309413001145,
+            "original": 297.7604699990479
+          }
+        ]
+      }
+    }
+  },
+  {
+    "configuration": {
+      "id": "curve_mixed_n8",
+      "kind": "student",
+      "student": "curve_mixed",
+      "steps": 8
+    },
+    "materialized": false,
+    "accounting": {
+      "student_trainable_values": 1327104,
+      "spline_knots": 4,
+      "mlp_width": 192,
+      "field_evaluations": 8,
+      "block_coefficient_values": 2212992,
+      "block_projection_macs_per_token": 3538944,
+      "block_projection_mac_fraction_saved": 0.0,
+      "sampled_matrix_cache_values": 0,
+      "streamed_weight_assembly_macs_per_forward": 10616832,
+      "norms_per_mlp": 8,
+      "attention_evaluations": 1,
+      "scope": "Only block 0; learned linear MACs exclude attention scores, normalizations, activation functions, residual adds and spline assembly."
+    },
+    "measurements": {
+      "block": {
+        "original_median_ms": 8.068686000115122,
+        "candidate_median_ms": 11.58043249961338,
+        "median_paired_ratio": 1.4357078976569384,
+        "pairs_ms": [
+          {
+            "original": 8.018726999580394,
+            "candidate": 11.530391999258427
+          },
+          {
+            "candidate": 11.558935999346431,
+            "original": 8.063533001404721
+          },
+          {
+            "original": 8.03000399901066,
+            "candidate": 12.028770997858373
+          },
+          {
+            "candidate": 11.369244002708001,
+            "original": 8.063964000029955
+          },
+          {
+            "original": 8.092486001260113,
+            "candidate": 11.801763997937087
+          },
+          {
+            "candidate": 11.463964001450222,
+            "original": 8.151803998771356
+          },
+          {
+            "original": 8.23003099867492,
+            "candidate": 11.844037999253487
+          },
+          {
+            "candidate": 11.601928999880329,
+            "original": 8.176079998520436
+          },
+          {
+            "original": 8.02738899801625,
+            "candidate": 11.677780999889364
+          },
+          {
+            "candidate": 11.438907000410836,
+            "original": 8.107698999083368
+          },
+          {
+            "original": 8.040598997467896,
+            "candidate": 11.853030999191105
+          },
+          {
+            "candidate": 11.31914899815456,
+            "original": 8.073408000200288
+          }
+        ]
+      },
+      "full_model": {
+        "original_median_ms": 293.140042500454,
+        "candidate_median_ms": 276.16157500051486,
+        "median_paired_ratio": 1.0121207318348118,
+        "pairs_ms": [
+          {
+            "original": 307.73950799994054,
+            "candidate": 311.3145080023969
+          },
+          {
+            "candidate": 309.39033499817015,
+            "original": 285.5899220012361
+          },
+          {
+            "original": 270.1642960018944,
+            "candidate": 273.57498399942415
+          },
+          {
+            "candidate": 263.48663099997793,
+            "original": 248.71339300079853
+          },
+          {
+            "original": 299.10208499859436,
+            "candidate": 268.3731379984238
+          },
+          {
+            "candidate": 267.76571400114335,
+            "original": 238.06018799950834
+          },
+          {
+            "original": 294.45028500049375,
+            "candidate": 260.6727820020751
+          },
+          {
+            "candidate": 278.74816600160557,
+            "original": 305.4262869991362
+          },
+          {
+            "original": 365.5427769990638,
+            "candidate": 307.63736399967456
+          },
+          {
+            "candidate": 256.07495100121014,
+            "original": 277.5872040001559
+          },
+          {
+            "original": 311.77795300027356,
+            "candidate": 339.39611299865646
+          },
+          {
+            "candidate": 313.5825779972947,
+            "original": 291.82980000041425
+          }
+        ]
+      }
+    }
+  },
+  {
+    "configuration": {
+      "id": "curve_mixed_n8",
+      "kind": "student",
+      "student": "curve_mixed",
+      "steps": 8
+    },
+    "materialized": true,
+    "accounting": {
+      "student_trainable_values": 1327104,
+      "spline_knots": 4,
+      "mlp_width": 192,
+      "field_evaluations": 8,
+      "block_coefficient_values": 2212992,
+      "block_projection_macs_per_token": 3538944,
+      "block_projection_mac_fraction_saved": 0.0,
+      "sampled_matrix_cache_values": 2654208,
+      "streamed_weight_assembly_macs_per_forward": 0,
+      "norms_per_mlp": 8,
+      "attention_evaluations": 1,
+      "scope": "Only block 0; learned linear MACs exclude attention scores, normalizations, activation functions, residual adds and spline assembly."
+    },
+    "measurements": {
+      "block": {
+        "original_median_ms": 8.180071999959182,
+        "candidate_median_ms": 9.738718001244706,
+        "median_paired_ratio": 1.1874078732658115,
+        "pairs_ms": [
+          {
+            "original": 8.26999999844702,
+            "candidate": 9.781982000276912
+          },
+          {
+            "candidate": 9.56989699989208,
+            "original": 8.33970399980899
+          },
+          {
+            "original": 8.085977999144234,
+            "candidate": 9.590308000042569
+          },
+          {
+            "candidate": 9.54457999978331,
+            "original": 8.180847999028629
+          },
+          {
+            "original": 8.050625001487788,
+            "candidate": 9.831465999013744
+          },
+          {
+            "candidate": 9.606240997527493,
+            "original": 8.179296000889735
+          },
+          {
+            "original": 8.542154002498137,
+            "candidate": 11.050592998799402
+          },
+          {
+            "candidate": 14.41596299991943,
+            "original": 11.191612000402529
+          },
+          {
+            "original": 14.263846001995262,
+            "candidate": 31.20175799995195
+          },
+          {
+            "candidate": 9.6954540022125,
+            "original": 8.15659200088703
+          },
+          {
+            "original": 8.115110998915043,
+            "candidate": 9.899467000650475
+          },
+          {
+            "candidate": 9.66884399895207,
+            "original": 8.151444999384694
+          }
+        ]
+      },
+      "full_model": {
+        "original_median_ms": 241.27778799993393,
+        "candidate_median_ms": 288.9463235005678,
+        "median_paired_ratio": 1.0639512865564247,
+        "pairs_ms": [
+          {
+            "original": 294.96262699831277,
+            "candidate": 298.225539001578
+          },
+          {
+            "candidate": 322.8667019975546,
+            "original": 246.72104400087846
+          },
+          {
+            "original": 231.03069799981313,
+            "candidate": 239.99288699997123
+          },
+          {
+            "candidate": 241.04233400066732,
+            "original": 249.5734940021066
+          },
+          {
+            "original": 251.85062999662478,
+            "candidate": 281.9929659999616
+          },
+          {
+            "candidate": 302.41121300059604,
+            "original": 284.8747239986551
+          },
+          {
+            "original": 206.94706599897472,
+            "candidate": 306.54187300024205
+          },
+          {
+            "candidate": 241.3466950019938,
+            "original": 213.13772600115044
+          },
+          {
+            "original": 226.99662699960754,
+            "candidate": 227.22115899887285
+          },
+          {
+            "candidate": 251.4807320003456,
+            "original": 235.8345319989894
+          },
+          {
+            "original": 228.81029000200215,
+            "candidate": 347.445665000123
+          },
+          {
+            "candidate": 295.89968100117403,
+            "original": 512.1847020018322
+          }
+        ]
+      }
+    }
+  },
+  {
+    "configuration": {
+      "id": "direct_768_n1",
+      "kind": "student",
+      "student": "direct_768",
+      "steps": 1
+    },
+    "materialized": false,
+    "accounting": {
+      "student_trainable_values": 1327104,
+      "spline_knots": 1,
+      "mlp_width": 768,
+      "field_evaluations": 1,
+      "block_coefficient_values": 2212992,
+      "block_projection_macs_per_token": 2211840,
+      "block_projection_mac_fraction_saved": 0.375,
+      "sampled_matrix_cache_values": 0,
+      "streamed_weight_assembly_macs_per_forward": 0,
+      "norms_per_mlp": 1,
+      "attention_evaluations": 1,
+      "scope": "Only block 0; learned linear MACs exclude attention scores, normalizations, activation functions, residual adds and spline assembly."
+    },
+    "measurements": {
+      "block": {
+        "original_median_ms": 7.131207499696757,
+        "candidate_median_ms": 5.8161184988421155,
+        "median_paired_ratio": 0.7556071462955816,
+        "pairs_ms": [
+          {
+            "original": 8.593500999268144,
+            "candidate": 5.885565999051323
+          },
+          {
+            "candidate": 6.054286001017317,
+            "original": 9.978555000998313
+          },
+          {
+            "original": 7.733757000096375,
+            "candidate": 5.137005999131361
+          },
+          {
+            "candidate": 5.39429800119251,
+            "original": 7.187085997429676
+          },
+          {
+            "original": 6.917515998793533,
+            "candidate": 6.6160390015284065
+          },
+          {
+            "candidate": 6.314432997896802,
+            "original": 7.714387997111771
+          },
+          {
+            "original": 7.075329001963837,
+            "candidate": 5.381920000218088
+          },
+          {
+            "candidate": 4.9390130006941035,
+            "original": 6.691241000226
+          },
+          {
+            "original": 6.306259998382302,
+            "candidate": 6.628557999647455
+          },
+          {
+            "candidate": 5.951103998086182,
+            "original": 6.950514998607105
+          },
+          {
+            "original": 6.530853999720421,
+            "candidate": 5.238137000560528
+          },
+          {
+            "candidate": 5.746670998632908,
+            "original": 8.433072001935216
+          }
+        ]
+      },
+      "full_model": {
+        "original_median_ms": 286.3687140015827,
+        "candidate_median_ms": 279.4960159990296,
+        "median_paired_ratio": 1.0159411911694707,
+        "pairs_ms": [
+          {
+            "original": 205.685541001003,
+            "candidate": 225.6585590002942
+          },
+          {
+            "candidate": 321.4106190025632,
+            "original": 251.18107300295378
+          },
+          {
+            "original": 287.99305299980915,
+            "candidate": 272.4753309994412
+          },
+          {
+            "candidate": 276.2156489989138,
+            "original": 284.74437500335625
+          },
+          {
+            "original": 244.39681299918448,
+            "candidate": 265.40968300105305
+          },
+          {
+            "candidate": 286.9888239983993,
+            "original": 290.5831979987852
+          },
+          {
+            "original": 332.26803000070504,
+            "candidate": 334.89860000190674
+          },
+          {
+            "candidate": 308.83639799867524,
+            "original": 296.3424599984137
+          },
+          {
+            "original": 301.59884500244516,
+            "candidate": 308.8267729981453
+          },
+          {
+            "candidate": 282.7763829991454,
+            "original": 250.19066400273005
+          },
+          {
+            "original": 254.72657200225512,
+            "candidate": 250.12932600293425
+          },
+          {
+            "candidate": 243.36911999853328,
+            "original": 296.19780400025775
+          }
+        ]
+      }
+    }
+  },
+  {
+    "configuration": {
+      "id": "phase2_shared_qk",
+      "kind": "qk"
+    },
+    "materialized": false,
+    "accounting": {
+      "block_coefficient_values": 3152832,
+      "block_projection_macs_per_token": 3151680,
+      "block_projection_mac_fraction_saved": 0.10942925347222222,
+      "field_evaluations": 1,
+      "sampled_matrix_cache_values": 0
+    },
+    "measurements": {
+      "block": {
+        "original_median_ms": 7.932846998301102,
+        "candidate_median_ms": 7.00480100022105,
+        "median_paired_ratio": 0.9391815781659769,
+        "pairs_ms": [
+          {
+            "original": 9.521328000118956,
+            "candidate": 9.24951400156715
+          },
+          {
+            "candidate": 6.778160000976641,
+            "original": 6.504795001092134
+          },
+          {
+            "original": 7.71832399914274,
+            "candidate": 6.538575002196012
+          },
+          {
+            "candidate": 6.0253539995756,
+            "original": 6.679182999505429
+          },
+          {
+            "original": 6.619184001465328,
+            "candidate": 6.8976670008851215
+          },
+          {
+            "candidate": 6.60808700195048,
+            "original": 6.986538999626646
+          },
+          {
+            "original": 7.1329660022456665,
+            "candidate": 7.111934999556979
+          },
+          {
+            "candidate": 7.2590630006743595,
+            "original": 8.197134000511141
+          },
+          {
+            "original": 8.147369997459464,
+            "candidate": 8.169742999598384
+          },
+          {
+            "candidate": 6.526907000079518,
+            "original": 8.505360001436202
+          },
+          {
+            "original": 8.408976998907747,
+            "candidate": 7.781348002026789
+          },
+          {
+            "candidate": 8.278965000499738,
+            "original": 8.877943000697996
+          }
+        ]
+      },
+      "full_model": {
+        "original_median_ms": 274.53143049933715,
+        "candidate_median_ms": 244.431977502245,
+        "median_paired_ratio": 0.9326257484162009,
+        "pairs_ms": [
+          {
+            "original": 319.54536700141034,
+            "candidate": 246.27529999997932
+          },
+          {
+            "candidate": 296.14260400194325,
+            "original": 263.7683719985944
+          },
+          {
+            "original": 239.5150169977569,
+            "candidate": 233.50413200023468
+          },
+          {
+            "candidate": 245.78967800334794,
+            "original": 221.4567810005974
+          },
+          {
+            "original": 289.8697469972831,
+            "candidate": 255.25984799969592
+          },
+          {
+            "candidate": 261.0973560003913,
+            "original": 293.25329399944167
+          },
+          {
+            "original": 308.5566199988534,
+            "candidate": 243.07427700114204
+          },
+          {
+            "candidate": 270.940716000041,
+            "original": 239.30531900259666
+          },
+          {
+            "original": 235.1877129985951,
+            "candidate": 236.69398700076272
+          },
+          {
+            "candidate": 236.44146200240357,
+            "original": 231.4683580007113
+          },
+          {
+            "original": 391.23544699759805,
+            "candidate": 241.44967800020822
+          },
+          {
+            "candidate": 237.07464099788922,
+            "original": 285.2944890000799
+          }
+        ]
+      }
+    }
+  }
+]

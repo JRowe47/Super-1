@@ -1,0 +1,243 @@
+{
+  "phase": 5,
+  "audit_tokens": 8192,
+  "audit_documents": 32,
+  "audit_source": "Previously unused official-train WikiText-2 articles, document-held out from phases 2\u20134 and phase-5 optimization/selection.",
+  "primary_metrics": {
+    "initial_n3": {
+      "delta_nll": 0.22303055599331856,
+      "perplexity_ratio_to_original": 1.2498587638285494,
+      "mean_kl": 0.26354962307959795,
+      "top1_agreement": 0.7294921875
+    },
+    "initial_n2": {
+      "delta_nll": 0.46828436851501465,
+      "perplexity_ratio_to_original": 1.5972515461622263,
+      "mean_kl": 0.5217459816485643,
+      "top1_agreement": 0.6285400390625
+    },
+    "raw_curve_n3": {
+      "delta_nll": 0.18648497387766838,
+      "perplexity_ratio_to_original": 1.2050065153743494,
+      "mean_kl": 0.224985200795345,
+      "top1_agreement": 0.7445068359375
+    },
+    "raw_curve_n2": {
+      "delta_nll": 0.35376445576548576,
+      "perplexity_ratio_to_original": 1.4244196331304986,
+      "mean_kl": 0.40461812843568623,
+      "top1_agreement": 0.6700439453125
+    },
+    "orthogonal_curve_n3": {
+      "delta_nll": 0.1804872713983059,
+      "perplexity_ratio_to_original": 1.1978008750532065,
+      "mean_kl": 0.22010528342798352,
+      "top1_agreement": 0.748046875
+    },
+    "orthogonal_curve_n2": {
+      "delta_nll": 0.35628174245357513,
+      "perplexity_ratio_to_original": 1.428009822583451,
+      "mean_kl": 0.40618875343352556,
+      "top1_agreement": 0.6693115234375
+    },
+    "dense_n3": {
+      "delta_nll": 0.1798512153327465,
+      "perplexity_ratio_to_original": 1.1970392487854777,
+      "mean_kl": 0.21931545552797616,
+      "top1_agreement": 0.748046875
+    },
+    "dense_n2": {
+      "delta_nll": 0.3577924221754074,
+      "perplexity_ratio_to_original": 1.430168718354459,
+      "mean_kl": 0.40792016428895295,
+      "top1_agreement": 0.669189453125
+    },
+    "projected_dense_n3": {
+      "delta_nll": 0.18093399703502655,
+      "perplexity_ratio_to_original": 1.1983360829484224,
+      "mean_kl": 0.22034822264686227,
+      "top1_agreement": 0.747802734375
+    },
+    "projected_dense_n2": {
+      "delta_nll": 0.3648960292339325,
+      "perplexity_ratio_to_original": 1.4403642445899096,
+      "mean_kl": 0.4158100786153227,
+      "top1_agreement": 0.6661376953125
+    },
+    "lifted_dense_n3": {
+      "delta_nll": 0.17985133081674576,
+      "perplexity_ratio_to_original": 1.1970393870243654,
+      "mean_kl": 0.21931546088308096,
+      "top1_agreement": 0.748046875
+    },
+    "lifted_dense_n2": {
+      "delta_nll": 0.3577923886477947,
+      "perplexity_ratio_to_original": 1.430168670404317,
+      "mean_kl": 0.40792016219347715,
+      "top1_agreement": 0.669189453125
+    }
+  },
+  "validation_gates": {
+    "initial_n3": false,
+    "initial_n2": false,
+    "raw_curve_n3": false,
+    "raw_curve_n2": false,
+    "orthogonal_curve_n3": false,
+    "orthogonal_curve_n2": false,
+    "dense_n3": false,
+    "dense_n2": false,
+    "projected_dense_n3": false,
+    "projected_dense_n2": false,
+    "lifted_dense_n3": false,
+    "lifted_dense_n2": false
+  },
+  "comparisons": {
+    "raw_curve_minus_orthogonal_curve_n3": {
+      "delta_nll": 0.005997702479362488,
+      "relative_ppl_ratio": 1.0060157247095205,
+      "document_bootstrap_95": {
+        "lower": 0.00396031541749835,
+        "upper": 0.007928482256829733,
+        "clusters": 32,
+        "bootstrap_replicates": 2000,
+        "unit": "document"
+      }
+    },
+    "raw_curve_minus_orthogonal_curve_n2": {
+      "delta_nll": -0.0025172866880893707,
+      "relative_ppl_ratio": 0.9974858790211559,
+      "document_bootstrap_95": {
+        "lower": -0.0034071417525410653,
+        "upper": -0.001671806257218123,
+        "clusters": 32,
+        "bootstrap_replicates": 2000,
+        "unit": "document"
+      }
+    },
+    "orthogonal_curve_minus_dense_n3": {
+      "delta_nll": 0.0006360560655593872,
+      "relative_ppl_ratio": 1.0006362583921133,
+      "document_bootstrap_95": {
+        "lower": -0.00024226224049925805,
+        "upper": 0.001497896760702133,
+        "clusters": 32,
+        "bootstrap_replicates": 2000,
+        "unit": "document"
+      }
+    },
+    "orthogonal_curve_minus_dense_n2": {
+      "delta_nll": -0.0015106797218322754,
+      "relative_ppl_ratio": 0.9984904607803952,
+      "document_bootstrap_95": {
+        "lower": -0.002299358230084181,
+        "upper": -0.0007125470787286782,
+        "clusters": 32,
+        "bootstrap_replicates": 2000,
+        "unit": "document"
+      }
+    },
+    "projected_dense_minus_dense_n3": {
+      "delta_nll": 0.0010827817022800446,
+      "relative_ppl_ratio": 1.0010833681220233,
+      "document_bootstrap_95": {
+        "lower": -0.0005885963328182697,
+        "upper": 0.002614260744303465,
+        "clusters": 32,
+        "bootstrap_replicates": 2000,
+        "unit": "document"
+      }
+    },
+    "projected_dense_minus_dense_n2": {
+      "delta_nll": 0.0071036070585250854,
+      "relative_ppl_ratio": 1.0071288975241897,
+      "document_bootstrap_95": {
+        "lower": 0.004917371645569801,
+        "upper": 0.009241978358477353,
+        "clusters": 32,
+        "bootstrap_replicates": 2000,
+        "unit": "document"
+      }
+    },
+    "lifted_dense_minus_dense_n3": {
+      "delta_nll": 1.1548399925231934e-07,
+      "relative_ppl_ratio": 1.000000115484006,
+      "document_bootstrap_95": {
+        "lower": 0.0,
+        "upper": 2.3096799850463867e-07,
+        "clusters": 32,
+        "bootstrap_replicates": 2000,
+        "unit": "document"
+      }
+    },
+    "lifted_dense_minus_dense_n2": {
+      "delta_nll": -3.3527612686157227e-08,
+      "relative_ppl_ratio": 0.9999999664723879,
+      "document_bootstrap_95": {
+        "lower": -1.230277121067047e-07,
+        "upper": 5.21540641784668e-08,
+        "clusters": 32,
+        "bootstrap_replicates": 2000,
+        "unit": "document"
+      }
+    }
+  },
+  "interactions": {
+    "orthogonal_curve": {
+      "interaction_delta_nll": -0.008241742849349976,
+      "document_bootstrap_95": {
+        "lower": -0.017263929639011622,
+        "upper": -0.00022099912166596115,
+        "clusters": 32,
+        "bootstrap_replicates": 2000,
+        "unit": "document"
+      }
+    },
+    "dense": {
+      "interaction_delta_nll": -0.00928560271859169,
+      "document_bootstrap_95": {
+        "lower": -0.01840461725369096,
+        "upper": -0.0012479806318879145,
+        "clusters": 32,
+        "bootstrap_replicates": 2000,
+        "unit": "document"
+      }
+    }
+  },
+  "dense_increment_energy_outside_four_mode_space": 0.18459950353899626,
+  "dense_to_five_mode_curve_checks": {
+    "3": {
+      "dense_vs_lifted_max_logit_difference": 0.000125885009765625,
+      "all_sampled_weight_max_abs_difference": 2.384185791015625e-07,
+      "threshold": 0.001,
+      "passed": true,
+      "audit_tokens": 1024,
+      "coverage": "All sampled tensors in both windows; end-to-end logits on first 8 audit windows. Separate quality metrics cover all 64."
+    },
+    "2": {
+      "dense_vs_lifted_max_logit_difference": 0.000141143798828125,
+      "all_sampled_weight_max_abs_difference": 2.384185791015625e-07,
+      "threshold": 0.001,
+      "passed": true,
+      "audit_tokens": 1024,
+      "coverage": "All sampled tensors in both windows; end-to-end logits on first 8 audit windows. Separate quality metrics cover all 64."
+    }
+  },
+  "exact_native_four_step_checks": {
+    "raw_curve": 0.0,
+    "orthogonal_curve": 0.0,
+    "projected_dense": 0.0,
+    "lifted_dense": 0.0
+  },
+  "native_serialization": {
+    "candidate": "lifted_dense_n3",
+    "public_loader": "load_candidate('lifted_dense', steps=3, native_export=True)",
+    "format": "Ordinary Transformers save_pretrained with safetensors",
+    "reload": "AutoModelForCausalLM.from_pretrained, local files, eager attention, FP32",
+    "decoder_blocks": 28,
+    "unique_parameter_values": 127434816,
+    "max_reloaded_logit_abs_difference": 0.0,
+    "input_tokens": 32,
+    "passed": true,
+    "temporary_export_removed": true
+  }
+}

@@ -1,0 +1,623 @@
+Artifact omitted from compact publication.
+Original archive: smollm_joint_curves_phase5_2026-10-17.zip
+Original member: smollm_joint_curves_phase5/results/phase5_report.html
+Uncompressed bytes: 538006
+ZIP CRC32 (not a cryptographic hash): 5763efa5
+Request the original saved archive from the author. It is not a public download in this repository. Full model replay may require pretrained weights, data and environment dependencies.
+
+Plain-text report extracted from original HTML (images/layout omitted):
+
+
+
+
+
+
+SmolLM2 — Phase 5
+
+
+
+
+EXPERIMENT 05 · 17 OCTOBER 2026
+
+Joint layer curves
+Optimization, constraints, and exact conversion
+
+    
+Both windows (blocks 4–7 and 12–15, zero indexed) now train together through the complete frozen remainder of SmolLM2-135M. Three matched arms test original Hermite coordinates, an orthogonal reparameterization of the same curve space, and independent dense weights for each reduced resolution.
+
+    
+
+Measured result.
+ At three steps per window, the orthogonal curve has 1.198× original perplexity and the dense control has 1.197× on the fresh audit. Validation-gate passes: None. A deterministic five-mode curve reconstructed from the dense control matches it to within 0.000141 maximum logit difference on the 1,024-token equivalence check, while four-step outputs remain exactly native.
+
+    
+
+    
+The useful algebraic distinction
+
+With original weight knots fixed, a four-knot Hermite curve has four learned derivative tensors per family. At the three evaluation points used by N=3, the derivative sampling matrix has rank three: it can represent arbitrary weights at those three points. The restriction appears when the same four derivative tensors must serve all five points used by N=3 and N=2 together. That combined sampling matrix has rank four, leaving one affine constraint per weight coordinate.
+
+    
+The orthogonal arm changes coordinates, not expressivity: from the SVD of the 5×4 sampling matrix A, choose B so that AB has orthonormal columns. It begins with the exact phase-4 function. The dense control begins with precisely the same sampled weights, but can update all five samples independently. Its two resolutions have separate Parameters and optimizer state, so one cannot drift on the other's update.
+
+    
+A curve that exactly contains the dense control
+
+We added one basis function that vanishes at all four original knots. Start with the polynomial bubble 
+q(t)=∏(t−j)², j=0…3
+, subtract its component in the four-mode sample space, and normalize the remainder. The resulting fifth mode spans the missing direction. The five modes form an orthogonal basis at the five tested reduced-depth sample points.
+
+    
+After dense training and validation selection, multiplying its five learned increments by this basis transpose converts them into a continuous curve with no additional optimization. The interpolation algebra reproduces the dense weights at both reduced resolutions and preserves the original model at four steps. The measured FP32 tensor/logit differences are recorded in 
+checks.json
+. This is a functionality construction with the same 35,400,960 trained degrees of freedom as the dense pair, not a parameter-compression result. Other sampling schedules and input-conditioned depth remain untested.
+
+    
+The four-mode projection control takes the same selected dense solution and discards its component outside the original curve space. It removes 18.46% of the learned increment energy. Its quality change measures the immediate effect of that projection on this solution; it is not a lower bound on the best retrained four-mode model.
+
+    
+
+    
+The weight norms nearly overlap at this scale. Equal or similar norms do not imply equal weights or equal language-model behavior.
+
+    
+Matched training protocol
+
+Each trained arm received 600 ordered minibatches of two 128-token sequences, alternating N=3 and N=2: 153,600 input tokens per arm, 76,800 per resolution. Both converted windows optimize jointly with next-token teacher KL at temperature one. The other 22 blocks, embeddings, output head and final norm remain frozen. Training draws from 1,024 phase-3 windows (131,072 input tokens). This is continuation from phase-4 weights, not training from scratch.
+
+    
+AdamW uses zero weight decay, gradient clipping, 20 warmup updates and cosine decay to 20% of peak. Training-only one-step probes calibrate each arm's average initial sampled-weight RMS update to the dense control at LR 0.0001; those probe updates are discarded. This removes a large initial step-scale difference but does not make Adam coordinate invariant. Checkpoints minimize the equal mean of N=3/N=2 KL on the first eight validation windows, checked every 100 updates. Full validation uses all 32 windows with the existing ΔNLL ≤ 0.05 and KL ≤ 0.05 gate.
+
+    
+The raw and orthogonal arms each train 28,320,768 coefficients. The dense control trains 35,400,960 across both resolutions, 25% more total, with only 21,240,576 active at N=3 or 14,160,384 at N=2. Data exposure and updates are matched; parameter storage and wall time are not. Dense training overlaps the curve worker on a separate four-thread process. Inference timing runs after all training workers finish. Comparing phase 4 with phase 5 combines joint training, more data, a different objective and more updates; it does not isolate the causal effect of joint training alone.
+
+    
+Fresh document-held-out audit
+
+We reserved two nonoverlapping 257-token spans from each of 32 articles unused in phase-2 and phase-3 training; phase 4 used a subset of phase 3. These articles come from the official WikiText-2 
+train
+ partition and are held out at document level for this experiment. This is not the official benchmark test split and does not establish absence from the reference model's pretraining. No audit result selected weights, depths, learning rates or basis functions. Main scoring uses the last 129 tokens of each span: 8,192 predicted tokens at context 128.
+
+    
+
+
+
+Candidate
+
+Blocks
+
+Audit PPL ratio
+
+95% interval
+
+Teacher KL
+
+Top-1
+
+
+
+
+
+initial_n3
+
+28
+
+1.2499×
+
+1.2162–1.2864
+
+0.2635
+
+72.9%
+
+
+
+initial_n2
+
+26
+
+1.5973×
+
+1.5256–1.6745
+
+0.5217
+
+62.9%
+
+
+
+raw_curve_n3
+
+28
+
+1.2050×
+
+1.1742–1.2389
+
+0.2250
+
+74.5%
+
+
+
+raw_curve_n2
+
+26
+
+1.4244×
+
+1.3729–1.4785
+
+0.4046
+
+67.0%
+
+
+
+orthogonal_curve_n3
+
+28
+
+1.1978×
+
+1.1674–1.2314
+
+0.2201
+
+74.8%
+
+
+
+orthogonal_curve_n2
+
+26
+
+1.4280×
+
+1.3763–1.4826
+
+0.4062
+
+66.9%
+
+
+
+dense_n3
+
+28
+
+1.1970×
+
+1.1665–1.2312
+
+0.2193
+
+74.8%
+
+
+
+dense_n2
+
+26
+
+1.4302×
+
+1.3773–1.4849
+
+0.4079
+
+66.9%
+
+
+
+projected_dense_n3
+
+28
+
+1.1983×
+
+1.1681–1.2318
+
+0.2203
+
+74.8%
+
+
+
+projected_dense_n2
+
+26
+
+1.4404×
+
+1.3867–1.4970
+
+0.4158
+
+66.6%
+
+
+
+lifted_dense_n3
+
+28
+
+1.1970×
+
+1.1665–1.2312
+
+0.2193
+
+74.8%
+
+
+
+lifted_dense_n2
+
+26
+
+1.4302×
+
+1.3773–1.4849
+
+0.4079
+
+66.9%
+
+
+
+orthogonal_curve_n3_only4
+
+29
+
+1.1199×
+
+1.0943–1.1474
+
+0.1407
+
+81.3%
+
+
+
+orthogonal_curve_n3_only12
+
+29
+
+1.0785×
+
+1.0645–1.0917
+
+0.0873
+
+83.0%
+
+
+
+dense_n3_only4
+
+29
+
+1.1209×
+
+1.0952–1.1489
+
+0.1407
+
+81.2%
+
+
+
+dense_n3_only12
+
+29
+
+1.0779×
+
+1.0640–1.0911
+
+0.0870
+
+82.9%
+
+
+
+
+    
+Ratios are exp(candidate NLL − native NLL), with 1 representing the reference. Paired document bootstrap uses 2,000 resamples of 32 articles. Intervals are pointwise, conditional on these checkpoints and articles; they do not capture seed uncertainty. Individual-window rows are diagnostic ablations of jointly trained weights.
+
+    
+
+
+
+Paired comparison (left minus right)
+
+ΔNLL
+
+95% document interval
+
+
+
+
+
+raw_curve_minus_orthogonal_curve_n3
+
++0.00600
+
+[+0.00396, +0.00793]
+
+
+
+raw_curve_minus_orthogonal_curve_n2
+
+-0.00252
+
+[-0.00341, -0.00167]
+
+
+
+orthogonal_curve_minus_dense_n3
+
++0.00064
+
+[-0.00024, +0.00150]
+
+
+
+orthogonal_curve_minus_dense_n2
+
+-0.00151
+
+[-0.00230, -0.00071]
+
+
+
+projected_dense_minus_dense_n3
+
++0.00108
+
+[-0.00059, +0.00261]
+
+
+
+projected_dense_minus_dense_n2
+
++0.00710
+
+[+0.00492, +0.00924]
+
+
+
+lifted_dense_minus_dense_n3
+
++0.00000
+
+[+0.00000, +0.00000]
+
+
+
+lifted_dense_minus_dense_n2
+
+-0.00000
+
+[-0.00000, +0.00000]
+
+
+
+
+    
+Relationships between windows
+
+For each jointly trained candidate, we also execute one converted window at a time. The interaction is ΔNLL(both) − ΔNLL(window 4 only) − ΔNLL(window 12 only). Negative values indicate compensation relative to the additive loss prediction; positive values indicate amplification. These counterfactual ablations probe the fitted model, not a separate randomized test of joint versus independent training.
+
+
+orthogonal_curve: -0.00824 nats/token, 95% document interval [-0.01726, -0.00022].
+
+dense: -0.00929 nats/token, 95% document interval [-0.01840, -0.00125].
+
+
+    
+Longer context on identical target tokens
+
+These runs expose the extra 128 preceding tokens from each reserved span and score the same final 128 targets. This is a 128→256 context check, not evidence about long-context deployment in general.
+
+    
+
+
+
+Candidate
+
+Context 128 ratio
+
+Context 256 ratio
+
+Context 256 KL
+
+
+
+
+
+initial_n3
+
+1.2499×
+
+1.3166×
+
+0.2864
+
+
+
+orthogonal_curve_n3
+
+1.1978×
+
+1.2379×
+
+0.2290
+
+
+
+dense_n3
+
+1.1970×
+
+1.2362×
+
+0.2281
+
+
+
+
+    
+Export, caches and cost
+
+Four-step curves preserve native logits exactly. DynamicCache correctness, dense-to-curve reconstruction, checkpoint reloads and frozen-original hashes are checked. A fixed-resolution native export samples the weights once and folds each residual multiplier into the attention output and MLP down-projection matrices. Its forward pass contains ordinary decoder blocks and no curve sampling. This export gives up runtime resolution changes until recompiled. The public five-mode loader was also exercised through an ordinary safetensors save and Transformers reload: the 28-block model reproduced all checked logits exactly (32 input tokens).
+
+    
+
+
+
+Candidate
+
+Streamed latency/native
+
+Native export latency/native
+
+Export prefill ms
+
+
+
+
+
+orthogonal_curve_n3
+
+1.050×
+
+0.938×
+
+197.9
+
+
+
+orthogonal_curve_n2
+
+0.970×
+
+0.866×
+
+193.6
+
+
+
+dense_n3
+
+0.991×
+
+0.962×
+
+205.5
+
+
+
+dense_n2
+
+0.925×
+
+0.890×
+
+191.1
+
+
+
+
+    
+12 alternating paired CPU measurements after warmup; FP32, four threads, batch 1, context 128. Native export construction is outside timing. These are prefill measurements, not decoding throughput. The research bundle retains the original model recipe, phase-4 initialization and learned increments; trainable-parameter counts are not compressed archive sizes.
+
+    
+Illustrative greedy continuations
+
+Fixed prompts, 40 new tokens each, no sampling or cherry-picking. These are illustrations, not benchmark scores.
+
+
+original
+
+
+The purpose of a computer network is
+ to connect computers together so that they can communicate with each other. A computer network can be used to connect computers in a building, or in a large building, or in a large city.
+
+
+
+
+
+original
+
+
+A useful way to test a scientific theory is
+ to compare it to a competing theory. This is called a test of theory.
+
+Theoretical science is the study of the natural world. It is the study of the physical world, including
+
+
+
+orthogonal_curve
+
+
+The purpose of a computer network is
+ to provide a means for sharing information among computers. The network is a collection of computers that are connected to each other. The network is a collection of computers that are connected to each other. The network
+
+
+
+orthogonal_curve
+
+
+A useful way to test a scientific theory is
+ to compare the results of a series of experiments with the same results. The results of a series of experiments are compared to the results of a single experiment.
+
+The results of a series of experiments
+
+
+
+dense
+
+
+The purpose of a computer network is
+ to provide a means for sharing information among computers. The network is a collection of computers that are connected to each other. The network is a collection of computers that are connected to each other. The network
+
+
+
+dense
+
+
+A useful way to test a scientific theory is
+ to compare the results of a series of experiments with the same results. The results of a series of experiments are compared to the results of a single experiment.
+
+The results of a series of experiments
+
+
+    
+What this supports
+
+The difference between original and orthogonal coordinates measures optimization sensitivity within the same curve space. The dense projection measures a concrete restriction of the four-mode basis. The five-mode lift demonstrates that a continuous representation can exactly carry the fitted reduced-depth transformations at the tested resolutions while retaining the original knots. None of those facts by itself makes the reduced-depth model equivalent to the original 30-block model.
+
+    
+The close curve/dense results make recovery of the reduced-depth model the next priority. A useful next comparison is retained-native-block initialization versus the present interpolated initialization, with a larger distillation budget. Any better dense variants can then be lifted into the complete curve without adding a representation error at the fitted resolutions. A separate set of depth sample points is needed to test interpolation beyond those resolutions; this experiment does not establish that generalization. This experiment does not implement the proposed GSA input conditioning, hierarchical state, expert bundling or from-scratch training.
+
+    
+Reproduce and load
+
+python -m venv venv
+venv/bin/pip install -r requirements.txt
+venv/bin/python download_model.py
+venv/bin/python prepare.py
+venv/bin/python train.py
+venv/bin/python run_evaluation.py
+venv/bin/python verify_export.py
+venv/bin/python build_report.py
+
+from load_candidate import load_candidate
+model = load_candidate('lifted_dense', steps=3, native_export=True)
+
+The bundle includes prepared tokens, source, three selected checkpoints, phase-4 initialization, plots and machine-readable results. Teacher caches and the original pinned model are regenerated. Standard sequential training is the default; the parallel dense worker is optional. Remove completed training records/checkpoints to retrain. Source and artifact hashes are listed in SHA256SUMS.
+
+
+

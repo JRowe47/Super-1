@@ -1,0 +1,19 @@
+{
+  "losses": [
+    0.9826666116714478,
+    0.9083083868026733,
+    0.8534821271896362,
+    0.8111209869384766,
+    0.7767308354377747,
+    0.7474709749221802,
+    0.721598744392395,
+    0.6980981826782227,
+    0.676414966583252,
+    0.6562656164169312
+  ],
+  "seconds": 1.2891357309999876,
+  "trainable_slope_values": 14160384,
+  "all_gradients_finite": true,
+  "excluded_from_main_training": true,
+  "purpose": "Fixed-minibatch implementation and learning smoke test, not a quality result."
+}

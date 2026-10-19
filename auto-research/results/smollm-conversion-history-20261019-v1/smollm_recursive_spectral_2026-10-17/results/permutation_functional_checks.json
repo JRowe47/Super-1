@@ -1,0 +1,13 @@
+{
+  "seed": 71705,
+  "permuted_layers": 6,
+  "targets": 1024,
+  "source": "first eight training windows, no evaluation-set tuning",
+  "maximum_absolute_logit_difference": 0.0001277923583984375,
+  "relative_rms_logit_difference": 8.573953299088137e-07,
+  "argmax_agreement": 1.0,
+  "nll_difference": -1.1920928955078125e-07,
+  "candidate_inverse_permutation_hash_exact": true,
+  "original_hashes_unchanged": true,
+  "algebraic_identity": "gate/up rows permuted together; down columns receive same permutation; all external block coordinates unchanged"
+}

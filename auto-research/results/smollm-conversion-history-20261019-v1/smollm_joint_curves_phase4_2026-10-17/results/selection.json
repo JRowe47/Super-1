@@ -1,0 +1,31 @@
+{
+  "per_window": [
+    {
+      "start": 4,
+      "selected": "w4_trained_n3",
+      "passed_gate": false
+    },
+    {
+      "start": 12,
+      "selected": "w12_trained_n3",
+      "passed_gate": false
+    }
+  ],
+  "composite": {
+    "id": "selected_composite",
+    "windows": [
+      {
+        "start": 4,
+        "kind": "trained",
+        "steps": 3
+      },
+      {
+        "start": 12,
+        "kind": "trained",
+        "steps": 3
+      }
+    ]
+  },
+  "selection_split": "validation only",
+  "test_not_consulted": true
+}

@@ -1,0 +1,170 @@
+{
+  "4.0.self_attn.q_proj.weight": {
+    "real_dof": 83648,
+    "energy_fraction": 0.4157031270230933
+  },
+  "4.0.self_attn.k_proj.weight": {
+    "real_dof": 28032,
+    "energy_fraction": 0.41577231533049736
+  },
+  "4.0.self_attn.v_proj.weight": {
+    "real_dof": 28032,
+    "energy_fraction": 0.4298290842128933
+  },
+  "4.0.self_attn.o_proj.weight": {
+    "real_dof": 83968,
+    "energy_fraction": 0.4243029236758603
+  },
+  "4.0.mlp.gate_proj.weight": {
+    "real_dof": 223680,
+    "energy_fraction": 0.41545929476816845
+  },
+  "4.0.mlp.up_proj.weight": {
+    "real_dof": 223360,
+    "energy_fraction": 0.42462890011671456
+  },
+  "4.0.mlp.down_proj.weight": {
+    "real_dof": 221952,
+    "energy_fraction": 0.4206666535294194
+  },
+  "4.1.self_attn.q_proj.weight": {
+    "real_dof": 83776,
+    "energy_fraction": 0.4250681125622404
+  },
+  "4.1.self_attn.k_proj.weight": {
+    "real_dof": 27904,
+    "energy_fraction": 0.44320547098783764
+  },
+  "4.1.self_attn.v_proj.weight": {
+    "real_dof": 27968,
+    "energy_fraction": 0.42724193174568287
+  },
+  "4.1.self_attn.o_proj.weight": {
+    "real_dof": 83520,
+    "energy_fraction": 0.4242060412320502
+  },
+  "4.1.mlp.gate_proj.weight": {
+    "real_dof": 223616,
+    "energy_fraction": 0.41403584509936114
+  },
+  "4.1.mlp.up_proj.weight": {
+    "real_dof": 223744,
+    "energy_fraction": 0.4197765991152668
+  },
+  "4.1.mlp.down_proj.weight": {
+    "real_dof": 221952,
+    "energy_fraction": 0.41602403733860244
+  },
+  "4.2.self_attn.q_proj.weight": {
+    "real_dof": 83904,
+    "energy_fraction": 0.4063809325281666
+  },
+  "4.2.self_attn.k_proj.weight": {
+    "real_dof": 27904,
+    "energy_fraction": 0.39793140355630274
+  },
+  "4.2.self_attn.v_proj.weight": {
+    "real_dof": 28032,
+    "energy_fraction": 0.41895130319864277
+  },
+  "4.2.self_attn.o_proj.weight": {
+    "real_dof": 84032,
+    "energy_fraction": 0.41600735456458354
+  },
+  "4.2.mlp.gate_proj.weight": {
+    "real_dof": 223808,
+    "energy_fraction": 0.41552641937409346
+  },
+  "4.2.mlp.up_proj.weight": {
+    "real_dof": 224128,
+    "energy_fraction": 0.42238602026730715
+  },
+  "4.2.mlp.down_proj.weight": {
+    "real_dof": 222016,
+    "energy_fraction": 0.41820817540313165
+  },
+  "12.0.self_attn.q_proj.weight": {
+    "real_dof": 83712,
+    "energy_fraction": 0.41381904841232753
+  },
+  "12.0.self_attn.k_proj.weight": {
+    "real_dof": 28032,
+    "energy_fraction": 0.43169531878952216
+  },
+  "12.0.self_attn.v_proj.weight": {
+    "real_dof": 27904,
+    "energy_fraction": 0.4166158833545182
+  },
+  "12.0.self_attn.o_proj.weight": {
+    "real_dof": 84032,
+    "energy_fraction": 0.41769447541336524
+  },
+  "12.0.mlp.gate_proj.weight": {
+    "real_dof": 224064,
+    "energy_fraction": 0.41981006462432807
+  },
+  "12.0.mlp.up_proj.weight": {
+    "real_dof": 224000,
+    "energy_fraction": 0.4303754914750434
+  },
+  "12.0.mlp.down_proj.weight": {
+    "real_dof": 221760,
+    "energy_fraction": 0.42607499787410336
+  },
+  "12.1.self_attn.q_proj.weight": {
+    "real_dof": 83648,
+    "energy_fraction": 0.4254499535691954
+  },
+  "12.1.self_attn.k_proj.weight": {
+    "real_dof": 28032,
+    "energy_fraction": 0.4343334358053237
+  },
+  "12.1.self_attn.v_proj.weight": {
+    "real_dof": 28032,
+    "energy_fraction": 0.4211719008004902
+  },
+  "12.1.self_attn.o_proj.weight": {
+    "real_dof": 83200,
+    "energy_fraction": 0.41045347743774113
+  },
+  "12.1.mlp.gate_proj.weight": {
+    "real_dof": 224064,
+    "energy_fraction": 0.415637657967918
+  },
+  "12.1.mlp.up_proj.weight": {
+    "real_dof": 224064,
+    "energy_fraction": 0.4200492107853129
+  },
+  "12.1.mlp.down_proj.weight": {
+    "real_dof": 222272,
+    "energy_fraction": 0.41345314572908964
+  },
+  "12.2.self_attn.q_proj.weight": {
+    "real_dof": 83712,
+    "energy_fraction": 0.4041385147300794
+  },
+  "12.2.self_attn.k_proj.weight": {
+    "real_dof": 27904,
+    "energy_fraction": 0.4198065747989577
+  },
+  "12.2.self_attn.v_proj.weight": {
+    "real_dof": 28032,
+    "energy_fraction": 0.42118720932884784
+  },
+  "12.2.self_attn.o_proj.weight": {
+    "real_dof": 84096,
+    "energy_fraction": 0.40503383973905643
+  },
+  "12.2.mlp.gate_proj.weight": {
+    "real_dof": 224000,
+    "energy_fraction": 0.40973173876485186
+  },
+  "12.2.mlp.up_proj.weight": {
+    "real_dof": 223808,
+    "energy_fraction": 0.4103493304141169
+  },
+  "12.2.mlp.down_proj.weight": {
+    "real_dof": 222080,
+    "energy_fraction": 0.4122561450061365
+  }
+}

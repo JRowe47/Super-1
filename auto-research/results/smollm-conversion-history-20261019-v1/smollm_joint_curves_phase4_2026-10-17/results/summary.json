@@ -1,0 +1,37 @@
+{
+  "phase": "4",
+  "exact_30_knot_max_logit_difference": 0.0,
+  "reduced_candidates_passing_validation_gate": [],
+  "selected_per_window": [
+    {
+      "id": "w4_trained_n3",
+      "steps": 3,
+      "test_ppl_ratio": 1.1290447499131804,
+      "test_kl": 0.14789879613090307
+    },
+    {
+      "id": "w12_trained_n3",
+      "steps": 3,
+      "test_ppl_ratio": 1.0975644789852779,
+      "test_kl": 0.09509843529667705
+    }
+  ],
+  "composite": {
+    "decoder_evaluations": 28,
+    "test_ppl_ratio": 1.2567239806621004,
+    "test_kl": 0.2536870092153549,
+    "delta_nll_interaction": 0.01404278352856636,
+    "interaction_document_bootstrap_95": {
+      "lower": 0.009734773326803137,
+      "upper": 0.019231423331062175,
+      "clusters": 16,
+      "bootstrap_replicates": 2000,
+      "unit": "document"
+    }
+  },
+  "all_cache_checks_passed": true,
+  "test_predicted_tokens": 8192,
+  "test_documents": 16,
+  "added_slope_parameters_per_window": 14160384,
+  "original_weights_retained": true
+}

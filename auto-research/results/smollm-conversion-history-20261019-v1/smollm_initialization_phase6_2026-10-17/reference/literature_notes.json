@@ -1,0 +1,21 @@
+[
+  {
+    "title": "ShortGPT: Layers in Large Language Models are More Redundant Than You Expect",
+    "authors": "Men et al.",
+    "venue": "Findings of ACL 2025",
+    "url": "https://aclanthology.org/2025.findings-acl.1035/",
+    "pdf_url": "https://aclanthology.org/2025.findings-acl.1035.pdf",
+    "accessed_utc": "2026-10-17",
+    "source_finding": "Ranks layers using input/output activation similarity; distinguishes static layer pruning from a separate generation-time scheme.",
+    "our_inference": "Calibration-based block selection is a follow-up to the fixed [0,2,3] policy. No ShortGPT reproduction or performance transfer is claimed."
+  },
+  {
+    "title": "Git Re-Basin: Merging Models modulo Permutation Symmetries",
+    "authors": "Ainsworth, Hayase and Srinivasa",
+    "venue": "ICLR 2023",
+    "url": "https://arxiv.org/abs/2209.04836v6",
+    "accessed_utc": "2026-10-17",
+    "source_finding": "Uses function-preserving hidden-unit permutations to align independently trained models before merging their weights; reports empirical mode-connectivity findings and limitations.",
+    "our_inference": "Neuron alignment may be worth testing for weight-curve construction. Adjacent-layer interpolation is a different problem; phase 6 does not establish misalignment as the cause of its quality gap."
+  }
+]

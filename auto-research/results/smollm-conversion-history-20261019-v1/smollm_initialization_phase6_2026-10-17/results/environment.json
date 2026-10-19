@@ -1,0 +1,19 @@
+{
+  "python": "3.12.14",
+  "machine": "x86_64",
+  "device": "CPU",
+  "precision": "FP32",
+  "packages": {
+    "torch": "2.5.1+cpu",
+    "transformers": "4.46.3",
+    "numpy": "2.3.5",
+    "safetensors": "0.4.5",
+    "pyarrow": "26.0.0",
+    "matplotlib": "3.10.8"
+  },
+  "cgroup_cpu_max": "800000 100000",
+  "cgroup_memory_max_bytes": 8589934592,
+  "worker_threads": 4,
+  "training_workers": 2,
+  "training_execution": "Concurrent independent processes. Default standalone train.py runs sequentially. Inference timing starts after both finish."
+}

@@ -1,0 +1,44 @@
+{
+  "sample_basis": [
+    [
+      -0.23482255980698746,
+      -0.3720451732446886,
+      0.4585873753710509,
+      0.6013172116822618,
+      -0.4843098022505671
+    ],
+    [
+      0.6210249038820967,
+      -8.604228440844963e-16,
+      0.6968701027150639,
+      -6.661338147750939e-16,
+      0.3587480016670876
+    ],
+    [
+      -0.23482255980698719,
+      0.37204517324468767,
+      0.45858737537105104,
+      -0.6013172116822622,
+      -0.48430980225057074
+    ],
+    [
+      -0.5020183261443851,
+      -0.6013172116822623,
+      0.21652632431470864,
+      -0.3720451732446889,
+      0.4484350020838597
+    ],
+    [
+      -0.5020183261443849,
+      0.601317211682262,
+      0.21652632431471147,
+      0.3720451732446868,
+      0.44843500208385806
+    ]
+  ],
+  "gram_max_abs_error": 2.3314683517128287e-15,
+  "bubble": "q(t) = product_{j=0..3} (t-j)^2",
+  "fifth_mode": "r(t)=[q(t)-a(t) A^+ q_samples] / [left_null^T q_samples]",
+  "coefficients": "H^T times the five learned dense increments, where H=[U,left_null] is orthogonal.",
+  "claim_scope": "Exact interpolation algebra at the five 3/2-step samples, and unchanged original four knots. FP32 end-to-end differences are measured separately; other depths are not validated."
+}

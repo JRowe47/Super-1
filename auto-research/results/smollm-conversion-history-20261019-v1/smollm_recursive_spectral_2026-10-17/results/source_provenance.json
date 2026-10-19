@@ -1,0 +1,46 @@
+{
+  "phase6_archive": "smollm_initialization_phase6_2026-10-17.zip",
+  "model_revision": "93efa2f097d58c2a74874c7e644dbc9b0cee75a2",
+  "files": {
+    "reference_model/model.safetensors": {
+      "sha256": "80521b40281d6ce74e35c9282c22539e75aa0ac8578892b2a59955ef78d55da1",
+      "bytes": 269060552
+    },
+    "checkpoints/retained.safetensors": {
+      "sha256": "0be037f7a9c2031651ba384038d0a50d0184770eb4af8b746714744b1f732add",
+      "bytes": 84967616
+    },
+    "checkpoints/interpolated.safetensors": {
+      "sha256": "a5453c86e571250acb50b869fa19c4db4ec74c2d7ba2e10ef42553ecf5800af5",
+      "bytes": 84967616
+    },
+    "reference/phase4_checkpoints/window_4.safetensors": {
+      "sha256": "b782c6b4c0e96c43ea45b09ad7e684aafeffd652ec0f72e3c284bc9775be814b",
+      "bytes": 56642416
+    },
+    "reference/phase4_checkpoints/window_12.safetensors": {
+      "sha256": "be6365a1ce9dbef10e23c2f5696ad7146cc17fe83128846c5ea0666914601785",
+      "bytes": 56642416
+    },
+    "data/token_windows.npz": {
+      "sha256": "7ba8cf13311bef15525fe5434e3f40584fc769d1a948597580c5450ecaba42b5",
+      "bytes": 267670
+    },
+    "data/dataset_manifest.json": {
+      "sha256": "0112f977ae16df041ea06f92d3d6cf34f8e39a0956f9ea9aeec1c24efa81c23d",
+      "bytes": 129028
+    },
+    "models.py": {
+      "sha256": "23745874801a3a4dd837e5766e79615ed9ada4b9c9b22694cb0fc748221592d0",
+      "bytes": 5385
+    },
+    "curve_model.py": {
+      "sha256": "47400f716ff457d81e244bae7267d0fdcf631591ea6cba438628e9479da1d25b",
+      "bytes": 5919
+    },
+    "evaluation.py": {
+      "sha256": "6627c5bfd0cc5f1c73368fbde5337b485c3ed9da105e1649be9e05a81f14a817",
+      "bytes": 2164
+    }
+  }
+}

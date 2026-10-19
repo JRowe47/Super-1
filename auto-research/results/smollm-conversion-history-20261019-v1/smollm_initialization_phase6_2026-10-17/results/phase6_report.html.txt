@@ -1,0 +1,677 @@
+Artifact omitted from compact publication.
+Original archive: smollm_initialization_phase6_2026-10-17.zip
+Original member: smollm_initialization_phase6/results/phase6_report.html
+Uncompressed bytes: 581613
+ZIP CRC32 (not a cryptographic hash): 5ff28e37
+Request the original saved archive from the author. It is not a public download in this repository. Full model replay may require pretrained weights, data and environment dependencies.
+
+Plain-text report extracted from original HTML (images/layout omitted):
+
+
+
+
+
+
+SmolLM2 — Phase 6
+
+
+
+
+EXPERIMENT 06 · 17 OCTOBER 2026
+
+Initialization and longer distillation
+
+    
+Phase 5 found nearly identical quality for jointly trained curves and independent dense weights. Phase 6 therefore asks whether a different starting transformation, with more distillation, recovers the quality lost when reducing depth. This phase focuses on 28 blocks: two four-block regions each execute three blocks.
+
+    
+
+Fresh audit.
+ Retained-native initialization reaches 1.1090× original perplexity; interpolated initialization reaches 1.1618×. The paired retained-minus-interpolated difference is -0.04651 nats/token, with a 95% document-bootstrap interval [-0.06086, -0.03041]. Full-validation fidelity-gate passes: None.
+
+    
+
+    
+The matched comparison
+
+Both arms train six ordinary decoder blocks with unit residual strength. The interpolated arm starts from the phase-4 Hermite samples at local coordinates 1/6, 1.5 and 17/6. The retained arm starts from original offsets [0,2,3] in each region: blocks [4,6,7] and [12,14,15], all zero indexed. Thus original blocks 5 and 13 are omitted during the reduced-depth forward pass. The retained policy was fixed before results: preserve endpoints and round the middle upward. We did not search for the best blocks to remove.
+
+    
+Only these six cloned or reconstructed blocks train: 21,240,576 values in either arm. The other 22 blocks, embeddings, head and final norm remain frozen; gradients propagate through the complete model. The original 30-block parameter tensors remain untouched so the curve can retain its original knots. The interpolated starting point inherits earlier phase-4 slope training; it is not an untrained control.
+
+    
+Each arm receives 1,800 identical ordered minibatches, two sequences per batch, context 128: 460,800 input tokens drawn from the same 1,024-window pool (131,072 input tokens). Phase 5 supplied 300 updates to its independent three-step dense weights, so this is six times the exposure for this resolution. The objective is full-distribution teacher-to-student next-token KL at temperature one. AdamW uses peak LR 0.0001, zero weight decay, global gradient clipping at one, 60 warmup updates and cosine decay to 20% of peak. There is one seed and no learning-rate search.
+
+    
+Checkpoints minimize teacher KL on the first eight validation windows, checked at 0, 300, …, 1,800 updates. The full 32-window gate requires both ΔNLL ≤ 0.05 and KL ≤ 0.05. Both complete training runs are retained in the logs, and the released weight files are the selected checkpoints.
+
+    
+
+
+Arm
+
+Selected update
+
+Selection KL
+
+
+
+interpolated
+
+1800
+
+0.16430
+
+
+
+retained
+
+1800
+
+0.11006
+
+
+
+    
+Residual strength is a separate factor
+
+Before training, we evaluated unit scaling and the earlier 4/3 multiplier on all 32 validation windows. Multipliers are folded into attention output and MLP down-projection matrices. The multiplier helps interpolation but harms the chosen retained-block initialization in these initial measurements. Both trained arms nevertheless use the same prespecified unit convention. This is an initialization comparison under that convention, not a search for each arm's optimal residual scale.
+
+    
+
+
+Initialization
+
+Residual multiplier
+
+Validation PPL ratio
+
+Teacher KL
+
+
+
+interpolated
+
+1.0000
+
+1.3541×
+
+0.3475
+
+
+
+interpolated
+
+1.3333
+
+1.2767×
+
+0.2895
+
+
+
+retained
+
+1.0000
+
+1.4103×
+
+0.3179
+
+
+
+retained
+
+1.3333
+
+1.7218×
+
+0.4903
+
+
+
+    
+Comparisons with the phase-5 dense checkpoint combine more updates with a changed residual convention, schedule and training sequence. They do not isolate training duration. The matched phase-6 arms differ in initialization, with all subsequent settings held equal.
+
+    
+Exploratory matrix-norm control
+
+After the first 300-update checkpoints, we added a validation-only diagnostic. For each sampled projection matrix, restore its Frobenius norm to the square root of the linearly interpolated squared norms of the two adjacent original matrices. Leave both RMSNorm vectors unchanged. This checks a specific scale effect; it does not change either primary training run or the audit candidates.
+
+    
+
+
+Residual multiplier after matrix normalization
+
+Validation PPL ratio
+
+Teacher KL
+
+
+
+1.0000
+
+1.2746×
+
+0.2938
+
+
+
+1.3333
+
+1.4928×
+
+0.4305
+
+
+
+    
+At unit residual strength, norm restoration improves initial validation perplexity from 1.3541× to 1.2746×, close to the earlier 4/3 residual multiplier alone (1.2767×). Combining both raises the ratio to 1.4928×. This makes scale handling a concrete follow-up hypothesis. No normalized arm was trained in this phase, and these controls have no fresh-audit score.
+
+    
+New document-held-out audit
+
+The audit reserves 32 further WikiText-2 articles from the official 
+train
+ partition. It excludes every article sampled for phase-2/3 training (later training is a subset) and all 32 phase-5 audit articles. From each selected article we take two nonoverlapping 257-token spans. The short-context audit exposes the final 129 tokens and scores 128 predictions per span: 8,192 targets. Selection was frozen before training; no audit metric chose weights, residual scaling, pruning offsets or basis functions.
+
+    
+This is an experimental held-out partition, not the official benchmark test split. It does not establish absence from the reference model's original pretraining. All candidates below are scored on this same fresh audit, including the phase-5 reference; their numbers should not be directly compared with the previous audit's numbers.
+
+    
+
+
+
+Candidate
+
+Blocks
+
+PPL / original
+
+95% interval
+
+Teacher KL
+
+Top-1 agreement
+
+
+
+initial_interpolated
+
+28
+
+1.3127×
+
+1.2656–1.3574
+
+0.3212
+
+68.5%
+
+
+
+initial_retained
+
+28
+
+1.3785×
+
+1.3393–1.4178
+
+0.3034
+
+69.5%
+
+
+
+phase5_dense
+
+28
+
+1.1834×
+
+1.1527–1.2133
+
+0.2156
+
+74.1%
+
+
+
+trained_interpolated
+
+28
+
+1.1618×
+
+1.1357–1.1870
+
+0.1911
+
+76.1%
+
+
+
+trained_retained
+
+28
+
+1.1090×
+
+1.0880–1.1298
+
+0.1367
+
+79.3%
+
+
+
+trained_interpolated_only4
+
+29
+
+1.1042×
+
+1.0828–1.1261
+
+0.1345
+
+80.7%
+
+
+
+trained_interpolated_only12
+
+29
+
+1.0722×
+
+1.0608–1.0829
+
+0.0813
+
+82.3%
+
+
+
+trained_retained_only4
+
+29
+
+1.0679×
+
+1.0533–1.0834
+
+0.0913
+
+83.8%
+
+
+
+trained_retained_only12
+
+29
+
+1.0508×
+
+1.0376–1.0639
+
+0.0647
+
+84.5%
+
+
+
+
+    
+PPL ratio = exp(candidate NLL − original NLL). Intervals use 2,000 paired resamples of the 32 document clusters. They are pointwise and conditional on the fitted checkpoint and article sample; they do not capture training-seed uncertainty. Per-window rows in the JSON support all comparisons.
+
+    
+
+
+
+Left minus right
+
+ΔNLL
+
+Relative PPL
+
+95% ΔNLL interval
+
+
+
+trained_retained_minus_trained_interpolated
+
+-0.04651
+
+0.95456×
+
+[-0.06086, -0.03041]
+
+
+
+trained_retained_minus_phase5_dense
+
+-0.06495
+
+0.93711×
+
+[-0.08402, -0.04461]
+
+
+
+trained_interpolated_minus_phase5_dense
+
+-0.01844
+
+0.98172×
+
+[-0.02621, -0.01078]
+
+
+
+trained_retained_minus_initial_retained
+
+-0.21751
+
+0.80452×
+
+[-0.24144, -0.19472]
+
+
+
+trained_interpolated_minus_initial_interpolated
+
+-0.12210
+
+0.88506×
+
+[-0.14293, -0.10167]
+
+
+
+
+    
+Can the improved models still be curves?
+
+Yes: the three-sample derivative matrix A₃ has rank three. Define cardinal functions 
+l(t)=a(t) A₃⁺
+, where a(t) is the four-component Hermite derivative basis. At the three fitted sample locations these functions form the identity matrix, and at all four original knots they vanish. For each tensor, add 
+Σ lᵢ(t) [Wᵢ − C₀(tᵢ)]
+ to the phase-4 base curve C₀. This interpolates arbitrary learned three-block weights while retaining every original knot.
+
+    
+Phase 5 needed five sample points to cover both two-step and three-step schedules. This phase fits only three-step samples, so three cardinal components suffice. The public loader exposes only the trained three-step schedule and the original four-step schedule. Quality at two steps or other unseen schedules has not been established. This conversion uses the same 21,240,576 coefficient values as the six fitted blocks, plus the retained reference representation; it is a functionality construction without a storage-compression claim.
+
+    
+
+
+Arm
+
+Max weight error
+
+Max logit error
+
+Original-knot logit error
+
+Saved-model reload error
+
+
+
+interpolated
+
+3.73e-09
+
+8.3e-05
+
+0.0
+
+0.0
+
+
+
+retained
+
+1.19e-07
+
+9.35e-05
+
+0.0
+
+0.0
+
+
+
+    
+Sampled tensor checks cover every parameter in both windows. Dense-versus-curve logits cover 1,024 audit targets; original-knot checks use 128 input tokens. Cache checks use 32 tokens. Independent ordinary-model serialization and public-loader checks use 32 tokens. Logit tolerance is 0.001; sampled-weight tolerance is 0.000001. Exact-zero checks and original hashes are required where reported.
+
+    
+
+    
+These plots use all nine parameter tensors per block. They visualize weight-space geometry, not an activation trajectory. Arc-length and second-derivative diagnostics are in weight_profiles.json; their relationship to useful information is not assumed.
+
+    
+Interaction between the two regions
+
+We run each trained region alone with the other region restored to original weights. Interaction is ΔNLL(both) − ΔNLL(region 4 only) − ΔNLL(region 12 only). Negative values indicate compensation relative to adding the two individual loss increases; positive values indicate amplification. These are ablations of fitted models, not a randomized test that joint training caused the interaction.
+
+
+interpolated: -0.01886 nats/token; document interval [-0.02588, -0.01210].
+
+retained: -0.01177 nats/token; document interval [-0.01792, -0.00532].
+
+
+    
+Longer context on the same targets
+
+Expose the preceding 128 tokens from each reserved span, then score exactly the same final 128 targets. This tests context 128 versus 256, not long-context deployment generally.
+
+    
+
+
+Candidate
+
+Context 128 ratio
+
+Context 256 ratio
+
+Context 256 KL
+
+
+
+phase5_dense
+
+1.1834×
+
+1.2110×
+
+0.2202
+
+
+
+trained_interpolated
+
+1.1618×
+
+1.1835×
+
+0.1906
+
+
+
+trained_retained
+
+1.1090×
+
+1.1194×
+
+0.1338
+
+
+
+    
+Runtime
+
+Both training workers ran concurrently with four CPU threads each; elapsed training times are not a controlled speed comparison. Inference measurements run after training completes. Native models contain 28 ordinary decoder blocks. Streamed curves construct the sampled weights during each forward pass.
+
+    
+
+
+Initialization
+
+Native latency / original
+
+Curve latency / original
+
+Native prefill ms
+
+
+
+interpolated
+
+0.931×
+
+1.059×
+
+202.1
+
+
+
+retained
+
+0.955×
+
+1.034×
+
+214.6
+
+
+
+    
+CPU FP32, four threads, batch one, context 128; 12 alternating paired measurements after two warmup pairs. Construction and curve fitting are excluded. These are prefill latencies, not decoding throughput or measurements on the user's laptop.
+
+    
+Fixed-prompt continuations
+
+Two fixed prompts, up to 40 greedy tokens each, no sampling or selection. Illustrations of behavior, not benchmark scores.
+
+
+original
+
+
+The purpose of a computer network is
+ to connect computers together so that they can communicate with each other. A computer network can be used to connect computers in a building, or in a large building, or in a large city.
+
+
+
+
+
+original
+
+
+A useful way to test a scientific theory is
+ to compare it to a competing theory. This is called a test of theory.
+
+Theoretical science is the study of the natural world. It is the study of the physical world, including
+
+
+
+interpolated
+
+
+The purpose of a computer network is
+ to connect computers together so that they can communicate with each other. The computer network is a collection of computers that are connected to each other. The computer network is a collection of computers that are connected to
+
+
+
+interpolated
+
+
+A useful way to test a scientific theory is
+ to run a series of experiments.
+
+The first step is to run a series of experiments.
+
+The first step is to run a series of experiments.
+
+The second step is to
+
+
+
+retained
+
+
+The purpose of a computer network is
+ to connect computers and other devices to each other. The network is made up of computers, networks, and other devices.
+
+The computer network is made up of computers, networks, and other devices
+
+
+
+retained
+
+
+A useful way to test a scientific theory is
+ to compare it to a known theory. This is called a test.
+
+The test is a way to determine if a theory is true or false.
+
+The test is a way to determine
+
+
+    
+Scope and next decision
+
+This experiment compares two concrete initialization policies at a single reduced depth under one residual convention and training seed. It tests whether each selected model can be expressed as a continuous curve while preserving the original discrete model. It does not reproduce GSA's input-conditioned coefficients, hierarchical recurrent state, expert bundling or from-scratch training.
+
+    
+The next priority is whole-model adaptation at 28 blocks: clone and train every retained decoder block from the stronger phase-6 checkpoint, keeping the original 30-block model intact, then fit a global depth curve. That would directly test whether the frozen remainder limits recovery. Norm-restored interpolation remains a useful initialization control; its validation-only diagnostic does not predict its trained outcome. Further depth reduction needs its own evaluation and another reserved audit.
+
+    
+Whole-model feasibility: planning only
+
+A global 30-knot Hermite construction can retain the original model while fitting a separately trained 28-block model. The uniform 28-sample grid has no collisions with the original knots; its 28×30 derivative sampling matrix has rank 28 and condition number 6.92. Thus the same cardinal construction can represent arbitrary weights at all 28 fitted block positions. This is an algebraic feasibility result, not an evaluated whole-model curve.
+
+    
+Training all 28 decoder blocks would expose 99,122,688 trainable values. Their FP32 weights, gradients and two Adam moments, plus all original model weights, total approximately 1.98 GiB. Activations, teacher caches, temporary buffers and framework overhead are additional; this is a lower bound, not a measured peak-memory claim.
+
+    
+The same uniform 26-sample grid hits original knots 7 and 22, leaving rank 24 for corrections. A depth-only curve cannot both preserve those knot values and assign different weights at those identical coordinates. A 26-block follow-up must keep those samples fixed or change the grid or parameterization. The tested 28-block grid avoids this issue.
+
+    
+Related work and untested mechanisms
+
+
+ShortGPT (Men et al., ACL Findings 2025)
+ ranks layers using input/output activation similarity and treats generation with a separate strategy. Our inference is that calibration-based block selection is worth comparing with the fixed retention policy used here. This phase does not reproduce that method.
+
+    
+
+Git Re-Basin (Ainsworth, Hayase and Srinivasa, ICLR 2023)
+ uses function-preserving neuron permutations to align independently trained models for weight merging. Applying alignment to adjacent-layer curve construction is a separate hypothesis; these results do not identify misalignment as the cause of interpolation's losses. Both primary sources were checked on 17 October 2026.
+
+    
+Run and load
+
+python -m venv venv
+venv/bin/pip install -r requirements.txt
+venv/bin/python download_model.py
+venv/bin/python prepare.py
+venv/bin/python train.py
+venv/bin/python norm_control.py
+venv/bin/python global_curve_feasibility.py
+venv/bin/python evaluate_phase6.py
+venv/bin/python verify_export.py
+venv/bin/python build_report.py
+
+from models import load_candidate
+native = load_candidate('retained', as_curve=False, steps=3)
+curve = load_candidate('retained', as_curve=True, steps=3)
+original = load_candidate('retained', as_curve=True, steps=4)
+
+    
+The loader accepts either initialization. The bundle includes selected blocks, phase-4 curve initialization, phase-5 reference blocks, prepared tokens, code, logs and results. Download the pinned original model or set SMOLLM_MODEL_DIR. Teacher caches regenerate and are excluded from the bundle. Default training is sequential; --arm interpolated and --arm retained can run in separate processes. Completed records skip retraining; move their records/checkpoints aside to run anew. Start a fresh KV cache when changing depth. The curve prototype requires this loader; native models support ordinary Transformers serialization. SHA256SUMS covers the archive's contents.
+
+    
+
+

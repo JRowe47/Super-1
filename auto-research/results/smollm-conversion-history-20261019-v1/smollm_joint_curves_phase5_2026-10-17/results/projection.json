@@ -1,0 +1,146 @@
+{
+  "per_window_family": {
+    "4": {
+      "self_attn.q_proj.weight": {
+        "increment_squared_norm": 3.187448676167197,
+        "discarded_squared_norm": 0.6084126197971265,
+        "discarded_energy_fraction": 0.1908776208214034
+      },
+      "self_attn.k_proj.weight": {
+        "increment_squared_norm": 1.0626046238656444,
+        "discarded_squared_norm": 0.2056913856427095,
+        "discarded_energy_fraction": 0.19357283134570388
+      },
+      "self_attn.v_proj.weight": {
+        "increment_squared_norm": 1.009511924127038,
+        "discarded_squared_norm": 0.18138928279172178,
+        "discarded_energy_fraction": 0.1796801785660687
+      },
+      "self_attn.o_proj.weight": {
+        "increment_squared_norm": 3.163898110091142,
+        "discarded_squared_norm": 0.548595943017276,
+        "discarded_energy_fraction": 0.17339241781129058
+      },
+      "mlp.gate_proj.weight": {
+        "increment_squared_norm": 7.962685494910631,
+        "discarded_squared_norm": 1.5172146511426043,
+        "discarded_energy_fraction": 0.1905405722871179
+      },
+      "mlp.up_proj.weight": {
+        "increment_squared_norm": 8.081314227471413,
+        "discarded_squared_norm": 1.5090519272505354,
+        "discarded_energy_fraction": 0.18673347982444524
+      },
+      "mlp.down_proj.weight": {
+        "increment_squared_norm": 8.14974371680496,
+        "discarded_squared_norm": 1.5160637302910702,
+        "discarded_energy_fraction": 0.18602593933903858
+      },
+      "input_layernorm.weight": {
+        "increment_squared_norm": 0.005953566629388096,
+        "discarded_squared_norm": 0.0010039033764761421,
+        "discarded_energy_fraction": 0.16862217876602864
+      },
+      "post_attention_layernorm.weight": {
+        "increment_squared_norm": 0.005906905572721444,
+        "discarded_squared_norm": 0.0010147041301168047,
+        "discarded_energy_fraction": 0.17178269021309372
+      }
+    },
+    "12": {
+      "self_attn.q_proj.weight": {
+        "increment_squared_norm": 3.423128499954937,
+        "discarded_squared_norm": 0.6550028455327369,
+        "discarded_energy_fraction": 0.19134626279479708
+      },
+      "self_attn.k_proj.weight": {
+        "increment_squared_norm": 1.1569515426429433,
+        "discarded_squared_norm": 0.2207374828600246,
+        "discarded_energy_fraction": 0.1907923320243571
+      },
+      "self_attn.v_proj.weight": {
+        "increment_squared_norm": 0.9486667200390235,
+        "discarded_squared_norm": 0.16915261482056979,
+        "discarded_energy_fraction": 0.17830562751649143
+      },
+      "self_attn.o_proj.weight": {
+        "increment_squared_norm": 2.9697095383799446,
+        "discarded_squared_norm": 0.5005857052431121,
+        "discarded_energy_fraction": 0.16856386079973157
+      },
+      "mlp.gate_proj.weight": {
+        "increment_squared_norm": 8.891226783994858,
+        "discarded_squared_norm": 1.6675515642288943,
+        "discarded_energy_fraction": 0.18755022279160197
+      },
+      "mlp.up_proj.weight": {
+        "increment_squared_norm": 8.904417736644444,
+        "discarded_squared_norm": 1.6249167714323254,
+        "discarded_energy_fraction": 0.18248433749298265
+      },
+      "mlp.down_proj.weight": {
+        "increment_squared_norm": 8.876608614104573,
+        "discarded_squared_norm": 1.5894793722028373,
+        "discarded_energy_fraction": 0.17906381156393655
+      },
+      "input_layernorm.weight": {
+        "increment_squared_norm": 0.006095567524555496,
+        "discarded_squared_norm": 0.0010979250547775387,
+        "discarded_energy_fraction": 0.1801185944302376
+      },
+      "post_attention_layernorm.weight": {
+        "increment_squared_norm": 0.006430745367744149,
+        "discarded_squared_norm": 0.001155037767592675,
+        "discarded_energy_fraction": 0.17961180260475038
+      }
+    }
+  },
+  "total_discarded_energy_fraction": 0.18459950353899626,
+  "dense_increment_depth_gram": [
+    [
+      11.99271254074708,
+      0.0012600177358442805,
+      -0.007144925357436197,
+      1.3339476262174879,
+      -0.020090626516008094
+    ],
+    [
+      0.0012600177358442805,
+      11.98715868843467,
+      0.03435990153252439,
+      0.46075148678872785,
+      0.44059488558260096
+    ],
+    [
+      -0.007144925357436197,
+      0.03435990153252439,
+      12.159734997963739,
+      -0.002436450866822212,
+      1.6071656118868791
+    ],
+    [
+      1.3339476262174879,
+      0.46075148678872785,
+      -0.002436450866822212,
+      15.600177132087527,
+      -0.16279389267136465
+    ],
+    [
+      -0.02009062651600791,
+      0.44059488558260046,
+      1.6071656118868791,
+      -0.16279389267136446,
+      16.07251963506763
+    ]
+  ],
+  "dense_increment_depth_eigenvalues": [
+    16.707190092658532,
+    16.06872599753477,
+    11.981333443333623,
+    11.588192392654038,
+    11.466861068119679
+  ],
+  "best_unconstrained_rank4_increment_energy_residual_fraction": 0.16909705999932523,
+  "isotropic_random_one_direction_expected_energy_fraction": 0.2,
+  "meaning": "Fraction of learned dense increment squared norm outside the rank-4 shared sample space; original weight knots remain fixed."
+}

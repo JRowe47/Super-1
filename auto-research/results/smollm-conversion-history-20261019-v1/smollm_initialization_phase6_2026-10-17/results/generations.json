@@ -1,0 +1,38 @@
+[
+  {
+    "model": "original",
+    "prompt": "The purpose of a computer network is",
+    "new_token_count": 40,
+    "continuation": " to connect computers together so that they can communicate with each other. A computer network can be used to connect computers in a building, or in a large building, or in a large city.\n\n"
+  },
+  {
+    "model": "original",
+    "prompt": "A useful way to test a scientific theory is",
+    "new_token_count": 40,
+    "continuation": " to compare it to a competing theory. This is called a test of theory.\n\nTheoretical science is the study of the natural world. It is the study of the physical world, including"
+  },
+  {
+    "model": "interpolated",
+    "prompt": "The purpose of a computer network is",
+    "new_token_count": 40,
+    "continuation": " to connect computers together so that they can communicate with each other. The computer network is a collection of computers that are connected to each other. The computer network is a collection of computers that are connected to"
+  },
+  {
+    "model": "interpolated",
+    "prompt": "A useful way to test a scientific theory is",
+    "new_token_count": 40,
+    "continuation": " to run a series of experiments.\n\nThe first step is to run a series of experiments.\n\nThe first step is to run a series of experiments.\n\nThe second step is to"
+  },
+  {
+    "model": "retained",
+    "prompt": "The purpose of a computer network is",
+    "new_token_count": 40,
+    "continuation": " to connect computers and other devices to each other. The network is made up of computers, networks, and other devices.\n\nThe computer network is made up of computers, networks, and other devices"
+  },
+  {
+    "model": "retained",
+    "prompt": "A useful way to test a scientific theory is",
+    "new_token_count": 40,
+    "continuation": " to compare it to a known theory. This is called a test.\n\nThe test is a way to determine if a theory is true or false.\n\nThe test is a way to determine"
+  }
+]

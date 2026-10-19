@@ -1,0 +1,12 @@
+{
+  "candidate": "lifted_dense_n3",
+  "public_loader": "load_candidate('lifted_dense', steps=3, native_export=True)",
+  "format": "Ordinary Transformers save_pretrained with safetensors",
+  "reload": "AutoModelForCausalLM.from_pretrained, local files, eager attention, FP32",
+  "decoder_blocks": 28,
+  "unique_parameter_values": 127434816,
+  "max_reloaded_logit_abs_difference": 0.0,
+  "input_tokens": 32,
+  "passed": true,
+  "temporary_export_removed": true
+}

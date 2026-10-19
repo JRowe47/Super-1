@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "validation_candidates": 11,
+  "test_candidates": 12,
+  "test_reference_nll": 3.600231144577265,
+  "selected_curve": {
+    "id": "curve_mixed_n1",
+    "kind": "student",
+    "student": "curve_mixed",
+    "steps": 1
+  },
+  "curve_passed_validation_gate": false,
+  "cached_vs_prefill_max_logit": 0.00015497207641601562,
+  "materialized_vs_streamed_max_logit": 0.0,
+  "test_document_clusters": 16,
+  "outside_parameter_tensors_checked": 263,
+  "outside_parameters_identical": true,
+  "training_tokens": 131072,
+  "validation_tokens": 4096,
+  "test_tokens": 16384,
+  "process_elapsed_seconds": 1328.2635740980004,
+  "peak_rss_mib": 2496.30078125,
+  "torch": "2.5.1+cpu",
+  "python": "3.12.14"
+}

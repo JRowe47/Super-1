@@ -1,0 +1,22 @@
+{
+  "original_tensor_hashes_unchanged": true,
+  "phase6_reproduction_abs_errors": {
+    "initial": {
+      "nll": 0.0,
+      "mean_kl": 0.0,
+      "delta_nll": 0.0
+    },
+    "full_update": {
+      "nll": 0.0,
+      "mean_kl": 0.0,
+      "delta_nll": 0.0
+    }
+  },
+  "total_seconds": 435.6373286330004,
+  "torch": "2.5.1+cpu",
+  "threads": 4,
+  "calibration_targets": 1024,
+  "audit_targets": 8192,
+  "audit_documents": 32,
+  "new_optimizer_steps": 0
+}

@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "candidate": "activation_svd_qk_0.125",
+      "state_tensors_exact": 9,
+      "first_test_window_nll": 3.841949939727783,
+      "expected_nll": 3.841949939727783,
+      "absolute_loss_difference": 0.0
+    },
+    {
+      "candidate": "joint_activation_svd_0.125",
+      "state_tensors_exact": 8,
+      "first_test_window_nll": 3.84354829788208,
+      "expected_nll": 3.84354829788208,
+      "absolute_loss_difference": 0.0
+    },
+    {
+      "candidate": "mlp_importance_12",
+      "state_tensors_exact": 8,
+      "first_test_window_nll": 3.9042162895202637,
+      "expected_nll": 3.9042162895202637,
+      "absolute_loss_difference": 0.0
+    }
+  ]
+}

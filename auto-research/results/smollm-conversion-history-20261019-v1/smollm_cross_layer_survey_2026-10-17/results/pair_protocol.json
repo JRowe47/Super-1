@@ -1,0 +1,36 @@
+{
+  "pairs": [
+    [
+      2,
+      3
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      10,
+      11
+    ],
+    [
+      14,
+      15
+    ],
+    [
+      20,
+      21
+    ],
+    [
+      28,
+      29
+    ]
+  ],
+  "operations": [
+    "swap_order",
+    "remove_both"
+  ],
+  "selection": "Exploratory follow-up chosen after initial survey; cover depth and the block-11 transition.",
+  "data": "Same 1024-token validation probe; no independent generalization claim.",
+  "interaction": "delta_nll_remove_both - delta_nll_remove_a - delta_nll_remove_b",
+  "scope": "Each pair changed separately in the full model, then restored; cache disabled."
+}
