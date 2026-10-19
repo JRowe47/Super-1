@@ -444,6 +444,48 @@
       "report": "auto-research/reports/mingru-cpu-upstream-20261018-v1.md",
       "run_id": "mingru-cpu-upstream-20261018-v1",
       "status": "COMPLETED_ARCHIVAL_IMPORT_NO_NEW_MODEL_EXECUTION"
+    },
+    {
+      "run_id": "state-sketch-perturb-20261018-v1",
+      "kind": "Completed external CPU pilot; archival publication",
+      "status": "COMPLETED_NEGATIVE_OR_NULL_PRIMARY_RESULT",
+      "approval": "User authorized the experiment in the project conversation and explicitly authorized this upstream publication, including perturbation results.",
+      "registration_chronology": "Original local protocol and registry frozen before execution; upstream registry entry added retrospectively for publication.",
+      "protocol": "auto-research/results/state-sketch-perturb-20261018-v1/snapshot/auto-research/results/state-sketch-perturb-20261018-v1/PROTOCOL.json",
+      "protocol_sha256": "95a246b7909c2e37c20187fbec7981f713192059a7a0ef5facc5423e0a459785",
+      "terminal": "auto-research/results/state-sketch-perturb-20261018-v1/snapshot/auto-research/results/state-sketch-perturb-20261018-v1/TERMINAL.json",
+      "metrics": "auto-research/results/state-sketch-perturb-20261018-v1/snapshot/auto-research/results/state-sketch-perturb-20261018-v1/ANALYSIS.json",
+      "report": "auto-research/reports/state-sketch-perturb-20261018-v1.md",
+      "completed_outcomes": 54,
+      "seeds": [
+        73,
+        191,
+        307
+      ],
+      "decision": "DO_NOT_ADVANCE_THIS_CONFIGURATION",
+      "publication_target": "rohanarun/Super-1 main (PR only)",
+      "upstream_publication_authorization": "auto-research/results/perturbation-annealing-publication-20261019-v1/IMPORT.json"
+    },
+    {
+      "run_id": "phase-annealing-20261019-v1",
+      "kind": "Completed external CPU pilot; archival publication",
+      "status": "COMPLETED_NEGATIVE_OR_NULL_PRIMARY_RESULT",
+      "approval": "User authorized the experiment in the project conversation and explicitly authorized this upstream publication, including perturbation results.",
+      "registration_chronology": "Original local protocol and registry frozen before execution; upstream registry entry added retrospectively for publication.",
+      "protocol": "auto-research/results/phase-annealing-20261019-v1/snapshot/auto-research/results/phase-annealing-20261019-v1/PROTOCOL.json",
+      "protocol_sha256": "53664aa1acffebda396104cf95a52c2c4c0bf467b2b08a74dbde83a07c81f0f9",
+      "terminal": "auto-research/results/phase-annealing-20261019-v1/snapshot/auto-research/results/phase-annealing-20261019-v1/TERMINAL.json",
+      "metrics": "auto-research/results/phase-annealing-20261019-v1/snapshot/auto-research/results/phase-annealing-20261019-v1/ANALYSIS.json",
+      "report": "auto-research/reports/phase-annealing-20261019-v1.md",
+      "completed_outcomes": 99,
+      "seeds": [
+        419,
+        563,
+        701
+      ],
+      "decision": "PRIMARY_GATE_FAILED_NO_USEFUL_ADVANTAGE",
+      "publication_target": "rohanarun/Super-1 main (PR only)",
+      "upstream_publication_authorization": "auto-research/results/perturbation-annealing-publication-20261019-v1/IMPORT.json"
     }
   ],
   "schema_version": 1,
