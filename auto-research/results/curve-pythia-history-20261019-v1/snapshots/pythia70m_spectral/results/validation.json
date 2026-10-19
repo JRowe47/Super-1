@@ -1,0 +1,84 @@
+{
+  "checkpoint_hashes": [
+    {
+      "step": 0,
+      "sha256_matches_download": true
+    },
+    {
+      "step": 64,
+      "sha256_matches_download": true
+    },
+    {
+      "step": 128,
+      "sha256_matches_download": true
+    },
+    {
+      "step": 256,
+      "sha256_matches_download": true
+    },
+    {
+      "step": 512,
+      "sha256_matches_download": true
+    },
+    {
+      "step": 1000,
+      "sha256_matches_download": true
+    },
+    {
+      "step": 2000,
+      "sha256_matches_download": true
+    },
+    {
+      "step": 4000,
+      "sha256_matches_download": true
+    },
+    {
+      "step": 8000,
+      "sha256_matches_download": true
+    },
+    {
+      "step": 16000,
+      "sha256_matches_download": true
+    },
+    {
+      "step": 32000,
+      "sha256_matches_download": true
+    },
+    {
+      "step": 64000,
+      "sha256_matches_download": true
+    },
+    {
+      "step": 143000,
+      "sha256_matches_download": true
+    }
+  ],
+  "extra_transform_checks": [
+    {
+      "n": 31,
+      "relative_reconstruction_rms": 1.0510369496733198e-07,
+      "relative_energy_error": 1.7253124262595065e-08
+    },
+    {
+      "n": 32,
+      "relative_reconstruction_rms": 1.2505662034857963e-07,
+      "relative_energy_error": 4.8876911185047334e-08
+    },
+    {
+      "n": 511,
+      "relative_reconstruction_rms": 1.8476192573176946e-07,
+      "relative_energy_error": 8.584604349604064e-08
+    },
+    {
+      "n": 512,
+      "relative_reconstruction_rms": 1.613477758879365e-07,
+      "relative_energy_error": 7.352240227742612e-08
+    }
+  ],
+  "max_frequency_tree_sum_error": 3.3306690738754696e-16,
+  "max_axis_reconstruction_relative_rms": 1.8186708157753353e-07,
+  "max_band_reconstruction_relative_rms": 2.3486787143252207e-07,
+  "tensor_views": 1368,
+  "checkpoint_count": 13,
+  "passed": true
+}

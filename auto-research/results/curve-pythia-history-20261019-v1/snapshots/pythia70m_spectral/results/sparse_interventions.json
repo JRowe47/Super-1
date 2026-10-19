@@ -1,0 +1,2192 @@
+[
+  {
+    "variant": "full_target",
+    "fraction": 1.0,
+    "nll": 4.272936080052302,
+    "tokens": 520,
+    "passages": [
+      {
+        "passage": 0,
+        "tokens": 43,
+        "nll": 4.396271705627441
+      },
+      {
+        "passage": 1,
+        "tokens": 45,
+        "nll": 3.776752471923828
+      },
+      {
+        "passage": 2,
+        "tokens": 46,
+        "nll": 3.9751079082489014
+      },
+      {
+        "passage": 3,
+        "tokens": 45,
+        "nll": 3.9295148849487305
+      },
+      {
+        "passage": 4,
+        "tokens": 42,
+        "nll": 4.859599590301514
+      },
+      {
+        "passage": 5,
+        "tokens": 44,
+        "nll": 3.7689507007598877
+      },
+      {
+        "passage": 6,
+        "tokens": 40,
+        "nll": 3.9738128185272217
+      },
+      {
+        "passage": 7,
+        "tokens": 43,
+        "nll": 4.354339122772217
+      },
+      {
+        "passage": 8,
+        "tokens": 41,
+        "nll": 4.2586588859558105
+      },
+      {
+        "passage": 9,
+        "tokens": 42,
+        "nll": 4.0694098472595215
+      },
+      {
+        "passage": 10,
+        "tokens": 43,
+        "nll": 5.117788791656494
+      },
+      {
+        "passage": 11,
+        "tokens": 46,
+        "nll": 4.816061496734619
+      }
+    ],
+    "kl_to_target": 0.0
+  },
+  {
+    "variant": "reverted_mlp_weights",
+    "fraction": 0.0,
+    "nll": 5.319003430696634,
+    "tokens": 520,
+    "passages": [
+      {
+        "passage": 0,
+        "tokens": 43,
+        "nll": 5.761049270629883,
+        "kl_to_target": 0.8560852408409119
+      },
+      {
+        "passage": 1,
+        "tokens": 45,
+        "nll": 4.818336009979248,
+        "kl_to_target": 0.8713749647140503
+      },
+      {
+        "passage": 2,
+        "tokens": 46,
+        "nll": 5.0481743812561035,
+        "kl_to_target": 0.9507817625999451
+      },
+      {
+        "passage": 3,
+        "tokens": 45,
+        "nll": 5.023265361785889,
+        "kl_to_target": 1.0280953645706177
+      },
+      {
+        "passage": 4,
+        "tokens": 42,
+        "nll": 6.133528709411621,
+        "kl_to_target": 1.1473489999771118
+      },
+      {
+        "passage": 5,
+        "tokens": 44,
+        "nll": 4.8006439208984375,
+        "kl_to_target": 0.7739036679267883
+      },
+      {
+        "passage": 6,
+        "tokens": 40,
+        "nll": 4.8217878341674805,
+        "kl_to_target": 0.7678693532943726
+      },
+      {
+        "passage": 7,
+        "tokens": 43,
+        "nll": 5.31917667388916,
+        "kl_to_target": 0.8833167552947998
+      },
+      {
+        "passage": 8,
+        "tokens": 41,
+        "nll": 5.10134220123291,
+        "kl_to_target": 0.7712481617927551
+      },
+      {
+        "passage": 9,
+        "tokens": 42,
+        "nll": 4.9796223640441895,
+        "kl_to_target": 0.9527972340583801
+      },
+      {
+        "passage": 10,
+        "tokens": 43,
+        "nll": 5.9618401527404785,
+        "kl_to_target": 0.9205102920532227
+      },
+      {
+        "passage": 11,
+        "tokens": 46,
+        "nll": 6.042992115020752,
+        "kl_to_target": 0.9085540771484375
+      }
+    ],
+    "kl_to_target": 0.9037994111959751
+  },
+  {
+    "variant": "spatial_top",
+    "fraction": 0.1,
+    "real_coordinates_kept": 1258284,
+    "energy_retained": 0.45992917108980047,
+    "kl_recovery_fraction": 0.46733595937247885,
+    "nll_recovery_fraction": 0.48068626990424285,
+    "nll": 4.816173217846797,
+    "tokens": 520,
+    "passages": [
+      {
+        "passage": 0,
+        "tokens": 43,
+        "nll": 5.066047668457031,
+        "kl_to_target": 0.4206008017063141
+      },
+      {
+        "passage": 1,
+        "tokens": 45,
+        "nll": 4.401916027069092,
+        "kl_to_target": 0.5355606079101562
+      },
+      {
+        "passage": 2,
+        "tokens": 46,
+        "nll": 4.38084602355957,
+        "kl_to_target": 0.38388562202453613
+      },
+      {
+        "passage": 3,
+        "tokens": 45,
+        "nll": 4.64616060256958,
+        "kl_to_target": 0.6333732604980469
+      },
+      {
+        "passage": 4,
+        "tokens": 42,
+        "nll": 5.632254600524902,
+        "kl_to_target": 0.5679926872253418
+      },
+      {
+        "passage": 5,
+        "tokens": 44,
+        "nll": 4.483988285064697,
+        "kl_to_target": 0.4623230993747711
+      },
+      {
+        "passage": 6,
+        "tokens": 40,
+        "nll": 4.370331764221191,
+        "kl_to_target": 0.43322116136550903
+      },
+      {
+        "passage": 7,
+        "tokens": 43,
+        "nll": 4.732086658477783,
+        "kl_to_target": 0.4687826335430145
+      },
+      {
+        "passage": 8,
+        "tokens": 41,
+        "nll": 4.673785209655762,
+        "kl_to_target": 0.4163304269313812
+      },
+      {
+        "passage": 9,
+        "tokens": 42,
+        "nll": 4.421504020690918,
+        "kl_to_target": 0.46015211939811707
+      },
+      {
+        "passage": 10,
+        "tokens": 43,
+        "nll": 5.413602352142334,
+        "kl_to_target": 0.47164982557296753
+      },
+      {
+        "passage": 11,
+        "tokens": 46,
+        "nll": 5.5572004318237305,
+        "kl_to_target": 0.5137231945991516
+      }
+    ],
+    "kl_to_target": 0.4814214462844225
+  },
+  {
+    "variant": "spatial_random",
+    "fraction": 0.1,
+    "real_coordinates_kept": 1258284,
+    "energy_retained": 0.10003200764363067,
+    "kl_recovery_fraction": 0.13805262198837776,
+    "nll_recovery_fraction": 0.10264199683451651,
+    "nll": 5.211632989003108,
+    "tokens": 520,
+    "passages": [
+      {
+        "passage": 0,
+        "tokens": 43,
+        "nll": 5.638391494750977,
+        "kl_to_target": 0.7337414026260376
+      },
+      {
+        "passage": 1,
+        "tokens": 45,
+        "nll": 4.790713310241699,
+        "kl_to_target": 0.7576431035995483
+      },
+      {
+        "passage": 2,
+        "tokens": 46,
+        "nll": 4.857102870941162,
+        "kl_to_target": 0.7873196005821228
+      },
+      {
+        "passage": 3,
+        "tokens": 45,
+        "nll": 4.819891452789307,
+        "kl_to_target": 0.8976763486862183
+      },
+      {
+        "passage": 4,
+        "tokens": 42,
+        "nll": 6.075398921966553,
+        "kl_to_target": 0.9953092932701111
+      },
+      {
+        "passage": 5,
+        "tokens": 44,
+        "nll": 4.741852760314941,
+        "kl_to_target": 0.6677092909812927
+      },
+      {
+        "passage": 6,
+        "tokens": 40,
+        "nll": 4.752092361450195,
+        "kl_to_target": 0.688257098197937
+      },
+      {
+        "passage": 7,
+        "tokens": 43,
+        "nll": 5.180346965789795,
+        "kl_to_target": 0.7414015531539917
+      },
+      {
+        "passage": 8,
+        "tokens": 41,
+        "nll": 5.032782554626465,
+        "kl_to_target": 0.679153561592102
+      },
+      {
+        "passage": 9,
+        "tokens": 42,
+        "nll": 4.8724684715271,
+        "kl_to_target": 0.7678061127662659
+      },
+      {
+        "passage": 10,
+        "tokens": 43,
+        "nll": 5.894705772399902,
+        "kl_to_target": 0.7878637909889221
+      },
+      {
+        "passage": 11,
+        "tokens": 46,
+        "nll": 5.882334232330322,
+        "kl_to_target": 0.8320285677909851
+      }
+    ],
+    "kl_to_target": 0.7790275327288188
+  },
+  {
+    "variant": "fourier_native_top",
+    "fraction": 0.1,
+    "real_coordinates_kept": 1258284,
+    "energy_retained": 0.4483251243866237,
+    "kl_recovery_fraction": 0.37322847321174135,
+    "nll_recovery_fraction": 0.33570915089430015,
+    "nll": 4.967829048633575,
+    "tokens": 520,
+    "passages": [
+      {
+        "passage": 0,
+        "tokens": 43,
+        "nll": 5.351485252380371,
+        "kl_to_target": 0.5232020616531372
+      },
+      {
+        "passage": 1,
+        "tokens": 45,
+        "nll": 4.650195121765137,
+        "kl_to_target": 0.5703346729278564
+      },
+      {
+        "passage": 2,
+        "tokens": 46,
+        "nll": 4.654710292816162,
+        "kl_to_target": 0.44771504402160645
+      },
+      {
+        "passage": 3,
+        "tokens": 45,
+        "nll": 4.628227710723877,
+        "kl_to_target": 0.7227106094360352
+      },
+      {
+        "passage": 4,
+        "tokens": 42,
+        "nll": 5.7707839012146,
+        "kl_to_target": 0.6698717474937439
+      },
+      {
+        "passage": 5,
+        "tokens": 44,
+        "nll": 4.4039626121521,
+        "kl_to_target": 0.5020413994789124
+      },
+      {
+        "passage": 6,
+        "tokens": 40,
+        "nll": 4.464773654937744,
+        "kl_to_target": 0.5457483530044556
+      },
+      {
+        "passage": 7,
+        "tokens": 43,
+        "nll": 5.154105186462402,
+        "kl_to_target": 0.5877317190170288
+      },
+      {
+        "passage": 8,
+        "tokens": 41,
+        "nll": 5.016831874847412,
+        "kl_to_target": 0.5613869428634644
+      },
+      {
+        "passage": 9,
+        "tokens": 42,
+        "nll": 4.746576309204102,
+        "kl_to_target": 0.5915636420249939
+      },
+      {
+        "passage": 10,
+        "tokens": 43,
+        "nll": 5.473120212554932,
+        "kl_to_target": 0.5581549406051636
+      },
+      {
+        "passage": 11,
+        "tokens": 46,
+        "nll": 5.320789337158203,
+        "kl_to_target": 0.5238637328147888
+      }
+    ],
+    "kl_to_target": 0.5664757368656305
+  },
+  {
+    "variant": "fourier_random0_top",
+    "fraction": 0.1,
+    "real_coordinates_kept": 1258284,
+    "energy_retained": 0.44805382787078,
+    "kl_recovery_fraction": 0.33988397467466513,
+    "nll_recovery_fraction": 0.2830007295782227,
+    "nll": 5.02296560727633,
+    "tokens": 520,
+    "passages": [
+      {
+        "passage": 0,
+        "tokens": 43,
+        "nll": 5.4530510902404785,
+        "kl_to_target": 0.5907261371612549
+      },
+      {
+        "passage": 1,
+        "tokens": 45,
+        "nll": 4.490389347076416,
+        "kl_to_target": 0.5583401918411255
+      },
+      {
+        "passage": 2,
+        "tokens": 46,
+        "nll": 4.494016170501709,
+        "kl_to_target": 0.42919403314590454
+      },
+      {
+        "passage": 3,
+        "tokens": 45,
+        "nll": 5.047924995422363,
+        "kl_to_target": 0.8440864682197571
+      },
+      {
+        "passage": 4,
+        "tokens": 42,
+        "nll": 5.839159965515137,
+        "kl_to_target": 0.730258047580719
+      },
+      {
+        "passage": 5,
+        "tokens": 44,
+        "nll": 4.414947986602783,
+        "kl_to_target": 0.5455492734909058
+      },
+      {
+        "passage": 6,
+        "tokens": 40,
+        "nll": 4.586648464202881,
+        "kl_to_target": 0.6740283370018005
+      },
+      {
+        "passage": 7,
+        "tokens": 43,
+        "nll": 5.119046211242676,
+        "kl_to_target": 0.5656919479370117
+      },
+      {
+        "passage": 8,
+        "tokens": 41,
+        "nll": 4.773174285888672,
+        "kl_to_target": 0.5382435321807861
+      },
+      {
+        "passage": 9,
+        "tokens": 42,
+        "nll": 4.897276401519775,
+        "kl_to_target": 0.5532151460647583
+      },
+      {
+        "passage": 10,
+        "tokens": 43,
+        "nll": 5.667899131774902,
+        "kl_to_target": 0.545887291431427
+      },
+      {
+        "passage": 11,
+        "tokens": 46,
+        "nll": 5.5069403648376465,
+        "kl_to_target": 0.5923493504524231
+      }
+    ],
+    "kl_to_target": 0.596612475010065
+  },
+  {
+    "variant": "fourier_random1_top",
+    "fraction": 0.1,
+    "real_coordinates_kept": 1258284,
+    "energy_retained": 0.4480364041982992,
+    "kl_recovery_fraction": 0.40449741666640904,
+    "nll_recovery_fraction": 0.33173219740348686,
+    "nll": 4.971989209835346,
+    "tokens": 520,
+    "passages": [
+      {
+        "passage": 0,
+        "tokens": 43,
+        "nll": 5.465600967407227,
+        "kl_to_target": 0.4962781071662903
+      },
+      {
+        "passage": 1,
+        "tokens": 45,
+        "nll": 4.586390018463135,
+        "kl_to_target": 0.5691050887107849
+      },
+      {
+        "passage": 2,
+        "tokens": 46,
+        "nll": 4.388126373291016,
+        "kl_to_target": 0.474722683429718
+      },
+      {
+        "passage": 3,
+        "tokens": 45,
+        "nll": 4.892791748046875,
+        "kl_to_target": 0.753566324710846
+      },
+      {
+        "passage": 4,
+        "tokens": 42,
+        "nll": 5.7115478515625,
+        "kl_to_target": 0.7043057680130005
+      },
+      {
+        "passage": 5,
+        "tokens": 44,
+        "nll": 4.451752662658691,
+        "kl_to_target": 0.4337780177593231
+      },
+      {
+        "passage": 6,
+        "tokens": 40,
+        "nll": 4.545677661895752,
+        "kl_to_target": 0.557293176651001
+      },
+      {
+        "passage": 7,
+        "tokens": 43,
+        "nll": 5.1196980476379395,
+        "kl_to_target": 0.5520261526107788
+      },
+      {
+        "passage": 8,
+        "tokens": 41,
+        "nll": 4.849386215209961,
+        "kl_to_target": 0.47948673367500305
+      },
+      {
+        "passage": 9,
+        "tokens": 42,
+        "nll": 4.728789806365967,
+        "kl_to_target": 0.43937692046165466
+      },
+      {
+        "passage": 10,
+        "tokens": 43,
+        "nll": 5.537615776062012,
+        "kl_to_target": 0.5092451572418213
+      },
+      {
+        "passage": 11,
+        "tokens": 46,
+        "nll": 5.406713485717773,
+        "kl_to_target": 0.4884362816810608
+      }
+    ],
+    "kl_to_target": 0.5382148841825816
+  },
+  {
+    "variant": "fourier_random2_top",
+    "fraction": 0.1,
+    "real_coordinates_kept": 1258284,
+    "energy_retained": 0.44819681812510614,
+    "kl_recovery_fraction": 0.379020402815756,
+    "nll_recovery_fraction": 0.36568821400472873,
+    "nll": 4.93646892951085,
+    "tokens": 520,
+    "passages": [
+      {
+        "passage": 0,
+        "tokens": 43,
+        "nll": 5.248354911804199,
+        "kl_to_target": 0.48350343108177185
+      },
+      {
+        "passage": 1,
+        "tokens": 45,
+        "nll": 4.567586421966553,
+        "kl_to_target": 0.5142497420310974
+      },
+      {
+        "passage": 2,
+        "tokens": 46,
+        "nll": 4.529661655426025,
+        "kl_to_target": 0.47470036149024963
+      },
+      {
+        "passage": 3,
+        "tokens": 45,
+        "nll": 4.996512413024902,
+        "kl_to_target": 0.890114426612854
+      },
+      {
+        "passage": 4,
+        "tokens": 42,
+        "nll": 5.462160587310791,
+        "kl_to_target": 0.5690340399742126
+      },
+      {
+        "passage": 5,
+        "tokens": 44,
+        "nll": 4.5009002685546875,
+        "kl_to_target": 0.5667338371276855
+      },
+      {
+        "passage": 6,
+        "tokens": 40,
+        "nll": 4.446057319641113,
+        "kl_to_target": 0.5804183483123779
+      },
+      {
+        "passage": 7,
+        "tokens": 43,
+        "nll": 4.797799587249756,
+        "kl_to_target": 0.5755249261856079
+      },
+      {
+        "passage": 8,
+        "tokens": 41,
+        "nll": 4.795356750488281,
+        "kl_to_target": 0.5049668550491333
+      },
+      {
+        "passage": 9,
+        "tokens": 42,
+        "nll": 4.811928749084473,
+        "kl_to_target": 0.5128086805343628
+      },
+      {
+        "passage": 10,
+        "tokens": 43,
+        "nll": 5.51835823059082,
+        "kl_to_target": 0.52935791015625
+      },
+      {
+        "passage": 11,
+        "tokens": 46,
+        "nll": 5.5421223640441895,
+        "kl_to_target": 0.5264792442321777
+      }
+    ],
+    "kl_to_target": 0.5612409942998335
+  },
+  {
+    "variant": "fourier_pca_top",
+    "fraction": 0.1,
+    "real_coordinates_kept": 1258284,
+    "energy_retained": 0.44872300161434314,
+    "kl_recovery_fraction": 0.4287771422851405,
+    "nll_recovery_fraction": 0.40609191237094994,
+    "nll": 4.894203939804664,
+    "tokens": 520,
+    "passages": [
+      {
+        "passage": 0,
+        "tokens": 43,
+        "nll": 5.311245441436768,
+        "kl_to_target": 0.496644526720047
+      },
+      {
+        "passage": 1,
+        "tokens": 45,
+        "nll": 4.507679462432861,
+        "kl_to_target": 0.505240797996521
+      },
+      {
+        "passage": 2,
+        "tokens": 46,
+        "nll": 4.43601655960083,
+        "kl_to_target": 0.4891885817050934
+      },
+      {
+        "passage": 3,
+        "tokens": 45,
+        "nll": 4.445172309875488,
+        "kl_to_target": 0.601125955581665
+      },
+      {
+        "passage": 4,
+        "tokens": 42,
+        "nll": 5.81270170211792,
+        "kl_to_target": 0.7205150127410889
+      },
+      {
+        "passage": 5,
+        "tokens": 44,
+        "nll": 4.425516605377197,
+        "kl_to_target": 0.4605514705181122
+      },
+      {
+        "passage": 6,
+        "tokens": 40,
+        "nll": 4.434131145477295,
+        "kl_to_target": 0.47422653436660767
+      },
+      {
+        "passage": 7,
+        "tokens": 43,
+        "nll": 4.902394771575928,
+        "kl_to_target": 0.5349265933036804
+      },
+      {
+        "passage": 8,
+        "tokens": 41,
+        "nll": 4.795050144195557,
+        "kl_to_target": 0.4623437225818634
+      },
+      {
+        "passage": 9,
+        "tokens": 42,
+        "nll": 4.7721848487854,
+        "kl_to_target": 0.5426464080810547
+      },
+      {
+        "passage": 10,
+        "tokens": 43,
+        "nll": 5.578843116760254,
+        "kl_to_target": 0.46967434883117676
+      },
+      {
+        "passage": 11,
+        "tokens": 46,
+        "nll": 5.341824054718018,
+        "kl_to_target": 0.4429549276828766
+      }
+    ],
+    "kl_to_target": 0.5162708824643722
+  },
+  {
+    "variant": "fourier_native_low",
+    "fraction": 0.1,
+    "real_coordinates_kept": 1258284,
+    "energy_retained": 0.10315829497385874,
+    "kl_recovery_fraction": -0.32435641051615094,
+    "nll_recovery_fraction": -0.34281311828194444,
+    "nll": 5.67760904110395,
+    "tokens": 520,
+    "passages": [
+      {
+        "passage": 0,
+        "tokens": 43,
+        "nll": 6.512192726135254,
+        "kl_to_target": 1.3193110227584839
+      },
+      {
+        "passage": 1,
+        "tokens": 45,
+        "nll": 5.371264934539795,
+        "kl_to_target": 1.161342740058899
+      },
+      {
+        "passage": 2,
+        "tokens": 46,
+        "nll": 5.22290563583374,
+        "kl_to_target": 1.0512033700942993
+      },
+      {
+        "passage": 3,
+        "tokens": 45,
+        "nll": 5.508479595184326,
+        "kl_to_target": 1.4163837432861328
+      },
+      {
+        "passage": 4,
+        "tokens": 42,
+        "nll": 6.390383243560791,
+        "kl_to_target": 1.551594853401184
+      },
+      {
+        "passage": 5,
+        "tokens": 44,
+        "nll": 4.781940937042236,
+        "kl_to_target": 0.981415331363678
+      },
+      {
+        "passage": 6,
+        "tokens": 40,
+        "nll": 5.405885696411133,
+        "kl_to_target": 1.1351819038391113
+      },
+      {
+        "passage": 7,
+        "tokens": 43,
+        "nll": 5.705895900726318,
+        "kl_to_target": 1.189690113067627
+      },
+      {
+        "passage": 8,
+        "tokens": 41,
+        "nll": 5.318134784698486,
+        "kl_to_target": 1.0020463466644287
+      },
+      {
+        "passage": 9,
+        "tokens": 42,
+        "nll": 5.396172046661377,
+        "kl_to_target": 1.2179018259048462
+      },
+      {
+        "passage": 10,
+        "tokens": 43,
+        "nll": 6.332772731781006,
+        "kl_to_target": 1.2442985773086548
+      },
+      {
+        "passage": 11,
+        "tokens": 46,
+        "nll": 6.197996139526367,
+        "kl_to_target": 1.101697325706482
+      }
+    ],
+    "kl_to_target": 1.1969525440381124
+  },
+  {
+    "variant": "fourier_pca_low",
+    "fraction": 0.1,
+    "real_coordinates_kept": 1258284,
+    "energy_retained": 0.10802362751763835,
+    "kl_recovery_fraction": 0.08446168831458478,
+    "nll_recovery_fraction": 0.05053944020823355,
+    "nll": 5.26613577237496,
+    "tokens": 520,
+    "passages": [
+      {
+        "passage": 0,
+        "tokens": 43,
+        "nll": 5.7474470138549805,
+        "kl_to_target": 0.7506463527679443
+      },
+      {
+        "passage": 1,
+        "tokens": 45,
+        "nll": 4.892237663269043,
+        "kl_to_target": 0.7708423137664795
+      },
+      {
+        "passage": 2,
+        "tokens": 46,
+        "nll": 4.821218013763428,
+        "kl_to_target": 0.7368478178977966
+      },
+      {
+        "passage": 3,
+        "tokens": 45,
+        "nll": 4.921685218811035,
+        "kl_to_target": 0.920709490776062
+      },
+      {
+        "passage": 4,
+        "tokens": 42,
+        "nll": 5.970494270324707,
+        "kl_to_target": 1.0280107259750366
+      },
+      {
+        "passage": 5,
+        "tokens": 44,
+        "nll": 4.613265514373779,
+        "kl_to_target": 0.6742026209831238
+      },
+      {
+        "passage": 6,
+        "tokens": 40,
+        "nll": 5.039377212524414,
+        "kl_to_target": 0.8571203351020813
+      },
+      {
+        "passage": 7,
+        "tokens": 43,
+        "nll": 5.129403591156006,
+        "kl_to_target": 0.7606160640716553
+      },
+      {
+        "passage": 8,
+        "tokens": 41,
+        "nll": 5.0852556228637695,
+        "kl_to_target": 0.7212647199630737
+      },
+      {
+        "passage": 9,
+        "tokens": 42,
+        "nll": 5.087579727172852,
+        "kl_to_target": 0.9014229774475098
+      },
+      {
+        "passage": 10,
+        "tokens": 43,
+        "nll": 6.080405235290527,
+        "kl_to_target": 0.9294111728668213
+      },
+      {
+        "passage": 11,
+        "tokens": 46,
+        "nll": 5.833319187164307,
+        "kl_to_target": 0.8860687017440796
+      }
+    ],
+    "kl_to_target": 0.8274629870286354
+  },
+  {
+    "variant": "spatial_top",
+    "fraction": 0.25,
+    "real_coordinates_kept": 3145728,
+    "energy_retained": 0.737542420228167,
+    "kl_recovery_fraction": 0.7253792185278045,
+    "nll_recovery_fraction": 0.701207809085874,
+    "nll": 4.5854928355950575,
+    "tokens": 520,
+    "passages": [
+      {
+        "passage": 0,
+        "tokens": 43,
+        "nll": 4.765467643737793,
+        "kl_to_target": 0.2098797857761383
+      },
+      {
+        "passage": 1,
+        "tokens": 45,
+        "nll": 4.171455383300781,
+        "kl_to_target": 0.27131301164627075
+      },
+      {
+        "passage": 2,
+        "tokens": 46,
+        "nll": 4.259341239929199,
+        "kl_to_target": 0.2195972353219986
+      },
+      {
+        "passage": 3,
+        "tokens": 45,
+        "nll": 4.289573669433594,
+        "kl_to_target": 0.30535662174224854
+      },
+      {
+        "passage": 4,
+        "tokens": 42,
+        "nll": 5.310733795166016,
+        "kl_to_target": 0.28819695115089417
+      },
+      {
+        "passage": 5,
+        "tokens": 44,
+        "nll": 4.260478973388672,
+        "kl_to_target": 0.227815642952919
+      },
+      {
+        "passage": 6,
+        "tokens": 40,
+        "nll": 4.26800012588501,
+        "kl_to_target": 0.22565264999866486
+      },
+      {
+        "passage": 7,
+        "tokens": 43,
+        "nll": 4.546060085296631,
+        "kl_to_target": 0.26177769899368286
+      },
+      {
+        "passage": 8,
+        "tokens": 41,
+        "nll": 4.435679912567139,
+        "kl_to_target": 0.23601508140563965
+      },
+      {
+        "passage": 9,
+        "tokens": 42,
+        "nll": 4.215370178222656,
+        "kl_to_target": 0.2148381620645523
+      },
+      {
+        "passage": 10,
+        "tokens": 43,
+        "nll": 5.18742036819458,
+        "kl_to_target": 0.22709356248378754
+      },
+      {
+        "passage": 11,
+        "tokens": 46,
+        "nll": 5.30837345123291,
+        "kl_to_target": 0.28506746888160706
+      }
+    ],
+    "kl_to_target": 0.24820210059674885
+  },
+  {
+    "variant": "spatial_random",
+    "fraction": 0.25,
+    "real_coordinates_kept": 3145728,
+    "energy_retained": 0.24994568534246897,
+    "kl_recovery_fraction": 0.30468456774568065,
+    "nll_recovery_fraction": 0.25056295478230906,
+    "nll": 5.056897704417889,
+    "tokens": 520,
+    "passages": [
+      {
+        "passage": 0,
+        "tokens": 43,
+        "nll": 5.298980236053467,
+        "kl_to_target": 0.562308132648468
+      },
+      {
+        "passage": 1,
+        "tokens": 45,
+        "nll": 4.540584564208984,
+        "kl_to_target": 0.6104277968406677
+      },
+      {
+        "passage": 2,
+        "tokens": 46,
+        "nll": 4.719574928283691,
+        "kl_to_target": 0.6674107909202576
+      },
+      {
+        "passage": 3,
+        "tokens": 45,
+        "nll": 4.6630940437316895,
+        "kl_to_target": 0.7213281989097595
+      },
+      {
+        "passage": 4,
+        "tokens": 42,
+        "nll": 5.892769813537598,
+        "kl_to_target": 0.7951056361198425
+      },
+      {
+        "passage": 5,
+        "tokens": 44,
+        "nll": 4.530231952667236,
+        "kl_to_target": 0.5337485074996948
+      },
+      {
+        "passage": 6,
+        "tokens": 40,
+        "nll": 4.624197959899902,
+        "kl_to_target": 0.5451587438583374
+      },
+      {
+        "passage": 7,
+        "tokens": 43,
+        "nll": 5.162531852722168,
+        "kl_to_target": 0.6360206007957458
+      },
+      {
+        "passage": 8,
+        "tokens": 41,
+        "nll": 4.838660717010498,
+        "kl_to_target": 0.528296709060669
+      },
+      {
+        "passage": 9,
+        "tokens": 42,
+        "nll": 4.691750526428223,
+        "kl_to_target": 0.5184794664382935
+      },
+      {
+        "passage": 10,
+        "tokens": 43,
+        "nll": 5.851394176483154,
+        "kl_to_target": 0.6039023995399475
+      },
+      {
+        "passage": 11,
+        "tokens": 46,
+        "nll": 5.861582279205322,
+        "kl_to_target": 0.7942059636116028
+      }
+    ],
+    "kl_to_target": 0.6284256782669287
+  },
+  {
+    "variant": "fourier_native_top",
+    "fraction": 0.25,
+    "real_coordinates_kept": 3145728,
+    "energy_retained": 0.7295950296275515,
+    "kl_recovery_fraction": 0.7161384426654063,
+    "nll_recovery_fraction": 0.6617340472375691,
+    "nll": 4.626785049071679,
+    "tokens": 520,
+    "passages": [
+      {
+        "passage": 0,
+        "tokens": 43,
+        "nll": 4.897539138793945,
+        "kl_to_target": 0.23587541282176971
+      },
+      {
+        "passage": 1,
+        "tokens": 45,
+        "nll": 4.316222667694092,
+        "kl_to_target": 0.28709152340888977
+      },
+      {
+        "passage": 2,
+        "tokens": 46,
+        "nll": 4.185604572296143,
+        "kl_to_target": 0.22311702370643616
+      },
+      {
+        "passage": 3,
+        "tokens": 45,
+        "nll": 4.318087577819824,
+        "kl_to_target": 0.31793126463890076
+      },
+      {
+        "passage": 4,
+        "tokens": 42,
+        "nll": 5.385961055755615,
+        "kl_to_target": 0.3057800531387329
+      },
+      {
+        "passage": 5,
+        "tokens": 44,
+        "nll": 4.155729293823242,
+        "kl_to_target": 0.20584414899349213
+      },
+      {
+        "passage": 6,
+        "tokens": 40,
+        "nll": 4.145803928375244,
+        "kl_to_target": 0.2494274079799652
+      },
+      {
+        "passage": 7,
+        "tokens": 43,
+        "nll": 4.773291110992432,
+        "kl_to_target": 0.2820940315723419
+      },
+      {
+        "passage": 8,
+        "tokens": 41,
+        "nll": 4.628398895263672,
+        "kl_to_target": 0.2715836763381958
+      },
+      {
+        "passage": 9,
+        "tokens": 42,
+        "nll": 4.401349067687988,
+        "kl_to_target": 0.22794051468372345
+      },
+      {
+        "passage": 10,
+        "tokens": 43,
+        "nll": 5.262141227722168,
+        "kl_to_target": 0.23582585155963898
+      },
+      {
+        "passage": 11,
+        "tokens": 46,
+        "nll": 5.069849014282227,
+        "kl_to_target": 0.2373911440372467
+      }
+    ],
+    "kl_to_target": 0.25655390838017833
+  },
+  {
+    "variant": "fourier_random0_top",
+    "fraction": 0.25,
+    "real_coordinates_kept": 3145728,
+    "energy_retained": 0.7293801726782937,
+    "kl_recovery_fraction": 0.7123904381276146,
+    "nll_recovery_fraction": 0.6840172479493766,
+    "nll": 4.603475320339203,
+    "tokens": 520,
+    "passages": [
+      {
+        "passage": 0,
+        "tokens": 43,
+        "nll": 4.690277576446533,
+        "kl_to_target": 0.24969513714313507
+      },
+      {
+        "passage": 1,
+        "tokens": 45,
+        "nll": 4.232029914855957,
+        "kl_to_target": 0.2924896776676178
+      },
+      {
+        "passage": 2,
+        "tokens": 46,
+        "nll": 4.1696391105651855,
+        "kl_to_target": 0.20261482894420624
+      },
+      {
+        "passage": 3,
+        "tokens": 45,
+        "nll": 4.458003520965576,
+        "kl_to_target": 0.33801358938217163
+      },
+      {
+        "passage": 4,
+        "tokens": 42,
+        "nll": 5.281350612640381,
+        "kl_to_target": 0.3091919720172882
+      },
+      {
+        "passage": 5,
+        "tokens": 44,
+        "nll": 4.046634674072266,
+        "kl_to_target": 0.24526812136173248
+      },
+      {
+        "passage": 6,
+        "tokens": 40,
+        "nll": 4.199824333190918,
+        "kl_to_target": 0.28428274393081665
+      },
+      {
+        "passage": 7,
+        "tokens": 43,
+        "nll": 4.731563568115234,
+        "kl_to_target": 0.27912452816963196
+      },
+      {
+        "passage": 8,
+        "tokens": 41,
+        "nll": 4.60246467590332,
+        "kl_to_target": 0.2515393793582916
+      },
+      {
+        "passage": 9,
+        "tokens": 42,
+        "nll": 4.409469127655029,
+        "kl_to_target": 0.2049822062253952
+      },
+      {
+        "passage": 10,
+        "tokens": 43,
+        "nll": 5.331143856048584,
+        "kl_to_target": 0.22676457464694977
+      },
+      {
+        "passage": 11,
+        "tokens": 46,
+        "nll": 5.104641914367676,
+        "kl_to_target": 0.23728075623512268
+      }
+    ],
+    "kl_to_target": 0.2599413526745943
+  },
+  {
+    "variant": "fourier_random1_top",
+    "fraction": 0.25,
+    "real_coordinates_kept": 3145728,
+    "energy_retained": 0.7293285774011989,
+    "kl_recovery_fraction": 0.7159067010110496,
+    "nll_recovery_fraction": 0.7021090269386471,
+    "nll": 4.584550101023454,
+    "tokens": 520,
+    "passages": [
+      {
+        "passage": 0,
+        "tokens": 43,
+        "nll": 4.8846940994262695,
+        "kl_to_target": 0.2224690169095993
+      },
+      {
+        "passage": 1,
+        "tokens": 45,
+        "nll": 4.227946758270264,
+        "kl_to_target": 0.2892926037311554
+      },
+      {
+        "passage": 2,
+        "tokens": 46,
+        "nll": 4.251644611358643,
+        "kl_to_target": 0.2434077262878418
+      },
+      {
+        "passage": 3,
+        "tokens": 45,
+        "nll": 4.226813316345215,
+        "kl_to_target": 0.3641054034233093
+      },
+      {
+        "passage": 4,
+        "tokens": 42,
+        "nll": 5.212494850158691,
+        "kl_to_target": 0.30672991275787354
+      },
+      {
+        "passage": 5,
+        "tokens": 44,
+        "nll": 4.108924388885498,
+        "kl_to_target": 0.23634038865566254
+      },
+      {
+        "passage": 6,
+        "tokens": 40,
+        "nll": 4.120494842529297,
+        "kl_to_target": 0.2486308366060257
+      },
+      {
+        "passage": 7,
+        "tokens": 43,
+        "nll": 4.585085868835449,
+        "kl_to_target": 0.24205262959003448
+      },
+      {
+        "passage": 8,
+        "tokens": 41,
+        "nll": 4.54091215133667,
+        "kl_to_target": 0.24723733961582184
+      },
+      {
+        "passage": 9,
+        "tokens": 42,
+        "nll": 4.479096412658691,
+        "kl_to_target": 0.22038334608078003
+      },
+      {
+        "passage": 10,
+        "tokens": 43,
+        "nll": 5.336686611175537,
+        "kl_to_target": 0.23771585524082184
+      },
+      {
+        "passage": 11,
+        "tokens": 46,
+        "nll": 5.052422523498535,
+        "kl_to_target": 0.21959497034549713
+      }
+    ],
+    "kl_to_target": 0.25676335635093545
+  },
+  {
+    "variant": "fourier_random2_top",
+    "fraction": 0.25,
+    "real_coordinates_kept": 3145728,
+    "energy_retained": 0.7295032895064189,
+    "kl_recovery_fraction": 0.71942915285702,
+    "nll_recovery_fraction": 0.6623871034239409,
+    "nll": 4.626101908316979,
+    "tokens": 520,
+    "passages": [
+      {
+        "passage": 0,
+        "tokens": 43,
+        "nll": 4.86006498336792,
+        "kl_to_target": 0.2218131124973297
+      },
+      {
+        "passage": 1,
+        "tokens": 45,
+        "nll": 4.2601399421691895,
+        "kl_to_target": 0.290140837430954
+      },
+      {
+        "passage": 2,
+        "tokens": 46,
+        "nll": 4.332400321960449,
+        "kl_to_target": 0.2623143494129181
+      },
+      {
+        "passage": 3,
+        "tokens": 45,
+        "nll": 4.465264320373535,
+        "kl_to_target": 0.34754714369773865
+      },
+      {
+        "passage": 4,
+        "tokens": 42,
+        "nll": 5.188755989074707,
+        "kl_to_target": 0.25562041997909546
+      },
+      {
+        "passage": 5,
+        "tokens": 44,
+        "nll": 4.174830913543701,
+        "kl_to_target": 0.2240721583366394
+      },
+      {
+        "passage": 6,
+        "tokens": 40,
+        "nll": 4.156197547912598,
+        "kl_to_target": 0.24750849604606628
+      },
+      {
+        "passage": 7,
+        "tokens": 43,
+        "nll": 4.5616960525512695,
+        "kl_to_target": 0.2729148864746094
+      },
+      {
+        "passage": 8,
+        "tokens": 41,
+        "nll": 4.499760150909424,
+        "kl_to_target": 0.22099174559116364
+      },
+      {
+        "passage": 9,
+        "tokens": 42,
+        "nll": 4.53763484954834,
+        "kl_to_target": 0.2019931674003601
+      },
+      {
+        "passage": 10,
+        "tokens": 43,
+        "nll": 5.274011135101318,
+        "kl_to_target": 0.2287362813949585
+      },
+      {
+        "passage": 11,
+        "tokens": 46,
+        "nll": 5.190916061401367,
+        "kl_to_target": 0.25978583097457886
+      }
+    ],
+    "kl_to_target": 0.25357976644658126
+  },
+  {
+    "variant": "fourier_pca_top",
+    "fraction": 0.25,
+    "real_coordinates_kept": 3145728,
+    "energy_retained": 0.7297835935817337,
+    "kl_recovery_fraction": 0.7451681272603876,
+    "nll_recovery_fraction": 0.7378287032180243,
+    "nll": 4.547184913892012,
+    "tokens": 520,
+    "passages": [
+      {
+        "passage": 0,
+        "tokens": 43,
+        "nll": 4.712277889251709,
+        "kl_to_target": 0.2262532263994217
+      },
+      {
+        "passage": 1,
+        "tokens": 45,
+        "nll": 4.127203941345215,
+        "kl_to_target": 0.23036739230155945
+      },
+      {
+        "passage": 2,
+        "tokens": 46,
+        "nll": 4.095244407653809,
+        "kl_to_target": 0.18930932879447937
+      },
+      {
+        "passage": 3,
+        "tokens": 45,
+        "nll": 4.148492813110352,
+        "kl_to_target": 0.28350022435188293
+      },
+      {
+        "passage": 4,
+        "tokens": 42,
+        "nll": 5.427042007446289,
+        "kl_to_target": 0.2889273166656494
+      },
+      {
+        "passage": 5,
+        "tokens": 44,
+        "nll": 4.150176048278809,
+        "kl_to_target": 0.1979624629020691
+      },
+      {
+        "passage": 6,
+        "tokens": 40,
+        "nll": 4.153262138366699,
+        "kl_to_target": 0.22800859808921814
+      },
+      {
+        "passage": 7,
+        "tokens": 43,
+        "nll": 4.579666614532471,
+        "kl_to_target": 0.2369815707206726
+      },
+      {
+        "passage": 8,
+        "tokens": 41,
+        "nll": 4.477684497833252,
+        "kl_to_target": 0.22217880189418793
+      },
+      {
+        "passage": 9,
+        "tokens": 42,
+        "nll": 4.398217678070068,
+        "kl_to_target": 0.2451423704624176
+      },
+      {
+        "passage": 10,
+        "tokens": 43,
+        "nll": 5.257237434387207,
+        "kl_to_target": 0.20255117118358612
+      },
+      {
+        "passage": 11,
+        "tokens": 46,
+        "nll": 5.06846809387207,
+        "kl_to_target": 0.21592973172664642
+      }
+    ],
+    "kl_to_target": 0.2303168965360293
+  },
+  {
+    "variant": "fourier_native_low",
+    "fraction": 0.25,
+    "real_coordinates_kept": 3145728,
+    "energy_retained": 0.25242524442714553,
+    "kl_recovery_fraction": -0.010193714676373533,
+    "nll_recovery_fraction": -0.05611259693670427,
+    "nll": 5.377700986311986,
+    "tokens": 520,
+    "passages": [
+      {
+        "passage": 0,
+        "tokens": 43,
+        "nll": 6.0337395668029785,
+        "kl_to_target": 0.9494816064834595
+      },
+      {
+        "passage": 1,
+        "tokens": 45,
+        "nll": 4.955933094024658,
+        "kl_to_target": 0.8713491559028625
+      },
+      {
+        "passage": 2,
+        "tokens": 46,
+        "nll": 4.925765514373779,
+        "kl_to_target": 0.7787555456161499
+      },
+      {
+        "passage": 3,
+        "tokens": 45,
+        "nll": 5.218184471130371,
+        "kl_to_target": 1.1437203884124756
+      },
+      {
+        "passage": 4,
+        "tokens": 42,
+        "nll": 6.241671085357666,
+        "kl_to_target": 1.2279093265533447
+      },
+      {
+        "passage": 5,
+        "tokens": 44,
+        "nll": 4.620059490203857,
+        "kl_to_target": 0.7383729815483093
+      },
+      {
+        "passage": 6,
+        "tokens": 40,
+        "nll": 5.1338701248168945,
+        "kl_to_target": 0.8779702186584473
+      },
+      {
+        "passage": 7,
+        "tokens": 43,
+        "nll": 5.400566101074219,
+        "kl_to_target": 0.9111654758453369
+      },
+      {
+        "passage": 8,
+        "tokens": 41,
+        "nll": 5.018302917480469,
+        "kl_to_target": 0.7777355313301086
+      },
+      {
+        "passage": 9,
+        "tokens": 42,
+        "nll": 5.148235321044922,
+        "kl_to_target": 0.9008978009223938
+      },
+      {
+        "passage": 10,
+        "tokens": 43,
+        "nll": 5.935631275177002,
+        "kl_to_target": 0.9169222712516785
+      },
+      {
+        "passage": 11,
+        "tokens": 46,
+        "nll": 5.919843673706055,
+        "kl_to_target": 0.8679532408714294
+      }
+    ],
+    "kl_to_target": 0.9130124845183812
+  },
+  {
+    "variant": "fourier_pca_low",
+    "fraction": 0.25,
+    "real_coordinates_kept": 3145728,
+    "energy_retained": 0.25716126668694395,
+    "kl_recovery_fraction": 0.34493356695318067,
+    "nll_recovery_fraction": 0.31423161213609613,
+    "nll": 4.990296000700731,
+    "tokens": 520,
+    "passages": [
+      {
+        "passage": 0,
+        "tokens": 43,
+        "nll": 5.356995582580566,
+        "kl_to_target": 0.5262900590896606
+      },
+      {
+        "passage": 1,
+        "tokens": 45,
+        "nll": 4.465388298034668,
+        "kl_to_target": 0.5412263870239258
+      },
+      {
+        "passage": 2,
+        "tokens": 46,
+        "nll": 4.705445766448975,
+        "kl_to_target": 0.4652016758918762
+      },
+      {
+        "passage": 3,
+        "tokens": 45,
+        "nll": 4.6482672691345215,
+        "kl_to_target": 0.7028668522834778
+      },
+      {
+        "passage": 4,
+        "tokens": 42,
+        "nll": 5.658816814422607,
+        "kl_to_target": 0.7866116762161255
+      },
+      {
+        "passage": 5,
+        "tokens": 44,
+        "nll": 4.504237651824951,
+        "kl_to_target": 0.5056186318397522
+      },
+      {
+        "passage": 6,
+        "tokens": 40,
+        "nll": 4.695186614990234,
+        "kl_to_target": 0.6137703657150269
+      },
+      {
+        "passage": 7,
+        "tokens": 43,
+        "nll": 4.99536657333374,
+        "kl_to_target": 0.5839986801147461
+      },
+      {
+        "passage": 8,
+        "tokens": 41,
+        "nll": 4.766201972961426,
+        "kl_to_target": 0.511783242225647
+      },
+      {
+        "passage": 9,
+        "tokens": 42,
+        "nll": 4.831913948059082,
+        "kl_to_target": 0.613664984703064
+      },
+      {
+        "passage": 10,
+        "tokens": 43,
+        "nll": 5.811805725097656,
+        "kl_to_target": 0.6289293169975281
+      },
+      {
+        "passage": 11,
+        "tokens": 46,
+        "nll": 5.463278293609619,
+        "kl_to_target": 0.632667064666748
+      }
+    ],
+    "kl_to_target": 0.5920486564819629
+  },
+  {
+    "variant": "fourier_random0_low",
+    "fraction": 0.1,
+    "real_coordinates_kept": 1258284,
+    "energy_retained": 0.10293034228630812,
+    "kl_recovery_fraction": -0.2586811006787033,
+    "nll_recovery_fraction": -0.2532387434949595,
+    "nll": 5.583908212184906,
+    "tokens": 520,
+    "passages": [
+      {
+        "passage": 0,
+        "tokens": 43,
+        "nll": 6.286136150360107,
+        "kl_to_target": 1.1456328630447388
+      },
+      {
+        "passage": 1,
+        "tokens": 45,
+        "nll": 5.133949279785156,
+        "kl_to_target": 1.0368726253509521
+      },
+      {
+        "passage": 2,
+        "tokens": 46,
+        "nll": 5.1559977531433105,
+        "kl_to_target": 1.0522891283035278
+      },
+      {
+        "passage": 3,
+        "tokens": 45,
+        "nll": 5.417243957519531,
+        "kl_to_target": 1.3309983015060425
+      },
+      {
+        "passage": 4,
+        "tokens": 42,
+        "nll": 6.303046703338623,
+        "kl_to_target": 1.4117192029953003
+      },
+      {
+        "passage": 5,
+        "tokens": 44,
+        "nll": 4.866852760314941,
+        "kl_to_target": 1.0045723915100098
+      },
+      {
+        "passage": 6,
+        "tokens": 40,
+        "nll": 5.175784111022949,
+        "kl_to_target": 1.1143872737884521
+      },
+      {
+        "passage": 7,
+        "tokens": 43,
+        "nll": 5.501499652862549,
+        "kl_to_target": 1.1098700761795044
+      },
+      {
+        "passage": 8,
+        "tokens": 41,
+        "nll": 5.2816081047058105,
+        "kl_to_target": 0.9274284839630127
+      },
+      {
+        "passage": 9,
+        "tokens": 42,
+        "nll": 5.425342559814453,
+        "kl_to_target": 1.1983731985092163
+      },
+      {
+        "passage": 10,
+        "tokens": 43,
+        "nll": 6.199631690979004,
+        "kl_to_target": 1.2176121473312378
+      },
+      {
+        "passage": 11,
+        "tokens": 46,
+        "nll": 6.258456707000732,
+        "kl_to_target": 1.104803442955017
+      }
+    ],
+    "kl_to_target": 1.1375952376769138
+  },
+  {
+    "variant": "fourier_random1_low",
+    "fraction": 0.1,
+    "real_coordinates_kept": 1258284,
+    "energy_retained": 0.10275949034005664,
+    "kl_recovery_fraction": -0.3197061799920795,
+    "nll_recovery_fraction": -0.3221240116808361,
+    "nll": 5.65596684217453,
+    "tokens": 520,
+    "passages": [
+      {
+        "passage": 0,
+        "tokens": 43,
+        "nll": 6.423777103424072,
+        "kl_to_target": 1.2664378881454468
+      },
+      {
+        "passage": 1,
+        "tokens": 45,
+        "nll": 5.199891567230225,
+        "kl_to_target": 1.0524017810821533
+      },
+      {
+        "passage": 2,
+        "tokens": 46,
+        "nll": 5.193228244781494,
+        "kl_to_target": 1.0404499769210815
+      },
+      {
+        "passage": 3,
+        "tokens": 45,
+        "nll": 5.493488788604736,
+        "kl_to_target": 1.450451135635376
+      },
+      {
+        "passage": 4,
+        "tokens": 42,
+        "nll": 6.500448226928711,
+        "kl_to_target": 1.5603610277175903
+      },
+      {
+        "passage": 5,
+        "tokens": 44,
+        "nll": 4.695558547973633,
+        "kl_to_target": 0.9136626720428467
+      },
+      {
+        "passage": 6,
+        "tokens": 40,
+        "nll": 5.272810459136963,
+        "kl_to_target": 1.1570602655410767
+      },
+      {
+        "passage": 7,
+        "tokens": 43,
+        "nll": 5.662602424621582,
+        "kl_to_target": 1.2568268775939941
+      },
+      {
+        "passage": 8,
+        "tokens": 41,
+        "nll": 5.406620502471924,
+        "kl_to_target": 0.9962453246116638
+      },
+      {
+        "passage": 9,
+        "tokens": 42,
+        "nll": 5.372447967529297,
+        "kl_to_target": 1.175028681755066
+      },
+      {
+        "passage": 10,
+        "tokens": 43,
+        "nll": 6.312950611114502,
+        "kl_to_target": 1.2774392366409302
+      },
+      {
+        "passage": 11,
+        "tokens": 46,
+        "nll": 6.347627639770508,
+        "kl_to_target": 1.1759669780731201
+      }
+    ],
+    "kl_to_target": 1.192749668428531
+  },
+  {
+    "variant": "fourier_random2_low",
+    "fraction": 0.1,
+    "real_coordinates_kept": 1258284,
+    "energy_retained": 0.10314318351327355,
+    "kl_recovery_fraction": -0.22925884450549794,
+    "nll_recovery_fraction": -0.21347901523824284,
+    "nll": 5.542316858585064,
+    "tokens": 520,
+    "passages": [
+      {
+        "passage": 0,
+        "tokens": 43,
+        "nll": 6.162012100219727,
+        "kl_to_target": 1.1123595237731934
+      },
+      {
+        "passage": 1,
+        "tokens": 45,
+        "nll": 5.130229949951172,
+        "kl_to_target": 1.0472662448883057
+      },
+      {
+        "passage": 2,
+        "tokens": 46,
+        "nll": 5.010183811187744,
+        "kl_to_target": 1.0066862106323242
+      },
+      {
+        "passage": 3,
+        "tokens": 45,
+        "nll": 5.285052299499512,
+        "kl_to_target": 1.2749271392822266
+      },
+      {
+        "passage": 4,
+        "tokens": 42,
+        "nll": 6.343952655792236,
+        "kl_to_target": 1.398794174194336
+      },
+      {
+        "passage": 5,
+        "tokens": 44,
+        "nll": 4.7534050941467285,
+        "kl_to_target": 0.909615695476532
+      },
+      {
+        "passage": 6,
+        "tokens": 40,
+        "nll": 5.1692047119140625,
+        "kl_to_target": 1.1601957082748413
+      },
+      {
+        "passage": 7,
+        "tokens": 43,
+        "nll": 5.509535312652588,
+        "kl_to_target": 1.1033800840377808
+      },
+      {
+        "passage": 8,
+        "tokens": 41,
+        "nll": 5.350403785705566,
+        "kl_to_target": 0.9652835726737976
+      },
+      {
+        "passage": 9,
+        "tokens": 42,
+        "nll": 5.243408203125,
+        "kl_to_target": 1.1046656370162964
+      },
+      {
+        "passage": 10,
+        "tokens": 43,
+        "nll": 6.331203937530518,
+        "kl_to_target": 1.1733382940292358
+      },
+      {
+        "passage": 11,
+        "tokens": 46,
+        "nll": 6.234273433685303,
+        "kl_to_target": 1.0876587629318237
+      }
+    ],
+    "kl_to_target": 1.1110034198715137
+  },
+  {
+    "variant": "fourier_random0_low",
+    "fraction": 0.25,
+    "real_coordinates_kept": 3145728,
+    "energy_retained": 0.252700192778484,
+    "kl_recovery_fraction": 0.10847331670165294,
+    "nll_recovery_fraction": 0.1060160336795771,
+    "nll": 5.208103519219619,
+    "tokens": 520,
+    "passages": [
+      {
+        "passage": 0,
+        "tokens": 43,
+        "nll": 5.747344970703125,
+        "kl_to_target": 0.7572177648544312
+      },
+      {
+        "passage": 1,
+        "tokens": 45,
+        "nll": 4.777126789093018,
+        "kl_to_target": 0.7751099467277527
+      },
+      {
+        "passage": 2,
+        "tokens": 46,
+        "nll": 4.801582336425781,
+        "kl_to_target": 0.7121662497520447
+      },
+      {
+        "passage": 3,
+        "tokens": 45,
+        "nll": 5.0633625984191895,
+        "kl_to_target": 0.9987441301345825
+      },
+      {
+        "passage": 4,
+        "tokens": 42,
+        "nll": 6.098125457763672,
+        "kl_to_target": 1.0718634128570557
+      },
+      {
+        "passage": 5,
+        "tokens": 44,
+        "nll": 4.565159320831299,
+        "kl_to_target": 0.7085251212120056
+      },
+      {
+        "passage": 6,
+        "tokens": 40,
+        "nll": 4.844245910644531,
+        "kl_to_target": 0.8048334121704102
+      },
+      {
+        "passage": 7,
+        "tokens": 43,
+        "nll": 5.150394439697266,
+        "kl_to_target": 0.7710026502609253
+      },
+      {
+        "passage": 8,
+        "tokens": 41,
+        "nll": 4.994917392730713,
+        "kl_to_target": 0.6675746440887451
+      },
+      {
+        "passage": 9,
+        "tokens": 42,
+        "nll": 4.98899507522583,
+        "kl_to_target": 0.7904439568519592
+      },
+      {
+        "passage": 10,
+        "tokens": 43,
+        "nll": 5.719175815582275,
+        "kl_to_target": 0.8337362408638
+      },
+      {
+        "passage": 11,
+        "tokens": 46,
+        "nll": 5.758785724639893,
+        "kl_to_target": 0.7802770137786865
+      }
+    ],
+    "kl_to_target": 0.8057612914305466
+  },
+  {
+    "variant": "fourier_random1_low",
+    "fraction": 0.25,
+    "real_coordinates_kept": 3145728,
+    "energy_retained": 0.2525504812019721,
+    "kl_recovery_fraction": 0.05647664445649336,
+    "nll_recovery_fraction": 0.0354777517028848,
+    "nll": 5.28189131296598,
+    "tokens": 520,
+    "passages": [
+      {
+        "passage": 0,
+        "tokens": 43,
+        "nll": 5.793474197387695,
+        "kl_to_target": 0.8306581377983093
+      },
+      {
+        "passage": 1,
+        "tokens": 45,
+        "nll": 4.923746109008789,
+        "kl_to_target": 0.8177289366722107
+      },
+      {
+        "passage": 2,
+        "tokens": 46,
+        "nll": 4.790808200836182,
+        "kl_to_target": 0.7223504185676575
+      },
+      {
+        "passage": 3,
+        "tokens": 45,
+        "nll": 5.024162769317627,
+        "kl_to_target": 1.015644907951355
+      },
+      {
+        "passage": 4,
+        "tokens": 42,
+        "nll": 6.116872787475586,
+        "kl_to_target": 1.1130987405776978
+      },
+      {
+        "passage": 5,
+        "tokens": 44,
+        "nll": 4.454774856567383,
+        "kl_to_target": 0.6624128222465515
+      },
+      {
+        "passage": 6,
+        "tokens": 40,
+        "nll": 4.870392799377441,
+        "kl_to_target": 0.8265531659126282
+      },
+      {
+        "passage": 7,
+        "tokens": 43,
+        "nll": 5.255350589752197,
+        "kl_to_target": 0.8949872255325317
+      },
+      {
+        "passage": 8,
+        "tokens": 41,
+        "nll": 5.093167304992676,
+        "kl_to_target": 0.7221006155014038
+      },
+      {
+        "passage": 9,
+        "tokens": 42,
+        "nll": 4.994265079498291,
+        "kl_to_target": 0.7951682806015015
+      },
+      {
+        "passage": 10,
+        "tokens": 43,
+        "nll": 6.080435752868652,
+        "kl_to_target": 0.9251180291175842
+      },
+      {
+        "passage": 11,
+        "tokens": 46,
+        "nll": 5.993016242980957,
+        "kl_to_target": 0.9077966213226318
+      }
+    ],
+    "kl_to_target": 0.8527558531898719
+  },
+  {
+    "variant": "fourier_random2_low",
+    "fraction": 0.25,
+    "real_coordinates_kept": 3145728,
+    "energy_retained": 0.2527584669886664,
+    "kl_recovery_fraction": 0.1404852619177429,
+    "nll_recovery_fraction": 0.1870683731614652,
+    "nll": 5.123317313194275,
+    "tokens": 520,
+    "passages": [
+      {
+        "passage": 0,
+        "tokens": 43,
+        "nll": 5.543275833129883,
+        "kl_to_target": 0.7426033020019531
+      },
+      {
+        "passage": 1,
+        "tokens": 45,
+        "nll": 4.644843101501465,
+        "kl_to_target": 0.699325442314148
+      },
+      {
+        "passage": 2,
+        "tokens": 46,
+        "nll": 4.753692626953125,
+        "kl_to_target": 0.7432838082313538
+      },
+      {
+        "passage": 3,
+        "tokens": 45,
+        "nll": 4.862055778503418,
+        "kl_to_target": 0.935551643371582
+      },
+      {
+        "passage": 4,
+        "tokens": 42,
+        "nll": 5.942815780639648,
+        "kl_to_target": 1.0402336120605469
+      },
+      {
+        "passage": 5,
+        "tokens": 44,
+        "nll": 4.407969951629639,
+        "kl_to_target": 0.5614101886749268
+      },
+      {
+        "passage": 6,
+        "tokens": 40,
+        "nll": 4.692949295043945,
+        "kl_to_target": 0.8743001818656921
+      },
+      {
+        "passage": 7,
+        "tokens": 43,
+        "nll": 5.100317478179932,
+        "kl_to_target": 0.7959909439086914
+      },
+      {
+        "passage": 8,
+        "tokens": 41,
+        "nll": 4.809490203857422,
+        "kl_to_target": 0.603658139705658
+      },
+      {
+        "passage": 9,
+        "tokens": 42,
+        "nll": 4.908637523651123,
+        "kl_to_target": 0.7582700252532959
+      },
+      {
+        "passage": 10,
+        "tokens": 43,
+        "nll": 6.025036334991455,
+        "kl_to_target": 0.8212777972221375
+      },
+      {
+        "passage": 11,
+        "tokens": 46,
+        "nll": 5.788583278656006,
+        "kl_to_target": 0.75553959608078
+      }
+    ],
+    "kl_to_target": 0.7768289141930067
+  }
+]

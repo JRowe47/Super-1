@@ -1,0 +1,153 @@
+{
+  "pythia": [
+    {
+      "arm": "native_lambda0",
+      "nll": 4.497000128030777,
+      "copy": 0.38149737070004147,
+      "long_copy": 0.37037037561337155,
+      "prose_delta": {
+        "estimate": 0.15144841603829828,
+        "ci95": [
+          0.11548655537431324,
+          0.1966011293614546
+        ]
+      }
+    },
+    {
+      "arm": "curve_lambda0",
+      "nll": 4.533715615669887,
+      "copy": 0.44037214790781337,
+      "long_copy": 0.38707881917556125,
+      "prose_delta": {
+        "estimate": 0.2329875650540204,
+        "ci95": [
+          0.17808836300543787,
+          0.2869898928287906
+        ]
+      }
+    },
+    {
+      "arm": "native_lambda1",
+      "nll": 4.579360753297806,
+      "copy": 0.5024365112185478,
+      "long_copy": 0.4636313070853551,
+      "prose_delta": {
+        "estimate": 0.08386649883968729,
+        "ci95": [
+          0.05542028460466692,
+          0.11462593394817953
+        ]
+      }
+    },
+    {
+      "arm": "curve_lambda1",
+      "nll": 4.536775221427281,
+      "copy": 0.5346411938468615,
+      "long_copy": 0.5383180230855942,
+      "prose_delta": {
+        "estimate": 0.0950417720096212,
+        "ci95": [
+          0.05609621320756982,
+          0.1330528563715813
+        ]
+      }
+    },
+    {
+      "arm": "native_lambda4",
+      "nll": 4.776013374328613,
+      "copy": 0.5639289232591788,
+      "long_copy": 0.46173768242200214,
+      "prose_delta": {
+        "estimate": 0.06997832949732391,
+        "ci95": [
+          0.0437450693925853,
+          0.09195611320394219
+        ]
+      }
+    },
+    {
+      "arm": "curve_lambda4",
+      "nll": 4.759834746519725,
+      "copy": 0.5824811247487863,
+      "long_copy": 0.5391534517208735,
+      "prose_delta": {
+        "estimate": 0.061741253020058215,
+        "ci95": [
+          0.03467750549316406,
+          0.08765866833136363
+        ]
+      }
+    }
+  ],
+  "curve_moderate_vs_zero": {
+    "a": "curve_lambda1",
+    "b": "curve_lambda0",
+    "contrast": {
+      "validation_nll": {
+        "estimate": 0.0030596057573954263,
+        "ci95": [
+          -0.016719110310077667,
+          0.024108727524677916
+        ]
+      },
+      "repeat": {
+        "accuracy": {
+          "estimate": 9.426904593904814,
+          "ci95": [
+            5.385080968650679,
+            13.590463873309394
+          ]
+        },
+        "target_nll": {
+          "estimate": -0.357185239593188,
+          "ci95": [
+            -0.8541751512636742,
+            0.2220611404627563
+          ]
+        },
+        "last_query_teacher_kl": {
+          "estimate": -0.864057195216219,
+          "ci95": [
+            -1.400688611393644,
+            -0.443823331381015
+          ]
+        }
+      },
+      "scrambled": {
+        "accuracy": {
+          "estimate": 3.8156790658831596,
+          "ci95": [
+            1.9348402558049809,
+            5.718633253515388
+          ]
+        },
+        "target_nll": {
+          "estimate": -0.41608230272928876,
+          "ci95": [
+            -0.7505498876174291,
+            -0.028831839561462326
+          ]
+        },
+        "last_query_teacher_kl": {
+          "estimate": -0.7820307487007865,
+          "ci95": [
+            -1.3547421962226998,
+            -0.3397190761107223
+          ]
+        }
+      },
+      "prose_nll": {
+        "estimate": -0.13794579304439922,
+        "ci95": [
+          -0.17179025550752566,
+          -0.09925532590994852
+        ]
+      }
+    }
+  },
+  "continuous_limit": {
+    "expected_mse": 0.7958140389187122,
+    "gaussian_sign_accuracy": 0.6555378017620559,
+    "proof": "For any real scalar depth field a(s)I+b(s)S, generators commute and the exact flow is exp(A I+B S). Matching S^6 requires unit magnitude on every Fourier mode. Modes0 and6 force A+B=0 and A-B=0, hence A=B=0 and identity, contradicting S^6. This proves non-representability only in this narrow one-hop scalar continuous-flow family; it does not apply to augmented-state or general GSA architectures."
+  }
+}

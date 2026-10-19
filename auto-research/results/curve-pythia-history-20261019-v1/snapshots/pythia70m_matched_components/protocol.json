@@ -1,0 +1,35 @@
+{
+  "title": "Pythia-70M: equal-norm packet controls and direction-by-checkpoint interventions",
+  "model": "EleutherAI/pythia-70m standard published seed; pinned checkpoints 512, 1000, 8000",
+  "coordinate_policy": "Original C-order QKV, block 3, head 6 Q/K, flat interval [589824,655360). No permutation, alignment, training, padding, downsampling or coefficient truncation.",
+  "selected_path_from_previous_phase": "aaaaad",
+  "depth": 6,
+  "packet_definition": "Orthonormal Haar packet: a=(even+odd)/sqrt(2), d=(even-odd)/sqrt(2), recursively in path order. Each depth-six group has 1024 coefficients and reconstructs 65536 native weights. Path order is tree order, not monotonic Fourier frequency order.",
+  "directions": {
+    "early": "E_p=P_p(theta1000-theta512)",
+    "late": "L_p=P_p(theta8000-theta512)",
+    "common_norm": "r=norm(E_aaaaad); e_p=r*E_p/norm(E_p); l=r*L_aaaaad/norm(L_aaaaad)",
+    "intervention": "theta_s - lambda*v; positive lambda subtracts, negative lambda adds; baseline lambda=0"
+  },
+  "scan": {"checkpoint":1000,"paths":"all 64 depth-six paths in the same native window","direction":"early, each rescaled to common norm","lambda":1,"sequences":24,"per_length":8,"lengths":[16,32,48],"prose_passages":4},
+  "confirmation_selection": "Before reading confirmation, lock prior selected aaaaad, sibling aaaaaa, canonical dddddd, largest-natural-early-norm path (weights only), and strongest scan path by repeated-query target NLL increase. Remove duplicate paths. No later reselection.",
+  "confirmation": {"sequences":48,"per_length":16,"lengths":[16,32,48],"prose_passages":8,"input_seed":2026101706},
+  "confirmation_interventions": [
+    "For aaaaad, early and late directions both at the common norm, at checkpoints 512,1000,8000; lambda in [-1,-0.5,0.5,1], sharing the unmodified baseline",
+    "At 1000 and 8000, both early and late directions also at lambda=norm(L_aaaaad)/common_norm. This reproduces the natural late rollback magnitude and matches its norm with the early direction",
+    "At 1000, each remaining locked path uses its early direction at common norm, lambda in [-1,1]"
+  ],
+  "input_separation": "Scan and confirmation use disjoint token identities and separate original prose. Both exclude every random-prefix token ID used in the previous causality phase. No confirmation data consulted before selection is written and hashed.",
+  "probe_definition": "Unique-token prefix S; query S[:-1] either repeated in order or scrambled. Target is the successor of that query token in the original prefix. Synthetic content-following, not a natural-language concept assay.",
+  "outcomes": ["Sequence mean target NLL and top-1 accuracy", "First-pass NLL and attention to original successor", "Original prose NLL, KL and argmax-change fraction", "Final-query hidden state for every sequence"],
+  "primary_contrasts": [
+    "At step1000, selected branch versus sibling and the mean of the other 63 scan branches at equal norm",
+    "On independent confirmation, prior selected versus locked scan winner and fixed controls at equal norm",
+    "For the same direction and norm, compare its effect at 1000 and 8000",
+    "Within a checkpoint, compare early and late directions at equal norm",
+    "Direction-by-checkpoint difference in differences at lambda=1"
+  ],
+  "uncertainty": "4000 paired sequence bootstraps stratified by length. Passage-level, token-weighted bootstrap for prose. Selected-versus-all scan contrast uses the mean of each sequence's 63 other branch effects. Descriptive 95% intervals, unadjusted; ranking is not a claim of statistically distinct ordering. Conditional on one model seed and these probes.",
+  "precision": "Float64 projections of original float32 checkpoints; single rounding into float32 inference. Save applied norms, exact parameter restoration, all-depth reconstruction, and an independent direct-index full-forward scoring check.",
+  "budget": "100 or fewer intervention variants plus baselines; three CPU threads; no optimizer updates; stop after this fixed protocol."
+}

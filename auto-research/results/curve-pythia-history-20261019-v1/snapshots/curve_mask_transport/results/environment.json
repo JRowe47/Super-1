@@ -1,0 +1,35 @@
+{
+  "seconds": 359.20828652381897,
+  "runs": [
+    {
+      "arm": "full",
+      "seconds": 67.10690402984619,
+      "steps": 24
+    },
+    {
+      "arm": "targeted",
+      "seconds": 69.88162350654602,
+      "steps": 24
+    },
+    {
+      "arm": "random0",
+      "seconds": 64.37065625190735,
+      "steps": 24
+    },
+    {
+      "arm": "random1",
+      "seconds": 63.807029247283936,
+      "steps": 24
+    },
+    {
+      "arm": "opposite",
+      "seconds": 64.99282598495483,
+      "steps": 24
+    }
+  ],
+  "new_training_steps": 120,
+  "threads": 3,
+  "torch": "2.14.1+cpu",
+  "protocol_sha256": "80eebe5258a4aab38e1af483ba9199c0f3b33ec7890a5f02f4a4345e9943d722",
+  "checkpoint_sha256": "737de0ce1e32a9559925b452921cdea0b12d3932133b6b0b70b61a351b9f6272"
+}

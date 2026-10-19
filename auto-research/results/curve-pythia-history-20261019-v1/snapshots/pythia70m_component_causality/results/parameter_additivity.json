@@ -1,0 +1,100 @@
+[
+  {
+    "parent": "G_a",
+    "left": "G_aa",
+    "right": "G_ad",
+    "kind": "packet",
+    "max_abs_parameter_nonadditivity": 2.2551405187698492e-17
+  },
+  {
+    "parent": "G_d",
+    "left": "G_da",
+    "right": "G_dd",
+    "kind": "packet",
+    "max_abs_parameter_nonadditivity": 2.42861286636753e-17
+  },
+  {
+    "parent": "L3_all",
+    "left": "G_a",
+    "right": "G_d",
+    "kind": "packet",
+    "max_abs_parameter_nonadditivity": 2.0816681711721685e-17
+  },
+  {
+    "parent": "F_a",
+    "left": "F_aa",
+    "right": "F_ab",
+    "kind": "fourier",
+    "max_abs_parameter_nonadditivity": 2.7755575615628914e-17
+  },
+  {
+    "parent": "F_b",
+    "left": "F_ba",
+    "right": "F_bb",
+    "kind": "fourier",
+    "max_abs_parameter_nonadditivity": 2.7755575615628914e-17
+  },
+  {
+    "parent": "L3_all",
+    "left": "F_a",
+    "right": "F_b",
+    "kind": "fourier",
+    "max_abs_parameter_nonadditivity": 5.551115123125783e-17
+  },
+  {
+    "parent": "H6_a",
+    "left": "H6_aa",
+    "right": "H6_ad",
+    "kind": "packet",
+    "max_abs_parameter_nonadditivity": 2.0816681711721685e-17
+  },
+  {
+    "parent": "H6_d",
+    "left": "H6_da",
+    "right": "H6_dd",
+    "kind": "packet",
+    "max_abs_parameter_nonadditivity": 1.7780915628762273e-17
+  },
+  {
+    "parent": "H6_root",
+    "left": "H6_a",
+    "right": "H6_d",
+    "kind": "packet",
+    "max_abs_parameter_nonadditivity": 2.0816681711721685e-17
+  },
+  {
+    "parent": "H6_root",
+    "left": "H6_query",
+    "right": "H6_key",
+    "kind": "native_spatial_split",
+    "max_abs_parameter_nonadditivity": 0.0
+  },
+  {
+    "parent": "H6_aa",
+    "left": "H6_aaa",
+    "right": "H6_aad",
+    "kind": "packet",
+    "max_abs_parameter_nonadditivity": 1.5612511283791264e-17
+  },
+  {
+    "parent": "H6_aaa",
+    "left": "H6_aaaa",
+    "right": "H6_aaad",
+    "kind": "packet",
+    "max_abs_parameter_nonadditivity": 1.5612511283791264e-17
+  },
+  {
+    "parent": "H6_aaaa",
+    "left": "H6_aaaaa",
+    "right": "H6_aaaad",
+    "kind": "packet",
+    "max_abs_parameter_nonadditivity": 8.673617379884035e-18
+  },
+  {
+    "parent": "H6_aaaaa",
+    "left": "H6_aaaaaa",
+    "right": "H6_aaaaad",
+    "kind": "packet",
+    "max_abs_parameter_nonadditivity": 5.204170427930421e-18
+  }
+]

@@ -1,0 +1,55 @@
+{
+  "gradient_checks": [
+    {
+      "arm": "native_sgd",
+      "gradient_max_abs_error": 0.0,
+      "loss_difference": 0.0
+    },
+    {
+      "arm": "curve_sgd",
+      "gradient_max_abs_error": 2.6645352591003757e-15,
+      "loss_difference": 0.0
+    },
+    {
+      "arm": "native_adamw",
+      "gradient_max_abs_error": 0.0,
+      "loss_difference": 0.0
+    },
+    {
+      "arm": "curve_adamw",
+      "gradient_max_abs_error": 2.6645352591003757e-15,
+      "loss_difference": 0.0
+    },
+    {
+      "arm": "curve_transport_adamw",
+      "gradient_max_abs_error": 2.6645352591003757e-15,
+      "loss_difference": 0.0
+    }
+  ],
+  "update_comparisons": [
+    {
+      "a": "native_sgd",
+      "b": "curve_sgd",
+      "norm_a": 0.3782383707734499,
+      "norm_b": 0.3782383707734498,
+      "cosine": 1.0,
+      "max_abs_difference": 1.1963148035128665e-14
+    },
+    {
+      "a": "native_adamw",
+      "b": "curve_transport_adamw",
+      "norm_a": 0.08697147420963185,
+      "norm_b": 0.08697147420963178,
+      "cosine": 0.9999999999999999,
+      "max_abs_difference": 2.900086312589145e-14
+    },
+    {
+      "a": "native_adamw",
+      "b": "curve_adamw",
+      "norm_a": 0.08697147420963185,
+      "norm_b": 0.08697204193284418,
+      "cosine": 0.6390105541357224,
+      "max_abs_difference": 6.67548955503894e-05
+    }
+  ]
+}

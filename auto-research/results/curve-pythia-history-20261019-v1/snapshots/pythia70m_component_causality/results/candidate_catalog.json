@@ -1,0 +1,532 @@
+[
+  {
+    "id": "L0_fourier_atom",
+    "layer": 0,
+    "basis": "fourier",
+    "low": 378338,
+    "high": 378339,
+    "role": "weight_selected_atom",
+    "label": "L0: Fourier bin 378338"
+  },
+  {
+    "id": "L0_haar_j6",
+    "layer": 0,
+    "basis": "haar",
+    "level": 6,
+    "index": 5171,
+    "role": "weight_selected_atom",
+    "label": "L0: Haar j6, k5171"
+  },
+  {
+    "id": "L0_haar_j9",
+    "layer": 0,
+    "basis": "haar",
+    "level": 9,
+    "index": 782,
+    "role": "weight_selected_atom",
+    "label": "L0: Haar j9, k782"
+  },
+  {
+    "id": "L0_haar_j15",
+    "layer": 0,
+    "basis": "haar",
+    "level": 15,
+    "index": 15,
+    "role": "weight_selected_atom",
+    "label": "L0: Haar j15, k15"
+  },
+  {
+    "id": "L1_fourier_atom",
+    "layer": 1,
+    "basis": "fourier",
+    "low": 229022,
+    "high": 229023,
+    "role": "weight_selected_atom",
+    "label": "L1: Fourier bin 229022"
+  },
+  {
+    "id": "L1_haar_j6",
+    "layer": 1,
+    "basis": "haar",
+    "level": 6,
+    "index": 3140,
+    "role": "weight_selected_atom",
+    "label": "L1: Haar j6, k3140"
+  },
+  {
+    "id": "L1_haar_j9",
+    "layer": 1,
+    "basis": "haar",
+    "level": 9,
+    "index": 1216,
+    "role": "weight_selected_atom",
+    "label": "L1: Haar j9, k1216"
+  },
+  {
+    "id": "L1_haar_j15",
+    "layer": 1,
+    "basis": "haar",
+    "level": 15,
+    "index": 11,
+    "role": "weight_selected_atom",
+    "label": "L1: Haar j15, k11"
+  },
+  {
+    "id": "L2_fourier_atom",
+    "layer": 2,
+    "basis": "fourier",
+    "low": 128368,
+    "high": 128369,
+    "role": "weight_selected_atom",
+    "label": "L2: Fourier bin 128368"
+  },
+  {
+    "id": "L2_haar_j6",
+    "layer": 2,
+    "basis": "haar",
+    "level": 6,
+    "index": 7702,
+    "role": "weight_selected_atom",
+    "label": "L2: Haar j6, k7702"
+  },
+  {
+    "id": "L2_haar_j9",
+    "layer": 2,
+    "basis": "haar",
+    "level": 9,
+    "index": 456,
+    "role": "weight_selected_atom",
+    "label": "L2: Haar j9, k456"
+  },
+  {
+    "id": "L2_haar_j15",
+    "layer": 2,
+    "basis": "haar",
+    "level": 15,
+    "index": 0,
+    "role": "weight_selected_atom",
+    "label": "L2: Haar j15, k0"
+  },
+  {
+    "id": "L3_fourier_atom",
+    "layer": 3,
+    "basis": "fourier",
+    "low": 334800,
+    "high": 334801,
+    "role": "weight_selected_atom",
+    "label": "L3: Fourier bin 334800"
+  },
+  {
+    "id": "L3_haar_j6",
+    "layer": 3,
+    "basis": "haar",
+    "level": 6,
+    "index": 1759,
+    "role": "weight_selected_atom",
+    "label": "L3: Haar j6, k1759"
+  },
+  {
+    "id": "L3_haar_j9",
+    "layer": 3,
+    "basis": "haar",
+    "level": 9,
+    "index": 215,
+    "role": "weight_selected_atom",
+    "label": "L3: Haar j9, k215"
+  },
+  {
+    "id": "L3_haar_j15",
+    "layer": 3,
+    "basis": "haar",
+    "level": 15,
+    "index": 1,
+    "role": "weight_selected_atom",
+    "label": "L3: Haar j15, k1"
+  },
+  {
+    "id": "L4_fourier_atom",
+    "layer": 4,
+    "basis": "fourier",
+    "low": 144330,
+    "high": 144331,
+    "role": "weight_selected_atom",
+    "label": "L4: Fourier bin 144330"
+  },
+  {
+    "id": "L4_haar_j6",
+    "layer": 4,
+    "basis": "haar",
+    "level": 6,
+    "index": 9508,
+    "role": "weight_selected_atom",
+    "label": "L4: Haar j6, k9508"
+  },
+  {
+    "id": "L4_haar_j9",
+    "layer": 4,
+    "basis": "haar",
+    "level": 9,
+    "index": 4,
+    "role": "weight_selected_atom",
+    "label": "L4: Haar j9, k4"
+  },
+  {
+    "id": "L4_haar_j15",
+    "layer": 4,
+    "basis": "haar",
+    "level": 15,
+    "index": 10,
+    "role": "weight_selected_atom",
+    "label": "L4: Haar j15, k10"
+  },
+  {
+    "id": "L5_fourier_atom",
+    "layer": 5,
+    "basis": "fourier",
+    "low": 390626,
+    "high": 390627,
+    "role": "weight_selected_atom",
+    "label": "L5: Fourier bin 390626"
+  },
+  {
+    "id": "L5_haar_j6",
+    "layer": 5,
+    "basis": "haar",
+    "level": 6,
+    "index": 3188,
+    "role": "weight_selected_atom",
+    "label": "L5: Haar j6, k3188"
+  },
+  {
+    "id": "L5_haar_j9",
+    "layer": 5,
+    "basis": "haar",
+    "level": 9,
+    "index": 1013,
+    "role": "weight_selected_atom",
+    "label": "L5: Haar j9, k1013"
+  },
+  {
+    "id": "L5_haar_j15",
+    "layer": 5,
+    "basis": "haar",
+    "level": 15,
+    "index": 13,
+    "role": "weight_selected_atom",
+    "label": "L5: Haar j15, k13"
+  },
+  {
+    "id": "L3_all",
+    "layer": 3,
+    "basis": "packet",
+    "start": 0,
+    "end": 786432,
+    "path": "",
+    "role": "global_root",
+    "label": "L3: entire QKV interval update"
+  },
+  {
+    "id": "G_a",
+    "layer": 3,
+    "basis": "packet",
+    "start": 0,
+    "end": 786432,
+    "path": "a",
+    "role": "global_packet",
+    "label": "G_: packet a"
+  },
+  {
+    "id": "G_aa",
+    "layer": 3,
+    "basis": "packet",
+    "start": 0,
+    "end": 786432,
+    "path": "aa",
+    "role": "global_packet",
+    "label": "G_: packet aa"
+  },
+  {
+    "id": "G_ad",
+    "layer": 3,
+    "basis": "packet",
+    "start": 0,
+    "end": 786432,
+    "path": "ad",
+    "role": "global_packet",
+    "label": "G_: packet ad"
+  },
+  {
+    "id": "G_d",
+    "layer": 3,
+    "basis": "packet",
+    "start": 0,
+    "end": 786432,
+    "path": "d",
+    "role": "global_packet",
+    "label": "G_: packet d"
+  },
+  {
+    "id": "G_da",
+    "layer": 3,
+    "basis": "packet",
+    "start": 0,
+    "end": 786432,
+    "path": "da",
+    "role": "global_packet",
+    "label": "G_: packet da"
+  },
+  {
+    "id": "G_dd",
+    "layer": 3,
+    "basis": "packet",
+    "start": 0,
+    "end": 786432,
+    "path": "dd",
+    "role": "global_packet",
+    "label": "G_: packet dd"
+  },
+  {
+    "id": "F_a",
+    "layer": 3,
+    "basis": "fourier",
+    "low": 0,
+    "high": 196608,
+    "role": "global_fourier",
+    "label": "L3: Fourier bins 0\u2013196607"
+  },
+  {
+    "id": "F_aa",
+    "layer": 3,
+    "basis": "fourier",
+    "low": 0,
+    "high": 98304,
+    "role": "global_fourier",
+    "label": "L3: Fourier bins 0\u201398303"
+  },
+  {
+    "id": "F_ab",
+    "layer": 3,
+    "basis": "fourier",
+    "low": 98304,
+    "high": 196608,
+    "role": "global_fourier",
+    "label": "L3: Fourier bins 98304\u2013196607"
+  },
+  {
+    "id": "F_b",
+    "layer": 3,
+    "basis": "fourier",
+    "low": 196608,
+    "high": 393217,
+    "role": "global_fourier",
+    "label": "L3: Fourier bins 196608\u2013393216"
+  },
+  {
+    "id": "F_ba",
+    "layer": 3,
+    "basis": "fourier",
+    "low": 196608,
+    "high": 294912,
+    "role": "global_fourier",
+    "label": "L3: Fourier bins 196608\u2013294911"
+  },
+  {
+    "id": "F_bb",
+    "layer": 3,
+    "basis": "fourier",
+    "low": 294912,
+    "high": 393217,
+    "role": "global_fourier",
+    "label": "L3: Fourier bins 294912\u2013393216"
+  },
+  {
+    "id": "H6_root",
+    "layer": 3,
+    "basis": "packet",
+    "start": 589824,
+    "end": 655360,
+    "path": "",
+    "role": "local_packet",
+    "label": "H6_: packet root"
+  },
+  {
+    "id": "H6_a",
+    "layer": 3,
+    "basis": "packet",
+    "start": 589824,
+    "end": 655360,
+    "path": "a",
+    "role": "local_packet",
+    "label": "H6_: packet a"
+  },
+  {
+    "id": "H6_aa",
+    "layer": 3,
+    "basis": "packet",
+    "start": 589824,
+    "end": 655360,
+    "path": "aa",
+    "role": "local_packet",
+    "label": "H6_: packet aa"
+  },
+  {
+    "id": "H6_ad",
+    "layer": 3,
+    "basis": "packet",
+    "start": 589824,
+    "end": 655360,
+    "path": "ad",
+    "role": "local_packet",
+    "label": "H6_: packet ad"
+  },
+  {
+    "id": "H6_d",
+    "layer": 3,
+    "basis": "packet",
+    "start": 589824,
+    "end": 655360,
+    "path": "d",
+    "role": "local_packet",
+    "label": "H6_: packet d"
+  },
+  {
+    "id": "H6_da",
+    "layer": 3,
+    "basis": "packet",
+    "start": 589824,
+    "end": 655360,
+    "path": "da",
+    "role": "local_packet",
+    "label": "H6_: packet da"
+  },
+  {
+    "id": "H6_dd",
+    "layer": 3,
+    "basis": "packet",
+    "start": 589824,
+    "end": 655360,
+    "path": "dd",
+    "role": "local_packet",
+    "label": "H6_: packet dd"
+  },
+  {
+    "id": "H5_root",
+    "layer": 3,
+    "basis": "packet",
+    "start": 491520,
+    "end": 557056,
+    "path": "",
+    "role": "neighbor_control",
+    "label": "L3 head 5: native Q/K interval"
+  },
+  {
+    "id": "H7_root",
+    "layer": 3,
+    "basis": "packet",
+    "start": 688128,
+    "end": 753664,
+    "path": "",
+    "role": "neighbor_control",
+    "label": "L3 head 7: native Q/K interval"
+  },
+  {
+    "id": "H6_query",
+    "layer": 3,
+    "basis": "packet",
+    "start": 589824,
+    "end": 622592,
+    "path": "",
+    "role": "projection_control",
+    "label": "H6 query"
+  },
+  {
+    "id": "H6_key",
+    "layer": 3,
+    "basis": "packet",
+    "start": 622592,
+    "end": 655360,
+    "path": "",
+    "role": "projection_control",
+    "label": "H6 key"
+  },
+  {
+    "id": "H6_aaa",
+    "layer": 3,
+    "basis": "packet",
+    "start": 589824,
+    "end": 655360,
+    "path": "aaa",
+    "role": "adaptive_local_packet",
+    "label": "Head-6 Q/K: packet aaa"
+  },
+  {
+    "id": "H6_aad",
+    "layer": 3,
+    "basis": "packet",
+    "start": 589824,
+    "end": 655360,
+    "path": "aad",
+    "role": "adaptive_local_packet",
+    "label": "Head-6 Q/K: packet aad"
+  },
+  {
+    "id": "H6_aaaa",
+    "layer": 3,
+    "basis": "packet",
+    "start": 589824,
+    "end": 655360,
+    "path": "aaaa",
+    "role": "adaptive_local_packet",
+    "label": "Head-6 Q/K: packet aaaa"
+  },
+  {
+    "id": "H6_aaad",
+    "layer": 3,
+    "basis": "packet",
+    "start": 589824,
+    "end": 655360,
+    "path": "aaad",
+    "role": "adaptive_local_packet",
+    "label": "Head-6 Q/K: packet aaad"
+  },
+  {
+    "id": "H6_aaaaa",
+    "layer": 3,
+    "basis": "packet",
+    "start": 589824,
+    "end": 655360,
+    "path": "aaaaa",
+    "role": "adaptive_local_packet",
+    "label": "Head-6 Q/K: packet aaaaa"
+  },
+  {
+    "id": "H6_aaaad",
+    "layer": 3,
+    "basis": "packet",
+    "start": 589824,
+    "end": 655360,
+    "path": "aaaad",
+    "role": "adaptive_local_packet",
+    "label": "Head-6 Q/K: packet aaaad"
+  },
+  {
+    "id": "H6_aaaaaa",
+    "layer": 3,
+    "basis": "packet",
+    "start": 589824,
+    "end": 655360,
+    "path": "aaaaaa",
+    "role": "adaptive_local_packet",
+    "label": "Head-6 Q/K: packet aaaaaa"
+  },
+  {
+    "id": "H6_aaaaad",
+    "layer": 3,
+    "basis": "packet",
+    "start": 589824,
+    "end": 655360,
+    "path": "aaaaad",
+    "role": "adaptive_local_packet",
+    "label": "Head-6 Q/K: packet aaaaad"
+  }
+]

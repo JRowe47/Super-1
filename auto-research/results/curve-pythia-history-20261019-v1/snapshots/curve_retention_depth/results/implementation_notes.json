@@ -1,0 +1,5 @@
+{
+  "before_first_regularized_update": "Replay indices created under inference_mode cannot participate in differentiable indexed forward evaluation. Replaced cache construction with no_grad, retaining the identical teacher distributions and protocol. No regularized optimizer step had occurred.",
+  "toy_audit_precision": "Oracle matrix reconstructed from JSON must explicitly use float64; changed audit reconstruction dtype only, without changing training.",
+  "toy_recovery": "All40 final model files existed. Reconstructed post-training diagnostics without new optimizer steps;119 of120 trajectory records were present, so the missing seed4 curve2_multidepth step400 evaluation was explicitly reconstructed from its saved model. All recorded final scores independently compared with reloads. Per-run timing values were not persisted before the audit failed; no exact toy wall time claimed."
+}

@@ -1,0 +1,24 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+MASK CALIBRATION 295380 tiles {'full': {'copy_nll_slope': -12439.997040721168, 'adaptation_nll_slope': -34656.07877062973, 'proposal_energy': 18908200.658310995, 'norm_match_scale': np.float64(1.0), 'predicted_copy_delta_at_lr2e5': np.float64(-0.2487999408144234), 'predicted_adapt_delta_at_lr2e5': np.float64(-0.6931215754125946)}, 'targeted': {'copy_nll_slope': -40621.57397104131, 'adaptation_nll_slope': -17460.876871919594, 'proposal_energy': 9458730.774523156, 'norm_match_scale': np.float64(1.4138673615759187), 'predicted_copy_delta_at_lr2e5': np.float64(-1.148670352269944), 'predicted_adapt_delta_at_lr2e5': np.float64(-0.4937472782740588)}, 'random0': {'copy_nll_slope': -6171.116565678992, 'adaptation_nll_slope': -17402.558707936496, 'proposal_energy': 9458576.329814984, 'norm_match_scale': np.float64(1.4138789047211584), 'predicted_copy_delta_at_lr2e5': np.float64(-0.1745042306157762), 'predicted_adapt_delta_at_lr2e5': np.float64(-0.4921022129064582)}, 'random1': {'copy_nll_slope': -6277.830031454564, 'adaptation_nll_slope': -17400.334010793533, 'proposal_energy': 9458656.809526855, 'norm_match_scale': np.float64(1.4138728896594424), 'predicted_copy_delta_at_lr2e5': np.float64(-0.17752107374726986), 'predicted_adapt_delta_at_lr2e5': np.float64(-0.4920372105776025)}, 'opposite': {'copy_nll_slope': 28134.691304834694, 'adaptation_nll_slope': -17250.716936990448, 'proposal_energy': 9458572.410649598, 'norm_match_scale': np.float64(1.4138791976419316), 'predicted_copy_delta_at_lr2e5': np.float64(0.7955810953596623), 'predicted_adapt_delta_at_lr2e5': np.float64(-0.4878085964324027)}}
+EVAL baseline 0 NLL 4.713355 copy 0.6623
+EVAL full 1 NLL 4.60716 copy 0.6444
+EVAL full 12 NLL 4.409188 copy 0.648
+EVAL full 24 NLL 4.320876 copy 0.5322
+COMPLETE full 67.11
+EVAL targeted 1 NLL 4.630182 copy 0.6904
+EVAL targeted 12 NLL 4.450128 copy 0.6452
+EVAL targeted 24 NLL 4.367468 copy 0.4953
+COMPLETE targeted 69.88
+EVAL random0 1 NLL 4.627332 copy 0.6517
+EVAL random0 12 NLL 4.436837 copy 0.6418
+EVAL random0 24 NLL 4.355936 copy 0.5763
+COMPLETE random0 64.37
+EVAL random1 1 NLL 4.626304 copy 0.6536
+EVAL random1 12 NLL 4.438577 copy 0.6256
+EVAL random1 24 NLL 4.341393 copy 0.6081
+COMPLETE random1 63.81
+EVAL opposite 1 NLL 4.630962 copy 0.6032
+EVAL opposite 12 NLL 4.445759 copy 0.6742
+EVAL opposite 24 NLL 4.402589 copy 0.578
+COMPLETE opposite 64.99
+MASK EXPERIMENT COMPLETE 359.21

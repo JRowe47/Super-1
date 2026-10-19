@@ -1,0 +1,9 @@
+{
+  "file": "pythia70m_step1000_exact_decoder_curves.npz",
+  "step": 1000,
+  "precision": "complex128",
+  "max_reconstructed_float32_parameter_error": 2.2551405187698492e-17,
+  "bytes": 144959298,
+  "sha256": "9a8c8509cded7bc3292d62de85e86831144c045881c0d55632b708a7afb83a6c",
+  "usage": "Load the pinned step1000 model for architecture and non-block parameters, then call restore_decoder_from_curves(model, path). All six decoder blocks are reconstructed from the saved curves."
+}

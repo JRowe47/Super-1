@@ -1,0 +1,74 @@
+{
+  "original_project_archive": {
+    "filename": "01-geometric_curve_memory_project_2026-10-15.zip",
+    "sha256": "7145e9cc2f9cce0b8fee7b238f3aa956bf3cacf5eea5de77f9c1e6b9eaa431e5"
+  },
+  "previous_fft_archive": {
+    "filename": "smollm_recursive_spectral_2026-10-17.zip",
+    "sha256": "7ebf3347daa0a3283a2e5107e02ffb33e669d120fe9a969547cb7ac835cf61d2"
+  },
+  "previous_fft_summary": {
+    "gradient_selected_coefficient_fraction": 0.2526455026455027,
+    "gradient_selected_recovery_fraction": 0.5480792606282024,
+    "audit_gradient_ppl_ratio": 1.223577563592356,
+    "audit_random_ppl_ratio": 1.255237781817393,
+    "audit_full_ppl_ratio": 1.109027723510562,
+    "gradient_vs_random_relative_ppl": 0.9747775133256443,
+    "gradient_vs_random_nll_ci": {
+      "lower": -0.02911893343552947,
+      "upper": -0.021580744255334138,
+      "clusters": 32,
+      "bootstrap_replicates": 2000,
+      "unit": "document"
+    },
+    "scope": "Post-hoc update sufficiency, not sparse-model training",
+    "depth_transfer": {
+      "initial": 2.0107242303859962,
+      "random_quarter": 1.851653412703106,
+      "gradient_quarter": 1.7802370787287805,
+      "full_update": 1.5917531221907328
+    },
+    "layer_permutation_extension": {
+      "functional_checks": {
+        "seed": 71705,
+        "permuted_layers": 6,
+        "targets": 1024,
+        "source": "first eight training windows, no evaluation-set tuning",
+        "maximum_absolute_logit_difference": 0.0001277923583984375,
+        "relative_rms_logit_difference": 8.573953299088137e-07,
+        "argmax_agreement": 1.0,
+        "nll_difference": -1.1920928955078125e-07,
+        "candidate_inverse_permutation_hash_exact": true,
+        "original_hashes_unchanged": true,
+        "algebraic_identity": "gate/up rows permuted together; down columns receive same permutation; all external block coordinates unchanged"
+      },
+      "fine_power_total_variation_range": [
+        0.4805869450650071,
+        0.4846488104299945
+      ],
+      "coarse_64_power_total_variation_range": [
+        0.001834669189213608,
+        0.002687457782875636
+      ],
+      "fixed_mask_inverse_mapped_relative_difference_range": [
+        1.2203117738778528,
+        1.2227588028002965
+      ],
+      "all_28_layers_profiled": true,
+      "families_per_layer": 9,
+      "cross_layer_alignment_performed": false
+    },
+    "exploratory_guided_spatial": {
+      "recovery_fraction": 0.5138374274447732,
+      "audit_ppl_ratio": 1.2327245328416165,
+      "delta_nll_vs_spectral": 0.00744779035449028,
+      "paired_ci": {
+        "lower": -0.006581268738955259,
+        "upper": 0.02144274841994045,
+        "clusters": 32,
+        "bootstrap_replicates": 2000,
+        "unit": "document"
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+TEACHER_CACHES_COMPLETE
+MASKS_LOCKED_BEFORE_EVALUATION
+{"variant": "initial", "depth": 28, "validation_PPL_ratio": 1.410273075561492, "audit_PPL_ratio": 1.3784908354993488, "audit_KL": 0.3034138607326895}
+{"variant": "full_update", "depth": 28, "validation_PPL_ratio": 1.1373955131170779, "audit_PPL_ratio": 1.109027723510562, "audit_KL": 0.13671471481211483}
+{"variant": "norm_only", "depth": 28, "validation_PPL_ratio": 1.3965131237254307, "audit_PPL_ratio": 1.3636476278945289, "audit_KL": 0.29308026609942317}
+{"variant": "low_quarter", "depth": 28, "validation_PPL_ratio": 1.2955336994331401, "audit_PPL_ratio": 1.2636579475436747, "audit_KL": 0.22576052276417613}
+{"variant": "high_quarter", "depth": 28, "validation_PPL_ratio": 1.2819952115371627, "audit_PPL_ratio": 1.2526686392913986, "audit_KL": 0.21791606699116528}
+{"variant": "random_quarter", "depth": 28, "validation_PPL_ratio": 1.2871018358032769, "audit_PPL_ratio": 1.255237781817393, "audit_KL": 0.220547731150873}
+{"variant": "energy_quarter", "depth": 28, "validation_PPL_ratio": 1.2773039089136966, "audit_PPL_ratio": 1.247728991373489, "audit_KL": 0.21545027918182313}
+{"variant": "gradient_quarter", "depth": 28, "validation_PPL_ratio": 1.2505784620723923, "audit_PPL_ratio": 1.223577563592356, "audit_KL": 0.19665063172578812}
+{"variant": "random_norm_matched", "depth": 28, "validation_PPL_ratio": 1.2866771033178253, "audit_PPL_ratio": 1.2548198479072294, "audit_KL": 0.22026647836901248}
+{"variant": "random_spatial", "depth": 28, "validation_PPL_ratio": 1.2857402308163959, "audit_PPL_ratio": 1.255624496133432, "audit_KL": 0.2207258332055062}
+{"variant": "gradient_shift_one", "depth": 28, "validation_PPL_ratio": 1.427505216329142, "audit_PPL_ratio": 1.390067879344282, "audit_KL": 0.3104850701056421}
+{"variant": "initial", "depth": 26, "validation_PPL_ratio": 2.096071975361872, "audit_PPL_ratio": 2.0107242303859962, "audit_KL": 0.6904264064505696}
+{"variant": "full_update", "depth": 26, "validation_PPL_ratio": 1.6939896668403633, "audit_PPL_ratio": 1.5917531221907328, "audit_KL": 0.471125700045377}
+{"variant": "gradient_quarter", "depth": 26, "validation_PPL_ratio": 1.8729484918765522, "audit_PPL_ratio": 1.7802370787287805, "audit_KL": 0.5727966176345944}
+{"variant": "random_quarter", "depth": 26, "validation_PPL_ratio": 1.941115396834852, "audit_PPL_ratio": 1.851653412703106, "audit_KL": 0.6116667720489204}
+INTERVENTIONS_COMPLETE

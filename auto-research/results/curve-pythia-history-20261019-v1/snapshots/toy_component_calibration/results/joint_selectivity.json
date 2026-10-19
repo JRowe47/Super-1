@@ -1,0 +1,184 @@
+[
+  {
+    "seed": 0,
+    "hidden_haar_atoms": 112,
+    "decision_selective_context_atoms": 0,
+    "best_margin_selectivity_component": 129,
+    "accuracy": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "target_margin_drop": [
+      -0.0001435278524180017,
+      0.0005761995534488973,
+      0.04263384459526609
+    ],
+    "best_component": {
+      "tensor": "l0.bias",
+      "tid": 1,
+      "shape": [
+        8
+      ],
+      "n": 8,
+      "basis": "haar",
+      "atom": 1,
+      "kind": "detail",
+      "level": 3,
+      "index": 0,
+      "start": 0,
+      "end": 8,
+      "leaf": true,
+      "id": 129
+    },
+    "decision_selective_component_ids": []
+  },
+  {
+    "seed": 1,
+    "hidden_haar_atoms": 112,
+    "decision_selective_context_atoms": 2,
+    "best_margin_selectivity_component": 197,
+    "accuracy": [
+      1.0,
+      1.0,
+      0.875
+    ],
+    "target_margin_drop": [
+      0.0003438438464333782,
+      0.0008632070226841648,
+      0.16625087176357478
+    ],
+    "best_component": {
+      "tensor": "l1.weight",
+      "tid": 2,
+      "shape": [
+        8,
+        8
+      ],
+      "n": 64,
+      "basis": "haar",
+      "atom": 37,
+      "kind": "detail",
+      "level": 1,
+      "index": 5,
+      "start": 10,
+      "end": 12,
+      "leaf": true,
+      "id": 197
+    },
+    "decision_selective_component_ids": [
+      5,
+      197
+    ]
+  },
+  {
+    "seed": 2,
+    "hidden_haar_atoms": 112,
+    "decision_selective_context_atoms": 0,
+    "best_margin_selectivity_component": 14,
+    "accuracy": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "target_margin_drop": [
+      0.00024437410258115744,
+      0.00023047716090651704,
+      0.032478754498386775
+    ],
+    "best_component": {
+      "tensor": "l0.weight",
+      "tid": 0,
+      "shape": [
+        8,
+        4
+      ],
+      "n": 32,
+      "basis": "haar",
+      "atom": 14,
+      "kind": "detail",
+      "level": 2,
+      "index": 6,
+      "start": 24,
+      "end": 28,
+      "leaf": true,
+      "id": 14
+    },
+    "decision_selective_component_ids": []
+  },
+  {
+    "seed": 3,
+    "hidden_haar_atoms": 112,
+    "decision_selective_context_atoms": 1,
+    "best_margin_selectivity_component": 4,
+    "accuracy": [
+      1.0,
+      1.0,
+      0.875
+    ],
+    "target_margin_drop": [
+      0.041475190106396,
+      0.04642880392593429,
+      0.2489618204658126
+    ],
+    "best_component": {
+      "tensor": "l0.weight",
+      "tid": 0,
+      "shape": [
+        8,
+        4
+      ],
+      "n": 32,
+      "basis": "haar",
+      "atom": 4,
+      "kind": "detail",
+      "level": 3,
+      "index": 0,
+      "start": 0,
+      "end": 8,
+      "leaf": true,
+      "id": 4
+    },
+    "decision_selective_component_ids": [
+      4
+    ]
+  },
+  {
+    "seed": 4,
+    "hidden_haar_atoms": 112,
+    "decision_selective_context_atoms": 2,
+    "best_margin_selectivity_component": 24,
+    "accuracy": [
+      1.0,
+      1.0,
+      0.875
+    ],
+    "target_margin_drop": [
+      -0.00037850416009010956,
+      8.668196928673932e-05,
+      0.16938077534769602
+    ],
+    "best_component": {
+      "tensor": "l0.weight",
+      "tid": 0,
+      "shape": [
+        8,
+        4
+      ],
+      "n": 32,
+      "basis": "haar",
+      "atom": 24,
+      "kind": "detail",
+      "level": 1,
+      "index": 8,
+      "start": 16,
+      "end": 18,
+      "leaf": true,
+      "id": 24
+    },
+    "decision_selective_component_ids": [
+      24,
+      25
+    ]
+  }
+]

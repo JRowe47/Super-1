@@ -1,0 +1,31 @@
+{
+  "goal": "Connect native, full-resolution parameter-curve components to measured behavior using rollback, transplant, collateral probes, and recursive interactions.",
+  "model": "EleutherAI/pythia-70m, standard published seed; pinned checkpoint bytes",
+  "primary_interval": [512, 1000],
+  "later_context_step": 8000,
+  "coordinate_policy": "Each QKV tensor remains in original packed C order. Local windows retain their existing native indices. No neuron permutation, alignment, retraining, padding or coefficient approximation.",
+  "discovery": {"sequences": 16, "lengths": [32], "prose_passages": 4},
+  "confirmation": {"sequences": 48, "lengths": [16, 32, 48], "per_length": 16, "prose_passages": 8},
+  "input_seed": 2026101703,
+  "probe_definition": "A unique-token prefix S followed by S[:-1], or the same eligible query tokens in scrambled order. Predict the token that followed each query in the prefix. Scrambled queries test content-following beyond fixed-position repetition. These are synthetic diagnostic tasks, not natural-language semantic benchmarks.",
+  "separation": "Discovery and confirmation use disjoint token identities, sampled from one shuffled vocabulary pool, disjoint sequences and separate original prose. Confirmation is scored only after selection is written to disk.",
+  "fixed_candidates": [
+    "For each of 6 blocks: largest complex Fourier-bin update and largest absolute Haar detail update at levels 6, 9 and 15 in the native QKV tensor, selected using weights only",
+    "Layer 3 whole QKV update and complete global Fourier and wavelet-packet binary trees through depth 2",
+    "Layer 3 native head-6 Q/K interval [589824,655360), plus complete wavelet-packet tree through depth 2",
+    "Separate native Q and K halves of that interval, plus same-size Q/K intervals for neighboring heads 5 and 7"
+  ],
+  "adaptive_descent": "On discovery only, take the most disruptive depth-2 local packet node by repeated-query target NLL. Evaluate both children, then follow the more disruptive child, through depth 6. Keep every tested sibling. Stop descending if the selected parent increases target NLL by less than 0.01 nats.",
+  "selection": "Lock the top 6 fixed/adaptive decomposed candidates by repeated-query NLL increase, all nodes on the local descent and their siblings/ancestors, layer-3 global root, Q and K local roots, neighboring-head roots, and the prior layer-3 Fourier and level-6 Haar examples. Use confirmation results only for reporting, never reselection.",
+  "interventions": {
+    "rollback": "theta1000 - P_c(theta1000-theta512)",
+    "transplant": "theta512 + P_c(theta1000-theta512)",
+    "later_context": "theta8000 - P_c(theta8000-theta512), only locked local QK root, strongest local leaf, and prior single Fourier/Haar examples"
+  },
+  "positive_control": "Zero layer-3 head-6 output at step1000, as in the earlier copying probe. This is a behavioral assay control, not a curve component.",
+  "outcomes": ["Target NLL and accuracy by sequence", "First-pass NLL and copy advantage", "Content-following attention in layer 3 head 6", "Prose next-token NLL, KL from original endpoint, and changed argmax fraction", "Full final hidden states at the final query, preserving reconstructible all-vocabulary logit effects"],
+  "interactions": "For each measured parent/children triple, compare the parent effect to the sum of child effects in centered full-vocabulary logits at the final query of each sequence. Use the fixed output-head Gram matrix; report repeat and scrambled queries separately.",
+  "uncertainty": "Paired bootstrap over sequences, stratified by length, 4000 resamples; prose bootstrap over passages. Conditional probe uncertainty only, not across training seeds. Confirmation intervals are descriptive and unadjusted for multiple comparisons.",
+  "precision": "Float64 transforms and update construction from original float32 checkpoint weights; float32 model inference; exact endpoint restore checks and native-parameter additivity checks.",
+  "budget": "One bounded inference-only discovery scan and a locked confirmation run; no broad optimizer or architecture search."
+}

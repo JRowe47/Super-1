@@ -1,0 +1,68 @@
+{
+  "seconds": 7.723654270172119,
+  "runs": [
+    {
+      "seed": 0,
+      "arm": "full12",
+      "seconds": 0.66581130027771,
+      "steps": 400
+    },
+    {
+      "seed": 0,
+      "arm": "shared2",
+      "seconds": 0.7083132266998291,
+      "steps": 400
+    },
+    {
+      "seed": 1,
+      "arm": "full12",
+      "seconds": 0.6736094951629639,
+      "steps": 400
+    },
+    {
+      "seed": 1,
+      "arm": "shared2",
+      "seconds": 0.6916654109954834,
+      "steps": 400
+    },
+    {
+      "seed": 2,
+      "arm": "full12",
+      "seconds": 0.6568648815155029,
+      "steps": 400
+    },
+    {
+      "seed": 2,
+      "arm": "shared2",
+      "seconds": 0.6813814640045166,
+      "steps": 400
+    },
+    {
+      "seed": 3,
+      "arm": "full12",
+      "seconds": 0.6901676654815674,
+      "steps": 400
+    },
+    {
+      "seed": 3,
+      "arm": "shared2",
+      "seconds": 0.7274725437164307,
+      "steps": 400
+    },
+    {
+      "seed": 4,
+      "arm": "full12",
+      "seconds": 0.6962122917175293,
+      "steps": 400
+    },
+    {
+      "seed": 4,
+      "arm": "shared2",
+      "seconds": 0.6932871341705322,
+      "steps": 400
+    }
+  ],
+  "new_training_steps": 4000,
+  "threads": 1,
+  "torch": "2.14.1+cpu"
+}

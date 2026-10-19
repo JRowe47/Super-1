@@ -1,0 +1,26 @@
+[
+  {
+    "arm": "native_lambda1",
+    "initial_copy_kl": 0.0,
+    "initial_text_kl": 0.0,
+    "initial_replay_gradient_max": 1.0147438445073931e-13
+  },
+  {
+    "arm": "curve_lambda1",
+    "initial_copy_kl": 0.0,
+    "initial_text_kl": 0.0,
+    "initial_replay_gradient_max": 7.249756350802272e-14
+  },
+  {
+    "arm": "native_lambda4",
+    "initial_copy_kl": 0.0,
+    "initial_text_kl": 0.0,
+    "initial_replay_gradient_max": 4.0545344859310717e-13
+  },
+  {
+    "arm": "curve_lambda4",
+    "initial_copy_kl": 0.0,
+    "initial_text_kl": 0.0,
+    "initial_replay_gradient_max": 2.8987923172962837e-13
+  }
+]

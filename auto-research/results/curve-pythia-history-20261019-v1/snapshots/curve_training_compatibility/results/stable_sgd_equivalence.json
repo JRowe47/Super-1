@@ -1,0 +1,47 @@
+[
+  {
+    "reference": "native_sgd",
+    "step": 0,
+    "max_abs_parameter_difference": 8.58644329666891e-18,
+    "parameter_rms_difference": 3.491566506717763e-21,
+    "max_abs_hidden_difference": 0.0,
+    "max_abs_logit_difference": 0.0,
+    "logit_rms_difference": 0.0
+  },
+  {
+    "reference": "native_sgd",
+    "step": 1,
+    "max_abs_parameter_difference": 7.450580596923828e-09,
+    "parameter_rms_difference": 1.7131484054817971e-12,
+    "max_abs_hidden_difference": 0.002445220947265625,
+    "max_abs_logit_difference": 0.002685546875,
+    "logit_rms_difference": 0.00017437494279706165
+  },
+  {
+    "reference": "native_sgd",
+    "step": 4,
+    "max_abs_parameter_difference": 2.5135159376077354e-07,
+    "parameter_rms_difference": 3.897897897083688e-10,
+    "max_abs_hidden_difference": 0.010406494140625,
+    "max_abs_logit_difference": 0.0126953125,
+    "logit_rms_difference": 0.0012449352390647534
+  },
+  {
+    "reference": "native_sgd",
+    "step": 12,
+    "max_abs_parameter_difference": 3.6628334783017635e-06,
+    "parameter_rms_difference": 3.3915466610970726e-09,
+    "max_abs_hidden_difference": 0.18060302734375,
+    "max_abs_logit_difference": 0.13232421875,
+    "logit_rms_difference": 0.00467204751539186
+  },
+  {
+    "reference": "native_sgd",
+    "step": 24,
+    "max_abs_parameter_difference": 5.793408490717411e-07,
+    "parameter_rms_difference": 1.6471898684440408e-09,
+    "max_abs_hidden_difference": 0.03692626953125,
+    "max_abs_logit_difference": 0.027099609375,
+    "logit_rms_difference": 0.0017310122080282664
+  }
+]

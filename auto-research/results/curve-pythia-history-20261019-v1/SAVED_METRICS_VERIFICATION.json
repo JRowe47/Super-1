@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "scope": "Saved-score arithmetic and consistency only; no model execution or fresh experimental validation.",
+  "files_read": 21,
+  "numeric_checks": 46807,
+  "checks_by_category": {
+    "sequence_mean": 3588,
+    "position_nll": 20052,
+    "position_accuracy": 20052,
+    "prose_token_total": 299,
+    "prose_weighted_mean": 897,
+    "validation_mean": 62,
+    "effect_validation_mean": 30,
+    "effect_short_sequence_mean": 180,
+    "contrast_estimate": 416,
+    "mask_step_norm_max_error": 1,
+    "equal_per_band_mask_counts": 972,
+    "recorded_frozen_master_checks": 12,
+    "full_coordinate_count": 5,
+    "toy_grid_drift": 1,
+    "toy_saved_summary": 240
+  },
+  "not_checked": [
+    "historical forward-pass correctness",
+    "bootstrap confidence-interval recomputation",
+    "excluded checkpoint/coefficient/hidden-state arrays",
+    "all reported findings across all ten stages"
+  ]
+}

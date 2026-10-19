@@ -1,0 +1,12 @@
+{
+  "new_validation_rows": 48,
+  "excluded_previous_validation_rows": 48,
+  "fresh_copy_selection_and_test_disjoint": true,
+  "prior_copy_ids_excluded": true,
+  "adaptation_replay_equal_previous": true,
+  "copy_counts": {
+    "calibration": 24,
+    "mask_selection": 24,
+    "retention": 54
+  }
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "ordering": "random0",
+    "max_abs_logit_difference": 3.135204315185547e-05,
+    "relative_rms_logit_difference": 7.705107236688491e-07,
+    "argmax_agreement": 1.0,
+    "positions": 260
+  },
+  {
+    "ordering": "pca_frozen",
+    "max_abs_logit_difference": 3.7670135498046875e-05,
+    "relative_rms_logit_difference": 7.924071496745455e-07,
+    "argmax_agreement": 1.0,
+    "positions": 260
+  }
+]

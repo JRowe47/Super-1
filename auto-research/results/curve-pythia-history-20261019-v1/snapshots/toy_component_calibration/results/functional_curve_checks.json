@@ -1,0 +1,1442 @@
+[
+  {
+    "task": "readout",
+    "seed": 0,
+    "step": 0,
+    "haar_logit_max_abs": 1.6653345369377348e-16,
+    "fourier_logit_max_abs": 1.1102230246251565e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "readout",
+    "seed": 0,
+    "step": 10,
+    "haar_logit_max_abs": 1.1102230246251565e-15,
+    "fourier_logit_max_abs": 6.661338147750939e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "readout",
+    "seed": 0,
+    "step": 25,
+    "haar_logit_max_abs": 1.7763568394002505e-15,
+    "fourier_logit_max_abs": 1.7763568394002505e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "readout",
+    "seed": 0,
+    "step": 50,
+    "haar_logit_max_abs": 1.7763568394002505e-15,
+    "fourier_logit_max_abs": 8.881784197001252e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "readout",
+    "seed": 0,
+    "step": 100,
+    "haar_logit_max_abs": 1.7763568394002505e-15,
+    "fourier_logit_max_abs": 1.7763568394002505e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "readout",
+    "seed": 0,
+    "step": 200,
+    "haar_logit_max_abs": 1.7763568394002505e-15,
+    "fourier_logit_max_abs": 2.6645352591003757e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "readout",
+    "seed": 0,
+    "step": 400,
+    "haar_logit_max_abs": 3.552713678800501e-15,
+    "fourier_logit_max_abs": 3.552713678800501e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "readout",
+    "seed": 0,
+    "step": 800,
+    "haar_logit_max_abs": 3.552713678800501e-15,
+    "fourier_logit_max_abs": 3.552713678800501e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "readout",
+    "seed": 1,
+    "step": 0,
+    "haar_logit_max_abs": 3.3306690738754696e-16,
+    "fourier_logit_max_abs": 1.1102230246251565e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "readout",
+    "seed": 1,
+    "step": 10,
+    "haar_logit_max_abs": 1.9984014443252818e-15,
+    "fourier_logit_max_abs": 4.440892098500626e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "readout",
+    "seed": 1,
+    "step": 25,
+    "haar_logit_max_abs": 2.6645352591003757e-15,
+    "fourier_logit_max_abs": 8.881784197001252e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "readout",
+    "seed": 1,
+    "step": 50,
+    "haar_logit_max_abs": 1.7763568394002505e-15,
+    "fourier_logit_max_abs": 1.7763568394002505e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "readout",
+    "seed": 1,
+    "step": 100,
+    "haar_logit_max_abs": 1.7763568394002505e-15,
+    "fourier_logit_max_abs": 2.6645352591003757e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "readout",
+    "seed": 1,
+    "step": 200,
+    "haar_logit_max_abs": 2.6645352591003757e-15,
+    "fourier_logit_max_abs": 2.6645352591003757e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "readout",
+    "seed": 1,
+    "step": 400,
+    "haar_logit_max_abs": 3.552713678800501e-15,
+    "fourier_logit_max_abs": 1.7763568394002505e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "readout",
+    "seed": 1,
+    "step": 800,
+    "haar_logit_max_abs": 3.552713678800501e-15,
+    "fourier_logit_max_abs": 3.552713678800501e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "readout",
+    "seed": 2,
+    "step": 0,
+    "haar_logit_max_abs": 1.6653345369377348e-16,
+    "fourier_logit_max_abs": 1.6653345369377348e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "readout",
+    "seed": 2,
+    "step": 10,
+    "haar_logit_max_abs": 1.1102230246251565e-15,
+    "fourier_logit_max_abs": 4.440892098500626e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "readout",
+    "seed": 2,
+    "step": 25,
+    "haar_logit_max_abs": 1.7763568394002505e-15,
+    "fourier_logit_max_abs": 8.881784197001252e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "readout",
+    "seed": 2,
+    "step": 50,
+    "haar_logit_max_abs": 1.7763568394002505e-15,
+    "fourier_logit_max_abs": 1.7763568394002505e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "readout",
+    "seed": 2,
+    "step": 100,
+    "haar_logit_max_abs": 2.6645352591003757e-15,
+    "fourier_logit_max_abs": 2.6645352591003757e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "readout",
+    "seed": 2,
+    "step": 200,
+    "haar_logit_max_abs": 3.552713678800501e-15,
+    "fourier_logit_max_abs": 1.7763568394002505e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "readout",
+    "seed": 2,
+    "step": 400,
+    "haar_logit_max_abs": 1.7763568394002505e-15,
+    "fourier_logit_max_abs": 3.552713678800501e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "readout",
+    "seed": 2,
+    "step": 800,
+    "haar_logit_max_abs": 3.552713678800501e-15,
+    "fourier_logit_max_abs": 3.552713678800501e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "readout",
+    "seed": 3,
+    "step": 0,
+    "haar_logit_max_abs": 4.440892098500626e-16,
+    "fourier_logit_max_abs": 2.220446049250313e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "readout",
+    "seed": 3,
+    "step": 10,
+    "haar_logit_max_abs": 1.2212453270876722e-15,
+    "fourier_logit_max_abs": 6.661338147750939e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "readout",
+    "seed": 3,
+    "step": 25,
+    "haar_logit_max_abs": 1.7763568394002505e-15,
+    "fourier_logit_max_abs": 1.7763568394002505e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "readout",
+    "seed": 3,
+    "step": 50,
+    "haar_logit_max_abs": 1.7763568394002505e-15,
+    "fourier_logit_max_abs": 1.7763568394002505e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "readout",
+    "seed": 3,
+    "step": 100,
+    "haar_logit_max_abs": 1.7763568394002505e-15,
+    "fourier_logit_max_abs": 2.6645352591003757e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "readout",
+    "seed": 3,
+    "step": 200,
+    "haar_logit_max_abs": 3.552713678800501e-15,
+    "fourier_logit_max_abs": 1.7763568394002505e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "readout",
+    "seed": 3,
+    "step": 400,
+    "haar_logit_max_abs": 3.552713678800501e-15,
+    "fourier_logit_max_abs": 3.552713678800501e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "readout",
+    "seed": 3,
+    "step": 800,
+    "haar_logit_max_abs": 3.552713678800501e-15,
+    "fourier_logit_max_abs": 3.552713678800501e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "readout",
+    "seed": 4,
+    "step": 0,
+    "haar_logit_max_abs": 3.0531133177191805e-16,
+    "fourier_logit_max_abs": 2.220446049250313e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "readout",
+    "seed": 4,
+    "step": 10,
+    "haar_logit_max_abs": 1.1102230246251565e-15,
+    "fourier_logit_max_abs": 6.661338147750939e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "readout",
+    "seed": 4,
+    "step": 25,
+    "haar_logit_max_abs": 1.7763568394002505e-15,
+    "fourier_logit_max_abs": 8.881784197001252e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "readout",
+    "seed": 4,
+    "step": 50,
+    "haar_logit_max_abs": 2.6645352591003757e-15,
+    "fourier_logit_max_abs": 1.7763568394002505e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "readout",
+    "seed": 4,
+    "step": 100,
+    "haar_logit_max_abs": 1.7763568394002505e-15,
+    "fourier_logit_max_abs": 1.7763568394002505e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "readout",
+    "seed": 4,
+    "step": 200,
+    "haar_logit_max_abs": 2.6645352591003757e-15,
+    "fourier_logit_max_abs": 1.7763568394002505e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "readout",
+    "seed": 4,
+    "step": 400,
+    "haar_logit_max_abs": 3.552713678800501e-15,
+    "fourier_logit_max_abs": 3.552713678800501e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "readout",
+    "seed": 4,
+    "step": 800,
+    "haar_logit_max_abs": 3.552713678800501e-15,
+    "fourier_logit_max_abs": 1.7763568394002505e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "parity",
+    "seed": 0,
+    "step": 0,
+    "haar_logit_max_abs": 1.6653345369377348e-16,
+    "fourier_logit_max_abs": 1.1102230246251565e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "parity",
+    "seed": 0,
+    "step": 10,
+    "haar_logit_max_abs": 3.3306690738754696e-16,
+    "fourier_logit_max_abs": 2.220446049250313e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "parity",
+    "seed": 0,
+    "step": 25,
+    "haar_logit_max_abs": 1.3322676295501878e-15,
+    "fourier_logit_max_abs": 4.440892098500626e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "parity",
+    "seed": 0,
+    "step": 50,
+    "haar_logit_max_abs": 2.6645352591003757e-15,
+    "fourier_logit_max_abs": 3.552713678800501e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "parity",
+    "seed": 0,
+    "step": 100,
+    "haar_logit_max_abs": 3.552713678800501e-15,
+    "fourier_logit_max_abs": 1.7763568394002505e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "parity",
+    "seed": 0,
+    "step": 200,
+    "haar_logit_max_abs": 1.7763568394002505e-15,
+    "fourier_logit_max_abs": 3.552713678800501e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "parity",
+    "seed": 0,
+    "step": 400,
+    "haar_logit_max_abs": 3.552713678800501e-15,
+    "fourier_logit_max_abs": 1.7763568394002505e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "parity",
+    "seed": 0,
+    "step": 800,
+    "haar_logit_max_abs": 3.552713678800501e-15,
+    "fourier_logit_max_abs": 3.552713678800501e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "parity",
+    "seed": 1,
+    "step": 0,
+    "haar_logit_max_abs": 3.3306690738754696e-16,
+    "fourier_logit_max_abs": 1.1102230246251565e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "parity",
+    "seed": 1,
+    "step": 10,
+    "haar_logit_max_abs": 6.661338147750939e-16,
+    "fourier_logit_max_abs": 3.3306690738754696e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "parity",
+    "seed": 1,
+    "step": 25,
+    "haar_logit_max_abs": 2.220446049250313e-15,
+    "fourier_logit_max_abs": 8.881784197001252e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "parity",
+    "seed": 1,
+    "step": 50,
+    "haar_logit_max_abs": 3.552713678800501e-15,
+    "fourier_logit_max_abs": 3.552713678800501e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "parity",
+    "seed": 1,
+    "step": 100,
+    "haar_logit_max_abs": 3.552713678800501e-15,
+    "fourier_logit_max_abs": 1.7763568394002505e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "parity",
+    "seed": 1,
+    "step": 200,
+    "haar_logit_max_abs": 5.329070518200751e-15,
+    "fourier_logit_max_abs": 2.6645352591003757e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "parity",
+    "seed": 1,
+    "step": 400,
+    "haar_logit_max_abs": 3.552713678800501e-15,
+    "fourier_logit_max_abs": 1.7763568394002505e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "parity",
+    "seed": 1,
+    "step": 800,
+    "haar_logit_max_abs": 3.552713678800501e-15,
+    "fourier_logit_max_abs": 3.552713678800501e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "parity",
+    "seed": 2,
+    "step": 0,
+    "haar_logit_max_abs": 1.6653345369377348e-16,
+    "fourier_logit_max_abs": 1.6653345369377348e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "parity",
+    "seed": 2,
+    "step": 10,
+    "haar_logit_max_abs": 3.3306690738754696e-16,
+    "fourier_logit_max_abs": 1.3877787807814457e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "parity",
+    "seed": 2,
+    "step": 25,
+    "haar_logit_max_abs": 1.7763568394002505e-15,
+    "fourier_logit_max_abs": 4.440892098500626e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "parity",
+    "seed": 2,
+    "step": 50,
+    "haar_logit_max_abs": 3.552713678800501e-15,
+    "fourier_logit_max_abs": 2.6645352591003757e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "parity",
+    "seed": 2,
+    "step": 100,
+    "haar_logit_max_abs": 3.552713678800501e-15,
+    "fourier_logit_max_abs": 3.552713678800501e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "parity",
+    "seed": 2,
+    "step": 200,
+    "haar_logit_max_abs": 3.552713678800501e-15,
+    "fourier_logit_max_abs": 3.552713678800501e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "parity",
+    "seed": 2,
+    "step": 400,
+    "haar_logit_max_abs": 3.552713678800501e-15,
+    "fourier_logit_max_abs": 3.552713678800501e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "parity",
+    "seed": 2,
+    "step": 800,
+    "haar_logit_max_abs": 5.329070518200751e-15,
+    "fourier_logit_max_abs": 3.552713678800501e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "parity",
+    "seed": 3,
+    "step": 0,
+    "haar_logit_max_abs": 4.440892098500626e-16,
+    "fourier_logit_max_abs": 2.220446049250313e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "parity",
+    "seed": 3,
+    "step": 10,
+    "haar_logit_max_abs": 1.6653345369377348e-16,
+    "fourier_logit_max_abs": 1.1102230246251565e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "parity",
+    "seed": 3,
+    "step": 25,
+    "haar_logit_max_abs": 8.881784197001252e-16,
+    "fourier_logit_max_abs": 3.3306690738754696e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "parity",
+    "seed": 3,
+    "step": 50,
+    "haar_logit_max_abs": 3.552713678800501e-15,
+    "fourier_logit_max_abs": 1.7763568394002505e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "parity",
+    "seed": 3,
+    "step": 100,
+    "haar_logit_max_abs": 3.552713678800501e-15,
+    "fourier_logit_max_abs": 1.7763568394002505e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "parity",
+    "seed": 3,
+    "step": 200,
+    "haar_logit_max_abs": 3.552713678800501e-15,
+    "fourier_logit_max_abs": 2.6645352591003757e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "parity",
+    "seed": 3,
+    "step": 400,
+    "haar_logit_max_abs": 2.6645352591003757e-15,
+    "fourier_logit_max_abs": 1.7763568394002505e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "parity",
+    "seed": 3,
+    "step": 800,
+    "haar_logit_max_abs": 5.329070518200751e-15,
+    "fourier_logit_max_abs": 1.7763568394002505e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "parity",
+    "seed": 4,
+    "step": 0,
+    "haar_logit_max_abs": 3.0531133177191805e-16,
+    "fourier_logit_max_abs": 2.220446049250313e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "parity",
+    "seed": 4,
+    "step": 10,
+    "haar_logit_max_abs": 4.440892098500626e-16,
+    "fourier_logit_max_abs": 3.3306690738754696e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "parity",
+    "seed": 4,
+    "step": 25,
+    "haar_logit_max_abs": 2.4424906541753444e-15,
+    "fourier_logit_max_abs": 8.881784197001252e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "parity",
+    "seed": 4,
+    "step": 50,
+    "haar_logit_max_abs": 4.440892098500626e-15,
+    "fourier_logit_max_abs": 1.7763568394002505e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "parity",
+    "seed": 4,
+    "step": 100,
+    "haar_logit_max_abs": 5.329070518200751e-15,
+    "fourier_logit_max_abs": 1.7763568394002505e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "parity",
+    "seed": 4,
+    "step": 200,
+    "haar_logit_max_abs": 5.329070518200751e-15,
+    "fourier_logit_max_abs": 3.552713678800501e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "parity",
+    "seed": 4,
+    "step": 400,
+    "haar_logit_max_abs": 3.552713678800501e-15,
+    "fourier_logit_max_abs": 3.552713678800501e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "parity",
+    "seed": 4,
+    "step": 800,
+    "haar_logit_max_abs": 3.552713678800501e-15,
+    "fourier_logit_max_abs": 3.552713678800501e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "context",
+    "seed": 0,
+    "step": 0,
+    "haar_logit_max_abs": 1.6653345369377348e-16,
+    "fourier_logit_max_abs": 1.1102230246251565e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "context",
+    "seed": 0,
+    "step": 10,
+    "haar_logit_max_abs": 8.881784197001252e-16,
+    "fourier_logit_max_abs": 4.440892098500626e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "context",
+    "seed": 0,
+    "step": 25,
+    "haar_logit_max_abs": 2.220446049250313e-15,
+    "fourier_logit_max_abs": 1.7763568394002505e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "context",
+    "seed": 0,
+    "step": 50,
+    "haar_logit_max_abs": 3.552713678800501e-15,
+    "fourier_logit_max_abs": 1.7763568394002505e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "context",
+    "seed": 0,
+    "step": 100,
+    "haar_logit_max_abs": 3.552713678800501e-15,
+    "fourier_logit_max_abs": 1.7763568394002505e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "context",
+    "seed": 0,
+    "step": 200,
+    "haar_logit_max_abs": 4.440892098500626e-15,
+    "fourier_logit_max_abs": 3.552713678800501e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "context",
+    "seed": 0,
+    "step": 400,
+    "haar_logit_max_abs": 4.440892098500626e-15,
+    "fourier_logit_max_abs": 1.7763568394002505e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "context",
+    "seed": 0,
+    "step": 800,
+    "haar_logit_max_abs": 3.552713678800501e-15,
+    "fourier_logit_max_abs": 1.7763568394002505e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "context",
+    "seed": 1,
+    "step": 0,
+    "haar_logit_max_abs": 3.3306690738754696e-16,
+    "fourier_logit_max_abs": 1.1102230246251565e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "context",
+    "seed": 1,
+    "step": 10,
+    "haar_logit_max_abs": 1.3322676295501878e-15,
+    "fourier_logit_max_abs": 4.440892098500626e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "context",
+    "seed": 1,
+    "step": 25,
+    "haar_logit_max_abs": 1.7763568394002505e-15,
+    "fourier_logit_max_abs": 2.6645352591003757e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "context",
+    "seed": 1,
+    "step": 50,
+    "haar_logit_max_abs": 3.552713678800501e-15,
+    "fourier_logit_max_abs": 1.7763568394002505e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "context",
+    "seed": 1,
+    "step": 100,
+    "haar_logit_max_abs": 4.440892098500626e-15,
+    "fourier_logit_max_abs": 3.552713678800501e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "context",
+    "seed": 1,
+    "step": 200,
+    "haar_logit_max_abs": 3.552713678800501e-15,
+    "fourier_logit_max_abs": 3.552713678800501e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "context",
+    "seed": 1,
+    "step": 400,
+    "haar_logit_max_abs": 5.329070518200751e-15,
+    "fourier_logit_max_abs": 1.7763568394002505e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "context",
+    "seed": 1,
+    "step": 800,
+    "haar_logit_max_abs": 3.552713678800501e-15,
+    "fourier_logit_max_abs": 3.552713678800501e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "context",
+    "seed": 2,
+    "step": 0,
+    "haar_logit_max_abs": 1.6653345369377348e-16,
+    "fourier_logit_max_abs": 1.6653345369377348e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "context",
+    "seed": 2,
+    "step": 10,
+    "haar_logit_max_abs": 1.3322676295501878e-15,
+    "fourier_logit_max_abs": 4.440892098500626e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "context",
+    "seed": 2,
+    "step": 25,
+    "haar_logit_max_abs": 2.220446049250313e-15,
+    "fourier_logit_max_abs": 1.7763568394002505e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "context",
+    "seed": 2,
+    "step": 50,
+    "haar_logit_max_abs": 3.552713678800501e-15,
+    "fourier_logit_max_abs": 1.7763568394002505e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "context",
+    "seed": 2,
+    "step": 100,
+    "haar_logit_max_abs": 7.105427357601002e-15,
+    "fourier_logit_max_abs": 3.552713678800501e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "context",
+    "seed": 2,
+    "step": 200,
+    "haar_logit_max_abs": 5.329070518200751e-15,
+    "fourier_logit_max_abs": 2.6645352591003757e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "context",
+    "seed": 2,
+    "step": 400,
+    "haar_logit_max_abs": 5.329070518200751e-15,
+    "fourier_logit_max_abs": 3.552713678800501e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "context",
+    "seed": 2,
+    "step": 800,
+    "haar_logit_max_abs": 5.329070518200751e-15,
+    "fourier_logit_max_abs": 1.7763568394002505e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "context",
+    "seed": 3,
+    "step": 0,
+    "haar_logit_max_abs": 4.440892098500626e-16,
+    "fourier_logit_max_abs": 2.220446049250313e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "context",
+    "seed": 3,
+    "step": 10,
+    "haar_logit_max_abs": 8.881784197001252e-16,
+    "fourier_logit_max_abs": 4.440892098500626e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "context",
+    "seed": 3,
+    "step": 25,
+    "haar_logit_max_abs": 2.6645352591003757e-15,
+    "fourier_logit_max_abs": 1.7763568394002505e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "context",
+    "seed": 3,
+    "step": 50,
+    "haar_logit_max_abs": 2.6645352591003757e-15,
+    "fourier_logit_max_abs": 2.6645352591003757e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "context",
+    "seed": 3,
+    "step": 100,
+    "haar_logit_max_abs": 5.329070518200751e-15,
+    "fourier_logit_max_abs": 1.7763568394002505e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "context",
+    "seed": 3,
+    "step": 200,
+    "haar_logit_max_abs": 6.217248937900877e-15,
+    "fourier_logit_max_abs": 3.552713678800501e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "context",
+    "seed": 3,
+    "step": 400,
+    "haar_logit_max_abs": 3.552713678800501e-15,
+    "fourier_logit_max_abs": 3.552713678800501e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "context",
+    "seed": 3,
+    "step": 800,
+    "haar_logit_max_abs": 5.329070518200751e-15,
+    "fourier_logit_max_abs": 3.552713678800501e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "context",
+    "seed": 4,
+    "step": 0,
+    "haar_logit_max_abs": 3.0531133177191805e-16,
+    "fourier_logit_max_abs": 2.220446049250313e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "context",
+    "seed": 4,
+    "step": 10,
+    "haar_logit_max_abs": 1.7763568394002505e-15,
+    "fourier_logit_max_abs": 4.440892098500626e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "context",
+    "seed": 4,
+    "step": 25,
+    "haar_logit_max_abs": 1.7763568394002505e-15,
+    "fourier_logit_max_abs": 1.887379141862766e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "context",
+    "seed": 4,
+    "step": 50,
+    "haar_logit_max_abs": 7.105427357601002e-15,
+    "fourier_logit_max_abs": 3.552713678800501e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "context",
+    "seed": 4,
+    "step": 100,
+    "haar_logit_max_abs": 4.440892098500626e-15,
+    "fourier_logit_max_abs": 3.552713678800501e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "context",
+    "seed": 4,
+    "step": 200,
+    "haar_logit_max_abs": 3.552713678800501e-15,
+    "fourier_logit_max_abs": 1.7763568394002505e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "context",
+    "seed": 4,
+    "step": 400,
+    "haar_logit_max_abs": 5.329070518200751e-15,
+    "fourier_logit_max_abs": 3.552713678800501e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "context",
+    "seed": 4,
+    "step": 800,
+    "haar_logit_max_abs": 5.329070518200751e-15,
+    "fourier_logit_max_abs": 3.552713678800501e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "joint",
+    "seed": 0,
+    "step": 0,
+    "haar_logit_max_abs": 3.3306690738754696e-16,
+    "fourier_logit_max_abs": 2.220446049250313e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "joint",
+    "seed": 0,
+    "step": 10,
+    "haar_logit_max_abs": 1.3322676295501878e-15,
+    "fourier_logit_max_abs": 6.661338147750939e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "joint",
+    "seed": 0,
+    "step": 25,
+    "haar_logit_max_abs": 1.7763568394002505e-15,
+    "fourier_logit_max_abs": 8.881784197001252e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "joint",
+    "seed": 0,
+    "step": 50,
+    "haar_logit_max_abs": 3.552713678800501e-15,
+    "fourier_logit_max_abs": 2.6645352591003757e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "joint",
+    "seed": 0,
+    "step": 100,
+    "haar_logit_max_abs": 4.440892098500626e-15,
+    "fourier_logit_max_abs": 3.552713678800501e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "joint",
+    "seed": 0,
+    "step": 200,
+    "haar_logit_max_abs": 4.440892098500626e-15,
+    "fourier_logit_max_abs": 3.552713678800501e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "joint",
+    "seed": 0,
+    "step": 400,
+    "haar_logit_max_abs": 7.105427357601002e-15,
+    "fourier_logit_max_abs": 5.329070518200751e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "joint",
+    "seed": 0,
+    "step": 800,
+    "haar_logit_max_abs": 5.329070518200751e-15,
+    "fourier_logit_max_abs": 5.329070518200751e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "joint",
+    "seed": 1,
+    "step": 0,
+    "haar_logit_max_abs": 3.3306690738754696e-16,
+    "fourier_logit_max_abs": 1.942890293094024e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "joint",
+    "seed": 1,
+    "step": 10,
+    "haar_logit_max_abs": 1.1102230246251565e-15,
+    "fourier_logit_max_abs": 6.661338147750939e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "joint",
+    "seed": 1,
+    "step": 25,
+    "haar_logit_max_abs": 3.1086244689504383e-15,
+    "fourier_logit_max_abs": 1.7763568394002505e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "joint",
+    "seed": 1,
+    "step": 50,
+    "haar_logit_max_abs": 2.6645352591003757e-15,
+    "fourier_logit_max_abs": 1.7763568394002505e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "joint",
+    "seed": 1,
+    "step": 100,
+    "haar_logit_max_abs": 4.440892098500626e-15,
+    "fourier_logit_max_abs": 6.217248937900877e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "joint",
+    "seed": 1,
+    "step": 200,
+    "haar_logit_max_abs": 7.105427357601002e-15,
+    "fourier_logit_max_abs": 5.329070518200751e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "joint",
+    "seed": 1,
+    "step": 400,
+    "haar_logit_max_abs": 7.105427357601002e-15,
+    "fourier_logit_max_abs": 5.329070518200751e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "joint",
+    "seed": 1,
+    "step": 800,
+    "haar_logit_max_abs": 7.105427357601002e-15,
+    "fourier_logit_max_abs": 4.440892098500626e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "joint",
+    "seed": 2,
+    "step": 0,
+    "haar_logit_max_abs": 1.942890293094024e-16,
+    "fourier_logit_max_abs": 1.6653345369377348e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "joint",
+    "seed": 2,
+    "step": 10,
+    "haar_logit_max_abs": 8.881784197001252e-16,
+    "fourier_logit_max_abs": 4.440892098500626e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "joint",
+    "seed": 2,
+    "step": 25,
+    "haar_logit_max_abs": 2.886579864025407e-15,
+    "fourier_logit_max_abs": 1.3322676295501878e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "joint",
+    "seed": 2,
+    "step": 50,
+    "haar_logit_max_abs": 3.552713678800501e-15,
+    "fourier_logit_max_abs": 2.6645352591003757e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "joint",
+    "seed": 2,
+    "step": 100,
+    "haar_logit_max_abs": 6.217248937900877e-15,
+    "fourier_logit_max_abs": 4.440892098500626e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "joint",
+    "seed": 2,
+    "step": 200,
+    "haar_logit_max_abs": 4.440892098500626e-15,
+    "fourier_logit_max_abs": 7.105427357601002e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "joint",
+    "seed": 2,
+    "step": 400,
+    "haar_logit_max_abs": 8.881784197001252e-15,
+    "fourier_logit_max_abs": 4.440892098500626e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "joint",
+    "seed": 2,
+    "step": 800,
+    "haar_logit_max_abs": 7.105427357601002e-15,
+    "fourier_logit_max_abs": 8.881784197001252e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "joint",
+    "seed": 3,
+    "step": 0,
+    "haar_logit_max_abs": 4.440892098500626e-16,
+    "fourier_logit_max_abs": 2.220446049250313e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "joint",
+    "seed": 3,
+    "step": 10,
+    "haar_logit_max_abs": 8.881784197001252e-16,
+    "fourier_logit_max_abs": 3.3306690738754696e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "joint",
+    "seed": 3,
+    "step": 25,
+    "haar_logit_max_abs": 2.6645352591003757e-15,
+    "fourier_logit_max_abs": 8.881784197001252e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "joint",
+    "seed": 3,
+    "step": 50,
+    "haar_logit_max_abs": 3.552713678800501e-15,
+    "fourier_logit_max_abs": 1.9984014443252818e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "joint",
+    "seed": 3,
+    "step": 100,
+    "haar_logit_max_abs": 7.105427357601002e-15,
+    "fourier_logit_max_abs": 3.552713678800501e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "joint",
+    "seed": 3,
+    "step": 200,
+    "haar_logit_max_abs": 5.329070518200751e-15,
+    "fourier_logit_max_abs": 3.552713678800501e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "joint",
+    "seed": 3,
+    "step": 400,
+    "haar_logit_max_abs": 8.881784197001252e-15,
+    "fourier_logit_max_abs": 3.552713678800501e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "joint",
+    "seed": 3,
+    "step": 800,
+    "haar_logit_max_abs": 7.105427357601002e-15,
+    "fourier_logit_max_abs": 7.105427357601002e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "joint",
+    "seed": 4,
+    "step": 0,
+    "haar_logit_max_abs": 3.3306690738754696e-16,
+    "fourier_logit_max_abs": 2.220446049250313e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "joint",
+    "seed": 4,
+    "step": 10,
+    "haar_logit_max_abs": 8.881784197001252e-16,
+    "fourier_logit_max_abs": 6.661338147750939e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "joint",
+    "seed": 4,
+    "step": 25,
+    "haar_logit_max_abs": 1.7763568394002505e-15,
+    "fourier_logit_max_abs": 9.43689570931383e-16,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "joint",
+    "seed": 4,
+    "step": 50,
+    "haar_logit_max_abs": 2.6645352591003757e-15,
+    "fourier_logit_max_abs": 1.7763568394002505e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "joint",
+    "seed": 4,
+    "step": 100,
+    "haar_logit_max_abs": 5.329070518200751e-15,
+    "fourier_logit_max_abs": 3.552713678800501e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "joint",
+    "seed": 4,
+    "step": 200,
+    "haar_logit_max_abs": 3.552713678800501e-15,
+    "fourier_logit_max_abs": 3.552713678800501e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "joint",
+    "seed": 4,
+    "step": 400,
+    "haar_logit_max_abs": 7.105427357601002e-15,
+    "fourier_logit_max_abs": 6.217248937900877e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  },
+  {
+    "task": "joint",
+    "seed": 4,
+    "step": 800,
+    "haar_logit_max_abs": 5.329070518200751e-15,
+    "fourier_logit_max_abs": 7.993605777301127e-15,
+    "haar_same_choices": true,
+    "fourier_same_choices": true
+  }
+]

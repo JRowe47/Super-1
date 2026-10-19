@@ -1,0 +1,1 @@
+{"before_training_fix":"Initial bitwise parameter assertion was too strict for roundoff at zero or extremely small coordinates. Replaced by a 1e-12 absolute reconstruction gate and retained exact float32 mismatch counts. Forward and gradient equivalence are measured independently. No training data or outcomes were consulted to change the protocol."}

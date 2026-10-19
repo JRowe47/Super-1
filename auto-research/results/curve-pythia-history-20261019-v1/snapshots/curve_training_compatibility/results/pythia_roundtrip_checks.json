@@ -1,0 +1,434 @@
+[
+  {
+    "name": "gpt_neox.layers.0.input_layernorm.weight",
+    "max_abs_roundtrip": 1.5543122344752192e-15,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.0.input_layernorm.bias",
+    "max_abs_roundtrip": 6.661338147750939e-16,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.0.post_attention_layernorm.weight",
+    "max_abs_roundtrip": 1.3322676295501878e-15,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.0.post_attention_layernorm.bias",
+    "max_abs_roundtrip": 1.6653345369377348e-16,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.0.attention.query_key_value.weight",
+    "max_abs_roundtrip": 1.6653345369377348e-16,
+    "float32_exact": false,
+    "float32_differing_entries": 1
+  },
+  {
+    "name": "gpt_neox.layers.0.attention.query_key_value.bias",
+    "max_abs_roundtrip": 7.105427357601002e-15,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.0.attention.dense.weight",
+    "max_abs_roundtrip": 1.1102230246251565e-16,
+    "float32_exact": false,
+    "float32_differing_entries": 1
+  },
+  {
+    "name": "gpt_neox.layers.0.attention.dense.bias",
+    "max_abs_roundtrip": 8.881784197001252e-16,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.0.mlp.dense_h_to_4h.weight",
+    "max_abs_roundtrip": 8.326672684688674e-17,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.0.mlp.dense_h_to_4h.bias",
+    "max_abs_roundtrip": 4.440892098500626e-16,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.0.mlp.dense_4h_to_h.weight",
+    "max_abs_roundtrip": 1.1102230246251565e-16,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.0.mlp.dense_4h_to_h.bias",
+    "max_abs_roundtrip": 8.881784197001252e-16,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.1.input_layernorm.weight",
+    "max_abs_roundtrip": 2.6645352591003757e-15,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.1.input_layernorm.bias",
+    "max_abs_roundtrip": 2.220446049250313e-16,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.1.post_attention_layernorm.weight",
+    "max_abs_roundtrip": 2.6645352591003757e-15,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.1.post_attention_layernorm.bias",
+    "max_abs_roundtrip": 4.440892098500626e-16,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.1.attention.query_key_value.weight",
+    "max_abs_roundtrip": 1.1102230246251565e-16,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.1.attention.query_key_value.bias",
+    "max_abs_roundtrip": 1.0658141036401503e-14,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.1.attention.dense.weight",
+    "max_abs_roundtrip": 1.1102230246251565e-16,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.1.attention.dense.bias",
+    "max_abs_roundtrip": 2.220446049250313e-16,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.1.mlp.dense_h_to_4h.weight",
+    "max_abs_roundtrip": 2.220446049250313e-16,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.1.mlp.dense_h_to_4h.bias",
+    "max_abs_roundtrip": 5.551115123125783e-16,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.1.mlp.dense_4h_to_h.weight",
+    "max_abs_roundtrip": 4.440892098500626e-16,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.1.mlp.dense_4h_to_h.bias",
+    "max_abs_roundtrip": 2.220446049250313e-16,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.2.input_layernorm.weight",
+    "max_abs_roundtrip": 2.220446049250313e-15,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.2.input_layernorm.bias",
+    "max_abs_roundtrip": 2.220446049250313e-16,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.2.post_attention_layernorm.weight",
+    "max_abs_roundtrip": 2.220446049250313e-15,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.2.post_attention_layernorm.bias",
+    "max_abs_roundtrip": 4.440892098500626e-16,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.2.attention.query_key_value.weight",
+    "max_abs_roundtrip": 1.1102230246251565e-16,
+    "float32_exact": false,
+    "float32_differing_entries": 1
+  },
+  {
+    "name": "gpt_neox.layers.2.attention.query_key_value.bias",
+    "max_abs_roundtrip": 1.4210854715202004e-14,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.2.attention.dense.weight",
+    "max_abs_roundtrip": 1.1102230246251565e-16,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.2.attention.dense.bias",
+    "max_abs_roundtrip": 4.440892098500626e-16,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.2.mlp.dense_h_to_4h.weight",
+    "max_abs_roundtrip": 6.661338147750939e-16,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.2.mlp.dense_h_to_4h.bias",
+    "max_abs_roundtrip": 8.944667923005412e-16,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.2.mlp.dense_4h_to_h.weight",
+    "max_abs_roundtrip": 2.220446049250313e-16,
+    "float32_exact": false,
+    "float32_differing_entries": 1
+  },
+  {
+    "name": "gpt_neox.layers.2.mlp.dense_4h_to_h.bias",
+    "max_abs_roundtrip": 4.440892098500626e-16,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.3.input_layernorm.weight",
+    "max_abs_roundtrip": 3.1086244689504383e-15,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.3.input_layernorm.bias",
+    "max_abs_roundtrip": 6.661338147750939e-16,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.3.post_attention_layernorm.weight",
+    "max_abs_roundtrip": 2.220446049250313e-15,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.3.post_attention_layernorm.bias",
+    "max_abs_roundtrip": 4.440892098500626e-16,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.3.attention.query_key_value.weight",
+    "max_abs_roundtrip": 8.881784197001252e-16,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.3.attention.query_key_value.bias",
+    "max_abs_roundtrip": 4.973799150320701e-14,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.3.attention.dense.weight",
+    "max_abs_roundtrip": 1.6653345369377348e-16,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.3.attention.dense.bias",
+    "max_abs_roundtrip": 1.6653345369377348e-16,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.3.mlp.dense_h_to_4h.weight",
+    "max_abs_roundtrip": 1.1102230246251565e-16,
+    "float32_exact": false,
+    "float32_differing_entries": 1
+  },
+  {
+    "name": "gpt_neox.layers.3.mlp.dense_h_to_4h.bias",
+    "max_abs_roundtrip": 4.440892098500626e-16,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.3.mlp.dense_4h_to_h.weight",
+    "max_abs_roundtrip": 2.220446049250313e-16,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.3.mlp.dense_4h_to_h.bias",
+    "max_abs_roundtrip": 1.6653345369377348e-16,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.4.input_layernorm.weight",
+    "max_abs_roundtrip": 4.884981308350689e-15,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.4.input_layernorm.bias",
+    "max_abs_roundtrip": 1.3322676295501878e-15,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.4.post_attention_layernorm.weight",
+    "max_abs_roundtrip": 2.886579864025407e-15,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.4.post_attention_layernorm.bias",
+    "max_abs_roundtrip": 4.440892098500626e-16,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.4.attention.query_key_value.weight",
+    "max_abs_roundtrip": 1.5543122344752192e-15,
+    "float32_exact": false,
+    "float32_differing_entries": 1
+  },
+  {
+    "name": "gpt_neox.layers.4.attention.query_key_value.bias",
+    "max_abs_roundtrip": 4.973799150320701e-14,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.4.attention.dense.weight",
+    "max_abs_roundtrip": 5.551115123125783e-17,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.4.attention.dense.bias",
+    "max_abs_roundtrip": 4.440892098500626e-16,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.4.mlp.dense_h_to_4h.weight",
+    "max_abs_roundtrip": 1.1102230246251565e-16,
+    "float32_exact": false,
+    "float32_differing_entries": 2
+  },
+  {
+    "name": "gpt_neox.layers.4.mlp.dense_h_to_4h.bias",
+    "max_abs_roundtrip": 5.551115123125783e-16,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.4.mlp.dense_4h_to_h.weight",
+    "max_abs_roundtrip": 2.220446049250313e-16,
+    "float32_exact": false,
+    "float32_differing_entries": 1
+  },
+  {
+    "name": "gpt_neox.layers.4.mlp.dense_4h_to_h.bias",
+    "max_abs_roundtrip": 4.440892098500626e-16,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.5.input_layernorm.weight",
+    "max_abs_roundtrip": 1.0658141036401503e-14,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.5.input_layernorm.bias",
+    "max_abs_roundtrip": 8.881784197001252e-16,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.5.post_attention_layernorm.weight",
+    "max_abs_roundtrip": 3.3306690738754696e-15,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.5.post_attention_layernorm.bias",
+    "max_abs_roundtrip": 4.440892098500626e-16,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.5.attention.query_key_value.weight",
+    "max_abs_roundtrip": 8.881784197001252e-16,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.5.attention.query_key_value.bias",
+    "max_abs_roundtrip": 4.973799150320701e-14,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.5.attention.dense.weight",
+    "max_abs_roundtrip": 4.163336342344337e-17,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.5.attention.dense.bias",
+    "max_abs_roundtrip": 1.1102230246251565e-16,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.5.mlp.dense_h_to_4h.weight",
+    "max_abs_roundtrip": 2.220446049250313e-16,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.5.mlp.dense_h_to_4h.bias",
+    "max_abs_roundtrip": 3.3306690738754696e-16,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.5.mlp.dense_4h_to_h.weight",
+    "max_abs_roundtrip": 2.220446049250313e-16,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  },
+  {
+    "name": "gpt_neox.layers.5.mlp.dense_4h_to_h.bias",
+    "max_abs_roundtrip": 1.1102230246251565e-16,
+    "float32_exact": true,
+    "float32_differing_entries": 0
+  }
+]

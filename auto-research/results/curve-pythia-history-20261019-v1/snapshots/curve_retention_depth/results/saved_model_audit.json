@@ -1,0 +1,25 @@
+{
+  "checks": [
+    {
+      "arm": "native_lambda4",
+      "validation_max_error": 0.0,
+      "copy_max_error": 0.0,
+      "prose_max_error": 0.0
+    },
+    {
+      "arm": "curve_lambda4",
+      "validation_max_error": 0.0,
+      "copy_max_error": 0.0,
+      "prose_max_error": 0.0
+    }
+  ],
+  "python": "3.12.14",
+  "packages": {
+    "torch": "2.14.1+cpu",
+    "numpy": "2.3.5",
+    "transformers": "4.57.1",
+    "safetensors": "0.8.0",
+    "pyarrow": "19.0.1",
+    "matplotlib": "3.10.8"
+  }
+}

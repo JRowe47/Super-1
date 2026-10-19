@@ -1,0 +1,35 @@
+{
+  "total_seconds": 376.5331840515137,
+  "scan_seconds": 166.93035435676575,
+  "variants": 100,
+  "training_updates": 0,
+  "protocol_sha256": "ff34eb68c4b866d1a9301009e765a3d15d14204be6ac648aa9ee860f5a9015b2",
+  "selection_sha256": "ba3dc531ef484b64e890cb14427d68e2907db994b1ad974146f221a83820247e",
+  "selection_changed": false,
+  "restore_checks": [
+    {
+      "split": "scan",
+      "step": 1000,
+      "maximum_nll_difference": 0.0
+    },
+    {
+      "split": "confirmation",
+      "step": 512,
+      "maximum_nll_difference": 0.0
+    },
+    {
+      "split": "confirmation",
+      "step": 1000,
+      "maximum_nll_difference": 0.0
+    },
+    {
+      "split": "confirmation",
+      "step": 8000,
+      "maximum_nll_difference": 0.0
+    }
+  ],
+  "torch": "2.14.1+cpu",
+  "threads": 3,
+  "dtype": "Float64 transforms; float32 inference",
+  "cpu_only": true
+}

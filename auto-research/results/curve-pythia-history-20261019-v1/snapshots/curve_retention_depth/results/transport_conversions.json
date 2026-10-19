@@ -1,0 +1,152 @@
+[
+  {
+    "seed": 0,
+    "arm": "native_fixed",
+    "initial_teacher_operator_mse": 0.0,
+    "discarded_field_energy": 0.0
+  },
+  {
+    "seed": 0,
+    "arm": "curve6_fixed",
+    "initial_teacher_operator_mse": 3.648481706896932e-30,
+    "discarded_field_energy": 0.0
+  },
+  {
+    "seed": 0,
+    "arm": "curve2_fixed",
+    "initial_teacher_operator_mse": 2.161995204409457e-14,
+    "discarded_field_energy": 2.4287296665934685e-08
+  },
+  {
+    "seed": 0,
+    "arm": "curve6_multidepth",
+    "initial_teacher_operator_mse": 3.648481706896932e-30,
+    "discarded_field_energy": 0.0
+  },
+  {
+    "seed": 0,
+    "arm": "curve2_multidepth",
+    "initial_teacher_operator_mse": 2.161995204409457e-14,
+    "discarded_field_energy": 2.4287296665934685e-08
+  },
+  {
+    "seed": 1,
+    "arm": "native_fixed",
+    "initial_teacher_operator_mse": 0.0,
+    "discarded_field_energy": 0.0
+  },
+  {
+    "seed": 1,
+    "arm": "curve6_fixed",
+    "initial_teacher_operator_mse": 7.124400109788279e-30,
+    "discarded_field_energy": 0.0
+  },
+  {
+    "seed": 1,
+    "arm": "curve2_fixed",
+    "initial_teacher_operator_mse": 6.199347866237318e-13,
+    "discarded_field_energy": 1.311628869075357e-07
+  },
+  {
+    "seed": 1,
+    "arm": "curve6_multidepth",
+    "initial_teacher_operator_mse": 7.124400109788279e-30,
+    "discarded_field_energy": 0.0
+  },
+  {
+    "seed": 1,
+    "arm": "curve2_multidepth",
+    "initial_teacher_operator_mse": 6.199347866237318e-13,
+    "discarded_field_energy": 1.311628869075357e-07
+  },
+  {
+    "seed": 2,
+    "arm": "native_fixed",
+    "initial_teacher_operator_mse": 0.0,
+    "discarded_field_energy": 0.0
+  },
+  {
+    "seed": 2,
+    "arm": "curve6_fixed",
+    "initial_teacher_operator_mse": 1.0896141307230163e-29,
+    "discarded_field_energy": 0.0
+  },
+  {
+    "seed": 2,
+    "arm": "curve2_fixed",
+    "initial_teacher_operator_mse": 5.894165428731856e-13,
+    "discarded_field_energy": 1.2795529928262147e-07
+  },
+  {
+    "seed": 2,
+    "arm": "curve6_multidepth",
+    "initial_teacher_operator_mse": 1.0896141307230163e-29,
+    "discarded_field_energy": 0.0
+  },
+  {
+    "seed": 2,
+    "arm": "curve2_multidepth",
+    "initial_teacher_operator_mse": 5.894165428731856e-13,
+    "discarded_field_energy": 1.2795529928262147e-07
+  },
+  {
+    "seed": 3,
+    "arm": "native_fixed",
+    "initial_teacher_operator_mse": 0.0,
+    "discarded_field_energy": 0.0
+  },
+  {
+    "seed": 3,
+    "arm": "curve6_fixed",
+    "initial_teacher_operator_mse": 1.051403699044183e-29,
+    "discarded_field_energy": 0.0
+  },
+  {
+    "seed": 3,
+    "arm": "curve2_fixed",
+    "initial_teacher_operator_mse": 2.2202879908632086e-12,
+    "discarded_field_energy": 2.4831655705362184e-07
+  },
+  {
+    "seed": 3,
+    "arm": "curve6_multidepth",
+    "initial_teacher_operator_mse": 1.051403699044183e-29,
+    "discarded_field_energy": 0.0
+  },
+  {
+    "seed": 3,
+    "arm": "curve2_multidepth",
+    "initial_teacher_operator_mse": 2.2202879908632086e-12,
+    "discarded_field_energy": 2.4831655705362184e-07
+  },
+  {
+    "seed": 4,
+    "arm": "native_fixed",
+    "initial_teacher_operator_mse": 0.0,
+    "discarded_field_energy": 0.0
+  },
+  {
+    "seed": 4,
+    "arm": "curve6_fixed",
+    "initial_teacher_operator_mse": 6.705317714152693e-30,
+    "discarded_field_energy": 0.0
+  },
+  {
+    "seed": 4,
+    "arm": "curve2_fixed",
+    "initial_teacher_operator_mse": 1.565781940619602e-12,
+    "discarded_field_energy": 2.0854045887694587e-07
+  },
+  {
+    "seed": 4,
+    "arm": "curve6_multidepth",
+    "initial_teacher_operator_mse": 6.705317714152693e-30,
+    "discarded_field_energy": 0.0
+  },
+  {
+    "seed": 4,
+    "arm": "curve2_multidepth",
+    "initial_teacher_operator_mse": 1.565781940619602e-12,
+    "discarded_field_energy": 2.0854045887694587e-07
+  }
+]

@@ -1,0 +1,198 @@
+{
+  "method": "Ordinary GPTNeoXForCausalLM.forward, direct indexed targets, one sequence at a time",
+  "checks": [
+    {
+      "step": 1000,
+      "variant": false,
+      "kind": "repeat",
+      "n": 16,
+      "nll_abs_error": 0.0,
+      "top1_positions_match": true
+    },
+    {
+      "step": 1000,
+      "variant": false,
+      "kind": "scrambled",
+      "n": 16,
+      "nll_abs_error": 0.0,
+      "top1_positions_match": true
+    },
+    {
+      "step": 1000,
+      "variant": false,
+      "kind": "repeat",
+      "n": 32,
+      "nll_abs_error": 0.0,
+      "top1_positions_match": true
+    },
+    {
+      "step": 1000,
+      "variant": false,
+      "kind": "scrambled",
+      "n": 32,
+      "nll_abs_error": 0.0,
+      "top1_positions_match": true
+    },
+    {
+      "step": 1000,
+      "variant": false,
+      "kind": "repeat",
+      "n": 48,
+      "nll_abs_error": 0.0,
+      "top1_positions_match": true
+    },
+    {
+      "step": 1000,
+      "variant": false,
+      "kind": "scrambled",
+      "n": 48,
+      "nll_abs_error": 0.0,
+      "top1_positions_match": true
+    },
+    {
+      "step": 1000,
+      "variant": true,
+      "kind": "repeat",
+      "n": 16,
+      "nll_abs_error": 1.430511474609375e-06,
+      "top1_positions_match": true
+    },
+    {
+      "step": 1000,
+      "variant": true,
+      "kind": "scrambled",
+      "n": 16,
+      "nll_abs_error": 0.0,
+      "top1_positions_match": true
+    },
+    {
+      "step": 1000,
+      "variant": true,
+      "kind": "repeat",
+      "n": 32,
+      "nll_abs_error": 4.76837158203125e-07,
+      "top1_positions_match": true
+    },
+    {
+      "step": 1000,
+      "variant": true,
+      "kind": "scrambled",
+      "n": 32,
+      "nll_abs_error": 0.0,
+      "top1_positions_match": true
+    },
+    {
+      "step": 1000,
+      "variant": true,
+      "kind": "repeat",
+      "n": 48,
+      "nll_abs_error": 0.0,
+      "top1_positions_match": true
+    },
+    {
+      "step": 1000,
+      "variant": true,
+      "kind": "scrambled",
+      "n": 48,
+      "nll_abs_error": 9.5367431640625e-07,
+      "top1_positions_match": true
+    },
+    {
+      "step": 8000,
+      "variant": false,
+      "kind": "repeat",
+      "n": 16,
+      "nll_abs_error": 0.0,
+      "top1_positions_match": true
+    },
+    {
+      "step": 8000,
+      "variant": false,
+      "kind": "scrambled",
+      "n": 16,
+      "nll_abs_error": 0.0,
+      "top1_positions_match": true
+    },
+    {
+      "step": 8000,
+      "variant": false,
+      "kind": "repeat",
+      "n": 32,
+      "nll_abs_error": 0.0,
+      "top1_positions_match": true
+    },
+    {
+      "step": 8000,
+      "variant": false,
+      "kind": "scrambled",
+      "n": 32,
+      "nll_abs_error": 0.0,
+      "top1_positions_match": true
+    },
+    {
+      "step": 8000,
+      "variant": false,
+      "kind": "repeat",
+      "n": 48,
+      "nll_abs_error": 0.0,
+      "top1_positions_match": true
+    },
+    {
+      "step": 8000,
+      "variant": false,
+      "kind": "scrambled",
+      "n": 48,
+      "nll_abs_error": 0.0,
+      "top1_positions_match": true
+    },
+    {
+      "step": 8000,
+      "variant": true,
+      "kind": "repeat",
+      "n": 16,
+      "nll_abs_error": 0.0,
+      "top1_positions_match": true
+    },
+    {
+      "step": 8000,
+      "variant": true,
+      "kind": "scrambled",
+      "n": 16,
+      "nll_abs_error": 0.0,
+      "top1_positions_match": true
+    },
+    {
+      "step": 8000,
+      "variant": true,
+      "kind": "repeat",
+      "n": 32,
+      "nll_abs_error": 0.0,
+      "top1_positions_match": true
+    },
+    {
+      "step": 8000,
+      "variant": true,
+      "kind": "scrambled",
+      "n": 32,
+      "nll_abs_error": 0.0,
+      "top1_positions_match": true
+    },
+    {
+      "step": 8000,
+      "variant": true,
+      "kind": "repeat",
+      "n": 48,
+      "nll_abs_error": 0.0,
+      "top1_positions_match": true
+    },
+    {
+      "step": 8000,
+      "variant": true,
+      "kind": "scrambled",
+      "n": 48,
+      "nll_abs_error": 0.0,
+      "top1_positions_match": true
+    }
+  ],
+  "maximum_nll_abs_error": 1.430511474609375e-06
+}

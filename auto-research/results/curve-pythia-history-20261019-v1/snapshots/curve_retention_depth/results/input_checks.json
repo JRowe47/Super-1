@@ -1,0 +1,25 @@
+{
+  "replay_test_copy_tokens_disjoint": true,
+  "previous_probe_tokens_excluded": true,
+  "replay_adaptation_rows_disjoint": true,
+  "new_validation_rows_disjoint": true,
+  "adaptation_equal_previous": true,
+  "counts": {
+    "train": [
+      48,
+      96
+    ],
+    "replay": [
+      24,
+      96
+    ],
+    "validation": [
+      24,
+      96
+    ]
+  },
+  "copy_sequences": {
+    "calibration": 24,
+    "retention": 30
+  }
+}

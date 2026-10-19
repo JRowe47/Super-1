@@ -1,0 +1,8 @@
+{
+  "total_seconds": 98.59034610899971,
+  "precision": "float32 waveforms, complex64 FFT, float64 energy accumulation",
+  "axis": "flattened block-major waveform, not model depth",
+  "phase6_source": "recovered_phase6/smollm_initialization_phase6",
+  "weights_per_block": 3540096,
+  "ordering_control": "Retained update repeated with column-major flattening; decoding restores exactly the same tensors."
+}

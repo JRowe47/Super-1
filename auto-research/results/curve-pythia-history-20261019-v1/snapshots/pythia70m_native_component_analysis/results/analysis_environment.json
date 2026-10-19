@@ -1,0 +1,26 @@
+{
+  "seconds": 133.027907371521,
+  "steps": [
+    0,
+    64,
+    128,
+    256,
+    512,
+    1000,
+    2000,
+    4000,
+    8000,
+    16000,
+    32000,
+    64000,
+    143000
+  ],
+  "layers": 6,
+  "parameter_count": 18914304,
+  "transforms": "float64 calculation; complex64 Fourier and float32 Haar archives",
+  "full_resolution": true,
+  "truncated_coefficients": 0,
+  "new_training_steps": 0,
+  "neuron_permutations": 0,
+  "coefficient_archive_bytes": 1718369851
+}

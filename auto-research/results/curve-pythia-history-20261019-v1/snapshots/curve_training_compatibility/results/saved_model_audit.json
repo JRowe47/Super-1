@@ -1,0 +1,31 @@
+{
+  "checks": [
+    {
+      "arm": "native_adamw",
+      "validation_block_max_error": 0.0,
+      "retention_metric_max_error": 0.0,
+      "retention_hidden_max_error": 0.0,
+      "saved_weight_curve_roundtrip_max_error": 0.0,
+      "first_validation_block_roundtrip_logit_max_error": 0.0
+    },
+    {
+      "arm": "curve_adamw",
+      "validation_block_max_error": 0.0,
+      "retention_metric_max_error": 0.0,
+      "retention_hidden_max_error": 0.0,
+      "saved_weight_curve_roundtrip_max_error": 0.0,
+      "first_validation_block_roundtrip_logit_max_error": 0.0
+    }
+  ],
+  "scope": "Fresh model reload, 24 validation blocks and all retention probes; saved weight re-encoding checked on one validation block. No training or model selection.",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "packages": {
+    "torch": "2.14.1+cpu",
+    "numpy": "2.3.5",
+    "transformers": "4.57.1",
+    "safetensors": "0.8.0",
+    "pyarrow": "19.0.1",
+    "matplotlib": "3.10.8"
+  }
+}

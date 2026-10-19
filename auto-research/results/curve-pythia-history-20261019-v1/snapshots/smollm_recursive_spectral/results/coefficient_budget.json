@@ -1,0 +1,19 @@
+{
+  "full_update_real_dof": 21240576,
+  "counts_including_endpoints_and_norms": {
+    "low_quarter": 5315328,
+    "high_quarter": 5377536,
+    "random_quarter": 5362176,
+    "energy_quarter": 5375424,
+    "gradient_quarter": 5366336
+  },
+  "fraction": {
+    "low_quarter": 0.25024406117800196,
+    "high_quarter": 0.25317279531402537,
+    "random_quarter": 0.2524496510829085,
+    "energy_quarter": 0.2530733629822468,
+    "gradient_quarter": 0.2526455026455027
+  },
+  "seed": 71703,
+  "semantic_warning": "Degrees of freedom of a post-hoc mask; these coefficients were not independently trained in this study."
+}

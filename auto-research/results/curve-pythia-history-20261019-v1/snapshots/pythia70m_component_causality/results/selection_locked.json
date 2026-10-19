@@ -1,0 +1,85 @@
+{
+  "candidate_ids": [
+    "L3_fourier_atom",
+    "L3_haar_j6",
+    "L3_all",
+    "G_a",
+    "G_aa",
+    "G_ad",
+    "G_d",
+    "G_da",
+    "G_dd",
+    "F_a",
+    "F_aa",
+    "F_ab",
+    "F_b",
+    "F_ba",
+    "F_bb",
+    "H6_root",
+    "H6_a",
+    "H6_aa",
+    "H6_ad",
+    "H6_d",
+    "H6_da",
+    "H6_dd",
+    "H5_root",
+    "H7_root",
+    "H6_query",
+    "H6_key",
+    "H6_aaa",
+    "H6_aad",
+    "H6_aaaa",
+    "H6_aaad",
+    "H6_aaaaa",
+    "H6_aaaad",
+    "H6_aaaaaa",
+    "H6_aaaaad"
+  ],
+  "top6": [
+    "F_b",
+    "G_d",
+    "G_a",
+    "H6_root",
+    "F_a",
+    "F_bb"
+  ],
+  "local_descent": [
+    {
+      "parent": "H6_aa",
+      "children": [
+        "H6_aaa",
+        "H6_aad"
+      ]
+    },
+    {
+      "parent": "H6_aaa",
+      "children": [
+        "H6_aaaa",
+        "H6_aaad"
+      ]
+    },
+    {
+      "parent": "H6_aaaa",
+      "children": [
+        "H6_aaaaa",
+        "H6_aaaad"
+      ]
+    },
+    {
+      "parent": "H6_aaaaa",
+      "children": [
+        "H6_aaaaaa",
+        "H6_aaaaad"
+      ]
+    }
+  ],
+  "strongest_local_leaf": "H6_aaaaad",
+  "rule": "Lock the top 6 fixed/adaptive decomposed candidates by repeated-query NLL increase, all nodes on the local descent and their siblings/ancestors, layer-3 global root, Q and K local roots, neighboring-head roots, and the prior layer-3 Fourier and level-6 Haar examples. Use confirmation results only for reporting, never reselection.",
+  "confirmation_consulted": false,
+  "later_context_ids": [
+    "H6_root",
+    "H6_aaaaad",
+    "L3_fourier_atom",
+    "L3_haar_j6"
+  ]
+}

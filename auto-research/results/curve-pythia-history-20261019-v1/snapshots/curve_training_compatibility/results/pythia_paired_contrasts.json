@@ -1,0 +1,23 @@
+{
+  "curve_minus_native_validation": {
+    "estimate": 0.036259462436040245,
+    "ci95": [
+      0.016668502489725748,
+      0.05624943623940151
+    ]
+  },
+  "curve_minus_native_repeat_accuracy_pp": {
+    "estimate": 1.1993823572993279,
+    "ci95": [
+      -0.7803325246398647,
+      3.2088386531298356
+    ]
+  },
+  "curve_minus_native_scrambled_accuracy_pp": {
+    "estimate": 1.648745631488661,
+    "ci95": [
+      0.15518960116120675,
+      3.084796727634967
+    ]
+  }
+}

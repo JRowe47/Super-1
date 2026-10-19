@@ -1,0 +1,119 @@
+[
+  {
+    "repo": "EleutherAI/pythia-70m",
+    "revision": "step0",
+    "step": 0,
+    "commit": "87c8ac0ba129db9b084502d341c6ca8dec0fa01f",
+    "sha256": "17a077abfddb6c589091e292adfcc2ee82d39bfd839f5dd80aaaea42861aaf8e",
+    "size_bytes": 281715176,
+    "elapsed_seconds": 29.150026321411133
+  },
+  {
+    "repo": "EleutherAI/pythia-70m",
+    "revision": "step64",
+    "step": 64,
+    "commit": "da06e97c1e155237b6296b223be599cbe95ad100",
+    "sha256": "d6091e017aeea5319a2209bf95c71ecfc44a71302eb2553135bce3a834ad4616",
+    "size_bytes": 281715176,
+    "elapsed_seconds": 29.359976768493652
+  },
+  {
+    "repo": "EleutherAI/pythia-70m",
+    "revision": "step128",
+    "step": 128,
+    "commit": "190bf8d97191a06f07ab8cd27f5fbbe8465318be",
+    "sha256": "ba9d941fd9c728e7d1922e5238a5572198080eb7b74b33bb6f18ae5fcdba4089",
+    "size_bytes": 281715176,
+    "elapsed_seconds": 28.94910478591919
+  },
+  {
+    "repo": "EleutherAI/pythia-70m",
+    "revision": "step256",
+    "step": 256,
+    "commit": "24103a01f40aa96f0b3b9b4b29156b006e47b978",
+    "sha256": "6a3b6e565abda0ee0144b58b2bfd60d2ee4d3ceacf4d62117a3cd40fb9d3105e",
+    "size_bytes": 281715176,
+    "elapsed_seconds": 30.088582515716553
+  },
+  {
+    "repo": "EleutherAI/pythia-70m",
+    "revision": "step512",
+    "step": 512,
+    "commit": "8c6e2534e332a9122404629fdb4bac11bf68689c",
+    "sha256": "a46bd4c254e28664926b12762616596de5783608ca5403765586c126bdf5bcd4",
+    "size_bytes": 281715176,
+    "elapsed_seconds": 30.22687792778015
+  },
+  {
+    "repo": "EleutherAI/pythia-70m",
+    "revision": "step1000",
+    "step": 1000,
+    "commit": "0fa739a8417c3c7d2a98ed3b283cacec67fd61df",
+    "sha256": "09883f904c4a50de85c682cdfa0434aaf34e62392fe883e58410d12d39b1ee88",
+    "size_bytes": 281715176,
+    "elapsed_seconds": 29.93189239501953
+  },
+  {
+    "repo": "EleutherAI/pythia-70m",
+    "revision": "step2000",
+    "step": 2000,
+    "commit": "978373d6e469beb1131434e60a4c3cad051620a2",
+    "sha256": "2797aae83a6f65521e58345929853ff176890161743afee9db3d030b72f7bb90",
+    "size_bytes": 281715176,
+    "elapsed_seconds": 32.787222385406494
+  },
+  {
+    "repo": "EleutherAI/pythia-70m",
+    "revision": "step4000",
+    "step": 4000,
+    "commit": "904ea85340922718b8b68c56f9ee1fef30bb313a",
+    "sha256": "b10ada55ab1e229e1d05dab06e9bb965da1c74d161b52843c73e4acba7945f67",
+    "size_bytes": 281715176,
+    "elapsed_seconds": 33.604164123535156
+  },
+  {
+    "repo": "EleutherAI/pythia-70m",
+    "revision": "step8000",
+    "step": 8000,
+    "commit": "f912434e6d0ecb727c8dbe3721de8749a29f92c1",
+    "sha256": "388e90b4782d56d058ebc40a204ab7f6072044aa539116ab425874d9996c1c9e",
+    "size_bytes": 281715176,
+    "elapsed_seconds": 34.3940691947937
+  },
+  {
+    "repo": "EleutherAI/pythia-70m",
+    "revision": "step16000",
+    "step": 16000,
+    "commit": "0f7e8c5cf8516bd66e2d994c9468806e182616ca",
+    "sha256": "4a4ac1f3df9a08c7a62aaf054d2695a60c433f6237e0fdc18058c119fb61f689",
+    "size_bytes": 281715176,
+    "elapsed_seconds": 29.602413177490234
+  },
+  {
+    "repo": "EleutherAI/pythia-70m",
+    "revision": "step32000",
+    "step": 32000,
+    "commit": "9cfc9da903b5d222d871ad599891f113abb834e6",
+    "sha256": "a0ef72a39b1a66d862f577bd1eeec50fa9fcc6ee2a7b460750597654fba10d14",
+    "size_bytes": 281715176,
+    "elapsed_seconds": 29.59176540374756
+  },
+  {
+    "repo": "EleutherAI/pythia-70m",
+    "revision": "step64000",
+    "step": 64000,
+    "commit": "711835453cce260cc654b2db2ec0578693579b97",
+    "sha256": "1f949b05258933218e36155e2e4460e2b1c668caf76b97eac36bac45bffd7bce",
+    "size_bytes": 281715176,
+    "elapsed_seconds": 29.34666895866394
+  },
+  {
+    "repo": "EleutherAI/pythia-70m",
+    "revision": "step143000",
+    "step": 143000,
+    "commit": "de3e4e2d6cbb3b1a51f90fe153ea51fcd8c7c852",
+    "sha256": "737de0ce1e32a9559925b452921cdea0b12d3932133b6b0b70b61a351b9f6272",
+    "size_bytes": 281715176,
+    "elapsed_seconds": 25.405611038208008
+  }
+]

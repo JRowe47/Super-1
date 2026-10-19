@@ -1,0 +1,43 @@
+{
+  "question": "Do calibration gradients identify useful native-order recursive coefficient update masks after matching count per tensor and wavelet level, and global step norm? Can an explicit richer local real-state flow fix the scalar transport depth failure?",
+  "scope": "All coefficients retained; only update masks. Native C order within each original tensor. No model-coordinate permutations, imposed manifold, quaternions, or full GSA claim.",
+  "pythia": {
+    "base": "Same pinned Pythia70m step143000, 72 decoder tensors / 18,914,304 complete Haar coefficients. Float64 masters; float32 dense network. Other weights frozen.",
+    "arms": [
+      "full",
+      "targeted",
+      "random0",
+      "random1",
+      "opposite"
+    ],
+    "objective": "All arms: adaptation NLL + (teacher KL copy + teacher KL text)/2. Same frozen-base teacher and same24 train/replay batches as previous phase. AdamW lr2e-5 betas(.9,.999),eps1e-8,weight_decay0, fresh states, dropout off.",
+    "mask_calibration": "Mean gradient of first6 adaptation batches (12 train blocks) and mean gradient of12 paired copying-NLL batches from24 fresh mask-selection sequences,8 each n16/32/48. Each pair first repeat, second scrambled, scoring original-prefix successors. Copy selection tokens excluded from all replay/evaluation/prior probes. Calibration never refreshed.",
+    "score": "For each contiguous tile of64 Haar coefficients within a tensor/detail band, sum g_copy * (-g_adapt/(abs(g_adapt)+1e-8)). Low score predicts lower copying-NLL change. Adam proposal uses calibration mean gradient, not test data.",
+    "mask": "Within every band with at least128 coefficients, allow floor(number_of_64_coefficient_tiles/2) tiles. Targeted: lowest scores; opposite: highest; random0/random1: same exact count, independent seeded draws. Smaller bands all enabled. Full arm all enabled. No coefficient reorder or truncation. Bands with an odd tile count leave the middle-ranked tile disabled in both directional arms.",
+    "norm_control": "Run full baseline first; record its global coefficient update L2 norm each step. For each masked arm, zero disabled gradients, take Adam proposal, then scale enabled update to that same step norm. Frozen masters unchanged. Adam moments use masked gradients, with no moment rescaling. Counts matched by tensor and band among masked arms; step norm matched among all five. Cumulative displacement and adaptation learning may differ.",
+    "budget": "24 updates/arm,120 total;4560 adaptation targets/arm plus same teacher replay. No hyperparameter or fraction search.",
+    "evaluation": "Fresh48 96-token validation blocks, excluding both previous phase validation rows.48 new short copy sequences (16 each n16/32/48),6 long (3each64/96), disjoint token pools. Previous8 prose passages reused, never in replay/calibration. Evaluate steps0,1,12,24; no endpoint selection. Save full and targeted final decoded models by predeclared choice.",
+    "uncertainty": "4000 paired bootstrap resamples, copy stratified by length. Main mask contrast targeted minus average of the two random masks; also show full and opposite controls. CIs conditional on fixed training stream and two random masks, not seed-generalization intervals. Long6 probes descriptive.",
+    "interpretation": "Any retention benefit considered jointly with held-out text adaptation and copying NLL. Static local gradient scores do not guarantee semantic safety. No attribution of raw broad-band energy to semantic importance."
+  },
+  "toy": {
+    "task": "Same12-site ring, iid scalar Gaussian inputs, six-successor target, fixed input/readout. Add zero-initialized real auxiliary channel per site. Local onsite and adjacent-site two-channel rotations; no learned global readout.",
+    "operator": "Each hop: onsite (x,y)->(cos(a)x-sin(a)y,sin(a)x+cos(a)y); edge (x_i,y_i)->(cos(b)x_i+sin(b)y_(i+1),cos(b)y_i-sin(b)x_(i-1)). Six hops,12 ordered pulses. At a=b=pi/2, exact (Sx,S^-1 y) per hop.",
+    "smooth_curve": "Disjoint pulses on consecutive1/12 intervals: amplitude24*theta_j*sin^2(pi*u),u=12s-j. C1 in global depth s. Exact pulse integral theta_j. Operators alternate onsite and edge and do not commute.",
+    "solvers": "Boundary-aware exact rotations integrate each fragment analytically for grids N=1,6,12,17,24,31,48,96. Report actual rotation operations (at least12), not grid count as free depth. Compare uniform midpoint rotations and boundary-aware Euler using same integrated pulse areas. No claim of compute parity with prior6-stage scalar model.",
+    "scratch": "Five seeds0..4; full12 independent pulse angles vs shared2 onsite/edge angles. Initialization Normal(1,.1), full projects paired initialization; shared uses per-type mean.400 Adam steps lr.05,float64,batch64Gaussian; stagewise six shift-target MSE plus auxiliary-zero MSE, equal weighting. Paired minibatches. Only fixed12-pulse execution trained.",
+    "evaluation": "Exact impulse-derived expected MSE, empirical4096 fresh Gaussian examples, auxiliary energy, gain spectrum, sign accuracy. All seeds and arms reported; no model selection.",
+    "claim_boundary": "Constructive toy counterexample to universal curve-depth incompatibility, not conversion proof for arbitrary Pythia or the user GSA architecture. State doubled12->24 and minimum local mixing stages6->12."
+  },
+  "data_seed": 2026101720,
+  "sources": [
+    {
+      "url": "https://arxiv.org/abs/1904.01681",
+      "use": "Related general idea that state augmentation can enlarge continuous-flow expressivity; new ring construction derived here."
+    },
+    {
+      "url": "https://proceedings.mlr.press/v108/farajtabar20a.html",
+      "use": "Gradient-direction constraints for retention; our tile masks are not OGD or an OGD reproduction."
+    }
+  ]
+}

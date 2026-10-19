@@ -1,0 +1,7 @@
+{
+  "status": "Exploratory addendum after all primary outcomes were available",
+  "reason": "Separate the value of loss-based targeting from Fourier representation; a random spatial control does not do this.",
+  "rule": "Use the same initial-model gradient on the same first eight training windows and the same dense learned update. Within each 32-row matrix group, select individual entries by largest -gradient times update. Retain exactly as many real weight coordinates as the corresponding primary spectral mask degrees of freedom. Preserve the same full norm updates.",
+  "evaluation": "One additional 28-block candidate on the existing validation and audit; no hyperparameter choices based on its outcomes.",
+  "limits": "Uses the known full dense solution, is retrospective, and remains conditional on one source seed and reused audit."
+}

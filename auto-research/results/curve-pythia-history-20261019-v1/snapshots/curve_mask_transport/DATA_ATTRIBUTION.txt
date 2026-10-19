@@ -1,0 +1,37 @@
+WikiText-2 raw selections
+=======================
+Source dataset: Salesforce/wikitext, wikitext-2-raw-v1
+Pinned revision: b08601e04326c79dfdd32d625aee71d232d685c3
+https://huggingface.co/datasets/Salesforce/wikitext/tree/b08601e04326c79dfdd32d625aee71d232d685c3/wikitext-2-raw-v1
+Dataset authors: Stephen Merity, Caiming Xiong, James Bradbury, Richard Socher.
+Underlying text: Wikipedia contributors.
+Dataset reference: Pointer Sentinel Mixture Models, https://arxiv.org/abs/1609.07843
+Dataset card lists CC BY-SA 3.0 and GFDL:
+https://creativecommons.org/licenses/by-sa/3.0/
+https://www.gnu.org/licenses/fdl-1.3.html
+
+The bundled data/phase_blocks.npz contains tokenized, selected 96-token
+excerpts, not the full dataset. These selections remain subject to their
+source licenses. No ownership of the underlying text is claimed. Source row
+indices, offsets, and full-row text hashes are in data/evaluation_selection.json and provenance/*selection*.json.
+Source parquet hashes and immutable download URLs are in data/source.json.
+The selections were tokenized with the bundled Pythia tokenizer. Training
+and validation selections are distinct source splits; absence from Pythia's
+pretraining corpus has not been established.
+
+Pythia model
+============
+EleutherAI/pythia-70m, step143000
+https://huggingface.co/EleutherAI/pythia-70m/tree/de3e4e2d6cbb3b1a51f90fe153ea51fcd8c7c852
+Base weights are not redistributed in this bundle; download_sources.py
+retrieves the pinned file and verifies its hash. Configuration and tokenizer
+files are bundled with hashes. The two adapted decoder NPZ files derive from
+that model and should be used subject to its model license (Apache 2.0):
+https://www.apache.org/licenses/LICENSE-2.0
+
+Experimental probes
+===================
+Synthetic copying inputs and Gaussian ring-routing examples were generated
+for these experiments. The original eight prose probes and token IDs are
+retained from the preceding phase in results/probe_inputs.json. They are a
+reused retention diagnostic, not a new held-out language benchmark.

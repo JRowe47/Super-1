@@ -1,0 +1,23 @@
+[
+  {
+    "step": 512,
+    "sha256": "a46bd4c254e28664926b12762616596de5783608ca5403765586c126bdf5bcd4",
+    "expected_sha256": "a46bd4c254e28664926b12762616596de5783608ca5403765586c126bdf5bcd4",
+    "matches": true,
+    "size_bytes": 281715176
+  },
+  {
+    "step": 1000,
+    "sha256": "09883f904c4a50de85c682cdfa0434aaf34e62392fe883e58410d12d39b1ee88",
+    "expected_sha256": "09883f904c4a50de85c682cdfa0434aaf34e62392fe883e58410d12d39b1ee88",
+    "matches": true,
+    "size_bytes": 281715176
+  },
+  {
+    "step": 8000,
+    "sha256": "388e90b4782d56d058ebc40a204ab7f6072044aa539116ab425874d9996c1c9e",
+    "expected_sha256": "388e90b4782d56d058ebc40a204ab7f6072044aa539116ab425874d9996c1c9e",
+    "matches": true,
+    "size_bytes": 281715176
+  }
+]

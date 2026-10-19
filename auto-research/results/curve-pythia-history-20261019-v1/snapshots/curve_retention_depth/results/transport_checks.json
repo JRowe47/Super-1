@@ -1,0 +1,262 @@
+{
+  "initial": [
+    {
+      "seed": 0,
+      "initial_full_curve_max_error": 8.881784197001252e-16
+    },
+    {
+      "seed": 1,
+      "initial_full_curve_max_error": 1.3322676295501878e-15
+    },
+    {
+      "seed": 2,
+      "initial_full_curve_max_error": 8.881784197001252e-16
+    },
+    {
+      "seed": 3,
+      "initial_full_curve_max_error": 8.881784197001252e-16
+    },
+    {
+      "seed": 4,
+      "initial_full_curve_max_error": 9.992007221626409e-16
+    }
+  ],
+  "oracle": [
+    {
+      "depth": 3,
+      "max_operator_formula_error": 1.4210854715202004e-14
+    },
+    {
+      "depth": 4,
+      "max_operator_formula_error": 1.0658141036401503e-14
+    },
+    {
+      "depth": 6,
+      "max_operator_formula_error": 0.0
+    },
+    {
+      "depth": 8,
+      "max_operator_formula_error": 2.7755575615628914e-16
+    },
+    {
+      "depth": 12,
+      "max_operator_formula_error": 1.6653345369377348e-16
+    },
+    {
+      "depth": 16,
+      "max_operator_formula_error": 1.1102230246251565e-16
+    },
+    {
+      "depth": 24,
+      "max_operator_formula_error": 1.1102230246251565e-16
+    },
+    {
+      "depth": 48,
+      "max_operator_formula_error": 1.942890293094024e-16
+    }
+  ],
+  "basis_max_error": 6.800116025829084e-16,
+  "short_depth_lower_bound": "For N<6, target coefficient is exactly0; iid Gaussian expected MSE >=1 and sign accuracy=0.5. Assertions passed for every evaluation.",
+  "saved_model_reload_audit": [
+    {
+      "seed": 0,
+      "arm": "native6",
+      "max_expected_mse_difference": 0.0
+    },
+    {
+      "seed": 0,
+      "arm": "curve6",
+      "max_expected_mse_difference": 0.0
+    },
+    {
+      "seed": 0,
+      "arm": "curve2",
+      "max_expected_mse_difference": 0.0
+    },
+    {
+      "seed": 0,
+      "arm": "native_fixed",
+      "max_expected_mse_difference": 0.0
+    },
+    {
+      "seed": 0,
+      "arm": "curve6_fixed",
+      "max_expected_mse_difference": 0.0
+    },
+    {
+      "seed": 0,
+      "arm": "curve2_fixed",
+      "max_expected_mse_difference": 0.0
+    },
+    {
+      "seed": 0,
+      "arm": "curve6_multidepth",
+      "max_expected_mse_difference": 0.0
+    },
+    {
+      "seed": 0,
+      "arm": "curve2_multidepth",
+      "max_expected_mse_difference": 0.0
+    },
+    {
+      "seed": 1,
+      "arm": "native6",
+      "max_expected_mse_difference": 0.0
+    },
+    {
+      "seed": 1,
+      "arm": "curve6",
+      "max_expected_mse_difference": 0.0
+    },
+    {
+      "seed": 1,
+      "arm": "curve2",
+      "max_expected_mse_difference": 0.0
+    },
+    {
+      "seed": 1,
+      "arm": "native_fixed",
+      "max_expected_mse_difference": 0.0
+    },
+    {
+      "seed": 1,
+      "arm": "curve6_fixed",
+      "max_expected_mse_difference": 0.0
+    },
+    {
+      "seed": 1,
+      "arm": "curve2_fixed",
+      "max_expected_mse_difference": 0.0
+    },
+    {
+      "seed": 1,
+      "arm": "curve6_multidepth",
+      "max_expected_mse_difference": 0.0
+    },
+    {
+      "seed": 1,
+      "arm": "curve2_multidepth",
+      "max_expected_mse_difference": 0.0
+    },
+    {
+      "seed": 2,
+      "arm": "native6",
+      "max_expected_mse_difference": 0.0
+    },
+    {
+      "seed": 2,
+      "arm": "curve6",
+      "max_expected_mse_difference": 0.0
+    },
+    {
+      "seed": 2,
+      "arm": "curve2",
+      "max_expected_mse_difference": 0.0
+    },
+    {
+      "seed": 2,
+      "arm": "native_fixed",
+      "max_expected_mse_difference": 0.0
+    },
+    {
+      "seed": 2,
+      "arm": "curve6_fixed",
+      "max_expected_mse_difference": 0.0
+    },
+    {
+      "seed": 2,
+      "arm": "curve2_fixed",
+      "max_expected_mse_difference": 0.0
+    },
+    {
+      "seed": 2,
+      "arm": "curve6_multidepth",
+      "max_expected_mse_difference": 0.0
+    },
+    {
+      "seed": 2,
+      "arm": "curve2_multidepth",
+      "max_expected_mse_difference": 0.0
+    },
+    {
+      "seed": 3,
+      "arm": "native6",
+      "max_expected_mse_difference": 0.0
+    },
+    {
+      "seed": 3,
+      "arm": "curve6",
+      "max_expected_mse_difference": 0.0
+    },
+    {
+      "seed": 3,
+      "arm": "curve2",
+      "max_expected_mse_difference": 0.0
+    },
+    {
+      "seed": 3,
+      "arm": "native_fixed",
+      "max_expected_mse_difference": 0.0
+    },
+    {
+      "seed": 3,
+      "arm": "curve6_fixed",
+      "max_expected_mse_difference": 0.0
+    },
+    {
+      "seed": 3,
+      "arm": "curve2_fixed",
+      "max_expected_mse_difference": 0.0
+    },
+    {
+      "seed": 3,
+      "arm": "curve6_multidepth",
+      "max_expected_mse_difference": 0.0
+    },
+    {
+      "seed": 3,
+      "arm": "curve2_multidepth",
+      "max_expected_mse_difference": 0.0
+    },
+    {
+      "seed": 4,
+      "arm": "native6",
+      "max_expected_mse_difference": 0.0
+    },
+    {
+      "seed": 4,
+      "arm": "curve6",
+      "max_expected_mse_difference": 0.0
+    },
+    {
+      "seed": 4,
+      "arm": "curve2",
+      "max_expected_mse_difference": 0.0
+    },
+    {
+      "seed": 4,
+      "arm": "native_fixed",
+      "max_expected_mse_difference": 0.0
+    },
+    {
+      "seed": 4,
+      "arm": "curve6_fixed",
+      "max_expected_mse_difference": 0.0
+    },
+    {
+      "seed": 4,
+      "arm": "curve2_fixed",
+      "max_expected_mse_difference": 0.0
+    },
+    {
+      "seed": 4,
+      "arm": "curve6_multidepth",
+      "max_expected_mse_difference": 0.0
+    },
+    {
+      "seed": 4,
+      "arm": "curve2_multidepth",
+      "max_expected_mse_difference": 0.0
+    }
+  ]
+}

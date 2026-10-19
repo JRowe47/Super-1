@@ -1,0 +1,22 @@
+{
+  "seconds": 400.4472875595093,
+  "variants": 76,
+  "selection_sha256": "e1123be2b4f0bc19ae24c59a46f31094b60950d5b0eaba9ccd51ce6a431f2a8b",
+  "selection_changed": false,
+  "restore_checks": [
+    {
+      "step": 1000,
+      "phase": "rollback",
+      "restore_nll_difference": 0.0
+    },
+    {
+      "step": 512,
+      "phase": "transplant",
+      "restore_nll_difference": 0.0
+    }
+  ],
+  "training_updates": 0,
+  "torch": "2.14.1+cpu",
+  "threads": 3,
+  "dtype": "float32 inference; float64 transforms"
+}

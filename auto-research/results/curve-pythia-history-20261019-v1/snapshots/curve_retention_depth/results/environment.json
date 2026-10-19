@@ -1,0 +1,41 @@
+{
+  "seconds": 202.28475713729858,
+  "runs": [
+    {
+      "arm": "native_lambda0",
+      "seconds": 7.380469799041748,
+      "new_training_steps": 0
+    },
+    {
+      "arm": "curve_lambda0",
+      "seconds": 6.966607332229614,
+      "new_training_steps": 0
+    },
+    {
+      "arm": "native_lambda1",
+      "seconds": 38.43728828430176,
+      "new_training_steps": 24
+    },
+    {
+      "arm": "curve_lambda1",
+      "seconds": 47.64406943321228,
+      "new_training_steps": 24
+    },
+    {
+      "arm": "native_lambda4",
+      "seconds": 36.33236908912659,
+      "new_training_steps": 24
+    },
+    {
+      "arm": "curve_lambda4",
+      "seconds": 48.81212019920349,
+      "new_training_steps": 24
+    }
+  ],
+  "new_training_steps": 96,
+  "threads": 3,
+  "torch": "2.14.1+cpu",
+  "protocol_sha256": "5fe68d84aa8c71497c30c286e327e7ae561eed16034fa95013d0acd06e3afff1",
+  "checkpoint_sha256": "737de0ce1e32a9559925b452921cdea0b12d3932133b6b0b70b61a351b9f6272",
+  "teacher_cache_bytes": 376676352
+}

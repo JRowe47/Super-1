@@ -1,0 +1,11 @@
+{
+  "seconds": 12.857481718063354,
+  "numpy": "2.3.5",
+  "torch": "2.14.1+cpu",
+  "cpu_threads": 1,
+  "runs": 20,
+  "training_updates": 16000,
+  "counterfactual_input_evaluations": 2519040,
+  "seed_correspondence": "Only within each model; no across-seed alignment or pooling of addresses",
+  "component_intervention_cases": 157440
+}

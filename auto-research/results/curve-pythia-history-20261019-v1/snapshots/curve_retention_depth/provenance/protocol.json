@@ -1,0 +1,41 @@
+{
+  "goal": "Test whether pretrained learning survives exact curve coordinates, then isolate shared depth-curve restrictions, conversion path and variable-depth training in small controlled models.",
+  "scope": "This is an execution/training compatibility study. The toy depth field is an explicit experimental construction, not a claimed reproduction of the author's full GSA. No recurrent-memory replacement, permutation or neuron alignment.",
+  "pythia": {
+    "checkpoint": "EleutherAI/pythia-70m step143000, immutable commit de3e4e2d6cbb3b1a51f90fe153ea51fcd8c7c852",
+    "trainable": "All 72 parameter tensors in the six decoder blocks, 18,914,304 parameters. Embeddings, final normalization and output head remain fixed in every arm.",
+    "representation": "Each original tensor independently flattened in native C order. Complete orthonormal Haar pyramid, stopping when the approximation length is odd. Every coefficient retained. Float64 master parameters/coefficients, float32 decoded network computation, explicit differentiable inverse transform.",
+    "arms": ["native_sgd", "curve_sgd", "native_adamw", "curve_adamw", "curve_transport_adamw"],
+    "optimizers": {"sgd_lr":0.005,"adamw_lr":0.00002,"adamw_betas":[0.9,0.999],"adamw_epsilon":1e-8,"weight_decay":0.0,"initial_state":"Fresh and zero in every arm; this is controlled fine-tuning, not resumption of the pretraining optimizer."},
+    "transport_control": "Backpropagate into the curve coefficients; map gradients to native coordinates; apply AdamW with native moments; map the updated float64 master weights back to coefficients. This is a control that preserves the native optimizer, not a proposed efficient curve optimizer.",
+    "training": {"steps":24,"batch":2,"sequence_length":96,"total_token_positions":4608,"target_tokens":4560,"batches":"24 fixed batches used once in identical order in every arm","dropout":"disabled"},
+    "data": "Pinned Salesforce/wikitext wikitext-2-raw-v1, train split for 48 deterministic nonoverlapping blocks and validation split for 24 held-out blocks; exact selected token IDs saved. Not verified absent from Pythia pretraining.",
+    "data_seed":2026101709,
+    "evaluations":[0,1,4,12,24],
+    "metrics": ["Training-batch losses", "Mean held-out NLL by block", "Original eight-passage prose NLL/KL/argmax changes", "Synthetic successor-copy accuracy and NLL on 24 fresh sequences", "Paired parameter and output differences for SGD and transported Adam equivalence", "First-step coefficient-gradient adjoint check and Adam update direction/norm comparison"],
+    "limits": "One checkpoint, one short data stream and fixed learning rates. No claim that one optimizer is generally better, that a full model was retrained, or that general capabilities/continual learning are established. Dense operators are still used on differentiably decoded weights."
+  },
+  "toy": {
+    "seeds":[0,1,2,3,4],
+    "inputs":"All 16 native-order vectors (a,b,c,d) in {-1,+1}^4, exhaustive finite functional coverage; not held-out generalization",
+    "targets":["a","a*b","a if c=-1 else b","a*b*c*d","sign(a+b+c)","b*c*d"],
+    "architecture":"4-to-16 tanh input, six native residual stages h <- h + tanh(W_l h + b_l)/6, six sigmoid/BCE outputs",
+    "curve":"W(s)=sum_j phi_j(s) C_j, b(s)=sum_j phi_j(s) d_j; phi_0=1/sqrt(6), phi_j=sqrt(2/6)*cos(pi*j*s). At s=(l+0.5)/6, all six modes form an orthonormal DCT-II basis across original layer identities. No within-layer coefficient truncation.",
+    "depth_execution":"At N steps, sample s=(i+0.5)/N and use h <- h + tanh(W(s)h+b(s))/N. This defines a controlled Euler discretization over depth [0,1].",
+    "scratch_arms":["native6", "curve6", "curve2", "curve2_multidepth"],
+    "scratch_initialization":"Shared random initial native weights per seed. Full curve conversion is exact. Restricted arms project that initialization to modes 0 and 1. Input/output parameters initially identical.",
+    "training_steps":1200,
+    "optimizer":"Adam lr 0.01, zero weight decay, full-batch float64. All scratch optimizers reset at step800 to match continuation controls.",
+    "multidepth_training":"Cycle N=3,6,12, one depth per step, with the same examples and number of optimizer steps. Average executed stages differ and are reported; no claim of equal compute.",
+    "conversion_source":"native6 after step800",
+    "conversion_arms":["curve6_exact", "curve2_hard", "curve2_bridge"],
+    "conversion_steps":400,
+    "bridge":"Keep the frozen discarded depth modes as an additive residual. Start at the exact teacher function; linearly reduce residual multiplier from 1 to 0 over the first 200 continuation steps. Train only the two retained modes plus input/output parameters. Final model matches the hard-conversion architecture.",
+    "evaluations":[0,25,100,200,400,800,1200],
+    "test_depths":[3,4,6,8,12,24],
+    "metrics":["Per-target and joint truth-table accuracy/BCE", "Immediate conversion error and recovery", "Off-grid depth accuracy and logit drift from six steps", "Fraction of native residual-parameter gradient outside the two-mode subspace", "Parameter counts, step counts and runtime"],
+    "interpretation":"Success from scratch with failed conversion is evidence of a transition issue on these tasks. Failure in both is not proof of a fundamental impossibility. Multi-depth performance must be separated from exact conversion at the original depth."
+  },
+  "uncertainty":"Pythia: 4000 paired bootstrap resamples over 24 held-out text blocks or 24 probe sequences; prose resampled by passage. Toy: retain and report every paired seed; five-seed ranges. No selection using held-out results; no hyperparameter search.",
+  "budget":"120 Pythia training steps total and at most 30,000 tiny toy steps. CPU only, bounded protocol, no broad architecture sweep."
+}

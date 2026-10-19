@@ -1,0 +1,83 @@
+{
+  "checks": [
+    {
+      "id": "baseline",
+      "probe": "repeat",
+      "full_forward_nll": 6.17350959777832,
+      "recorded_nll": 6.17350959777832,
+      "nll_difference": 0.0,
+      "accuracy": 0.13333334028720856
+    },
+    {
+      "id": "baseline",
+      "probe": "scrambled",
+      "full_forward_nll": 7.965004920959473,
+      "recorded_nll": 7.965004920959473,
+      "nll_difference": 0.0,
+      "accuracy": 0.06666667014360428
+    },
+    {
+      "id": "H6_root",
+      "probe": "repeat",
+      "full_forward_nll": 9.566340446472168,
+      "recorded_nll": 9.566340446472168,
+      "nll_difference": 0.0,
+      "accuracy": 0.0
+    },
+    {
+      "id": "H6_root",
+      "probe": "scrambled",
+      "full_forward_nll": 10.327255249023438,
+      "recorded_nll": 10.327255249023438,
+      "nll_difference": 0.0,
+      "accuracy": 0.0
+    },
+    {
+      "id": "H6_aaaaad",
+      "probe": "repeat",
+      "full_forward_nll": 6.214630603790283,
+      "recorded_nll": 6.214630603790283,
+      "nll_difference": 0.0,
+      "accuracy": 0.13333334028720856
+    },
+    {
+      "id": "H6_aaaaad",
+      "probe": "scrambled",
+      "full_forward_nll": 8.060635566711426,
+      "recorded_nll": 8.060635566711426,
+      "nll_difference": 0.0,
+      "accuracy": 0.0
+    }
+  ],
+  "gram_checks": [
+    {
+      "id": "H6_root",
+      "probe": "repeat",
+      "direct_centered_logit_rms": 1.6560188272499858,
+      "gram_rms": 1.6560188302976446,
+      "absolute_difference": 3.047658791999197e-09
+    },
+    {
+      "id": "H6_root",
+      "probe": "scrambled",
+      "direct_centered_logit_rms": 0.6721944306598713,
+      "gram_rms": 0.6721944352801346,
+      "absolute_difference": 4.620263283072745e-09
+    },
+    {
+      "id": "H6_aaaaad",
+      "probe": "repeat",
+      "direct_centered_logit_rms": 0.008255772563940103,
+      "gram_rms": 0.008255772544536981,
+      "absolute_difference": 1.9403121470640272e-11
+    },
+    {
+      "id": "H6_aaaaad",
+      "probe": "scrambled",
+      "direct_centered_logit_rms": 0.030887249071731782,
+      "gram_rms": 0.030887255871757908,
+      "absolute_difference": 6.800026125519665e-09
+    }
+  ],
+  "explanation": "Full GPTNeoXForCausalLM forward, direct target indexing, one confirmation sequence; small floating differences reflect batch/matmul rounding."
+}

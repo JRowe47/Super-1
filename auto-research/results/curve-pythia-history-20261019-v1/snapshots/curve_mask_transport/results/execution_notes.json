@@ -1,0 +1,6 @@
+[
+  {
+    "event": "Pre-training shape assertion",
+    "detail": "First attempt completed calibration gradients but stopped before writing masks or any optimizer training update. QKV tensors yield some bands of192 coefficients (three64-coefficient tiles), so exact half is not integer. Corrected protocol to floor-half tiles and choose equally many highest-scoring tiles for opposite control. No evaluation or trained outcome had been observed; all calibration rerun unchanged."
+  }
+]

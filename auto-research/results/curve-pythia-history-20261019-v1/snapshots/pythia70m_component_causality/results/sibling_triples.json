@@ -1,0 +1,86 @@
+[
+  {
+    "parent": "G_a",
+    "left": "G_aa",
+    "right": "G_ad",
+    "kind": "packet"
+  },
+  {
+    "parent": "G_d",
+    "left": "G_da",
+    "right": "G_dd",
+    "kind": "packet"
+  },
+  {
+    "parent": "L3_all",
+    "left": "G_a",
+    "right": "G_d",
+    "kind": "packet"
+  },
+  {
+    "parent": "F_a",
+    "left": "F_aa",
+    "right": "F_ab",
+    "kind": "fourier"
+  },
+  {
+    "parent": "F_b",
+    "left": "F_ba",
+    "right": "F_bb",
+    "kind": "fourier"
+  },
+  {
+    "parent": "L3_all",
+    "left": "F_a",
+    "right": "F_b",
+    "kind": "fourier"
+  },
+  {
+    "parent": "H6_a",
+    "left": "H6_aa",
+    "right": "H6_ad",
+    "kind": "packet"
+  },
+  {
+    "parent": "H6_d",
+    "left": "H6_da",
+    "right": "H6_dd",
+    "kind": "packet"
+  },
+  {
+    "parent": "H6_root",
+    "left": "H6_a",
+    "right": "H6_d",
+    "kind": "packet"
+  },
+  {
+    "parent": "H6_root",
+    "left": "H6_query",
+    "right": "H6_key",
+    "kind": "native_spatial_split"
+  },
+  {
+    "parent": "H6_aa",
+    "left": "H6_aaa",
+    "right": "H6_aad",
+    "kind": "packet"
+  },
+  {
+    "parent": "H6_aaa",
+    "left": "H6_aaaa",
+    "right": "H6_aaad",
+    "kind": "packet"
+  },
+  {
+    "parent": "H6_aaaa",
+    "left": "H6_aaaaa",
+    "right": "H6_aaaad",
+    "kind": "packet"
+  },
+  {
+    "parent": "H6_aaaaa",
+    "left": "H6_aaaaaa",
+    "right": "H6_aaaaad",
+    "kind": "packet"
+  }
+]

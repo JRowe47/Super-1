@@ -1,0 +1,20 @@
+{
+  "goal": "Calibrate native parameter-curve component changes against completely enumerated known behaviors, before interpreting Pythia components semantically.",
+  "seeds": [0, 1, 2, 3, 4],
+  "tasks": ["readout", "parity", "context", "joint"],
+  "inputs": "All 16 vectors in {-1,+1}^4, lexicographic order; coordinates a,b,c,d. d is irrelevant to every target.",
+  "targets": {"readout": "a", "parity": "a*b (equal bits are positive)", "context": "a if c=-1, otherwise b", "joint": "all three targets"},
+  "architecture": "4 -> 8 tanh -> 8 tanh -> 1 logit (3 logits for joint)",
+  "dtype": "float64 throughout training, transforms and interventions",
+  "optimizer": {"name": "Adam", "lr": 0.02, "weight_decay": 0.0},
+  "steps": [0, 10, 25, 50, 100, 200, 400, 800],
+  "training": "Full-batch BCE on every possible input; fixed 800 steps; no hyperparameter search or early stopping.",
+  "intervals": [[0,10],[10,25],[25,50],[50,100],[100,200],[200,400],[400,800],[0,800]],
+  "curve_mapping": "Each tensor independently flattened in existing C order. No neuron permutations, padding, alignment, truncation or tensor-boundary mixing.",
+  "components": ["Every Haar scaling/detail coefficient", "Every node of a binary partition of rFFT bins, with each conjugate-paired complex bin indivisible", "Every Haar wavelet-packet node at every divisible depth, splitting approximation and detail branches"],
+  "interventions": ["Rollback: final weights minus the component projection of the interval update", "Transplant: initial weights plus the identical component projection"],
+  "behavior_measurement": "All logits and signed probabilities on all 16 inputs; exact input-function Walsh expansion; accuracy and target margin. Input-function Walsh coordinates are distinct from native weight-curve coordinates.",
+  "interactions": "For every parent and its two children, compare the parent's rollback effect to the sum of the child effects, in logits and probabilities separately.",
+  "reporting": "Report all seeds and failed fits; selected illustrative cases are descriptive and labelled. Treat only within-model coordinates as corresponding.",
+  "limits": "Finite Boolean tasks are orientation examples, not natural-language semantics, held-out generalization, grokking, sparse-feature recovery, or evidence for a curve-trained architecture advantage. Enumeration is exhaustive over the declared single components and sibling pairs, not all possible component subsets."
+}

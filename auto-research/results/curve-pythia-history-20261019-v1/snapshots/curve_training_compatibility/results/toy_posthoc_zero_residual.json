@@ -1,0 +1,250 @@
+{
+  "description": "Post-hoc no-training control prompted by ceiling accuracy. Uses trained input/output maps with every residual stage omitted; never used to select models.",
+  "rows": [
+    {
+      "arm": "curve2",
+      "seed": 0,
+      "accuracy": 0.9583333333333334,
+      "joint_accuracy": 0.75,
+      "bce": 0.11550719409079857
+    },
+    {
+      "arm": "curve2",
+      "seed": 1,
+      "accuracy": 0.96875,
+      "joint_accuracy": 0.8125,
+      "bce": 0.09369418265074131
+    },
+    {
+      "arm": "curve2",
+      "seed": 2,
+      "accuracy": 0.9895833333333334,
+      "joint_accuracy": 0.9375,
+      "bce": 0.05544401372268676
+    },
+    {
+      "arm": "curve2",
+      "seed": 3,
+      "accuracy": 0.9375,
+      "joint_accuracy": 0.6875,
+      "bce": 0.15598759730008724
+    },
+    {
+      "arm": "curve2",
+      "seed": 4,
+      "accuracy": 0.9791666666666666,
+      "joint_accuracy": 0.875,
+      "bce": 0.07273963460553151
+    },
+    {
+      "arm": "curve2_bridge",
+      "seed": 0,
+      "accuracy": 0.9375,
+      "joint_accuracy": 0.625,
+      "bce": 0.10738599959313062
+    },
+    {
+      "arm": "curve2_bridge",
+      "seed": 1,
+      "accuracy": 0.8958333333333334,
+      "joint_accuracy": 0.4375,
+      "bce": 0.19330131340280352
+    },
+    {
+      "arm": "curve2_bridge",
+      "seed": 2,
+      "accuracy": 0.9895833333333334,
+      "joint_accuracy": 0.9375,
+      "bce": 0.05127244945367223
+    },
+    {
+      "arm": "curve2_bridge",
+      "seed": 3,
+      "accuracy": 0.96875,
+      "joint_accuracy": 0.8125,
+      "bce": 0.10391706569926183
+    },
+    {
+      "arm": "curve2_bridge",
+      "seed": 4,
+      "accuracy": 0.9791666666666666,
+      "joint_accuracy": 0.875,
+      "bce": 0.05931331495971315
+    },
+    {
+      "arm": "curve2_hard",
+      "seed": 0,
+      "accuracy": 0.9375,
+      "joint_accuracy": 0.6875,
+      "bce": 0.1258359733821163
+    },
+    {
+      "arm": "curve2_hard",
+      "seed": 1,
+      "accuracy": 0.875,
+      "joint_accuracy": 0.4375,
+      "bce": 0.2835364482673244
+    },
+    {
+      "arm": "curve2_hard",
+      "seed": 2,
+      "accuracy": 0.9895833333333334,
+      "joint_accuracy": 0.9375,
+      "bce": 0.06222830746001964
+    },
+    {
+      "arm": "curve2_hard",
+      "seed": 3,
+      "accuracy": 0.9270833333333334,
+      "joint_accuracy": 0.625,
+      "bce": 0.13862469695083293
+    },
+    {
+      "arm": "curve2_hard",
+      "seed": 4,
+      "accuracy": 0.9375,
+      "joint_accuracy": 0.6875,
+      "bce": 0.1319797494488333
+    },
+    {
+      "arm": "curve2_multidepth",
+      "seed": 0,
+      "accuracy": 0.9583333333333334,
+      "joint_accuracy": 0.75,
+      "bce": 0.12322421636259301
+    },
+    {
+      "arm": "curve2_multidepth",
+      "seed": 1,
+      "accuracy": 0.96875,
+      "joint_accuracy": 0.8125,
+      "bce": 0.12867175534492148
+    },
+    {
+      "arm": "curve2_multidepth",
+      "seed": 2,
+      "accuracy": 1.0,
+      "joint_accuracy": 1.0,
+      "bce": 0.04482768589302468
+    },
+    {
+      "arm": "curve2_multidepth",
+      "seed": 3,
+      "accuracy": 0.9270833333333334,
+      "joint_accuracy": 0.625,
+      "bce": 0.20208943621355138
+    },
+    {
+      "arm": "curve2_multidepth",
+      "seed": 4,
+      "accuracy": 0.9791666666666666,
+      "joint_accuracy": 0.875,
+      "bce": 0.06329220989650701
+    },
+    {
+      "arm": "curve6",
+      "seed": 0,
+      "accuracy": 0.9895833333333334,
+      "joint_accuracy": 0.9375,
+      "bce": 0.048732200702407934
+    },
+    {
+      "arm": "curve6",
+      "seed": 1,
+      "accuracy": 0.9791666666666666,
+      "joint_accuracy": 0.875,
+      "bce": 0.0896046991516668
+    },
+    {
+      "arm": "curve6",
+      "seed": 2,
+      "accuracy": 0.9895833333333334,
+      "joint_accuracy": 0.9375,
+      "bce": 0.03329311867791116
+    },
+    {
+      "arm": "curve6",
+      "seed": 3,
+      "accuracy": 0.96875,
+      "joint_accuracy": 0.8125,
+      "bce": 0.07514674157045764
+    },
+    {
+      "arm": "curve6",
+      "seed": 4,
+      "accuracy": 1.0,
+      "joint_accuracy": 1.0,
+      "bce": 0.029072469637080118
+    },
+    {
+      "arm": "curve6_exact",
+      "seed": 0,
+      "accuracy": 0.9479166666666666,
+      "joint_accuracy": 0.6875,
+      "bce": 0.10747739347834999
+    },
+    {
+      "arm": "curve6_exact",
+      "seed": 1,
+      "accuracy": 0.9166666666666666,
+      "joint_accuracy": 0.625,
+      "bce": 0.17627564502081383
+    },
+    {
+      "arm": "curve6_exact",
+      "seed": 2,
+      "accuracy": 1.0,
+      "joint_accuracy": 1.0,
+      "bce": 0.03705212900008707
+    },
+    {
+      "arm": "curve6_exact",
+      "seed": 3,
+      "accuracy": 0.96875,
+      "joint_accuracy": 0.8125,
+      "bce": 0.08150428836628223
+    },
+    {
+      "arm": "curve6_exact",
+      "seed": 4,
+      "accuracy": 0.9791666666666666,
+      "joint_accuracy": 0.875,
+      "bce": 0.05300107566274251
+    },
+    {
+      "arm": "native6",
+      "seed": 0,
+      "accuracy": 0.9583333333333334,
+      "joint_accuracy": 0.75,
+      "bce": 0.10117278515619715
+    },
+    {
+      "arm": "native6",
+      "seed": 1,
+      "accuracy": 0.9166666666666666,
+      "joint_accuracy": 0.625,
+      "bce": 0.17990896937937526
+    },
+    {
+      "arm": "native6",
+      "seed": 2,
+      "accuracy": 0.9895833333333334,
+      "joint_accuracy": 0.9375,
+      "bce": 0.0417062121012289
+    },
+    {
+      "arm": "native6",
+      "seed": 3,
+      "accuracy": 0.96875,
+      "joint_accuracy": 0.8125,
+      "bce": 0.09072569779752793
+    },
+    {
+      "arm": "native6",
+      "seed": 4,
+      "accuracy": 0.9791666666666666,
+      "joint_accuracy": 0.875,
+      "bce": 0.05781604091075641
+    }
+  ]
+}

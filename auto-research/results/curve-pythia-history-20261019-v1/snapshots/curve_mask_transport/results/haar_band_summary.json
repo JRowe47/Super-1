@@ -1,0 +1,802 @@
+[
+  {
+    "arm": "full",
+    "level": 1,
+    "count": 9457152,
+    "energy": 0.12081703692666866,
+    "enrichment": 1.0054206482342676,
+    "total_update_norm": 0.49023598633259985
+  },
+  {
+    "arm": "full",
+    "level": 2,
+    "count": 4728576,
+    "energy": 0.06019431864997076,
+    "enrichment": 1.001855572965382,
+    "total_update_norm": 0.49023598633259985
+  },
+  {
+    "arm": "full",
+    "level": 3,
+    "count": 2364288,
+    "energy": 0.02997117310016314,
+    "enrichment": 0.9976618216517738,
+    "total_update_norm": 0.49023598633259985
+  },
+  {
+    "arm": "full",
+    "level": 4,
+    "count": 1182144,
+    "energy": 0.014826824727199643,
+    "enrichment": 0.9870922914638295,
+    "total_update_norm": 0.49023598633259985
+  },
+  {
+    "arm": "full",
+    "level": 5,
+    "count": 591072,
+    "energy": 0.007354531947630932,
+    "enrichment": 0.9792523923903005,
+    "total_update_norm": 0.49023598633259985
+  },
+  {
+    "arm": "full",
+    "level": 6,
+    "count": 295536,
+    "energy": 0.0036229940542322793,
+    "enrichment": 0.9647998323987516,
+    "total_update_norm": 0.49023598633259985
+  },
+  {
+    "arm": "full",
+    "level": 7,
+    "count": 147768,
+    "energy": 0.0018031746911626194,
+    "enrichment": 0.9603673722771332,
+    "total_update_norm": 0.49023598633259985
+  },
+  {
+    "arm": "full",
+    "level": 8,
+    "count": 73884,
+    "energy": 0.0008895069816172727,
+    "enrichment": 0.9474994150535174,
+    "total_update_norm": 0.49023598633259985
+  },
+  {
+    "arm": "full",
+    "level": 9,
+    "count": 36942,
+    "energy": 0.00042729760324355096,
+    "enrichment": 0.9103115264838586,
+    "total_update_norm": 0.49023598633259985
+  },
+  {
+    "arm": "full",
+    "level": 10,
+    "count": 18444,
+    "energy": 0.00021750876694274045,
+    "enrichment": 0.9281146797537208,
+    "total_update_norm": 0.49023598633259985
+  },
+  {
+    "arm": "full",
+    "level": 11,
+    "count": 9222,
+    "energy": 0.00010685827024760107,
+    "enrichment": 0.9119331663168985,
+    "total_update_norm": 0.49023598633259985
+  },
+  {
+    "arm": "full",
+    "level": 12,
+    "count": 4608,
+    "energy": 5.0041360564283465e-05,
+    "enrichment": 0.8546663942967484,
+    "total_update_norm": 0.49023598633259985
+  },
+  {
+    "arm": "full",
+    "level": 13,
+    "count": 2304,
+    "energy": 2.3942450659624712e-05,
+    "enrichment": 0.8178357960352657,
+    "total_update_norm": 0.49023598633259985
+  },
+  {
+    "arm": "full",
+    "level": 14,
+    "count": 1152,
+    "energy": 1.2606606192502959e-05,
+    "enrichment": 0.8612429827941743,
+    "total_update_norm": 0.49023598633259985
+  },
+  {
+    "arm": "full",
+    "level": 15,
+    "count": 576,
+    "energy": 6.599297240403236e-06,
+    "enrichment": 0.901685727765532,
+    "total_update_norm": 0.49023598633259985
+  },
+  {
+    "arm": "full",
+    "level": 16,
+    "count": 288,
+    "energy": 3.0893832794487187e-06,
+    "enrichment": 0.8442271075840108,
+    "total_update_norm": 0.49023598633259985
+  },
+  {
+    "arm": "full",
+    "level": 17,
+    "count": 144,
+    "energy": 1.2711822489940988e-06,
+    "enrichment": 0.6947448187600249,
+    "total_update_norm": 0.49023598633259985
+  },
+  {
+    "arm": "full",
+    "level": 18,
+    "count": 72,
+    "energy": 8.627279149823952e-07,
+    "enrichment": 0.9430209545609236,
+    "total_update_norm": 0.49023598633259985
+  },
+  {
+    "arm": "full",
+    "level": 19,
+    "count": 24,
+    "energy": 2.3026185765651436e-07,
+    "enrichment": 0.7550761475382954,
+    "total_update_norm": 0.49023598633259985
+  },
+  {
+    "arm": "full",
+    "level": 20,
+    "count": 12,
+    "energy": 1.3115122617720234e-07,
+    "enrichment": 0.8601438693726612,
+    "total_update_norm": 0.49023598633259985
+  },
+  {
+    "arm": "targeted",
+    "level": 1,
+    "count": 9457152,
+    "energy": 0.12425082106379792,
+    "enrichment": 1.0035614889859856,
+    "total_update_norm": 0.4976140543890374
+  },
+  {
+    "arm": "targeted",
+    "level": 2,
+    "count": 4728576,
+    "energy": 0.06196499678400303,
+    "enrichment": 1.0009701973017302,
+    "total_update_norm": 0.4976140543890374
+  },
+  {
+    "arm": "targeted",
+    "level": 3,
+    "count": 2364288,
+    "energy": 0.03083222149332896,
+    "enrichment": 0.996115111213741,
+    "total_update_norm": 0.4976140543890374
+  },
+  {
+    "arm": "targeted",
+    "level": 4,
+    "count": 1182144,
+    "energy": 0.01536316508891216,
+    "enrichment": 0.992694016838712,
+    "total_update_norm": 0.4976140543890374
+  },
+  {
+    "arm": "targeted",
+    "level": 5,
+    "count": 591072,
+    "energy": 0.007618651400732025,
+    "enrichment": 0.9845613997007535,
+    "total_update_norm": 0.4976140543890374
+  },
+  {
+    "arm": "targeted",
+    "level": 6,
+    "count": 295536,
+    "energy": 0.0038033994940761154,
+    "enrichment": 0.9830297076327489,
+    "total_update_norm": 0.4976140543890374
+  },
+  {
+    "arm": "targeted",
+    "level": 7,
+    "count": 147768,
+    "energy": 0.001900776523762309,
+    "enrichment": 0.9825524735645147,
+    "total_update_norm": 0.4976140543890374
+  },
+  {
+    "arm": "targeted",
+    "level": 8,
+    "count": 73884,
+    "energy": 0.0009256103677487554,
+    "enrichment": 0.9569360153800249,
+    "total_update_norm": 0.4976140543890374
+  },
+  {
+    "arm": "targeted",
+    "level": 9,
+    "count": 36942,
+    "energy": 0.0004617348060437364,
+    "enrichment": 0.9547228096254347,
+    "total_update_norm": 0.4976140543890374
+  },
+  {
+    "arm": "targeted",
+    "level": 10,
+    "count": 18444,
+    "energy": 0.0002333577656439616,
+    "enrichment": 0.9664340736380144,
+    "total_update_norm": 0.4976140543890374
+  },
+  {
+    "arm": "targeted",
+    "level": 11,
+    "count": 9222,
+    "energy": 0.00011554836074905698,
+    "enrichment": 0.9570701251166661,
+    "total_update_norm": 0.4976140543890374
+  },
+  {
+    "arm": "targeted",
+    "level": 12,
+    "count": 4608,
+    "energy": 5.4618373503652084e-05,
+    "enrichment": 0.9053810114520836,
+    "total_update_norm": 0.4976140543890374
+  },
+  {
+    "arm": "targeted",
+    "level": 13,
+    "count": 2304,
+    "energy": 3.791735750041009e-05,
+    "enrichment": 1.25707351878635,
+    "total_update_norm": 0.4976140543890374
+  },
+  {
+    "arm": "targeted",
+    "level": 14,
+    "count": 1152,
+    "energy": 2.798578782788253e-05,
+    "enrichment": 1.8556247112116928,
+    "total_update_norm": 0.4976140543890374
+  },
+  {
+    "arm": "targeted",
+    "level": 15,
+    "count": 576,
+    "energy": 1.4454099291761786e-05,
+    "enrichment": 1.916786047908087,
+    "total_update_norm": 0.4976140543890374
+  },
+  {
+    "arm": "targeted",
+    "level": 16,
+    "count": 288,
+    "energy": 6.624988029124708e-06,
+    "enrichment": 1.7571049382540271,
+    "total_update_norm": 0.4976140543890374
+  },
+  {
+    "arm": "targeted",
+    "level": 17,
+    "count": 144,
+    "energy": 2.765872860635767e-06,
+    "enrichment": 1.4671509867310635,
+    "total_update_norm": 0.4976140543890374
+  },
+  {
+    "arm": "targeted",
+    "level": 18,
+    "count": 72,
+    "energy": 1.6102633282737274e-06,
+    "enrichment": 1.7083210617501763,
+    "total_update_norm": 0.4976140543890374
+  },
+  {
+    "arm": "targeted",
+    "level": 19,
+    "count": 24,
+    "energy": 6.514439982135159e-07,
+    "enrichment": 2.073341949403911,
+    "total_update_norm": 0.4976140543890374
+  },
+  {
+    "arm": "targeted",
+    "level": 20,
+    "count": 12,
+    "energy": 4.3771984071623166e-07,
+    "enrichment": 2.7862499626434714,
+    "total_update_norm": 0.4976140543890374
+  },
+  {
+    "arm": "random0",
+    "level": 1,
+    "count": 9457152,
+    "energy": 0.12346805843014783,
+    "enrichment": 1.0016127931576815,
+    "total_update_norm": 0.4965264356027489
+  },
+  {
+    "arm": "random0",
+    "level": 2,
+    "count": 4728576,
+    "energy": 0.06169123257621409,
+    "enrichment": 1.000918432826254,
+    "total_update_norm": 0.4965264356027489
+  },
+  {
+    "arm": "random0",
+    "level": 3,
+    "count": 2364288,
+    "energy": 0.030859028457016706,
+    "enrichment": 1.001353648221546,
+    "total_update_norm": 0.4965264356027489
+  },
+  {
+    "arm": "random0",
+    "level": 4,
+    "count": 1182144,
+    "energy": 0.015306232417600025,
+    "enrichment": 0.9933528330770016,
+    "total_update_norm": 0.4965264356027489
+  },
+  {
+    "arm": "random0",
+    "level": 5,
+    "count": 591072,
+    "energy": 0.007664223875722796,
+    "enrichment": 0.9947945768197577,
+    "total_update_norm": 0.4965264356027489
+  },
+  {
+    "arm": "random0",
+    "level": 6,
+    "count": 295536,
+    "energy": 0.003799315066709454,
+    "enrichment": 0.986280694634777,
+    "total_update_norm": 0.4965264356027489
+  },
+  {
+    "arm": "random0",
+    "level": 7,
+    "count": 147768,
+    "energy": 0.0018854134381027705,
+    "enrichment": 0.9788853215673303,
+    "total_update_norm": 0.4965264356027489
+  },
+  {
+    "arm": "random0",
+    "level": 8,
+    "count": 73884,
+    "energy": 0.0009200177337451515,
+    "enrichment": 0.9553255927262353,
+    "total_update_norm": 0.4965264356027489
+  },
+  {
+    "arm": "random0",
+    "level": 9,
+    "count": 36942,
+    "energy": 0.000454121258790467,
+    "enrichment": 0.9430984747599671,
+    "total_update_norm": 0.4965264356027489
+  },
+  {
+    "arm": "random0",
+    "level": 10,
+    "count": 18444,
+    "energy": 0.0002304659472440101,
+    "enrichment": 0.9586437930797189,
+    "total_update_norm": 0.4965264356027489
+  },
+  {
+    "arm": "random0",
+    "level": 11,
+    "count": 9222,
+    "energy": 0.00011564326986231925,
+    "enrichment": 0.9620571211553387,
+    "total_update_norm": 0.4965264356027489
+  },
+  {
+    "arm": "random0",
+    "level": 12,
+    "count": 4608,
+    "energy": 5.5181826472154724e-05,
+    "enrichment": 0.9187327844350627,
+    "total_update_norm": 0.4965264356027489
+  },
+  {
+    "arm": "random0",
+    "level": 13,
+    "count": 2304,
+    "energy": 3.461457135037646e-05,
+    "enrichment": 1.1526092393772023,
+    "total_update_norm": 0.4965264356027489
+  },
+  {
+    "arm": "random0",
+    "level": 14,
+    "count": 1152,
+    "energy": 2.7685845010618342e-05,
+    "enrichment": 1.8437877179638604,
+    "total_update_norm": 0.4965264356027489
+  },
+  {
+    "arm": "random0",
+    "level": 15,
+    "count": 576,
+    "energy": 1.3097051166007502e-05,
+    "enrichment": 1.7444424811427897,
+    "total_update_norm": 0.4965264356027489
+  },
+  {
+    "arm": "random0",
+    "level": 16,
+    "count": 288,
+    "energy": 6.567492714140652e-06,
+    "enrichment": 1.7494950794538493,
+    "total_update_norm": 0.4965264356027489
+  },
+  {
+    "arm": "random0",
+    "level": 17,
+    "count": 144,
+    "energy": 2.707424081888967e-06,
+    "enrichment": 1.4424454857973557,
+    "total_update_norm": 0.4965264356027489
+  },
+  {
+    "arm": "random0",
+    "level": 18,
+    "count": 72,
+    "energy": 1.64681282721042e-06,
+    "enrichment": 1.7547585134173072,
+    "total_update_norm": 0.4965264356027489
+  },
+  {
+    "arm": "random0",
+    "level": 19,
+    "count": 24,
+    "energy": 7.038942902947432e-07,
+    "enrichment": 2.25009997134795,
+    "total_update_norm": 0.4965264356027489
+  },
+  {
+    "arm": "random0",
+    "level": 20,
+    "count": 12,
+    "energy": 2.3625658327679146e-07,
+    "enrichment": 1.510456722242411,
+    "total_update_norm": 0.4965264356027489
+  },
+  {
+    "arm": "random1",
+    "level": 1,
+    "count": 9457152,
+    "energy": 0.12485520838398873,
+    "enrichment": 1.002515478099307,
+    "total_update_norm": 0.49908301092493507
+  },
+  {
+    "arm": "random1",
+    "level": 2,
+    "count": 4728576,
+    "energy": 0.06228368389089532,
+    "enrichment": 1.0002042836952938,
+    "total_update_norm": 0.49908301092493507
+  },
+  {
+    "arm": "random1",
+    "level": 3,
+    "count": 2364288,
+    "energy": 0.03121064545807411,
+    "enrichment": 1.0024140941548936,
+    "total_update_norm": 0.49908301092493507
+  },
+  {
+    "arm": "random1",
+    "level": 4,
+    "count": 1182144,
+    "energy": 0.015474879160230827,
+    "enrichment": 0.9940349997821818,
+    "total_update_norm": 0.49908301092493507
+  },
+  {
+    "arm": "random1",
+    "level": 5,
+    "count": 591072,
+    "energy": 0.007664559736121678,
+    "enrichment": 0.9846720684198981,
+    "total_update_norm": 0.49908301092493507
+  },
+  {
+    "arm": "random1",
+    "level": 6,
+    "count": 295536,
+    "energy": 0.003823762464630337,
+    "enrichment": 0.9824835932713638,
+    "total_update_norm": 0.49908301092493507
+  },
+  {
+    "arm": "random1",
+    "level": 7,
+    "count": 147768,
+    "energy": 0.0019040215192858256,
+    "enrichment": 0.978444619004223,
+    "total_update_norm": 0.49908301092493507
+  },
+  {
+    "arm": "random1",
+    "level": 8,
+    "count": 73884,
+    "energy": 0.0009207401939799043,
+    "enrichment": 0.9463057840212389,
+    "total_update_norm": 0.49908301092493507
+  },
+  {
+    "arm": "random1",
+    "level": 9,
+    "count": 36942,
+    "energy": 0.00045547978699369776,
+    "enrichment": 0.9362535919580054,
+    "total_update_norm": 0.49908301092493507
+  },
+  {
+    "arm": "random1",
+    "level": 10,
+    "count": 18444,
+    "energy": 0.00023309271462728612,
+    "enrichment": 0.9596621766013367,
+    "total_update_norm": 0.49908301092493507
+  },
+  {
+    "arm": "random1",
+    "level": 11,
+    "count": 9222,
+    "energy": 0.00011388354729751022,
+    "enrichment": 0.9377361540738292,
+    "total_update_norm": 0.49908301092493507
+  },
+  {
+    "arm": "random1",
+    "level": 12,
+    "count": 4608,
+    "energy": 5.388934409293306e-05,
+    "enrichment": 0.8880455027241982,
+    "total_update_norm": 0.49908301092493507
+  },
+  {
+    "arm": "random1",
+    "level": 13,
+    "count": 2304,
+    "energy": 3.455698693406184e-05,
+    "enrichment": 1.1389330247393707,
+    "total_update_norm": 0.49908301092493507
+  },
+  {
+    "arm": "random1",
+    "level": 14,
+    "count": 1152,
+    "energy": 2.7486358066424978e-05,
+    "enrichment": 1.8117969018187887,
+    "total_update_norm": 0.49908301092493507
+  },
+  {
+    "arm": "random1",
+    "level": 15,
+    "count": 576,
+    "energy": 1.3723070515644848e-05,
+    "enrichment": 1.809145946771112,
+    "total_update_norm": 0.49908301092493507
+  },
+  {
+    "arm": "random1",
+    "level": 16,
+    "count": 288,
+    "energy": 6.773570500009254e-06,
+    "enrichment": 1.7859527284786063,
+    "total_update_norm": 0.49908301092493507
+  },
+  {
+    "arm": "random1",
+    "level": 17,
+    "count": 144,
+    "energy": 2.6961454859143475e-06,
+    "enrichment": 1.4217578120541976,
+    "total_update_norm": 0.49908301092493507
+  },
+  {
+    "arm": "random1",
+    "level": 18,
+    "count": 72,
+    "energy": 1.6163531415550718e-06,
+    "enrichment": 1.7047023004138238,
+    "total_update_norm": 0.49908301092493507
+  },
+  {
+    "arm": "random1",
+    "level": 19,
+    "count": 24,
+    "energy": 6.0963369937609e-07,
+    "enrichment": 1.9288680357369816,
+    "total_update_norm": 0.49908301092493507
+  },
+  {
+    "arm": "random1",
+    "level": 20,
+    "count": 12,
+    "energy": 3.0230613849616043e-07,
+    "enrichment": 1.9129803623030834,
+    "total_update_norm": 0.49908301092493507
+  },
+  {
+    "arm": "opposite",
+    "level": 1,
+    "count": 9457152,
+    "energy": 0.11224735313522072,
+    "enrichment": 1.0028131983977275,
+    "total_update_norm": 0.4731436671969694
+  },
+  {
+    "arm": "opposite",
+    "level": 2,
+    "count": 4728576,
+    "energy": 0.055986706286711235,
+    "enrichment": 1.0003658247779965,
+    "total_update_norm": 0.4731436671969694
+  },
+  {
+    "arm": "opposite",
+    "level": 3,
+    "count": 2364288,
+    "energy": 0.027874213587962215,
+    "enrichment": 0.996108273387691,
+    "total_update_norm": 0.4731436671969694
+  },
+  {
+    "arm": "opposite",
+    "level": 4,
+    "count": 1182144,
+    "energy": 0.013903527727964788,
+    "enrichment": 0.9937083215206413,
+    "total_update_norm": 0.4731436671969694
+  },
+  {
+    "arm": "opposite",
+    "level": 5,
+    "count": 591072,
+    "energy": 0.006925609538317486,
+    "enrichment": 0.9899697349452781,
+    "total_update_norm": 0.4731436671969694
+  },
+  {
+    "arm": "opposite",
+    "level": 6,
+    "count": 295536,
+    "energy": 0.0034429054658466057,
+    "enrichment": 0.9842807893249628,
+    "total_update_norm": 0.4731436671969694
+  },
+  {
+    "arm": "opposite",
+    "level": 7,
+    "count": 147768,
+    "energy": 0.0017411096720374064,
+    "enrichment": 0.9955201031770989,
+    "total_update_norm": 0.4731436671969694
+  },
+  {
+    "arm": "opposite",
+    "level": 8,
+    "count": 73884,
+    "energy": 0.0008571210804167473,
+    "enrichment": 0.9801579763935914,
+    "total_update_norm": 0.4731436671969694
+  },
+  {
+    "arm": "opposite",
+    "level": 9,
+    "count": 36942,
+    "energy": 0.00042688116734704095,
+    "enrichment": 0.9763170938322294,
+    "total_update_norm": 0.4731436671969694
+  },
+  {
+    "arm": "opposite",
+    "level": 10,
+    "count": 18444,
+    "energy": 0.0002188214247437265,
+    "enrichment": 1.0023953180732161,
+    "total_update_norm": 0.4731436671969694
+  },
+  {
+    "arm": "opposite",
+    "level": 11,
+    "count": 9222,
+    "energy": 0.00010382343794861066,
+    "enrichment": 0.9512060185864968,
+    "total_update_norm": 0.4731436671969694
+  },
+  {
+    "arm": "opposite",
+    "level": 12,
+    "count": 4608,
+    "energy": 5.1785590772648025e-05,
+    "enrichment": 0.9495126746287117,
+    "total_update_norm": 0.4731436671969694
+  },
+  {
+    "arm": "opposite",
+    "level": 13,
+    "count": 2304,
+    "energy": 3.389446574627539e-05,
+    "enrichment": 1.2429413026163891,
+    "total_update_norm": 0.4731436671969694
+  },
+  {
+    "arm": "opposite",
+    "level": 14,
+    "count": 1152,
+    "energy": 2.4946915164320913e-05,
+    "enrichment": 1.829652749963109,
+    "total_update_norm": 0.4731436671969694
+  },
+  {
+    "arm": "opposite",
+    "level": 15,
+    "count": 576,
+    "energy": 1.2666239652177137e-05,
+    "enrichment": 1.8579307348142433,
+    "total_update_norm": 0.4731436671969694
+  },
+  {
+    "arm": "opposite",
+    "level": 16,
+    "count": 288,
+    "energy": 6.31198171858796e-06,
+    "enrichment": 1.8517295037180928,
+    "total_update_norm": 0.4731436671969694
+  },
+  {
+    "arm": "opposite",
+    "level": 17,
+    "count": 144,
+    "energy": 2.523360474139715e-06,
+    "enrichment": 1.4805432736664765,
+    "total_update_norm": 0.4731436671969694
+  },
+  {
+    "arm": "opposite",
+    "level": 18,
+    "count": 72,
+    "energy": 1.770521096978143e-06,
+    "enrichment": 2.077652501796651,
+    "total_update_norm": 0.4731436671969694
+  },
+  {
+    "arm": "opposite",
+    "level": 19,
+    "count": 24,
+    "energy": 6.471659861273897e-07,
+    "enrichment": 2.27828863341446,
+    "total_update_norm": 0.4731436671969694
+  },
+  {
+    "arm": "opposite",
+    "level": 20,
+    "count": 12,
+    "energy": 1.6160193742254464e-07,
+    "enrichment": 1.1378096657109098,
+    "total_update_norm": 0.4731436671969694
+  }
+]

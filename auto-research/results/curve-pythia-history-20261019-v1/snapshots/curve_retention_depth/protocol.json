@@ -1,0 +1,62 @@
+{
+  "question": "Can behavior-preservation objectives improve native and complete-curve continuation, and does a smooth depth field preserve an explicitly depth-dependent routing computation when execution count changes?",
+  "scope": "Native order, all Haar coefficients retained. No neuron permutation, imposed manifold, quaternions, or full GSA reproduction. Separate sequence position, model-depth sampling and curve-coefficient scale.",
+  "pythia": {
+    "base": "Same pinned EleutherAI/pythia-70m step143000 as compatibility phase; hash in checkpoint_manifest.json.",
+    "parameters": "All 72 decoder tensors, 18,914,304 values. Float64 master values or complete Haar coefficients, float32 dense forward. Embedding, final norm and output head frozen.",
+    "arms": [
+      "native_lambda0",
+      "curve_lambda0",
+      "native_lambda1",
+      "curve_lambda1",
+      "native_lambda4",
+      "curve_lambda4"
+    ],
+    "control_reuse": "The lambda0 final decoded weights are reused from the preceding phase, hash-verified and evaluated on this phase's newly fixed inputs. They used exactly the same adaptation batches, initialization and optimizer. Code can regenerate them if those files are absent. New comparison is at step24; only regularized arms have new intermediate step12 measurements.",
+    "training": "Same 24 ordered batches of 2 x 96-token adaptation blocks, 4560 targets per arm. AdamW lr2e-5, betas0.9/0.999, eps1e-8, weight_decay0, fresh optimizer states, dropout disabled. No rate tuning.",
+    "objective": "L_adaptation + lambda * (KL_copy + KL_text)/2. Teacher is frozen initial checkpoint. KL is teacher-to-student over full vocabulary, temperature1, averaged over selected positions then examples. Lambda=1 and4 fixed before training, same for both coordinates.",
+    "copy_replay": "24 new calibration sequences, 8 each n=16,32,48, arranged in12 batches of2, one repeat and one scrambled query. Repeat two identical cycles across24 steps. Score original-prefix successor relation. No target labels used in KL.",
+    "text_replay": "24 96-token WikiText train blocks from rows disjoint from48 adaptation rows. Two per step,12 batches repeated twice. Teacher KL evaluated at8 evenly spaced prediction positions per block.",
+    "evaluation": "24 new96-token validation blocks from rows not used in previous validation.24 new copy sequences n16/32/48 plus6 long sequences n64/96 (3 each). Primary copy result is mean of24 short sequences; long probes separate. Eight previous prose passages reused, never included in replay. Full-vocabulary teacher KL on the final query of each held-out copy sequence is diagnostic.",
+    "separation": "Replay and evaluation copy token IDs disjoint, excluding all previous probe IDs. Replay text is disjoint from adaptation and evaluation source rows/splits. All inputs generated before main results. WikiText absence from original pretraining is not established.",
+    "evaluations": [
+      0,
+      12,
+      24
+    ],
+    "diagnostics": "Per-item NLL/accuracy, held-out teacher KL, update Haar energy per original tensor/layer/detail scale, first-step adaptation-versus-total gradient differences. Final lambda4 native and curve decoded weights are saved by predeclared choice, not outcome selection.",
+    "selection": "All six endpoints reported. No winning lambda selected on test data. Curves are not called superior based on greater retention if they learned less. Compare tradeoffs and paired within-coordinate penalty effects.",
+    "uncertainty": "4000 paired bootstrap resamples over24 text blocks and copy sequences stratified by length. Long probes only6 sequences; descriptive. One training stream, no Pythia seed replication."
+  },
+  "transport_toy": {
+    "task": "A12-site directed ring carries independent scalar values. Every site must output the value6 successors away. Each layer may mix only the site's current state and its immediate successor. Input and readout are fixed identity maps, preventing a shallow global shortcut.",
+    "update": "h_i <- h_i + (a(s)*h_i + b(s)*h_successor(i))/N, with midpoint s=(layer+0.5)/N and allsites updated simultaneously. Scalar linear state, no global attention. This is a deliberately narrow operator family, not a universal GSA capacity test.",
+    "curve": "Native six ordered layer pairs (a_l,b_l); full6-mode orthonormal cosine depth field and restricted2-mode field use the previous DCT-II midpoint convention. No site reorder.",
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "initialization": "a_l ~ Normal(0,0.15), b_l ~ Normal(1,0.15). Same native initialization and Gaussian minibatches for paired arms. Full6-mode conversion exact;2-mode arms project initialization.",
+    "scratch": "native6,curve6,curve2;600 full-batch-style updates with batch64 independent Gaussian rings. Adam lr0.08,float64. Mean squared error on each stage's corresponding1..6-hop target (training-only intermediate supervision) ensures a viable routing-learning control.",
+    "continuation": "From native6 at600: native_fixed,curve6_fixed,curve2_fixed,curve6_multidepth,curve2_multidepth.400 fresh Adam steps lr0.02, final6-hop target only. Fixed arms N6; multi arms cycle6/12/24. Final stage count and runtime reported; not compute matched.",
+    "evaluation_depths": [
+      3,
+      4,
+      6,
+      8,
+      12,
+      16,
+      24,
+      48
+    ],
+    "evaluation": "Exact12-impulse operator reconstruction yields expected MSE for iid unit Gaussian inputs. Independent4096 Gaussian rings give empirical MSE and sign accuracy. Final predictions compared with six-hop target and each model's N6 output. Sign is diagnostic; regression is primary.",
+    "oracle": "Analytic constant field a=-6,b=6 yields T_N=(I+6(S-I)/N)^N. AtN6 it is exactly S^6; other depths generally differ. For N<6, the local receptive field excludes the target: expected MSE >=1 and sign accuracy50% under independent Gaussian inputs, irrespective of these local parameters.",
+    "limits": "Tasks enforce locality but do not establish natural-language semantics or general depth expressivity. Intermediate labels help initial optimization. The scalar first-order family may have depth-change limitations that a richer state or operator avoids. No universal impossibility inference."
+  },
+  "budget": "96 new Pythia steps if two controls are reused (144 if regenerated), plus19000 tiny toy updates. Fixed protocol; no broad hyperparameter sweep. Cache teacher distributions once. CPU only.",
+  "data_seed": 2026101718,
+  "provenance": "Builds on the native-order component and compatibility phases. Original GSA archive examined; its recurrent bank coordinate is not reinterpreted as model depth. Teacher preservation is related to distillation/Learning without Forgetting, but here uses explicit disjoint replay examples."
+}

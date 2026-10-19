@@ -1,0 +1,25 @@
+{
+  "initial_checks": [
+    {
+      "seed": 0,
+      "initial_exact_curve_logit_error": 3.0531133177191805e-16
+    },
+    {
+      "seed": 1,
+      "initial_exact_curve_logit_error": 5.551115123125783e-16
+    },
+    {
+      "seed": 2,
+      "initial_exact_curve_logit_error": 6.661338147750939e-16
+    },
+    {
+      "seed": 3,
+      "initial_exact_curve_logit_error": 5.551115123125783e-16
+    },
+    {
+      "seed": 4,
+      "initial_exact_curve_logit_error": 6.661338147750939e-16
+    }
+  ],
+  "basis_orthogonality_max_error": 6.800116025829084e-16
+}

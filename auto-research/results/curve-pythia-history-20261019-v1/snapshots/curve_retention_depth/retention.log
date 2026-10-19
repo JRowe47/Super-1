@@ -1,0 +1,17 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+EVAL baseline 0 NLL 4.91884 copy 0.6351
+EVAL native_lambda0 24 NLL 4.497 copy 0.3815
+EVAL curve_lambda0 24 NLL 4.533716 copy 0.4404
+EVAL native_lambda1 12 NLL 4.648245 copy 0.6728
+EVAL native_lambda1 24 NLL 4.579361 copy 0.5024
+COMPLETE native_lambda1 38.44
+EVAL curve_lambda1 12 NLL 4.628335 copy 0.6344
+EVAL curve_lambda1 24 NLL 4.536775 copy 0.5346
+COMPLETE curve_lambda1 47.64
+EVAL native_lambda4 12 NLL 4.785665 copy 0.4775
+EVAL native_lambda4 24 NLL 4.776013 copy 0.5639
+COMPLETE native_lambda4 36.33
+EVAL curve_lambda4 12 NLL 4.786474 copy 0.5104
+EVAL curve_lambda4 24 NLL 4.759835 copy 0.5825
+COMPLETE curve_lambda4 48.81
+RETENTION COMPLETE 202.29

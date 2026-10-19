@@ -1,0 +1,8 @@
+{
+  "status": "Exploratory extension requested after primary outcomes; fixed before this extension's measurements",
+  "purpose": "Separate layer identity and parameter family from serialization; test whether valid within-layer permutations change Fourier coordinates while preserving function.",
+  "spectra": "For all 28 retained-final blocks, compute separate whole-block and per-family row-major FFTs, recursively partitioned to 64 leaves. For the six adapted blocks also measure both initializations, both endpoints and both learned updates. Block indices are zero-based and original source identity is retained.",
+  "permutation": "Seed 71705. Independently permute the MLP intermediate neurons in each of the six trained blocks: the same permutation of gate/up rows and down columns. Apply this identical permutation to initial and final weights when forming update comparisons. Leave residual coordinates, attention, norms, layer order and embeddings unchanged.",
+  "controls": "Compare native/permuted complex coefficients and fine/coarse powers, verify inverse permutation exactly restores tensors, and compare 28-block model logits on the first eight training windows. Also compare fixed down-projection frequency masks before versus after permutation with inverse mapping, as a coordinate-sensitivity diagnostic, not a quality benchmark.",
+  "limits": "One deterministic random permutation per adapted layer. No cross-layer matching, no sparse training, no inference that separate layers compute the same function. Functional agreement is tested numerically and follows algebraically for the specified gated-MLP permutation. No attention permutation is attempted."
+}

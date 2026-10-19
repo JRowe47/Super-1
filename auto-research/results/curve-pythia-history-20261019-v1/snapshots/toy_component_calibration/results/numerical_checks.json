@@ -1,0 +1,6702 @@
+[
+  {
+    "task": "readout",
+    "seed": 0,
+    "numpy_torch_logit_error": 1.7763568394002505e-15,
+    "checks": [
+      {
+        "start": 0,
+        "end": 10,
+        "full_update_logits_max_abs": 2.220446049250313e-16
+      },
+      {
+        "start": 10,
+        "end": 25,
+        "full_update_logits_max_abs": 8.881784197001252e-16
+      },
+      {
+        "start": 25,
+        "end": 50,
+        "full_update_logits_max_abs": 8.881784197001252e-16
+      },
+      {
+        "start": 50,
+        "end": 100,
+        "full_update_logits_max_abs": 8.881784197001252e-16
+      },
+      {
+        "start": 100,
+        "end": 200,
+        "full_update_logits_max_abs": 8.881784197001252e-16
+      },
+      {
+        "start": 200,
+        "end": 400,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 400,
+        "end": 800,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 0,
+        "end": 800,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 0,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 10,
+        "haar_max_abs": 1.942890293094024e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 25,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 50,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 100,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 200,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 400,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 800,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 0,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 10,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 25,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 50,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 100,
+        "haar_max_abs": 8.326672684688674e-17,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 200,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 3.469446951953614e-17
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 400,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 800,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 0,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 8.326672684688674e-17
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 10,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 25,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 50,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 2.7755575615628914e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 100,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 200,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 400,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 800,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 0,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 10,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 25,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 50,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 2.862293735361732e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 100,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 200,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 2.7755575615628914e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 400,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 1.474514954580286e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 800,
+        "haar_max_abs": 2.7755575615628914e-17,
+        "fourier_max_abs": 2.7755575615628914e-17
+      },
+      {
+        "tensor": "out.weight",
+        "step": 0,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 2.7755575615628914e-17
+      },
+      {
+        "tensor": "out.weight",
+        "step": 10,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 25,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 50,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 100,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 200,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 400,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 800,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.bias",
+        "step": 0,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 10,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 25,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 50,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 100,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 200,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 400,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 800,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      }
+    ]
+  },
+  {
+    "task": "readout",
+    "seed": 1,
+    "numpy_torch_logit_error": 1.7763568394002505e-15,
+    "checks": [
+      {
+        "start": 0,
+        "end": 10,
+        "full_update_logits_max_abs": 4.440892098500626e-16
+      },
+      {
+        "start": 10,
+        "end": 25,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 25,
+        "end": 50,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 50,
+        "end": 100,
+        "full_update_logits_max_abs": 8.881784197001252e-16
+      },
+      {
+        "start": 100,
+        "end": 200,
+        "full_update_logits_max_abs": 8.881784197001252e-16
+      },
+      {
+        "start": 200,
+        "end": 400,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 400,
+        "end": 800,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 0,
+        "end": 800,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 0,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 1.6653345369377348e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 10,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 25,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 1.3877787807814457e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 50,
+        "haar_max_abs": 2.3592239273284576e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 100,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 200,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 400,
+        "haar_max_abs": 2.7755575615628914e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 800,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 0,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 10,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 25,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 50,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 100,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 200,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 2.7755575615628914e-17
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 400,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 800,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 0,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 10,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.6653345369377348e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 25,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 50,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 100,
+        "haar_max_abs": 5.551115123125783e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 200,
+        "haar_max_abs": 5.551115123125783e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 400,
+        "haar_max_abs": 4.996003610813204e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 800,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 0,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 10,
+        "haar_max_abs": 8.326672684688674e-17,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 25,
+        "haar_max_abs": 2.7755575615628914e-17,
+        "fourier_max_abs": 1.3877787807814457e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 50,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 1.3877787807814457e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 100,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 2.7755575615628914e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 200,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 2.0816681711721685e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 400,
+        "haar_max_abs": 1.3877787807814457e-17,
+        "fourier_max_abs": 1.5612511283791264e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 800,
+        "haar_max_abs": 2.7755575615628914e-17,
+        "fourier_max_abs": 2.7755575615628914e-17
+      },
+      {
+        "tensor": "out.weight",
+        "step": 0,
+        "haar_max_abs": 8.326672684688674e-17,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "out.weight",
+        "step": 10,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 25,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 50,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 100,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 200,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 400,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 800,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "out.bias",
+        "step": 0,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 10,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 25,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 50,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 100,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 200,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 400,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 800,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      }
+    ]
+  },
+  {
+    "task": "readout",
+    "seed": 2,
+    "numpy_torch_logit_error": 1.7763568394002505e-15,
+    "checks": [
+      {
+        "start": 0,
+        "end": 10,
+        "full_update_logits_max_abs": 2.220446049250313e-16
+      },
+      {
+        "start": 10,
+        "end": 25,
+        "full_update_logits_max_abs": 8.881784197001252e-16
+      },
+      {
+        "start": 25,
+        "end": 50,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 50,
+        "end": 100,
+        "full_update_logits_max_abs": 8.881784197001252e-16
+      },
+      {
+        "start": 100,
+        "end": 200,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 200,
+        "end": 400,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 400,
+        "end": 800,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 0,
+        "end": 800,
+        "full_update_logits_max_abs": 3.552713678800501e-15
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 0,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 1.249000902703301e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 10,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.6653345369377348e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 25,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 50,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 1.3877787807814457e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 100,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 200,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 400,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 800,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 0,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 8.326672684688674e-17
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 10,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 8.326672684688674e-17
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 25,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 50,
+        "haar_max_abs": 2.7755575615628914e-17,
+        "fourier_max_abs": 1.3877787807814457e-17
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 100,
+        "haar_max_abs": 2.7755575615628914e-17,
+        "fourier_max_abs": 2.7755575615628914e-17
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 200,
+        "haar_max_abs": 2.7755575615628914e-17,
+        "fourier_max_abs": 2.7755575615628914e-17
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 400,
+        "haar_max_abs": 2.7755575615628914e-17,
+        "fourier_max_abs": 2.7755575615628914e-17
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 800,
+        "haar_max_abs": 2.7755575615628914e-17,
+        "fourier_max_abs": 2.7755575615628914e-17
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 0,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 10,
+        "haar_max_abs": 2.7755575615628914e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 25,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 50,
+        "haar_max_abs": 5.551115123125783e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 100,
+        "haar_max_abs": 5.551115123125783e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 200,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 400,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 800,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 0,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 10,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 25,
+        "haar_max_abs": 2.7755575615628914e-17,
+        "fourier_max_abs": 2.7755575615628914e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 50,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 100,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 2.7755575615628914e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 200,
+        "haar_max_abs": 2.7755575615628914e-17,
+        "fourier_max_abs": 2.7755575615628914e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 400,
+        "haar_max_abs": 4.163336342344337e-17,
+        "fourier_max_abs": 2.7755575615628914e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 800,
+        "haar_max_abs": 2.7755575615628914e-17,
+        "fourier_max_abs": 2.0816681711721685e-17
+      },
+      {
+        "tensor": "out.weight",
+        "step": 0,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "out.weight",
+        "step": 10,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 25,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 50,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 100,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 200,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 400,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 800,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.bias",
+        "step": 0,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 10,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 25,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 50,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 100,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 200,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 400,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 800,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      }
+    ]
+  },
+  {
+    "task": "readout",
+    "seed": 3,
+    "numpy_torch_logit_error": 1.7763568394002505e-15,
+    "checks": [
+      {
+        "start": 0,
+        "end": 10,
+        "full_update_logits_max_abs": 2.220446049250313e-16
+      },
+      {
+        "start": 10,
+        "end": 25,
+        "full_update_logits_max_abs": 8.881784197001252e-16
+      },
+      {
+        "start": 25,
+        "end": 50,
+        "full_update_logits_max_abs": 8.881784197001252e-16
+      },
+      {
+        "start": 50,
+        "end": 100,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 100,
+        "end": 200,
+        "full_update_logits_max_abs": 8.881784197001252e-16
+      },
+      {
+        "start": 200,
+        "end": 400,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 400,
+        "end": 800,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 0,
+        "end": 800,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 0,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 10,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 25,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 50,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 100,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 200,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 400,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 800,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 0,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 10,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 25,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 50,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 100,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 200,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 400,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 800,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 0,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 10,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 25,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 2.7755575615628914e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 50,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 100,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 200,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 400,
+        "haar_max_abs": 5.551115123125783e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 800,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 0,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 10,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 25,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 50,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 100,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 200,
+        "haar_max_abs": 8.326672684688674e-17,
+        "fourier_max_abs": 2.7755575615628914e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 400,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 800,
+        "haar_max_abs": 8.326672684688674e-17,
+        "fourier_max_abs": 2.7755575615628914e-17
+      },
+      {
+        "tensor": "out.weight",
+        "step": 0,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 10,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 25,
+        "haar_max_abs": 2.7755575615628914e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 50,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 100,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 200,
+        "haar_max_abs": 5.551115123125783e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 400,
+        "haar_max_abs": 5.551115123125783e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 800,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "out.bias",
+        "step": 0,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 10,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 25,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 50,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 100,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 200,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 400,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 800,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      }
+    ]
+  },
+  {
+    "task": "readout",
+    "seed": 4,
+    "numpy_torch_logit_error": 1.7763568394002505e-15,
+    "checks": [
+      {
+        "start": 0,
+        "end": 10,
+        "full_update_logits_max_abs": 2.220446049250313e-16
+      },
+      {
+        "start": 10,
+        "end": 25,
+        "full_update_logits_max_abs": 8.881784197001252e-16
+      },
+      {
+        "start": 25,
+        "end": 50,
+        "full_update_logits_max_abs": 8.881784197001252e-16
+      },
+      {
+        "start": 50,
+        "end": 100,
+        "full_update_logits_max_abs": 8.881784197001252e-16
+      },
+      {
+        "start": 100,
+        "end": 200,
+        "full_update_logits_max_abs": 8.881784197001252e-16
+      },
+      {
+        "start": 200,
+        "end": 400,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 400,
+        "end": 800,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 0,
+        "end": 800,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 0,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 10,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 1.6653345369377348e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 25,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 50,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.6653345369377348e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 100,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 200,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 400,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 800,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 0,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 10,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 25,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 50,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 100,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 200,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 400,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 800,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 0,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 1.6653345369377348e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 10,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 1.249000902703301e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 25,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 50,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 100,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 200,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 400,
+        "haar_max_abs": 3.885780586188048e-16,
+        "fourier_max_abs": 3.0531133177191805e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 800,
+        "haar_max_abs": 5.551115123125783e-16,
+        "fourier_max_abs": 2.7755575615628914e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 0,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 10,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 25,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 50,
+        "haar_max_abs": 1.3877787807814457e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 100,
+        "haar_max_abs": 8.326672684688674e-17,
+        "fourier_max_abs": 2.7755575615628914e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 200,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 2.7755575615628914e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 400,
+        "haar_max_abs": 4.163336342344337e-17,
+        "fourier_max_abs": 2.7755575615628914e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 800,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 2.7755575615628914e-17
+      },
+      {
+        "tensor": "out.weight",
+        "step": 0,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "out.weight",
+        "step": 10,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 25,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 50,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 100,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 200,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 400,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 800,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.bias",
+        "step": 0,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 10,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 25,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 50,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 100,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 200,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 400,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 800,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      }
+    ]
+  },
+  {
+    "task": "parity",
+    "seed": 0,
+    "numpy_torch_logit_error": 1.7763568394002505e-15,
+    "checks": [
+      {
+        "start": 0,
+        "end": 10,
+        "full_update_logits_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "start": 10,
+        "end": 25,
+        "full_update_logits_max_abs": 4.440892098500626e-16
+      },
+      {
+        "start": 25,
+        "end": 50,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 50,
+        "end": 100,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 100,
+        "end": 200,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 200,
+        "end": 400,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 400,
+        "end": 800,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 0,
+        "end": 800,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 0,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 10,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.6653345369377348e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 25,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 50,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 100,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 200,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 400,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 800,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 0,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 10,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 25,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 50,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 100,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 6.661338147750939e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 200,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 400,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 800,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 6.661338147750939e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 0,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 8.326672684688674e-17
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 10,
+        "haar_max_abs": 1.942890293094024e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 25,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 1.6653345369377348e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 50,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 100,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 200,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 400,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 800,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 0,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 10,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 25,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 50,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 100,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 200,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 400,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 800,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 0,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 2.7755575615628914e-17
+      },
+      {
+        "tensor": "out.weight",
+        "step": 10,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "out.weight",
+        "step": 25,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 50,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 100,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 200,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 6.661338147750939e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 400,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 800,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 6.661338147750939e-16
+      },
+      {
+        "tensor": "out.bias",
+        "step": 0,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 10,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 25,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 50,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 100,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 200,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 400,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 800,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      }
+    ]
+  },
+  {
+    "task": "parity",
+    "seed": 1,
+    "numpy_torch_logit_error": 1.7763568394002505e-15,
+    "checks": [
+      {
+        "start": 0,
+        "end": 10,
+        "full_update_logits_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "start": 10,
+        "end": 25,
+        "full_update_logits_max_abs": 8.881784197001252e-16
+      },
+      {
+        "start": 25,
+        "end": 50,
+        "full_update_logits_max_abs": 8.881784197001252e-16
+      },
+      {
+        "start": 50,
+        "end": 100,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 100,
+        "end": 200,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 200,
+        "end": 400,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 400,
+        "end": 800,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 0,
+        "end": 800,
+        "full_update_logits_max_abs": 3.552713678800501e-15
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 0,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 1.6653345369377348e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 10,
+        "haar_max_abs": 2.7755575615628914e-16,
+        "fourier_max_abs": 1.6653345369377348e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 25,
+        "haar_max_abs": 5.551115123125783e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 50,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 100,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 200,
+        "haar_max_abs": 8.881784197001252e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 400,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 800,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 0,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 10,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 25,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 50,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 100,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 200,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 400,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 800,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 0,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 10,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 25,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 50,
+        "haar_max_abs": 5.551115123125783e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 100,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 200,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 400,
+        "haar_max_abs": 5.551115123125783e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 800,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 0,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 10,
+        "haar_max_abs": 1.3877787807814457e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 25,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 50,
+        "haar_max_abs": 4.996003610813204e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 100,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 200,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 400,
+        "haar_max_abs": 5.551115123125783e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 800,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 0,
+        "haar_max_abs": 8.326672684688674e-17,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "out.weight",
+        "step": 10,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 25,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 50,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 100,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 200,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 400,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 800,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "out.bias",
+        "step": 0,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 10,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 25,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 50,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 100,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 200,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 400,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 800,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      }
+    ]
+  },
+  {
+    "task": "parity",
+    "seed": 2,
+    "numpy_torch_logit_error": 1.7763568394002505e-15,
+    "checks": [
+      {
+        "start": 0,
+        "end": 10,
+        "full_update_logits_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "start": 10,
+        "end": 25,
+        "full_update_logits_max_abs": 4.440892098500626e-16
+      },
+      {
+        "start": 25,
+        "end": 50,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 50,
+        "end": 100,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 100,
+        "end": 200,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 200,
+        "end": 400,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 400,
+        "end": 800,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 0,
+        "end": 800,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 0,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 1.249000902703301e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 10,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.6653345369377348e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 25,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 50,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 100,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 200,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 5.551115123125783e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 400,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.579669976578771e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 800,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 0,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 8.326672684688674e-17
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 10,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 25,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 50,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 100,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 200,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 400,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 800,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 0,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 10,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.0581813203458523e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 25,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 1.6653345369377348e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 50,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 100,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 200,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 400,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 800,
+        "haar_max_abs": 8.881784197001252e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 0,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 10,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 25,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 50,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 100,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 200,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 400,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 800,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 0,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "out.weight",
+        "step": 10,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 25,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 50,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 100,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 200,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 400,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 800,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "out.bias",
+        "step": 0,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 10,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 25,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 50,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 100,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 200,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 400,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 800,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      }
+    ]
+  },
+  {
+    "task": "parity",
+    "seed": 3,
+    "numpy_torch_logit_error": 1.7763568394002505e-15,
+    "checks": [
+      {
+        "start": 0,
+        "end": 10,
+        "full_update_logits_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "start": 10,
+        "end": 25,
+        "full_update_logits_max_abs": 4.440892098500626e-16
+      },
+      {
+        "start": 25,
+        "end": 50,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 50,
+        "end": 100,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 100,
+        "end": 200,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 200,
+        "end": 400,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 400,
+        "end": 800,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 0,
+        "end": 800,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 0,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 10,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 25,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 50,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 100,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 200,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 400,
+        "haar_max_abs": 8.881784197001252e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 800,
+        "haar_max_abs": 8.881784197001252e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 0,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 10,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 25,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.6653345369377348e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 50,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 100,
+        "haar_max_abs": 5.551115123125783e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 200,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 400,
+        "haar_max_abs": 5.551115123125783e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 800,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 0,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 10,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 25,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 50,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 100,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 200,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 400,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 800,
+        "haar_max_abs": 5.551115123125783e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 0,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 10,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 2.7755575615628914e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 25,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 50,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 100,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 200,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 400,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 800,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 0,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 10,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 2.7755575615628914e-17
+      },
+      {
+        "tensor": "out.weight",
+        "step": 25,
+        "haar_max_abs": 2.7755575615628914e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 50,
+        "haar_max_abs": 5.551115123125783e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 100,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 200,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 400,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 800,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.bias",
+        "step": 0,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 10,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 25,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 50,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 100,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 200,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 400,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 800,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      }
+    ]
+  },
+  {
+    "task": "parity",
+    "seed": 4,
+    "numpy_torch_logit_error": 1.7763568394002505e-15,
+    "checks": [
+      {
+        "start": 0,
+        "end": 10,
+        "full_update_logits_max_abs": 2.7755575615628914e-16
+      },
+      {
+        "start": 10,
+        "end": 25,
+        "full_update_logits_max_abs": 6.661338147750939e-16
+      },
+      {
+        "start": 25,
+        "end": 50,
+        "full_update_logits_max_abs": 8.881784197001252e-16
+      },
+      {
+        "start": 50,
+        "end": 100,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 100,
+        "end": 200,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 200,
+        "end": 400,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 400,
+        "end": 800,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 0,
+        "end": 800,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 0,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 10,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 1.6653345369377348e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 25,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 50,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 100,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 200,
+        "haar_max_abs": 8.881784197001252e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 400,
+        "haar_max_abs": 5.551115123125783e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 800,
+        "haar_max_abs": 8.881784197001252e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 0,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 10,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 25,
+        "haar_max_abs": 5.551115123125783e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 50,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 100,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 200,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 400,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 800,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 0,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 1.6653345369377348e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 10,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 1.6653345369377348e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 25,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 50,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 100,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 200,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 400,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 3.0531133177191805e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 800,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 0,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 10,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 25,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 50,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.6653345369377348e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 100,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 200,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 400,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 800,
+        "haar_max_abs": 5.551115123125783e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 0,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "out.weight",
+        "step": 10,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "out.weight",
+        "step": 25,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 50,
+        "haar_max_abs": 5.551115123125783e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 100,
+        "haar_max_abs": 5.551115123125783e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 200,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 400,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 800,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "out.bias",
+        "step": 0,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 10,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 25,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 50,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 100,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 200,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 400,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 800,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      }
+    ]
+  },
+  {
+    "task": "context",
+    "seed": 0,
+    "numpy_torch_logit_error": 1.7763568394002505e-15,
+    "checks": [
+      {
+        "start": 0,
+        "end": 10,
+        "full_update_logits_max_abs": 2.220446049250313e-16
+      },
+      {
+        "start": 10,
+        "end": 25,
+        "full_update_logits_max_abs": 8.881784197001252e-16
+      },
+      {
+        "start": 25,
+        "end": 50,
+        "full_update_logits_max_abs": 8.881784197001252e-16
+      },
+      {
+        "start": 50,
+        "end": 100,
+        "full_update_logits_max_abs": 8.881784197001252e-16
+      },
+      {
+        "start": 100,
+        "end": 200,
+        "full_update_logits_max_abs": 8.881784197001252e-16
+      },
+      {
+        "start": 200,
+        "end": 400,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 400,
+        "end": 800,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 0,
+        "end": 800,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 0,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 10,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.6653345369377348e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 25,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 50,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 100,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 200,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 400,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 800,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 0,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 10,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 25,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.6653345369377348e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 50,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 100,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 200,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 400,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 800,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 0,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 8.326672684688674e-17
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 10,
+        "haar_max_abs": 2.7755575615628914e-16,
+        "fourier_max_abs": 1.3877787807814457e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 25,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 50,
+        "haar_max_abs": 5.551115123125783e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 100,
+        "haar_max_abs": 5.551115123125783e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 200,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 400,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 800,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 5.551115123125783e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 0,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 10,
+        "haar_max_abs": 8.326672684688674e-17,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 25,
+        "haar_max_abs": 8.326672684688674e-17,
+        "fourier_max_abs": 2.7755575615628914e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 50,
+        "haar_max_abs": 8.326672684688674e-17,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 100,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 200,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 400,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 800,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "out.weight",
+        "step": 0,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 2.7755575615628914e-17
+      },
+      {
+        "tensor": "out.weight",
+        "step": 10,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 25,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.6653345369377348e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 50,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 100,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 200,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 400,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 800,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.bias",
+        "step": 0,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 10,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 25,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 50,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 100,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 200,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 400,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 800,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      }
+    ]
+  },
+  {
+    "task": "context",
+    "seed": 1,
+    "numpy_torch_logit_error": 3.552713678800501e-15,
+    "checks": [
+      {
+        "start": 0,
+        "end": 10,
+        "full_update_logits_max_abs": 4.440892098500626e-16
+      },
+      {
+        "start": 10,
+        "end": 25,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 25,
+        "end": 50,
+        "full_update_logits_max_abs": 8.881784197001252e-16
+      },
+      {
+        "start": 50,
+        "end": 100,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 100,
+        "end": 200,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 200,
+        "end": 400,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 400,
+        "end": 800,
+        "full_update_logits_max_abs": 3.552713678800501e-15
+      },
+      {
+        "start": 0,
+        "end": 800,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 0,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 1.6653345369377348e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 10,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 25,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 50,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 100,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 200,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 6.661338147750939e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 400,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 800,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 0,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 10,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 25,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 50,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 100,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 200,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 400,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 800,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 0,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 10,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 25,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 50,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 100,
+        "haar_max_abs": 5.551115123125783e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 200,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 400,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 800,
+        "haar_max_abs": 5.551115123125783e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 0,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 10,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 25,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 50,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 100,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 200,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 400,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 800,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 0,
+        "haar_max_abs": 8.326672684688674e-17,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "out.weight",
+        "step": 10,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 25,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 50,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 100,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 200,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 400,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 800,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "out.bias",
+        "step": 0,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 10,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 25,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 50,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 100,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 200,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 400,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 800,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      }
+    ]
+  },
+  {
+    "task": "context",
+    "seed": 2,
+    "numpy_torch_logit_error": 1.7763568394002505e-15,
+    "checks": [
+      {
+        "start": 0,
+        "end": 10,
+        "full_update_logits_max_abs": 4.440892098500626e-16
+      },
+      {
+        "start": 10,
+        "end": 25,
+        "full_update_logits_max_abs": 8.881784197001252e-16
+      },
+      {
+        "start": 25,
+        "end": 50,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 50,
+        "end": 100,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 100,
+        "end": 200,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 200,
+        "end": 400,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 400,
+        "end": 800,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 0,
+        "end": 800,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 0,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 1.249000902703301e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 10,
+        "haar_max_abs": 2.498001805406602e-16,
+        "fourier_max_abs": 1.6653345369377348e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 25,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 50,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 100,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 200,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 400,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 800,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 0,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 8.326672684688674e-17
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 10,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 25,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 50,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 100,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 200,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 400,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 800,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 0,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 10,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 25,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 50,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 100,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 200,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 400,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 800,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 0,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 10,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 6.245004513516506e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 25,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 50,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 100,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 200,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 400,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 800,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "out.weight",
+        "step": 0,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "out.weight",
+        "step": 10,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 25,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 50,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 100,
+        "haar_max_abs": 8.881784197001252e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 200,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 400,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 800,
+        "haar_max_abs": 8.881784197001252e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "out.bias",
+        "step": 0,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 10,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 25,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 50,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 100,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 200,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 400,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 800,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      }
+    ]
+  },
+  {
+    "task": "context",
+    "seed": 3,
+    "numpy_torch_logit_error": 1.7763568394002505e-15,
+    "checks": [
+      {
+        "start": 0,
+        "end": 10,
+        "full_update_logits_max_abs": 2.220446049250313e-16
+      },
+      {
+        "start": 10,
+        "end": 25,
+        "full_update_logits_max_abs": 8.881784197001252e-16
+      },
+      {
+        "start": 25,
+        "end": 50,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 50,
+        "end": 100,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 100,
+        "end": 200,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 200,
+        "end": 400,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 400,
+        "end": 800,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 0,
+        "end": 800,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 0,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 10,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.6653345369377348e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 25,
+        "haar_max_abs": 5.551115123125783e-16,
+        "fourier_max_abs": 2.7755575615628914e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 50,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 100,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 200,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 6.661338147750939e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 400,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 800,
+        "haar_max_abs": 5.551115123125783e-16,
+        "fourier_max_abs": 6.661338147750939e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 0,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 10,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 25,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 50,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 100,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 200,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 400,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 800,
+        "haar_max_abs": 5.551115123125783e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 0,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 10,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.3183898417423734e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 25,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 50,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 100,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 200,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 400,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 800,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 5.551115123125783e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 0,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 10,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 25,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 50,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 2.7755575615628914e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 100,
+        "haar_max_abs": 8.326672684688674e-17,
+        "fourier_max_abs": 8.326672684688674e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 200,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 400,
+        "haar_max_abs": 8.326672684688674e-17,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 800,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "out.weight",
+        "step": 0,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 10,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "out.weight",
+        "step": 25,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 50,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 100,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 200,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 400,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 800,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "out.bias",
+        "step": 0,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 10,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 25,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 50,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 100,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 200,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 400,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 800,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      }
+    ]
+  },
+  {
+    "task": "context",
+    "seed": 4,
+    "numpy_torch_logit_error": 1.7763568394002505e-15,
+    "checks": [
+      {
+        "start": 0,
+        "end": 10,
+        "full_update_logits_max_abs": 4.440892098500626e-16
+      },
+      {
+        "start": 10,
+        "end": 25,
+        "full_update_logits_max_abs": 8.881784197001252e-16
+      },
+      {
+        "start": 25,
+        "end": 50,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 50,
+        "end": 100,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 100,
+        "end": 200,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 200,
+        "end": 400,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 400,
+        "end": 800,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 0,
+        "end": 800,
+        "full_update_logits_max_abs": 3.552713678800501e-15
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 0,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 10,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.6653345369377348e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 25,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 50,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 100,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 200,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 400,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 800,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 0,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 10,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 25,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 1.6653345369377348e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 50,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 100,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 200,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 400,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 800,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 0,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 1.6653345369377348e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 10,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.3877787807814457e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 25,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 50,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 100,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 200,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 400,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 800,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 0,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 10,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 25,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 50,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 2.7755575615628914e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 100,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 200,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 2.7755575615628914e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 400,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 800,
+        "haar_max_abs": 8.326672684688674e-17,
+        "fourier_max_abs": 8.326672684688674e-17
+      },
+      {
+        "tensor": "out.weight",
+        "step": 0,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "out.weight",
+        "step": 10,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.6653345369377348e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 25,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 50,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 100,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 200,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 400,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 800,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "out.bias",
+        "step": 0,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 10,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 25,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 50,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 100,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 200,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 400,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      },
+      {
+        "tensor": "out.bias",
+        "step": 800,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 0.0
+      }
+    ]
+  },
+  {
+    "task": "joint",
+    "seed": 0,
+    "numpy_torch_logit_error": 3.552713678800501e-15,
+    "checks": [
+      {
+        "start": 0,
+        "end": 10,
+        "full_update_logits_max_abs": 6.661338147750939e-16
+      },
+      {
+        "start": 10,
+        "end": 25,
+        "full_update_logits_max_abs": 8.881784197001252e-16
+      },
+      {
+        "start": 25,
+        "end": 50,
+        "full_update_logits_max_abs": 8.881784197001252e-16
+      },
+      {
+        "start": 50,
+        "end": 100,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 100,
+        "end": 200,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 200,
+        "end": 400,
+        "full_update_logits_max_abs": 3.552713678800501e-15
+      },
+      {
+        "start": 400,
+        "end": 800,
+        "full_update_logits_max_abs": 3.552713678800501e-15
+      },
+      {
+        "start": 0,
+        "end": 800,
+        "full_update_logits_max_abs": 2.6645352591003757e-15
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 0,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 10,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 25,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.3877787807814457e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 50,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 100,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 200,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 400,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 800,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 0,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 10,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 25,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 50,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 100,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 1.3877787807814457e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 200,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 400,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 800,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 0,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 8.326672684688674e-17
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 10,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.942890293094024e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 25,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 50,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 100,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 200,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 400,
+        "haar_max_abs": 1.3322676295501878e-15,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 800,
+        "haar_max_abs": 8.881784197001252e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 0,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 10,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 25,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 50,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 100,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 200,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 400,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 800,
+        "haar_max_abs": 1.1102230246251565e-15,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 0,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 10,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 1.3877787807814457e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 25,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 50,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 6.661338147750939e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 100,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 1.1102230246251565e-15
+      },
+      {
+        "tensor": "out.weight",
+        "step": 200,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 8.881784197001252e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 400,
+        "haar_max_abs": 8.881784197001252e-16,
+        "fourier_max_abs": 1.1102230246251565e-15
+      },
+      {
+        "tensor": "out.weight",
+        "step": 800,
+        "haar_max_abs": 1.3322676295501878e-15,
+        "fourier_max_abs": 1.4432899320127035e-15
+      },
+      {
+        "tensor": "out.bias",
+        "step": 0,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 2.7755575615628914e-17
+      },
+      {
+        "tensor": "out.bias",
+        "step": 10,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 2.7755575615628914e-17
+      },
+      {
+        "tensor": "out.bias",
+        "step": 25,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "out.bias",
+        "step": 50,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.bias",
+        "step": 100,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 2.7755575615628914e-17
+      },
+      {
+        "tensor": "out.bias",
+        "step": 200,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 1.3877787807814457e-17
+      },
+      {
+        "tensor": "out.bias",
+        "step": 400,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.bias",
+        "step": 800,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 2.220446049250313e-16
+      }
+    ]
+  },
+  {
+    "task": "joint",
+    "seed": 1,
+    "numpy_torch_logit_error": 3.552713678800501e-15,
+    "checks": [
+      {
+        "start": 0,
+        "end": 10,
+        "full_update_logits_max_abs": 6.661338147750939e-16
+      },
+      {
+        "start": 10,
+        "end": 25,
+        "full_update_logits_max_abs": 1.3322676295501878e-15
+      },
+      {
+        "start": 25,
+        "end": 50,
+        "full_update_logits_max_abs": 8.881784197001252e-16
+      },
+      {
+        "start": 50,
+        "end": 100,
+        "full_update_logits_max_abs": 2.6645352591003757e-15
+      },
+      {
+        "start": 100,
+        "end": 200,
+        "full_update_logits_max_abs": 3.552713678800501e-15
+      },
+      {
+        "start": 200,
+        "end": 400,
+        "full_update_logits_max_abs": 3.552713678800501e-15
+      },
+      {
+        "start": 400,
+        "end": 800,
+        "full_update_logits_max_abs": 3.552713678800501e-15
+      },
+      {
+        "start": 0,
+        "end": 800,
+        "full_update_logits_max_abs": 3.552713678800501e-15
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 0,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 1.6653345369377348e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 10,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 25,
+        "haar_max_abs": 4.996003610813204e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 50,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 100,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 3.191891195797325e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 200,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 5.551115123125783e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 400,
+        "haar_max_abs": 8.881784197001252e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 800,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 0,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 10,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 25,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 50,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.942890293094024e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 100,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 200,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 400,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 800,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 0,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 10,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 25,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 50,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.7755575615628914e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 100,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 200,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 400,
+        "haar_max_abs": 8.881784197001252e-16,
+        "fourier_max_abs": 6.661338147750939e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 800,
+        "haar_max_abs": 8.881784197001252e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 0,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 10,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 25,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 50,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 100,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 200,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 400,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 800,
+        "haar_max_abs": 1.1102230246251565e-15,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 0,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 1.3877787807814457e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 10,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 1.3183898417423734e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 25,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 50,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 100,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 8.881784197001252e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 200,
+        "haar_max_abs": 8.881784197001252e-16,
+        "fourier_max_abs": 1.3322676295501878e-15
+      },
+      {
+        "tensor": "out.weight",
+        "step": 400,
+        "haar_max_abs": 1.7763568394002505e-15,
+        "fourier_max_abs": 1.3322676295501878e-15
+      },
+      {
+        "tensor": "out.weight",
+        "step": 800,
+        "haar_max_abs": 1.7763568394002505e-15,
+        "fourier_max_abs": 1.3322676295501878e-15
+      },
+      {
+        "tensor": "out.bias",
+        "step": 0,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 1.734723475976807e-17
+      },
+      {
+        "tensor": "out.bias",
+        "step": 10,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "out.bias",
+        "step": 25,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "out.bias",
+        "step": 50,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.bias",
+        "step": 100,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.bias",
+        "step": 200,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 2.7755575615628914e-17
+      },
+      {
+        "tensor": "out.bias",
+        "step": 400,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "out.bias",
+        "step": 800,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 2.220446049250313e-16
+      }
+    ]
+  },
+  {
+    "task": "joint",
+    "seed": 2,
+    "numpy_torch_logit_error": 5.329070518200751e-15,
+    "checks": [
+      {
+        "start": 0,
+        "end": 10,
+        "full_update_logits_max_abs": 4.440892098500626e-16
+      },
+      {
+        "start": 10,
+        "end": 25,
+        "full_update_logits_max_abs": 8.881784197001252e-16
+      },
+      {
+        "start": 25,
+        "end": 50,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 50,
+        "end": 100,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 100,
+        "end": 200,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 200,
+        "end": 400,
+        "full_update_logits_max_abs": 3.552713678800501e-15
+      },
+      {
+        "start": 400,
+        "end": 800,
+        "full_update_logits_max_abs": 5.329070518200751e-15
+      },
+      {
+        "start": 0,
+        "end": 800,
+        "full_update_logits_max_abs": 5.329070518200751e-15
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 0,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 1.249000902703301e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 10,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.6653345369377348e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 25,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 1.249000902703301e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 50,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 100,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 5.551115123125783e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 200,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 400,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 800,
+        "haar_max_abs": 4.504046875047907e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 0,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 8.326672684688674e-17
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 10,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 2.7755575615628914e-17
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 25,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 50,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 100,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 200,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 400,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 800,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 0,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 10,
+        "haar_max_abs": 2.7755575615628914e-16,
+        "fourier_max_abs": 1.3877787807814457e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 25,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.7755575615628914e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 50,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 2.3592239273284576e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 100,
+        "haar_max_abs": 8.881784197001252e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 200,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 400,
+        "haar_max_abs": 8.881784197001252e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 800,
+        "haar_max_abs": 1.1102230246251565e-15,
+        "fourier_max_abs": 4.996003610813204e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 0,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 10,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 25,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 50,
+        "haar_max_abs": 5.551115123125783e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 100,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 200,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 400,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 800,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 1.6653345369377348e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 0,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 10,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 25,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 50,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 100,
+        "haar_max_abs": 1.3322676295501878e-15,
+        "fourier_max_abs": 8.881784197001252e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 200,
+        "haar_max_abs": 8.881784197001252e-16,
+        "fourier_max_abs": 1.5543122344752192e-15
+      },
+      {
+        "tensor": "out.weight",
+        "step": 400,
+        "haar_max_abs": 1.3322676295501878e-15,
+        "fourier_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "tensor": "out.weight",
+        "step": 800,
+        "haar_max_abs": 1.7763568394002505e-15,
+        "fourier_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "tensor": "out.bias",
+        "step": 0,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "out.bias",
+        "step": 10,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 2.7755575615628914e-17
+      },
+      {
+        "tensor": "out.bias",
+        "step": 25,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 4.163336342344337e-17
+      },
+      {
+        "tensor": "out.bias",
+        "step": 50,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "out.bias",
+        "step": 100,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 6.661338147750939e-16
+      },
+      {
+        "tensor": "out.bias",
+        "step": 200,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.bias",
+        "step": 400,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 8.881784197001252e-16
+      },
+      {
+        "tensor": "out.bias",
+        "step": 800,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 8.881784197001252e-16
+      }
+    ]
+  },
+  {
+    "task": "joint",
+    "seed": 3,
+    "numpy_torch_logit_error": 3.552713678800501e-15,
+    "checks": [
+      {
+        "start": 0,
+        "end": 10,
+        "full_update_logits_max_abs": 2.220446049250313e-16
+      },
+      {
+        "start": 10,
+        "end": 25,
+        "full_update_logits_max_abs": 8.881784197001252e-16
+      },
+      {
+        "start": 25,
+        "end": 50,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 50,
+        "end": 100,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 100,
+        "end": 200,
+        "full_update_logits_max_abs": 2.6645352591003757e-15
+      },
+      {
+        "start": 200,
+        "end": 400,
+        "full_update_logits_max_abs": 3.552713678800501e-15
+      },
+      {
+        "start": 400,
+        "end": 800,
+        "full_update_logits_max_abs": 3.552713678800501e-15
+      },
+      {
+        "start": 0,
+        "end": 800,
+        "full_update_logits_max_abs": 3.552713678800501e-15
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 0,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 10,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 25,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 50,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 100,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 200,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 400,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 800,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.7755575615628914e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 0,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 10,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 25,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 50,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 100,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 200,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 400,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 800,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 0,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 10,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.6653345369377348e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 25,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 50,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 100,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 200,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 400,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 6.661338147750939e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 800,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 5.551115123125783e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 0,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 10,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 25,
+        "haar_max_abs": 5.551115123125783e-17,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 50,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 100,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 1.6653345369377348e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 200,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 400,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 800,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 0,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 10,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 1.942890293094024e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 25,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 1.3877787807814457e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 50,
+        "haar_max_abs": 5.551115123125783e-16,
+        "fourier_max_abs": 6.661338147750939e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 100,
+        "haar_max_abs": 8.881784197001252e-16,
+        "fourier_max_abs": 8.881784197001252e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 200,
+        "haar_max_abs": 8.881784197001252e-16,
+        "fourier_max_abs": 8.881784197001252e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 400,
+        "haar_max_abs": 1.3322676295501878e-15,
+        "fourier_max_abs": 1.1102230246251565e-15
+      },
+      {
+        "tensor": "out.weight",
+        "step": 800,
+        "haar_max_abs": 2.220446049250313e-15,
+        "fourier_max_abs": 1.9984014443252818e-15
+      },
+      {
+        "tensor": "out.bias",
+        "step": 0,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "out.bias",
+        "step": 10,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "out.bias",
+        "step": 25,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 1.3877787807814457e-17
+      },
+      {
+        "tensor": "out.bias",
+        "step": 50,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "out.bias",
+        "step": 100,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "out.bias",
+        "step": 200,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "out.bias",
+        "step": 400,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "out.bias",
+        "step": 800,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 4.440892098500626e-16
+      }
+    ]
+  },
+  {
+    "task": "joint",
+    "seed": 4,
+    "numpy_torch_logit_error": 3.552713678800501e-15,
+    "checks": [
+      {
+        "start": 0,
+        "end": 10,
+        "full_update_logits_max_abs": 2.220446049250313e-16
+      },
+      {
+        "start": 10,
+        "end": 25,
+        "full_update_logits_max_abs": 8.881784197001252e-16
+      },
+      {
+        "start": 25,
+        "end": 50,
+        "full_update_logits_max_abs": 8.881784197001252e-16
+      },
+      {
+        "start": 50,
+        "end": 100,
+        "full_update_logits_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "start": 100,
+        "end": 200,
+        "full_update_logits_max_abs": 3.552713678800501e-15
+      },
+      {
+        "start": 200,
+        "end": 400,
+        "full_update_logits_max_abs": 3.552713678800501e-15
+      },
+      {
+        "start": 400,
+        "end": 800,
+        "full_update_logits_max_abs": 3.552713678800501e-15
+      },
+      {
+        "start": 0,
+        "end": 800,
+        "full_update_logits_max_abs": 2.6645352591003757e-15
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 0,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 10,
+        "haar_max_abs": 2.7755575615628914e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 25,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 50,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 100,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 200,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 400,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 6.661338147750939e-16
+      },
+      {
+        "tensor": "l0.weight",
+        "step": 800,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 0,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 10,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 25,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 50,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 100,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 200,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 2.636779683484747e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 400,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l0.bias",
+        "step": 800,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 0,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 1.6653345369377348e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 10,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 1.3877787807814457e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 25,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 50,
+        "haar_max_abs": 5.551115123125783e-16,
+        "fourier_max_abs": 3.885780586188048e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 100,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 3.3306690738754696e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 200,
+        "haar_max_abs": 8.881784197001252e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 400,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 5.551115123125783e-16
+      },
+      {
+        "tensor": "l1.weight",
+        "step": 800,
+        "haar_max_abs": 8.881784197001252e-16,
+        "fourier_max_abs": 5.551115123125783e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 0,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 10,
+        "haar_max_abs": 8.326672684688674e-17,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 25,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 5.551115123125783e-17
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 50,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 100,
+        "haar_max_abs": 3.3306690738754696e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 200,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 400,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "l1.bias",
+        "step": 800,
+        "haar_max_abs": 6.661338147750939e-16,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 0,
+        "haar_max_abs": 1.6653345369377348e-16,
+        "fourier_max_abs": 1.0755285551056204e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 10,
+        "haar_max_abs": 1.1102230246251565e-16,
+        "fourier_max_abs": 2.0816681711721685e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 25,
+        "haar_max_abs": 2.220446049250313e-16,
+        "fourier_max_abs": 3.608224830031759e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 50,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 5.551115123125783e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 100,
+        "haar_max_abs": 4.440892098500626e-16,
+        "fourier_max_abs": 1.3322676295501878e-15
+      },
+      {
+        "tensor": "out.weight",
+        "step": 200,
+        "haar_max_abs": 8.881784197001252e-16,
+        "fourier_max_abs": 8.881784197001252e-16
+      },
+      {
+        "tensor": "out.weight",
+        "step": 400,
+        "haar_max_abs": 1.3322676295501878e-15,
+        "fourier_max_abs": 1.3322676295501878e-15
+      },
+      {
+        "tensor": "out.weight",
+        "step": 800,
+        "haar_max_abs": 8.881784197001252e-16,
+        "fourier_max_abs": 1.7763568394002505e-15
+      },
+      {
+        "tensor": "out.bias",
+        "step": 0,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 2.7755575615628914e-17
+      },
+      {
+        "tensor": "out.bias",
+        "step": 10,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 2.7755575615628914e-17
+      },
+      {
+        "tensor": "out.bias",
+        "step": 25,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 2.7755575615628914e-17
+      },
+      {
+        "tensor": "out.bias",
+        "step": 50,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 2.220446049250313e-16
+      },
+      {
+        "tensor": "out.bias",
+        "step": 100,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "out.bias",
+        "step": 200,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 4.440892098500626e-16
+      },
+      {
+        "tensor": "out.bias",
+        "step": 400,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "tensor": "out.bias",
+        "step": 800,
+        "haar_max_abs": 0.0,
+        "fourier_max_abs": 2.220446049250313e-16
+      }
+    ]
+  }
+]

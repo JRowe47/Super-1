@@ -1,0 +1,15 @@
+{
+  "prior_selected": "aaaaad",
+  "scan_winner": "ddaaaa",
+  "paths": [
+    "aaaaad",
+    "aaaaaa",
+    "dddddd",
+    "adaaad",
+    "ddaaaa"
+  ],
+  "confirmation_consulted": false,
+  "selection_rule": "Before reading confirmation, lock prior selected aaaaad, sibling aaaaaa, canonical dddddd, largest-natural-early-norm path (weights only), and strongest scan path by repeated-query target NLL increase. Remove duplicate paths. No later reselection.",
+  "protocol_sha256": "ff34eb68c4b866d1a9301009e765a3d15d14204be6ac648aa9ee860f5a9015b2",
+  "scan_sha256": "5d51308c41cfcbca6a6c5cd90d6a83de5740b16b9864119cbcdf9298845d7921"
+}

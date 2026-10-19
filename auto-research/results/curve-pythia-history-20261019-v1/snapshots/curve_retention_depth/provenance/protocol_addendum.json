@@ -1,0 +1,9 @@
+{
+  "trigger": "The originally specified native SGD learning rate 0.005 was unstable; the first step changed a coordinate by 0.0383977842 and had update norm 0.378238371. The curve SGD arm was also unstable. All original results are retained as an oversized-step stress test.",
+  "change": "Add a second native/curve SGD pair using the same 24 batches. Set the constant learning rate from the initial training gradient so its maximum first-step coordinate update is 2e-5, the maximum possible first Adam update at the predeclared learning rate.",
+  "rule": "stable_sgd_lr = 2e-5 / max_abs_gradient_on_first_training_batch",
+  "value": 0.0000026043169416482806,
+  "selection_boundary": "The trigger included observed instability in training and evaluation. The replacement rate is computed from the training gradient, not a search over held-out scores. The same validation set is reused; this is a disclosed stability control, not an independent confirmation study.",
+  "budget": "48 additional Pythia steps; 168 total. No other hyperparameter tuning. The original protocol is unchanged and its hash remains valid.",
+  "interpretation": "Stable-regime equivalence and unstable-regime numerical divergence are reported separately. Native versus curve SGD at 0.005 is not evidence of an intrinsic representation incompatibility."
+}

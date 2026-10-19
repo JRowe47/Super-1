@@ -1,0 +1,69 @@
+{
+  "orientation": "Native-coordinate component tracking and localization, not compression or reordering.",
+  "checkpoints": 13,
+  "layers": 6,
+  "tensors": 72,
+  "learned_decoder_parameters": 18914304,
+  "full_resolution_coefficients_retained": true,
+  "training_steps": 0,
+  "permutations": 0,
+  "phase_fraction_of_matrix_change_512_to_1000": 0.5178692865692825,
+  "example_fourier_mode": {
+    "layer": 3,
+    "tensor": "attention.query_key_value.weight",
+    "index": 334800,
+    "amplitude_512": 0.015981053933501244,
+    "amplitude_1000": 0.05842934548854828,
+    "phase_change_radians": -1.1389788389205933
+  },
+  "example_local_component": {
+    "layer": 3,
+    "tensor": "attention.query_key_value.weight",
+    "basis": "haar",
+    "selected_interval": [
+      512,
+      1000
+    ],
+    "kind": "detail",
+    "level": 6,
+    "index": 1759,
+    "packed_index": 14047,
+    "values": [
+      -0.012866199016571045,
+      -0.012813329696655273,
+      -0.014971941709518433,
+      -0.018903672695159912,
+      -0.028526023030281067,
+      -0.11438536643981934,
+      -0.13618218898773193,
+      -0.14621412754058838,
+      -0.1565924882888794,
+      -0.1695798635482788,
+      -0.16259032487869263,
+      -0.24753069877624512,
+      -0.2648320198059082
+    ],
+    "flat_start": 112576,
+    "flat_end_exclusive": 112640,
+    "first_index": [
+      219,
+      448
+    ],
+    "last_index": [
+      219,
+      511
+    ],
+    "qkv_first": {
+      "head": 1,
+      "projection": "q",
+      "within_projection": 27
+    },
+    "qkv_last": {
+      "head": 1,
+      "projection": "q",
+      "within_projection": 27
+    }
+  },
+  "catalog_records": 34848,
+  "limitations": "Descriptive component changes are candidate targeting information, not demonstrated causal or semantic feature identities. Global Fourier bins are not spatially localized. Haar locations are locations in the native parameter curve, not semantic or token positions."
+}

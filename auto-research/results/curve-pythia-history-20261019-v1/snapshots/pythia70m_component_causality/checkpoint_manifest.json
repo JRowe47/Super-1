@@ -1,0 +1,29 @@
+[
+  {
+    "repo": "EleutherAI/pythia-70m",
+    "revision": "step512",
+    "step": 512,
+    "commit": "8c6e2534e332a9122404629fdb4bac11bf68689c",
+    "sha256": "a46bd4c254e28664926b12762616596de5783608ca5403765586c126bdf5bcd4",
+    "size_bytes": 281715176,
+    "elapsed_seconds": 30.22687792778015
+  },
+  {
+    "repo": "EleutherAI/pythia-70m",
+    "revision": "step1000",
+    "step": 1000,
+    "commit": "0fa739a8417c3c7d2a98ed3b283cacec67fd61df",
+    "sha256": "09883f904c4a50de85c682cdfa0434aaf34e62392fe883e58410d12d39b1ee88",
+    "size_bytes": 281715176,
+    "elapsed_seconds": 29.93189239501953
+  },
+  {
+    "repo": "EleutherAI/pythia-70m",
+    "revision": "step8000",
+    "step": 8000,
+    "commit": "f912434e6d0ecb727c8dbe3721de8749a29f92c1",
+    "sha256": "388e90b4782d56d058ebc40a204ab7f6072044aa539116ab425874d9996c1c9e",
+    "size_bytes": 281715176,
+    "elapsed_seconds": 34.3940691947937
+  }
+]

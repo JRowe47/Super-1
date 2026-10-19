@@ -1,0 +1,218 @@
+{
+  "seconds": 44.84229564666748,
+  "training_steps": 30000,
+  "runs": [
+    {
+      "seed": 0,
+      "arm": "native6",
+      "seconds": 1.0539255142211914,
+      "stages": 7200
+    },
+    {
+      "seed": 0,
+      "arm": "curve6",
+      "seconds": 1.0714988708496094,
+      "stages": 7200
+    },
+    {
+      "seed": 0,
+      "arm": "curve2",
+      "seconds": 1.1075105667114258,
+      "stages": 7200
+    },
+    {
+      "seed": 0,
+      "arm": "curve2_multidepth",
+      "seconds": 1.207352876663208,
+      "stages": 8400
+    },
+    {
+      "seed": 0,
+      "arm": "curve6_exact",
+      "seconds": 0.45841288566589355,
+      "stages": 2400
+    },
+    {
+      "seed": 0,
+      "arm": "curve2_hard",
+      "seconds": 0.47542405128479004,
+      "stages": 2400
+    },
+    {
+      "seed": 0,
+      "arm": "curve2_bridge",
+      "seconds": 0.49883174896240234,
+      "stages": 2400
+    },
+    {
+      "seed": 1,
+      "arm": "native6",
+      "seconds": 1.1599860191345215,
+      "stages": 7200
+    },
+    {
+      "seed": 1,
+      "arm": "curve6",
+      "seconds": 1.4309327602386475,
+      "stages": 7200
+    },
+    {
+      "seed": 1,
+      "arm": "curve2",
+      "seconds": 1.514885425567627,
+      "stages": 7200
+    },
+    {
+      "seed": 1,
+      "arm": "curve2_multidepth",
+      "seconds": 1.3967530727386475,
+      "stages": 8400
+    },
+    {
+      "seed": 1,
+      "arm": "curve6_exact",
+      "seconds": 0.7112753391265869,
+      "stages": 2400
+    },
+    {
+      "seed": 1,
+      "arm": "curve2_hard",
+      "seconds": 0.6708612442016602,
+      "stages": 2400
+    },
+    {
+      "seed": 1,
+      "arm": "curve2_bridge",
+      "seconds": 0.6747493743896484,
+      "stages": 2400
+    },
+    {
+      "seed": 2,
+      "arm": "native6",
+      "seconds": 1.5232665538787842,
+      "stages": 7200
+    },
+    {
+      "seed": 2,
+      "arm": "curve6",
+      "seconds": 1.7137205600738525,
+      "stages": 7200
+    },
+    {
+      "seed": 2,
+      "arm": "curve2",
+      "seconds": 1.6814641952514648,
+      "stages": 7200
+    },
+    {
+      "seed": 2,
+      "arm": "curve2_multidepth",
+      "seconds": 1.803147554397583,
+      "stages": 8400
+    },
+    {
+      "seed": 2,
+      "arm": "curve6_exact",
+      "seconds": 0.7491908073425293,
+      "stages": 2400
+    },
+    {
+      "seed": 2,
+      "arm": "curve2_hard",
+      "seconds": 0.7276468276977539,
+      "stages": 2400
+    },
+    {
+      "seed": 2,
+      "arm": "curve2_bridge",
+      "seconds": 0.7620425224304199,
+      "stages": 2400
+    },
+    {
+      "seed": 3,
+      "arm": "native6",
+      "seconds": 1.6589288711547852,
+      "stages": 7200
+    },
+    {
+      "seed": 3,
+      "arm": "curve6",
+      "seconds": 1.8292231559753418,
+      "stages": 7200
+    },
+    {
+      "seed": 3,
+      "arm": "curve2",
+      "seconds": 1.7065579891204834,
+      "stages": 7200
+    },
+    {
+      "seed": 3,
+      "arm": "curve2_multidepth",
+      "seconds": 1.83013916015625,
+      "stages": 8400
+    },
+    {
+      "seed": 3,
+      "arm": "curve6_exact",
+      "seconds": 0.8092360496520996,
+      "stages": 2400
+    },
+    {
+      "seed": 3,
+      "arm": "curve2_hard",
+      "seconds": 0.8255507946014404,
+      "stages": 2400
+    },
+    {
+      "seed": 3,
+      "arm": "curve2_bridge",
+      "seconds": 0.8936111927032471,
+      "stages": 2400
+    },
+    {
+      "seed": 4,
+      "arm": "native6",
+      "seconds": 1.7436845302581787,
+      "stages": 7200
+    },
+    {
+      "seed": 4,
+      "arm": "curve6",
+      "seconds": 2.0182926654815674,
+      "stages": 7200
+    },
+    {
+      "seed": 4,
+      "arm": "curve2",
+      "seconds": 2.037229299545288,
+      "stages": 7200
+    },
+    {
+      "seed": 4,
+      "arm": "curve2_multidepth",
+      "seconds": 2.381669282913208,
+      "stages": 8400
+    },
+    {
+      "seed": 4,
+      "arm": "curve6_exact",
+      "seconds": 1.233729600906372,
+      "stages": 2400
+    },
+    {
+      "seed": 4,
+      "arm": "curve2_hard",
+      "seconds": 1.4936470985412598,
+      "stages": 2400
+    },
+    {
+      "seed": 4,
+      "arm": "curve2_bridge",
+      "seconds": 1.2197132110595703,
+      "stages": 2400
+    }
+  ],
+  "threads": 1,
+  "torch": "2.14.1+cpu"
+}

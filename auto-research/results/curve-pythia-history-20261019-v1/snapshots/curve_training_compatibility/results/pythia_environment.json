@@ -1,0 +1,42 @@
+{
+  "seconds": 209.6380729675293,
+  "arms": [
+    {
+      "arm": "native_sgd",
+      "seconds": 37.326343297958374
+    },
+    {
+      "arm": "curve_sgd",
+      "seconds": 40.02858591079712
+    },
+    {
+      "arm": "native_adamw",
+      "seconds": 39.72153615951538
+    },
+    {
+      "arm": "curve_adamw",
+      "seconds": 40.602071046829224
+    },
+    {
+      "arm": "curve_transport_adamw",
+      "seconds": 43.50970935821533
+    }
+  ],
+  "training_steps": 120,
+  "checkpoint_sha256": "737de0ce1e32a9559925b452921cdea0b12d3932133b6b0b70b61a351b9f6272",
+  "protocol_sha256": "e7940cbe3ebac55edd25829af638b537f1fc78426f6c3a607e3c88ad9847a3ff",
+  "threads": 3,
+  "torch": "2.14.1+cpu",
+  "final_checkpoints": [
+    {
+      "arm": "native_adamw",
+      "file": "models/native_adamw_final_decoder.npz",
+      "sha256": "27e7b3420595ce11f90b794dbdef60560c1a7d7855d8bc9f0fe773d6ba09fbcb"
+    },
+    {
+      "arm": "curve_adamw",
+      "file": "models/curve_adamw_final_decoder.npz",
+      "sha256": "e61006a9fda058d0daa5b02032bf1cc56a521c4ebc395dd8aa28d69fcfd97a25"
+    }
+  ]
+}

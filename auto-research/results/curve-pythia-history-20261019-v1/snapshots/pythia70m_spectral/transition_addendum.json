@@ -1,0 +1,8 @@
+{
+ "status": "Exploratory addendum specified after seeing primary behavioral probes, before ablation results",
+ "observation": "Repeated-copy accuracy increased between step512 and step1000; layer3 head6 had maximum content-following attention at step1000 and later sampled checkpoints.",
+ "test": "Zero the selected head's contribution immediately before its output projection. Compare unablated with head6 and two fixed same-layer controls, heads5 and7. Evaluate steps1000,8000,143000.",
+ "evaluation": "Fresh 64 unique-random-token sequences, length32 repeated twice, seed20261018. Selection used primary seed20261017, evaluation uses new sequences. Use mean second-copy NLL, accuracy and first-minus-second NLL; paired sequence bootstrap 2000 resamples.",
+ "spectral_followup": "At step512-to-step1000, profile Q,K,V,O head slices individually. This is descriptive, not a pre-registered detection method.",
+ "caveats": "Head zeroing is an out-of-distribution causal intervention. Evidence of copying contribution is not proof of a complete induction circuit or grokking. No training."
+}

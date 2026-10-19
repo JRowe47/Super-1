@@ -1,0 +1,37 @@
+{
+  "status": "Proposed, not run",
+  "question": "Does depth-structured training create useful smoothness or merely change optimizer coordinates?",
+  "architecture": {
+    "blocks": 8,
+    "width": 128,
+    "heads": 4,
+    "context": 128,
+    "vocabulary_target": 8192,
+    "tied_head": true,
+    "approx_parameters": "2.6 million with a standard 4x MLP"
+  },
+  "data": "Fixed document-held-out ordinary-text corpus such as the already used WikiText data; fixed tokenizer. TinyStories is not the main experiment.",
+  "seeds": 3,
+  "initialization": "Draw one dense initialization per seed; derive full DCT and random orthogonal coefficients from it to match initial functions exactly.",
+  "stage1": [
+    "Dense block parameters",
+    "All 8 orthonormal cosine modes across depth",
+    "All 8 fixed random orthogonal depth modes"
+  ],
+  "stage1_control": "First verify a few plain-SGD steps agree after mapping to weights, with no dropout and matching global clipping/decay conventions. Then compare AdamW with equal small validation LR-search budgets. Full-basis representation does not reduce capacity.",
+  "stage2": [
+    "Dense updates on a shared base checkpoint",
+    "Four low-frequency depth modes for updates to the same fixed base",
+    "Four random orthogonal depth modes for updates to the same fixed base"
+  ],
+  "stage2_control": "All arms start at exactly the same function using zero initial updates. The two subspace arms have matched trainable counts. A dense-vs-subspace gain cannot automatically be attributed to Fourier structure.",
+  "measurements": [
+    "Validation cross-entropy versus tokens, updates and wall time",
+    "Per-family spectra of weights and actual updates at fixed checkpoints",
+    "Gradient energy and modest band attenuation / update-band removal with loss and teacher KL",
+    "SVD rank of the depth stack, family norms and fixed-probe residual activations",
+    "Parameter and optimizer-state bytes; peak memory; reconstruction overhead"
+  ],
+  "depth_followup": "Only after fixed-depth controls, add an explicit multi-depth objective to a selected construction. Compare 4/6/8 block schedules and a held-out 7-block schedule; fix residual scaling and document sampling. Match training exposure and report extra compute. Fourier interpolation alone gives no depth-reduction guarantee.",
+  "causal_rule": "A spectral change nominates a target; a matched intervention causing a reproducible held-out loss change establishes local usefulness. Neither identifies semantic circuitry exactly."
+}

@@ -1,0 +1,18 @@
+{
+  "status": "Frozen before numerical analysis; exploratory single-training-run study",
+  "model": "EleutherAI/pythia-70m (standard, not deduped, not v0)",
+  "steps": [0,64,128,256,512,1000,2000,4000,8000,16000,32000,64000,143000],
+  "new_training_steps": 0,
+  "layers": [0,1,2,3,4,5],
+  "scope": "All six decoder blocks, six weight families Q,K,V,O,MLP-in,MLP-out; embeddings, LM head and norms excluded from main spectral claims.",
+  "primary_axes": "Tensor-local C-order flattened real Fourier transform; MLP hidden-neuron axis Fourier transform for valid ordering tests.",
+  "checkpoint_differences": "Each checkpoint minus initialization and each consecutive sampled checkpoint minus its predecessor. Unequal intervals reported as net displacement and net displacement per step, never gradient magnitudes.",
+  "recursive": "Recursively partition each tensor-local rFFT frequency axis into 2,4,8,16,32,64 bands; preserve complex coefficients and phases for reconstruction. Repeated FFT of coefficients is not a new decomposition.",
+  "spectral_controls": "Compare real orthonormal Fourier coefficient energy with real weight-coordinate energy; include matched Gaussian noise and valid random neuron permutations.",
+  "ordering": "MLP in rows and in bias permuted jointly with out columns. No independent residual-stream shuffles. Native ordering is primary. PCA ordering fitted only to step2000-to-step4000 MLP updates, then frozen. Three fixed random permutations per layer. Sorting is a heuristic, not optimal alignment.",
+  "sparse_intervention": "Step8000 model with MLP weight deltas from step4000 selectively restored. All non-MLP-weight parameters, including biases, remain at step8000. Compare native/random/PCA neuron-axis Fourier top-energy, native/PCA low-frequency, spatial top-energy and random spatial, at 10% and 25% real coordinate budgets. Selection uses the completed update and is retrospective, not sparse training.",
+  "behavior": "32 seeded unique-random-token sequences of length32 repeated twice, and shuffled-second-copy attention controls; per-head content-following attention, repeated-copy NLL and accuracy. Fixed original prose diagnostic set, not a benchmark or independently verified pretraining holdout.",
+  "validation": "Check FFT Parseval and inversion, recursive band reconstruction, coherent permutation output invariance, endpoint restoration and all finite results; immutable checkpoint hashes recorded.",
+  "limits": "One pretraining seed, six layers; no architecture/depth changes, no causal claim from spectral/behavioral coincidence, no grokking claim without train-versus-test evidence. Weight-axis frequencies are not token-position or semantic frequencies.",
+  "seed": 20261017
+}

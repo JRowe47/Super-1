@@ -1,0 +1,24 @@
+{
+  "study": "Recursive spectral update sufficiency",
+  "status_at_creation": "Written before new spectral measurements or functional evaluations",
+  "date": "2026-10-17",
+  "model": "HuggingFaceTB/SmolLM2-135M",
+  "revision": "93efa2f097d58c2a74874c7e644dbc9b0cee75a2",
+  "sources": "Saved phase-6 initializations and selected 1800-update checkpoints",
+  "global_waveform": "Block-major, alphabetically ordered parameter families, C-order tensor flattening. Compare original 30 blocks, retained/interpolated 28-block initial/final weights, and their endpoint updates. Embedding/head/final norm excluded.",
+  "global_recursion": "Disjoint binary frequency partitions through level 6 (64 leaves), all bins preserved. Four/eight component reconstructions and a fixed excerpt demonstrate additive decomposition. Frequency subdivision is distinct from repeated forward FFTs.",
+  "local_transform": "Each of the 42 trained projection matrices: orthonormal real FFT along its column axis, rows grouped in contiguous groups of 32. Sixteen frequency bands partition positive interior bins. DC and Nyquist always retained; two RMSNorm vectors per changed block retained in full for spectral-mask arms.",
+  "mask_budget": "Choose 4 of 16 frequency bands per 32-row region, approximately 25% of real spectral degrees of freedom; report actual counts including endpoints and norms.",
+  "mask_selection": "Low-quarter, high-quarter, fixed-random-quarter, highest-update-energy-quarter, and highest predicted descent-quarter. Descent score is minus the inner product between initial-model KL gradient and the already learned update in each spectral region. Gradient uses only first 8 phase-6 training windows.",
+  "primary_variants_28": ["initial", "full_update", "norm_only", "low_quarter", "high_quarter", "random_quarter", "energy_quarter", "gradient_quarter", "random_norm_matched", "random_spatial", "gradient_shift_one"],
+  "controls": {
+    "random_norm_matched": "Same random spectral mask, per-matrix update norm matched to gradient-selected update; same full norm updates.",
+    "random_spatial": "Fixed random individual-weight mask with exactly the gradient mask's real degrees-of-freedom count per matrix; same norm updates.",
+    "gradient_shift_one": "Cyclically shift each row of the gradient-selected matrix update by one column; identical Fourier magnitudes and update norms, different phase. Norm vectors unchanged."
+  },
+  "depth_transfer_26": "Initial, full_update, gradient_quarter, random_quarter. Keep only endpoints from each edited triplet: original blocks 4 and 7, 12 and 15. Unit residual scaling. Direct transfer of the 28-block update; no 26-block training, curve resampling or weight realignment.",
+  "evaluation": "All candidates on existing phase-6 validation (32 windows) and audit (64 windows, 32 documents), context 128. These are previously used sets, not a fresh test. Audit never selects masks, gradients or variants in this study.",
+  "metrics": "Next-token NLL, teacher KL, perplexity ratio to original 30-block model, paired document bootstrap. Recovery fraction is initial-minus-masked NLL divided by initial-minus-full-update NLL at the same depth.",
+  "scope": "Post-hoc sufficiency/intervention study. No fresh sparse-model training and no training-cost saving claim. All masked updates are derived from a fully trained checkpoint; this uses its information.",
+  "limits": ["One original training seed", "Only six blocks were trained", "Weight frequency depends on tensor ordering", "Large Fourier magnitude does not imply functional importance", "No power-spectrum comparison can recover phase information", "Native-versus-curve coefficient training remains untested"]
+}

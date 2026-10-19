@@ -1,0 +1,290 @@
+{
+  "seconds": null,
+  "checkpoint_span_seconds": 29.168834447860718,
+  "runtime_note": "All19000 updates and40 final models completed before an oracle audit reconstructed JSON values as float32 and failed an overly strict float64 comparison. Checks and conversions recovered from saved models without rerunning training. Original exact per-run timers were not persisted; checkpoint span is a lower bound, not wall time.",
+  "runs": [
+    {
+      "seed": 0,
+      "arm": "native6",
+      "updates": 600,
+      "stages": 3600,
+      "seconds": null
+    },
+    {
+      "seed": 0,
+      "arm": "curve6",
+      "updates": 600,
+      "stages": 3600,
+      "seconds": null
+    },
+    {
+      "seed": 0,
+      "arm": "curve2",
+      "updates": 600,
+      "stages": 3600,
+      "seconds": null
+    },
+    {
+      "seed": 0,
+      "arm": "native_fixed",
+      "updates": 400,
+      "stages": 2400,
+      "seconds": null
+    },
+    {
+      "seed": 0,
+      "arm": "curve6_fixed",
+      "updates": 400,
+      "stages": 2400,
+      "seconds": null
+    },
+    {
+      "seed": 0,
+      "arm": "curve2_fixed",
+      "updates": 400,
+      "stages": 2400,
+      "seconds": null
+    },
+    {
+      "seed": 0,
+      "arm": "curve6_multidepth",
+      "updates": 400,
+      "stages": 5592,
+      "seconds": null
+    },
+    {
+      "seed": 0,
+      "arm": "curve2_multidepth",
+      "updates": 400,
+      "stages": 5592,
+      "seconds": null
+    },
+    {
+      "seed": 1,
+      "arm": "native6",
+      "updates": 600,
+      "stages": 3600,
+      "seconds": null
+    },
+    {
+      "seed": 1,
+      "arm": "curve6",
+      "updates": 600,
+      "stages": 3600,
+      "seconds": null
+    },
+    {
+      "seed": 1,
+      "arm": "curve2",
+      "updates": 600,
+      "stages": 3600,
+      "seconds": null
+    },
+    {
+      "seed": 1,
+      "arm": "native_fixed",
+      "updates": 400,
+      "stages": 2400,
+      "seconds": null
+    },
+    {
+      "seed": 1,
+      "arm": "curve6_fixed",
+      "updates": 400,
+      "stages": 2400,
+      "seconds": null
+    },
+    {
+      "seed": 1,
+      "arm": "curve2_fixed",
+      "updates": 400,
+      "stages": 2400,
+      "seconds": null
+    },
+    {
+      "seed": 1,
+      "arm": "curve6_multidepth",
+      "updates": 400,
+      "stages": 5592,
+      "seconds": null
+    },
+    {
+      "seed": 1,
+      "arm": "curve2_multidepth",
+      "updates": 400,
+      "stages": 5592,
+      "seconds": null
+    },
+    {
+      "seed": 2,
+      "arm": "native6",
+      "updates": 600,
+      "stages": 3600,
+      "seconds": null
+    },
+    {
+      "seed": 2,
+      "arm": "curve6",
+      "updates": 600,
+      "stages": 3600,
+      "seconds": null
+    },
+    {
+      "seed": 2,
+      "arm": "curve2",
+      "updates": 600,
+      "stages": 3600,
+      "seconds": null
+    },
+    {
+      "seed": 2,
+      "arm": "native_fixed",
+      "updates": 400,
+      "stages": 2400,
+      "seconds": null
+    },
+    {
+      "seed": 2,
+      "arm": "curve6_fixed",
+      "updates": 400,
+      "stages": 2400,
+      "seconds": null
+    },
+    {
+      "seed": 2,
+      "arm": "curve2_fixed",
+      "updates": 400,
+      "stages": 2400,
+      "seconds": null
+    },
+    {
+      "seed": 2,
+      "arm": "curve6_multidepth",
+      "updates": 400,
+      "stages": 5592,
+      "seconds": null
+    },
+    {
+      "seed": 2,
+      "arm": "curve2_multidepth",
+      "updates": 400,
+      "stages": 5592,
+      "seconds": null
+    },
+    {
+      "seed": 3,
+      "arm": "native6",
+      "updates": 600,
+      "stages": 3600,
+      "seconds": null
+    },
+    {
+      "seed": 3,
+      "arm": "curve6",
+      "updates": 600,
+      "stages": 3600,
+      "seconds": null
+    },
+    {
+      "seed": 3,
+      "arm": "curve2",
+      "updates": 600,
+      "stages": 3600,
+      "seconds": null
+    },
+    {
+      "seed": 3,
+      "arm": "native_fixed",
+      "updates": 400,
+      "stages": 2400,
+      "seconds": null
+    },
+    {
+      "seed": 3,
+      "arm": "curve6_fixed",
+      "updates": 400,
+      "stages": 2400,
+      "seconds": null
+    },
+    {
+      "seed": 3,
+      "arm": "curve2_fixed",
+      "updates": 400,
+      "stages": 2400,
+      "seconds": null
+    },
+    {
+      "seed": 3,
+      "arm": "curve6_multidepth",
+      "updates": 400,
+      "stages": 5592,
+      "seconds": null
+    },
+    {
+      "seed": 3,
+      "arm": "curve2_multidepth",
+      "updates": 400,
+      "stages": 5592,
+      "seconds": null
+    },
+    {
+      "seed": 4,
+      "arm": "native6",
+      "updates": 600,
+      "stages": 3600,
+      "seconds": null
+    },
+    {
+      "seed": 4,
+      "arm": "curve6",
+      "updates": 600,
+      "stages": 3600,
+      "seconds": null
+    },
+    {
+      "seed": 4,
+      "arm": "curve2",
+      "updates": 600,
+      "stages": 3600,
+      "seconds": null
+    },
+    {
+      "seed": 4,
+      "arm": "native_fixed",
+      "updates": 400,
+      "stages": 2400,
+      "seconds": null
+    },
+    {
+      "seed": 4,
+      "arm": "curve6_fixed",
+      "updates": 400,
+      "stages": 2400,
+      "seconds": null
+    },
+    {
+      "seed": 4,
+      "arm": "curve2_fixed",
+      "updates": 400,
+      "stages": 2400,
+      "seconds": null
+    },
+    {
+      "seed": 4,
+      "arm": "curve6_multidepth",
+      "updates": 400,
+      "stages": 5592,
+      "seconds": null
+    },
+    {
+      "seed": 4,
+      "arm": "curve2_multidepth",
+      "updates": 400,
+      "stages": 5592,
+      "seconds": null
+    }
+  ],
+  "training_updates": 19000,
+  "threads": 1,
+  "torch": "2.14.1+cpu"
+}

@@ -1,0 +1,182 @@
+[
+  {
+    "seed": 0,
+    "source_gradient": {
+      "bce": 0.0005180098904940478,
+      "residual_block_gradient_norm": 3.465210545501179e-05,
+      "excluded_gradient_energy_fraction": 0.42900632092586843
+    },
+    "discarded_weight_energy_fraction": 0.26031165477769574,
+    "curve6_exact": {
+      "initial_logit_max_error": 5.329070518200751e-15,
+      "initial_logit_rms_error": 1.5700924586837751e-15,
+      "gradient": {
+        "bce": 0.0005180098904940477,
+        "residual_block_gradient_norm": 3.4652105455011774e-05,
+        "excluded_gradient_energy_fraction": 0.4290063209258689
+      }
+    },
+    "curve2_hard": {
+      "initial_logit_max_error": 4.197734883339917,
+      "initial_logit_rms_error": 1.2019943508830078,
+      "gradient": {
+        "bce": 0.0023253521429746683,
+        "residual_block_gradient_norm": 0.005390791661337051,
+        "excluded_gradient_energy_fraction": 0.09541939087583373
+      }
+    },
+    "curve2_bridge": {
+      "initial_logit_max_error": 3.552713678800501e-15,
+      "initial_logit_rms_error": 1.478445836528984e-15,
+      "gradient": {
+        "bce": 0.0005180098904940477,
+        "residual_block_gradient_norm": 3.4652105455011774e-05,
+        "excluded_gradient_energy_fraction": 0.429006320925869
+      }
+    }
+  },
+  {
+    "seed": 1,
+    "source_gradient": {
+      "bce": 0.0005116551765122207,
+      "residual_block_gradient_norm": 3.869054248449436e-05,
+      "excluded_gradient_energy_fraction": 0.509104512969731
+    },
+    "discarded_weight_energy_fraction": 0.28230886633947416,
+    "curve6_exact": {
+      "initial_logit_max_error": 4.440892098500626e-15,
+      "initial_logit_rms_error": 1.516853423009164e-15,
+      "gradient": {
+        "bce": 0.0005116551765122208,
+        "residual_block_gradient_norm": 3.8690542484495656e-05,
+        "excluded_gradient_energy_fraction": 0.5091045129697318
+      }
+    },
+    "curve2_hard": {
+      "initial_logit_max_error": 6.909044693451318,
+      "initial_logit_rms_error": 1.4807257730418668,
+      "gradient": {
+        "bce": 0.00827261956204361,
+        "residual_block_gradient_norm": 0.027019524630494656,
+        "excluded_gradient_energy_fraction": 0.22650887943032094
+      }
+    },
+    "curve2_bridge": {
+      "initial_logit_max_error": 3.552713678800501e-15,
+      "initial_logit_rms_error": 1.3807294645527456e-15,
+      "gradient": {
+        "bce": 0.0005116551765122207,
+        "residual_block_gradient_norm": 3.8690542484494335e-05,
+        "excluded_gradient_energy_fraction": 0.5091045129697311
+      }
+    }
+  },
+  {
+    "seed": 2,
+    "source_gradient": {
+      "bce": 0.0005394766370154824,
+      "residual_block_gradient_norm": 3.4058817763065155e-05,
+      "excluded_gradient_energy_fraction": 0.4275023312439242
+    },
+    "discarded_weight_energy_fraction": 0.33031677411159865,
+    "curve6_exact": {
+      "initial_logit_max_error": 3.552713678800501e-15,
+      "initial_logit_rms_error": 1.4275470821731055e-15,
+      "gradient": {
+        "bce": 0.0005394766370154826,
+        "residual_block_gradient_norm": 3.405881776306512e-05,
+        "excluded_gradient_energy_fraction": 0.42750233124392445
+      }
+    },
+    "curve2_hard": {
+      "initial_logit_max_error": 4.050883093698316,
+      "initial_logit_rms_error": 1.447278104135168,
+      "gradient": {
+        "bce": 0.002440934735271276,
+        "residual_block_gradient_norm": 0.0034350066559482133,
+        "excluded_gradient_energy_fraction": 0.0970462934835431
+      }
+    },
+    "curve2_bridge": {
+      "initial_logit_max_error": 3.552713678800501e-15,
+      "initial_logit_rms_error": 1.5032490816276446e-15,
+      "gradient": {
+        "bce": 0.0005394766370154825,
+        "residual_block_gradient_norm": 3.4058817763065114e-05,
+        "excluded_gradient_energy_fraction": 0.427502331243924
+      }
+    }
+  },
+  {
+    "seed": 3,
+    "source_gradient": {
+      "bce": 0.0006688390815550128,
+      "residual_block_gradient_norm": 5.20446771251705e-05,
+      "excluded_gradient_energy_fraction": 0.49521633583500313
+    },
+    "discarded_weight_energy_fraction": 0.32952989456539067,
+    "curve6_exact": {
+      "initial_logit_max_error": 3.552713678800501e-15,
+      "initial_logit_rms_error": 1.4361554843084032e-15,
+      "gradient": {
+        "bce": 0.0006688390815550125,
+        "residual_block_gradient_norm": 5.204467712517052e-05,
+        "excluded_gradient_energy_fraction": 0.49521633583500346
+      }
+    },
+    "curve2_hard": {
+      "initial_logit_max_error": 5.434036893054382,
+      "initial_logit_rms_error": 1.8642495264389267,
+      "gradient": {
+        "bce": 0.008242988078069814,
+        "residual_block_gradient_norm": 0.01413451568615998,
+        "excluded_gradient_energy_fraction": 0.11866608257379496
+      }
+    },
+    "curve2_bridge": {
+      "initial_logit_max_error": 3.552713678800501e-15,
+      "initial_logit_rms_error": 1.464484751053976e-15,
+      "gradient": {
+        "bce": 0.0006688390815550125,
+        "residual_block_gradient_norm": 5.2044677125170514e-05,
+        "excluded_gradient_energy_fraction": 0.49521633583500324
+      }
+    }
+  },
+  {
+    "seed": 4,
+    "source_gradient": {
+      "bce": 0.0005651436707240711,
+      "residual_block_gradient_norm": 4.7060463692924274e-05,
+      "excluded_gradient_energy_fraction": 0.46392526712057713
+    },
+    "discarded_weight_energy_fraction": 0.3018517965929281,
+    "curve6_exact": {
+      "initial_logit_max_error": 3.552713678800501e-15,
+      "initial_logit_rms_error": 1.4839934951818325e-15,
+      "gradient": {
+        "bce": 0.000565143670724071,
+        "residual_block_gradient_norm": 4.7060463692924295e-05,
+        "excluded_gradient_energy_fraction": 0.4639252671205768
+      }
+    },
+    "curve2_hard": {
+      "initial_logit_max_error": 4.7122926750979195,
+      "initial_logit_rms_error": 1.6152109132790484,
+      "gradient": {
+        "bce": 0.004132313221941749,
+        "residual_block_gradient_norm": 0.005285399248611892,
+        "excluded_gradient_energy_fraction": 0.07922851389271035
+      }
+    },
+    "curve2_bridge": {
+      "initial_logit_max_error": 3.552713678800501e-15,
+      "initial_logit_rms_error": 1.3955287025942437e-15,
+      "gradient": {
+        "bce": 0.000565143670724071,
+        "residual_block_gradient_norm": 4.70604636929243e-05,
+        "excluded_gradient_energy_fraction": 0.4639252671205768
+      }
+    }
+  }
+]

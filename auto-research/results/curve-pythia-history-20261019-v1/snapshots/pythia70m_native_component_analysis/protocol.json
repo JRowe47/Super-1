@@ -1,0 +1,17 @@
+{
+ "purpose": "Inspect the native network in situ through exact layer-curve encodings and full-resolution multiscale component changes.",
+ "scope_correction": "This study follows the user's clarification. It does not search neuron permutations or judge the representation primarily by compression, top-k reconstruction, or sparse-training efficiency.",
+ "model": "EleutherAI/pythia-70m",
+ "steps": [0,64,128,256,512,1000,2000,4000,8000,16000,32000,64000,143000],
+ "layer_mapping": "All learned parameters of each of the six decoder blocks, preserving original tensor shapes and C-order coordinates. Tensors are separate segments of a layer curve; transforms never cross tensor boundaries. Module execution and nonlinearities stay unchanged.",
+ "fourier": "Complex rFFT at full tensor length. Store all coefficients at every checkpoint. Track complex differences, signed amplitude differences and wrapped phase differences. Recursive frequency partitions can be refined to individual bins and inverted to full-resolution component curves.",
+ "wavelet": "Orthogonal Haar multilevel decomposition to the maximum exactly divisible depth, with every signed detail coefficient and coarsest scaling coefficient retained. Each coefficient has an exact native spatial support. No padding or downsampling of the source curve before decomposition.",
+ "recursive_packet_examples": "For selected 4096-entry native windows, demonstrate Haar wavelet-packet recursion by splitting both approximation and detail branches. Every coefficient at a packet level is retained; jointly these reconstruct that window.",
+ "comparison": "Adjacent sampled checkpoints, tracking the same component identities. Unequal training intervals remain explicit; changes are net differences, not individual gradients.",
+ "target_catalog": "Enumerate scale-level summaries and largest individual changes at every wavelet scale; retain full arrays so the catalog is an index rather than a lossy representation. Selected component trajectories include all 13 checkpoints. Target scores are descriptive, not proven causal importance.",
+ "baseline_validation": "Reconstruct all decoder-block parameters from the full Fourier or Haar representation at steps1000 and143000 and compare logits with the original model.",
+ "feature_context": "Sparse activation features and model-diffing literature motivate subsequent links to function. No assumption that a Fourier mode or wavelet coefficient equals a semantic feature.",
+ "training_steps":0,
+ "permutations":0,
+ "seed":20261017
+}
