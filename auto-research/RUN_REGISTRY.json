@@ -486,6 +486,35 @@
       "decision": "PRIMARY_GATE_FAILED_NO_USEFUL_ADVANTAGE",
       "publication_target": "rohanarun/Super-1 main (PR only)",
       "upstream_publication_authorization": "auto-research/results/perturbation-annealing-publication-20261019-v1/IMPORT.json"
+    },
+    {
+      "run_id": "minkron-publication-20261021-v1",
+      "kind": "Completed external experiments; retrospective upstream publication",
+      "status": "COMPLETED_ARCHIVAL_IMPORT_NO_NEW_MODEL_EXECUTION",
+      "approval": "User explicitly requested the minKron experiment and results as a PR to rohanarun/super-1.",
+      "registration_chronology": "Retrospective upstream record; original frozen protocols and all outcomes preserved unchanged.",
+      "protocol": "auto-research/results/minkron-publication-20261021-v1/IMPORT.json",
+      "protocol_sha256": "46307fdf5733c82863c7b6df8919625b232325aba3e9ae0352818354939433c5",
+      "original_protocols": [
+        "auto-research/results/minkron-publication-20261021-v1/compact/protocol.json",
+        "auto-research/results/minkron-publication-20261021-v1/integration/comparison_contract.json",
+        "auto-research/results/minkron-publication-20261021-v1/nanogpt/research-scratch/cpu-124m/main/protocol.json"
+      ],
+      "terminal": "auto-research/results/minkron-publication-20261021-v1/TERMINAL.json",
+      "metrics": "auto-research/results/minkron-publication-20261021-v1/VERIFICATION.json",
+      "report": "auto-research/reports/minkron-publication-20261021-v1.md",
+      "seeds": [
+        22101,
+        22102,
+        22103
+      ],
+      "scale_seed": 24101,
+      "completed_compact_main_runs": 12,
+      "decision": "PROMISING_SYNTHETIC_ACCURACY_TRADEOFF; OVERALL_RESOURCE_SCREEN_FAILED; CPU_SCALE_FEASIBILITY_ONLY",
+      "publication_target": "rohanarun/Super-1 main (PR only)",
+      "new_training": false,
+      "new_model_evaluation": false,
+      "publication_scope": "Code, compact result summaries and reconstruction placeholders per user steering."
     }
   ],
   "schema_version": 1,
